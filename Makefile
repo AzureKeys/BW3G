@@ -13,8 +13,7 @@ data/pokemon/evos_attacks.o \
 engine/movie/credits.o \
 engine/overworld/events.o \
 gfx/pics.o \
-gfx/sprites.o \
-lib/mobile/main.o
+gfx/sprites.o
 
 
 ### Build tools

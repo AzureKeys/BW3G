@@ -1,141 +1,11 @@
 Function3e32::
-; Mobile
-	cp $2
-	ld [$c988], a
-	ld a, l
-	ld [$c986], a
-	ld a, h
-	ld [$c987], a
-	jr nz, .okay
-
-	ld [$c982], a
-	ld a, l
-	ld [$c981], a
-	ld hl, $c983
-	ld a, c
-	ld [hli], a
-	ld a, b
-	ld [hl], a
-
-.okay
-	ld hl, $c822
-	set 6, [hl]
-	ldh a, [hROMBank]
-	push af
-	ld a, BANK(Function110030)
-	ld [$c981], a
-	rst Bankswitch
-
-	jp Function110030
-
-Function3e60::
-; Return from Function110030
-	ld [$c986], a
-	ld a, l
-	ld [$c987], a
-	ld a, h
-	ld [$c988], a
-
-	pop bc
-	ld a, b
-	ld [$c981], a
-	rst Bankswitch
-
-	ld hl, $c822
-	res 6, [hl]
-	ld hl, $c987
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
-	ld a, [$c986]
 	ret
 
 MobileReceive::
-	ldh a, [hROMBank]
-	push af
-	ld a, BANK(_MobileReceive)
-	ld [$c981], a
-	rst Bankswitch
-
-	call _MobileReceive
-	pop bc
-	ld a, b
-	ld [$c981], a
-	rst Bankswitch
-
 	ret
 
 Timer::
-	push af
-	push bc
-	push de
-	push hl
-
-	ldh a, [hMobile]
-	and a
-	jr z, .pop_ret
-
-	xor a
-	ldh [rTAC], a
-
-; Turn off timer interrupt
-	ldh a, [rIF]
-	and 1 << VBLANK | 1 << LCD_STAT | 1 << SERIAL | 1 << JOYPAD
-	ldh [rIF], a
-
-	ld a, [$c86a]
-	or a
-	jr z, .pop_ret
-
-	ld a, [$c822]
-	bit 1, a
-	jr nz, .skip_Timer
-
-	ldh a, [rSC]
-	and 1 << rSC_ON
-	jr nz, .skip_Timer
-
-	ldh a, [hROMBank]
-	push af
-	ld a, BANK(_Timer)
-	ld [$c981], a
-	rst Bankswitch
-
-	call _Timer
-
-	pop bc
-	ld a, b
-	ld [$c981], a
-	rst Bankswitch
-
-.skip_Timer
-	ldh a, [rTMA]
-	ldh [rTIMA], a
-
-	ld a, 1 << rTAC_ON | rTAC_65536_HZ
-	ldh [rTAC], a
-
-.pop_ret
-	pop hl
-	pop de
-	pop bc
-	pop af
 	reti
-
-Unreferenced_Function3ed7::
-	ld [$dc02], a
-	ldh a, [hROMBank]
-	push af
-	ld a, BANK(Function114243)
-	rst Bankswitch
-
-	call Function114243
-	pop bc
-	ld a, b
-	rst Bankswitch
-
-	ld a, [$dc02]
-	ret
 
 Function3eea::
 	push hl
@@ -150,31 +20,6 @@ Function3eea::
 	pop bc
 	pop hl
 	call MobileHome_PlaceBox
-	ret
-
-Unreferenced_Function3efd::
-	push hl
-	hlcoord 0, 12
-	ld b, 4
-	ld c, 18
-	call .fill_attr
-	pop hl
-	call PrintTextBoxText
-	ret
-
-.fill_attr
-	push hl
-	push bc
-	ld de, wAttrMap - wTileMap
-	add hl, de
-	inc b
-	inc b
-	inc c
-	inc c
-	call Function3f35
-	pop bc
-	pop hl
-	call TextBoxBorder
 	ret
 
 Function3f20::
