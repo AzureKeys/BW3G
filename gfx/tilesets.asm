@@ -150,7 +150,7 @@ TilesetTrainStationColl:
 INCLUDE "data/tilesets/train_station_collision.asm"
 
 TilesetDriftveilGFX:
-INCBIN "gfx/tilesets/driftveil.2bpp.lz"
+INCBIN "gfx/tilesets/driftveil.,driftveil_extra.2bpp.lz"
 
 TilesetForestMeta:
 INCBIN "data/tilesets/forest_metatiles.bin"
@@ -378,7 +378,7 @@ TilesetBridgeColl:
 INCLUDE "data/tilesets/bridge_collision.asm"
 
 TilesetJohtoAirportGFX:
-INCBIN "gfx/tilesets/johto_airport.2bpp.lz"
+INCBIN "gfx/tilesets/johto_airport.,johto_airport_extra.2bpp.lz"
 
 TilesetJohtoAirportMeta:
 INCBIN "data/tilesets/johto_airport_metatiles.bin"
@@ -656,10 +656,10 @@ TilesetCasteliaAttr:
 INCBIN "data/tilesets/castelia_attributes.bin"
 
 TilesetDriftveilExtraGFX::
-INCBIN "gfx/tilesets/tiles.driftveil,extra.2bpp.lz"
+INCBIN "gfx/tilesets/driftveil_extra.2bpp.lz"
 
 TilesetMistraltonExtraGFX::
-INCBIN "gfx/tilesets/tiles.johto_airport,extra.2bpp.lz"
+INCBIN "gfx/tilesets/johto_airport_extra.2bpp.lz"
 
 TilesetAirportGFX:
 INCBIN "gfx/tilesets/airport.2bpp.lz"
