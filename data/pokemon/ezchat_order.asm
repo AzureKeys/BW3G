@@ -91,5 +91,5 @@ EZChat_SortedPokemon:
 .ru:       db -1
 .re:       db -1
 .ro:       db  -1
-.wa:       db  ;, -1
+.wa:       db  -1
 .end:      db -1

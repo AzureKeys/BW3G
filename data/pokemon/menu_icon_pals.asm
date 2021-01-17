@@ -8,7 +8,7 @@ MonMenuIconPals:
 	icon_pals GREEN,	TEAL ; SNIVY
 	icon_pals GREEN,	TEAL ; IVYSAUR
 	icon_pals GREEN,	TEAL ; VENUSAUR
-	icon_pals RED,		RED, ; TEPIG
+	icon_pals RED,		RED ; TEPIG
 	icon_pals RED,		RED ; CHARMELEON
 	icon_pals RED,		BLUE ; CHARIZARD
 	icon_pals BLUE,		PURPLE ; OSHAWOTT

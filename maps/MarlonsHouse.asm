@@ -48,13 +48,13 @@ WifeScript:
 	closetext
 	end
 	
-WifeMarlonInGymScript
+WifeMarlonInGymScript:
 	writetext WifeText_MarlonInGym
 	waitbutton
 	closetext
 	end
 	
-WifeFindMarlonScript
+WifeFindMarlonScript:
 	writetext WifeText_FindMarlon
 	waitbutton
 	closetext

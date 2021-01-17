@@ -255,7 +255,7 @@ LoadMonPaletteAsNthBGPal:
 	inc hl
 	inc hl
 
-got_palette_pointer_8bd7
+got_palette_pointer_8bd7:
 	push hl
 	ld hl, wBGPals1
 	ld de, 1 palettes

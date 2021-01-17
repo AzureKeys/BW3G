@@ -140,7 +140,7 @@ TrainerHarlequinCasteliaGym3:
 	closetext
 	end
 
-TrainerHarlequinCasteliaGym4
+TrainerHarlequinCasteliaGym4:
 	trainer HARLEQUIN, HARLEQUIN_CASTELIA_GYM_4, EVENT_BEAT_HARLEQUIN_CASTELIA_GYM_4, HarlequinCasteliaGym4SeenText, HarlequinCasteliaGym4BeatenText, 0, .Script
 
 .Script:
