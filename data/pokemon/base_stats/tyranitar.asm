@@ -1,0 +1,21 @@
+	db TYRANITAR ; 248
+
+	db 100, 134, 110,  61,  95, 100
+	;   hp  atk  def  spd  sat  sdf
+
+	db ROCK, DARK ; type
+	db 45 ; catch rate
+	db 218 ; base exp
+	db NO_ITEM, NO_ITEM ; items
+	db GENDER_F50 ; gender ratio
+	db 100 ; unknown 1
+	db 40 ; step cycles to hatch
+	db 5 ; unknown 2
+	INCBIN "gfx/pokemon/tyranitar/front.dimensions"
+	db 0, 0, 0, 0 ; padding
+	db GROWTH_SLOW ; growth rate
+	dn EGG_MONSTER, EGG_MONSTER ; egg groups
+
+	; tm/hm learnset
+	tmhm GIGA_IMPACT, DRAGON_CLAW, ROAR, TOXIC, HIDDEN_POWER, SUNNY_DAY, ICE_BEAM, BLIZZARD, HYPER_BEAM, PROTECT, RAIN_DANCE, THUNDER_WAVE, STONE_EDGE, THUNDERBOLT, THUNDER, EARTHQUAKE, RETURN, DIG, BULLDOZE, DOUBLE_TEAM, FLAMETHROWER, SANDSTORM, FIRE_BLAST, ROCK_TOMB, SHADOW_CLAW, REST, ATTRACT, ROCK_SLIDE, FOCUS_BLAST, CUT, SURF, STRENGTH, IRON_DEFENSE, IRON_TAIL, FIRE_PUNCH, OUTRAGE, HONE_CLAWS, AQUA_TAIL, ICE_PUNCH, DRAGON_PULSE, DARK_PULSE, LOW_KICK, EARTH_POWER, THUNDERPUNCH
+	; end

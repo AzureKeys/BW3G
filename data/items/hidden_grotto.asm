@@ -1,0 +1,17 @@
+HiddenGrottoItems:
+; entries correspond to HIDDENGROTTO* constants
+	db RED_SHARD    ; R22
+	db BLUE_SHARD   ; R13
+	db GREEN_SHARD  ; LOSTLORN
+	db YELLOW_SHARD ; R5
+	db BLUE_SHARD   ; R19
+	db RED_SHARD    ; FLOCCESY
+	db GREEN_SHARD  ; PINWHEEL
+	db BLUE_SHARD   ; R3
+	db YELLOW_SHARD ; R2
+	db RED_SHARD    ; R18
+	db GREEN_SHARD  ; GIANT_CHASM
+	db BLUE_SHARD   ; R6
+	db YELLOW_SHARD ; R23
+	db RED_SHARD    ; R7
+	

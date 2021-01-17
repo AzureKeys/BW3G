@@ -1,0 +1,81 @@
+; BG
+	RGB 00, 00, 00
+	RGB 31, 31, 31
+	RGB 17, 17, 19
+	RGB 00, 00, 00
+; Suicune^
+	RGB 00, 00, 00
+	RGB 25, 25, 25
+	RGB 13, 13, 13
+	RGB 31, 31, 31
+; Crystal Version Text^
+	RGB 00, 00, 00
+	RGB 31, 31, 31
+	RGB 31, 21, 00
+	RGB 00, 00, 17
+; Pkmn Logo 1^
+	RGB 00, 00, 00
+	RGB 31, 31, 31
+	RGB 31, 21, 00
+	RGB 00, 00, 17
+; Pkmn Logo 2^
+	RGB 00, 00, 00
+	RGB 31, 31, 31
+	RGB 31, 21, 00
+	RGB 00, 00, 17
+; Pkmn Logo 3^
+	RGB 00, 00, 00
+	RGB 31, 31, 31
+	RGB 31, 21, 00
+	RGB 00, 00, 17
+; Pkmn Logo 4^
+	RGB 00, 00, 00
+	RGB 31, 31, 31
+	RGB 31, 21, 00
+	RGB 00, 00, 17
+; Pkmn Logo 5^
+	RGB 00, 00, 00
+	RGB 11, 11, 19
+	RGB 31, 31, 31
+	RGB 00, 00, 00
+; Game Freak Copyright^
+; OBJ
+	RGB 00, 00, 00
+	RGB 23, 11, 31
+	RGB 17, 07, 19
+	RGB 31, 31, 31
+; Crystal^
+	RGB 31, 31, 31
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+
+	RGB 31, 31, 31
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+
+	RGB 31, 31, 31
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+
+	RGB 31, 31, 31
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+
+	RGB 31, 31, 31
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+
+	RGB 31, 31, 31
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+
+	RGB 31, 31, 31
+	RGB 00, 00, 00
+	RGB 00, 00, 00
+	RGB 00, 00, 00
