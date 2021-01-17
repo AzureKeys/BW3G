@@ -7,17 +7,7 @@ BattleTowerText::
 	push af
 	ld a, BANK(wBT_OTTrainerClass)
 	ldh [rSVBK], a
-if DEF(_CRYSTAL11)
 	ld hl, wBT_OTTrainerClass
-else
-; BUG ALERT
-; Instead of loading the Trainer Class, this routine
-; loads the 6th character in the Trainer's name, then
-; uses it to get the gender of the trainer.
-; As a consequence, the enemy trainer's dialog will
-; always be sampled from the female array.
-	ld hl, wBT_OTName + NAME_LENGTH_JAPANESE - 1
-endc
 	ld a, [hl]
 	dec a
 	ld e, a

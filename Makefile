@@ -1,6 +1,6 @@
-roms := bw3genesis.gbc bw3genesis11.gbc
+roms := bw3genesis.gbc
 
-crystal_obj := \
+genesis_obj := \
 audio.o \
 home.o \
 main.o \
@@ -15,8 +15,6 @@ engine/overworld/events.o \
 gfx/pics.o \
 gfx/sprites.o \
 lib/mobile/main.o
-
-crystal11_obj := $(crystal_obj:.o=11.o)
 
 
 ### Build tools
@@ -42,23 +40,22 @@ RGBLINK ?= $(RGBDS)rgblink
 ### Build targets
 
 .SUFFIXES:
-.PHONY: all crystal crystal11 clean tidy compare tools
+.PHONY: all genesis clean tidy compare tools
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
 
-all: crystal
-crystal: bw3genesis.gbc
-crystal11: bw3genesis11.gbc
+all: genesis
+genesis: bw3genesis.gbc
 
 clean:
-	rm -f $(roms) $(crystal_obj) $(crystal11_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym)
+	rm -f $(roms) $(genesis_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym)
 	find gfx \( -name "*.[12]bpp" -o -name "*.lz" -o -name "*.gbcpal" \) -delete
 	find gfx/pokemon -mindepth 1 ! -path "gfx/pokemon/unown/*" \( -name "bitmask.asm" -o -name "frames.asm" -o -name "front.animated.tilemap" -o -name "front.dimensions" \) -delete
 	$(MAKE) clean -C tools/
 
 tidy:
-	rm -f $(roms) $(crystal_obj) $(crystal11_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym)
+	rm -f $(roms) $(genesis_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym)
 	$(MAKE) clean -C tools/
 
 compare: $(roms)
@@ -68,15 +65,12 @@ tools:
 	$(MAKE) -C tools/
 
 
-$(crystal_obj):   RGBASMFLAGS = -D _CRYSTAL
-$(crystal11_obj): RGBASMFLAGS = -D _CRYSTAL -D _CRYSTAL11
-
 # The dep rules have to be explicit or else missing files won't be reported.
 # As a side effect, they're evaluated immediately instead of when the rule is invoked.
 # It doesn't look like $(shell) can be deferred so there might not be a better way.
 define DEP
 $1: $2 $$(shell tools/scan_includes $2)
-	$$(RGBASM) $$(RGBASMFLAGS) -L -o $$@ $$<
+	$$(RGBASM) -L -o $$@ $$<
 endef
 
 # Build tools when building the rom.
@@ -85,21 +79,15 @@ ifeq (,$(filter clean tools,$(MAKECMDGOALS)))
 
 $(info $(shell $(MAKE) -C tools))
 
-$(foreach obj, $(crystal11_obj), $(eval $(call DEP,$(obj),$(obj:11.o=.asm))))
-$(foreach obj, $(crystal_obj), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
+$(foreach obj, $(genesis_obj), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
 
 endif
 
 
-bw3genesis.gbc: $(crystal_obj) layout.link
-	$(RGBLINK) -n bw3genesis.sym -m bw3genesis.map -l layout.link -o $@ $(crystal_obj)
+bw3genesis.gbc: $(genesis_obj) layout.link
+	$(RGBLINK) -n bw3genesis.sym -m bw3genesis.map -l layout.link -o $@ $(genesis_obj)
 	$(RGBFIX) -Cjv -i BYTE -k 01 -l 0x33 -m 0x10 -p 0 -r 3 -t PM_CRYSTAL $@
 	tools/sort_symfile.sh bw3genesis.sym
-
-bw3genesis11.gbc: $(crystal11_obj) layout.link
-	$(RGBLINK) -n bw3genesis11.sym -m bw3genesis11.map -l layout.link -o $@ $(crystal11_obj)
-	$(RGBFIX) -Cjv -i BYTE -k 01 -l 0x33 -m 0x10 -n 1 -p 0 -r 3 -t PM_CRYSTAL $@
-	tools/sort_symfile.sh bw3genesis11.sym
 
 
 ### Pokemon pic animation rules

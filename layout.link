@@ -302,9 +302,6 @@ ROMX $7d
 	"Mobile News Data"
 ROMX $7e
 	"Crystal Events"
-ROMX $7f
-	org $7de0
-	"Mobile Stadium 2"
 WRAM0
 	"Stack"
 	"Audio RAM"

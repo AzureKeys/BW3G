@@ -892,11 +892,7 @@ GameBoyN64GFX:
 INCBIN "gfx/trade/game_boy_n64.2bpp"
 
 Tilemap_1733af:
-if DEF(_CRYSTAL11)
-INCBIN "gfx/unknown/1733af_corrupt.tilemap"
-else
 INCBIN "gfx/unknown/1733af.tilemap"
-endc
 
 Attrmap_173517:
 INCBIN "gfx/unknown/173517.attrmap"
