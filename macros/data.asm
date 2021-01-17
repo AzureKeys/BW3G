@@ -81,11 +81,6 @@ rept _NARG
 endr
 ENDM
 
-dba_pic: MACRO ; dbw bank, address
-	db BANK(\1) - PICS_FIX
-	dw \1
-ENDM
-
 dbpixel: MACRO
 if _NARG >= 4
 ; x tile, x pxl, y tile, y pxl

@@ -700,17 +700,3 @@ RyokuPic:            INCBIN "gfx/trainers/ryoku.2bpp.lz"
 VeteranPic:          INCBIN "gfx/trainers/veteran.2bpp.lz"
 BiancaPic:           INCBIN "gfx/trainers/oak.2bpp.lz"
 MysterymanPic:       INCBIN "gfx/trainers/mysteryman.2bpp.lz"
-
-
-; Sections "Pics 20" to "Pics 24" are not used for any graphics,
-; but entries for their banks exist in FixPicBank (see engine/gfx/load_pics.asm).
-
-SECTION "Pics 20", ROMX
-
-SECTION "Pics 21", ROMX
-
-SECTION "Pics 22", ROMX
-
-SECTION "Pics 23", ROMX
-
-SECTION "Pics 24", ROMX
