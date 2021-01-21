@@ -1577,7 +1577,7 @@ UnknownText_0x1bd731::
 UnknownText_0x1bd745::
 	text "Thank you for"
 	line "helping me find"
-	line "@"
+	cont "@"
 	text_ram wStringBuffer1
 	text "."
 
