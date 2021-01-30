@@ -354,7 +354,7 @@
 	charmap "ゥ", $ea
 	charmap "ェ", $eb
 
-	charmap "円", $f0
+	charmap "円", $ec;$f0
 
 	charmap "．", $f2
 	charmap "／", $f3

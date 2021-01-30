@@ -1,4 +1,4 @@
-NewPokedexOrder:
+OldPokedexOrder:
 	db SNIVY      ; 01
 	db SERVINE    ; 02
 	db SERPERIOR  ; 03

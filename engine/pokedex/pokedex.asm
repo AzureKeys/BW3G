@@ -1531,7 +1531,9 @@ Pokedex_PrintNumberIfOldMode:
 	push hl
 	ld de, -SCREEN_WIDTH
 	add hl, de
-	ld de, wTempSpecies
+	;ld de, wTempSpecies
+	call Pokedex_GetDexNumber
+	ld de, wUnusedBCDNumber
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 3
 	call PrintNum
 	pop hl
@@ -1607,6 +1609,27 @@ Pokedex_CheckSeen:
 	pop hl
 	pop de
 	ret
+	
+Pokedex_GetDexNumber:
+; Get the intended number of the selected Pokémon.
+	push bc
+	push hl
+	
+	ld a, [wTempSpecies] ;a = current mon (internal number)
+	ld b, a ;b = Needed mon (a and b must be matched)
+	ld c, 0 ;c = index
+	ld hl,OldPokedexOrder
+	
+.loop
+	inc c
+	ld a, [hli]
+	cp b
+	jr nz, .loop
+	ld a, c
+	ld [wUnusedBCDNumber], a
+	pop hl
+	pop bc
+	ret
 
 Pokedex_OrderMonsByMode:
 	ld hl, wPokedexOrder
@@ -1625,6 +1648,7 @@ Pokedex_OrderMonsByMode:
 
 .NewMode:
 	ld de, NewPokedexOrder
+.do_dex
 	ld hl, wPokedexOrder
 	ld c, NUM_POKEMON
 .loopnew
@@ -1637,16 +1661,18 @@ Pokedex_OrderMonsByMode:
 	ret
 
 .OldMode:
-	ld hl, wPokedexOrder
-	ld a, $1
-	ld c, NUM_POKEMON
-.loopold
-	ld [hli], a
-	inc a
-	dec c
-	jr nz, .loopold
-	call .FindLastSeen
-	ret
+	; ld hl, wPokedexOrder
+	; ld a, $1
+	; ld c, NUM_POKEMON
+; .loopold
+	; ld [hli], a
+	; inc a
+	; dec c
+	; jr nz, .loopold
+	; call .FindLastSeen
+	; ret
+	ld de, OldPokedexOrder
+	jr .do_dex
 
 .FindLastSeen:
 	ld hl, wPokedexOrder + NUM_POKEMON - 1
@@ -1704,6 +1730,8 @@ Pokedex_ABCMode:
 INCLUDE "data/pokemon/dex_order_alpha.asm"
 
 INCLUDE "data/pokemon/dex_order_new.asm"
+
+INCLUDE "data/pokemon/dex_order_old.asm"
 
 Pokedex_DisplayModeDescription:
 	xor a

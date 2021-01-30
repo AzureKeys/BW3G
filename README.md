@@ -29,4 +29,4 @@ CREDITS:
  - Custom trainer sprites by Solo993, JaceDeane, and Azure_Keys.
  - Special thanks to the Pokecrystal Pret community and their wiki tutorials.
  - Special thanks to Rangi's PolishedMap and Tilemap Studio software.
- - Special thanks to Rangi, FiQ, Luna, Bloodless, and many others for coding help and general assistance.
+ - Special thanks to Rangi, FIQ, Luna, Bloodless, and many others for coding help and general assistance.

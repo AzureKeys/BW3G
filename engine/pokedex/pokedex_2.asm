@@ -96,7 +96,9 @@ DisplayDexEntry:
 	ld [hli], a
 	ld a, $5d ; .
 	ld [hli], a
-	ld de, wTempSpecies
+	;ld de, wTempSpecies
+	call Pokedex_GetDexNumber
+	ld de, wUnusedBCDNumber
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 3
 	call PrintNum
 ; Check to see if we caught it.  Get out of here if we haven't.
