@@ -118,20 +118,20 @@ JohtoWaterWildMons:
 	
 	map_id R_1
 	db 4 percent ; encounter rate
-	db 15, DUCKLETT
-	db 20, FRILLISH
+	db 15, FRILLISH
+	db 20, SPHEAL
 	db 15, MANTYKE
 	
 	map_id R_17
 	db 4 percent ; encounter rate
-	db 15, DUCKLETT
-	db 20, FRILLISH
+	db 15, FRILLISH
+	db 20, SPHEAL
 	db 15, MANTYKE
 	
 	map_id R_18
 	db 4 percent ; encounter rate
-	db 15, DUCKLETT
-	db 20, FRILLISH
+	db 15, FRILLISH
+	db 20, SPHEAL
 	db 15, MANTYKE
 	
 	map_id CASTELIA_SEWERS
@@ -140,17 +140,17 @@ JohtoWaterWildMons:
 	db 20, CORPHISH
 	db 15, CORPHISH
 	
-	map_id R_21
-	db 4 percent ; encounter rate
-	db 15, FRILLISH
-	db 20, DUCKLETT
-	db 15, SPHEAL
-	
 	map_id R_6
 	db 4 percent ; encounter rate
 	db 15, BASCULIN
 	db 20, REMORAID
 	db 15, REMORAID
+	
+	map_id R_21
+	db 4 percent ; encounter rate
+	db 15, FRILLISH
+	db 20, SPHEAL
+	db 15, SPHEAL
 	
 	map_id SEASIDE_CAVE_1F
 	db 4 percent ; encounter rate

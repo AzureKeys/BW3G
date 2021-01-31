@@ -24,59 +24,59 @@ FishGroups:
 .Shore_Old:
 	db  70 percent + 1, TYMPOLE,   10
 	db  85 percent + 1, TYMPOLE,   10
-	db 100 percent,     CORPHISH,     10
+	db 100 percent,     REMORAID,     10
 .Shore_Good:
-	db  35 percent,     TYMPOLE,   20
-	db  70 percent,     CORPHISH,     20
-	db  90 percent + 1, CORPHISH,     20
+	db  35 percent,     REMORAID,   20
+	db  70 percent,     FRILLISH,     20
+	db  90 percent + 1, FRILLISH,     20
 	db 100 percent,     time_group 0
 .Shore_Super:
-	db  40 percent,     CORPHISH,     40
+	db  40 percent,     JELLICENT,     40
 	db  70 percent,     time_group 1
-	db  90 percent + 1, CORPHISH,     40
-	db 100 percent,     CRAWDAUNT,    40
+	db  90 percent + 1, JELLICENT,     40
+	db 100 percent,     OCTILLERY,    40
 
 .Ocean_Old:
-	db  70 percent + 1, FRILLISH,   10
-	db  85 percent + 1, FRILLISH,   10
-	db 100 percent,     MANTYKE,  10
+	db  70 percent + 1, TYMPOLE,   10
+	db  85 percent + 1, TYMPOLE,   10
+	db 100 percent,     CORPHISH,  10
 .Ocean_Good:
-	db  35 percent,     FRILLISH,   20
-	db  70 percent,     MANTYKE,  20
-	db  90 percent + 1, MANTYKE,   20
+	db  35 percent,     CORPHISH,   20
+	db  70 percent,     FRILLISH,  20
+	db  90 percent + 1, FRILLISH,   20
 	db 100 percent,     time_group 2
 .Ocean_Super:
-	db  40 percent,     STARYU,   40
+	db  40 percent,     JELLICENT,   40
 	db  70 percent,     time_group 3
-	db  90 percent + 1, STARYU, 40
-	db 100 percent,     JELLICENT,    40
+	db  90 percent + 1, JELLICENT, 40
+	db 100 percent,     CRAWDAUNT,    40
 
 .Lake_Old:
 	db  70 percent + 1, TYMPOLE,   10
 	db  85 percent + 1, TYMPOLE,   10
-	db 100 percent,     REMORAID,    10
+	db 100 percent,     MANTYKE,    10
 .Lake_Good:
-	db  35 percent,     REMORAID,   20
-	db  70 percent,     BASCULIN,    20
-	db  90 percent + 1, BASCULIN,    20
+	db  35 percent,     MANTYKE,   20
+	db  70 percent,     HORSEA,    20
+	db  90 percent + 1, HORSEA,    20
 	db 100 percent,     time_group 4
 .Lake_Super:
-	db  40 percent,     BASCULIN,    40
+	db  40 percent,     HORSEA,    40
 	db  70 percent,     time_group 5
-	db  90 percent + 1, HORSEA,   40
-	db 100 percent,     OCTILLERY,    40
+	db  90 percent + 1, STUNFISK,   40
+	db 100 percent,     MANTINE,    40
 
 .Pond_Old:
 	db  70 percent + 1, TYMPOLE,   10
 	db  85 percent + 1, TYMPOLE,   10
-	db 100 percent,     TYNAMO,    10
+	db 100 percent,     BASCULIN,    10
 .Pond_Good:
 	db  35 percent,     TYNAMO,   20
 	db  70 percent,     TYNAMO,    20
-	db  90 percent + 1, PALPITOAD,    20
+	db  90 percent + 1, BASCULIN,    20
 	db 100 percent,     time_group 6
 .Pond_Super:
-	db  40 percent,     PALPITOAD,    40
+	db  40 percent,     BASCULIN,    40
 	db  70 percent,     time_group 7
 	db  90 percent + 1, EELEKTRIK,   40
 	db 100 percent,     EELEKTRIK,    40
@@ -206,14 +206,14 @@ FishGroups:
 
 TimeFishGroups:
 	;  day              nite
-	db CORSOLA,    20,  CORSOLA,     20 ; 0
-	db CORSOLA,    40,  CORSOLA,     40 ; 1
-	db STARYU,   20,  STARYU,   20 ; 2
-	db MANTINE,   40,  MANTINE,   40 ; 3
-	db HORSEA,    20,  HORSEA,    20 ; 4
-	db HORSEA,    40,  HORSEA,    40 ; 5
-	db STUNFISK,    20,  STUNFISK,    20 ; 6
-	db STUNFISK,    40,  STUNFISK,    40 ; 7
+	db STARYU,    20,  STARYU,     20 ; 0
+	db STARYU,    40,  STARYU,     40 ; 1
+	db CORSOLA,   20,  CORSOLA,   20 ; 2
+	db CORSOLA,   40,  CORSOLA,   40 ; 3
+	db BASCULIN,    20,  BASCULIN,    20 ; 4
+	db STUNFISK,    40,  STUNFISK,    40 ; 5
+	db PALPITOAD,    20,  PALPITOAD,    20 ; 6
+	db PALPITOAD,    40,  PALPITOAD,    40 ; 7
 	db DRATINI,    20,  DRATINI,    20 ; 8
 	db EELEKTRIK,    40,  EELEKTRIK,    40 ; 9
 	db STUNFISK,   20,  STUNFISK,   20 ; 10
