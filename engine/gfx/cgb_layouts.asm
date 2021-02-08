@@ -626,10 +626,10 @@ _CGB_UnownPuzzle:
 
 _CGB_TrainerCard:
 	ld de, wBGPals1
-	xor a ; CHRIS
+	xor a ; CHRIS/MARLON
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, KRIS ; FAULKNER
+	ld a, KRIS
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
 	ld a, SHAUNTAL
@@ -638,7 +638,7 @@ _CGB_TrainerCard:
 	ld a, BURGH
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, ROXIE
+	ld a, ROXIE ; CHEREN
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
 	ld a, SKYLA
@@ -647,7 +647,7 @@ _CGB_TrainerCard:
 	ld a, CILAN
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, MARLON
+	ld a, DRAYDEN
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
 	ld a, PREDEFPAL_CGB_BADGE
@@ -674,12 +674,9 @@ _CGB_TrainerCard:
 	ld a, $1 ; kris
 .got_gender2
 	call FillBoxCGB
-	; top-right corner still uses the border's palette
-	hlcoord 18, 1, wAttrMap
-	ld [hl], $1
 	hlcoord 3, 10, wAttrMap
 	lb bc, 3, 3
-	ld a, $7 ; marlon
+	xor a ; chris/marlon
 	call FillBoxCGB
 	hlcoord 7, 10, wAttrMap
 	lb bc, 3, 3
@@ -705,23 +702,18 @@ _CGB_TrainerCard:
 	lb bc, 3, 3
 	ld a, $5 ; skyla
 	call FillBoxCGB
-	; clair uses kris's palette
-	; ld a, [wPlayerGender]
-	; and a
-	; push af
-	; jr z, .got_gender3
 	hlcoord 15, 13, wAttrMap
 	lb bc, 3, 3
-	ld a, $1 ; clair
+	ld a, $7 ; drayden
 	call FillBoxCGB
-.got_gender3
-	pop af
-	ld c, $0
-	jr nz, .got_gender4
-	inc c
-.got_gender4
-	ld a, c
+	; top-right corner still uses the border's palette
 	hlcoord 18, 1, wAttrMap
+	ld a, [wPlayerGender]
+	and a
+	ld a, $1 ; KRIS
+	jr z, .got_gender3
+	xor a ; CHRIS
+.got_gender3
 	ld [hl], a
 	call ApplyAttrMap
 	call ApplyPals

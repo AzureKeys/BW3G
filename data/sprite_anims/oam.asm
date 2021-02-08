@@ -66,8 +66,8 @@ SpriteAnimOAMData:
 	dbw $00, .OAMData_PartyMonWithMail2        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_MAIL_2
 	dbw $00, .OAMData_PartyMonWithItem1        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_ITEM_1
 	dbw $00, .OAMData_PartyMonWithItem2        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_ITEM_2
-	dbw $00, .OAMData_MagnetTrainRed           ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_RED_1
-	dbw $04, .OAMData_MagnetTrainRed           ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_RED_2
+	dbw $00, .OAMData_MagnetTrainBlueD         ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_RED_1
+	dbw $04, .OAMData_MagnetTrainBlueD         ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_RED_2
 	dbw $00, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_43
 	dbw $30, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_44
 	dbw $03, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_45
@@ -100,10 +100,10 @@ SpriteAnimOAMData:
 	dbw $00, .OAMData_EZChatCursor5            ; SPRITE_ANIM_OAMSET_EZCHAT_CURSOR_5
 	dbw $00, .OAMData_EZChatCursor6            ; SPRITE_ANIM_OAMSET_EZCHAT_CURSOR_6
 	dbw $00, .OAMData_EZChatCursor7            ; SPRITE_ANIM_OAMSET_EZCHAT_CURSOR_7
-	dbw $00, .OAMData_BlueWalk                 ; SPRITE_ANIM_OAMSET_BLUE_WALK_1
-	dbw $04, .OAMData_BlueWalk                 ; SPRITE_ANIM_OAMSET_BLUE_WALK_2
-	dbw $00, .OAMData_MagnetTrainBlue          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_BLUE_1
-	dbw $04, .OAMData_MagnetTrainBlue          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_BLUE_2
+	dbw $00, .OAMData_RedDWalk                 ; SPRITE_ANIM_OAMSET_BLUE_WALK_1
+	dbw $04, .OAMData_RedDWalk                 ; SPRITE_ANIM_OAMSET_BLUE_WALK_2
+	dbw $00, .OAMData_MagnetTrainRedD          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_BLUE_1
+	dbw $04, .OAMData_MagnetTrainRedD          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_BLUE_2
 	dbw $20, .OAMData_MobileTradeCableBulge    ; SPRITE_ANIM_OAMSET_MOBILE_TRADE_CABLE_BULGE_1
 	dbw $21, .OAMData_MobileTradeCableBulge    ; SPRITE_ANIM_OAMSET_MOBILE_TRADE_CABLE_BULGE_2
 	dbw $22, .OAMData_MobileTradePing1         ; SPRITE_ANIM_OAMSET_MOBILE_TRADE_PING_1
@@ -143,6 +143,8 @@ SpriteAnimOAMData:
 	dbw $00, .OAMData_GameFreakLogo4_11        ; SPRITE_ANIM_OAMSET_GAMEFREAK_LOGO_11
 	dbw $00, .OAMData_PartyMon                 ; SPRITE_ANIM_OAMSET_PARTY_MON_1
 	dbw $04, .OAMData_PartyMon                 ; SPRITE_ANIM_OAMSET_PARTY_MON_2
+	dbw $00, .OAMData_BlueDWalk                ; SPRITE_ANIM_OAMSET_BLUE_WALK_1
+	dbw $04, .OAMData_BlueDWalk                ; SPRITE_ANIM_OAMSET_BLUE_WALK_2
 
 .OAMData_1x1_Palette0:
 	db 1
@@ -749,19 +751,33 @@ SpriteAnimOAMData:
 	dsprite  0,  0,  0,  0, $32, 0
 	dsprite  1,  0,  0,  0, $35, 0
 
-.OAMData_BlueWalk:
+.OAMData_RedDWalk:
 	db 4
-	dsprite -1,  0, -1,  0, $00, PAL_OW_BLUE
-	dsprite -1,  0,  0,  0, $01, PAL_OW_BLUE
-	dsprite  0,  0, -1,  0, $02, PAL_OW_BLUE
-	dsprite  0,  0,  0,  0, $03, PAL_OW_BLUE
+	dsprite -1,  0, -1,  0, $00, PAL_OW_RED_D
+	dsprite -1,  0,  0,  0, $01, PAL_OW_RED_D
+	dsprite  0,  0, -1,  0, $02, PAL_OW_RED_D
+	dsprite  0,  0,  0,  0, $03, PAL_OW_RED_D
 
-.OAMData_MagnetTrainBlue:
+.OAMData_BlueDWalk:
 	db 4
-	dsprite -1,  0, -1,  0, $00, PAL_OW_BLUE | PRIORITY
-	dsprite -1,  0,  0,  0, $01, PAL_OW_BLUE | PRIORITY
-	dsprite  0,  0, -1,  0, $02, PAL_OW_BLUE | PRIORITY
-	dsprite  0,  0,  0,  0, $03, PAL_OW_BLUE | PRIORITY
+	dsprite -1,  0, -1,  0, $00, PAL_OW_BLUE_D
+	dsprite -1,  0,  0,  0, $01, PAL_OW_BLUE_D
+	dsprite  0,  0, -1,  0, $02, PAL_OW_BLUE_D
+	dsprite  0,  0,  0,  0, $03, PAL_OW_BLUE_D
+
+.OAMData_MagnetTrainRedD:
+	db 4
+	dsprite -1,  0, -1,  0, $00, PAL_OW_RED_D | PRIORITY
+	dsprite -1,  0,  0,  0, $01, PAL_OW_RED_D | PRIORITY
+	dsprite  0,  0, -1,  0, $02, PAL_OW_RED_D | PRIORITY
+	dsprite  0,  0,  0,  0, $03, PAL_OW_RED_D | PRIORITY
+
+.OAMData_MagnetTrainBlueD:
+	db 4
+	dsprite -1,  0, -1,  0, $00, PAL_OW_BLUE_D | PRIORITY
+	dsprite -1,  0,  0,  0, $01, PAL_OW_BLUE_D | PRIORITY
+	dsprite  0,  0, -1,  0, $02, PAL_OW_BLUE_D | PRIORITY
+	dsprite  0,  0,  0,  0, $03, PAL_OW_BLUE_D | PRIORITY
 
 .OAMData_MobileTradeCableBulge:
 	db 1

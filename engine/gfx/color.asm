@@ -708,6 +708,9 @@ GetPlayerOrMonPalettePointer:
 	ld a, [wPlayerSpriteSetupFlags]
 	bit PLAYERSPRITESETUP_FEMALE_TO_MALE_F, a
 	jr nz, .male
+	ld a, [wBattleType]
+	cp BATTLETYPE_TUTORIAL
+	jr z, .dude
 	ld a, [wPlayerGender]
 	and a
 	jr z, .male
@@ -716,6 +719,10 @@ GetPlayerOrMonPalettePointer:
 
 .male
 	ld hl, PlayerPalette
+	ret
+	
+.dude
+	ld hl, DudePalette
 	ret
 
 GetFrontpicPalettePointer:

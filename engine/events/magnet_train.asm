@@ -312,7 +312,7 @@ MagnetTrain_Jumptable:
 	ld d, 10 * 8 + 5
 	ld a, [wMagnetTrainPlayerSpriteInitX]
 	ld e, a
-	ld b, SPRITE_ANIM_INDEX_MAGNET_TRAIN_RED
+	ld b, SPRITE_ANIM_INDEX_MAGNET_TRAIN_BLUE_D
 	ldh a, [rSVBK]
 	push af
 	ld a, BANK(wPlayerGender)
@@ -320,7 +320,7 @@ MagnetTrain_Jumptable:
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .got_gender
-	ld b, SPRITE_ANIM_INDEX_MAGNET_TRAIN_BLUE
+	ld b, SPRITE_ANIM_INDEX_MAGNET_TRAIN_RED_D
 
 .got_gender
 	pop af

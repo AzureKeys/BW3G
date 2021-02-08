@@ -6,8 +6,8 @@ ENDM
 
 OverworldSprites:
 ; entries correspond to SPRITE_* constants
-	overworld_sprite ChrisSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite ChrisBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite ChrisSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE_D
+	overworld_sprite ChrisBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE_D
 	overworld_sprite GameboyKidSpriteGFX, 12, STANDING_SPRITE, PAL_OW_GREEN
 	overworld_sprite SilverSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite OakSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
@@ -17,7 +17,7 @@ OverworldSprites:
 	overworld_sprite ElderSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite JanineSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite KurtSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
-	overworld_sprite MomSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite MomSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED_D
 	overworld_sprite BlaineSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite RedsMomSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite DaisySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
@@ -101,8 +101,8 @@ OverworldSprites:
 	overworld_sprite FruitTreeSpriteGFX, 4, STILL_SPRITE, PAL_OW_TREE
 	overworld_sprite GoldTrophySpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
 	overworld_sprite SilverTrophySpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
-	overworld_sprite KrisSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite KrisBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite KrisSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED_D
+	overworld_sprite KrisBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED_D
 	overworld_sprite KurtOutsideSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
 	overworld_sprite SuicuneSpriteGFX, 4, STILL_SPRITE, PAL_OW_BLUE
 	overworld_sprite EnteiSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED

@@ -29,14 +29,14 @@ SpawnPlayer:
 	call GetMapObject
 	ld hl, MAPOBJECT_COLOR
 	add hl, bc
-	ln e, PAL_NPC_RED, OBJECTTYPE_SCRIPT
+	ln e, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT
 	ld a, [wPlayerSpriteSetupFlags]
 	bit PLAYERSPRITESETUP_FEMALE_TO_MALE_F, a
 	jr nz, .ok
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .ok
-	ln e, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT
+	ln e, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT
 
 .ok
 	ld [hl], e
