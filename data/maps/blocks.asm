@@ -1504,4 +1504,7 @@ CelestialTowerRoof_Blocks:
 
 MistraltonAirport_Blocks:
 	INCBIN "maps/MistraltonAirport.ablk"
+
+VillageBridge_Blocks:
+	INCBIN "maps/VillageBridge.ablk"
 	

@@ -731,6 +731,9 @@ ENDM
 	map_const R_7_TRADE_HOUSE, 4, 4
 	
 	newgroup
+	map_const VILLAGE_BRIDGE, 34, 18
+	
+	newgroup
 	map_const R_23, 22, 26
 	map_const R_23_GATE, 5, 4
 	

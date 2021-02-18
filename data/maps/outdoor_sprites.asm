@@ -46,6 +46,7 @@ OutdoorSprites:
 	dw PwtGroupSprites
 	dw DriftveilGroupSprites
 	dw MistraltonGroupSprites
+	dw OpelucidGroupSprites
 	dw PkmnLeagueGroupSprites
 
 ; Route1 and ViridianCity are connected
@@ -195,7 +196,6 @@ HumilauGroupSprites:
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
-	db SPRITE_CABLE
 	db 0 ; end
 
 LacunosaGroupSprites:
@@ -286,6 +286,7 @@ CasteliaGroupSprites:
 	db SPRITE_SNEASEL
 	db SPRITE_SLEEPING_MAN
 	db SPRITE_POKE_BALL
+	db SPRITE_CABLE
 	db 0 ; end
 
 AspertiaGroupSprites:
@@ -431,6 +432,14 @@ MistraltonGroupSprites:
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
+	db 0 ; end
+
+OpelucidGroupSprites:
+; Opelucid City, R11, Village Bridge
+	; 8 of max 9 walking sprites
+	db SPRITE_FRUIT_TREE
+	db SPRITE_POKE_BALL
+	db SPRITE_CABLE
 	db 0 ; end
 
 PkmnLeagueGroupSprites:

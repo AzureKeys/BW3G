@@ -951,4 +951,5 @@ ENDM
 	map_attributes CelestialTower1F, CELESTIAL_TOWER_1F, $00, 0
 	map_attributes CelestialTower, CELESTIAL_TOWER, $00, 0
 	map_attributes CelestialTowerRoof, CELESTIAL_TOWER_ROOF, $a1, 0
+	map_attributes VillageBridge, VILLAGE_BRIDGE, $00, 0
 	

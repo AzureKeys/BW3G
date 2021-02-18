@@ -58,11 +58,11 @@ R12VillageBridgeGateOfficerText:
 Rt12VillageBridgeGate_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 4 ; warp events
 	warp_event  9,  4, R_12, 1
 	warp_event  9,  5, R_12, 2
-	;warp_event  0,  4, R_23, 4
-	;warp_event  0,  5, R_23, 5
+	warp_event  0,  4, VILLAGE_BRIDGE, 1
+	warp_event  0,  5, VILLAGE_BRIDGE, 2
 
 	db 2 ; coord events
 	coord_event  5,  4, SCENE_DEFAULT, R12VillageBridgeGateBridgeOutScript

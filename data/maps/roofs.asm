@@ -54,6 +54,7 @@ MapGroupRoofs:
 	db ROOF_HUMILAU   ; PWT
 	db ROOF_HUMILAU   ; Driftveil
 	db ROOF_HUMILAU   ; Mistralton
+	db ROOF_HUMILAU   ; Opelucid
 	db ROOF_HUMILAU   ; XX (PkmnLeague)
 
 Roofs:

@@ -78,6 +78,10 @@
 	RGB 05,17,21, 03,11,14 ; morn/day
 	RGB 02,08,15, 01,05,10 ; nite
 
+; group 30 (Opelucid)
+	RGB 05,17,21, 03,11,14 ; morn/day
+	RGB 02,08,15, 01,05,10 ; nite
+
 ; group XX (PkmnLeague)
 	RGB 22,20,10, 17,14,03 ; morn/day
 	RGB 11,11,05, 10,09,07 ; nite
