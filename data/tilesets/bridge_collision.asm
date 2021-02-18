@@ -231,3 +231,4 @@
 	tilecoll WATER, WATER, WATER, WATER ; e6
 	tilecoll WATER, WATER, WATER, WATER ; e7
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; e8
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; e9

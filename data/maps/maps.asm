@@ -59,6 +59,7 @@ MapGroupPointers::
 	dw MapGroup_Pwt
 	dw MapGroup_Driftveil
 	dw MapGroup_Mistralton
+	dw MapGroup_Opelucid
 	dw MapGroup_PkmnLeague  ; XX
 
 ;MapGroup_Olivine:
