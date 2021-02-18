@@ -377,15 +377,6 @@ INCBIN "data/tilesets/bridge_metatiles.bin"
 TilesetBridgeColl:
 INCLUDE "data/tilesets/bridge_collision.asm"
 
-TilesetJohtoAirportGFX:
-INCBIN "gfx/tilesets/johto_airport.,johto_airport_extra.2bpp.lz"
-
-TilesetJohtoAirportMeta:
-INCBIN "data/tilesets/johto_airport_metatiles.bin"
-
-TilesetJohtoAirportColl:
-INCLUDE "data/tilesets/johto_airport_collision.asm"
-
 TilesetJohtoBeachGFX:
 INCBIN "gfx/tilesets/johto_beach.2bpp.lz"
 
@@ -672,3 +663,12 @@ INCLUDE "data/tilesets/airport_collision.asm"
 
 TilesetAirportAttr:
 INCBIN "data/tilesets/airport_attributes.bin"
+
+TilesetJohtoAirportGFX:
+INCBIN "gfx/tilesets/johto_airport.,johto_airport_extra.2bpp.lz"
+
+TilesetJohtoAirportMeta:
+INCBIN "data/tilesets/johto_airport_metatiles.bin"
+
+TilesetJohtoAirportColl:
+INCLUDE "data/tilesets/johto_airport_collision.asm"

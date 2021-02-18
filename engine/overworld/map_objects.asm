@@ -144,7 +144,7 @@ Function437b:
 	ld hl, OBJECT_FLAGS1
 	add hl, bc
 	bit INVISIBLE_F, [hl]
-	jr nz, SetFacingStanding
+	jp nz, SetFacingStanding
 	ld hl, OBJECT_FLAGS2
 	add hl, bc
 	bit 6, [hl]
@@ -550,6 +550,8 @@ MapObjectMovementPattern:
 	dw .MovementBoulderDust ; 1a
 	dw .MovementShakingGrass ; 1b
 	dw .MovementSplashingPuddle
+	dw .MovementCableLeft
+	dw .MovementCableRight
 
 .Null_00:
 	ret
@@ -764,6 +766,26 @@ MapObjectMovementPattern:
 	ld hl, OBJECT_ACTION
 	add hl, bc
 	ld [hl], OBJECT_ACTION_BIG_DOLL_SYM
+	ld hl, OBJECT_STEP_TYPE
+	add hl, bc
+	ld [hl], STEP_TYPE_04
+	ret
+	
+.MovementCableLeft:
+	ld a, OBJECT_ACTION_CABLE_LEFT
+	jr .ActionA_StepType04
+	
+.MovementCableRight:
+	ld a, OBJECT_ACTION_CABLE_RIGHT
+	; fallthrough
+	
+.ActionA_StepType04
+	push af
+	call EndSpriteMovement
+	pop af
+	ld hl, OBJECT_ACTION
+	add hl, bc
+	ld [hl], a
 	ld hl, OBJECT_STEP_TYPE
 	add hl, bc
 	ld [hl], STEP_TYPE_04

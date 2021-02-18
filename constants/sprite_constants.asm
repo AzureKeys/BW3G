@@ -126,6 +126,7 @@
 	const SPRITE_ROOD
 	const SPRITE_FAN
 	const SPRITE_SKYLA
+	const SPRITE_CABLE
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $80

@@ -304,3 +304,19 @@ SpriteMovementData::
 	db WONT_DELETE | FIXED_FACING | SLIDING | EMOTE_OBJECT ; flags1
 	db HIGH_PRIORITY ; flags2
 	db 0 ; palette flags
+
+; SPRITEMOVEDATA_CABLE_LEFT
+	db SPRITEMOVEFN_CABLE_LEFT ; movement function
+	db DOWN ; facing
+	db OBJECT_ACTION_CABLE_LEFT ; action
+	db WONT_DELETE | FIXED_FACING | SLIDING | MOVE_ANYWHERE ; flags1
+	db HIGH_PRIORITY ; flags2
+	db 0 ; palette flags
+
+; SPRITEMOVEDATA_CABLE_RIGHT
+	db SPRITEMOVEFN_CABLE_RIGHT ; movement function
+	db DOWN ; facing
+	db OBJECT_ACTION_CABLE_RIGHT ; action
+	db WONT_DELETE | FIXED_FACING | SLIDING | MOVE_ANYWHERE ; flags1
+	db HIGH_PRIORITY ; flags2
+	db 0 ; palette flags

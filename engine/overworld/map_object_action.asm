@@ -18,6 +18,8 @@ ObjectActionPairPointers:
 	dw SetFacingGrassShake,            SetFacingStanding
 	dw SetFacingSkyfall,               SetFacingCurrent
 	dw SetFacingPuddleSplash,          SetFacingStanding
+	dw SetFacingCableLeft,             SetFacingCableLeft
+	dw SetFacingCableRight,            SetFacingCableRight
 
 SetFacingStanding:
 	ld hl, OBJECT_FACING_STEP
@@ -242,6 +244,18 @@ SetFacingBigDollAsym:
 	ld hl, OBJECT_FACING_STEP
 	add hl, bc
 	ld [hl], FACING_BIG_DOLL_ASYM
+	ret
+
+SetFacingCableLeft:
+	ld hl, OBJECT_FACING_STEP
+	add hl, bc
+	ld [hl], FACING_CABLE_LEFT
+	ret
+
+SetFacingCableRight:
+	ld hl, OBJECT_FACING_STEP
+	add hl, bc
+	ld [hl], FACING_CABLE_RIGHT
 	ret
 
 SetFacingBigDoll:
