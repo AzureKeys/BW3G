@@ -672,3 +672,15 @@ INCBIN "data/tilesets/johto_airport_metatiles.bin"
 
 TilesetJohtoAirportColl:
 INCLUDE "data/tilesets/johto_airport_collision.asm"
+
+TilesetOpelucidGFX:
+INCBIN "gfx/tilesets/opelucid.2bpp.lz"
+
+TilesetOpelucidMeta:
+INCBIN "data/tilesets/opelucid_metatiles.bin"
+
+TilesetOpelucidColl:
+INCLUDE "data/tilesets/opelucid_collision.asm"
+
+TilesetOpelucidAttr:
+INCBIN "data/tilesets/opelucid_attributes.bin"

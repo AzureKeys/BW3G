@@ -56,6 +56,7 @@ TilesetNimbasaAnim:
 TilesetParkAnim:
 TilesetJohtoWestAnim:
 TilesetDriftveilAnim:
+TilesetOpelucidAnim:
 	;dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

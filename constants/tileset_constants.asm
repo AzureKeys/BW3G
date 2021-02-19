@@ -52,6 +52,7 @@
 	const TILESET_PKMN_LEAGUE
 	const TILESET_CASTELIA
 	const TILESET_AIRPORT
+	const TILESET_OPELUCID
 
 ; bg palette values (see gfx/tilesets/*_palette_map.asm)
 ; TilesetBGPalette indexes (see gfx/tilesets/bg_tiles.pal)

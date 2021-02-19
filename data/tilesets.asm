@@ -63,3 +63,4 @@ Tilesets::
 	tileset TilesetPkmnLeague
 	tileset TilesetCastelia
 	tileset TilesetAirport
+	tileset TilesetOpelucid
