@@ -89,6 +89,8 @@ TrainerClassNames::
 	db "HEX MANIAC@"
 	db "HARLEQUIN@"
 	db "VETERAN@"
+	db "WAITER@"
+	db "WAITRESS@"
 	db "LEADER@"
 	db "LEADER@"
 	db "LEADER@"

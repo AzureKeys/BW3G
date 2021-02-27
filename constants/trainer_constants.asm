@@ -318,7 +318,6 @@ CHRIS EQU __enum__
 	
 	trainerclass BEAUTY_D
 	const BEAUTY_R4
-	const BEAUTY_STRIATON_GYM
 	const BEAUTY_CELESTIAL_TOWER
 
 	trainerclass POKEMANIAC ; 1e
@@ -663,7 +662,6 @@ CHRIS EQU __enum__
 	const PICNICKER_R14
 	const PICNICKER_LOSTLORN
 	const PICNICKER_DESERT
-	const PICNICKER_STRIATON_GYM_1
 	const CINDY
 	const HOPE
 	const SHARON
@@ -691,14 +689,12 @@ CHRIS EQU __enum__
 	const PICNICKER_REVERSAL
 	const PICNICKER_OUTSKIRTS
 	const PICNICKER_R4
-	const PICNICKER_STRIATON_GYM_2
 	const PICNICKER_R2
 	const PICNICKER_RELIC_PASSAGE
 	const PICNICKER_R6
 
 	trainerclass CAMPER ; 36
 	const CAMPER_REVERSAL
-	const CAMPER_STRIATON_GYM_1
 	const CAMPER_RELIC_PASSAGE
 	const ELLIOT
 	const BARRY
@@ -723,7 +719,6 @@ CHRIS EQU __enum__
 	trainerclass CAMPER_D
 	const CAMPER_R14
 	const CAMPER_DESERT
-	const CAMPER_STRIATON_GYM_2
 	const CAMPER_R6
 
 	trainerclass EXECUTIVEF ; 37
@@ -868,6 +863,15 @@ CHRIS EQU __enum__
 	trainerclass VETERAN
 	const VETERAN_SEASIDE_CAVE
 	const VETERAN_CHARGESTONE
+	
+	trainerclass WAITER
+	const WAITER_STRIATON_GYM_1
+	const WAITER_STRIATON_GYM_2
+	
+	trainerclass WAITRESS
+	const WAITRESS_STRIATON_GYM_1
+	const WAITRESS_STRIATON_GYM_2
+	const WAITRESS_STRIATON_GYM_3
 	
 	trainerclass MARLON
 	const MARLON1

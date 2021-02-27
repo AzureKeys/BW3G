@@ -91,6 +91,8 @@ TrainerPicPointers::
 	dba HexManiacPic
 	dba HarlequinPic
 	dba VeteranPic
+	dba WaiterPic
+	dba WaitressPic
 	dba MarlonPic
 	dba ShauntalPic
 	dba BurghPic

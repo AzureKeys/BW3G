@@ -91,6 +91,8 @@ TrainerGroups:
 	dba HexManiacGroup
 	dba HarlequinGroup
 	dba VeteranGroup
+	dba WaiterGroup
+	dba WaitressGroup
 	dba MarlonGroup
 	dba ShauntalGroup
 	dba BurghGroup

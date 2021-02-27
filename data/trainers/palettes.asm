@@ -96,6 +96,8 @@ INCBIN "gfx/trainers/nurse.gbcpal", middle_colors
 INCBIN "gfx/trainers/hex_maniac.gbcpal", middle_colors
 INCBIN "gfx/trainers/harlequin.gbcpal", middle_colors
 INCBIN "gfx/trainers/veteran.gbcpal", middle_colors
+INCBIN "gfx/trainers/waiter.gbcpal", middle_colors
+INCBIN "gfx/trainers/waitress.gbcpal", middle_colors
 INCBIN "gfx/trainers/marlon.gbcpal", middle_colors
 INCBIN "gfx/trainers/shauntal.gbcpal", middle_colors
 INCBIN "gfx/trainers/burgh.gbcpal", middle_colors

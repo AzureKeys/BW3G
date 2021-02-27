@@ -28,19 +28,19 @@ StriatonGym_MapScripts:
 	return
 	
 .Trainers:
-	checkevent EVENT_BEAT_CAMPER_STRIATON_GYM_1
+	checkevent EVENT_BEAT_WAITER_STRIATON_GYM_1
 	iftrue .next
 	disappear STRIATONGYM_CAMPER_1
 .next
-	checkevent EVENT_BEAT_CAMPER_STRIATON_GYM_2
+	checkevent EVENT_BEAT_WAITER_STRIATON_GYM_2
 	iftrue .next2
 	disappear STRIATONGYM_CAMPER_2
 .next2
-	checkevent EVENT_BEAT_PICNICKER_STRIATON_GYM_1
+	checkevent EVENT_BEAT_WAITRESS_STRIATON_GYM_1
 	iftrue .next3
 	disappear STRIATONGYM_PICNICKER_1
 .next3
-	checkevent EVENT_BEAT_PICNICKER_STRIATON_GYM_2
+	checkevent EVENT_BEAT_WAITRESS_STRIATON_GYM_2
 	iftrue .done2
 	disappear STRIATONGYM_PICNICKER_2
 .done2
@@ -63,11 +63,11 @@ StriatonGymCilanScript:
 	appear STRIATONGYM_CAMPER_2
 	appear STRIATONGYM_PICNICKER_1
 	appear STRIATONGYM_PICNICKER_2
-	setevent EVENT_BEAT_CAMPER_STRIATON_GYM_1
-	setevent EVENT_BEAT_CAMPER_STRIATON_GYM_2
-	setevent EVENT_BEAT_PICNICKER_STRIATON_GYM_1
-	setevent EVENT_BEAT_PICNICKER_STRIATON_GYM_2
-	setevent EVENT_BEAT_BEAUTY_STRIATON_GYM
+	setevent EVENT_BEAT_WAITER_STRIATON_GYM_1
+	setevent EVENT_BEAT_WAITER_STRIATON_GYM_2
+	setevent EVENT_BEAT_WAITRESS_STRIATON_GYM_1
+	setevent EVENT_BEAT_WAITRESS_STRIATON_GYM_2
+	setevent EVENT_BEAT_WAITRESS_STRIATON_GYM_3
 	opentext
 	writetext ReceivedGarnishBadgeText
 	playsound SFX_GET_BADGE
@@ -203,23 +203,23 @@ StriatonGymTableSwitch:
 	
 TrainerBeautyStriatonGym:
 	opentext
-	checkevent EVENT_BEAT_BEAUTY_STRIATON_GYM
+	checkevent EVENT_BEAT_WAITRESS_STRIATON_GYM_3
 	iftrue .beaten
 	writetext StriatonGymBartender2Text
 	buttonsound
 	yesorno
 	iffalse .done
-	playmusic MUSIC_BEAUTY_ENCOUNTER
+	playmusic MUSIC_LASS_ENCOUNTER
 	writetext BeautyStriatonGymSeenText
 	waitbutton
 	closetext
 	winlosstext BeautyStriatonGymBeatenText, 0
 	setlasttalked STRIATONGYM_BEAUTY
-	loadtrainer BEAUTY_D, BEAUTY_STRIATON_GYM
+	loadtrainer WAITRESS, WAITRESS_STRIATON_GYM_3
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_BEAUTY_STRIATON_GYM
+	setevent EVENT_BEAT_WAITRESS_STRIATON_GYM_3
 	end
 	
 .beaten
@@ -230,7 +230,7 @@ TrainerBeautyStriatonGym:
 	end
 	
 TrainerCamper1StriatonGym:
-	checkevent EVENT_BEAT_CAMPER_STRIATON_GYM_1
+	checkevent EVENT_BEAT_WAITER_STRIATON_GYM_1
 	iftrue .beaten
 	checkcode VAR_FACING
 	ifequal DOWN, .down
@@ -257,18 +257,18 @@ TrainerCamper1StriatonGym:
 	closetext
 	winlosstext Camper1StriatonGymBeatenText, 0
 	setlasttalked STRIATONGYM_CAMPER_1
-	loadtrainer CAMPER, CAMPER_STRIATON_GYM_1
+	loadtrainer WAITER, WAITER_STRIATON_GYM_1
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_CAMPER_STRIATON_GYM_1
+	setevent EVENT_BEAT_WAITER_STRIATON_GYM_1
 	end
 	
 .beaten
 	jumptext StriatonGymEmptyCanText
 	
 TrainerCamper2StriatonGym:
-	checkevent EVENT_BEAT_CAMPER_STRIATON_GYM_2
+	checkevent EVENT_BEAT_WAITER_STRIATON_GYM_2
 	iftrue .beaten
 	appear STRIATONGYM_CAMPER_2
 	playmusic MUSIC_YOUNGSTER_ENCOUNTER
@@ -280,17 +280,17 @@ TrainerCamper2StriatonGym:
 	closetext
 	winlosstext Camper2StriatonGymBeatenText, 0
 	setlasttalked STRIATONGYM_CAMPER_2
-	loadtrainer CAMPER_D, CAMPER_STRIATON_GYM_2
+	loadtrainer WAITER, WAITER_STRIATON_GYM_2
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_CAMPER_STRIATON_GYM_2
+	setevent EVENT_BEAT_WAITER_STRIATON_GYM_2
 	end
 .beaten
 	jumptext StriatonGymTableNothingText
 	
 TrainerPicnicker1StriatonGymLeft:
-	checkevent EVENT_BEAT_PICNICKER_STRIATON_GYM_1
+	checkevent EVENT_BEAT_WAITRESS_STRIATON_GYM_1
 	iftrue .beaten
 	appear STRIATONGYM_PICNICKER_1
 	playmusic MUSIC_LASS_ENCOUNTER
@@ -300,7 +300,7 @@ TrainerPicnicker1StriatonGymLeft:
 	jumptext StriatonGymTableNothingText
 	
 TrainerPicnicker1StriatonGymRight:
-	checkevent EVENT_BEAT_PICNICKER_STRIATON_GYM_1
+	checkevent EVENT_BEAT_WAITRESS_STRIATON_GYM_1
 	iftrue .beaten
 	appear STRIATONGYM_PICNICKER_1
 	playmusic MUSIC_LASS_ENCOUNTER
@@ -317,15 +317,15 @@ TrainerPicnicker1StriatonGym:
 	closetext
 	winlosstext Picnicker1StriatonGymBeatenText, 0
 	setlasttalked STRIATONGYM_PICNICKER_1
-	loadtrainer PICNICKER, PICNICKER_STRIATON_GYM_1
+	loadtrainer WAITRESS, WAITRESS_STRIATON_GYM_1
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_PICNICKER_STRIATON_GYM_1
+	setevent EVENT_BEAT_WAITRESS_STRIATON_GYM_1
 	end
 	
 TrainerPicnicker2StriatonGymLeft:
-	checkevent EVENT_BEAT_PICNICKER_STRIATON_GYM_2
+	checkevent EVENT_BEAT_WAITRESS_STRIATON_GYM_2
 	iftrue .beaten
 	appear STRIATONGYM_PICNICKER_2
 	playmusic MUSIC_LASS_ENCOUNTER
@@ -335,7 +335,7 @@ TrainerPicnicker2StriatonGymLeft:
 	jumptext StriatonGymTableNothingText
 	
 TrainerPicnicker2StriatonGymRight:
-	checkevent EVENT_BEAT_PICNICKER_STRIATON_GYM_2
+	checkevent EVENT_BEAT_WAITRESS_STRIATON_GYM_2
 	iftrue .beaten
 	appear STRIATONGYM_PICNICKER_2
 	playmusic MUSIC_LASS_ENCOUNTER
@@ -352,11 +352,11 @@ TrainerPicnicker2StriatonGym:
 	closetext
 	winlosstext Picnicker2StriatonGymBeatenText, 0
 	setlasttalked STRIATONGYM_PICNICKER_2
-	loadtrainer PICNICKER_D, PICNICKER_STRIATON_GYM_2
+	loadtrainer WAITRESS, WAITRESS_STRIATON_GYM_2
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_PICNICKER_STRIATON_GYM_2
+	setevent EVENT_BEAT_WAITRESS_STRIATON_GYM_2
 	end
 	
 StriatonGymTableNothing:
@@ -687,10 +687,10 @@ StriatonGym_MapEvents:
 	object_event  6,  1, SPRITE_CILAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, StriatonGymCilanScript, -1
 	object_event  7, 15, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, StriatonGymGuyScript, -1
 	object_event  2, 16, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, StriatonGymBartender1Script, -1
-	object_event 12,  6, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, StriatonGymBartender2Script, -1
-	object_event 11,  4, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, TrainerBeautyStriatonGym, -1
-	object_event  5, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TextScriptCamper1StriatonGym, EVENT_STRIATON_GYM_CAMPER_1
-	object_event  8, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, TextScriptCamper2StriatonGym, EVENT_STRIATON_GYM_CAMPER_2
-	object_event  2,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TextScriptPicnicker1StriatonGym, EVENT_STRIATON_GYM_PICNICKER_1
-	object_event  9, 15, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, TextScriptPicnicker2StriatonGym, EVENT_STRIATON_GYM_PICNICKER_2
+	object_event 12,  6, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, StriatonGymBartender2Script, -1
+	object_event 11,  4, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerBeautyStriatonGym, -1
+	object_event  5, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TextScriptCamper1StriatonGym, EVENT_STRIATON_GYM_CAMPER_1
+	object_event  8, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TextScriptCamper2StriatonGym, EVENT_STRIATON_GYM_CAMPER_2
+	object_event  2,  3, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TextScriptPicnicker1StriatonGym, EVENT_STRIATON_GYM_PICNICKER_1
+	object_event  9, 15, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TextScriptPicnicker2StriatonGym, EVENT_STRIATON_GYM_PICNICKER_2
 	

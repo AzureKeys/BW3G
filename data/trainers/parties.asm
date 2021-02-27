@@ -1641,16 +1641,6 @@ BeautyDGroup:
 	db 18, SHROOMISH
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db -1 ; end
-
-	; BEAUTY (STRIATON_GYM)
-	db "VIVIAN@", TRAINERTYPE_STAT_EXP
-	db 31, PETILIL
-	dw $2800, $2800, $2800, $2800, $2800
-	db 31, COTTONEE
-	dw $2800, $2800, $2800, $2800, $2800
-	db 33, ROSELIA
-	dw $2800, $2800, $2800, $2800, $2800
-	db -1 ; end
 	
 	; BEAUTY (CELESTIAL)
 	db "DOREEN@", TRAINERTYPE_STAT_EXP
@@ -3674,14 +3664,6 @@ PicnickerGroup:
 	dw $0E00, $0E00, $0E00, $0E00, $0E00
 	db -1 ; end
 
-	; PICNICKER (STRIATON_GYM)
-	db "KIM@", TRAINERTYPE_STAT_EXP
-	db 33, DEERLING
-	dw $2800, $2800, $2800, $2800, $2800
-	db 35, MARACTUS
-	dw $2800, $2800, $2800, $2800, $2800
-	db -1 ; end
-
 	; PICNICKER (5)
 	db "CINDY@", TRAINERTYPE_NORMAL
 	;db 36, NIDOQUEEN
@@ -3836,14 +3818,6 @@ PicnickerDGroup:
 	db 17, MARILL
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db -1 ; end
-
-	; PICNICKER_D (STRIATON_GYM)
-	db "ELLIE@", TRAINERTYPE_STAT_EXP
-	db 33, FERROSEED
-	dw $2800, $2800, $2800, $2800, $2800
-	db 35, SERVINE
-	dw $2800, $2800, $2800, $2800, $2800
-	db -1 ; end
 	
 	; PICNICKER_D (R2)
 	db "TANYA@", TRAINERTYPE_STAT_EXP
@@ -3874,16 +3848,6 @@ CamperGroup:
 	dw $0400, $0400, $0400, $0400, $0400
 	db 12, WOOBAT
 	dw $0400, $0400, $0400, $0400, $0400
-	db -1 ; end
-
-	; CAMPER (STRIATON_GYM)
-	db "TODD@", TRAINERTYPE_STAT_EXP
-	db 31, FOONGUS
-	dw $2800, $2800, $2800, $2800, $2800
-	db 31, SHROOMISH
-	dw $2800, $2800, $2800, $2800, $2800
-	db 33, BRELOOM
-	dw $2800, $2800, $2800, $2800, $2800
 	db -1 ; end
 
 	; CAMPER (RELIC_PASSAGE)
@@ -4029,12 +3993,6 @@ CamperDGroup:
 	dw $0E00, $0E00, $0E00, $0E00, $0E00
 	db 20, TRAPINCH
 	dw $0E00, $0E00, $0E00, $0E00, $0E00
-	db -1 ; end
-
-	; CAMPER (STRIATON_GYM)
-	db "QUENTIN@", TRAINERTYPE_STAT_EXP
-	db 37, TROPIUS
-	dw $2800, $2800, $2800, $2800, $2800
 	db -1 ; end
 	
 	; CAMPER (R6)
@@ -4834,6 +4792,50 @@ VeteranGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db 44, EXCADRILL
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
+	db -1 ; end
+	
+WaiterGroup:
+	; WAITER (STRIATON_GYM)
+	db "TODD@", TRAINERTYPE_STAT_EXP
+	db 31, FOONGUS
+	dw $2800, $2800, $2800, $2800, $2800
+	db 31, SHROOMISH
+	dw $2800, $2800, $2800, $2800, $2800
+	db 33, BRELOOM
+	dw $2800, $2800, $2800, $2800, $2800
+	db -1 ; end
+
+	; WAITER (STRIATON_GYM)
+	db "QUENTIN@", TRAINERTYPE_STAT_EXP
+	db 37, TROPIUS
+	dw $2800, $2800, $2800, $2800, $2800
+	db -1 ; end
+	
+WaitressGroup:
+	; WAITRESS (STRIATON_GYM)
+	db "KIM@", TRAINERTYPE_STAT_EXP
+	db 33, DEERLING
+	dw $2800, $2800, $2800, $2800, $2800
+	db 35, MARACTUS
+	dw $2800, $2800, $2800, $2800, $2800
+	db -1 ; end
+
+	; WAITRESS (STRIATON_GYM)
+	db "ELLIE@", TRAINERTYPE_STAT_EXP
+	db 33, FERROSEED
+	dw $2800, $2800, $2800, $2800, $2800
+	db 35, SERVINE
+	dw $2800, $2800, $2800, $2800, $2800
+	db -1 ; end
+
+	; WAITRESS (STRIATON_GYM)
+	db "VIVIAN@", TRAINERTYPE_STAT_EXP
+	db 31, PETILIL
+	dw $2800, $2800, $2800, $2800, $2800
+	db 31, COTTONEE
+	dw $2800, $2800, $2800, $2800, $2800
+	db 33, ROSELIA
+	dw $2800, $2800, $2800, $2800, $2800
 	db -1 ; end
 
 MarlonGroup:

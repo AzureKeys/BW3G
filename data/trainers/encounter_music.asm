@@ -92,6 +92,8 @@ TrainerEncounterMusic::
 	db MUSIC_KIMONO_ENCOUNTER      ; hex_maniac
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; harlequin
 	db MUSIC_BEAUTY_ENCOUNTER      ; veteran
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; waiter
+	db MUSIC_LASS_ENCOUNTER        ; waitress
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; marlon
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; shauntal
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; burgh

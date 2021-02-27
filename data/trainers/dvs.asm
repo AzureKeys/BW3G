@@ -90,6 +90,8 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; HEX_MANIAC
 	dn  9,  8,  8,  8 ; HARLEQUIN
 	dn  7, 12, 12,  8 ; VETERAN
+	dn  9,  8,  8,  8 ; WAITER
+	dn  6, 10, 10,  8 ; WAITRESS
 	dn  9, 10,  7,  7 ; MARLON
 	dn 10,  9, 10,  9 ; SHAUNTAL
 	dn 11, 11, 11, 11 ; BURGH
