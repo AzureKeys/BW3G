@@ -200,6 +200,11 @@ PokeBallEffect:
 	ld a, [wBattleMode]
 	dec a
 	jp nz, UseBallInTrainerBattle
+	
+; Repurposing BATTLETYPE_SUICUNE for uncatchable boss Mon
+	ld a, [wBattleType]
+	cp BATTLETYPE_SUICUNE
+	jp z, WontHaveAnyEffectMessage
 
 	ld a, [wPartyCount]
 	cp PARTY_LENGTH
