@@ -620,10 +620,10 @@ INCLUDE "maps/R3NacreneGate.asm"
 INCLUDE "maps/Rt3.asm"
 INCLUDE "maps/R3DayCare.asm"
 INCLUDE "maps/WellspringCave1F.asm"
-INCLUDE "maps/WellspringCaveB1F.asm"
 
 SECTION "Map Scripts 31", ROMX
 
+INCLUDE "maps/WellspringCaveB1F.asm"
 INCLUDE "maps/StriatonCity.asm"
 INCLUDE "maps/StriatonPokecenter1F.asm"
 INCLUDE "maps/StriatonMart.asm"
@@ -643,11 +643,11 @@ INCLUDE "maps/Rt18.asm"
 INCLUDE "maps/R1R17Gate.asm"
 INCLUDE "maps/R18House.asm"
 INCLUDE "maps/NacreneMuseum.asm"
-INCLUDE "maps/P2LabEntrance.asm"
 INCLUDE "maps/P2Lab.asm"
 
 SECTION "Map Scripts 32", ROMX
 
+INCLUDE "maps/P2LabEntrance.asm"
 INCLUDE "maps/Rt21.asm"
 INCLUDE "maps/GiantChasmRooms.asm"
 INCLUDE "maps/GiantChasmB1F.asm"

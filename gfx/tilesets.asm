@@ -682,5 +682,8 @@ INCBIN "data/tilesets/opelucid_metatiles.bin"
 TilesetOpelucidColl:
 INCLUDE "data/tilesets/opelucid_collision.asm"
 
+
+SECTION "Tileset Data 20", ROMX
+
 TilesetOpelucidAttr:
 INCBIN "data/tilesets/opelucid_attributes.bin"
