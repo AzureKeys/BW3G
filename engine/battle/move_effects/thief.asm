@@ -51,6 +51,9 @@ BattleCommand_Thief:
 	jr .stole
 
 .enemy
+	; Removing ability for opponents to steal items
+	; This is a temporary adjustment to prevent permanent item loss
+	ret
 
 ; Wildmons can't steal items
 	ld a, [wBattleMode]
