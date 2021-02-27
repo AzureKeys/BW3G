@@ -125,6 +125,16 @@ BiancaPhoneP2Text:
 	line "in CASTELIA CITY"
 	cont "as a shortcut."
 	
+	para "By the way, have"
+	line "you battled my"
+	cont "friend CHEREN at"
+	cont "the ASPERTIA CITY"
+	cont "GYM yet?"
+	
+	para "He's strong, you'd"
+	line "better not take"
+	cont "him lightly!"
+	
 	para "Talk to you later!"
 	done
 	
