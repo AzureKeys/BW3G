@@ -29,12 +29,12 @@ Rt13_MapScripts:
 	return
 
 TrainerYoungsterR13:
-	trainer YOUNGSTER, YOUNGSTER_R13, EVENT_BEAT_YOUNGSTER_R13, YoungsterJoeySeenText, YoungsterJoeyBeatenText, 0, .Script
+	trainer YOUNGSTER, YOUNGSTER_R13, EVENT_BEAT_YOUNGSTER_R13, YoungsterR13SeenText, YoungsterR13BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterJoeyAfterText
+	writetext YoungsterR13AfterText
 	waitbutton
 	closetext
 	end
@@ -121,7 +121,7 @@ R13Sign:
 R13UndellaSign:
 	jumptext R13UndellaSignText
 	
-YoungsterJoeySeenText:
+YoungsterR13SeenText:
 	text "I just lost, so"
 	line "I'm trying to find"
 	cont "more #MON."
@@ -131,12 +131,12 @@ YoungsterJoeySeenText:
 	cont "let's battle!"
 	done
 
-YoungsterJoeyBeatenText:
+YoungsterR13BeatenText:
 	text "Ack! I lost again!"
 	line "Doggone it!"
 	done
 
-YoungsterJoeyAfterText:
+YoungsterR13AfterText:
 	text "Do I have to have"
 	line "more #MON in"
 
@@ -276,8 +276,8 @@ Rt13_MapEvents:
 	object_event  7, 12, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, R13Blocker4TextScript, EVENT_R13_BLOCKER
 	object_event  4, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR13, EVENT_R13_TRAINER
 	object_event  4, 16, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerLassR13, EVENT_R13_TRAINER
-	object_event  8, 24, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherR13, EVENT_R13_TRAINER
-	object_event 15, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolboyR13, EVENT_R13_TRAINER
+	object_event  8, 24, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherR13, -1
+	object_event 15, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolboyR13, -1
 	object_event 10, 43, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R13Potion, EVENT_R_13_POTION
 	object_event  4, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R13Pokeball, EVENT_R_13_POKEBALL
 	object_event  6, 20, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R13FruitTree, -1
