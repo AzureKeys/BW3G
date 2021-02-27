@@ -69,6 +69,7 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; battlegirl
 	db MUSIC_ROCKET_ENCOUNTER      ; executivem
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychic_t
+	db MUSIC_BEAUTY_ENCOUNTER      ; psychic_t_f
 	db MUSIC_LASS_ENCOUNTER        ; picnicker
 	db MUSIC_LASS_ENCOUNTER        ; picnickerD
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; camper

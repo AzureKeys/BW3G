@@ -68,6 +68,7 @@ TrainerPicPointers::
 	dba BattleGirlPic
 	dba ExecutivemPic
 	dba PsychicTPic
+	dba PsychicTFPic
 	dba PicnickerPic
 	dba PicnickerDPic
 	dba CamperPic

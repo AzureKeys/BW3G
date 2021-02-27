@@ -429,6 +429,7 @@ MistraltonGroupSprites:
 	db SPRITE_GYM_GUY
 	db SPRITE_OFFICER
 	db SPRITE_TEACHER
+	db SPRITE_POKEFAN_F
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL

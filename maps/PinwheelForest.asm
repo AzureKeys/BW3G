@@ -192,7 +192,7 @@ TrainerBugCatcherPinwheel5:
 	end
 
 TrainerPsychicPinwheel:
-	trainer PSYCHIC_T, PSYCHIC_PINWHEEL, EVENT_BEAT_PSYCHIC_PINWHEEL, PsychicPinwheelSeenText, PsychicPinwheelBeatenText, 0, .Script
+	trainer PSYCHIC_T_F, PSYCHIC_PINWHEEL, EVENT_BEAT_PSYCHIC_PINWHEEL, PsychicPinwheelSeenText, PsychicPinwheelBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -516,7 +516,7 @@ PinwheelForest_MapEvents:
 	object_event 30, 31, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherPinwheel3, -1
 	object_event 17,  9, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherPinwheel4, -1
 	object_event 19, 28, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherPinwheel5, -1
-	object_event 16, 32, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicPinwheel, -1
+	object_event 16, 32, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicPinwheel, -1
 	object_event 27, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacPinwheel, -1
 	object_event 12, 15, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassPinwheel, -1
 	object_event 36, 20, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PinwheelOfficer1Script, EVENT_PINWHEEL_FOREST_OFFICER

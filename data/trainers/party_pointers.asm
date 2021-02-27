@@ -68,6 +68,7 @@ TrainerGroups:
 	dba BattleGirlGroup
 	dba ExecutiveMGroup
 	dba PsychicGroup
+	dba PsychicFGroup
 	dba PicnickerGroup
 	dba PicnickerDGroup
 	dba CamperGroup

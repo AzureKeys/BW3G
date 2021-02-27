@@ -64,7 +64,7 @@ TrainerPsychic1CelestialTower:
 	end
 
 TrainerPsychic2CelestialTower:
-	trainer PSYCHIC_T, PSYCHIC_CELESTIAL_TOWER_2, EVENT_BEAT_PSYCHIC_CELESTIAL_TOWER_2, Psychic2CelestialTowerSeenText, Psychic2CelestialTowerBeatenText, 0, .Script
+	trainer PSYCHIC_T_F, PSYCHIC_CELESTIAL_TOWER_2, EVENT_BEAT_PSYCHIC_CELESTIAL_TOWER_2, Psychic2CelestialTowerSeenText, Psychic2CelestialTowerBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -321,7 +321,7 @@ CelestialTower_MapEvents:
 	object_event  4, 25, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerHexManiac2CelestialTower, -1
 	object_event  3,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiac3CelestialTower, -1
 	object_event  8, 21, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychic1CelestialTower, -1
-	object_event  9,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychic2CelestialTower, -1
+	object_event  9,  5, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychic2CelestialTower, -1
 	object_event  8, 37, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolgirlCelestialTower, -1
 	object_event  9, 23, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMCelestialTower, -1
 	object_event  4, 23, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanFCelestialTower, -1

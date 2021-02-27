@@ -8,7 +8,7 @@ RelicCastleB1F_MapScripts:
 	db 0 ; callbacks
 
 TrainerPsychicRelicCastleB1F:
-	trainer PSYCHIC_T, PSYCHIC_RELIC_CASTLE_1, EVENT_BEAT_PSYCHIC_RELIC_CASTLE_1, PsychicRelicCastleB1FSeenText, PsychicRelicCastleB1FBeatenText, 0, .Script
+	trainer PSYCHIC_T_F, PSYCHIC_RELIC_CASTLE_1, EVENT_BEAT_PSYCHIC_RELIC_CASTLE_1, PsychicRelicCastleB1FSeenText, PsychicRelicCastleB1FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -63,5 +63,5 @@ RelicCastleB1F_MapEvents:
 
 	db 2 ; object events
 	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicCastleMaxPotion, EVENT_RELIC_CASTLE_MAX_POTION
-	object_event  9,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicRelicCastleB1F, -1
+	object_event  9,  8, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicRelicCastleB1F, -1
 	

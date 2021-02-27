@@ -67,6 +67,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; BATTLE_GIRL
 	dn 13,  8, 10,  8 ; EXECUTIVEM
 	dn  9,  8,  8,  8 ; PSYCHIC_T
+	dn  9,  8,  8,  8 ; PSYCHIC_T_F
 	dn  6, 10, 10,  8 ; PICNICKER
 	dn  6, 10, 10,  8 ; PICNICKER_D
 	dn  9,  8,  8,  8 ; CAMPER

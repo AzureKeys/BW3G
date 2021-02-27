@@ -66,6 +66,7 @@ TrainerClassNames::
 	db "BATTLE GIRL@"
 	db "PLASMA@"
 	db "PSYCHIC@"
+	db "PSYCHIC@"
 	db "PICNICKER@"
 	db "PICNICKER@"
 	db "CAMPER@"

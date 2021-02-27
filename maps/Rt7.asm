@@ -87,7 +87,7 @@ TrainerBirdKeeperR7:
 	end
 
 TrainerPsychicR7:
-	trainer PSYCHIC_T, PSYCHIC_R7, EVENT_BEAT_PSYCHIC_R7, PsychicR7SeenText, PsychicR7BeatenText, 0, .Script
+	trainer PSYCHIC_T_F, PSYCHIC_R7, EVENT_BEAT_PSYCHIC_R7, PsychicR7SeenText, PsychicR7BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -239,5 +239,5 @@ Rt7_MapEvents:
 	object_event 18, 27, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLass2R7, -1
 	object_event 13, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR7, -1
 	object_event  4, 39, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeperR7, -1
-	object_event 16, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicR7, -1
+	object_event 16, 13, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicR7, -1
 	

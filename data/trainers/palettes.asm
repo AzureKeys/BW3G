@@ -73,6 +73,7 @@ INCBIN "gfx/trainers/blackbelt_t.gbcpal", middle_colors
 INCBIN "gfx/trainers/battle_girl.gbcpal", middle_colors
 INCBIN "gfx/trainers/executive_m.gbcpal", middle_colors
 INCBIN "gfx/trainers/psychic_t.gbcpal", middle_colors
+INCBIN "gfx/trainers/psychic_t_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/picnicker.gbcpal", middle_colors
 INCBIN "gfx/trainers/picnicker_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/camper.gbcpal", middle_colors
