@@ -121,10 +121,10 @@ CHRIS EQU __enum__
 	const YOUNGSTER_R13
 	const YOUNGSTER_R6
 	const YOUNGSTER_R7_2
-	const GORDON
-	const SAMUEL
-	const IAN
-	const JOEY2
+	const DAN_REMATCH_1
+	const DAN_REMATCH_2
+	const DAN_REMATCH_3
+	const DAN_REMATCH_4
 	const JOEY3
 	const WARREN
 	const JIMMY

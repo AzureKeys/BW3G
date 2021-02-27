@@ -32,11 +32,99 @@ TrainerYoungsterR13:
 	trainer YOUNGSTER, YOUNGSTER_R13, EVENT_BEAT_YOUNGSTER_R13, YoungsterR13SeenText, YoungsterR13BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	writecode VAR_CALLERID, PHONE_YOUNGSTER_DAN
 	opentext
+	checkflag ENGINE_DAN_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_YOUNGSTER_DAN
+	iftrue .NumberAccepted
+	checkevent EVENT_DAN_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
 	writetext YoungsterR13AfterText
-	waitbutton
-	closetext
+	buttonsound
+	setevent EVENT_DAN_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_YOUNGSTER_DAN
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_DAN
+	trainertotext YOUNGSTER, YOUNGSTER_R13, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext YoungsterR13BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight4
+	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
+	iftrue .LoadFight3
+	checkevent EVENT_BIANCA_CASTELIA_CALL
+	iftrue .LoadFight2
+	checkevent EVENT_BEAT_MARLON
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer YOUNGSTER, YOUNGSTER_R13
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_DAN_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer YOUNGSTER, DAN_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_DAN_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer YOUNGSTER, DAN_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_DAN_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer YOUNGSTER, DAN_REMATCH_3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_DAN_READY_FOR_REMATCH
+	end
+.LoadFight4
+	loadtrainer YOUNGSTER, DAN_REMATCH_4
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_DAN_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1m
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2m
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberm
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedm
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedm
+	end
+
+.PhoneFull:
+	jumpstd phonefullm
+	end
+
+.Rematch:
+	jumpstd rematchm
 	end
 
 TrainerLassR13:
