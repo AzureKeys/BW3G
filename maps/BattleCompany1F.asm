@@ -16,13 +16,6 @@ BattleCompanyPresidentScript:
 	waitbutton
 	checkflag ENGINE_PLAINBADGE
 	iffalse .NotEnoughBadges
-	checkflag ENGINE_FOGBADGE
-	iftrue .HaveBadges
-	checkflag ENGINE_STORMBADGE
-	iftrue .HaveBadges
-	checkflag ENGINE_MINERALBADGE
-	iffalse .NotEnoughBadges
-.HaveBadges
 	writetext BattleCompanyPresidentGiveEXPShareText
 	buttonsound
 	verbosegiveitem EXP_SHARE
@@ -66,7 +59,7 @@ BattleCompanyPresidentNotEnoughBadgesText:
 	
 	para "Come back and see"
 	line "me if you earn at"
-	cont "least four badges."
+	cont "least three."
 	done
 	
 BattleCompanyPresidentGiveEXPShareText:
