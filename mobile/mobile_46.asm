@@ -1484,7 +1484,7 @@ Function118b9a:
 	and a
 	ret
 
-	charmap " ", $20 ; revert to ascii
+	;charmap " ", $20 ; revert to ascii
 
 ExchangeDownloadURL:
 	db "http://gameboy.datacenter.ne.jp/cgb/download?name=/01/CGB-BXTJ/exchange/index.txt", 0

@@ -1,6 +1,6 @@
 SECTION "Mobile 45", ROMX
 
-	charmap " ", $20 ; revert to ascii
+	;charmap " ", $20 ; revert to ascii
 
 String_114000:
 	db "---", 0

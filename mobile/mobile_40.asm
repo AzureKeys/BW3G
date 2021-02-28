@@ -1685,7 +1685,7 @@ Function100ae7:
 
 SECTION "tetsuji", ROMX
 
-	charmap " ", $20 ; revert to ascii
+	;charmap " ", $20 ; revert to ascii
 
 Unknown_100b0a:
 	db "tetsuji", 0
@@ -3619,7 +3619,7 @@ Function101826:
 
 SECTION "ascii 10186f", ROMX
 
-	charmap " ", $20 ; revert to ascii
+	;charmap " ", $20 ; revert to ascii
 
 Unknown_10186f:
 	db .end - @
