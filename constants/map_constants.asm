@@ -732,6 +732,7 @@ ENDM
 	
 	newgroup
 	map_const VILLAGE_BRIDGE, 34, 18
+	map_const OPELUCID_CITY, 28, 17
 	
 	newgroup
 	map_const R_23, 22, 26

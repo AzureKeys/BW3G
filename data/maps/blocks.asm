@@ -1507,4 +1507,7 @@ MistraltonAirport_Blocks:
 
 VillageBridge_Blocks:
 	INCBIN "maps/VillageBridge.ablk"
+
+OpelucidCity_Blocks:
+	INCBIN "maps/OpelucidCity.ablk"
 	

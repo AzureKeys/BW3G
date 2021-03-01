@@ -5,7 +5,7 @@ LoadSpecialMapPalette:
 	cp TILESET_ICE_PATH
 	jr z, .ice_path
 	cp TILESET_HOUSE
-	jr z, .house
+	jp z, .house
 	cp TILESET_MANSION
 	jr z, .mansion
 	cp TILESET_RADIO_TOWER
@@ -38,6 +38,8 @@ LoadSpecialMapPalette:
 	jp z, .traditional_house
 	cp TILESET_AIRPORT
 	jp z, .airport
+	cp TILESET_OPELUCID
+	jp z, .opelucid
 	jr .do_nothing
 
 .battle_tower
@@ -217,6 +219,19 @@ LoadSpecialMapPalette:
 	
 .castelianite
 	call LoadCasteliaNitePalette
+	scf
+	ret
+	
+.opelucid
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .opelucidnite
+	call LoadOpelucidPalette
+	scf
+	ret
+	
+.opelucidnite
+	call LoadOpelucidNitePalette
 	scf
 	ret
 	
@@ -598,6 +613,28 @@ LoadCelestialTowerNitePalette:
 	
 CelestialTowerNitePalette:
 INCLUDE "gfx/tilesets/celestial_tower_nite.pal"
+
+LoadOpelucidPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, OpelucidPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+OpelucidPalette:
+INCLUDE "gfx/tilesets/opelucid.pal"
+
+LoadOpelucidNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, OpelucidNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+OpelucidNitePalette:
+INCLUDE "gfx/tilesets/opelucid_nite.pal"
 
 LoadAirportPalette:
 	ld a, BANK(wBGPals1)
