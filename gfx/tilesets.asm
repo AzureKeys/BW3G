@@ -676,14 +676,14 @@ INCLUDE "data/tilesets/johto_airport_collision.asm"
 TilesetOpelucidGFX:
 INCBIN "gfx/tilesets/opelucid.2bpp.lz"
 
+
+SECTION "Tileset Data 20", ROMX
+
 TilesetOpelucidMeta:
 INCBIN "data/tilesets/opelucid_metatiles.bin"
 
 TilesetOpelucidColl:
 INCLUDE "data/tilesets/opelucid_collision.asm"
-
-
-SECTION "Tileset Data 20", ROMX
 
 TilesetOpelucidAttr:
 INCBIN "data/tilesets/opelucid_attributes.bin"

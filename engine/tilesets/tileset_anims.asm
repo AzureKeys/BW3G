@@ -94,7 +94,6 @@ TilesetPortAnim:
 	
 TilesetCasteliaAnim:
 TilesetBattleTowerOutsideAnim:
-TilesetOpelucidAnim:
 	;dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -112,6 +111,25 @@ TilesetOpelucidAnim:
 	dw FountainFrames6, AnimateFountainTile
 	;dw NULL,  WaitTileAnimation
 	;dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
+	dw NULL,  IncWaterFrame
+	dw NULL,  IncFountainFrame
+	dw NULL,  DoneTileAnimation
+	
+TilesetOpelucidAnim:
+	dw vTiles2 tile $6f, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $6f, WriteTileFromBuffer
+	dw WhirlpoolFrames1, AnimateWhirlpoolTile
+	dw WhirlpoolFrames2, AnimateWhirlpoolTile
+	dw WhirlpoolFrames3, AnimateWhirlpoolTile
+	dw WhirlpoolFrames4, AnimateWhirlpoolTile
+	dw FountainFrames1, AnimateFountainTile
+	dw FountainFrames2, AnimateFountainTile
+	dw FountainFrames3, AnimateFountainTile
+	dw FountainFrames4, AnimateFountainTile
+	dw FountainFrames5, AnimateFountainTile
+	dw FountainFrames6, AnimateFountainTile
 	dw NULL,  StandingTileFrame8
 	dw NULL,  IncWaterFrame
 	dw NULL,  IncFountainFrame
