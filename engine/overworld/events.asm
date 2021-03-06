@@ -1102,7 +1102,12 @@ TryTileCollisionEvent::
 .waterfall
 	ld a, [wEngineBuffer1]
 	call CheckWaterfallTile
+	jr z, .go_waterfall
+	call CheckWaterfallLeftTile
+	jr z, .go_waterfall
+	call CheckWaterfallRightTile
 	jr nz, .headbutt
+.go_waterfall
 	farcall TryWaterfallOW
 	jr .done
 

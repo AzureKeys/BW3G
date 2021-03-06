@@ -194,15 +194,19 @@
 	tilecoll WALL, WALL, TALL_GRASS, TALL_GRASS ; c1
 	tilecoll WALL, WALL, WALL, WALL ; c2
 	tilecoll WALL, WALL, WALL, WALL ; c3
-	tilecoll WATER, WALL, WATER, WALL ; c4
+	tilecoll WATER, WATERFALL_LEFT, WATER, WATERFALL_LEFT ; c4
 	tilecoll WALL, FLOOR, WALL, WALL ; c5
 	tilecoll WALL, WALL, WALL, WALL ; c6
 	tilecoll WALL, WALL, DOOR, WALL ; c7
-	tilecoll WATER, WALL, WATER, WALL ; c8
+	tilecoll WALL, WALL, FLOOR, WALL ; c8
 	tilecoll WALL, WALL, WALL, FLOOR ; c9
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ca
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; cb
 	tilecoll WATER, WATER, WATER, WATER ; cc
 	tilecoll WATER, WATER, WATER, WATER ; cd
-	tilecoll FLOOR, FLOOR, TALL_GRASS, TALL_GRASS ; ce
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ce
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; cf
+	tilecoll WALL, UP_WALL, WALL, FLOOR ; d0
+	tilecoll WALL, WALL, WALL, WALL ; d1
+	tilecoll UP_WALL, WALL, FLOOR, WALL ; d2
+	tilecoll WALL, WATERFALL_LEFT, WALL, WATERFALL_LEFT ; d3

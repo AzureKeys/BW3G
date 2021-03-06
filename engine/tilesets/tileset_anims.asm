@@ -124,12 +124,18 @@ TilesetOpelucidAnim:
 	dw WhirlpoolFrames2, AnimateWhirlpoolTile
 	dw WhirlpoolFrames3, AnimateWhirlpoolTile
 	dw WhirlpoolFrames4, AnimateWhirlpoolTile
+	dw vTiles2 tile $4d, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileRight
+	dw vTiles2 tile $4d, WriteTileFromBuffer
 	dw FountainFrames1, AnimateFountainTile
 	dw FountainFrames2, AnimateFountainTile
 	dw FountainFrames3, AnimateFountainTile
 	dw FountainFrames4, AnimateFountainTile
 	dw FountainFrames5, AnimateFountainTile
 	dw FountainFrames6, AnimateFountainTile
+	dw vTiles2 tile $1d, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $1d, WriteTileFromBuffer
 	dw NULL,  StandingTileFrame8
 	dw NULL,  IncWaterFrame
 	dw NULL,  IncFountainFrame

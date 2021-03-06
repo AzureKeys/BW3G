@@ -51,19 +51,18 @@ PlayersHousePosterScript:
 	describedecoration DECODESC_POSTER
 
 PlayersHouseRadioScript:
-	; opentext
-	; givepoke HYDREIGON, 100, BERRY
-	; givepoke SNIVY, 5, BERRY
-	; waitbutton
-	; closetext
-	; setflag ENGINE_ZEPHYRBADGE
-	; setflag ENGINE_HIVEBADGE
-	; setflag ENGINE_PLAINBADGE
-	; setflag ENGINE_FOGBADGE
-	; setflag ENGINE_STORMBADGE
-	; setflag ENGINE_MINERALBADGE
-	; setflag ENGINE_GLACIERBADGE
-	; end
+	opentext
+	givepoke HYDREIGON, 100, BERRY
+	waitbutton
+	closetext
+	setflag ENGINE_ZEPHYRBADGE
+	setflag ENGINE_HIVEBADGE
+	setflag ENGINE_PLAINBADGE
+	setflag ENGINE_FOGBADGE
+	setflag ENGINE_STORMBADGE
+	setflag ENGINE_MINERALBADGE
+	setflag ENGINE_GLACIERBADGE
+	end
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .NormalRadio
 	checkevent EVENT_LISTENED_TO_INITIAL_RADIO
@@ -130,8 +129,8 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	db 1 ; warp events
-	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, NACRENE_CAFE, 1
+	;warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+	warp_event  7,  0, R_11, 1
 
 	db 0 ; coord events
 

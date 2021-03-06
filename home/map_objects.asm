@@ -188,9 +188,15 @@ CheckWhirlpoolTile::
 
 CheckWaterfallTile::
 	cp COLL_WATERFALL
-	ret z
-	cp COLL_CURRENT_DOWN
-	ret
+	ret 
+
+CheckWaterfallLeftTile::
+	cp COLL_WATERFALL_LEFT
+	ret 
+
+CheckWaterfallRightTile::
+	cp COLL_WATERFALL_RIGHT
+	ret 
 
 CheckStandingOnEntrance::
 	ld a, [wPlayerStandingTile]

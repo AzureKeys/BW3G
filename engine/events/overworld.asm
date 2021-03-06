@@ -651,8 +651,42 @@ WaterfallFunction:
 	ld a, $80
 	ret c
 	call CheckMapCanWaterfall
-	jr c, .failed
+	jr c, .tryleft
 	ld hl, Script_WaterfallFromMenu
+	call QueueScript
+	ld a, $81
+	ret
+
+.tryleft
+	call CheckMapCanWaterfallLeft
+	jr c, .tryright
+	ld a, [wTileLeft]
+	call CheckWaterfallLeftTile
+	jr z, .left_up
+	ld hl, Script_WaterfallLeftDownFromMenu
+	call QueueScript
+	ld a, $81
+	ret
+	
+.left_up
+	ld hl, Script_WaterfallLeftUpFromMenu
+	call QueueScript
+	ld a, $81
+	ret
+
+.tryright
+	call CheckMapCanWaterfallRight
+	jr c, .failed
+	ld a, [wTileRight]
+	call CheckWaterfallRightTile
+	jr z, .right_up
+	ld hl, Script_WaterfallRightDownFromMenu
+	call QueueScript
+	ld a, $81
+	ret
+	
+.right_up
+	ld hl, Script_WaterfallRightUpFromMenu
 	call QueueScript
 	ld a, $81
 	ret
@@ -663,9 +697,12 @@ WaterfallFunction:
 	ret
 
 CheckMapCanWaterfall:
+	ld a, [wPlayerState]
+	cp PLAYER_SURF
+	jr nz, .failed
 	ld a, [wPlayerDirection]
 	and $c
-	cp FACE_UP
+	cp OW_UP
 	jr nz, .failed
 	ld a, [wTileUp]
 	call CheckWaterfallTile
@@ -677,13 +714,143 @@ CheckMapCanWaterfall:
 	scf
 	ret
 
+CheckMapCanWaterfallLeft:
+	ld a, [wPlayerState]
+	cp PLAYER_SURF
+	jr nz, .failed
+	ld a, [wPlayerDirection]
+	and $c
+	cp OW_LEFT
+	jr nz, .failed
+	ld a, [wTileLeft]
+	call CheckWaterfallLeftTile
+	jr z, .done
+	call CheckWaterfallRightTile
+	jr nz, .failed
+.done
+	xor a
+	ret
+
+.failed
+	scf
+	ret
+
+CheckMapCanWaterfallRight:
+	ld a, [wPlayerState]
+	cp PLAYER_SURF
+	jr nz, .failed
+	ld a, [wPlayerDirection]
+	and $c
+	cp OW_RIGHT
+	jr nz, .failed
+	ld a, [wTileRight]
+	call CheckWaterfallLeftTile
+	jr z, .done
+	call CheckWaterfallRightTile
+	jr nz, .failed
+.done
+	xor a
+	ret
+
+.failed
+	scf
+	ret
+	
+Script_WaterfallLeftDownFromMenu:
+	reloadmappart
+	special UpdateTimePals
+
+Script_UsedWaterfallLeftDown:
+	callasm GetPartyNick
+	writetext Text_UsedWaterfall
+	waitbutton
+	closetext
+	playsound SFX_BUBBLEBEAM
+	applymovement PLAYER, .WaterfallStepLeftDown
+	end
+
+.WaterfallStepLeftDown:
+	fix_facing
+	step LEFT
+	step DOWN
+	step DOWN
+	step LEFT
+	remove_fixed_facing
+	step_end
+
+Script_WaterfallLeftUpFromMenu:
+	reloadmappart
+	special UpdateTimePals
+	
+Script_UsedWaterfallLeftUp:
+	callasm GetPartyNick
+	writetext Text_UsedWaterfall
+	waitbutton
+	closetext
+	playsound SFX_BUBBLEBEAM
+	applymovement PLAYER, .WaterfallStepLeftUp
+	end
+
+.WaterfallStepLeftUp:
+	fix_facing
+	step LEFT
+	step UP
+	step UP
+	step LEFT
+	remove_fixed_facing
+	step_end
+	
+Script_WaterfallRightDownFromMenu:
+	reloadmappart
+	special UpdateTimePals
+
+Script_UsedWaterfallRightDown:
+	callasm GetPartyNick
+	writetext Text_UsedWaterfall
+	waitbutton
+	closetext
+	playsound SFX_BUBBLEBEAM
+	applymovement PLAYER, .WaterfallStepRightDown
+	end
+
+.WaterfallStepRightDown:
+	fix_facing
+	step RIGHT
+	step DOWN
+	step DOWN
+	step RIGHT
+	remove_fixed_facing
+	step_end
+	
+Script_WaterfallRightUpFromMenu:
+	reloadmappart
+	special UpdateTimePals
+
+Script_UsedWaterfallRightUp:
+	callasm GetPartyNick
+	writetext Text_UsedWaterfall
+	waitbutton
+	closetext
+	playsound SFX_BUBBLEBEAM
+	applymovement PLAYER, .WaterfallStepRightUp
+	end
+
+.WaterfallStepRightUp:
+	fix_facing
+	step RIGHT
+	step UP
+	step UP
+	step RIGHT
+	remove_fixed_facing
+	step_end
+
 Script_WaterfallFromMenu:
 	reloadmappart
 	special UpdateTimePals
 
 Script_UsedWaterfall:
 	callasm GetPartyNick
-	writetext .Text_UsedWaterfall
+	writetext Text_UsedWaterfall
 	waitbutton
 	closetext
 	playsound SFX_BUBBLEBEAM
@@ -708,7 +875,7 @@ Script_UsedWaterfall:
 	turn_waterfall UP
 	step_end
 
-.Text_UsedWaterfall:
+Text_UsedWaterfall:
 	; used WATERFALL!
 	text_far UnknownText_0x1c068e
 	text_end
@@ -721,9 +888,47 @@ TryWaterfallOW::
 	call CheckEngineFlag
 	jr c, .failed
 	call CheckMapCanWaterfall
-	jr c, .failed
+	jr c, .tryleft
 	ld a, BANK(Script_AskWaterfall)
 	ld hl, Script_AskWaterfall
+	call CallScript
+	scf
+	ret
+	
+.tryleft
+	call CheckMapCanWaterfallLeft
+	jr c, .tryright
+	ld a, [wTileLeft]
+	call CheckWaterfallLeftTile
+	jr z, .left_up
+	ld a, BANK(Script_AskWaterfallLeftDown)
+	ld hl, Script_AskWaterfallLeftDown
+	call CallScript
+	scf
+	ret
+	
+.left_up
+	ld a, BANK(Script_AskWaterfallLeftUp)
+	ld hl, Script_AskWaterfallLeftUp
+	call CallScript
+	scf
+	ret
+	
+.tryright
+	call CheckMapCanWaterfallRight
+	jr c, .failed
+	ld a, [wTileRight]
+	call CheckWaterfallRightTile
+	jr z, .right_up
+	ld a, BANK(Script_AskWaterfallRightDown)
+	ld hl, Script_AskWaterfallRightDown
+	call CallScript
+	scf
+	ret
+	
+.right_up
+	ld a, BANK(Script_AskWaterfallRightUp)
+	ld hl, Script_AskWaterfallRightUp
 	call CallScript
 	scf
 	ret
@@ -743,15 +948,47 @@ Script_CantDoWaterfall:
 	text_far UnknownText_0x1c06a3
 	text_end
 
+Script_AskWaterfallLeftDown:
+	opentext
+	writetext AskUseWaterfall
+	yesorno
+	iftrue Script_UsedWaterfallLeftDown
+	closetext
+	end
+
+Script_AskWaterfallLeftUp:
+	opentext
+	writetext AskUseWaterfall
+	yesorno
+	iftrue Script_UsedWaterfallLeftUp
+	closetext
+	end
+
+Script_AskWaterfallRightDown:
+	opentext
+	writetext AskUseWaterfall
+	yesorno
+	iftrue Script_UsedWaterfallRightDown
+	closetext
+	end
+
+Script_AskWaterfallRightUp:
+	opentext
+	writetext AskUseWaterfall
+	yesorno
+	iftrue Script_UsedWaterfallRightUp
+	closetext
+	end
+
 Script_AskWaterfall:
 	opentext
-	writetext .AskUseWaterfall
+	writetext AskUseWaterfall
 	yesorno
 	iftrue Script_UsedWaterfall
 	closetext
 	end
 
-.AskUseWaterfall:
+AskUseWaterfall:
 	; Do you want to use WATERFALL?
 	text_far UnknownText_0x1c06bf
 	text_end
