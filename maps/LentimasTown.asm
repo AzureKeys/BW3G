@@ -149,11 +149,12 @@ LentimasTownSignText:
 LentimasTown_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 5 ; warp events
 	warp_event 27, 19, LENTIMAS_MART, 1
 	warp_event 27, 13, LENTIMAS_POKECENTER_1F, 1
 	warp_event 17, 11, LENTIMAS_HOUSE, 1
 	warp_event 16, 21, LENTIMAS_GYM, 1
+	warp_event  9, 13, LENTIMAS_AIRPORT, 1
 
 	db 1 ; coord events
 	coord_event 11, 15, SCENE_DEFAULT, LentimasTownAirportScript

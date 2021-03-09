@@ -131,4 +131,6 @@ MapScenes::
 	scene_var FERRY_LEFT,                                  wFerryLeftSceneID
 	scene_var FERRY_RIGHT,                                 wFerryRightSceneID
 	scene_var MISTRALTON_CITY,                             wMistraltonCitySceneID
+	scene_var MISTRALTON_AIRPORT,                          wMistraltonAirportSceneID
+	scene_var LENTIMAS_AIRPORT,                            wLentimasAirportSceneID
 	db -1

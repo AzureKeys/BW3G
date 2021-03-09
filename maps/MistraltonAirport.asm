@@ -5,12 +5,60 @@
 	const MISTRALTONAIRPORT_TEACHER
 
 MistraltonAirport_MapScripts:
-	db 0 ; scene scripts
+	db 1 ; scene scripts
+	scene_script .DummyScene ; SCENE_DEFAULT
 
 	db 0 ; callbacks
+
+.DummyScene:
+	end
 	
 MistraltonAirportReceptionistScript:
-	jumptextfaceplayer MistraltonAirportReceptionistText
+	faceplayer
+	opentext
+	writetext MistraltonAirportRideText
+	yesorno
+	iffalse .DecidedNotToRide
+	checkitem BOARDINGPASS
+	iffalse .PassNotInBag
+	writetext MistraltonAirportHavePassText
+	waitbutton
+	closetext
+	applymovement MISTRALTONAIRPORT_RECEPTIONIST, MistraltonAirportReceptionistMovement
+	applymovement PLAYER, MistraltonAirportPlayerMovement
+	writebyte FALSE
+	special Ferry
+	warpcheck
+	newloadmap MAPSETUP_TRAIN
+	applymovement PLAYER, .MovementBoardThePlane
+	wait 20
+	end
+
+.MovementBoardThePlane:
+	turn_head DOWN
+	step_end
+
+.PassNotInBag:
+	writetext MistraltonAirportNoPassText
+	waitbutton
+	closetext
+	end
+
+.DecidedNotToRide:
+	writetext MistraltonAirportRefusedText
+	waitbutton
+	closetext
+	end
+
+Script_ArriveFromLentimas:
+	applymovement MISTRALTONAIRPORT_RECEPTIONIST, MistraltonAirportReceptionistArriveMovement
+	applymovement PLAYER, MistraltonAirportArriveMovement
+	applymovement MISTRALTONAIRPORT_RECEPTIONIST, MistraltonAirportReceptionistResetMovement
+	opentext
+	writetext MistraltonAirportArrivedText
+	waitbutton
+	closetext
+	end
 	
 MistraltonAirportTeacherScript:
 	faceplayer
@@ -51,22 +99,85 @@ MistraltonAirportTeacherScript:
 	closetext
 	end
 	
-	
 MistraltonAirportPokefanFScript:
 	jumptextfaceplayer MistraltonAirportPokefanFText
 	
 MistraltonAirportOfficerScript:
 	jumptextfaceplayer MistraltonAirportOfficerText
 
-MistraltonAirportReceptionistText:
+MistraltonAirportReceptionistMovement:
+	step UP
+	step LEFT
+	turn_head RIGHT
+	step_end
+
+MistraltonAirportReceptionistArriveMovement:
+	step DOWN
+	step LEFT
+	turn_head RIGHT
+	step_end
+
+MistraltonAirportReceptionistResetMovement:
+	step RIGHT
+	step UP
+	turn_head DOWN
+	step_end
+
+MistraltonAirportPlayerMovement:
+	step UP
+	step UP
+	step UP
+	step_end
+
+MistraltonAirportArriveMovement:
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	turn_head UP
+	step_end
+
+MistraltonAirportRideText:
 	text "Welcome to the"
 	line "MISTRALTON CITY"
 	cont "airport."
 	
-	para "You will need a"
-	line "BOARDINGPASS if"
+	para "We offer flights"
+	line "to LENTIMAS TOWN."
+	
+	para "Are you coming"
+	line "on board?"
+	done
+
+MistraltonAirportNoPassText:	
+	text "Sorry, you'll need"
+	line "a BOARDINGPASS if"
 	cont "you want to take"
 	cont "the plane."
+	done
+
+MistraltonAirportRefusedText:	
+	text "Please come back"
+	line "if you'd like to"
+	
+	para "take a flight to"
+	line "LENTIMAS TOWN."
+	done
+
+MistraltonAirportHavePassText:	
+	text "Okay, let me check"
+	line "your BOARDINGPASS…"
+	
+	para "Okay, right this"
+	line "way!"
+	done
+
+MistraltonAirportArrivedText:	
+	text "Thank you for"
+	line "flying MISTRALTON"
+	cont "AIRWAYS."
+	
+	para "Enjoy your trip!"
 	done
 	
 MistraltonAirportAskMoneyText:
@@ -131,11 +242,13 @@ MistraltonAirportOfficerText:
 MistraltonAirport_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 3 ; warp events
 	warp_event  6, 11, MISTRALTON_CITY, 7
 	warp_event  7, 11, MISTRALTON_CITY, 7
+	warp_event  6,  5, LENTIMAS_AIRPORT, 3
 
-	db 0 ; coord events
+	db 1 ; coord events
+	coord_event  7,  5, SCENE_DEFAULT, Script_ArriveFromLentimas
 
 	db 0 ; bg events
 

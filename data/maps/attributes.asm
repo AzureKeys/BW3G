@@ -954,4 +954,5 @@ ENDM
 	map_attributes VillageBridge, VILLAGE_BRIDGE, $00, 0
 	map_attributes Rt11, R_11, $00, 0
 	map_attributes OpelucidCity, OPELUCID_CITY, $00, 0
+	map_attributes LentimasAirport, LENTIMAS_AIRPORT, $00, 0
 	

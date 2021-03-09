@@ -2669,8 +2669,10 @@ wSeasideCave1FSceneID::                           db ; d9c0
 wFerryLeftSceneID::                               db ; d9c0
 wFerryRightSceneID::                              db ; d9c0
 wMistraltonCitySceneID::                          db ; d9c0
+wMistraltonAirportSceneID::                       db ; d9c0
+wLentimasAirportSceneID::                         db ; d9c0
 
-	ds 76
+	ds 74
 	
 wNumShards:: db
 
