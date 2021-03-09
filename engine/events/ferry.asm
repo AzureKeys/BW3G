@@ -1,13 +1,13 @@
 Ferry:
 	ld a, [wScriptVar]
 	and a
-	jr nz, .ToCastelia
+	jr nz, .ToLentimas
 	ld a, 1 ; forwards
 	lb bc,  $40,  $60
 	lb de, (11 * 8) - (11 * 8 + 4), -$60
 	jr .continue
 
-.ToCastelia:
+.ToLentimas:
 	ld a, -1 ; backwards
 	lb bc, -$40, -$60
 	lb de, (11 * 8) + (11 * 8 + 4), $60
@@ -166,66 +166,114 @@ DrawFerry:
 	jr c, .loop
 	ld a, [wScriptVar]
 	and a
-	jr z, .Right
+	jp z, .Right
 	
-	hlbgcoord 0, 5
-	ld de, FerryLTilemap
-	ld c, 20
+	hlbgcoord 6, 4
+	ld de, FerryLTilemap + 6
+	ld c, 2
 	call .FillLine
-	hlbgcoord 0, 6
-	ld de, FerryLTilemap + 20
-	ld c, 20
+	hlbgcoord 5, 5
+	ld de, FerryLTilemap + 19
+	ld c, 3
+	call .FillLine
+	hlbgcoord 5, 6
+	ld de, FerryLTilemap + 33
+	ld c, 3
+	call .FillLine
+	hlbgcoord 12, 6
+	ld de, FerryLTilemap + 40
+	ld c, 2
 	call .FillLine
 	hlbgcoord 0, 7
-	ld de, FerryLTilemap + 40
-	ld c, 20
+	ld de, FerryLTilemap + 42
+	ld c, 14
 	call .FillLine
 	hlbgcoord 0, 8
-	ld de, FerryLTilemap + 60
-	ld c, 20
+	ld de, FerryLTilemap + 56
+	ld c, 14
 	call .FillLine
 	hlbgcoord 0, 9
-	ld de, FerryLTilemap + 80
-	ld c, 20
+	ld de, FerryLTilemap + 70
+	ld c, 14
 	call .FillLine
-	hlbgcoord 0, 10
-	ld de, FerryLTilemap + 100
-	ld c, 20
+	hlbgcoord 2, 10
+	ld de, FerryLTilemap + 86
+	ld c, 2
 	call .FillLine
-	hlbgcoord 0, 11
-	ld de, FerryLTilemap + 120
-	ld c, 20
+	hlbgcoord 5, 10
+	ld de, FerryLTilemap + 89
+	ld c, 3
+	call .FillLine
+	hlbgcoord 9, 10
+	ld de, FerryLTilemap + 93
+	ld c, 2
+	call .FillLine
+	hlbgcoord 12, 10
+	ld de, FerryLTilemap + 96
+	ld c, 2
+	call .FillLine
+	hlbgcoord 5, 11
+	ld de, FerryLTilemap + 103
+	ld c, 3
+	call .FillLine
+	hlbgcoord 6, 12
+	ld de, FerryLTilemap + 118
+	ld c, 2
 	call .FillLine
 	ret
 	
 .Right
-	hlbgcoord 0, 5
-	ld de, FerryRTilemap
-	ld c, 20
+	hlbgcoord 6, 4
+	ld de, FerryRTilemap + 6
+	ld c, 2
+	call .FillLine
+	hlbgcoord 6, 5
+	ld de, FerryRTilemap + 20
+	ld c, 3
 	call .FillLine
 	hlbgcoord 0, 6
-	ld de, FerryRTilemap + 20
-	ld c, 20
+	ld de, FerryRTilemap + 28
+	ld c, 2
+	call .FillLine
+	hlbgcoord 6, 6
+	ld de, FerryRTilemap + 34
+	ld c, 3
 	call .FillLine
 	hlbgcoord 0, 7
-	ld de, FerryRTilemap + 40
-	ld c, 20
+	ld de, FerryRTilemap + 42
+	ld c, 14
 	call .FillLine
 	hlbgcoord 0, 8
-	ld de, FerryRTilemap + 60
-	ld c, 20
+	ld de, FerryRTilemap + 56
+	ld c, 14
 	call .FillLine
 	hlbgcoord 0, 9
-	ld de, FerryRTilemap + 80
-	ld c, 20
+	ld de, FerryRTilemap + 70
+	ld c, 14
 	call .FillLine
 	hlbgcoord 0, 10
-	ld de, FerryRTilemap + 100
-	ld c, 20
+	ld de, FerryRTilemap + 84
+	ld c, 2
 	call .FillLine
-	hlbgcoord 0, 11
-	ld de, FerryRTilemap + 120
-	ld c, 20
+	hlbgcoord 3, 10
+	ld de, FerryRTilemap + 87
+	ld c, 2
+	call .FillLine
+	hlbgcoord 6, 10
+	ld de, FerryRTilemap + 90
+	ld c, 3
+	call .FillLine
+	hlbgcoord 10, 10
+	ld de, FerryRTilemap + 94
+	ld c, 2
+	call .FillLine
+	hlbgcoord 6, 11
+	ld de, FerryRTilemap + 104
+	ld c, 3
+	call .FillLine
+	hlbgcoord 6, 12
+	ld de, FerryRTilemap + 118
+	ld c, 2
 	call .FillLine
 	ret
 
@@ -280,104 +328,64 @@ SetFerryPals:
 	ld a, $1
 	ldh [rVBK], a
 
-	; water
+	; sky & plane use ROOF pal
 	hlbgcoord 0, 0
 	ld bc, 18 * BG_MAP_WIDTH
-	ld a, PAL_BG_WATER
+	ld a, PAL_BG_ROOF
 	call ByteFill
 	
 	ld a, [wScriptVar]
 	and a
 	jr z, .Right
 
-	; ferry
-	hlbgcoord 7, 6
-	ld bc, 6
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 0, 7
-	ld bc, 15
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 0, 8
-	ld bc, 15
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 0, 9
-	ld bc, 15
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 0, 10
-	ld bc, 14
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 1, 11
-	ld bc, 12
-	ld a, PAL_BG_ROOF
+	; wing tip
+	hlbgcoord 6, 4
+	ld bc, 2
+	ld a, PAL_BG_WATER
 	call ByteFill
 
-	; ferry emblem
-	hlbgcoord 1, 7
-	ld bc, 1
-	ld a, PAL_BG_RED
+	; wing tip
+	hlbgcoord 12, 6
+	ld bc, 2
+	ld a, PAL_BG_WATER
 	call ByteFill
 
-	; ferry emblem
-	hlbgcoord 1, 9
-	ld bc, 1
-	ld a, PAL_BG_RED
+	; wing tip
+	hlbgcoord 12, 10
+	ld bc, 2
+	ld a, PAL_BG_WATER
 	call ByteFill
-
-	; ferry emblem
-	hlbgcoord 9, 10
-	ld bc, 1
-	ld a, PAL_BG_RED
+	
+	; wing tip
+	hlbgcoord 6, 12
+	ld bc, 2
+	ld a, PAL_BG_WATER
 	call ByteFill
 	jr .cont
 	
 .Right
-	; ferry
-	hlbgcoord 7, 6
-	ld bc, 6
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 5, 7
-	ld bc, 15
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 5, 8
-	ld bc, 15
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 5, 9
-	ld bc, 15
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 6, 10
-	ld bc, 14
-	ld a, PAL_BG_ROOF
-	call ByteFill
-	hlbgcoord 7, 11
-	ld bc, 12
-	ld a, PAL_BG_ROOF
+	; wing tip
+	hlbgcoord 6, 4
+	ld bc, 2
+	ld a, PAL_BG_WATER
 	call ByteFill
 
-	; ferry emblem
-	hlbgcoord 18, 7
-	ld bc, 1
-	ld a, PAL_BG_RED
+	; wing tip
+	hlbgcoord 0, 6
+	ld bc, 2
+	ld a, PAL_BG_WATER
 	call ByteFill
 
-	; ferry emblem
-	hlbgcoord 18, 9
-	ld bc, 1
-	ld a, PAL_BG_RED
+	; wing tip
+	hlbgcoord 0, 10
+	ld bc, 2
+	ld a, PAL_BG_WATER
 	call ByteFill
-
-	; ferry emblem
-	hlbgcoord 10, 10
-	ld bc, 1
-	ld a, PAL_BG_RED
+	
+	; wing tip
+	hlbgcoord 6, 12
+	ld bc, 2
+	ld a, PAL_BG_WATER
 	call ByteFill
 
 .cont
@@ -547,8 +555,8 @@ Ferry_Jumptable_FirstRunThrough:
 
 FerryLTilemap:
 ; 20x4 tilemap
-INCBIN "gfx/overworld/ferry_fg_left.tilemap"
+INCBIN "gfx/overworld/plane_fg_left.tilemap"
 
 FerryRTilemap:
 ; 20x4 tilemap
-INCBIN "gfx/overworld/ferry_fg_right.tilemap"
+INCBIN "gfx/overworld/plane_fg_right.tilemap"
