@@ -23,16 +23,13 @@ LentimasAirportReceptionistScript:
 	closetext
 	applymovement LENTIMASAIRPORT_RECEPTIONIST, LentimasAirportReceptionistMovement
 	applymovement PLAYER, LentimasAirportPlayerMovement
-	writebyte TRUE
-	special Ferry
+	applymovement PLAYER, .MovementBoardThePlane
 	warpcheck
 	newloadmap MAPSETUP_TRAIN
-	applymovement PLAYER, .MovementBoardThePlane
-	wait 20
 	end
 
 .MovementBoardThePlane:
-	turn_head DOWN
+	hide_person
 	step_end
 
 .PassNotInBag:
@@ -48,6 +45,7 @@ LentimasAirportReceptionistScript:
 	end
 
 Script_ArriveFromMistralton:
+	applymovement PLAYER, LentimasAirportShowPersonMovement
 	applymovement LENTIMASAIRPORT_RECEPTIONIST, LentimasAirportReceptionistArriveMovement
 	applymovement PLAYER, LentimasAirportArriveMovement
 	applymovement LENTIMASAIRPORT_RECEPTIONIST, LentimasAirportReceptionistResetMovement
@@ -56,6 +54,10 @@ Script_ArriveFromMistralton:
 	waitbutton
 	closetext
 	end
+	
+LentimasAirportShowPersonMovement:
+	show_person
+	step_end
 
 LentimasAirportReceptionistMovement:
 	step UP
@@ -85,13 +87,12 @@ LentimasAirportArriveMovement:
 	step DOWN
 	step DOWN
 	step DOWN
-	step DOWN
 	turn_head UP
 	step_end
 
 LentimasAirportRideText:
 	text "Welcome to the"
-	line "MISTRALTON CITY"
+	line "LENTIMAS TOWN"
 	cont "airport."
 	
 	para "We offer flights"
@@ -139,7 +140,7 @@ LentimasAirport_MapEvents:
 	db 3 ; warp events
 	warp_event  6, 11, LENTIMAS_TOWN, 5
 	warp_event  7, 11, LENTIMAS_TOWN, 5
-	warp_event  6,  5, MISTRALTON_AIRPORT, 3
+	warp_event  7,  4, PLANE_LEFT, 1
 
 	db 1 ; coord events
 	coord_event  7,  5, SCENE_DEFAULT, Script_ArriveFromMistralton

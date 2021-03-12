@@ -3,15 +3,15 @@ LoadSpecialMapPalette:
 	cp TILESET_BATTLE_TOWER
 	jr z, .battle_tower
 	cp TILESET_ICE_PATH
-	jr z, .ice_path
+	jp z, .ice_path
 	cp TILESET_HOUSE
 	jp z, .house
 	cp TILESET_MANSION
-	jr z, .mansion
+	jp z, .mansion
 	cp TILESET_RADIO_TOWER
-	jr z, .radio_tower
+	jp z, .radio_tower
 	cp TILESET_DESERT
-	jr z, .desert
+	jp z, .desert
 	cp TILESET_JOHTO_DESERT
 	jp z, .johto_desert
 	cp TILESET_JOHTO_AIRPORT
@@ -48,6 +48,25 @@ LoadSpecialMapPalette:
 	ret
 
 .airport
+	ld a, [wMapGroup]
+	cp 19 ; mapgroup_Mistralton
+	jr nz, .load_airport ; Must be Lentimas Airport
+	ld a, [wMapNumber]
+	cp 7 ; MistraltonAirport
+	jr z, .load_airport
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .plane_nite
+	call LoadPlanePalette
+	scf
+	ret
+	
+.plane_nite
+	call LoadPlaneNitePalette
+	scf
+	ret
+	
+.load_airport
 	call LoadAirportPalette
 	scf
 	ret
@@ -646,3 +665,25 @@ LoadAirportPalette:
 	
 AirportPalette:
 INCLUDE "gfx/tilesets/airport.pal"
+
+LoadPlanePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, PlanePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+PlanePalette:
+INCLUDE "gfx/tilesets/plane.pal"
+
+LoadPlaneNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, PlaneNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+PlaneNitePalette:
+INCLUDE "gfx/tilesets/plane_nite.pal"

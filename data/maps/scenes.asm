@@ -133,4 +133,6 @@ MapScenes::
 	scene_var MISTRALTON_CITY,                             wMistraltonCitySceneID
 	scene_var MISTRALTON_AIRPORT,                          wMistraltonAirportSceneID
 	scene_var LENTIMAS_AIRPORT,                            wLentimasAirportSceneID
+	scene_var PLANE_LEFT,                                  wPlaneLeftSceneID
+	scene_var PLANE_RIGHT,                                 wPlaneRightSceneID
 	db -1

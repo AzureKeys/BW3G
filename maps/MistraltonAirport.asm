@@ -26,16 +26,13 @@ MistraltonAirportReceptionistScript:
 	closetext
 	applymovement MISTRALTONAIRPORT_RECEPTIONIST, MistraltonAirportReceptionistMovement
 	applymovement PLAYER, MistraltonAirportPlayerMovement
-	writebyte FALSE
-	special Ferry
+	applymovement PLAYER, .MovementBoardThePlane
 	warpcheck
 	newloadmap MAPSETUP_TRAIN
-	applymovement PLAYER, .MovementBoardThePlane
-	wait 20
 	end
 
 .MovementBoardThePlane:
-	turn_head DOWN
+	hide_person
 	step_end
 
 .PassNotInBag:
@@ -51,6 +48,7 @@ MistraltonAirportReceptionistScript:
 	end
 
 Script_ArriveFromLentimas:
+	applymovement PLAYER, MistraltonAirportShowPersonMovement
 	applymovement MISTRALTONAIRPORT_RECEPTIONIST, MistraltonAirportReceptionistArriveMovement
 	applymovement PLAYER, MistraltonAirportArriveMovement
 	applymovement MISTRALTONAIRPORT_RECEPTIONIST, MistraltonAirportReceptionistResetMovement
@@ -104,6 +102,10 @@ MistraltonAirportPokefanFScript:
 	
 MistraltonAirportOfficerScript:
 	jumptextfaceplayer MistraltonAirportOfficerText
+	
+MistraltonAirportShowPersonMovement:
+	show_person
+	step_end
 
 MistraltonAirportReceptionistMovement:
 	step UP
@@ -130,7 +132,6 @@ MistraltonAirportPlayerMovement:
 	step_end
 
 MistraltonAirportArriveMovement:
-	step DOWN
 	step DOWN
 	step DOWN
 	step DOWN
@@ -245,7 +246,7 @@ MistraltonAirport_MapEvents:
 	db 3 ; warp events
 	warp_event  6, 11, MISTRALTON_CITY, 7
 	warp_event  7, 11, MISTRALTON_CITY, 7
-	warp_event  6,  5, LENTIMAS_AIRPORT, 3
+	warp_event  7,  4, PLANE_RIGHT, 1
 
 	db 1 ; coord events
 	coord_event  7,  5, SCENE_DEFAULT, Script_ArriveFromLentimas

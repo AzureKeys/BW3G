@@ -283,6 +283,26 @@ TilesetTowerAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  DoneTileAnimation
+	
+TilesetAirportAnim:
+	dw SkyFrames1x1, AnimateSkyTile1R
+	dw SkyFrames1x2, AnimateSkyTile2R
+	dw SkyFrames1x3, AnimateSkyTile3R
+	dw SkyFrames1x4, AnimateSkyTile4R
+	dw SkyFrames2x1, AnimateSkyTile1R
+	dw SkyFrames2x2, AnimateSkyTile2R
+	dw SkyFrames2x3, AnimateSkyTile3R
+	dw SkyFrames2x4, AnimateSkyTile4R
+	dw SkyFrames3x1, AnimateSkyTile1R
+	dw SkyFrames3x2, AnimateSkyTile2R
+	dw SkyFrames3x3, AnimateSkyTile3R
+	dw SkyFrames3x4, AnimateSkyTile4R
+	dw SkyFrames4x1, AnimateSkyTile1R
+	dw SkyFrames4x2, AnimateSkyTile2R
+	dw SkyFrames4x3, AnimateSkyTile3R
+	dw SkyFrames4x4, AnimateSkyTile4R
+	dw NULL,  StandingTileFrame8
+	dw NULL,  DoneTileAnimation
 
 TilesetRadioTowerAnim:
 TilesetMansionAnim:
@@ -300,7 +320,6 @@ TilesetChampionsRoomAnim:
 TilesetPlayersRoomAnim:
 TilesetBattleTowerAnim:
 TilesetDesertAnim:
-TilesetAirportAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -852,7 +871,7 @@ AnimateWhirlpoolTile:
 	ld l, e
 	ld h, d
 
-	jr WriteTile
+	jp WriteTile
 	
 AnimateFountainTile:
 ; Update whirlpool tile using struct at de.
@@ -899,7 +918,7 @@ AnimateFountainTile:
 	ld l, e
 	ld h, d
 
-	jr WriteTile
+	jp WriteTile
 	
 AnimateFanTile:
 ; Update whirlpool tile using struct at de.
@@ -927,6 +946,108 @@ AnimateFanTile:
 ; Get the tile for this frame.
 	ld a, [wTileAnimationTimer]
 	and %1 ; 2 frames x2
+	swap a  ; * 16 bytes per tile
+
+	add [hl]
+	inc hl
+	ld h, [hl]
+	ld l, a
+	ld a, 0
+	adc h
+	ld h, a
+
+; The stack now points to the desired frame.
+	ld sp, hl
+
+	ld l, e
+	ld h, d
+
+	jr WriteTile
+	
+AnimateSkyTile1R:
+; Save sp in bc (see WriteTile).
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+; de = VRAM address
+	ld l, e
+	ld h, d
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	inc hl
+; Tile address is now at hl.
+
+; Get the tile for this frame.
+	ld a, [wTileAnimationTimer]
+	and %11 ; 2 frames x2
+	jr AnimateSkyTile
+	
+AnimateSkyTile2R:
+; Save sp in bc (see WriteTile).
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+; de = VRAM address
+	ld l, e
+	ld h, d
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	inc hl
+; Tile address is now at hl.
+
+; Get the tile for this frame.
+	ld a, [wTileAnimationTimer]
+	add 1
+	and %11 ; 2 frames x2
+	jr AnimateSkyTile
+	
+AnimateSkyTile3R:
+; Save sp in bc (see WriteTile).
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+; de = VRAM address
+	ld l, e
+	ld h, d
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	inc hl
+; Tile address is now at hl.
+
+; Get the tile for this frame.
+	ld a, [wTileAnimationTimer]
+	add 2
+	and %11 ; 2 frames x2
+	jr AnimateSkyTile
+	
+AnimateSkyTile4R:
+; Save sp in bc (see WriteTile).
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+; de = VRAM address
+	ld l, e
+	ld h, d
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	inc hl
+; Tile address is now at hl.
+
+; Get the tile for this frame.
+	ld a, [wTileAnimationTimer]
+	add 3
+	and %11 ; 2 frames x2
+	jr AnimateSkyTile
+	
+AnimateSkyTile:
 	swap a  ; * 16 bytes per tile
 
 	add [hl]
@@ -1146,6 +1267,28 @@ FanTiles1: INCBIN "gfx/tilesets/fan/1.2bpp"
 FanTiles2: INCBIN "gfx/tilesets/fan/2.2bpp"
 FanTiles3: INCBIN "gfx/tilesets/fan/3.2bpp"
 FanTiles4: INCBIN "gfx/tilesets/fan/4.2bpp"
+
+SkyFrames1x1: dw vTiles2 tile $03, SkyTiles1
+SkyFrames2x1: dw vTiles2 tile $13, SkyTiles2
+SkyFrames3x1: dw vTiles2 tile $23, SkyTiles3
+SkyFrames4x1: dw vTiles2 tile $33, SkyTiles4
+SkyFrames1x2: dw vTiles2 tile $04, SkyTiles1
+SkyFrames2x2: dw vTiles2 tile $14, SkyTiles2
+SkyFrames3x2: dw vTiles2 tile $24, SkyTiles3
+SkyFrames4x2: dw vTiles2 tile $34, SkyTiles4
+SkyFrames1x3: dw vTiles2 tile $05, SkyTiles1
+SkyFrames2x3: dw vTiles2 tile $15, SkyTiles2
+SkyFrames3x3: dw vTiles2 tile $25, SkyTiles3
+SkyFrames4x3: dw vTiles2 tile $35, SkyTiles4
+SkyFrames1x4: dw vTiles2 tile $06, SkyTiles1
+SkyFrames2x4: dw vTiles2 tile $16, SkyTiles2
+SkyFrames3x4: dw vTiles2 tile $26, SkyTiles3
+SkyFrames4x4: dw vTiles2 tile $36, SkyTiles4
+
+SkyTiles1: INCBIN "gfx/tilesets/sky/1.2bpp"
+SkyTiles2: INCBIN "gfx/tilesets/sky/2.2bpp"
+SkyTiles3: INCBIN "gfx/tilesets/sky/3.2bpp"
+SkyTiles4: INCBIN "gfx/tilesets/sky/4.2bpp"
 
 FountainFrames1: dw vTiles2 tile $2B, FountainTiles1
 FountainFrames2: dw vTiles2 tile $3B, FountainTiles2

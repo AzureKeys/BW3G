@@ -726,6 +726,8 @@ ENDM
 	map_const MISTRALTON_GYM_1F, 7, 10
 	map_const MISTRALTON_GYM_2F, 9, 9
 	map_const MISTRALTON_AIRPORT, 7, 6
+	map_const PLANE_LEFT, 13, 5
+	map_const PLANE_RIGHT, 13, 5
 	map_const R_7, 12, 27
 	map_const R_7_NORTH, 16, 23
 	map_const R_7_HOUSE, 4, 4

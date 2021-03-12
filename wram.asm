@@ -2671,8 +2671,10 @@ wFerryRightSceneID::                              db ; d9c0
 wMistraltonCitySceneID::                          db ; d9c0
 wMistraltonAirportSceneID::                       db ; d9c0
 wLentimasAirportSceneID::                         db ; d9c0
+wPlaneLeftSceneID::                               db ; d9c0
+wPlaneRightSceneID::                              db ; d9c0
 
-	ds 74
+	ds 72
 	
 wNumShards:: db
 

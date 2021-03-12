@@ -1505,6 +1505,12 @@ CelestialTowerRoof_Blocks:
 MistraltonAirport_Blocks:
 LentimasAirport_Blocks:
 	INCBIN "maps/MistraltonAirport.ablk"
+	
+PlaneLeft_Blocks:
+	INCBIN "maps/PlaneLeft.ablk"
+	
+PlaneRight_Blocks:
+	INCBIN "maps/PlaneRight.ablk"
 
 VillageBridge_Blocks:
 	INCBIN "maps/VillageBridge.ablk"
