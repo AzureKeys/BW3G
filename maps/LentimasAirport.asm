@@ -138,15 +138,15 @@ LentimasAirport_MapEvents:
 	db 0, 0 ; filler
 
 	db 3 ; warp events
-	warp_event  6, 11, LENTIMAS_TOWN, 5
-	warp_event  7, 11, LENTIMAS_TOWN, 5
-	warp_event  7,  4, PLANE_LEFT, 1
+	warp_event  4,  7, LENTIMAS_TOWN, 5
+	warp_event  5,  7, LENTIMAS_TOWN, 5
+	warp_event  5,  0, PLANE_LEFT, 1
 
 	db 1 ; coord events
-	coord_event  7,  5, SCENE_DEFAULT, Script_ArriveFromMistralton
+	coord_event  5,  1, SCENE_DEFAULT, Script_ArriveFromMistralton
 
 	db 0 ; bg events
 
 	db 1 ; object events
-	object_event  7,  6, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, LentimasAirportReceptionistScript, -1
+	object_event  5,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, LentimasAirportReceptionistScript, -1
 	

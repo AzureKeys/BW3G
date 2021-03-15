@@ -1503,8 +1503,10 @@ CelestialTowerRoof_Blocks:
 	INCBIN "maps/CelestialTowerRoof.ablk"
 
 MistraltonAirport_Blocks:
-LentimasAirport_Blocks:
 	INCBIN "maps/MistraltonAirport.ablk"
+	
+LentimasAirport_Blocks:
+	INCBIN "maps/LentimasAirport.ablk"
 	
 PlaneLeft_Blocks:
 	INCBIN "maps/PlaneLeft.ablk"
