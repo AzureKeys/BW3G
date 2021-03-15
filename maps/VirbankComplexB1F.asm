@@ -22,6 +22,10 @@ VirbankComplexB1F_MapScripts:
 	end
 	
 .CheckDoor:
+	setevent EVENT_VIRBANK_COMPLEX_B2F_SWITCH1
+	setevent EVENT_VIRBANK_COMPLEX_B2F_SWITCH2
+	setevent EVENT_VIRBANK_COMPLEX_B2F_SWITCH3
+	setevent EVENT_VIRBANK_COMPLEX_B2F_SWITCH4
 	checkevent EVENT_OPENED_VIRBANK_COMPLEX_DOOR
 	iffalse .Done
 	changeblock  2,  4, $07 ; floor
