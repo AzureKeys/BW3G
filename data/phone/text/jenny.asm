@@ -1,4 +1,4 @@
-DanPhoneAskRematchText:
+JennyPhoneAskRematchText:
 	text "Hey <PLAY_G>,"
 	line "it's DAN!"
 
@@ -14,7 +14,7 @@ DanPhoneAskRematchText:
 	line "ROUTE 13. See ya!"
 	done
 	
-DanPhoneAfterBattleText:
+JennyPhoneAfterBattleText:
 	text "Hey <PLAY_G>."
 
 	para "We're training"
@@ -25,7 +25,7 @@ DanPhoneAfterBattleText:
 	line "win for sure!"
 	done
 	
-DanPhoneWaitingText:
+JennyPhoneWaitingText:
 	text "Hey <PLAY_G>,"
 	line "I'm waiting for"
 	cont "you on ROUTE 13!"
@@ -33,7 +33,7 @@ DanPhoneWaitingText:
 	para "Don't be late!"
 	done
 	
-DanAskNumber1Text:
+JennyAskNumber1Text:
 	text "You're pretty"
 	line "good!"
 
@@ -45,7 +45,7 @@ DanAskNumber1Text:
 	line "your number?"
 	done
 
-DanAskNumber2Text:
+JennyAskNumber2Text:
 	text "You can call me"
 	line "if you want a"
 	cont "rematch!"
@@ -54,13 +54,13 @@ DanAskNumber2Text:
 	line "your number?"
 	done
 
-DanNumberAcceptedText:
+JennyNumberAcceptedText:
 	text "Call me whenever"
 	line "you're looking"
 	cont "for a match!"
 	done
 
-DanNumberDeclinedText:
+JennyNumberDeclinedText:
 	text "Oh, OK. Too bad…"
 
 	para "Well, if you ever"
@@ -68,7 +68,7 @@ DanNumberDeclinedText:
 	cont "come see me, OK?"
 	done
 
-DanPhoneFullText:
+JennyPhoneFullText:
 	text "Oh?"
 	line "Your phone's full."
 
@@ -76,7 +76,7 @@ DanPhoneFullText:
 	line "my number."
 	done
 
-DanRematchText:
+JennyRematchText:
 	text "Hi, I was waiting"
 	line "for you to show!"
 

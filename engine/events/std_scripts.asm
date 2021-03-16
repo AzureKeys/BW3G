@@ -642,171 +642,51 @@ InitializeEventsScript:
 AskNumber1MScript:
 	special RandomPhoneMon
 	checkcode VAR_CALLERID
-	; ifequal PHONE_SCHOOLBOY_JACK, .Jack
-	; ifequal PHONE_SAILOR_HUEY, .Huey
-	; ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
-	; ifequal PHONE_BIRDKEEPER_JOSE, .Jose
-	; ifequal PHONE_YOUNGSTER_JOEY, .Joey
-	; ifequal PHONE_BUG_CATCHER_WADE, .Wade
-	; ifequal PHONE_FISHER_RALPH, .Ralph
-	; ifequal PHONE_HIKER_ANTHONY, .Anthony
-	; ifequal PHONE_CAMPER_TODD, .Todd
-	; ifequal PHONE_JUGGLER_IRWIN, .Irwin
-	; ifequal PHONE_BUG_CATCHER_ARNIE, .Arnie
-	; ifequal PHONE_SCHOOLBOY_ALAN, .Alan
-	; ifequal PHONE_SCHOOLBOY_CHAD, .Chad
-	; ifequal PHONE_POKEFANM_DEREK, .Derek
-	; ifequal PHONE_FISHER_TULLY, .Tully
-	; ifequal PHONE_POKEMANIAC_BRENT, .Brent
-	; ifequal PHONE_BIRDKEEPER_VANCE, .Vance
-	; ifequal PHONE_FISHER_WILTON, .Wilton
-	; ifequal PHONE_BLACKBELT_KENJI, .Kenji
-	; ifequal PHONE_HIKER_PARRY, .Parry
+	ifequal PHONE_YOUNGSTER_DAN, .Dan
+	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
+	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_SAILOR_STANLEY, .Stanley
+	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
-.Jack:
-	farwritetext JackAskNumber1Text
+.Dan:
+	farwritetext DanAskNumber1Text
 	end
-.Huey:
-	farwritetext HueyAskNumber1Text
+.Freddy:
+	farwritetext FreddyAskNumber1Text
 	end
-.Gaven:
-	farwritetext GavenAskNumber1Text
+.Eric:
+	farwritetext EricAskNumber1Text
 	end
-.Jose:
-	farwritetext JoseAskNumber1Text
+.Stanley:
+	farwritetext StanleyAskNumber1Text
 	end
-.Joey:
-	farwritetext JoeyAskNumber1Text
+.Marco:
+	farwritetext MarcoAskNumber1Text
 	end
-.Wade:
-	farwritetext WadeAskNumber1Text
-	end
-.Ralph:
-	farwritetext RalphAskNumber1Text
-	end
-.Anthony:
-	farwritetext AnthonyAskNumber1Text
-	end
-.Todd:
-	farwritetext ToddAskNumber1Text
-	end
-.Irwin:
-	farwritetext IrwinAskNumber1Text
-	end
-.Arnie:
-	farwritetext ArnieAskNumber1Text
-	end
-.Alan:
-	farwritetext AlanAskNumber1Text
-	end
-.Chad:
-	farwritetext ChadAskNumber1Text
-	end
-.Derek:
-	farwritetext DerekAskNumber1Text
-	end
-.Tully:
-	farwritetext TullyAskNumber1Text
-	end
-.Brent:
-	farwritetext BrentAskNumber1Text
-	end
-.Vance:
-	farwritetext VanceAskNumber1Text
-	end
-.Wilton:
-	farwritetext WiltonAskNumber1Text
-	end
-.Kenji:
-	farwritetext KenjiAskNumber1Text
-	end
-.Parry:
-	farwritetext ParryAskNumber1Text
-	end
-
+	
 AskNumber2MScript:
 	special RandomPhoneMon
 	checkcode VAR_CALLERID
-	; ifequal PHONE_SCHOOLBOY_JACK, .Jack
-	; ifequal PHONE_SAILOR_HUEY, .Huey
-	; ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
-	; ifequal PHONE_BIRDKEEPER_JOSE, .Jose
-	; ifequal PHONE_YOUNGSTER_JOEY, .Joey
-	; ifequal PHONE_BUG_CATCHER_WADE, .Wade
-	; ifequal PHONE_FISHER_RALPH, .Ralph
-	; ifequal PHONE_HIKER_ANTHONY, .Anthony
-	; ifequal PHONE_CAMPER_TODD, .Todd
-	; ifequal PHONE_JUGGLER_IRWIN, .Irwin
-	; ifequal PHONE_BUG_CATCHER_ARNIE, .Arnie
-	; ifequal PHONE_SCHOOLBOY_ALAN, .Alan
-	; ifequal PHONE_SCHOOLBOY_CHAD, .Chad
-	; ifequal PHONE_POKEFANM_DEREK, .Derek
-	; ifequal PHONE_FISHER_TULLY, .Tully
-	; ifequal PHONE_POKEMANIAC_BRENT, .Brent
-	; ifequal PHONE_BIRDKEEPER_VANCE, .Vance
-	; ifequal PHONE_FISHER_WILTON, .Wilton
-	; ifequal PHONE_BLACKBELT_KENJI, .Kenji
-	; ifequal PHONE_HIKER_PARRY, .Parry
+	ifequal PHONE_YOUNGSTER_DAN, .Dan
+	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
+	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_SAILOR_STANLEY, .Stanley
+	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
-.Jack:
-	farwritetext JackAskNumber2Text
+.Dan:
+	farwritetext DanAskNumber2Text
 	end
-.Huey:
-	farwritetext HueyAskNumber2Text
+.Freddy:
+	farwritetext FreddyAskNumber2Text
 	end
-.Gaven:
-	farwritetext GavenAskNumber2Text
+.Eric:
+	farwritetext EricAskNumber2Text
 	end
-.Jose:
-	farwritetext JoseAskNumber2Text
+.Stanley:
+	farwritetext StanleyAskNumber2Text
 	end
-.Joey:
-	farwritetext JoeyAskNumber2Text
-	end
-.Wade:
-	farwritetext WadeAskNumber2Text
-	end
-.Ralph:
-	farwritetext RalphAskNumber2Text
-	end
-.Anthony:
-	farwritetext AnthonyAskNumber2Text
-	end
-.Todd:
-	farwritetext ToddAskNumber2Text
-	end
-.Irwin:
-	farwritetext IrwinAskNumber2Text
-	end
-.Arnie:
-	farwritetext ArnieAskNumber2Text
-	end
-.Alan:
-	farwritetext AlanAskNumber2Text
-	end
-.Chad:
-	farwritetext ChadAskNumber2Text
-	end
-.Derek:
-	farwritetext DerekAskNumber2Text
-	end
-.Tully:
-	farwritetext TullyAskNumber2Text
-	end
-.Brent:
-	farwritetext BrentAskNumber2Text
-	end
-.Vance:
-	farwritetext VanceAskNumber2Text
-	end
-.Wilton:
-	farwritetext WiltonAskNumber2Text
-	end
-.Kenji:
-	farwritetext KenjiAskNumber2Text
-	end
-.Parry:
-	farwritetext ParryAskNumber2Text
+.Marco:
+	farwritetext MarcoAskNumber2Text
 	end
 
 RegisteredNumberMScript:
@@ -818,686 +698,211 @@ RegisteredNumberMScript:
 
 NumberAcceptedMScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_SCHOOLBOY_JACK, .Jack
-	; ifequal PHONE_SAILOR_HUEY, .Huey
-	; ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
-	; ifequal PHONE_BIRDKEEPER_JOSE, .Jose
-	; ifequal PHONE_YOUNGSTER_JOEY, .Joey
-	; ifequal PHONE_BUG_CATCHER_WADE, .Wade
-	; ifequal PHONE_FISHER_RALPH, .Ralph
-	; ifequal PHONE_HIKER_ANTHONY, .Anthony
-	; ifequal PHONE_CAMPER_TODD, .Todd
-	; ifequal PHONE_JUGGLER_IRWIN, .Irwin
-	; ifequal PHONE_BUG_CATCHER_ARNIE, .Arnie
-	; ifequal PHONE_SCHOOLBOY_ALAN, .Alan
-	; ifequal PHONE_SCHOOLBOY_CHAD, .Chad
-	; ifequal PHONE_POKEFANM_DEREK, .Derek
-	; ifequal PHONE_FISHER_TULLY, .Tully
-	; ifequal PHONE_POKEMANIAC_BRENT, .Brent
-	; ifequal PHONE_BIRDKEEPER_VANCE, .Vance
-	; ifequal PHONE_FISHER_WILTON, .Wilton
-	; ifequal PHONE_BLACKBELT_KENJI, .Kenji
-	; ifequal PHONE_HIKER_PARRY, .Parry
+	ifequal PHONE_YOUNGSTER_DAN, .Dan
+	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
+	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_SAILOR_STANLEY, .Stanley
+	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
-.Jack:
-	farwritetext JackNumberAcceptedText
+.Dan:
+	farwritetext DanNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Huey:
-	farwritetext HueyNumberAcceptedText
+.Freddy:
+	farwritetext FreddyNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Gaven:
-	farwritetext GavenNumberAcceptedText
+.Eric:
+	farwritetext EricNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Jose:
-	farwritetext JoseNumberAcceptedText
+.Stanley:
+	farwritetext StanleyNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Joey:
-	farwritetext JoeyNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Wade:
-	farwritetext WadeNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Ralph:
-	farwritetext RalphNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Anthony:
-	farwritetext AnthonyNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Todd:
-	farwritetext ToddNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Irwin:
-	farwritetext IrwinNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Arnie:
-	farwritetext ArnieNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Alan:
-	farwritetext AlanNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Chad:
-	farwritetext ChadNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Derek:
-	farwritetext DerekNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Tully:
-	farwritetext TullyNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Brent:
-	farwritetext BrentNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Vance:
-	farwritetext VanceNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Wilton:
-	farwritetext WiltonNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Kenji:
-	farwritetext KenjiNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Parry:
-	farwritetext ParryNumberAcceptedText
+.Marco:
+	farwritetext MarcoNumberAcceptedText
 	waitbutton
 	closetext
 	end
 
 NumberDeclinedMScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_SCHOOLBOY_JACK, .Jack
-	; ifequal PHONE_SAILOR_HUEY, .Huey
-	; ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
-	; ifequal PHONE_BIRDKEEPER_JOSE, .Jose
-	; ifequal PHONE_YOUNGSTER_JOEY, .Joey
-	; ifequal PHONE_BUG_CATCHER_WADE, .Wade
-	; ifequal PHONE_FISHER_RALPH, .Ralph
-	; ifequal PHONE_HIKER_ANTHONY, .Anthony
-	; ifequal PHONE_CAMPER_TODD, .Todd
-	; ifequal PHONE_JUGGLER_IRWIN, .Irwin
-	; ifequal PHONE_BUG_CATCHER_ARNIE, .Arnie
-	; ifequal PHONE_SCHOOLBOY_ALAN, .Alan
-	; ifequal PHONE_SCHOOLBOY_CHAD, .Chad
-	; ifequal PHONE_POKEFANM_DEREK, .Derek
-	; ifequal PHONE_FISHER_TULLY, .Tully
-	; ifequal PHONE_POKEMANIAC_BRENT, .Brent
-	; ifequal PHONE_BIRDKEEPER_VANCE, .Vance
-	; ifequal PHONE_FISHER_WILTON, .Wilton
-	; ifequal PHONE_BLACKBELT_KENJI, .Kenji
-	; ifequal PHONE_HIKER_PARRY, .Parry
+	ifequal PHONE_YOUNGSTER_DAN, .Dan
+	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
+	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_SAILOR_STANLEY, .Stanley
+	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
-.Jack:
-	farwritetext JackNumberDeclinedText
+.Dan:
+	farwritetext DanNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Huey:
-	farwritetext HueyNumberDeclinedText
+.Freddy:
+	farwritetext FreddyNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Gaven:
-	farwritetext GavenNumberDeclinedText
+.Eric:
+	farwritetext EricNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Jose:
-	farwritetext JoseNumberDeclinedText
+.Stanley:
+	farwritetext StanleyNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Joey:
-	farwritetext JoeyNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Wade:
-	farwritetext WadeNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Ralph:
-	farwritetext RalphNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Anthony:
-	farwritetext AnthonyNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Todd:
-	farwritetext ToddNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Irwin:
-	farwritetext IrwinNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Arnie:
-	farwritetext ArnieNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Alan:
-	farwritetext AlanNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Chad:
-	farwritetext ChadNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Derek:
-	farwritetext DerekNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Tully:
-	farwritetext TullyNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Brent:
-	farwritetext BrentNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Vance:
-	farwritetext VanceNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Wilton:
-	farwritetext WiltonNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Kenji:
-	farwritetext KenjiNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Parry:
-	farwritetext ParryNumberDeclinedText
+.Marco:
+	farwritetext MarcoNumberDeclinedText
 	waitbutton
 	closetext
 	end
 
 PhoneFullMScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_SCHOOLBOY_JACK, .Jack
-	; ifequal PHONE_SAILOR_HUEY, .Huey
-	; ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
-	; ifequal PHONE_BIRDKEEPER_JOSE, .Jose
-	; ifequal PHONE_YOUNGSTER_JOEY, .Joey
-	; ifequal PHONE_BUG_CATCHER_WADE, .Wade
-	; ifequal PHONE_FISHER_RALPH, .Ralph
-	; ifequal PHONE_HIKER_ANTHONY, .Anthony
-	; ifequal PHONE_CAMPER_TODD, .Todd
-	; ifequal PHONE_JUGGLER_IRWIN, .Irwin
-	; ifequal PHONE_BUG_CATCHER_ARNIE, .Arnie
-	; ifequal PHONE_SCHOOLBOY_ALAN, .Alan
-	; ifequal PHONE_SCHOOLBOY_CHAD, .Chad
-	; ifequal PHONE_POKEFANM_DEREK, .Derek
-	; ifequal PHONE_FISHER_TULLY, .Tully
-	; ifequal PHONE_POKEMANIAC_BRENT, .Brent
-	; ifequal PHONE_BIRDKEEPER_VANCE, .Vance
-	; ifequal PHONE_FISHER_WILTON, .Wilton
-	; ifequal PHONE_BLACKBELT_KENJI, .Kenji
-	; ifequal PHONE_HIKER_PARRY, .Parry
+	ifequal PHONE_YOUNGSTER_DAN, .Dan
+	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
+	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_SAILOR_STANLEY, .Stanley
+	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
-.Jack:
-	farwritetext JackPhoneFullText
+.Dan:
+	farwritetext DanPhoneFullText
 	waitbutton
 	closetext
 	end
-.Huey:
-	farwritetext HueyPhoneFullText
+.Freddy:
+	farwritetext FreddyPhoneFullText
 	waitbutton
 	closetext
 	end
-.Gaven:
-	farwritetext GavenPhoneFullText
+.Eric:
+	farwritetext EricPhoneFullText
 	waitbutton
 	closetext
 	end
-.Jose:
-	farwritetext JosePhoneFullText
+.Stanley:
+	farwritetext StanleyPhoneFullText
 	waitbutton
 	closetext
 	end
-.Joey:
-	farwritetext JoeyPhoneFullText
-	waitbutton
-	closetext
-	end
-.Wade:
-	farwritetext WadePhoneFullText
-	waitbutton
-	closetext
-	end
-.Ralph:
-	farwritetext RalphPhoneFullText
-	waitbutton
-	closetext
-	end
-.Anthony:
-	farwritetext AnthonyPhoneFullText
-	waitbutton
-	closetext
-	end
-.Todd:
-	farwritetext ToddPhoneFullText
-	waitbutton
-	closetext
-	end
-.Irwin:
-	farwritetext IrwinPhoneFullText
-	waitbutton
-	closetext
-	end
-.Arnie:
-	farwritetext ArniePhoneFullText
-	waitbutton
-	closetext
-	end
-.Alan:
-	farwritetext AlanPhoneFullText
-	waitbutton
-	closetext
-	end
-.Chad:
-	farwritetext ChadPhoneFullText
-	waitbutton
-	closetext
-	end
-.Derek:
-	farwritetext DerekPhoneFullText
-	waitbutton
-	closetext
-	end
-.Tully:
-	farwritetext TullyPhoneFullText
-	waitbutton
-	closetext
-	end
-.Brent:
-	farwritetext BrentPhoneFullText
-	waitbutton
-	closetext
-	end
-.Vance:
-	farwritetext VancePhoneFullText
-	waitbutton
-	closetext
-	end
-.Wilton:
-	farwritetext WiltonPhoneFullText
-	waitbutton
-	closetext
-	end
-.Kenji:
-	farwritetext KenjiPhoneFullText
-	waitbutton
-	closetext
-	end
-.Parry:
-	farwritetext ParryPhoneFullText
+.Marco:
+	farwritetext MarcoPhoneFullText
 	waitbutton
 	closetext
 	end
 
 RematchMScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_SCHOOLBOY_JACK, .Jack
-	; ifequal PHONE_SAILOR_HUEY, .Huey
-	; ifequal PHONE_COOLTRAINERM_GAVEN, .Gaven
-	; ifequal PHONE_BIRDKEEPER_JOSE, .Jose
-	; ifequal PHONE_YOUNGSTER_JOEY, .Joey
-	; ifequal PHONE_BUG_CATCHER_WADE, .Wade
-	; ifequal PHONE_FISHER_RALPH, .Ralph
-	; ifequal PHONE_HIKER_ANTHONY, .Anthony
-	; ifequal PHONE_CAMPER_TODD, .Todd
-	; ifequal PHONE_BUG_CATCHER_ARNIE, .Arnie
-	; ifequal PHONE_SCHOOLBOY_ALAN, .Alan
-	; ifequal PHONE_SCHOOLBOY_CHAD, .Chad
-	; ifequal PHONE_FISHER_TULLY, .Tully
-	; ifequal PHONE_POKEMANIAC_BRENT, .Brent
-	; ifequal PHONE_BIRDKEEPER_VANCE, .Vance
-	; ifequal PHONE_FISHER_WILTON, .Wilton
-	; ifequal PHONE_HIKER_PARRY, .Parry
+	ifequal PHONE_YOUNGSTER_DAN, .Dan
+	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
+	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_SAILOR_STANLEY, .Stanley
+	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
-.Jack:
-	farwritetext JackRematchText
+.Dan:
+	farwritetext DanRematchText
 	waitbutton
 	closetext
 	end
-.Huey:
-	farwritetext HueyRematchText
+.Freddy:
+	farwritetext FreddyRematchText
 	waitbutton
 	closetext
 	end
-.Gaven:
-	farwritetext GavenRematchText
+.Eric:
+	farwritetext EricRematchText
 	waitbutton
 	closetext
 	end
-.Jose:
-	farwritetext JoseRematchText
+.Stanley:
+	farwritetext StanleyRematchText
 	waitbutton
 	closetext
 	end
-.Joey:
-	farwritetext JoeyRematchText
-	waitbutton
-	closetext
-	end
-.Wade:
-	farwritetext WadeRematchText
-	waitbutton
-	closetext
-	end
-.Ralph:
-	farwritetext RalphRematchText
-	waitbutton
-	closetext
-	end
-.Anthony:
-	farwritetext AnthonyRematchText
-	waitbutton
-	closetext
-	end
-.Todd:
-	farwritetext ToddRematchText
-	waitbutton
-	closetext
-	end
-.Arnie:
-	farwritetext ArnieRematchText
-	waitbutton
-	closetext
-	end
-.Alan:
-	farwritetext AlanRematchText
-	waitbutton
-	closetext
-	end
-.Chad:
-	farwritetext ChadRematchText
-	waitbutton
-	closetext
-	end
-.Tully:
-	farwritetext TullyRematchText
-	waitbutton
-	closetext
-	end
-.Brent:
-	farwritetext BrentRematchText
-	waitbutton
-	closetext
-	end
-.Vance:
-	farwritetext VanceRematchText
-	waitbutton
-	closetext
-	end
-.Wilton:
-	farwritetext WiltonRematchText
-	waitbutton
-	closetext
-	end
-.Parry:
-	farwritetext ParryRematchText
+.Marco:
+	farwritetext MarcoRematchText
 	waitbutton
 	closetext
 	end
 
 GiftMScript:
-	checkcode VAR_CALLERID
-	; ifequal PHONE_BIRDKEEPER_JOSE, .Jose
-	; ifequal PHONE_BUG_CATCHER_WADE, .Wade
-	; ifequal PHONE_SCHOOLBOY_ALAN, .Alan
-	; ifequal PHONE_POKEFANM_DEREK, .Derek
-	; ifequal PHONE_FISHER_TULLY, .Tully
-	; ifequal PHONE_FISHER_WILTON, .Wilton
-	; ifequal PHONE_BLACKBELT_KENJI, .Kenji
-
-.Jose:
-	farwritetext JoseGiftText
-	buttonsound
-	end
-.Wade:
-	farwritetext WadeGiftText
-	buttonsound
-	end
-.Alan:
-	farwritetext AlanGiftText
-	buttonsound
-	end
-.Derek:
-	farwritetext DerekGiftText
-	buttonsound
-	end
-.Tully:
-	farwritetext TullyGiftText
-	buttonsound
-	end
-.Wilton:
-	farwritetext WiltonGiftText
-	buttonsound
-	end
-.Kenji:
-	farwritetext KenjiGiftText
-	buttonsound
 	end
 
 PackFullMScript:
-	checkcode VAR_CALLERID
-	; ifequal PHONE_SAILOR_HUEY, .Huey
-	; ifequal PHONE_BIRDKEEPER_JOSE, .Jose
-	; ifequal PHONE_YOUNGSTER_JOEY, .Joey
-	; ifequal PHONE_BUG_CATCHER_WADE, .Wade
-	; ifequal PHONE_SCHOOLBOY_ALAN, .Alan
-	; ifequal PHONE_POKEFANM_DEREK, .Derek
-	; ifequal PHONE_FISHER_TULLY, .Tully
-	; ifequal PHONE_BIRDKEEPER_VANCE, .Vance
-	; ifequal PHONE_FISHER_WILTON, .Wilton
-	; ifequal PHONE_BLACKBELT_KENJI, .Kenji
-	; ifequal PHONE_HIKER_PARRY, .Parry
-
-.Huey:
-	farwritetext HueyPackFullText
-	waitbutton
-	closetext
-	end
-.Jose:
-	farwritetext JosePackFullText
-	waitbutton
-	closetext
-	end
-.Joey:
-	farwritetext JoeyPackFullText
-	waitbutton
-	closetext
-	end
-.Wade:
-	farwritetext WadePackFullText
-	waitbutton
-	closetext
-	end
-.Alan:
-	farwritetext AlanPackFullText
-	waitbutton
-	closetext
-	end
-.Derek:
-	farwritetext DerekPackFullText
-	waitbutton
-	closetext
-	end
-.Tully:
-	farwritetext TullyPackFullText
-	waitbutton
-	closetext
-	end
-.Vance:
-	farwritetext VancePackFullText
-	waitbutton
-	closetext
-	end
-.Wilton:
-	farwritetext WiltonPackFullText
-	waitbutton
-	closetext
-	end
-.Kenji:
-	farwritetext KenjiPackFullText
-	waitbutton
-	closetext
-	end
-.Parry:
-	farwritetext ParryPackFullText
-	waitbutton
-	closetext
 	end
 
 RematchGiftMScript:
-	opentext
-	checkcode VAR_CALLERID
-	; ifequal PHONE_SAILOR_HUEY, .Huey
-	; ifequal PHONE_YOUNGSTER_JOEY, .Joey
-	; ifequal PHONE_BIRDKEEPER_VANCE, .Vance
-	; ifequal PHONE_HIKER_PARRY, .Parry
-
-.Huey:
-	farwritetext HueyRematchGiftText
-	buttonsound
-	end
-.Joey:
-	farwritetext JoeyRematchGiftText
-	buttonsound
-	end
-.Vance:
-	farwritetext VanceRematchGiftText
-	buttonsound
-	end
-.Parry:
-	farwritetext ParryRematchGiftText
-	buttonsound
 	end
 
 AskNumber1FScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	; ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	; ifequal PHONE_COOLTRAINERF_REENA, .Reena
-	; ifequal PHONE_PICNICKER_LIZ, .Liz
-	; ifequal PHONE_PICNICKER_GINA, .Gina
-	; ifequal PHONE_LASS_DANA, .Dana
-	; ifequal PHONE_PICNICKER_TIFFANY, .Tiffany
-	; ifequal PHONE_PICNICKER_ERIN, .Erin
+	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CLARISSA, .Clarissa
+	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_PSYCHIC_MARLA, .Marla
 
-.Beverly:
-	farwritetext BeverlyAskNumber1Text
+.Jewel:
+	farwritetext JewelAskNumber1Text
 	end
-.Beth:
-	farwritetext BethAskNumber1Text
+.Lacey:
+	farwritetext LaceyAskNumber1Text
 	end
-.Reena:
-	farwritetext ReenaAskNumber1Text
+.Ariana:
+	farwritetext ArianaAskNumber1Text
 	end
-.Liz:
-	farwritetext LizAskNumber1Text
+.Carla:
+	farwritetext CarlaAskNumber1Text
 	end
-.Gina:
-	farwritetext GinaAskNumber1Text
+.Clarissa:
+	farwritetext ClarissaAskNumber1Text
 	end
-.Dana:
-	farwritetext DanaAskNumber1Text
+.Jenny:
+	farwritetext JennyAskNumber1Text
 	end
-.Tiffany:
-	farwritetext TiffanyAskNumber1Text
-	end
-.Erin:
-	farwritetext ErinAskNumber1Text
+.Marla:
+	farwritetext MarlaAskNumber1Text
 	end
 
 AskNumber2FScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	; ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	; ifequal PHONE_COOLTRAINERF_REENA, .Reena
-	; ifequal PHONE_PICNICKER_LIZ, .Liz
-	; ifequal PHONE_PICNICKER_GINA, .Gina
-	; ifequal PHONE_LASS_DANA, .Dana
-	; ifequal PHONE_PICNICKER_TIFFANY, .Tiffany
-	; ifequal PHONE_PICNICKER_ERIN, .Erin
+	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CLARISSA, .Clarissa
+	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_PSYCHIC_MARLA, .Marla
 
-.Beverly:
-	farwritetext BeverlyAskNumber2Text
+.Jewel:
+	farwritetext JewelAskNumber2Text
 	end
-.Beth:
-	farwritetext BethAskNumber2Text
+.Lacey:
+	farwritetext LaceyAskNumber2Text
 	end
-.Reena:
-	farwritetext ReenaAskNumber2Text
+.Ariana:
+	farwritetext ArianaAskNumber2Text
 	end
-.Liz:
-	farwritetext LizAskNumber2Text
+.Carla:
+	farwritetext CarlaAskNumber2Text
 	end
-.Gina:
-	farwritetext GinaAskNumber2Text
+.Clarissa:
+	farwritetext ClarissaAskNumber2Text
 	end
-.Dana:
-	farwritetext DanaAskNumber2Text
+.Jenny:
+	farwritetext JennyAskNumber2Text
 	end
-.Tiffany:
-	farwritetext TiffanyAskNumber2Text
-	end
-.Erin:
-	farwritetext ErinAskNumber2Text
+.Marla:
+	farwritetext MarlaAskNumber2Text
 	end
 
 RegisteredNumberFScript:
@@ -1509,272 +914,195 @@ RegisteredNumberFScript:
 
 NumberAcceptedFScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	; ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	; ifequal PHONE_COOLTRAINERF_REENA, .Reena
-	; ifequal PHONE_PICNICKER_LIZ, .Liz
-	; ifequal PHONE_PICNICKER_GINA, .Gina
-	; ifequal PHONE_LASS_DANA, .Dana
-	; ifequal PHONE_PICNICKER_TIFFANY, .Tiffany
-	; ifequal PHONE_PICNICKER_ERIN, .Erin
+	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CLARISSA, .Clarissa
+	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_PSYCHIC_MARLA, .Marla
 
-.Beverly:
-	farwritetext BeverlyNumberAcceptedText
+.Jewel:
+	farwritetext JewelNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Beth:
-	farwritetext BethNumberAcceptedText
+.Lacey:
+	farwritetext LaceyNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Reena:
-	farwritetext ReenaNumberAcceptedText
+.Ariana:
+	farwritetext ArianaNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Liz:
-	farwritetext LizNumberAcceptedText
+.Carla:
+	farwritetext CarlaNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Gina:
-	farwritetext GinaNumberAcceptedText
+.Clarissa:
+	farwritetext ClarissaNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Dana:
-	farwritetext DanaNumberAcceptedText
+.Jenny:
+	farwritetext JennyNumberAcceptedText
 	waitbutton
 	closetext
 	end
-.Tiffany:
-	farwritetext TiffanyNumberAcceptedText
-	waitbutton
-	closetext
-	end
-.Erin:
-	farwritetext ErinNumberAcceptedText
+.Marla:
+	farwritetext MarlaNumberAcceptedText
 	waitbutton
 	closetext
 	end
 
 NumberDeclinedFScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	; ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	; ifequal PHONE_COOLTRAINERF_REENA, .Reena
-	; ifequal PHONE_PICNICKER_LIZ, .Liz
-	; ifequal PHONE_PICNICKER_GINA, .Gina
-	; ifequal PHONE_LASS_DANA, .Dana
-	; ifequal PHONE_PICNICKER_TIFFANY, .Tiffany
-	; ifequal PHONE_PICNICKER_ERIN, .Erin
+	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CLARISSA, .Clarissa
+	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_PSYCHIC_MARLA, .Marla
 
-.Beverly:
-	farwritetext BeverlyNumberDeclinedText
+.Jewel:
+	farwritetext JewelNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Beth:
-	farwritetext BethNumberDeclinedText
+.Lacey:
+	farwritetext LaceyNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Reena:
-	farwritetext ReenaNumberDeclinedText
+.Ariana:
+	farwritetext ArianaNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Liz:
-	farwritetext LizNumberDeclinedText
+.Carla:
+	farwritetext CarlaNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Gina:
-	farwritetext GinaNumberDeclinedText
+.Clarissa:
+	farwritetext ClarissaNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Dana:
-	farwritetext DanaNumberDeclinedText
+.Jenny:
+	farwritetext JennyNumberDeclinedText
 	waitbutton
 	closetext
 	end
-.Tiffany:
-	farwritetext TiffanyNumberDeclinedText
-	waitbutton
-	closetext
-	end
-.Erin:
-	farwritetext ErinNumberDeclinedText
+.Marla:
+	farwritetext MarlaNumberDeclinedText
 	waitbutton
 	closetext
 	end
 
 PhoneFullFScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	; ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	; ifequal PHONE_COOLTRAINERF_REENA, .Reena
-	; ifequal PHONE_PICNICKER_LIZ, .Liz
-	; ifequal PHONE_PICNICKER_GINA, .Gina
-	; ifequal PHONE_LASS_DANA, .Dana
-	; ifequal PHONE_PICNICKER_TIFFANY, .Tiffany
-	; ifequal PHONE_PICNICKER_ERIN, .Erin
+	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CLARISSA, .Clarissa
+	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_PSYCHIC_MARLA, .Marla
 
-.Beverly:
-	farwritetext BeverlyPhoneFullText
+.Jewel:
+	farwritetext JewelPhoneFullText
 	waitbutton
 	closetext
 	end
-.Beth:
-	farwritetext BethPhoneFullText
+.Lacey:
+	farwritetext LaceyPhoneFullText
 	waitbutton
 	closetext
 	end
-.Reena:
-	farwritetext ReenaPhoneFullText
+.Ariana:
+	farwritetext ArianaPhoneFullText
 	waitbutton
 	closetext
 	end
-.Liz:
-	farwritetext LizPhoneFullText
+.Carla:
+	farwritetext CarlaPhoneFullText
 	waitbutton
 	closetext
 	end
-.Gina:
-	farwritetext GinaPhoneFullText
+.Clarissa:
+	farwritetext ClarissaPhoneFullText
 	waitbutton
 	closetext
 	end
-.Dana:
-	farwritetext DanaPhoneFullText
+.Jenny:
+	farwritetext JennyPhoneFullText
 	waitbutton
 	closetext
 	end
-.Tiffany:
-	farwritetext TiffanyPhoneFullText
-	waitbutton
-	closetext
-	end
-.Erin:
-	farwritetext ErinPhoneFullText
+.Marla:
+	farwritetext MarlaPhoneFullText
 	waitbutton
 	closetext
 	end
 
 RematchFScript:
 	checkcode VAR_CALLERID
-	; ifequal PHONE_COOLTRAINERF_BETH, .Beth
-	; ifequal PHONE_COOLTRAINERF_REENA, .Reena
-	; ifequal PHONE_PICNICKER_LIZ, .Liz
-	; ifequal PHONE_PICNICKER_GINA, .Gina
-	; ifequal PHONE_LASS_DANA, .Dana
-	; ifequal PHONE_PICNICKER_TIFFANY, .Tiffany
-	; ifequal PHONE_PICNICKER_ERIN, .Erin
+	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CLARISSA, .Clarissa
+	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_PSYCHIC_MARLA, .Marla
 
-.Beth:
-	farwritetext BethRematchText
+.Jewel:
+	farwritetext JewelRematchText
 	waitbutton
 	closetext
 	end
-.Reena:
-	farwritetext ReenaRematchText
+.Lacey:
+	farwritetext LaceyRematchText
 	waitbutton
 	closetext
 	end
-.Liz:
-	farwritetext LizRematchText
+.Ariana:
+	farwritetext ArianaRematchText
 	waitbutton
 	closetext
 	end
-.Gina:
-	farwritetext GinaRematchText
+.Carla:
+	farwritetext CarlaRematchText
 	waitbutton
 	closetext
 	end
-.Dana:
-	farwritetext DanaRematchText
+.Clarissa:
+	farwritetext ClarissaRematchText
 	waitbutton
 	closetext
 	end
-.Tiffany:
-	farwritetext TiffanyRematchText
+.Jenny:
+	farwritetext JennyRematchText
 	waitbutton
 	closetext
 	end
-.Erin:
-	farwritetext ErinRematchText
+.Marla:
+	farwritetext MarlaRematchText
 	waitbutton
 	closetext
 	end
 
 GiftFScript:
-	checkcode VAR_CALLERID
-	; ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	; ifequal PHONE_PICNICKER_GINA, .Gina
-	; ifequal PHONE_LASS_DANA, .Dana
-	; ifequal PHONE_PICNICKER_TIFFANY, .Tiffany
-
-.Beverly:
-	farwritetext BeverlyGiftText
-	buttonsound
-	end
-.Gina:
-	farwritetext GinaGiftText
-	buttonsound
-	end
-.Dana:
-	farwritetext DanaGiftText
-	buttonsound
-	end
-.Tiffany:
-	farwritetext TiffanyGiftText
-	buttonsound
 	end
 
 PackFullFScript:
-	checkcode VAR_CALLERID
-	; ifequal PHONE_POKEFAN_BEVERLY, .Beverly
-	; ifequal PHONE_PICNICKER_GINA, .Gina
-	; ifequal PHONE_LASS_DANA, .Dana
-	; ifequal PHONE_PICNICKER_TIFFANY, .Tiffany
-	; ifequal PHONE_PICNICKER_ERIN, .Erin
-
-.Beverly:
-	farwritetext BeverlyPackFullText
-	waitbutton
-	closetext
-	end
-.Gina:
-	farwritetext GinaPackFullText
-	waitbutton
-	closetext
-	end
-.Dana:
-	farwritetext DanaPackFullText
-	waitbutton
-	closetext
-	end
-.Tiffany:
-	farwritetext TiffanyPackFullText
-	waitbutton
-	closetext
-	end
-.Erin:
-	farwritetext ErinPackFullText
-	waitbutton
-	closetext
 	end
 
 RematchGiftFScript:
-	checkcode VAR_CALLERID
-	;ifequal PHONE_PICNICKER_ERIN, .Erin
-
-.Erin:
-	opentext
-	farwritetext ErinRematchGiftText
-	buttonsound
 	end
 
 GymStatue1Script:
