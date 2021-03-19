@@ -319,6 +319,9 @@ Rt3NacreneGate_Blocks:
 Rt2AccumulaGate_Blocks:
 Rt1Rt17Gate_Blocks:
 DriftveilBridgeGate_Blocks:
+Rt11VillageBridgeGate_Blocks:
+Rt11OpelucidGate_Blocks:
+Rt9OpelucidGate_Blocks:
 	INCBIN "maps/EastWestGate.ablk"
 
 ; BetaAzaleaTown_Blocks:

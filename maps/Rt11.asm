@@ -8,8 +8,11 @@ Rt11_MapScripts:
 Rt11_MapEvents:
 	db 0, 0 ; filler
 
-	db 1 ; warp events
-	warp_event 37, 12, PLAYERS_HOUSE_2F, 1
+	db 4 ; warp events
+	warp_event 37, 12, R_11_VILLAGE_BRIDGE_GATE, 3
+	warp_event 37, 13, R_11_VILLAGE_BRIDGE_GATE, 4
+	warp_event  4, 12, R_11_OPELUCID_GATE, 1
+	warp_event  4, 13, R_11_OPELUCID_GATE, 2
 
 	db 0 ; coord events
 

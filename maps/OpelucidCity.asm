@@ -8,7 +8,11 @@ OpelucidCity_MapScripts:
 OpelucidCity_MapEvents:
 	db 0, 0 ; filler
 
-	db 0 ; warp events
+	db 4 ; warp events
+	warp_event 49, 26, R_11_OPELUCID_GATE, 3
+	warp_event 49, 27, R_11_OPELUCID_GATE, 4
+	warp_event  4, 26, R_9_OPELUCID_GATE, 1
+	warp_event  4, 27, R_9_OPELUCID_GATE, 2
 
 	db 0 ; coord events
 

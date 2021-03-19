@@ -12,11 +12,11 @@ VillageBridge_MapScripts:
 VillageBridge_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 4 ; warp events
 	warp_event 61, 18, R_12_VILLAGE_BRIDGE_GATE, 3
 	warp_event 61, 19, R_12_VILLAGE_BRIDGE_GATE, 4
-	;warp_event  4, 18, CASTELIA_BRIDGE_GATE, 3
-	;warp_event  4, 19, CASTELIA_BRIDGE_GATE, 4
+	warp_event  4, 18, R_11_VILLAGE_BRIDGE_GATE, 1
+	warp_event  4, 19, R_11_VILLAGE_BRIDGE_GATE, 2
 
 	db 0 ; coord events
 

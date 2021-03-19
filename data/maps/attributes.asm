@@ -957,4 +957,7 @@ ENDM
 	map_attributes LentimasAirport, LENTIMAS_AIRPORT, $00, 0
 	map_attributes PlaneLeft, PLANE_LEFT, $00, 0
 	map_attributes PlaneRight, PLANE_RIGHT, $00, 0
+	map_attributes Rt11VillageBridgeGate, R_11_VILLAGE_BRIDGE_GATE, $00, 0
+	map_attributes Rt11OpelucidGate, R_11_OPELUCID_GATE, $00, 0
+	map_attributes Rt9OpelucidGate, R_9_OPELUCID_GATE, $00, 0
 	
