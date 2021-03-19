@@ -389,6 +389,7 @@ StriatonMart_Blocks:
 AccumulaMart_Blocks:
 DriftveilMart_Blocks:
 MistraltonMart_Blocks:
+OpelucidMart_Blocks:
 	INCBIN "maps/Mart.ablk"
 
 ; Route10North_Blocks:
@@ -432,6 +433,7 @@ StriatonPokecenter1F_Blocks:
 AccumulaPokecenter1F_Blocks:
 DriftveilPokecenter1F_Blocks:
 MistraltonPokecenter1F_Blocks:
+OpelucidPokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.ablk"
 
 ; BetaPewterMuseumOfScience1F_Blocks:

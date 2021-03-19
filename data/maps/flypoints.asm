@@ -34,6 +34,7 @@ Flypoints:
 	flypoint NUVEMA,       NUVEMA_TOWN
 	flypoint DRIFTVEIL,    DRIFTVEIL_CITY
 	flypoint MISTRALTON,   MISTRALTON_CITY
+	flypoint OPELUCID,     OPELUCID_CITY
 	flypoint PKMN_LEAGUE,      HUMILAU_CITY
 
 ; Kanto

@@ -56,6 +56,8 @@ Marts:
 	dw MartDriftveil
 	dw MartMerchant1
 	dw MartMerchant2
+	dw MartMistralton
+	dw MartOpelucid
 .End
 
 MartCherrygrove:
@@ -621,6 +623,17 @@ MartMistralton:
 	db FULL_HEAL
 	db X_SPEED
 	db X_DEFEND
+	db -1 ; end
+
+MartOpelucid:
+	db 7 ; # items
+	db ULTRA_BALL
+	db HYPER_POTION
+	db MAX_POTION
+	db FULL_HEAL
+	db X_ATTACK
+	db X_SPECIAL
+	db X_SP_DEF
 	db -1 ; end
 
 DefaultMart:

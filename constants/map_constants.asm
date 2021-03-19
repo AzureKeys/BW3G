@@ -740,6 +740,8 @@ ENDM
 	map_const R_11_OPELUCID_GATE, 5, 4
 	map_const OPELUCID_CITY, 28, 17
 	map_const R_9_OPELUCID_GATE, 5, 4
+	map_const OPELUCID_POKECENTER_1F, 5, 4 
+	map_const OPELUCID_MART, 6, 4
 	
 	newgroup
 	map_const R_23, 22, 26

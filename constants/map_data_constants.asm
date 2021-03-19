@@ -113,5 +113,6 @@ const_value = -1
 	const SPAWN_PWT
 	const SPAWN_DRIFTVEIL
 	const SPAWN_MISTRALTON
+	const SPAWN_OPELUCID
 	const SPAWN_PKMN_LEAGUE
 NUM_SPAWNS EQU const_value
