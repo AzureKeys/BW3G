@@ -42,6 +42,81 @@ R7AmoongussScript2:
 	reloadmapafterbattle
 	end
 
+TrainerPsychicR7:
+	trainer PSYCHIC_T_F, PSYCHIC_R7, EVENT_BEAT_PSYCHIC_R7, PsychicR7SeenText, PsychicR7BeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_PSYCHIC_MARLA
+	opentext
+	checkflag ENGINE_MARLA_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_PSYCHIC_MARLA
+	iftrue .NumberAccepted
+	checkevent EVENT_MARLA_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext PsychicR7AfterText
+	buttonsound
+	setevent EVENT_MARLA_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_PSYCHIC_MARLA
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_MARLA
+	trainertotext PSYCHIC_T_F, PSYCHIC_R7, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext PsychicR7BeatenText, 0
+	;checkevent EVENT_
+	;iftrue .LoadFight1
+; Fight0
+	loadtrainer PSYCHIC_T_F, PSYCHIC_R7
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_MARLA_READY_FOR_REMATCH
+	end
+; .LoadFight1
+	; loadtrainer PSYCHIC_T_F, MARLA_REMATCH_1
+	; startbattle
+	; reloadmapafterbattle
+	; clearflag ENGINE_MARLA_READY_FOR_REMATCH
+	; end
+	
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
+	end
+
 TrainerYoungsterR7:
 	trainer YOUNGSTER_D, YOUNGSTER_R7_1, EVENT_BEAT_YOUNGSTER_R7_1, YoungsterR7SeenText, YoungsterR7BeatenText, 0, .Script
 
@@ -82,17 +157,6 @@ TrainerBirdKeeperR7:
 	endifjustbattled
 	opentext
 	writetext BirdKeeperR7AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerPsychicR7:
-	trainer PSYCHIC_T_F, PSYCHIC_R7, EVENT_BEAT_PSYCHIC_R7, PsychicR7SeenText, PsychicR7BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext PsychicR7AfterText
 	waitbutton
 	closetext
 	end

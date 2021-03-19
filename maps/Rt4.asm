@@ -19,6 +19,89 @@ Rt4_MapScripts:
 
 	db 0 ; callbacks
 
+TrainerBeautyR4:
+	trainer BEAUTY_D, BEAUTY_R4, EVENT_BEAT_BEAUTY_R4, BeautyR4SeenText, BeautyR4BeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_BEAUTY_LACEY
+	opentext
+	checkflag ENGINE_LACEY_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_BEAUTY_LACEY
+	iftrue .NumberAccepted
+	checkevent EVENT_LACEY_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext BeautyR4AfterText
+	buttonsound
+	setevent EVENT_LACEY_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_BEAUTY_LACEY
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_LACEY
+	trainertotext BEAUTY_D, BEAUTY_R4, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext BeautyR4BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight2
+	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer BEAUTY_D, BEAUTY_R4
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_LACEY_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer BEAUTY_D, LACEY_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_LACEY_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer BEAUTY_D, LACEY_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_LACEY_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
+	end
+
 TrainerBirdKeeperR4:
 	trainer BIRD_KEEPER, BIRD_KEEPER_R4, EVENT_BEAT_BIRD_KEEPER_R4, BirdKeeperR4SeenText, BirdKeeperR4BeatenText, 0, .Script
 
@@ -59,17 +142,6 @@ TrainerFisher2R4:
 	endifjustbattled
 	opentext
 	writetext Fisher2R4AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerBeautyR4:
-	trainer BEAUTY_D, BEAUTY_R4, EVENT_BEAT_BEAUTY_R4, BeautyR4SeenText, BeautyR4BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BeautyR4AfterText
 	waitbutton
 	closetext
 	end

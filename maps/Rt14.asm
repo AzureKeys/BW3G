@@ -13,6 +13,105 @@ Rt14_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
+	
+TrainerSchoolgirlR14:
+	trainer SCHOOLGIRL_D, SCHOOLGIRL_R14, EVENT_BEAT_SCHOOLGIRL_R14, SchoolgirlR14SeenText, SchoolgirlR14BeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_SCHOOLGIRL_JEWEL
+	opentext
+	checkflag ENGINE_JEWEL_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_SCHOOLGIRL_JEWEL
+	iftrue .NumberAccepted
+	checkevent EVENT_JEWEL_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext SchoolgirlR14AfterText
+	buttonsound
+	setevent EVENT_JEWEL_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_SCHOOLGIRL_JEWEL
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_JEWEL
+	trainertotext SCHOOLGIRL_D, SCHOOLGIRL_R14, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext SchoolgirlR14BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight4
+	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
+	iftrue .LoadFight3
+	checkevent EVENT_BIANCA_CASTELIA_CALL
+	iftrue .LoadFight2
+	checkevent EVENT_BEAT_MARLON
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer SCHOOLGIRL_D, SCHOOLGIRL_R14
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer SCHOOLGIRL_D, JEWEL_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer SCHOOLGIRL_D, JEWEL_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer SCHOOLGIRL_D, JEWEL_REMATCH_3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
+	end
+.LoadFight4
+	loadtrainer SCHOOLGIRL_D, JEWEL_REMATCH_4
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
+	end
 
 TrainerYoungsterR14:
 	trainer YOUNGSTER_D, YOUNGSTER_R14, EVENT_BEAT_YOUNGSTER_R14, YoungsterR14SeenText, YoungsterR14BeatenText, 0, .Script
@@ -21,17 +120,6 @@ TrainerYoungsterR14:
 	endifjustbattled
 	opentext
 	writetext YoungsterR14AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerSchoolgirlR14:
-	trainer SCHOOLGIRL_D, SCHOOLGIRL_R14, EVENT_BEAT_SCHOOLGIRL_R14, SchoolgirlR14SeenText, SchoolgirlR14BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext SchoolgirlR14AfterText
 	waitbutton
 	closetext
 	end

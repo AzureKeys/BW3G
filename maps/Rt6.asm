@@ -61,6 +61,81 @@ AmoongussScript3:
 	reloadmapafterbattle
 	end
 
+TrainerScientistMR6:
+	trainer SCIENTIST_M, SCIENTISTM_R6, EVENT_BEAT_SCIENTISTM_R6, ScientistMR6SeenText, ScientistMR6BeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_SCIENTIST_MARCO
+	opentext
+	checkflag ENGINE_MARCO_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_SCIENTIST_MARCO
+	iftrue .NumberAccepted
+	checkevent EVENT_MARCO_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext ScientistMR6AfterText
+	buttonsound
+	setevent EVENT_MARCO_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_SCIENTIST_MARCO
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_MARCO
+	trainertotext SCIENTIST_M, SCIENTISTM_R6, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext ScientistMR6BeatenText, 0
+	;checkevent EVENT_
+	;iftrue .LoadFight1
+; Fight0
+	loadtrainer SCIENTIST_M, SCIENTISTM_R6
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_MARCO_READY_FOR_REMATCH
+	end
+; .LoadFight1
+	; loadtrainer SCIENTIST_M, MARCO_REMATCH_1
+	; startbattle
+	; reloadmapafterbattle
+	; clearflag ENGINE_MARCO_READY_FOR_REMATCH
+	; end
+	
+.AskNumber1:
+	jumpstd asknumber1m
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2m
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberm
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedm
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedm
+	end
+
+.PhoneFull:
+	jumpstd phonefullm
+	end
+
+.Rematch:
+	jumpstd rematchm
+	end
+
 TrainerYoungsterR6:
 	trainer YOUNGSTER, YOUNGSTER_R6, EVENT_BEAT_YOUNGSTER_R6, YoungsterR6SeenText, YoungsterR6BeatenText, 0, .Script
 
@@ -123,17 +198,6 @@ TrainerPokefanFR6:
 	endifjustbattled
 	opentext
 	writetext PokefanFR6AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerScientistMR6:
-	trainer SCIENTIST_M, SCIENTISTM_R6, EVENT_BEAT_SCIENTISTM_R6, ScientistMR6SeenText, ScientistMR6BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext ScientistMR6AfterText
 	waitbutton
 	closetext
 	end

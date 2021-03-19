@@ -67,11 +67,91 @@ TrainerSuperNerd2R5:
 	trainer SUPER_NERD, SUPER_NERD_R5_2, EVENT_BEAT_SUPER_NERD_R5_2, SuperNerd2R5SeenText, SuperNerd2R5BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	writecode VAR_CALLERID, PHONE_SUPERNERD_ERIC
 	opentext
+	checkflag ENGINE_ERIC_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_SUPERNERD_ERIC
+	iftrue .NumberAccepted
+	checkevent EVENT_ERIC_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
 	writetext SuperNerd2R5AfterText
-	waitbutton
-	closetext
+	buttonsound
+	setevent EVENT_ERIC_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_SUPERNERD_ERIC
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_ERIC
+	trainertotext SUPER_NERD, SUPER_NERD_R5_2, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext SuperNerd2R5BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight3
+	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
+	iftrue .LoadFight2
+	checkevent EVENT_BIANCA_CASTELIA_CALL
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer SUPER_NERD, SUPER_NERD_R5_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_ERIC_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer SUPER_NERD, ERIC_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_ERIC_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer SUPER_NERD, ERIC_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_ERIC_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer SUPER_NERD, ERIC_REMATCH_3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_ERIC_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1m
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2m
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberm
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedm
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedm
+	end
+
+.PhoneFull:
+	jumpstd phonefullm
+	end
+
+.Rematch:
+	jumpstd rematchm
 	end
 
 TrainerPokefanFR5:

@@ -52,6 +52,81 @@ Rt2_MapScripts:
 	closetext
 	end
 
+TrainerCooltrainerFR2:
+	trainer COOLTRAINERF_D, COOLTRAINERF_R2, EVENT_BEAT_COOLTRAINERF_R2, CooltrainerFR2SeenText, CooltrainerFR2BeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_COOLTRAINER_CARLA
+	opentext
+	checkflag ENGINE_CARLA_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_COOLTRAINER_CARLA
+	iftrue .NumberAccepted
+	checkevent EVENT_CARLA_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext CooltrainerFR2AfterText
+	buttonsound
+	setevent EVENT_CARLA_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_COOLTRAINER_CARLA
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_CARLA
+	trainertotext COOLTRAINERF_D, COOLTRAINERF_R2, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext CooltrainerFR2BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer COOLTRAINERF_D, COOLTRAINERF_R2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_CARLA_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer COOLTRAINERF_D, CARLA_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_CARLA_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
+	end
+
 TrainerCooltrainerMR2:
 	trainer COOLTRAINERM, COOLTRAINERM_R2, EVENT_BEAT_COOLTRAINERM_R2, CooltrainerMR2SeenText, CooltrainerMR2BeatenText, 0, .Script
 
@@ -59,17 +134,6 @@ TrainerCooltrainerMR2:
 	endifjustbattled
 	opentext
 	writetext CooltrainerMR2AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerCooltrainerFR2:
-	trainer COOLTRAINERF_D, COOLTRAINERF_R2, EVENT_BEAT_COOLTRAINERF_R2, CooltrainerFR2SeenText, CooltrainerFR2BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CooltrainerFR2AfterText
 	waitbutton
 	closetext
 	end

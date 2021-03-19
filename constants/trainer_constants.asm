@@ -186,6 +186,10 @@ CHRIS EQU __enum__
 	const SCHOOLGIRL_R20_3
 	const SCHOOLGIRL_R1
 	const SCHOOLGIRL_CELESTIAL_TOWER
+	const JEWEL_REMATCH_1
+	const JEWEL_REMATCH_2
+	const JEWEL_REMATCH_3
+	const JEWEL_REMATCH_4
 
 	trainerclass BIRD_KEEPER ; 18
 	const BIRD_KEEPER_OUTSKIRTS
@@ -198,9 +202,9 @@ CHRIS EQU __enum__
 	const BIRD_KEEPER_MISTRALTON_GYM_3
 	const BIRD_KEEPER_MISTRALTON_GYM_4
 	const BIRD_KEEPER_MISTRALTON_GYM_5
-	const BOB
-	const JOSE1
-	const PETER
+	const FREDDY_REMATCH_1
+	const FREDDY_REMATCH_2
+	const FREDDY_REMATCH_3
 	const JOSE2
 	const PERRY
 	const BRET
@@ -235,6 +239,7 @@ CHRIS EQU __enum__
 	const LASS_R1
 	const LASS_R6_2
 	const LASS_R7_2
+	const CLARISSA_REMATCH_1
 
 	trainerclass JANINE ; 1a
 	const JANINE1
@@ -270,7 +275,7 @@ CHRIS EQU __enum__
 	const COOLTRAINERF_R3_1
 	const COOLTRAINERF_GIANT_CHASM_1
 	const COOLTRAINERF_CHARGESTONE_1
-	const LOLA
+	const ARIANA_REMATCH_1
 	const KATE
 	const IRENE
 	const KELLY
@@ -296,6 +301,8 @@ CHRIS EQU __enum__
 	const COOLTRAINERF_GIANT_CHASM_2
 	const COOLTRAINERF_PWT
 	const COOLTRAINERF_CHARGESTONE_2
+	const CARLA_REMATCH_1
+	const JENNY_REMATCH_1
 
 	trainerclass BEAUTY ; 1d
 	const BEAUTY_R19
@@ -319,6 +326,8 @@ CHRIS EQU __enum__
 	trainerclass BEAUTY_D
 	const BEAUTY_R4
 	const BEAUTY_CELESTIAL_TOWER
+	const LACEY_REMATCH_1
+	const LACEY_REMATCH_2
 
 	trainerclass POKEMANIAC ; 1e
 	const POKEMANIAC_R5
@@ -500,8 +509,8 @@ CHRIS EQU __enum__
 
 	trainerclass SAILOR ; 28
 	const SAILOR_R19
-	const HUEY1
-	const TERRELL
+	const STANLEY_REMATCH_1
+	const STANLEY_REMATCH_2
 	const KENT
 	const ERNEST
 	const JEFF
@@ -518,9 +527,9 @@ CHRIS EQU __enum__
 	const SUPER_NERD_R5_2
 	const SUPER_NERD_R19
 	const SUPER_NERD_R2
-	const DAVE
-	const SAM
-	const TOM
+	const ERIC_REMATCH_1
+	const ERIC_REMATCH_2
+	const ERIC_REMATCH_3
 	const PAT
 	const SHAWN
 	const TERU

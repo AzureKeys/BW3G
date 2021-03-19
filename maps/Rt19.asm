@@ -19,6 +19,89 @@ Rt19_MapScripts:
 
 	db 0 ; callbacks
 
+TrainerSailorR19:
+	trainer SAILOR, SAILOR_R19, EVENT_BEAT_SAILOR_R19, SailorR19SeenText, SailorR19BeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_SAILOR_STANLEY
+	opentext
+	checkflag ENGINE_STANLEY_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_SAILOR_STANLEY
+	iftrue .NumberAccepted
+	checkevent EVENT_STANLEY_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext SailorR19AfterText
+	buttonsound
+	setevent EVENT_STANLEY_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_SAILOR_STANLEY
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_STANLEY
+	trainertotext SAILOR, SAILOR_R19, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext SailorR19BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight2
+	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer SAILOR, SAILOR_R19
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_STANLEY_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer SAILOR, STANLEY_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_STANLEY_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer SAILOR, STANLEY_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_STANLEY_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1m
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2m
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberm
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedm
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedm
+	end
+
+.PhoneFull:
+	jumpstd phonefullm
+	end
+
+.Rematch:
+	jumpstd rematchm
+	end
+
 TrainerYoungsterR19:
 	trainer YOUNGSTER_D, YOUNGSTER_R19, EVENT_BEAT_YOUNGSTER_R19, YoungsterR19SeenText, YoungsterR19BeatenText, 0, .Script
 
@@ -59,17 +142,6 @@ TrainerFisherR19:
 	endifjustbattled
 	opentext
 	writetext FisherR19AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerSailorR19:
-	trainer SAILOR, SAILOR_R19, EVENT_BEAT_SAILOR_R19, SailorR19SeenText, SailorR19BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext SailorR19AfterText
 	waitbutton
 	closetext
 	end

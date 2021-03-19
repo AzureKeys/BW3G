@@ -53,6 +53,96 @@ OutskirtsDoctorScript:
 	special FadeInPalettes
 	end
 
+TrainerBirdKeeperOutskirts:
+	trainer BIRD_KEEPER, BIRD_KEEPER_OUTSKIRTS, EVENT_BEAT_BIRD_KEEPER_OUTSKIRTS, BirdKeeperOutskirtsSeenText, BirdKeeperOutskirtsBeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_BIRDKEEPER_FREDDY
+	opentext
+	checkflag ENGINE_FREDDY_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_BIRDKEEPER_FREDDY
+	iftrue .NumberAccepted
+	checkevent EVENT_FREDDY_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext BirdKeeperOutskirtsAfterText
+	buttonsound
+	setevent EVENT_FREDDY_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_BIRDKEEPER_FREDDY
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_FREDDY
+	trainertotext BIRD_KEEPER, BIRD_KEEPER_OUTSKIRTS, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext BirdKeeperOutskirtsBeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight3
+	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
+	iftrue .LoadFight2
+	checkevent EVENT_BIANCA_CASTELIA_CALL
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer BIRD_KEEPER, BIRD_KEEPER_OUTSKIRTS
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer BIRD_KEEPER, FREDDY_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer BIRD_KEEPER, FREDDY_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer BIRD_KEEPER, FREDDY_REMATCH_3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1m
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2m
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberm
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedm
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedm
+	end
+
+.PhoneFull:
+	jumpstd phonefullm
+	end
+
+.Rematch:
+	jumpstd rematchm
+	end
 
 TrainerPicnickerOutskirts:
 	trainer PICNICKER_D, PICNICKER_OUTSKIRTS, EVENT_BEAT_PICNICKER_OUTSKIRTS, PicnickerOutskirtsSeenText, PicnickerOutskirtsBeatenText, 0, .Script
@@ -61,17 +151,6 @@ TrainerPicnickerOutskirts:
 	endifjustbattled
 	opentext
 	writetext PicnickerOutskirtsAfterText
-	waitbutton
-	closetext
-	end
-
-TrainerBirdKeeperOutskirts:
-	trainer BIRD_KEEPER, BIRD_KEEPER_OUTSKIRTS, EVENT_BEAT_BIRD_KEEPER_OUTSKIRTS, BirdKeeperOutskirtsSeenText, BirdKeeperOutskirtsBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BirdKeeperOutskirtsAfterText
 	waitbutton
 	closetext
 	end

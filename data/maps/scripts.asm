@@ -595,11 +595,11 @@ INCLUDE "maps/VirbankCity.asm"
 INCLUDE "maps/VirbankPokecenter1F.asm"
 INCLUDE "maps/VirbankHouse.asm"
 INCLUDE "maps/GameCorner.asm"
-INCLUDE "maps/R20VirbankGate.asm"
 INCLUDE "maps/VirbankMart.asm"
 
 SECTION "Map Scripts 30", ROMX
 
+INCLUDE "maps/R20VirbankGate.asm"
 INCLUDE "maps/VirbankComplexOutside.asm"
 INCLUDE "maps/VirbankComplexElevator.asm"
 INCLUDE "maps/VirbankComplexB1F.asm"
@@ -641,12 +641,12 @@ INCLUDE "maps/NuvemaLab.asm"
 INCLUDE "maps/Rt17.asm"
 INCLUDE "maps/Rt18.asm"
 INCLUDE "maps/R1R17Gate.asm"
-INCLUDE "maps/R18House.asm"
 INCLUDE "maps/NacreneMuseum.asm"
 INCLUDE "maps/P2Lab.asm"
 
 SECTION "Map Scripts 32", ROMX
 
+INCLUDE "maps/R18House.asm"
 INCLUDE "maps/P2LabEntrance.asm"
 INCLUDE "maps/Rt21.asm"
 INCLUDE "maps/GiantChasmRooms.asm"
@@ -663,13 +663,13 @@ INCLUDE "maps/PWTOutside.asm"
 INCLUDE "maps/PWTInside.asm"
 INCLUDE "maps/PWTHallway.asm"
 INCLUDE "maps/PWTQualifierRoom.asm"
+INCLUDE "maps/PWTDriftveilGate.asm"
 
 SECTION "Map Scripts 33", ROMX
 
 INCLUDE "maps/PWTBackRoom.asm"
 INCLUDE "maps/PWTBattleRoom.asm"
 INCLUDE "maps/DriftveilCity.asm"
-INCLUDE "maps/PWTDriftveilGate.asm"
 INCLUDE "maps/DriftveilPokecenter1F.asm"
 INCLUDE "maps/DriftveilMart.asm"
 INCLUDE "maps/DriftveilBridgeGate.asm"

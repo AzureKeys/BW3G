@@ -15,6 +15,81 @@ Rt1_MapScripts:
 
 	db 0 ; callbacks
 
+TrainerLassR1:
+	trainer LASS_D, LASS_R1, EVENT_BEAT_LASS_R1, LassR1SeenText, LassR1BeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_LASS_CLARISSA
+	opentext
+	checkflag ENGINE_CLARISSA_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_LASS_CLARISSA
+	iftrue .NumberAccepted
+	checkevent EVENT_CLARISSA_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext LassR1AfterText
+	buttonsound
+	setevent EVENT_CLARISSA_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_LASS_CLARISSA
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_CLARISSA
+	trainertotext LASS_D, LASS_R1, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext LassR1BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer LASS_D, LASS_R1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_CLARISSA_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer LASS_D, CLARISSA_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_CLARISSA_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
+	end
+
 TrainerSchoolboyR1:
 	trainer SCHOOLBOY, SCHOOLBOY_R1, EVENT_BEAT_SCHOOLBOY_R1, SchoolboyR1SeenText, SchoolboyR1BeatenText, 0, .Script
 
@@ -33,17 +108,6 @@ TrainerSchoolgirlR1:
 	endifjustbattled
 	opentext
 	writetext SchoolgirlR1AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerLassR1:
-	trainer LASS_D, LASS_R1, EVENT_BEAT_LASS_R1, LassR1SeenText, LassR1BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext LassR1AfterText
 	waitbutton
 	closetext
 	end

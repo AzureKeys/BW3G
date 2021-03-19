@@ -14,6 +14,81 @@ Rt18_MapScripts:
 
 	db 0 ; callbacks
 
+TrainerCooltrainerFR18:
+	trainer COOLTRAINERF_D, COOLTRAINERF_R18, EVENT_BEAT_COOLTRAINERF_R18, CooltrainerFR18SeenText, CooltrainerFR18BeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_COOLTRAINER_JENNY
+	opentext
+	checkflag ENGINE_JENNY_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_COOLTRAINER_JENNY
+	iftrue .NumberAccepted
+	checkevent EVENT_JENNY_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
+	writetext CooltrainerFR18AfterText
+	buttonsound
+	setevent EVENT_JENNY_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_COOLTRAINER_JENNY
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_JENNY
+	trainertotext COOLTRAINERF_D, COOLTRAINERF_R18, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext CooltrainerFR18BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer COOLTRAINERF_D, COOLTRAINERF_R18
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JENNY_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer COOLTRAINERF_D, JENNY_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JENNY_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
+	end
+
 TrainerHikerR18:
 	trainer HIKER, HIKER_R18, EVENT_BEAT_HIKER_R18, HikerR18SeenText, HikerR18BeatenText, 0, .Script
 
@@ -54,17 +129,6 @@ TrainerCooltrainerMR18:
 	endifjustbattled
 	opentext
 	writetext CooltrainerMR18AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerCooltrainerFR18:
-	trainer COOLTRAINERF_D, COOLTRAINERF_R18, EVENT_BEAT_COOLTRAINERF_R18, CooltrainerFR18SeenText, CooltrainerFR18BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CooltrainerFR18AfterText
 	waitbutton
 	closetext
 	end

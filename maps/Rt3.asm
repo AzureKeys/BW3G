@@ -52,26 +52,79 @@ R3DayCareManScript_Outside:
 	disappear R3_GRAMPS
 	end
 
-TrainerCooltrainerMR3:
-	trainer COOLTRAINERM_D, COOLTRAINERM_R3, EVENT_BEAT_COOLTRAINERM_R3, CooltrainerMR3SeenText, CooltrainerMR3BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CooltrainerMR3AfterText
-	waitbutton
-	closetext
-	end
-
 TrainerCooltrainerF1R3:
 	trainer COOLTRAINERF, COOLTRAINERF_R3_1, EVENT_BEAT_COOLTRAINERF_R3_1, CooltrainerF1R3SeenText, CooltrainerF1R3BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	writecode VAR_CALLERID, PHONE_COOLTRAINER_ARIANA
 	opentext
+	checkflag ENGINE_ARIANA_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_COOLTRAINER_ARIANA
+	iftrue .NumberAccepted
+	checkevent EVENT_ARIANA_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
 	writetext CooltrainerF1R3AfterText
-	waitbutton
-	closetext
+	buttonsound
+	setevent EVENT_ARIANA_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_COOLTRAINER_ARIANA
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_ARIANA
+	trainertotext COOLTRAINERF, COOLTRAINERF_R3_1, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext CooltrainerF1R3BeatenText, 0
+	checkevent EVENT_FINISHED_PWT
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer COOLTRAINERF, COOLTRAINERF_R3_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_ARIANA_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer COOLTRAINERF, ARIANA_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_ARIANA_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
 	end
 
 TrainerCooltrainerF2R3:
@@ -81,6 +134,17 @@ TrainerCooltrainerF2R3:
 	endifjustbattled
 	opentext
 	writetext CooltrainerF2R3AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerCooltrainerMR3:
+	trainer COOLTRAINERM_D, COOLTRAINERM_R3, EVENT_BEAT_COOLTRAINERM_R3, CooltrainerMR3SeenText, CooltrainerMR3BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CooltrainerMR3AfterText
 	waitbutton
 	closetext
 	end
