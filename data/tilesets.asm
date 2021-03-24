@@ -64,3 +64,4 @@ Tilesets::
 	tileset TilesetCastelia
 	tileset TilesetAirport
 	tileset TilesetOpelucid
+	tileset TilesetIcirrus

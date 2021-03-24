@@ -687,3 +687,15 @@ INCLUDE "data/tilesets/opelucid_collision.asm"
 
 TilesetOpelucidAttr:
 INCBIN "data/tilesets/opelucid_attributes.bin"
+
+TilesetIcirrusGFX:
+INCBIN "gfx/tilesets/icirrus.2bpp.lz"
+
+TilesetIcirrusMeta:
+INCBIN "data/tilesets/icirrus_metatiles.bin"
+
+TilesetIcirrusColl:
+INCLUDE "data/tilesets/icirrus_collision.asm"
+
+TilesetIcirrusAttr:
+INCBIN "data/tilesets/icirrus_attributes.bin"

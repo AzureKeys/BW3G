@@ -222,6 +222,7 @@ MistraltonHouse_Blocks:
 Rt6House_Blocks:
 Rt7House_Blocks:
 Rt7TradeHouse_Blocks:
+OpelucidSuperRodHouse_Blocks:
 	INCBIN "maps/House1.ablk"
 
 ; SafariZoneFuchsiaGateBeta_Blocks:

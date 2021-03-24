@@ -962,4 +962,5 @@ ENDM
 	map_attributes Rt9OpelucidGate, R_9_OPELUCID_GATE, $00, 0
 	map_attributes OpelucidPokecenter1F, OPELUCID_POKECENTER_1F, $00, 0
 	map_attributes OpelucidMart, OPELUCID_MART, $00, 0
+	map_attributes OpelucidSuperRodHouse, OPELUCID_SUPER_ROD_HOUSE, $00, 0
 	

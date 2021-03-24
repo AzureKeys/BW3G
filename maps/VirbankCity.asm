@@ -120,6 +120,7 @@ VirbankCityUpperFloorScript:
 	changeblock 14, 22, $84
 	changeblock 16, 22, $88
 	clearevent EVENT_VIRBANK_CITY_LOWER_FLOOR
+	refreshscreen
 .done
 	end
 	

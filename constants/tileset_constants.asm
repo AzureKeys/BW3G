@@ -53,6 +53,7 @@
 	const TILESET_CASTELIA
 	const TILESET_AIRPORT
 	const TILESET_OPELUCID
+	const TILESET_ICIRRUS
 
 ; bg palette values (see gfx/tilesets/*_palette_map.asm)
 ; TilesetBGPalette indexes (see gfx/tilesets/bg_tiles.pal)
