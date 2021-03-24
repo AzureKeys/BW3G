@@ -109,8 +109,6 @@ ROMX $25
 	"Events"
 ROMX $26
 	"Map Scripts 11"
-ROMX $27
-	"Map Scripts 12"
 ROMX $28
 	"Phone Scripts 1"
 ROMX $29
@@ -238,33 +236,9 @@ ROMX $5e
 ROMX $5f
 	"Mobile 5F"
 ROMX $60
-	"Map Scripts 13"
 	"Pokedex Entries 001-064"
-ROMX $61
-	"Map Scripts 14"
-ROMX $62
-	"Map Scripts 15"
-ROMX $63
-	"Map Scripts 16"
-ROMX $64
-	"Map Scripts 17"
-ROMX $65
-	"Map Scripts 18"
-ROMX $66
-	"Map Scripts 19"
-ROMX $67
-	"Map Scripts 20"
-ROMX $68
-	"Map Scripts 21"
-ROMX $69
-	"Map Scripts 22"
-ROMX $6a
-	"Map Scripts 23"
-ROMX $6b
-	"Map Scripts 24"
 ROMX $6c
 	"Phone Text 2"
-	"Map Scripts 25"
 ROMX $6d
 	"Special Phone Text"
 ROMX $6e
