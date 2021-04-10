@@ -192,6 +192,7 @@ Function49496:
 	ret
 
 INCLUDE "engine/tilesets/tileset_palettes.asm"
+INCLUDE "engine/tilesets/object_palettes.asm"
 
 MG_Mobile_Layout02:
 	ld hl, .Palette_49732

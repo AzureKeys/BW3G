@@ -685,6 +685,8 @@ NormalStep:
 	ld a, [wMapTileset]
 	cp TILESET_JOHTO_DESERT
 	jr z, .skip_grass
+	cp TILESET_ICIRRUS
+	jr z, .splash_puddle ; ICIRRUS encounter spaces are puddles
 	call ShakeGrass
 	jr .skip_grass
 	

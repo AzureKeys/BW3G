@@ -1279,6 +1279,9 @@ LoadMapPals:
 	ldh [rSVBK], a
 
 .got_pals
+	farcall LoadSpecialMapObjectPalette
+	jr c, .got_ob_pals
+	
 	ld a, [wTimeOfDayPal]
 	maskbits NUM_DAYTIMES
 	ld bc, 8 palettes
@@ -1289,6 +1292,7 @@ LoadMapPals:
 	ld a, BANK(wOBPals1)
 	call FarCopyWRAM
 
+.got_ob_pals
 ; Load Roof palettes if outside
 	ld a, [wEnvironment]
 	cp TOWN
