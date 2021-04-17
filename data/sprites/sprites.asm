@@ -130,4 +130,4 @@ OverworldSprites:
 	overworld_sprite RoodSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite FanSpriteGFX, 4, STILL_SPRITE, PAL_OW_BROWN
 	overworld_sprite SkylaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite CableSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite CableSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK

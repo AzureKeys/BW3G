@@ -206,15 +206,15 @@ INCLUDE "maps/DriftveilShelter.asm"
 INCLUDE "maps/DriftveilDrawbridge.asm"
 INCLUDE "maps/Rt6.asm"
 INCLUDE "maps/R6House.asm"
-INCLUDE "maps/R6Lab.asm"
 INCLUDE "maps/ChargestoneCave1F.asm"
 INCLUDE "maps/ChargestoneCaveB1F.asm"
 INCLUDE "maps/ChargestoneCaveB2F.asm"
 INCLUDE "maps/MistraltonCity.asm"
-INCLUDE "maps/FerryLeft.asm"
 
 SECTION "Map Scripts 11", ROMX
 
+INCLUDE "maps/R6Lab.asm"
+INCLUDE "maps/FerryLeft.asm"
 INCLUDE "maps/FerryRight.asm"
 INCLUDE "maps/HumilauTradeHouse.asm"
 INCLUDE "maps/FloccesyTradeHouse.asm"

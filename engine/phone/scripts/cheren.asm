@@ -48,5 +48,7 @@ CherenPhoneCallerScript:
 .mistralton
 	farwritetext CherenPhoneMistraltonText
 	specialphonecall SPECIALCALL_NONE
+	clearevent EVENT_ASPERTIA_CITY_BLOCKER
+	setmapscene MISTRALTON_CITY, SCENE_MISTRALTON_GIVE_PASS
 	end
 	

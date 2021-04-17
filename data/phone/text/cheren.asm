@@ -70,17 +70,28 @@ CherenPhoneMistraltonText:
 	text "Hey, <PLAY_G>?"
 	line "It's me, CHEREN."
 	
-	para "It looks like you"
-	line "just beat SKYLA."
+	para "I just got some"
+	line "information regar-"
+	cont "ding TEAM PLASMA."
 
-	para "Normally I'd say"
-	line "something that"
-	cont "would advance the"
+	para "MARLON from the"
+	line "HUMILAU GYM just"
+	cont "spotted a group"
 
-	para "plot, but this is"
-	line "the end of the"
-	cont "demo."
+	para "of PLASMA goons"
+	line "headed to a cave"
+	cont "nearby the city."
 	
-	para "Look forward to"
-	line "the final release!"
+	para "I'm going to check"
+	line "it out. They've"
+	cont "got to be planning"
+	cont "something…"
+	
+	para "That's your home-"
+	line "town, right? You"
+	cont "can reach the cave"
+	cont "by SURFing to the"
+	cont "EAST of town."
+	
+	para "See you, <PLAY_G>."
 	done

@@ -1310,9 +1310,16 @@ LoadMapPals:
 	ret
 .CheckNimbasa
 	cp 7 ; Nimbasa
-	jr nz, .CheckDriftveil
+	jr nz, .CheckCastelia
 	ld a, [wMapNumber]
 	cp 17 ; NimbasaParkOutside
+	jr nz, .LoadRoof
+	ret
+.CheckCastelia
+	cp 9 ; Castelia
+	jr nz, .CheckDriftveil
+	ld a, [wMapNumber]
+	cp 20 ; SkyarrowBridge
 	jr nz, .LoadRoof
 	ret
 .CheckDriftveil

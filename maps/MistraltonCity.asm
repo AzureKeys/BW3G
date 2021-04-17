@@ -6,11 +6,13 @@
 	const MISTRALTONCITY_YOUNGSTER
 	const MISTRALTONCITY_TEACHER
 	const MISTRALTONCITY_TWIN
+	const MISTRALTONCITY_SKYLA
 
 MistraltonCity_MapScripts:
-	db 2 ; scene scripts
+	db 3 ; scene scripts
 	scene_script .DummyScene0 ; SCENE_DEFAULT
 	scene_script .DummyScene1 ; SCENE_FINISHED
+	scene_script .GivePass ; SCENE_MISTRALTON_GIVE_PASS
 
 	db 1 ; callbacks
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
@@ -20,10 +22,34 @@ MistraltonCity_MapScripts:
 
 .DummyScene1:
 	end
+	
+.GivePass:
+	priorityjump .MistraltonCity_GivePass
+	end
 
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_MISTRALTON
 	return
+	
+.MistraltonCity_GivePass:
+	applymovement PLAYER, MistraltonCityPlayerMovement
+	playsound SFX_ENTER_DOOR
+	appear MISTRALTONCITY_SKYLA
+	waitsfx
+	opentext
+	writetext MistraltonCityGivePassText
+	buttonsound
+	verbosegiveitem BOARDINGPASS
+	writetext MistraltonCityGavePassText
+	waitbutton
+	closetext
+	applymovement MISTRALTONCITY_SKYLA, MistraltonCitySkylaMovement
+	pause 5
+	disappear MISTRALTONCITY_SKYLA
+	playsound SFX_ENTER_DOOR
+	waitsfx
+	setscene SCENE_FINISHED
+	end
 	
 MistraltonCityBlockerScript:
 	turnobject MISTRALTONCITY_GYM_GUY, RIGHT
@@ -67,6 +93,46 @@ MistraltonAirportSign:
 MistraltonCityGymMovement:
 	step DOWN
 	step_end
+	
+MistraltonCityPlayerMovement:
+	step DOWN
+	turn_head UP
+	step_end
+	
+MistraltonCitySkylaMovement:
+	step UP
+	step_end
+
+MistraltonCityGivePassText:
+	text "SKYLA: Wait,"
+	line "<PLAY_G>!"
+	
+	para "Before you go,"
+	line "I have something"
+	cont "to give you!"
+	done
+
+MistraltonCityGavePassText:
+	text "You're going to"
+	line "HUMILAU CITY,"
+	cont "right?"
+	
+	para "That BOARDINGPASS"
+	line "will let you take"
+	
+	para "the plane from the"
+	line "airport here to"
+	cont "LENTIMAS TOWN."
+	
+	para "That'll get you a"
+	line "lot closer to"
+	cont "HUMILAU CITY than"
+	cont "walking from here!"
+	
+	para "Consider it a gift"
+	line "for such a good"
+	cont "match!"
+	done
 
 MistraltonCityGymGuyText:
 	text "Oh, are you here"
@@ -145,12 +211,13 @@ MistraltonCity_MapEvents:
 	bg_event 11,  9, BGEVENT_READ, MistraltonAirportSign
 	bg_event  8, 28, BGEVENT_ITEM, MistraltonCityElixer
 
-	db 7 ; object events
+	db 8 ; object events
 	object_event  5,  6, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 3, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MistraltonCityGymGuyScript, EVENT_SKYLA_RETURNED
 	object_event  3,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MistraltonCityParlyzHeal, EVENT_MISTRALTON_CITY_PARLYZ_HEAL
 	object_event 20, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MistraltonCityMaxRepel, EVENT_MISTRALTON_CITY_MAX_REPEL
 	object_event  5, 10, SPRITE_OFFICER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, MistraltonCityOfficerScript, -1
 	object_event 10, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MistraltonCityYoungsterScript, -1
-	object_event  8, 22, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MistraltonCityTeacherScript, -1
+	object_event  8, 22, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MistraltonCityTeacherScript, -1
 	object_event 31, 17, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MistraltonCityTwinScript, -1
+	object_event  6,  6, SPRITE_SKYLA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_MISTRALTON_CITY_SKYLA
 	

@@ -234,3 +234,7 @@ SCENE_FINISHED EQU 1
 	const SCENE_PWT_BACK_ROOM_WIN_3 ;3
 	const SCENE_PWT_BACK_ROOM_NOTHING ;4
 	
+; wMistraltonCitySceneID
+	const_def 2
+	const SCENE_MISTRALTON_GIVE_PASS ;2
+	

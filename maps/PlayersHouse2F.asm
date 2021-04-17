@@ -63,6 +63,7 @@ PlayersHouseRadioScript:
 	; setflag ENGINE_STORMBADGE
 	; setflag ENGINE_MINERALBADGE
 	; setflag ENGINE_GLACIERBADGE
+	; setmapscene MISTRALTON_CITY, SCENE_FINISHED
 	; end
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .NormalRadio
@@ -130,8 +131,8 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	db 1 ; warp events
-	;warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	warp_event  7,  0, VILLAGE_BRIDGE, 1
+	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+	;warp_event  7,  0, MISTRALTON_AIRPORT, 1
 
 	db 0 ; coord events
 
