@@ -107,4 +107,5 @@ TrainerGroups:
 	dba RyokuGroup
 	dba GormGroup
 	dba MysterymanGroup
+	dba ZinzolinGroup
 	dba InferGroup

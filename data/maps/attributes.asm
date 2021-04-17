@@ -321,6 +321,8 @@ ENDM
 	map_attributes GiantChasmB1F, GIANT_CHASM_B1F, $71, 0
 	map_attributes SeasideCave1F, SEASIDE_CAVE_1F, $09, 0
 	map_attributes SeasideCaveB1F, SEASIDE_CAVE_B1F, $09, 0
+	map_attributes SeasideCaveB2F, SEASIDE_CAVE_B2F, $09, 0
+	map_attributes SeasideCaveChamber, SEASIDE_CAVE_CHAMBER, $09, 0
 	map_attributes StriatonGym, STRIATON_GYM, $00, 0
 	map_attributes CasteliaSewers, CASTELIA_SEWERS, $00, 0
 	map_attributes CasteliaSewersRooms, CASTELIA_SEWERS_ROOMS, $00, 0

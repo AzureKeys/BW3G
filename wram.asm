@@ -2601,8 +2601,9 @@ wMistraltonAirportSceneID::                       db ; d9c0
 wLentimasAirportSceneID::                         db ; d9c0
 wPlaneLeftSceneID::                               db ; d9c0
 wPlaneRightSceneID::                              db ; d9c0
+wSeasideCaveChamberSceneID::                      db ; d9c0
 
-	ds 72
+	ds 71
 	
 wNumShards:: db
 

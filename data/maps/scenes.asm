@@ -63,4 +63,5 @@ MapScenes::
 	scene_var LENTIMAS_AIRPORT,                            wLentimasAirportSceneID
 	scene_var PLANE_LEFT,                                  wPlaneLeftSceneID
 	scene_var PLANE_RIGHT,                                 wPlaneRightSceneID
+	scene_var SEASIDE_CAVE_CHAMBER,                        wSeasideCaveChamberSceneID
 	db -1

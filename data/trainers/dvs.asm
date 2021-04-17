@@ -106,4 +106,5 @@ TrainerClassDVs:
 	dn 13, 13, 13, 13 ; RYOKU
 	dn 14, 14, 14, 14 ; GORM
 	dn 14, 14, 14, 14 ; MYSTERYMAN
+	dn 14, 14, 14, 14 ; ZINZOLIN
 	dn 13, 13, 13, 13 ; INFER

@@ -107,4 +107,5 @@ TrainerPicPointers::
 	dba RyokuPic
 	dba GormPic
 	dba MysterymanPic
+	dba ZinzolinPic
 	dba InferPic

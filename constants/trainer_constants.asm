@@ -924,6 +924,9 @@ CHRIS EQU __enum__
 	trainerclass MYSTERYMAN
 	const VIO
 	
+	trainerclass ZINZOLIN
+	const ZINZOLIN1
+	
 	trainerclass INFER
 	const INFER1_SNIVY
 	const INFER1_TEPIG

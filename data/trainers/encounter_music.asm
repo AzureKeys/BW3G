@@ -108,4 +108,5 @@ TrainerEncounterMusic::
 	db MUSIC_ROCKET_ENCOUNTER      ; ryoku
 	db MUSIC_ROCKET_ENCOUNTER      ; gorm
 	db MUSIC_ROCKET_ENCOUNTER      ; mysteryman
+	db MUSIC_ROCKET_ENCOUNTER      ; zinzolin
 	db MUSIC_RIVAL_ENCOUNTER       ; infer

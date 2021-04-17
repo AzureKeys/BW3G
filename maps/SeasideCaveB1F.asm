@@ -6,7 +6,7 @@
 	const SEASIDECAVEB1F_BOULDER_5
 	const SEASIDECAVEB1F_BLACKBELT
 	const SEASIDECAVEB1F_BATTLE_GIRL
-	const SEASIDECAVEB1F_BLOCKER
+	;const SEASIDECAVEB1F_BLOCKER
 
 SeasideCaveB1F_MapScripts:
 	db 0 ; scene scripts
@@ -115,8 +115,8 @@ SeasideCaveB1F_MapScripts:
 	closetext
 	end
 	
-SeasideCaveBlocker:
-	jumptextfaceplayer SeasideCaveBlockerText
+; SeasideCaveBlocker:
+	; jumptextfaceplayer SeasideCaveBlockerText
 	
 SeasideCaveBoulder:
 	jumpstd strengthboulder
@@ -187,17 +187,17 @@ SeasideCaveB1FBoulderFellText:
 	line "through!"
 	done
 	
-SeasideCaveBlockerText:
-	text "Sorry buddy, the"
-	line "game's not"
-	cont "finished past"
-	cont "this point!"
-	done
+; SeasideCaveBlockerText:
+	; text "Sorry buddy, the"
+	; line "game's not"
+	; cont "finished past"
+	; cont "this point!"
+	; done
 
 SeasideCaveB1F_MapEvents:
 	db 0, 0 ; filler
 
-	db 7 ; warp events
+	db 8 ; warp events
 	warp_event  5, 13, SEASIDE_CAVE_1F, 3
 	warp_event 13, 11, SEASIDE_CAVE_1F, 4
 	warp_event  8, 20, SEASIDE_CAVE_B1F, 1
@@ -205,12 +205,13 @@ SeasideCaveB1F_MapEvents:
 	warp_event 16, 13, SEASIDE_CAVE_B1F, 1
 	warp_event 17, 16, SEASIDE_CAVE_B1F, 1
 	warp_event 19, 12, SEASIDE_CAVE_B1F, 1
+	warp_event 15,  3, SEASIDE_CAVE_B2F, 1
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 
-	db 8 ; object events
+	db 7 ; object events
 	object_event  6, 20, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_1
 	object_event 18, 18, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_2
 	object_event 15, 16, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_3
@@ -218,5 +219,5 @@ SeasideCaveB1F_MapEvents:
 	object_event 19, 14, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_5
 	object_event 16, 10, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerBlackbeltSeasideCaveB1F, -1
 	object_event 15, 20, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBattleGirlSeasideCaveB1F, -1
-	object_event 15,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBlocker, -1
+	;object_event 15,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBlocker, -1
 	

@@ -1,13 +1,13 @@
 	const_def 2 ; object constants
-	const GIANTCHASM_TM_PSYCHIC
+	const GIANTCHASM_TM_THUNDERBOLT
 
 GiantChasmRooms_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-GiantChasmTMPsychic:
-	itemball TM_PSYCHIC_M
+GiantChasmTMThunderbolt:
+	itemball TM_THUNDERBOLT
 	
 GiantChasmRooms_MapEvents:
 	db 0, 0 ; filler
@@ -22,5 +22,5 @@ GiantChasmRooms_MapEvents:
 	db 0 ; bg events
 
 	db 1 ; object events
-	object_event  8,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, GiantChasmTMPsychic, EVENT_GIANT_CHASM_TM_PSYCHIC
+	object_event  8,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, GiantChasmTMThunderbolt, EVENT_GIANT_CHASM_TM_THUNDERBOLT
 	

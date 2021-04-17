@@ -523,4 +523,10 @@ Rt11_Blocks:
 
 OpelucidCity_Blocks:
 	INCBIN "maps/OpelucidCity.ablk"
+
+SeasideCaveB2F_Blocks:
+	INCBIN "maps/SeasideCaveB2F.ablk"
+
+SeasideCaveChamber_Blocks:
+	INCBIN "maps/SeasideCaveChamber.ablk"
 	
