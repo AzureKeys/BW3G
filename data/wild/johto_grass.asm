@@ -1741,6 +1741,42 @@ JohtoGrassWildMons:
 	db 36, SWINUB
 	db 36, SNEASEL
 	db 35, CRYOGONAL
+	
+	map_id SEASIDE_CAVE_B2F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 38, VANILLITE
+	db 37, CUBCHOO
+	db 37, SWINUB
+	db 36, SNORUNT
+	db 39, SNEASEL
+	db 38, CRYOGONAL
+	db 40, CUBCHOO
+	db 40, SWINUB
+	db 40, SNEASEL
+	db 41, CRYOGONAL
+	; day
+	db 38, VANILLITE
+	db 37, CUBCHOO
+	db 37, SWINUB
+	db 36, SNORUNT
+	db 39, SNEASEL
+	db 38, CRYOGONAL
+	db 40, CUBCHOO
+	db 40, SWINUB
+	db 40, SNEASEL
+	db 41, CRYOGONAL
+	; nite
+	db 38, VANILLITE
+	db 37, CUBCHOO
+	db 37, SWINUB
+	db 36, SNORUNT
+	db 39, SNEASEL
+	db 38, CRYOGONAL
+	db 40, CUBCHOO
+	db 40, SWINUB
+	db 40, SNEASEL
+	db 41, CRYOGONAL
 
 	;map_id R_23_SOUTH
 	map_id R_23

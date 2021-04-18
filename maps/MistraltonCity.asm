@@ -36,6 +36,7 @@ MistraltonCity_MapScripts:
 	playsound SFX_ENTER_DOOR
 	appear MISTRALTONCITY_SKYLA
 	waitsfx
+	applymovement MISTRALTONCITY_SKYLA, MistraltonCityGymMovement
 	opentext
 	writetext MistraltonCityGivePassText
 	buttonsound
@@ -219,5 +220,5 @@ MistraltonCity_MapEvents:
 	object_event 10, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MistraltonCityYoungsterScript, -1
 	object_event  8, 22, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MistraltonCityTeacherScript, -1
 	object_event 31, 17, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MistraltonCityTwinScript, -1
-	object_event  6,  6, SPRITE_SKYLA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_MISTRALTON_CITY_SKYLA
+	object_event  6,  5, SPRITE_SKYLA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_MISTRALTON_CITY_SKYLA
 	

@@ -78,7 +78,7 @@ PlayBattleMusic:
 	ld de, MUSIC_JOHTO_WILD_BATTLE
 	ld a, [wTimeOfDay]
 	cp NITE_F
-	jr nz, .done
+	jp nz, .done
 	ld de, MUSIC_JOHTO_WILD_BATTLE_NIGHT
 	jr .done
 
@@ -106,6 +106,8 @@ PlayBattleMusic:
 	cp RYOKU
 	jr z, .done
 	cp GORM
+	jr z, .done
+	cp ZINZOLIN
 	jr z, .done
 
 	ld de, MUSIC_JOHTO_GYM_LEADER_BATTLE

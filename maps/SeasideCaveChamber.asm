@@ -33,6 +33,7 @@ SeasideCaveZinzolinScript2:
 	; fallthrough
 	
 SeasideCaveZinzolinScript:
+	turnobject SEASIDECAVECHAMBER_ZINZOLIN, DOWN
 	opentext
 	writetext SeasideCaveZinzolinIntroText
 	waitbutton
@@ -79,6 +80,8 @@ SeasideCaveZinzolinScript:
 	closetext
 	playsound SFX_HANG_UP
 	waitsfx
+	turnobject SEASIDECAVECHAMBER_CHEREN, LEFT
+	turnobject SEASIDECAVECHAMBER_MARLON, RIGHT
 	opentext
 	writetext SeasideCaveCherenLeaveText
 	waitbutton
@@ -88,8 +91,9 @@ SeasideCaveZinzolinScript:
 	waitsfx
 	disappear SEASIDECAVECHAMBER_CHEREN
 	special FadeOutMusic
-	pause 15
+	pause 30
 	playmusic MUSIC_UNOVA_CAVE
+	turnobject SEASIDECAVECHAMBER_MARLON, UP
 	opentext
 	writetext SeasideCaveMarlonExplanationText
 	waitbutton
