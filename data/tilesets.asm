@@ -50,6 +50,7 @@ Tilesets::
 	tileset TilesetDesert
 	tileset TilesetJohtoDesert
 	tileset TilesetBridge
+	tileset TilesetVillageBridge
 	tileset TilesetJohtoAirport
 	tileset TilesetJohtoBeach
 	tileset TilesetJohtoEast

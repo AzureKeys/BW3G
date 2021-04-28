@@ -377,11 +377,20 @@ INCBIN "data/tilesets/bridge_metatiles.bin"
 TilesetBridgeColl:
 INCLUDE "data/tilesets/bridge_collision.asm"
 
-TilesetJohtoBeachGFX:
-INCBIN "gfx/tilesets/johto_beach.2bpp.lz"
+TilesetVillageBridgeGFX:
+INCBIN "gfx/tilesets/village_bridge.2bpp.lz"
+
+TilesetVillageBridgeMeta:
+INCBIN "data/tilesets/village_bridge_metatiles.bin"
+
+TilesetVillageBridgeColl:
+INCLUDE "data/tilesets/village_bridge_collision.asm"
 
 
 SECTION "Tileset Data 10", ROMX
+
+TilesetJohtoBeachGFX:
+INCBIN "gfx/tilesets/johto_beach.2bpp.lz"
 
 TilesetJohtoBeachMeta:
 INCBIN "data/tilesets/johto_beach_metatiles.bin"
@@ -398,12 +407,12 @@ INCBIN "data/tilesets/johto_east_metatiles.bin"
 TilesetJohtoEastColl:
 INCLUDE "data/tilesets/johto_east_collision.asm"
 
+
+SECTION "Tileset Data 11", ROMX
+
 Tileset0Attr:
 TilesetJohtoAttr:
 INCBIN "data/tilesets/johto_attributes.bin"
-
-
-SECTION "Tileset Data 11", ROMX
 
 TilesetJohtoModernAttr:
 INCBIN "data/tilesets/johto_modern_attributes.bin"
@@ -432,14 +441,14 @@ INCBIN "data/tilesets/port_attributes.bin"
 TilesetLabAttr:
 INCBIN "data/tilesets/lab_attributes.bin"
 
+
+SECTION "Tileset Data 12", ROMX
+
 TilesetFacilityAttr:
 INCBIN "data/tilesets/facility_attributes.bin"
 
 TilesetMartAttr:
 INCBIN "data/tilesets/mart_attributes.bin"
-
-
-SECTION "Tileset Data 12", ROMX
 
 TilesetMansionAttr:
 INCBIN "data/tilesets/mansion_attributes.bin"
@@ -468,11 +477,17 @@ INCBIN "data/tilesets/players_room_attributes.bin"
 ; TilesetPokeComCenterAttr:
 ; INCBIN "data/tilesets/pokecom_center_attributes.bin"
 
-TilesetBattleTowerAttr:
-INCBIN "data/tilesets/battle_tower_attributes.bin"
-
 ; TilesetTowerAttr:
 ; INCBIN "data/tilesets/tower_attributes.bin"
+
+; TilesetRuinsOfAlphAttr:
+; INCBIN "data/tilesets/ruins_of_alph_attributes.bin"
+
+
+SECTION "Tileset Data 13", ROMX
+
+TilesetBattleTowerAttr:
+INCBIN "data/tilesets/battle_tower_attributes.bin"
 
 TilesetCaveAttr:
 ;TilesetDarkCaveAttr:
@@ -480,12 +495,6 @@ INCBIN "data/tilesets/cave_attributes.bin"
 
 TilesetParkAttr:
 INCBIN "data/tilesets/park_attributes.bin"
-
-; TilesetRuinsOfAlphAttr:
-; INCBIN "data/tilesets/ruins_of_alph_attributes.bin"
-
-
-SECTION "Tileset Data 13", ROMX
 
 TilesetRadioTowerAttr:
 INCBIN "data/tilesets/radio_tower_attributes.bin"
@@ -520,11 +529,14 @@ INCBIN "data/tilesets/desert_attributes.bin"
 TilesetJohtoDesertAttr:
 INCBIN "data/tilesets/johto_desert_attributes.bin"
 
+
+SECTION "Tileset Data 14", ROMX
+
 TilesetBridgeAttr:
 INCBIN "data/tilesets/bridge_attributes.bin"
 
-
-SECTION "Tileset Data 14", ROMX
+TilesetVillageBridgeAttr:
+INCBIN "data/tilesets/village_bridge_attributes.bin"
 
 TilesetJohtoAirportAttr:
 INCBIN "data/tilesets/johto_airport_attributes.bin"
@@ -538,14 +550,14 @@ INCBIN "data/tilesets/johto_east_attributes.bin"
 TilesetJohtoModernEastGFX:
 INCBIN "gfx/tilesets/johto_modern_east.2bpp.lz"
 
+
+SECTION "Tileset Data 15", ROMX
+
 TilesetJohtoModernEastMeta:
 INCBIN "data/tilesets/johto_modern_east_metatiles.bin"
 
 TilesetJohtoModernEastColl:
 INCLUDE "data/tilesets/johto_modern_east_collision.asm"
-
-
-SECTION "Tileset Data 15", ROMX
 
 TilesetJohtoModernEastAttr:
 INCBIN "data/tilesets/johto_modern_east_attributes.bin"
