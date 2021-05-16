@@ -22,6 +22,8 @@ LoadSpecialMapPalette:
 	jp z, .park
 	cp TILESET_BRIDGE
 	jp z, .bridge
+	cp TILESET_VILLAGE_BRIDGE
+	jp z, .village_bridge
 	cp TILESET_CASTELIA
 	jp z, .castelia
 	cp TILESET_FACILITY
@@ -251,6 +253,19 @@ LoadSpecialMapPalette:
 	
 .opelucidnite
 	call LoadOpelucidNitePalette
+	scf
+	ret
+	
+.village_bridge
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .villagebridgenite
+	call LoadVillagePalette
+	scf
+	ret
+	
+.villagebridgenite
+	call LoadVillageNitePalette
 	scf
 	ret
 	
@@ -687,3 +702,25 @@ LoadPlaneNitePalette:
 	
 PlaneNitePalette:
 INCLUDE "gfx/tilesets/plane_nite.pal"
+
+LoadVillagePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, VillagePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+VillagePalette:
+INCLUDE "gfx/tilesets/village_bridge.pal"
+
+LoadVillageNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, VillageNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+VillageNitePalette:
+INCLUDE "gfx/tilesets/village_bridge_nite.pal"
