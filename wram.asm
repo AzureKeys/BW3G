@@ -2602,8 +2602,9 @@ wLentimasAirportSceneID::                         db ; d9c0
 wPlaneLeftSceneID::                               db ; d9c0
 wPlaneRightSceneID::                              db ; d9c0
 wSeasideCaveChamberSceneID::                      db ; d9c0
+wVillageBridgeSceneID::                           db ; d9c0
 
-	ds 71
+	ds 70
 	
 wNumShards:: db
 

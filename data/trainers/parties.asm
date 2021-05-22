@@ -1726,6 +1726,14 @@ BeautyDGroup:
 	db 45, VANILLISH
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
+
+	; BEAUTY (VILLAGE_BRIDGE)
+	db "SHANNON@", TRAINERTYPE_STAT_EXP
+	db 48, PIGNITE
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, EXCADRILL
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
 	
 	; BEAUTY (LACEY REMATCH 1)
 	db "LACEY@", TRAINERTYPE_STAT_EXP
@@ -1782,14 +1790,24 @@ PokemaniacGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db -1 ; end
 
-	; POKEMANIAC (6)
-	db "BRENT@", TRAINERTYPE_NORMAL
-	;db 19, LICKITUNG
+	; POKEMANIAC (VILLAGE_BRIDGE)
+	db "NICK@", TRAINERTYPE_STAT_EXP
+	db 47, MAGBY
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, MAGMAR
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, PUPITAR
+	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 
-	; POKEMANIAC (7)
-	db "RON@", TRAINERTYPE_NORMAL
-	;db 19, NIDOKING
+	; POKEMANIAC (VILLAGE_BRIDGE)
+	db "DEREK@", TRAINERTYPE_STAT_EXP
+	db 47, ELEKID
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, ELECTABUZZ
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, METANG
+	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 
 	; POKEMANIAC (8)
@@ -2472,6 +2490,16 @@ FisherDGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db 47, JELLICENT
 	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+
+	; FISHER (VILLAGE_BRIDGE)
+	db "DEAN@", TRAINERTYPE_STAT_EXP
+	db 49, CORSOLA
+	dw $5000, $5000, $5000, $5000, $5000
+	db 47, CORPHISH
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, SEADRA
+	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 
 SwimmerMGroup:
@@ -4886,6 +4914,14 @@ HarlequinGroup:
 	db 45, BALTOY
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
+
+	; HARLEQUIN (VILLAGE_BRIDGE)
+	db "KARL@", TRAINERTYPE_STAT_EXP
+	db 48, MAWILE
+	dw $5000, $5000, $5000, $5000, $5000
+	db 50, KLANG
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
 	
 VeteranGroup:
 	; VETERAN (SEASIDE_CAVE)
@@ -4902,6 +4938,14 @@ VeteranGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db 44, EXCADRILL
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
+	db -1 ; end
+
+	; VETERAN (VILLAGE_BRIDGE)
+	db "AMY@", TRAINERTYPE_STAT_EXP
+	db 48, DURANT
+	dw $5000, $5000, $5000, $5000, $5000
+	db 50, HOUNDOOM
+	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
 WaiterGroup:

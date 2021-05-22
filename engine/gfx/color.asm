@@ -1324,9 +1324,15 @@ LoadMapPals:
 	ret
 .CheckDriftveil
 	cp 18 ; Driftveil
-	jr nz, .LoadRoof
+	jr nz, .CheckOpelucid
 	ld a, [wMapNumber]
 	cp 7 ; DriftveilDrawbridge
+	ret z
+.CheckOpelucid
+	cp 20 ; Opelucid
+	jr nz, .LoadRoof
+	ld a, [wMapNumber]
+	cp 1 ; VillageBridge
 	ret z
 .LoadRoof
 	ld a, [wMapGroup]

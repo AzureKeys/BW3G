@@ -163,5 +163,11 @@ JohtoWaterWildMons:
 	db 15, SPHEAL
 	db 20, HORSEA
 	db 15, SPHEAL
+	
+	map_id VILLAGE_BRIDGE
+	db 4 percent ; encounter rate
+	db 15, DUCKLETT
+	db 20, CORSOLA
+	db 15, DUCKLETT
 
 	db -1 ; end

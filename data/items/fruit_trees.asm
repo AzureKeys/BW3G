@@ -12,3 +12,4 @@ FruitTreeItems:
 	db PRZCUREBERRY ; R1
 	db GOLD_BERRY   ; R6
 	db BURNT_BERRY  ; R7
+	db MINT_BERRY   ; VILLAGE_BRIDGE

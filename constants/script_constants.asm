@@ -163,10 +163,11 @@ EMOTE_MEM EQU -1
 	const FRUITTREE_R_1            ; 0a
 	const FRUITTREE_R_6            ; 0b
 	const FRUITTREE_R_7            ; 0c
+	const FRUITTREE_VILLAGE_BRIDGE ; 0d
 NUM_FRUIT_TREES EQU const_value + -1
 
 ; hiddengrotto arguments
-; HiddenGrottoItems indexes (see data/items/hidden_grotto.asm)
+; HiddenGrotto event indexes
 	const_def 1
 	const HIDDENGROTTO_R_22         ; 01
 	const HIDDENGROTTO_R_13         ; 02

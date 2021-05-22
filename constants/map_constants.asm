@@ -285,7 +285,7 @@ ENDM
 	map_const R_7_TRADE_HOUSE, 4, 4
 	
 	newgroup
-	map_const VILLAGE_BRIDGE, 34, 18
+	map_const VILLAGE_BRIDGE, 34, 19
 	map_const R_11_VILLAGE_BRIDGE_GATE, 5, 4
 	map_const R_11, 22, 12
 	map_const R_11_OPELUCID_GATE, 5, 4

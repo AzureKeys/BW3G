@@ -1777,6 +1777,42 @@ JohtoGrassWildMons:
 	db 40, SWINUB
 	db 40, SNEASEL
 	db 41, CRYOGONAL
+	
+	map_id VILLAGE_BRIDGE
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 40, AZUMARILL
+	db 39, SWADLOON
+	db 39, WHIRLIPEDE
+	db 38, HERDIER
+	db 37, ROSELIA
+	db 36, FERROSEED
+	db 38, GRANBULL
+	db 40, FERROSEED
+	db 40, GRANBULL
+	db 41, ROSELIA
+	; day
+	db 40, AZUMARILL
+	db 39, SWADLOON
+	db 39, WHIRLIPEDE
+	db 38, HERDIER
+	db 37, ROSELIA
+	db 36, FERROSEED
+	db 38, GRANBULL
+	db 40, FERROSEED
+	db 40, GRANBULL
+	db 41, ROSELIA
+	; nite
+	db 40, AZUMARILL
+	db 39, SWADLOON
+	db 39, WHIRLIPEDE
+	db 38, HERDIER
+	db 37, ROSELIA
+	db 36, FERROSEED
+	db 38, GRANBULL
+	db 40, FERROSEED
+	db 40, GRANBULL
+	db 41, ROSELIA
 
 	;map_id R_23_SOUTH
 	map_id R_23

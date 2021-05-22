@@ -64,4 +64,5 @@ MapScenes::
 	scene_var PLANE_LEFT,                                  wPlaneLeftSceneID
 	scene_var PLANE_RIGHT,                                 wPlaneRightSceneID
 	scene_var SEASIDE_CAVE_CHAMBER,                        wSeasideCaveChamberSceneID
+	scene_var VILLAGE_BRIDGE,                              wVillageBridgeSceneID
 	db -1
