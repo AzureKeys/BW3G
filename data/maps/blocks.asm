@@ -542,6 +542,6 @@ IcirrusCitySouth_Blocks:
 IcirrusCitySouthConnectionDummy_Blocks:
 	INCBIN "maps/IcirrusCitySouthConnectionDummy.ablk"
 
-Rt8_Blocks:
+Rt8_Blocks::
 	INCBIN "maps/Rt8.ablk"
 	

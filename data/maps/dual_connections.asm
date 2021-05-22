@@ -45,5 +45,5 @@ DualMapConnections:
 ; When you walk north off of Icirrus City South, if [wXCoord] < 21,
 ; then use "connection north, IcirrusCityNorth, ICIRRUS_CITY_NORTH, 0";
 ; else use "connection north, Rt8, R_8, 8".
-	;dual_connection north, ICIRRUS_CITY_SOUTH, 21, IcirrusCityNorth, ICIRRUS_CITY_NORTH, 0, Rt8, R_8, 8
+	dual_connection north, ICIRRUS_CITY_SOUTH, 21, IcirrusCityNorth, ICIRRUS_CITY_NORTH, 0, Rt8, R_8, 8
 	db 0 ; end

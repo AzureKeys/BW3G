@@ -8,7 +8,8 @@ IcirrusCitySouth_MapScripts:
 IcirrusCitySouth_MapEvents:
 	db 0, 0 ; filler
 
-	db 0 ; warp events
+	db 1 ; warp events
+	warp_event 13,  3, ICIRRUS_CITY_SOUTH, 1
 
 	db 0 ; coord events
 
