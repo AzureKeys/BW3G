@@ -19,6 +19,53 @@ InitCommandQueue:
 
 EnterMapConnection:
 ; Return carry if a connection has been entered.
+
+	ld hl, DualMapConnections
+.dual_loop
+; check end
+	ld a, [hli]
+	and a
+	jr z, .not_dual
+; check map group
+	ld b, a
+	ld a, [wMapGroup]
+	cp b
+	jr nz, .skip31
+; check map number
+	ld a, [hli]
+	ld b, a
+	ld a, [wMapNumber]
+	cp b
+	jr nz, .skip30
+; check step direction
+	ld a, [hli]
+	ld b, a
+	ld a, [wPlayerStepDirection]
+	cp b
+	jr nz, .skip29
+; check coordinate
+	ld a, [hli]
+	ld e, a
+	ld a, [hli]
+	ld d, a
+	ld a, [hli]
+	ld b, a
+	ld a, [de]
+	cp b
+; de = map connection struct
+	ld a, [hli]
+	ld e, a
+	ld a, [hli]
+	ld d, a
+; hl = connection data
+	jr c, .lesser
+	ld bc, 12 ; size of connection
+	add hl, bc
+.lesser
+	call GetMapConnection
+	; fallthrough
+	
+.not_dual
 	ld a, [wPlayerStepDirection]
 	and a ; DOWN
 	jp z, .south
@@ -29,6 +76,15 @@ EnterMapConnection:
 	cp RIGHT
 	jp z, .east
 	ret
+	
+.skip31
+	inc hl
+.skip30
+	inc hl
+.skip29
+	ld bc, 8 + 12 * 2 - 3 ; size of dual_connection, minus 3 bytes passed already
+	add hl, bc
+	jr .dual_loop
 
 .west
 	ld a, [wWestConnectedMapGroup]
@@ -432,3 +488,5 @@ GetCoordOfUpperLeftCorner::
 	and $1
 	ld [wMetatileStandingX], a
 	ret
+	
+INCLUDE "data/maps/dual_connections.asm"

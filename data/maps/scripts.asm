@@ -257,3 +257,7 @@ SECTION "Map Scripts 12", ROMX
 
 INCLUDE "maps/SeasideCaveChamber.asm"
 INCLUDE "maps/TubelineBridge.asm"
+INCLUDE "maps/IcirrusCitySouthConnectionDummy.asm"
+INCLUDE "maps/IcirrusCitySouth.asm"
+INCLUDE "maps/IcirrusCityNorth.asm"
+INCLUDE "maps/Rt8.asm"

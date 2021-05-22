@@ -297,6 +297,10 @@ ENDM
 	
 	newgroup
 	map_const TUBELINE_BRIDGE, 9, 7
+	map_const ICIRRUS_CITY_SOUTH_CONNECTION_DUMMY, 24, 3
+	map_const ICIRRUS_CITY_SOUTH, 24, 13
+	map_const ICIRRUS_CITY_NORTH, 12, 10
+	map_const R_8, 24, 10
 	
 	newgroup
 	map_const R_23, 22, 26

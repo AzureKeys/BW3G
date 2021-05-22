@@ -532,4 +532,16 @@ SeasideCaveChamber_Blocks:
 
 TubelineBridge_Blocks:
 	INCBIN "maps/TubelineBridge.ablk"
+
+IcirrusCityNorth_Blocks::
+	INCBIN "maps/IcirrusCityNorth.ablk"
+
+IcirrusCitySouth_Blocks:
+	INCBIN "maps/IcirrusCitySouth.ablk"
+
+IcirrusCitySouthConnectionDummy_Blocks:
+	INCBIN "maps/IcirrusCitySouthConnectionDummy.ablk"
+
+Rt8_Blocks:
+	INCBIN "maps/Rt8.ablk"
 	
