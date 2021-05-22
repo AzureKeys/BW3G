@@ -11,12 +11,12 @@ MapGroupRoofs:
 ; entries correspond to map groups
 ; values are indexes for Roofs (see below)
 	db -1             ;  0
-	db -1             ;  3
-	db -1             ; 20
-	db ROOF_HUMILAU   ; 27 (Humilau)
-	db ROOF_HUMILAU   ; 28 (Lacunosa)
-	db ROOF_HUMILAU   ; 29 (Undella)
-	db ROOF_LENTIMAS  ; 30 (Lentimas)
+	db -1             ; Dungeons
+	db -1             ; CableClub
+	db ROOF_HUMILAU   ; Humilau
+	db ROOF_HUMILAU   ; Lacunosa
+	db ROOF_HUMILAU   ; Undella
+	db ROOF_LENTIMAS  ; Lentimas
 	db ROOF_NIMBASA   ; Nimbasa
 	db ROOF_HUMILAU   ; Desert
 	db ROOF_HUMILAU   ; Castelia
@@ -31,7 +31,8 @@ MapGroupRoofs:
 	db ROOF_HUMILAU   ; Driftveil
 	db ROOF_HUMILAU   ; Mistralton
 	db ROOF_HUMILAU   ; Opelucid
-	db ROOF_HUMILAU   ; XX (PkmnLeague)
+	db ROOF_HUMILAU   ; Icirrus
+	db ROOF_HUMILAU   ; PkmnLeague
 
 Roofs:
 ; entries correspond to ROOF_* constants

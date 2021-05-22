@@ -18,21 +18,22 @@ OpelucidPokecenter1FCooltrainerFScript:
 	jumptextfaceplayer OpelucidPokecenter1FCooltrainerFText
 
 OpelucidPokecenter1FCooltrainerMText:
-	text "Hey! You have a"
-	line "brand new kind of"
-	cont "#DEX."
+	text "TEAM PLASMA once"
+	line "tried to take over"
+	cont "our city."
 
-	para "Did PROF.OAK give"
-	line "that to you?"
+	para "They were beaten"
+	line "by our GYM LEADER,"
+	cont "DRAYDEN!"
 	done
 
 OpelucidPokecenter1FCooltrainerFText:
-	text "I got quite a"
-	line "shock at the GYM."
+	text "DRAYDEN is strong,"
+	line "but his grand-"
+	cont "daughter, IRIS,"
 
-	para "There were all"
-	line "these girls who"
-	cont "looked identical."
+	para "was the #MON"
+	line "LEAGUE champion!"
 	done
 
 OpelucidPokecenter1F_MapEvents:

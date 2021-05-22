@@ -529,4 +529,7 @@ SeasideCaveB2F_Blocks:
 
 SeasideCaveChamber_Blocks:
 	INCBIN "maps/SeasideCaveChamber.ablk"
+
+TubelineBridge_Blocks:
+	INCBIN "maps/TubelineBridge.ablk"
 	

@@ -22,17 +22,17 @@ OpelucidMartCooltrainerFScript:
 
 OpelucidMartFisherText:
 	text "I was hoping to"
-	line "buy some SAFARI"
+	line "buy some supplies"
 
-	para "ZONE souvenirs,"
+	para "to climb ROUTE 10,"
 	line "but it's closed…"
 	done
 
 OpelucidMartCooltrainerFText:
-	text "The SAFARI ZONE"
-	line "WARDEN's grand-"
-	cont "daughter lives in"
-	cont "town."
+	text "The previous #-"
+	line "MON LEAGUE"
+	cont "champion, IRIS,"
+	cont "lives in town!"
 	done
 
 OpelucidMart_MapEvents:

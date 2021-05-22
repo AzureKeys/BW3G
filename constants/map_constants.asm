@@ -296,6 +296,9 @@ ENDM
 	map_const OPELUCID_SUPER_ROD_HOUSE, 4, 4 
 	
 	newgroup
+	map_const TUBELINE_BRIDGE, 9, 7
+	
+	newgroup
 	map_const R_23, 22, 26
 	map_const R_23_GATE, 5, 4
 	

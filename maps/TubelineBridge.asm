@@ -1,0 +1,22 @@
+	const_def 2 ; object constants
+
+TubelineBridge_MapScripts:
+	db 0 ; scene scripts
+
+	db 0 ; callbacks
+
+TubelineBridge_MapEvents:
+	db 0, 0 ; filler
+
+	db 0 ; warp events
+	;warp_event  0,  6, R_8, 3
+	;warp_event  0,  7, R_8, 4
+	;warp_event 17,  6, R_9, 3
+	;warp_event 17,  7, R_9, 4
+
+	db 0 ; coord events
+
+	db 0 ; bg events
+	
+	db 0 ; object events
+	

@@ -256,3 +256,4 @@ INCLUDE "maps/SeasideCaveB2F.asm"
 SECTION "Map Scripts 12", ROMX
 
 INCLUDE "maps/SeasideCaveChamber.asm"
+INCLUDE "maps/TubelineBridge.asm"

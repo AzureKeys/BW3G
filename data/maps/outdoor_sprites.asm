@@ -23,6 +23,7 @@ OutdoorSprites:
 	dw DriftveilGroupSprites
 	dw MistraltonGroupSprites
 	dw OpelucidGroupSprites
+	dw IcirrusGroupSprites
 	dw PkmnLeagueGroupSprites
 
 HumilauGroupSprites:
@@ -281,10 +282,22 @@ MistraltonGroupSprites:
 
 OpelucidGroupSprites:
 ; Opelucid City, R11, Village Bridge
+	db SPRITE_POKEFAN_F
+	db SPRITE_HARLEQUIN
+	db SPRITE_BUENA
+	db SPRITE_FISHER
+	db SPRITE_SUPER_NERD
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
 	db SPRITE_CABLE
+	db 0 ; end
+
+IcirrusGroupSprites:
+; Icirrus City, R8, Tubeline Bridge
+	; 8 of max 9 walking sprites
+	db SPRITE_FRUIT_TREE
+	db SPRITE_POKE_BALL
 	db 0 ; end
 
 PkmnLeagueGroupSprites:

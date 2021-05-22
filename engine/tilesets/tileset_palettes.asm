@@ -51,11 +51,15 @@ LoadSpecialMapPalette:
 
 .airport
 	ld a, [wMapGroup]
-	cp 19 ; mapgroup_Mistralton
-	jr nz, .load_airport ; Must be Lentimas Airport
+	cp 6 ; mapgroup_Lentimas
+	jr z, .load_airport ; Must be Lentimas Airport
+	cp 21 ; mapgroup_Icirrus
+	jr z, .plane ; Tubeline Bridge uses plane palettes
+; Must be mapgroup_Mistralton
 	ld a, [wMapNumber]
 	cp 7 ; MistraltonAirport
 	jr z, .load_airport
+.plane
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .plane_nite
