@@ -8,9 +8,9 @@ TubelineBridge_MapScripts:
 TubelineBridge_MapEvents:
 	db 0, 0 ; filler
 
-	db 0 ; warp events
-	;warp_event  0,  6, R_8, 3
-	;warp_event  0,  7, R_8, 4
+	db 2 ; warp events
+	warp_event  0,  6, R_8, 1
+	warp_event  0,  7, R_8, 2
 	;warp_event 17,  6, R_9, 3
 	;warp_event 17,  7, R_9, 4
 

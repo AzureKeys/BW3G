@@ -27,5 +27,6 @@ SpawnPoints:
 	spawn DRIFTVEIL_CITY,             19, 18
 	spawn MISTRALTON_CITY,            27, 16
 	spawn OPELUCID_CITY,              33, 24
+	spawn ICIRRUS_CITY_SOUTH,         13,  4
 	spawn HUMILAU_CITY,               27, 14 ; PKMN_LEAGUE
 	spawn N_A,                        -1, -1

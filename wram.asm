@@ -2603,8 +2603,9 @@ wPlaneLeftSceneID::                               db ; d9c0
 wPlaneRightSceneID::                              db ; d9c0
 wSeasideCaveChamberSceneID::                      db ; d9c0
 wVillageBridgeSceneID::                           db ; d9c0
+wIcirrusCitySouthSceneID::                        db ; d9c0
 
-	ds 70
+	ds 69
 	
 wNumShards:: db
 

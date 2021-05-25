@@ -310,4 +310,6 @@ ENDM
 	map_attributes OpelucidMart, OPELUCID_MART, $00, 0
 	map_attributes OpelucidSuperRodHouse, OPELUCID_SUPER_ROD_HOUSE, $00, 0
 	map_attributes TubelineBridge, TUBELINE_BRIDGE, $00, 0
+	map_attributes IcirrusPokecenter1F, ICIRRUS_POKECENTER_1F, $00, 0
+	map_attributes IcirrusMart, ICIRRUS_MART, $00, 0
 	

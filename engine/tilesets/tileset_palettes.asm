@@ -42,6 +42,8 @@ LoadSpecialMapPalette:
 	jp z, .airport
 	cp TILESET_OPELUCID
 	jp z, .opelucid
+	cp TILESET_ICIRRUS
+	jp z, .icirrus
 	jr .do_nothing
 
 .battle_tower
@@ -257,6 +259,19 @@ LoadSpecialMapPalette:
 	
 .opelucidnite
 	call LoadOpelucidNitePalette
+	scf
+	ret
+	
+.icirrus
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .icirrusnite
+	call LoadIcirrusPalette
+	scf
+	ret
+	
+.icirrusnite
+	call LoadIcirrusNitePalette
 	scf
 	ret
 	
@@ -673,6 +688,28 @@ LoadOpelucidNitePalette:
 	
 OpelucidNitePalette:
 INCLUDE "gfx/tilesets/opelucid_nite.pal"
+
+LoadIcirrusPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, IcirrusPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+IcirrusPalette:
+INCLUDE "gfx/tilesets/icirrus.pal"
+
+LoadIcirrusNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, IcirrusNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+IcirrusNitePalette:
+INCLUDE "gfx/tilesets/icirrus_nite.pal"
 
 LoadAirportPalette:
 	ld a, BANK(wBGPals1)

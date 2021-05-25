@@ -23,6 +23,7 @@ Flypoints:
 	flypoint DRIFTVEIL,    DRIFTVEIL_CITY
 	flypoint MISTRALTON,   MISTRALTON_CITY
 	flypoint OPELUCID,     OPELUCID_CITY
+	flypoint ICIRRUS,      ICIRRUS_CITY
 	flypoint PKMN_LEAGUE,      HUMILAU_CITY
 
 ; Kanto

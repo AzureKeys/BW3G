@@ -65,4 +65,5 @@ MapScenes::
 	scene_var PLANE_RIGHT,                                 wPlaneRightSceneID
 	scene_var SEASIDE_CAVE_CHAMBER,                        wSeasideCaveChamberSceneID
 	scene_var VILLAGE_BRIDGE,                              wVillageBridgeSceneID
+	scene_var ICIRRUS_CITY_SOUTH,                          wIcirrusCitySouthSceneID
 	db -1

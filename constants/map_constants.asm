@@ -301,6 +301,8 @@ ENDM
 	map_const ICIRRUS_CITY_SOUTH, 24, 13
 	map_const ICIRRUS_CITY_NORTH, 12, 10
 	map_const R_8, 24, 10
+	map_const ICIRRUS_POKECENTER_1F, 5, 4 
+	map_const ICIRRUS_MART, 6, 4
 	
 	newgroup
 	map_const R_23, 22, 26

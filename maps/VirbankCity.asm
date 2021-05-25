@@ -332,7 +332,7 @@ VirbankCity_MapEvents:
 	warp_event 16, 27, VIRBANK_COMPLEX_OUTSIDE, 4
 	warp_event 17, 27, VIRBANK_COMPLEX_OUTSIDE, 5
 
-	db 10 ; coord events
+	db 11 ; coord events
 	coord_event 23, 16, SCENE_DEFAULT, VirbankCityUpperFloorScript
 	coord_event 30, 16, SCENE_DEFAULT, VirbankCityUpperFloorScript
 	coord_event 24, 16, SCENE_DEFAULT, VirbankCityLowerFloorScript
@@ -343,6 +343,7 @@ VirbankCity_MapEvents:
 	coord_event  4, 11, SCENE_DEFAULT, VirbankCityUpperFloorScript
 	coord_event  5, 12, SCENE_DEFAULT, VirbankCityUpperFloorScript
 	coord_event  5, 13, SCENE_DEFAULT, VirbankCityUpperFloorScript
+	coord_event 38, 26, SCENE_DEFAULT, VirbankCityUpperFloorScript
 
 	db 5 ; bg events
 	bg_event  4, 10, BGEVENT_READ, VirbankCitySign

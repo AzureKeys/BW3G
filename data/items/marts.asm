@@ -25,6 +25,7 @@ Marts:
 	dw MartMerchant2
 	dw MartMistralton
 	dw MartOpelucid
+	dw MartIcirrus
 .End
 
 MartUnderground:
@@ -236,7 +237,7 @@ MartDriftveil:
 	db GREAT_BALL
 	db ULTRA_BALL
 	db HYPER_POTION
-	db MAX_POTION
+	db MAX_REPEL
 	db FULL_HEAL
 	db X_ATTACK
 	db X_DEFEND
@@ -260,8 +261,8 @@ MartMistralton:
 	db 6 ; # items
 	db ULTRA_BALL
 	db HYPER_POTION
-	db MAX_POTION
 	db FULL_HEAL
+	db MAX_REPEL
 	db X_SPEED
 	db X_DEFEND
 	db -1 ; end
@@ -270,11 +271,22 @@ MartOpelucid:
 	db 7 ; # items
 	db ULTRA_BALL
 	db HYPER_POTION
-	db MAX_POTION
+	db MAX_REPEL
 	db FULL_HEAL
 	db X_ATTACK
 	db X_SPECIAL
 	db X_SP_DEF
+	db -1 ; end
+
+MartIcirrus:
+	db 7 ; # items
+	db ULTRA_BALL
+	db MAX_POTION
+	db FULL_HEAL
+	db REVIVE
+	db MAX_REPEL
+	db X_DEFEND
+	db X_SPEED
 	db -1 ; end
 
 DefaultMart:
