@@ -963,6 +963,14 @@ BirdKeeperGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
+	; BIRD_KEEPER (R11)
+	db "TALON@", TRAINERTYPE_STAT_EXP
+	db 48, EMOLGA
+	dw $5000, $5000, $5000, $5000, $5000
+	db 50, ALTARIA
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+	
 	; BIRD_KEEPER (FREDDY REMATCH 1)
 	db "FREDDY@", TRAINERTYPE_STAT_EXP
 	db 20, RUFFLET
@@ -991,11 +999,6 @@ BirdKeeperGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db 42, UNFEZANT
 	dw $4800, $4800, $4800, $4800, $4800
-	db -1 ; end
-
-	; BIRD_KEEPER (14)
-	db "JOSE@", TRAINERTYPE_NORMAL
-	;db 34, FARFETCH_D
 	db -1 ; end
 
 	; BIRD_KEEPER (15)
@@ -2811,6 +2814,16 @@ SailorGroup:
 	dw $2000, $2000, $2000, $2000, $2000
 	db -1 ; end
 	
+	; SAILOR (R11)
+	db "CROFT@", TRAINERTYPE_STAT_EXP
+	db 47, TYMPOLE
+	dw $5000, $5000, $5000, $5000, $5000
+	db 48, PALPITOAD
+	dw $5000, $5000, $5000, $5000, $5000
+	db 50, SEISMITOAD
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+	
 	; SAILOR (STANLEY REMATCH 1)
 	db "STANLEY@", TRAINERTYPE_STAT_EXP
 	db 31, OCTILLERY
@@ -2825,12 +2838,6 @@ SailorGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db 42, MANTINE
 	dw $4800, $4800, $4800, $4800, $4800
-	db -1 ; end
-
-	; SAILOR (4)
-	db "KENT@", TRAINERTYPE_MOVES
-	; db 18, KRABBY,     BUBBLE, LEER, VICEGRIP, HARDEN
-	; db 20, KRABBY,     BUBBLEBEAM, LEER, VICEGRIP, HARDEN
 	db -1 ; end
 
 	; SAILOR (5)

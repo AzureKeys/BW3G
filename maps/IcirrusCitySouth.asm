@@ -24,6 +24,10 @@ IcirrusCitySouth_MapScripts:
 	changeblock 22,  4, $4d
 	changeblock 24,  4, $4d
 	changeblock 26,  4, $4e
+	changeblock 18,  2, $a2
+	changeblock 20,  2, $a2
+	changeblock 22,  2, $a2
+	changeblock 24,  2, $a2
 	changeblock 30,  2, $5c
 	changeblock 32,  2, $5d
 	changeblock 34,  2, $5d
@@ -40,6 +44,10 @@ IcirrusCityUpperFloorScript:
 	changeblock 22,  4, $4d
 	changeblock 24,  4, $4d
 	changeblock 26,  4, $4e
+	changeblock 18,  2, $a2
+	changeblock 20,  2, $a2
+	changeblock 22,  2, $a2
+	changeblock 24,  2, $a2
 	changeblock 30,  2, $5c
 	changeblock 32,  2, $5d
 	changeblock 34,  2, $5d
@@ -58,6 +66,10 @@ IcirrusCityLowerFloorScript:
 	changeblock 22,  4, $51
 	changeblock 24,  4, $51
 	changeblock 26,  4, $52
+	changeblock 18,  2, $49
+	changeblock 20,  2, $49
+	changeblock 22,  2, $49
+	changeblock 24,  2, $49
 	changeblock 30,  2, $60
 	changeblock 32,  2, $61
 	changeblock 34,  2, $61

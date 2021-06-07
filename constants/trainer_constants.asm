@@ -202,10 +202,10 @@ CHRIS EQU __enum__
 	const BIRD_KEEPER_MISTRALTON_GYM_3
 	const BIRD_KEEPER_MISTRALTON_GYM_4
 	const BIRD_KEEPER_MISTRALTON_GYM_5
+	const BIRD_KEEPER_R11
 	const FREDDY_REMATCH_1
 	const FREDDY_REMATCH_2
 	const FREDDY_REMATCH_3
-	const JOSE2
 	const PERRY
 	const BRET
 	const JOSE3
@@ -511,9 +511,9 @@ CHRIS EQU __enum__
 
 	trainerclass SAILOR ; 28
 	const SAILOR_R19
+	const SAILOR_R11
 	const STANLEY_REMATCH_1
 	const STANLEY_REMATCH_2
-	const KENT
 	const ERNEST
 	const JEFF
 	const GARRETT

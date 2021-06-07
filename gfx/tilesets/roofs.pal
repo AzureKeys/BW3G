@@ -83,8 +83,8 @@
 	RGB 03,10,22, 11,09,11 ; nite
 
 ; group 30 (Icirrus)
-	RGB 06,20,30, 22,18,15 ; morn/day
-	RGB 03,10,22, 11,09,11 ; nite
+	RGB 23,23,21, 15,15,13 ; morn/day
+	RGB 11,11,15, 07,07,09 ; nite
 
 ; group XX (PkmnLeague)
 	RGB 22,20,10, 17,14,03 ; morn/day

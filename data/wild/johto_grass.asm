@@ -1813,6 +1813,42 @@ JohtoGrassWildMons:
 	db 40, FERROSEED
 	db 40, GRANBULL
 	db 41, ROSELIA
+	
+	map_id R_11
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 40, RUFFLET
+	db 40, VULLABY
+	db 41, PINSIR
+	db 41, HERACROSS
+	db 38, AUDINO
+	db 39, EMOLGA
+	db 40, VULLABY
+	db 38, KIRLIA
+	db 40, AUDINO
+	db 42, KIRLIA
+	; day
+	db 40, RUFFLET
+	db 40, VULLABY
+	db 41, PINSIR
+	db 41, HERACROSS
+	db 38, AUDINO
+	db 39, EMOLGA
+	db 40, VULLABY
+	db 38, KIRLIA
+	db 40, AUDINO
+	db 42, KIRLIA
+	; nite
+	db 40, RUFFLET
+	db 40, VULLABY
+	db 41, PINSIR
+	db 41, HERACROSS
+	db 38, AUDINO
+	db 39, EMOLGA
+	db 40, VULLABY
+	db 38, KIRLIA
+	db 40, AUDINO
+	db 42, KIRLIA
 
 	;map_id R_23_SOUTH
 	map_id R_23
