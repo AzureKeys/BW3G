@@ -288,6 +288,7 @@ ENDM
 	map_const VILLAGE_BRIDGE, 34, 19
 	map_const R_11_VILLAGE_BRIDGE_GATE, 5, 4
 	map_const R_11, 22, 12
+	map_const R_11_TRUCK, 4, 3
 	map_const R_11_OPELUCID_GATE, 5, 4
 	map_const OPELUCID_CITY, 28, 17
 	map_const R_9_OPELUCID_GATE, 5, 4

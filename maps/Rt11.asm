@@ -3,6 +3,8 @@
 	const R11_RAZOR_CLAW
 	const R11_FULL_RESTORE
 	const R11_HP_UP
+	const R11_AMOONGUSS_1
+	const R11_AMOONGUSS_2
 	const R11_BIRD_KEEPER
 	const R11_SAILOR
 
@@ -82,6 +84,32 @@ TrainerSailorR11:
 	waitbutton
 	closetext
 	end
+
+R11Amoonguss1:
+	opentext
+	writetext R11AmoongussText
+	cry AMOONGUSS
+	pause 15
+	closetext
+	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
+	loadwildmon AMOONGUSS, 48
+	startbattle
+	disappear R11_AMOONGUSS_1
+	reloadmapafterbattle
+	end
+
+R11Amoonguss2:
+	opentext
+	writetext R11AmoongussText
+	cry AMOONGUSS
+	pause 15
+	closetext
+	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
+	loadwildmon AMOONGUSS, 48
+	startbattle
+	disappear R11_AMOONGUSS_2
+	reloadmapafterbattle
+	end
 	
 R11HyperPotion:
 	itemball HYPER_POTION
@@ -128,14 +156,19 @@ SailorR11AfterText:
 	text "..."
 	done
 
+R11AmoongussText:
+	text "Ooong!"
+	done
+
 Rt11_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 5 ; warp events
 	warp_event 37, 12, R_11_VILLAGE_BRIDGE_GATE, 3
 	warp_event 37, 13, R_11_VILLAGE_BRIDGE_GATE, 4
 	warp_event  4, 12, R_11_OPELUCID_GATE, 1
 	warp_event  4, 13, R_11_OPELUCID_GATE, 2
+	warp_event 26,  9, R_11_TRUCK, 1
 
 	db 10 ; coord events
 	coord_event 30, 18, SCENE_DEFAULT, Rt11LowerFloorScript
@@ -154,11 +187,13 @@ Rt11_MapEvents:
 	bg_event 28,  6, BGEVENT_ITEM, R11MaxPotion
 	bg_event 26,  4, BGEVENT_ITEM, R11PPUp
 
-	db 6 ; object events
+	db 8 ; object events
 	object_event  6,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R11HyperPotion, EVENT_R11_HYPER_POTION
 	object_event 35,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R11RazorClaw, EVENT_R11_RAZOR_CLAW
 	object_event 10, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R11FullRestore, EVENT_R11_FULL_RESTORE
 	object_event 13,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R11HPUp, EVENT_R11_HP_UP
+	object_event 10,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R11Amoonguss1, EVENT_R11_AMOONGUSS_1
+	object_event 30,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R11Amoonguss2, EVENT_R11_AMOONGUSS_2
 	object_event 12, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperR11, -1
 	object_event 19, 13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSailorR11, -1
 	

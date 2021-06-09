@@ -1330,9 +1330,15 @@ LoadMapPals:
 	ret z
 .CheckOpelucid
 	cp 20 ; Opelucid
-	jr nz, .LoadRoof
+	jr nz, .CheckIcirrus
 	ld a, [wMapNumber]
 	cp 1 ; VillageBridge
+	ret z
+.CheckIcirrus
+	cp 21 ; Icirrus
+	jr nz, .LoadRoof
+	ld a, [wMapNumber]
+	cp 1 ; TubelineBridge
 	ret z
 .LoadRoof
 	ld a, [wMapGroup]

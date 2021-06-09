@@ -479,6 +479,7 @@ CasteliaTradeHouse2_Blocks:
 	INCBIN "maps/CasteliaTradeHouse2.ablk"
 
 Rt5Truck_Blocks:
+Rt11Truck_Blocks:
 	INCBIN "maps/R5Truck.ablk"
 
 DriftveilStoneEmporium_Blocks:

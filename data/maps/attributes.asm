@@ -299,6 +299,7 @@ ENDM
 	map_attributes CelestialTowerRoof, CELESTIAL_TOWER_ROOF, $a1, 0
 	map_attributes VillageBridge, VILLAGE_BRIDGE, $00, 0
 	map_attributes Rt11, R_11, $00, 0
+	map_attributes Rt11Truck, R_11_TRUCK, $00, 0
 	map_attributes OpelucidCity, OPELUCID_CITY, $00, 0
 	map_attributes LentimasAirport, LENTIMAS_AIRPORT, $00, 0
 	map_attributes PlaneLeft, PLANE_LEFT, $00, 0
