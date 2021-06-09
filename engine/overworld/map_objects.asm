@@ -552,6 +552,7 @@ MapObjectMovementPattern:
 	dw .MovementSplashingPuddle
 	dw .MovementCableLeft
 	dw .MovementCableRight
+	dw .MovementFountain
 
 .Null_00:
 	ret
@@ -777,6 +778,10 @@ MapObjectMovementPattern:
 	
 .MovementCableRight:
 	ld a, OBJECT_ACTION_CABLE_RIGHT
+	jr .ActionA_StepType04
+	
+.MovementFountain:
+	ld a, OBJECT_ACTION_FOUNTAIN
 	; fallthrough
 	
 .ActionA_StepType04

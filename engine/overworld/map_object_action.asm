@@ -20,6 +20,7 @@ ObjectActionPairPointers:
 	dw SetFacingPuddleSplash,          SetFacingStanding
 	dw SetFacingCableLeft,             SetFacingCableLeft
 	dw SetFacingCableRight,            SetFacingCableRight
+	dw SetFacingFountain,              SetFacingFountain
 
 SetFacingStanding:
 	ld hl, OBJECT_FACING_STEP
@@ -256,6 +257,12 @@ SetFacingCableRight:
 	ld hl, OBJECT_FACING_STEP
 	add hl, bc
 	ld [hl], FACING_CABLE_RIGHT
+	ret
+
+SetFacingFountain:
+	ld hl, OBJECT_FACING_STEP
+	add hl, bc
+	ld [hl], FACING_FOUNTAIN
 	ret
 
 SetFacingBigDoll:

@@ -36,6 +36,7 @@ Facings:
 	dw FacingSplash2
 	dw FacingCableLeft
 	dw FacingCableRight
+	dw FacingFountain
 .End
 	dw 0
 
@@ -267,3 +268,14 @@ FacingCableRight:
 	db  12,  0, X_FLIP, $02
 	db  20,  0, X_FLIP, $01
 	db  28, 16, X_FLIP, $02
+
+FacingFountain: 
+	db 8 ; #
+	db  -4, -8, 0, $00
+	db  -4, 16, X_FLIP, $00
+	db  12, -8, 0, $01
+	db  12, 16, X_FLIP, $01
+	db  20, -8, 0, $02
+	db  20,  0, 0, $03
+	db  20,  8, 0, $03
+	db  20, 16, X_FLIP, $02

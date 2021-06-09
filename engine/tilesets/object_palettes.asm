@@ -6,6 +6,8 @@ LoadSpecialMapObjectPalette:
 	jr z, .bridge
 	cp TILESET_ELITE_FOUR_ROOM
 	jr z, .elite_four_room
+	cp TILESET_OPELUCID
+	jr z, .opelucid
 	jr .do_nothing
 
 .elite_four_room
@@ -26,6 +28,25 @@ LoadSpecialMapObjectPalette:
 	
 .bridgenite
 	call LoadBridgeNiteObPalette
+	scf
+	ret
+
+.opelucid
+	ld a, [wMapGroup]
+	cp 20 ; mapgroup_Opelucid
+	jr nz, .do_nothing
+	ld a, [wMapNumber]
+	cp 6 ; OpelucidCity
+	jr nz, .do_nothing
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .opelucidnite
+	call LoadOpelucidObPalette
+	scf
+	ret
+	
+.opelucidnite
+	call LoadOpelucidNiteObPalette
 	scf
 	ret
 
@@ -54,6 +75,28 @@ LoadBridgeNiteObPalette:
 
 BridgeNiteObPalette:
 INCLUDE "gfx/tilesets/bridge_nite_ob.pal"
+
+LoadOpelucidObPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, OpelucidObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+OpelucidObPalette:
+INCLUDE "gfx/tilesets/opelucid_ob.pal"
+
+LoadOpelucidNiteObPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, OpelucidNiteObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+OpelucidNiteObPalette:
+INCLUDE "gfx/tilesets/opelucid_nite_ob.pal"
 
 LoadMistraltonGymObPalette:
 	ld a, BANK(wOBPals1)

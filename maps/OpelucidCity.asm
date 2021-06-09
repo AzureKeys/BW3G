@@ -1,4 +1,5 @@
 	const_def 2 ; object constants
+	const OPELUCIDCITY_FOUNTAIN
 
 OpelucidCity_MapScripts:
 	db 0 ; scene scripts
@@ -70,5 +71,6 @@ OpelucidCity_MapEvents:
 	bg_event 44, 24, BGEVENT_READ, OpelucidR11Sign
 	bg_event 30, 18, BGEVENT_READ, OpelucidDraydenHouseSign
 
-	db 0 ; object events
+	db 1 ; object events
+	object_event 17, 25, SPRITE_FOUNTAIN, SPRITEMOVEDATA_FOUNTAIN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
 	
