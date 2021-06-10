@@ -297,6 +297,10 @@ OpelucidGroupSprites:
 
 IcirrusGroupSprites:
 ; Icirrus City, R8, Tubeline Bridge
+	db SPRITE_LASS
+	db SPRITE_FISHER
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_COOLTRAINER_F
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL

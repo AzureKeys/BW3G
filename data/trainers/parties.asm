@@ -1206,6 +1206,16 @@ LassDGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
+	; LASS (R8)
+	db "MELITA@", TRAINERTYPE_STAT_EXP
+	db 50, SWADLOON
+	dw $5400, $5400, $5400, $5400, $5400
+	db 48, LARVESTA
+	dw $5400, $5400, $5400, $5400, $5400
+	db 50, PINSIR
+	dw $5400, $5400, $5400, $5400, $5400
+	db -1 ; end
+	
 	; LASS (CLARISSA REMATCH 1)
 	db "CLARISSA@", TRAINERTYPE_STAT_EXP
 	db 38, LIEPARD
@@ -1393,6 +1403,16 @@ CooltrainerMDGroup:
 	db 44, ELECTABUZZ
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db -1 ; end
+	
+	; COOLTRAINERM (R8)
+	db "LEWIS@", TRAINERTYPE_STAT_EXP
+	db 50, PALPITOAD
+	dw $5400, $5400, $5400, $5400, $5400
+	db 48, DRATINI
+	dw $5400, $5400, $5400, $5400, $5400
+	db 50, TOXICROAK
+	dw $5400, $5400, $5400, $5400, $5400
+	db -1 ; end
 
 CooltrainerFGroup:
 	; COOLTRAINERF (R3)
@@ -1419,18 +1439,22 @@ CooltrainerFGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db -1 ; end
 	
+	; COOLTRAINERF (R8)
+	db "ANNIE@", TRAINERTYPE_STAT_EXP
+	db 50, DRIFBLIM
+	dw $5400, $5400, $5400, $5400, $5400
+	db 48, AXEW
+	dw $5400, $5400, $5400, $5400, $5400
+	db 50, BOUFFALANT
+	dw $5400, $5400, $5400, $5400, $5400
+	db -1 ; end
+	
 	; COOLTRAINERF (ARIANA REMATCH 1)
 	db "ARIANA@", TRAINERTYPE_STAT_EXP
 	db 42, VIBRAVA
 	dw $4800, $4800, $4800, $4800, $4800
 	db 42, DRAGONAIR
 	dw $4800, $4800, $4800, $4800, $4800
-	db -1 ; end
-
-	; COOLTRAINERF (5)
-	db "KATE@", TRAINERTYPE_NORMAL
-	; db 26, SHELLDER
-	; db 28, CLOYSTER
 	db -1 ; end
 
 	; COOLTRAINERF (6)
@@ -2301,12 +2325,15 @@ FisherGroup:
 	db 34, OCTILLERY
 	dw $3800, $3800, $3800, $3800, $3800
 	db -1 ; end
-
-	; FISHER (4)
-	db "KYLE@", TRAINERTYPE_NORMAL
-	; db 28, SEAKING
-	; db 31, POLIWHIRL
-	; db 31, SEAKING
+	
+	; FISHER (R8)
+	db "BRUCE@", TRAINERTYPE_STAT_EXP
+	db 48, CORPHISH
+	dw $5400, $5400, $5400, $5400, $5400
+	db 52, CRAWDAUNT
+	dw $5400, $5400, $5400, $5400, $5400
+	db 48, STUNFISK
+	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
 
 	; FISHER (5)

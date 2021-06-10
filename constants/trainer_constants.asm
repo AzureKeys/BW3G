@@ -239,6 +239,7 @@ CHRIS EQU __enum__
 	const LASS_R1
 	const LASS_R6_2
 	const LASS_R7_2
+	const LASS_R8
 	const CLARISSA_REMATCH_1
 
 	trainerclass JANINE ; 1a
@@ -270,13 +271,14 @@ CHRIS EQU __enum__
 	const COOLTRAINERM_R3
 	const COOLTRAINERM_R18
 	const COOLTRAINERM_CHARGESTONE_2
+	const COOLTRAINERM_R8
 
 	trainerclass COOLTRAINERF ; 1c
 	const COOLTRAINERF_R3_1
 	const COOLTRAINERF_GIANT_CHASM_1
 	const COOLTRAINERF_CHARGESTONE_1
+	const COOLTRAINERF_R8
 	const ARIANA_REMATCH_1
-	const KATE
 	const IRENE
 	const KELLY
 	const JOYCE
@@ -425,7 +427,7 @@ CHRIS EQU __enum__
 	const FISHER_R4_1
 	const FISHER_R3_1
 	const FISHER_R17_1
-	const KYLE
+	const FISHER_R8
 	const HENRY
 	const MARVIN
 	const TULLY1
