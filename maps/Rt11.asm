@@ -44,6 +44,7 @@ Rt11LowerFloorScript:
 	changeblock 34, 10, $d6
 	changeblock 34, 12, $d7
 	setevent EVENT_R11_LOWER_FLOOR
+	refreshscreen
 .done
 	end
 	
@@ -170,11 +171,13 @@ Rt11_MapEvents:
 	warp_event  4, 13, R_11_OPELUCID_GATE, 2
 	warp_event 26,  9, R_11_TRUCK, 1
 
-	db 10 ; coord events
-	coord_event 30, 18, SCENE_DEFAULT, Rt11LowerFloorScript
-	coord_event 30, 19, SCENE_DEFAULT, Rt11LowerFloorScript
-	coord_event 28, 16, SCENE_DEFAULT, Rt11UpperFloorScript
-	coord_event 28, 17, SCENE_DEFAULT, Rt11UpperFloorScript
+	db 12 ; coord events
+	coord_event 30, 17, SCENE_DEFAULT, Rt11LowerFloorScript
+	coord_event 31, 18, SCENE_DEFAULT, Rt11LowerFloorScript
+	coord_event 31, 19, SCENE_DEFAULT, Rt11LowerFloorScript
+	coord_event 28, 15, SCENE_DEFAULT, Rt11UpperFloorScript
+	coord_event 27, 16, SCENE_DEFAULT, Rt11UpperFloorScript
+	coord_event 27, 17, SCENE_DEFAULT, Rt11UpperFloorScript
 	coord_event 37, 11, SCENE_DEFAULT, Rt11UpperFloorScript
 	coord_event 36, 12, SCENE_DEFAULT, Rt11UpperFloorScript
 	coord_event 36, 13, SCENE_DEFAULT, Rt11UpperFloorScript

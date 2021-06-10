@@ -79,8 +79,8 @@
 	RGB 02,08,15, 01,05,10 ; nite
 
 ; group 30 (Opelucid)
-	RGB 06,20,30, 22,18,15 ; morn/day
-	RGB 03,10,22, 11,09,11 ; nite
+	RGB 22,18,15, 17,13,10 ; morn/day
+	RGB 11,09,11, 08,06,07 ; nite
 
 ; group 30 (Icirrus)
 	RGB 23,23,21, 15,15,13 ; morn/day
