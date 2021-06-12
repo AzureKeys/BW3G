@@ -709,5 +709,8 @@ INCBIN "data/tilesets/icirrus_metatiles.bin"
 TilesetIcirrusColl:
 INCLUDE "data/tilesets/icirrus_collision.asm"
 
+
+SECTION "Tileset Data 21", ROMX
+
 TilesetIcirrusAttr:
 INCBIN "data/tilesets/icirrus_attributes.bin"

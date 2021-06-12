@@ -313,4 +313,5 @@ ENDM
 	map_attributes TubelineBridge, TUBELINE_BRIDGE, $00, 0
 	map_attributes IcirrusPokecenter1F, ICIRRUS_POKECENTER_1F, $00, 0
 	map_attributes IcirrusMart, ICIRRUS_MART, $00, 0
+	map_attributes DragonspiralTowerOutside, DRAGONSPIRAL_TOWER_OUTSIDE, $00, 0
 	

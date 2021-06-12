@@ -547,4 +547,7 @@ IcirrusCitySouthConnectionDummy_Blocks:
 
 Rt8_Blocks::
 	INCBIN "maps/Rt8.ablk"
+
+DragonspiralTowerOutside_Blocks:
+	INCBIN "maps/DragonspiralTowerOutside.ablk"
 	

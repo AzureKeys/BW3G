@@ -263,6 +263,10 @@ LoadSpecialMapPalette:
 	ret
 	
 .icirrus
+; Dragonspiral Tower has its own palettes
+	ld a, [wMapGroup]
+	cp 21 ; MapGroup_Icirrus
+	jp nz, .ds_tower
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .icirrusnite
@@ -272,6 +276,19 @@ LoadSpecialMapPalette:
 	
 .icirrusnite
 	call LoadIcirrusNitePalette
+	scf
+	ret
+	
+.ds_tower
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .ds_tower_nite
+	call LoadDsTowerPalette
+	scf
+	ret
+	
+.ds_tower_nite
+	call LoadDsTowerNitePalette
 	scf
 	ret
 	
@@ -765,3 +782,25 @@ LoadVillageNitePalette:
 	
 VillageNitePalette:
 INCLUDE "gfx/tilesets/village_bridge_nite.pal"
+
+LoadDsTowerPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, DsTowerPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+DsTowerPalette:
+INCLUDE "gfx/tilesets/dragonspiral_tower.pal"
+
+LoadDsTowerNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, DsTowerNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+DsTowerNitePalette:
+INCLUDE "gfx/tilesets/dragonspiral_tower_nite.pal"

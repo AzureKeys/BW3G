@@ -67,6 +67,7 @@ ENDM
 	map_const CELESTIAL_TOWER_ROOF, 9, 8
 	map_const SEASIDE_CAVE_B2F, 14, 12
 	map_const SEASIDE_CAVE_CHAMBER, 6, 8
+	map_const DRAGONSPIRAL_TOWER_OUTSIDE, 7, 12
 
 	newgroup                                                      ; 20
 
@@ -300,7 +301,7 @@ ENDM
 	map_const TUBELINE_BRIDGE, 9, 7
 	map_const ICIRRUS_CITY_SOUTH_CONNECTION_DUMMY, 24, 3
 	map_const ICIRRUS_CITY_SOUTH, 24, 13
-	map_const ICIRRUS_CITY_NORTH, 12, 10
+	map_const ICIRRUS_CITY_NORTH, 12, 13
 	map_const R_8, 24, 10
 	map_const ICIRRUS_POKECENTER_1F, 5, 4 
 	map_const ICIRRUS_MART, 6, 4
