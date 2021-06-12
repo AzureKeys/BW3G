@@ -1849,6 +1849,42 @@ JohtoGrassWildMons:
 	db 38, KIRLIA
 	db 40, AUDINO
 	db 42, KIRLIA
+	
+	map_id R_8
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 43, PALPITOAD
+	db 42, STUNFISK
+	db 42, CROAGUNK
+	db 42, SKORUPI
+	db 44, CROAGUNK
+	db 44, SKORUPI
+	db 40, AMOONGUSS
+	db 42, AMOONGUSS
+	db 45, STUNFISK
+	db 45, AMOONGUSS
+	; day
+	db 43, PALPITOAD
+	db 42, STUNFISK
+	db 42, CROAGUNK
+	db 42, SKORUPI
+	db 44, CROAGUNK
+	db 44, SKORUPI
+	db 40, AMOONGUSS
+	db 42, AMOONGUSS
+	db 45, STUNFISK
+	db 45, AMOONGUSS
+	; nite
+	db 43, PALPITOAD
+	db 42, STUNFISK
+	db 42, CROAGUNK
+	db 42, SKORUPI
+	db 44, CROAGUNK
+	db 44, SKORUPI
+	db 40, AMOONGUSS
+	db 42, AMOONGUSS
+	db 45, STUNFISK
+	db 45, AMOONGUSS
 
 	;map_id R_23_SOUTH
 	map_id R_23

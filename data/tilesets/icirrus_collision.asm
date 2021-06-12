@@ -179,3 +179,4 @@
 	tilecoll WALL, WATER, WATER, WATER ; b2
 	tilecoll WATER, WALL, WATER, WATER ; b3
 	tilecoll WARP_CARPET_DOWN, WARP_CARPET_DOWN, WALL, WALL ; b4
+	tilecoll WALL, WALL, WALL, WALL ; b5
