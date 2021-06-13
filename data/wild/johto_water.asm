@@ -181,5 +181,11 @@ JohtoWaterWildMons:
 	db 15, PALPITOAD
 	db 20, STUNFISK
 	db 15, PALPITOAD
+	
+	map_id R_23_EAST
+	db 4 percent ; encounter rate
+	db 15, DUCKLETT
+	db 20, BASCULIN
+	db 15, DUCKLETT
 
 	db -1 ; end

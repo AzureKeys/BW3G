@@ -62,6 +62,7 @@ PlayersHouseRadioScript:
 	; setflag ENGINE_STORMBADGE
 	; setflag ENGINE_MINERALBADGE
 	; setflag ENGINE_GLACIERBADGE
+	; setflag ENGINE_RISINGBADGE
 	; end
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .NormalRadio
@@ -130,7 +131,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, OPELUCID_CITY, 1
+	;warp_event  7,  0, R_23_EAST, 1
 
 	db 0 ; coord events
 

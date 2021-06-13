@@ -71,10 +71,10 @@ Rt23Gate_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event  0,  4, R_23, 4
-	warp_event  0,  5, R_23, 5
-	warp_event  9,  4, R_23, 2
-	warp_event  9,  5, R_23, 3
+	warp_event  0,  4, R_23_EAST, 4
+	warp_event  0,  5, R_23_EAST, 5
+	warp_event  9,  4, R_23_EAST, 2
+	warp_event  9,  5, R_23_EAST, 3
 
 	db 2 ; coord events
 	coord_event  5,  4, SCENE_DEFAULT, R23GateBadgeScript

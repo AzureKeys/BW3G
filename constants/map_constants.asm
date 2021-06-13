@@ -307,7 +307,8 @@ ENDM
 	map_const ICIRRUS_MART, 6, 4
 	
 	newgroup
-	map_const R_23, 22, 26
+	map_const R_23_EAST, 17, 26
+	map_const R_23_WEST, 5, 6
 	map_const R_23_GATE, 5, 4
 	
 	

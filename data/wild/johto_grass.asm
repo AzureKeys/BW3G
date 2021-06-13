@@ -1886,8 +1886,7 @@ JohtoGrassWildMons:
 	db 45, STUNFISK
 	db 45, AMOONGUSS
 
-	;map_id R_23_SOUTH
-	map_id R_23
+	map_id R_23_EAST
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, AUDINO

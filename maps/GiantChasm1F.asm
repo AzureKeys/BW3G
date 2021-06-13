@@ -79,7 +79,7 @@ GiantChasm1F_MapEvents:
 	db 4 ; warp events
 	warp_event 15,  3, R_22, 1
 	warp_event  7, 17, R_13, 1
-	warp_event  3,  1, R_23, 1
+	warp_event  3,  1, R_23_EAST, 1
 	warp_event 11,  2, GIANT_CHASM_ROOMS, 1
 
 	db 1 ; coord events

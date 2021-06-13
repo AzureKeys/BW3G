@@ -5,10 +5,9 @@
 	const R23_OFFICER4
 	const R23_OFFICER5
 	const R23_OFFICER6
-	const R23_OFFICER7
 
-Rt23_MapScripts:
-	db 8 ; scene scripts
+Rt23East_MapScripts:
+	db 7 ; scene scripts
 	scene_script .DummyScene0 ; SCENE_R23_SHOWED_NONE
 	scene_script .DummyScene1 ; SCENE_R23_SHOWED_SPOOKY
 	scene_script .DummyScene2 ; SCENE_R23_SHOWED_INSECT
@@ -16,7 +15,6 @@ Rt23_MapScripts:
 	scene_script .DummyScene4 ; SCENE_R23_SHOWED_BASIC
 	scene_script .DummyScene5 ; SCENE_R23_SHOWED_GARNISH
 	scene_script .DummyScene6 ; SCENE_R23_SHOWED_JET
-	scene_script .DummyScene7 ; SCENE_R23_SHOWED_ALL
 
 	db 1 ; callbacks
 	callback MAPCALLBACK_TILES, .SetTiles
@@ -41,31 +39,28 @@ Rt23_MapScripts:
 
 .DummyScene6:
 	end
-
-.DummyScene7:
-	end
 	
 .SetTiles:
 	checkevent EVENT_R_23_LOWER
 	iffalse .done
-	changeblock 22, 12, $48 ; 
-	changeblock 22, 14, $4c ; 
-	changeblock 22, 16, $54 ; 
-	changeblock 24, 12, $49 ; 
-	changeblock 24, 14, $4a ; 
-	changeblock 24, 16, $50 ; 
+	changeblock 12, 14, $48 ; 
+	changeblock 12, 16, $4c ; 
+	changeblock 12, 18, $54 ; 
+	changeblock 14, 14, $49 ; 
+	changeblock 14, 16, $4a ; 
+	changeblock 14, 18, $50 ; 
 .done
 	return
 	
 R23LowerScript:
 	checkevent EVENT_R_23_LOWER
 	iftrue .done
-	changeblock 22, 12, $48 ; 
-	changeblock 22, 14, $4c ; 
-	changeblock 22, 16, $54 ; 
-	changeblock 24, 12, $49 ; 
-	changeblock 24, 14, $4a ; 
-	changeblock 24, 16, $50 ; 
+	changeblock 12, 14, $48 ; 
+	changeblock 12, 16, $4c ; 
+	changeblock 12, 18, $54 ; 
+	changeblock 14, 14, $49 ; 
+	changeblock 14, 16, $4a ; 
+	changeblock 14, 18, $50 ; 
 	setevent EVENT_R_23_LOWER
 .done
 	end
@@ -73,12 +68,12 @@ R23LowerScript:
 R23UpperScript:
 	checkevent EVENT_R_23_LOWER
 	iffalse .done
-	changeblock 22, 12, $42 ; 
-	changeblock 22, 14, $53 ; 
-	changeblock 22, 16, $55 ; 
-	changeblock 24, 12, $43 ; 
-	changeblock 24, 14, $47 ; 
-	changeblock 24, 16, $56 ; 
+	changeblock 12, 14, $42 ; 
+	changeblock 12, 16, $53 ; 
+	changeblock 12, 18, $55 ; 
+	changeblock 14, 14, $43 ; 
+	changeblock 14, 16, $47 ; 
+	changeblock 14, 18, $56 ; 
 	clearevent EVENT_R_23_LOWER
 .done
 	end
@@ -209,27 +204,6 @@ R23Badge6Script:
 	applymovement PLAYER, R23Movement3
 	end
 
-R23Badge7Script:
-	turnobject PLAYER, LEFT
-	turnobject R23_OFFICER7, RIGHT
-	opentext
-	writetext R23Officer7StopText
-	checkflag ENGINE_RISINGBADGE
-	iffalse .nobadge
-	buttonsound
-	waitsfx
-	writetext R23Officer7HaveBadgeText
-	waitbutton
-	closetext
-	setscene SCENE_R23_SHOWED_ALL
-	end
-	
-.nobadge
-	waitbutton
-	closetext
-	applymovement PLAYER, R23Movement1
-	end
-
 R23Officer1Script:
 	faceplayer
 	opentext
@@ -316,33 +290,6 @@ R23Officer6Script:
 	
 .showed
 	writetext R23Officer6HaveBadgeText
-	waitbutton
-	closetext
-	end
-
-R23Officer7Script:
-	faceplayer
-	opentext
-	checkscene
-	ifnotequal SCENE_R23_SHOWED_JET, .showed
-	writetext R23Officer7StopText
-	checkflag ENGINE_RISINGBADGE
-	iffalse .nobadge
-	buttonsound
-	waitsfx
-	writetext R23Officer7HaveBadgeText
-	waitbutton
-	closetext
-	setscene SCENE_R23_SHOWED_ALL
-	end
-	
-.nobadge
-	waitbutton
-	closetext
-	end
-	
-.showed
-	writetext R23Officer7HaveBadgeText
 	waitbutton
 	closetext
 	end
@@ -518,71 +465,45 @@ R23Officer6HaveBadgeText:
 	para "You may pass."
 	done
 
-R23Officer7StopText:
-	text "Stop! Ahead lies"
-	line "the path to the"
-	cont "#MON LEAGUE."
-	
-	para "Only those who"
-	line "have collected"
-	
-	para "all 8 #MON"
-	line "LEAGUE GYM BADGES"
-	cont "may enter."
-	
-	para "You cannot pass"
-	line "here unless you"
-	
-	para "have the"
-	line "LEGENDBADGE."
-	done
-	
-R23Officer7HaveBadgeText:
-	text "Oh, that is the"
-	line "LEGENDBADGE!"
-	
-	para "You may pass."
-	done
-
-Rt23_MapEvents:
+Rt23East_MapEvents:
 	db 0, 0 ; filler
 
 	db 5 ; warp events
-	warp_event 35, 41, GIANT_CHASM_1F, 3
-	warp_event 28, 38, R_23_GATE, 3
-	warp_event 28, 39, R_23_GATE, 4
-	warp_event 23, 38, R_23_GATE, 1
-	warp_event 23, 39, R_23_GATE, 2
+	warp_event 25, 43, GIANT_CHASM_1F, 3
+	warp_event 18, 40, R_23_GATE, 3
+	warp_event 18, 41, R_23_GATE, 4
+	warp_event 13, 40, R_23_GATE, 1
+	warp_event 13, 41, R_23_GATE, 2
 
-	db 17 ; coord events
-	coord_event 29,  9, -1, R23UpperScript
-	coord_event 30,  9, -1, R23UpperScript
-	coord_event 29, 12, -1, R23LowerScript
-	coord_event 30, 12, -1, R23LowerScript
-	coord_event 23, 33, SCENE_R23_SHOWED_NONE, R23Badge1Script
-	coord_event 24, 33, SCENE_R23_SHOWED_NONE, R23Badge1Script
-	coord_event 25, 33, SCENE_R23_SHOWED_NONE, R23Badge1Script
-	coord_event 25, 28, SCENE_R23_SHOWED_SPOOKY, R23Badge2Script
-	coord_event 24, 28, SCENE_R23_SHOWED_SPOOKY, R23Badge2Script
-	coord_event 33, 24, SCENE_R23_SHOWED_INSECT, R23Badge3Script
-	coord_event 33, 25, SCENE_R23_SHOWED_INSECT, R23Badge3Script
-	coord_event 33, 18, SCENE_R23_SHOWED_TOXIC, R23Badge4Script
-	coord_event 23, 10, SCENE_R23_SHOWED_BASIC, R23Badge5Script
-	coord_event 24, 10, SCENE_R23_SHOWED_BASIC, R23Badge5Script
-	coord_event 16,  9, SCENE_R23_SHOWED_GARNISH, R23Badge6Script
-	coord_event 16, 10, SCENE_R23_SHOWED_GARNISH, R23Badge6Script
-	coord_event  7,  4, SCENE_R23_SHOWED_JET, R23Badge7Script
+	db 18 ; coord events
+	coord_event 25, 44, -1, R23UpperScript
+	coord_event  1, 10, -1, R23UpperScript
+	coord_event  1, 11, -1, R23UpperScript
+	coord_event 19, 11, -1, R23UpperScript
+	coord_event 20, 11, -1, R23UpperScript
+	coord_event 19, 14, -1, R23LowerScript
+	coord_event 20, 14, -1, R23LowerScript
+	coord_event 13, 35, SCENE_R23_SHOWED_NONE, R23Badge1Script
+	coord_event 14, 35, SCENE_R23_SHOWED_NONE, R23Badge1Script
+	coord_event 15, 35, SCENE_R23_SHOWED_NONE, R23Badge1Script
+	coord_event 15, 30, SCENE_R23_SHOWED_SPOOKY, R23Badge2Script
+	coord_event 14, 30, SCENE_R23_SHOWED_SPOOKY, R23Badge2Script
+	coord_event 23, 26, SCENE_R23_SHOWED_INSECT, R23Badge3Script
+	coord_event 23, 27, SCENE_R23_SHOWED_INSECT, R23Badge3Script
+	coord_event 23, 20, SCENE_R23_SHOWED_TOXIC, R23Badge4Script
+	coord_event 13, 12, SCENE_R23_SHOWED_BASIC, R23Badge5Script
+	coord_event 14, 12, SCENE_R23_SHOWED_BASIC, R23Badge5Script
+	coord_event  4, 11, SCENE_R23_SHOWED_GARNISH, R23Badge6Script
 
 	db 2 ; bg events
-	bg_event 17, 39, BGEVENT_UP, R23HiddenGrotto
-	bg_event 18, 39, BGEVENT_UP, R23HiddenGrotto
+	bg_event  7, 41, BGEVENT_UP, R23HiddenGrotto
+	bg_event  8, 41, BGEVENT_UP, R23HiddenGrotto
 
-	db 7 ; object events
-	object_event 22, 33, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer1Script, -1
-	object_event 26, 28, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer2Script, -1
-	object_event 33, 23, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer3Script, -1
-	object_event 33, 16, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer4Script, -1
-	object_event 22, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer5Script, -1
-	object_event 16,  8, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer6Script, -1
-	object_event  6,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer7Script, -1
+	db 6 ; object events
+	object_event 12, 35, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer1Script, -1
+	object_event 16, 30, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer2Script, -1
+	object_event 23, 25, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer3Script, -1
+	object_event 23, 18, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer4Script, -1
+	object_event 12, 12, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer5Script, -1
+	object_event  4, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer6Script, -1
 	

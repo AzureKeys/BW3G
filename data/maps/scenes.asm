@@ -18,7 +18,8 @@ MapScenes::
 	scene_var R_12,                                        wR12SceneID
 	scene_var UNDELLA_TOWN,                                wUndellaTownSceneID
 	scene_var R_23_GATE,                                   wR23GateSceneID
-	scene_var R_23,                                        wR23SceneID
+	scene_var R_23_WEST,                                   wR23WestSceneID
+	scene_var R_23_EAST,                                   wR23EastSceneID
 	scene_var STRANGE_HOUSE_1F,                            wStrangeHouse1FSceneID
 	scene_var R_12_VILLAGE_BRIDGE_GATE,                    wR12VillageBridgeGateSceneID
 	scene_var LOSTLORN_FOREST,                             wLostlornForestSceneID

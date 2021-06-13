@@ -2556,7 +2556,8 @@ wGiantChasmSceneID::                              db ; d9c0
 wR12SceneID::                                     db ; d9c0
 wUndellaTownSceneID::                             db ; d9c0
 wR23GateSceneID::                                 db ; d9c0
-wR23SceneID::                                     db ; d9c0
+wR23WestSceneID::                                 db ; d9c0
+wR23EastSceneID::                                 db ; d9c0
 wStrangeHouse1FSceneID::                          db ; d9c0
 wR12VillageBridgeGateSceneID::                    db ; d9c0
 wLostlornForestSceneID::                          db ; d9c0
@@ -2606,7 +2607,7 @@ wVillageBridgeSceneID::                           db ; d9c0
 wIcirrusCitySouthSceneID::                        db ; d9c0
 wR11SceneID::                                     db ; d9c0
 
-	ds 68
+	ds 67
 	
 wNumShards:: db
 

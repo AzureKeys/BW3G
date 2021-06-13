@@ -156,8 +156,11 @@ Rt14_Blocks:
 HumilauGym_Blocks:
 	INCBIN "maps/HumilauGym.ablk"
 	
-Rt23_Blocks:
-	INCBIN "maps/Rt23.ablk"
+Rt23West_Blocks:
+	INCBIN "maps/Rt23West.ablk"
+	
+Rt23East_Blocks:
+	INCBIN "maps/Rt23East.ablk"
 	
 ReversalMountain1F_Blocks:
 	INCBIN "maps/ReversalMountain1F.ablk"

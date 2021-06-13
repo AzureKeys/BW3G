@@ -43,7 +43,11 @@ ENDM
 	map_attributes Rt14, R_14, $05, NORTH
 	connection north, UndellaTown, UNDELLA_TOWN, 1
 	
-	map_attributes Rt23, R_23, $05, 0
+	map_attributes Rt23East, R_23_EAST, $5D, WEST
+	connection west, Rt23West, R_23_WEST, 1
+	
+	map_attributes Rt23West, R_23_WEST, $5D, EAST
+	connection east, Rt23East, R_23_EAST, -1
 	
 	map_attributes LentimasOutskirts, LENTIMAS_OUTSKIRTS, $71, WEST
 	connection west, LentimasTown, LENTIMAS_TOWN, -1
