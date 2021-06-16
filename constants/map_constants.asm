@@ -308,7 +308,7 @@ ENDM
 	
 	newgroup
 	map_const R_23_EAST, 17, 26
-	map_const R_23_WEST, 5, 6
+	map_const R_23_WEST, 32, 12
 	map_const R_23_GATE, 5, 4
 	
 	

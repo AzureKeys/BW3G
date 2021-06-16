@@ -99,11 +99,11 @@ Rt23West_MapEvents:
 	db 0 ; warp events
 
 	db 1 ; coord events
-	coord_event  7,  4, SCENE_DEFAULT, R23Badge7Script
+	coord_event 53,  3, SCENE_DEFAULT, R23Badge7Script
 
 	db 0 ; bg events
 
 	db 2 ; object events
-	object_event 14,  8, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, -1
-	object_event  6,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer7Script, -1
+	object_event 68, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, -1
+	object_event 52,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer7Script, -1
 	

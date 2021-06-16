@@ -44,10 +44,10 @@ ENDM
 	connection north, UndellaTown, UNDELLA_TOWN, 1
 	
 	map_attributes Rt23East, R_23_EAST, $5D, WEST
-	connection west, Rt23West, R_23_WEST, 1
+	connection west, Rt23West, R_23_WEST, 0
 	
 	map_attributes Rt23West, R_23_WEST, $5D, EAST
-	connection east, Rt23East, R_23_EAST, -1
+	connection east, Rt23East, R_23_EAST, 0
 	
 	map_attributes LentimasOutskirts, LENTIMAS_OUTSKIRTS, $71, WEST
 	connection west, LentimasTown, LENTIMAS_TOWN, -1

@@ -6,6 +6,7 @@ CutTreeBlockPointers:
 	dbw TILESET_FOREST,            .forest
 	dbw TILESET_JOHTO_BEACH,       .johto_beach
 	dbw TILESET_NIMBASA,           .nimbasa
+	dbw TILESET_PKMN_LEAGUE,       .pkmn_league
 	db -1 ; end
 
 .johto:
@@ -45,6 +46,12 @@ CutTreeBlockPointers:
 ; facing block, replacement block, animation
 	db $03, $02, 1 ; grass
 	db $5f, $5b, 0 ; tree
+	db -1 ; end
+
+.pkmn_league:
+; facing block, replacement block, animation
+	db $7b, $76, 0 ; tree
+	db $83, $82, 0 ; tree
 	db -1 ; end
 
 WhirlpoolBlockPointers:
