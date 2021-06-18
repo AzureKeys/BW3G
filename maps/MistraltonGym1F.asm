@@ -48,8 +48,7 @@ MistraltonGym1F_MapScripts:
 
 .Fan1:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext MistraltonGym1FFanFellText
 	waitbutton
@@ -61,8 +60,7 @@ MistraltonGym1F_MapScripts:
 
 .Fan2:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext MistraltonGym1FFanFellText
 	waitbutton
@@ -75,8 +73,7 @@ MistraltonGym1F_MapScripts:
 
 .Fan3:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext MistraltonGym1FFanFellText
 	waitbutton
@@ -88,8 +85,7 @@ MistraltonGym1F_MapScripts:
 
 .Fan4:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext MistraltonGym1FFanFellText
 	waitbutton
@@ -98,6 +94,11 @@ MistraltonGym1F_MapScripts:
 	changeblock  6,  2, $7a ; fan in pit
 	reloadmappart
 	closetext
+	end
+
+.FX:
+	playsound SFX_STRENGTH
+	earthquake 80
 	end
 	
 MistraltonGymSkylaScript:

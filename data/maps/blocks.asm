@@ -373,10 +373,10 @@ Rt1_Blocks:
 NuvemaTown_Blocks:
 	INCBIN "maps/NuvemaTown.ablk"
 
+SECTION "Map Blocks 5", ROMX
+
 NuvemaLab_Blocks:
 	INCBIN "maps/NuvemaLab.ablk"
-
-SECTION "Map Blocks 5", ROMX
 
 Rt17_Blocks:
 	INCBIN "maps/Rt17.ablk"

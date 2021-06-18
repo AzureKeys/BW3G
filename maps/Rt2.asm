@@ -41,8 +41,7 @@ Rt2_MapScripts:
 
 .Boulder:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext R2BoulderFellText
 	waitbutton
@@ -50,6 +49,11 @@ Rt2_MapScripts:
 	changeblock  6, 34, $6f ; boulder in pit
 	reloadmappart
 	closetext
+	end
+
+.FX:
+	playsound SFX_STRENGTH
+	earthquake 80
 	end
 
 TrainerCooltrainerFR2:

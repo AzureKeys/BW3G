@@ -63,6 +63,7 @@ PlayersHouseRadioScript:
 	; setflag ENGINE_MINERALBADGE
 	; setflag ENGINE_GLACIERBADGE
 	; setflag ENGINE_RISINGBADGE
+	; setflag ENGINE_FLYPOINT_LACUNOSA
 	; end
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .NormalRadio

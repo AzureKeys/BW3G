@@ -39,8 +39,7 @@ RelicPassageBack_MapScripts:
 
 .Boulder1:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext RelicPassageBackBoulderFellText
 	waitbutton
@@ -52,8 +51,7 @@ RelicPassageBack_MapScripts:
 
 .Boulder2:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext RelicPassageBackBoulderFellText
 	waitbutton
@@ -61,6 +59,11 @@ RelicPassageBack_MapScripts:
 	changeblock 12,  4, $6F ; boulder in pit
 	reloadmappart
 	closetext
+	end
+
+.FX:
+	playsound SFX_STRENGTH
+	earthquake 80
 	end
 
 TrainerHiker3RelicPassage:

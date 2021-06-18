@@ -6,7 +6,6 @@
 	const SEASIDECAVEB1F_BOULDER_5
 	const SEASIDECAVEB1F_BLACKBELT
 	const SEASIDECAVEB1F_BATTLE_GIRL
-	;const SEASIDECAVEB1F_BLOCKER
 
 SeasideCaveB1F_MapScripts:
 	db 0 ; scene scripts
@@ -52,8 +51,7 @@ SeasideCaveB1F_MapScripts:
 
 .Boulder1:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext SeasideCaveB1FBoulderFellText
 	waitbutton
@@ -65,8 +63,7 @@ SeasideCaveB1F_MapScripts:
 
 .Boulder2:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext SeasideCaveB1FBoulderFellText
 	waitbutton
@@ -78,8 +75,7 @@ SeasideCaveB1F_MapScripts:
 
 .Boulder3:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext SeasideCaveB1FBoulderFellText
 	waitbutton
@@ -91,8 +87,7 @@ SeasideCaveB1F_MapScripts:
 
 .Boulder4:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext SeasideCaveB1FBoulderFellText
 	waitbutton
@@ -104,8 +99,7 @@ SeasideCaveB1F_MapScripts:
 
 .Boulder5:
 	pause 30
-	playsound SFX_STRENGTH
-	earthquake 80
+	scall .FX
 	opentext
 	writetext SeasideCaveB1FBoulderFellText
 	waitbutton
@@ -114,9 +108,11 @@ SeasideCaveB1F_MapScripts:
 	reloadmappart
 	closetext
 	end
-	
-; SeasideCaveBlocker:
-	; jumptextfaceplayer SeasideCaveBlockerText
+
+.FX:
+	playsound SFX_STRENGTH
+	earthquake 80
+	end
 	
 SeasideCaveBoulder:
 	jumpstd strengthboulder
@@ -186,13 +182,6 @@ SeasideCaveB1FBoulderFellText:
 	text "The boulder fell"
 	line "through!"
 	done
-	
-; SeasideCaveBlockerText:
-	; text "Sorry buddy, the"
-	; line "game's not"
-	; cont "finished past"
-	; cont "this point!"
-	; done
 
 SeasideCaveB1F_MapEvents:
 	db 0, 0 ; filler
@@ -219,5 +208,4 @@ SeasideCaveB1F_MapEvents:
 	object_event 19, 14, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_5
 	object_event 16, 10, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerBlackbeltSeasideCaveB1F, -1
 	object_event 15, 20, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBattleGirlSeasideCaveB1F, -1
-	;object_event 15,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBlocker, -1
 	
