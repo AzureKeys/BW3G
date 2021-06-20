@@ -136,6 +136,7 @@
 	const MUSIC_R_6
 	const MUSIC_SEWERS
 	const MUSIC_MISTRALTON_CITY
+	const MUSIC_ICIRRUS_CITY
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $fc

@@ -132,7 +132,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, R_23_EAST, 1
+	;warp_event  7,  0, ICIRRUS_CITY_SOUTH, 1
 
 	db 0 ; coord events
 

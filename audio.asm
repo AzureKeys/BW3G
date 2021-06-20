@@ -174,6 +174,7 @@ INCLUDE "audio/music/driftveilcity.asm"
 INCLUDE "audio/music/r6.asm"
 INCLUDE "audio/music/sewers.asm"
 INCLUDE "audio/music/mistraltoncity.asm"
+INCLUDE "audio/music/icirruscity.asm"
 
 SECTION "Sound Effects", ROMX
 
