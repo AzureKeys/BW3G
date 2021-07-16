@@ -64,6 +64,15 @@ PlayersHouseRadioScript:
 	; setflag ENGINE_RISINGBADGE
 	; setflag ENGINE_FLYPOINT_LACUNOSA
 	; end
+	
+	; opentext
+	; givepoke COTTONEE, 5, RAZOR_CLAW
+	; closetext
+	; setflag ENGINE_POKEDEX
+	; writebyte WHIMSICOTT
+	; special UnusedSetSeenMon
+	; end
+	
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .NormalRadio
 	checkevent EVENT_LISTENED_TO_INITIAL_RADIO

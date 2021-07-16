@@ -1,3 +1,20 @@
+Cry_Patrat:
+	musicheader 2, 5, Cry_Patrat_Ch5
+	musicheader 1, 6, Cry_Patrat_Ch6
+	
+Cry_Yamask:
+	musicheader 2, 5, Cry_Yamask_Ch5
+	musicheader 1, 6, Cry_Yamask_Ch6
+	
+Cry_Whimsicott:
+	musicheader 2, 5, Cry_Whimsicott_Ch5
+	musicheader 1, 6, Cry_Whimsicott_Ch6
+
+Cry_Meditite:
+	musicheader 3, 5, Cry_Meditite_Ch5
+	musicheader 1, 6, Cry_Meditite_Ch6
+	musicheader 1, 8, Cry_Meditite_Ch8
+	
 Cry_Marill:
 	musicheader 3, 5, Cry_Marill_Ch5
 	musicheader 1, 6, Cry_Marill_Ch6
@@ -2042,4 +2059,106 @@ Cry_Rattata_Ch8:
 	noise __,  8, $b5, $29
 	noise __,  2, $a2, $39
 	noise __,  9, $91, $49
+	endchannel
+
+Cry_Patrat_Ch5:
+	sound_duty 2, 2, 1, 1
+	sound __, 5, $e1, 1792
+	sound __, 5, $f2, 1920
+	sound __, 3, $96, 1856
+	sound __, 15, $e2, 1536
+	sound __, 15, $96, 172
+	sound __, 3, $93, 1256
+	sound __, 15, $e3, 1236
+	sound __, 3, $93, 1256
+	sound __, 15, $e3, 1236
+	endchannel
+
+Cry_Patrat_Ch6:
+	sound_duty 0, 0, 2, 2
+	sound __, 5, $b1, 1761
+	sound __, 4, $c2, 1761
+	sound __, 4, $66, 1665
+	sound __, 15, $b1, 1505
+	sound __, 15, $66, 165
+	sound __, 4, $62, 1265
+	sound __, 15, $b3, 1105
+	sound __, 4, $62, 1265
+	sound __, 15, $b3, 1105
+	endchannel
+
+Cry_Meditite_Ch5:
+	sound_duty 2, 0, 2, 0
+	sound __, 9, $d1, 792
+	sound __, 9, $d1, 792
+	sound __, 9, $d1, 793
+	sound __, 9, $d1, 792
+	sound __, 9, $d1, 792
+	sound __, 9, $d1, 793
+	endchannel
+
+Cry_Meditite_Ch6:
+	sound_duty 1, 0, 1, 0
+	sound __, 13, $0f, 0
+	sound __, 9, $f1, 793
+	sound __, 9, $d1, 793
+	sound __, 9, $0f, 0
+	sound __, 9, $f1, 793
+	sound __, 9, $d1, 793
+	endchannel
+
+Cry_Meditite_Ch8:
+	noise __, 16, $0f, $0
+	noise __, 5, $0f, $0
+	noise __, 5, $d1, $4c
+	noise __, 5, $b1, $2c
+	noise __, 16, $0f, $0
+	noise __, 5, $0f, $0
+	endchannel
+
+Cry_Yamask_Ch5:
+	sound_duty 1, 1, 1, 1
+	sound __, 7, $2c, 1967
+	sound __, 8, $2c, 1966
+	sound __, 1, $00, 0
+	sound __, 6, $2c, 1956
+	sound __, 6, $59, 1991
+	sound __, 7, $b4, 1990
+	endchannel
+
+Cry_Yamask_Ch6:
+	sound_duty 0, 2, 2, 2
+	sound __, 7, $2c, 1962
+	sound __, 8, $2c, 1961
+	sound __, 1, $00, 0
+	sound __, 6, $2c, 1951
+	sound __, 6, $59, 1986
+	sound __, 7, $b4, 1985
+	endchannel
+	
+Cry_Whimsicott_Ch5:
+	sound_duty 1, 2, 1, 2
+	sound __, 5, $78, 1616
+	sound __, 5, $f8, 1632
+	sound __, 5, $f8, 1628
+	sound __, 3, $f8, 1660
+	sound __, 8, $f8, 1664
+	sound __, 8, $f8, 1660
+	sound __, 8, $f8, 1656
+	sound __, 8, $f8, 1652
+	sound __, 5, $f8, 1642
+	sound __, 8, $f1, 1632
+	endchannel
+
+Cry_Whimsicott_Ch6:
+	sound_duty 0, 2, 0, 2
+	sound __, 5, $a1, 1636
+	sound __, 5, $a1, 1636
+	sound __, 7, $a1, 1636
+	sound __, 8, $a1, 1684
+	sound __, 8, $a1, 1684
+	sound __, 8, $a1, 1684
+	sound __, 8, $a1, 1684
+	sound __, 5, $a2, 1688
+	sound __, 5, $91, 1692
 	endchannel

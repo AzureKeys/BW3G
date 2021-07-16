@@ -67,3 +67,7 @@ Cries:
 	dba Cry_Aipom
 	dba Cry_Dunsparce
 	dba Cry_Donphan
+	dba Cry_Patrat
+	dba Cry_Meditite
+	dba Cry_Yamask
+	dba Cry_Whimsicott

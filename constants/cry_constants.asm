@@ -72,3 +72,9 @@
 	const CRY_AIPOM
 	const CRY_DUNSPARCE
 	const CRY_DONPHAN
+	
+; custom
+	const CRY_PATRAT
+	const CRY_MEDITITE
+	const CRY_YAMASK
+	const CRY_WHIMSICOTT
