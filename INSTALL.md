@@ -13,4 +13,4 @@ Build **bw3genesis.gbc**:
 make
 ```
 
-You will need [**rgbds**](https://github.com/gbdev/rgbds) **0.3.8**. If you have installed a different version, put the 0.3.8 files in a subdirectory of BW3G named `rgbds`.
+You will need [**rgbds**](https://github.com/gbdev/rgbds) **0.4.2**. If you have installed a different version, put the 0.4.2 files in a subdirectory of BW3G named `rgbds`.
