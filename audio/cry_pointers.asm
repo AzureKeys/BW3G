@@ -71,3 +71,4 @@ Cries:
 	dba Cry_Meditite
 	dba Cry_Yamask
 	dba Cry_Whimsicott
+	dba Cry_Trubbish

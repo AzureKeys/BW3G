@@ -66,10 +66,30 @@ PlayersHouseRadioScript:
 	; end
 	
 	; opentext
-	; givepoke COTTONEE, 5, RAZOR_CLAW
+	; givepoke PETILIL, 5, RAZOR_CLAW
 	; closetext
 	; setflag ENGINE_POKEDEX
-	; writebyte WHIMSICOTT
+	; writebyte GALVANTULA
+	; special UnusedSetSeenMon
+	; writebyte ZORUA
+	; special UnusedSetSeenMon
+	; writebyte ZOROARK
+	; special UnusedSetSeenMon
+	; writebyte TRUBBISH
+	; special UnusedSetSeenMon
+	; writebyte GARBODOR
+	; special UnusedSetSeenMon
+	; writebyte GOTHITA
+	; special UnusedSetSeenMon
+	; writebyte GOTHITELLE
+	; special UnusedSetSeenMon
+	; writebyte SOLOSIS
+	; special UnusedSetSeenMon
+	; writebyte DUOSION
+	; special UnusedSetSeenMon
+	; writebyte REUNICLUS
+	; special UnusedSetSeenMon
+	; writebyte SAWSBUCK
 	; special UnusedSetSeenMon
 	; end
 	

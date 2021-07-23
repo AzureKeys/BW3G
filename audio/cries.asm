@@ -9,6 +9,10 @@ Cry_Yamask:
 Cry_Whimsicott:
 	musicheader 2, 5, Cry_Whimsicott_Ch5
 	musicheader 1, 6, Cry_Whimsicott_Ch6
+	
+Cry_Trubbish:
+	musicheader 2, 5, Cry_Trubbish_Ch5
+	musicheader 1, 6, Cry_Trubbish_Ch6
 
 Cry_Meditite:
 	musicheader 3, 5, Cry_Meditite_Ch5
@@ -438,6 +442,19 @@ Cry_Hoothoot_Ch8:
 	noise C_,  1, $88, $6a
 	noise __,  2, $98, $5e
 	noise C_,  1, $a7, $6e
+	endchannel
+
+Cry_Trubbish_Ch5:
+	tone $0020
+	dutycycle $0
+	jumpchannel Cry_Trubbish_branch_f312b
+
+Cry_Trubbish_Ch6:
+	sound_duty 3, 2, 1, 0
+Cry_Trubbish_branch_f312b:
+	sound __,  9, $38, $072d
+	sound __,  14, $00, $0
+	sound __,  9, $f1, $0720
 	endchannel
 
 Cry_Sentret_Ch5:

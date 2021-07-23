@@ -105,30 +105,30 @@ PokemonCries::
 	mon_cry CRY_SPINARAK,   -$0ae,  $1e2 ; CHANDELURE
 	mon_cry CRY_MARILL,      $0d7,  $140 ; COTTONEE
 	mon_cry CRY_WHIMSICOTT,  $0fa,  $100 ; WHIMSICOTT
-	mon_cry CRY_LEDYBA,      $000,  $0de ; PETILIL*
+	mon_cry CRY_SUNFLORA,   -$047,  $0b4 ; PETILIL
 	mon_cry CRY_LEDYBA,     -$096,  $138 ; LEDIAN*
 	mon_cry CRY_TOTODILE,    $031,  $0c8 ; YANMA
 	mon_cry CRY_SUNFLORA,   -$020,  $180 ; YANMEGA*
 	mon_cry CRY_CLEFFA,      $f40,  $180 ; SHROOMISH*
 	mon_cry CRY_CLEFFA,     -$2a3,  $1c8 ; BRELOOM*
 	mon_cry CRY_VENONAT,     $044,  $0c0 ; JOLTIK*
-	mon_cry CRY_VENONAT,     $029,  $100 ; VENOMOTH*
+	mon_cry CRY_VENONAT,     $03d,  $0c0 ; GALVANTULA
 	mon_cry CRY_HOOTHOOT,    $130,  $0e8 ; SPIRITOMB*
-	mon_cry CRY_EKANS,       $012,  $0c0 ; ZORUA*
-	mon_cry CRY_EKANS,       $0e0,  $090 ; ARBOK*
-	mon_cry CRY_EKANS,       $080,  $080 ; TRUBBISH*
-	mon_cry CRY_EKANS,       $000,  $100 ; GYARADOS*
+	mon_cry CRY_SUNFLORA,   -$089,  $0eb ; ZORUA
+	mon_cry CRY_SPINARAK,   -$078,  $320 ; ZOROARK
+	mon_cry CRY_TRUBBISH,   -$016,  $150 ; TRUBBISH
+	mon_cry CRY_HOOTHOOT,   -$06a,  $286 ; GARBODOR
 	mon_cry CRY_METAPOD,     $080,  $0e0 ; MAGNEMITE
 	mon_cry CRY_METAPOD,     $020,  $140 ; MAGNETON
 	mon_cry CRY_GIRAFARIG,   $073,  $240 ; MAGNEZONE*
-	mon_cry CRY_METAPOD,     $0c0,  $081 ; GOTHITA*
+	mon_cry CRY_TRUBBISH,    $07d,  $0c8 ; GOTHITA
 	mon_cry CRY_METAPOD,     $0a8,  $140 ; KADABRA*
-	mon_cry CRY_METAPOD,     $098,  $17f ; ALAKAZAM*
-	mon_cry CRY_PSYDUCK,     $055,  $081 ; SOLOSIS*
-	mon_cry CRY_WEEPINBELL,  $044,  $0a0 ; WEEPINBELL*
-	mon_cry CRY_WEEPINBELL,  $066,  $14c ; VICTREEBEL*
+	mon_cry CRY_SPINARAK,    $005,  $450 ; GOTHITELLE
+	mon_cry CRY_EKANS,       $200,  $090 ; SOLOSIS
+	mon_cry CRY_AMPHAROS,    $185,  $184 ; DUOSION
+	mon_cry CRY_AMPHAROS,    $233,  $190 ; REUNICLUS
 	mon_cry CRY_WEEPINBELL,  $000,  $100 ; DEERLING*
-	mon_cry CRY_WEEPINBELL,  $020,  $140 ; RAPIDASH*
+	mon_cry CRY_GLIGAR,     -$0d6,  $250 ; SAWSBUCK
 	mon_cry CRY_CATERPIE,    $080,  $0c0 ; KARRABLAST*
 	mon_cry CRY_CATERPIE,    $010,  $17f ; SEAKING*
 	mon_cry CRY_ODDISH,      $0dd,  $081 ; SHELMET*
