@@ -68,6 +68,9 @@ ENDM
 	map_const SEASIDE_CAVE_B2F, 14, 12
 	map_const SEASIDE_CAVE_CHAMBER, 6, 8
 	map_const DRAGONSPIRAL_TOWER_OUTSIDE, 7, 12
+	map_const MISTRALTON_CAVE_1F, 13, 11
+	map_const MISTRALTON_CAVE_2F, 13, 13
+	map_const MISTRALTON_CAVE_3F, 14, 13
 
 	newgroup                                                      ; 20
 

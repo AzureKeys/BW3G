@@ -402,12 +402,13 @@ R6ChargestoneText:
 Rt6_MapEvents:
 	db 0, 0 ; filler
 
-	db 5 ; warp events
+	db 6 ; warp events
 	warp_event 15, 17, R_6_HOUSE, 1
 	warp_event 31, 21, R_6_LAB, 1
 	warp_event  8,  3, CHARGESTONE_CAVE_1F, 1
 	warp_event 46, 42, DRIFTVEIL_CITY, 8
 	warp_event 46, 43, DRIFTVEIL_CITY, 9
+	warp_event 46, 15, MISTRALTON_CAVE_1F, 1
 
 	db 0 ; coord events
 

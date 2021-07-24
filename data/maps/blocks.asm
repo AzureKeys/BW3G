@@ -553,4 +553,13 @@ Rt8_Blocks::
 
 DragonspiralTowerOutside_Blocks:
 	INCBIN "maps/DragonspiralTowerOutside.ablk"
+
+MistraltonCave1F_Blocks:
+	INCBIN "maps/MistraltonCave1F.ablk"
+
+MistraltonCave2F_Blocks:
+	INCBIN "maps/MistraltonCave2F.ablk"
+
+MistraltonCave3F_Blocks:
+	INCBIN "maps/MistraltonCave3F.ablk"
 	
