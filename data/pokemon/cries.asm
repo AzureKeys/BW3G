@@ -129,10 +129,10 @@ PokemonCries::
 	mon_cry CRY_AMPHAROS,    $233,  $190 ; REUNICLUS
 	mon_cry CRY_WEEPINBELL,  $000,  $100 ; DEERLING*
 	mon_cry CRY_GLIGAR,     -$0d6,  $250 ; SAWSBUCK
-	mon_cry CRY_CATERPIE,    $080,  $0c0 ; KARRABLAST*
+	mon_cry CRY_KARRABLAST,  $00e,  $0d7 ; KARRABLAST
 	mon_cry CRY_CATERPIE,    $010,  $17f ; SEAKING*
-	mon_cry CRY_ODDISH,      $0dd,  $081 ; SHELMET*
-	mon_cry CRY_ODDISH,      $0aa,  $0c0 ; GLOOM*
+	mon_cry CRY_SHELMET,     $00f,  $0af ; SHELMET
+	mon_cry CRY_SHELMET,    -$2c3,  $0c4 ; ACCELGOR
 	mon_cry CRY_VOLTORB,     $0ed,  $100 ; FERROSEED*
 	mon_cry CRY_VOLTORB,     $0a8,  $110 ; ELECTRODE*
 	mon_cry CRY_LAPRAS,      $000,  $100 ; BASCULIN*
@@ -149,37 +149,37 @@ PokemonCries::
 	mon_cry CRY_PIDGEOTTO,  -$099,  $0f3 ; SANDILE
 	mon_cry CRY_LAPRAS,     -$1d8,  $15d ; KROKOROK
 	mon_cry CRY_LAPRAS,     -$209,  $1ca ; KROOKODILE
-	mon_cry CRY_DUNSPARCE,   $1c4,  $100 ; SKORUPI
-	mon_cry CRY_MAGCARGO,   -$20d,  $1c0 ; DRAPION
+	mon_cry CRY_DUNSPARCE,   $1c4,  $100 ; SKORUPI*
+	mon_cry CRY_MAGCARGO,   -$20d,  $1c0 ; DRAPION*
 	mon_cry CRY_CYNDAQUIL,   $2f4,  $129 ; TRAPINCH
 	mon_cry CRY_SLUGMA,      $2c2,  $0f3 ; VIBRAVA
 	mon_cry CRY_KRABBY,      $cda,  $132 ; FLYGON
-	mon_cry CRY_NIDOQUEEN,   $0dd,  $0e0 ; SCRAGGY
-	mon_cry CRY_NIDOQUEEN,   $0af,  $0c0 ; PRIMEAPE
-	mon_cry CRY_PICHU,      -$21a,  $1f0 ; NUMEL
-	mon_cry CRY_GLIGAR,     -$1cd,  $1a0 ; CAMERUPT
-	mon_cry CRY_GOLEM,       $000,  $100 ; MARACTUS
+	mon_cry CRY_KARRABLAST,  $04b,  $0a4 ; SCRAGGY
+	mon_cry CRY_KARRABLAST, -$0a7,  $147 ; SCRAFTY
+	mon_cry CRY_PICHU,      -$21a,  $1f0 ; NUMEL*
+	mon_cry CRY_GLIGAR,     -$1cd,  $1a0 ; CAMERUPT*
+	mon_cry CRY_GOLEM,       $000,  $100 ; MARACTUS*
 	mon_cry CRY_GLIGAR,     -$102,  $100 ; GLIGAR
-	mon_cry CRY_DIGLETT,     $099,  $0a0 ; GLISCOR
-	mon_cry CRY_KRABBY,      $008,  $0c0 ; BALTOY
-	mon_cry CRY_HOOTHOOT,    $162,  $100 ; CLAYDOL
-	mon_cry CRY_DROWZEE,     $0ff,  $17f ; SIGILYPH
-	mon_cry CRY_CLEFAIRY,    $000,  $100 ; GOLETT
-	mon_cry CRY_ODDISH,      $04f,  $0e0 ; MAROWAK
-	mon_cry CRY_AIPOM,      -$051,  $0e8 ; TIRTOUGA
-	mon_cry CRY_AIPOM,      -$160,  $180 ; CARRACOSTA
-	mon_cry CRY_MARILL,     -$01f,  $180 ; ARCHEN
-	mon_cry CRY_VILEPLUME,   $020,  $170 ; ARCHEOPS
-	mon_cry CRY_VENONAT,     $000,  $100 ; FRILLISH
-	mon_cry CRY_VENONAT,     $0ee,  $17f ; TENTACRUEL
-	mon_cry CRY_PICHU,       $000,  $140 ; EMOLGA
+	mon_cry CRY_DIGLETT,     $099,  $0a0 ; GLISCOR*
+	mon_cry CRY_MEDITITE,    $2b0,  $0d6 ; BALTOY
+	mon_cry CRY_TEDDIURSA,  -$147,  $088 ; CLAYDOL
+	mon_cry CRY_DROWZEE,     $0ff,  $17f ; SIGILYPH*
+	mon_cry CRY_CATERPIE,    $0fa,  $129 ; GOLETT
+	mon_cry CRY_TYPHLOSION,  $111,  $0fa ; GOLURK
+	mon_cry CRY_AIPOM,      -$051,  $0e8 ; TIRTOUGA*
+	mon_cry CRY_AIPOM,      -$160,  $180 ; CARRACOSTA*
+	mon_cry CRY_MARILL,     -$01f,  $180 ; ARCHEN*
+	mon_cry CRY_VILEPLUME,   $020,  $170 ; ARCHEOPS*
+	mon_cry CRY_VENONAT,     $000,  $100 ; FRILLISH*
+	mon_cry CRY_VENONAT,     $0ee,  $17f ; TENTACRUEL*
+	mon_cry CRY_PICHU,       $000,  $140 ; EMOLGA*
 	mon_cry CRY_VULPIX,      $04f,  $090 ; VULPIX
 	mon_cry CRY_VULPIX,      $088,  $0e0 ; NINETALES
 	mon_cry CRY_LEDYBA,     -$0cd,  $0ec ; DUCKLETT
 	mon_cry CRY_TEDDIURSA,  -$022,  $0ca ; SWANNA
 	mon_cry CRY_TOGETIC,     $010,  $017 ; SWABLU
 	mon_cry CRY_NIDORAN_M,   $045,  $155 ; ALTARIA
-	mon_cry CRY_PIDGEOTTO,   $00a,  $140 ; AUDINO
+	mon_cry CRY_PIDGEOTTO,   $00a,  $140 ; AUDINO*
 	mon_cry CRY_VENONAT,     $088,  $0e0 ; EEVEE
 	mon_cry CRY_VENONAT,     $0aa,  $17f ; VAPOREON
 	mon_cry CRY_VENONAT,     $03d,  $100 ; JOLTEON
@@ -191,8 +191,8 @@ PokemonCries::
 	mon_cry CRY_VENONAT,     $0b0,  $16f ; SYLVEON
 	mon_cry CRY_DIGLETT,    -$133,  $125 ; CROAGUNK
 	mon_cry CRY_SLOWKING,    $002,  $2c6 ; TOXICROAK
-	mon_cry CRY_SEEL,        $000,  $100 ; HEATMOR
-	mon_cry CRY_SPINARAK,    $011,  $200 ; DURANT
+	mon_cry CRY_SEEL,        $000,  $100 ; HEATMOR*
+	mon_cry CRY_SPINARAK,    $011,  $200 ; DURANT*
 	mon_cry CRY_GOLEM,       $0e6,  $15d ; KOFFING
 	mon_cry CRY_GOLEM,       $0ff,  $17f ; WEEZING
 	mon_cry CRY_MAGCARGO,    $0a1,  $0e8 ; CORSOLA

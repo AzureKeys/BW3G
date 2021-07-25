@@ -72,3 +72,5 @@ Cries:
 	dba Cry_Yamask
 	dba Cry_Whimsicott
 	dba Cry_Trubbish
+	dba Cry_Karrablast
+	dba Cry_Shelmet

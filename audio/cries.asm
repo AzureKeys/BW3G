@@ -13,6 +13,14 @@ Cry_Whimsicott:
 Cry_Trubbish:
 	musicheader 2, 5, Cry_Trubbish_Ch5
 	musicheader 1, 6, Cry_Trubbish_Ch6
+	
+Cry_Karrablast:
+	musicheader 2, 5, Cry_Karrablast_Ch5
+	musicheader 1, 6, Cry_Karrablast_Ch6
+	
+Cry_Shelmet:
+	musicheader 2, 5, Cry_Shelmet_Ch5
+	musicheader 1, 6, Cry_Shelmet_Ch6
 
 Cry_Meditite:
 	musicheader 3, 5, Cry_Meditite_Ch5
@@ -2178,4 +2186,36 @@ Cry_Whimsicott_Ch6:
 	sound __, 8, $a1, 1684
 	sound __, 5, $a2, 1688
 	sound __, 5, $91, 1692
+	endchannel
+
+Cry_Karrablast_Ch5:
+	sound_duty 0, 3, 0, 1
+	sound __, 13, $f2, 1858
+	sound __, 5, $f8, 1868
+	sound __, 5, $e8, 1744
+	sound __, 9, $e2, 1756
+	endchannel
+
+Cry_Karrablast_Ch6:
+	sound_duty 0, 1, 0, 3
+	sound __, 13, $02, 0
+	sound __, 5, $08, 0
+	sound __, 5, $e8, 1814
+	sound __, 9, $e4, 1826
+	endchannel
+
+Cry_Shelmet_Ch5:
+	sound_duty 3, 0, 0, 3
+	sound __, 10, $f8, 1858
+	sound __, 8, $f8, 1868
+	sound __, 10, $a8, 1848
+	sound __, 13, $f1, 1868
+	endchannel
+
+Cry_Shelmet_Ch6:
+	sound_duty 3, 2, 0, 2
+	sound __, 10, $8f, 1848
+	sound __, 9, $8f, 1858
+	sound __, 9, $4f, 1838
+	sound __, 13, $81, 1858
 	endchannel

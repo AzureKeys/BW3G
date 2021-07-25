@@ -79,3 +79,5 @@
 	const CRY_YAMASK
 	const CRY_WHIMSICOTT
 	const CRY_TRUBBISH
+	const CRY_KARRABLAST
+	const CRY_SHELMET

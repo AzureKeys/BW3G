@@ -65,33 +65,33 @@ PlayersHouseRadioScript:
 	; setflag ENGINE_FLYPOINT_LACUNOSA
 	; end
 	
-	; opentext
-	; givepoke PETILIL, 5, RAZOR_CLAW
-	; closetext
-	; setflag ENGINE_POKEDEX
-	; writebyte GALVANTULA
-	; special UnusedSetSeenMon
-	; writebyte ZORUA
-	; special UnusedSetSeenMon
-	; writebyte ZOROARK
-	; special UnusedSetSeenMon
-	; writebyte TRUBBISH
-	; special UnusedSetSeenMon
-	; writebyte GARBODOR
-	; special UnusedSetSeenMon
-	; writebyte GOTHITA
-	; special UnusedSetSeenMon
-	; writebyte GOTHITELLE
-	; special UnusedSetSeenMon
-	; writebyte SOLOSIS
-	; special UnusedSetSeenMon
+	opentext
+	givepoke KARRABLAST, 5, RAZOR_CLAW
+	closetext
+	setflag ENGINE_POKEDEX
+	writebyte SHELMET
+	special UnusedSetSeenMon
+	writebyte ACCELGOR
+	special UnusedSetSeenMon
+	writebyte SCRAGGY
+	special UnusedSetSeenMon
+	writebyte SCRAFTY
+	special UnusedSetSeenMon
+	writebyte BALTOY
+	special UnusedSetSeenMon
+	writebyte CLAYDOL
+	special UnusedSetSeenMon
+	writebyte GOLETT
+	special UnusedSetSeenMon
+	writebyte GOLURK
+	special UnusedSetSeenMon
 	; writebyte DUOSION
 	; special UnusedSetSeenMon
 	; writebyte REUNICLUS
 	; special UnusedSetSeenMon
 	; writebyte SAWSBUCK
 	; special UnusedSetSeenMon
-	; end
+	end
 	
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .NormalRadio
