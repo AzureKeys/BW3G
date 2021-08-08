@@ -183,6 +183,7 @@ NUM_FRUIT_TREES EQU const_value + -1
 	const HIDDENGROTTO_R_6          ; 0c
 	const HIDDENGROTTO_R_23         ; 0d
 	const HIDDENGROTTO_R_7          ; 0e
+	const HIDDENGROTTO_R_9          ; 0f
 NUM_HIDDEN_GROTTO EQU const_value + -1
 
 ; describedecoration arguments

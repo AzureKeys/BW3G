@@ -596,10 +596,10 @@ CHRIS EQU __enum__
 	const BIKER_R16
 	const BIKER_R5
 	const BIKER_R4
-	const ZEKE
-	const CHARLES
-	const RILEY
-	const JOEL
+	const BIKER_R9_1
+	const BIKER_R9_2
+	const BIKER_R9_3
+	const BIKER_R9_4
 	const GLENN
 
 	trainerclass BLAINE ; 2e

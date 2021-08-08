@@ -10,21 +10,22 @@ R9OpelucidGateOfficerScript:
 	jumptextfaceplayer R9OpelucidGateOfficerText
 	
 R9OpelucidGateOfficerText:
-	text "The bridge has"
-	line "finally been"
-	cont "fixed!"
+	text "Are you a #MON"
+	line "trainer? The MALL"
 	
-	para "Go on ahead."
+	para "on ROUTE 9 has all"
+	line "kinds of items"
+	cont "for sale."
 	done
 
 Rt9OpelucidGate_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 4 ; warp events
 	warp_event  9,  4, OPELUCID_CITY, 3
 	warp_event  9,  5, OPELUCID_CITY, 4
-	;warp_event  0,  4, R_9, 1
-	;warp_event  0,  5, R_9, 2
+	warp_event  0,  4, R_9, 3
+	warp_event  0,  5, R_9, 4
 
 	db 0 ; coord events
 	

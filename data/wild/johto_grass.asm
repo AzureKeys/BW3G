@@ -1850,6 +1850,42 @@ JohtoGrassWildMons:
 	db 40, AUDINO
 	db 42, KIRLIA
 	
+	map_id R_9
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 42, PAWNIARD
+	db 41, HEATMOR
+	db 41, DURANT
+	db 42, GLIGAR
+	db 40, STUNFISK
+	db 40, SKARMORY
+	db 42, STUNFISK
+	db 40, GARBODOR
+	db 43, SKARMORY
+	db 43, GARBODOR
+	; day
+	db 42, PAWNIARD
+	db 41, HEATMOR
+	db 41, DURANT
+	db 42, GLIGAR
+	db 40, STUNFISK
+	db 40, SKARMORY
+	db 42, STUNFISK
+	db 40, GARBODOR
+	db 43, SKARMORY
+	db 43, GARBODOR
+	; nite
+	db 42, PAWNIARD
+	db 41, HEATMOR
+	db 41, DURANT
+	db 42, GLIGAR
+	db 40, STUNFISK
+	db 40, SKARMORY
+	db 42, STUNFISK
+	db 40, GARBODOR
+	db 43, SKARMORY
+	db 43, GARBODOR
+	
 	map_id R_8
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn

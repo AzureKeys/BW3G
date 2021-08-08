@@ -562,4 +562,7 @@ MistraltonCave2F_Blocks:
 
 MistraltonCave3F_Blocks:
 	INCBIN "maps/MistraltonCave3F.ablk"
+
+Rt9_Blocks:
+	INCBIN "maps/Rt9.ablk"
 	

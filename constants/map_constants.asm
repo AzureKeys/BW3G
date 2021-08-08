@@ -299,6 +299,7 @@ ENDM
 	map_const OPELUCID_POKECENTER_1F, 5, 4 
 	map_const OPELUCID_MART, 6, 4
 	map_const OPELUCID_SUPER_ROD_HOUSE, 4, 4 
+	map_const R_9, 22, 11
 	
 	newgroup
 	map_const TUBELINE_BRIDGE, 9, 7

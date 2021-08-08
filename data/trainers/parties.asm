@@ -3387,29 +3387,35 @@ BikerGroup:
 	db 20, DARUMAKA
 	dw $0E00, $0E00, $0E00, $0E00, $0E00
 	db -1 ; end
-
-	; BIKER (5)
-	db "ZEKE@", TRAINERTYPE_NORMAL
-	; db 32, KOFFING
-	; db 32, KOFFING
+	
+	; BIKER (R9)
+	db "ZEKE@", TRAINERTYPE_STAT_EXP
+	db 48, ZORUA
+	dw $5400, $5400, $5400, $5400, $5400
+	db 50, SCRAFTY
+	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
-
-	; BIKER (6)
-	db "CHARLES@", TRAINERTYPE_NORMAL
-	; db 30, KOFFING
-	; db 30, CHARMELEON
-	; db 30, WEEZING
+	
+	; BIKER (R9)
+	db "REESE@", TRAINERTYPE_STAT_EXP
+	db 48, PAWNIARD
+	dw $5400, $5400, $5400, $5400, $5400
+	db 50, SKARMORY
+	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
-
-	; BIKER (7)
-	db "RILEY@", TRAINERTYPE_NORMAL
-;	db 34, WEEZING
+	
+	; BIKER (R9)
+	db "CHANCE@", TRAINERTYPE_STAT_EXP
+	db 52, KROOKODILE
+	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
-
-	; BIKER (8)
-	db "JOEL@", TRAINERTYPE_NORMAL
-	; db 32, MAGMAR
-	; db 32, MAGMAR
+	
+	; BIKER (R9)
+	db "KAZ@", TRAINERTYPE_STAT_EXP
+	db 48, LAIRON
+	dw $5400, $5400, $5400, $5400, $5400
+	db 50, DRAPION
+	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
 
 	; BIKER (9)

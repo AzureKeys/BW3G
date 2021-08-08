@@ -21,6 +21,10 @@ Cry_Karrablast:
 Cry_Shelmet:
 	musicheader 2, 5, Cry_Shelmet_Ch5
 	musicheader 1, 6, Cry_Shelmet_Ch6
+	
+Cry_Tirtouga:
+	musicheader 2, 5, Cry_Tirtouga_Ch5
+	musicheader 1, 6, Cry_Tirtouga_Ch6
 
 Cry_Meditite:
 	musicheader 3, 5, Cry_Meditite_Ch5
@@ -2218,4 +2222,22 @@ Cry_Shelmet_Ch6:
 	sound __, 9, $8f, 1858
 	sound __, 9, $4f, 1838
 	sound __, 13, $81, 1858
+	endchannel
+
+Cry_Tirtouga_Ch5:
+	sound_duty 3, 3, 0, 0
+	sound __, 7, $f7, 1872
+	sound __, 7, $00, 0
+	sound __, 7, $d5, 1856
+	sound __, 5, $00, 0
+	sound __, 4, $c1, 1878
+	endchannel
+
+Cry_Tirtouga_Ch6:
+	sound_duty 0, 0, 2, 2
+	sound __, 7, $c7, 1809
+	sound __, 7, $00, 0
+	sound __, 7, $a5, 1793
+	sound __, 7, $00, 0
+	sound __, 9, $91, 1819
 	endchannel

@@ -11,9 +11,9 @@ TubelineBridge_MapEvents:
 	db 2 ; warp events
 	warp_event  0,  6, R_8, 1
 	warp_event  0,  7, R_8, 2
-	;warp_event 17,  6, R_9, 3
-	;warp_event 17,  7, R_9, 4
-
+	warp_event 17,  6, R_9, 1
+	warp_event 17,  7, R_9, 2
+	
 	db 0 ; coord events
 
 	db 0 ; bg events

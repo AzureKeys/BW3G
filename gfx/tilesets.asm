@@ -640,9 +640,6 @@ INCBIN "gfx/tilesets/radio_tower.2bpp.lz"
 TilesetRadioTowerMeta:
 INCBIN "data/tilesets/radio_tower_metatiles.bin"
 
-TilesetRadioTowerColl:
-INCLUDE "data/tilesets/radio_tower_collision.asm"
-
 TilesetCasteliaGFX:
 INCBIN "gfx/tilesets/castelia.2bpp.lz"
 
@@ -654,6 +651,9 @@ INCLUDE "data/tilesets/castelia_collision.asm"
 
 
 SECTION "Tileset Data 19", ROMX
+
+TilesetRadioTowerColl:
+INCLUDE "data/tilesets/radio_tower_collision.asm"
 
 TilesetCasteliaAttr:
 INCBIN "data/tilesets/castelia_attributes.bin"

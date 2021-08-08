@@ -66,31 +66,29 @@ PlayersHouseRadioScript:
 	; end
 	
 	opentext
-	givepoke KARRABLAST, 5, RAZOR_CLAW
+	givepoke TROPIUS, 5, RAZOR_CLAW
 	closetext
 	setflag ENGINE_POKEDEX
-	writebyte SHELMET
+	writebyte PAWNIARD
 	special UnusedSetSeenMon
-	writebyte ACCELGOR
+	writebyte BISHARP
 	special UnusedSetSeenMon
-	writebyte SCRAGGY
+	writebyte MANTYKE
 	special UnusedSetSeenMon
-	writebyte SCRAFTY
+	writebyte AXEW
 	special UnusedSetSeenMon
-	writebyte BALTOY
+	writebyte FRAXURE
 	special UnusedSetSeenMon
-	writebyte CLAYDOL
+	writebyte HAXORUS
 	special UnusedSetSeenMon
-	writebyte GOLETT
+	writebyte BOUFFALANT
 	special UnusedSetSeenMon
-	writebyte GOLURK
+	writebyte KLINK
 	special UnusedSetSeenMon
-	; writebyte DUOSION
-	; special UnusedSetSeenMon
-	; writebyte REUNICLUS
-	; special UnusedSetSeenMon
-	; writebyte SAWSBUCK
-	; special UnusedSetSeenMon
+	writebyte KLANG
+	special UnusedSetSeenMon
+	writebyte KLINKLANG
+	special UnusedSetSeenMon
 	end
 	
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
