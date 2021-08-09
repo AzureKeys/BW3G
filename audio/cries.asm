@@ -25,6 +25,10 @@ Cry_Shelmet:
 Cry_Tirtouga:
 	musicheader 2, 5, Cry_Tirtouga_Ch5
 	musicheader 1, 6, Cry_Tirtouga_Ch6
+	
+Cry_Cubchoo:
+	musicheader 2, 5, Cry_Cubchoo_Ch5
+	musicheader 1, 6, Cry_Cubchoo_Ch6
 
 Cry_Meditite:
 	musicheader 3, 5, Cry_Meditite_Ch5
@@ -1998,6 +2002,7 @@ Cry_Fearow_Ch8:
 
 Cry_Growlithe_Ch5:
 	sound_duty 1, 1, 2, 2
+Cry_Growlithe_Body_1:
 	sound __,  4, $f4, $0641
 	sound __, 14, $d6, $0721
 	sound __,  9, $f4, $0719
@@ -2006,6 +2011,7 @@ Cry_Growlithe_Ch5:
 
 Cry_Growlithe_Ch6:
 	sound_duty 0, 3, 0, 3
+Cry_Growlithe_Body_2:
 	sound __,  5, $f4, $0580
 	sound __, 15, $e6, $06e0
 	sound __,  9, $d5, $06d8
@@ -2241,3 +2247,11 @@ Cry_Tirtouga_Ch6:
 	sound __, 7, $00, 0
 	sound __, 9, $91, 1819
 	endchannel
+
+Cry_Cubchoo_Ch5:
+	sound_duty 0, 1, 2, 3
+	jumpchannel Cry_Growlithe_Body_1
+
+Cry_Cubchoo_Ch6:
+	dutycycle $0
+	jumpchannel Cry_Growlithe_Body_2

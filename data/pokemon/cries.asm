@@ -216,23 +216,23 @@ PokemonCries::
 	mon_cry CRY_PIDGEY,      $0ff,  $17f ; DITTO
 	mon_cry CRY_PARAS,       $002,  $0a0 ; STARYU
 	mon_cry CRY_PARAS,       $000,  $100 ; STARMIE
-	mon_cry CRY_TEDDIURSA,   $7a2,  $06e ; CUBCHOO*
-	mon_cry CRY_TEDDIURSA,   $640,  $0d8 ; URSARING*
-	mon_cry CRY_WOOPER,      $093,  $0af ; VANILLITE*
-	mon_cry CRY_WOOPER,     -$0c6,  $140 ; QUAGSIRE*
-	mon_cry CRY_GIRAFARIG,   $041,  $200 ; VANILLUXE*
+	mon_cry CRY_CUBCHOO,     $035,  $097 ; CUBCHOO
+	mon_cry CRY_VILEPLUME,  -$2bb,  $0bb ; BEARTIC
+	mon_cry CRY_MANTINE,     $030,  $0ea ; VANILLITE
+	mon_cry CRY_DUNSPARCE,   $365,  $0b4 ; VANILLISH
+	mon_cry CRY_VENONAT,     $0bd,  $123 ; VANILLUXE
 	mon_cry CRY_WOOPER,      $053,  $0af ; SNEASEL
-	mon_cry CRY_AMPHAROS,    $000,  $160 ; WEAVILE*
-	mon_cry CRY_CYNDAQUIL,   $3c9,  $140 ; CORPHISH*
-	mon_cry CRY_CYNDAQUIL,   $2d0,  $110 ; LANTURN*
+	mon_cry CRY_MAREEP,      $058,  $132 ; WEAVILE
+	mon_cry CRY_MANTINE,    -$336,  $0ca ; CORPHISH
+	mon_cry CRY_MANTINE,    -$67b,  $0f7 ; CRAWDAUNT
 	mon_cry CRY_CYNDAQUIL,   $1fe,  $140 ; SWINUB
 	mon_cry CRY_MAGCARGO,   -$109,  $100 ; PILOSWINE
 	mon_cry CRY_TYPHLOSION,  $f00,  $0d4 ; MAMOSWINE*
 	mon_cry CRY_RAIKOU,      $05f,  $0d0 ; LARVITAR
 	mon_cry CRY_SPINARAK,   -$1db,  $150 ; PUPITAR
 	mon_cry CRY_RAIKOU,     -$100,  $180 ; TYRANITAR
-	mon_cry CRY_PARAS,       $0ee,  $17f ; LARVESTA*
-	mon_cry CRY_PARAS,       $099,  $17f ; VOLCARONA*
+	mon_cry CRY_CYNDAQUIL,  -$4c7,  $0f5 ; LARVESTA
+	mon_cry CRY_METAPOD,    -$420,  $1a6 ; VOLCARONA
 	mon_cry CRY_SENTRET,     $03a,  $2a8 ; TYNAMO
 	mon_cry CRY_LAPRAS,     -$159,  $145 ; EELEKTRIK
 	mon_cry CRY_BLASTOISE,   $06f,  $148 ; EELEKTROSS

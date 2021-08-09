@@ -66,28 +66,26 @@ PlayersHouseRadioScript:
 	; end
 	
 	opentext
-	givepoke TROPIUS, 5, RAZOR_CLAW
+	givepoke CUBCHOO, 5, RAZOR_CLAW
 	closetext
 	setflag ENGINE_POKEDEX
-	writebyte PAWNIARD
+	writebyte BEARTIC
 	special UnusedSetSeenMon
-	writebyte BISHARP
+	writebyte VANILLITE
 	special UnusedSetSeenMon
-	writebyte MANTYKE
+	writebyte VANILLISH
 	special UnusedSetSeenMon
-	writebyte AXEW
+	writebyte VANILLUXE
 	special UnusedSetSeenMon
-	writebyte FRAXURE
+	writebyte WEAVILE
 	special UnusedSetSeenMon
-	writebyte HAXORUS
+	writebyte CORPHISH
 	special UnusedSetSeenMon
-	writebyte BOUFFALANT
+	writebyte CRAWDAUNT
 	special UnusedSetSeenMon
-	writebyte KLINK
+	writebyte LARVESTA
 	special UnusedSetSeenMon
-	writebyte KLANG
-	special UnusedSetSeenMon
-	writebyte KLINKLANG
+	writebyte VOLCARONA
 	special UnusedSetSeenMon
 	end
 	

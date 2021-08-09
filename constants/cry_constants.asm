@@ -82,3 +82,4 @@
 	const CRY_KARRABLAST
 	const CRY_SHELMET
 	const CRY_TIRTOUGA
+	const CRY_CUBCHOO

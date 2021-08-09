@@ -75,3 +75,4 @@ Cries:
 	dba Cry_Karrablast
 	dba Cry_Shelmet
 	dba Cry_Tirtouga
+	dba Cry_Cubchoo
