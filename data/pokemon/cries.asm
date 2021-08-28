@@ -245,7 +245,7 @@ PokemonCries::
 	mon_cry CRY_PSYDUCK,     $26f,  $0dd ; SNORUNT
 	mon_cry CRY_SLOWKING,    $160,  $0e0 ; GLALIE*
 	mon_cry CRY_BLASTOISE,   $12b,  $0eb ; FROSLASS
-	mon_cry CRY_DIGLETT,     $000,  $100 ; CRYOGONAL*
+	mon_cry CRY_METAPOD,     $7d4,  $17f ; CRYOGONAL
 	mon_cry CRY_CLEFAIRY,    $099,  $090 ; HORSEA
 	mon_cry CRY_CLEFAIRY,    $03c,  $081 ; SEADRA
 	mon_cry CRY_SLUGMA,      $2fb,  $100 ; KINGDRA
@@ -253,9 +253,9 @@ PokemonCries::
 	mon_cry CRY_BULBASAUR,   $060,  $0c0 ; DRATINI
 	mon_cry CRY_BULBASAUR,   $040,  $100 ; DRAGONAIR
 	mon_cry CRY_BULBASAUR,   $03c,  $140 ; DRAGONITE
-	mon_cry CRY_DUNSPARCE,   $290,  $0a8 ; DEINO*
-	mon_cry CRY_DONPHAN,     $000,  $1a0 ; ZWEILOUS*
-	mon_cry CRY_SLOWKING,    $104,  $200 ; HYDREIGON*
+	mon_cry CRY_METAPOD,     $094,  $100 ; DEINO
+	mon_cry CRY_VULPIX,     -$0ee,  $090 ; ZWEILOUS
+	mon_cry CRY_HYDREIGON,   $000,  $0f4 ; HYDREIGON
 	mon_cry CRY_NIDORAN_M,      0,     0 ; 252
 	mon_cry CRY_NIDORAN_M,      0,     0 ; 253
 	mon_cry CRY_NIDORAN_M,      0,     0 ; 254

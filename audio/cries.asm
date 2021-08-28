@@ -34,6 +34,11 @@ Cry_Meditite:
 	musicheader 3, 5, Cry_Meditite_Ch5
 	musicheader 1, 6, Cry_Meditite_Ch6
 	musicheader 1, 8, Cry_Meditite_Ch8
+
+Cry_Hydreigon:
+	musicheader 3, 5, Cry_Hydreigon_Ch5
+	musicheader 1, 6, Cry_Hydreigon_Ch6
+	musicheader 1, 8, Cry_Hydreigon_Ch8
 	
 Cry_Marill:
 	musicheader 3, 5, Cry_Marill_Ch5
@@ -2149,6 +2154,42 @@ Cry_Meditite_Ch8:
 	noise __, 5, $b1, $2c
 	noise __, 16, $0f, $0
 	noise __, 5, $0f, $0
+	endchannel
+
+Cry_Hydreigon_Ch5:
+	sound_duty 3, 1, 3, 1
+	sound __, 7, $f8, 1664
+	sound __, 3, $c1, 1400
+	sound __, 16, $f7, 1664
+	sound __, 11, $e6, 1648
+	sound __, 16, $d7, 1680
+	sound __, 9, $d5, 1680
+	sound __, 7, $c4, 1672
+	sound __, 6, $d3, 1648
+	sound __, 5, $d3, 1632
+	sound __, 9, $c1, 1600
+	endchannel
+
+Cry_Hydreigon_Ch6:
+	sound_duty 3, 3, 0, 1
+	sound __, 7, $b7, 1601
+	sound __, 3, $96, 1602
+	sound __, 16, $b7, 1601
+	sound __, 16, $a7, 1617
+	sound __, 9, $a5, 1617
+	sound __, 7, $94, 1607
+	sound __, 6, $a3, 1585
+	sound __, 5, $93, 1570
+	sound __, 9, $71, 1537
+	endchannel
+
+Cry_Hydreigon_Ch8:
+	noise __, 12, $e1, 60
+	noise __, 12, $e4, 60
+	noise __, 11, $c7, 76
+	noise __, 11, $c7, 60
+	noise __, 13, $b7, 76
+	noise __, 16, $a2, 92
 	endchannel
 
 Cry_Yamask_Ch5:

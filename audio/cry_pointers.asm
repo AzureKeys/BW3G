@@ -76,3 +76,4 @@ Cries:
 	dba Cry_Shelmet
 	dba Cry_Tirtouga
 	dba Cry_Cubchoo
+	dba Cry_Hydreigon

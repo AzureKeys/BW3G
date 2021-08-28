@@ -83,3 +83,4 @@
 	const CRY_SHELMET
 	const CRY_TIRTOUGA
 	const CRY_CUBCHOO
+	const CRY_HYDREIGON

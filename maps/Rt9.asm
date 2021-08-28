@@ -153,7 +153,7 @@ Rt9_MapEvents:
 	db 4 ; warp events
 	warp_event  4, 11, TUBELINE_BRIDGE, 3
 	warp_event  4, 12, TUBELINE_BRIDGE, 4
-	warp_event 37, 11, R_9_OPELUCID_GATE, 3
+	warp_event 37, 10, R_9_OPELUCID_GATE, 3
 	warp_event 37, 11, R_9_OPELUCID_GATE, 4
 
 	db 0 ; coord events

@@ -54,40 +54,28 @@ PlayersHouseRadioScript:
 	; opentext
 	; givepoke SNEASEL, 5, RAZOR_CLAW
 	; closetext
-	; setflag ENGINE_ZEPHYRBADGE
-	; setflag ENGINE_HIVEBADGE
-	; setflag ENGINE_PLAINBADGE
-	; setflag ENGINE_FOGBADGE
-	; setflag ENGINE_STORMBADGE
-	; setflag ENGINE_MINERALBADGE
-	; setflag ENGINE_GLACIERBADGE
-	; setflag ENGINE_RISINGBADGE
+	setflag ENGINE_ZEPHYRBADGE
+	setflag ENGINE_HIVEBADGE
+	setflag ENGINE_PLAINBADGE
+	setflag ENGINE_FOGBADGE
+	setflag ENGINE_STORMBADGE
+	setflag ENGINE_MINERALBADGE
+	setflag ENGINE_GLACIERBADGE
+	setflag ENGINE_RISINGBADGE
 	; setflag ENGINE_FLYPOINT_LACUNOSA
 	; end
 	
-	opentext
-	givepoke CUBCHOO, 5, RAZOR_CLAW
-	closetext
-	setflag ENGINE_POKEDEX
-	writebyte BEARTIC
-	special UnusedSetSeenMon
-	writebyte VANILLITE
-	special UnusedSetSeenMon
-	writebyte VANILLISH
-	special UnusedSetSeenMon
-	writebyte VANILLUXE
-	special UnusedSetSeenMon
-	writebyte WEAVILE
-	special UnusedSetSeenMon
-	writebyte CORPHISH
-	special UnusedSetSeenMon
-	writebyte CRAWDAUNT
-	special UnusedSetSeenMon
-	writebyte LARVESTA
-	special UnusedSetSeenMon
-	writebyte VOLCARONA
-	special UnusedSetSeenMon
-	end
+	; opentext
+	; givepoke CRYOGONAL, 5, RAZOR_CLAW
+	; closetext
+	; setflag ENGINE_POKEDEX
+	; writebyte DEINO
+	; special UnusedSetSeenMon
+	; writebyte ZWEILOUS
+	; special UnusedSetSeenMon
+	; writebyte HYDREIGON
+	; special UnusedSetSeenMon
+	; end
 	
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .NormalRadio
