@@ -60,6 +60,7 @@
 	const ICIRRUS_CITY
 	const DRAGONSPIRAL_TOWER
 	const R_8
+	const MOOR_OF_ICIRRUS
 	const TUBELINE_BRIDGE
 	const R_9
 	const OPELUCID_CITY

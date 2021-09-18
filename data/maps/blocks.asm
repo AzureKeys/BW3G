@@ -568,4 +568,7 @@ Rt9_Blocks:
 
 ShoppingMallNine_Blocks:
 	INCBIN "maps/ShoppingMallNine.ablk"
+
+MoorOfIcirrus_Blocks:
+	INCBIN "maps/MoorOfIcirrus.ablk"
 	

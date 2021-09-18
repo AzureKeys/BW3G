@@ -323,4 +323,5 @@ ENDM
 	map_attributes MistraltonCave3F, MISTRALTON_CAVE_3F, $09, 0
 	map_attributes Rt9, R_9, $5d, 0
 	map_attributes ShoppingMallNine, SHOPPING_MALL_NINE, $00, 0
+	map_attributes MoorOfIcirrus, MOOR_OF_ICIRRUS, $11, 0
 	

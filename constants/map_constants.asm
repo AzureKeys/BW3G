@@ -308,6 +308,7 @@ ENDM
 	map_const ICIRRUS_CITY_SOUTH, 24, 13
 	map_const ICIRRUS_CITY_NORTH, 12, 13
 	map_const R_8, 24, 10
+	map_const MOOR_OF_ICIRRUS, 24, 20
 	map_const ICIRRUS_POKECENTER_1F, 5, 4 
 	map_const ICIRRUS_MART, 6, 4
 	

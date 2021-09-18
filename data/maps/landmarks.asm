@@ -64,6 +64,7 @@ Landmarks:
 	landmark  44,  36, IcirrusCityName
 	landmark  44,  28, DragonspiralTowerName
 	landmark  52,  36, R8Name
+	landmark  52,  28, MoorOfIcirrusName
 	landmark  60,  36, TubelineBridgeName
 	landmark  68,  36, R9Name
 	landmark  76,  36, OpelucidCityName
@@ -233,6 +234,7 @@ CelestialTowerName:  db "CELESTIAL¯TOWER@"
 IcirrusCityName:     db "ICIRRUS¯CITY@"
 DragonspiralTowerName:db "DRGNSPIRAL¯TOWER@"
 R8Name:              db "ROUTE 8@"
+MoorOfIcirrusName:   db "MOOR OF¯ICIRRUS@"
 TubelineBridgeName:  db "TUBELINE¯BRIDGE@"
 R9Name:              db "ROUTE 9@"
 OpelucidCityName:    db "OPELUCID¯CITY@"
