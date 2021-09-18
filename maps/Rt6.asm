@@ -288,7 +288,7 @@ Lass2R6BeatenText:
 
 Lass2R6AfterText:
 	text "You must have"
-	cont "trained hard!"
+	line "trained hard!"
 	done
 	
 PicnickerR6SeenText:

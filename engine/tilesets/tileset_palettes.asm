@@ -53,8 +53,10 @@ LoadSpecialMapPalette:
 
 .airport
 	ld a, [wMapGroup]
+	cp 20 ; mapgroup_Opelucid
+	jr z, .load_airport ; Shopping Mall Nine uses Airport palettes
 	cp 6 ; mapgroup_Lentimas
-	jr z, .load_airport ; Must be Lentimas Airport
+	jr z, .load_airport ; Must be Lentimas Airport, load Airport palettes
 	cp 21 ; mapgroup_Icirrus
 	jr z, .plane ; Tubeline Bridge uses plane palettes
 ; Must be mapgroup_Mistralton

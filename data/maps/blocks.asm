@@ -370,10 +370,10 @@ AccumulaTown_Blocks:
 Rt1_Blocks:
 	INCBIN "maps/Rt1.ablk"
 
+SECTION "Map Blocks 5", ROMX
+
 NuvemaTown_Blocks:
 	INCBIN "maps/NuvemaTown.ablk"
-
-SECTION "Map Blocks 5", ROMX
 
 NuvemaLab_Blocks:
 	INCBIN "maps/NuvemaLab.ablk"
@@ -565,4 +565,7 @@ MistraltonCave3F_Blocks:
 
 Rt9_Blocks:
 	INCBIN "maps/Rt9.ablk"
+
+ShoppingMallNine_Blocks:
+	INCBIN "maps/ShoppingMallNine.ablk"
 	

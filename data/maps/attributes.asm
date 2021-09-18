@@ -70,11 +70,11 @@ ENDM
 	connection south, Rt20, R_20, 5
 	
 	map_attributes Rt3, R_3, $25, EAST
-	connection east, StriatonCity, STRIATON_CITY, 4
+	connection east, StriatonCity, STRIATON_CITY, 3
 	
 	map_attributes StriatonCity, STRIATON_CITY, $25, SOUTH | WEST
 	connection south, Rt2, R_2, 5
-	connection west, Rt3, R_3, -4
+	connection west, Rt3, R_3, -3
 	
 	map_attributes Rt2, R_2, $25, NORTH
 	connection north, StriatonCity, STRIATON_CITY, -5
@@ -322,4 +322,5 @@ ENDM
 	map_attributes MistraltonCave2F, MISTRALTON_CAVE_2F, $09, 0
 	map_attributes MistraltonCave3F, MISTRALTON_CAVE_3F, $09, 0
 	map_attributes Rt9, R_9, $5d, 0
+	map_attributes ShoppingMallNine, SHOPPING_MALL_NINE, $00, 0
 	

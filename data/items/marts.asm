@@ -26,6 +26,11 @@ Marts:
 	dw MartMistralton
 	dw MartOpelucid
 	dw MartIcirrus
+	dw MartMall1
+	dw MartMall2
+	dw MartMall3
+	dw MartMall4
+	dw MartMall5
 .End
 
 MartUnderground:
@@ -287,6 +292,73 @@ MartIcirrus:
 	db MAX_REPEL
 	db X_DEFEND
 	db X_SPEED
+	db -1 ; end
+
+MartMall1:
+	db 16 ; # items
+	db POTION
+	db SUPER_POTION
+	db HYPER_POTION
+	db MAX_POTION
+	db REVIVE
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db BURN_HEAL
+	db ICE_HEAL
+	db AWAKENING
+	db FULL_HEAL
+	db ESCAPE_ROPE
+	db POKE_DOLL
+	db REPEL
+	db SUPER_REPEL
+	db MAX_REPEL
+	db -1 ; end
+
+MartMall2:
+	db 10 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db ULTRA_BALL
+	db FRIEND_BALL
+	db HEAVY_BALL
+	db LURE_BALL
+	db FAST_BALL
+	db LEVEL_BALL
+	db NET_BALL
+	db DUSK_BALL
+	db -1 ; end
+
+MartMall3:
+	db 4 ; # items
+	db TM_BLIZZARD
+	db TM_THUNDER
+	db TM_FIRE_BLAST
+	db TM_HYPER_BEAM
+	db -1 ; end
+
+MartMall4:
+	db 13 ; # items
+	db PROTEIN
+	db IRON
+	db CARBOS
+	db CALCIUM
+	db HP_UP
+	db X_ATTACK
+	db X_DEFEND
+	db X_SPECIAL
+	db X_SP_DEF
+	db X_SPEED
+	db X_ACCURACY
+	db DIRE_HIT
+	db GUARD_SPEC
+	db -1 ; end
+
+MartMall5:
+	db 4 ; # items
+	db LEAF_STONE
+	db FIRE_STONE
+	db WATER_STONE
+	db THUNDERSTONE
 	db -1 ; end
 
 DefaultMart:

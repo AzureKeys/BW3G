@@ -36,3 +36,8 @@
 	const MART_MISTRALTON
 	const MART_OPELUCID
 	const MART_ICIRRUS
+	const MART_MALL_1
+	const MART_MALL_2
+	const MART_MALL_3
+	const MART_MALL_4
+	const MART_MALL_5

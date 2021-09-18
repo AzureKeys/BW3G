@@ -1184,10 +1184,16 @@ CanUseSweetScent::
 	bit STATUSFLAGS_NO_WILD_ENCOUNTERS_F, [hl]
 	jr nz, .no
 	ld a, [wEnvironment]
-	cp CAVE
-	jr z, .ice_check
 	cp DUNGEON
 	jr z, .ice_check
+	cp CAVE
+	jr nz, .grass_check
+; Only load encounters in grass for Pinwheel Forest
+; All CAVE maps are in MapGroup_Dungeons, so just check wMapNumber
+	ld a, [wMapNumber]
+	cp 21 ; PinwheelForest
+	jr nz, .ice_check
+.grass_check
 	farcall CheckGrassCollision
 	jr nc, .no
 

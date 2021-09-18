@@ -150,11 +150,15 @@ R9TubelineSignText:
 Rt9_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 8 ; warp events
 	warp_event  4, 11, TUBELINE_BRIDGE, 3
 	warp_event  4, 12, TUBELINE_BRIDGE, 4
 	warp_event 37, 10, R_9_OPELUCID_GATE, 3
 	warp_event 37, 11, R_9_OPELUCID_GATE, 4
+	warp_event 20,  5, SHOPPING_MALL_NINE, 1
+	warp_event 21,  5, SHOPPING_MALL_NINE, 1
+	warp_event 22,  5, SHOPPING_MALL_NINE, 2
+	warp_event 23,  5, SHOPPING_MALL_NINE, 2
 
 	db 0 ; coord events
 

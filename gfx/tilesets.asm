@@ -685,11 +685,11 @@ INCBIN "data/tilesets/johto_airport_metatiles.bin"
 TilesetJohtoAirportColl:
 INCLUDE "data/tilesets/johto_airport_collision.asm"
 
-TilesetOpelucidGFX:
-INCBIN "gfx/tilesets/opelucid.2bpp.lz"
-
 
 SECTION "Tileset Data 20", ROMX
+
+TilesetOpelucidGFX:
+INCBIN "gfx/tilesets/opelucid.2bpp.lz"
 
 TilesetOpelucidMeta:
 INCBIN "data/tilesets/opelucid_metatiles.bin"
@@ -703,14 +703,14 @@ INCBIN "data/tilesets/opelucid_attributes.bin"
 TilesetIcirrusGFX:
 INCBIN "gfx/tilesets/icirrus.2bpp.lz"
 
+
+SECTION "Tileset Data 21", ROMX
+
 TilesetIcirrusMeta:
 INCBIN "data/tilesets/icirrus_metatiles.bin"
 
 TilesetIcirrusColl:
 INCLUDE "data/tilesets/icirrus_collision.asm"
-
-
-SECTION "Tileset Data 21", ROMX
 
 TilesetIcirrusAttr:
 INCBIN "data/tilesets/icirrus_attributes.bin"

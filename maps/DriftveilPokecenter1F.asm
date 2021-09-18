@@ -62,7 +62,7 @@ DriftveilPokecenter1FYoungsterText:
 
 	para "shelter, they're"
 	line "the places to see"
-	line "in DRIFTVEIL."
+	cont "in DRIFTVEIL."
 	done
 
 DriftveilPokecenter1F_MapEvents:
