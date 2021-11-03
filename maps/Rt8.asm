@@ -143,9 +143,11 @@ R8TubelineSignText:
 Rt8_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 4 ; warp events
 	warp_event 41, 11, TUBELINE_BRIDGE, 1
 	warp_event 41, 12, TUBELINE_BRIDGE, 2
+	warp_event 38,  1, MOOR_OF_ICIRRUS, 1
+	warp_event 39,  1, MOOR_OF_ICIRRUS, 2
 
 	db 0 ; coord events
 

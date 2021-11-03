@@ -181,7 +181,7 @@ ItemNames::
 	db "BLUE SHARD@"
 	db "GREEN SHARD@"
 	db "YELLOW SHARD@"
-	db "PORTRAITMAIL@"
+	db "MEMBERS CARD@"
 	db "LOVELY MAIL@"
 	db "EON MAIL@"
 	db "MORPH MAIL@"

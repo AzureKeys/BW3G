@@ -281,13 +281,15 @@ MistraltonGroupSprites:
 	db 0 ; end
 
 OpelucidGroupSprites:
-; Opelucid City, R11, Village Bridge
+; Opelucid City, R11, Village Bridge, R9
 	db SPRITE_POKEFAN_F
 	db SPRITE_HARLEQUIN
 	db SPRITE_BUENA
 	db SPRITE_FISHER
 	db SPRITE_SUPER_NERD
 	db SPRITE_COOLTRAINER_M
+	db SPRITE_IRIS
+	db SPRITE_BIKER
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
@@ -304,6 +306,7 @@ IcirrusGroupSprites:
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
+	db SPRITE_BOULDER
 	db 0 ; end
 
 PkmnLeagueGroupSprites:

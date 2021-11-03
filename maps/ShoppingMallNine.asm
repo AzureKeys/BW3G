@@ -5,11 +5,37 @@
 	const SHOPPINGMALLNINE_CLERK_4
 	const SHOPPINGMALLNINE_CLERK_5
 	const SHOPPINGMALLNINE_RECEPTIONIST
+	const SHOPPINGMALLNINE_BLOCKER
 
 ShoppingMallNine_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
+	
+MallMemberScript:
+	turnobject SHOPPINGMALLNINE_BLOCKER, RIGHT
+	opentext
+	writetext MallMemberCheckText
+	waitbutton
+	checkitem MEMBERS_CARD
+	iffalse .nocard
+	writetext MallMemberText
+	waitbutton
+	closetext
+	setscene SCENE_FINISHED
+	turnobject SHOPPINGMALLNINE_BLOCKER, DOWN
+	end
+	
+.nocard
+	writetext MallNotMemberText
+	waitbutton
+	closetext
+	applymovement PLAYER, MallNotMemberMovement
+	turnobject SHOPPINGMALLNINE_BLOCKER, DOWN
+	end
+
+ShoppingMallNineBlockerScript:
+	jumptextfaceplayer MallBlockerText
 
 ShoppingMallNineReceptionistScript:
 	jumptext MallReceptionistText
@@ -140,6 +166,10 @@ MallVendingNoSpaceText:
 	line "room for stuff."
 	done
 
+MallNotMemberMovement:
+	step DOWN
+	step_end
+
 MallReceptionistText:
 	text "Hi, welcome to"
 	line "SHOPPING MALL"
@@ -161,6 +191,46 @@ MallReceptionistText:
 	line "stay!"
 	done
 
+MallBlockerText:
+	text "Beyond this door"
+	line "is the exclusive"
+	cont "Member's Room."
+	
+	para "Only verified"
+	line "members are"
+	cont "permitted to"
+	cont "enter."
+	done
+
+MallMemberCheckText:
+	text "Beyond this door"
+	line "is the exclusive"
+	cont "Member's Room."
+	
+	para "Only verified"
+	line "members are"
+	cont "permitted to"
+	cont "enter."
+	
+	para "Could I see your"
+	line "MEMBER'S CARD"
+	cont "please?"
+	done
+
+MallMemberText:
+	text "Ah, I see you are"
+	line "a member."
+	
+	para "You may enter."
+	done
+
+MallNotMemberText:
+	text "I'm sorry, only"
+	line "members are"
+	cont "permitted to"
+	cont "enter."
+	done
+
 ShoppingMallNine_MapEvents:
 	db 0, 0 ; filler
 
@@ -168,17 +238,19 @@ ShoppingMallNine_MapEvents:
 	warp_event  8, 27, R_9, 6
 	warp_event  9, 27, R_9, 7
 
-	db 0 ; coord events
+	db 1 ; coord events
+	coord_event 16, 14, SCENE_DEFAULT, MallMemberScript
 
 	db 2 ; bg events
 	bg_event 14,  1, BGEVENT_UP, MallVendingMachine
 	bg_event 15,  1, BGEVENT_UP, MallVendingMachine
 
-	db 6 ; object events
+	db 7 ; object events
 	object_event  1, 14, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk1Script, -1
 	object_event  4,  8, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk2Script, -1
 	object_event 13,  8, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk3Script, -1
 	object_event  1,  1, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk4Script, -1
 	object_event  3,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk5Script, -1
 	object_event  8, 21, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineReceptionistScript, -1
+	object_event 15, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineBlockerScript, -1
 	

@@ -68,4 +68,6 @@ MapScenes::
 	scene_var VILLAGE_BRIDGE,                              wVillageBridgeSceneID
 	scene_var ICIRRUS_CITY_SOUTH,                          wIcirrusCitySouthSceneID
 	scene_var R_11,                                        wR11SceneID
+	scene_var SHOPPING_MALL_NINE,                          wShoppingMallNineSceneID
+	scene_var OPELUCID_CITY,                               wOpelucidCitySceneID
 	db -1

@@ -3,6 +3,10 @@
 	const R9_FULL_RESTORE
 	const R9_ELIXER
 	const R9_IRON
+	const R9_BIKER_1
+	const R9_BIKER_2
+	const R9_BIKER_3
+	const R9_BIKER_4
 
 Rt9_MapScripts:
 	db 0 ; scene scripts
@@ -70,6 +74,9 @@ R9MaxEther:
 	
 R9Nugget:
 	hiddenitem NUGGET, EVENT_R9_NUGGET
+	
+R9HiddenGrotto:
+	hiddengrotto HIDDENGROTTO_R_9
 	
 R9Sign:
 	jumptext R9SignText
@@ -162,12 +169,13 @@ Rt9_MapEvents:
 
 	db 0 ; coord events
 
-	db 5 ; bg events
+	db 6 ; bg events
 	bg_event 32,  7, BGEVENT_READ, R9Sign
 	bg_event 19,  7, BGEVENT_READ, R9MallSign
 	bg_event  6,  9, BGEVENT_READ, R9TubelineSign
 	bg_event 19, 17, BGEVENT_ITEM, R9MaxEther
 	bg_event 30,  6, BGEVENT_ITEM, R9Nugget
+	bg_event 10,  5, BGEVENT_UP, R9HiddenGrotto
 	
 	db 8 ; object events
 	object_event 12, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R9HPUp, EVENT_R9_HP_UP

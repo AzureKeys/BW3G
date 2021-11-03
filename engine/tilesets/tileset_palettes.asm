@@ -268,7 +268,7 @@ LoadSpecialMapPalette:
 ; Dragonspiral Tower has its own palettes
 	ld a, [wMapGroup]
 	cp 21 ; MapGroup_Icirrus
-	jp nz, .ds_tower
+	jr nz, .ds_tower
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .icirrusnite

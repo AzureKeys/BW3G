@@ -251,11 +251,11 @@ INCLUDE "maps/R11OpelucidGate.asm"
 INCLUDE "maps/R9OpelucidGate.asm"
 INCLUDE "maps/OpelucidPokecenter1F.asm"
 INCLUDE "maps/OpelucidMart.asm"
-INCLUDE "maps/OpelucidSuperRodHouse.asm"
-INCLUDE "maps/SeasideCaveB2F.asm"
 
 SECTION "Map Scripts 12", ROMX
 
+INCLUDE "maps/OpelucidSuperRodHouse.asm"
+INCLUDE "maps/SeasideCaveB2F.asm"
 INCLUDE "maps/SeasideCaveChamber.asm"
 INCLUDE "maps/TubelineBridge.asm"
 INCLUDE "maps/IcirrusCitySouthConnectionDummy.asm"

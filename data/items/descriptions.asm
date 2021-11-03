@@ -182,7 +182,7 @@ ItemDescriptions:
 	dw BlueShardDesc
 	dw GreenShardDesc
 	dw YellowShardDesc
-	dw PortraitMailDesc
+	dw MembersCardDesc
 	dw LovelyMailDesc
 	dw EonMailDesc
 	dw MorphMailDesc
@@ -977,9 +977,9 @@ YellowShardDesc:
 	db   "Collectors seek"
 	next "out these gems.@"
 
-PortraitMailDesc:
-	db   "MAIL featuring the"
-	next "holder's likeness.@"
+MembersCardDesc:
+	db   "Membership card"
+	next "for the MALL.@"
 
 LovelyMailDesc:
 	db   "Heart-print MAIL."

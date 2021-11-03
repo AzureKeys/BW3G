@@ -164,39 +164,38 @@ TilesetForestAnim:
 	
 TilesetJohtoAnim:
 TilesetJohtoEastAnim:
-TilesetPkmnLeagueAnim:
-	;dw vTiles2 tile $14, AnimateWaterTile
-	;dw NULL,  WaitTileAnimation
-	;dw NULL,  WaitTileAnimation
 	dw vTiles2 tile $60, WriteTileToBuffer
 	dw wTileAnimBuffer, ScrollTileDown
-	;dw wTileAnimBuffer, ScrollTileDown
-	;dw wTileAnimBuffer, ScrollTileDown
 	dw vTiles2 tile $60, WriteTileFromBuffer
-	;dw NULL,  AnimateWaterPalette
-	;dw NULL,  WaitTileAnimation
 	dw vTiles2 tile $61, WriteTileToBuffer
 	dw wTileAnimBuffer, ScrollTileLeft
-	;dw wTileAnimBuffer, ScrollTileLeft
-	;dw wTileAnimBuffer, ScrollTileLeft
 	dw vTiles2 tile $61, WriteTileFromBuffer
 	dw NULL,  AnimateFlowerTile
 	dw WhirlpoolFrames1, AnimateWhirlpoolTile
 	dw WhirlpoolFrames2, AnimateWhirlpoolTile
 	dw WhirlpoolFrames3, AnimateWhirlpoolTile
 	dw WhirlpoolFrames4, AnimateWhirlpoolTile
-	;dw NULL,  WaitTileAnimation
 	dw vTiles2 tile $62, WriteTileToBuffer
 	dw wTileAnimBuffer, ScrollTileRight
-	;dw wTileAnimBuffer, ScrollTileRight
-	;dw wTileAnimBuffer, ScrollTileRight
 	dw vTiles2 tile $62, WriteTileFromBuffer
 	dw NULL,  StandingTileFrame8
 	dw vTiles2 tile $63, WriteTileToBuffer
 	dw wTileAnimBuffer, ScrollTileUp
-	;dw wTileAnimBuffer, ScrollTileUp
-	;dw wTileAnimBuffer, ScrollTileUp
 	dw vTiles2 tile $63, WriteTileFromBuffer
+	dw NULL,  IncWaterFrame
+	dw NULL,  DoneTileAnimation
+	
+TilesetPkmnLeagueAnim:
+	dw vTiles2 tile $60, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $60, WriteTileFromBuffer
+	dw NULL,  AnimateFlowerTile
+	dw WhirlpoolFrames1, AnimateWhirlpoolTile
+	dw WhirlpoolFrames2, AnimateWhirlpoolTile
+	dw WhirlpoolFrames3, AnimateWhirlpoolTile
+	dw WhirlpoolFrames4, AnimateWhirlpoolTile
+	dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
 	dw NULL,  IncWaterFrame
 	dw NULL,  DoneTileAnimation
 

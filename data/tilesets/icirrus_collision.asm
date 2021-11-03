@@ -167,7 +167,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; a6
 	tilecoll LEFT_WALL, RIGHT_WALL, LEFT_WALL, RIGHT_WALL ; a7
 	tilecoll WALL, WALL, WALL, WALL ; a8
-	tilecoll WALL, WALL, DOOR, WALL ; a9
+	tilecoll WALL, WALL, DOOR, DOOR ; a9
 	tilecoll WALL, WALL, WALL, WALL ; aa
 	tilecoll WALL, WATER, WALL, WATER ; ab
 	tilecoll WALL, WALL, WALL, WALL ; ac

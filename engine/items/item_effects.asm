@@ -195,6 +195,7 @@ ItemEffects:
 	dw NoEffect            ; BLUE_SHARD
 	dw NoEffect            ; GREEN_SHARD
 	dw NoEffect            ; YELLOW_SHARD
+	dw NoEffect            ; MEMBERS_CARD
 
 PokeBallEffect:
 	ld a, [wBattleMode]
