@@ -162,7 +162,7 @@ OpelucidDraydenHouseSignText:
 OpelucidCity_MapEvents:
 	db 0, 0 ; filler
 
-	db 7 ; warp events
+	db 8 ; warp events
 	warp_event 49, 26, R_11_OPELUCID_GATE, 3
 	warp_event 49, 27, R_11_OPELUCID_GATE, 4
 	warp_event  4, 26, R_9_OPELUCID_GATE, 1
@@ -170,6 +170,7 @@ OpelucidCity_MapEvents:
 	warp_event 25,  5, OPELUCID_MART, 1
 	warp_event 33, 23, OPELUCID_POKECENTER_1F, 1
 	warp_event 11, 19, OPELUCID_SUPER_ROD_HOUSE, 1
+	warp_event 17,  5, OPELUCID_GYM, 1
 
 	db 3 ; coord events
 	coord_event 40, 25, SCENE_DEFAULT, OpelucidCityIrisScript1

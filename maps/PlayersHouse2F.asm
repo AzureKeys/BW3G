@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke SNEASEL, 5, RAZOR_CLAW
+	; givepoke HYDREIGON, 100, NO_ITEM
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
@@ -144,7 +144,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, DRAGONSPIRAL_TOWER_OUTSIDE, 1
+	;warp_event  7,  0, OPELUCID_GYM, 1
 
 	db 0 ; coord events
 

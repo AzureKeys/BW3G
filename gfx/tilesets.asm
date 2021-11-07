@@ -356,11 +356,11 @@ INCBIN "data/tilesets/desert_metatiles.bin"
 TilesetDesertColl:
 INCLUDE "data/tilesets/desert_collision.asm"
 
-TilesetJohtoDesertGFX:
-INCBIN "gfx/tilesets/johto_desert.2bpp.lz"
-
 
 SECTION "Tileset Data 9", ROMX
+
+TilesetJohtoDesertGFX:
+INCBIN "gfx/tilesets/johto_desert.2bpp.lz"
 
 TilesetJohtoDesertMeta:
 INCBIN "data/tilesets/johto_desert_metatiles.bin"

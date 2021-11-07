@@ -571,4 +571,7 @@ ShoppingMallNine_Blocks:
 
 MoorOfIcirrus_Blocks:
 	INCBIN "maps/MoorOfIcirrus.ablk"
+
+OpelucidGym_Blocks:
+	INCBIN "maps/OpelucidGym.ablk"
 	
