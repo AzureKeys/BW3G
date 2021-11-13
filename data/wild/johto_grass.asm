@@ -1454,6 +1454,114 @@ JohtoGrassWildMons:
 	db 26, KIRLIA
 	db 28, KIRLIA
 	
+	map_id MISTRALTON_CAVE_1F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	; day
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	; nite
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	
+	map_id MISTRALTON_CAVE_2F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	; day
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	; nite
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	
+	map_id MISTRALTON_CAVE_3F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	; day
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	; nite
+	db 26, WOOBAT
+	db 26, AXEW
+	db 25, BOLDORE
+	db 25, DRILBUR
+	db 27, GOLBAT
+	db 28, LAIRON
+	db 28, BOLDORE
+	db 28, DRILBUR
+	db 30, AXEW
+	db 30, EXCADRILL
+	
 	map_id CHARGESTONE_CAVE_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
@@ -1921,6 +2029,42 @@ JohtoGrassWildMons:
 	db 42, AMOONGUSS
 	db 45, STUNFISK
 	db 45, AMOONGUSS
+	
+	map_id MOOR_OF_ICIRRUS
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 43, PALPITOAD
+	db 42, STUNFISK
+	db 42, KARRABLAST
+	db 42, SHELMET
+	db 43, CROAGUNK
+	db 43, SKORUPI
+	db 45, CROAGUNK
+	db 45, SKORUPI
+	db 45, STUNFISK
+	db 45, PALPITOAD
+	; day
+	db 43, PALPITOAD
+	db 42, STUNFISK
+	db 42, KARRABLAST
+	db 42, SHELMET
+	db 43, CROAGUNK
+	db 43, SKORUPI
+	db 45, CROAGUNK
+	db 45, SKORUPI
+	db 45, STUNFISK
+	db 45, PALPITOAD
+	; nite
+	db 43, PALPITOAD
+	db 42, STUNFISK
+	db 42, KARRABLAST
+	db 42, SHELMET
+	db 43, CROAGUNK
+	db 43, SKORUPI
+	db 45, CROAGUNK
+	db 45, SKORUPI
+	db 45, STUNFISK
+	db 45, PALPITOAD
 
 	map_id R_23_EAST
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
