@@ -1,5 +1,6 @@
 	const_def 2 ; object constants
 	const VIRBANKCITY_COIN_CASE
+	const VIRBANKCITY_TM_CALM_MIND
 	const VIRBANKCITY_BLOCKER
 	const VIRBANKCITY_FERRY_MAN
 	const VIRBANKCITY_FISHING_GURU
@@ -154,6 +155,9 @@ VirbankCityFerryManScript:
 	
 VirbankCityCoinCase:
 	itemball COIN_CASE
+	
+VirbankCityTMCalmMind:
+	itemball TM_CALM_MIND
 	
 VirbankCityHPUp:
 	hiddenitem HP_UP, EVENT_VIRBANK_CITY_HP_UP
@@ -350,10 +354,11 @@ VirbankCity_MapEvents:
 	bg_event  6, 26, BGEVENT_READ, VirbankGameCornerSign
 	bg_event 17, 25, BGEVENT_READ, VirbankComplexSign
 	bg_event 35, 25, BGEVENT_READ, VirbankFerrySign
-	bg_event 36,  7, BGEVENT_ITEM, VirbankCityHPUp
+	bg_event 19, 24, BGEVENT_ITEM, VirbankCityHPUp
 
-	db 10 ; object events
+	db 11 ; object events
 	object_event  4, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankCityCoinCase, EVENT_VIRBANK_CITY_COIN_CASE
+	object_event 12,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, VirbankCityTMCalmMind, EVENT_VIRBANK_CITY_TM_CALM_MIND
 	object_event 19,  6, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VirbankCityBlockerScript, -1
 	object_event 37, 26, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VirbankCityFerryManScript, -1
 	object_event 44, 28, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, VirbankCityFishingGuruScript, -1
