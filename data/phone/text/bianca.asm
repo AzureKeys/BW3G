@@ -34,8 +34,9 @@ BiancaPhoneIntroText:
 	
 	para "And if you're ever"
 	line "near NUVEMA TOWN,"
-	cont "stop by for a"
-	cont "visit!"
+	
+	para "stop by for a"
+	line "visit!"
 	
 	para "Good luck!"
 	done
@@ -51,8 +52,9 @@ BiancaPhoneCasteliaText:
 	
 	para "CASTELIA CITY is"
 	line "not too far from"
-	cont "NUVEMA TOWN, where"
-	cont "my lab is."
+	
+	para "NUVEMA TOWN, where"
+	line "my lab is."
 	
 	para "I was going to ask"
 	line "you to stop by,"
@@ -113,9 +115,9 @@ BiancaPhoneP2Text:
 	para "in DRIFTVEIL CITY"
 	line "is starting soon!"
 	
-	para "JUNIPER and I are"
-	line "going, you should"
-	cont "come too."
+	para "PROF.JUNIPER and I"
+	line "are going, you"
+	cont "should come too."
 	
 	para "If the bridge to"
 	line "DRIFTVEIL CITY is"
@@ -127,8 +129,9 @@ BiancaPhoneP2Text:
 	
 	para "By the way, have"
 	line "you battled my"
-	cont "friend CHEREN at"
-	cont "the ASPERTIA CITY"
+	
+	para "friend CHEREN at"
+	line "the ASPERTIA CITY"
 	cont "GYM yet?"
 	
 	para "He's strong, you'd"

@@ -94,10 +94,10 @@ FloccesyTownJuniperText:
 	para "You're <PLAY_G>,"
 	line "right?"
 	
-	para "My name is"
+	para "My name is PROF."
 	line "JUNIPER. I'm a"
-	cont "friend of the"
-	cont "PROF."
+	cont "friend of PROF."
+	cont "BIANCA."
 	
 	para "In fact, she used"
 	line "to be my pupil."

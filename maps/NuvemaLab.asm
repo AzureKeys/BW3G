@@ -31,11 +31,6 @@ NuvemaLabScript:
 	closetext
 	showemote EMOTE_SHOCK, NUVEMALAB_BIANCA, 15
 	opentext
-	writetext NuvemaLabJuniperText
-	waitbutton
-	closetext
-	showemote EMOTE_SHOCK, NUVEMALAB_BIANCA, 15
-	opentext
 	writetext NuvemaLabBiancaGiftText
 	buttonsound
 	verbosegiveitem HM_SURF
@@ -124,43 +119,36 @@ NuvemaLabBiancaIntroText:
 	line "just stopped by"
 	cont "for a visit."
 	
-	para "JUNIPER: Oh, you"
-	line "don't need to call"
-	cont "me PROF anymore."
+	para "JUNIPER: Good to"
+	line "see you, <PLAY_G>."
 	
-	para "Just JUNIPER is"
-	line "fine!"
-	done
-
-NuvemaLabJuniperText:
-	text "BIANCA: Oh! Sorry,"
-	line "it's just habit!"
-	
-	para "JUNIPER: Well,"
-	line "it's fortunate"
-	cont "that <PLAY_G> has"
-	cont "come."
+	para "It's fortunate"
+	line "that you've come."
 
 	para "The reason I came"
 	line "out here is to"
-	cont "follow up on a tip"
-	cont "about TEAM PLASMA."
+	
+	para "follow up on a tip"
+	line "about TEAM PLASMA."
 	
 	para "I've learned that"
 	line "TEAM PLASMA had a"
-	cont "secret lab on an"
-	cont "island nearby"
+	
+	para "secret lab on an"
+	line "island nearby"
 	cont "NUVEMA TOWN."
 	
 	para "I thought it may"
 	line "give us some"
-	cont "answers to what"
-	cont "they're planning."
+	
+	para "answers to what"
+	line "they're planning."
 	
 	para "If you'd like to"
 	line "help, it would be"
-	cont "much appreciated,"
-	cont "<PLAY_G>."
+	
+	para "much appreciated,"
+	line "<PLAY_G>."
 	done
 
 NuvemaLabBiancaGiftText:
@@ -180,13 +168,15 @@ NuvemaLabBiancaHMText:
 	
 	para "and a #MON that"
 	line "knows SURF can be"
-	cont "used to cross the"
-	cont "water!"
+	
+	para "used to cross the"
+	line "water!"
 	
 	para "You'll need the"
 	line "GYM BADGE from"
-	cont "STRIATON CITY to"
-	cont "use it though."
+	
+	para "STRIATON CITY to"
+	line "use it though."
 	done
 
 NuvemaLabJuniperLeaveText:
@@ -206,13 +196,15 @@ NuvemaLabJuniperLeaveText:
 BiancaLabP2LocationText:
 	text "BIANCA: Are you"
 	line "going to join"
-	cont "JUNIPER at that"
-	cont "secret lab?"
+	
+	para "PROF.JUNIPER at"
+	line "that secret lab?"
 
 	para "You can reach"
 	line "ROUTE 17 if you"
-	cont "go north, then"
-	cont "cross the water"
+	
+	para "go north, then"
+	line "cross the water"
 	cont "to the west."
 	done
 

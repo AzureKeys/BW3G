@@ -54,13 +54,15 @@ P2LabEntranceJuniperScript:
 P2LabEntranceJuniperIntroText:
 	text "JUNIPER: <PLAY_G>!"
 	line "It's just as I"
-	cont "suspected, there's"
-	cont "a secret entrance."
+	
+	para "suspected, there's"
+	line "a secret entrance."
 
 	para "After TEAM PLASMA"
 	line "was shut down, the"
-	cont "#MON LEAGUE"
-	cont "raided their labs"
+	
+	para "#MON LEAGUE"
+	line "raided their labs"
 	cont "and hideouts."
 	
 	para "They found some"

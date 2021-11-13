@@ -134,13 +134,15 @@ DriftveilShelterRoodIntroText:
 	
 	para "One day, she grew"
 	line "so angry, she left"
-	cont "home, and never"
-	cont "returned."
+	
+	para "home, and never"
+	line "returned."
 	
 	para "Today was the"
 	line "first time I've"
-	cont "seen her face in"
-	cont "years…"
+	
+	para "seen her face in"
+	line "years…"
 	
 	para "But I fear she's"
 	line "being deceived…"

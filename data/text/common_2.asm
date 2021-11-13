@@ -662,8 +662,8 @@ Text_YouCantUseItInABattle::
 	prompt
 
 Text_AreYouABoyOrAreYouAGirl::
-	text "Are you a boy?"
-	line "Or are you a girl?"
+	text "Which character"
+	line "will you play as?"
 	done
 
 UnknownText_0x1c0cc6::

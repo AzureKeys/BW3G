@@ -189,22 +189,27 @@ SeasideCaveZinzolinIntroText:
 	
 	para "I've already"
 	line "extracted the"
-	cont "WATER ELEMENT from"
-	cont "this pool!"
+	
+	para "WATER ELEMENT from"
+	line "this pool!"
 	
 	para "Now only one"
 	line "ELEMENT remains"
-	cont "before my master"
-	cont "plan is complete!"
+	
+	para "before my master"
+	line "plan is complete!"
 	
 	para "But don't think"
 	line "I'm just going to"
-	cont "leave that easily."
+	
+	para "let you leave"
+	line "that easily."
 	
 	para "Consider this"
 	line "punishment for"
-	cont "your arrogance at"
-	cont "the #MON WORLD"
+	
+	para "your arrogance at"
+	line "the #MON WORLD"
 	cont "TOURNAMENT!"
 	done
 	
@@ -244,8 +249,9 @@ SeasideCaveMarlonAfterText:
 	
 	para "CHEREN: I'm more"
 	line "concerned with"
-	cont "what he said"
-	cont "afterward…"
+	
+	para "what he said"
+	line "afterward…"
 	
 	para "His other plan…?"
 	done
@@ -287,13 +293,15 @@ SeasideCaveCherenLeaveText:
 	
 	para "MARLON: What? But"
 	line "we moved that"
-	cont "thing to the #-"
-	cont "MON LEAGUE!"
+	
+	para "thing to the #-"
+	line "MON LEAGUE!"
 	
 	para "No one other than"
 	line "LEAGUE members"
-	cont "shoulda been able"
-	cont "to get in there."
+	
+	para "shoulda been able"
+	line "to get in there."
 	
 	para "CHEREN: That's the"
 	line "thing. According"
@@ -303,13 +311,13 @@ SeasideCaveCherenLeaveText:
 	line "seen entering that"
 	cont "area…"
 	
-	para "was PROF JUNIPER…"
+	para "was PROF.JUNIPER…"
 	
 	para "…I don't know what"
 	line "this means. I'm"
 	cont "going to meet with"
 	
-	para "PROF BIANCA and"
+	para "PROF.BIANCA and"
 	line "we'll figure out"
 	cont "what to do from"
 	cont "there."
@@ -337,14 +345,16 @@ SeasideCaveMarlonExplanationText:
 	
 	para "One of the devices"
 	line "they found got a"
-	cont "lot of the folks"
-	cont "in the LEAGUE"
+	
+	para "lot of the folks"
+	line "in the LEAGUE"
 	cont "real worried."
 	
 	para "It was this thing"
 	line "that could be used"
-	cont "to combine a"
-	cont "person's mind with"
+	
+	para "to combine a"
+	line "person's mind with"
 	cont "a machine."
 	
 	para "They called it"
@@ -368,16 +378,18 @@ SeasideCaveMarlonExplanationText:
 	
 	para "Guess they figured"
 	line "no one would"
-	cont "suspect a powerful"
-	cont "thing like that"
+	
+	para "suspect a powerful"
+	line "thing like that"
 	
 	para "would be kept in"
 	line "our little town."
 	
 	para "But then that girl"
 	line "broke into the GYM"
-	cont "and stole your"
-	cont "#DEX…"
+	
+	para "and stole your"
+	line "#DEX…"
 	
 	para "I didn't think too"
 	line "much of it at the"
@@ -396,23 +408,27 @@ SeasideCaveMarlonExplanationText:
 	
 	para "But it looks like"
 	line "TEAM PLASMA"
-	cont "managed to snag it"
-	cont "anyway…"
+	
+	para "managed to snag it"
+	line "anyway…"
 	
 	para "Well, the PROF's a"
 	line "bright girl, I'm"
-	cont "sure she'll figure"
-	cont "something out."
+	
+	para "sure she'll figure"
+	line "something out."
 	
 	para "Anyway, you've"
 	line "gotten a lot"
-	cont "stronger since I"
-	cont "saw you last!"
+	
+	para "stronger since I"
+	line "saw you last!"
 	
 	para "I'm impressed!"
 	line "You've almost"
-	cont "collected all"
-	cont "eight GYM BADGES"
+	
+	para "collected all"
+	line "eight GYM BADGES"
 	cont "already!"
 	
 	para "Looks like the"
@@ -427,8 +443,9 @@ SeasideCaveMarlonExplanationText:
 	
 	para "head WEST past"
 	line "LACUNOSA TOWN, and"
-	cont "cross the VILLAGE"
-	cont "BRIDGE."
+	
+	para "cross the VILLAGE"
+	line "BRIDGE."
 	
 	para "Good luck,"
 	line "<PLAY_G>, I'm"

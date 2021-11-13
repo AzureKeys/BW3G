@@ -575,7 +575,7 @@ PwtBackRoomArriveText:
 	line "MON PROF, BIANCA!"
 	
 	para "And her former"
-	line "mentor, Miss"
+	line "mentor, PROF."
 	cont "JUNIPER!"
 	
 	para "We've also got a"
@@ -686,15 +686,12 @@ PwtBackRoomClay3rdDrawText:
 	para "And…"
 	
 	para "<PKMN> PROF.JUNIPER!"
-	
-	para "Er- I mean, <PKMN>"
-	line "TRAINER JUNIPER…"
 	done
 	
 PwtBackRoomJuniperIrisText:
 	text "IRIS: Oh! Looks"
 	line "like I'm battling"
-	cont "you, Miss JUNIPER."
+	cont "you, PROF.JUNIPER."
 	
 	para "JUNIPER: I was"
 	line "hoping to face the"
@@ -710,7 +707,7 @@ PwtBackRoomJuniperWinText:
 	text "CLAY: And the"
 	line "winner is…"
 	
-	para "<PKMN> TRAINER"
+	para "<PKMN> PROF."
 	line "JUNIPER!"
 	
 	para "JUNIPER: Wow, what"
@@ -801,7 +798,7 @@ PwtBackRoomClay2ndSemiText:
 	line "just leaves our"
 	cont "second pair."
 	
-	para "<PKMN> TRAINER"
+	para "<PKMN> PROF."
 	line "JUNIPER!"
 	
 	para "And…"
@@ -849,8 +846,9 @@ PwtBackRoomClayGivePrizeText:
 	
 	para "On behalf of the"
 	line "#MON WORLD"
-	cont "TOURNAMENT, please"
-	cont "accept this prize."
+	
+	para "TOURNAMENT, please"
+	line "accept this prize."
 	done
 	
 PwtBackRoomClayFinishText:
@@ -879,8 +877,9 @@ PwtBackRoomZinzolinIntroText:
 	
 	para "CLAY: You! You"
 	line "were supposed to"
-	cont "be locked up in"
-	cont "jail!"
+	
+	para "be locked up in"
+	line "jail!"
 	
 	para "ZINZOLIN: I have"
 	line "been plotting my"
@@ -892,8 +891,9 @@ PwtBackRoomZinzolinIntroText:
 	para "The SHADOWs of"
 	line "TEAM PLASMA recog-"
 	cont "nized my greatness"
-	cont "and crowned me"
-	cont "their new king!"
+	
+	para "and crowned me"
+	line "their new king!"
 	
 	para "This whole event"
 	line "was just a ruse"
@@ -934,14 +934,13 @@ PwtBackRoomRoodText:
 	cont "them…"
 	
 	para "CLAY: Now hold on"
-	line "just a second, who"
-	cont "are you supposed"
-	cont "to be?"
+	line "just a second."
 	
 	para "???: I'm sorry."
 	line "Please trainers,"
-	cont "come with me and"
-	cont "I can explain…"
+	
+	para "come with me and"
+	line "I can explain…"
 	done
 	
 PwtBackRoomClayText:
