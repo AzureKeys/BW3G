@@ -172,3 +172,4 @@ MoveEffectsPointers:
 	dw SuckerPunch
 	dw ToxicHit
 	dw BugBite
+	dw FreezeHit ; Blizzard

@@ -1573,6 +1573,9 @@ BattleCommand_CheckHit:
 
 	call .HurricaneRain
 	ret z
+	
+	call .BlizzardHail
+	ret z
 
 	call .XAccuracy
 	ret nz
@@ -1766,6 +1769,17 @@ BattleCommand_CheckHit:
 
 	ld a, [wBattleWeather]
 	cp WEATHER_RAIN
+	ret
+	
+.BlizzardHail:
+; Return z if the current mova always hits in hail, and it is hailing
+	ld a, BATTLE_VARS_MOVE_EFFECT
+	call GetBattleVar
+	cp EFFECT_BLIZZARD
+	ret nz
+	
+	ld a, [wBattleWeather]
+	cp WEATHER_HAIL
 	ret
 
 .XAccuracy:
