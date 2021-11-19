@@ -29,6 +29,7 @@ Rt6House_Blocks:
 Rt7House_Blocks:
 Rt7TradeHouse_Blocks:
 OpelucidSuperRodHouse_Blocks:
+IcirrusHouse_Blocks:
 	INCBIN "maps/House1.ablk"
 
 Rt13UndellaGate_Blocks:

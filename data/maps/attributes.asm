@@ -319,6 +319,7 @@ ENDM
 	map_attributes TubelineBridge, TUBELINE_BRIDGE, $00, 0
 	map_attributes IcirrusPokecenter1F, ICIRRUS_POKECENTER_1F, $00, 0
 	map_attributes IcirrusMart, ICIRRUS_MART, $00, 0
+	map_attributes IcirrusHouse, ICIRRUS_HOUSE, $00, 0
 	map_attributes DragonspiralTowerOutside, DRAGONSPIRAL_TOWER_OUTSIDE, $00, 0
 	map_attributes MistraltonCave1F, MISTRALTON_CAVE_1F, $09, 0
 	map_attributes MistraltonCave2F, MISTRALTON_CAVE_2F, $09, 0

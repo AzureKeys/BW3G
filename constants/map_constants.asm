@@ -313,6 +313,7 @@ ENDM
 	map_const MOOR_OF_ICIRRUS, 24, 20
 	map_const ICIRRUS_POKECENTER_1F, 5, 4 
 	map_const ICIRRUS_MART, 6, 4
+	map_const ICIRRUS_HOUSE, 4, 4
 	
 	newgroup
 	map_const R_23_EAST, 17, 26
