@@ -11,15 +11,15 @@ LentimasLostlornGate_MapScripts:
 LentimasLostlornGateTeacherScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM11_SUNNY_DAY
-	iftrue .GotSweetScent
+	checkevent EVENT_GOT_CLEANSE_TAG
+	iftrue .GotTag
 	writetext LentimasLostlornGateTeacherText
 	buttonsound
-	verbosegiveitem TM_SUNNY_DAY
+	verbosegiveitem CLEANSE_TAG
 	iffalse .NoRoom
-	setevent EVENT_GOT_TM11_SUNNY_DAY
-.GotSweetScent:
-	writetext LentimasLostlornGateTeacher_GotSweetScent
+	setevent EVENT_GOT_CLEANSE_TAG
+.GotTag:
+	writetext LentimasLostlornGateTeacher_GotTag
 	waitbutton
 .NoRoom:
 	closetext
@@ -41,21 +41,20 @@ LentimasLostlornGateTeacherText:
 	line "going into the"
 	cont "woods?"
 
-	para "It must be hard if"
-	line "the sun isn't out."
-
-	para "Try using this TM."
+	para "It must be scary"
+	line "when wild #MON"
+	cont "are always around."
+	
+	para "Here, have this."
 	done
 
-LentimasLostlornGateTeacher_GotSweetScent:
-	text "It's SUNNY DAY."
-
-	para "Use it to make the"
-	line "sun come out."
-
-	para "It will make FIRE"
-	line "type moves more"
-	cont "powerful!"
+LentimasLostlornGateTeacher_GotTag:
+	text "Use that tag and"
+	line "you'll be"
+	
+	para "protected from"
+	line "wild #MON"
+	cont "attacks."
 	done
 
 LentimasLostlornGateButterfreeText:

@@ -218,9 +218,9 @@ ENDM
 	add_tm DRAGON_CLAW  ; c0
 	add_tm SWORDS_DANCE ; c1
 	add_tm CALM_MIND    ; c2
-	add_tm ROAR         ; c4
+	add_tm WILD_CHARGE  ; c4
 	add_tm TOXIC        ; c5
-	add_tm WILD_CHARGE  ; c6
+	add_tm HAIL         ; c6
 	add_tm BULK_UP      ; c7
 	add_tm VENOSHOCK    ; c8
 	add_tm HIDDEN_POWER ; c9

@@ -3534,7 +3534,7 @@ GlaceonEvosAttacks:
 	db 25, ICE_SHARD
 	db 29, BARRIER
 	db 33, MIRROR_COAT
-	db 37, ICE_BEAM ; Hail
+	db 37, HAIL
 	db 41, GIGA_IMPACT ; Last Resort
 	db 45, BLIZZARD
 	db 0 ; no more level-up moves
@@ -4072,7 +4072,7 @@ CubchooEvosAttacks:
 	db 36, FLAIL
 	db 41, REST
 	db 45, BLIZZARD
-	db 49, ICE_SHARD ; Hail
+	db 49, HAIL
 	db 53, DOUBLE_EDGE ; Thrash
 	db 0 ; no more level-up moves
 
@@ -4091,7 +4091,7 @@ BearticEvosAttacks:
 	db 36, ICICLE_CRASH
 	db 41, REST
 	db 45, BLIZZARD
-	db 53, ICE_SHARD ; Hail
+	db 53, HAIL
 	db 59, DOUBLE_EDGE ; Thrash
 	db 0 ; no more level-up moves
 
@@ -4108,7 +4108,7 @@ VanilliteEvosAttacks:
 	db 26, MIRROR_SHOT
 	db 31, ACID_ARMOR
 	db 35, ICE_BEAM
-	db 40, ICE_SHARD ; Hail
+	db 40, HAIL
 	db 44, MIRROR_COAT
 	db 49, BLIZZARD
 	db 0 ; no more level-up moves
@@ -4126,7 +4126,7 @@ VanillishEvosAttacks:
 	db 26, MIRROR_SHOT
 	db 31, ACID_ARMOR
 	db 35, ICE_BEAM
-	db 42, ICE_SHARD ; Hail
+	db 42, HAIL
 	db 47, MIRROR_COAT
 	db 53, BLIZZARD
 	db 0 ; no more level-up moves
@@ -4143,7 +4143,7 @@ VanilluxeEvosAttacks:
 	db 26, MIRROR_SHOT
 	db 31, ACID_ARMOR
 	db 35, ICE_BEAM
-	db 42, ICE_SHARD ; Hail
+	db 42, HAIL
 	db 47, MIRROR_COAT
 	db 59, BLIZZARD
 	db 0 ; no more level-up moves
@@ -4470,7 +4470,7 @@ SphealEvosAttacks:
 	db 21, AURORA_BEAM
 	db 26, BODY_SLAM
 	db 31, REST ; + Snore
-	db 36, ICICLE_CRASH ; Hail
+	db 36, HAIL
 	db 41, BLIZZARD
 	db 46, BELLY_DRUM ; Sheer Cold
 	db 0 ; no more level-up moves
@@ -4490,7 +4490,7 @@ SealeoEvosAttacks:
 	db 26, BODY_SLAM
 	db 31, REST ; + Snore
 	db 31, SWAGGER
-	db 38, ICICLE_CRASH ; Hail
+	db 38, HAIL
 	db 45, BLIZZARD
 	db 52, BELLY_DRUM ; Sheer Cold
 	db 0 ; no more level-up moves
@@ -4509,7 +4509,7 @@ WalreinEvosAttacks:
 	db 26, BODY_SLAM
 	db 31, REST ; + Snore
 	db 31, SWAGGER
-	db 38, ICICLE_CRASH ; Hail
+	db 38, HAIL
 	db 43, ICE_FANG
 	db 49, BLIZZARD
 	db 60, BELLY_DRUM ; Sheer Cold
@@ -4531,7 +4531,7 @@ SnoruntEvosAttacks:
 	db 37, ICE_BEAM ; Frost Breath
 	db 41, CRUNCH
 	db 46, BLIZZARD
-	db 50, EXPLOSION ; Hail
+	db 50, HAIL
 	db 0 ; no more level-up moves
 
 GlalieEvosAttacks:
@@ -4549,7 +4549,7 @@ GlalieEvosAttacks:
 	db 41, CRUNCH
 	db 41, ICICLE_CRASH ; Freeze-Dry
 	db 48, BLIZZARD
-	db 54, EXPLOSION ; Hail
+	db 54, HAIL
 	db 60, GLARE ; Sheer Cold
 	db 0 ; no more level-up moves
 
@@ -4567,7 +4567,7 @@ FroslassEvosAttacks:
 	db 37, ICE_BEAM ; Wake-Up Slap
 	db 41, SHADOW_BALL
 	db 48, BLIZZARD
-	db 54, PERISH_SONG ; Hail
+	db 54, HAIL
 	db 60, DESTINY_BOND
 	db 0 ; no more level-up moves
 
@@ -4776,6 +4776,7 @@ HydreigonEvosAttacks:
 	db 63, TRI_ATTACK
 	db 64, HYPER_VOICE
 	db 79, OUTRAGE
+	; db 100, HAIL
 	; db 100, SURF
 	; db 100, STRENGTH
 	; db 100, CUT
