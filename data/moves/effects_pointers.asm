@@ -173,3 +173,4 @@ MoveEffectsPointers:
 	dw ToxicHit
 	dw BugBite
 	dw FreezeHit ; Blizzard
+	dw Hail

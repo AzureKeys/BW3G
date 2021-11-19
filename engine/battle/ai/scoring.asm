@@ -388,6 +388,7 @@ AI_Smart:
 	dbw EFFECT_THUNDER,          AI_Smart_Thunder
 	dbw EFFECT_FLY,              AI_Smart_Fly
 	dbw EFFECT_HEX,              AI_Smart_Hex
+	dbw EFFECT_HAIL,             AI_Smart_Hail
 	db -1 ; end
 
 AI_Smart_Sleep:
@@ -2080,6 +2081,45 @@ AI_Smart_Sandstorm:
 	db GROUND
 	db STEEL
 	db -1 ; end
+	
+AI_Smart_Hail:
+; Greatly discourage if player is immune to Hail damage
+	ld a, [wBattleMonType1]
+	cp ICE
+	jr z, .greatly_discourage
+	
+	ld a, [wBattleMonType2]
+	cp ICE
+	jr z, .greatly_discourage
+	
+; Discourage if player's HP is below 50%
+	call AICheckPlayerHalfHP
+	jr nc, .discourage
+	
+; Encourage if AI has good Hail moves
+	push hl
+	ld hl, .GoodHailMoves
+	call AIHasMoveInArray
+	pop hl
+	jr c, .encourage
+	
+; 50% change to encourage otherwise
+	call AI_50_50
+	ret c
+	
+.encourage
+	dec [hl]
+	ret
+	
+.greatly_discourage
+	inc [hl]
+.discourage
+	inc [hl]
+	ret
+	
+.GoodHailMoves
+	db BLIZZARD
+	db -1; end
 
 AI_Smart_Endure:
 	ld a, [wEnemyProtectCount]

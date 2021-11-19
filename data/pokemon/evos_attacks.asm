@@ -211,7 +211,7 @@ PatratEvosAttacks:
 	db 1, TACKLE
 	db 3, LEER
 	db 6, BITE
-	db 11, DETECT
+	db 11, PROTECT ; Detect
 	db 13, SAND_ATTACK
 	db 16, CRUNCH
 	db 18, HYPNOSIS
@@ -231,7 +231,7 @@ WatchogEvosAttacks:
 	db 1, TACKLE
 	db 3, LEER
 	db 6, BITE
-	db 11, DETECT
+	db 11, PROTECT ; Detect
 	db 13, SAND_ATTACK
 	db 16, CRUNCH
 	db 18, HYPNOSIS
@@ -299,7 +299,7 @@ PidoveEvosAttacks:
 	db 11, QUICK_ATTACK
 	db 15, AIR_CUTTER
 	db 18, REST ; Roost
-	db 22, DETECT
+	db 22, PROTECT ; Detect
 	db 25, THIEF ; Taunt
 	db 29, AIR_SLASH
 	db 32, DRILL_PECK ; Razor Wind
@@ -319,7 +319,7 @@ TranquillEvosAttacks:
 	db 11, QUICK_ATTACK
 	db 15, AIR_CUTTER
 	db 18, REST ; Roost
-	db 23, DETECT
+	db 23, PROTECT ; Detect
 	db 27, THIEF ; Taunt
 	db 32, AIR_SLASH
 	db 36, DRILL_PECK ; Razor Wind
@@ -338,7 +338,7 @@ UnfezantEvosAttacks:
 	db 11, QUICK_ATTACK
 	db 15, AIR_CUTTER
 	db 18, REST ; Roost
-	db 23, DETECT
+	db 23, PROTECT ; Detect
 	db 27, THIEF ; Taunt
 	db 32, AIR_SLASH
 	db 38, DRILL_PECK ; Razor Wind
@@ -1664,7 +1664,7 @@ MedititeEvosAttacks:
 	db 1, DEFENSE_CURL ; Bide
 	db 4, DOUBLESLAP ; Meditate
 	db 7, CONFUSION
-	db 9, DETECT
+	db 9, PROTECT ; Detect
 	db 12, ENDURE
 	db 15, MACH_PUNCH ; Feint
 	db 17, KARATE_CHOP ; Force Palm
@@ -1685,7 +1685,7 @@ MedichamEvosAttacks:
 	db 1, DEFENSE_CURL ; Bide
 	db 4, DOUBLESLAP ; Meditate
 	db 7, CONFUSION
-	db 9, DETECT
+	db 9, PROTECT ; Detect
 	db 12, ENDURE
 	db 15, MACH_PUNCH ; Feint
 	db 17, KARATE_CHOP ; Force Palm
@@ -1967,7 +1967,7 @@ YanmaEvosAttacks:
 	db 6, QUICK_ATTACK
 	db 11, DOUBLE_TEAM
 	db 14, SONICBOOM
-	db 17, DETECT
+	db 17, PROTECT ; Detect
 	db 22, SUPERSONIC
 	db 27, AIR_CUTTER ; Uproar
 	db 30, SIGNAL_BEAM ; Pursuit
@@ -1987,7 +1987,7 @@ YanmegaEvosAttacks:
 	db 6, QUICK_ATTACK
 	db 11, DOUBLE_TEAM
 	db 14, SONICBOOM
-	db 17, DETECT
+	db 17, PROTECT ; Detect
 	db 22, SUPERSONIC
 	db 27, AIR_CUTTER ; Uproar
 	db 30, SIGNAL_BEAM ; Pursuit
@@ -2426,7 +2426,7 @@ EscavalierEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 4, LEER
-	db 8, DETECT ; Quick Guard
+	db 8, PROTECT ; Quick Guard
 	db 13, FURY_CUTTER ; Twineedle
 	db 16, FURY_ATTACK
 	db 20, HEADBUTT
@@ -2470,7 +2470,7 @@ AccelgorEvosAttacks:
 	db 16, STRUGGLE_BUG
 	db 20, MEGA_DRAIN
 	db 25, SWIFT
-	db 28, DETECT ; Me First
+	db 28, PROTECT ; Me First
 	db 32, AGILITY
 	db 37, GIGA_DRAIN
 	db 40, EXTREMESPEED ; U-turn
@@ -3186,7 +3186,7 @@ ArchenEvosAttacks:
 	db 15, WING_ATTACK ; Pluck
 	db 18, ANCIENTPOWER
 	db 21, AGILITY
-	db 25, DETECT ; Quick Guard
+	db 25, PROTECT ; Quick Guard
 	db 28, ACROBATICS
 	db 31, DRAGONBREATH
 	db 35, CRUNCH
@@ -3207,7 +3207,7 @@ ArcheopsEvosAttacks:
 	db 15, WING_ATTACK ; Pluck
 	db 18, ANCIENTPOWER
 	db 21, AGILITY
-	db 25, DETECT ; Quick Guard
+	db 25, PROTECT ; Quick Guard
 	db 28, ACROBATICS
 	db 31, DRAGONBREATH
 	db 35, CRUNCH
@@ -3740,7 +3740,7 @@ ThrohEvosAttacks:
 	db 25, BULK_UP
 	db 29, HAMMER_ARM ; Circle Throw
 	db 33, ENDURE
-	db 37, DETECT ; Wide Guard
+	db 37, PROTECT ; Wide Guard
 	db 41, CLOSE_COMBAT ; Superpower
 	db 45, REVERSAL
 	db 0 ; no more level-up moves
@@ -3757,7 +3757,7 @@ SawkEvosAttacks:
 	db 25, BULK_UP
 	db 29, HI_JUMP_KICK ; Retaliate
 	db 33, ENDURE
-	db 37, DETECT ; Quick Guard
+	db 37, PROTECT ; Quick Guard
 	db 41, CLOSE_COMBAT
 	db 45, REVERSAL
 	db 0 ; no more level-up moves

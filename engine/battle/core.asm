@@ -1852,6 +1852,13 @@ HandleWeather:
 	cp ICE
 	ret z
 	
+	call SwitchTurnCore
+	xor a
+	ld [wNumHits], a
+	ld de, ANIM_IN_HAIL
+	call Call_PlayBattleAnim
+	call SwitchTurnCore
+	
 	call GetSixteenthMaxHP
 	call SubtractHPFromUser
 	
@@ -9398,6 +9405,10 @@ GetWeatherImage:
 	cp WEATHER_SANDSTORM
 	ld de, SandstormWeatherImage
 	ld b, PAL_BATTLE_OB_BROWN
+	jr z, .done
+	cp WEATHER_HAIL
+	ld de, HailWeatherImage
+	lb bc, PAL_BATTLE_OB_BLUE, 4
 	jr z, .done
 	ret
 	

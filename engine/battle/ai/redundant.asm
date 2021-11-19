@@ -44,6 +44,7 @@ AI_Redundant:
 	dbw EFFECT_MOONLIGHT,    .Moonlight
 	dbw EFFECT_SWAGGER,      .Swagger
 	dbw EFFECT_FUTURE_SIGHT, .FutureSight
+	dbw EFFECT_HAIL,         .Hail
 	db -1
 
 .LightScreen:
@@ -179,6 +180,12 @@ AI_Redundant:
 	ld a, [wEnemyScreens]
 	bit 5, a
 	ret
+	
+.Hail:
+	ld a, [wBattleWeather]
+	cp WEATHER_HAIL
+	jr z, .Redundant
+	jr .NotRedundant
 
 .Heal:
 .MorningSun:

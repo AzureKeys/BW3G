@@ -193,6 +193,7 @@ ENDM
 	command dragondance             ; ba
 	command suckerpunch             ; bb
 	command bugbite                 ; bc
+	command starthail               ; bd
 
 	enum_start $fe
 	command endturn                 ; fe

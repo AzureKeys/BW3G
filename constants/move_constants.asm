@@ -68,45 +68,45 @@
 	const BLIZZARD     ; 3c
 	const MIST         ; 3d
 	const HAZE         ; 3e
-	const LEECH_LIFE   ; 3f
-	const FURY_CUTTER  ; 40
-	const PIN_MISSILE  ; 41
-	const BUG_BITE     ; 42
-	const X_SCISSOR    ; 43
-	const MEGAHORN     ; 44
-	const STRUGGLE_BUG ; 45
-	const SIGNAL_BEAM  ; 46
-	const BUG_BUZZ     ; 47
-	const STRING_SHOT  ; 48
-	const QUIVER_DANCE ; 49
-	const POISON_STING ; 4a
-	const POISON_FANG  ; 4b
-	const CROSS_POISON ; 4c
-	const GUNK_SHOT    ; 4d
-	const ACID         ; 4e
-	const VENOSHOCK    ; 4f
-	const SLUDGE       ; 50
-	const SLUDGE_BOMB  ; 51
-	const ACID_ARMOR   ; 52
-	const POISONPOWDER ; 53
-	const POISON_GAS   ; 54
-	const TOXIC        ; 55
-	const COUNTER      ; 56
-	const MACH_PUNCH   ; 57
-	const KARATE_CHOP  ; 58
-	const LOW_KICK     ; 59
-	const DOUBLE_KICK  ; 5a
-	const VITAL_THROW  ; 5b
-	const DRAIN_PUNCH  ; 5c
-	const REVERSAL     ; 5d
-	const CROSS_CHOP   ; 5e
-	const DYNAMICPUNCH ; 5f
-	const HAMMER_ARM   ; 60
-	const CLOSE_COMBAT ; 61
-	const HI_JUMP_KICK ; 62
-	const AURA_SPHERE  ; 63
-	const FOCUS_BLAST  ; 64
-	const DETECT       ; 65
+	const HAIL         ; 3f
+	const LEECH_LIFE   ; 40
+	const FURY_CUTTER  ; 41
+	const PIN_MISSILE  ; 42
+	const BUG_BITE     ; 43
+	const X_SCISSOR    ; 44
+	const MEGAHORN     ; 45
+	const STRUGGLE_BUG ; 46
+	const SIGNAL_BEAM  ; 47
+	const BUG_BUZZ     ; 48
+	const STRING_SHOT  ; 49
+	const QUIVER_DANCE ; 4a
+	const POISON_STING ; 4b
+	const POISON_FANG  ; 4c
+	const CROSS_POISON ; 4d
+	const GUNK_SHOT    ; 4e
+	const ACID         ; 4f
+	const VENOSHOCK    ; 50
+	const SLUDGE       ; 51
+	const SLUDGE_BOMB  ; 52
+	const ACID_ARMOR   ; 53
+	const POISONPOWDER ; 54
+	const POISON_GAS   ; 55
+	const TOXIC        ; 56
+	const COUNTER      ; 57
+	const MACH_PUNCH   ; 58
+	const KARATE_CHOP  ; 59
+	const LOW_KICK     ; 5a
+	const DOUBLE_KICK  ; 5b
+	const VITAL_THROW  ; 5c
+	const DRAIN_PUNCH  ; 5d
+	const REVERSAL     ; 5e
+	const CROSS_CHOP   ; 5f
+	const DYNAMICPUNCH ; 60
+	const HAMMER_ARM   ; 61
+	const CLOSE_COMBAT ; 62
+	const HI_JUMP_KICK ; 63
+	const AURA_SPHERE  ; 64
+	const FOCUS_BLAST  ; 65
 	const BULK_UP      ; 66
 	const PECK         ; 67
 	const WING_ATTACK  ; 68
@@ -288,6 +288,7 @@ NUM_ATTACKS EQU const_value + -1
 	const ANIM_WOBBLE            ; 113
 	const ANIM_SHAKE             ; 114
 	const ANIM_HIT_CONFUSION     ; 115
+	const ANIM_IN_HAIL           ; 116
 
 ; wNumHits uses offsets from ANIM_MISS
 	const_def

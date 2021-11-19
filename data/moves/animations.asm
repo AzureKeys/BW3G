@@ -63,6 +63,7 @@ BattleAnimations::
 	dw BattleAnim_Blizzard
 	dw BattleAnim_Mist
 	dw BattleAnim_Haze
+	dw BattleAnim_Hail
 	dw BattleAnim_LeechLife
 	dw BattleAnim_FuryCutter
 	dw BattleAnim_PinMissile
@@ -101,7 +102,6 @@ BattleAnimations::
 	dw BattleAnim_HiJumpKick
 	dw BattleAnim_AuraSphere
 	dw BattleAnim_FocusBlast
-	dw BattleAnim_Detect
 	dw BattleAnim_BulkUp
 	dw BattleAnim_Peck
 	dw BattleAnim_WingAttack
@@ -280,6 +280,7 @@ BattleAnimations::
 	dw BattleAnim_Wobble
 	dw BattleAnim_Shake
 	dw BattleAnim_HitConfusion
+	dw BattleAnim_InHail
 
 BattleAnim_0:
 	anim_ret
@@ -4224,6 +4225,14 @@ BattleAnim_Protect:
 	anim_wait 96
 	anim_ret
 
+BattleAnim_Detect:
+	anim_1gfx ANIM_GFX_SHINE
+	anim_bgeffect ANIM_BG_07, $0, $0, $0
+	anim_sound 0, 0, SFX_FORESIGHT
+	anim_obj ANIM_OBJ_FORESIGHT, 64, 88, $0
+	anim_wait 24
+	anim_ret
+
 BattleAnim_MachPunch:
 	anim_2gfx ANIM_GFX_SPEED, ANIM_GFX_HIT
 	anim_bgeffect ANIM_BG_HIDE_MON, $0, $1, $0
@@ -4425,14 +4434,6 @@ BattleAnim_IcyWind:
 	anim_wait 4
 	anim_incobj 7
 	anim_wait 1
-	anim_ret
-
-BattleAnim_Detect:
-	anim_1gfx ANIM_GFX_SHINE
-	anim_bgeffect ANIM_BG_07, $0, $0, $0
-	anim_sound 0, 0, SFX_FORESIGHT
-	anim_obj ANIM_OBJ_FORESIGHT, 64, 88, $0
-	anim_wait 24
 	anim_ret
 
 BattleAnim_LockOn:
@@ -5367,6 +5368,22 @@ BattleAnim_Synthesis_branch_cbc80:
 	anim_wait 5
 	anim_loop 2, .loop
 	anim_wait 16
+	anim_ret
+	
+BattleAnim_Hail:
+BattleAnim_InHail:
+	anim_1gfx ANIM_GFX_ICE
+	anim_bgeffect ANIM_BG_WHITE_HUES, $0, $8, $0
+	anim_obj ANIM_OBJ_HAIL, 88, 0, $0
+	anim_wait 8
+	anim_obj ANIM_OBJ_HAIL, 72, 0, $1
+	anim_wait 8
+	anim_obj ANIM_OBJ_HAIL, 56, 0, $2
+.loop
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 8
+	anim_loop 8, .loop
+	anim_wait 8
 	anim_ret
 
 BattleAnim_TargetObj_1Row:

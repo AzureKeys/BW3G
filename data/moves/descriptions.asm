@@ -62,6 +62,7 @@ MoveDescriptions::
 	dw BlizzardDescription
 	dw MistDescription
 	dw HazeDescription
+	dw HailDescription
 	dw LeechLifeDescription
 	dw FuryCutterDescription
 	dw PinMissileDescription
@@ -100,7 +101,6 @@ MoveDescriptions::
 	dw HiJumpKickDescription
 	dw AuraSphereDescription
 	dw FocusBlastDescription
-	dw DetectDescription
 	dw BulkUpDescription
 	dw PeckDescription
 	dw WingAttackDescription
@@ -1060,9 +1060,9 @@ IcyWindDescription:
 	db   "An icy attack that"
 	next "lowers SPEED.@"
 
-DetectDescription:
-	db   "Evades attack that"
-	next "turn. It may fail.@"
+HailDescription:
+	db   "Inflicts damage"
+	next "every turn.@"
 
 HoneClawsDescription:
 	db   "Raises user ATTACK"

@@ -31,7 +31,6 @@ TepigEggMoves:
 
 OshawottEggMoves:
 	db AIR_SLASH
-	db DETECT
 	db NIGHT_SLASH
 	db SCREECH
 	db -1 ; end
@@ -215,7 +214,6 @@ RioluEggMoves:
 	db BULLET_PUNCH
 	db CROSS_CHOP
 	db CRUNCH
-	db DETECT
 	db HI_JUMP_KICK
 	db IRON_DEFENSE
 	db LOW_KICK
@@ -225,7 +223,6 @@ RioluEggMoves:
 
 TimburrEggMoves:
 	db COUNTER
-	db DETECT
 	db DRAIN_PUNCH
 	db ENDURE
 	db FORESIGHT
@@ -373,7 +370,6 @@ SpiritombEggMoves:
 ZoruaEggMoves:
 	db COUNTER
 	db DARK_PULSE
-	db DETECT
 	db EXTRASENSORY
 	db SUCKER_PUNCH
 	db -1 ; end
@@ -518,7 +514,6 @@ TrapinchEggMoves:
 ScraggyEggMoves:
 	db AMNESIA
 	db COUNTER
-	db DETECT
 	db DRAGON_DANCE
 	db DRAIN_PUNCH
 	db FAINT_ATTACK
@@ -626,7 +621,6 @@ AudinoEggMoves:
 EeveeEggMoves:
 	db CHARM
 	db CURSE
-	db DETECT
 	db ENDURE
 	db FLAIL
 	db -1 ; end

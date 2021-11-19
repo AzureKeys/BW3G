@@ -79,6 +79,7 @@ Moves:
 	move BLIZZARD,     EFFECT_BLIZZARD,          120, ICE, SPECIAL,        70,  5,  10
 	move MIST,         EFFECT_MIST,                0, ICE, STATUS,        100, 30,   0
 	move HAZE,         EFFECT_RESET_STATS,         0, ICE, STATUS,        100, 30,   0
+	move HAIL,         EFFECT_HAIL,                0, ICE, STATUS,        100, 10,   0
 	move LEECH_LIFE,   EFFECT_LEECH_HIT,          20, BUG, PHYSICAL,      100, 15,   0
 	move FURY_CUTTER,  EFFECT_FURY_CUTTER,        40, BUG, PHYSICAL,       95, 20,   0
 	move PIN_MISSILE,  EFFECT_MULTI_HIT,          25, BUG, PHYSICAL,       95, 20,   0
@@ -117,7 +118,6 @@ Moves:
 	move HI_JUMP_KICK, EFFECT_JUMP_KICK,         130, FIGHTING, PHYSICAL,  90, 10,   0
 	move AURA_SPHERE,  EFFECT_ALWAYS_HIT,         90, FIGHTING, SPECIAL,  100, 20,   0
 	move FOCUS_BLAST,  EFFECT_SP_DEF_DOWN_HIT,   120, FIGHTING, SPECIAL,   70,  5,  10
-	move DETECT,       EFFECT_PROTECT,             0, FIGHTING, STATUS,   100,  5,   0
 	move BULK_UP,      EFFECT_BULK_UP,             0, FIGHTING, STATUS,   100, 20,   0
 	move PECK,         EFFECT_NORMAL_HIT,         35, FLYING, PHYSICAL,   100, 35,   0
 	move WING_ATTACK,  EFFECT_NORMAL_HIT,         60, FLYING, PHYSICAL,   100, 35,   0

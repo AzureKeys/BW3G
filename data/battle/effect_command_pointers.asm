@@ -192,3 +192,4 @@ BattleCommandPointers:
 	dw BattleCommand_DragonDance
 	dw BattleCommand_SuckerPunch
 	dw BattleCommand_BugBite
+	dw BattleCommand_StartHail
