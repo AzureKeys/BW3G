@@ -9,19 +9,19 @@
 	RGB 30, 10, 06
 	RGB 07, 07, 07
 ; green
-	RGB 18, 24, 09
+	RGB 30, 28, 26
 	RGB 15, 20, 01
 	RGB 09, 13, 00
 	RGB 07, 07, 07
 ; water (blue)
 	RGB 30, 28, 26
-	RGB 17, 19, 31
-	RGB 14, 16, 31
+	RGB 14, 19, 31
+	RGB 08, 12, 31
 	RGB 07, 07, 07
 ; yellow
-	RGB 31, 26, 21
-	RGB 31, 20, 01
-	RGB 14, 16, 31
+	RGB 30, 28, 26
+	RGB 25, 23, 10
+	RGB 20, 14, 05
 	RGB 07, 07, 07
 ; brown
 	RGB 21, 17, 07

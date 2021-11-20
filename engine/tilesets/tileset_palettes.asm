@@ -2,6 +2,8 @@ LoadSpecialMapPalette:
 	ld a, [wMapTileset]
 	cp TILESET_BATTLE_TOWER
 	jr z, .battle_tower
+	cp TILESET_POKECENTER
+	jr z, .pokecenter
 	cp TILESET_ICE_PATH
 	jp z, .ice_path
 	cp TILESET_HOUSE
@@ -48,6 +50,11 @@ LoadSpecialMapPalette:
 
 .battle_tower
 	call LoadBattleTowerPalette
+	scf
+	ret
+
+.pokecenter
+	call LoadPokecenterPalette
 	scf
 	ret
 
@@ -806,3 +813,14 @@ LoadDsTowerNitePalette:
 	
 DsTowerNitePalette:
 INCLUDE "gfx/tilesets/dragonspiral_tower_nite.pal"
+
+LoadPokecenterPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, PokecenterPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+PokecenterPalette:
+INCLUDE "gfx/tilesets/pokecom_center.pal"
