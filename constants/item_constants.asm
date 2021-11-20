@@ -189,10 +189,7 @@
 	const GREEN_SHARD  ; b5
 	const YELLOW_SHARD ; b6
 	const MEMBERS_CARD ; b7
-	;const SURF_MAIL    ; b5
-	;const LITEBLUEMAIL ; b6
-	;const PORTRAITMAIL ; b7
-	const LOVELY_MAIL  ; b8
+	const SOOTHE_BELL  ; b8
 	const EON_MAIL     ; b9
 	const MORPH_MAIL   ; ba
 	const BLUESKY_MAIL ; bb

@@ -79,8 +79,12 @@ ChangeHappiness:
 	ld a, [de]
 	jr nc, .negative
 	add [hl]
-	jr nc, .done
+	jr nc, .extra
 	ld a, -1
+	jr .done
+	
+.extra
+	call GetExtraHappiness
 	jr .done
 
 .negative
@@ -103,6 +107,29 @@ ChangeHappiness:
 	ret
 
 INCLUDE "data/events/happiness_changes.asm"
+
+GetExtraHappiness:
+; Increase happiness in 'a' based on item
+	push af
+	
+	ld b, a
+	cp 255
+	jr nc, .no_soothe_bell ; already at max
+	
+	ld a, [wCurPartyMon]
+	ld hl, wPartyMon1Item
+	call GetPartyLocation
+	ld a, [hl]
+	cp SOOTHE_BELL
+	jr nz, .no_soothe_bell
+	
+; Soothe Bell adds 1
+	inc b
+	
+.no_soothe_bell
+	pop af
+	ld a, b
+	ret
 
 StepHappiness::
 ; Raise the party's happiness by 1 point every other step cycle.

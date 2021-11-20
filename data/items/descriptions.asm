@@ -183,7 +183,7 @@ ItemDescriptions:
 	dw GreenShardDesc
 	dw YellowShardDesc
 	dw MembersCardDesc
-	dw LovelyMailDesc
+	dw SootheBellDesc
 	dw EonMailDesc
 	dw MorphMailDesc
 	dw BlueSkyMailDesc
@@ -981,9 +981,9 @@ MembersCardDesc:
 	db   "Membership card"
 	next "for the MALL.@"
 
-LovelyMailDesc:
-	db   "Heart-print MAIL."
-	next "(HOLD)@"
+SootheBellDesc:
+	db   "Increases happi-"
+	next "ness. (HOLD)@"
 
 EonMailDesc:
 	db   "EEVEE-print MAIL."

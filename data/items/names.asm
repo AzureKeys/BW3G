@@ -182,7 +182,7 @@ ItemNames::
 	db "GREEN SHARD@"
 	db "YELLOW SHARD@"
 	db "MEMBERS CARD@"
-	db "LOVELY MAIL@"
+	db "SOOTHE BELL@"
 	db "EON MAIL@"
 	db "MORPH MAIL@"
 	db "BLUESKY MAIL@"

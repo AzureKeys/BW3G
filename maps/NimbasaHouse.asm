@@ -13,7 +13,7 @@ NimbasaHouseWomanScript:
 	iftrue .GotBell
 	writetext NimbasaHouseGiveBellText
 	buttonsound
-	verbosegiveitem CLEANSE_TAG
+	verbosegiveitem SOOTHE_BELL
 	iffalse .NoRoom
 	setevent EVENT_GOT_SOOTHE_BELL
 .GotBell:
@@ -30,20 +30,21 @@ NimbasaHouseGiveBellText:
 	text "You're a #MON"
 	line "trainer, right?"
 
-	para "It must be scary"
-	line "when wild #MON"
-	cont "are always around."
+	para "You seem like the"
+	line "kind of trainer"
+	
+	para "who is kind to"
+	line "your #MON."
 	
 	para "Here, have this."
 	done
 
 NimbasaHouseGaveBellText:
-	text "Use that tag and"
-	line "you'll be"
+	text "Give that BELL to"
+	line "your #MON, and"
 	
-	para "protected from"
-	line "wild #MON"
-	cont "attacks."
+	para "it will make them"
+	line "happier!"
 	done
 
 NimbasaHouse_MapEvents:
