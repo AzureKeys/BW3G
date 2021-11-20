@@ -341,7 +341,7 @@ BattleText_UserHurtBySpikes:
 
 RecoveredUsingText:
 	text "<TARGET>"
-	line "recovered using a"
+	line "recovered using"
 	cont "@"
 	text_ram wStringBuffer1
 	text "!"
@@ -349,7 +349,7 @@ RecoveredUsingText:
 
 RecoveredUsingTextBugBite:
 	text "<USER>"
-	line "recovered using a"
+	line "recovered using"
 	cont "@"
 	text_ram wStringBuffer1
 	text "!"
