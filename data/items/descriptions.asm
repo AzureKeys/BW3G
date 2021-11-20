@@ -184,10 +184,10 @@ ItemDescriptions:
 	dw YellowShardDesc
 	dw MembersCardDesc
 	dw SootheBellDesc
-	dw EonMailDesc
-	dw MorphMailDesc
-	dw BlueSkyMailDesc
-	dw MusicMailDesc
+	dw DampRockDesc
+	dw HeatRockDesc
+	dw SmoothRockDesc
+	dw IcyRockDesc
 	dw MewMailDesc
 	dw TeruSama25Desc
 	dw TeruSama26Desc
@@ -985,21 +985,21 @@ SootheBellDesc:
 	db   "Increases happi-"
 	next "ness. (HOLD)@"
 
-EonMailDesc:
-	db   "EEVEE-print MAIL."
-	next "(HOLD)@"
+DampRockDesc:
+	db   "Extends RAIN"
+	next "duration. (HOLD)@"
 
-MorphMailDesc:
-	db   "DITTO-print MAIL."
-	next "(HOLD)@"
+HeatRockDesc:
+	db   "Extends SUN"
+	next "duration. (HOLD)@"
 
-BlueSkyMailDesc:
-	db   "Sky-print MAIL."
-	next "(HOLD)@"
+SmoothRockDesc:
+	db   "Extends SANDSTORM"
+	next "duration. (HOLD)@"
 
-MusicMailDesc:
-	db   "NATU-print MAIL."
-	next "(HOLD)@"
+IcyRockDesc:
+	db   "Extends HAIL"
+	next "duration. (HOLD)@"
 
 MewMailDesc:
 	db   "MEW-print MAIL."

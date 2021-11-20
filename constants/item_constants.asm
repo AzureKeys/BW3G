@@ -190,10 +190,10 @@
 	const YELLOW_SHARD ; b6
 	const MEMBERS_CARD ; b7
 	const SOOTHE_BELL  ; b8
-	const EON_MAIL     ; b9
-	const MORPH_MAIL   ; ba
-	const BLUESKY_MAIL ; bb
-	const MUSIC_MAIL   ; bc
+	const DAMP_ROCK    ; b9
+	const HEAT_ROCK    ; ba
+	const SMOOTH_ROCK  ; bb
+	const ICY_ROCK     ; bc
 	const MIRAGE_MAIL  ; bd
 	const ITEM_BE      ; be
 	const ITEM_C3      ; bf

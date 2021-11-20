@@ -197,6 +197,10 @@ ItemEffects:
 	dw NoEffect            ; YELLOW_SHARD
 	dw NoEffect            ; MEMBERS_CARD
 	dw NoEffect            ; SOOTHE_BELL
+	dw NoEffect            ; DAMP_ROCK
+	dw NoEffect            ; HEAT_ROCK
+	dw NoEffect            ; SMOOTH_ROCK
+	dw NoEffect            ; ICY_ROCK
 
 PokeBallEffect:
 	ld a, [wBattleMode]
