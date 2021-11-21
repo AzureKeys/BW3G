@@ -194,7 +194,7 @@
 	const HEAT_ROCK    ; ba
 	const SMOOTH_ROCK  ; bb
 	const ICY_ROCK     ; bc
-	const MIRAGE_MAIL  ; bd
+	const ROCKY_HELMET ; bd
 	const ITEM_BE      ; be
 	const ITEM_C3      ; bf
 	const ITEM_DC      ; c1

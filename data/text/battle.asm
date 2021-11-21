@@ -339,6 +339,13 @@ BattleText_UserHurtBySpikes:
 	line "hurt by SPIKES!"
 	prompt
 
+BattleText_RockyHelmet:
+	text "<USER>"
+	line "was hurt by"
+	cont "<TARGET>'s"
+	cont "ROCKY HELMET!"
+	prompt
+
 RecoveredUsingText:
 	text "<TARGET>"
 	line "recovered using"

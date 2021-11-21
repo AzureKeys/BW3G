@@ -201,6 +201,7 @@ ItemEffects:
 	dw NoEffect            ; HEAT_ROCK
 	dw NoEffect            ; SMOOTH_ROCK
 	dw NoEffect            ; ICY_ROCK
+	dw NoEffect            ; ROCKY_HELMET
 
 PokeBallEffect:
 	ld a, [wBattleMode]

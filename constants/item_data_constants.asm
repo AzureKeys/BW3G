@@ -100,6 +100,7 @@ MAIL_STRUCT_LENGTH EQU $2f ; mailmsg struct
 	const HELD_METAL_POWDER
 	const HELD_CATEGORY_BOOST
 	const HELD_EXPERT_BELT
+	const HELD_ROCKY_HELMET
 
 	const_def 50
 	const HELD_NORMAL_BOOST

@@ -5587,11 +5587,27 @@ CheckOpponentWentFirst:
 
 BattleCommand_HeldFlinch:
 ; kingsrock
-
+; Appropriated this function to handle all post-hit items
 	ld a, [wAttackMissed]
 	and a
 	ret nz
+	
+	call GetOpponentItem
+	ld a, b
+	cp HELD_ROCKY_HELMET
+	jr nz, .check_user_item
 
+; Rocky Helmet
+	call .checkfaint
+	ret z
+	call CheckContactMove
+	jr c, .check_user_item
+	farcall GetSixthMaxHP
+	farcall SubtractHPFromUser
+	ld hl, BattleText_RockyHelmet
+	call StdBattleTextBox
+	
+.check_user_item
 	call GetUserItem
 	ld a, b
 	cp HELD_FLINCH
@@ -5625,7 +5641,6 @@ BattleCommand_HeldFlinch:
 	farcall SubtractHPFromUser
 	ld hl, BattleText_UserLostSomeOfItsHP
 	jp StdBattleTextBox
-	ret
 	
 .checkfaint
 	; if we fainted, abort the move sequence
@@ -7091,3 +7106,17 @@ SandstormSpDefBoost:
 	ld b, h
 	ld c, l
 	ret
+	
+CheckContactMove:
+; Check if user's move makes contact. Return nc if it does.
+	ld a, BATTLE_VARS_MOVE
+	call GetBattleVar
+	ld de, 1
+	ld hl, ContactMoves
+	push bc
+	call IsInArray
+	pop bc
+	ccf
+	ret
+	
+INCLUDE "data/moves/contact_moves.asm"

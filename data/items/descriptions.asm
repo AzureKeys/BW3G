@@ -188,7 +188,7 @@ ItemDescriptions:
 	dw HeatRockDesc
 	dw SmoothRockDesc
 	dw IcyRockDesc
-	dw MewMailDesc
+	dw RockyHelmetDesc
 	dw TeruSama25Desc
 	dw TeruSama26Desc
 	dw TeruSama26Desc
@@ -1001,9 +1001,9 @@ IcyRockDesc:
 	db   "Extends HAIL"
 	next "duration. (HOLD)@"
 
-MewMailDesc:
-	db   "MEW-print MAIL."
-	next "(HOLD)@"
+RockyHelmetDesc:
+	db   "Damages direct"
+	next "attackers. (HOLD)@"
 
 TeruSama25Desc:
 	db   "?@"

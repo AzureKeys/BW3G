@@ -2011,6 +2011,22 @@ GetHalfMaxHP:
 	inc c
 .end
 	ret
+
+GetSixthMaxHP:
+; output: bc
+	call GetThirdMaxHP
+
+; halve result
+	srl b
+	rr c
+
+; floor = 1
+	ld a, c
+	or b
+	jr nz, .end
+	inc c
+.end
+	ret
 	
 GetTwoThirdsMaxHP:
 ; outputs bc from GetThirdMaxHP

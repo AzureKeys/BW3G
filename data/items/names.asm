@@ -187,7 +187,7 @@ ItemNames::
 	db "HEAT ROCK@"
 	db "SMOOTH ROCK@"
 	db "ICY ROCK@"
-	db "MIRAGE MAIL@"
+	db "ROCKY HELMET@"
 	db "TERU-SAMA@"
 	db "TERU-SAMA@"
 	db "TERU-SAMA@"
