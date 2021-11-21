@@ -1,27 +1,34 @@
 	const_def 2 ; object constants
-	const LENTIMASPOKECENTER1F_NURSE
-	const LENTIMASPOKECENTER1F_GENTLEMAN
-	const LENTIMASPOKECENTER1F_FISHING_GURU
-	const LENTIMASPOKECENTER1F_POKEFAN_F
+	const LENTIMASPOKECENTER_NURSE
+	const LENTIMASPOKECENTER_CLERK
+	const LENTIMASPOKECENTER_GENTLEMAN
+	const LENTIMASPOKECENTER_FISHING_GURU
+	const LENTIMASPOKECENTER_POKEFAN_F
 
 LentimasPokecenter1F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-LentimasPokecenter1FNurseScript:
+LentimasPokecenterNurseScript:
 	jumpstd pokecenternurse
 
-LentimasPokecenter1FGentlemanScript:
-	jumptextfaceplayer LentimasPokecenter1FGentlemanText
+LentimasPokecenterClerkScript:
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_LENTIMAS
+	closetext
+	end
 
-LentimasPokecenter1FFishingGuruScript:
-	jumptextfaceplayer LentimasPokecenter1FFishingGuruText
+LentimasPokecenterGentlemanScript:
+	jumptextfaceplayer LentimasPokecenterGentlemanText
 
-LentimasPokecenter1FPokefanFScript:
-	jumptextfaceplayer LentimasPokecenter1FPokefanFText
+LentimasPokecenterFishingGuruScript:
+	jumptextfaceplayer LentimasPokecenterFishingGuruText
 
-LentimasPokecenter1FGentlemanText:
+LentimasPokecenterPokefanFScript:
+	jumptextfaceplayer LentimasPokecenterPokefanFText
+
+LentimasPokecenterGentlemanText:
 	text "Do your #MON"
 	line "know HM moves?"
 
@@ -32,7 +39,7 @@ LentimasPokecenter1FGentlemanText:
 	line "fainted."
 	done
 
-LentimasPokecenter1FFishingGuruText:
+LentimasPokecenterFishingGuruText:
 	text "Strange things"
 	line "happen outside"
 	cont "of town."
@@ -40,32 +47,28 @@ LentimasPokecenter1FFishingGuruText:
 	para "Be careful."
 	done
 
-LentimasPokecenter1FPokefanFText:
-	text "This BILL guy"
-	line "created the system"
+LentimasPokecenterPokefanFText:
+	text "There's no GREAT"
+	line "BALL here. #"
 
-	para "for storing"
-	line "#MON in a PC."
-
-	para "BILL's PC can"
-	line "store up to 20"
-	cont "#MON per BOX."
+	para "BALLS will have"
+	line "to do."
 	done
 
 LentimasPokecenter1F_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
-	warp_event  3,  7, LENTIMAS_TOWN, 2
-	warp_event  4,  7, LENTIMAS_TOWN, 2
-	warp_event  0,  7, POKECENTER_2F, 1
+	db 2 ; warp events
+	warp_event  4,  9, LENTIMAS_TOWN, 2
+	warp_event  5,  9, LENTIMAS_TOWN, 2
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 
-	db 4 ; object events
-	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasPokecenter1FNurseScript, -1
-	object_event  9,  6, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasPokecenter1FGentlemanScript, -1
-	object_event  6,  1, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasPokecenter1FFishingGuruScript, -1
-	object_event  1,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, LentimasPokecenter1FPokefanFScript, -1
+	db 5 ; object events
+	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasPokecenterNurseScript, -1
+	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasPokecenterClerkScript, -1
+	object_event  1,  4, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasPokecenterGentlemanScript, -1
+	object_event  1,  7, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasPokecenterFishingGuruScript, -1
+	object_event  8,  3, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, LentimasPokecenterPokefanFScript, -1

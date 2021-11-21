@@ -5,19 +5,21 @@ Marts:
 	dw MartHumilauDex
 	dw MartLacunosa
 	dw MartLacunosaDex
+	dw MartUndella
 	dw MartLentimas
 	dw MartNimbasa
 	dw MartNimbasaVitamin
 	dw MartNimbasaBall
 	dw MartR4NimbasaGate
+	dw MartCastelia
 	dw MartCastelia2F1
 	dw MartCastelia2F2
 	dw MartCastelia3F
 	dw MartCastelia4F
 	dw MartAspertia
+	dw MartFlocessy
 	dw MartVirbank
 	dw MartNacrene
-	dw MartNacreneCafe
 	dw MartStriaton
 	dw MartAccumula
 	dw MartDriftveil
@@ -68,6 +70,16 @@ MartLacunosa:
 	db -1 ; end
 	
 MartLacunosaDex:
+	db 6 ; # items
+	db POKE_BALL
+	db POTION
+	db ESCAPE_ROPE
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db -1 ; end
+	
+MartUndella:
 	db 6 ; # items
 	db POKE_BALL
 	db POTION
@@ -130,6 +142,17 @@ MartR4NimbasaGate:
 	db REVIVAL_HERB
 	db -1 ; end
 
+MartCastelia:
+	db 7 ; # items
+	db POTION
+	db SUPER_POTION
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db BURN_HEAL
+	db ICE_HEAL
+	db -1 ; end
+
 MartCastelia2F1:
 	db 7 ; # items
 	db POTION
@@ -184,6 +207,18 @@ MartAspertia:
 	db SUPER_REPEL
 	db -1 ; end
 
+MartFlocessy:
+	db 8 ; # items
+	db GREAT_BALL
+	db SUPER_POTION
+	db HYPER_POTION
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db ICE_HEAL
+	db SUPER_REPEL
+	db -1 ; end
+
 MartVirbank:
 	db 7 ; # items
 	db GREAT_BALL
@@ -204,13 +239,6 @@ MartNacrene:
 	db FULL_HEAL
 	db REVIVE
 	db SUPER_REPEL
-	db -1 ; end
-
-MartNacreneCafe:
-	db 3 ; # items
-	db FRESH_WATER
-	db SODA_POP
-	db LEMONADE
 	db -1 ; end
 	
 MartStriaton:

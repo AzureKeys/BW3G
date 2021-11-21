@@ -125,10 +125,10 @@ INCLUDE "maps/VirbankCity.asm"
 INCLUDE "maps/VirbankPokecenter1F.asm"
 INCLUDE "maps/VirbankHouse.asm"
 INCLUDE "maps/GameCorner.asm"
-INCLUDE "maps/VirbankMart.asm"
 
 SECTION "Map Scripts 7", ROMX
 
+INCLUDE "maps/VirbankMart.asm"
 INCLUDE "maps/R20VirbankGate.asm"
 INCLUDE "maps/VirbankComplexOutside.asm"
 INCLUDE "maps/VirbankComplexElevator.asm"

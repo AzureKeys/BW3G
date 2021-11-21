@@ -1,19 +1,26 @@
 	const_def 2 ; object constants
-	const VIRBANKPOKECENTER1F_NURSE
-	const VIRBANKPOKECENTER1F_LASS
-	const VIRBANKPOKECENTER1F_GYM_GUY
-	const VIRBANKPOKECENTER1F_SUPER_NERD
+	const VIRBANKPOKECENTER_NURSE
+	const VIRBANKPOKECENTER_CLERK
+	const VIRBANKPOKECENTER_LASS
+	const VIRBANKPOKECENTER_GYM_GUY
+	const VIRBANKPOKECENTER_SUPER_NERD
 
 VirbankPokecenter1F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-VirbankPokecenter1FNurseScript:
+VirbankPokecenterNurseScript:
 	jumpstd pokecenternurse
 
-VirbankPokecenter1FLassScript:
-	jumptextfaceplayer VirbankPokecenter1FLassText
+VirbankPokecenterClerkScript:
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_VIRBANK
+	closetext
+	end
+
+VirbankPokecenterLassScript:
+	jumptextfaceplayer VirbankPokecenterLassText
 
 VirbankGymGuyScript:
 	faceplayer
@@ -32,10 +39,10 @@ VirbankGymGuyScript:
 	closetext
 	end
 
-VirbankPokecenter1FSuperNerdScript:
-	jumptextfaceplayer VirbankPokecenter1FSuperNerdText
+VirbankPokecenterSuperNerdScript:
+	jumptextfaceplayer VirbankPokecenterSuperNerdText
 
-VirbankPokecenter1FLassText:
+VirbankPokecenterLassText:
 	text "Did you go to the"
 	line "GAME CORNER?"
 
@@ -73,7 +80,7 @@ VirbankGymGuyWinText:
 	cont "looking at you!"
 	done
 
-VirbankPokecenter1FSuperNerdText:
+VirbankPokecenterSuperNerdText:
 	text "I love showing off"
 	line "the #MON that"
 
@@ -90,17 +97,17 @@ VirbankPokecenter1FSuperNerdText:
 VirbankPokecenter1F_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
-	warp_event  3,  7, VIRBANK_CITY, 1
-	warp_event  4,  7, VIRBANK_CITY, 1
-	warp_event  0,  7, POKECENTER_2F, 1
+	db 2 ; warp events
+	warp_event  4,  9, VIRBANK_CITY, 1
+	warp_event  5,  9, VIRBANK_CITY, 1
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 
-	db 4 ; object events
-	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VirbankPokecenter1FNurseScript, -1
-	object_event  1,  5, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, VirbankPokecenter1FLassScript, -1
-	object_event  5,  3, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VirbankGymGuyScript, -1
-	object_event  8,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, VirbankPokecenter1FSuperNerdScript, -1
+	db 5 ; object events
+	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VirbankPokecenterNurseScript, -1
+	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VirbankPokecenterClerkScript, -1
+	object_event  1,  3, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, VirbankPokecenterLassScript, -1
+	object_event  1,  7, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VirbankGymGuyScript, -1
+	object_event  8,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, VirbankPokecenterSuperNerdScript, -1

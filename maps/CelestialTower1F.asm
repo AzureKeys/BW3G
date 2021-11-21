@@ -137,5 +137,5 @@ CelestialTower1F_MapEvents:
 
 	db 2 ; object events
 	object_event  5,  6, SPRITE_SKYLA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CelestialTowerSkylaScript, EVENT_SKYLA_RETURNED
-	object_event  3,  9, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerNurseCelestialTower, -1
+	object_event  3,  9, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerNurseCelestialTower, -1
 	

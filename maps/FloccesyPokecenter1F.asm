@@ -1,27 +1,34 @@
 	const_def 2 ; object constants
-	const FLOCCESYPOKECENTER1F_NURSE
-	const FLOCCESYPOKECENTER1F_POKEFAN_M
-	const FLOCCESYPOKECENTER1F_YOUNGSTER
-	const FLOCCESYPOKECENTER1F_COOLTRAINER_F
+	const FLOCCESYPOKECENTER_NURSE
+	const FLOCCESYPOKECENTER_CLERK
+	const FLOCCESYPOKECENTER_POKEFAN_M
+	const FLOCCESYPOKECENTER_YOUNGSTER
+	const FLOCCESYPOKECENTER_COOLTRAINER_F
 
 FloccesyPokecenter1F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-FloccesyPokecenter1FNurseScript:
+FloccesyPokecenterNurseScript:
 	jumpstd pokecenternurse
 
-FloccesyPokecenter1FPokefanMScript:
-	jumptextfaceplayer FloccesyPokecenter1FPokefanMText
+FlocessyPokecenterClerkScript:
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_FLOCESSY
+	closetext
+	end
 
-FloccesyPokecenter1FYoungsterScript:
-	jumptextfaceplayer FloccesyPokecenter1FYoungsterText
+FloccesyPokecenterPokefanMScript:
+	jumptextfaceplayer FloccesyPokecenterPokefanMText
 
-FloccesyPokecenter1FCooltrainerFScript:
-	jumptextfaceplayer FloccesyPokecenter1FCooltrainerFText
+FloccesyPokecenterYoungsterScript:
+	jumptextfaceplayer FloccesyPokecenterYoungsterText
 
-FloccesyPokecenter1FPokefanMText:
+FloccesyPokecenterCooltrainerFScript:
+	jumptextfaceplayer FloccesyPokecenterCooltrainerFText
+
+FloccesyPokecenterPokefanMText:
 	text "What's this? TEAM"
 	line "PLASMA has come"
 	cont "back?"
@@ -31,7 +38,7 @@ FloccesyPokecenter1FPokefanMText:
 	cont "CITY…"
 	done
 
-FloccesyPokecenter1FYoungsterText:
+FloccesyPokecenterYoungsterText:
 	text "I stop my #MON"
 	line "from evolving too"
 	cont "early."
@@ -42,7 +49,7 @@ FloccesyPokecenter1FYoungsterText:
 	cont "evolve."
 	done
 
-FloccesyPokecenter1FCooltrainerFText:
+FloccesyPokecenterCooltrainerFText:
 	text "#MON do become"
 	line "stronger when they"
 
@@ -54,17 +61,17 @@ FloccesyPokecenter1FCooltrainerFText:
 FloccesyPokecenter1F_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
-	warp_event  3,  7, FLOCCESY_TOWN, 1
-	warp_event  4,  7, FLOCCESY_TOWN, 1
-	warp_event  0,  7, POKECENTER_2F, 1
+	db 2 ; warp events
+	warp_event  4,  9, FLOCCESY_TOWN, 1
+	warp_event  5,  9, FLOCCESY_TOWN, 1
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 
-	db 4 ; object events
-	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FloccesyPokecenter1FNurseScript, -1
-	object_event  7,  2, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, FloccesyPokecenter1FPokefanMScript, -1
-	object_event  1,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FloccesyPokecenter1FYoungsterScript, -1
-	object_event  2,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, FloccesyPokecenter1FCooltrainerFScript, -1
+	db 5 ; object events
+	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FloccesyPokecenterNurseScript, -1
+	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FlocessyPokecenterClerkScript, -1
+	object_event  1,  3, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, FloccesyPokecenterPokefanMScript, -1
+	object_event  1,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, FloccesyPokecenterYoungsterScript, -1
+	object_event  9,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, FloccesyPokecenterCooltrainerFScript, -1

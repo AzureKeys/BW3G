@@ -1,8 +1,9 @@
 	const_def 2 ; object constants
-	const LACUNOSAPOKECENTER1F_NURSE
-	const LACUNOSAPOKECENTER1F_GAMEBOY_KID
-	const LACUNOSAPOKECENTER1F_GENTLEMAN
-	const LACUNOSAPOKECENTER1F_YOUNGSTER
+	const LACUNOSAPOKECENTER_NURSE
+	const LACUNOSAPOKECENTER_CLERK
+	const LACUNOSAPOKECENTER_GAMEBOY_KID
+	const LACUNOSAPOKECENTER_GENTLEMAN
+	const LACUNOSAPOKECENTER_YOUNGSTER
 
 LacunosaPokecenter1F_MapScripts:
 	db 0 ; scene scripts
@@ -12,24 +13,39 @@ LacunosaPokecenter1F_MapScripts:
 LacunosaPokecenterNurse:
 	jumpstd pokecenternurse
 
-LacunosaPokecenter1FGameboyKidScript:
-	jumptextfaceplayer LacunosaPokecenter1FGameboyKidText
+LacunosaPokecenterClerkScript:
+	opentext
+	checkflag ENGINE_POKEDEX
+	iftrue .PokeBallsInStock
+	pokemart MARTTYPE_STANDARD, MART_LACUNOSA
+	closetext
+	end
 
-LacunosaPokecenter1FGentlemanScript:
-	jumptextfaceplayer LacunosaPokecenter1FGentlemanText
+.PokeBallsInStock:
+	pokemart MARTTYPE_STANDARD, MART_LACUNOSA_DEX
+	closetext
+	end
 
-LacunosaPokecenter1FYoungsterScript:
-	jumptextfaceplayer LacunosaPokecenter1FYoungsterText
+LacunosaPokecenterGameboyKidScript:
+	jumptextfaceplayer LacunosaPokecenterGameboyKidText
 
-LacunosaPokecenter1FGameboyKidText:
-	text "A guy named BILL"
-	line "made the #MON"
-	cont "PC storage system."
+LacunosaPokecenterGentlemanScript:
+	jumptextfaceplayer LacunosaPokecenterGentlemanText
+
+LacunosaPokecenterYoungsterScript:
+	jumptextfaceplayer LacunosaPokecenterYoungsterText
+
+LacunosaPokecenterGameboyKidText:
+	text "A lady named"
+	line "AMANITA made the"
+	
+	para "#MON PC storage"
+	line "system."
 	done
 
-LacunosaPokecenter1FGentlemanText:
-	text "It was around"
-	line "three years ago."
+LacunosaPokecenterGentlemanText:
+	text "It was several"
+	line "years ago now."
 
 	para "TEAM PLASMA was up"
 	line "to no good with"
@@ -38,9 +54,12 @@ LacunosaPokecenter1FGentlemanText:
 	para "But justice pre-"
 	line "vailed--a young"
 	cont "kid broke 'em up."
+	
+	para "Wait, that's twice"
+	line "now it's happened."
 	done
 
-LacunosaPokecenter1FYoungsterText:
+LacunosaPokecenterYoungsterText:
 	text "#MON are smart."
 	line "They won't obey a"
 
@@ -57,18 +76,18 @@ LacunosaPokecenter1FYoungsterText:
 LacunosaPokecenter1F_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
-	warp_event  3,  7, LACUNOSA_TOWN, 1
-	warp_event  4,  7, LACUNOSA_TOWN, 1
-	warp_event  0,  7, POKECENTER_2F, 1
+	db 2 ; warp events
+	warp_event  4,  9, LACUNOSA_TOWN, 1
+	warp_event  5,  9, LACUNOSA_TOWN, 1
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 
 	db 5 ; object events
-	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenterNurse, -1
-	object_event  7,  6, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenter1FGameboyKidScript, -1
-	object_event  1,  4, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenter1FGentlemanScript, -1
-	object_event  8,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenter1FYoungsterScript, -1
+	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenterNurse, -1
+	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenterClerkScript, -1
+	object_event  8,  2, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenterGameboyKidScript, -1
+	object_event  1,  4, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenterGentlemanScript, -1
+	object_event  1,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LacunosaPokecenterYoungsterScript, -1
 	

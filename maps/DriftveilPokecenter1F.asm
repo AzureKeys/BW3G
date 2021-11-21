@@ -1,36 +1,55 @@
 	const_def 2 ; object constants
-	const DRIFTVEILPOKECENTER1F_NURSE
-	const DRIFTVEILPOKECENTER1F_FISHER
-	const DRIFTVEILPOKECENTER1F_YOUNGSTER
+	const DRIFTVEILPOKECENTER_NURSE
+	const DRIFTVEILPOKECENTER_CLERK
+	const DRIFTVEILPOKECENTER_FISHER
+	const DRIFTVEILPOKECENTER_YOUNGSTER
+	const DRIFTVEILPOKECENTER_COOLTRAINER_F
 
 DriftveilPokecenter1F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-DriftveilPokecenter1FNurseScript:
+DriftveilPokecenterNurseScript:
 	jumpstd pokecenternurse
 
-DriftveilPokecenter1FFisherScript:
+DriftveilPokecenterClerkScript:
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_DRIFTVEIL
+	closetext
+	end
+
+DriftveilPokecenterFisherScript:
 	faceplayer
 	opentext
 	checkevent EVENT_FINISHED_PWT
 	iftrue .PoliceLeft
-	writetext DriftveilPokecenter1FFisherText
+	writetext DriftveilPokecenterFisherText
 	waitbutton
 	closetext
 	end
 
 .PoliceLeft:
-	writetext DriftveilPokecenter1FFisher2Text
+	writetext DriftveilPokecenterFisher2Text
 	waitbutton
 	closetext
 	end
 
-DriftveilPokecenter1FYoungsterScript:
-	jumptextfaceplayer DriftveilPokecenter1FYoungsterText
+DriftveilPokecenterYoungsterScript:
+	jumptextfaceplayer DriftveilPokecenterYoungsterText
 
-DriftveilPokecenter1FFisherText:
+DriftveilPokecenterCooltrainerFScript:
+	jumptextfaceplayer DriftveilPokecenterCooltrainerFText
+
+DriftveilPokecenterCooltrainerFText:
+	text "There's a bunch of"
+	line "specialty shops"
+	
+	para "across the bridge"
+	line "in NIMBASA."
+	done
+
+DriftveilPokecenterFisherText:
 	text "I just happened to"
 	line "come through RELIC"
 	cont "PASSAGE. Seems"
@@ -40,7 +59,7 @@ DriftveilPokecenter1FFisherText:
 	cont "the police here."
 	done
 
-DriftveilPokecenter1FFisher2Text:
+DriftveilPokecenterFisher2Text:
 	text "Caves collapse"
 	line "easily."
 
@@ -56,28 +75,31 @@ DriftveilPokecenter1FFisher2Text:
 	cont "knowledge."
 	done
 
-DriftveilPokecenter1FYoungsterText:
-	text "The marketplace"
-	line "and the #MON"
+DriftveilPokecenterYoungsterText:
+	text "The marketplace,"
+	line "the #MON"
 
-	para "shelter, they're"
-	line "the places to see"
-	cont "in DRIFTVEIL."
+	para "shelter, the STONE"
+	line "EMPOREUM, they're"
+	
+	para "the places to see"
+	line "in DRIFTVEIL."
 	done
 
 DriftveilPokecenter1F_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
-	warp_event  3,  7, DRIFTVEIL_CITY, 4
-	warp_event  4,  7, DRIFTVEIL_CITY, 4
-	warp_event  0,  7, POKECENTER_2F, 1
+	db 2 ; warp events
+	warp_event  4,  9, DRIFTVEIL_CITY, 4
+	warp_event  5,  9, DRIFTVEIL_CITY, 4
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 
-	db 3 ; object events
-	object_event  3,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DriftveilPokecenter1FNurseScript, -1
-	object_event  8,  6, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, DriftveilPokecenter1FFisherScript, -1
-	object_event  1,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DriftveilPokecenter1FYoungsterScript, -1
+	db 5 ; object events
+	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DriftveilPokecenterNurseScript, -1
+	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DriftveilPokecenterClerkScript, -1
+	object_event  1,  9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, DriftveilPokecenterFisherScript, -1
+	object_event  1,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DriftveilPokecenterYoungsterScript, -1
+	object_event  8,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, DriftveilPokecenterCooltrainerFScript, -1
