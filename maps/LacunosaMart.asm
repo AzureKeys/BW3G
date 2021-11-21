@@ -12,12 +12,12 @@ LacunosaMartClerkScript:
 	opentext
 	checkflag ENGINE_POKEDEX
 	iftrue .PokeBallsInStock
-	pokemart MARTTYPE_STANDARD, MART_LACUNOSA
+	pokemart MARTTYPE_STANDARD, MART_HUMILAU
 	closetext
 	end
 
 .PokeBallsInStock:
-	pokemart MARTTYPE_STANDARD, MART_LACUNOSA_DEX
+	pokemart MARTTYPE_STANDARD, MART_HUMILAU_DEX
 	closetext
 	end
 

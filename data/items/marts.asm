@@ -3,8 +3,6 @@ Marts:
 	dw MartUnderground
 	dw MartHumilau
 	dw MartHumilauDex
-	dw MartLacunosa
-	dw MartLacunosaDex
 	dw MartUndella
 	dw MartLentimas
 	dw MartNimbasa
@@ -60,25 +58,6 @@ MartHumilauDex:
 	db AWAKENING
 	db -1 ; end
 	
-MartLacunosa:
-	db 5 ; # items
-	db POTION
-	db ESCAPE_ROPE
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db -1 ; end
-	
-MartLacunosaDex:
-	db 6 ; # items
-	db POKE_BALL
-	db POTION
-	db ESCAPE_ROPE
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db -1 ; end
-	
 MartUndella:
 	db 6 ; # items
 	db POKE_BALL
@@ -90,13 +69,14 @@ MartUndella:
 	db -1 ; end
 
 MartLentimas:
-	db 7 ; # items
+	db 8 ; # items
 	db POKE_BALL
 	db POTION
 	db SUPER_POTION
 	db ESCAPE_ROPE
 	db REPEL
 	db ANTIDOTE
+	db AWAKENING
 	db PARLYZ_HEAL
 	db -1 ; end
 
@@ -111,7 +91,7 @@ MartNimbasa:
 	db AWAKENING
 	db BURN_HEAL
 	db ICE_HEAL
-	db REVIVE
+	db REPEL
 	db -1 ; end
 
 MartNimbasaVitamin:
@@ -143,14 +123,16 @@ MartR4NimbasaGate:
 	db -1 ; end
 
 MartCastelia:
-	db 7 ; # items
-	db POTION
+	db 9 ; # items
+	db GREAT_BALL
 	db SUPER_POTION
 	db ANTIDOTE
 	db PARLYZ_HEAL
 	db AWAKENING
 	db BURN_HEAL
 	db ICE_HEAL
+	db ESCAPE_ROPE
+	db REPEL
 	db -1 ; end
 
 MartCastelia2F1:
@@ -199,11 +181,11 @@ MartAspertia:
 	db 8 ; # items
 	db GREAT_BALL
 	db SUPER_POTION
-	db HYPER_POTION
 	db ANTIDOTE
 	db PARLYZ_HEAL
 	db AWAKENING
-	db ICE_HEAL
+	db BURN_HEAL
+	db REPEL
 	db SUPER_REPEL
 	db -1 ; end
 
@@ -211,23 +193,24 @@ MartFlocessy:
 	db 8 ; # items
 	db GREAT_BALL
 	db SUPER_POTION
-	db HYPER_POTION
 	db ANTIDOTE
 	db PARLYZ_HEAL
 	db AWAKENING
+	db BURN_HEAL
 	db ICE_HEAL
 	db SUPER_REPEL
 	db -1 ; end
 
 MartVirbank:
-	db 7 ; # items
+	db 8 ; # items
 	db GREAT_BALL
 	db SUPER_POTION
 	db HYPER_POTION
-	db REVIVE
 	db PARLYZ_HEAL
 	db AWAKENING
 	db BURN_HEAL
+	db ESCAPE_ROPE
+	db SUPER_REPEL
 	db -1 ; end
 
 MartNacrene:
@@ -237,20 +220,19 @@ MartNacrene:
 	db SUPER_POTION
 	db HYPER_POTION
 	db FULL_HEAL
-	db REVIVE
+	db ESCAPE_ROPE
 	db SUPER_REPEL
 	db -1 ; end
 	
 MartStriaton:
-	db 9 ; # items
+	db 8 ; # items
 	db GREAT_BALL
 	db ULTRA_BALL
 	db SUPER_POTION
 	db HYPER_POTION
-	db SUPER_REPEL
 	db FULL_HEAL
-	db X_DEFEND
-	db X_ATTACK
+	db SUPER_REPEL
+	db GUARD_SPEC
 	db DIRE_HIT
 	db -1 ; end
 
@@ -266,12 +248,13 @@ MartAccumula:
 	db -1 ; end
 
 MartDriftveil:
-	db 7 ; # items
-	db GREAT_BALL
+	db 8 ; # items
 	db ULTRA_BALL
 	db HYPER_POTION
-	db MAX_REPEL
+	db REVIVE
 	db FULL_HEAL
+	db SUPER_REPEL
+	db MAX_REPEL
 	db X_ATTACK
 	db X_DEFEND
 	db -1 ; end
@@ -291,9 +274,10 @@ MartMerchant2:
 	db -1 ; end
 
 MartMistralton:
-	db 6 ; # items
+	db 7 ; # items
 	db ULTRA_BALL
 	db HYPER_POTION
+	db REVIVE
 	db FULL_HEAL
 	db MAX_REPEL
 	db X_SPEED
@@ -301,11 +285,12 @@ MartMistralton:
 	db -1 ; end
 
 MartOpelucid:
-	db 7 ; # items
+	db 8 ; # items
 	db ULTRA_BALL
 	db HYPER_POTION
-	db MAX_REPEL
+	db REVIVE
 	db FULL_HEAL
+	db MAX_REPEL
 	db X_ATTACK
 	db X_SPECIAL
 	db X_SP_DEF
@@ -315,8 +300,8 @@ MartIcirrus:
 	db 7 ; # items
 	db ULTRA_BALL
 	db MAX_POTION
-	db FULL_HEAL
 	db REVIVE
+	db FULL_HEAL
 	db MAX_REPEL
 	db X_DEFEND
 	db X_SPEED
