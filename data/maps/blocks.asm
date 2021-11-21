@@ -78,6 +78,7 @@ OpelucidMart_Blocks:
 IcirrusMart_Blocks:
 	INCBIN "maps/Mart.ablk"
 	
+HumilauPokecenter1F_Blocks:
 LacunosaPokecenter1F_Blocks:
 UndellaPokecenter1F_Blocks:
 LentimasPokecenter1F_Blocks:
@@ -93,9 +94,6 @@ DriftveilPokecenter1F_Blocks:
 MistraltonPokecenter1F_Blocks:
 OpelucidPokecenter1F_Blocks:
 IcirrusPokecenter1F_Blocks:
-	INCBIN "maps/Pokecenter1F.ablk"
-	
-HumilauPokecenter1F_Blocks:
 	INCBIN "maps/PokecenterNew.ablk"
 
 Colosseum_Blocks:
