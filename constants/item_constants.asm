@@ -195,8 +195,8 @@
 	const SMOOTH_ROCK  ; bb
 	const ICY_ROCK     ; bc
 	const ROCKY_HELMET ; bd
-	const ITEM_BE      ; be
-	const ITEM_C3      ; bf
+	const MUSCLE_BAND  ; be
+	const WISE_GLASSES ; bf
 	const ITEM_DC      ; c1
 	const ITEM_FA      ; c2
 

@@ -189,8 +189,8 @@ ItemDescriptions:
 	dw SmoothRockDesc
 	dw IcyRockDesc
 	dw RockyHelmetDesc
-	dw TeruSama25Desc
-	dw TeruSama26Desc
+	dw MuscleBandDesc
+	dw WiseGlassesDesc
 	dw TeruSama26Desc
 	dw TeruSama26Desc
 	dw TeruSama26Desc
@@ -1005,8 +1005,13 @@ RockyHelmetDesc:
 	db   "Damages direct"
 	next "attackers. (HOLD)@"
 
-TeruSama25Desc:
-	db   "?@"
+MuscleBandDesc:
+	db   "Boosts PHYSICAL"
+	next "attacks. (HOLD)@"
+
+WiseGlassesDesc:
+	db   "Boosts SPECIAL"
+	next "attacks. (HOLD)@"
 
 TeruSama26Desc:
 	db   "?@"

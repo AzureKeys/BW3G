@@ -3142,6 +3142,9 @@ BattleCommand_DamageCalc:
 	
 	cp HELD_LIFE_ORB
 	jr z, .LifeOrb
+	
+	cp HELD_CATEGORY_BOOST
+	jr z, .CategoryBoost
 
 	ld hl, TypeBoostItems
 
@@ -3178,6 +3181,34 @@ BattleCommand_DamageCalc:
 
 .LifeOrb
 	ld a, 30
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+	
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	jr .DoneItem
+	
+.CategoryBoost
+	ld a, BATTLE_VARS_MOVE_TYPE
+	call GetBattleVar
+	cp SPECIAL
+	jr nc, .special
+; physical
+	ld a, [hl]
+	cp MUSCLE_BAND
+	jr z, .doCategoryBoost
+	jr .DoneItem
+	
+.special
+	ld a, [hl]
+	cp WISE_GLASSES
+	jr nz, .DoneItem
+
+.doCategoryBoost
+	ld a, 10
 	add 100
 	ldh [hMultiplier], a
 	call Multiply
@@ -3294,6 +3325,7 @@ BattleCommand_DamageCalc:
 
 INCLUDE "data/types/type_boost_items.asm"
 
+BattleCommand_Conversion2:
 BattleCommand_ConstantDamage:
 ; constantdamage
 
@@ -3462,7 +3494,7 @@ INCLUDE "engine/battle/move_effects/pain_split.asm"
 
 ;INCLUDE "engine/battle/move_effects/snore.asm"
 
-INCLUDE "engine/battle/move_effects/conversion2.asm"
+;INCLUDE "engine/battle/move_effects/conversion2.asm"
 
 INCLUDE "engine/battle/move_effects/lock_on.asm"
 

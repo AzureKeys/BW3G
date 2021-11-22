@@ -202,6 +202,8 @@ ItemEffects:
 	dw NoEffect            ; SMOOTH_ROCK
 	dw NoEffect            ; ICY_ROCK
 	dw NoEffect            ; ROCKY_HELMET
+	dw NoEffect            ; MUSCLE_BAND
+	dw NoEffect            ; WISE_GLASSES
 
 PokeBallEffect:
 	ld a, [wBattleMode]
