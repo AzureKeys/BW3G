@@ -273,7 +273,7 @@ ENDM
 	map_attributes PWTBattleRoom, PWT_BATTLE_ROOM, $00, 0
 	map_attributes PWTDriftveilGate, PWT_DRIFTVEIL_GATE, $00, 0
 	map_attributes DriftveilPokecenter1F, DRIFTVEIL_POKECENTER_1F, $00, 0
-	map_attributes DriftveilMart, DRIFTVEIL_MART, $00, 0
+	map_attributes DriftveilFossilHouse, DRIFTVEIL_FOSSIL_HOUSE, $00, 0
 	map_attributes DriftveilBridgeGate, DRIFTVEIL_BRIDGE_GATE, $00, 0
 	map_attributes DriftveilShelter, DRIFTVEIL_SHELTER, $00, 0
 	map_attributes DriftveilDrawbridge, DRIFTVEIL_DRAWBRIDGE, $12, 0

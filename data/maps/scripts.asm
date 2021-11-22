@@ -201,7 +201,7 @@ INCLUDE "maps/PWTBackRoom.asm"
 INCLUDE "maps/PWTBattleRoom.asm"
 INCLUDE "maps/DriftveilCity.asm"
 INCLUDE "maps/DriftveilPokecenter1F.asm"
-INCLUDE "maps/DriftveilMart.asm"
+INCLUDE "maps/DriftveilFossilHouse.asm"
 INCLUDE "maps/DriftveilBridgeGate.asm"
 INCLUDE "maps/DriftveilShelter.asm"
 INCLUDE "maps/DriftveilDrawbridge.asm"
@@ -243,6 +243,9 @@ INCLUDE "maps/MistraltonAirport.asm"
 INCLUDE "maps/VillageBridge.asm"
 INCLUDE "maps/OpelucidCity.asm"
 INCLUDE "maps/Rt11.asm"
+
+SECTION "Map Scripts 12", ROMX
+
 INCLUDE "maps/LentimasAirport.asm"
 INCLUDE "maps/PlaneRight.asm"
 INCLUDE "maps/PlaneLeft.asm"
@@ -251,9 +254,6 @@ INCLUDE "maps/R11OpelucidGate.asm"
 INCLUDE "maps/R9OpelucidGate.asm"
 INCLUDE "maps/OpelucidPokecenter1F.asm"
 INCLUDE "maps/OpelucidMart.asm"
-
-SECTION "Map Scripts 12", ROMX
-
 INCLUDE "maps/OpelucidSuperRodHouse.asm"
 INCLUDE "maps/SeasideCaveB2F.asm"
 INCLUDE "maps/SeasideCaveChamber.asm"

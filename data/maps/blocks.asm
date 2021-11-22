@@ -21,6 +21,7 @@ NacreneHouse_Blocks:
 AccumulaHouse_Blocks:
 AccumulaTradeHouse_Blocks:
 DriftveilHouse_Blocks:
+DriftveilFossilHouse_Blocks:
 DriftveilTradeHouse_Blocks:
 NuvemaMomHouse_Blocks:
 Rt18House_Blocks:
@@ -72,7 +73,6 @@ VirbankMart_Blocks:
 NacreneMart_Blocks:
 StriatonMart_Blocks:
 AccumulaMart_Blocks:
-DriftveilMart_Blocks:
 MistraltonMart_Blocks:
 OpelucidMart_Blocks:
 IcirrusMart_Blocks:

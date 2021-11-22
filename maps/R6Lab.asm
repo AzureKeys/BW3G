@@ -10,101 +10,179 @@ Rt6Lab_MapScripts:
 R6LabScientistFScript:
 	faceplayer
 	opentext
-	checkevent EVENT_R_6_DAWN_STONE
-	iftrue .done
-	writetext R6LabAskText
+	writetext R6LabAskRockText
+	waitbutton
+	loadmenu R6LabMenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .ChooseDamp
+	ifequal 2, .ChooseHeat
+	ifequal 3, .ChooseIcy
+	ifequal 4, .ChooseSmooth
+	jump NoRockSelectedScript
+	
+.ChooseDamp:
+	checkitem DAMP_ROCK
+	iffalse .dont_have
+	writetext R6LabAskDampText
 	yesorno
-	iffalse .donthave
-	writetext R6LabShowText
-	buttonsound
-	special BillsGrandfather
-	iffalse .donthave
-	ifequal TIRTOUGA, .correct
-	ifequal CARRACOSTA, .correct
-	ifequal ARCHEN, .correct
-	ifnotequal ARCHEOPS, .wrong
-.correct
-	writetext R6LabCorrectText
-	verbosegiveitem DAWN_STONE
-	iffalse .noroom
-	setevent EVENT_R_6_DAWN_STONE
-.done
+	iffalse NoRockSelectedScript
+	takeitem DAMP_ROCK
+	verbosegiveitem GREEN_SHARD, 5
 	writetext R6LabThanksText
 	waitbutton
-.noroom
 	closetext
 	end
 	
-.donthave
-	writetext R6LabDontHaveText
+.ChooseHeat:
+	checkitem HEAT_ROCK
+	iffalse .dont_have
+	writetext R6LabAskHeatText
+	yesorno
+	iffalse NoRockSelectedScript
+	takeitem HEAT_ROCK
+	verbosegiveitem RED_SHARD, 5
+	writetext R6LabThanksText
 	waitbutton
 	closetext
 	end
 	
-.wrong
-	writetext R6LabWrongText
+.ChooseIcy:
+	checkitem ICY_ROCK
+	iffalse .dont_have
+	writetext R6LabAskIcyText
+	yesorno
+	iffalse NoRockSelectedScript
+	takeitem ICY_ROCK
+	verbosegiveitem BLUE_SHARD, 5
+	writetext R6LabThanksText
 	waitbutton
 	closetext
 	end
+	
+.ChooseSmooth:
+	checkitem SMOOTH_ROCK
+	iffalse .dont_have
+	writetext R6LabAskSmoothText
+	yesorno
+	iffalse NoRockSelectedScript
+	takeitem SMOOTH_ROCK
+	verbosegiveitem YELLOW_SHARD, 5
+	writetext R6LabThanksText
+	waitbutton
+	closetext
+	end
+	
+.dont_have
+	writetext R6LabNoRockText
+	waitbutton
+	closetext
+	end
+	
+NoRockSelectedScript:
+	writetext R6LabDeclineText
+	waitbutton
+	closetext
+	end
+
+R6LabMenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 13, TEXTBOX_Y - 0
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 5 ; items
+	db "DAMP ROCK@"
+	db "HEAT ROCK@"
+	db "ICY ROCK@"
+	db "SMOOTH ROCK@"
+	db "CANCEL@"
 	
 R6LabScientistMScript:
 	jumptextfaceplayer R6LabScientistMText
 
 R6LabBookshelf:
 	jumpstd difficultbookshelf
-	
+
 R6LabBlackboard:
 	jumptext R6LabBlackboardText
 	
-R6LabAskText:
-	text "Hi, I'm doing"
-	line "research on"
-	cont "certain #MON."
+R6LabAskRockText:
+	text "I'm researching"
+	line "certain rocks that"
 	
-	para "Have you heard of"
-	line "#MON fossils?"
+	para "can affect the"
+	line "weather."
 	
-	para "There's a place"
-	line "where fossils can"
-	cont "be revived into"
-	cont "#MON!"
+	para "If you have one,"
+	line "would you mind"
+	cont "giving it to me?"
 	
-	para "If you have a"
-	line "#MON revived"
-	cont "from a fossil,"
-	cont "could I see it?"
+	para "I can trade you"
+	line "some shards in"
+	cont "return."
+	
+	para "Will you give me"
+	line "a rock?"
 	done
 	
-R6LabShowText:
-	text "Ok, could you"
-	line "please show it"
-	cont "to me?"
+R6LabAskDampText:
+	text "I see…"
+	line "Will you give me"
+	cont "that DAMP ROCK?"
+	
+	para "I'll give you 5"
+	line "GREEN SHARDS in"
+	cont "return."
 	done
 	
-R6LabCorrectText:
-	text "Ah yes, that's the"
-	line "#MON I was"
-	cont "looking for!"
+R6LabAskHeatText:
+	text "I see…"
+	line "Will you give me"
+	cont "that HEAT ROCK?"
 	
-	para "Thanks for your"
-	line "help! Here, take"
-	cont "this."
+	para "I'll give you 5"
+	line "RED SHARDS in"
+	cont "return."
+	done
+	
+R6LabAskIcyText:
+	text "I see…"
+	line "Will you give me"
+	cont "that ICY ROCK?"
+	
+	para "I'll give you 5"
+	line "BLUE SHARDS in"
+	cont "return."
+	done
+	
+R6LabAskSmoothText:
+	text "I see…"
+	line "Will you give me"
+	cont "that SMOOTH ROCK?"
+	
+	para "I'll give you 5"
+	line "YELLOW SHARDS in"
+	cont "return."
 	done
 	
 R6LabThanksText:
-	text "Thank you for your"
-	line "help with our"
-	cont "studies!"
+	text "Thanks, this will"
+	line "help me further"
+	cont "my research."
 	done
 	
-R6LabDontHaveText:
-	text "Ah, so you don't"
-	line "have one then."
+R6LabNoRockText:
+	text "Wait a minute,"
+	line "you don't have"
+	cont "that rock!"
 	done
 	
-R6LabWrongText:
-	text "Sorry, that's the"
-	line "wrong #MON."
+R6LabDeclineText:
+	text "Ah, that's too"
+	line "bad…"
 	done
 	
 R6LabScientistMText:

@@ -318,7 +318,7 @@ DriftveilCity_MapEvents:
 	db 13 ; warp events
 	warp_event 11, 35, PWT_DRIFTVEIL_GATE, 1
 	warp_event 12, 35, PWT_DRIFTVEIL_GATE, 2
-	warp_event 27, 17, DRIFTVEIL_MART, 1
+	warp_event 27, 17, DRIFTVEIL_FOSSIL_HOUSE, 1
 	warp_event 19, 17, DRIFTVEIL_POKECENTER_1F, 1
 	warp_event 45, 28, DRIFTVEIL_BRIDGE_GATE, 1
 	warp_event 45, 29, DRIFTVEIL_BRIDGE_GATE, 2
