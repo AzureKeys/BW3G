@@ -63,8 +63,8 @@ MarineTubeEntrance_MapEvents:
 	warp_event  4,  9, UNDELLA_TOWN, 4
 	warp_event  5,  9, UNDELLA_TOWN, 4
 	warp_event  5,  5, MARINE_TUBE, 1
-	warp_event 20,  9, HUMILAU_CITY, 6
-	warp_event 21,  9, HUMILAU_CITY, 6
+	warp_event 20,  9, HUMILAU_CITY, 5
+	warp_event 21,  9, HUMILAU_CITY, 5
 	warp_event 21,  5, MARINE_TUBE, 2
 
 	db 0 ; coord events

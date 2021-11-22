@@ -266,13 +266,11 @@ HumilauMarineTubeSignText:
 HumilauCity_MapEvents:
 	db 0, 0 ; filler
 
-	db 8 ; warp events
+	db 7 ; warp events
 	warp_event  9,  7, PLAYERS_HOUSE_1F, 1
-	warp_event 23,  3, HUMILAU_MART, 1
+	warp_event 23,  3, PLAYERS_NEIGHBORS_HOUSE, 1
 	warp_event  3, 27, HUMILAU_POKECENTER_1F, 1
 	warp_event  9, 15, MARLONS_HOUSE, 1
-	;warp_event  3,  3, R_2, 1
-	warp_event  3,  3, PLAYERS_NEIGHBORS_HOUSE, 1
 	warp_event 17, 29, MARINE_TUBE_ENTRANCE, 4
 	warp_event  8, 23, HUMILAU_GYM, 1
 	warp_event  3, 13, HUMILAU_TRADE_HOUSE, 1

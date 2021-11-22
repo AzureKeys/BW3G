@@ -135,9 +135,8 @@ LacunosaTownSignText:
 LacunosaTown_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 3 ; warp events
 	warp_event  9, 15, LACUNOSA_POKECENTER_1F, 1
-	warp_event  5,  3, LACUNOSA_MART, 1
 	warp_event 13,  3, LACUNOSA_HOUSE, 1
 	warp_event  3, 15, LACUNOSA_HOUSE_2, 1
 

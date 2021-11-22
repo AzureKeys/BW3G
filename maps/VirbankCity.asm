@@ -328,7 +328,7 @@ VirbankCity_MapEvents:
 	warp_event  8, 25, GAME_CORNER, 1
 	warp_event  4, 12, R_20_VIRBANK_GATE, 3
 	warp_event  4, 13, R_20_VIRBANK_GATE, 4
-	warp_event 27,  9, VIRBANK_MART, 1
+	warp_event 32,  9, VIRBANK_MART, 1
 	warp_event 26, 25, VIRBANK_GYM, 1
 	warp_event 38, 25, VIRBANK_PORT, 1
 	warp_event 14, 27, VIRBANK_COMPLEX_OUTSIDE, 2
