@@ -191,7 +191,7 @@ ItemDescriptions:
 	dw RockyHelmetDesc
 	dw MuscleBandDesc
 	dw WiseGlassesDesc
-	dw TeruSama26Desc
+	dw ExpertBeltDesc
 	dw TeruSama26Desc
 	dw TeruSama26Desc
 	dw TeruSama26Desc
@@ -1012,6 +1012,10 @@ MuscleBandDesc:
 WiseGlassesDesc:
 	db   "Boosts SPECIAL"
 	next "attacks. (HOLD)@"
+
+ExpertBeltDesc:
+	db   "Super-effective"
+	next "moves up. (HOLD)@"
 
 TeruSama26Desc:
 	db   "?@"

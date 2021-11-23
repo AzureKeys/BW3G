@@ -3138,20 +3138,23 @@ BattleCommand_DamageCalc:
 
 	ld a, b
 	and a
-	jr z, .DoneItem
+	jp z, .DoneItem
 	
 	cp HELD_LIFE_ORB
 	jr z, .LifeOrb
 	
 	cp HELD_CATEGORY_BOOST
 	jr z, .CategoryBoost
+	
+	cp HELD_EXPERT_BELT
+	jr z, .ExpertBelt
 
 	ld hl, TypeBoostItems
 
 .NextItem:
 	ld a, [hli]
 	cp -1
-	jr z, .DoneItem
+	jp z, .DoneItem
 
 ; Item effect
 	cp b
@@ -3209,6 +3212,28 @@ BattleCommand_DamageCalc:
 
 .doCategoryBoost
 	ld a, 10
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+	
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	jr .DoneItem
+	
+.ExpertBelt
+	; call BattleCheckTypeMatchup
+	; ld a, [wTypeMatchup]
+	; and $7f
+	; cp 11 ; 10 = normal effectiveness
+	; ld a, 10
+	; ld [wTypeMatchup], a
+	; jr c, .DoneItem
+	jr .DoneItem
+	ld hl, BattleText_UserLostSomeOfItsHP
+	call StdBattleTextBox
+	ld a, 20
 	add 100
 	ldh [hMultiplier], a
 	call Multiply

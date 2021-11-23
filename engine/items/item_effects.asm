@@ -204,6 +204,7 @@ ItemEffects:
 	dw NoEffect            ; ROCKY_HELMET
 	dw NoEffect            ; MUSCLE_BAND
 	dw NoEffect            ; WISE_GLASSES
+	dw NoEffect            ; EXPERT_BELT
 
 PokeBallEffect:
 	ld a, [wBattleMode]

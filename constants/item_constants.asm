@@ -197,7 +197,7 @@
 	const ROCKY_HELMET ; bd
 	const MUSCLE_BAND  ; be
 	const WISE_GLASSES ; bf
-	const ITEM_DC      ; c1
+	const EXPERT_BELT  ; c1
 	const ITEM_FA      ; c2
 
 add_tm: MACRO

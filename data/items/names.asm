@@ -190,7 +190,7 @@ ItemNames::
 	db "ROCKY HELMET@"
 	db "MUSCLE BAND@"
 	db "WISE GLASSES@"
-	db "TERU-SAMA@"
+	db "EXPERT BELT@"
 	db "TERU-SAMA@"
 	db "TM01@"
 	db "TM02@"
