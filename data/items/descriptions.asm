@@ -59,16 +59,16 @@ ItemDescriptions:
 	dw ExpShareDesc
 	dw OldRodDesc
 	dw GoodRodDesc
-	dw SilverLeafDesc
+	dw DiveBallDesc
 	dw SuperRodDesc
 	dw PPUpDesc
 	dw EtherDesc
 	dw MaxEtherDesc
 	dw ElixerDesc
-	dw RedScaleDesc
-	dw SecretPotionDesc
+	dw TimerBallDesc
+	dw QuickBallDesc
 	dw SSTicketDesc
-	dw MysteryEggDesc
+	dw RepeatBallDesc
 	dw ClearBellDesc
 	dw SilverWingDesc
 	dw MoomooMilkDesc
@@ -491,9 +491,9 @@ GoodRodDesc:
 	db   "A good ROD for"
 	next "catching #MON.@"
 
-SilverLeafDesc:
-	db   "A strange, silver-"
-	next "colored leaf.@"
+DiveBallDesc:
+	db   "A ball for use on"
+	next "the water.@"
 
 SuperRodDesc:
 	db   "The best ROD for"
@@ -515,21 +515,21 @@ ElixerDesc:
 	db   "Restores PP of all"
 	next "moves by 10.@"
 
-RedScaleDesc:
-	db   "A scale from the"
-	next "red GYARADOS.@"
+TimerBallDesc:
+	db   "Works well after"
+	next "many turns.@"
 
-SecretPotionDesc:
-	db   "Fully heals any"
-	next "#MON.@"
+QuickBallDesc:
+	db   "Works well early"
+	next "in the battle.@"
 
 SSTicketDesc:
 	db   "A ticket for the"
 	next "FERRY.@"
 
-MysteryEggDesc:
-	db   "An EGG obtained"
-	next "from MR.#MON.@"
+RepeatBallDesc:
+	db   "Catches duplicate"
+	next "#MON easier.@"
 
 ClearBellDesc:
 	db   "Makes a gentle"

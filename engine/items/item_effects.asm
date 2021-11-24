@@ -72,16 +72,16 @@ ItemEffects:
 	dw NoEffect            ; EXP_SHARE
 	dw OldRodEffect        ; OLD_ROD
 	dw GoodRodEffect       ; GOOD_ROD
-	dw NoEffect            ; SILVER_LEAF
+	dw PokeBallEffect      ; DIVE_BALL
 	dw SuperRodEffect      ; SUPER_ROD
 	dw RestorePPEffect     ; PP_UP
 	dw RestorePPEffect     ; ETHER
 	dw RestorePPEffect     ; MAX_ETHER
 	dw RestorePPEffect     ; ELIXER
-	dw NoEffect            ; RED_SCALE
-	dw NoEffect            ; SECRETPOTION
+	dw PokeBallEffect      ; TIMER_BALL
+	dw PokeBallEffect      ; QUICK_BALL
 	dw NoEffect            ; S_S_TICKET
-	dw NoEffect            ; MYSTERY_EGG
+	dw PokeBallEffect      ; REPEAT_BALL
 	dw NoEffect            ; CLEAR_BELL
 	dw NoEffect            ; SILVER_WING
 	dw RestoreHPEffect     ; MOOMOO_MILK
@@ -743,7 +743,94 @@ BallMultiplierFunctionTable:
 	dbw PARK_BALL,   ParkBallMultiplier
 	dbw DUSK_BALL,   DuskBallMultiplier
 	dbw NET_BALL,    NetBallMultiplier
+	dbw DIVE_BALL,   DiveBallMultiplier
+	dbw QUICK_BALL,  QuickBallMultiplier
+	dbw TIMER_BALL,  TimerBallMultiplier
+	dbw REPEAT_BALL, RepeatBallMultiplier
 	db -1 ; end
+	
+TimerBallMultiplier:
+; multiply catch rate by 1 + (turns passed * 3) / 10, capped at 4
+	ld a, [wPlayerTurnsTaken]
+	and a
+	ret z ; no boost on first turn
+	
+	push bc
+	ld b, a
+	add b
+	add b
+	add 10
+	cp 40
+	jr c, .no_cap
+	ld a, 40
+.no_cap
+	pop bc
+	ld c, b
+	call SimpleMultiply
+	ld c, 10
+	call SimpleDivide
+	ret
+
+QuickBallMultiplier:
+; multiply catch rate by 5 on first turn
+	ld a, [wPlayerTurnsTaken]
+	and a
+	ret nz
+	
+	ld a, b
+rept 4
+	add b
+	jr c, .max
+endr
+	ret
+	
+.max
+	ld b, $ff
+	ret
+
+RepeatBallMultiplier:
+; multiply catch rate by 3.5 if mon is already in Pokedex
+	ld a, [wTempEnemyMonSpecies]
+	dec a
+	push bc
+	call CheckCaughtMon
+	pop bc
+	ret z
+	
+	ld a, b
+	srl a
+rept 3
+	add b
+	jr c, .max
+endr
+	ret
+	
+.max
+	ld b, $ff
+	ret
+
+DiveBallMultiplier:
+; multiply catch rate by 3.5 if in a surfing or fishing encounter
+	ld a, [wPlayerState]
+	cp PLAYER_SURF
+	jr z, .water
+	
+	ld a, [wBattleType]
+	cp BATTLETYPE_FISH
+	ret nz
+	
+.water
+	ld a, b
+	srl a
+rept 3
+	add b
+	jr c, .max
+endr
+	ret
+	
+.max
+	ld b, $ff
+	ret
 
 NetBallMultiplier:
 ; multiply catch rate by 3 if mon is water or bug type
@@ -768,6 +855,7 @@ NetBallMultiplier:
 	
 .max
 	ld b, $ff
+	ret
 .done
 	ld b, a
 	ret
@@ -941,21 +1029,20 @@ endr
 	db HIGH(65280), 40
 
 LureBallMultiplier:
-; multiply catch rate by 3 if this is a fishing rod battle
+; multiply catch rate by 5 if this is a fishing rod battle
 	ld a, [wBattleType]
 	cp BATTLETYPE_FISH
 	ret nz
-
+	
 	ld a, b
-	add a
-	jr c, .max
-
+rept 4
 	add b
-	jr nc, .done
+	jr c, .max
+endr
+	ret
+	
 .max
-	ld a, $ff
-.done
-	ld b, a
+	ld b, $ff
 	ret
 
 MoonBallMultiplier:
@@ -1050,7 +1137,7 @@ LoveBallMultiplier:
 	pop de
 	cp d
 	pop bc
-	ret nz ; for the intended effect, this should be "ret z"
+	ret z ; for the intended effect, this should be "ret z"
 
 	sla b
 	jr c, .max

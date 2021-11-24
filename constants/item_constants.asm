@@ -65,16 +65,16 @@
 	const EXP_SHARE    ; 39
 	const OLD_ROD      ; 3a
 	const GOOD_ROD     ; 3b
-	const SILVER_LEAF  ; 3c
+	const DIVE_BALL    ; 3c
 	const SUPER_ROD    ; 3d
 	const PP_UP        ; 3e
 	const ETHER        ; 3f
 	const MAX_ETHER    ; 40
 	const ELIXER       ; 41
-	const RED_SCALE    ; 42
-	const SECRETPOTION ; 43
+	const TIMER_BALL   ; 42
+	const QUICK_BALL   ; 43
 	const S_S_TICKET   ; 44
-	const MYSTERY_EGG  ; 45
+	const REPEAT_BALL  ; 45
 	const CLEAR_BELL   ; 46
 	const SILVER_WING  ; 47
 	const MOOMOO_MILK  ; 48
