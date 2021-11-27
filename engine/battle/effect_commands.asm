@@ -1393,6 +1393,52 @@ BattleCommand_Stab:
 	and %10000000
 	or b
 	ld [wTypeModifier], a
+	
+; Check for Expert Belt
+	call GetUserItem
+
+	ld a, b
+	and a
+	ret z
+	
+	cp HELD_EXPERT_BELT
+	ret nz
+	
+	ld a, [wTypeMatchup]
+	and $7f
+	cp 11 ; 10 = normal effectiveness
+	ret c
+	
+; Don't multiply if damage is zero	
+	ld hl, wCurDamage + 1
+	ld a, [hl]
+	and a
+	ret z
+	
+; load Current Damage into Multiplicand
+	xor a
+	ldh [hMultiplicand + 0], a
+	dec hl
+	ld a, [hli]
+	ldh [hMultiplicand + 1], a
+	ld a, [hl]
+	ldh [hMultiplicand + 2], a
+; Multiply by 120
+	ld a, 20
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+; Divide by 100
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+; load hQuotient back into wCurDamage
+	ldh a, [hQuotient + 2]
+	ld hl, wCurDamage
+	ld [hli], a
+	ldh a, [hQuotient + 3]
+	ld [hl], a
 	ret
 
 BattleCheckTypeMatchup:
@@ -3145,9 +3191,6 @@ BattleCommand_DamageCalc:
 	
 	cp HELD_CATEGORY_BOOST
 	jr z, .CategoryBoost
-	
-	cp HELD_EXPERT_BELT
-	jr z, .ExpertBelt
 
 	ld hl, TypeBoostItems
 
@@ -3212,28 +3255,6 @@ BattleCommand_DamageCalc:
 
 .doCategoryBoost
 	ld a, 10
-	add 100
-	ldh [hMultiplier], a
-	call Multiply
-	
-	ld a, 100
-	ldh [hDivisor], a
-	ld b, 4
-	call Divide
-	jr .DoneItem
-	
-.ExpertBelt
-	; call BattleCheckTypeMatchup
-	; ld a, [wTypeMatchup]
-	; and $7f
-	; cp 11 ; 10 = normal effectiveness
-	; ld a, 10
-	; ld [wTypeMatchup], a
-	; jr c, .DoneItem
-	jr .DoneItem
-	ld hl, BattleText_UserLostSomeOfItsHP
-	call StdBattleTextBox
-	ld a, 20
 	add 100
 	ldh [hMultiplier], a
 	call Multiply
