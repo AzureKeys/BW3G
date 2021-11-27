@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke HYDREIGON, 50, EXPERT_BELT
+	; givepoke HYDREIGON, 10, LIGHT_CLAY
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
@@ -144,7 +144,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, OPELUCID_GYM, 1
+	;warp_event  7,  0, R_22, 1
 
 	db 0 ; coord events
 

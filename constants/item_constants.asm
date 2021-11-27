@@ -61,7 +61,7 @@
 	const X_SPECIAL    ; 35
 	const COIN_CASE    ; 36
 	const ITEMFINDER   ; 37
-	const POKE_FLUTE   ; 38
+	const LIGHT_CLAY   ; 38
 	const EXP_SHARE    ; 39
 	const OLD_ROD      ; 3a
 	const GOOD_ROD     ; 3b

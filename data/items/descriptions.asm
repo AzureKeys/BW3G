@@ -55,7 +55,7 @@ ItemDescriptions:
 	dw XSpecialDesc
 	dw CoinCaseDesc
 	dw ItemfinderDesc
-	dw TeruSama5Desc
+	dw LightClayDesc
 	dw ExpShareDesc
 	dw OldRodDesc
 	dw GoodRodDesc
@@ -476,8 +476,9 @@ ItemfinderDesc:
 	db   "Checks for unseen"
 	next "items in the area.@"
 
-TeruSama5Desc:
-	db   "?@"
+LightClayDesc:
+	db   "Extends screens'"
+	next "duration. (HOLD)@"
 
 ExpShareDesc:
 	db   "Shares battle EXP."

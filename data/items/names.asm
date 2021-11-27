@@ -54,7 +54,7 @@ ItemNames::
 	db "X SPECIAL@"
 	db "COIN CASE@"
 	db "ITEMFINDER@"
-	db "TERU-SAMA@"
+	db "LIGHT CLAY@"
 	db "EXP.SHARE@"
 	db "OLD ROD@"
 	db "GOOD ROD@"

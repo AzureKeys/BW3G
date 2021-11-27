@@ -4776,7 +4776,6 @@ HydreigonEvosAttacks:
 	db 63, TRI_ATTACK
 	db 64, HYPER_VOICE
 	db 79, OUTRAGE
-	; db 100, HAIL
 	; db 100, SURF
 	; db 100, STRENGTH
 	; db 100, CUT
