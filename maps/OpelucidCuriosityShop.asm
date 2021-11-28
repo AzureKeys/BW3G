@@ -27,7 +27,7 @@ CuriosityShopManScript:
 	iffalse .no_sale
 	checkmoney YOUR_MONEY, 10000
 	ifequal HAVE_LESS, .no_money
-	giveitem MOOMOO_MILK
+	giveitem SPELL_TAG
 	iffalse .no_room
 	jump .sale
 .Monday
@@ -39,7 +39,7 @@ CuriosityShopManScript:
 	iffalse .no_sale
 	checkmoney YOUR_MONEY, 10000
 	ifequal HAVE_LESS, .no_money
-	giveitem MOOMOO_MILK
+	giveitem SILVERPOWDER
 	iffalse .no_room
 	jump .sale
 .Tuesday
@@ -51,7 +51,7 @@ CuriosityShopManScript:
 	iffalse .no_sale
 	checkmoney YOUR_MONEY, 10000
 	ifequal HAVE_LESS, .no_money
-	giveitem MOOMOO_MILK
+	giveitem MAGNET
 	iffalse .no_room
 	jump .sale
 .Wednesday
@@ -63,7 +63,7 @@ CuriosityShopManScript:
 	iffalse .no_sale
 	checkmoney YOUR_MONEY, 10000
 	ifequal HAVE_LESS, .no_money
-	giveitem MOOMOO_MILK
+	giveitem SOFT_SAND
 	iffalse .no_room
 	jump .sale
 .Thursday
@@ -75,7 +75,7 @@ CuriosityShopManScript:
 	iffalse .no_sale
 	checkmoney YOUR_MONEY, 10000
 	ifequal HAVE_LESS, .no_money
-	giveitem MOOMOO_MILK
+	giveitem POISON_BARB
 	iffalse .no_room
 	jump .sale
 .Friday
@@ -87,7 +87,7 @@ CuriosityShopManScript:
 	iffalse .no_sale
 	checkmoney YOUR_MONEY, 10000
 	ifequal HAVE_LESS, .no_money
-	giveitem MOOMOO_MILK
+	giveitem SHARP_BEAK
 	iffalse .no_room
 	jump .sale
 .Saturday
@@ -99,7 +99,7 @@ CuriosityShopManScript:
 	iffalse .no_sale
 	checkmoney YOUR_MONEY, 10000
 	ifequal HAVE_LESS, .no_money
-	giveitem MOOMOO_MILK
+	giveitem TWISTEDSPOON
 	iffalse .no_room
 ; fallthrough	
 .sale
@@ -192,8 +192,8 @@ CuriosityShopSaturdayText:
 	text "Let's see…"
 	line "Today's bargain is"
 	
-	para "this incredibly"
-	line "HARD STONE."
+	para "this strangely"
+	line "TWISTED SPOON."
 	done
 
 CuriosityShopThanksText:

@@ -246,7 +246,7 @@ CELEBIEVENT_FOREST_IS_RESTLESS_F EQU 2
 	const DAILYFLAGS1_ALL_FRUIT_TREES_F               ; 4
 	const DAILYFLAGS1_GOT_SHUCKIE_TODAY_F             ; 5
 	const DAILYFLAGS1_GOLDENROD_UNDERGROUND_BARGAIN_F ; 6
-	const DAILYFLAGS1_TRAINER_HOUSE_F                 ; 7
+	const DAILYFLAGS1_ROCK_COLLECTOR_F                ; 7
 
 ; wDailyFlags2:: ; dc1f
 	const_def
