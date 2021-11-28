@@ -70,7 +70,7 @@ ItemDescriptions:
 	dw SSTicketDesc
 	dw RepeatBallDesc
 	dw WideLensDesc
-	dw SilverWingDesc
+	dw ZoomLensDesc
 	dw MoomooMilkDesc
 	dw QuickClawDesc
 	dw PsnCureBerryDesc
@@ -534,11 +534,11 @@ RepeatBallDesc:
 
 WideLensDesc:
 	db   "Increases user's"
-	next "accuracy. (HOLD).@"
+	next "accuracy. (HOLD)@"
 
-SilverWingDesc:
-	db   "A strange, silver-"
-	next "colored feather.@"
+ZoomLensDesc:
+	db   "Boosts accuracy if"
+	next "going 2nd. (HOLD)@"
 
 MoomooMilkDesc:
 	db   "Restores #MON"

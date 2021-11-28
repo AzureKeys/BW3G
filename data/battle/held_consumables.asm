@@ -19,7 +19,5 @@ ConsumableEffects:
 	db HELD_ACCURACY_UP
 	db HELD_EVASION_UP
 	db HELD_38
-	db HELD_71
 	db HELD_ESCAPE
-	db HELD_CRITICAL_UP
 	db -1

@@ -1651,7 +1651,12 @@ BattleCommand_CheckHit:
 	call GetUserItem
 	ld a, b
 	cp HELD_ACCURACY_BOOST
+	jr z, .boost_item
+	cp HELD_ZOOM_LENS
 	jr nz, .check_brightpowder
+	call CheckOpponentWentFirst
+	jr z, .check_brightpowder
+.boost_item
 	ld a, c ; % miss
 	add 100
 	ldh [hMultiplier], a

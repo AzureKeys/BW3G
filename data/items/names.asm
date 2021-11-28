@@ -69,7 +69,7 @@ ItemNames::
 	db "FERRY TICKET@"
 	db "REPEAT BALL@"
 	db "WIDE LENS@"
-	db "SILVER WING@"
+	db "ZOOM LENS@"
 	db "MOOMOO MILK@"
 	db "QUICK CLAW@"
 	db "PECHA BERRY@"

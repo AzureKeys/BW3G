@@ -76,7 +76,7 @@
 	const S_S_TICKET   ; 44
 	const REPEAT_BALL  ; 45
 	const WIDE_LENS    ; 46
-	const SILVER_WING  ; 47
+	const ZOOM_LENS    ; 47
 	const MOOMOO_MILK  ; 48
 	const QUICK_CLAW   ; 49
 	const PSNCUREBERRY ; 4a

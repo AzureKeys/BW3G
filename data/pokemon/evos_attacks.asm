@@ -4763,7 +4763,6 @@ HydreigonEvosAttacks:
 	db 1, DRAGON_RAGE
 	db 4, FOCUS_ENERGY
 	db 9, BITE
-	db 10, FOCUS_BLAST
 	db 12, HEADBUTT
 	db 17, DRAGONBREATH
 	db 20, ROAR

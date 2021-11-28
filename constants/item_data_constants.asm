@@ -124,7 +124,7 @@ MAIL_STRUCT_LENGTH EQU $2f ; mailmsg struct
 
 	const_def 70
 	const HELD_CATCH_CHANCE
-	const HELD_71
+	const HELD_ZOOM_LENS
 	const HELD_ESCAPE
 	const HELD_CRITICAL_UP
 	const HELD_QUICK_CLAW

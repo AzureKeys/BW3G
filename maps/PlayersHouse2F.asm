@@ -51,19 +51,19 @@ PlayersHousePosterScript:
 	describedecoration DECODESC_POSTER
 
 PlayersHouseRadioScript:
-	opentext
-	givepoke HYDREIGON, 10, WIDE_LENS
-	closetext
-	setflag ENGINE_ZEPHYRBADGE
-	setflag ENGINE_HIVEBADGE
-	setflag ENGINE_PLAINBADGE
-	setflag ENGINE_FOGBADGE
-	setflag ENGINE_STORMBADGE
-	setflag ENGINE_MINERALBADGE
-	setflag ENGINE_GLACIERBADGE
-	setflag ENGINE_RISINGBADGE
-	setflag ENGINE_FLYPOINT_LACUNOSA
-	end
+	; opentext
+	; givepoke HYDREIGON, 10, WIDE_LENS
+	; closetext
+	; setflag ENGINE_ZEPHYRBADGE
+	; setflag ENGINE_HIVEBADGE
+	; setflag ENGINE_PLAINBADGE
+	; setflag ENGINE_FOGBADGE
+	; setflag ENGINE_STORMBADGE
+	; setflag ENGINE_MINERALBADGE
+	; setflag ENGINE_GLACIERBADGE
+	; setflag ENGINE_RISINGBADGE
+	; setflag ENGINE_FLYPOINT_LACUNOSA
+	; end
 	
 	; opentext
 	; givepoke CRYOGONAL, 5, RAZOR_CLAW
@@ -143,8 +143,8 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	db 1 ; warp events
-	;warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	warp_event  7,  0, R_22, 1
+	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+	;warp_event  7,  0, R_22, 1
 
 	db 0 ; coord events
 

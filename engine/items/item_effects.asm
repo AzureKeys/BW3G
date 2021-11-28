@@ -83,7 +83,7 @@ ItemEffects:
 	dw NoEffect            ; S_S_TICKET
 	dw PokeBallEffect      ; REPEAT_BALL
 	dw NoEffect            ; WIDE_LENS
-	dw NoEffect            ; SILVER_WING
+	dw NoEffect            ; ZOOM_LENS
 	dw RestoreHPEffect     ; MOOMOO_MILK
 	dw NoEffect            ; QUICK_CLAW
 	dw StatusHealingEffect ; PSNCUREBERRY
