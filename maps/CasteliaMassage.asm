@@ -8,7 +8,7 @@ CasteliaMassage_MapScripts:
 
 CasteliaMassageClerkScript:
 	opentext
-	checkflag ENGINE_GOLDENROD_UNDERGROUND_GOT_HAIRCUT
+	checkflag ENGINE_CASTELIA_MASSAGE
 	iftrue .AlreadyGotHaircut
 	special PlaceMoneyTopRight
 	writetext MassageAskText
@@ -21,7 +21,7 @@ CasteliaMassageClerkScript:
 	special YoungerHaircutBrother
 	ifequal $0, .Refused
 	ifequal $1, .Refused
-	setflag ENGINE_GOLDENROD_UNDERGROUND_GOT_HAIRCUT
+	setflag ENGINE_CASTELIA_MASSAGE
 	ifequal $2, .two
 	ifequal $3, .three
 	jump .else

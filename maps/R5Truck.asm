@@ -9,7 +9,7 @@ Rt5Truck_MapScripts:
 Rt5TruckBerryManScript:
 	faceplayer
 	opentext
-	checkflag ENGINE_DAISYS_GROOMING
+	checkflag ENGINE_BERRY_MAN
 	iftrue .AlreadyGotBerry
 	writetext Rt5TruckGiveBerryText
 	buttonsound
@@ -41,7 +41,7 @@ Rt5TruckBerryManScript:
 .Saturday
 	verbosegiveitem MYSTERYBERRY
 .GotBerry
-	setflag ENGINE_DAISYS_GROOMING
+	setflag ENGINE_BERRY_MAN
 .AlreadyGotBerry
 	writetext Rt5TruckComeBackText
 	waitbutton
