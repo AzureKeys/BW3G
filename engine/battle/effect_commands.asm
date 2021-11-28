@@ -1638,37 +1638,56 @@ BattleCommand_CheckHit:
 	ld b, a
 	ldh a, [hBattleTurn]
 	and a
-	jr z, .BrightPowder
+	jr z, .CheckItems
 	ld a, [wEnemyMoveStruct + MOVE_ACC]
 	ld b, a
 
-.BrightPowder:
-	push bc
+.CheckItems:
+	xor a
+	ldh [hMultiplicand + 0], a
+	ldh [hMultiplicand + 1], a
+	ld a, b
+	ldh [hMultiplicand + 2], a
+	call GetUserItem
+	ld a, b
+	cp HELD_ACCURACY_BOOST
+	jr nz, .check_brightpowder
+	ld a, c ; % miss
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	
+.check_brightpowder
 	call GetOpponentItem
 	ld a, b
 	cp HELD_BRIGHTPOWDER
-	ld a, c ; % miss
-	pop bc
 	jr nz, .skip_brightpowder
-
-	ld c, a
-	ld a, b
-	sub c
-	ld b, a
-	jr nc, .skip_brightpowder
-	ld b, 0
+	ld a, 100
+	ldh [hMultiplier], a
+	call Multiply
+	ld a, c ; % miss
+	add 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
 
 .skip_brightpowder
-	ld a, b
+	ldh a, [hMultiplicand + 0]
+	ld b, a
+	ldh a, [hMultiplicand + 1]
+	or b
+	ret nz ; If either upper byte of result has data, then we are over 100%
+	ldh a, [hMultiplicand + 2]
 	cp -1
-	jr z, .Hit
-
+	ret z ; $ff = 100%
+	ld b, a
 	call BattleRandom
 	cp b
-	jr nc, .Miss
-
-.Hit:
-	ret
+	ret c ; 
 
 .Miss:
 ; Keep the damage value intact if we're using (Hi) Jump Kick.
@@ -2533,30 +2552,6 @@ BattleCommand_BuildOpponentRage:
 	
 BattleCommand_RageDamage:
 ; ragedamage
-
-	ld a, [wCurDamage]
-	ld h, a
-	ld b, a
-	ld a, [wCurDamage + 1]
-	ld l, a
-	ld c, a
-	ldh a, [hBattleTurn]
-	and a
-	ld a, [wPlayerRageCounter]
-	jr z, .rage_loop
-	ld a, [wEnemyRageCounter]
-.rage_loop
-	and a
-	jr z, .done
-	dec a
-	add hl, bc
-	jr nc, .rage_loop
-	ld hl, $ffff
-.done
-	ld a, h
-	ld [wCurDamage], a
-	ld a, l
-	ld [wCurDamage + 1], a
 	ret
 
 EndMoveEffect:

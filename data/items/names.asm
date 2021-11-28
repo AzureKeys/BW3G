@@ -68,7 +68,7 @@ ItemNames::
 	db "QUICK BALL@"
 	db "FERRY TICKET@"
 	db "REPEAT BALL@"
-	db "CLEAR BELL@"
+	db "WIDE LENS@"
 	db "SILVER WING@"
 	db "MOOMOO MILK@"
 	db "QUICK CLAW@"

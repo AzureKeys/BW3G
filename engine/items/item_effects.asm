@@ -82,7 +82,7 @@ ItemEffects:
 	dw PokeBallEffect      ; QUICK_BALL
 	dw NoEffect            ; S_S_TICKET
 	dw PokeBallEffect      ; REPEAT_BALL
-	dw NoEffect            ; CLEAR_BELL
+	dw NoEffect            ; WIDE_LENS
 	dw NoEffect            ; SILVER_WING
 	dw RestoreHPEffect     ; MOOMOO_MILK
 	dw NoEffect            ; QUICK_CLAW

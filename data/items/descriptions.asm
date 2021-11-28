@@ -69,7 +69,7 @@ ItemDescriptions:
 	dw QuickBallDesc
 	dw SSTicketDesc
 	dw RepeatBallDesc
-	dw ClearBellDesc
+	dw WideLensDesc
 	dw SilverWingDesc
 	dw MoomooMilkDesc
 	dw QuickClawDesc
@@ -532,9 +532,9 @@ RepeatBallDesc:
 	db   "Catches duplicate"
 	next "#MON easier.@"
 
-ClearBellDesc:
-	db   "Makes a gentle"
-	next "ringing.@"
+WideLensDesc:
+	db   "Increases user's"
+	next "accuracy. (HOLD).@"
 
 SilverWingDesc:
 	db   "A strange, silver-"
