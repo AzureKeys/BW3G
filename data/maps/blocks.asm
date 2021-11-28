@@ -18,6 +18,7 @@ FloccesyTownHouse_Blocks:
 FloccesyRanchHouse_Blocks:
 VirbankHouse_Blocks:
 NacreneHouse_Blocks:
+StriatonTradeHouse_Blocks:
 AccumulaHouse_Blocks:
 AccumulaTradeHouse_Blocks:
 DriftveilHouse_Blocks:
@@ -71,7 +72,6 @@ NimbasaBallMart_Blocks:
 AspertiaMart_Blocks:
 VirbankMart_Blocks:
 NacreneMart_Blocks:
-StriatonMart_Blocks:
 AccumulaMart_Blocks:
 MistraltonMart_Blocks:
 OpelucidMart_Blocks:

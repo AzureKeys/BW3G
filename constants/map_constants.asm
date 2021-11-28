@@ -227,7 +227,7 @@ ENDM
 	map_const R_3_DAY_CARE, 4, 4
 	map_const STRIATON_CITY, 24, 16
 	map_const STRIATON_POKECENTER_1F, 5, 5
-	map_const STRIATON_MART, 6, 4
+	map_const STRIATON_TRADE_HOUSE, 4, 4
 	map_const STRIATON_LAB, 4, 4
 	map_const STRIATON_GYM, 7, 9
 	map_const R_2, 23, 20

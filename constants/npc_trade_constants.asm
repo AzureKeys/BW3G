@@ -17,9 +17,10 @@ NPCTRADE_PADDING EQU 31 ; db
 	const NPC_TRADE_FLOCCESY ; 2
 	const NPC_TRADE_CASTELIA_1; 3
 	const NPC_TRADE_CASTELIA_2; 4
-	const NPC_TRADE_ACCUMULA ; 5
-	const NPC_TRADE_DRIFTVEIL ; 6
-	const NPC_TRADE_R_7      ; 7
+	const NPC_TRADE_STRIATON ; 5
+	const NPC_TRADE_ACCUMULA ; 6
+	const NPC_TRADE_DRIFTVEIL ; 7
+	const NPC_TRADE_R_7      ; 8
 NUM_NPC_TRADES EQU const_value
 
 ; trade gender limits

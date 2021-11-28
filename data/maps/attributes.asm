@@ -240,7 +240,7 @@ ENDM
 	map_attributes WellspringCave1F, WELLSPRING_CAVE_1F, $09, 0
 	map_attributes WellspringCaveB1F, WELLSPRING_CAVE_B1F, $09, 0
 	map_attributes StriatonPokecenter1F, STRIATON_POKECENTER_1F, $00, 0
-	map_attributes StriatonMart, STRIATON_MART, $00, 0
+	map_attributes StriatonTradeHouse, STRIATON_TRADE_HOUSE, $00, 0
 	map_attributes StriatonLab, STRIATON_LAB, $00, 0
 	map_attributes Rt2AccumulaGate, R_2_ACCUMULA_GATE, $00, 0
 	map_attributes AccumulaPokecenter1F, ACCUMULA_POKECENTER_1F, $00, 0
