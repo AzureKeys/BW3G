@@ -63,8 +63,6 @@ Rt9OpelucidGate_Blocks:
 
 
 SECTION "Map Blocks 2", ROMX
-HumilauMart_Blocks:
-LacunosaMart_Blocks:
 LentimasMart_Blocks:
 NimbasaMart_Blocks:
 NimbasaVitaminMart_Blocks:

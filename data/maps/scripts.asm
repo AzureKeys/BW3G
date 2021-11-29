@@ -10,7 +10,6 @@ INCLUDE "maps/TimeCapsule.asm"
 INCLUDE "maps/MobileTradeRoom.asm"
 INCLUDE "maps/MobileBattleRoom.asm"
 INCLUDE "maps/HumilauCity.asm"
-INCLUDE "maps/HumilauMart.asm"
 INCLUDE "maps/HumilauPokecenter1F.asm"
 
 
@@ -22,7 +21,6 @@ INCLUDE "maps/GiantChasm1F.asm"
 INCLUDE "maps/Rt12.asm"
 INCLUDE "maps/Rt13.asm"
 INCLUDE "maps/LacunosaTown.asm"
-INCLUDE "maps/LacunosaMart.asm"
 INCLUDE "maps/LacunosaPokecenter1F.asm"
 INCLUDE "maps/R13UndellaGate.asm"
 

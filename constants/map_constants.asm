@@ -83,14 +83,13 @@ ENDM
 	
 	newgroup
 	
-	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  6
-	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  7
+	map_const PLAYERS_HOUSE_1F, 5, 4 
+	map_const PLAYERS_HOUSE_2F, 4, 3 
 	map_const HUMILAU_CITY, 15, 19
-	map_const HUMILAU_MART, 6, 4
 	map_const HUMILAU_POKECENTER_1F, 5, 5 
 	map_const MARLONS_HOUSE, 5, 4
-	map_const PLAYERS_NEIGHBORS_HOUSE,                      4,  4 ;  8
-	map_const HUMILAU_TRADE_HOUSE, 4,  4 ;  8
+	map_const PLAYERS_NEIGHBORS_HOUSE, 4, 4 
+	map_const HUMILAU_TRADE_HOUSE, 4, 4 
 	map_const HUMILAU_GYM, 5, 8
 	map_const R_22, 19, 10
 	map_const R_21, 11, 29
@@ -99,7 +98,6 @@ ENDM
 	
 	map_const R_13, 18, 25
 	map_const LACUNOSA_TOWN, 10, 11
-	map_const LACUNOSA_MART, 6, 4
 	map_const LACUNOSA_POKECENTER_1F, 5, 5 
 	map_const R_12, 14, 10
 	map_const LACUNOSA_HOUSE, 4, 4 

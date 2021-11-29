@@ -127,11 +127,9 @@ ENDM
 	map_attributes PlayersHouse2F, PLAYERS_HOUSE_2F, $00, 0
 	map_attributes PlayersNeighborsHouse, PLAYERS_NEIGHBORS_HOUSE, $00, 0
 	map_attributes HumilauTradeHouse, HUMILAU_TRADE_HOUSE, $00, 0
-	map_attributes HumilauMart, HUMILAU_MART, $00, 0
 	map_attributes HumilauPokecenter1F, HUMILAU_POKECENTER_1F, $00, 0
 	map_attributes MarlonsHouse, MARLONS_HOUSE, $00, 0
 	map_attributes GiantChasm1F, GIANT_CHASM_1F, $09, 0
-	map_attributes LacunosaMart, LACUNOSA_MART, $00, 0
 	map_attributes LacunosaPokecenter1F, LACUNOSA_POKECENTER_1F, $00, 0
 	map_attributes Rt13UndellaGate, R_13_UNDELLA_GATE, $00, 0
 	map_attributes UndellaPokecenter1F, UNDELLA_POKECENTER_1F, $00, 0
