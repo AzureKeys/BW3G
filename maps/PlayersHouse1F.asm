@@ -34,18 +34,7 @@ MeetMomRightScript:
 	applymovement PLAYERSHOUSE1F_MOM1, MomWalksToPlayerMovement
 MeetMomScript:
 	opentext
-	writetext ElmsLookingForYouText
-	buttonsound
-	stringtotext GearName, MEM_BUFFER_1
-	scall PlayersHouse1FReceiveItemStd
-	;setflag ENGINE_STORMBADGE
-	setflag ENGINE_POKEGEAR
-	setflag ENGINE_PHONE_CARD
-	;addcellnum PHONE_MOM
-	setscene SCENE_FINISHED
-	setevent EVENT_PLAYERS_HOUSE_MOM_1
-	clearevent EVENT_PLAYERS_HOUSE_MOM_2
-	writetext MomGivesPokegearText
+	writetext MarlonLookingForYouText
 	buttonsound
 	special SetDayOfWeek
 .SetDayOfWeek:
@@ -63,22 +52,15 @@ MeetMomScript:
 	iffalse .SetDayOfWeek
 .DayOfWeekDone:
 	writetext ComeHomeForDSTText
-	yesorno
-	iffalse .ExplainPhone
-	jump .KnowPhone
-
-.KnowPhone:
-	writetext KnowTheInstructionsText
 	buttonsound
-	jump .FinishPhone
-
-.ExplainPhone:
-	writetext DontKnowTheInstructionsText
-	buttonsound
-	jump .FinishPhone
-
-.FinishPhone:
-	writetext InstructionsNextText
+	stringtotext GearName, MEM_BUFFER_1
+	scall PlayersHouse1FReceiveItemStd
+	setflag ENGINE_POKEGEAR
+	setflag ENGINE_PHONE_CARD
+	setscene SCENE_FINISHED
+	setevent EVENT_PLAYERS_HOUSE_MOM_1
+	clearevent EVENT_PLAYERS_HOUSE_MOM_2
+	writetext MomGivesXtranText
 	waitbutton
 	closetext
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
@@ -117,36 +99,23 @@ MomScript:
 	checkscene
 	iffalse MeetMomTalkedScript ; SCENE_DEFAULT
 	opentext
-	checkevent EVENT_FIRST_TIME_BANKING_WITH_MOM
-	iftrue .FirstTimeBanking
-	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
-	iftrue .BankOfMom
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .GaveMysteryEgg
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .GotAPokemon
-	writetext HurryUpElmIsWaitingText
+	writetext MarlonIsWaitingText
 	waitbutton
 	closetext
 	end
 
 .GotAPokemon:
-	writetext SoWhatWasProfElmsErrandText
+	checkflag ENGINE_POKEDEX
+	iftrue .GotPokedex
+	writetext SoWhatWasMarlonsErrandText
 	waitbutton
 	closetext
 	end
-
-.FirstTimeBanking:
-	writetext ImBehindYouText
-	waitbutton
-	closetext
-	end
-
-.GaveMysteryEgg:
-	setevent EVENT_FIRST_TIME_BANKING_WITH_MOM
-.BankOfMom:
-	setevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
-	special BankOfMom
+	
+.GotPokedex:
+	writetext SoWhatWasMarlonsErrand2Text
 	waitbutton
 	closetext
 	end
@@ -211,40 +180,22 @@ MomWalksBackMovement:
 	slow_step LEFT
 	step_end
 
-ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! The"
-	line "town's GYM LEADER,"
+MarlonLookingForYouText:
+	text "Oh, <PLAYER>!"
+	line "It's about time"
+	cont "you got up!"
 
-	para "MARLON, was"
-	line "looking for you."
-
-	para "He said he had"
-	line "something special"
-	cont "for you!"
-
-	para "Oh! I almost for-"
-	line "got! Your XTRANS-"
-
-	para "CEIVER is back"
-	line "from the repair"
-	cont "shop."
-
-	para "Here you go!"
-	done
-
-MomGivesPokegearText:
-	text "XTRANSCEIVER, or"
-	line "just X-TRAN."
-
-	para "It's essential if"
-	line "you want to be a"
-	cont "good trainer."
-
-	para "Oh, the day of the"
-	line "week isn't set."
-
-	para "You mustn't forget"
-	line "that!"
+	para "MARLON, the GYM"
+	line "LEADER stopped by"
+	cont "asking for you."
+	
+	para "Go stop by his"
+	line "house and see what"
+	cont "he needs."
+	
+	para "Hold on… Remind"
+	line "me, what day is"
+	cont "it today?"
 	done
 
 IsItDSTText:
@@ -259,40 +210,30 @@ ComeHomeForDSTText:
 	para "for Daylight"
 	line "Saving Time."
 
-	para "By the way, do you"
-	line "know how to use"
-	cont "the PHONE?"
+	para "Oh! And before you"
+	line "go out, make sure"
+	
+	para "you take your"
+	line "XTRANSCIEVER with"
+	cont "you."
 	done
 
-KnowTheInstructionsText:
-	text "Don't you just"
-	line "turn the X-TRAN"
+MomGivesXtranText:
+	text "You can use the"
+	line "XTRANSCIEVER to"
 
-	para "on and select the"
-	line "PHONE icon?"
+	para "check the time,"
+	line "and to make phone"
+	cont "calls."
+
+	para "Now hurry on over"
+	line "to MARLON's house"
+
+	para "and see what he"
+	line "needs from you!"
 	done
 
-DontKnowTheInstructionsText:
-	text "I'll read the"
-	line "instructions."
-
-	para "Turn the X-TRAN"
-	line "on and select the"
-	cont "PHONE icon."
-	done
-
-InstructionsNextText:
-	text "Phone numbers are"
-	line "stored in memory."
-
-	para "Just choose a name"
-	line "you want to call."
-
-	para "Gee, isn't that"
-	line "convenient?"
-	done
-
-HurryUpElmIsWaitingText:
+MarlonIsWaitingText:
 	text "MARLON is wait-"
 	line "ing for you."
 	
@@ -305,7 +246,24 @@ HurryUpElmIsWaitingText:
 	para "Hurry up, baby!"
 	done
 
-SoWhatWasProfElmsErrandText:
+SoWhatWasMarlonsErrandText:
+	text "So, what did"
+	line "MARLON want?"
+
+	para "…"
+
+	para "Oh, he wasn't at"
+	line "home?"
+
+	para "That's just like"
+	line "him to wander off"
+	
+	para "somewhere, you'd"
+	line "better go find"
+	cont "him!"
+	done
+
+SoWhatWasMarlonsErrand2Text:
 	text "So, what did"
 	line "MARLON want?"
 
@@ -317,13 +275,6 @@ SoWhatWasProfElmsErrandText:
 	para "You should be"
 	line "proud, I know"
 	cont "you'll do great!"
-	done
-
-ImBehindYouText:
-	text "<PLAYER>, do it!"
-
-	para "I'm behind you all"
-	line "the way!"
 	done
 
 NeighborMornIntroText:
@@ -410,8 +361,8 @@ PlayersHouse1F_MapEvents:
 	bg_event  4,  1, BGEVENT_READ, TVScript
 
 	db 5 ; object events
-	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
-	object_event  2,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  0,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
+	object_event  2,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  0,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
 	object_event  4,  4, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NeighborScript, EVENT_PLAYERS_HOUSE_1F_NEIGHBOR

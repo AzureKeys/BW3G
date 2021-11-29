@@ -134,6 +134,8 @@ R12InferScript:
 	disappear R12_MARLON
 	special HealParty
 	setscene SCENE_FINISHED
+	setevent EVENT_PLAYERS_HOUSE_1F_NEIGHBOR
+	clearevent EVENT_PLAYERS_NEIGHBORS_HOUSE_NEIGHBOR
 	special FadeOutMusic
 	pause 15
 	playmapmusic
