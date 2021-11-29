@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke HYDREIGON, 10, WIDE_LENS
+	; givepoke HYDREIGON, 10, QUICK_CLAW
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
@@ -144,7 +144,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, SHOPPING_MALL_NINE, 1
+	;warp_event  7,  0, HUMILAU_GYM, 1
 
 	db 0 ; coord events
 
