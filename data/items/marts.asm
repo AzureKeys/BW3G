@@ -104,14 +104,16 @@ MartNimbasaVitamin:
 	db -1 ; end
 
 MartNimbasaBall:
-	db 7 ; # items
+	db 9 ; # items
 	db FRIEND_BALL
 	db HEAVY_BALL
 	db LURE_BALL
-	db FAST_BALL
-	db LEVEL_BALL
+	db QUICK_BALL
+	db TIMER_BALL
 	db NET_BALL
 	db DUSK_BALL
+	db REPEAT_BALL
+	db DIVE_BALL
 	db -1 ; end
 
 MartR4NimbasaGate:
@@ -123,8 +125,9 @@ MartR4NimbasaGate:
 	db -1 ; end
 
 MartCastelia:
-	db 9 ; # items
+	db 10 ; # items
 	db GREAT_BALL
+	db POTION
 	db SUPER_POTION
 	db ANTIDOTE
 	db PARLYZ_HEAL

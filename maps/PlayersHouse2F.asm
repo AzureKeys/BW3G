@@ -144,7 +144,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, R_11_TRUCK, 1
+	;warp_event  7,  0, SHOPPING_MALL_NINE, 1
 
 	db 0 ; coord events
 

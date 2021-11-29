@@ -175,6 +175,7 @@ INCLUDE "audio/music/r6.asm"
 INCLUDE "audio/music/sewers.asm"
 INCLUDE "audio/music/mistraltoncity.asm"
 INCLUDE "audio/music/icirruscity.asm"
+INCLUDE "audio/music/mart.asm"
 
 SECTION "Sound Effects", ROMX
 
