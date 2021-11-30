@@ -58,8 +58,8 @@ NimbasaR4Sign:
 NimbasaSubwaySign:
 	jumptext NimbasaSubwaySignText
 	
-NimbasaGeneralMartSign:
-	jumptext NimbasaGeneralMartSignText
+NimbasaTMMartSign:
+	jumptext NimbasaTMMartSignText
 	
 NimbasaVitaminMartSign:
 	jumptext NimbasaVitaminMartSignText
@@ -180,12 +180,13 @@ NimbasaSubwaySignText:
 	line "SUBWAY station."
 	done
 	
-NimbasaGeneralMartSignText:
+NimbasaTMMartSignText:
 	text "NIMBASA CITY"
-	line "#MART."
+	line "TM SHOP."
 	
-	para "Essentials for"
-	line "#MON trainers."
+	para "Power up your"
+	line "#MON with new"
+	cont "moves!"
 	done
 	
 NimbasaVitaminMartSignText:
@@ -208,41 +209,41 @@ NimbasaCity_MapEvents:
 	db 0, 0 ; filler
 
 	db 16 ; warp events
-	warp_event 39,  8, R_16_NIMBASA_GATE, 1
-	warp_event 39,  9, R_16_NIMBASA_GATE, 2
-	warp_event 15, 21, NIMBASA_POKECENTER_1F, 1
-	warp_event 31,  5, NIMBASA_MART, 1
-	warp_event  9,  3, NIMBASA_VITAMIN_MART, 1
-	warp_event 21,  3, NIMBASA_BALL_MART, 1
-	warp_event  4,  8, R_5_NIMBASA_GATE, 3
-	warp_event  4,  9, R_5_NIMBASA_GATE, 4
-	warp_event 29, 29, R_4_NIMBASA_GATE, 1
-	warp_event 30, 29, R_4_NIMBASA_GATE, 2
-	warp_event 10, 15, NIMBASA_HOUSE, 1
-	warp_event 24, 15, NIMBASA_SUBWAY, 1
-	warp_event 10, 21, NIMBASA_NAME_RATER, 1
-	warp_event 25, 15, NIMBASA_SUBWAY, 2
-	warp_event 33, 20, NIMBASA_PARK_OUTSIDE, 3
-	warp_event 33, 21, NIMBASA_PARK_OUTSIDE, 4
+	warp_event 39, 10, R_16_NIMBASA_GATE, 1
+	warp_event 39, 11, R_16_NIMBASA_GATE, 2
+	warp_event 15, 23, NIMBASA_POKECENTER_1F, 1
+	warp_event 21,  5, NIMBASA_TM_MART, 1
+	warp_event  9,  5, NIMBASA_VITAMIN_MART, 1
+	warp_event 31,  7, NIMBASA_BALL_MART, 1
+	warp_event  4, 10, R_5_NIMBASA_GATE, 3
+	warp_event  4, 11, R_5_NIMBASA_GATE, 4
+	warp_event 29, 31, R_4_NIMBASA_GATE, 1
+	warp_event 30, 31, R_4_NIMBASA_GATE, 2
+	warp_event 10, 17, NIMBASA_HOUSE, 1
+	warp_event 24, 17, NIMBASA_SUBWAY, 1
+	warp_event 10, 23, NIMBASA_NAME_RATER, 1
+	warp_event 25, 17, NIMBASA_SUBWAY, 2
+	warp_event 33, 22, NIMBASA_PARK_OUTSIDE, 3
+	warp_event 33, 23, NIMBASA_PARK_OUTSIDE, 4
 
 	db 0 ; coord events
 
 	db 7 ; bg events
-	bg_event  5,  6, BGEVENT_READ, NimbasaR5Sign
-	bg_event 38,  6, BGEVENT_READ, NimbasaR16Sign
-	bg_event 28, 27, BGEVENT_READ, NimbasaR4Sign
-	bg_event 26, 19, BGEVENT_READ, NimbasaSubwaySign
-	bg_event 22,  6, BGEVENT_READ, NimbasaBallMartSign
-	bg_event 12,  6, BGEVENT_READ, NimbasaVitaminMartSign
-	bg_event 32,  6, BGEVENT_READ, NimbasaGeneralMartSign
+	bg_event  5,  8, BGEVENT_READ, NimbasaR5Sign
+	bg_event 38,  8, BGEVENT_READ, NimbasaR16Sign
+	bg_event 28, 29, BGEVENT_READ, NimbasaR4Sign
+	bg_event 26, 21, BGEVENT_READ, NimbasaSubwaySign
+	bg_event 32,  8, BGEVENT_READ, NimbasaBallMartSign
+	bg_event 12,  8, BGEVENT_READ, NimbasaVitaminMartSign
+	bg_event 22,  8, BGEVENT_READ, NimbasaTMMartSign
 
 	db 8 ; object events
-	object_event 20, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungsterTextScript, -1
-	object_event 25,  8, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaCityGrampsTextScript, -1
-	object_event 31, 23, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NimbasaCityPokefanFTextScript, -1
-	object_event 25, 22, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCityLassTextScript, -1
-	object_event 16, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungster2TextScript, -1
-	object_event 12, 22, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityLass2TextScript, -1
-	object_event 16,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCitySuperNerdTextScript, -1
-	object_event 30, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungster3TextScript, -1
+	object_event 20, 24, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungsterTextScript, -1
+	object_event 25, 10, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaCityGrampsTextScript, -1
+	object_event 31, 25, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NimbasaCityPokefanFTextScript, -1
+	object_event 25, 24, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCityLassTextScript, -1
+	object_event 16, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungster2TextScript, -1
+	object_event 12, 24, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityLass2TextScript, -1
+	object_event 16, 10, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCitySuperNerdTextScript, -1
+	object_event 30, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungster3TextScript, -1
 	

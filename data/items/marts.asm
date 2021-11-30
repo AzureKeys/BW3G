@@ -6,6 +6,7 @@ Marts:
 	dw MartUndella
 	dw MartLentimas
 	dw MartNimbasa
+	dw MartNimbasaTM
 	dw MartNimbasaVitamin
 	dw MartNimbasaBall
 	dw MartR4NimbasaGate
@@ -92,6 +93,15 @@ MartNimbasa:
 	db BURN_HEAL
 	db ICE_HEAL
 	db REPEL
+	db -1 ; end
+	
+MartNimbasaTM:
+	db 4 ; # items
+	db TM_REFLECT
+	db TM_LIGHT_SCREEN
+	db TM_PROTECT
+	db TM_BULLDOZE
+	db TM_THUNDER_WAVE
 	db -1 ; end
 
 MartNimbasaVitamin:

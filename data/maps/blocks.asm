@@ -63,7 +63,7 @@ Rt9OpelucidGate_Blocks:
 
 
 SECTION "Map Blocks 2", ROMX
-NimbasaMart_Blocks:
+NimbasaTMMart_Blocks:
 NimbasaVitaminMart_Blocks:
 NimbasaBallMart_Blocks:
 AspertiaMart_Blocks:

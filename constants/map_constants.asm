@@ -127,11 +127,11 @@ ENDM
 	
 	newgroup
 	
-	map_const NIMBASA_CITY, 23, 17
+	map_const NIMBASA_CITY, 23, 18
 	map_const R_16, 18, 15
 	map_const R_16_LOSTLORN_GATE, 5, 4
 	map_const R_16_NIMBASA_GATE, 5, 4
-	map_const NIMBASA_MART, 6, 4
+	map_const NIMBASA_TM_MART, 6, 4
 	map_const NIMBASA_VITAMIN_MART, 6, 4
 	map_const NIMBASA_BALL_MART, 6, 4
 	map_const NIMBASA_POKECENTER_1F, 5, 5

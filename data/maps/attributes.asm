@@ -157,7 +157,7 @@ ENDM
 	map_attributes Rt16NimbasaGate, R_16_NIMBASA_GATE, $00, 0
 	map_attributes NimbasaCity, NIMBASA_CITY, $31, 0
 	map_attributes NimbasaParkOutside, NIMBASA_PARK_OUTSIDE, $31, 0
-	map_attributes NimbasaMart, NIMBASA_MART, $00, 0
+	map_attributes NimbasaTMMart, NIMBASA_TM_MART, $00, 0
 	map_attributes NimbasaVitaminMart, NIMBASA_VITAMIN_MART, $00, 0
 	map_attributes NimbasaBallMart, NIMBASA_BALL_MART, $00, 0
 	map_attributes NimbasaPokecenter1F, NIMBASA_POKECENTER_1F, $00, 0
