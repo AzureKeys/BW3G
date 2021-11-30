@@ -63,7 +63,6 @@ Rt9OpelucidGate_Blocks:
 
 
 SECTION "Map Blocks 2", ROMX
-LentimasMart_Blocks:
 NimbasaMart_Blocks:
 NimbasaVitaminMart_Blocks:
 NimbasaBallMart_Blocks:
@@ -102,6 +101,7 @@ TimeCapsule_Blocks:
 	INCBIN "maps/TradeCenter.ablk"
 	
 LentimasHouse_Blocks:
+LentimasClawHouse_Blocks:
 OpelucidCuriosityShop_Blocks:
 	INCBIN "maps/House2.ablk"
 

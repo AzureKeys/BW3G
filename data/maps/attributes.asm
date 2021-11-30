@@ -146,7 +146,7 @@ ENDM
 	map_attributes LacunosaHouse, LACUNOSA_HOUSE, $00, 0
 	map_attributes LacunosaHouse2, LACUNOSA_HOUSE_2, $00, 0
 	map_attributes Rt12VillageBridgeGate, R_12_VILLAGE_BRIDGE_GATE, $00, 0
-	map_attributes LentimasMart, LENTIMAS_MART, $00, 0
+	map_attributes LentimasClawHouse, LENTIMAS_CLAW_HOUSE, $00, 0
 	map_attributes LentimasPokecenter1F, LENTIMAS_POKECENTER_1F, $00, 0
 	map_attributes LentimasHouse, LENTIMAS_HOUSE, $00, 0
 	map_attributes LentimasGym, LENTIMAS_GYM, $00, 0

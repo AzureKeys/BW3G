@@ -45,7 +45,7 @@ INCLUDE "maps/StrangeHouseB1F.asm"
 INCLUDE "maps/StrangeHouseRooms.asm"
 INCLUDE "maps/LacunosaHouse.asm"
 INCLUDE "maps/R12VillageBridgeGate.asm"
-INCLUDE "maps/LentimasMart.asm"
+INCLUDE "maps/LentimasClawHouse.asm"
 
 SECTION "Map Scripts 4", ROMX
 

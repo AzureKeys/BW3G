@@ -150,7 +150,7 @@ LentimasTown_MapEvents:
 	db 0, 0 ; filler
 
 	db 5 ; warp events
-	warp_event 27, 19, LENTIMAS_MART, 1
+	warp_event 27, 19, LENTIMAS_CLAW_HOUSE, 1
 	warp_event 27, 13, LENTIMAS_POKECENTER_1F, 1
 	warp_event 17, 11, LENTIMAS_HOUSE, 1
 	warp_event 16, 21, LENTIMAS_GYM, 1
