@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const RELICCASTLEB2F_TM_BULLDOZE
+	const RELICCASTLEB2F_TM_DIG
 	const RELICCASTLEB2F_PSYCHIC
 
 RelicCastleB2F_MapScripts:
@@ -18,8 +18,8 @@ TrainerPsychicRelicCastleB2F:
 	closetext
 	end
 	
-RelicCastleTMBulldoze:
-	itemball TM_BULLDOZE
+RelicCastleTMDig:
+	itemball TM_DIG
 	
 PsychicRelicCastleB2FSeenText:
 	text "I was training"
@@ -52,6 +52,6 @@ RelicCastleB2F_MapEvents:
 	db 0 ; bg events
 
 	db 2 ; object events
-	object_event  2,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, RelicCastleTMBulldoze, EVENT_RELIC_CASTLE_TM_BULLDOZE
+	object_event  2,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, RelicCastleTMDig, EVENT_RELIC_CASTLE_TM_DIG
 	object_event  5,  6, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychicRelicCastleB2F, -1
 	
