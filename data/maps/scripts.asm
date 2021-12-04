@@ -89,7 +89,6 @@ INCLUDE "maps/CasteliaPlazaPrizeRoom.asm"
 INCLUDE "maps/CasteliaPlazaRestaurant.asm"
 INCLUDE "maps/CasteliaPlazaElevator.asm"
 INCLUDE "maps/CasteliaBikeShop.asm"
-INCLUDE "maps/CasteliaMassage.asm"
 INCLUDE "maps/CasteliaGameFreak.asm"
 INCLUDE "maps/CasteliaBridgeGate.asm"
 INCLUDE "maps/NimbasaSubway.asm"
@@ -99,6 +98,7 @@ INCLUDE "maps/NimbasaParkOutside.asm"
 
 SECTION "Map Scripts 6", ROMX
 
+INCLUDE "maps/CasteliaMassage.asm"
 INCLUDE "maps/BattleCompany1F.asm"
 INCLUDE "maps/BattleCompany2F.asm"
 INCLUDE "maps/NimbasaParkCoasterRoom.asm"
@@ -115,15 +115,15 @@ INCLUDE "maps/AspertiaPokecenter1F.asm"
 INCLUDE "maps/FloccesyPokecenter1F.asm"
 INCLUDE "maps/AspertiaMomHouse.asm"
 INCLUDE "maps/AspertiaMoveDeleterHouse.asm"
-INCLUDE "maps/R19AspertiaGate.asm"
 INCLUDE "maps/FloccesyRanchBarn.asm"
 INCLUDE "maps/FloccesyRanchHouse.asm"
-INCLUDE "maps/FloccesyTownHouse.asm"
 INCLUDE "maps/VirbankCity.asm"
 INCLUDE "maps/GameCorner.asm"
 
 SECTION "Map Scripts 7", ROMX
 
+INCLUDE "maps/R19AspertiaGate.asm"
+INCLUDE "maps/FloccesyTownHouse.asm"
 INCLUDE "maps/VirbankPokecenter1F.asm"
 INCLUDE "maps/VirbankHouse.asm"
 INCLUDE "maps/VirbankMart.asm"

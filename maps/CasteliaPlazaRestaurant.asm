@@ -28,14 +28,29 @@ CasteliaPlazaRestaurantAmanitaScript:
 	checkevent EVENT_GOT_SNIVY
 	iftrue .GiveOshawott
 ; GiveSnivy
+	pokenamemem SNIVY, MEM_BUFFER_0
+	writetext CasteliaPlazaRestaurantReceivedMonText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	buttonsound
 	givepoke SNIVY, 10
 	setevent EVENT_GOT_A_POKEMON_FROM_AMANITA
 	jump .GotMon
 .GiveTepig
+	pokenamemem TEPIG, MEM_BUFFER_0
+	writetext CasteliaPlazaRestaurantReceivedMonText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	buttonsound
 	givepoke TEPIG, 10
 	setevent EVENT_GOT_A_POKEMON_FROM_AMANITA
 	jump .GotMon
 .GiveOshawott
+	pokenamemem OSHAWOTT, MEM_BUFFER_0
+	writetext CasteliaPlazaRestaurantReceivedMonText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	buttonsound
 	givepoke OSHAWOTT, 10
 	setevent EVENT_GOT_A_POKEMON_FROM_AMANITA
 ; fallthrough
@@ -83,6 +98,13 @@ CasteliaPlazaRestaurantBlockerScript:
 
 CasteliaPlazaRestaurantElevatorButton:
 	jumpstd elevatorbutton
+
+CasteliaPlazaRestaurantReceivedMonText:
+	text "<PLAYER> received"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
+	done
 
 CasteliaPlazaRestaurantAmanitaIntroText:
 	text "Oh, hi! Are you a"
