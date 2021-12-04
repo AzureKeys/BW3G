@@ -22,9 +22,9 @@ FishGroups:
 	fishgroup 50 percent + 1, .Qwilfish_NoSwarm_Old, .Qwilfish_NoSwarm_Good, .Qwilfish_NoSwarm_Super
 
 .Shore_Old:
-	db  70 percent + 1, TYMPOLE,   10
-	db  85 percent + 1, TYMPOLE,   10
-	db 100 percent,     REMORAID,     10
+	db  70 percent + 1, TYMPOLE,   6
+	db  85 percent + 1, TYMPOLE,   8
+	db 100 percent,     REMORAID,     6
 .Shore_Good:
 	db  35 percent,     REMORAID,   20
 	db  70 percent,     FRILLISH,     20
@@ -67,9 +67,9 @@ FishGroups:
 	db 100 percent,     MANTINE,    40
 
 .Pond_Old:
-	db  70 percent + 1, TYMPOLE,   10
-	db  85 percent + 1, TYMPOLE,   10
-	db 100 percent,     BASCULIN,    10
+	db  70 percent + 1, TYMPOLE,   6
+	db  85 percent + 1, TYMPOLE,   8
+	db 100 percent,     BASCULIN,    8
 .Pond_Good:
 	db  35 percent,     TYNAMO,   20
 	db  70 percent,     TYNAMO,    20
