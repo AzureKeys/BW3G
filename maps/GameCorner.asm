@@ -133,56 +133,65 @@ GameCornerVendor2_LoopScript:
 	loadmenu GameCornerVendor2MenuHeader
 	verticalmenu
 	closewindow
-	ifequal 1, .Eviolite
-	ifequal 2, .MetalCoat
-	ifequal 3, .LifeOrb
+	ifequal 1, .Klink
+	ifequal 2, .Cryogonal
+	ifequal 3, .Deino
 	jump GameCornerPrizeVendor_CancelPurchaseScript
 
-.Eviolite:
+.Klink:
 	checkcoins 1500
 	ifequal HAVE_LESS, GameCornerPrizeVendor_NotEnoughCoinsScript
-	itemtotext EVIOLITE, MEM_BUFFER_0
+	checkcode VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, GameCornerPrizeMonVendor_NoRoomForPrizeScript
+	pokenamemem KLINK, MEM_BUFFER_0
 	scall GameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GameCornerPrizeVendor_CancelPurchaseScript
-	giveitem EVIOLITE
-	iffalse GameCornerPrizeMonVendor_NoRoomForPrizeScript
+	writebyte KLINK
+	special GameCornerPrizeMonCheckDex
+	givepoke KLINK, 15
 	takecoins 1500
 	jump GameCornerVendor2_FinishScript
 
-.MetalCoat:
-	checkcoins 2000
-	ifequal HAVE_LESS, GameCornerPrizeVendor_NotEnoughCoinsScript
-	itemtotext METAL_COAT, MEM_BUFFER_0
-	scall GameCornerPrizeVendor_ConfirmPurchaseScript
-	iffalse GameCornerPrizeVendor_CancelPurchaseScript
-	giveitem METAL_COAT
-	iffalse GameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins 2000
-	jump GameCornerVendor2_FinishScript
-
-.LifeOrb:
+.Cryogonal:
 	checkcoins 2500
 	ifequal HAVE_LESS, GameCornerPrizeVendor_NotEnoughCoinsScript
-	itemtotext LIFE_ORB, MEM_BUFFER_0
+	checkcode VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, GameCornerPrizeMonVendor_NoRoomForPrizeScript
+	pokenamemem CRYOGONAL, MEM_BUFFER_0
 	scall GameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GameCornerPrizeVendor_CancelPurchaseScript
-	giveitem LIFE_ORB
-	iffalse GameCornerPrizeMonVendor_NoRoomForPrizeScript
+	writebyte CRYOGONAL
+	special GameCornerPrizeMonCheckDex
+	givepoke CRYOGONAL, 20
 	takecoins 2500
+	jump GameCornerVendor2_FinishScript
+
+.Deino:
+	checkcoins 5000
+	ifequal HAVE_LESS, GameCornerPrizeVendor_NotEnoughCoinsScript
+	checkcode VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, GameCornerPrizeMonVendor_NoRoomForPrizeScript
+	pokenamemem DEINO, MEM_BUFFER_0
+	scall GameCornerPrizeVendor_ConfirmPurchaseScript
+	iffalse GameCornerPrizeVendor_CancelPurchaseScript
+	writebyte DEINO
+	special GameCornerPrizeMonCheckDex
+	givepoke DEINO, 20
+	takecoins 5000
 	jump GameCornerVendor2_FinishScript
 
 GameCornerVendor2MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 2, 17, TEXTBOX_Y - 1
+	menu_coords 0, 2, 16, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "EVIOLITE   1500@"
-	db "METAL COAT 2000@"
-	db "LIFE ORB   2500@"
+	db "KLINK     1500@"
+	db "CRYOGONAL 2500@"
+	db "DEINO     5000@"
 	db "CANCEL@"
 
 GameCornerVendor2_FinishScript:
@@ -362,17 +371,14 @@ GameCornerGentlemanText:
 	done
 
 GameCornerPokefanM2Text:
-	text "I couldn't win at"
-	line "the slots, and I"
+	text "I'd sure like that"
+	line "DEINO, but I don't"
 
-	para "blew it on card"
-	line "flipping…"
+	para "think I'll ever"
+	line "earn enough coins…"
 
-	para "I got so furious,"
-	line "I tossed out my"
-
-	para "COIN CASE in"
-	line "town…"
+	para "Gambling sure is"
+	line "tough!"
 	done
 
 GameCornerLeftTheirDrinkText:
