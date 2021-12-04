@@ -1238,7 +1238,8 @@ Text_Waitbutton_2::
 UnknownText_0x1c5b38::
 	text_ram wMonOrItemNameBuffer
 	text " was"
-	line "sent to BILL's PC."
+	line "sent to AMANITA's"
+	cont "PC."
 	prompt
 
 UnknownText_0x1c5b53::
