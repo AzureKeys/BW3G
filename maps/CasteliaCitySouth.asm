@@ -1,13 +1,13 @@
 	const_def 2 ; object constants
 	const CASTELIACITYSOUTH_FERRY_MAN
 	const CASTELIACITYSOUTH_WATER_STONE
+	const CASTELIACITYSOUTH_COIN_CASE
 	const CASTELIACITYSOUTH_GENTLEMAN
 	const CASTELIACITYSOUTH_SNEASEL
 	const CASTELIACITYSOUTH_SAILOR
 	const CASTELIACITYSOUTH_TEACHER
 	const CASTELIACITYSOUTH_SAILOR2
 	const CASTELIACITYSOUTH_SAILOR3
-	;const CASTELIACITYSOUTH_BLOCKER
 
 CasteliaCitySouth_MapScripts:
 	db 0 ; scene scripts
@@ -28,9 +28,6 @@ CasteliaSouthSneaselTextScript:
 	closetext
 	end
 
-; CasteliaSouthBlockerTextScript:
-	; jumptextfaceplayer CasteliaSouthBlockerText
-
 CasteliaSouthSailorTextScript:
 	jumptextfaceplayer CasteliaSouthSailorText
 
@@ -45,6 +42,9 @@ CasteliaSouthSailor3TextScript:
 	
 CasteliaCityWaterStone:
 	itemball WATER_STONE
+	
+CasteliaCityCoinCase:
+	itemball COIN_CASE
 
 CasteliaBattleCompanySign:
 	jumptext CasteliaBattleCompanySignText
@@ -55,16 +55,8 @@ CasteliaBridgeSign:
 CasteliaFerrySign:
 	jumptext CasteliaFerrySignText
 
-; CasteliaSouthBlockerText:
-	; text "Woah there, bucko."
-	; line "The rest of the"
-	; cont "game's not"
-	; cont "finished yet."
-
-	; para "Feel free to"
-	; line "explore everything"
-	; cont "else though!"
-	; done
+CasteliaPlazaSign:
+	jumptext CasteliaPlazaSignText
 	
 CasteliaFerryManClosedText:
 	text "Ahoy! This be the"
@@ -162,6 +154,13 @@ CasteliaFerrySignText:
 	para "Inquire inside."
 	done
 	
+CasteliaPlazaSignText:
+	text "CASTELIA GAME"
+	line "PLAZA."
+
+	para "Come play with us!"
+	done
+	
 CasteliaCitySouth_MapEvents:
 	db 0, 0 ; filler
 
@@ -175,7 +174,7 @@ CasteliaCitySouth_MapEvents:
 	warp_event 43,  4, CASTELIA_CITY_STREETS, 15
 	warp_event 44,  4, CASTELIA_CITY_STREETS, 16
 	warp_event 39,  7, CASTELIA_POKECENTER_1F, 1
-	warp_event 12,  7, CASTELIA_DEPT_STORE_1F, 1
+	warp_event 12,  7, CASTELIA_PLAZA_LOBBY, 1
 	warp_event 55,  5, CASTELIA_BRIDGE_GATE, 1
 	warp_event 26, 11, BATTLE_COMPANY_1F, 1
 	warp_event  4,  6, CASTELIA_PORT, 2
@@ -184,19 +183,20 @@ CasteliaCitySouth_MapEvents:
 
 	db 0 ; coord events
 
-	db 3 ; bg events
+	db 4 ; bg events
 	bg_event 28, 12, BGEVENT_READ, CasteliaBattleCompanySign
 	bg_event 52,  6, BGEVENT_READ, CasteliaBridgeSign
 	bg_event  4,  9, BGEVENT_READ, CasteliaFerrySign
+	bg_event 14,  8, BGEVENT_READ, CasteliaPlazaSign
 
-	db 8 ; object events
+	db 9 ; object events
 	object_event  5, 18, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaFerryManScript, -1
 	object_event 23, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaCityWaterStone, EVENT_CASTELIA_CITY_WATER_STONE
+	object_event 14, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaCityCoinCase, EVENT_CASTELIA_CITY_COIN_CASE
 	object_event 14, 12, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthGentlemanTextScript, -1
 	object_event 15, 12, SPRITE_SNEASEL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CasteliaSouthSneaselTextScript, -1
-	object_event 52, 17, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthSailorTextScript, -1
+	object_event 52, 17, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthSailorTextScript, -1
 	object_event 21, 14, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthTeacherTextScript, -1
 	object_event 33, 15, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthSailor2TextScript, -1
 	object_event 44,  9, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthSailor3TextScript, -1
-	;object_event 42, 16, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CasteliaSouthBlockerTextScript, -1
 	

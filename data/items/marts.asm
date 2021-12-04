@@ -11,10 +11,6 @@ Marts:
 	dw MartNimbasaBall
 	dw MartR4NimbasaGate
 	dw MartCastelia
-	dw MartCastelia2F1
-	dw MartCastelia2F2
-	dw MartCastelia3F
-	dw MartCastelia4F
 	dw MartAspertia
 	dw MartFlocessy
 	dw MartVirbank
@@ -146,48 +142,6 @@ MartCastelia:
 	db ICE_HEAL
 	db ESCAPE_ROPE
 	db REPEL
-	db -1 ; end
-
-MartCastelia2F1:
-	db 7 ; # items
-	db POTION
-	db SUPER_POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db BURN_HEAL
-	db ICE_HEAL
-	db -1 ; end
-
-MartCastelia2F2:
-	db 7 ; # items
-	db POKE_BALL
-	db GREAT_BALL
-	db ESCAPE_ROPE
-	db REPEL
-	db REVIVE
-	db FULL_HEAL
-	db POKE_DOLL
-	db -1 ; end
-
-MartCastelia3F:
-	db 8 ; # items
-	db X_SPEED
-	db X_SPECIAL
-	db X_SP_DEF
-	db X_DEFEND
-	db X_ATTACK
-	db DIRE_HIT
-	db GUARD_SPEC
-	db X_ACCURACY
-	db -1 ; end
-
-MartCastelia4F:
-	db 4 ; # items
-	db TM_PROTECT
-	db TM_THUNDER_WAVE
-	db TM_DOUBLE_TEAM
-	db TM_ATTRACT
 	db -1 ; end
 
 MartAspertia:

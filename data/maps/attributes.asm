@@ -181,11 +181,11 @@ ENDM
 	map_attributes CasteliaCitySouth, CASTELIA_CITY_SOUTH, $31, 0
 	map_attributes Rt4CasteliaGate, R_4_CASTELIA_GATE, $00, 0
 	map_attributes CasteliaPokecenter1F, CASTELIA_POKECENTER_1F, $00, 0
-	map_attributes CasteliaDeptStore1F, CASTELIA_DEPT_STORE_1F, $00, 0
-	map_attributes CasteliaDeptStore2F, CASTELIA_DEPT_STORE_2F, $00, 0
-	map_attributes CasteliaDeptStore3F, CASTELIA_DEPT_STORE_3F, $00, 0
-	map_attributes CasteliaDeptStore4F, CASTELIA_DEPT_STORE_4F, $00, 0
-	map_attributes CasteliaDeptStoreElevator, CASTELIA_DEPT_STORE_ELEVATOR, $00, 0
+	map_attributes CasteliaPlazaLobby, CASTELIA_PLAZA_LOBBY, $00, 0
+	map_attributes CasteliaPlazaGameCorner, CASTELIA_PLAZA_GAME_CORNER, $00, 0
+	map_attributes CasteliaPlazaPrizeRoom, CASTELIA_PLAZA_PRIZE_ROOM, $00, 0
+	map_attributes CasteliaPlazaRestaurant, CASTELIA_PLAZA_RESTAURANT, $00, 0
+	map_attributes CasteliaPlazaElevator, CASTELIA_PLAZA_ELEVATOR, $00, 0
 	map_attributes CasteliaBikeShop, CASTELIA_BIKE_SHOP, $00, 0
 	map_attributes CasteliaMassage, CASTELIA_MASSAGE, $00, 0
 	map_attributes CasteliaTradeHouse1, CASTELIA_TRADE_HOUSE_1, $00, 0

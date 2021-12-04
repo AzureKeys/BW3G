@@ -228,19 +228,19 @@ CasteliaCityStreets_Blocks:
 CasteliaCitySouth_Blocks:
 	INCBIN "maps/CasteliaCitySouth.ablk"
 
-CasteliaDeptStore1F_Blocks:
-	INCBIN "maps/DeptStore1F.ablk"
+CasteliaPlazaLobby_Blocks:
+	INCBIN "maps/CasteliaPlazaLobby.ablk"
 
-CasteliaDeptStore2F_Blocks:
-	INCBIN "maps/DeptStore2F.ablk"
+CasteliaPlazaGameCorner_Blocks:
+	INCBIN "maps/CasteliaPlazaGameCorner.ablk"
 
-CasteliaDeptStore3F_Blocks:
-	INCBIN "maps/DeptStore3F.ablk"
+CasteliaPlazaPrizeRoom_Blocks:
+	INCBIN "maps/CasteliaPlazaPrizeRoom.ablk"
 
-CasteliaDeptStore4F_Blocks:
-	INCBIN "maps/DeptStore4F.ablk"
+CasteliaPlazaRestaurant_Blocks:
+	INCBIN "maps/CasteliaPlazaRestaurant.ablk"
 
-CasteliaDeptStoreElevator_Blocks:
+CasteliaPlazaElevator_Blocks:
 VirbankComplexElevator_Blocks:
 	INCBIN "maps/DeptStoreElevator.ablk"
 
