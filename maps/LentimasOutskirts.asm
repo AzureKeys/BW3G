@@ -366,7 +366,7 @@ LentimasOutskirts_MapEvents:
 
 	db 4 ; warp events
 	warp_event 30,  3, REVERSAL_MOUNTAIN_B1F, 3
-	warp_event  9,  5, STRANGE_HOUSE_1F, 1
+	warp_event 11,  5, STRANGE_HOUSE_1F, 1
 	warp_event  7, 23, LENTIMAS_LOSTLORN_GATE, 1
 	warp_event  8, 23, LENTIMAS_LOSTLORN_GATE, 2
 
