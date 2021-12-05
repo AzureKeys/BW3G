@@ -2,6 +2,7 @@
 	const DRIFTVEILSHELTER_ROOD
 	const DRIFTVEILSHELTER_BIANCA
 	const DRIFTVEILSHELTER_CHEREN
+	const DRIFTVEILSHELTER_GRANNY
 
 DriftveilShelter_MapScripts:
 	db 2 ; scene scripts
@@ -34,6 +35,68 @@ DriftveilShelter_MapScripts:
 	setevent EVENT_CASTELIA_SEWERS_GRUNTS
 	clearevent EVENT_NUVEMA_LAB_BIANCA
 	setscene SCENE_FINISHED
+	end
+	
+DriftveilShelterGrannyScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_A_POKEMON_FROM_SHELTER
+	iftrue .GotMon
+	writetext DriftveilShelterGrannyIntroText
+	buttonsound
+	yesorno
+	iffalse .Declined
+	checkcode VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
+	writetext DriftveilShelterGrannyThanksText
+	buttonsound
+	checkevent EVENT_GOT_OSHAWOTT
+	iftrue .GiveSnivy
+	checkevent EVENT_GOT_SNIVY
+	iftrue .GiveTepig
+; GiveOshawott
+	pokenamemem OSHAWOTT, MEM_BUFFER_0
+	writetext DriftveilShelterReceivedMonText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	buttonsound
+	givepoke OSHAWOTT, 15
+	setevent EVENT_GOT_A_POKEMON_FROM_SHELTER
+	jump .GotMon
+.GiveTepig
+	pokenamemem TEPIG, MEM_BUFFER_0
+	writetext DriftveilShelterReceivedMonText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	buttonsound
+	givepoke TEPIG, 15
+	setevent EVENT_GOT_A_POKEMON_FROM_SHELTER
+	jump .GotMon
+.GiveSnivy
+	pokenamemem SNIVY, MEM_BUFFER_0
+	writetext DriftveilShelterReceivedMonText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	buttonsound
+	givepoke SNIVY, 15
+	setevent EVENT_GOT_A_POKEMON_FROM_SHELTER
+; fallthrough
+.GotMon
+	writetext DriftveilShelterGrannyGotMonText
+	waitbutton
+	closetext
+	end
+	
+.Declined
+	writetext DriftveilShelterGrannyDeclinedText
+	waitbutton
+	closetext
+	end
+	
+.NoRoom
+	writetext DriftveilShelterGrannyNoRoomText
+	waitbutton
+	closetext
 	end
 	
 DriftveilShelterRoodScript:
@@ -204,6 +267,68 @@ DriftveilShelterRoodLeaveText:
 	line "journey, <PLAY_G>!"
 	done
 	
+DriftveilShelterGrannyIntroText:
+	text "Why hello there,"
+	line "young trainer."
+	
+	para "Here at the #-"
+	line "MON SHELTER, we"
+	
+	para "try to find homes"
+	line "for abandoned"
+	cont "#MON."
+	
+	para "I know you must be"
+	line "a kind trainer if"
+	cont "ROOD trusts you."
+	
+	para "There's a #MON"
+	line "here that we've"
+	
+	para "had a hard time"
+	line "finding a home"
+	cont "for."
+	
+	para "How would you like"
+	line "to take it with"
+	cont "you?"
+	done
+
+DriftveilShelterGrannyThanksText:
+	text "Oh, that's"
+	line "wonderful!"
+	
+	para "Please take good"
+	line "care of it!"
+	done
+
+DriftveilShelterGrannyNoRoomText:
+	text "It looks like"
+	line "you'll need to"
+	
+	para "make room for this"
+	line "#MON."
+	done
+
+DriftveilShelterGrannyDeclinedText:
+	text "Oh, I'm sorry to"
+	line "hear that. Alright"
+	cont "then…"
+	done
+
+DriftveilShelterGrannyGotMonText:
+	text "Always remember to"
+	line "care for your"
+	cont "#MON!"
+	done
+
+DriftveilShelterReceivedMonText:
+	text "<PLAYER> received"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
+	done
+	
 DriftveilShelterRoodText:
 	text "ROOD: Thank you"
 	line "for your kindness,"
@@ -225,8 +350,9 @@ DriftveilShelter_MapEvents:
 	bg_event  8,  1, BGEVENT_READ, DriftveilShelterBookshelf
 	bg_event  9,  1, BGEVENT_READ, DriftveilShelterBookshelf
 
-	db 3 ; object events
+	db 4 ; object events
 	object_event  6,  3, SPRITE_ROOD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DriftveilShelterRoodScript, -1
 	object_event  5,  4, SPRITE_BIANCA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, 0, EVENT_DRIFTVEIL_SHELTER_FRIENDS
 	object_event  7,  4, SPRITE_CHEREN, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_DRIFTVEIL_SHELTER_FRIENDS
+	object_event  0,  8, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, DriftveilShelterGrannyScript, -1
 	

@@ -205,10 +205,10 @@ INCLUDE "maps/DriftveilShelter.asm"
 INCLUDE "maps/DriftveilDrawbridge.asm"
 INCLUDE "maps/Rt6.asm"
 INCLUDE "maps/R6House.asm"
-INCLUDE "maps/ChargestoneCave1F.asm"
 
 SECTION "Map Scripts 11", ROMX
 
+INCLUDE "maps/ChargestoneCave1F.asm"
 INCLUDE "maps/ChargestoneCaveB1F.asm"
 INCLUDE "maps/ChargestoneCaveB2F.asm"
 INCLUDE "maps/MistraltonCity.asm"
@@ -238,10 +238,10 @@ INCLUDE "maps/CelestialTower1F.asm"
 INCLUDE "maps/CelestialTower.asm"
 INCLUDE "maps/CelestialTowerRoof.asm"
 INCLUDE "maps/MistraltonAirport.asm"
-INCLUDE "maps/VillageBridge.asm"
 
 SECTION "Map Scripts 12", ROMX
 
+INCLUDE "maps/VillageBridge.asm"
 INCLUDE "maps/OpelucidCity.asm"
 INCLUDE "maps/Rt11.asm"
 INCLUDE "maps/LentimasAirport.asm"
