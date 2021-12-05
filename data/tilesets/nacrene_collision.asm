@@ -80,3 +80,25 @@
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 4f
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 50
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 51
+	tilecoll WALL, WALL, WALL, WALL ; 52
+	tilecoll WALL, WALL, WALL, WALL ; 53
+	tilecoll FLOOR, FLOOR, PIT, WALL ; 54
+	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 55
+	tilecoll FLOOR, CUT_TREE, FLOOR, FLOOR ; 56
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 57
+	tilecoll WALL, FLOOR, WALL, FLOOR ; 58
+	tilecoll WALL, WALL, WALL, WALL ; 59
+	tilecoll WALL, WALL, WALL, WALL ; 5a
+	tilecoll WALL, WALL, WALL, WALL ; 5b
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 5c
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 5d
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 5e
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 5f
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 60
+	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 61
+	tilecoll WALL, WALL, FLOOR, WALL ; 62
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 63
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 64
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 65
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 66
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 67

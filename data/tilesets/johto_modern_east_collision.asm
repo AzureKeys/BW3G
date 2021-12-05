@@ -19,7 +19,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 12
 	tilecoll WALL, WALL, WALL, WALL ; 13
 	tilecoll WALL, WALL, WALL, DOOR ; 14
-	tilecoll WALL, WALL, WALL, WALL ; 15
+	tilecoll WARP_CARPET_RIGHT, WALL, WARP_CARPET_RIGHT, WALL ; 15
 	tilecoll WALL, WALL, WALL, WALL ; 16
 	tilecoll WALL, WALL, WALL, WALL ; 17
 	tilecoll WALL, WALL, WALL, WALL ; 18
