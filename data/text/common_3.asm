@@ -1537,44 +1537,58 @@ UnknownText_0x1c60d1::
 	line "a while."
 	prompt
 	
-Cafe_IntroText::
-	text "Hi there! Welcome"
-	line "to NACRENE CAFE!"
+Boutique_IntroText::
+	text "Hello darling!"
+	line "Welcome to ICIRRUS"
+	cont "CITY BOUTIQUE."
 	
-	para "What can I get for"
-	line "you today?"
+	para "Is there anything"
+	line "that catches your"
+	cont "eye?"
 	done
 	
-Cafe_ComeAgainText::
-	text "Come again soon!"
+Boutique_ComeAgainText::
+	text "Please visit us"
+	line "again soon!"
 	done
 	
-Cafe_HowManyText::
-	text "How many of those"
-	line "would you like?"
+Boutique_HowManyText::
+	text "And how many of"
+	line "those would you"
+	cont "like, darling?"
 	done
 	
-Cafe_CostsThisMuchText::
-	text "Okay, that'll be"
-	line "¥@"
+Boutique_CostsThisMuchText::
+	text "Alright darling,"
+	line "we're looking at"
+	cont "¥@"
 	text_decimal hMoneyTemp, 3, 6
 	text "."
+	cont "Is that okay?"
 	done
 	
-Cafe_InsufficientFundsText::
-	text "Sorry, looks like"
-	line "you don't have"
-	cont "enough for that."
+Boutique_InsufficientFundsText::
+	text "Oh dear, that"
+	line "seems to be just"
+	
+	para "a bit out of your"
+	line "price range."
+	
+	para "Would you like to"
+	line "look at something"
+	cont "else?"
 	done
 	
-Cafe_BagFullText::
-	text "Uh-oh, looks like"
-	line "you won't be able"
-	cont "to carry it all."
+Boutique_BagFullText::
+	text "Oh my, will you"
+	line "even be able to"
+	cont "carry all of that?"
 	done
 	
-Cafe_HereYouGoText::
-	text "Alright, enjoy!"
+Boutique_HereYouGoText::
+	text "Wonderful! Thank"
+	line "you for your"
+	cont "purchase, darling!"
 	done
 	
 Market_IntroText::

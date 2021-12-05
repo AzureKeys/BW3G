@@ -66,13 +66,13 @@ SECTION "Map Blocks 2", ROMX
 NimbasaTMMart_Blocks:
 NimbasaVitaminMart_Blocks:
 NimbasaBallMart_Blocks:
+IcirrusBoutique_Blocks:
 AspertiaMart_Blocks:
 VirbankMart_Blocks:
 NacreneMart_Blocks:
 AccumulaMart_Blocks:
 MistraltonMart_Blocks:
 OpelucidMart_Blocks:
-IcirrusMart_Blocks:
 	INCBIN "maps/Mart.ablk"
 	
 HumilauPokecenter1F_Blocks:

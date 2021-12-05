@@ -23,6 +23,7 @@ Marts:
 	dw MartMistralton
 	dw MartOpelucid
 	dw MartIcirrus
+	dw MartBoutique
 	dw MartMall1
 	dw MartMall2
 	dw MartMall3
@@ -278,6 +279,16 @@ MartIcirrus:
 	db MAX_REPEL
 	db X_DEFEND
 	db X_SPEED
+	db -1 ; end
+
+MartBoutique:
+	db 6 ; # items
+	db BLACKGLASSES
+	db PINK_BOW
+	db BLACKBELT
+	db MUSCLE_BAND
+	db WISE_GLASSES
+	db FOCUS_BAND
 	db -1 ; end
 
 MartMall1:

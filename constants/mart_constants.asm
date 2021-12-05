@@ -5,7 +5,7 @@
 	const MARTTYPE_BARGAIN
 	const MARTTYPE_PHARMACY
 	const MARTTYPE_ROOFTOP
-	const MARTTYPE_CAFE
+	const MARTTYPE_BOUTIQUE
 	const MARTTYPE_MARKET
 
 ; Marts indexes (see data/items/marts.asm)
@@ -33,6 +33,7 @@
 	const MART_MISTRALTON
 	const MART_OPELUCID
 	const MART_ICIRRUS
+	const MART_BOUTIQUE
 	const MART_MALL_1
 	const MART_MALL_2
 	const MART_MALL_3

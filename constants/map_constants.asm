@@ -310,7 +310,7 @@ ENDM
 	map_const R_8, 24, 10
 	map_const MOOR_OF_ICIRRUS, 24, 20
 	map_const ICIRRUS_POKECENTER_1F, 5, 5
-	map_const ICIRRUS_MART, 6, 4
+	map_const ICIRRUS_BOUTIQUE, 6, 4
 	map_const ICIRRUS_HOUSE, 4, 4
 	
 	newgroup

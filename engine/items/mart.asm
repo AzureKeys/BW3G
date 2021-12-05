@@ -22,7 +22,7 @@ OpenMartDialog::
 	dw BargainShop
 	dw Pharmacist
 	dw RooftopSale
-	dw CafeShop
+	dw BoutiqueShop
 	dw MarketShop
 
 MartDialog:
@@ -74,13 +74,13 @@ Pharmacist:
 	call MartTextBox
 	ret
 	
-CafeShop:
+BoutiqueShop:
 	call FarReadMart
 	call LoadStandardMenuHeader
-	ld hl, Text_Cafe_Intro
+	ld hl, Text_Boutique_Intro
 	call MartTextBox
 	call BuyMenu
-	ld hl, Text_Cafe_ComeAgain
+	ld hl, Text_Boutique_ComeAgain
 	call MartTextBox
 	ret
 	
@@ -454,7 +454,7 @@ GetMartDialogGroup:
 	dwb .BargainShopPointers, 1
 	dwb .PharmacyPointers, 0
 	dwb .StandardMartPointers, 2
-	dwb .CafePointers, 0
+	dwb .BoutiquePointers, 0
 	dwb .MarketPointers, 0
 
 .StandardMartPointers:
@@ -489,12 +489,12 @@ GetMartDialogGroup:
 	dw Text_Pharmacy_HereYouGo
 	dw BuyMenuLoop
 	
-.CafePointers:
-	dw Text_Cafe_HowMany
-	dw Text_Cafe_CostsThisMuch
-	dw Text_Cafe_InsufficientFunds
-	dw Text_Cafe_BagFull
-	dw Text_Cafe_HereYouGo
+.BoutiquePointers:
+	dw Text_Boutique_HowMany
+	dw Text_Boutique_CostsThisMuch
+	dw Text_Boutique_InsufficientFunds
+	dw Text_Boutique_BagFull
+	dw Text_Boutique_HereYouGo
 	dw BuyMenuLoop
 	
 .MarketPointers:
@@ -808,32 +808,32 @@ Text_Pharmacist_ComeAgain:
 	text_far UnknownText_0x1c4ef6
 	text_end
 	
-Text_Cafe_Intro:
-	text_far Cafe_IntroText
+Text_Boutique_Intro:
+	text_far Boutique_IntroText
 	text_end
 	
-Text_Cafe_ComeAgain:
-	text_far Cafe_ComeAgainText
+Text_Boutique_ComeAgain:
+	text_far Boutique_ComeAgainText
 	text_end
 	
-Text_Cafe_HowMany:
-	text_far Cafe_HowManyText
+Text_Boutique_HowMany:
+	text_far Boutique_HowManyText
 	text_end
 	
-Text_Cafe_CostsThisMuch:
-	text_far Cafe_CostsThisMuchText
+Text_Boutique_CostsThisMuch:
+	text_far Boutique_CostsThisMuchText
 	text_end
 	
-Text_Cafe_InsufficientFunds:
-	text_far Cafe_InsufficientFundsText
+Text_Boutique_InsufficientFunds:
+	text_far Boutique_InsufficientFundsText
 	text_end
 	
-Text_Cafe_BagFull:
-	text_far Cafe_BagFullText
+Text_Boutique_BagFull:
+	text_far Boutique_BagFullText
 	text_end
 	
-Text_Cafe_HereYouGo:
-	text_far Cafe_HereYouGoText
+Text_Boutique_HereYouGo:
+	text_far Boutique_HereYouGoText
 	text_end
 	
 Text_Market_Intro:
