@@ -934,11 +934,11 @@ Intro_PlacePlayerSprite:
 	inc de
 	ld [hli], a ; tile id
 
-	ld b, PAL_OW_BLUE_D
+	ld b, PAL_NPC_BLUE_D
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .male
-	ld b, PAL_OW_RED_D
+	ld b, PAL_NPC_RED_D
 .male
 	ld a, b
 
