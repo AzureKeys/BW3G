@@ -742,10 +742,9 @@ DriftveilStoneEmporium_MapEvents:
 
 	db 0 ; coord events
 
-	db 3 ; bg events
+	db 2 ; bg events
 	bg_event  2,  7, BGEVENT_READ, StoneEmporiumSign
-	bg_event  2,  7, BGEVENT_READ, StoneEmporiumSign
-	bg_event  6,  3, BGEVENT_READ, StoneEmporiumElevator
+	bg_event  7,  7, BGEVENT_READ, StoneEmporiumElevator
 	
 	db 5 ; object events
 	object_event  2, 10, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, StoneEmporiumReceptionistScript, -1
