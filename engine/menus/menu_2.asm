@@ -3,6 +3,13 @@ PlaceMenuItemName:
 	ld a, [wMenuSelection]
 	ld [wNamedObjectIndexBuffer], a
 	call GetItemName
+	ld hl, wStringBuffer1
+	ld de, wStringBuffer4
+	ld bc, 19
+	call CopyBytes
+	ld de, wStringBuffer4 + STRLEN("TM##")
+	farcall AppendTMHMMoveName
+	ld de, wStringBuffer1
 	pop hl
 	call PlaceString
 	ret
