@@ -235,9 +235,15 @@ MartMerchant1:
 	db -1 ; end
 
 MartMerchant2:
-	db 2 ; # items
-	db RAZOR_FANG
-	db FOCUS_BAND
+	db 8 ; # items
+	db X_ATTACK
+	db X_DEFEND
+	db X_SPEED
+	db X_SPECIAL
+	db X_SP_DEF
+	db X_ACCURACY
+	db DIRE_HIT
+	db GUARD_SPEC
 	db -1 ; end
 
 MartMistralton:
