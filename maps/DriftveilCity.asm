@@ -41,7 +41,7 @@ DriftveilMerchant3Script:
 	opentext
 	checkevent EVENT_DRIFTVEIL_THUNDERSTONE
 	iffalse .purchase
-	checkevent EVENT_DRIFTVEIL_TM_SWORDS_DANCE
+	checkevent EVENT_DRIFTVEIL_RAZOR_FANG
 	iffalse .purchase
 	writetext DriftveilMerchantEmptyText
 	waitbutton
@@ -52,21 +52,21 @@ DriftveilMerchant3Script:
 	writetext DriftveilMerchantBuyText
 	special PlaceMoneyTopRight
 	checkevent EVENT_DRIFTVEIL_THUNDERSTONE
-	iftrue .TMOnly
-	checkevent EVENT_DRIFTVEIL_TM_SWORDS_DANCE
+	iftrue .FangOnly
+	checkevent EVENT_DRIFTVEIL_RAZOR_FANG
 	iftrue .ThunderstoneOnly
 	
 	loadmenu DriftveilBothMenuHeader
 	verticalmenu
 	closewindow
 	ifequal 1, .ChooseThunderstone
-	ifequal 2, .ChooseTM
+	ifequal 2, .ChooseRazorFang
 	jump DriftveilNoItemSelectedScript
-.TMOnly
-	loadmenu DriftveilTMMenuHeader
+.FangOnly
+	loadmenu DriftveilFangMenuHeader
 	verticalmenu
 	closewindow
-	ifequal 1, .ChooseTM
+	ifequal 1, .ChooseRazorFang
 	jump DriftveilNoItemSelectedScript
 .ThunderstoneOnly
 	loadmenu DriftveilThunderstoneMenuHeader
@@ -92,10 +92,10 @@ DriftveilMerchant3Script:
 	setevent EVENT_DRIFTVEIL_THUNDERSTONE
 	end
 	
-.ChooseTM
+.ChooseRazorFang
 	checkmoney YOUR_MONEY, 3000
 	ifequal HAVE_LESS, DriftveilNoMoneyScript
-	giveitem TM_SWORDS_DANCE
+	giveitem RAZOR_FANG
 	iffalse DriftveilNoRoomScript
 	takemoney YOUR_MONEY, 3000
 	special PlaceMoneyTopRight
@@ -106,7 +106,7 @@ DriftveilMerchant3Script:
 	writetext DriftveilMerchantThanksText
 	waitbutton
 	closetext
-	setevent EVENT_DRIFTVEIL_TM_SWORDS_DANCE
+	setevent EVENT_DRIFTVEIL_RAZOR_FANG
 	end
 	
 DriftveilNoItemSelectedScript:
@@ -137,10 +137,10 @@ DriftveilBothMenuHeader:
 	db STATICMENU_CURSOR ; flags
 	db 3 ; items
 	db "THUNDERSTONE¥2100@"
-	db "TM03        ¥3000@"
+	db "RAZOR FANG  ¥3000@"
 	db "CANCEL@"
 
-DriftveilTMMenuHeader:
+DriftveilFangMenuHeader:
 	db MENU_BACKUP_TILES ; flags
 	menu_coords 0, 3, 19, TEXTBOX_Y - 3
 	dw .MenuData
@@ -149,7 +149,7 @@ DriftveilTMMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 2 ; items
-	db "TM03        ¥3000@"
+	db "RAZOR FANG  ¥3000@"
 	db "CANCEL@"
 
 DriftveilThunderstoneMenuHeader:
