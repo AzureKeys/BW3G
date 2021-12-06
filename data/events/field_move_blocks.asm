@@ -6,6 +6,7 @@ CutTreeBlockPointers:
 	dbw TILESET_FOREST,            .forest
 	dbw TILESET_JOHTO_BEACH,       .johto_beach
 	dbw TILESET_NIMBASA,           .nimbasa
+	dbw TILESET_NACRENE,           .nacrene
 	dbw TILESET_PKMN_LEAGUE,       .pkmn_league
 	db -1 ; end
 
@@ -34,6 +35,12 @@ CutTreeBlockPointers:
 ; facing block, replacement block, animation
 	db $8D, $02, $01 ; grass
 	db $A2, $9F, $00 ; tree
+	db -1 ; end
+	
+.nacrene:
+; facing block, replacement block, animation
+	db $14, $02, $01 ; grass
+	db $56, $02, $00 ; tree
 	db -1 ; end
 
 .forest:

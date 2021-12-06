@@ -103,13 +103,15 @@ StriatonCitySignText:
 StriatonCity_MapEvents:
 	db 0, 0 ; filler
 
-	db 6 ; warp events
+	db 8 ; warp events
 	warp_event 33, 17, STRIATON_POKECENTER_1F, 1
 	warp_event 29, 17, STRIATON_TRADE_HOUSE, 1
 	warp_event 29, 26, STRIATON_LAB, 1
 	warp_event 29, 27, STRIATON_LAB, 2
 	warp_event 38, 17, STRIATON_GYM, 1
 	warp_event 39, 17, STRIATON_GYM, 2
+	warp_event 46, 14, DREAMYARD, 1
+	warp_event 46, 15, DREAMYARD, 2
 
 	db 0 ; coord events
 

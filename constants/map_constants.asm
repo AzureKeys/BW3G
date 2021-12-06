@@ -228,6 +228,7 @@ ENDM
 	map_const STRIATON_TRADE_HOUSE, 4, 4
 	map_const STRIATON_LAB, 4, 4
 	map_const STRIATON_GYM, 7, 9
+	map_const DREAMYARD, 20, 19
 	map_const R_2, 23, 20
 	map_const R_2_ACCUMULA_GATE, 5, 4
 	

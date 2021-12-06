@@ -568,11 +568,11 @@ INCBIN "gfx/tilesets/nimbasa.2bpp.lz"
 TilesetNimbasaMeta:
 INCBIN "data/tilesets/nimbasa_metatiles.bin"
 
-TilesetNimbasaColl:
-INCLUDE "data/tilesets/nimbasa_collision.asm"
-
 
 SECTION "Tileset Data 17", ROMX
+
+TilesetNimbasaColl:
+INCLUDE "data/tilesets/nimbasa_collision.asm"
 
 TilesetNimbasaAttr:
 INCBIN "data/tilesets/nimbasa_attributes.bin"
@@ -592,11 +592,11 @@ INCLUDE "data/tilesets/virbank_collision.asm"
 TilesetVirbankAttr:
 INCBIN "data/tilesets/virbank_attributes.bin"
 
-TilesetPkmnLeagueGFX:
-INCBIN "gfx/tilesets/pkmn_league.2bpp.lz"
-
 
 SECTION "Tileset Data 18", ROMX
+
+TilesetPkmnLeagueGFX:
+INCBIN "gfx/tilesets/pkmn_league.2bpp.lz"
 
 TilesetPkmnLeagueMeta:
 INCBIN "data/tilesets/pkmn_league_metatiles.bin"
@@ -613,6 +613,9 @@ INCBIN "gfx/tilesets/radio_tower.2bpp.lz"
 TilesetRadioTowerMeta:
 INCBIN "data/tilesets/radio_tower_metatiles.bin"
 
+
+SECTION "Tileset Data 19", ROMX
+
 TilesetCasteliaGFX:
 INCBIN "gfx/tilesets/castelia.2bpp.lz"
 
@@ -621,9 +624,6 @@ INCBIN "data/tilesets/castelia_metatiles.bin"
 
 TilesetCasteliaColl:
 INCLUDE "data/tilesets/castelia_collision.asm"
-
-
-SECTION "Tileset Data 19", ROMX
 
 TilesetRadioTowerColl:
 INCLUDE "data/tilesets/radio_tower_collision.asm"
@@ -649,6 +649,9 @@ INCLUDE "data/tilesets/airport_collision.asm"
 TilesetAirportAttr:
 INCBIN "data/tilesets/airport_attributes.bin"
 
+
+SECTION "Tileset Data 20", ROMX
+
 TilesetJohtoAirportGFX:
 INCBIN "gfx/tilesets/johto_airport.,johto_airport_extra.2bpp.lz"
 
@@ -657,9 +660,6 @@ INCBIN "data/tilesets/johto_airport_metatiles.bin"
 
 TilesetJohtoAirportColl:
 INCLUDE "data/tilesets/johto_airport_collision.asm"
-
-
-SECTION "Tileset Data 20", ROMX
 
 TilesetOpelucidGFX:
 INCBIN "gfx/tilesets/opelucid.2bpp.lz"
@@ -670,14 +670,14 @@ INCBIN "data/tilesets/opelucid_metatiles.bin"
 TilesetOpelucidColl:
 INCLUDE "data/tilesets/opelucid_collision.asm"
 
+
+SECTION "Tileset Data 21", ROMX
+
 TilesetOpelucidAttr:
 INCBIN "data/tilesets/opelucid_attributes.bin"
 
 TilesetIcirrusGFX:
 INCBIN "gfx/tilesets/icirrus.2bpp.lz"
-
-
-SECTION "Tileset Data 21", ROMX
 
 TilesetIcirrusMeta:
 INCBIN "data/tilesets/icirrus_metatiles.bin"

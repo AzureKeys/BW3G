@@ -36,6 +36,7 @@ Landmarks:
 	landmark 132,  92, R3Name
 	landmark 132,  92, WellspringCaveName
 	landmark 140,  92, StriatonCityName
+	landmark 148,  92, DreamyardName
 	landmark 140, 100, R2Name
 	landmark 140, 108, AccumulaTownName
 	landmark 140, 116, R1Name
@@ -206,6 +207,7 @@ NacreneCityName:     db "NACRENE¯CITY@"
 R3Name:              db "ROUTE 3@"
 WellspringCaveName:  db "WELLSPRING¯CAVE@"
 StriatonCityName:    db "STRIATON¯CITY@"
+DreamyardName:       db "DREAMYARD@"
 R2Name:              db "ROUTE 2@"
 AccumulaTownName:    db "ACCUMULA¯TOWN@"
 R1Name:              db "ROUTE 1@"

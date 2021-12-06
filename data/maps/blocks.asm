@@ -574,4 +574,7 @@ MoorOfIcirrus_Blocks:
 
 OpelucidGym_Blocks:
 	INCBIN "maps/OpelucidGym.ablk"
+
+Dreamyard_Blocks:
+	INCBIN "maps/Dreamyard.ablk"
 	

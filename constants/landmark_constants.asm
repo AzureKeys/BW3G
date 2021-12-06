@@ -32,6 +32,7 @@
 	const R_3
 	const WELLSPRING_CAVE
 	const STRIATON_CITY
+	const DREAMYARD
 	const R_2
 	const ACCUMULA_TOWN
 	const R_1

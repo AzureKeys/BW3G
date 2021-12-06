@@ -51,7 +51,6 @@ TilesetJohtoAirportAnim:
 TilesetJohtoBeachAnim:
 TilesetJohtoDesertAnim:
 TilesetJohtoModernEastAnim:
-TilesetNacreneAnim:
 TilesetNimbasaAnim:
 TilesetParkAnim:
 TilesetJohtoWestAnim:
@@ -72,6 +71,18 @@ TilesetVillageBridgeAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  IncWaterFrame
+	dw NULL,  DoneTileAnimation
+	
+TilesetNacreneAnim:
+	;dw vTiles2 tile $14, AnimateWaterTile
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateFlowerTile
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 	
 TilesetVirbankAnim:
