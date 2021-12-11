@@ -52,6 +52,7 @@ StdScripts::
 	dba PCScript
 	dba GameCornerCoinVendorScript
 	dba HappinessCheckScript
+	dba ApartmentStairsScript
 
 PokecenterNurseScript:
 ; EVENT_WELCOMED_TO_POKECOM_CENTER is never set
@@ -161,6 +162,9 @@ PokecenterNurseScript:
 	setflag ENGINE_CAUGHT_POKERUS
 	specialphonecall SPECIALCALL_POKERUS
 	end
+
+ApartmentStairsScript:
+	farjumptext ApartmentStairsText
 
 DifficultBookshelfScript:
 	farjumptext DifficultBookshelfText

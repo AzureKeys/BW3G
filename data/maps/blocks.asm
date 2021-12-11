@@ -9,8 +9,6 @@ FloccesyTradeHouse_Blocks:
 UndellaOldRodHouse_Blocks:
 LacunosaHouse_Blocks:
 LacunosaHouse2_Blocks:
-NimbasaHouse_Blocks:
-NimbasaNameRater_Blocks:
 Rt4House_Blocks:
 AspertiaMomHouse_Blocks:
 AspertiaMoveDeleterHouse_Blocks:
@@ -18,9 +16,7 @@ FloccesyTownHouse_Blocks:
 FloccesyRanchHouse_Blocks:
 VirbankHouse_Blocks:
 NacreneHouse_Blocks:
-StriatonTradeHouse_Blocks:
 AccumulaHouse_Blocks:
-AccumulaTradeHouse_Blocks:
 DriftveilHouse_Blocks:
 DriftveilFossilHouse_Blocks:
 DriftveilTradeHouse_Blocks:
@@ -34,6 +30,12 @@ OpelucidSuperRodHouse_Blocks:
 OpelucidMoveReminderHouse_Blocks:
 IcirrusHouse_Blocks:
 	INCBIN "maps/House1.ablk"
+	
+NimbasaHouse_Blocks:
+NimbasaNameRater_Blocks:
+StriatonTradeHouse_Blocks:
+AccumulaTradeHouse_Blocks:
+	INCBIN "maps/House3.ablk"
 
 Rt13UndellaGate_Blocks:
 LentimasLostlornGate_Blocks:

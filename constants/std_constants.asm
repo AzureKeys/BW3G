@@ -53,3 +53,4 @@
 	enum pcscript
 	enum gamecornercoinvendor
 	enum happinesschecknpc
+	enum apartmentstairs

@@ -114,6 +114,12 @@ PokeComNursePokerusText:
 	line "you anything more."
 	done
 
+ApartmentStairsText:
+	text "The door to the"
+	line "stairwell is"
+	cont "closed."
+	done
+
 DifficultBookshelfText:
 	text "It's full of"
 	line "difficult books."

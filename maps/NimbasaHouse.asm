@@ -26,6 +26,9 @@ NimbasaHouseWomanScript:
 NimbasaHouseBookshelf:
 	jumpstd magazinebookshelf
 
+NimbasaHouseStairs:
+	jumpstd apartmentstairs
+
 NimbasaHouseGiveBellText:
 	text "You're a #MON"
 	line "trainer, right?"
@@ -51,15 +54,15 @@ NimbasaHouse_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  2,  7, NIMBASA_CITY, 11
-	warp_event  3,  7, NIMBASA_CITY, 11
+	warp_event  6,  7, NIMBASA_CITY, 11
+	warp_event  7,  7, NIMBASA_CITY, 11
 
 	db 0 ; coord events
 
 	db 2 ; bg events
-	bg_event  0,  1, BGEVENT_READ, NimbasaHouseBookshelf
-	bg_event  1,  1, BGEVENT_READ, NimbasaHouseBookshelf
+	bg_event  2,  1, BGEVENT_READ, NimbasaHouseBookshelf
+	bg_event  7,  0, BGEVENT_READ, NimbasaHouseStairs
 
 	db 1 ; object events
-	object_event  2,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NimbasaHouseWomanScript, -1
+	object_event  2,  3, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NimbasaHouseWomanScript, -1
 	
