@@ -42,7 +42,7 @@ ItemEffects:
 	dw VitaminEffect       ; PROTEIN
 	dw VitaminEffect       ; IRON
 	dw VitaminEffect       ; CARBOS
-	dw NoEffect            ; LUCKY_PUNCH
+	dw NoEffect            ; HEART_SCALE
 	dw VitaminEffect       ; CALCIUM
 	dw RareCandyEffect     ; RARE_CANDY
 	dw XAccuracyEffect     ; X_ACCURACY

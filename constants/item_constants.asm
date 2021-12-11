@@ -35,7 +35,7 @@
 	const PROTEIN      ; 1b
 	const IRON         ; 1c
 	const CARBOS       ; 1d
-	const LUCKY_PUNCH  ; 1e
+	const HEART_SCALE  ; 1e
 	const CALCIUM      ; 1f
 	const RARE_CANDY   ; 20
 	const X_ACCURACY   ; 21

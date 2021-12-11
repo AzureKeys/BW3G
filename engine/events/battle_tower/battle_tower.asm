@@ -979,7 +979,7 @@ BattleTower_RandomlyChooseReward: ; BattleTowerAction $1e
 	sub 6
 .okay
 	add HP_UP
-	cp LUCKY_PUNCH
+	cp HEART_SCALE
 	jr z, .loop
 	push af
 	ld a, BANK(sBattleTowerReward)

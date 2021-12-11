@@ -28,7 +28,7 @@ ItemNames::
 	db "PROTEIN@"
 	db "IRON@"
 	db "CARBOS@"
-	db "LUCKY PUNCH@"
+	db "HEART SCALE@"
 	db "CALCIUM@"
 	db "RARE CANDY@"
 	db "X ACCURACY@"

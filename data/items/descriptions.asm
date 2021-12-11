@@ -29,7 +29,7 @@ ItemDescriptions:
 	dw ProteinDesc
 	dw IronDesc
 	dw CarbosDesc
-	dw LuckyPunchDesc
+	dw HeartScaleDesc
 	dw CalciumDesc
 	dw RareCandyDesc
 	dw XAccuracyDesc
@@ -372,9 +372,9 @@ CarbosDesc:
 	db   "Raises SPEED of"
 	next "one #MON.@"
 
-LuckyPunchDesc:
-	db   "Ups critical hit"
-	next "ratio of CHANSEY.@"
+HeartScaleDesc:
+	db   "A glimmering heart"
+	next "shaped scale.@"
 
 CalciumDesc:
 	db   "Ups SPECIAL stats"
