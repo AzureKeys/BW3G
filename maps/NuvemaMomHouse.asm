@@ -96,5 +96,5 @@ NuvemaMomHouse_MapEvents:
 	bg_event  1,  1, BGEVENT_READ, NuvemaMomHouseBookshelf
 
 	db 1 ; object events
-	object_event  2,  4, SPRITE_MOM, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NuvemaMomScript, -1
+	object_event  2,  4, SPRITE_REDS_MOM, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NuvemaMomScript, -1
 	

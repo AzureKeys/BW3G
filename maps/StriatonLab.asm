@@ -10,14 +10,16 @@ StriatonLab_MapScripts:
 StriatonLabFennelScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM_LIGHT_SCREEN
-	iftrue .GotTM
-	writetext StriatonLabGiveTMText
+	checkevent EVENT_FENNEL_METAL_COAT
+	iftrue .GotMetalCoat
+	writetext StriatonLabGiveMetalCoatText
 	buttonsound
-	verbosegiveitem TM_LIGHT_SCREEN
-	setevent EVENT_GOT_TM_LIGHT_SCREEN
-.GotTM
-	writetext StriatonLabGaveTMText
+	verbosegiveitem METAL_COAT
+	iffalse .done
+	setevent EVENT_FENNEL_METAL_COAT
+.GotMetalCoat
+	writetext StriatonLabGaveMetalCoatText
+.done
 	waitbutton
 	closetext
 	end
@@ -28,7 +30,7 @@ StriatonLabBlockerScript:
 StriatonLabMachine:
 	jumptext StriatonLabMachineText
 
-StriatonLabGiveTMText:
+StriatonLabGiveMetalCoatText:
 	text "Hi, are you a"
 	line "#MON trainer?"
 
@@ -39,22 +41,23 @@ StriatonLabGiveTMText:
 	line "for #MON"
 	cont "trainers."
 	
-	para "Because of our"
-	line "research the DREAM"
-	cont "YARD outside of"
-	
-	para "town has been shut"
-	line "off to the public."
-	
-	para "Here, take this"
-	line "instead."
+	para "Here, this might"
+	line "be helpful to you."
 	done
 
-StriatonLabGaveTMText:
-	text "That TM will"
-	line "increase the SP."
-	cont "DEF of all of your"
-	cont "#MON."
+StriatonLabGaveMetalCoatText:
+	text "That item will"
+	line "increase the power"
+	
+	para "of any STEEL moves"
+	line "used by the #-"
+	cont "MON holding it."
+	
+	para "It's also said"
+	line "that some #MON"
+	
+	para "Can use it to"
+	line "evolve!"
 	
 	para "I'm sure you'll"
 	line "find it useful!"
