@@ -101,9 +101,9 @@ EngineFlags:
 	engine_flag wDailyFlags1, DAILYFLAGS1_KURT_MAKING_BALLS_F ; $50
 	engine_flag wDailyFlags1, DAILYFLAGS1_BUG_CONTEST_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_FISH_SWARM_F
-	engine_flag wDailyFlags1, DAILYFLAGS1_TIME_CAPSULE_F
+	engine_flag wDailyFlags1, DAILYFLAGS1_GOT_MILK_TODAY_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_ALL_FRUIT_TREES_F
-	engine_flag wDailyFlags1, DAILYFLAGS1_GOT_SHUCKIE_TODAY_F
+	engine_flag wDailyFlags1, DAILYFLAGS1_GOT_CASTELIACONE_TODAY_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_GOLDENROD_UNDERGROUND_BARGAIN_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_ROCK_COLLECTOR_F
 

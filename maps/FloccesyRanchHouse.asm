@@ -10,25 +10,55 @@ FloccesyRanchHouse_MapScripts:
 PokefanM_DairyFarmer:
 	faceplayer
 	opentext
-	checkitem MOOMOO_MILK
+	checkflag ENGINE_GOT_MILK_TODAY
 	iftrue FarmerMScript_Milking
 	writetext FarmerMText_BuyMilk
 	special PlaceMoneyTopRight
-	yesorno
-	iffalse FarmerMScript_NoSale
+	loadmenu FloccesyRanchMilkMenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .one
+	ifequal 2, .six
+	jump FarmerMScript_NoSale
+	
+.one
 	checkmoney YOUR_MONEY, 500
 	ifequal HAVE_LESS, FarmerMScript_NoMoney
 	giveitem MOOMOO_MILK
 	iffalse FarmerMScript_NoRoom
 	takemoney YOUR_MONEY, 500
+	jump .bought
+	
+.six
+	checkmoney YOUR_MONEY, 3000
+	ifequal HAVE_LESS, FarmerMScript_NoMoney
+	giveitem MOOMOO_MILK, 6
+	iffalse FarmerMScript_NoRoom
+	takemoney YOUR_MONEY, 3000
+	
+.bought
 	special PlaceMoneyTopRight
 	waitsfx
 	playsound SFX_TRANSACTION
+	setflag ENGINE_GOT_MILK_TODAY
 	writetext FarmerMText_GotMilk
 	buttonsound
 	itemnotify
 	closetext
 	end
+
+FloccesyRanchMilkMenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 0, 10, TEXTBOX_Y - 5
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 3 ; items
+	db "ONE  500@"
+	db "SIX 3000@"
+	db "CANCEL@"
 
 FarmerMScript_NoMoney:
 	writetext FarmerMText_NoMoney
@@ -72,6 +102,9 @@ FarmerMText_BuyMilk:
 
 	para "I'll give it to ya"
 	line "fer just ¥500."
+	
+	para "You want jus' one,"
+	line "or a case o' six?"
 	done
 
 FarmerMText_GotMilk:

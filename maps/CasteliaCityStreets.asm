@@ -57,21 +57,59 @@ CherenAppears:
 
 CasteliaconeVendorScript:
 	opentext
+	checkflag ENGINE_GOT_CASTELIACONE_TODAY
+	iftrue Casteliacone_AlreadyBought
 	writetext CasteliaconeBuyText
 	special PlaceMoneyTopRight
-	yesorno
-	iffalse Casteliacone_NoSale
+	loadmenu CasteliaconeVendorMenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .one
+	ifequal 2, .dozen
+	jump Casteliacone_NoSale
+	
+.one
 	checkmoney YOUR_MONEY, 100
 	ifequal HAVE_LESS, Casteliacone_NoMoney
 	giveitem CASTELIACONE
 	iffalse Casteliacone_NoRoom
 	takemoney YOUR_MONEY, 100
+	jump .bought
+	
+.dozen
+	checkmoney YOUR_MONEY, 1200
+	ifequal HAVE_LESS, Casteliacone_NoMoney
+	giveitem CASTELIACONE, 12
+	iffalse Casteliacone_NoRoom
+	takemoney YOUR_MONEY, 1200
+	
+.bought
 	special PlaceMoneyTopRight
 	waitsfx
 	playsound SFX_TRANSACTION
+	setflag ENGINE_GOT_CASTELIACONE_TODAY
 	writetext CasteliaconeBoughtText
 	buttonsound
 	itemnotify
+	closetext
+	end
+
+CasteliaconeVendorMenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 3, 12, TEXTBOX_Y - 2
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 3 ; items
+	db "ONE    100@"
+	db "DOZEN 1200@"
+	db "CANCEL@"
+
+Casteliacone_AlreadyBought:
+	writetext CasteliaconeAlreadyBoughtText
+	waitbutton
 	closetext
 	end
 
@@ -233,6 +271,11 @@ CasteliaconeBuyText:
 	cont "CASTELIACONE?"
 	
 	para "It's just ¥100."
+	
+	para "You can buy just"
+	line "one, or a dozen."
+	
+	para "How about it?"
 	done
 	
 CasteliaconeBoughtText:
@@ -241,6 +284,14 @@ CasteliaconeBoughtText:
 	
 	para "status condition"
 	line "of a #MON!"
+	done
+	
+CasteliaconeAlreadyBoughtText:
+	text "Come back tomorrow"
+	line "if you'd like"
+	
+	para "another"
+	line "CASTELIACONE!"
 	done
 	
 CasteliaconeNoSaleText:
