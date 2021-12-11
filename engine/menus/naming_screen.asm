@@ -119,6 +119,20 @@ NamingScreen:
 	db "NICKNAME?@"
 
 .Player:
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wOBPals1)
+	ldh [rSVBK], a
+	ld hl, PlayerObjectPals
+	ld de, wOBPals1
+	ld bc, 8 palettes
+	call CopyBytes
+	pop af
+	ldh [rSVBK], a
+	
+	; ld b, SCGB_MAPPALS
+	; call GetSGBLayout
+	
 	farcall GetPlayerIcon
 	call .LoadSprite
 	hlcoord 5, 2
@@ -1394,3 +1408,6 @@ MailComposition_TryAddLastCharacter:
 	jp NamingScreen_LoadNextCharacter
 
 INCLUDE "data/text/mail_input_chars.asm"
+
+PlayerObjectPals:
+INCLUDE "gfx/stats/party_menu_ob_player.pal"
