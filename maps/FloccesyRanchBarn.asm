@@ -82,19 +82,36 @@ MoomooScript:
 	buttonsound
 	writetext FloccesyRanchBarnItsCryIsWeakText
 	buttonsound
-	writetext FloccesyRanchBarnAskGiveBerryText
+	checkitem BERRY
+	iftrue .ask_oran_berry
+	checkitem GOLD_BERRY
+	iffalse .NoBerriesInBag
+.ask_sitrus_berry
+	writetext FloccesyRanchBarnAskGiveSitrusBerryText
 	yesorno
 	iffalse .Refused
-	checkitem BERRY
-	iffalse .NoBerriesInBag
+	takeitem GOLD_BERRY
+	copybytetovar wMooMooBerries
+	addvar 3
+	copyvartobyte wMooMooBerries
+	jump .gave_berry
+.ask_oran_berry
+	writetext FloccesyRanchBarnAskGiveOranBerryText
+	yesorno
+	iftrue .give_oran_berry
+	checkitem GOLD_BERRY
+	iffalse .Refused
+	jump .ask_sitrus_berry
+.give_oran_berry
 	takeitem BERRY
 	copybytetovar wMooMooBerries
 	addvar 1
 	copyvartobyte wMooMooBerries
+.gave_berry
 	ifequal 2, .ThreeBerries
 	ifequal 3, .ThreeBerries
 	ifequal 4, .FiveBerries
-	ifequal 5, .SevenBerries
+	ifgreater 4, .SevenBerries
 	writetext FloccesyRanchBarnGaveBerryText
 	waitbutton
 	closetext
@@ -151,7 +168,7 @@ FloccesyRanchBarnTwinMoomooIsSickText:
 	text "WOOLIE is sick…"
 
 	para "She needs lots of"
-	line "BERRIES."
+	line "ORAN BERRIES."
 	done
 
 FloccesyRanchBarnTwinWereFeedingMoomooText:
@@ -174,7 +191,7 @@ FloccesyRanchBarnTwinGiveRibbonText:
 	done
 
 MoomooWeakMooText:
-	text "WOOLIE: …Moo…"
+	text "WOOLIE: …Baa…"
 	done
 
 FloccesyRanchBarnItsCryIsWeakText:
@@ -182,12 +199,17 @@ FloccesyRanchBarnItsCryIsWeakText:
 	done
 
 MoomooHappyMooText:
-	text "WOOLIE: Mooo!"
+	text "WOOLIE: Baaa!"
 	done
 
-FloccesyRanchBarnAskGiveBerryText:
-	text "Give a BERRY to"
-	line "FLAAFFY?"
+FloccesyRanchBarnAskGiveOranBerryText:
+	text "Give an ORAN BERRY"
+	line "to FLAAFFY?"
+	done
+
+FloccesyRanchBarnAskGiveSitrusBerryText:
+	text "Give a SITRUS"
+	line "BERRY to FLAAFFY?"
 	done
 
 FloccesyRanchBarnGaveBerryText:
@@ -212,7 +234,7 @@ FloccesyRanchBarnTotallyHealthyText:
 
 FloccesyRanchBarnNoBerriesText:
 	text "<PLAYER> has no"
-	line "BERRIES…"
+	line "ORAN BERRIES…"
 	done
 
 FloccesyRanchBarnRefusedBerryText:

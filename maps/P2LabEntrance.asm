@@ -59,11 +59,11 @@ P2LabEntranceJuniperIntroText:
 	line "a secret entrance."
 
 	para "After TEAM PLASMA"
-	line "was shut down, the"
+	line "was shut down,"
 	
-	para "#MON LEAGUE"
-	line "raided their labs"
-	cont "and hideouts."
+	para "their labs and"
+	line "hideouts were"
+	cont "raided."
 	
 	para "They found some"
 	line "pretty dangerous"

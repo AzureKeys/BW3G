@@ -68,8 +68,9 @@ NimbasaParkCoasterSwitch1:
 	end
 	
 NimbasaParkCoasterSwitch2:
+	opentext
 	checkevent EVENT_CRASHED_COASTER
-	iftrue .done
+	iftrue .already_pressed
 	changeblock 26, 24, $8C
 	setevent EVENT_CRASHED_COASTER
 	earthquake 30
@@ -84,7 +85,12 @@ NimbasaParkCoasterSwitch2:
 	writetext NimbasaParkCoasterMoveText2
 	waitbutton
 	closetext
-.done
+	end
+	
+.already_pressed
+	writetext NimbasaParkCoasterAlreadyPressedText
+	waitbutton
+	closetext
 	end
 	
 NimbasaParkStairsSwitch:
@@ -421,6 +427,14 @@ NimbasaParkCoasterMoveText2:
 	text "It sounds like"
 	line "something heavy"
 	cont "crashed…"
+	
+	para "A coaster car must"
+	line "have fallen off of"
+	cont "the track."
+	done
+	
+NimbasaParkCoasterAlreadyPressedText:
+	text "Nothing happened…"
 	done
 	
 NimbasaParkCoasterSwitchText:

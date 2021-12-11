@@ -118,7 +118,6 @@ INCLUDE "maps/AspertiaMoveDeleterHouse.asm"
 INCLUDE "maps/FloccesyRanchBarn.asm"
 INCLUDE "maps/FloccesyRanchHouse.asm"
 INCLUDE "maps/VirbankCity.asm"
-INCLUDE "maps/GameCorner.asm"
 
 SECTION "Map Scripts 7", ROMX
 
@@ -274,3 +273,7 @@ INCLUDE "maps/OpelucidGym.asm"
 INCLUDE "maps/OpelucidCuriosityShop.asm"
 INCLUDE "maps/IcirrusHouse.asm"
 INCLUDE "maps/Dreamyard.asm"
+
+SECTION "Map Scripts 13", ROMX
+
+INCLUDE "maps/GameCorner.asm"
