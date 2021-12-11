@@ -184,3 +184,4 @@ SpecialsPointers::
 	add_special InitialClearDSTFlag
 	add_special DummySpecial_c224 ; $a8
 	add_special Special_HiddenPowerGuru ; $a8
+	add_special MoveReminder

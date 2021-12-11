@@ -1632,3 +1632,37 @@ Market_HereYouGoText::
 	text "Thank you for"
 	line "your purchase!"
 	done
+	
+_MoveReminderWhichMon::
+	text "Which #MON"
+	line "should remember"
+	cont "a move?"
+	done
+	
+_MoveReminderWhichMove::
+	text "Which move should"
+	line "be remembered?"
+	done
+	
+_MoveReminderCancel::
+	text "Come back if you"
+	line "want another move"
+	cont "remembered."
+	done
+	
+_MoveReminderEgg::
+	text "I can't teach a"
+	line "move to an EGG!"
+	done
+	
+_MoveReminderNoMon::
+	text "That's not some-"
+	line "thing I can teach"
+	cont "a move to."
+	done
+	
+_MoveReminderNoMoves::
+	text "There's no moves"
+	line "that this #MON"
+	cont "can remember."
+	done
