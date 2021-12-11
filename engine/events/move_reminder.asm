@@ -249,20 +249,23 @@ ChooseMoveToLearn:
 	push de
 	dec a
 
-IF DEF(PSS)
+;IF DEF(PSS)
 	ld bc, MOVE_LENGTH
-	ld hl, Moves + MOVE_CATEGORY
+	ld hl, Moves + MOVE_TYPE
 	call AddNTimes
 	ld a, BANK(Moves)
 	call GetFarByte
-	and CATEGORY_MASK
+	and ~TYPE_MASK
+	rlc a
+	rlc a
+	dec a
 
 ; bc = a * 4
 	add a
 	add a
 	ld b, 0
 	ld c, a
-	ld hl, .Types
+	ld hl, .Categories
 	add hl, bc
 	ld d, h
 	ld e, l
@@ -274,7 +277,7 @@ IF DEF(PSS)
 
 	ld a, [wMenuSelection]
 	dec a
-ENDC
+;ENDC
 
 	ld bc, MOVE_LENGTH
 	ld hl, Moves + MOVE_TYPE
@@ -347,6 +350,11 @@ ENDC
 
 .ThreeDashes
 	db "---@"
+
+.Categories
+	db "PHY@"
+	db "SPE@"
+	db "STA@"
 
 .Types
 	db "NRM@"

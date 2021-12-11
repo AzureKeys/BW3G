@@ -277,3 +277,4 @@ INCLUDE "maps/Dreamyard.asm"
 SECTION "Map Scripts 13", ROMX
 
 INCLUDE "maps/GameCorner.asm"
+INCLUDE "maps/OpelucidMoveReminderHouse.asm"

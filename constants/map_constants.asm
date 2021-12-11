@@ -300,6 +300,7 @@ ENDM
 	map_const OPELUCID_SUPER_ROD_HOUSE, 4, 4 
 	map_const OPELUCID_GYM, 14, 16
 	map_const OPELUCID_CURIOSITY_SHOP, 4, 4
+	map_const OPELUCID_MOVE_REMINDER_HOUSE, 4, 4
 	map_const R_9, 22, 11
 	map_const SHOPPING_MALL_NINE, 9, 14
 	
