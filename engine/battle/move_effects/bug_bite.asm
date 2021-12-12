@@ -130,7 +130,18 @@ ConsumeOpponentItem:
 	
 .has_party
 	ld a, [hl]
-	ld d, a
+	ld d, a ; Copy item in d
+	xor a
+	ld [hl], a
+; If it's our turn, check the backup
+	ld a, [hBattleTurn]
+	and a
+	jr z, .done
+	call GetBackupItemAddr
+; If the backup is different, don't remove it
+	ld a, [hl]
+	cp d
+	jr nz, .done
 	xor a
 	ld [hl], a
 	

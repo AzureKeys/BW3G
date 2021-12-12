@@ -48,12 +48,13 @@ BattleCommand_Thief:
 	ld a, [wNamedObjectIndexBuffer]
 	ld [hl], a
 	ld [de], a
+; Set backup as well, so we keep it after battle
+	call GetBackupItemAddr
+	ld a, [de]
+	ld [hl], a
 	jr .stole
 
 .enemy
-	; Removing ability for opponents to steal items
-	; This is a temporary adjustment to prevent permanent item loss
-	ret
 
 ; Wildmons can't steal items
 	ld a, [wBattleMode]

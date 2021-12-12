@@ -1,6 +1,7 @@
 ; Core components of the battle engine.
 
 DoBattle:
+	call BackupBattleItems
 	xor a
 	ld [wBattleParticipantsNotFainted], a
 	ld [wBattleParticipantsIncludingFainted], a
@@ -2614,12 +2615,6 @@ WinTrainerBattle:
 	ld c, BATTLETOWERTEXT_LOSS_TEXT
 	farcall BattleTowerText
 	call WaitPressAorB_BlinkCursor
-	ld hl, wPayDayMoney
-	ld a, [hli]
-	or [hl]
-	inc hl
-	or [hl]
-	ret nz
 	call ClearTileMap
 	call ClearBGPalettes
 	ret
@@ -2773,10 +2768,6 @@ PlayVictoryMusic:
 	push de
 	call IsAnyMonHoldingExpShare
 	pop de
-	jr nz, .play_music
-	ld hl, wPayDayMoney
-	ld a, [hli]
-	or [hl]
 	jr nz, .play_music
 	ld a, [wBattleParticipantsNotFainted]
 	and a
@@ -8067,37 +8058,6 @@ TextJump_ComeBack:
 	text_far Text_ComeBack
 	text_end
 
-Unreferenced_HandleSafariAngerEatingStatus:
-	ld hl, wSafariMonEating
-	ld a, [hl]
-	and a
-	jr z, .angry
-	dec [hl]
-	ld hl, BattleText_WildMonIsEating
-	jr .finish
-
-.angry
-	dec hl ; wSafariMonAngerCount
-	ld a, [hl]
-	and a
-	ret z
-	dec [hl]
-	ld hl, BattleText_WildMonIsAngry
-	jr nz, .finish
-	push hl
-	ld a, [wEnemyMonSpecies]
-	ld [wCurSpecies], a
-	call GetBaseData
-	ld a, [wBaseCatchRate]
-	ld [wEnemyMonCatchRate], a
-	pop hl
-
-.finish
-	push hl
-	call Call_LoadTempTileMapToTileMap
-	pop hl
-	jp StdBattleTextBox
-
 FillInExpBar:
 	push hl
 	call CalcExpBar
@@ -8567,7 +8527,6 @@ ExitBattle:
 	ld a, [wBattleResult]
 	and $f
 	ret nz
-	call CheckPayDay
 	xor a
 	ld [wForceEvolution], a
 	predef EvolveAfterBattle
@@ -8576,6 +8535,7 @@ ExitBattle:
 
 CleanUpBattleRAM:
 	call BattleEnd_HandleRoamMons
+	call RestoreBattleItems
 	xor a
 	ld [wLowHealthAlarm], a
 	ld [wBattleMode], a
@@ -8604,41 +8564,6 @@ CleanUpBattleRAM:
 	dec b
 	jr nz, .loop
 	call WaitSFX
-	ret
-
-CheckPayDay:
-	ld hl, wPayDayMoney
-	ld a, [hli]
-	or [hl]
-	inc hl
-	or [hl]
-	ret z
-	ld a, [wAmuletCoin]
-	and a
-	jr z, .okay
-	ld hl, wPayDayMoney + 2
-	sla [hl]
-	dec hl
-	rl [hl]
-	dec hl
-	rl [hl]
-	jr nc, .okay
-	ld a, $ff
-	ld [hli], a
-	ld [hli], a
-	ld [hl], a
-
-.okay
-	ld hl, wPayDayMoney + 2
-	ld de, wMoney + 2
-	call AddBattleMoneyToAccount
-	ld hl, BattleText_PlayerPickedUpPayDayMoney
-	call StdBattleTextBox
-	ld a, [wInBattleTowerBattle]
-	bit 0, a
-	ret z
-	call ClearTileMap
-	call ClearBGPalettes
 	ret
 
 ShowLinkBattleParticipantsAfterEnd:

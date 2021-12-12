@@ -6,13 +6,6 @@ BattleText_QuickClaw:
 	cont "move first!"
 	prompt
 
-BattleText_PlayerPickedUpPayDayMoney:
-	text "<PLAYER> picked up"
-	line "¥@"
-	text_decimal wPayDayMoney, 3, 6
-	text "!"
-	prompt
-
 WildPokemonAppearedText:
 	text "Wild @"
 	text_ram wEnemyMonNick

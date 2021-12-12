@@ -6278,8 +6278,7 @@ EndRechargeOpp:
 	pop hl
 	ret
 
-;INCLUDE "engine/battle/move_effects/rage.asm"
-
+BattleCommand_PayDay:
 BattleCommand_Rage:
 BattleCommand_Substitute:
 BattleCommand_DoubleFlyingDamage:
@@ -6319,8 +6318,6 @@ INCLUDE "engine/battle/move_effects/leech_seed.asm"
 INCLUDE "engine/battle/move_effects/splash.asm"
 
 INCLUDE "engine/battle/move_effects/disable.asm"
-
-INCLUDE "engine/battle/move_effects/pay_day.asm"
 
 INCLUDE "engine/battle/move_effects/conversion.asm"
 

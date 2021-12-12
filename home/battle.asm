@@ -115,6 +115,66 @@ UpdateBattleHuds::
 	farcall UpdatePlayerHUD
 	farcall UpdateEnemyHUD
 	ret
+	
+GetBackupItemAddr::
+; Return address of backup item for current mon in hl
+	push bc
+	ld a, [wCurBattleMon]
+	ld c, a
+	ld b, 0
+	ld hl, wPartyBackupItems
+	add hl, bc
+	pop bc
+	ret
+	
+SetBackupItem::
+; If backup is empty, replace it with b if it's our turn
+	ldh a, [hBattleTurn]
+	and a
+	ret nz
+	
+	call GetBackupItemAddr
+	ld a, [hl]
+	and a
+	ret nz
+	ld [hl], b
+	ret
+	
+BackupBattleItems::
+; Copies items from party to backup wram
+	ld c, 0
+	jr ToggleBattleItems
+RestoreBattleItems::
+; Restores items from wPartyBackupItems
+	ld c, 1
+; fallthrough
+ToggleBattleItems:
+	ld b, 7
+	ld hl, wPartyMon1Item
+	ld de, wPartyBackupItems
+.loop
+	dec b
+	ret z
+	ld a, c
+	and a
+	jr nz, .restore
+	
+; Backup
+	ld a, [hl]
+	ld [de], a
+	jr .next
+	
+.restore
+	ld a, [de]
+	ld [hl], a
+; fallthrough
+.next
+	inc de
+	push bc
+	ld bc, PARTYMON_STRUCT_LENGTH
+	add hl, bc
+	pop bc
+	jr .loop
 
 INCLUDE "home/battle_vars.asm"
 

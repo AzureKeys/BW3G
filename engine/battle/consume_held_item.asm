@@ -40,18 +40,42 @@ ConsumeHeldItem:
 	call GetPartyLocation
 	ldh a, [hBattleTurn]
 	and a
-	jr nz, .ourturn
-	ld a, [wBattleMode]
-	dec a
-	jr z, .done
+	jr z, .enemyturn
 
-.ourturn
+; our turn
+	ld a, [hl]
+	ld d, a ; save copy of current item
 	ld [hl], NO_ITEM
+; If item is a berry, remove the backup too
+	ld [wCurItem], a
+	push bc
+	push hl
+	farcall CheckItemPocket
+	pop hl
+	pop bc
+	ld a, [wItemAttributeParamBuffer]
+	cp BERRIES
+	jr nz, .done
+	call GetBackupItemAddr
+; If the backup is different, don't remove it
+	ld a, [hl]
+	cp d
+	jr nz, .done
+	xor a
+	ld [hl], a
 
 .done
 	pop bc
 	pop de
 	pop hl
 	ret
+	
+.enemyturn
+; Done if it's a wild battle, otherwise clear enemy's party mon item first
+	ld a, [wBattleMode]
+	dec a
+	jr z, .done
+	ld [hl], NO_ITEM
+	jr .done
 
 INCLUDE "data/battle/held_consumables.asm"

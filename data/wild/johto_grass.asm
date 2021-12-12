@@ -51,7 +51,7 @@ JohtoGrassWildMons:
 	db 3, AZURILL
 	
 	map_id GIANT_CHASM_1F
-	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 2, ZUBAT
 	db 2, WOOBAT

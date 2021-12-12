@@ -618,11 +618,10 @@ wEnemyItemState:: db ; c6e6
 wCurEnemyMoveNum:: db ; c6e9
 
 wEnemyHPAtTimeOfPlayerSwitch:: dw ; c6ea
-wPayDayMoney:: ds 3 ; c6ec
 
-wSafariMonAngerCount:: db
-wSafariMonEating:: db
-	ds 1
+wPartyBackupItems::
+	ds PARTY_LENGTH
+
 wEnemyBackupDVs:: dw ; used when enemy is transformed
 wAlreadyDisobeyed:: db ; c6f4
 

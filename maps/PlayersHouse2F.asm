@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke HYDREIGON, 100, HEART_SCALE
+	; givepoke PURRLOIN, 5, BERRY
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
@@ -144,7 +144,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, STRIATON_CITY, 1
+	;warp_event  7,  0, R_22, 1
 
 	db 0 ; coord events
 
