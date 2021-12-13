@@ -313,12 +313,12 @@ VanilliteFrontpic:   INCBIN "gfx/pokemon/vanillite/front.animated.2bpp.lz"
 VanillishFrontpic:   INCBIN "gfx/pokemon/vanillish/front.animated.2bpp.lz"
 VanilluxeFrontpic:   INCBIN "gfx/pokemon/vanilluxe/front.animated.2bpp.lz"
 SneaselFrontpic:   INCBIN "gfx/pokemon/sneasel/front.animated.2bpp.lz"
-BugCatcherPic:       INCBIN "gfx/trainers/bug_catcher.2bpp.lz"
-KlinkFrontpic:   INCBIN "gfx/pokemon/klink/front.animated.2bpp.lz"
 
 
 SECTION "Pics 12", ROMX
 
+BugCatcherPic:       INCBIN "gfx/trainers/bug_catcher.2bpp.lz"
+KlinkFrontpic:   INCBIN "gfx/pokemon/klink/front.animated.2bpp.lz"
 PawniardFrontpic:   INCBIN "gfx/pokemon/pawniard/front.animated.2bpp.lz"
 BisharpFrontpic:   INCBIN "gfx/pokemon/bisharp/front.animated.2bpp.lz"
 SkarmoryFrontpic:   INCBIN "gfx/pokemon/skarmory/front.animated.2bpp.lz"
