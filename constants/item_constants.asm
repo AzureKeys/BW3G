@@ -80,7 +80,7 @@
 	const MOOMOO_MILK  ; 48
 	const QUICK_CLAW   ; 49
 	const PSNCUREBERRY ; 4a
-	const GOLD_LEAF    ; 4b
+	const AIR_BALLOON  ; 4b
 	const SOFT_SAND    ; 4c
 	const SHARP_BEAK   ; 4d
 	const PRZCUREBERRY ; 4e

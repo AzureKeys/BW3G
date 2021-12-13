@@ -73,7 +73,7 @@ ItemNames::
 	db "MOOMOO MILK@"
 	db "QUICK CLAW@"
 	db "PECHA BERRY@"
-	db "GOLD LEAF@"
+	db "AIR BALLOON@"
 	db "SOFT SAND@"
 	db "SHARP BEAK@"
 	db "CHERI BERRY@"

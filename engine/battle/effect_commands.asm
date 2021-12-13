@@ -1209,6 +1209,17 @@ INCLUDE "data/battle/critical_hit_chances.asm"
 
 INCLUDE "engine/battle/move_effects/triple_kick.asm"
 
+CheckAirBalloon:
+; Return z if user is holding an Air Balloon
+	push bc
+	push hl
+	call GetOpponentItem
+	pop hl
+	ld a, b
+	pop bc
+	cp HELD_AIR_BALLOON
+	ret
+
 BattleCommand_Stab:
 ; STAB = Same Type Attack Bonus
 	ld a, BATTLE_VARS_MOVE_ANIM
@@ -1605,14 +1616,14 @@ BattleCommand_CheckHit:
 	call .Protect
 	jp nz, .Miss
 
-	call .DrainSub
-	jp z, .Miss
-
 	call .LockOn
 	ret nz
 
 	call .FlyDigMoves
 	jp nz, .Miss
+	
+	call .AirBalloon
+	jp z, .Miss
 
 	call .ThunderRain
 	ret z
@@ -1767,23 +1778,16 @@ BattleCommand_CheckHit:
 	ld a, 1
 	and a
 	ret
-
-.DrainSub:
-; Return z if using an HP drain move on a substitute.
-	call CheckSubstituteOpp
-	jr z, .not_draining_sub
-
-	ld a, BATTLE_VARS_MOVE_EFFECT
+	
+.AirBalloon:
+; Check if opponent is holding Air Balloon
+	call CheckAirBalloon
+	ret nz
+; Check if move used is Ground type
+	ld a, BATTLE_VARS_MOVE_TYPE
 	call GetBattleVar
-
-	cp EFFECT_LEECH_HIT
-	ret z
-	cp EFFECT_DREAM_EATER
-	ret z
-
-.not_draining_sub
-	ld a, 1
-	and a
+	and TYPE_MASK
+	cp GROUND
 	ret
 
 .FlyDigMoves:
@@ -5645,6 +5649,16 @@ BattleCommand_HeldFlinch:
 	
 	call GetOpponentItem
 	ld a, b
+	cp HELD_AIR_BALLOON
+	jr nz, .skip_air_balloon
+	
+; Burst Air Balloon
+	ld hl, BattleText_AirBalloonPopped
+	call StdBattleTextBox
+	callfar ConsumeHeldItem
+	jr .check_user_item
+	
+.skip_air_balloon
 	cp HELD_ROCKY_HELMET
 	jr nz, .check_user_item
 

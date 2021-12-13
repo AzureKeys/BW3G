@@ -1,5 +1,17 @@
 BattleText:: ; used only for BANK(BattleText)
 
+BattleText_NotifyAirBalloon:
+	text "<USER>"
+	line "floats in the air"
+	cont "with AIR BALLOON!"
+	prompt
+
+BattleText_AirBalloonPopped:
+	text "<TARGET>'s"
+	line "AIR BALLOON"
+	cont "popped!"
+	prompt
+
 BattleText_QuickClaw:
 	text "<USER>'s"
 	line "QUICK CLAW let it"

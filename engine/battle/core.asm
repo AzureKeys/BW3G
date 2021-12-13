@@ -93,6 +93,10 @@ DoBattle:
 	call SendOutPlayerMon
 	call EmptyBattleTextBox
 	call LoadTileMapToTempTileMap
+; This is to check for enemy Air Balloon at Start of Battle
+	call SetEnemyTurn
+	call SpikesDamage
+	
 	call SetPlayerTurn
 	call SpikesDamage
 	ld a, [wLinkMode]
@@ -4302,8 +4306,19 @@ BreakAttraction:
 	ld hl, wEnemySubStatus1
 	res SUBSTATUS_IN_LOVE, [hl]
 	ret
+	
+HandleAirBalloon:
+; Print Air Balloon Message
+	farcall GetUserItem
+	ld a, b
+	cp HELD_AIR_BALLOON
+	ret nz
+	ld hl, BattleText_NotifyAirBalloon
+	call StdBattleTextBox
+	ret
 
 SpikesDamage:
+	call HandleAirBalloon
 	ld hl, wPlayerScreens
 	ld de, wBattleMonType
 	ld bc, UpdatePlayerHUD
