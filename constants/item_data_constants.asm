@@ -103,6 +103,7 @@ MAIL_STRUCT_LENGTH EQU $2f ; mailmsg struct
 	const HELD_ROCKY_HELMET
 	const HELD_AIR_BALLOON
 	const HELD_BLACK_SLUDGE
+	const HELD_FOCUS_SASH
 
 	const_def 50
 	const HELD_NORMAL_BOOST

@@ -7709,15 +7709,26 @@ BoostExp:
 	pop bc
 	ret
 	
+CheckOpponentFullHP:
+; check if the opponent has full HP
+; z: yes, nz: no
+	ld hl, wEnemyMonHP
+	ld a, [hBattleTurn]
+	and a
+	jr z, DoCheckFullHP
+	ld hl, wBattleMonHP
+	jr DoCheckFullHP
+	
 CheckFullHP:
 ; check if the user has full HP
 ; z: yes, nz: no
 	ld hl, wBattleMonHP
 	ld a, [hBattleTurn]
 	and a
-	jr z, .got_hp
+	jr z, DoCheckFullHP
 	ld hl, wEnemyMonHP
-.got_hp
+	; fallthrough
+DoCheckFullHP:
 	ld a, [hli]
 	ld b, a
 	ld a, [hli]

@@ -117,7 +117,7 @@ ItemEffects:
 	dw NoEffect            ; BLACKGLASSES
 	dw NoEffect            ; BLACK_SLUDGE
 	dw NoEffect            ; PINK_BOW
-	dw NoEffect            ; STICK
+	dw NoEffect            ; FOCUS_SASH
 	dw NoEffect            ; SMOKE_BALL
 	dw NoEffect            ; NEVERMELTICE
 	dw NoEffect            ; MAGNET

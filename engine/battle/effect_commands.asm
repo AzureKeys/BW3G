@@ -2228,7 +2228,7 @@ BattleCommand_ApplyDamage:
 	ld a, BATTLE_VARS_SUBSTATUS1_OPP
 	call GetBattleVar
 	bit SUBSTATUS_ENDURE, a
-	jr z, .focus_band
+	jr z, .check_item
 
 	call BattleCommand_FalseSwipe
 	ld b, 0
@@ -2236,13 +2236,29 @@ BattleCommand_ApplyDamage:
 	ld b, 1
 	jr .damage
 
-.focus_band
+.check_item
 	call GetOpponentItem
+	ld a, [hl]
+	ld [wNamedObjectIndexBuffer], a
+	call GetItemName
 	ld a, b
 	cp HELD_FOCUS_BAND
 	ld b, 0
+	jr z, .focus_band
+	cp HELD_FOCUS_SASH
 	jr nz, .damage
+	
+; check if target is at full hp
+	farcall CheckOpponentFullHP
+	jr nz, .damage
+	call BattleCommand_FalseSwipe
+	ld b, 0
+	jr nc, .damage
+	callfar ConsumeHeldItem
+	ld b, 2
+	jr .damage
 
+.focus_band
 	call BattleRandom
 	cp c
 	jr nc, .damage
@@ -2276,10 +2292,6 @@ BattleCommand_ApplyDamage:
 	jp StdBattleTextBox
 
 .focus_band_text
-	call GetOpponentItem
-	ld a, [hl]
-	ld [wNamedObjectIndexBuffer], a
-	call GetItemName
 	ld hl, HungOnText
 	jp StdBattleTextBox
 
@@ -3729,61 +3741,7 @@ DoPlayerDamage:
 	jp RefreshBattleHuds
 
 DoSubstituteDamage:
-	ld hl, SubTookDamageText
-	call StdBattleTextBox
-
-	ld de, wEnemySubstituteHP
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .got_hp
-	ld de, wPlayerSubstituteHP
-.got_hp
-
-	ld hl, wCurDamage
-	ld a, [hli]
-	and a
-	jr nz, .broke
-
-	ld a, [de]
-	sub [hl]
-	ld [de], a
-	jr z, .broke
-	jr nc, .done
-
-.broke
-	ld a, BATTLE_VARS_SUBSTATUS4_OPP
-	call GetBattleVarAddr
-	res SUBSTATUS_SUBSTITUTE, [hl]
-
-	ld hl, SubFadedText
-	call StdBattleTextBox
-
-	call BattleCommand_SwitchTurn
-	call BattleCommand_LowerSubNoAnim
-	ld a, BATTLE_VARS_SUBSTATUS3
-	call GetBattleVar
-	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
-	call z, AppearUserLowerSub
-	call BattleCommand_SwitchTurn
-
-	ld a, BATTLE_VARS_MOVE_EFFECT
-	call GetBattleVarAddr
-	cp EFFECT_MULTI_HIT
-	jr z, .ok
-	cp EFFECT_DOUBLE_HIT
-	jr z, .ok
-	cp EFFECT_POISON_MULTI_HIT
-	jr z, .ok
-	cp EFFECT_TRIPLE_KICK
-	jr z, .ok
-	cp EFFECT_BEAT_UP
-	jr z, .ok
-	xor a
-	ld [hl], a
-.ok
-	call RefreshBattleHuds
-.done
-	jp ResetDamage
+	ret
 
 UpdateMoveData:
 	ld a, BATTLE_VARS_MOVE_ANIM

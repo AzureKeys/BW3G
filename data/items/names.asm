@@ -103,7 +103,7 @@ ItemNames::
 	db "BLACKGLASSES@"
 	db "BLACK SLUDGE@"
 	db "PINK BOW@"
-	db "STICK@"
+	db "FOCUS SASH@"
 	db "SMOKE BALL@"
 	db "NEVERMELTICE@"
 	db "MAGNET@"

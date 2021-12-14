@@ -104,7 +104,7 @@ ItemDescriptions:
 	dw BlackGlassesDesc
 	dw BlackSludgeDesc
 	dw PinkBowDesc
-	dw StickDesc
+	dw FocusSashDesc
 	dw SmokeBallDesc
 	dw NeverMeltIceDesc
 	dw MagnetDesc
@@ -667,9 +667,9 @@ PinkBowDesc:
 	db   "Powers up fairy-"
 	next "type moves. (HOLD)@"
 
-StickDesc:
-	db   "An ordinary stick."
-	next "Sell low.@"
+FocusSashDesc:
+	db   "Prevents one-hit"
+	next "K.O.s (HOLD)@"
 
 SmokeBallDesc:
 	db   "Escape from wild"

@@ -52,8 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke PURRLOIN, 15, BLACK_SLUDGE
-	; givepoke KOFFING, 15, BLACK_SLUDGE
+	; givepoke PURRLOIN, 45, FOCUS_SASH
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
