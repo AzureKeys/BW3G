@@ -52,7 +52,8 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke PURRLOIN, 20, AIR_BALLOON
+	; givepoke PURRLOIN, 15, BLACK_SLUDGE
+	; givepoke KOFFING, 15, BLACK_SLUDGE
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
@@ -144,7 +145,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, R_22, 1
+	;warp_event  7,  0, HUMILAU_GYM, 1
 
 	db 0 ; coord events
 

@@ -102,7 +102,7 @@ ItemDescriptions:
 	dw SilkScarfDesc
 	dw PnkApricornDesc
 	dw BlackGlassesDesc
-	dw SlowpokeTailDesc
+	dw BlackSludgeDesc
 	dw PinkBowDesc
 	dw StickDesc
 	dw SmokeBallDesc
@@ -659,9 +659,9 @@ BlackGlassesDesc:
 	db   "Powers up dark-"
 	next "type moves. (HOLD)@"
 
-SlowpokeTailDesc:
-	db   "Very tasty. Sell"
-	next "high.@"
+BlackSludgeDesc:
+	db   "Heal poison-types"
+	next "in battle. (HOLD)@"
 
 PinkBowDesc:
 	db   "Powers up fairy-"

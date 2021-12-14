@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const VIRBANKCITY_HP_UP
+	const VIRBANKCITY_BLACK_SLUDGE
 	const VIRBANKCITY_RARE_CANDY
 	const VIRBANKCITY_TM_TOXIC
 	const VIRBANKCITY_BLOCKER
@@ -154,8 +154,8 @@ VirbankCityFishingGuruScript:
 VirbankCityFerryManScript:
 	jumptextfaceplayer VirbankFerryManText
 	
-VirbankCityHPUp:
-	itemball HP_UP
+VirbankCityBlackSludge:
+	itemball BLACK_SLUDGE
 	
 VirbankCityRareCandy:
 	itemball RARE_CANDY
@@ -361,7 +361,7 @@ VirbankCity_MapEvents:
 	bg_event 19, 24, BGEVENT_ITEM, VirbankCityPPUp
 
 	db 12 ; object events
-	object_event  4, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankCityHPUp, EVENT_VIRBANK_CITY_HP_UP
+	object_event  4, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankCityBlackSludge, EVENT_VIRBANK_CITY_BLACK_SLUDGE
 	object_event  4, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankCityRareCandy, EVENT_VIRBANK_CITY_RARE_CANDY
 	object_event 12,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, VirbankCityTMToxic, EVENT_VIRBANK_CITY_TM_TOXIC
 	object_event 19,  6, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VirbankCityBlockerScript, -1

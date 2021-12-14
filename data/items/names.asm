@@ -101,7 +101,7 @@ ItemNames::
 	db "SILK SCARF@"
 	db "PNK APRICORN@"
 	db "BLACKGLASSES@"
-	db "SLOWPOKETAIL@"
+	db "BLACK SLUDGE@"
 	db "PINK BOW@"
 	db "STICK@"
 	db "SMOKE BALL@"

@@ -1375,9 +1375,33 @@ HandleLeftovers:
 	ld [wNamedObjectIndexBuffer], a
 	call GetItemName
 	ld a, b
+	cp HELD_BLACK_SLUDGE
+	jr nz, .check_leftovers
+	
+; check if user is poison type
+	ld hl, wBattleMonType1
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .gottype
+	ld hl, wEnemyMonType1
+.gottype
+	ld a, [hli]
+	cp POISON
+	jp z, .get_hp
+	ld a, [hl]
+	cp POISON
+	jp z, .get_hp
+
+; User is not poison, deal damage
+	call GetEighthMaxHP
+	call SubtractHPFromTarget
+	ld hl, BattleText_TargetHurtByItem
+	jp StdBattleTextBox
+	
+.check_leftovers
 	cp HELD_LEFTOVERS
 	ret nz
-
+.get_hp
 	ld hl, wBattleMonHP
 	ldh a, [hBattleTurn]
 	and a

@@ -123,6 +123,14 @@ BattleText_UserLostSomeOfItsHP:
 	cont "HP!"
 	prompt
 
+BattleText_TargetHurtByItem:
+	text "<USER>"
+	line "was hurt by"
+	cont "@"
+	text_ram wStringBuffer1
+	text "."
+	prompt
+
 BattleText_TargetRecoveredWithItem:
 	text "<TARGET>"
 	line "recovered with"
