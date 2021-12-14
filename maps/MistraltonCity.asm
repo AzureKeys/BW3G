@@ -196,7 +196,7 @@ MistraltonCity_MapEvents:
 
 	db 7 ; warp events
 	warp_event 23, 23, CHARGESTONE_CAVE_1F, 5
-	warp_event 23,  9, MISTRALTON_MART, 1
+	warp_event 23,  9, MISTRALTON_BLACKBELT_HOUSE, 1
 	warp_event 27, 15, MISTRALTON_POKECENTER_1F, 1
 	warp_event 35, 17, MISTRALTON_HOUSE, 1
 	warp_event  6,  5, MISTRALTON_GYM_1F, 1

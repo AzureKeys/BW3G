@@ -202,7 +202,7 @@ ENDM
 	map_attributes NimbasaParkRunway, NIMBASA_PARK_RUNWAY, $00, 0
 	map_attributes NimbasaParkBasement, NIMBASA_PARK_BASEMENT, $00, 0
 	map_attributes AspertiaCity, ASPERTIA_CITY, $6D, 0
-	map_attributes AspertiaMart, ASPERTIA_MART, $00, 0
+	map_attributes AspertiaBlackbeltHouse, ASPERTIA_BLACKBELT_HOUSE, $00, 0
 	map_attributes AspertiaGym, ASPERTIA_GYM, $00, 0
 	map_attributes AspertiaPokecenter1F, ASPERTIA_POKECENTER_1F, $00, 0
 	map_attributes FloccesyPokecenter1F, FLOCCESY_POKECENTER_1F, $00, 0
@@ -289,7 +289,7 @@ ENDM
 	map_attributes DriftveilHouse, DRIFTVEIL_HOUSE, $00, 0
 	map_attributes DriftveilTradeHouse, DRIFTVEIL_TRADE_HOUSE, $00, 0
 	map_attributes MistraltonPokecenter1F, MISTRALTON_POKECENTER_1F, $00, 0
-	map_attributes MistraltonMart, MISTRALTON_MART, $00, 0
+	map_attributes MistraltonBlackbeltHouse, MISTRALTON_BLACKBELT_HOUSE, $00, 0
 	map_attributes MistraltonHouse, MISTRALTON_HOUSE, $00, 0
 	map_attributes MistraltonGym1F, MISTRALTON_GYM_1F, $00, 0
 	map_attributes MistraltonGym2F, MISTRALTON_GYM_2F, $00, 0

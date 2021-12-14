@@ -89,8 +89,8 @@ CasteliaNorthPokefanFText:
 CasteliaNorthTwinText:
 	text "That thing you"
 	line "have--it's an X-"
-	cont "TRAN, right? Wow,"
-	cont "that's cool."
+	cont "TRANSCIEVER, huh?"
+	cont "Wow that's cool."
 	done
 
 CasteliaNorthTwin2Text:

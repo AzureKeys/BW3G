@@ -181,7 +181,7 @@ ENDM
 	newgroup
 	map_const ASPERTIA_CITY, 14, 22
 	map_const ASPERTIA_SUBWAY, 10, 9
-	map_const ASPERTIA_MART, 6, 4
+	map_const ASPERTIA_BLACKBELT_HOUSE, 4, 4
 	map_const ASPERTIA_POKECENTER_1F, 5, 5
 	map_const ASPERTIA_MOM_HOUSE, 4, 4 
 	map_const ASPERTIA_MOVE_DELETER_HOUSE, 4, 4 
@@ -275,7 +275,7 @@ ENDM
 	newgroup
 	map_const MISTRALTON_CITY, 20, 16
 	map_const MISTRALTON_POKECENTER_1F, 5, 5
-	map_const MISTRALTON_MART, 6, 4
+	map_const MISTRALTON_BLACKBELT_HOUSE, 4, 4
 	map_const MISTRALTON_HOUSE, 4, 4
 	map_const MISTRALTON_GYM_1F, 7, 10
 	map_const MISTRALTON_GYM_2F, 9, 9

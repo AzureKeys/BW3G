@@ -12,6 +12,7 @@ LacunosaHouse2_Blocks:
 Rt4House_Blocks:
 AspertiaMomHouse_Blocks:
 AspertiaMoveDeleterHouse_Blocks:
+AspertiaBlackbeltHouse_Blocks:
 FloccesyTownHouse_Blocks:
 FloccesyRanchHouse_Blocks:
 VirbankHouse_Blocks:
@@ -23,6 +24,7 @@ DriftveilTradeHouse_Blocks:
 NuvemaMomHouse_Blocks:
 Rt18House_Blocks:
 MistraltonHouse_Blocks:
+MistraltonBlackbeltHouse_Blocks:
 Rt6House_Blocks:
 Rt7House_Blocks:
 Rt7TradeHouse_Blocks:
@@ -70,11 +72,9 @@ NimbasaTMMart_Blocks:
 NimbasaVitaminMart_Blocks:
 NimbasaBallMart_Blocks:
 IcirrusBoutique_Blocks:
-AspertiaMart_Blocks:
 VirbankMart_Blocks:
 NacreneMart_Blocks:
 AccumulaMart_Blocks:
-MistraltonMart_Blocks:
 OpelucidMart_Blocks:
 	INCBIN "maps/Mart.ablk"
 	

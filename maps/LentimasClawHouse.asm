@@ -15,14 +15,14 @@ LentimasClawHouseGrampsScript:
 	special PlaceMoneyTopRight
 	yesorno
 	iffalse LentimasClawHouse_NoSale
-	checkmoney YOUR_MONEY, 1000
+	checkmoney YOUR_MONEY, 500
 	ifequal HAVE_LESS, LentimasClawHouse_NoMoney
 	writetext LentimasClawHouseGiveText
 	buttonsound
 	verbosegiveitem QUICK_CLAW
 	iffalse .noroom
 	setevent EVENT_GOT_QUICK_CLAW
-	takemoney YOUR_MONEY, 1000
+	takemoney YOUR_MONEY, 500
 	special PlaceMoneyTopRight
 	waitsfx
 	playsound SFX_TRANSACTION

@@ -146,7 +146,7 @@ AspertiaCity_MapEvents:
 
 	db 7 ; warp events
 	warp_event 10, 31, ASPERTIA_SUBWAY, 3
-	warp_event 23, 15, ASPERTIA_MART, 1
+	warp_event 23, 15, ASPERTIA_BLACKBELT_HOUSE, 1
 	warp_event 15, 23, ASPERTIA_POKECENTER_1F, 1
 	warp_event 13, 37, ASPERTIA_MOM_HOUSE, 1
 	warp_event 19,  9, R_19_ASPERTIA_GATE, 3
