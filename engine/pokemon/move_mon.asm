@@ -101,7 +101,15 @@ GeneratePartyMonStats:
 	and a
 	ld a, $0
 	jr z, .skipitem
+	; Load item into backup as well
+	ldh a, [hMoveMon]
+	dec a
+	ld c, a
+	ld b, 0
+	ld hl, wPartyBackupItems
+	add hl, bc
 	ld a, [wEnemyMonItem]
+	ld [hl], a
 .skipitem
 	ld [de], a
 	inc de
