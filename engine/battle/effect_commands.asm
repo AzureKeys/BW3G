@@ -3180,6 +3180,9 @@ BattleCommand_DamageCalc:
 	
 	cp HELD_CATEGORY_BOOST
 	jr z, .CategoryBoost
+	
+	cp HELD_CHOICE_BOOST
+	jr z, .ChoiceBoost
 
 	ld hl, TypeBoostItems
 
@@ -3244,6 +3247,38 @@ BattleCommand_DamageCalc:
 
 .doCategoryBoost
 	ld a, 10
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+	
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	jr .DoneItem
+	
+.ChoiceBoost
+	ld a, c
+	cp SP_ATTACK
+	jr z, .choice_specs
+	and a
+	jr nz, .DoneItem ; Must be Scarf, so no boost
+	
+; Choice Band
+	ld a, BATTLE_VARS_MOVE_TYPE
+	call GetBattleVar
+	cp SPECIAL
+	jr c, .doChoiceBoost
+	jr .DoneItem
+	
+.choice_specs
+	ld a, BATTLE_VARS_MOVE_TYPE
+	call GetBattleVar
+	cp SPECIAL
+	jr c, .DoneItem
+
+.doChoiceBoost
+	ld a, 50
 	add 100
 	ldh [hMultiplier], a
 	call Multiply
