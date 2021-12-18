@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke PURRLOIN, 5, NO_ITEM
+	; givepoke PURRLOIN, 15, CHOICE_BAND
 	; giveitem MASTER_BALL
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
@@ -145,7 +145,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, ICIRRUS_CITY_SOUTH, 1
+	;warp_event  7,  0, HUMILAU_GYM, 1
 
 	db 0 ; coord events
 

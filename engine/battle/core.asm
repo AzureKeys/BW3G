@@ -696,7 +696,7 @@ ParsePlayerAction:
 .not_encored
 	ld a, [wBattlePlayerAction]
 	cp BATTLEPLAYERACTION_SWITCH
-	jr z, .reset_rage
+	jp z, .reset_rage
 	and a
 	jr nz, .reset_bide
 	ld a, [wPlayerSubStatus3]
@@ -708,6 +708,7 @@ ParsePlayerAction:
 	ld [wFXAnimID], a
 	call MoveSelectionScreen
 	push af
+	call SetChoiceLock
 	call Call_LoadTempTileMapToTileMap
 	call UpdateBattleHuds
 	ld a, [wCurPlayerMove]
@@ -6063,6 +6064,7 @@ ParseEnemyAction:
 	bit SUBSTATUS_ENCORED, [hl]
 	ld a, [wLastEnemyMove]
 	jp nz, .finish
+	call SetChoiceLock
 	ld hl, wEnemyMonMoves
 	ld b, 0
 	add hl, bc
@@ -6143,6 +6145,7 @@ ParseEnemyAction:
 
 .skip_load
 	call SetEnemyTurn
+	call SetChoiceLock
 	callfar UpdateMoveData
 	call CheckEnemyLockedIn
 	jr nz, .raging
@@ -6178,6 +6181,30 @@ ParseEnemyAction:
 .struggle
 	ld a, STRUGGLE
 	jr .finish
+	
+SetChoiceLock:
+	push hl
+	push bc
+	callfar GetUserItem
+	ld a, b
+	cp HELD_CHOICE_BOOST
+	jr nz, .done
+	ld hl, wPlayerEncoreCount
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .GotEncoreCount
+	ld hl, wEnemyEncoreCount
+.GotEncoreCount
+	ld a, -1 ; Set encore count to 255
+	ld [hl], a
+	ld a, BATTLE_VARS_SUBSTATUS5
+	call GetBattleVarAddr
+	set SUBSTATUS_ENCORED, [hl]
+	
+.done
+	pop bc
+	pop hl
+	ret
 
 ResetVarsForSubstatusRage:
 	xor a

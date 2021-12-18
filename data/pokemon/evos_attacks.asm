@@ -250,7 +250,6 @@ WatchogEvosAttacks:
 PurrloinEvosAttacks:
 	db EVOLVE_LEVEL, 20, LIEPARD
 	db 0 ; no more evolutions
-	db 1, THIEF
 	db 1, SCRATCH
 	db 3, GROWL
 	db 6, TAIL_WHIP ; Assist
