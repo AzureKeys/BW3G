@@ -126,9 +126,9 @@ ItemEffects:
 	dw NoEffect            ; BIG_PEARL
 	dw NoEffect            ; EVERSTONE
 	dw NoEffect            ; SPELL_TAG
-	dw RestoreHPEffect     ; RAGECANDYBAR
-	dw NoEffect            ; GS_BALL
-	dw BlueCardEffect      ; BLUE_CARD
+	dw NoEffect            ; CHOICE_BAND
+	dw NoEffect            ; CHOICE_SPECS
+	dw NoEffect            ; CHOICE_SCARF
 	dw NoEffect            ; MIRACLE_SEED
 	dw NoEffect            ; THICK_CLUB
 	dw NoEffect            ; FOCUS_BAND
@@ -2433,14 +2433,6 @@ PokeFluteEffect:
 
 .battle
 	jp PokeFluteTerminatorCharacter
-
-BlueCardEffect:
-	ld hl, .bluecardtext
-	jp MenuTextBoxWaitButton
-
-.bluecardtext
-	text_far UnknownText_0x1c5c5e
-	text_end
 
 CoinCaseEffect:
 	ld hl, .coincasetext

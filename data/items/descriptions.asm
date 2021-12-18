@@ -113,9 +113,9 @@ ItemDescriptions:
 	dw BigPearlDesc
 	dw EverStoneDesc
 	dw SpellTagDesc
-	dw RageCandyBarDesc
-	dw GSBallDesc
-	dw BlueCardDesc
+	dw ChoiceBandDesc
+	dw ChoiceSpecsDesc
+	dw ChoiceScarfDesc
 	dw MiracleSeedDesc
 	dw ThickClubDesc
 	dw FocusBandDesc
@@ -703,17 +703,17 @@ SpellTagDesc:
 	db   "Powers up ghost-"
 	next "type moves. (HOLD)@"
 
-RageCandyBarDesc:
-	db   "Restores #MON"
-	next "HP by 20.@"
+ChoiceBandDesc:
+	db   "Ups ATTACK, can't"
+	next "swap move. (HOLD)@"
 
-GSBallDesc:
-	db   "The mysterious"
-	next "BALL.@"
+ChoiceSpecsDesc:
+	db   "Ups SP.ATK, can't"
+	next "swap move. (HOLD)@"
 
-BlueCardDesc:
-	db   "Card to save"
-	next "points.@"
+ChoiceScarfDesc:
+	db   "Ups SPEED, can't"
+	next "swap move. (HOLD)@"
 
 MiracleSeedDesc:
 	db   "Powers up grass-"
