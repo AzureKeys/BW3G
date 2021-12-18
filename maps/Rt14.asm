@@ -6,6 +6,7 @@
 	const R14_PRIZE_GIVER
 	const R14_ANTIDOTE
 	const R14_POTION
+	const R14_NET_BALL
 	const R14_TM_BULK_UP
 	const R14_FRUIT_TREE
 

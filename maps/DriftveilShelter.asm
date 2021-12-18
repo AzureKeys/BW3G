@@ -183,7 +183,10 @@ DriftveilShelterRoodIntroText:
 	
 	para "You see, that"
 	line "girl, INFER, is"
-	cont "my daughter…"
+	cont "my granddaughter…"
+	
+	para "I raised her since"
+	line "she was little."
 	
 	para "She always loved"
 	line "#MON, but I"
