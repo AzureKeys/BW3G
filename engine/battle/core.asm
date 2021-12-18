@@ -6875,6 +6875,7 @@ ApplyStatusEffectOnEnemyStats:
 
 ApplyStatusEffectOnStats:
 	ldh [hBattleTurn], a
+	farcall ApplyChoiceScarfOnSpeed
 	call ApplyPrzEffectOnSpeed
 	jp ApplyBrnEffectOnAttack
 

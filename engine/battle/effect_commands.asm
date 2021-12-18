@@ -1988,68 +1988,6 @@ BattleCommand_EffectChance:
 
 BattleCommand_LowerSub:
 ; lowersub
-
-	ld a, BATTLE_VARS_SUBSTATUS4
-	call GetBattleVar
-	bit SUBSTATUS_SUBSTITUTE, a
-	ret z
-
-	ld a, BATTLE_VARS_SUBSTATUS3
-	call GetBattleVar
-	bit SUBSTATUS_CHARGED, a
-	jr nz, .already_charged
-
-	ld a, BATTLE_VARS_MOVE_EFFECT
-	call GetBattleVar
-	cp EFFECT_SKY_ATTACK
-	jr z, .charge_turn
-	cp EFFECT_SKULL_BASH
-	jr z, .charge_turn
-	cp EFFECT_SOLARBEAM
-	jr z, .charge_turn
-	cp EFFECT_FLY
-	jr z, .charge_turn
-
-.already_charged
-	call .Rampage
-	jr z, .charge_turn
-
-	call CheckUserIsCharging
-	ret nz
-
-.charge_turn
-	call _CheckBattleScene
-	jr c, .mimic_anims
-
-	xor a
-	ld [wNumHits], a
-	ld [wFXAnimID + 1], a
-	inc a
-	ld [wKickCounter], a
-	;ld a, SUBSTITUTE
-	;jp LoadAnim
-
-.mimic_anims
-	call BattleCommand_LowerSubNoAnim
-	jp BattleCommand_MoveDelay
-
-.Rampage:
-	ld a, BATTLE_VARS_MOVE_EFFECT
-	call GetBattleVar
-	cp EFFECT_ROLLOUT
-	jr z, .rollout_rampage
-	cp EFFECT_RAMPAGE
-	jr z, .rollout_rampage
-
-	ld a, 1
-	and a
-	ret
-
-.rollout_rampage
-	ld a, [wSomeoneIsRampaging]
-	and a
-	ld a, 0
-	ld [wSomeoneIsRampaging], a
 	ret
 
 BattleCommand_MoveAnim:
@@ -2163,23 +2101,8 @@ BattleCommand_SwitchTurn:
 
 BattleCommand_RaiseSub:
 ; raisesub
-
-	ld a, BATTLE_VARS_SUBSTATUS4
-	call GetBattleVar
-	bit SUBSTATUS_SUBSTITUTE, a
-	ret z
-
-	call _CheckBattleScene
-	jp c, BattleCommand_RaiseSubNoAnim
-
-	xor a
-	ld [wNumHits], a
-	ld [wFXAnimID + 1], a
-	ld a, $2
-	ld [wKickCounter], a
-	;ld a, SUBSTITUTE
-	;jp LoadAnim
-
+	ret
+	
 BattleCommand_FailureText:
 ; failuretext
 ; If the move missed or failed, load the appropriate
@@ -7190,3 +7113,67 @@ CheckContactMove:
 	ret
 	
 INCLUDE "data/moves/contact_moves.asm"
+	
+ApplyChoiceScarfOnSpeed:
+	call GetUserItem
+	ld a, b
+	cp HELD_CHOICE_BOOST
+	ret nz
+	ld a, c
+	cp SPEED
+	ret nz
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .enemy
+; load wBattleMonSpeed into hMultiplicand
+	ld hl, wBattleMonSpeed
+	xor a
+	ldh [hMultiplicand + 0], a
+	ld a, [hli]
+	ldh [hMultiplicand + 1], a
+	ld a, [hl]
+	ldh [hMultiplicand + 2], a
+; Multiply by 150
+	ld a, 50
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+; Divide by 100
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+; load hQuotient back into wBattleMonSpeed
+	ldh a, [hQuotient + 2]
+	ld hl, wBattleMonSpeed
+	ld [hli], a
+	ldh a, [hQuotient + 3]
+	ld [hl], a
+	ret
+	
+.enemy
+; load wEnemyMonSpeed into hMultiplicand
+	ld hl, wEnemyMonSpeed
+	xor a
+	ldh [hMultiplicand + 0], a
+	ld a, [hli]
+	ldh [hMultiplicand + 1], a
+	ld a, [hl]
+	ldh [hMultiplicand + 2], a
+; Multiply by 150
+	ld a, 50
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+; Divide by 100
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+; load hQuotient back into wEnemyMonSpeed
+	ldh a, [hQuotient + 2]
+	ld hl, wEnemyMonSpeed
+	ld [hli], a
+	ldh a, [hQuotient + 3]
+	ld [hl], a
+	ret
