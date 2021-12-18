@@ -234,6 +234,7 @@ ScriptCommandTable:
 	dw Script_wait                       ; a8
 	dw Script_checksave                  ; a9
 	dw Script_hiddengrotto               ; aa
+	dw Script_reloadmappartnotext        ; ab
 
 StartScript:
 	ld hl, wScriptFlags
@@ -2589,6 +2590,18 @@ Script_reloadmappart::
 	ldh [hBGMapMode], a
 	call OverworldTextModeSwitch
 	call GetMovementPermissions
+	farcall ReloadMapPart
+	call UpdateSprites
+	ret
+
+Script_reloadmappartnotext::
+; script command 0xab
+
+	xor a
+	ldh [hBGMapMode], a
+	call OverworldTextModeSwitch
+	call GetMovementPermissions
+	farcall ReanchorBGMap_NoOAMUpdate
 	farcall ReloadMapPart
 	call UpdateSprites
 	ret

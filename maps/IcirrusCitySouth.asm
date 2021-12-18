@@ -53,7 +53,8 @@ IcirrusCityUpperFloorScript:
 	changeblock 34,  2, $5d
 	changeblock 36,  2, $5d
 	setevent EVENT_ICIRRUS_CITY_UPPER_FLOOR
-	refreshscreen
+	callasm ReanchorBGMap_NoOAMUpdate
+	callasm ReloadMapPart
 .done
 	end
 	
@@ -75,7 +76,8 @@ IcirrusCityLowerFloorScript:
 	changeblock 34,  2, $61
 	changeblock 36,  2, $62
 	clearevent EVENT_ICIRRUS_CITY_UPPER_FLOOR
-	refreshscreen
+	callasm ReanchorBGMap_NoOAMUpdate
+	callasm ReloadMapPart
 .done
 	end
 	

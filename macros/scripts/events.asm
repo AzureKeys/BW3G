@@ -1063,3 +1063,8 @@ hiddengrotto: MACRO
 	db hiddengrotto_command
 	db \1 ; tree_id
 ENDM
+
+	enum reloadmappartnotext_command ; $7c
+reloadmappartnotext: MACRO
+	db reloadmappartnotext_command
+ENDM
