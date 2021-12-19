@@ -239,14 +239,14 @@ CELEBIEVENT_FOREST_IS_RESTLESS_F EQU 2
 
 ; wDailyFlags1:: ; dc1e
 	const_def
-	const DAILYFLAGS1_KURT_MAKING_BALLS_F             ; 0
-	const DAILYFLAGS1_BUG_CONTEST_F                   ; 1
-	const DAILYFLAGS1_FISH_SWARM_F                    ; 2
-	const DAILYFLAGS1_GOT_MILK_TODAY_F                ; 3
-	const DAILYFLAGS1_ALL_FRUIT_TREES_F               ; 4
-	const DAILYFLAGS1_GOT_CASTELIACONE_TODAY_F        ; 5
-	const DAILYFLAGS1_GOLDENROD_UNDERGROUND_BARGAIN_F ; 6
-	const DAILYFLAGS1_ROCK_COLLECTOR_F                ; 7
+	const DAILYFLAGS1_KURT_MAKING_BALLS_F      ; 0
+	const DAILYFLAGS1_BUG_CONTEST_F            ; 1
+	const DAILYFLAGS1_FISH_SWARM_F             ; 2
+	const DAILYFLAGS1_GOT_MILK_TODAY_F         ; 3
+	const DAILYFLAGS1_ALL_FRUIT_TREES_F        ; 4
+	const DAILYFLAGS1_GOT_CASTELIACONE_TODAY_F ; 5
+	const DAILYFLAGS1_BALL_MANIAC_F            ; 6
+	const DAILYFLAGS1_ROCK_COLLECTOR_F         ; 7
 
 ; wDailyFlags2:: ; dc1f
 	const_def

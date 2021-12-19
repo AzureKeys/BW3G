@@ -104,7 +104,7 @@ EngineFlags:
 	engine_flag wDailyFlags1, DAILYFLAGS1_GOT_MILK_TODAY_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_ALL_FRUIT_TREES_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_GOT_CASTELIACONE_TODAY_F
-	engine_flag wDailyFlags1, DAILYFLAGS1_GOLDENROD_UNDERGROUND_BARGAIN_F
+	engine_flag wDailyFlags1, DAILYFLAGS1_BALL_MANIAC_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_ROCK_COLLECTOR_F
 
 	engine_flag wDailyFlags2, DAILYFLAGS2_MT_MOON_SQUARE_CLEFAIRY_F ; $58

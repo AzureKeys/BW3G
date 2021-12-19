@@ -37,6 +37,7 @@ NimbasaHouse_Blocks:
 NimbasaNameRater_Blocks:
 StriatonTradeHouse_Blocks:
 AccumulaTradeHouse_Blocks:
+AccumulaBallManiacHouse_Blocks:
 	INCBIN "maps/House3.ablk"
 
 Rt13UndellaGate_Blocks:
@@ -74,7 +75,6 @@ NimbasaBallMart_Blocks:
 IcirrusBoutique_Blocks:
 VirbankMart_Blocks:
 NacreneMart_Blocks:
-AccumulaMart_Blocks:
 OpelucidMart_Blocks:
 	INCBIN "maps/Mart.ablk"
 	

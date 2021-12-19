@@ -214,7 +214,7 @@ AccumulaTown_MapEvents:
 	db 6 ; warp events
 	warp_event  4,  6, R_2_ACCUMULA_GATE, 3
 	warp_event  4,  7, R_2_ACCUMULA_GATE, 4
-	warp_event  5, 15, ACCUMULA_MART, 1
+	warp_event  5, 15, ACCUMULA_BALL_MANIAC_HOUSE, 1
 	warp_event 25, 11, ACCUMULA_POKECENTER_1F, 1
 	warp_event 23,  4, ACCUMULA_HOUSE, 1
 	warp_event 11,  5, ACCUMULA_TRADE_HOUSE, 1

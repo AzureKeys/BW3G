@@ -235,7 +235,7 @@ ENDM
 	newgroup
 	map_const ACCUMULA_TOWN, 15, 12
 	map_const ACCUMULA_POKECENTER_1F, 5, 5
-	map_const ACCUMULA_MART, 6, 4
+	map_const ACCUMULA_BALL_MANIAC_HOUSE, 4, 4
 	map_const ACCUMULA_HOUSE, 4, 4
 	map_const ACCUMULA_TRADE_HOUSE, 4, 4
 	map_const R_1, 19, 22

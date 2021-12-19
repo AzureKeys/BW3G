@@ -242,7 +242,7 @@ ENDM
 	map_attributes StriatonLab, STRIATON_LAB, $00, 0
 	map_attributes Rt2AccumulaGate, R_2_ACCUMULA_GATE, $00, 0
 	map_attributes AccumulaPokecenter1F, ACCUMULA_POKECENTER_1F, $00, 0
-	map_attributes AccumulaMart, ACCUMULA_MART, $00, 0
+	map_attributes AccumulaBallManiacHouse, ACCUMULA_BALL_MANIAC_HOUSE, $00, 0
 	map_attributes AccumulaHouse, ACCUMULA_HOUSE, $00, 0
 	map_attributes AccumulaTradeHouse, ACCUMULA_TRADE_HOUSE, $00, 0
 	map_attributes NuvemaMomHouse, NUVEMA_MOM_HOUSE, $00, 0
