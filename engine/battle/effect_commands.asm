@@ -7115,7 +7115,8 @@ CheckContactMove:
 INCLUDE "data/moves/contact_moves.asm"
 	
 ApplyChoiceScarfOnSpeed:
-	call GetUserItem
+; This routine is called from the opposite turn's perspective
+	call GetOpponentItem
 	ld a, b
 	cp HELD_CHOICE_BOOST
 	ret nz

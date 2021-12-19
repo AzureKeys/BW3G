@@ -708,7 +708,6 @@ ParsePlayerAction:
 	ld [wFXAnimID], a
 	call MoveSelectionScreen
 	push af
-	call SetChoiceLock
 	call Call_LoadTempTileMapToTileMap
 	call UpdateBattleHuds
 	ld a, [wCurPlayerMove]
@@ -721,6 +720,7 @@ ParsePlayerAction:
 	ldh [hBGMapMode], a
 	pop af
 	ret nz
+	call SetChoiceLock
 
 .encored
 	call SetPlayerTurn
