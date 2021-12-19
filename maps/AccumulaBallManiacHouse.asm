@@ -71,11 +71,11 @@ AccumulaBallManiacIntroText:
 	cont "See my collection!"
 	
 	para "Different kinds of"
-	line "#BALL are better"
+	line "#BALL are"
 	
-	para "at catching #-"
-	line "MON in different"
-	cont "situations."
+	para "better at catching"
+	line "#MON, depending"
+	cont "on the situation."
 	
 	para "How about you? How"
 	line "would you like a"
