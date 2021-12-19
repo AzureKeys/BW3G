@@ -4947,6 +4947,8 @@ CalcPlayerStats:
 	call CallBattleCore
 
 	call BattleCommand_SwitchTurn
+	
+	call ApplyChoiceScarfOnSpeed
 
 	ld hl, ApplyPrzEffectOnSpeed
 	call CallBattleCore
@@ -4965,6 +4967,8 @@ CalcEnemyStats:
 	call CalcBattleStats
 
 	call BattleCommand_SwitchTurn
+	
+	call ApplyChoiceScarfOnSpeed
 
 	ld hl, ApplyPrzEffectOnSpeed
 	call CallBattleCore

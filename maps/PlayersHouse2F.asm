@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke ROGGENROLA, 5, CHOICE_BAND
+	; givepoke ROGGENROLA, 5, CHOICE_SCARF
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
