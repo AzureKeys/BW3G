@@ -52,6 +52,8 @@ BattleCommand_Thief:
 	call GetBackupItemAddr
 	ld a, [de]
 	ld [hl], a
+; Unlock enemy move if Choice item was stolen
+	call .ResetChoice
 	jr .stole
 
 .enemy
@@ -98,6 +100,7 @@ BattleCommand_Thief:
 	ld a, [wNamedObjectIndexBuffer]
 	ld [hl], a
 	ld [de], a
+	call .ResetChoice
 
 .stole
 	call GetItemName
@@ -118,4 +121,30 @@ BattleCommand_Thief:
 	ld d, h
 	ld e, l
 	ld hl, wEnemyMonItem
+	ret
+	
+.ResetChoice
+	call GetUserItem
+	ld a, b
+	cp HELD_CHOICE_BOOST
+	ret nz
+	ld a, c
+	cp SPEED
+	jr nz, .reset_encore_count
+; Recalculate Stats if Choice Scarf is stolen
+	call CalcPlayerStats
+	call CalcEnemyStats
+	
+.reset_encore_count
+	ld hl, wEnemyEncoreCount
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .got_encore_count
+	ld hl, wPlayerEncoreCount
+.got_encore_count
+	xor a
+	ld [hl], a
+	ld a, BATTLE_VARS_SUBSTATUS5_OPP
+	call GetBattleVarAddr
+	res SUBSTATUS_ENCORED, [hl]
 	ret

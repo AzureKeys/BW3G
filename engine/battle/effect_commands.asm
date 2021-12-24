@@ -6211,7 +6211,8 @@ EndRechargeOpp:
 	res SUBSTATUS_RECHARGE, [hl]
 	pop hl
 	ret
-
+	
+BattleCommand_MirrorMove:
 BattleCommand_PayDay:
 BattleCommand_Rage:
 BattleCommand_Substitute:
@@ -6524,7 +6525,7 @@ CheckSubstituteOpp:
 
 INCLUDE "engine/battle/move_effects/selfdestruct.asm"
 
-INCLUDE "engine/battle/move_effects/mirror_move.asm"
+;INCLUDE "engine/battle/move_effects/mirror_move.asm"
 
 INCLUDE "engine/battle/move_effects/metronome.asm"
 
