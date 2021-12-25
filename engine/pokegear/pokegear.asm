@@ -115,10 +115,6 @@ Pokegear_LoadGFX:
 	ld de, vTiles2
 	ld a, BANK(TownMapGFX)
 	call FarDecompress
-	ld hl, PokegearGFX
-	ld de, vTiles2 tile $30
-	ld a, BANK(PokegearGFX)
-	call FarDecompress
 	ld hl, PokegearSpritesGFX
 	ld de, vTiles0
 	ld a, BANK(PokegearSpritesGFX)
@@ -2175,29 +2171,22 @@ TownMapBubble:
 ; Draw the bubble containing the location text in the town map HUD
 
 ; Top-left corner
-	hlcoord 1, 0
+	hlcoord 0, 0
 	ld a, $30
 	ld [hli], a
 ; Top row
-	ld bc, 16
+	ld bc, 18
 	ld a, " "
 	call ByteFill
 ; Top-right corner
 	ld a, $31
-	ld [hl], a
-	hlcoord 1, 1
-
-; Middle row
-	ld bc, 18
-	ld a, " "
-	call ByteFill
+	ld [hli], a
 
 ; Bottom-left corner
-	hlcoord 1, 2
 	ld a, $32
 	ld [hli], a
 ; Bottom row
-	ld bc, 16
+	ld bc, 18
 	ld a, " "
 	call ByteFill
 ; Bottom-right corner
@@ -2205,7 +2194,7 @@ TownMapBubble:
 	ld [hl], a
 
 ; Print "Where?"
-	hlcoord 2, 0
+	hlcoord 1, 0
 	ld de, .Where
 	call PlaceString
 ; Print the name of the default flypoint
@@ -2320,7 +2309,7 @@ FlyMap:
 	call FillJohtoMap
 	call .MapHud
 	pop af
-	call TownMapPlayerIcon
+	;call TownMapPlayerIcon
 	ret
 
 .KantoFlyMap:
@@ -2709,8 +2698,8 @@ TownMapPals:
 ; Current tile
 	ld a, [hli]
 	push hl
-; The palette map covers tiles $00 to $5f; $60 and above use palette 0
-	cp $60
+; The palette map covers tiles $00 to $7e; $7f and above use palette 0
+	cp $7f
 	jr nc, .pal0
 
 ; The palette data is condensed to nybbles, least-significant first.
@@ -2826,7 +2815,7 @@ TownMapPlayerIcon:
 LoadTownMapGFX:
 	ld hl, TownMapGFX
 	ld de, vTiles2
-	lb bc, BANK(TownMapGFX), 48
+	lb bc, BANK(TownMapGFX), 127
 	call DecompressRequest2bpp
 	ret
 

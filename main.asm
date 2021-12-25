@@ -683,9 +683,6 @@ INCLUDE "engine/pokedex/pokedex_3.asm"
 INCLUDE "engine/events/catch_tutorial_input.asm"
 INCLUDE "engine/pokegear/townmap_convertlinebreakcharacters.asm"
 
-PokegearGFX:
-INCBIN "gfx/pokegear/pokegear.2bpp.lz"
-
 INCLUDE "engine/pokemon/european_mail.asm"
 
 

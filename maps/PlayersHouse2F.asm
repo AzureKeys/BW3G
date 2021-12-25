@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke ROGGENROLA, 10, CHOICE_SCARF
+	; givepoke HYDREIGON, 100, CHOICE_SCARF
 	; giveitem CHOICE_BAND
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
@@ -145,7 +145,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, LACUNOSA_TOWN, 1
+	;warp_event  7,  0, LENTIMAS_TOWN, 1
 
 	db 0 ; coord events
 
