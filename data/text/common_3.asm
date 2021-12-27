@@ -1666,3 +1666,47 @@ _MoveReminderNoMoves::
 	line "that this #MON"
 	cont "can remember."
 	done
+	
+_DVCheckerWhichMon::
+	text "Which #MON"
+	line "should I check?"
+	done
+	
+_DVCheckerCancel::
+	text "Come back if you'd"
+	line "like me to check"
+	
+	para "another #MON's"
+	line "potential."
+	done
+	
+_DVCheckerEgg::
+	text "Even I can't see"
+	line "the potential of"
+	cont "an EGG!"
+	done
+	
+_DVCheckerNoMon::
+	text "That's not some-"
+	line "thing I can see"
+	cont "the potential of."
+	done
+	
+_DVCheckerLetsSee::
+	text "Okay, let's see…"
+	
+	para "If I were to rate"
+	line "your #MON's"
+	
+	para "stats on a scale"
+	line "of 0 to 15…"
+	prompt
+	
+_DVCheckerPrintDV::
+	text "Its @"
+	text_ram wStringBuffer2
+	text_start
+	line "would be @"
+	text_ram wStringBuffer1
+	text "."
+	prompt

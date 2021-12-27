@@ -108,6 +108,11 @@ PlayersHouseRadioScript:
 	end
 
 PlayersHouseBookshelfScript:
+	; opentext
+	; special DVChecker
+	; waitbutton
+	; closetext
+	; end
 	jumpstd picturebookshelf
 
 PlayersHousePCScript:
