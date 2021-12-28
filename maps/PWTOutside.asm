@@ -3,6 +3,7 @@
 	const PWTOUTSIDE_BIANCA
 	const PWTOUTSIDE_DAMP_ROCK
 	const PWTOUTSIDE_HIDDEN_POWER_GURU
+	const PWTOUTSIDE_DV_CHECKER
 	const PWTOUTSIDE_BUG_CATCHER
 	const PWTOUTSIDE_COOLTRAINER_F
 	const PWTOUTSIDE_COOLTRAINER_M
@@ -58,6 +59,23 @@ HiddenPowerGuruScript:
 	
 .egg
 	writetext HiddenPowerEggText
+	waitbutton
+	closetext
+	end
+	
+DVCheckerScript:
+	faceplayer
+	opentext
+	writetext DVCheckerAskText
+	yesorno
+	iffalse .refused
+	special DVChecker
+	waitbutton
+	closetext
+	end
+	
+.refused
+	writetext DVCheckerRefusedText
 	waitbutton
 	closetext
 	end
@@ -125,6 +143,24 @@ HiddenPowerEggText:
 	text "Even I can't sense"
 	line "the potential of"
 	cont "an EGG!"
+	done
+	
+DVCheckerAskText:
+	text "I can sense the"
+	line "potential of a"
+	cont "#MON's stats."
+	
+	para "Would you like to"
+	line "know your #-"
+	cont "MON's potential?"
+	done
+	
+DVCheckerRefusedText:
+	text "Oh, ok. Come again"
+	line "if you'd like me"
+	
+	para "to check your"
+	line "#MON's stats."
 	done
 	
 PwtOutsideBianceCherenText:
@@ -205,11 +241,12 @@ PWTOutside_MapEvents:
 
 	db 0 ; bg events
 	
-	db 8 ; object events
+	db 9 ; object events
 	object_event 10, 13, SPRITE_CHEREN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_OUTSIDE_CHEREN_BIANCA
 	object_event 10, 14, SPRITE_BIANCA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_OUTSIDE_CHEREN_BIANCA
 	object_event 20, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PwtOutsideDampRock, EVENT_PWT_OUTSIDE_DAMP_ROCK
 	object_event 20,  8, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, HiddenPowerGuruScript, -1
+	object_event 16, 15, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DVCheckerScript, -1
 	object_event 13,  8, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, PwtOutsideBugCatcherScript, -1
 	object_event 22, 12, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PwtOutsideCooltrainerFScript, -1
 	object_event 32, 11, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PwtOutsideCooltrainerMScript, -1
