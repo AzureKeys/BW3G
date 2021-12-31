@@ -1,150 +1,73 @@
-DVChecker:
-	ld hl, Text_DVCheckerWhichMon
-	call PrintText
-	call JoyWaitAorB
+CheckStatExp:
+; Input threshold in wBuffer1+wBuffer2 and stat to check in wScriptVar:
+; 0: HP
+; 1: Atk
+; 2: Def
+; 3: Spd
+; 4: Spc
+; Return 0 in wScriptVar if stat exp >= threshold, -1 otherwise
 
 	ld b, 6
 	farcall SelectMonFromParty
-	jp c, .cancel
+	jp c, .done
 
 	ld a, [wCurPartySpecies]
 	cp EGG
 	jp z, .egg
 
 	call IsAPokemon
-	jp c, .no_mon
-	
-	ld hl, Text_DVCheckerLetsSee
-	call PrintText
-	
+	jp c, .fail
+; Get Stat Exp for selected mon
 	ld a, [wCurPartyMon]
-	ld hl, wPartyMon1DVs
+	ld hl, wPartyMon1StatExp
 	call GetPartyLocation
-; Get Attack/Defense DVs
+; Get Stat Exp for selected stat
+	ld a, [wScriptVar]
+.loop
+	and a
+	jr z, .GotStat
+	inc hl
+	inc hl
+	jr .loop
+	dec a
+.GotStat
+; Compare Hi byte of stat to Hi Byte of threshold in wBuffer1
 	ld a, [hli]
 	ld b, a
-	push hl
-	push bc
-; Isolate Attack DV
-	and $f0
-	swap a
-	ld [wBuffer1], a
-	ld hl, wStringBuffer1
-	ld de, wBuffer1
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
-	call PrintNum
-	ld [hl], "@"
-	ld hl, .stat_names
-	ld de, wStringBuffer2
-	ld bc, 19
-	call CopyBytes
-	ld hl, Text_DVCheckerPrintDV
-	call PrintText
-; Isolate Defense DV
-	pop bc
-	ld a, b
-	and $0f
-	ld [wBuffer1], a
-	ld hl, wStringBuffer1
-	ld de, wBuffer1
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
-	call PrintNum
-	ld [hl], "@"
-	ld hl, .stat_names + 7
-	ld de, wStringBuffer2
-	ld bc, 19
-	call CopyBytes
-	ld hl, Text_DVCheckerPrintDV
-	call PrintText
-; Get Speed/Special DVs
-	pop hl
-	ld a, [hl]
+	ld a, [wBuffer1]
+	cp b
+	jr c, .pass
+	jr nz, .fail
+; If Hi Bytes are equal, compare Lo Bytes
+	ld a, [wBuffer2]
 	ld b, a
-	push bc
-; Isolate Speed DV
-	and $f0
-	swap a
-	ld [wBuffer1], a
-	ld hl, wStringBuffer1
-	ld de, wBuffer1
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
-	call PrintNum
-	ld [hl], "@"
-	ld hl, .stat_names + 15
-	ld de, wStringBuffer2
-	ld bc, 19
-	call CopyBytes
-	ld hl, Text_DVCheckerPrintDV
-	call PrintText
-; Isolate Special DV
-	pop bc
-	ld a, b
-	and $0f
-	ld [wBuffer1], a
-	ld hl, wStringBuffer1
-	ld de, wBuffer1
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
-	call PrintNum
-	ld [hl], "@"
-; Get name for Special Attack
-	ld hl, .stat_names + 21
-	ld de, wStringBuffer2
-	ld bc, 19
-	call CopyBytes
-	ld hl, Text_DVCheckerPrintDV
-	call PrintText
-; Print again for Special Defense
-	ld hl, .stat_names + 31
-	ld de, wStringBuffer2
-	ld bc, 19
-	call CopyBytes
-	ld hl, Text_DVCheckerPrintDV
-	call PrintText
-	xor a
+	ld a, [hl]
+	cp b
+	jr c, .fail
 	
-.cancel
-	ld hl, Text_DVCheckerCancel
-	call PrintText
+.pass
+	xor a
+	ld [wScriptVar], a
 	ret
+	
+.fail
+	ld hl, Text_StatExpCheckFail
+	call PrintText
+	jr .done
 
 .egg
-	ld hl, Text_DVCheckerEgg
+	ld hl, Text_StatExpCheckEgg
 	call PrintText
+.done
+	ld a, -1
+	ld [wScriptVar], a
 	ret
 
-.no_mon
-	ld hl, Text_DVCheckerNoMon
-	call PrintText
-	ret
-	
-.stat_names
-	db "ATTACK@"
-	db "DEFENSE@"
-	db "SPEED@"
-	db "SP.ATTACK@"
-	db "SP.DEFENSE@"
-
-Text_DVCheckerWhichMon:
-	text_far _DVCheckerWhichMon
+Text_StatExpCheckFail:
+	text_far _StatExpCheckFail
 	text_end
 
-Text_DVCheckerLetsSee:
-	text_far _DVCheckerLetsSee
-	text_end
-
-Text_DVCheckerPrintDV:
-	text_far _DVCheckerPrintDV
-	text_end
-
-Text_DVCheckerCancel:
-	text_far _DVCheckerCancel
-	text_end
-
-Text_DVCheckerEgg:
-	text_far _DVCheckerEgg
-	text_end
-
-Text_DVCheckerNoMon:
-	text_far _DVCheckerNoMon
+Text_StatExpCheckEgg:
+	text_far _StatExpCheckEgg
 	text_end
 	

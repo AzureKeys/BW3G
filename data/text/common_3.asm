@@ -1710,3 +1710,14 @@ _DVCheckerPrintDV::
 	text_ram wStringBuffer1
 	text "."
 	prompt
+	
+_StatExpCheckFail::
+	text "Nope. Sorry, that"
+	line "#MON's not"
+	cont "strong enough."
+	done
+	
+_StatExpCheckEgg::
+	text "Hey! That's an"
+	line "EGG!"
+	done

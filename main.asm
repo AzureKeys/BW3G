@@ -18,6 +18,7 @@ INCLUDE "engine/events/haircut.asm"
 INCLUDE "engine/events/hidden_power_guru.asm"
 INCLUDE "engine/events/move_reminder.asm"
 INCLUDE "engine/events/dv_checker.asm"
+INCLUDE "engine/events/check_stat_exp.asm"
 
 
 SECTION "bank2", ROMX

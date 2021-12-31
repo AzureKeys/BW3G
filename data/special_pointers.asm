@@ -186,3 +186,4 @@ SpecialsPointers::
 	add_special Special_HiddenPowerGuru ; $a8
 	add_special MoveReminder
 	add_special DVChecker
+	add_special CheckStatExp
