@@ -2,24 +2,25 @@ time_group EQUS "0," ; use the nth TimeFishGroups entry
 
 fishgroup: MACRO
 ; chance, old rod, good rod, super rod
-	dbwww \1, \2, \3, \4
+	db \1, \2
+	dw \3, \4, \5
 ENDM
 
 FishGroups:
 ; entries correspond to FISHGROUP_* constants
-	fishgroup 50 percent + 1, .Shore_Old,            .Shore_Good,            .Shore_Super
-	fishgroup 50 percent + 1, .Ocean_Old,            .Ocean_Good,            .Ocean_Super
-	fishgroup 50 percent + 1, .Lake_Old,             .Lake_Good,             .Lake_Super
-	fishgroup 50 percent + 1, .Pond_Old,             .Pond_Good,             .Pond_Super
-	fishgroup 50 percent + 1, .Dratini_Old,          .Dratini_Good,          .Dratini_Super
-	fishgroup 50 percent + 1, .Qwilfish_Swarm_Old,   .Qwilfish_Swarm_Good,   .Qwilfish_Swarm_Super
-	fishgroup 50 percent + 1, .Remoraid_Swarm_Old,   .Remoraid_Swarm_Good,   .Remoraid_Swarm_Super
-	fishgroup 50 percent + 1, .Gyarados_Old,         .Gyarados_Good,         .Gyarados_Super
-	fishgroup 50 percent + 1, .Dratini_2_Old,        .Dratini_2_Good,        .Dratini_2_Super
-	fishgroup 50 percent + 1, .WhirlIslands_Old,     .WhirlIslands_Good,     .WhirlIslands_Super
-	fishgroup 50 percent + 1, .Qwilfish_Old,         .Qwilfish_Good,         .Qwilfish_Super
-	fishgroup 50 percent + 1, .Remoraid_Old,         .Remoraid_Good,         .Remoraid_Super
-	fishgroup 50 percent + 1, .Qwilfish_NoSwarm_Old, .Qwilfish_NoSwarm_Good, .Qwilfish_NoSwarm_Super
+	fishgroup 50 percent + 1, 85 percent + 1, .Shore_Old,            .Shore_Good,            .Shore_Super
+	fishgroup 50 percent + 1, 85 percent + 1, .Ocean_Old,            .Ocean_Good,            .Ocean_Super
+	fishgroup 50 percent + 1, 85 percent + 1, .Lake_Old,             .Lake_Good,             .Lake_Super
+	fishgroup 50 percent + 1, 65 percent + 1, .Pond_Old,             .Pond_Good,             .Pond_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .Dratini_Old,          .Dratini_Good,          .Dratini_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .Qwilfish_Swarm_Old,   .Qwilfish_Swarm_Good,   .Qwilfish_Swarm_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .Remoraid_Swarm_Old,   .Remoraid_Swarm_Good,   .Remoraid_Swarm_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .Gyarados_Old,         .Gyarados_Good,         .Gyarados_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .Dratini_2_Old,        .Dratini_2_Good,        .Dratini_2_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .WhirlIslands_Old,     .WhirlIslands_Good,     .WhirlIslands_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .Qwilfish_Old,         .Qwilfish_Good,         .Qwilfish_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .Remoraid_Old,         .Remoraid_Good,         .Remoraid_Super
+	fishgroup 50 percent + 1, 70 percent + 1, .Qwilfish_NoSwarm_Old, .Qwilfish_NoSwarm_Good, .Qwilfish_NoSwarm_Super
 
 .Shore_Old:
 	db  70 percent + 1, TYMPOLE,   6
@@ -228,3 +229,8 @@ TimeFishGroups:
 	db HORSEA,     40,  HORSEA,     40 ; 19
 	db FRILLISH,  20,  FRILLISH,  20 ; 20
 	db FRILLISH,  40,  FRILLISH,  40 ; 21
+	
+FishItems:
+	db PEARL
+	db BIG_PEARL
+	db HEART_SCALE

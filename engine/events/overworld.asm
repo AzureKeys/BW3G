@@ -1704,6 +1704,7 @@ FishFunction:
 	dw .FishGotSomething
 	dw .FailFish
 	dw .FishNoFish
+	dw .FishGotItem
 
 .TryFish:
 	ld a, [wPlayerState]
@@ -1733,7 +1734,17 @@ FishFunction:
 	farcall Fish
 	ld a, d
 	and a
+	jr nz, .gotabite
+	ld a, e
+	and a
 	jr z, .nonibble
+.gotanitem
+	ld a, e
+	ld [wCurItem], a
+	ld a, $5
+	ret
+	
+.gotabite
 	ld [wTempWildMonSpecies], a
 	ld a, e
 	ld [wCurPartyLevel], a
@@ -1773,6 +1784,14 @@ FishFunction:
 	call QueueScript
 	ld a, $81
 	ret
+	
+.FishGotItem:
+	ld a, $1
+	ld [wBuffer6], a
+	ld hl, Script_GotAnItem
+	call QueueScript
+	ld a, $81
+	ret
 
 Script_NotEvenANibble:
 	scall Script_FishCastRod
@@ -1788,20 +1807,38 @@ Script_NotEvenANibble_FallThrough:
 	callasm PutTheRodAway
 	closetext
 	end
+	
+Script_GotAnItem:
+	scall Script_FishCastRod
+	callasm Fishing_CheckFacingUp
+	iffalse .NotFacingUp
+	applymovement PLAYER, Movement_HookedItemFacingUp
+	jump .GetTheHookedItem
+.NotFacingUp:
+	applymovement PLAYER, Movement_HookedItemNotFacingUp
+.GetTheHookedItem:
+	pause 40
+	applymovement PLAYER, Movement_RestoreRod
+	callasm PutTheRodAway
+	callasm CurItemToScriptVar
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext
+	end
 
 Script_GotABite:
 	scall Script_FishCastRod
 	callasm Fishing_CheckFacingUp
 	iffalse .NotFacingUp
-	applymovement PLAYER, .Movement_FacingUp
+	applymovement PLAYER, Movement_BiteFacingUp
 	jump .FightTheHookedPokemon
 
 .NotFacingUp:
-	applymovement PLAYER, .Movement_NotFacingUp
+	applymovement PLAYER, Movement_BiteNotFacingUp
 
 .FightTheHookedPokemon:
 	pause 40
-	applymovement PLAYER, .Movement_RestoreRod
+	applymovement PLAYER, Movement_RestoreRod
 	writetext UnknownText_0xd0a4
 	callasm PutTheRodAway
 	closetext
@@ -1810,24 +1847,26 @@ Script_GotABite:
 	reloadmapafterbattle
 	end
 
-.Movement_NotFacingUp:
+Movement_BiteNotFacingUp:
 	fish_got_bite
 	fish_got_bite
 	fish_got_bite
+Movement_HookedItemNotFacingUp:
 	fish_got_bite
 	show_emote
 	step_end
 
-.Movement_FacingUp:
+Movement_BiteFacingUp:
 	fish_got_bite
 	fish_got_bite
 	fish_got_bite
+Movement_HookedItemFacingUp:
 	fish_got_bite
 	step_sleep 1
 	show_emote
 	step_end
 
-.Movement_RestoreRod:
+Movement_RestoreRod:
 	hide_emote
 	fish_cast_rod
 	step_end
@@ -1866,6 +1905,11 @@ PutTheRodAway:
 	ld [wPlayerAction], a
 	call UpdateSprites
 	call ReplaceKrisSprite
+	ret
+	
+CurItemToScriptVar:
+	ld a, [wCurItem]
+	ld [wScriptVar], a
 	ret
 
 UnknownText_0xd0a4:
