@@ -53,7 +53,7 @@ PlayersHousePosterScript:
 PlayersHouseRadioScript:
 	; opentext
 	; givepoke HYDREIGON, 70, NO_ITEM
-	; giveitem PROTEIN, 5
+	; giveitem CALCIUM, 5
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
@@ -150,7 +150,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, VIRBANK_CITY, 1
+	;warp_event  7,  0, NACRENE_CITY, 1
 
 	db 0 ; coord events
 

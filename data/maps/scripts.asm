@@ -140,14 +140,14 @@ INCLUDE "maps/PinwheelBridgeGate.asm"
 INCLUDE "maps/SkyarrowBridge.asm"
 INCLUDE "maps/NacreneCity.asm"
 INCLUDE "maps/NacrenePokecenter1F.asm"
-INCLUDE "maps/NacreneMart.asm"
+INCLUDE "maps/NacreneStatExpHouse.asm"
 INCLUDE "maps/NacreneHouse.asm"
 INCLUDE "maps/NacreneCafe.asm"
-INCLUDE "maps/R3NacreneGate.asm"
 INCLUDE "maps/R3DayCare.asm"
 
 SECTION "Map Scripts 8", ROMX
 
+INCLUDE "maps/R3NacreneGate.asm"
 INCLUDE "maps/Rt3.asm"
 INCLUDE "maps/WellspringCave1F.asm"
 INCLUDE "maps/WellspringCaveB1F.asm"

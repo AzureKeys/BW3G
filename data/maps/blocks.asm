@@ -18,6 +18,7 @@ FloccesyRanchHouse_Blocks:
 VirbankHouse_Blocks:
 VirbankStatExpHouse_Blocks:
 NacreneHouse_Blocks:
+NacreneStatExpHouse_Blocks:
 AccumulaHouse_Blocks:
 DriftveilHouse_Blocks:
 DriftveilFossilHouse_Blocks:
@@ -74,7 +75,6 @@ NimbasaTMMart_Blocks:
 NimbasaVitaminMart_Blocks:
 NimbasaBallMart_Blocks:
 IcirrusBoutique_Blocks:
-NacreneMart_Blocks:
 OpelucidMart_Blocks:
 	INCBIN "maps/Mart.ablk"
 	

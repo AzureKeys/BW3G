@@ -230,7 +230,7 @@ ENDM
 	map_attributes SkyarrowBridge, SKYARROW_BRIDGE, $12, 0
 	map_attributes NacreneCity, NACRENE_CITY, $25, 0
 	map_attributes NacrenePokecenter1F, NACRENE_POKECENTER_1F, $00, 0
-	map_attributes NacreneMart, NACRENE_MART, $00, 0
+	map_attributes NacreneStatExpHouse, NACRENE_STAT_EXP_HOUSE, $00, 0
 	map_attributes NacreneHouse, NACRENE_HOUSE, $00, 0
 	map_attributes NacreneCafe, NACRENE_CAFE, $00, 0
 	map_attributes Rt3NacreneGate, R_3_NACRENE_GATE, $00, 0

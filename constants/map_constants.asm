@@ -214,7 +214,7 @@ ENDM
 	newgroup
 	map_const NACRENE_CITY, 27, 11
 	map_const NACRENE_POKECENTER_1F, 5, 5
-	map_const NACRENE_MART, 6, 4
+	map_const NACRENE_STAT_EXP_HOUSE, 4, 4
 	map_const NACRENE_HOUSE, 4, 4
 	map_const NACRENE_CAFE, 4, 4
 	map_const NACRENE_MUSEUM, 5, 6

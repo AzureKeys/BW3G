@@ -233,7 +233,7 @@ NacreneCity_MapEvents:
 	warp_event  1, 12, PINWHEEL_FOREST, 2
 	warp_event  1, 13, PINWHEEL_FOREST, 3
 	warp_event 31, 15, NACRENE_POKECENTER_1F, 1
-	warp_event 43,  5, NACRENE_MART, 1
+	warp_event 43,  5, NACRENE_STAT_EXP_HOUSE, 1
 	warp_event 25, 15, NACRENE_HOUSE, 1
 	warp_event 24,  5, NACRENE_CAFE, 1
 	warp_event 47, 16, R_3_NACRENE_GATE, 1
