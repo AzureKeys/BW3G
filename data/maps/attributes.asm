@@ -217,7 +217,7 @@ ENDM
 	map_attributes VirbankHouse, VIRBANK_HOUSE, $00, 0
 	map_attributes GameCorner, GAME_CORNER, $00, 0
 	map_attributes Rt20VirbankGate, R_20_VIRBANK_GATE, $00, 0
-	map_attributes VirbankMart, VIRBANK_MART, $00, 0
+	map_attributes VirbankStatExpHouse, VIRBANK_STAT_EXP_HOUSE, $00, 0
 	map_attributes VirbankGym, VIRBANK_GYM, $00, 0
 	map_attributes VirbankComplexElevator, VIRBANK_COMPLEX_ELEVATOR, $00, 0
 	map_attributes VirbankComplexB1F, VIRBANK_COMPLEX_B1F, $00, 0

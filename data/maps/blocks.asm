@@ -16,6 +16,7 @@ AspertiaBlackbeltHouse_Blocks:
 FloccesyTownHouse_Blocks:
 FloccesyRanchHouse_Blocks:
 VirbankHouse_Blocks:
+VirbankStatExpHouse_Blocks:
 NacreneHouse_Blocks:
 AccumulaHouse_Blocks:
 DriftveilHouse_Blocks:
@@ -73,7 +74,6 @@ NimbasaTMMart_Blocks:
 NimbasaVitaminMart_Blocks:
 NimbasaBallMart_Blocks:
 IcirrusBoutique_Blocks:
-VirbankMart_Blocks:
 NacreneMart_Blocks:
 OpelucidMart_Blocks:
 	INCBIN "maps/Mart.ablk"

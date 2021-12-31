@@ -205,7 +205,7 @@ ENDM
 	map_const VIRBANK_HOUSE, 4, 4
 	map_const GAME_CORNER, 10, 7
 	map_const R_20_VIRBANK_GATE, 5, 4
-	map_const VIRBANK_MART, 6, 4
+	map_const VIRBANK_STAT_EXP_HOUSE, 4, 4
 	map_const VIRBANK_GYM, 7, 16
 	map_const VIRBANK_PORT, 5, 4
 	map_const FERRY_RIGHT, 9, 2
