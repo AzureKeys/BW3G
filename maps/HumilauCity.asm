@@ -97,19 +97,12 @@ HumilauCityTeacherTextScript:
 	
 HumilauCitySign:
 	jumptext HumilauCitySignText
-	; opentext
-	; verbosegiveitem SODA_POP
-	; verbosegiveitem FRESH_WATER
-	; verbosegiveitem LEMONADE
-	; closetext
-	end
+	
+HumilauMarlonSign:
+	jumptext HumilauMarlonSignText
 	
 HumilauMarineTubeSign:
 	jumptext HumilauMarineTubeSignText
-	;opentext
-	;verbosegiveitem HM_STRENGTH
-	;closetext
-	end
 	
 HumilauCityMysticWater:
 	itemball MYSTIC_WATER
@@ -256,6 +249,10 @@ HumilauCitySignText:
 	cont "sparkling seas!"
 	done
 	
+HumilauMarlonSignText:
+	text "MARLON's house."
+	done
+	
 HumilauMarineTubeSignText:
 	text "MARINE TUBE"
 
@@ -278,14 +275,15 @@ HumilauCity_MapEvents:
 	db 1 ; coord events
 	coord_event  1,  9, SCENE_DEFAULT, HumilauCity_NeighborStopsYouScene
 
-	db 2 ; bg events
+	db 3 ; bg events
 	bg_event 11, 27, BGEVENT_READ, HumilauCitySign
+	bg_event 11, 16, BGEVENT_READ, HumilauMarlonSign
 	bg_event 15, 29, BGEVENT_READ, HumilauMarineTubeSign
 
 	db 12 ; object events
 	object_event  8, 34, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, HumilauCityCooltrainerFTextScript, -1
 	object_event 10, 33, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 3, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, HumilauCityCooltrainerMTextScript, -1
-	object_event 13, 17, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, HumilauCityFisherTextScript, -1
+	object_event 17, 16, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, HumilauCityFisherTextScript, -1
 	object_event 17,  9, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, HumilauCityLassTextScript, -1
 	object_event 11,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, HumilauCityYoungsterTextScript, -1
 	object_event 24,  8, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 3, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, HumilauCityTeacherTextScript, -1
