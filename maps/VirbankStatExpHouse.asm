@@ -7,7 +7,69 @@ VirbankStatExpHouse_MapScripts:
 	db 0 ; callbacks
 	
 VirbankStatExpHouseCooltrainerMScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_MUSCLE_BAND
+	iftrue .got_band
+	writetext VirbankStatExpHouse_AskMonText
+	buttonsound
+	callasm .LoadBuffers
+	writebyte $1
+	special CheckStatExp
+	ifnotequal FALSE, .no_band
+	writetext VirbankStatExpHouse_GoodMonText
+	buttonsound
+	verbosegiveitem MUSCLE_BAND
+	iffalse .no_band
+	setevent EVENT_GOT_MUSCLE_BAND
+.got_band
+	writetext VirbankStatExpHouse_GotBandText
+.no_band
+	waitbutton
+	closetext
 	end
+	
+.LoadBuffers:
+; Threshold = 12800 Stat Exp = $3200
+	ld a, $32
+	ld [wBuffer1], a
+	xor a
+	ld [wBuffer2], a
+	ret
+	
+VirbankStatExpHouse_AskMonText:
+	text "Hey! I'm looking"
+	line "to see a #MON"
+	
+	para "with a strong"
+	line "ATTACK stat!"
+	
+	para "Can you show me a"
+	line "#MON that's"
+	
+	para "trained its ATTACK"
+	line "stat a lot?"
+	done
+	
+VirbankStatExpHouse_GoodMonText:
+	text "Yeah! That #MON"
+	line "has done a lot of"
+	
+	para "training in its"
+	line "ATTACK!"
+	
+	para "Here, you can"
+	line "have this!"
+	done
+	
+VirbankStatExpHouse_GotBandText:
+	text "That band will"
+	line "make the PHYSICAL"
+	
+	para "moves of its"
+	line "holder even"
+	cont "stronger!"
+	done
 
 VirbankStatExpHouseBookshelf:
 	jumpstd picturebookshelf

@@ -9,7 +9,7 @@ CheckStatExp:
 
 	ld b, 6
 	farcall SelectMonFromParty
-	jp c, .done
+	jp c, .cancel
 
 	ld a, [wCurPartySpecies]
 	cp EGG
@@ -28,8 +28,8 @@ CheckStatExp:
 	jr z, .GotStat
 	inc hl
 	inc hl
-	jr .loop
 	dec a
+	jr .loop
 .GotStat
 ; Compare Hi byte of stat to Hi Byte of threshold in wBuffer1
 	ld a, [hli]
@@ -54,6 +54,11 @@ CheckStatExp:
 	ld hl, Text_StatExpCheckFail
 	call PrintText
 	jr .done
+	
+.cancel
+	ld hl, Text_StatExpCheckCancel
+	call PrintText
+	jr .done
 
 .egg
 	ld hl, Text_StatExpCheckEgg
@@ -69,5 +74,9 @@ Text_StatExpCheckFail:
 
 Text_StatExpCheckEgg:
 	text_far _StatExpCheckEgg
+	text_end
+
+Text_StatExpCheckCancel:
+	text_far _StatExpCheckCancel
 	text_end
 	

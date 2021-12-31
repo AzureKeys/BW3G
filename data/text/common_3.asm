@@ -1721,3 +1721,11 @@ _StatExpCheckEgg::
 	text "Hey! That's an"
 	line "EGG!"
 	done
+	
+_StatExpCheckCancel::
+	text "Oh, you're not"
+	line "going to show me a"
+	
+	para "#MON? That's"
+	line "too bad."
+	done
