@@ -216,15 +216,13 @@ MartAccumula:
 	db -1 ; end
 
 MartDriftveil:
-	db 8 ; # items
+	db 6 ; # items
 	db ULTRA_BALL
 	db HYPER_POTION
 	db REVIVE
 	db FULL_HEAL
 	db SUPER_REPEL
 	db MAX_REPEL
-	db X_ATTACK
-	db X_DEFEND
 	db -1 ; end
 
 MartMerchant1:

@@ -53,9 +53,6 @@ PlayersHousePosterScript:
 PlayersHouseRadioScript:
 	; opentext
 	; givepoke HYDREIGON, 100, CHOICE_SCARF
-	; giveitem OLD_ROD
-	; giveitem GOOD_ROD
-	; giveitem SUPER_ROD
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
