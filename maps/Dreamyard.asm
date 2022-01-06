@@ -9,6 +9,9 @@ Dreamyard_MapScripts:
 	callback MAPCALLBACK_STONETABLE, .SetUpStoneTable
 	
 .SetTiles:
+; There are no battles or warps that would load the map from the upper level
+; So always set event to lower level on map load
+	clearevent EVENT_DREAMYARD_UPPER_LEVEL
 	checkevent EVENT_DREAMYARD_BOULDER
 	iffalse .done
 	changeblock 10, 20, $55 ; boulder in pit
@@ -40,6 +43,38 @@ Dreamyard_MapScripts:
 	earthquake 80
 	end
 	
+DreamyardUpperLevelScript:
+	checkevent EVENT_DREAMYARD_UPPER_LEVEL
+	iftrue .done
+	changeblock 10,  0, $87
+	changeblock 14,  0, $87
+	changeblock 16,  0, $87
+	changeblock 18,  0, $87
+	changeblock 20,  0, $87
+	changeblock 12,  2, $84
+	changeblock 12,  4, $88
+	changeblock 12,  6, $86
+	changeblock 12,  8, $86
+	setevent EVENT_DREAMYARD_UPPER_LEVEL
+.done
+	end
+	
+DreamyardLowerLevelScript:
+	checkevent EVENT_DREAMYARD_UPPER_LEVEL
+	iffalse .done
+	changeblock 10,  0, $6B
+	changeblock 14,  0, $6B
+	changeblock 16,  0, $6B
+	changeblock 18,  0, $6B
+	changeblock 20,  0, $6B
+	changeblock 12,  2, $71
+	changeblock 12,  4, $75
+	changeblock 12,  6, $82
+	changeblock 12,  8, $81
+	clearevent EVENT_DREAMYARD_UPPER_LEVEL
+.done
+	end
+	
 DreamyardBoulder:
 	jumpstd strengthboulder
 	
@@ -56,7 +91,11 @@ Dreamyard_MapEvents:
 	warp_event  1, 17, STRIATON_CITY, 8
 	warp_event 10, 21, DREAMYARD, 1
 
-	db 0 ; coord events
+	db 4 ; coord events
+	coord_event 23,  6, SCENE_DEFAULT, DreamyardUpperLevelScript
+	coord_event 22,  6, SCENE_DEFAULT, DreamyardLowerLevelScript
+	coord_event 23,  7, SCENE_DEFAULT, DreamyardLowerLevelScript
+	coord_event 24,  6, SCENE_DEFAULT, DreamyardLowerLevelScript
 
 	db 0 ; bg events
 	

@@ -70,4 +70,5 @@ MapScenes::
 	scene_var R_11,                                        wR11SceneID
 	scene_var SHOPPING_MALL_NINE,                          wShoppingMallNineSceneID
 	scene_var OPELUCID_CITY,                               wOpelucidCitySceneID
+	scene_var DREAMYARD,                                   wDreamyardSceneID
 	db -1
