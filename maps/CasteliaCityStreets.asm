@@ -225,7 +225,7 @@ CasteliaCherenIntroText:
 	
 	para "Here, register my"
 	line "number in your"
-	cont "X-TRAN."
+	cont "X-TRANSCIEVER."
 	done
 	
 CasteliaCherenNimbasaText:

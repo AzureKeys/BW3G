@@ -54,6 +54,9 @@ PlayersHouseRadioScript:
 	; opentext
 	; givepoke HYDREIGON, 100, NO_ITEM
 	; closetext
+	; giveitem OLD_ROD
+	; giveitem GOOD_ROD
+	; giveitem SUPER_ROD
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
 	; setflag ENGINE_PLAINBADGE
@@ -149,7 +152,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, DREAMYARD, 1
+	;warp_event  7,  0, VIRBANK_CITY, 1
 
 	db 0 ; coord events
 
