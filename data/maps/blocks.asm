@@ -580,4 +580,7 @@ OpelucidGym_Blocks:
 
 Dreamyard_Blocks:
 	INCBIN "maps/Dreamyard.ablk"
+
+IcirrusFanClub_Blocks:
+	INCBIN "maps/IcirrusFanClub.ablk"
 	

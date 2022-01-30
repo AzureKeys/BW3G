@@ -29,10 +29,11 @@ IcirrusFanClubSignText:
 IcirrusCityNorth_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
+	db 4 ; warp events
 	warp_event 13, 11, ICIRRUS_BOUTIQUE, 1
 	warp_event 10,  5, DRAGONSPIRAL_TOWER_OUTSIDE, 1
 	warp_event 11,  5, DRAGONSPIRAL_TOWER_OUTSIDE, 2
+	warp_event  3, 19, ICIRRUS_FAN_CLUB, 1
 
 	db 0 ; coord events
 

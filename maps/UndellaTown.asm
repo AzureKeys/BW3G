@@ -151,12 +151,6 @@ UndellaTownBlocker_ReturnMovement:
 UndellaTown_DontLeaveMovement:
 	step DOWN
 	step_end
-
-GotBiancasNumberText:
-	text "<PLAYER> got PROF."
-	line "BIANCA's phone"
-	cont "number."
-	done
 	
 UndellaTownMarlonText:
 	text "MARLON: Hey,"
@@ -274,12 +268,10 @@ UndellaTownFisher1Text:
 	
 UndellaTownFisher2Text:
 	text "I'm looking for"
-	line "a MANTYKE."
+	line "a REMORAID."
 	
-	para "I hear if you're"
-	line "kind to it, some-"
-	cont "thing good will"
-	cont "happen!"
+	para "They're hard to"
+	line "find here though…"
 	done
 	
 UndellaTownFisher3Text:

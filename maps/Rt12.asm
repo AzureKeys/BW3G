@@ -420,8 +420,8 @@ R12BugCatcherText:
 	cont "wild #MON!"
 	
 	para "I'm looking for"
-	line "a RUFFLET or a"
-	cont "VULLABY!"
+	line "a SHROOMISH, or"
+	cont "maybe a RALTS!"
 	done
 	
 R12PokefanFText:

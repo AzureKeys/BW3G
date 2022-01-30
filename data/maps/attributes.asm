@@ -327,4 +327,5 @@ ENDM
 	map_attributes ShoppingMallNine, SHOPPING_MALL_NINE, $00, 0
 	map_attributes MoorOfIcirrus, MOOR_OF_ICIRRUS, $11, 0
 	map_attributes Dreamyard, DREAMYARD, $25, 0
+	map_attributes IcirrusFanClub, ICIRRUS_FAN_CLUB, $00, 0
 	
