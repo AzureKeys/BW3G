@@ -120,7 +120,7 @@ MistraltonCave2FKingsRock:
 	itemball KINGS_ROCK
 	
 MistraltonCave2FHyperPotion:
-	hiddenitem HYPER_POTION, EVENT_MISTRALTON_CAVE_HYPER_POTION_2
+	hiddenitem HYPER_POTION, EVENT_MISTRALTON_CAVE_HYPER_POTION
 	
 MistraltonCave2FMaxRepel:
 	hiddenitem MAX_REPEL, EVENT_MISTRALTON_CAVE_MAX_REPEL

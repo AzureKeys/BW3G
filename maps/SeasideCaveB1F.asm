@@ -6,6 +6,7 @@
 	const SEASIDECAVEB1F_BOULDER_5
 	const SEASIDECAVEB1F_BLACKBELT
 	const SEASIDECAVEB1F_BATTLE_GIRL
+	const SEASIDECAVEB1F_ICY_ROCK
 
 SeasideCaveB1F_MapScripts:
 	db 0 ; scene scripts
@@ -139,6 +140,9 @@ TrainerBattleGirlSeasideCaveB1F:
 	closetext
 	end
 	
+SeasideCaveB1FIcyRock:
+	itemball ICY_ROCK
+	
 BlackbeltSeasideCaveB1FSeenText:
 	text "My #MON are"
 	line "power packed!"
@@ -200,7 +204,7 @@ SeasideCaveB1F_MapEvents:
 
 	db 0 ; bg events
 
-	db 7 ; object events
+	db 8 ; object events
 	object_event  6, 20, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_1
 	object_event 18, 18, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_2
 	object_event 15, 16, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_3
@@ -208,4 +212,5 @@ SeasideCaveB1F_MapEvents:
 	object_event 19, 14, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SeasideCaveBoulder, EVENT_SEASIDE_CAVE_BOULDER_5
 	object_event 16, 10, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerBlackbeltSeasideCaveB1F, -1
 	object_event 15, 20, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBattleGirlSeasideCaveB1F, -1
+	object_event 20, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCaveB1FIcyRock, EVENT_SEASIDE_CAVE_ICY_ROCK
 	
