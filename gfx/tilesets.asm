@@ -110,15 +110,6 @@ INCBIN "data/tilesets/port_metatiles.bin"
 TilesetPortColl:
 INCLUDE "data/tilesets/port_collision.asm"
 
-; TilesetTowerGFX:
-; INCBIN "gfx/tilesets/tower.2bpp.lz"
-
-; TilesetTowerMeta:
-; INCBIN "data/tilesets/tower_metatiles.bin"
-
-; TilesetTowerColl:
-; INCLUDE "data/tilesets/tower_collision.asm"
-
 TilesetMartGFX:
 INCBIN "gfx/tilesets/mart.2bpp.lz"
 
@@ -687,3 +678,18 @@ INCLUDE "data/tilesets/icirrus_collision.asm"
 
 TilesetIcirrusAttr:
 INCBIN "data/tilesets/icirrus_attributes.bin"
+
+TilesetTowerGFX:
+INCBIN "gfx/tilesets/tower.2bpp.lz"
+
+TilesetTowerMeta:
+INCBIN "data/tilesets/tower_metatiles.bin"
+
+TilesetTowerColl:
+INCLUDE "data/tilesets/tower_collision.asm"
+
+
+SECTION "Tileset Data 22", ROMX
+
+TilesetTowerAttr:
+INCBIN "data/tilesets/tower_attributes.bin"

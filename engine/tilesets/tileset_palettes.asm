@@ -46,6 +46,8 @@ LoadSpecialMapPalette:
 	jp z, .opelucid
 	cp TILESET_ICIRRUS
 	jp z, .icirrus
+	cp TILESET_TOWER
+	jr z, .tower
 	jr .do_nothing
 
 .battle_tower
@@ -55,6 +57,11 @@ LoadSpecialMapPalette:
 
 .pokecenter
 	call LoadPokecenterPalette
+	scf
+	ret
+
+.tower
+	call LoadTowerPalette
 	scf
 	ret
 
@@ -824,3 +831,14 @@ LoadPokecenterPalette:
 	
 PokecenterPalette:
 INCLUDE "gfx/tilesets/pokecom_center.pal"
+
+LoadTowerPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, TowerPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+TowerPalette:
+INCLUDE "gfx/tilesets/tower.pal"

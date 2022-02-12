@@ -583,4 +583,7 @@ Dreamyard_Blocks:
 
 IcirrusFanClub_Blocks:
 	INCBIN "maps/IcirrusFanClub.ablk"
+
+DragonspiralTower1F_Blocks:
+	INCBIN "maps/DragonspiralTower1F.ablk"
 	

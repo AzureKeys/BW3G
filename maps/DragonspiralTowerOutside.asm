@@ -8,9 +8,11 @@ DragonspiralTowerOutside_MapScripts:
 DragonspiralTowerOutside_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 4 ; warp events
 	warp_event  6, 18, ICIRRUS_CITY_NORTH, 2
 	warp_event  7, 18, ICIRRUS_CITY_NORTH, 3
+	warp_event  6,  5, DRAGONSPIRAL_TOWER_1F, 1
+	warp_event  7,  5, DRAGONSPIRAL_TOWER_1F, 2
 
 	db 0 ; coord events
 

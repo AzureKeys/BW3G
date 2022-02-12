@@ -33,7 +33,7 @@ Tilesets::
 	tileset TilesetPlayersRoom
 	;tileset TilesetPokeComCenter
 	tileset TilesetBattleTower
-	;tileset TilesetTower
+	tileset TilesetTower
 	tileset TilesetCave
 	tileset TilesetPark
 	;tileset TilesetRuinsOfAlph
