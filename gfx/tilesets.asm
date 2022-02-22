@@ -682,14 +682,14 @@ INCBIN "data/tilesets/icirrus_attributes.bin"
 TilesetTowerGFX:
 INCBIN "gfx/tilesets/tower.2bpp.lz"
 
+
+SECTION "Tileset Data 22", ROMX
+
 TilesetTowerMeta:
 INCBIN "data/tilesets/tower_metatiles.bin"
 
 TilesetTowerColl:
 INCLUDE "data/tilesets/tower_collision.asm"
-
-
-SECTION "Tileset Data 22", ROMX
 
 TilesetTowerAttr:
 INCBIN "data/tilesets/tower_attributes.bin"

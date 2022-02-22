@@ -2608,8 +2608,9 @@ wR11SceneID::                                     db ; d9c0
 wShoppingMallNineSceneID::                        db ; d9c0
 wOpelucidCitySceneID::                            db ; d9c0
 wDreamyardSceneID::                               db ; d9c0
+wDragonspiralTower1FSceneID::                     db ; d9c0
 
-	ds 64
+	ds 63
 	
 wNumShards:: db
 

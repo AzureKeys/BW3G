@@ -586,4 +586,19 @@ IcirrusFanClub_Blocks:
 
 DragonspiralTower1F_Blocks:
 	INCBIN "maps/DragonspiralTower1F.ablk"
+
+DragonspiralTower2F_Blocks:
+	INCBIN "maps/DragonspiralTower2F.ablk"
+
+DragonspiralTower3F_Blocks:
+	INCBIN "maps/DragonspiralTower3F.ablk"
+
+DragonspiralTower4F_Blocks:
+	INCBIN "maps/DragonspiralTower4F.ablk"
+
+DragonspiralTower5F_Blocks:
+	INCBIN "maps/DragonspiralTower5F.ablk"
+
+DragonspiralTower6F_Blocks:
+	INCBIN "maps/DragonspiralTower6F.ablk"
 	

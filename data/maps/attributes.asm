@@ -321,6 +321,11 @@ ENDM
 	map_attributes IcirrusHouse, ICIRRUS_HOUSE, $00, 0
 	map_attributes DragonspiralTowerOutside, DRAGONSPIRAL_TOWER_OUTSIDE, $00, 0
 	map_attributes DragonspiralTower1F, DRAGONSPIRAL_TOWER_1F, $00, 0
+	map_attributes DragonspiralTower2F, DRAGONSPIRAL_TOWER_2F, $00, 0
+	map_attributes DragonspiralTower3F, DRAGONSPIRAL_TOWER_3F, $00, 0
+	map_attributes DragonspiralTower4F, DRAGONSPIRAL_TOWER_4F, $00, 0
+	map_attributes DragonspiralTower5F, DRAGONSPIRAL_TOWER_5F, $00, 0
+	map_attributes DragonspiralTower6F, DRAGONSPIRAL_TOWER_6F, $00, 0
 	map_attributes MistraltonCave1F, MISTRALTON_CAVE_1F, $09, 0
 	map_attributes MistraltonCave2F, MISTRALTON_CAVE_2F, $09, 0
 	map_attributes MistraltonCave3F, MISTRALTON_CAVE_3F, $09, 0
