@@ -8,11 +8,11 @@ ENDM
 
 FishGroups:
 ; entries correspond to FISHGROUP_* constants
-	fishgroup 50 percent + 1, 85 percent + 1, .Shore_Old,            .Shore_Good,            .Shore_Super
-	fishgroup 50 percent + 1, 85 percent + 1, .Ocean_Old,            .Ocean_Good,            .Ocean_Super
-	fishgroup 50 percent + 1, 85 percent + 1, .Lake_Old,             .Lake_Good,             .Lake_Super
-	fishgroup 50 percent + 1, 65 percent + 1, .Pond_Old,             .Pond_Good,             .Pond_Super
-	fishgroup 50 percent + 1, 70 percent + 1, .Dratini_Old,          .Dratini_Good,          .Dratini_Super
+	fishgroup 65 percent + 1, 80 percent + 1, .Shore_Old,            .Shore_Good,            .Shore_Super
+	fishgroup 75 percent + 1, 85 percent + 1, .Ocean_Old,            .Ocean_Good,            .Ocean_Super
+	fishgroup 60 percent + 1, 70 percent + 1, .Lake_Old,             .Lake_Good,             .Lake_Super
+	fishgroup 50 percent + 1, 60 percent + 1, .Pond_Old,             .Pond_Good,             .Pond_Super
+	fishgroup 60 percent + 1, 70 percent + 1, .Dratini_Old,          .Dratini_Good,          .Dratini_Super
 	fishgroup 50 percent + 1, 70 percent + 1, .Qwilfish_Swarm_Old,   .Qwilfish_Swarm_Good,   .Qwilfish_Swarm_Super
 	fishgroup 50 percent + 1, 70 percent + 1, .Remoraid_Swarm_Old,   .Remoraid_Swarm_Good,   .Remoraid_Swarm_Super
 	fishgroup 50 percent + 1, 70 percent + 1, .Gyarados_Old,         .Gyarados_Good,         .Gyarados_Super
