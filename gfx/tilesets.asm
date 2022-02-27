@@ -91,10 +91,6 @@ TilesetCaveMeta:
 ;TilesetDarkCaveMeta:
 INCBIN "data/tilesets/cave_metatiles.bin"
 
-TilesetCaveColl:
-;TilesetDarkCaveColl:
-INCLUDE "data/tilesets/cave_collision.asm"
-
 
 SECTION "Tileset Data 3", ROMX
 
@@ -693,3 +689,7 @@ INCLUDE "data/tilesets/tower_collision.asm"
 
 TilesetTowerAttr:
 INCBIN "data/tilesets/tower_attributes.bin"
+
+TilesetCaveColl:
+;TilesetDarkCaveColl:
+INCLUDE "data/tilesets/cave_collision.asm"

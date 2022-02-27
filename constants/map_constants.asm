@@ -307,6 +307,8 @@ ENDM
 	map_const OPELUCID_GYM, 14, 16
 	map_const OPELUCID_CURIOSITY_SHOP, 4, 4
 	map_const OPELUCID_MOVE_REMINDER_HOUSE, 4, 4
+	map_const DRAYDENS_HOUSE_1F, 5, 5
+	map_const DRAYDENS_HOUSE_2F, 4, 4
 	map_const R_9, 22, 11
 	map_const SHOPPING_MALL_NINE, 9, 14
 	

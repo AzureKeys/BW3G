@@ -334,4 +334,6 @@ ENDM
 	map_attributes MoorOfIcirrus, MOOR_OF_ICIRRUS, $11, 0
 	map_attributes Dreamyard, DREAMYARD, $25, 0
 	map_attributes IcirrusFanClub, ICIRRUS_FAN_CLUB, $00, 0
+	map_attributes DraydensHouse1F, DRAYDENS_HOUSE_1F, $00, 0
+	map_attributes DraydensHouse2F, DRAYDENS_HOUSE_2F, $00, 0
 	
