@@ -7,6 +7,7 @@
 	const UNDELLATOWN_FISHER3
 	const UNDELLATOWN_COOLTRAINER_F
 	const UNDELLATOWN_LUCKY_EGG
+	const UNDELLATOWN_FRIEND_BALL
 
 UndellaTown_MapScripts:
 	db 3 ; scene scripts
@@ -104,6 +105,9 @@ UndellaTownFisher3TextScript:
 	
 UndellaTownCooltrainerMTextScript:
 	jumptextfaceplayer UndellaTownCooltrainerMText
+	
+UndellaTownFriendBall:
+	itemball FRIEND_BALL
 	
 UndellaTownLuckyEgg:
 	itemball LUCKY_EGG
@@ -341,9 +345,9 @@ UndellaTown_MapEvents:
 	bg_event 16,  8, BGEVENT_READ, UndellaMarineTubeSign
 	bg_event 27,  9, BGEVENT_READ, UndellaTownSign
 	bg_event  6, 18, BGEVENT_ITEM, UndellaTownPearl1
-	bg_event 14,  3, BGEVENT_ITEM, UndellaTownPearl2
+	bg_event  8, 16, BGEVENT_ITEM, UndellaTownPearl2
 
-	db 8 ; object events
+	db 9 ; object events
 	object_event 20,  8, SPRITE_MARLON, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, -1, -1, EVENT_UNDELLA_TOWN_MARLON
 	object_event  5,  8, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, -1, UndellaTownBlockerTextScript, -1
 	object_event 19,  8, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, UndellaTownBugCatcherTextScript, -1
@@ -352,4 +356,5 @@ UndellaTown_MapEvents:
 	object_event 11, 19, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, UndellaTownFisher3TextScript, -1
 	object_event 25, 23, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, UndellaTownCooltrainerMTextScript, -1
 	object_event 35, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UndellaTownLuckyEgg, EVENT_UNDELLA_TOWN_LUCKY_EGG
+	object_event 14,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UndellaTownFriendBall, EVENT_UNDELLA_TOWN_FRIEND_BALL
 	

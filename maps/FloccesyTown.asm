@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const FLOCCESYTOWN_HEAT_ROCK
+	const FLOCCESYTOWN_LOVE_BALL
 	const FLOCCESYTOWN_FAKE_ITEM
 	const FLOCCESYTOWN_JUNIPER
 	const FLOCCESYTOWN_TWIN
@@ -49,8 +49,8 @@ FloccesyTownJuniperScript:
 	setscene SCENE_FINISHED
 	end
 	
-FloccesyTownHeatRock:
-	itemball HEAT_ROCK
+FloccesyTownLoveBall:
+	itemball LOVE_BALL
 	
 FloccesyTownTwinScript:
 	jumptextfaceplayer FloccesyTownTwinText
@@ -180,7 +180,7 @@ FloccesyTown_MapEvents:
 	bg_event 11, 25, BGEVENT_READ, FloccesyTownSign
 
 	db 6 ; object events
-	object_event 21, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, FloccesyTownHeatRock, EVENT_FLOCCESY_TOWN_HEAT_ROCK
+	object_event 21, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, FloccesyTownLoveBall, EVENT_FLOCCESY_TOWN_LOVE_BALL
 	object_event -2, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, 0, EVENT_R_19_RARE_CANDY
 	object_event  0, 24, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, -1, -1, EVENT_FLOCCESY_TOWN_JUNIPER
 	object_event 12, 19, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, -1, FloccesyTownTwinScript, -1

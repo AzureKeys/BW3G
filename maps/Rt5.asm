@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
 	const R5_FRUIT_TREE
-	const R5_GREAT_BALL
+	const R5_FRIEND_BALL
 	const R5_CALCIUM
 	const R5_REVIVE
 	const R5_SUPER_NERD_1
@@ -201,8 +201,8 @@ TrainerPsychicR5:
 R5FruitTree:
 	fruittree FRUITTREE_R_5
 	
-R5GreatBall:
-	itemball GREAT_BALL
+R5FriendBall:
+	itemball FRIEND_BALL
 	
 R5Calcium:
 	itemball CALCIUM
@@ -415,7 +415,7 @@ Rt5_MapEvents:
 
 	db 11 ; object events
 	object_event 28, 11, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R5FruitTree, -1
-	object_event 33,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5GreatBall, EVENT_R_5_GREAT_BALL
+	object_event 33,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5FriendBall, EVENT_R_5_FRIEND_BALL
 	object_event  5,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5Calcium, EVENT_R_5_CALCIUM
 	object_event  9, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5Revive, EVENT_R_5_REVIVE
 	object_event 22, 15, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1

@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const R3_ULTRA_BALL
+	const R3_DIVE_BALL
 	const R3_SUPER_REPEL
 	const R3_RARE_CANDY
 	const R3_MAX_ETHER
@@ -193,8 +193,8 @@ TrainerGentlemanR3:
 	closetext
 	end
 	
-R3UltraBall:
-	itemball ULTRA_BALL
+R3DiveBall:
+	itemball DIVE_BALL
 	
 R3SuperRepel:
 	itemball SUPER_REPEL
@@ -389,7 +389,7 @@ Rt3_MapEvents:
 	bg_event 35, 23, BGEVENT_UP, R3HiddenGrotto
 
 	db 12 ; object events
-	object_event 36, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3UltraBall, EVENT_R3_ULTRA_BALL
+	object_event 36, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3DiveBall, EVENT_R3_DIVE_BALL
 	object_event 20, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3SuperRepel, EVENT_R3_SUPER_REPEL
 	object_event 10, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3RareCandy, EVENT_R3_RARE_CANDY
 	object_event  7, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3MaxEther, EVENT_R3_MAX_ETHER

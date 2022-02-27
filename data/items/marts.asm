@@ -111,7 +111,7 @@ MartNimbasaVitamin:
 	db -1 ; end
 
 MartNimbasaBall:
-	db 9 ; # items
+	db 11 ; # items
 	db FRIEND_BALL
 	db HEAVY_BALL
 	db LURE_BALL
@@ -121,6 +121,8 @@ MartNimbasaBall:
 	db DUSK_BALL
 	db REPEAT_BALL
 	db DIVE_BALL
+	db LEVEL_BALL
+	db LOVE_BALL
 	db -1 ; end
 
 MartR4NimbasaGate:
@@ -290,7 +292,7 @@ MartBoutique:
 	db -1 ; end
 
 MartMall1:
-	db 16 ; # items
+	db 11 ; # items
 	db POTION
 	db SUPER_POTION
 	db HYPER_POTION
@@ -302,25 +304,18 @@ MartMall1:
 	db ICE_HEAL
 	db AWAKENING
 	db FULL_HEAL
+	db -1 ; end
+
+MartMall2:
+	db 8 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db ULTRA_BALL
 	db ESCAPE_ROPE
 	db POKE_DOLL
 	db REPEL
 	db SUPER_REPEL
 	db MAX_REPEL
-	db -1 ; end
-
-MartMall2:
-	db 10 ; # items
-	db POKE_BALL
-	db GREAT_BALL
-	db ULTRA_BALL
-	db FRIEND_BALL
-	db HEAVY_BALL
-	db LURE_BALL
-	db FAST_BALL
-	db LEVEL_BALL
-	db NET_BALL
-	db DUSK_BALL
 	db -1 ; end
 
 MartMall3:

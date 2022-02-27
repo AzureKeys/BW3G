@@ -11,6 +11,7 @@
 	const DRIFTVEILCITY_YOUNGSTER
 	const DRIFTVEILCITY_GRAMPS
 	const DRIFTVEILCITY_LASS2
+	const DRIFTVEILCITY_REPEAT_BALL
 
 DriftveilCity_MapScripts:
 	db 0 ; scene scripts
@@ -203,6 +204,9 @@ DriftveilSign:
 DriftveilShelterSign:
 	jumptext DriftveilShelterText
 	
+DriftveilRepeatBall:
+	itemball REPEAT_BALL
+	
 DriftveilMerchantEmptyText:
 	text "Sorry kid, you"
 	line "bought me out!"
@@ -336,7 +340,7 @@ DriftveilCity_MapEvents:
 	bg_event 12, 26, BGEVENT_READ, DriftveilSign
 	bg_event 28,  6, BGEVENT_READ, DriftveilShelterSign
 	
-	db 12 ; object events
+	db 13 ; object events
 	object_event 14, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DriftveilGuardScript, EVENT_DRIFTVEIL_BLOCKER
 	object_event 15, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DriftveilGuardScript, EVENT_DRIFTVEIL_BLOCKER
 	object_event 16, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, DriftveilGuardScript, EVENT_DRIFTVEIL_BLOCKER
@@ -349,4 +353,5 @@ DriftveilCity_MapEvents:
 	object_event 16, 26, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, DriftveilYoungsterScript, -1
 	object_event 25, 19, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, DriftveilGrampsScript, -1
 	object_event 35, 13, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, DriftveilLass2Script, -1
+	object_event 22, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DriftveilRepeatBall, EVENT_DRIFTVEIL_REPEAT_BALL
 	

@@ -5,6 +5,7 @@
 	const CASTELIACITYNORTH_TWIN
 	const CASTELIACITYNORTH_TWIN2
 	const CASTELIACITYNORTH_LASS2
+	const CASTELIACITYNORTH_TIMER_BALL
 
 CasteliaCityNorth_MapScripts:
 	db 0 ; scene scripts
@@ -52,6 +53,9 @@ CasteliaModeStreetSign:
 
 CasteliaStreetSign:
 	jumptext CasteliaStreetSignText
+	
+CasteliaNorthTimerBall:
+	itemball TIMER_BALL
 
 CasteliaNorthLassText:
 	text "My mom has a #-"
@@ -157,11 +161,12 @@ CasteliaCityNorth_MapEvents:
 	bg_event 21, 25, BGEVENT_READ, CasteliaModeStreetSign
 	bg_event 31, 27, BGEVENT_READ, CasteliaStreetSign
 
-	db 6 ; object events
+	db 7 ; object events
 	object_event 15, 16, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, CasteliaNorthLassTextScript, -1
 	object_event 16, 24, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CasteliaNorthYoungsterTextScript, -1
 	object_event 22, 14, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CasteliaNorthPokefanFTextScript, -1
 	object_event 12, 15, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_RIGHT, 3, 3, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, CasteliaNorthTwinTextScript, -1
 	object_event 12, 16, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_RIGHT, 3, 3, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, CasteliaNorthTwin2TextScript, -1
 	object_event 22, 20, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CasteliaNorthLass2TextScript, -1
+	object_event 18, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaNorthTimerBall, EVENT_CASTELIA_TIMER_BALL
 	

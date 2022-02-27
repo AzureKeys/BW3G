@@ -2,6 +2,7 @@
 	const MISTRALTONCITY_GYM_GUY
 	const MISTRALTONCITY_PARLYZ_HEAL
 	const MISTRALTONCITY_MAX_REPEL
+	const MISTRALTONCITY_HEAVY_BALL
 	const MISTRALTONCITY_OFFICER
 	const MISTRALTONCITY_YOUNGSTER
 	const MISTRALTONCITY_TEACHER
@@ -78,6 +79,9 @@ MistraltonCityTwinScript:
 	
 MistraltonCityParlyzHeal:
 	itemball PARLYZ_HEAL
+	
+MistraltonCityHeavyBall:
+	itemball HEAVY_BALL
 	
 MistraltonCityMaxRepel:
 	itemball MAX_REPEL
@@ -212,10 +216,11 @@ MistraltonCity_MapEvents:
 	bg_event 11,  9, BGEVENT_READ, MistraltonAirportSign
 	bg_event  8, 28, BGEVENT_ITEM, MistraltonCityElixer
 
-	db 8 ; object events
+	db 9 ; object events
 	object_event  5,  6, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 3, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MistraltonCityGymGuyScript, EVENT_SKYLA_RETURNED
 	object_event  3,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MistraltonCityParlyzHeal, EVENT_MISTRALTON_CITY_PARLYZ_HEAL
 	object_event 20, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MistraltonCityMaxRepel, EVENT_MISTRALTON_CITY_MAX_REPEL
+	object_event  3, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MistraltonCityHeavyBall, EVENT_MISTRALTON_CITY_HEAVY_BALL
 	object_event  5, 10, SPRITE_OFFICER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, MistraltonCityOfficerScript, -1
 	object_event 10, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MistraltonCityYoungsterScript, -1
 	object_event  8, 22, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MistraltonCityTeacherScript, -1

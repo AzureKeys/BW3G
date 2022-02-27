@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const R4_GREAT_BALL
+	const R4_HEAVY_BALL
 	const R4_X_ACCURACY
 	const R4_ETHER
 	const R4_SUPER_POTION
@@ -201,8 +201,8 @@ TrainerBikerR4:
 	closetext
 	end
 	
-R4GreatBall:
-	itemball GREAT_BALL
+R4HeavyBall:
+	itemball HEAVY_BALL
 	
 R4XAccuracy:
 	itemball X_ACCURACY
@@ -446,7 +446,7 @@ Rt4_MapEvents:
 	bg_event 10, 34, BGEVENT_ITEM, R4Ether2
 
 	db 14 ; object events
-	object_event 10, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4GreatBall, EVENT_R_4_GREAT_BALL
+	object_event 10, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4HeavyBall, EVENT_R_4_HEAVY_BALL
 	object_event 17, 55, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4XAccuracy, EVENT_R_4_X_ACCURACY
 	object_event 36, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4Ether, EVENT_R_4_ETHER_1
 	object_event 25, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4SuperPotion, EVENT_R_4_SUPER_POTION

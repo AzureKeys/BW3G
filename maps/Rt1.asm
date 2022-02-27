@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
 	const R1_FRUIT_TREE
-	const R1_ULTRA_BALL
+	const R1_HEAVY_BALL
 	const R1_PROTEIN
 	const R1_SCHOOLBOY
 	const R1_SCHOOLGIRL
@@ -148,8 +148,8 @@ TrainerTwinsR1:
 R1FruitTree:
 	fruittree FRUITTREE_R_1
 	
-R1UltraBall:
-	itemball ULTRA_BALL
+R1HeavyBall:
+	itemball HEAVY_BALL
 	
 R1Protein:
 	itemball PROTEIN
@@ -309,7 +309,7 @@ Rt1_MapEvents:
 
 	db 10 ; object events
 	object_event 31, 40, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R1FruitTree, -1
-	object_event 26,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R1UltraBall, EVENT_R1_ULTRA_BALL
+	object_event 26,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R1HeavyBall, EVENT_R1_HEAVY_BALL
 	object_event 18, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R1Protein, EVENT_R1_PROTEIN
 	object_event 27, 23, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolboyR1, -1
 	object_event 30, 23, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolgirlR1, -1

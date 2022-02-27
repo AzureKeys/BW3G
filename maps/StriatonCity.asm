@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
 	const STRIATONCITY_X_SPEED
-	const STRIATONCITY_ULTRA_BALL
+	const STRIATONCITY_LOVE_BALL
 	const STRIATONCITY_DUSK_BALL
 	const STRIATONCITY_BIG_PEARL
 	const STRIATONCITY_BUENA
@@ -21,8 +21,8 @@ StriatonCity_MapScripts:
 StriatonCityXSpeed:
 	itemball X_SPEED
 	
-StriatonCityUltraBall:
-	itemball ULTRA_BALL
+StriatonCityLoveBall:
+	itemball LOVE_BALL
 	
 StriatonCityDuskBall:
 	itemball DUSK_BALL
@@ -122,7 +122,7 @@ StriatonCity_MapEvents:
 
 	db 8 ; object events
 	object_event  6, 29, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, StriatonCityXSpeed, EVENT_STRIATON_CITY_X_SPEED
-	object_event 44, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, StriatonCityUltraBall, EVENT_STRIATON_CITY_ULTRA_BALL
+	object_event 44, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, StriatonCityLoveBall, EVENT_STRIATON_CITY_LOVE_BALL
 	object_event  2, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, StriatonCityDuskBall, EVENT_STRIATON_CITY_DUSK_BALL
 	object_event  3, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, StriatonCityBigPearl, EVENT_STRIATON_CITY_BIG_PEARL
 	object_event 10, 21, SPRITE_BUENA, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, StriatonCityBuenaScript, -1

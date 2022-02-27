@@ -1,6 +1,7 @@
 	const_def 2 ; object constants
 	const R21_BIG_PEARL
 	const R21_HP_UP
+	const R21_LURE_BALL
 	const R21_SWIMMERM_1
 	const R21_SWIMMERM_2
 	const R21_SWIMMERF_1
@@ -93,6 +94,9 @@ TrainerBattleGirlR21:
 	
 R21BigPearl:
 	itemball BIG_PEARL
+	
+R21LureBall:
+	itemball LURE_BALL
 	
 R21HPUp:
 	itemball HP_UP
@@ -220,9 +224,10 @@ Rt21_MapEvents:
 
 	db 0 ; bg events
 
-	db 9 ; object events
+	db 10 ; object events
 	object_event  9,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R21BigPearl, EVENT_R21_BIG_PEARL
 	object_event 10, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R21HPUp, EVENT_R21_HP_UP
+	object_event 19, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R21LureBall, EVENT_R21_LURE_BALL
 	object_event  4, 14, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSwimmerM1R21, -1
 	object_event 13, 24, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSwimmerM2R21, -1
 	object_event  4,  7, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSwimmerF1R21, -1

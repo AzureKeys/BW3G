@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const P2LAB_ULTRA_BALL
+	const P2LAB_LEVEL_BALL
 	const P2LAB_HYPER_POTION
 	const P2LAB_PROTEIN
 	const P2LAB_FULL_HEAL
@@ -216,8 +216,8 @@ P2LabDiaryScript3:
 P2LabDiaryScript4:
 	jumptext P2LabDiaryText4
 	
-P2LabUltraBall:
-	itemball ULTRA_BALL
+P2LabLevelBall:
+	itemball LEVEL_BALL
 	
 P2LabHyperPotion:
 	itemball HYPER_POTION
@@ -553,7 +553,7 @@ P2Lab_MapEvents:
 	bg_event 13,  1, BGEVENT_ITEM, P2LabCarbos
 
 	db 15 ; object events
-	object_event 23, 30, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, P2LabUltraBall, EVENT_P2_LAB_ULTRA_BALL
+	object_event 23, 30, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, P2LabLevelBall, EVENT_P2_LAB_LEVEL_BALL
 	object_event 22, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, P2LabHyperPotion, EVENT_P2_LAB_HYPER_POTION
 	object_event  3, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, P2LabProtein, EVENT_P2_LAB_PROTEIN
 	object_event 21,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, P2LabFullHeal, EVENT_P2_LAB_FULL_HEAL
