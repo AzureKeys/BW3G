@@ -75,7 +75,6 @@ NimbasaTMMart_Blocks:
 NimbasaVitaminMart_Blocks:
 NimbasaBallMart_Blocks:
 IcirrusBoutique_Blocks:
-OpelucidMart_Blocks:
 	INCBIN "maps/Mart.ablk"
 	
 HumilauPokecenter1F_Blocks:
@@ -607,4 +606,7 @@ DraydensHouse1F_Blocks:
 
 DraydensHouse2F_Blocks:
 	INCBIN "maps/DraydensHouse2F.ablk"
+
+OpelucidBattleHouse_Blocks:
+	INCBIN "maps/OpelucidBattleHouse.ablk"
 	

@@ -107,7 +107,7 @@ EngineFlags:
 	engine_flag wDailyFlags1, DAILYFLAGS1_BALL_MANIAC_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_ROCK_COLLECTOR_F
 
-	engine_flag wDailyFlags2, DAILYFLAGS2_MT_MOON_SQUARE_CLEFAIRY_F ; $58
+	engine_flag wDailyFlags2, DAILYFLAGS2_BATTLE_HOUSE_F ; $58
 	engine_flag wDailyFlags2, DAILYFLAGS2_UNION_CAVE_LAPRAS_F
 	engine_flag wDailyFlags2, DAILYFLAGS2_CASTELIA_MASSAGE_F
 	engine_flag wDailyFlags2, DAILYFLAGS2_GOLDENROD_DEPT_STORE_TM27_RETURN_F

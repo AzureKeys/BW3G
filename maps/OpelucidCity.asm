@@ -167,11 +167,11 @@ OpelucidCity_MapEvents:
 	warp_event 49, 27, R_11_OPELUCID_GATE, 4
 	warp_event  4, 26, R_9_OPELUCID_GATE, 1
 	warp_event  4, 27, R_9_OPELUCID_GATE, 2
-	warp_event 25,  5, OPELUCID_MART, 1
+	warp_event 32,  5, OPELUCID_BATTLE_HOUSE, 1
 	warp_event 33, 23, OPELUCID_POKECENTER_1F, 1
 	warp_event 11, 19, OPELUCID_SUPER_ROD_HOUSE, 1
 	warp_event 17,  5, OPELUCID_GYM, 1
-	warp_event 32,  5, OPELUCID_CURIOSITY_SHOP, 1
+	warp_event 25,  5, OPELUCID_CURIOSITY_SHOP, 1
 	warp_event 33, 13, OPELUCID_MOVE_REMINDER_HOUSE, 1
 	warp_event 28, 15, DRAYDENS_HOUSE_1F, 1
 

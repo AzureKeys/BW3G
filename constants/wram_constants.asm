@@ -250,7 +250,7 @@ CELEBIEVENT_FOREST_IS_RESTLESS_F EQU 2
 
 ; wDailyFlags2:: ; dc1f
 	const_def
-	const DAILYFLAGS2_MT_MOON_SQUARE_CLEFAIRY_F           ; 0
+	const DAILYFLAGS2_BATTLE_HOUSE_F                      ; 0
 	const DAILYFLAGS2_UNION_CAVE_LAPRAS_F                 ; 1
 	const DAILYFLAGS2_CASTELIA_MASSAGE_F                  ; 2
 	const DAILYFLAGS2_GOLDENROD_DEPT_STORE_TM27_RETURN_F  ; 3

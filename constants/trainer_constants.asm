@@ -895,27 +895,35 @@ CHRIS EQU __enum__
 	
 	trainerclass MARLON
 	const MARLON1
+	const MARLON2
 	
 	trainerclass SHAUNTAL
 	const SHAUNTAL1
+	const SHAUNTAL2
 	
 	trainerclass BURGH
 	const BURGH1
+	const BURGH2
 	
 	trainerclass ROXIE
 	const ROXIE1
+	const ROXIE2
 	
 	trainerclass CHEREN
 	const CHEREN1
+	const CHEREN2
 	
 	trainerclass CILAN
 	const CILAN1
+	const CILAN2
 	
 	trainerclass SKYLA
 	const SKYLA1
+	const SKYLA2
 	
 	trainerclass DRAYDEN
 	const DRAYDEN1
+	const DRAYDEN2
 	
 	trainerclass BIANCA
 	const BIANCA1

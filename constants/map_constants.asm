@@ -302,7 +302,7 @@ ENDM
 	map_const OPELUCID_CITY, 28, 17
 	map_const R_9_OPELUCID_GATE, 5, 4
 	map_const OPELUCID_POKECENTER_1F, 5, 5
-	map_const OPELUCID_MART, 6, 4
+	map_const OPELUCID_BATTLE_HOUSE, 5, 4
 	map_const OPELUCID_SUPER_ROD_HOUSE, 4, 4 
 	map_const OPELUCID_GYM, 14, 16
 	map_const OPELUCID_CURIOSITY_SHOP, 4, 4
