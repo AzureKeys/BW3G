@@ -336,4 +336,5 @@ ENDM
 	map_attributes IcirrusFanClub, ICIRRUS_FAN_CLUB, $00, 0
 	map_attributes DraydensHouse1F, DRAYDENS_HOUSE_1F, $00, 0
 	map_attributes DraydensHouse2F, DRAYDENS_HOUSE_2F, $00, 0
+	map_attributes TwistMountain3F, TWIST_MOUNTAIN_3F, $09, 0
 	

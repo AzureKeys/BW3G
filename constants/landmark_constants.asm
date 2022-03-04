@@ -58,6 +58,7 @@
 	const MISTRALTON_CITY
 	const R_7
 	const CELESTIAL_TOWER
+	const TWIST_MOUNTAIN
 	const ICIRRUS_CITY
 	const DRAGONSPIRAL_TOWER
 	const R_8

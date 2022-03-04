@@ -77,6 +77,7 @@ ENDM
 	map_const MISTRALTON_CAVE_1F, 13, 11
 	map_const MISTRALTON_CAVE_2F, 13, 13
 	map_const MISTRALTON_CAVE_3F, 14, 13
+	map_const TWIST_MOUNTAIN_3F, 16, 16
 
 	newgroup                                                      ; 20
 

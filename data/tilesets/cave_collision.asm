@@ -154,3 +154,10 @@
 	tilecoll FLOOR, WALL, WALL, WALL ; 99
 	tilecoll STAIRS_RIGHT_DOWN, WALL, FLOOR, WALL ; 9a
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 9b
+	tilecoll WALL, WALL, WALL, WALL ; 9c
+	tilecoll WALL, WALL, WALL, WALL ; 9d
+	tilecoll WALL, FLOOR, WALL, WALL ; 9e
+	tilecoll FLOOR, WALL, WALL, WALL ; 9f
+	tilecoll FLOOR, FLOOR, WALL, CAVE ; a0
+	tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, WARP_CARPET_DOWN ; a1
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; a2

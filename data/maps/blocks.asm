@@ -609,4 +609,7 @@ DraydensHouse2F_Blocks:
 
 OpelucidBattleHouse_Blocks:
 	INCBIN "maps/OpelucidBattleHouse.ablk"
+
+TwistMountain3F_Blocks:
+	INCBIN "maps/TwistMountain3F.ablk"
 	
