@@ -275,6 +275,7 @@ SECTION "Map Scripts 13", ROMX
 INCLUDE "maps/OpelucidCuriosityShop.asm"
 INCLUDE "maps/IcirrusHouse.asm"
 INCLUDE "maps/Dreamyard.asm"
+INCLUDE "maps/DreamyardB1F.asm"
 INCLUDE "maps/GameCorner.asm"
 INCLUDE "maps/OpelucidMoveReminderHouse.asm"
 INCLUDE "maps/OpelucidBattleHouse.asm"

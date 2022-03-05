@@ -226,12 +226,6 @@ INCBIN "gfx/tilesets/forest.2bpp.lz"
 TilesetChampionsRoomGFX:
 INCBIN "gfx/tilesets/champions_room.2bpp.lz"
 
-TilesetChampionsRoomMeta:
-INCBIN "data/tilesets/champions_room_metatiles.bin"
-
-TilesetChampionsRoomColl:
-INCLUDE "data/tilesets/champions_room_collision.asm"
-
 ; TilesetLighthouseGFX:
 ; INCBIN "gfx/tilesets/lighthouse.2bpp.lz"
 
@@ -448,9 +442,6 @@ INCBIN "data/tilesets/elite_four_room_attributes.bin"
 
 TilesetTraditionalHouseAttr:
 INCBIN "data/tilesets/traditional_house_attributes.bin"
-
-TilesetTrainStationAttr:
-INCBIN "data/tilesets/train_station_attributes.bin"
 
 
 SECTION "Tileset Data 13", ROMX
@@ -693,3 +684,12 @@ INCBIN "data/tilesets/tower_attributes.bin"
 TilesetCaveColl:
 ;TilesetDarkCaveColl:
 INCLUDE "data/tilesets/cave_collision.asm"
+
+TilesetChampionsRoomColl:
+INCLUDE "data/tilesets/champions_room_collision.asm"
+
+TilesetChampionsRoomMeta:
+INCBIN "data/tilesets/champions_room_metatiles.bin"
+
+TilesetTrainStationAttr:
+INCBIN "data/tilesets/train_station_attributes.bin"
