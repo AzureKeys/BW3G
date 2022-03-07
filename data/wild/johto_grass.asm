@@ -986,6 +986,78 @@ JohtoGrassWildMons:
 	db 25, ARON
 	db 25, GOLBAT
 	
+	map_id DREAMYARD
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 24, JIGGLYPUFF
+	db 23, LIEPARD
+	db 23, WATCHOG
+	db 24, MEDITITE
+	db 22, MUNNA
+	db 23, GOLBAT
+	db 25, LIEPARD
+	db 25, WATCHOG
+	db 24, MUNNA
+	db 26, MUSHARNA
+	; day
+	db 24, JIGGLYPUFF
+	db 23, LIEPARD
+	db 23, WATCHOG
+	db 24, MEDITITE
+	db 22, MUNNA
+	db 23, GOLBAT
+	db 25, LIEPARD
+	db 25, WATCHOG
+	db 24, MUNNA
+	db 26, MUSHARNA
+	; nite
+	db 24, JIGGLYPUFF
+	db 23, LIEPARD
+	db 23, WATCHOG
+	db 24, MEDITITE
+	db 22, MUNNA
+	db 23, GOLBAT
+	db 25, LIEPARD
+	db 25, WATCHOG
+	db 24, MUNNA
+	db 26, MUSHARNA
+	
+	map_id DREAMYARD_B1F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 24, WOOBAT
+	db 23, MUNNA
+	db 23, JIGGLYPUFF
+	db 24, GOLBAT
+	db 22, SKORUPI
+	db 23, JOLTIK
+	db 25, MUNNA
+	db 25, JIGGLYPUFF
+	db 24, SKORUPI
+	db 27, MUSHARNA
+	; day
+	db 24, WOOBAT
+	db 23, MUNNA
+	db 23, JIGGLYPUFF
+	db 24, GOLBAT
+	db 22, SKORUPI
+	db 23, JOLTIK
+	db 25, MUNNA
+	db 25, JIGGLYPUFF
+	db 24, SKORUPI
+	db 27, MUSHARNA
+	; nite
+	db 24, WOOBAT
+	db 23, MUNNA
+	db 23, JIGGLYPUFF
+	db 24, GOLBAT
+	db 22, SKORUPI
+	db 23, JOLTIK
+	db 25, MUNNA
+	db 25, JIGGLYPUFF
+	db 24, SKORUPI
+	db 27, MUSHARNA
+	
 	map_id R_2
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn

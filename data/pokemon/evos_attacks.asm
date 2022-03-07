@@ -4776,6 +4776,6 @@ HydreigonEvosAttacks:
 	db 63, TRI_ATTACK
 	db 64, HYPER_VOICE
 	db 79, OUTRAGE
-	; db 100, SURF
-	; db 100, WATERFALL
+	; db 100, CUT
+	; db 100, STRENGTH
 	db 0 ; no more level-up moves
