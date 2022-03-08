@@ -72,4 +72,5 @@ MapScenes::
 	scene_var OPELUCID_CITY,                               wOpelucidCitySceneID
 	scene_var DREAMYARD,                                   wDreamyardSceneID
 	scene_var DRAGONSPIRAL_TOWER_1F,                       wDragonspiralTower1FSceneID
+	scene_var DRAGONSPIRAL_TOWER_2F,                       wDragonspiralTower2FSceneID
 	db -1
