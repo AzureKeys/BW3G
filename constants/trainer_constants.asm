@@ -933,21 +933,26 @@ CHRIS EQU __enum__
 	
 	trainerclass GIALLO
 	const GIALLO1
+	const GIALLO2
 	
 	trainerclass BRONIUS
 	const BRONIUS1
+	const BRONIUS2
 	
 	trainerclass RYOKU
 	const RYOKU1
+	const RYOKU2
 	
 	trainerclass GORM
 	const GORM1
+	const GORM2
 	
 	trainerclass MYSTERYMAN
 	const VIO
 	
 	trainerclass ZINZOLIN
 	const ZINZOLIN1
+	const ZINZOLIN2
 	
 	trainerclass INFER
 	const INFER1_SNIVY
