@@ -170,3 +170,4 @@
 	tilecoll UP_WALL, UP_WALL, DOWN_WALL, DOWN_WALL ; a9
 	tilecoll UP_WALL, UP_WALL, FLOOR, FLOOR ; aa
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ab
+	tilecoll WALL, FLOOR, FLOOR, WALL ; ac
