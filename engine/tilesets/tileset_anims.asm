@@ -74,6 +74,7 @@ TilesetVillageBridgeAnim:
 	dw NULL,  DoneTileAnimation
 	
 TilesetNacreneAnim:
+TilesetDreamyardAnim:
 	;dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

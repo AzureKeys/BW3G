@@ -682,7 +682,6 @@ TilesetTowerAttr:
 INCBIN "data/tilesets/tower_attributes.bin"
 
 TilesetCaveColl:
-;TilesetDarkCaveColl:
 INCLUDE "data/tilesets/cave_collision.asm"
 
 TilesetChampionsRoomColl:
@@ -693,3 +692,18 @@ INCBIN "data/tilesets/champions_room_metatiles.bin"
 
 TilesetTrainStationAttr:
 INCBIN "data/tilesets/train_station_attributes.bin"
+
+TilesetDreamyardGFX:
+INCBIN "gfx/tilesets/dreamyard.2bpp.lz"
+
+TilesetDreamyardMeta:
+INCBIN "data/tilesets/dreamyard_metatiles.bin"
+
+TilesetDreamyardColl:
+INCLUDE "data/tilesets/dreamyard_collision.asm"
+
+
+SECTION "Tileset Data 23", ROMX
+
+TilesetDreamyardAttr:
+INCBIN "data/tilesets/dreamyard_attributes.bin"

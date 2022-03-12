@@ -13,7 +13,6 @@ Tilesets::
 	tileset Tileset0
 	tileset TilesetJohto
 	tileset TilesetJohtoModern
-	;tileset TilesetKanto
 	tileset TilesetBattleTowerOutside
 	tileset TilesetHouse
 	tileset TilesetPlayersHouse
@@ -29,24 +28,15 @@ Tilesets::
 	tileset TilesetTraditionalHouse
 	tileset TilesetTrainStation
 	tileset TilesetChampionsRoom
-	;tileset TilesetLighthouse
 	tileset TilesetPlayersRoom
-	;tileset TilesetPokeComCenter
 	tileset TilesetBattleTower
 	tileset TilesetTower
 	tileset TilesetCave
 	tileset TilesetPark
-	;tileset TilesetRuinsOfAlph
 	tileset TilesetRadioTower
 	tileset TilesetUnderground
 	tileset TilesetIcePath
-	;tileset TilesetDarkCave
 	tileset TilesetForest
-	;tileset TilesetBetaWordRoom
-	;tileset TilesetHoOhWordRoom
-	;tileset TilesetKabutoWordRoom
-	;tileset TilesetOmanyteWordRoom
-	;tileset TilesetAerodactylWordRoom
 	tileset TilesetDesert
 	tileset TilesetJohtoDesert
 	tileset TilesetBridge
@@ -66,3 +56,4 @@ Tilesets::
 	tileset TilesetAirport
 	tileset TilesetOpelucid
 	tileset TilesetIcirrus
+	tileset TilesetDreamyard
