@@ -320,7 +320,7 @@ PkmnLeagueGroupSprites:
 	db 0 ; end
 
 DungeonsGroupSprites:
-; Pinwheel Forest, Giant Chasm B1F
+; Pinwheel Forest, Giant Chasm B1F, Dreamyard
 	db SPRITE_LASS
 	db SPRITE_POKEFAN_F
 	db SPRITE_BUG_CATCHER
@@ -332,6 +332,7 @@ DungeonsGroupSprites:
 	db SPRITE_SUPER_NERD
 	; 8 of max 9 walking sprites
 	db SPRITE_POKE_BALL
+	db SPRITE_BOULDER
 	db 0 ; end
 
 CableClubGroupSprites:

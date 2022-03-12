@@ -78,6 +78,7 @@ ENDM
 	map_const MISTRALTON_CAVE_2F, 13, 13
 	map_const MISTRALTON_CAVE_3F, 14, 13
 	map_const TWIST_MOUNTAIN_3F, 16, 16
+	map_const DREAMYARD, 20, 19
 	map_const DREAMYARD_B1F, 12, 12
 
 	newgroup                                                      ; 20
@@ -236,7 +237,6 @@ ENDM
 	map_const STRIATON_TRADE_HOUSE, 4, 4
 	map_const STRIATON_LAB, 4, 4
 	map_const STRIATON_GYM, 7, 9
-	map_const DREAMYARD, 20, 19
 	map_const R_2, 23, 20
 	map_const R_2_ACCUMULA_GATE, 5, 4
 	
