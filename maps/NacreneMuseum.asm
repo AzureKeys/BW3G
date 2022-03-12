@@ -260,8 +260,8 @@ NacreneMuseum_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  4, 11, NACRENE_CITY, 9
-	warp_event  5, 11, NACRENE_CITY, 10
+	warp_event  4, 11, NACRENE_CITY, 7
+	warp_event  5, 11, NACRENE_CITY, 8
 
 	db 0 ; coord events
 

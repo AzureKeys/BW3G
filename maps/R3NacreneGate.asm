@@ -23,8 +23,8 @@ Rt3NacreneGate_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event  0,  4, NACRENE_CITY, 7
-	warp_event  0,  5, NACRENE_CITY, 8
+	warp_event  0,  4, NACRENE_CITY, 5
+	warp_event  0,  5, NACRENE_CITY, 6
 	warp_event  9,  4, R_3, 1
 	warp_event  9,  5, R_3, 2
 

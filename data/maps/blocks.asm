@@ -339,8 +339,17 @@ PinwheelBridgeGate_Blocks:
 SkyarrowBridge_Blocks:
 	INCBIN "maps/SkyarrowBridge.ablk"
 
-NacreneCity_Blocks:
+NacreneCity_Blocks::
 	INCBIN "maps/NacreneCity.ablk"
+
+NacreneOutskirt_Blocks:
+	INCBIN "maps/NacreneOutskirt.ablk"
+
+NacreneOutskirtEast_Blocks::
+	INCBIN "maps/NacreneOutskirtEast.ablk"
+
+NacreneOutskirtConnectionDummy_Blocks:
+	INCBIN "maps/NacreneOutskirtConnectionDummy.ablk"
 
 NacreneCafe_Blocks:
 	INCBIN "maps/NacreneCafe.ablk"
@@ -368,9 +377,6 @@ Rt2_Blocks:
 
 AccumulaTown_Blocks:
 	INCBIN "maps/AccumulaTown.ablk"
-
-Rt1_Blocks:
-	INCBIN "maps/Rt1.ablk"
 
 SECTION "Map Blocks 5", ROMX
 
@@ -615,4 +621,7 @@ OpelucidBattleHouse_Blocks:
 
 TwistMountain3F_Blocks:
 	INCBIN "maps/TwistMountain3F.ablk"
+
+Rt1_Blocks:
+	INCBIN "maps/Rt1.ablk"
 	

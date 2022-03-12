@@ -484,8 +484,8 @@ PinwheelForest_MapEvents:
 
 	db 3 ; warp events
 	warp_event 37,  5, PINWHEEL_BRIDGE_GATE, 1
-	warp_event 43, 35, NACRENE_CITY, 1
-	warp_event 43, 36, NACRENE_CITY, 2
+	warp_event 43, 35, NACRENE_OUTSKIRT, 1
+	warp_event 43, 36, NACRENE_OUTSKIRT, 2
 
 	db 8 ; coord events
 	coord_event 37, 20, SCENE_DEFAULT, PinwheelOfficer1WalkScript

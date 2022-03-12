@@ -1,6 +1,5 @@
 	const_def 2 ; object constants
 	const NACRENECITY_LENORA
-	const NACRENECITY_YOUNGSTER
 	const NACRENECITY_LASS
 	const NACRENECITY_GENTLEMAN
 	const NACRENECITY_PHARMACIST
@@ -53,9 +52,6 @@ NacreneCityRevive:
 	
 NacreneCityPPUp:
 	hiddenitem PP_UP, EVENT_NACRENE_CITY_PP_UP
-	
-NacreneCityYoungsterScript:
-	jumptextfaceplayer NacreneCityYoungsterText
 	
 NacreneCityLassScript:
 	jumptextfaceplayer NacreneCityLassText
@@ -136,8 +132,9 @@ NacreneCityLenoraText:
 	
 	para "Sorry, we just had"
 	line "a break in at the"
-	cont "museum. Something"
-	cont "important was"
+	
+	para "museum. Something"
+	line "important was"
 	cont "stolen."
 	
 	para "I'm LENORA, I run"
@@ -151,21 +148,15 @@ NacreneCityLenoraText:
 	
 	para "But it's useless"
 	line "without that DATA"
-	cont "DISK that was"
-	cont "stolen…"
+	
+	para "DISK that was"
+	line "stolen…"
 	
 	para "You should stop by"
 	line "if you find out"
 	cont "anything."
 	
 	para "Bye now!"
-	done
-	
-NacreneCityYoungsterText:
-	text "There are cops in"
-	line "the forest. They"
-	cont "wouldn't let me"
-	cont "through!"
 	done
 	
 NacreneCityLassText:
@@ -182,8 +173,9 @@ NacreneCityGentlemanText:
 	
 	para "but LENORA has"
 	line "retired to run"
-	cont "the museum full"
-	cont "time."
+	
+	para "the museum full"
+	line "time."
 	done
 	
 NacreneCityPharmacistText:
@@ -229,37 +221,34 @@ NacreneR3SignText:
 NacreneCity_MapEvents:
 	db 0, 0 ; filler
 
-	db 10 ; warp events
-	warp_event  1, 12, PINWHEEL_FOREST, 2
-	warp_event  1, 13, PINWHEEL_FOREST, 3
-	warp_event 31, 15, NACRENE_POKECENTER_1F, 1
-	warp_event 43,  5, NACRENE_STAT_EXP_HOUSE, 1
-	warp_event 25, 15, NACRENE_HOUSE, 1
-	warp_event 24,  5, NACRENE_CAFE, 1
-	warp_event 47, 16, R_3_NACRENE_GATE, 1
-	warp_event 47, 17, R_3_NACRENE_GATE, 2
-	warp_event 34,  5, NACRENE_MUSEUM, 1
-	warp_event 35,  5, NACRENE_MUSEUM, 2
+	db 8 ; warp events
+	warp_event 13, 15, NACRENE_POKECENTER_1F, 1
+	warp_event 25,  5, NACRENE_STAT_EXP_HOUSE, 1
+	warp_event  7, 15, NACRENE_HOUSE, 1
+	warp_event  6,  5, NACRENE_CAFE, 1
+	warp_event 29, 16, R_3_NACRENE_GATE, 1
+	warp_event 29, 17, R_3_NACRENE_GATE, 2
+	warp_event 16,  5, NACRENE_MUSEUM, 1
+	warp_event 17,  5, NACRENE_MUSEUM, 2
 
 	db 4 ; coord events
-	coord_event 18,  8, SCENE_DEFAULT, NacreneCityLenoraScript1
-	coord_event 18,  9, SCENE_DEFAULT, NacreneCityLenoraScript2
-	coord_event 18, 10, SCENE_DEFAULT, NacreneCityLenoraScript3
-	coord_event 18, 11, SCENE_DEFAULT, NacreneCityLenoraScript4
+	coord_event  0,  8, SCENE_DEFAULT, NacreneCityLenoraScript1
+	coord_event  0,  9, SCENE_DEFAULT, NacreneCityLenoraScript2
+	coord_event  0, 10, SCENE_DEFAULT, NacreneCityLenoraScript3
+	coord_event  0, 11, SCENE_DEFAULT, NacreneCityLenoraScript4
 	
 	db 7 ; bg events
-	bg_event 13,  8, BGEVENT_READ, NacreneCitySign
-	bg_event 26,  7, BGEVENT_READ, NacreneCafeSign
-	bg_event 33,  6, BGEVENT_READ, NacreneMuseumSign
-	bg_event 46, 15, BGEVENT_READ, NacreneR3Sign
-	bg_event 41,  2, BGEVENT_ITEM, NacreneCityRevive
-	bg_event 27,  3, BGEVENT_ITEM, NacreneCityPPUp
-	bg_event 28,  3, BGEVENT_ITEM, NacreneCityPPUp
+	bg_event 19, 12, BGEVENT_READ, NacreneCitySign
+	bg_event  8,  7, BGEVENT_READ, NacreneCafeSign
+	bg_event 15,  6, BGEVENT_READ, NacreneMuseumSign
+	bg_event 28, 15, BGEVENT_READ, NacreneR3Sign
+	bg_event 23,  2, BGEVENT_ITEM, NacreneCityRevive
+	bg_event  9,  3, BGEVENT_ITEM, NacreneCityPPUp
+	bg_event 10,  3, BGEVENT_ITEM, NacreneCityPPUp
 
-	db 5 ; object events
-	object_event 24,  8, SPRITE_LENORA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_NACRENE_CITY_LENORA
-	object_event  7,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NacreneCityYoungsterScript, -1
-	object_event 21,  6, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NacreneCityLassScript, -1
-	object_event 34,  9, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NacreneCityGentlemanScript, -1
-	object_event 23, 17, SPRITE_PHARMACIST, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NacreneCityPharmacistScript, -1
+	db 4 ; object events
+	object_event  6,  8, SPRITE_LENORA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_NACRENE_CITY_LENORA
+	object_event  3,  6, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NacreneCityLassScript, -1
+	object_event 16,  9, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NacreneCityGentlemanScript, -1
+	object_event  5, 17, SPRITE_PHARMACIST, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NacreneCityPharmacistScript, -1
 	

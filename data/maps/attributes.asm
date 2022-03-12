@@ -116,7 +116,19 @@ ENDM
 
 	map_attributes IcirrusCitySouthConnectionDummy, ICIRRUS_CITY_SOUTH_CONNECTION_DUMMY, $11, SOUTH
 	connection south, IcirrusCitySouth, ICIRRUS_CITY_SOUTH, 0
-
+	
+	map_attributes NacreneOutskirt, NACRENE_OUTSKIRT, $25, EAST
+	connection east, NacreneOutskirtConnectionDummy, NACRENE_OUTSKIRT_CONNECTION_DUMMY, -2
+	
+	map_attributes NacreneOutskirtConnectionDummy, NACRENE_OUTSKIRT_CONNECTION_DUMMY, $25, WEST
+	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, 2
+	
+	map_attributes NacreneCity, NACRENE_CITY, $25, WEST
+	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, 2
+	
+	map_attributes NacreneOutskirtEast, NACRENE_OUTSKIRT_EAST, $25, WEST
+	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, -10
+	
 	map_attributes Pokecenter2F, POKECENTER_2F, $00, 0
 	map_attributes TradeCenter, TRADE_CENTER, $00, 0
 	map_attributes Colosseum, COLOSSEUM, $00, 0
@@ -228,7 +240,6 @@ ENDM
 	map_attributes PinwheelForest, PINWHEEL_FOREST, $4F, 0
 	map_attributes PinwheelBridgeGate, PINWHEEL_BRIDGE_GATE, $00, 0
 	map_attributes SkyarrowBridge, SKYARROW_BRIDGE, $12, 0
-	map_attributes NacreneCity, NACRENE_CITY, $25, 0
 	map_attributes NacrenePokecenter1F, NACRENE_POKECENTER_1F, $00, 0
 	map_attributes NacreneStatExpHouse, NACRENE_STAT_EXP_HOUSE, $00, 0
 	map_attributes NacreneHouse, NACRENE_HOUSE, $00, 0
