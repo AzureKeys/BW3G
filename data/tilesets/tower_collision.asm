@@ -30,7 +30,7 @@
 	tilecoll WALL, FLOOR, WALL, STAIRS_LEFT_UP ; 1d
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 1e
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 1f
-	tilecoll FLOOR, WALL, WALL, FLOOR ; 20
+	tilecoll FLOOR, WALL, WALL, WALL ; 20
 	tilecoll WALL, STAIRS_LEFT_UP, FLOOR, FLOOR ; 21
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 22
 	tilecoll HOP_DOWN, FLOOR, WALL, WALL ; 23
@@ -156,7 +156,7 @@
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 9b
 	tilecoll WALL, WALL, WALL, WALL ; 9c
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 9d
-	tilecoll WALL, WALL, WALL, WALL ; 9e
+	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 9e
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 9f
 	tilecoll WALL, WALL, WALL, WALL ; a0
 	tilecoll WALL, FLOOR, WALL, FLOOR ; a1
@@ -171,3 +171,4 @@
 	tilecoll UP_WALL, UP_WALL, FLOOR, FLOOR ; aa
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ab
 	tilecoll WALL, FLOOR, FLOOR, WALL ; ac
+	tilecoll FLOOR, WALL, WALL, FLOOR ; ad
