@@ -610,6 +610,9 @@ DragonspiralTower5F_Blocks:
 DragonspiralTower6F_Blocks:
 	INCBIN "maps/DragonspiralTower6F.ablk"
 
+DragonspiralTowerRoof_Blocks:
+	INCBIN "maps/DragonspiralTowerRoof.ablk"
+
 DraydensHouse1F_Blocks:
 	INCBIN "maps/DraydensHouse1F.ablk"
 

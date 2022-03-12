@@ -61,6 +61,17 @@ LoadSpecialMapPalette:
 	ret
 
 .tower
+	ld a, [wMapNumber] ; All TILESET_TOWER maps are in group DUNGEONS
+	cp 47 ; DragonspiralTowerRoof
+	jr nz, .tower_day
+	ld a, [wCurTimeOfDay] ; Roof can have NITE palette
+	cp NITE_F
+	jr nz, .tower_day
+	call LoadTowerNitePalette
+	scf
+	ret
+	
+.tower_day
 	call LoadTowerPalette
 	scf
 	ret
@@ -842,3 +853,14 @@ LoadTowerPalette:
 	
 TowerPalette:
 INCLUDE "gfx/tilesets/tower.pal"
+
+LoadTowerNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, TowerNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+TowerNitePalette:
+INCLUDE "gfx/tilesets/tower_nite.pal"

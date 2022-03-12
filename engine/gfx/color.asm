@@ -1308,6 +1308,8 @@ LoadMapPals:
 	cp 37 ; CelestialTowerRoof
 	jr z, .done
 	cp 40 ; DragonspiralTowerOutside
+	jr z, .done
+	cp 47 ; DragonspiralTowerRoof
 	jr nz, .LoadRoof
 .done
 	ret

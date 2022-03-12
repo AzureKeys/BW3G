@@ -231,13 +231,18 @@ LoadWarpData:
 	call CheckIndoorMap
 	ret nz
 
-; MOUNT_MOON_SQUARE and TIN_TOWER_ROOF are outdoor maps within indoor maps.
+; GIANT_CHASM_B1F, CELESTIAL_TOWER_ROOF, and DRAGONSPIRAL_TOWER_ROOF 
+; are outdoor maps within indoor maps.
 ; Dig and Escape Rope should not take you to them.
 	ld a, [wPrevMapGroup]
-	cp GROUP_CELESTIAL_TOWER_ROOF ; aka GROUP_TIN_TOWER_ROOF
+	cp GROUP_CELESTIAL_TOWER_ROOF ; all 3 are in group DUNGEONS
 	jr nz, .not_mt_moon_or_tin_tower
 	ld a, [wPrevMapNumber]
+	cp MAP_GIANT_CHASM_B1F
+	ret z
 	cp MAP_CELESTIAL_TOWER_ROOF
+	ret z
+	cp MAP_DRAGONSPIRAL_TOWER_ROOF
 	ret z
 .not_mt_moon_or_tin_tower
 

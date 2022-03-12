@@ -337,6 +337,7 @@ ENDM
 	map_attributes DragonspiralTower4F, DRAGONSPIRAL_TOWER_4F, $00, 0
 	map_attributes DragonspiralTower5F, DRAGONSPIRAL_TOWER_5F, $00, 0
 	map_attributes DragonspiralTower6F, DRAGONSPIRAL_TOWER_6F, $00, 0
+	map_attributes DragonspiralTowerRoof, DRAGONSPIRAL_TOWER_ROOF, $00, 0
 	map_attributes MistraltonCave1F, MISTRALTON_CAVE_1F, $09, 0
 	map_attributes MistraltonCave2F, MISTRALTON_CAVE_2F, $09, 0
 	map_attributes MistraltonCave3F, MISTRALTON_CAVE_3F, $09, 0
