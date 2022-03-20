@@ -878,6 +878,78 @@ JohtoGrassWildMons:
 	db 22, YANMA
 	db 23, ROSELIA
 
+	map_id NACRENE_OUTSKIRT
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 21, TIMBURR
+	db 22, THROH
+	db 22, SAWK
+	db 20, CROAGUNK
+	db 21, PALPITOAD
+	db 20, YANMA
+	db 23, CROAGUNK
+	db 23, YANMA
+	db 23, GURDURR
+	db 24, GURDURR
+	; day
+	db 21, TIMBURR
+	db 22, THROH
+	db 22, SAWK
+	db 20, CROAGUNK
+	db 21, PALPITOAD
+	db 20, YANMA
+	db 23, CROAGUNK
+	db 23, YANMA
+	db 23, GURDURR
+	db 24, GURDURR
+	; nite
+	db 21, TIMBURR
+	db 22, THROH
+	db 22, SAWK
+	db 20, CROAGUNK
+	db 21, PALPITOAD
+	db 20, YANMA
+	db 23, CROAGUNK
+	db 23, YANMA
+	db 23, GURDURR
+	db 24, GURDURR
+
+	map_id NACRENE_OUTSKIRT_EAST
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 21, TIMBURR
+	db 22, THROH
+	db 22, SAWK
+	db 20, CROAGUNK
+	db 21, PALPITOAD
+	db 20, YANMA
+	db 23, CROAGUNK
+	db 23, YANMA
+	db 23, GURDURR
+	db 24, GURDURR
+	; day
+	db 21, TIMBURR
+	db 22, THROH
+	db 22, SAWK
+	db 20, CROAGUNK
+	db 21, PALPITOAD
+	db 20, YANMA
+	db 23, CROAGUNK
+	db 23, YANMA
+	db 23, GURDURR
+	db 24, GURDURR
+	; nite
+	db 21, TIMBURR
+	db 22, THROH
+	db 22, SAWK
+	db 20, CROAGUNK
+	db 21, PALPITOAD
+	db 20, YANMA
+	db 23, CROAGUNK
+	db 23, YANMA
+	db 23, GURDURR
+	db 24, GURDURR
+
 	map_id R_3
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn

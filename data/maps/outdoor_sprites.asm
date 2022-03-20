@@ -176,12 +176,15 @@ VirbankGroupSprites:
 	db 0 ; end
 
 NacreneGroupSprites:
-; Nacrene City
+; Nacrene City, Nacrene Outskirt
 	db SPRITE_LENORA
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
 	db SPRITE_GENTLEMAN
 	db SPRITE_PHARMACIST
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_BLACK_BELT
 	; 8 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db 0 ; end
