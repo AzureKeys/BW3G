@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; opentext
-	; givepoke SNIVY, 5, NO_ITEM
+	; givepoke SNIVY, 5, BIG_ROOT
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE

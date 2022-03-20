@@ -3992,9 +3992,40 @@ SapHealth:
 	ld b, h
 	ld c, l
 .skip_drainingkiss
-	; Divide damage by 2, store it in hDividend
+	; Divide damage by 2
 	srl b
 	rr c
+	; Check for Big Root
+	push bc
+	call GetUserItem
+	ld a, b
+	cp HELD_BIG_ROOT
+	pop bc
+	jr nz, .skip_big_root
+	; load amount to heal into hMultiplicand
+	xor a
+	ldh [hMultiplicand + 0], a
+	ld a, b
+	ldh [hMultiplicand + 1], a
+	ld a, c
+	ldh [hMultiplicand + 2], a
+	; Multiply by 130
+	ld a, 30
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+	; Divide by 100
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	; Load hQuotient back into bc
+	ldh a, [hQuotient + 2]
+	ld b, a
+	ldh a, [hQuotient + 3]
+	ld c, a
+.skip_big_root
+	; Store amount to heal in hDividend
 	ld a, b
 	ldh [hDividend], a
 	ld a, c
