@@ -3974,14 +3974,30 @@ BattleCommand_EatDream:
 	jp StdBattleTextBox
 
 SapHealth:
-	; Divide damage by 2, store it in hDividend
+	; Get Damage in bc
 	ld hl, wCurDamage
 	ld a, [hli]
-	srl a
-	ldh [hDividend], a
 	ld b, a
-	ld a, [hl]
-	rr a
+	ld c, [hl]
+	; If we're using DRAININGKISS, use 75%, not 50%
+	ld a, BATTLE_VARS_MOVE_ANIM
+	call GetBattleVar
+	cp DRAININGKISS
+	jr nz, .skip_drainingkiss
+	ld h, b
+	ld l, c
+	srl b
+	rr c
+	add hl, bc
+	ld b, h
+	ld c, l
+.skip_drainingkiss
+	; Divide damage by 2, store it in hDividend
+	srl b
+	rr c
+	ld a, b
+	ldh [hDividend], a
+	ld a, c
 	ldh [hDividend + 1], a
 	or b
 	jr nz, .at_least_one
