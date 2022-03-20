@@ -1130,35 +1130,12 @@ BattleCommand_Critical:
 	and a
 	ld hl, wEnemyMonItem
 	ld a, [wEnemyMonSpecies]
-	jr nz, .Item
+	jr nz, .FocusEnergy
 	ld hl, wBattleMonItem
 	ld a, [wBattleMonSpecies]
 
-.Item:
-	ld c, 0
-
-	; cp CHANSEY
-	; jr nz, .Farfetchd
-	; ld a, [hl]
-	; cp LUCKY_PUNCH
-	; jr nz, .FocusEnergy
-
-; ; +2 critical level
-	; ld c, 2
-	; jr .Tally
-
-.Farfetchd:
-	; cp FARFETCH_D
-	; jr nz, .FocusEnergy
-	; ld a, [hl]
-	; cp STICK
-	; jr nz, .FocusEnergy
-
-; ; +2 critical level
-	; ld c, 2
-	; jr .Tally
-
 .FocusEnergy:
+	ld c, 0
 	ld a, BATTLE_VARS_SUBSTATUS4
 	call GetBattleVar
 	bit SUBSTATUS_FOCUS_ENERGY, a
@@ -1206,8 +1183,6 @@ BattleCommand_Critical:
 INCLUDE "data/moves/critical_hit_moves.asm"
 
 INCLUDE "data/battle/critical_hit_chances.asm"
-
-INCLUDE "engine/battle/move_effects/triple_kick.asm"
 
 CheckAirBalloon:
 ; Return z if user is holding an Air Balloon
@@ -2958,8 +2933,6 @@ EnemyAttackDamage:
 	ld a, 1
 	and a
 	ret
-
-INCLUDE "engine/battle/move_effects/beat_up.asm"
 
 BattleCommand_ClearMissDamage:
 ; clearmissdamage
@@ -5445,8 +5418,6 @@ BattleCommand_EndLoop:
 	ld a, 1
 	jr z, .double_hit
 	ld a, [hl]
-	cp EFFECT_BEAT_UP
-	jr z, .beat_up
 	cp EFFECT_TRIPLE_KICK
 	jr nz, .not_triple_kick
 .reject_triple_kick_sample
@@ -5458,33 +5429,6 @@ BattleCommand_EndLoop:
 	ld a, 1
 	ld [bc], a
 	jr .done_loop
-
-.beat_up
-	ldh a, [hBattleTurn]
-	and a
-	jr nz, .check_ot_beat_up
-	ld a, [wPartyCount]
-	cp 1
-	jp z, .only_one_beatup
-	dec a
-	jr .double_hit
-
-.check_ot_beat_up
-	ld a, [wBattleMode]
-	cp WILD_BATTLE
-	jp z, .only_one_beatup
-	ld a, [wOTPartyCount]
-	cp 1
-	jp z, .only_one_beatup
-	dec a
-	jr .double_hit
-
-.only_one_beatup
-	ld a, BATTLE_VARS_SUBSTATUS3
-	call GetBattleVarAddr
-	res SUBSTATUS_IN_LOOP, [hl]
-	call BattleCommand_BeatUpFailText
-	jp EndMoveEffect
 
 .not_triple_kick
 	call BattleRandom
@@ -5646,6 +5590,8 @@ BattleCommand_HeldFlinch:
 	jr z, .flinch
 	cp HELD_LIFE_ORB
 	jr z, .lifeorb
+	cp HELD_SHELL_BELL
+	jr z, .shellbell
 	ret
 
 .flinch
@@ -5672,6 +5618,34 @@ BattleCommand_HeldFlinch:
 	farcall GetEighthMaxHP
 	farcall SubtractHPFromUser
 	ld hl, BattleText_UserLostSomeOfItsHP
+	jp StdBattleTextBox
+	
+.shellbell
+	call .checkfaint
+	ret z
+	farcall CheckFullHP
+	ret z
+	ld a, [wCurDamage]
+	ld b, a
+	ld a, [wCurDamage + 1]
+	ld c, a
+	or b
+	ret z ; No damage
+	; halve bc 3 times to get 1/8th
+	srl b
+	rr c
+	srl b
+	rr c
+	srl b
+	rr c
+	; "Bug Bite" routines are from player's perspective
+	farcall ItemRecoveryAnimBugBite
+	farcall RestoreHPBugBite
+	call GetUserItem ; For the item name in textbox
+	ld a, [hl]
+	ld [wNamedObjectIndexBuffer], a
+	call GetItemName
+	ld hl, BattleText_UserRecoveredWithItem
 	jp StdBattleTextBox
 	
 .checkfaint
