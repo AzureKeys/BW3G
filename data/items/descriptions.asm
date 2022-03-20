@@ -117,7 +117,7 @@ ItemDescriptions:
 	dw ChoiceSpecsDesc
 	dw ChoiceScarfDesc
 	dw MiracleSeedDesc
-	dw ThickClubDesc
+	dw BigRootDesc
 	dw FocusBandDesc
 	dw XSpDefDesc
 	dw EnergyPowderDesc
@@ -126,7 +126,7 @@ ItemDescriptions:
 	dw RevivalHerbDesc
 	dw HardStoneDesc
 	dw LuckyEggDesc
-	dw CardKeyDesc
+	dw ShellBellDesc
 	dw MachinePartDesc
 	dw EggTicketDesc
 	dw LostItemDesc
@@ -719,9 +719,9 @@ MiracleSeedDesc:
 	db   "Powers up grass-"
 	next "type moves. (HOLD)@"
 
-ThickClubDesc:
-	db   "A bone of some"
-	next "sort. Sell low.@"
+BigRootDesc:
+	db   "Heal more from"
+	next "draining moves.@"
 
 FocusBandDesc:
 	db   "May prevent faint-"
@@ -755,9 +755,9 @@ LuckyEggDesc:
 	db   "Earns extra EXP."
 	next "points. (HOLD)@"
 
-CardKeyDesc:
-	db   "Opens shutters in"
-	next "the RADIO TOWER.@"
+ShellBellDesc:
+	db   "Heal a little when"
+	next "dealing damage.@"
 
 MachinePartDesc:
 	db   "A machine part for"

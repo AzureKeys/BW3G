@@ -123,7 +123,7 @@
 	const CHOICE_SPECS ; 73
 	const CHOICE_SCARF ; 74
 	const MIRACLE_SEED ; 75
-	const THICK_CLUB   ; 76
+	const BIG_ROOT     ; 76
 	const FOCUS_BAND   ; 77
 	const X_SP_DEF     ; 78
 	const ENERGYPOWDER ; 79
@@ -132,7 +132,7 @@
 	const REVIVAL_HERB ; 7c
 	const HARD_STONE   ; 7d
 	const LUCKY_EGG    ; 7e
-	const CARD_KEY     ; 7f
+	const SHELL_BELL   ; 7f
 	const MACHINE_PART ; 80
 	const EGG_TICKET   ; 81
 	const LOST_ITEM    ; 82

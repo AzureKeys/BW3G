@@ -130,7 +130,7 @@ ItemEffects:
 	dw NoEffect            ; CHOICE_SPECS
 	dw NoEffect            ; CHOICE_SCARF
 	dw NoEffect            ; MIRACLE_SEED
-	dw NoEffect            ; THICK_CLUB
+	dw NoEffect            ; BIG_ROOT
 	dw NoEffect            ; FOCUS_BAND
 	dw XItemEffect         ; X_SP_DEF
 	dw EnergypowderEffect  ; ENERGYPOWDER
@@ -139,7 +139,7 @@ ItemEffects:
 	dw RevivalHerbEffect   ; REVIVAL_HERB
 	dw NoEffect            ; HARD_STONE
 	dw NoEffect            ; LUCKY_EGG
-	dw CardKeyEffect       ; CARD_KEY
+	dw NoEffect            ; SHELL_BELL
 	dw NoEffect            ; MACHINE_PART
 	dw NoEffect            ; EGG_TICKET
 	dw NoEffect            ; LOST_ITEM
@@ -2737,10 +2737,6 @@ UnknownText_0xf739:
 
 SquirtbottleEffect:
 	farcall _Squirtbottle
-	ret
-
-CardKeyEffect:
-	farcall _CardKey
 	ret
 
 BasementKeyEffect:

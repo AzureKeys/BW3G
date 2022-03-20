@@ -1388,7 +1388,7 @@ BattleTowerMons3:
 	db "PORIGON2@@@"
 
 	db MAROWAK
-	db THICK_CLUB
+	db NO_ITEM
 	db EARTHQUAKE, RETURN, HYPER_BEAM, BONEMERANG
 	dw 0 ; OT ID
 	dt 27000 ; Exp
