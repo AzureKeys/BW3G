@@ -8,11 +8,47 @@
 	const CASTELIACITYSOUTH_TEACHER
 	const CASTELIACITYSOUTH_SAILOR2
 	const CASTELIACITYSOUTH_SAILOR3
+	const CASTELIACITYSOUTH_MYSTIC_WATER_GIVER
 
 CasteliaCitySouth_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
+	
+CasteliaSouthMysticWaterGiverScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_MYSTIC_WATER
+	iftrue .got_water
+	writetext CasteliaSouthMysticWaterGiver_AskScaleText
+	yesorno
+	iffalse .declined
+	checkitem HEART_SCALE
+	iffalse .no_scale
+	writetext CasteliaSouthMysticWaterGiver_ThanksText
+	buttonsound
+	verbosegiveitem MYSTIC_WATER
+	iffalse .no_room
+	takeitem HEART_SCALE
+	setevent EVENT_GOT_MYSTIC_WATER
+.got_water
+	writetext CasteliaSouthMysticWaterGiver_GotWaterText
+.no_room
+	waitbutton
+	closetext
+	end
+	
+.declined
+	writetext CasteliaSouthMysticWaterGiver_DeclinedText
+	waitbutton
+	closetext
+	end
+	
+.no_scale
+	writetext CasteliaSouthMysticWaterGiver_NoScaleText
+	waitbutton
+	closetext
+	end
 	
 CasteliaFerryManScript:
 	jumptextfaceplayer CasteliaFerryManClosedText
@@ -58,6 +94,59 @@ CasteliaFerrySign:
 CasteliaPlazaSign:
 	jumptext CasteliaPlazaSignText
 	
+CasteliaSouthMysticWaterGiver_AskScaleText:
+	text "Ahoy there, young-"
+	line "un! I've been"
+	
+	para "lookin' for a"
+	line "shiny type of"
+	
+	para "trinket they call"
+	line "a HEART SCALE."
+	
+	para "They say you can"
+	line "fish 'em up, but"
+	
+	para "I've been havin'"
+	line "no luck!"
+	
+	para "You wouldn't have"
+	line "one you could"
+	cont "spare, would ya?"
+	done
+	
+CasteliaSouthMysticWaterGiver_ThanksText:
+	text "Aye! Many thanks!"
+	line "Let me give you"
+	
+	para "somethin' for yer"
+	line "trouble. It's just"
+	
+	para "somethin' I fished"
+	line "up here on the"
+	cont "pier."
+	done
+	
+CasteliaSouthMysticWaterGiver_GotWaterText:
+	text "Water type #MON"
+	line "seem to take a"
+	
+	para "likin' to that"
+	line "thing! Try lettin'"
+	cont "one hold onto it!"
+	done
+	
+CasteliaSouthMysticWaterGiver_DeclinedText:
+	text "Arr, that's too"
+	line "bad…"
+	done
+	
+CasteliaSouthMysticWaterGiver_NoScaleText:
+	text "Wait a minute! You"
+	line "don't even have"
+	cont "one yourself!"
+	done
+	
 CasteliaFerryManClosedText:
 	text "Ahoy! This be the"
 	line "FERRY to VIRBANK"
@@ -65,8 +154,9 @@ CasteliaFerryManClosedText:
 
 	para "If ye've got a"
 	line "ticket, go show it"
-	cont "to the fellow"
-	cont "inside!"
+	
+	para "to the fellow"
+	line "inside!"
 	done
 
 CasteliaSouthGentlemanText:
@@ -96,21 +186,15 @@ CasteliaSouthSailorText:
 	done
 
 CasteliaSouthTeacherText:
-	text "CASTELIA DEPT."
-	line "STORE has the"
+	text "CASTELIA's GAME"
+	line "PLAZA has a great"
 
-	para "biggest and best"
-	line "selection of"
-	cont "merchandise."
+	para "selection of"
+	line "prizes! I'm just"
 
-	para "If you can't get"
-	line "it there, you"
-
-	para "can't get it any-"
-	line "where."
-
-	para "Gee… I sound like"
-	line "a sales clerk."
+	para "no good at the"
+	line "games, so I never"
+	cont "win anything…"
 	done
 
 CasteliaSouthSailor2Text:
@@ -189,7 +273,7 @@ CasteliaCitySouth_MapEvents:
 	bg_event  4,  9, BGEVENT_READ, CasteliaFerrySign
 	bg_event 14,  8, BGEVENT_READ, CasteliaPlazaSign
 
-	db 9 ; object events
+	db 10 ; object events
 	object_event  5, 18, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaFerryManScript, -1
 	object_event 23, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaCityWaterStone, EVENT_CASTELIA_CITY_WATER_STONE
 	object_event 14, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaCityCoinCase, EVENT_CASTELIA_CITY_COIN_CASE
@@ -199,4 +283,5 @@ CasteliaCitySouth_MapEvents:
 	object_event 21, 14, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthTeacherTextScript, -1
 	object_event 33, 15, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthSailor2TextScript, -1
 	object_event 44,  9, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthSailor3TextScript, -1
+	object_event 32, 24, SPRITE_SAILOR, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSouthMysticWaterGiverScript, -1
 	

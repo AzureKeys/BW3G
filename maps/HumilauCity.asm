@@ -10,7 +10,7 @@
 	const HUMILAUCITY_BLOCKER_ROAMING
 	const HUMILAUCITY_GYM_BLOCKER
 	const HUMILAUCITY_PC_BLOCKER
-	const HUMILAUCITY_MYSTIC_WATER
+	const HUMILAUCITY_SHELL_BELL
 
 HumilauCity_MapScripts:
 	db 2 ; scene scripts
@@ -104,8 +104,8 @@ HumilauMarlonSign:
 HumilauMarineTubeSign:
 	jumptext HumilauMarineTubeSignText
 	
-HumilauCityMysticWater:
-	itemball MYSTIC_WATER
+HumilauCityShellBell:
+	itemball SHELL_BELL
 
 HumilauCity_DontLeaveMovement:
 	step RIGHT
@@ -292,5 +292,5 @@ HumilauCity_MapEvents:
 	object_event 13, 29, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, HumilauCityRoamingBlockerTextScript, EVENT_HUMILAU_CITY_ROAMING_BLOCKER
 	object_event  8, 24, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, HumilauCityGymBlockerTextScript, EVENT_HUMILAU_CITY_GYM_BLOCKER
 	object_event  3, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, HumilauCityPCBlockerTextScript, EVENT_HUMILAU_CITY_PC_BLOCKER
-	object_event 21, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, HumilauCityMysticWater, EVENT_HUMILAU_CITY_MYSTIC_WATER
+	object_event 21, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, HumilauCityShellBell, EVENT_HUMILAU_CITY_SHELL_BELL
 	

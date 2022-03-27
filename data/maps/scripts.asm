@@ -72,10 +72,10 @@ INCLUDE "maps/RelicCastleB1F.asm"
 INCLUDE "maps/RelicCastleB2F.asm"
 INCLUDE "maps/RelicCastleB3F.asm"
 INCLUDE "maps/NimbasaHouse.asm"
+INCLUDE "maps/R4House.asm"
 
 SECTION "Map Scripts 5", ROMX
 
-INCLUDE "maps/R4House.asm"
 INCLUDE "maps/R4DesertGate.asm"
 INCLUDE "maps/DesertResort.asm"
 INCLUDE "maps/CasteliaCityNorth.asm"
