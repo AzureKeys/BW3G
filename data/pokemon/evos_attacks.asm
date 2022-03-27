@@ -32,7 +32,6 @@ EvoTypeSizes::
 SnivyEvosAttacks:
 	db EVOLVE_LEVEL, 17, SERVINE
 	db 0 ; no more evolutions
-	;db 1, MEGA_DRAIN
 	db 1, TACKLE
 	db 4, LEER
 	db 7, VINE_WHIP

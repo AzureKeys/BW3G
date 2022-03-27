@@ -1160,27 +1160,39 @@ ResidualDamage:
 	call SubtractHPFromUser
 	ld a, $1
 	ldh [hBGMapMode], a
+	; Check for Big Root
+	push bc
+	callfar GetOpponentItem
+	ld a, b
+	cp HELD_BIG_ROOT
+	pop bc
+	jr nz, .skip_big_root
+	; Multiply bc by 130
+	xor a
+	ldh [hMultiplicand + 0], a
+	ld a, b
+	ldh [hMultiplicand + 1], a
+	ld a, c
+	ldh [hMultiplicand + 2], a
+	ld a, 30
+	add 100
+	ldh [hMultiplier], a
+	call Multiply
+	; Divide by 100
+	ld a, 100
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	; Load hQuotient back into bc
+	ldh a, [hQuotient + 2]
+	ld b, a
+	ldh a, [hQuotient + 3]
+	ld c, a
+.skip_big_root
 	call RestoreHP
 	ld hl, LeechSeedSapsText
 	call StdBattleTextBox
 .not_seeded
-
-	call HasUserFainted
-	jr z, .fainted
-
-	ld a, BATTLE_VARS_SUBSTATUS1
-	call GetBattleVarAddr
-	bit SUBSTATUS_NIGHTMARE, [hl]
-	jr z, .not_nightmare
-	xor a
-	ld [wNumHits], a
-	ld de, ANIM_IN_NIGHTMARE
-	call Call_PlayBattleAnim_OnlyIfVisible
-	call GetQuarterMaxHP
-	call SubtractHPFromUser
-	ld hl, HasANightmareText
-	call StdBattleTextBox
-.not_nightmare
 
 	call HasUserFainted
 	jr z, .fainted
