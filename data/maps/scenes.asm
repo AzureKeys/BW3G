@@ -73,4 +73,6 @@ MapScenes::
 	scene_var DREAMYARD,                                   wDreamyardSceneID
 	scene_var DRAGONSPIRAL_TOWER_1F,                       wDragonspiralTower1FSceneID
 	scene_var DRAGONSPIRAL_TOWER_2F,                       wDragonspiralTower2FSceneID
+	scene_var DRAGONSPIRAL_TOWER_6F,                       wDragonspiralTower6FSceneID
+	scene_var DRAGONSPIRAL_TOWER_ROOF,                     wDragonspiralTowerRoofSceneID
 	db -1

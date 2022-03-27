@@ -2610,8 +2610,10 @@ wOpelucidCitySceneID::                            db ; d9c0
 wDreamyardSceneID::                               db ; d9c0
 wDragonspiralTower1FSceneID::                     db ; d9c0
 wDragonspiralTower2FSceneID::                     db ; d9c0
+wDragonspiralTower6FSceneID::                     db ; d9c0
+wDragonspiralTowerRoofSceneID::                   db ; d9c0
 
-	ds 61
+	ds 59
 	
 wBattleHouseOpponent:: db
 wNumShards:: db

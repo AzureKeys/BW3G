@@ -22,7 +22,7 @@ Dreamyard_MapScripts:
 	clearevent EVENT_DREAMYARD_UPPER_LEVEL
 	checkevent EVENT_DREAMYARD_BOULDER
 	iffalse .done
-	changeblock 10, 20, $55 ; boulder in pit
+	changeblock 10, 20, $21 ; boulder in pit
 .done
 	return
 
@@ -41,7 +41,7 @@ Dreamyard_MapScripts:
 	writetext DreamyardBoulderFellText
 	waitbutton
 	disappear DREAMYARD_BOULDER
-	changeblock 10, 20, $55 ; boulder in pit
+	changeblock 10, 20, $21 ; boulder in pit
 	reloadmappart
 	closetext
 	end
@@ -54,15 +54,15 @@ Dreamyard_MapScripts:
 DreamyardUpperLevelScript:
 	checkevent EVENT_DREAMYARD_UPPER_LEVEL
 	iftrue .done
-	changeblock 10,  0, $87
-	changeblock 14,  0, $87
-	changeblock 16,  0, $87
-	changeblock 18,  0, $87
-	changeblock 20,  0, $87
-	changeblock 12,  2, $84
-	changeblock 12,  4, $88
-	changeblock 12,  6, $86
-	changeblock 12,  8, $86
+	changeblock 10,  0, $4a
+	changeblock 14,  0, $4a
+	changeblock 16,  0, $4a
+	changeblock 18,  0, $4a
+	changeblock 20,  0, $4a
+	changeblock 12,  2, $41
+	changeblock 12,  4, $45
+	changeblock 12,  6, $49
+	changeblock 12,  8, $49
 	setevent EVENT_DREAMYARD_UPPER_LEVEL
 .done
 	end
@@ -70,15 +70,15 @@ DreamyardUpperLevelScript:
 DreamyardLowerLevelScript:
 	checkevent EVENT_DREAMYARD_UPPER_LEVEL
 	iffalse .done
-	changeblock 10,  0, $6B
-	changeblock 14,  0, $6B
-	changeblock 16,  0, $6B
-	changeblock 18,  0, $6B
-	changeblock 20,  0, $6B
-	changeblock 12,  2, $71
-	changeblock 12,  4, $75
-	changeblock 12,  6, $82
-	changeblock 12,  8, $81
+	changeblock 10,  0, $43
+	changeblock 14,  0, $43
+	changeblock 16,  0, $43
+	changeblock 18,  0, $43
+	changeblock 20,  0, $43
+	changeblock 12,  2, $40
+	changeblock 12,  4, $44
+	changeblock 12,  6, $46
+	changeblock 12,  8, $42
 	clearevent EVENT_DREAMYARD_UPPER_LEVEL
 .done
 	end
