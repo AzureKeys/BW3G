@@ -1,5 +1,7 @@
 	const_def 2 ; object constants
 	const DRAGONSPIRALTOWER2F_BOULDER
+	const DRAGONSPIRALTOWER2F_ELIXER
+	const DRAGONSPIRALTOWER2F_FULL_RESTORE
 
 DragonspiralTower2F_MapScripts:
 	db 1 ; scene scripts
@@ -85,6 +87,12 @@ DragonspiralTower2FLowerLevelScript:
 DragonspiralBoulder:
 	jumpstd strengthboulder
 	
+DragonspiralElixer:
+	itemball ELIXER
+	
+DragonspiralFullRestore:
+	itemball FULL_RESTORE
+	
 DragonspiralBoulderFellText:
 	text "The boulder fell"
 	line "through!"
@@ -112,6 +120,8 @@ DragonspiralTower2F_MapEvents:
 
 	db 0 ; bg events
 	
-	db 1 ; object events
+	db 3 ; object events
 	object_event  6, 10, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonspiralBoulder, EVENT_DRAGONSPIRAL_TOWER_2F_BOULDER
+	object_event 10, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralElixer, EVENT_DRAGONSPIRAL_ELIXER
+	object_event  4, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralFullRestore, EVENT_DRAGONSPIRAL_FULL_RESTORE
 	

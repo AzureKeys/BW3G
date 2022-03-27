@@ -1,9 +1,21 @@
 	const_def 2 ; object constants
+	const DRAGONSPIRALTOWER3F_REVIVE
+	const DRAGONSPIRALTOWER3F_IRON
+	const DRAGONSPIRALTOWER3F_ZOOM_LENS
 
 DragonspiralTower3F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
+	
+DragonspiralRevive:
+	itemball REVIVE
+	
+DragonspiralIron:
+	itemball IRON
+	
+DragonspiralZoomLens:
+	itemball ZOOM_LENS
 
 DragonspiralTower3F_MapEvents:
 	db 0, 0 ; filler
@@ -18,5 +30,8 @@ DragonspiralTower3F_MapEvents:
 
 	db 0 ; bg events
 	
-	db 0 ; object events
+	db 3 ; object events
+	object_event  9,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralRevive, EVENT_DRAGONSPIRAL_REVIVE
+	object_event 14,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralIron, EVENT_DRAGONSPIRAL_IRON
+	object_event  8,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralZoomLens, EVENT_DRAGONSPIRAL_ZOOM_LENS
 	
