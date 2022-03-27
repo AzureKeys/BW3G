@@ -1,6 +1,4 @@
 	const_def 2 ; object constants
-	const ICIRRUSFANCLUB_BAND_GIVER
-	const ICIRRUSFANCLUB_SPECS_GIVER
 	const ICIRRUSFANCLUB_SCARF_GIVER
 	const ICIRRUSFANCLUB_ELECTRIZER_GIVER
 	const ICIRRUSFANCLUB_MAGMARIZER_GIVER
@@ -64,52 +62,6 @@ IcirrusFanClubDeclined:
 	
 IcirrusFanClubNoScale:
 	writetext IcirrusFanClubElectrizerGiver_NoScaleText
-	waitbutton
-	closetext
-	end
-
-IcirrusFanClubBandGiver:
-	faceplayer
-	opentext
-	checkevent EVENT_GOT_CHOICE_BAND
-	iftrue .got_band
-	writetext IcirrusFanClubBandGiver_AskMonText
-	buttonsound
-	callasm LoadBuffers
-	writebyte $1
-	special CheckStatExp
-	ifnotequal FALSE, .no_band
-	writetext IcirrusFanClubBandGiver_GoodMonText
-	buttonsound
-	verbosegiveitem CHOICE_BAND
-	iffalse .no_band
-	setevent EVENT_GOT_CHOICE_BAND
-.got_band
-	writetext IcirrusFanClubBandGiver_GotBandText
-.no_band
-	waitbutton
-	closetext
-	end
-
-IcirrusFanClubSpecsGiver:
-	faceplayer
-	opentext
-	checkevent EVENT_GOT_CHOICE_SPECS
-	iftrue .got_specs
-	writetext IcirrusFanClubSpecsGiver_AskMonText
-	buttonsound
-	callasm LoadBuffers
-	writebyte $4
-	special CheckStatExp
-	ifnotequal FALSE, .no_specs
-	writetext IcirrusFanClubSpecsGiver_GoodMonText
-	buttonsound
-	verbosegiveitem CHOICE_SPECS
-	iffalse .no_specs
-	setevent EVENT_GOT_CHOICE_SPECS
-.got_specs
-	writetext IcirrusFanClubSpecsGiver_GotSpecsText
-.no_specs
 	waitbutton
 	closetext
 	end
@@ -186,71 +138,6 @@ IcirrusFanClubElectrizerGiver_NoScaleText:
 	cont "SCALES either!"
 	done
 	
-IcirrusFanClubBandGiver_AskMonText:
-	text "We only want to"
-	line "see the strongest"
-	cont "#MON here!"
-	
-	para "If your #MON"
-	line "has trained its"
-	
-	para "ATTACK enough,"
-	line "show it to me!"
-	done
-	
-IcirrusFanClubBandGiver_GoodMonText:
-	text "Yes! That is one"
-	line "strong #MON!"
-	
-	para "Here, take this as"
-	line "a reminder of your"
-	cont "determination!"
-	done
-	
-IcirrusFanClubBandGiver_GotBandText:
-	text "By choosing only"
-	line "one move, your"
-	
-	para "#MON's ATTACK"
-	line "will become even"
-	cont "stronger!"
-	done
-	
-IcirrusFanClubSpecsGiver_AskMonText:
-	text "The SPECIAL power"
-	line "of #MON is"
-	cont "incredible!"
-	
-	para "I come here to see"
-	line "#MON that have"
-	
-	para "honed their"
-	line "SPECIAL powers!"
-	
-	para "Has one of your"
-	line "#MON mastered"
-	cont "its SPCL.ATK?"
-	done
-	
-IcirrusFanClubSpecsGiver_GoodMonText:
-	text "I see, its SPECIAL"
-	line "powers are"
-	cont "magnificent!"
-	
-	para "You should give"
-	line "your #MON these"
-	cont "to hone its power."
-	done
-	
-IcirrusFanClubSpecsGiver_GotSpecsText:
-	text "By choosing only"
-	line "one move, your"
-	
-	para "#MON's SP.ATK"
-	line "will become even"
-	cont "stronger!"
-	done
-	
 IcirrusFanClubScarfGiver_AskMonText:
 	text "If you want to be"
 	line "the best, there's"
@@ -301,9 +188,7 @@ IcirrusFanClub_MapEvents:
 	bg_event  0,  1, BGEVENT_READ, IcirrusFanClubBookshelf
 	bg_event  1,  1, BGEVENT_READ, IcirrusFanClubBookshelf
 
-	db 5 ; object events
-	object_event  4,  1, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubBandGiver, -1
-	object_event  2,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubSpecsGiver, -1
-	object_event  7,  2, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubScarfGiver, -1
-	object_event  2,  8, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubElectrizerGiver, -1
-	object_event  6,  9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubMagmarizerGiver, -1
+	db 3 ; object events
+	object_event  5,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubScarfGiver, -1
+	object_event  2,  4, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubElectrizerGiver, -1
+	object_event  7,  2, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubMagmarizerGiver, -1

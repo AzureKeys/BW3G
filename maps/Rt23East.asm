@@ -468,12 +468,13 @@ R23Officer6HaveBadgeText:
 Rt23East_MapEvents:
 	db 0, 0 ; filler
 
-	db 5 ; warp events
+	db 6 ; warp events
 	warp_event 25, 43, GIANT_CHASM_1F, 3
 	warp_event 18, 40, R_23_GATE, 3
 	warp_event 18, 41, R_23_GATE, 4
 	warp_event 13, 40, R_23_GATE, 1
 	warp_event 13, 41, R_23_GATE, 2
+	warp_event 25,  5, R_23_HOUSE, 1
 
 	db 18 ; coord events
 	coord_event 25, 44, -1, R23UpperScript

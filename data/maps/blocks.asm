@@ -33,6 +33,7 @@ Rt7TradeHouse_Blocks:
 OpelucidSuperRodHouse_Blocks:
 OpelucidMoveReminderHouse_Blocks:
 IcirrusHouse_Blocks:
+Rt23House_Blocks:
 	INCBIN "maps/House1.ablk"
 	
 NimbasaHouse_Blocks:

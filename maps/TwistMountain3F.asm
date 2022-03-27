@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
 	const TWISTMOUNTAIN3F_BOULDER
-	const TWISTMOUNTAIN3F_LIGHT_CLAY
+	const TWISTMOUNTAIN3F_CHOICE_BAND
 
 TwistMountain3F_MapScripts:
 	db 0 ; scene scripts
@@ -44,8 +44,8 @@ TwistMountain3F_MapScripts:
 TwistMountain3FBoulder:
 	jumpstd strengthboulder
 	
-TwistMountain3FLightClay:
-	itemball LIGHT_CLAY
+TwistMountain3FChoiceBand:
+	itemball CHOICE_BAND
 	
 TwistMountain3FBoulderFellText:
 	text "The boulder fell"
@@ -65,5 +65,5 @@ TwistMountain3F_MapEvents:
 
 	db 2 ; object events
 	object_event  5, 25, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TwistMountain3FBoulder, EVENT_TWIST_MOUNTAIN_3F_BOULDER
-	object_event  3, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TwistMountain3FLightClay, EVENT_TWIST_MOUNTAIN_LIGHT_CLAY
+	object_event  3, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TwistMountain3FChoiceBand, EVENT_TWIST_MOUNTAIN_CHOICE_BAND
 	
