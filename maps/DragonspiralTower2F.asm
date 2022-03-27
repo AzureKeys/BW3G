@@ -2,6 +2,7 @@
 	const DRAGONSPIRALTOWER2F_BOULDER
 	const DRAGONSPIRALTOWER2F_ELIXER
 	const DRAGONSPIRALTOWER2F_FULL_RESTORE
+	const DRAGONSPIRALTOWER2F_GIALLO
 
 DragonspiralTower2F_MapScripts:
 	db 1 ; scene scripts
@@ -83,6 +84,17 @@ DragonspiralTower2FLowerLevelScript:
 	clearevent EVENT_DRAGONSPIRAL_TOWER_UPPER_LEVEL
 .done
 	end
+
+TrainerDragonspiralTowerGiallo:
+	trainer GIALLO, GIALLO2, EVENT_BEAT_GIALLO_2, DragonspiralTowerGialloSeenText, DragonspiralTowerGialloBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext DragonspiralTowerGialloAfterText
+	waitbutton
+	closetext
+	end
 	
 DragonspiralBoulder:
 	jumpstd strengthboulder
@@ -92,6 +104,18 @@ DragonspiralElixer:
 	
 DragonspiralFullRestore:
 	itemball FULL_RESTORE
+	
+DragonspiralTowerGialloSeenText:
+	text "..."
+	done
+	
+DragonspiralTowerGialloBeatenText:
+	text "..."
+	done
+	
+DragonspiralTowerGialloAfterText:
+	text "..."
+	done
 	
 DragonspiralBoulderFellText:
 	text "The boulder fell"
@@ -120,8 +144,9 @@ DragonspiralTower2F_MapEvents:
 
 	db 0 ; bg events
 	
-	db 3 ; object events
+	db 4 ; object events
 	object_event  6, 10, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonspiralBoulder, EVENT_DRAGONSPIRAL_TOWER_2F_BOULDER
 	object_event 10, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralElixer, EVENT_DRAGONSPIRAL_ELIXER
 	object_event  4, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralFullRestore, EVENT_DRAGONSPIRAL_FULL_RESTORE
+	object_event  2,  7, SPRITE_PZMA_SAGE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerDragonspiralTowerGiallo, EVENT_DRAGONSPIRAL_TOWER_SAGES
 	

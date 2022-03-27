@@ -2209,6 +2209,222 @@ JohtoGrassWildMons:
 	db 45, SKORUPI
 	db 45, STUNFISK
 	db 45, PALPITOAD
+	
+	map_id DRAGONSPIRAL_TOWER_1F
+	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	; morn
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; day
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; nite
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	
+	map_id DRAGONSPIRAL_TOWER_2F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; day
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; nite
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	
+	map_id DRAGONSPIRAL_TOWER_3F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; day
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; nite
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	
+	map_id DRAGONSPIRAL_TOWER_4F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; day
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; nite
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	
+	map_id DRAGONSPIRAL_TOWER_5F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; day
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; nite
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	
+	map_id DRAGONSPIRAL_TOWER_6F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; day
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
+	; nite
+	db 43, AXEW
+	db 42, SWABLU
+	db 42, GOLETT
+	db 44, DEINO
+	db 43, DRATINI
+	db 45, FRAXURE
+	db 45, DRATINI
+	db 45, CLAYDOL
+	db 46, DRAGONAIR
+	db 46, ALTARIA
 
 	map_id R_23_EAST
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

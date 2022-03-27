@@ -2,9 +2,14 @@
 	const DRAGONSPIRALTOWER6F_MAX_ELIXER
 
 DragonspiralTower6F_MapScripts:
-	db 0 ; scene scripts
+	db 2 ; scene scripts
+	scene_script .DummyScene ; SCENE_DEFAULT
+	scene_script .DummyScene ; SCENE_FINISHED
 
 	db 0 ; callbacks
+
+.DummyScene:
+	end
 	
 DragonspiralMaxElixer:
 	itemball MAX_ELIXER
