@@ -5639,7 +5639,6 @@ BattleCommand_HeldFlinch:
 	srl b
 	rr c
 	; "Bug Bite" routines are from player's perspective
-	farcall ItemRecoveryAnimBugBite
 	farcall RestoreHPBugBite
 	call GetUserItem ; For the item name in textbox
 	ld a, [hl]
