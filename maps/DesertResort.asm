@@ -2,6 +2,7 @@
 	const DESERT_SUPER_POTION
 	const DESERT_FRESH_WATER
 	const DESERT_RARE_CANDY
+	const DESERT_HEART_SCALE
 	const DESERT_HIKER
 	const DESERT_HEX_MANIAC
 	const DESERT_FIREBREATHER
@@ -156,6 +157,9 @@ DesertFreshWater:
 	
 DesertRareCandy:
 	itemball RARE_CANDY
+	
+DesertHeartScale:
+	itemball HEART_SCALE
 	
 DesertNugget:
 	hiddenitem NUGGET, EVENT_DESERT_NUGGET
@@ -368,10 +372,11 @@ DesertResort_MapEvents:
 	bg_event 25, 43, BGEVENT_ITEM, DesertNugget
 	bg_event  2, 43, BGEVENT_ITEM, DesertHyperPotion
 
-	db 13 ; object events
+	db 14 ; object events
 	object_event 25, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertSuperPotion, EVENT_DESERT_SUPER_POTION
 	object_event 10, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertFreshWater, EVENT_DESERT_FRESH_WATER
 	object_event 11, 42, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertRareCandy, EVENT_DESERT_RARE_CANDY
+	object_event 39, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertHeartScale, EVENT_DESERT_HEART_SCALE
 	object_event 34, 26, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerHikerDesert, -1
 	object_event  2, 28, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacDesert, -1
 	object_event 49, 22, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerFirebreatherDesert, -1

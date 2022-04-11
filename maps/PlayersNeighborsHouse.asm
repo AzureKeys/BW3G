@@ -8,7 +8,21 @@ PlayersNeighborsHouse_MapScripts:
 	db 0 ; callbacks
 
 PlayersNeighborsDaughterScript:
+	checkevent EVENT_HUMILAU_CITY_HEART_SCALE
+	iffalse .GiveScale
 	jumptextfaceplayer PlayersNeighborsDaughterText
+	
+.GiveScale
+	faceplayer
+	opentext
+	writetext PlayersNeighborGiveScaleText
+	buttonsound
+	giveitem HEART_SCALE
+	iffalse .no_room
+	setevent EVENT_HUMILAU_CITY_HEART_SCALE
+.no_room
+	closetext
+	end
 
 PlayersNeighborScript:
 	jumptextfaceplayer PlayersNeighborText
@@ -71,6 +85,18 @@ PlayersNeighborText:
 	line "#MON!"
 
 	para "But then, so do I!"
+	done
+
+PlayersNeighborGiveScaleText:
+	text "Oh, <PLAY_G>!"
+	line "I found this"
+
+	para "pretty scale by"
+	line "the beach today!"
+
+	para "You should take"
+	line "it, maybe it's"
+	cont "good luck!"
 	done
 
 PlayerNeighborRadioText1:

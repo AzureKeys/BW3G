@@ -56,6 +56,9 @@ CasteliaStreetSign:
 	
 CasteliaNorthTimerBall:
 	itemball TIMER_BALL
+	
+CasteliaNorthHeartScale:
+	hiddenitem HEART_SCALE, EVENT_CASTELIA_CITY_HEART_SCALE
 
 CasteliaNorthLassText:
 	text "My mom has a #-"
@@ -154,12 +157,14 @@ CasteliaCityNorth_MapEvents:
 
 	db 0 ; coord events
 
-	db 5 ; bg events
+	db 7 ; bg events
 	bg_event 16, 10, BGEVENT_READ, CasteliaCitySign
 	bg_event  6, 24, BGEVENT_READ, CasteliaGymStreetSign
 	bg_event 14, 25, BGEVENT_READ, CasteliaAlleySign
 	bg_event 21, 25, BGEVENT_READ, CasteliaModeStreetSign
 	bg_event 31, 27, BGEVENT_READ, CasteliaStreetSign
+	bg_event 10, 18, BGEVENT_ITEM, CasteliaNorthHeartScale
+	bg_event 10, 19, BGEVENT_ITEM, CasteliaNorthHeartScale
 
 	db 7 ; object events
 	object_event 15, 16, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, CasteliaNorthLassTextScript, -1
