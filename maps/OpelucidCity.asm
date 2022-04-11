@@ -172,7 +172,7 @@ OpelucidCity_MapEvents:
 	warp_event 11, 19, OPELUCID_SUPER_ROD_HOUSE, 1
 	warp_event 17,  5, OPELUCID_GYM, 1
 	warp_event 25,  5, OPELUCID_CURIOSITY_SHOP, 1
-	warp_event 33, 13, OPELUCID_MOVE_REMINDER_HOUSE, 1
+	warp_event 33, 13, OPELUCID_BLACKBELT_HOUSE, 1
 	warp_event 28, 15, DRAYDENS_HOUSE_1F, 1
 
 	db 3 ; coord events

@@ -26,12 +26,12 @@ DriftveilTradeHouse_Blocks:
 NuvemaMomHouse_Blocks:
 Rt18House_Blocks:
 MistraltonHouse_Blocks:
-MistraltonBlackbeltHouse_Blocks:
+MistraltonMoveReminderHouse_Blocks:
 Rt6House_Blocks:
 Rt7House_Blocks:
 Rt7TradeHouse_Blocks:
 OpelucidSuperRodHouse_Blocks:
-OpelucidMoveReminderHouse_Blocks:
+OpelucidBlackbeltHouse_Blocks:
 IcirrusHouse_Blocks:
 Rt23House_Blocks:
 	INCBIN "maps/House1.ablk"

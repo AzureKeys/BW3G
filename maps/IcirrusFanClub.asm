@@ -98,15 +98,17 @@ LoadBuffers:
 	ret
 	
 IcirrusFanClubElectrizerGiver_AskScaleText:
-	text "I want to teach my"
-	line "#MON one of its"
+	text "I want to make my"
+	line "#MON remember"
 	
-	para "old moves at the"
-	line "tutor in OPELUCID"
+	para "one of its old"
+	line "moves at the tutor"
 	
-	para "CITY, but I don't"
-	line "have any HEART"
-	cont "SCALES."
+	para "in MISTRALTON"
+	line "CITY, but I don't"
+	
+	para "have any HEART"
+	line "SCALES."
 	
 	para "Could I have one"
 	line "of yours?"

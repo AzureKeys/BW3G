@@ -300,7 +300,7 @@ ENDM
 	map_attributes DriftveilHouse, DRIFTVEIL_HOUSE, $00, 0
 	map_attributes DriftveilTradeHouse, DRIFTVEIL_TRADE_HOUSE, $00, 0
 	map_attributes MistraltonPokecenter1F, MISTRALTON_POKECENTER_1F, $00, 0
-	map_attributes MistraltonBlackbeltHouse, MISTRALTON_BLACKBELT_HOUSE, $00, 0
+	map_attributes MistraltonMoveReminderHouse, MISTRALTON_MOVE_REMINDER_HOUSE, $00, 0
 	map_attributes MistraltonHouse, MISTRALTON_HOUSE, $00, 0
 	map_attributes MistraltonGym1F, MISTRALTON_GYM_1F, $00, 0
 	map_attributes MistraltonGym2F, MISTRALTON_GYM_2F, $00, 0
@@ -324,7 +324,7 @@ ENDM
 	map_attributes OpelucidSuperRodHouse, OPELUCID_SUPER_ROD_HOUSE, $00, 0
 	map_attributes OpelucidGym, OPELUCID_GYM, $00, 0
 	map_attributes OpelucidCuriosityShop, OPELUCID_CURIOSITY_SHOP, $00, 0
-	map_attributes OpelucidMoveReminderHouse, OPELUCID_MOVE_REMINDER_HOUSE, $00, 0
+	map_attributes OpelucidBlackbeltHouse, OPELUCID_BLACKBELT_HOUSE, $00, 0
 	map_attributes OpelucidBattleHouse, OPELUCID_BATTLE_HOUSE, $00, 0
 	map_attributes TubelineBridge, TUBELINE_BRIDGE, $00, 0
 	map_attributes IcirrusPokecenter1F, ICIRRUS_POKECENTER_1F, $00, 0

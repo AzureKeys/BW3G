@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
-	const OPELUCIDMOVEREMINDERHOUSE_SCIENTIST_F
+	const MISTRALTONMOVEREMINDERHOUSE_SCIENTIST_F
 
-OpelucidMoveReminderHouse_MapScripts:
+MistraltonMoveReminderHouse_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
@@ -9,7 +9,7 @@ OpelucidMoveReminderHouse_MapScripts:
 MoveReminderScript:
 	faceplayer
 	opentext
-	writetext OpelucidMoveReminderIntroText
+	writetext MistraltonMoveReminderIntroText
 	yesorno
 	iffalse .Declined
 	checkitem HEART_SCALE
@@ -17,7 +17,7 @@ MoveReminderScript:
 	special MoveReminder
 	ifnotequal FALSE, .didnt_learn
 	buttonsound
-	writetext OpelucidMoveReminderTakeScaleText
+	writetext MistraltonMoveReminderTakeScaleText
 	takeitem HEART_SCALE
 .didnt_learn
 	waitbutton
@@ -25,17 +25,17 @@ MoveReminderScript:
 	end
 	
 .Declined
-	writetext OpelucidMoveReminderDeclinedText
+	writetext MistraltonMoveReminderDeclinedText
 	jump .didnt_learn
 	
 .NoScale
-	writetext OpelucidMoveReminderNoScaleText
+	writetext MistraltonMoveReminderNoScaleText
 	jump .didnt_learn
 
-OpelucidMoveReminderHouseBookshelf:
+MistraltonMoveReminderHouseBookshelf:
 	jumpstd difficultbookshelf
 
-OpelucidMoveReminderIntroText:
+MistraltonMoveReminderIntroText:
 	text "Hi, they call me"
 	line "the MOVE REMINDER."
 	
@@ -55,7 +55,7 @@ OpelucidMoveReminderIntroText:
 	line "move?"
 	done
 
-OpelucidMoveReminderDeclinedText:
+MistraltonMoveReminderDeclinedText:
 	text "Oh, okay. Come"
 	line "back if you'd like"
 	
@@ -63,7 +63,7 @@ OpelucidMoveReminderDeclinedText:
 	line "remembered."
 	done
 
-OpelucidMoveReminderNoScaleText:
+MistraltonMoveReminderNoScaleText:
 	text "Sorry, you don't"
 	line "have any HEART"
 	cont "SCALES."
@@ -72,24 +72,24 @@ OpelucidMoveReminderNoScaleText:
 	line "find some."
 	done
 
-OpelucidMoveReminderTakeScaleText:
+MistraltonMoveReminderTakeScaleText:
 	text "<PLAY_G> handed"
 	line "over a HEART SCALE"
 	cont "in return."
 	done
 
-OpelucidMoveReminderHouse_MapEvents:
+MistraltonMoveReminderHouse_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  2,  7, OPELUCID_CITY, 10
-	warp_event  3,  7, OPELUCID_CITY, 10
+	warp_event  2,  7, MISTRALTON_CITY, 2
+	warp_event  3,  7, MISTRALTON_CITY, 2
 
 	db 0 ; coord events
 
 	db 2 ; bg events
-	bg_event  0,  1, BGEVENT_READ, OpelucidMoveReminderHouseBookshelf
-	bg_event  1,  1, BGEVENT_READ, OpelucidMoveReminderHouseBookshelf
+	bg_event  0,  1, BGEVENT_READ, MistraltonMoveReminderHouseBookshelf
+	bg_event  1,  1, BGEVENT_READ, MistraltonMoveReminderHouseBookshelf
 
 	db 1 ; object events
 	object_event  2,  3, SPRITE_SCIENTIST_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MoveReminderScript, -1

@@ -1,29 +1,29 @@
 	const_def 2 ; object constants
-	const MISTRALTONBLACKBELTHOUSE_BLACK_BELT
+	const OPELUCIDBLACKBELTHOUSE_BLACK_BELT
 
-MistraltonBlackbeltHouse_MapScripts:
+OpelucidBlackbeltHouse_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-MistraltonBlackbeltHouseMan:
+OpelucidBlackbeltHouseMan:
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_EXPERT_BELT
 	iftrue .GotBelt
-	writetext MistraltonBlackbeltHouseGiveBeltText
+	writetext OpelucidBlackbeltHouseGiveBeltText
 	buttonsound
 	verbosegiveitem EXPERT_BELT
 	iffalse .NoRoom
 	setevent EVENT_GOT_EXPERT_BELT
 .GotBelt:
-	writetext MistraltonBlackbeltHouseGaveBeltText
+	writetext OpelucidBlackbeltHouseGaveBeltText
 	waitbutton
 .NoRoom:
 	closetext
 	end
 
-MistraltonBlackbeltHouseGiveBeltText:
+OpelucidBlackbeltHouseGiveBeltText:
 	text "Hm, I can see that"
 	line "your training has"
 	cont "made you strong."
@@ -36,7 +36,7 @@ MistraltonBlackbeltHouseGiveBeltText:
 	cont "your training."
 	done
 
-MistraltonBlackbeltHouseGaveBeltText:
+OpelucidBlackbeltHouseGaveBeltText:
 	text "A #MON wearing"
 	line "that belt will"
 	
@@ -47,21 +47,21 @@ MistraltonBlackbeltHouseGaveBeltText:
 	line "blow!"
 	done
 
-MistraltonBlackbeltHouseBookshelf:
+OpelucidBlackbeltHouseBookshelf:
 	jumpstd difficultbookshelf
 
-MistraltonBlackbeltHouse_MapEvents:
+OpelucidBlackbeltHouse_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  2,  7, MISTRALTON_CITY, 2
-	warp_event  3,  7, MISTRALTON_CITY, 2
+	warp_event  2,  7, OPELUCID_CITY, 10
+	warp_event  3,  7, OPELUCID_CITY, 10
 
 	db 0 ; coord events
 
 	db 2 ; bg events
-	bg_event  0,  1, BGEVENT_READ, MistraltonBlackbeltHouseBookshelf
-	bg_event  1,  1, BGEVENT_READ, MistraltonBlackbeltHouseBookshelf
+	bg_event  0,  1, BGEVENT_READ, OpelucidBlackbeltHouseBookshelf
+	bg_event  1,  1, BGEVENT_READ, OpelucidBlackbeltHouseBookshelf
 
 	db 1 ; object events
-	object_event  2,  3, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MistraltonBlackbeltHouseMan, -1
+	object_event  2,  3, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OpelucidBlackbeltHouseMan, -1
