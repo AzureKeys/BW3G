@@ -707,3 +707,15 @@ SECTION "Tileset Data 23", ROMX
 
 TilesetDreamyardAttr:
 INCBIN "data/tilesets/dreamyard_attributes.bin"
+
+TilesetEliteFourGFX:
+INCBIN "gfx/tilesets/elite_four.2bpp.lz"
+
+TilesetEliteFourMeta:
+INCBIN "data/tilesets/elite_four_metatiles.bin"
+
+TilesetEliteFourColl:
+INCLUDE "data/tilesets/elite_four_collision.asm"
+
+TilesetEliteFourAttr:
+INCBIN "data/tilesets/elite_four_attributes.bin"

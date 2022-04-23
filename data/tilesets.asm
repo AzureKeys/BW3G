@@ -57,3 +57,4 @@ Tilesets::
 	tileset TilesetOpelucid
 	tileset TilesetIcirrus
 	tileset TilesetDreamyard
+	tileset TilesetEliteFour

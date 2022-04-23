@@ -46,6 +46,7 @@
 	const TILESET_OPELUCID
 	const TILESET_ICIRRUS
 	const TILESET_DREAMYARD
+	const TILESET_ELITE_FOUR
 
 ; bg palette values (see gfx/tilesets/*_palette_map.asm)
 ; TilesetBGPalette indexes (see gfx/tilesets/bg_tiles.pal)
