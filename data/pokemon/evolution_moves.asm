@@ -250,5 +250,5 @@ EvolutionMoves::
 	db NO_MOVE
 	db NO_MOVE
 	db TRI_ATTACK ; HYDREIGON
-	db NO_MOVE
+	db NO_MOVE ; GENESECT
 	db NO_MOVE

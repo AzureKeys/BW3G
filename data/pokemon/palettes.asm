@@ -514,13 +514,8 @@ INCBIN "gfx/pokemon/zweilous/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/zweilous/shiny.pal"
 INCBIN "gfx/pokemon/hydreigon/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/hydreigon/shiny.pal"
-
-; 252
-	RGB 30, 26, 11
-	RGB 23, 16, 00
-; 252 shiny
-	RGB 30, 26, 11
-	RGB 23, 16, 00
+INCBIN "gfx/pokemon/genesect/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/genesect/shiny.pal"
 
 INCBIN "gfx/pokemon/egg/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/egg/shiny.pal"

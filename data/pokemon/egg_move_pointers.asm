@@ -250,3 +250,4 @@ EggMovePointers::
 	dw DeinoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
+	dw NoEggMoves

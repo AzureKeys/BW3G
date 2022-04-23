@@ -250,7 +250,7 @@ PokemonNames::
 	db "DEINO@@@@@"
 	db "ZWEILOUS@@"
 	db "HYDREIGON@"
-	db "?????@@@@@"
+	db "GENESECT@@"
 	db "EGG@@@@@@@"
 	db "?????@@@@@"
 	db "?????@@@@@"

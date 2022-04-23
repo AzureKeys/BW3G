@@ -250,4 +250,5 @@ NewPokedexOrder:
 	db DEINO      ; f9
 	db ZWEILOUS   ; fa
 	db HYDREIGON  ; fb
+	db GENESECT   ; fc
 	

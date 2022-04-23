@@ -253,3 +253,5 @@ EvosAttacksPointers::
 	dw DeinoEvosAttacks
 	dw ZweilousEvosAttacks
 	dw HydreigonEvosAttacks
+	dw GenesectEvosAttacks
+	

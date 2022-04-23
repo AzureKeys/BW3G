@@ -252,5 +252,6 @@ IconPointers:
 	dw DeinoIcon
 	dw ZweilousIcon
 	dw HydreigonIcon
+	dw GenesectIcon
 	dw EggIcon
 	

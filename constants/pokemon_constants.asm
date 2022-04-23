@@ -270,9 +270,9 @@
 	const DEINO      ; f9
 	const ZWEILOUS   ; fa
 	const HYDREIGON  ; fb
+	const GENESECT   ; fc
 JOHTO_POKEMON EQU const_value
 NUM_POKEMON EQU const_value + -1
-	const MON_FC     ; fc
 	const EGG        ; fd
 	const MON_FE     ; fe
 	

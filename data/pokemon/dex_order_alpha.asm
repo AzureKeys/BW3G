@@ -84,6 +84,7 @@ AlphabeticalPokedexOrder:
 	db GARBODOR
 	db GARDEVOIR
 	db GASTLY
+	db GENESECT
 	db GENGAR
 	db GIGALITH
 	db GLACEON

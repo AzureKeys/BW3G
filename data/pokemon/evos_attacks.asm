@@ -4779,3 +4779,24 @@ HydreigonEvosAttacks:
 	; db 100, CUT
 	; db 100, STRENGTH
 	db 0 ; no more level-up moves
+
+GenesectEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, QUICK_ATTACK
+	db 1, METAL_CLAW
+	db 1, SCREECH
+	db 7, FURY_CUTTER
+	db 11, LOCK_ON
+	db 18, FLAME_WHEEL
+	db 22, ROAR ; Magnet Bomb
+	db 29, SLASH
+	db 33, BODY_SLAM ; Metal Sound
+	db 40, SIGNAL_BEAM
+	db 44, TRI_ATTACK
+	db 51, X_SCISSOR
+	db 55, BUG_BUZZ
+	db 62, SCARY_FACE ; Simple Beam
+	db 66, ZAP_CANNON
+	db 73, HYPER_BEAM
+	db 77, SELFDESTRUCT
+	db 0 ; no more level-up moves

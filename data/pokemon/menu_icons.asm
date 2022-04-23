@@ -252,6 +252,6 @@ MonMenuIcons:
 	db ICON_DEINO      ; f9
 	db ICON_ZWEILOUS   ; fa
 	db ICON_HYDREIGON  ; fb
-	db ICON_EGG  ; fb
+	db ICON_GENESECT   ; fc
 	db ICON_EGG  ; fb
 	db ICON_EGG  ; fb

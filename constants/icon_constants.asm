@@ -252,7 +252,8 @@
 	const ICON_DEINO      ; f9
 	const ICON_ZWEILOUS   ; fa
 	const ICON_HYDREIGON  ; fb
-	const ICON_EGG  ; fb
+	const ICON_GENESECT   ; fc
+	const ICON_EGG        ; fd
 
 ; LoadMenuMonIcon.Jumptable indexes (see engine/gfx/mon_icons.asm)
 	const_def

@@ -251,3 +251,4 @@ PokedexDataPointerTable:
 	dw DeinoPokedexEntry
 	dw ZweilousPokedexEntry
 	dw HydreigonPokedexEntry
+	dw GenesectPokedexEntry
