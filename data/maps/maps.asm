@@ -16,28 +16,28 @@ ENDM
 
 MapGroupPointers::
 ; pointers to the first map of each map group
-	dw MapGroup_Dungeons    ;  3
-	dw MapGroup_CableClub   ; 20
-	dw MapGroup_Humilau		; 27
-	dw MapGroup_Lacunosa    ; 28
-	dw MapGroup_Undella     ; 29
-	dw MapGroup_Lentimas    ; 30
-	dw MapGroup_Nimbasa     
-	dw MapGroup_Desert
-	dw MapGroup_Castelia
-	dw MapGroup_Aspertia
-	dw MapGroup_Floccesy
-	dw MapGroup_Virbank
-	dw MapGroup_Nacrene
-	dw MapGroup_Striaton
-	dw MapGroup_Accumula
-	dw MapGroup_P2
-	dw MapGroup_Pwt
-	dw MapGroup_Driftveil
-	dw MapGroup_Mistralton
-	dw MapGroup_Opelucid
-	dw MapGroup_Icirrus
-	dw MapGroup_PkmnLeague  ; XX
+	dw MapGroup_Dungeons    ;  1
+	dw MapGroup_CableClub   ;  2
+	dw MapGroup_Humilau		;  3
+	dw MapGroup_Lacunosa    ;  4
+	dw MapGroup_Undella     ;  5
+	dw MapGroup_Lentimas    ;  6
+	dw MapGroup_Nimbasa     ;  7
+	dw MapGroup_Desert      ;  8
+	dw MapGroup_Castelia    ;  9
+	dw MapGroup_Aspertia    ; 10
+	dw MapGroup_Floccesy    ; 11
+	dw MapGroup_Virbank     ; 12
+	dw MapGroup_Nacrene     ; 13
+	dw MapGroup_Striaton    ; 14
+	dw MapGroup_Accumula    ; 15
+	dw MapGroup_P2          ; 16
+	dw MapGroup_Pwt         ; 17
+	dw MapGroup_Driftveil   ; 18
+	dw MapGroup_Mistralton  ; 19
+	dw MapGroup_Opelucid    ; 20
+	dw MapGroup_Icirrus     ; 21
+	dw MapGroup_PkmnLeague  ; 22
 
 MapGroup_Dungeons:
 	map GiantChasm1F, TILESET_CAVE, CAVE, GIANT_CHASM, MUSIC_UNOVA_CAVE, TRUE, PALETTE_NITE, FISHGROUP_POND

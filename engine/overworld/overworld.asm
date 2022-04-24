@@ -119,6 +119,9 @@ AddIndoorSprites:
 
 AddOutdoorSprites:
 	ld a, [wMapGroup]
+	cp 1 ; Dungeons
+	; Outdoor Dungeon maps are all self-contained
+	jr z, AddIndoorSprites
 	dec a
 	ld c, a
 	ld b, 0

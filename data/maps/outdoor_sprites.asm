@@ -324,15 +324,6 @@ PkmnLeagueGroupSprites:
 
 DungeonsGroupSprites:
 ; Pinwheel Forest, Giant Chasm B1F, Dreamyard
-	db SPRITE_LASS
-	db SPRITE_POKEFAN_F
-	db SPRITE_BUG_CATCHER
-	db SPRITE_YOUNGSTER
-	db SPRITE_OFFICER
-	db SPRITE_INFER
-	db SPRITE_COOLTRAINER_M
-	db SPRITE_COOLTRAINER_F
-	db SPRITE_SUPER_NERD
 	; 8 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
