@@ -109,3 +109,4 @@ TrainerGroups:
 	dba MysterymanGroup
 	dba ZinzolinGroup
 	dba InferGroup
+	dba InferSageGroup

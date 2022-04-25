@@ -109,3 +109,4 @@ TrainerPicPointers::
 	dba MysterymanPic
 	dba ZinzolinPic
 	dba InferPic
+	dba InferSagePic

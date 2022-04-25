@@ -110,3 +110,4 @@ TrainerEncounterMusic::
 	db MUSIC_ROCKET_ENCOUNTER      ; mysteryman
 	db MUSIC_ROCKET_ENCOUNTER      ; zinzolin
 	db MUSIC_RIVAL_ENCOUNTER       ; infer
+	db MUSIC_ROCKET_ENCOUNTER      ; infer_sage

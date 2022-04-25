@@ -974,6 +974,11 @@ CHRIS EQU __enum__
 	const INFER5_SNIVY
 	const INFER5_TEPIG
 	const INFER5_OSHAWOTT
+	
+	trainerclass INFER_SAGE
+	const INFER_SAGE_SNIVY
+	const INFER_SAGE_TEPIG
+	const INFER_SAGE_OSHAWOTT
 
 KRIS EQU __enum__
 NUM_TRAINER_CLASSES EQU __enum__

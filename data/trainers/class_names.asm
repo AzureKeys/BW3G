@@ -107,3 +107,4 @@ TrainerClassNames::
 	db "MYSTERYMAN@"
 	db "PZMA SAGE@"
 	db "<PKMN> TRAINER@"
+	db "PZMA SAGE@"
