@@ -104,70 +104,40 @@
 	const SPRITE_ENTEI ; 64
 	const SPRITE_RAIKOU ; 65
 	const SPRITE_STANDING_YOUNGSTER ; 66
-	const SPRITE_MARLON
-	const SPRITE_SHAUNTAL
-	const SPRITE_INFER
-	const SPRITE_FOSSIL
-	const SPRITE_SLEEPING_MAN
-	const SPRITE_SCIENTIST_F
-	const SPRITE_HARLEQUIN
-	const SPRITE_BURGH
-	const SPRITE_CHEREN
-	const SPRITE_PZMA_SAGE
-	const SPRITE_SHADOW
-	const SPRITE_ROXIE
-	const SPRITE_JUNIPER
-	const SPRITE_BIANCA
-	const SPRITE_LENORA
-	const SPRITE_CILAN
-	const SPRITE_CLAY
-	const SPRITE_IRIS
-	const SPRITE_MYSTERYMAN
-	const SPRITE_ROOD
-	const SPRITE_FAN
-	const SPRITE_SKYLA
-	const SPRITE_CABLE
-	const SPRITE_FOUNTAIN
-	const SPRITE_DRAYDEN
+	const SPRITE_MARLON ; 67
+	const SPRITE_SHAUNTAL ; 68
+	const SPRITE_INFER ; 69
+	const SPRITE_FOSSIL ; 6a
+	const SPRITE_SLEEPING_MAN ; 6b
+	const SPRITE_SCIENTIST_F ; 6c
+	const SPRITE_HARLEQUIN ; 6d
+	const SPRITE_BURGH ; 6e
+	const SPRITE_CHEREN ; 6f
+	const SPRITE_PZMA_SAGE ; 70
+	const SPRITE_SHADOW ; 71
+	const SPRITE_ROXIE ; 72
+	const SPRITE_JUNIPER ; 73
+	const SPRITE_BIANCA ; 74
+	const SPRITE_LENORA ; 75
+	const SPRITE_CILAN ; 76
+	const SPRITE_CLAY ; 77
+	const SPRITE_IRIS ; 78
+	const SPRITE_MYSTERYMAN ; 79
+	const SPRITE_ROOD ; 7a
+	const SPRITE_FAN ; 7b
+	const SPRITE_SKYLA ; 7c
+	const SPRITE_CABLE ; 7d
+	const SPRITE_FOUNTAIN ; 7e
+	const SPRITE_DRAYDEN ; 7f
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
-	const_def $80
+	const_def $a0
 SPRITE_POKEMON EQU const_value
-	const SPRITE_SNEASEL ; 80
-	const SPRITE_GEODUDE ; 81
-	const SPRITE_UNOWN ; 82
-	const SPRITE_WEEDLE ; 83
-	const SPRITE_SHELLDER ; 84
-	const SPRITE_ODDISH ; 85
-	const SPRITE_GENGAR ; 86
-	const SPRITE_ZUBAT ; 87
-	const SPRITE_MAGIKARP ; 88
-	const SPRITE_SQUIRTLE ; 89
-	const SPRITE_TOGEPI ; 8a
-	const SPRITE_BUTTERFREE ; 8b
-	const SPRITE_DIGLETT ; 8c
-	const SPRITE_POLIWAG ; 8d
-	const SPRITE_PIKACHU ; 8e
-	const SPRITE_CLEFAIRY ; 8f
-	const SPRITE_CHARMANDER ; 90
-	const SPRITE_JYNX ; 91
-	const SPRITE_STARMIE ; 92
-	const SPRITE_BULBASAUR ; 93
-	const SPRITE_JIGGLYPUFF ; 94
-	const SPRITE_GRIMER ; 95
-	const SPRITE_EKANS ; 96
-	const SPRITE_PARAS ; 97
-	const SPRITE_TENTACOOL ; 98
-	const SPRITE_TAUROS ; 99
-	const SPRITE_MACHOP ; 9a
-	const SPRITE_VOLTORB ; 9b
-	const SPRITE_LAPRAS ; 9c
-	const SPRITE_RHYDON ; 9d
-	const SPRITE_MOLTRES ; 9e
-	const SPRITE_SNORLAX ; 9f
-	const SPRITE_GYARADOS ; a0
-	const SPRITE_LUGIA ; a1
-	const SPRITE_HO_OH ; a2
+	const SPRITE_SNEASEL ; a0
+	const SPRITE_JIGGLYPUFF ; a1
+	const SPRITE_YANMA ; a2
+	const SPRITE_LARVESTA ; a3
+	const SPRITE_FLAAFFY ; a4
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)
 	const_def $e0
@@ -190,5 +160,5 @@ SPRITE_VARS EQU const_value
 	const SPRITE_FUCHSIA_GYM_4 ; fa
 	const SPRITE_COPYCAT ; fb
 	const SPRITE_JANINE_IMPERSONATOR ; fc
-	const SPRITE_VIO
-	const SPRITE_BATTLE_HOUSE_BLUE
+	const SPRITE_VIO ; fd
+	const SPRITE_BATTLE_HOUSE_BLUE ; fe

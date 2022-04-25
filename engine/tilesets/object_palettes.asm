@@ -8,7 +8,18 @@ LoadSpecialMapObjectPalette:
 	jr z, .elite_four_room
 	cp TILESET_OPELUCID
 	jr z, .opelucid
+	cp TILESET_TRADITIONAL_HOUSE
+	jr z, .traditional_house
 	jr .do_nothing
+	
+.traditional_house
+	ld a, [wMapGroup]
+	cp 11 ; mapgroup_Floccesy
+	jr nz, .do_nothing
+; Barn is the only map in Floccesy group with Traditional House tilesets/bridge_nite_ob
+	call LoadBarnObPalette
+	scf
+	ret
 
 .elite_four_room
 	ld a, [wMapGroup]
@@ -108,3 +119,14 @@ LoadMistraltonGymObPalette:
 
 MistraltonGymObPalette:
 INCLUDE "gfx/tilesets/mistralton_gym_ob.pal"
+
+LoadBarnObPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, BarnObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+BarnObPalette:
+INCLUDE "gfx/tilesets/barn_ob.pal"
