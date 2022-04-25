@@ -129,6 +129,7 @@
 	const SPRITE_CABLE ; 7d
 	const SPRITE_FOUNTAIN ; 7e
 	const SPRITE_DRAYDEN ; 7f
+	const SPRITE_INFER_SAGE ; 80
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0
@@ -138,6 +139,7 @@ SPRITE_POKEMON EQU const_value
 	const SPRITE_YANMA ; a2
 	const SPRITE_LARVESTA ; a3
 	const SPRITE_FLAAFFY ; a4
+	const SPRITE_GENESECT ; a5
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)
 	const_def $e0

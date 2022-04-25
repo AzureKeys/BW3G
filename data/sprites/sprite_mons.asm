@@ -5,3 +5,4 @@ SpriteMons:
 	db YANMA
 	db LARVESTA
 	db FLAAFFY
+	db GENESECT

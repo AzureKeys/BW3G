@@ -133,3 +133,4 @@ OverworldSprites:
 	overworld_sprite CableSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
 	overworld_sprite FountainSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
 	overworld_sprite DraydenSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite InferSageSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
