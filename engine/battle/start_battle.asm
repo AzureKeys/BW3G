@@ -109,6 +109,8 @@ PlayBattleMusic:
 	jr z, .done
 	cp ZINZOLIN
 	jr z, .done
+	cp INFER_SAGE
+	jr z, .done
 
 	ld de, MUSIC_JOHTO_GYM_LEADER_BATTLE
 	farcall IsKantoGymLeader
