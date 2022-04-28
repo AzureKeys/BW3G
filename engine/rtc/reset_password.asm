@@ -15,8 +15,8 @@ _ResetClock:
 	ld a, [wMenuCursorY]
 	cp $1
 	ret z
-	call ClockResetPassword
-	jr c, .wrongpassword
+	;call ClockResetPassword
+	;jr c, .wrongpassword
 	ld a, BANK(sRTCStatusFlags)
 	call GetSRAMBank
 	ld a, $80
