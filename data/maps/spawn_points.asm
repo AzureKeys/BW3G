@@ -19,7 +19,7 @@ SpawnPoints:
 	spawn ASPERTIA_CITY,              15, 24
 	spawn FLOCCESY_TOWN,               7, 26
 	spawn VIRBANK_CITY,               15, 10
-	spawn NACRENE_CITY,               31, 16
+	spawn NACRENE_CITY,               13, 16
 	spawn STRIATON_CITY,              33, 16
 	spawn ACCUMULA_TOWN,              25, 12
 	spawn NUVEMA_TOWN,                 6,  6
