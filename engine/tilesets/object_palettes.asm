@@ -10,7 +10,18 @@ LoadSpecialMapObjectPalette:
 	jr z, .opelucid
 	cp TILESET_TRADITIONAL_HOUSE
 	jr z, .traditional_house
+	cp TILESET_TOWER
+	jr z, .tower
 	jr .do_nothing
+
+.tower
+; All maps with TILESET_TOWER are in the Dungeons group
+	ld a, [wMapNumber]
+	cp 47 ; DragonspiralTowerRoof
+	jr nz, .do_nothing
+	call LoadDragonspiralRoofObPalette
+	scf
+	ret
 	
 .traditional_house
 	ld a, [wMapGroup]
@@ -130,3 +141,14 @@ LoadBarnObPalette:
 
 BarnObPalette:
 INCLUDE "gfx/tilesets/barn_ob.pal"
+
+LoadDragonspiralRoofObPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, DragonspiralRoofObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+DragonspiralRoofObPalette:
+INCLUDE "gfx/tilesets/dragonspiral_roof_ob.pal"
