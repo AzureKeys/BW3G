@@ -1501,8 +1501,7 @@ UnknownText_0x1c1cf3::
 	done
 
 _OakText1::
-	text "Hello! Sorry to"
-	line "keep you waiting!"
+	text "Hi there!"
 
 	para "Welcome to the"
 	line "world of #MON!"
@@ -1516,10 +1515,13 @@ _OakText1::
 	prompt
 
 _OakText2::
-	text "This world is in-"
-	line "habited by crea-"
-	cont "tures that we call"
-	cont "#MON.@"
+	text "That's right! This"
+	line "world is widely"
+	cont "inhabited by"
+	
+	para "mysterious"
+	line "creatures called"
+	cont "#MON!@"
 	text_end
 
 _OakText3::
@@ -1529,27 +1531,41 @@ _OakText3::
 	text_end ; unused
 
 _OakText4::
-	text "People and #MON"
-	line "live together by"
+	text "#MON have"
+	line "mysterious powers."
 
-	para "supporting each"
-	line "other."
+	para "They come in many"
+	line "shapes and live in"
+	
+	para "many different"
+	line "places."
 
-	para "Some people play"
-	line "with #MON, some"
-	cont "battle with them."
+	para "We humans live"
+	line "happily with #-"
+	cont "MON! Living and"
+	
+	para "working together,"
+	line "we complement"
+	cont "each other."
+	
+	para "We help each other"
+	line "out to accomplish"
+	cont "difficult tasks."
+	
+	para "Having #MON"
+	line "battle one another"
+	cont "is particularly"
+	
+	para "popular, and it"
+	line "deepens the bond"
+	cont "between people and"
+	cont "#MON."
 	prompt
 
 _OakText5::
-	text "But we don't know"
-	line "everything about"
-	cont "#MON yet."
+	text "Well, that's"
+	line "enough from me…"
 
-	para "There are still"
-	line "many mysteries to"
-	cont "solve."
-
-	para "That's why I"
-	line "became a #MON"
-	cont "PROF."
+	para "Could you tell me"
+	line "about yourself?"
 	prompt

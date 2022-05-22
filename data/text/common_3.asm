@@ -1,28 +1,53 @@
 _OakText6::
-	text "Now, what did you"
-	line "say your name was?"
+	text "I'd like to know"
+	line "your name. Please"
+	cont "tell me?"
 	prompt
 
 _OakText7::
-	text "<PLAYER>, are you"
-	line "ready?"
+	text "So your name's"
+	line "<PLAY_G>?"
+	
+	para "What a wonderful"
+	line "name!"
 
-	para "Your very own"
-	line "#MON story is"
-	cont "about to unfold."
+	para "I'm going to"
+	line "entrust you with a"
+	
+	para "#MON. I'm sure"
+	line "you will be great"
+	cont "partners!"
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "The moment you"
+	line "choose the #MON"
 
-	para "A world of dreams"
-	line "and adventures"
+	para "who will accompany"
+	line "you on your"
+	
+	para "journey, your"
+	line "story will truly"
+	cont "begin!"
 
-	para "with #MON"
-	line "awaits! Let's go!"
+	para "I really hope you"
+	line "learn what is"
+	
+	para "important to you"
+	line "as a result of"
+	cont "your travels…"
+	
+	para "That's right!"
+	line "Befriend new"
+	cont "people and #MON"
+	
+	para "and grow as a"
+	line "person! That's the"
+	
+	para "most important"
+	line "goal of your"
+	cont "journey!"
 
-	para "I'll be seeing you"
-	line "later!"
+	para "Let's go visit the"
+	line "world of #MON!"
 	done
 
 UnknownText_0x1c40e6::
