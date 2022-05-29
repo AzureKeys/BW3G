@@ -169,11 +169,11 @@ INCLUDE "maps/NuvemaTown.asm"
 INCLUDE "maps/NuvemaMomHouse.asm"
 INCLUDE "maps/Rt17.asm"
 INCLUDE "maps/Rt18.asm"
-INCLUDE "maps/R1R17Gate.asm"
 INCLUDE "maps/P2Lab.asm"
 
 SECTION "Map Scripts 9", ROMX
 
+INCLUDE "maps/R1R17Gate.asm"
 INCLUDE "maps/NuvemaLab.asm"
 INCLUDE "maps/P2LabEntrance.asm"
 INCLUDE "maps/GiantChasmRooms.asm"
