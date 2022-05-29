@@ -282,39 +282,56 @@ AspertiaGymGuyWinText:
 	done
 	
 SchoolboyAspertiaGymSeenText:
-	text "My chance of"
-	line "losing? Not even"
-	cont "one percent!"
+	text "CHEREN saw"
+	line "potential in me"
+	
+	para "and made me a"
+	line "trainer in this"
+	cont "GYM!"
 	done
 
 SchoolboyAspertiaGymBeatenText:
-	text "That's odd."
+	text "You're strong. Or"
+	line "should I say your"
+	
+	para "#MON are"
+	line "strong?"
 	done
 
 SchoolboyAspertiaGymAfterText:
-	text "I know my short-"
-	line "comings now."
+	text "The reason he saw"
+	line "potential in me"
 
-	para "Thanks for showing"
-	line "me!"
+	para "was that there was"
+	line "no one else?"
+	
+	para "No way! Even if"
+	line "that's true, I"
+	
+	para "just have to get"
+	line "stronger!"
 	done
 	
 SchoolgirlAspertiaGymSeenText:
-	text "I can't allow a"
-	line "nameless trainer"
-	cont "past me!"
+	text "Now I'll show you"
+	line "all of the things"
 
-	para "CHEREN would be"
-	line "livid if I did!"
+	para "I learned from"
+	line "CHEREN!"
 	done
 
 SchoolgirlAspertiaGymBeatenText:
-	text "Awww… I lost…"
+	text "For knowledge to"
+	line "become your own,"
+	
+	para "you need to test"
+	line "it out yourself."
 	done
 
 SchoolgirlAspertiaGymAfterText:
-	text "Uh-oh… CHEREN is"
-	line "going to be mad…"
+	text "I have to learn"
+	line "even more about"
+	cont "my #MON!"
 	done
 	
 AspertiaGym_MapEvents:

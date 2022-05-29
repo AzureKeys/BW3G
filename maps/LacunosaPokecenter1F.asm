@@ -60,17 +60,12 @@ LacunosaPokecenterGentlemanText:
 	done
 
 LacunosaPokecenterYoungsterText:
-	text "#MON are smart."
-	line "They won't obey a"
+	text "Here is a little"
+	line "advice! Keep a lot"
 
-	para "trainer they don't"
-	line "respect."
-
-	para "Without the right"
-	line "GYM BADGES, they"
-
-	para "will just do as"
-	line "they please."
+	para "of POTIONs! Keep a"
+	line "lot of #BALLs"
+	cont "too!"
 	done
 
 LacunosaPokecenter1F_MapEvents:

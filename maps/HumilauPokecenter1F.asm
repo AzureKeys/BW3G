@@ -36,11 +36,16 @@ HumilauPokecenterTeacherScript:
 	jumptextfaceplayer HumilauPokecenterTeacherText
 
 HumilauPokecenterFisherText:
-	text "It's great. I can"
-	line "store any number"
+	text "Alright! Here's"
+	line "some advice from a"
 
-	para "of #MON, and"
-	line "it's all free."
+	para "guy who spends all"
+	line "of his time in"
+	cont "#MON CENTERs!"
+	
+	para "When your #MON"
+	line "have low HP, make"
+	cont "sure to heal them!"
 	done
 
 HumilauPokecenterGentlemanText:

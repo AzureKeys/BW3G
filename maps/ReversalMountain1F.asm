@@ -178,22 +178,27 @@ ReversalGruntLeaveText:
 	cont "done for!"
 	done
 	
-SchoolgirlReversalSeenText:
-	text "I found some good"
-	line "#MON outside!"
-
-	para "I think they'll do"
-	line "it for me!"
+PicnickerReversalSeenText:
+	text "Let's see who has"
+	line "the most admirable"
+	cont "#MON!"
 	done
 
-SchoolgirlReversalBeatenText:
-	text "Darn. I thought I"
-	line "could win."
+PicnickerReversalBeatenText:
+	text "Even though we"
+	line "lost, my #MON"
+	
+	para "are still pretty"
+	line "admirable."
 	done
 
-SchoolgirlReversalAfterText:
-	text "The grass is full"
-	line "of scary things!"
+PicnickerReversalAfterText:
+	text "If we can't win"
+	line "with these, maybe"
+	
+	para "I should find my"
+	line "#MON some more"
+	cont "friends!"
 	done
 	
 Hiker2ReversalSeenText:
@@ -217,74 +222,73 @@ Hiker2ReversalAfterText:
 	line "in the cave!"
 	done
 	
-PicnickerReversalSeenText:
-	text "That glance…"
-	line "It's intriguing."
+SchoolgirlReversalSeenText:
+	text "Hi there! Look at"
+	line "my awesome #-"
+	cont "MON!"
 	done
 
-PicnickerReversalBeatenText:
-	text "Hmmm. This is"
-	line "disappointing."
+SchoolgirlReversalBeatenText:
+	text "I… I'm not mad!"
 	done
 
-PicnickerReversalAfterText:
-	text "If you don't want"
-	line "to battle, just"
-	cont "avoid eye contact."
+SchoolgirlReversalAfterText:
+	text "My #MON will"
+	line "always be with me,"
+	cont "even if we lose!"
 	done
 	
 CamperReversalSeenText:
-	text "I roam far and"
-	line "wide in search of"
-	cont "#MON."
+	text "You sure are"
+	line "unlucky to have"
 
-	para "Are you looking"
-	line "for #MON too?"
-
-	para "Then you're my"
-	line "collecting rival!"
+	para "run into someone"
+	line "as strong as me!"
 	done
 
 CamperReversalBeatenText:
-	text "Ugh. My poor #-"
-	line "MON…"
+	text "I guess it was I"
+	line "who was unlucky to"
+	cont "run into you!"
 	done
 
 CamperReversalAfterText:
-	text "You can hear #-"
-	line "MON roars from"
+	text "Turning bad luck"
+	line "into good luck…"
 
-	para "deep inside the"
-	line "cave."
+	para "I wish I knew how"
+	line "to do that."
 	done
 	
 BlackbeltReversalSeenText:
-	text "ZUBAT's SUPERSONIC"
-	line "keeps confusing"
-	cont "my #MON."
+	text "Oh! I haven't seen"
+	line "you before! Would"
 
-	para "I'm seriously"
-	line "upset about that!"
+	para "you mind sparring"
+	line "with me?"
 	done
 
 BlackbeltReversalBeatenText:
-	text "Knocked out!"
+	text "Wow, impressive!"
+	
+	para "For one so young,"
+	line "you're quite good!"
 	done
 
 BlackbeltReversalAfterText:
-	text "You can hear #-"
-	line "MON roars from"
+	text "Look carefully,"
+	line "you might find"
 
-	para "deep inside the"
-	line "cave."
+	para "items on the"
+	line "ground!"
 	done
 	
 LassReversalSeenText:
-	text "I haven't seen you"
-	line "around before."
+	text "Sure, I'll be your"
+	line "opponent, right"
 
-	para "So you think you"
-	line "are pretty tough?"
+	para "alongside my"
+	line "trusty MUNNA!"
 	done
 
 LassReversalBeatenText:
@@ -292,13 +296,9 @@ LassReversalBeatenText:
 	done
 
 LassReversalAfterText:
-	text "I'm going to try"
-	line "to be the best"
-	cont "with my favorites."
-
-	para "I'm not using the"
-	line "same tough #MON"
-	cont "as everyone else."
+	text "This is one of my"
+	line "favorite places"
+	cont "to train!"
 	done
 	
 ReversalMountain1F_MapEvents:

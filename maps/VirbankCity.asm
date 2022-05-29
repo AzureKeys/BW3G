@@ -250,19 +250,27 @@ VirbankCityTeacher1Text:
 	text "I lost at the slot"
 	line "machines again…"
 
-	para "We girls also play"
-	line "the slots now."
+	para "The new GAME"
+	line "CORNER is a branch"
+	
+	para "of the one in"
+	line "CASTELIA CITY."
 
-	para "You should check"
-	line "them out too."
+	para "I think they have"
+	line "different prizes."
 	done
 
 VirbankCityTeacher2Text:
-	text "I'm raising #-"
-	line "MON too."
+	text "ROXIE's poison is"
+	line "intense! It"
+	cont "really stings!"
 
-	para "They serve as my"
-	line "private guards."
+	para "But you know what?"
+	line "Catch a MAGNEMITE"
+	
+	para "in the COMPLEX and"
+	line "you'll be just"
+	cont "fine!"
 	done
 
 VirbankCitySailorText:

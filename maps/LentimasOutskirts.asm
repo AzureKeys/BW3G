@@ -281,22 +281,29 @@ BirdKeeperOutskirtsAfterText:
 	done
 	
 HikerOutskirtsSeenText:
-	text "I came through the"
-	line "tunnel, but I"
+	text "Every day is the"
+	line "same. I get bored"
 
-	para "still have plenty"
-	line "of energy left."
+	para "when things don't"
+	line "change, so I don't"
+	cont "mind battling you!"
 	done
 
 HikerOutskirtsBeatenText:
-	text "Whoa! You've got"
-	line "more zip than me!"
+	text "It's been quite"
+	line "some time since"
+	
+	para "I've had a #MON"
+	line "battle!"
 	done
 
 HikerOutskirtsAfterText:
-	text "We HIKERS are at"
-	line "our best in the"
-	cont "mountains."
+	text "It's okay if"
+	line "everything's the"
+	
+	para "same, it means"
+	line "there aren't any"
+	cont "problems!"
 	done
 	
 BlackbeltOutskirtsSeenText:

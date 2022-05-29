@@ -372,17 +372,27 @@ OfficerR2AfterText:
 	done
 	
 TwinsR2SeenText:
-	text "It's a stranger we"
-	line "don't know."
+	text "Two #MON!"
+	
+	para "Strong and strong"
+	line "come together to"
+	
+	para "become…"
+	line "very strong!"
 	done
 
 TwinsR2BeatenText:
-	text "Ouchies."
+	text "Uh oh… My #MON"
+	line "isn't looking so"
+	cont "well…"
 	done
 
 TwinsR2AfterText:
-	text "It was like having"
-	line "to battle CILAN."
+	text "I don't know when"
+	line "I'm supposed to"
+	
+	para "use POTIONs and"
+	line "stuff…"
 	done
 	
 R2BoulderFellText:

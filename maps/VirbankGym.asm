@@ -176,49 +176,60 @@ GuitaristVirbankGym1AfterText:
 	done
 	
 GuitaristVirbankGym2SeenText:
-	text "You're here to"
-	line "defeat ROXIE?"
+	text "Get in my way, and"
+	line "I'll knock you"
 
-	para "Not if I can help"
-	line "it!"
+	para "out! Stay out of"
+	line "my way… and I'll"
+	cont "knock you out too!"
 	done
 
 GuitaristVirbankGym2BeatenText:
-	text "Sorry I failed"
-	line "you, ROXIE!"
+	text "I'm the one who"
+	line "got knocked out!"
 	done
 
 GuitaristVirbankGym2AfterText:
-	text "ROXIE was the"
-	line "first to recognize"
-	cont "my talent at the"
-	cont "guitar!"
+	text "Hahaha! You're"
+	line "great! Knock 'em"
+	cont "all out for me!"
 	done
 	
 GuitaristVirbankGym3SeenText:
-	text "ROXIE recognized"
-	line "my potential"
+	text "I can always be"
+	line "honest with myself"
 
-	para "with poison-"
-	line "type #MON."
+	para "when I'm playing"
+	line "the guitar or"
 
-	para "Think you can beat"
-	line "me?"
+	para "having a #MON"
+	line "battle!"
 	done
 
 GuitaristVirbankGym3BeatenText:
-	text "Ooh, how shocking!"
+	text "Argh! The happy"
+	line "times always end"
+	cont "so quickly!"
 	done
 
 GuitaristVirbankGym3AfterText:
-	text "Can you figure out"
-	line "the GYM's floors?"
+	text "Because I'm with"
+	line "my #MON, I can"
+	
+	para "always play my"
+	line "guitar. And it's"
+	
+	para "because I play my"
+	line "guitar that my"
+	
+	para "#MON become"
+	line "strong!"
 	done
 	
 GuitaristVirbankGym4SeenText:
 	text "I'm going to take"
 	line "you down! Prepare"
-	cont "to be shocked!"
+	cont "to be stung!"
 	done
 
 GuitaristVirbankGym4BeatenText:

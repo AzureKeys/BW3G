@@ -43,11 +43,17 @@ VirbankPokecenterSuperNerdScript:
 	jumptextfaceplayer VirbankPokecenterSuperNerdText
 
 VirbankPokecenterLassText:
-	text "Did you go to the"
-	line "GAME CORNER?"
+	text "Listen! Challenge"
+	line "poison type #-"
+	cont "MON with poison"
+	cont "type #MON!"
 
-	para "You can win some"
-	line "useful prizes!"
+	para "At least that's"
+	line "what ROXIE told"
+	
+	para "me. She plays an"
+	line "instrument! Pretty"
+	cont "cool!"
 	done
 
 VirbankGymGuyText:
@@ -81,17 +87,16 @@ VirbankGymGuyWinText:
 	done
 
 VirbankPokecenterSuperNerdText:
-	text "I love showing off"
-	line "the #MON that"
+	text "ROXIE's band!"
 
-	para "I've raised."
-	line "Don't you?"
+	para "It's getting hard"
+	line "to buy tickets to"
 
-	para "I'm going to get"
-	line "into a bunch of"
+	para "their shows"
+	line "lately! Maybe"
 
-	para "battles, and show"
-	line "off my #MON!"
+	para "they'll go on a"
+	line "world tour soon!"
 	done
 
 VirbankPokecenter1F_MapEvents:

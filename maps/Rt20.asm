@@ -137,20 +137,22 @@ Schoolboy1R20AfterText:
 	done
 	
 Schoolboy2R20SeenText:
-	text "I can run like the"
-	line "wind!"
+	text "All right! Time"
+	line "for a #MON"
+	
+	para "battle! Let's"
+	line "begin!"
 	done
 
 Schoolboy2R20BeatenText:
-	text "Blown away!"
+	text "Whew! You're way"
+	line "too strong!"
 	done
 
 Schoolboy2R20AfterText:
-	text "I wear shorts the"
-	line "whole year round."
-
-	para "That's my fashion"
-	line "policy."
+	text "Time for some"
+	line "special #MON"
+	cont "training!"
 	done
 	
 Schoolboy3R20SeenText:
@@ -170,22 +172,20 @@ Schoolboy3R20AfterText:
 	done
 	
 Schoolboy4R20SeenText:
-	text "We're on a field"
-	line "trip to FLOCCESY"
-
-	para "RANCH for"
-	line "social studies."
+	text "I'm gonna get a"
+	line "lot stronger so I"
+	cont "can battle ROXIE!"
 	done
 
 Schoolboy4R20BeatenText:
-	text "You're wickedly"
-	line "tough!"
+	text "Ahaha…"
+	line "It can't be true…"
 	done
 
 Schoolboy4R20AfterText:
-	text "I'm tired of walk-"
-	line "ing. I need to"
-	cont "take a break."
+	text "I want to get a"
+	line "lot stronger so I"
+	cont "can impress ROXIE!"
 	done
 	
 Schoolgirl1R20SeenText:
@@ -242,25 +242,28 @@ Schoolgirl3R20AfterText:
 	done
 	
 TeacherR20SeenText:
-	text "On sunny days, I"
-	line "think that the"
+	text "I always give it"
+	line "my best when I'm"
 
-	para "kids would rather"
-	line "be playing in the"
-
-	para "schoolyard than"
-	line "studying in class."
+	para "around kids and"
+	line "#MON!"
 	done
 
 TeacherR20BeatenText:
-	text "I didn't want to"
-	line "lose…"
+	text "Oh no! I'm not"
+	line "being a very good"
+	
+	para "example to the"
+	line "kids, am I?"
 	done
 
 TeacherR20AfterText:
-	text "Studying is impor-"
-	line "tant, but exercise"
-	cont "is just as vital."
+	text "Every day is full"
+	line "of amazing, new"
+	
+	para "discoveries when"
+	line "I'm with children"
+	cont "and #MON!"
 	done
 
 Rt20_MapEvents:

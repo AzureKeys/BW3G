@@ -402,16 +402,12 @@ R12_GetDexText:
 	done
 	
 R12YoungsterText:
-	text "I'm not a trainer,"
-	line "but if I was, you"
+	text "#MON battles"
+	line "begin when eyes"
+	cont "meet!"
 	
-	para "would have stepped"
-	line "into my vision."
-	
-	para "When #MON"
-	line "trainers' eyes"
-	cont "meet, they have"
-	cont "a #MON battle!"
+	para "That's a rule for"
+	line "trainers!"
 	done
 	
 R12BugCatcherText:

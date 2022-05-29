@@ -210,53 +210,47 @@ R13UndellaSign:
 	jumptext R13UndellaSignText
 	
 YoungsterR13SeenText:
-	text "I just lost, so"
-	line "I'm trying to find"
-	cont "more #MON."
-
-	para "Wait! You look"
-	line "weak! Come on,"
-	cont "let's battle!"
+	text "You can tell how"
+	line "much your opponent"
+	cont "wants to fight by"
+	
+	para "looking into their"
+	line "eyes, don't you"
+	cont "think?"
 	done
 
 YoungsterR13BeatenText:
-	text "Ack! I lost again!"
-	line "Doggone it!"
+	text "Wow! I could tell"
+	line "you really wanted"
+	cont "to win!"
 	done
 
 YoungsterR13AfterText:
-	text "Do I have to have"
-	line "more #MON in"
+	text "I'm gonna keep"
+	line "battling to make"
 
-	para "order to battle"
-	line "better?"
-
-	para "No! I'm sticking"
-	line "with this one no"
-	cont "matter what!"
+	para "my #MON"
+	line "stronger!"
 	done
 	
 LassR13SeenText:
-	text "You're a #MON"
-	line "trainer, right?"
-
-	para "Then you have to"
-	line "battle!"
+	text "Hey, you! Have you"
+	line "seen my cute #-"
+	cont "MON? Take a look!"
 	done
 
 LassR13BeatenText:
-	text "That's strange."
-	line "I won before."
+	text "My #MON are"
+	line "cute even if they"
+	cont "lose!"
 	done
 
 LassR13AfterText:
-	text "Becoming a good"
-	line "trainer is really"
-	cont "tough."
+	text "Maybe I'll try a"
+	line "wild #MON next"
 
-	para "I'm going to bat-"
-	line "tle other people"
-	cont "to get better."
+	para "time so that I can"
+	line "win…"
 	done
 	
 BugCatcherR13SeenText:
@@ -280,29 +274,25 @@ BugCatcherR13AfterText:
 	done
 	
 SchoolboyR13SeenText:
-	text "I caught a bunch"
-	line "of #MON. Let me"
-	cont "battle with you!"
+	text "I'm the strongest"
+	line "trainer in my"
+	cont "class!"
 	done
 
 SchoolboyR13BeatenText:
-	text "Awwwww…"
+	text "I guess I'm not"
+	line "the strongest in"
+	cont "the world."
 	done
 
 SchoolboyR13AfterText:
-	text "You can catch"
-	line "#MON even if"
-
-	para "you have six with"
-	line "you."
-
-	para "If you catch one,"
-	line "it'll go to your"
-	cont "BOX automatically."
+	text "I know! I'll go"
+	line "home and take a"
+	cont "nap!"
 	done
 	
 R13Blocker1Text:
-	text "Hey, watch it!"
+	text "Hey, watch out!"
 	
 	para "We're in the"
 	line "middle of a #-"
