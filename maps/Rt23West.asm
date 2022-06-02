@@ -253,22 +253,23 @@ R23WestBoulderFellText:
 Rt23West_MapEvents:
 	db 0, 0 ; filler
 
-	db 6 ; warp events
+	db 8 ; warp events
 	warp_event 28, 15, R_23_WEST, 6
 	warp_event 20, 18, R_23_WEST, 6
 	warp_event 24, 17, R_23_WEST, 6
 	warp_event 29, 18, R_23_WEST, 6
 	warp_event 40, 18, R_23_WEST, 6
 	warp_event 29, 12, R_23_WEST, 6
+	; warp_event 52,  4, VICTORY_ROAD_ENTRANCE, 1
+	; warp_event 53,  4, VICTORY_ROAD_ENTRANCE, 1
 
-	db 9 ; coord events
-	coord_event 53,  3, SCENE_DEFAULT, R23Badge7Script
+	db 8 ; coord events
+	coord_event 53,  4, SCENE_DEFAULT, R23Badge7Script
+	coord_event 52,  4, SCENE_DEFAULT, R23Badge7Script
 	coord_event 41, 15, -1, R23WestUpperScript
 	coord_event 42, 15, -1, R23WestUpperScript
 	coord_event 41, 17, -1, R23WestLowerScript
 	coord_event 42, 17, -1, R23WestLowerScript
-	coord_event 52,  1, -1, R23WestLowerScript
-	coord_event 53,  1, -1, R23WestLowerScript
 	coord_event 64, 10, -1, R23WestLowerScript
 	coord_event 64, 11, -1, R23WestLowerScript
 
@@ -276,7 +277,7 @@ Rt23West_MapEvents:
 
 	db 7 ; object events
 	object_event 70, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, -1
-	object_event 52,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer7Script, -1
+	object_event 51,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer7Script, -1
 	object_event 28, 13, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R23WestBoulder, EVENT_R23_BOULDER_1
 	object_event 19, 18, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R23WestBoulder, EVENT_R23_BOULDER_2
 	object_event 22, 14, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R23WestBoulder, EVENT_R23_BOULDER_3

@@ -108,8 +108,8 @@
 	tilecoll UP_WALL, UP_WALL, FLOOR, FLOOR ; 6b
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 6c
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 6d
-	tilecoll WALL, TALL_GRASS, WALL, TALL_GRASS ; 6e
-	tilecoll UP_WALL, TALL_GRASS, DOWN_WALL, TALL_GRASS ; 6f
+	tilecoll WALL, UP_WALL, WALL, TALL_GRASS ; 6e
+	tilecoll UP_WALL, UP_WALL, DOWN_WALL, TALL_GRASS ; 6f
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 70
 	tilecoll WALL, WALL, WALL, WALL ; 71
 	tilecoll WALL, WALL, WALL, WALL ; 72
@@ -220,3 +220,6 @@
 	tilecoll WALL, WALL, DOOR, DOOR ; db
 	tilecoll WALL, WALL, WALL, WALL ; dc
 	tilecoll FLOOR, FLOOR, WALL, FLOOR ; dd
+	tilecoll WALL, WALL, WALL, WALL ; de
+	tilecoll WALL, WALL, WALL, WALL ; df
+	tilecoll WARP_CARPET_UP, WARP_CARPET_UP, FLOOR, FLOOR ; e0
