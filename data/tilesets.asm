@@ -37,21 +37,21 @@ Tilesets::
 	tileset TilesetUnderground
 	tileset TilesetIcePath
 	tileset TilesetForest
+	tileset TilesetLentimas
 	tileset TilesetDesert
-	tileset TilesetJohtoDesert
 	tileset TilesetBridge
 	tileset TilesetVillageBridge
-	tileset TilesetJohtoAirport
-	tileset TilesetJohtoBeach
-	tileset TilesetJohtoEast
-	tileset TilesetJohtoModernEast
+	tileset TilesetMistralton
+	tileset TilesetUnovaBeach
+	tileset TilesetUnovaEast
+	tileset TilesetStriaton
 	tileset TilesetNacrene
-	tileset TilesetJohtoWest
+	tileset TilesetUnovaWest
 	tileset TilesetNimbasa
 	tileset TilesetVirbank
 	tileset TilesetComplex
 	tileset TilesetDriftveil
-	tileset TilesetPkmnLeague
+	tileset TilesetUnovaNorth
 	tileset TilesetCastelia
 	tileset TilesetAirport
 	tileset TilesetOpelucid

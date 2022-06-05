@@ -12,12 +12,12 @@ LoadSpecialMapPalette:
 	jp z, .mansion
 	cp TILESET_RADIO_TOWER
 	jp z, .radio_tower
+	cp TILESET_LENTIMAS
+	jp z, .lentimas
 	cp TILESET_DESERT
 	jp z, .desert
-	cp TILESET_JOHTO_DESERT
-	jp z, .johto_desert
-	cp TILESET_JOHTO_AIRPORT
-	jp z, .johto_airport
+	cp TILESET_MISTRALTON
+	jp z, .mistralton
 	cp TILESET_FOREST
 	jp z, .forest
 	cp TILESET_PARK
@@ -142,41 +142,41 @@ LoadSpecialMapPalette:
 	scf
 	ret
 	
-.desert
+.lentimas
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .nite
-	call LoadDesertPalette
+	call LoadLentimasPalette
 	scf
 	ret
 	
 .nite
+	call LoadLentimasNitePalette
+	scf
+	ret
+	
+.desert
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .desert_nite
+	call LoadDesertPalette
+	scf
+	ret
+	
+.desert_nite
 	call LoadDesertNitePalette
 	scf
 	ret
 	
-.johto_desert
+.mistralton
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
-	jr z, .jdnite
-	call LoadJohtoDesertPalette
-	scf
-	ret
-	
-.jdnite
-	call LoadJohtoDesertNitePalette
-	scf
-	ret
-	
-.johto_airport
-	ld a, [wCurTimeOfDay]
-	cp NITE_F
-	jr z, .janite
+	jr z, .mistralton_nite
 	call LoadMistraltonPalette
 	scf
 	ret
 	
-.janite
+.mistralton_nite
 	call LoadMistraltonNitePalette
 	scf
 	ret
@@ -447,6 +447,28 @@ LoadMansionPalette:
 MansionPalette2:
 INCLUDE "gfx/tilesets/mansion_2.pal"
 
+LoadLentimasPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, LentimasPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+LentimasPalette:
+INCLUDE "gfx/tilesets/lentimas.pal"
+
+LoadLentimasNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, LentimasNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+LentimasNitePalette:
+INCLUDE "gfx/tilesets/lentimas_nite.pal"
+
 LoadDesertPalette:
 	ld a, BANK(wBGPals1)
 	ld de, wBGPals1
@@ -468,28 +490,6 @@ LoadDesertNitePalette:
 	
 DesertNitePalette:
 INCLUDE "gfx/tilesets/desert_nite.pal"
-
-LoadJohtoDesertPalette:
-	ld a, BANK(wBGPals1)
-	ld de, wBGPals1
-	ld hl, JohtoDesertPalette
-	ld bc, 8 palettes
-	call FarCopyWRAM
-	ret
-	
-JohtoDesertPalette:
-INCLUDE "gfx/tilesets/johto_desert.pal"
-
-LoadJohtoDesertNitePalette:
-	ld a, BANK(wBGPals1)
-	ld de, wBGPals1
-	ld hl, JohtoDesertNitePalette
-	ld bc, 8 palettes
-	call FarCopyWRAM
-	ret
-	
-JohtoDesertNitePalette:
-INCLUDE "gfx/tilesets/johto_desert_nite.pal"
 
 LoadCasteliaPalette:
 	ld a, BANK(wBGPals1)

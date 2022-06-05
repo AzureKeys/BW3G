@@ -35,7 +35,7 @@ _AnimateTileset::
 
 Tileset0Anim:
 TilesetJohtoModernAnim:
-TilesetJohtoAirportAnim:
+TilesetMistraltonAnim:
 	;dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -48,12 +48,12 @@ TilesetJohtoAirportAnim:
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 	
-TilesetJohtoBeachAnim:
-TilesetJohtoDesertAnim:
-TilesetJohtoModernEastAnim:
+TilesetUnovaBeachAnim:
+TilesetDesertAnim:
+TilesetStriatonAnim:
 TilesetNimbasaAnim:
 TilesetParkAnim:
-TilesetJohtoWestAnim:
+TilesetUnovaWestAnim:
 TilesetDriftveilAnim:
 TilesetIcirrusAnim:
 TilesetVillageBridgeAnim:
@@ -177,7 +177,7 @@ TilesetForestAnim:
 	dw NULL,  DoneTileAnimation
 	
 TilesetJohtoAnim:
-TilesetJohtoEastAnim:
+TilesetUnovaEastAnim:
 	dw vTiles2 tile $60, WriteTileToBuffer
 	dw wTileAnimBuffer, ScrollTileDown
 	dw vTiles2 tile $60, WriteTileFromBuffer
@@ -199,7 +199,7 @@ TilesetJohtoEastAnim:
 	dw NULL,  IncWaterFrame
 	dw NULL,  DoneTileAnimation
 	
-TilesetPkmnLeagueAnim:
+TilesetUnovaNorthAnim:
 	dw vTiles2 tile $60, WriteTileToBuffer
 	dw wTileAnimBuffer, ScrollTileDown
 	dw vTiles2 tile $60, WriteTileFromBuffer
@@ -334,7 +334,7 @@ TilesetTrainStationAnim:
 TilesetChampionsRoomAnim:
 TilesetPlayersRoomAnim:
 TilesetBattleTowerAnim:
-TilesetDesertAnim:
+TilesetLentimasAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

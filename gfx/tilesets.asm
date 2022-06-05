@@ -328,6 +328,18 @@ INCLUDE "data/tilesets/lab_collision.asm"
 ; TilesetAerodactylWordRoomMeta:
 ; INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
 
+TilesetLentimasGFX:
+INCBIN "gfx/tilesets/lentimas.2bpp.lz"
+
+TilesetLentimasMeta:
+INCBIN "data/tilesets/lentimas_metatiles.bin"
+
+TilesetLentimasColl:
+INCLUDE "data/tilesets/lentimas_collision.asm"
+
+
+SECTION "Tileset Data 9", ROMX
+
 TilesetDesertGFX:
 INCBIN "gfx/tilesets/desert.2bpp.lz"
 
@@ -336,18 +348,6 @@ INCBIN "data/tilesets/desert_metatiles.bin"
 
 TilesetDesertColl:
 INCLUDE "data/tilesets/desert_collision.asm"
-
-
-SECTION "Tileset Data 9", ROMX
-
-TilesetJohtoDesertGFX:
-INCBIN "gfx/tilesets/johto_desert.2bpp.lz"
-
-TilesetJohtoDesertMeta:
-INCBIN "data/tilesets/johto_desert_metatiles.bin"
-
-TilesetJohtoDesertColl:
-INCLUDE "data/tilesets/johto_desert_collision.asm"
 
 TilesetBridgeGFX:
 INCBIN "gfx/tilesets/bridge.2bpp.lz"
@@ -370,23 +370,23 @@ INCLUDE "data/tilesets/village_bridge_collision.asm"
 
 SECTION "Tileset Data 10", ROMX
 
-TilesetJohtoBeachGFX:
-INCBIN "gfx/tilesets/johto_beach.2bpp.lz"
+TilesetUnovaBeachGFX:
+INCBIN "gfx/tilesets/unova_beach.2bpp.lz"
 
-TilesetJohtoBeachMeta:
-INCBIN "data/tilesets/johto_beach_metatiles.bin"
+TilesetUnovaBeachMeta:
+INCBIN "data/tilesets/unova_beach_metatiles.bin"
 
-TilesetJohtoBeachColl:
-INCLUDE "data/tilesets/johto_beach_collision.asm"
+TilesetUnovaBeachColl:
+INCLUDE "data/tilesets/unova_beach_collision.asm"
 
-TilesetJohtoEastGFX:
-INCBIN "gfx/tilesets/johto_east.2bpp.lz"
+TilesetUnovaEastGFX:
+INCBIN "gfx/tilesets/unova_east.2bpp.lz"
 
-TilesetJohtoEastMeta:
-INCBIN "data/tilesets/johto_east_metatiles.bin"
+TilesetUnovaEastMeta:
+INCBIN "data/tilesets/unova_east_metatiles.bin"
 
-TilesetJohtoEastColl:
-INCLUDE "data/tilesets/johto_east_collision.asm"
+TilesetUnovaEastColl:
+INCLUDE "data/tilesets/unova_east_collision.asm"
 
 
 SECTION "Tileset Data 11", ROMX
@@ -474,14 +474,14 @@ INCBIN "data/tilesets/ice_path_attributes.bin"
 TilesetForestAttr:
 INCBIN "data/tilesets/forest_attributes.bin"
 
-TilesetDesertAttr:
-INCBIN "data/tilesets/desert_attributes.bin"
+TilesetLentimasAttr:
+INCBIN "data/tilesets/lentimas_attributes.bin"
 
 
 SECTION "Tileset Data 14", ROMX
 
-TilesetJohtoDesertAttr:
-INCBIN "data/tilesets/johto_desert_attributes.bin"
+TilesetDesertAttr:
+INCBIN "data/tilesets/desert_attributes.bin"
 
 TilesetBridgeAttr:
 INCBIN "data/tilesets/bridge_attributes.bin"
@@ -489,44 +489,44 @@ INCBIN "data/tilesets/bridge_attributes.bin"
 TilesetVillageBridgeAttr:
 INCBIN "data/tilesets/village_bridge_attributes.bin"
 
-TilesetJohtoAirportAttr:
-INCBIN "data/tilesets/johto_airport_attributes.bin"
+TilesetMistraltonAttr:
+INCBIN "data/tilesets/mistralton_attributes.bin"
 
-TilesetJohtoBeachAttr:
-INCBIN "data/tilesets/johto_beach_attributes.bin"
+TilesetUnovaBeachAttr:
+INCBIN "data/tilesets/unova_beach_attributes.bin"
 
-TilesetJohtoEastAttr:
-INCBIN "data/tilesets/johto_east_attributes.bin"
+TilesetUnovaEastAttr:
+INCBIN "data/tilesets/unova_east_attributes.bin"
 
 
 SECTION "Tileset Data 15", ROMX
 
-TilesetJohtoModernEastGFX:
-INCBIN "gfx/tilesets/johto_modern_east.2bpp.lz"
+TilesetStriatonGFX:
+INCBIN "gfx/tilesets/striaton.2bpp.lz"
 
-TilesetJohtoModernEastMeta:
-INCBIN "data/tilesets/johto_modern_east_metatiles.bin"
+TilesetStriatonMeta:
+INCBIN "data/tilesets/striaton_metatiles.bin"
 
-TilesetJohtoModernEastColl:
-INCLUDE "data/tilesets/johto_modern_east_collision.asm"
+TilesetStriatonColl:
+INCLUDE "data/tilesets/striaton_collision.asm"
 
-TilesetJohtoModernEastAttr:
-INCBIN "data/tilesets/johto_modern_east_attributes.bin"
+TilesetStriatonAttr:
+INCBIN "data/tilesets/striaton_attributes.bin"
 
-TilesetJohtoWestGFX:
-INCBIN "gfx/tilesets/johto_west.2bpp.lz"
+TilesetUnovaWestGFX:
+INCBIN "gfx/tilesets/unova_west.2bpp.lz"
 
-TilesetJohtoWestMeta:
-INCBIN "data/tilesets/johto_west_metatiles.bin"
+TilesetUnovaWestMeta:
+INCBIN "data/tilesets/unova_west_metatiles.bin"
 
-TilesetJohtoWestColl:
-INCLUDE "data/tilesets/johto_west_collision.asm"
+TilesetUnovaWestColl:
+INCLUDE "data/tilesets/unova_west_collision.asm"
 
 
 SECTION "Tileset Data 16", ROMX
 
-TilesetJohtoWestAttr:
-INCBIN "data/tilesets/johto_west_attributes.bin"
+TilesetUnovaWestAttr:
+INCBIN "data/tilesets/unova_west_attributes.bin"
 
 TilesetNacreneGFX:
 INCBIN "gfx/tilesets/nacrene.2bpp.lz"
@@ -573,17 +573,17 @@ INCBIN "data/tilesets/virbank_attributes.bin"
 
 SECTION "Tileset Data 18", ROMX
 
-TilesetPkmnLeagueGFX:
-INCBIN "gfx/tilesets/pkmn_league.2bpp.lz"
+TilesetUnovaNorthGFX:
+INCBIN "gfx/tilesets/unova_north.2bpp.lz"
 
-TilesetPkmnLeagueMeta:
-INCBIN "data/tilesets/pkmn_league_metatiles.bin"
+TilesetUnovaNorthMeta:
+INCBIN "data/tilesets/unova_north_metatiles.bin"
 
-TilesetPkmnLeagueColl:
-INCLUDE "data/tilesets/pkmn_league_collision.asm"
+TilesetUnovaNorthColl:
+INCLUDE "data/tilesets/unova_north_collision.asm"
 
-TilesetPkmnLeagueAttr:
-INCBIN "data/tilesets/pkmn_league_attributes.bin"
+TilesetUnovaNorthAttr:
+INCBIN "data/tilesets/unova_north_attributes.bin"
 
 TilesetRadioTowerGFX:
 INCBIN "gfx/tilesets/radio_tower.2bpp.lz"
@@ -613,7 +613,7 @@ TilesetDriftveilExtraGFX::
 INCBIN "gfx/tilesets/driftveil_extra.2bpp.lz"
 
 TilesetMistraltonExtraGFX::
-INCBIN "gfx/tilesets/johto_airport_extra.2bpp.lz"
+INCBIN "gfx/tilesets/mistralton_extra.2bpp.lz"
 
 TilesetAirportGFX:
 INCBIN "gfx/tilesets/airport.2bpp.lz"
@@ -630,14 +630,14 @@ INCBIN "data/tilesets/airport_attributes.bin"
 
 SECTION "Tileset Data 20", ROMX
 
-TilesetJohtoAirportGFX:
-INCBIN "gfx/tilesets/johto_airport.,johto_airport_extra.2bpp.lz"
+TilesetMistraltonGFX:
+INCBIN "gfx/tilesets/mistralton.,mistralton_extra.2bpp.lz"
 
-TilesetJohtoAirportMeta:
-INCBIN "data/tilesets/johto_airport_metatiles.bin"
+TilesetMistraltonMeta:
+INCBIN "data/tilesets/mistralton_metatiles.bin"
 
-TilesetJohtoAirportColl:
-INCLUDE "data/tilesets/johto_airport_collision.asm"
+TilesetMistraltonColl:
+INCLUDE "data/tilesets/mistralton_collision.asm"
 
 TilesetOpelucidGFX:
 INCBIN "gfx/tilesets/opelucid.2bpp.lz"

@@ -1387,7 +1387,7 @@ LoadTilesetGFX::
 	ld a, [wMapTileset]
 	cp TILESET_DRIFTVEIL
 	jr z, .DriftveilExtra
-	cp TILESET_JOHTO_AIRPORT
+	cp TILESET_MISTRALTON
 	jr z, .MistraltonExtra
 	jr .NoExtra
 
@@ -1428,15 +1428,15 @@ LoadTilesetGFX::
 	jr z, .load_roof
 	cp TILESET_JOHTO_MODERN
 	jr z, .load_roof
-	cp TILESET_JOHTO_WEST
+	cp TILESET_UNOVA_WEST
 	jr z, .load_roof
-	cp TILESET_JOHTO_EAST
+	cp TILESET_UNOVA_EAST
 	jr z, .load_roof
-	cp TILESET_JOHTO_MODERN_EAST
+	cp TILESET_STRIATON
 	jr z, .load_roof
-	cp TILESET_JOHTO_BEACH
+	cp TILESET_UNOVA_BEACH
 	jr z, .load_roof
-	cp TILESET_DESERT
+	cp TILESET_LENTIMAS
 	jr z, .load_roof
 	cp TILESET_NIMBASA
 	jr z, .load_roof

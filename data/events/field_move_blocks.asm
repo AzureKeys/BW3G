@@ -2,12 +2,12 @@ CutTreeBlockPointers:
 ; tileset, block list pointer
 	dbw TILESET_JOHTO,             .johto
 	dbw TILESET_JOHTO_MODERN,      .johto_modern
-	dbw TILESET_JOHTO_MODERN_EAST, .johto_modern_east
+	dbw TILESET_STRIATON,          .striaton
 	dbw TILESET_FOREST,            .forest
-	dbw TILESET_JOHTO_BEACH,       .johto_beach
+	dbw TILESET_UNOVA_BEACH,       .unova_beach
 	dbw TILESET_NIMBASA,           .nimbasa
 	dbw TILESET_DREAMYARD,         .dreamyard
-	dbw TILESET_PKMN_LEAGUE,       .pkmn_league
+	dbw TILESET_UNOVA_NORTH,       .unova_north
 	db -1 ; end
 
 .johto:
@@ -25,7 +25,7 @@ CutTreeBlockPointers:
 	db $C2, $C3, $00 ; tree
 	db -1 ; end
 	
-.johto_modern_east:
+.striaton:
 ; facing block, replacement block, animation
 	db $03, $02, $01 ; grass
 	db $6C, $6D, $00 ; tree
@@ -49,13 +49,13 @@ CutTreeBlockPointers:
 	db $20, $14, 0
 	db -1 ; end
 
-.johto_beach:
+.unova_beach:
 ; facing block, replacement block, animation
 	db $03, $02, 1 ; grass
 	db $5f, $5b, 0 ; tree
 	db -1 ; end
 
-.pkmn_league:
+.unova_north:
 ; facing block, replacement block, animation
 	db $7b, $76, 0 ; tree
 	db $83, $82, 0 ; tree
