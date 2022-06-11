@@ -2439,6 +2439,8 @@ wMap14Object::  map_object wMap14
 wMap15Object::  map_object wMap15
 wMap16Object::  map_object wMap16
 wMap17Object::  map_object wMap17
+wMap18Object::  map_object wMap18
+wMap19Object::  map_object wMap19
 wMapObjectsEnd::
 
 wObjectMasks:: ds NUM_OBJECTS ; d81e
@@ -2649,7 +2651,7 @@ wParryFightCount::   db
 wErinFightCount::    db
 ; da0e
 
-	ds 100
+	ds 66
 
 wEventFlags:: flag_array NUM_EVENTS ; da72
 ; db6c
