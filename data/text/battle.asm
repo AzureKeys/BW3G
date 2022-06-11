@@ -685,6 +685,12 @@ AttackMissed2Text:
 	text "<USER>'s"
 	line "attack missed!"
 	prompt
+	
+AvoidStatusText:
+	text "<TARGET>"
+	line "avoided the"
+	cont "attack!"
+	prompt
 
 CrashedText:
 	text "<USER>"
@@ -1034,6 +1040,11 @@ AlreadyParalyzedText:
 AlreadyBurnedText:
 	text "<TARGET>'s"
 	line "already burned!"
+	prompt
+	
+AlreadyFrozenText:
+	text "<TARGET>'s"
+	line "already frozen!"
 	prompt
 
 ProtectedByText:
