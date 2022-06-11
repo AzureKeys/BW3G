@@ -2,28 +2,8 @@
 
 TrainerGroups:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
-	dba FalknerGroup
-	dba WhitneyGroup
-	dba BugsyGroup
-	dba MortyGroup
-	dba PryceGroup
-	dba JasmineGroup
-	dba ChuckGroup
-	dba ClairGroup
-	dba Rival1Group
-	dba PokemonProfGroup
-	dba WillGroup
-	dba PKMNTrainerGroup
-	dba BrunoGroup
-	dba KarenGroup
-	dba KogaGroup
-	dba ChampionGroup
-	dba BrockGroup
-	dba MistyGroup
-	dba LtSurgeGroup
 	dba ScientistMGroup
 	dba ScientistFGroup
-	dba ErikaGroup
 	dba YoungsterGroup
 	dba YoungsterDGroup
 	dba SchoolboyGroup
@@ -33,7 +13,6 @@ TrainerGroups:
 	dba BirdKeeperGroup
 	dba LassGroup
 	dba LassDGroup
-	dba JanineGroup
 	dba CooltrainerMGroup
 	dba CooltrainerMDGroup
 	dba CooltrainerFGroup
@@ -43,9 +22,7 @@ TrainerGroups:
 	dba PokemaniacGroup
 	dba GruntMGroup
 	dba GentlemanGroup
-	dba SkierGroup
 	dba TeacherGroup
-	dba SabrinaGroup
 	dba BugCatcherGroup
 	dba FisherGroup
 	dba FisherDGroup
@@ -55,37 +32,24 @@ TrainerGroups:
 	dba SwimmerFDGroup
 	dba SailorGroup
 	dba SuperNerdGroup
-	dba Rival2Group
 	dba GuitaristGroup
 	dba HikerGroup
 	dba HikerDGroup
 	dba BikerGroup
-	dba BlaineGroup
-	dba BurglarGroup
 	dba FirebreatherGroup
-	dba JugglerGroup
 	dba BlackbeltGroup
 	dba BattleGirlGroup
-	dba ExecutiveMGroup
 	dba PsychicGroup
 	dba PsychicFGroup
 	dba PicnickerGroup
 	dba PicnickerDGroup
 	dba CamperGroup
 	dba CamperDGroup
-	dba ExecutiveFGroup
-	dba SageGroup
-	dba MediumGroup
-	dba BoarderGroup
 	dba PokefanMGroup
-	dba KimonoGirlGroup
 	dba TwinsGroup
 	dba PokefanFGroup
-	dba RedGroup
-	dba BlueGroup
 	dba OfficerGroup
 	dba GruntFGroup
-	dba MysticalmanGroup
 	dba DoctorGroup
 	dba NurseGroup
 	dba HexManiacGroup

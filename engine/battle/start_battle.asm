@@ -87,13 +87,11 @@ PlayBattleMusic:
 	jr .done
 
 .trainermusic
-	ld de, MUSIC_CHAMPION_BATTLE
-	cp CHAMPION
-	jr z, .done
-	cp RED
-	jr z, .done
+	; Use this to set the Champion music when I add that trainer class
+	; ld de, MUSIC_CHAMPION_BATTLE
+	; cp CHAMPION
+	; jr z, .done
 
-	; They should have included EXECUTIVEM, EXECUTIVEF, and SCIENTIST too...
 	ld de, MUSIC_ROCKET_BATTLE
 	cp GRUNTM
 	jr z, .done
@@ -124,20 +122,9 @@ PlayBattleMusic:
 
 	ld de, MUSIC_RIVAL_BATTLE
 	ld a, [wOtherTrainerClass]
-	cp RIVAL1
-	jr z, .done
 	cp INFER
 	jr z, .done
-	cp RIVAL2
-	jr nz, .othertrainer
 
-	ld a, [wOtherTrainerID]
-	cp RIVAL2_2_CHIKORITA ; Rival in Indigo Plateau
-	jr c, .done
-	ld de, MUSIC_CHAMPION_BATTLE
-	jr .done
-
-.othertrainer
 	ld a, [wLinkMode]
 	and a
 	jr nz, .johtotrainer

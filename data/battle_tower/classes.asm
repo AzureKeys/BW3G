@@ -12,16 +12,12 @@ BattleTowerTrainers:
 	db "ALEXANDER@", HIKER
 	db "KAWAKAMI@@", TEACHER
 	db "BICKETT@@@", POKEFANM
-	db "SAITO@@@@@", KIMONO_GIRL
-	db "CRAWFORD@@", BOARDER
 	db "DIAZ@@@@@@", PICNICKER
 	db "ERICKSON@@", BIKER
-	db "FAIRFIELD@", JUGGLER
 	db "HUNTER@@@@", POKEFANF
 	db "HILL@@@@@@", FIREBREATHER
 	db "JAVIER@@@@", SWIMMERF
 	db "KAUFMAN@@@", SWIMMERM
-	db "LANCASTER@", SKIER
 	db "McMAHILL@@", CAMPER
 ; The following can only be sampled in Crystal 1.1.
 	db "OBRIEN@@@@", GENTLEMAN
@@ -39,10 +35,8 @@ BattleTowerTrainers:
 	db "ANDREWS@@@", PICNICKER
 	db "BAHN@@@@@@", POKEMANIAC
 	db "MORI@@@@@@", SCIENTIST_M
-	db "BUCKMAN@@@", SAGE
 	db "COBB@@@@@@", SCHOOLBOY
 	db "HUGHES@@@@", FISHER
-	db "ARITA@@@@@", KIMONO_GIRL
 	db "EASTON@@@@", PSYCHIC_T
 	db "FREEMAN@@@", CAMPER
 	db "GIESE@@@@@", LASS
@@ -57,10 +51,8 @@ BattleTowerTrainers:
 	db "PARK@@@@@@", COOLTRAINERF
 	db "RAINE@@@@@", SWIMMERM
 	db "SELLS@@@@@", BIRD_KEEPER
-	db "ROCKWELL@@", BOARDER
 	db "THORNTON@@", LASS
 	db "TURNER@@@@", OFFICER
-	db "VAN DYKE@@", SKIER
 	db "WALKER@@@@", SCHOOLBOY
 	db "MEYER@@@@@", SWIMMERF
 	db "JOHNSON@@@", YOUNGSTER

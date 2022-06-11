@@ -2,32 +2,11 @@
 
 BTTrainerClassGenders:
 ; entries correspond to trainer classes
-	db MALE   ; FALKNER
-	db FEMALE ; WHITNEY
-	db FEMALE ; BUGSY
-	db MALE   ; MORTY
-	db MALE   ; PRYCE
-	db FEMALE ; JASMINE
-	db MALE   ; CHUCK
-	db FEMALE ; CLAIR
-	db MALE   ; RIVAL1
-	db MALE   ; POKEMON_PROF
-	db FEMALE ; WILL
-	db MALE   ; CAL
-	db MALE   ; BRUNO
-	db FEMALE ; KAREN
-	db MALE   ; KOGA
-	db MALE   ; CHAMPION
-	db MALE   ; BROCK
-	db FEMALE ; MISTY
-	db MALE   ; LT_SURGE
 	db MALE   ; SCIENTIST
-	db FEMALE ; ERIKA
 	db MALE   ; YOUNGSTER
 	db MALE   ; SCHOOLBOY
 	db MALE   ; BIRD_KEEPER
 	db FEMALE ; LASS
-	db FEMALE ; JANINE
 	db MALE   ; COOLTRAINERM
 	db FEMALE ; COOLTRAINERF
 	db FEMALE ; BEAUTY

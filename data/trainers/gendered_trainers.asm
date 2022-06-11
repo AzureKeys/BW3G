@@ -1,7 +1,6 @@
 ; Used by GetMobileOTTrainerClass
 
 MaleTrainers:
-	db BURGLAR
 	db YOUNGSTER
 	db YOUNGSTER_D
 	db SCHOOLBOY
@@ -23,29 +22,23 @@ MaleTrainers:
 	db CAMPER
 	db CAMPER_D
 	db COOLTRAINERM
-	db BOARDER
-	db JUGGLER
 	db POKEFANM
 	db OFFICER
-	db SAGE
 	db BIKER
 	db SCIENTIST_M
 	db DOCTOR
 .End
 
 FemaleTrainers:
-	db MEDIUM
 	db HEX_MANIAC
 	db LASS
 	db LASS_D
 	db BEAUTY
-	db SKIER
 	db TEACHER
 	db SWIMMERF
 	db SWIMMERF_D
 	db PICNICKER
 	db PICNICKER_D
-	db KIMONO_GIRL
 	db POKEFANF
 	db COOLTRAINERF
 	db SCIENTIST_F
