@@ -87,10 +87,6 @@ INCLUDE "data/tilesets/mansion_collision.asm"
 TilesetCaveGFX:
 INCBIN "gfx/tilesets/cave.2bpp.lz"
 
-TilesetCaveMeta:
-;TilesetDarkCaveMeta:
-INCBIN "data/tilesets/cave_metatiles.bin"
-
 
 SECTION "Tileset Data 3", ROMX
 
@@ -719,3 +715,7 @@ INCLUDE "data/tilesets/elite_four_collision.asm"
 
 TilesetEliteFourAttr:
 INCBIN "data/tilesets/elite_four_attributes.bin"
+
+TilesetCaveMeta:
+;TilesetDarkCaveMeta:
+INCBIN "data/tilesets/cave_metatiles.bin"
