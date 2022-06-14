@@ -37,6 +37,7 @@ Facings:
 	dw FacingCableLeft
 	dw FacingCableRight
 	dw FacingFountain
+	dw FacingBadge
 .End
 	dw 0
 
@@ -279,3 +280,10 @@ FacingFountain:
 	db  20,  0, 0, $03
 	db  20,  8, 0, $03
 	db  20, 16, X_FLIP, $02
+
+FacingBadge: 
+	db 4 ; #
+	db   4, -8, 0, $00
+	db   4,  0, 0, $01
+	db  12, -8, 0, $02
+	db  12,  0, 0, $03

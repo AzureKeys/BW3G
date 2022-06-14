@@ -101,3 +101,11 @@ OverworldSprites:
 	overworld_sprite FountainSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
 	overworld_sprite DraydenSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite InferSageSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite Badge1SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite Badge2SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite Badge3SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite Badge4SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite Badge5SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite Badge6SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite Badge7SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite Badge8SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK

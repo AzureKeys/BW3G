@@ -148,7 +148,7 @@ Function437b:
 	ld hl, OBJECT_FLAGS2
 	add hl, bc
 	bit 6, [hl]
-	jr nz, SetFacingStanding
+	jp nz, SetFacingStanding
 	bit 5, [hl]
 	jr nz, asm_4448
 	ld de, ObjectActionPairPointers ; use first column
@@ -553,6 +553,7 @@ MapObjectMovementPattern:
 	dw .MovementCableLeft
 	dw .MovementCableRight
 	dw .MovementFountain
+	dw .MovementBadge
 
 .Null_00:
 	ret
@@ -778,6 +779,10 @@ MapObjectMovementPattern:
 	
 .MovementCableRight:
 	ld a, OBJECT_ACTION_CABLE_RIGHT
+	jr .ActionA_StepType04
+	
+.MovementBadge:
+	ld a, OBJECT_ACTION_BADGE
 	jr .ActionA_StepType04
 	
 .MovementFountain:

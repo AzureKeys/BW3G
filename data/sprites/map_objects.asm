@@ -328,3 +328,11 @@ SpriteMovementData::
 	db WONT_DELETE | FIXED_FACING | SLIDING | MOVE_ANYWHERE ; flags1
 	db 0 ; flags2
 	db 0 ; palette flags
+
+; SPRITEMOVEDATA_BADGE
+	db SPRITEMOVEFN_BADGE ; movement function
+	db DOWN ; facing
+	db OBJECT_ACTION_BADGE ; action
+	db WONT_DELETE | FIXED_FACING | SLIDING | MOVE_ANYWHERE ; flags1
+	db 0 ; flags2
+	db 0 ; palette flags

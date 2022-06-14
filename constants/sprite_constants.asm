@@ -97,6 +97,14 @@
 	const SPRITE_FOUNTAIN ; 7e
 	const SPRITE_DRAYDEN ; 7f
 	const SPRITE_INFER_SAGE ; 80
+	const SPRITE_BADGE_1 ; 81
+	const SPRITE_BADGE_2 ; 81
+	const SPRITE_BADGE_3 ; 81
+	const SPRITE_BADGE_4 ; 81
+	const SPRITE_BADGE_5 ; 81
+	const SPRITE_BADGE_6 ; 81
+	const SPRITE_BADGE_7 ; 81
+	const SPRITE_BADGE_8 ; 81
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0
