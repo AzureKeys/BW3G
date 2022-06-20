@@ -48,6 +48,8 @@ LoadSpecialMapPalette:
 	jp z, .icirrus
 	cp TILESET_TOWER
 	jr z, .tower
+	cp TILESET_PKMN_LEAGUE
+	jr z, .pkmn_league
 	jr .do_nothing
 
 .battle_tower
@@ -57,6 +59,19 @@ LoadSpecialMapPalette:
 
 .pokecenter
 	call LoadPokecenterPalette
+	scf
+	ret
+
+.pkmn_league
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .vr_entrance_nite
+	call LoadVREntrancePalette
+	scf
+	ret
+	
+.vr_entrance_nite
+	call LoadVREntranceNitePalette
 	scf
 	ret
 
@@ -864,3 +879,25 @@ LoadTowerNitePalette:
 	
 TowerNitePalette:
 INCLUDE "gfx/tilesets/tower_nite.pal"
+
+LoadVREntrancePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, VREntrancePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+VREntrancePalette:
+INCLUDE "gfx/tilesets/victory_road.pal"
+
+LoadVREntranceNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, VREntranceNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+VREntranceNitePalette:
+INCLUDE "gfx/tilesets/victory_road_nite.pal"

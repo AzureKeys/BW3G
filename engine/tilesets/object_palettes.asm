@@ -12,7 +12,22 @@ LoadSpecialMapObjectPalette:
 	jr z, .traditional_house
 	cp TILESET_TOWER
 	jr z, .tower
+	cp TILESET_PKMN_LEAGUE
+	jr z, .pkmn_league
 	jr .do_nothing
+
+.pkmn_league
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .vr_entrance_nite
+	call LoadVREntranceObPalette
+	scf
+	ret
+	
+.vr_entrance_nite
+	call LoadVREntranceNiteObPalette
+	scf
+	ret
 
 .tower
 ; All maps with TILESET_TOWER are in the Dungeons group
@@ -152,3 +167,25 @@ LoadDragonspiralRoofObPalette:
 
 DragonspiralRoofObPalette:
 INCLUDE "gfx/tilesets/dragonspiral_roof_ob.pal"
+
+LoadVREntranceObPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, VREntranceObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+VREntranceObPalette:
+INCLUDE "gfx/tilesets/victory_road_ob.pal"
+
+LoadVREntranceNiteObPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, VREntranceNiteObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+VREntranceNiteObPalette:
+INCLUDE "gfx/tilesets/victory_road_nite_ob.pal"

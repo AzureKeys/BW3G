@@ -335,5 +335,5 @@ ENDM
 	map_const R_23_WEST, 33, 12
 	map_const R_23_GATE, 5, 4
 	map_const R_23_HOUSE, 4, 4
-	
+	map_const VICTORY_ROAD_ENTRANCE, 28, 11
 	

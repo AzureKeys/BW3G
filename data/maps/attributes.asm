@@ -351,4 +351,5 @@ ENDM
 	map_attributes DraydensHouse2F, DRAYDENS_HOUSE_2F, $00, 0
 	map_attributes TwistMountain3F, TWIST_MOUNTAIN_3F, $09, 0
 	map_attributes Rt23House, R_23_HOUSE, $00, 0
+	map_attributes VictoryRoadEntrance, VICTORY_ROAD_ENTRANCE, $15, 0
 	

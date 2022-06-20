@@ -628,4 +628,7 @@ TwistMountain3F_Blocks:
 
 Rt1_Blocks:
 	INCBIN "maps/Rt1.ablk"
+
+VictoryRoadEntrance_Blocks:
+	INCBIN "maps/VictoryRoadEntrance.ablk"
 	
