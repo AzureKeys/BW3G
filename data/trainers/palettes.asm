@@ -70,7 +70,7 @@ INCBIN "gfx/trainers/cheren.gbcpal", middle_colors
 INCBIN "gfx/trainers/cilan.gbcpal", middle_colors
 INCBIN "gfx/trainers/skyla.gbcpal", middle_colors
 INCBIN "gfx/trainers/drayden.gbcpal", middle_colors
-INCBIN "gfx/trainers/oak.gbcpal", middle_colors
+INCBIN "gfx/trainers/bianca.gbcpal", middle_colors
 INCBIN "gfx/trainers/giallo.gbcpal", middle_colors
 INCBIN "gfx/trainers/bronius.gbcpal", middle_colors
 INCBIN "gfx/trainers/ryoku.gbcpal", middle_colors
