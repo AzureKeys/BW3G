@@ -1,18 +1,6 @@
 TrainerClassAttributes:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 
-; ScientistM
-	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; ScientistF
-	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Youngster
 	db NO_ITEM, NO_ITEM ; items
 	db 4 ; base reward
@@ -23,36 +11,6 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 4 ; base reward
 	dw AI_BASIC | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Schoolboy
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_OFTEN
-
-; SchoolboyD
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_OFTEN
-
-; Schoolgirl
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_OFTEN
-
-; SchoolgirlD
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_OFTEN
-
-; Bird Keeper
-	db NO_ITEM, NO_ITEM ; items
-	db 6 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Lass
@@ -67,70 +25,58 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_OFTEN
 
-; Cooltrainerm
+; AceTrainerm
 	db NO_ITEM, NO_ITEM ; items
 	db 12 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 	
-; Cooltrainerm_D
+; AceTrainermD
 	db NO_ITEM, NO_ITEM ; items
 	db 12 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Cooltrainerf
+; AceTrainerf
 	db NO_ITEM, NO_ITEM ; items
 	db 12 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Cooltrainerf_D
+; AceTrainerfD
 	db NO_ITEM, NO_ITEM ; items
 	db 12 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Beauty
+; Blackbelt
 	db NO_ITEM, NO_ITEM ; items
-	db 22 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	db 6 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; BeautyD
+; BattleGirl
 	db NO_ITEM, NO_ITEM ; items
-	db 22 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	db 6 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Pokemaniac
+; Biker
 	db NO_ITEM, NO_ITEM ; items
-	db 15 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
+	db 8 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Gruntm
+; Doctor
 	db NO_ITEM, NO_ITEM ; items
-	db 10 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Gentleman
+; Nurse
 	db NO_ITEM, NO_ITEM ; items
-	db 18 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_AGGRESSIVE | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Teacher
-	db NO_ITEM, NO_ITEM ; items
-	db 18 ; base reward
-	dw AI_BASIC | AI_OPPORTUNIST | AI_AGGRESSIVE | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Bug Catcher
-	db NO_ITEM, NO_ITEM ; items
-	db 4 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_STATUS
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Fisher
@@ -144,6 +90,108 @@ TrainerClassAttributes:
 	db 10 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Gentleman
+	db NO_ITEM, NO_ITEM ; items
+	db 18 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Guitarist
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Harlequin
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; HexManiac
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Hiker
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; HikerD
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Pokefanm
+	db NO_ITEM, NO_ITEM ; items
+	db 20 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Pokefanf
+	db NO_ITEM, NO_ITEM ; items
+	db 20 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Policeman
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Psychicm
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Psychicf
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; SchoolKidm
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; SchoolKidmD
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; SchoolKidf
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; SchoolKidfD
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Scientistm
+	db NO_ITEM, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Scientistf
+	db NO_ITEM, NO_ITEM ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Swimmerm
 	db NO_ITEM, NO_ITEM ; items
@@ -169,6 +217,66 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Twins
+	db NO_ITEM, NO_ITEM ; items
+	db 5 ; base reward
+	dw NO_AI
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Veteranf
+	db HYPER_POTION, NO_ITEM ; items
+	db 18 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Waiter
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Waitress
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Bird Keeper
+	db NO_ITEM, NO_ITEM ; items
+	db 6 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Beauty
+	db NO_ITEM, NO_ITEM ; items
+	db 22 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; BeautyD
+	db NO_ITEM, NO_ITEM ; items
+	db 22 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Pokemaniac
+	db NO_ITEM, NO_ITEM ; items
+	db 15 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Teacher
+	db NO_ITEM, NO_ITEM ; items
+	db 18 ; base reward
+	dw AI_BASIC | AI_OPPORTUNIST | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Bug Catcher
+	db NO_ITEM, NO_ITEM ; items
+	db 4 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; Sailor
 	db NO_ITEM, NO_ITEM ; items
 	db 10 ; base reward
@@ -181,58 +289,10 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Guitarist
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Hiker
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; HikerD
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Biker
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Firebreather
 	db NO_ITEM, NO_ITEM ; items
 	db 12 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Blackbelt T
-	db NO_ITEM, NO_ITEM ; items
-	db 6 ; base reward
-	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; BattleGirl
-	db NO_ITEM, NO_ITEM ; items
-	db 6 ; base reward
-	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Psychic T
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Psychic T F
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Picnicker
@@ -259,76 +319,16 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Pokefanm
-	db NO_ITEM, NO_ITEM ; items
-	db 20 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Twins
-	db NO_ITEM, NO_ITEM ; items
-	db 5 ; base reward
-	dw NO_AI
-	dw CONTEXT_USE | SWITCH_OFTEN
-
-; Pokefanf
-	db NO_ITEM, NO_ITEM ; items
-	db 20 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Officer
+; Gruntm
 	db NO_ITEM, NO_ITEM ; items
 	db 10 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Gruntf
 	db NO_ITEM, NO_ITEM ; items
 	db 10 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Doctor
-	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Nurse
-	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; HexManiac
-	db NO_ITEM, NO_ITEM ; items
-	db 10 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Harlequin
-	db NO_ITEM, NO_ITEM ; items
-	db 10 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Veteran
-	db HYPER_POTION, NO_ITEM ; items
-	db 18 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Waiter
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Waitress
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 	
 ; Marlon

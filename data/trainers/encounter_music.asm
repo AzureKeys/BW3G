@@ -3,61 +3,61 @@
 TrainerEncounterMusic::
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	db MUSIC_HIKER_ENCOUNTER       ; none
-	db MUSIC_OFFICER_ENCOUNTER     ; scientistm
-	db MUSIC_OFFICER_ENCOUNTER     ; scientistf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; youngster
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; youngsterD
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolboy
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolboyD
-	db MUSIC_LASS_ENCOUNTER        ; schoolgirl
-	db MUSIC_LASS_ENCOUNTER        ; schoolgirlD
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
 	db MUSIC_LASS_ENCOUNTER        ; lass
 	db MUSIC_LASS_ENCOUNTER        ; lassD
-	db MUSIC_HIKER_ENCOUNTER       ; cooltrainerm
-	db MUSIC_HIKER_ENCOUNTER       ; cooltrainerm_d
-	db MUSIC_BEAUTY_ENCOUNTER      ; cooltrainerf
-	db MUSIC_BEAUTY_ENCOUNTER      ; cooltrainerf_d
-	db MUSIC_BEAUTY_ENCOUNTER      ; beauty
-	db MUSIC_BEAUTY_ENCOUNTER      ; beautyD
-	db MUSIC_POKEMANIAC_ENCOUNTER  ; pokemaniac
-	db MUSIC_ROCKET_ENCOUNTER      ; gruntm
-	db MUSIC_HIKER_ENCOUNTER       ; gentleman
-	db MUSIC_BEAUTY_ENCOUNTER      ; teacher
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; bug_catcher
+	db MUSIC_HIKER_ENCOUNTER       ; acetrainerm
+	db MUSIC_HIKER_ENCOUNTER       ; acetrainermD
+	db MUSIC_BEAUTY_ENCOUNTER      ; acetrainerf
+	db MUSIC_BEAUTY_ENCOUNTER      ; acetrainerfD
+	db MUSIC_HIKER_ENCOUNTER       ; blackbelt
+	db MUSIC_HIKER_ENCOUNTER       ; battlegirl
+	db MUSIC_HIKER_ENCOUNTER       ; biker
+	db MUSIC_SAGE_ENCOUNTER        ; doctor
+	db MUSIC_SAGE_ENCOUNTER        ; nurse
 	db MUSIC_HIKER_ENCOUNTER       ; fisher
 	db MUSIC_HIKER_ENCOUNTER       ; fisherD
+	db MUSIC_HIKER_ENCOUNTER       ; gentleman
+	db MUSIC_HIKER_ENCOUNTER       ; guitarist
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; harlequin
+	db MUSIC_KIMONO_ENCOUNTER      ; hexmaniac
+	db MUSIC_HIKER_ENCOUNTER       ; hiker
+	db MUSIC_HIKER_ENCOUNTER       ; hikerD
+	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
+	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
+	db MUSIC_HIKER_ENCOUNTER       ; policeman
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychicm
+	db MUSIC_BEAUTY_ENCOUNTER      ; psychicf
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolkidm
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolkidmD
+	db MUSIC_LASS_ENCOUNTER        ; schoolkidf
+	db MUSIC_LASS_ENCOUNTER        ; schoolkidfD
+	db MUSIC_OFFICER_ENCOUNTER     ; scientistm
+	db MUSIC_OFFICER_ENCOUNTER     ; scientistf
 	db MUSIC_HIKER_ENCOUNTER       ; swimmerm
 	db MUSIC_HIKER_ENCOUNTER       ; swimmermD
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerf
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerfD
+	db MUSIC_LASS_ENCOUNTER        ; twins
+	db MUSIC_BEAUTY_ENCOUNTER      ; veteranf
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; waiter
+	db MUSIC_LASS_ENCOUNTER        ; waitress
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
+	db MUSIC_BEAUTY_ENCOUNTER      ; beauty
+	db MUSIC_BEAUTY_ENCOUNTER      ; beautyD
+	db MUSIC_POKEMANIAC_ENCOUNTER  ; pokemaniac
+	db MUSIC_BEAUTY_ENCOUNTER      ; teacher
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; bug_catcher
 	db MUSIC_HIKER_ENCOUNTER       ; sailor
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; super_nerd
-	db MUSIC_HIKER_ENCOUNTER       ; guitarist
-	db MUSIC_HIKER_ENCOUNTER       ; hiker
-	db MUSIC_HIKER_ENCOUNTER       ; hikerD
-	db MUSIC_HIKER_ENCOUNTER       ; biker
 	db MUSIC_HIKER_ENCOUNTER       ; firebreather
-	db MUSIC_HIKER_ENCOUNTER       ; blackbelt_t
-	db MUSIC_HIKER_ENCOUNTER       ; battlegirl
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychic_t
-	db MUSIC_BEAUTY_ENCOUNTER      ; psychic_t_f
 	db MUSIC_LASS_ENCOUNTER        ; picnicker
 	db MUSIC_LASS_ENCOUNTER        ; picnickerD
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; camper
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; camperD
-	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
-	db MUSIC_LASS_ENCOUNTER        ; twins
-	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
-	db MUSIC_HIKER_ENCOUNTER       ; officer
+	db MUSIC_ROCKET_ENCOUNTER      ; gruntm
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntf
-	db MUSIC_SAGE_ENCOUNTER        ; doctor
-	db MUSIC_SAGE_ENCOUNTER        ; nurse
-	db MUSIC_KIMONO_ENCOUNTER      ; hex_maniac
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; harlequin
-	db MUSIC_BEAUTY_ENCOUNTER      ; veteran
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; waiter
-	db MUSIC_LASS_ENCOUNTER        ; waitress
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; marlon
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; shauntal
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; burgh

@@ -2,61 +2,61 @@
 
 TrainerGroups:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
-	dba ScientistMGroup
-	dba ScientistFGroup
 	dba YoungsterGroup
 	dba YoungsterDGroup
-	dba SchoolboyGroup
-	dba SchoolboyDGroup
-	dba SchoolgirlGroup
-	dba SchoolgirlDGroup
-	dba BirdKeeperGroup
 	dba LassGroup
 	dba LassDGroup
 	dba CooltrainerMGroup
 	dba CooltrainerMDGroup
 	dba CooltrainerFGroup
 	dba CooltrainerFDGroup
-	dba BeautyGroup
-	dba BeautyDGroup
-	dba PokemaniacGroup
-	dba GruntMGroup
-	dba GentlemanGroup
-	dba TeacherGroup
-	dba BugCatcherGroup
+	dba BlackbeltGroup
+	dba BattleGirlGroup
+	dba BikerGroup
+	dba DoctorGroup
+	dba NurseGroup
 	dba FisherGroup
 	dba FisherDGroup
+	dba GentlemanGroup
+	dba GuitaristGroup
+	dba HarlequinGroup
+	dba HexManiacGroup
+	dba HikerGroup
+	dba HikerDGroup
+	dba PokefanMGroup
+	dba PokefanFGroup
+	dba OfficerGroup
+	dba PsychicGroup
+	dba PsychicFGroup
+	dba SchoolboyGroup
+	dba SchoolboyDGroup
+	dba SchoolgirlGroup
+	dba SchoolgirlDGroup
+	dba ScientistMGroup
+	dba ScientistFGroup
 	dba SwimmerMGroup
 	dba SwimmerMDGroup
 	dba SwimmerFGroup
 	dba SwimmerFDGroup
+	dba TwinsGroup
+	dba VeteranGroup
+	dba WaiterGroup
+	dba WaitressGroup
+	dba BirdKeeperGroup
+	dba BeautyGroup
+	dba BeautyDGroup
+	dba PokemaniacGroup
+	dba TeacherGroup
+	dba BugCatcherGroup
 	dba SailorGroup
 	dba SuperNerdGroup
-	dba GuitaristGroup
-	dba HikerGroup
-	dba HikerDGroup
-	dba BikerGroup
 	dba FirebreatherGroup
-	dba BlackbeltGroup
-	dba BattleGirlGroup
-	dba PsychicGroup
-	dba PsychicFGroup
 	dba PicnickerGroup
 	dba PicnickerDGroup
 	dba CamperGroup
 	dba CamperDGroup
-	dba PokefanMGroup
-	dba TwinsGroup
-	dba PokefanFGroup
-	dba OfficerGroup
+	dba GruntMGroup
 	dba GruntFGroup
-	dba DoctorGroup
-	dba NurseGroup
-	dba HexManiacGroup
-	dba HarlequinGroup
-	dba VeteranGroup
-	dba WaiterGroup
-	dba WaitressGroup
 	dba MarlonGroup
 	dba ShauntalGroup
 	dba BurghGroup

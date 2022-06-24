@@ -1,61 +1,61 @@
 TrainerClassDVs:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	;  atk,def,spd,spc
-	dn  9,  8,  8,  8 ; SCIENTIST_M
-	dn  9,  8,  8,  8 ; SCIENTIST_F
 	dn  9,  8,  8,  8 ; YOUNGSTER
 	dn  9,  8,  8,  8 ; YOUNGSTER_D
-	dn  9,  8,  8,  8 ; SCHOOLBOY
-	dn  9,  8,  8,  8 ; SCHOOLBOY_D
-	dn  9,  8,  8,  8 ; SCHOOLGIRL
-	dn  9,  8,  8,  8 ; SCHOOLGIRL_D
-	dn  9,  8,  8,  8 ; BIRD_KEEPER
 	dn  5,  8,  8,  8 ; LASS
 	dn  5,  8,  8,  8 ; LASS_D
-	dn 13,  8, 12,  8 ; COOLTRAINERM
-	dn 13,  8, 12,  8 ; COOLTRAINERM_D
-	dn  7, 12, 12,  8 ; COOLTRAINERF
-	dn  7, 12, 12,  8 ; COOLTRAINERF_D
+	dn 13,  8, 12,  8 ; ACE_TRAINER_M
+	dn 13,  8, 12,  8 ; ACE_TRAINER_M_D
+	dn  7, 12, 12,  8 ; ACE_TRAINER_F
+	dn  7, 12, 12,  8 ; ACE_TRAINER_F_D
+	dn  9,  8,  8,  8 ; BLACKBELT_T
+	dn  9,  8,  8,  8 ; BATTLE_GIRL
+	dn  9,  8,  8,  8 ; BIKER
+	dn  9,  8,  8,  8 ; DOCTOR
+	dn  9,  8,  8,  8 ; NURSE
+	dn  9,  8,  8,  8 ; FISHER
+	dn  9,  8,  8,  8 ; FISHER_D
+	dn  9,  8,  8,  8 ; GENTLEMAN
+	dn  9,  8,  8,  8 ; GUITARIST
+	dn  9,  8,  8,  8 ; HARLEQUIN
+	dn  7,  8,  8,  8 ; HEX_MANIAC
+	dn 10,  8,  8,  8 ; HIKER
+	dn 10,  8,  8,  8 ; HIKER_D
+	dn  9,  8,  8,  8 ; POKEFAN_M
+	dn  6, 13,  8,  8 ; POKEFAN_F
+	dn  9,  8,  8,  8 ; POLICEMAN
+	dn  9,  8,  8,  8 ; PSYCHIC_T_M
+	dn  9,  8,  8,  8 ; PSYCHIC_T_F
+	dn  9,  8,  8,  8 ; SCHOOL_KID_M
+	dn  9,  8,  8,  8 ; SCHOOL_KID_M_D
+	dn  9,  8,  8,  8 ; SCHOOL_KID_F
+	dn  9,  8,  8,  8 ; SCHOOL_KID_F_D
+	dn  9,  8,  8,  8 ; SCIENTIST_M
+	dn  9,  8,  8,  8 ; SCIENTIST_F
+	dn  9,  8,  8,  8 ; SWIMMER_M
+	dn  9,  8,  8,  8 ; SWIMMER_M_D
+	dn  7,  8,  8,  8 ; SWIMMER_F
+	dn  7,  8,  8,  8 ; SWIMMER_F_D
+	dn  6,  8, 10,  8 ; TWINS
+	dn  7, 12, 12,  8 ; VETERAN_F
+	dn  9,  8,  8,  8 ; WAITER
+	dn  6, 10, 10,  8 ; WAITRESS
+	dn  9,  8,  8,  8 ; BIRD_KEEPER
 	dn  6,  9, 12,  8 ; BEAUTY
 	dn  6,  9, 12,  8 ; BEAUTY_D
 	dn  9,  8,  8,  8 ; POKEMANIAC
-	dn 13,  8, 10,  8 ; GRUNTM
-	dn  9,  8,  8,  8 ; GENTLEMAN
 	dn  6,  8,  8,  8 ; TEACHER
 	dn  9,  8,  8,  8 ; BUG_CATCHER
-	dn  9,  8,  8,  8 ; FISHER
-	dn  9,  8,  8,  8 ; FISHER_D
-	dn  9,  8,  8,  8 ; SWIMMERM
-	dn  9,  8,  8,  8 ; SWIMMERM_D
-	dn  7,  8,  8,  8 ; SWIMMERF
-	dn  7,  8,  8,  8 ; SWIMMERF_D
 	dn  9,  8,  8,  8 ; SAILOR
 	dn  9,  8,  8,  8 ; SUPER_NERD
-	dn  9,  8,  8,  8 ; GUITARIST
-	dn 10,  8,  8,  8 ; HIKER
-	dn 10,  8,  8,  8 ; HIKER_D
-	dn  9,  8,  8,  8 ; BIKER
 	dn  9,  8,  8,  8 ; FIREBREATHER
-	dn  9,  8,  8,  8 ; BLACKBELT_T
-	dn  9,  8,  8,  8 ; BATTLE_GIRL
-	dn  9,  8,  8,  8 ; PSYCHIC_T
-	dn  9,  8,  8,  8 ; PSYCHIC_T_F
 	dn  6, 10, 10,  8 ; PICNICKER
 	dn  6, 10, 10,  8 ; PICNICKER_D
 	dn  9,  8,  8,  8 ; CAMPER
 	dn  9,  8,  8,  8 ; CAMPER_D
-	dn  9,  8,  8,  8 ; POKEFANM
-	dn  6,  8, 10,  8 ; TWINS
-	dn  6, 13,  8,  8 ; POKEFANF
-	dn  9,  8,  8,  8 ; OFFICER
+	dn 13,  8, 10,  8 ; GRUNTM
 	dn  7, 14, 10,  8 ; GRUNTF
-	dn  9,  8,  8,  8 ; DOCTOR
-	dn  9,  8,  8,  8 ; NURSE
-	dn  7,  8,  8,  8 ; HEX_MANIAC
-	dn  9,  8,  8,  8 ; HARLEQUIN
-	dn  7, 12, 12,  8 ; VETERAN
-	dn  9,  8,  8,  8 ; WAITER
-	dn  6, 10, 10,  8 ; WAITRESS
 	dn  9, 10,  7,  7 ; MARLON
 	dn 10,  9, 10,  9 ; SHAUNTAL
 	dn 11, 11, 11, 11 ; BURGH

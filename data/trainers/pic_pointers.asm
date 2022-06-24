@@ -2,61 +2,61 @@
 
 TrainerPicPointers::
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
-	dba ScientistPic
-	dba ScientistFPic
 	dba YoungsterPic
 	dba YoungsterDPic
-	dba SchoolboyPic
-	dba SchoolboyDPic
-	dba SchoolgirlPic
-	dba SchoolgirlDPic
-	dba BirdKeeperPic
 	dba LassPic
 	dba LassDPic
 	dba CooltrainermPic
 	dba CooltrainermDPic
 	dba CooltrainerfPic
 	dba CooltrainerfDPic
-	dba BeautyPic
-	dba BeautyDPic
-	dba PokemaniacPic
-	dba GruntmPic
-	dba GentlemanPic
-	dba TeacherPic
-	dba BugCatcherPic
+	dba BlackbeltTPic
+	dba BattleGirlPic
+	dba BikerPic
+	dba DoctorPic
+	dba NursePic
 	dba FisherPic
 	dba FisherDPic
+	dba GentlemanPic
+	dba GuitaristPic
+	dba HarlequinPic
+	dba HexManiacPic
+	dba HikerPic
+	dba HikerDPic
+	dba PokefanmPic
+	dba PokefanfPic
+	dba OfficerPic
+	dba PsychicTPic
+	dba PsychicTFPic
+	dba SchoolboyPic
+	dba SchoolboyDPic
+	dba SchoolgirlPic
+	dba SchoolgirlDPic
+	dba ScientistPic
+	dba ScientistFPic
 	dba SwimmermPic
 	dba SwimmermDPic
 	dba SwimmerfPic
 	dba SwimmerfDPic
+	dba TwinsPic
+	dba VeteranPic
+	dba WaiterPic
+	dba WaitressPic
+	dba BirdKeeperPic
+	dba BeautyPic
+	dba BeautyDPic
+	dba PokemaniacPic
+	dba TeacherPic
+	dba BugCatcherPic
 	dba SailorPic
 	dba SuperNerdPic
-	dba GuitaristPic
-	dba HikerPic
-	dba HikerDPic
-	dba BikerPic
 	dba FirebreatherPic
-	dba BlackbeltTPic
-	dba BattleGirlPic
-	dba PsychicTPic
-	dba PsychicTFPic
 	dba PicnickerPic
 	dba PicnickerDPic
 	dba CamperPic
 	dba CamperDPic
-	dba PokefanmPic
-	dba TwinsPic
-	dba PokefanfPic
-	dba OfficerPic
+	dba GruntmPic
 	dba GruntfPic
-	dba DoctorPic
-	dba NursePic
-	dba HexManiacPic
-	dba HarlequinPic
-	dba VeteranPic
-	dba WaiterPic
-	dba WaitressPic
 	dba MarlonPic
 	dba ShauntalPic
 	dba BurghPic
