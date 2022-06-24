@@ -127,6 +127,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Pilot
+	db NO_ITEM, NO_ITEM ; items
+	db 6 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; Pokefanm
 	db NO_ITEM, NO_ITEM ; items
 	db 20 ; base reward

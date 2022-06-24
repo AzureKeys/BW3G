@@ -1,8 +1,8 @@
 	const_def 2 ; object constants
 	const MISTRALTONGYM2F_FAN_1
 	const MISTRALTONGYM2F_FAN_2
-	const MISTRALTONGYM2F_BIRD_KEEPER_1
-	const MISTRALTONGYM2F_BIRD_KEEPER_2
+	const MISTRALTONGYM2F_PILOT_1
+	const MISTRALTONGYM2F_PILOT_2
 
 MistraltonGym2F_MapScripts:
 	db 0 ; scene scripts
@@ -46,39 +46,39 @@ MistraltonGym2F_MapScripts:
 MistraltonGym2FFan:
 	jumpstd strengthboulder
 
-TrainerBirdKeeper1MistraltonGym2F:
-	trainer BIRD_KEEPER, BIRD_KEEPER_MISTRALTON_GYM_4, EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_4, BirdKeeper1MistraltonGym2FSeenText, BirdKeeper1MistraltonGym2FBeatenText, 0, .Script
+TrainerPilot1MistraltonGym2F:
+	trainer PILOT, PILOT_MISTRALTON_GYM_4, EVENT_BEAT_PILOT_MISTRALTON_GYM_4, Pilot1MistraltonGym2FSeenText, Pilot1MistraltonGym2FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeper1MistraltonGym2FAfterText
+	writetext Pilot1MistraltonGym2FAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerBirdKeeper2MistraltonGym2F:
-	trainer BIRD_KEEPER, BIRD_KEEPER_MISTRALTON_GYM_5, EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_5, BirdKeeper2MistraltonGym2FSeenText, BirdKeeper2MistraltonGym2FBeatenText, 0, .Script
+TrainerPilot2MistraltonGym2F:
+	trainer PILOT, PILOT_MISTRALTON_GYM_5, EVENT_BEAT_PILOT_MISTRALTON_GYM_5, Pilot2MistraltonGym2FSeenText, Pilot2MistraltonGym2FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeper2MistraltonGym2FAfterText
+	writetext Pilot2MistraltonGym2FAfterText
 	waitbutton
 	closetext
 	end
 	
-BirdKeeper1MistraltonGym2FSeenText:
+Pilot1MistraltonGym2FSeenText:
 	text "Can you figure out"
 	line "how to get through"
 	cont "our GYM?"
 	done
 
-BirdKeeper1MistraltonGym2FBeatenText:
+Pilot1MistraltonGym2FBeatenText:
 	text "I was beaten!"
 	done
 
-BirdKeeper1MistraltonGym2FAfterText:
+Pilot1MistraltonGym2FAfterText:
 	text "You need to push"
 	line "the fans into the"
 	
@@ -86,17 +86,17 @@ BirdKeeper1MistraltonGym2FAfterText:
 	line "to cross the gym."
 	done
 	
-BirdKeeper2MistraltonGym2FSeenText:
+Pilot2MistraltonGym2FSeenText:
 	text "We've trained hard"
 	line "to become masters"
 	cont "of the air!"
 	done
 
-BirdKeeper2MistraltonGym2FBeatenText:
+Pilot2MistraltonGym2FBeatenText:
 	text "What?"
 	done
 
-BirdKeeper2MistraltonGym2FAfterText:
+Pilot2MistraltonGym2FAfterText:
 	text "I guess we need"
 	line "more training…"
 	done
@@ -134,6 +134,6 @@ MistraltonGym2F_MapEvents:
 	db 4 ; object events
 	object_event 14, 11, SPRITE_FAN, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MistraltonGym2FFan, EVENT_MISTRALTON_GYM_2F_FAN_1
 	object_event  5,  2, SPRITE_FAN, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MistraltonGym2FFan, EVENT_MISTRALTON_GYM_2F_FAN_2
-	object_event 15, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBirdKeeper1MistraltonGym2F, -1
-	object_event  2,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeper2MistraltonGym2F, -1
+	object_event 15, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPilot1MistraltonGym2F, -1
+	object_event  2,  5, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPilot2MistraltonGym2F, -1
 	

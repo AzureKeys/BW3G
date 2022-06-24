@@ -35,6 +35,7 @@ BlitzleFrontpic:   INCBIN "gfx/pokemon/blitzle/front.animated.2bpp.lz"
 ZebstrikaFrontpic:   INCBIN "gfx/pokemon/zebstrika/front.animated.2bpp.lz"
 MareepFrontpic:   INCBIN "gfx/pokemon/mareep/front.animated.2bpp.lz"
 FlaaffyFrontpic:   INCBIN "gfx/pokemon/flaaffy/front.animated.2bpp.lz"
+PilotPic:           INCBIN "gfx/trainers/pilot.2bpp.lz"
 
 
 SECTION "Pics 2", ROMX

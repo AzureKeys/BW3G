@@ -23,6 +23,7 @@ TrainerPicPointers::
 	dba HexManiacPic
 	dba HikerPic
 	dba HikerDPic
+	dba PilotPic
 	dba PokefanmPic
 	dba PokefanfPic
 	dba OfficerPic

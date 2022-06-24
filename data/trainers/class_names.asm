@@ -21,6 +21,7 @@ TrainerClassNames::
 	db "HEX MANIAC@"
 	db "HIKER@"
 	db "HIKER@"
+	db "PILOT@"
 	db "#FAN@"
 	db "#FAN@"
 	db "POLICEMAN@"

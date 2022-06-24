@@ -22,6 +22,7 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; HEX_MANIAC
 	dn 10,  8,  8,  8 ; HIKER
 	dn 10,  8,  8,  8 ; HIKER_D
+	dn  9,  8,  8,  8 ; PILOT
 	dn  9,  8,  8,  8 ; POKEFAN_M
 	dn  6, 13,  8,  8 ; POKEFAN_F
 	dn  9,  8,  8,  8 ; POLICEMAN

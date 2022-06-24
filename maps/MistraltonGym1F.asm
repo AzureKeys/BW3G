@@ -3,9 +3,9 @@
 	const MISTRALTONGYM1F_FAN_2
 	const MISTRALTONGYM1F_FAN_3
 	const MISTRALTONGYM1F_FAN_4
-	const MISTRALTONGYM1F_BIRD_KEEPER_1
-	const MISTRALTONGYM1F_BIRD_KEEPER_2
-	const MISTRALTONGYM1F_BIRD_KEEPER_3
+	const MISTRALTONGYM1F_PILOT_1
+	const MISTRALTONGYM1F_PILOT_2
+	const MISTRALTONGYM1F_PILOT_3
 	const MISTRALTONGYM1F_SKYLA
 	const MISTRALTONGYM1F_GYM_GUY
 
@@ -115,11 +115,11 @@ MistraltonGymSkylaScript:
 	reloadmapafterbattle
 	specialphonecall SPECIALCALL_CHEREN_MISTRALTON
 	setevent EVENT_BEAT_SKYLA
-	setevent EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_1
-	setevent EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_2
-	setevent EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_3
-	setevent EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_4
-	setevent EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_5
+	setevent EVENT_BEAT_PILOT_MISTRALTON_GYM_1
+	setevent EVENT_BEAT_PILOT_MISTRALTON_GYM_2
+	setevent EVENT_BEAT_PILOT_MISTRALTON_GYM_3
+	setevent EVENT_BEAT_PILOT_MISTRALTON_GYM_4
+	setevent EVENT_BEAT_PILOT_MISTRALTON_GYM_5
 	opentext
 	writetext ReceivedJetBadgeText
 	playsound SFX_GET_BADGE
@@ -168,35 +168,35 @@ MistraltonGymStatue:
 MistraltonGym1FFan:
 	jumpstd strengthboulder
 
-TrainerBirdKeeper1MistraltonGym1F:
-	trainer BIRD_KEEPER, BIRD_KEEPER_MISTRALTON_GYM_1, EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_1, BirdKeeper1MistraltonGym1FSeenText, BirdKeeper1MistraltonGym1FBeatenText, 0, .Script
+TrainerPilot1MistraltonGym1F:
+	trainer PILOT, PILOT_MISTRALTON_GYM_1, EVENT_BEAT_PILOT_MISTRALTON_GYM_1, Pilot1MistraltonGym1FSeenText, Pilot1MistraltonGym1FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeper1MistraltonGym1FAfterText
+	writetext Pilot1MistraltonGym1FAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerBirdKeeper2MistraltonGym1F:
-	trainer BIRD_KEEPER, BIRD_KEEPER_MISTRALTON_GYM_2, EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_2, BirdKeeper2MistraltonGym1FSeenText, BirdKeeper2MistraltonGym1FBeatenText, 0, .Script
+TrainerPilot2MistraltonGym1F:
+	trainer PILOT, PILOT_MISTRALTON_GYM_2, EVENT_BEAT_PILOT_MISTRALTON_GYM_2, Pilot2MistraltonGym1FSeenText, Pilot2MistraltonGym1FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeper2MistraltonGym1FAfterText
+	writetext Pilot2MistraltonGym1FAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerBirdKeeper3MistraltonGym1F:
-	trainer BIRD_KEEPER, BIRD_KEEPER_MISTRALTON_GYM_3, EVENT_BEAT_BIRD_KEEPER_MISTRALTON_GYM_3, BirdKeeper3MistraltonGym1FSeenText, BirdKeeper3MistraltonGym1FBeatenText, 0, .Script
+TrainerPilot3MistraltonGym1F:
+	trainer PILOT, PILOT_MISTRALTON_GYM_3, EVENT_BEAT_PILOT_MISTRALTON_GYM_3, Pilot3MistraltonGym1FSeenText, Pilot3MistraltonGym1FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeper3MistraltonGym1FAfterText
+	writetext Pilot3MistraltonGym1FAfterText
 	waitbutton
 	closetext
 	end
@@ -319,22 +319,22 @@ MistraltonGymGuyWinText:
 	cont "#MON is bright!"
 	done
 	
-BirdKeeper1MistraltonGym1FSeenText:
+Pilot1MistraltonGym1FSeenText:
 	text "Only masters of"
 	line "the air can make"
 	cont "it through this"
 	cont "GYM!"
 	done
 
-BirdKeeper1MistraltonGym1FBeatenText:
+Pilot1MistraltonGym1FBeatenText:
 	text "Shot down!"
 	done
 
-BirdKeeper1MistraltonGym1FAfterText:
+Pilot1MistraltonGym1FAfterText:
 	text "Are you a master?"
 	done
 	
-BirdKeeper2MistraltonGym1FSeenText:
+Pilot2MistraltonGym1FSeenText:
 	text "I've trained my"
 	line "bird #MON under"
 	cont "SKYLA."
@@ -342,26 +342,26 @@ BirdKeeper2MistraltonGym1FSeenText:
 	para "You're no match!"
 	done
 
-BirdKeeper2MistraltonGym1FBeatenText:
+Pilot2MistraltonGym1FBeatenText:
 	text "Shocking!"
 	done
 
-BirdKeeper2MistraltonGym1FAfterText:
+Pilot2MistraltonGym1FAfterText:
 	text "No way you're even"
 	line "stronger than me!"
 	done
 	
-BirdKeeper3MistraltonGym1FSeenText:
+Pilot3MistraltonGym1FSeenText:
 	text "Can you withstand"
 	line "our onslaught from"
 	cont "the skies?"
 	done
 
-BirdKeeper3MistraltonGym1FBeatenText:
+Pilot3MistraltonGym1FBeatenText:
 	text "Taken down!"
 	done
 
-BirdKeeper3MistraltonGym1FAfterText:
+Pilot3MistraltonGym1FAfterText:
 	text "You have what it"
 	line "takes."
 	done
@@ -400,9 +400,9 @@ MistraltonGym1F_MapEvents:
 	object_event 12, 14, SPRITE_FAN, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MistraltonGym1FFan, EVENT_MISTRALTON_GYM_1F_FAN_2
 	object_event  9,  1, SPRITE_FAN, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MistraltonGym1FFan, EVENT_MISTRALTON_GYM_1F_FAN_3
 	object_event  2,  7, SPRITE_FAN, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MistraltonGym1FFan, EVENT_MISTRALTON_GYM_1F_FAN_4
-	object_event  3, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBirdKeeper1MistraltonGym1F, -1
-	object_event 12, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeper2MistraltonGym1F, -1
-	object_event  4,  0, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBirdKeeper3MistraltonGym1F, -1
+	object_event  3, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPilot1MistraltonGym1F, -1
+	object_event 12, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPilot2MistraltonGym1F, -1
+	object_event  4,  0, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPilot3MistraltonGym1F, -1
 	object_event  6,  5, SPRITE_SKYLA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MistraltonGymSkylaScript, -1
 	object_event  7, 17, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MistraltonGymGuyScript, -1
 	

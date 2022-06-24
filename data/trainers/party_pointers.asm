@@ -23,6 +23,7 @@ TrainerGroups:
 	dba HexManiacGroup
 	dba HikerGroup
 	dba HikerDGroup
+	dba PilotGroup
 	dba PokefanMGroup
 	dba PokefanFGroup
 	dba OfficerGroup
