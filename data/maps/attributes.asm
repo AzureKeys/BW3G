@@ -49,10 +49,10 @@ ENDM
 	map_attributes Rt23West, R_23_WEST, $5D, EAST
 	connection east, Rt23East, R_23_EAST, 0
 	
-	map_attributes LentimasOutskirts, LENTIMAS_OUTSKIRTS, $71, WEST
+	map_attributes LentimasOutskirts, LENTIMAS_OUTSKIRTS, $31, WEST
 	connection west, LentimasTown, LENTIMAS_TOWN, -1
 	
-	map_attributes LentimasTown, LENTIMAS_TOWN, $71, EAST
+	map_attributes LentimasTown, LENTIMAS_TOWN, $31, EAST
 	connection east, LentimasOutskirts, LENTIMAS_OUTSKIRTS, 1
 	
 	map_attributes FloccesyTown, FLOCCESY_TOWN, $6D, WEST | EAST

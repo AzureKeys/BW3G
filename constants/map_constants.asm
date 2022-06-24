@@ -126,8 +126,8 @@ ENDM
 	
 	newgroup
 	
-	map_const LENTIMAS_OUTSKIRTS, 21, 14
-	map_const LENTIMAS_TOWN, 17, 14
+	map_const LENTIMAS_OUTSKIRTS, 19, 14
+	map_const LENTIMAS_TOWN, 16, 14
 	map_const LENTIMAS_CLAW_HOUSE, 4, 4
 	map_const LENTIMAS_POKECENTER_1F, 5, 5
 	map_const LENTIMAS_HOUSE, 4, 4 
