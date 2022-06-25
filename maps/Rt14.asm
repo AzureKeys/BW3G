@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const R14_YOUNGSTER
-	const R14_SCHOOLGIRL
-	const R14_SCHOOLBOY
+	const R14_SCHOOL_KIDF
+	const R14_SCHOOL_KIDM
 	const R14_PICNICKER
 	const R14_PRIZE_GIVER
 	const R14_ANTIDOTE
@@ -16,19 +16,19 @@ Rt14_MapScripts:
 
 	db 0 ; callbacks
 	
-TrainerSchoolgirlR14:
-	trainer SCHOOLGIRL_D, SCHOOLGIRL_R14, EVENT_BEAT_SCHOOLGIRL_R14, SchoolgirlR14SeenText, SchoolgirlR14BeatenText, 0, .Script
+TrainerSchoolKidFR14:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_R14, EVENT_BEAT_SCHOOL_KIDF_R14, SchoolKidFR14SeenText, SchoolKidFR14BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_SCHOOLGIRL_JEWEL
+	writecode VAR_CALLERID, PHONE_SCHOOL_KIDF_JEWEL
 	opentext
 	checkflag ENGINE_JEWEL_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_SCHOOLGIRL_JEWEL
+	checkcellnum PHONE_SCHOOL_KIDF_JEWEL
 	iftrue .NumberAccepted
 	checkevent EVENT_JEWEL_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext SchoolgirlR14AfterText
+	writetext SchoolKidFR14AfterText
 	buttonsound
 	setevent EVENT_JEWEL_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -37,17 +37,17 @@ TrainerSchoolgirlR14:
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_SCHOOLGIRL_JEWEL
+	askforphonenumber PHONE_SCHOOL_KIDF_JEWEL
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_JEWEL
-	trainertotext SCHOOLGIRL_D, SCHOOLGIRL_R14, MEM_BUFFER_0
+	trainertotext SCHOOL_KIDF, SCHOOL_KIDF_R14, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext SchoolgirlR14BeatenText, 0
+	winlosstext SchoolKidFR14BeatenText, 0
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight4
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
@@ -57,31 +57,31 @@ TrainerSchoolgirlR14:
 	checkevent EVENT_BEAT_MARLON
 	iftrue .LoadFight1
 ; Fight0
-	loadtrainer SCHOOLGIRL_D, SCHOOLGIRL_R14
+	loadtrainer SCHOOL_KIDF, SCHOOL_KIDF_R14
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
 	end
 .LoadFight1
-	loadtrainer SCHOOLGIRL_D, JEWEL_REMATCH_1
+	loadtrainer SCHOOL_KIDF, JEWEL_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
 	end
 .LoadFight2
-	loadtrainer SCHOOLGIRL_D, JEWEL_REMATCH_2
+	loadtrainer SCHOOL_KIDF, JEWEL_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
 	end
 .LoadFight3
-	loadtrainer SCHOOLGIRL_D, JEWEL_REMATCH_3
+	loadtrainer SCHOOL_KIDF, JEWEL_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
 	end
 .LoadFight4
-	loadtrainer SCHOOLGIRL_D, JEWEL_REMATCH_4
+	loadtrainer SCHOOL_KIDF, JEWEL_REMATCH_4
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
@@ -126,13 +126,13 @@ TrainerYoungsterR14:
 	closetext
 	end
 
-TrainerSchoolboyR14:
-	trainer SCHOOLBOY, SCHOOLBOY_R14, EVENT_BEAT_SCHOOLBOY_R14, SchoolboyR14SeenText, SchoolboyR14BeatenText, 0, .Script
+TrainerSchoolKidMR14:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_R14, EVENT_BEAT_SCHOOL_KIDM_R14, SchoolKidMR14SeenText, SchoolKidMR14BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolboyR14AfterText
+	writetext SchoolKidMR14AfterText
 	waitbutton
 	closetext
 	end
@@ -235,30 +235,30 @@ YoungsterR14AfterText:
 	line "I have no regrets."
 	done
 	
-SchoolgirlR14SeenText:
+SchoolKidFR14SeenText:
 	text "I'm second."
 	line "Now it's serious!"
 	done
 
-SchoolgirlR14BeatenText:
+SchoolKidFR14BeatenText:
 	text "How could I lose?"
 	done
 
-SchoolgirlR14AfterText:
+SchoolKidFR14AfterText:
 	text "I did my best."
 	line "I have no regrets."
 	done
 	
-SchoolboyR14SeenText:
+SchoolKidMR14SeenText:
 	text "Here's No. 3!"
 	line "I won't be easy."
 	done
 
-SchoolboyR14BeatenText:
+SchoolKidMR14BeatenText:
 	text "Ow! Stomped flat!"
 	done
 
-SchoolboyR14AfterText:
+SchoolKidMR14AfterText:
 	text "I did my best."
 	line "I have no regrets."
 	done
@@ -338,8 +338,8 @@ Rt14_MapEvents:
 
 	db 11 ; object events
 	object_event 31,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR14, -1
-	object_event 20,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolgirlR14, -1
-	object_event 18, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerSchoolboyR14, -1
+	object_event 20,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFR14, -1
+	object_event 18, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMR14, -1
 	object_event 10, 22, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPicnickerR14, -1
 	object_event  4, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, TrainerR14PrizeGiver, -1
 	object_event 31,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R14Antidote, EVENT_R_14_ANTIDOTE

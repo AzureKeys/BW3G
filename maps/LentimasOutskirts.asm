@@ -4,7 +4,7 @@
 	const LENTIMASOUTSKIRTS_AWAKENING
 	const LENTIMASOUTSKIRTS_QUICK_BALL
 	const LENTIMASOUTSKIRTS_PICNICKER
-	const LENTIMASOUTSKIRTS_SCHOOLBOY
+	const LENTIMASOUTSKIRTS_SCHOOL_KIDM
 	const LENTIMASOUTSKIRTS_HIKER
 	const LENTIMASOUTSKIRTS_BIRD_KEEPER
 	const LENTIMASOUTSKIRTS_BLACKBELT
@@ -188,13 +188,13 @@ TrainerFirebreatherOutskirts:
 	closetext
 	end
 
-TrainerSchoolboyOutskirts:
-	trainer SCHOOLBOY_D, SCHOOLBOY_OUTSKIRTS, EVENT_BEAT_SCHOOLBOY_OUTSKIRTS, SchoolboyOutskirtsSeenText, SchoolboyOutskirtsBeatenText, 0, .Script
+TrainerSchoolKidMOutskirts:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_OUTSKIRTS, EVENT_BEAT_SCHOOL_KIDM_OUTSKIRTS, SchoolKidMOutskirtsSeenText, SchoolKidMOutskirtsBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolboyOutskirtsAfterText
+	writetext SchoolKidMOutskirtsAfterText
 	waitbutton
 	closetext
 	end
@@ -340,17 +340,17 @@ FirebreatherOutskirtsAfterText:
 	line "I can't move."
 	done
 	
-SchoolboyOutskirtsSeenText:
+SchoolKidMOutskirtsSeenText:
 	text "I'm the best in my"
 	line "class at #MON."
 	done
 
-SchoolboyOutskirtsBeatenText:
+SchoolKidMOutskirtsBeatenText:
 	text "No! There are bet-"
 	line "ter trainers…"
 	done
 
-SchoolboyOutskirtsAfterText:
+SchoolKidMOutskirtsAfterText:
 	text "I'm trying hard so"
 	line "I can be the star"
 	cont "in my class."
@@ -394,6 +394,6 @@ LentimasOutskirts_MapEvents:
 	object_event 34, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperOutskirts, -1
 	object_event 22, 13, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltOutskirts, -1
 	object_event 18, 12, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherOutskirts, -1
-	object_event 11, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolboyOutskirts, -1
+	object_event 11, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMOutskirts, -1
 	object_event 29,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OutskirtsDoctorScript, -1
 	

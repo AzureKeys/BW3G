@@ -3,7 +3,7 @@
 	const REVERSALMOUNTAIN_X_GREAT_BALL
 	const REVERSALMOUNTAIN_X_AWAKENING
 	const REVERSALMOUNTAIN_X_DUSK_BALL
-	const REVERSALMOUNTAIN_SCHOOLGIRL
+	const REVERSALMOUNTAIN_SCHOOL_KIDF
 	const REVERSALMOUNTAIN_HIKER_2
 	const REVERSALMOUNTAIN_PICNICKER
 	const REVERSALMOUNTAIN_CAMPER
@@ -51,13 +51,13 @@ ReversalGruntScript:
 	playmapmusic
 	end
 
-TrainerSchoolgirlReversal:
-	trainer SCHOOLGIRL, SCHOOLGIRL_REVERSAL, EVENT_BEAT_SCHOOLGIRL_REVERSAL, SchoolgirlReversalSeenText, SchoolgirlReversalBeatenText, 0, .Script
+TrainerSchoolKidFReversal:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_REVERSAL, EVENT_BEAT_SCHOOL_KIDF_REVERSAL, SchoolKidFReversalSeenText, SchoolKidFReversalBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolgirlReversalAfterText
+	writetext SchoolKidFReversalAfterText
 	waitbutton
 	closetext
 	end
@@ -222,17 +222,17 @@ Hiker2ReversalAfterText:
 	line "in the cave!"
 	done
 	
-SchoolgirlReversalSeenText:
+SchoolKidFReversalSeenText:
 	text "Hi there! Look at"
 	line "my awesome #-"
 	cont "MON!"
 	done
 
-SchoolgirlReversalBeatenText:
+SchoolKidFReversalBeatenText:
 	text "I… I'm not mad!"
 	done
 
-SchoolgirlReversalAfterText:
+SchoolKidFReversalAfterText:
 	text "My #MON will"
 	line "always be with me,"
 	cont "even if we lose!"
@@ -320,7 +320,7 @@ ReversalMountain1F_MapEvents:
 	object_event 13, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ReversalMountainGreatBall, EVENT_REVERSAL_MOUNTAIN_GREAT_BALL
 	object_event 11, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ReversalMountainAwakening, EVENT_REVERSAL_MOUNTAIN_AWAKENING
 	object_event 41, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ReversalMountainDuskBall, EVENT_REVERSAL_MOUNTAIN_DUSK_BALL
-	object_event 31, 41, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolgirlReversal, -1
+	object_event 31, 41, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFReversal, -1
 	object_event 16, 25, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerHiker2Reversal, -1
 	object_event  6, 16, SPRITE_LASS, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerReversal, -1
 	object_event  6, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCamperReversal, -1

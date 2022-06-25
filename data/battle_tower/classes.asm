@@ -35,7 +35,7 @@ BattleTowerTrainers:
 	db "ANDREWS@@@", PICNICKER
 	db "BAHN@@@@@@", POKEMANIAC
 	db "MORI@@@@@@", SCIENTIST_M
-	db "COBB@@@@@@", SCHOOLBOY
+	db "COBB@@@@@@", SCHOOL_KIDM
 	db "HUGHES@@@@", FISHER
 	db "EASTON@@@@", PSYCHIC_T
 	db "FREEMAN@@@", CAMPER
@@ -53,7 +53,7 @@ BattleTowerTrainers:
 	db "SELLS@@@@@", BIRD_KEEPER
 	db "THORNTON@@", LASS
 	db "TURNER@@@@", OFFICER
-	db "WALKER@@@@", SCHOOLBOY
+	db "WALKER@@@@", SCHOOL_KIDM
 	db "MEYER@@@@@", SWIMMERF
 	db "JOHNSON@@@", YOUNGSTER
 	db "ADAMS@@@@@", GUITARIST

@@ -31,10 +31,8 @@ TrainerPicPointers::
 	dba OfficerPic
 	dba PsychicTPic
 	dba PsychicTFPic
-	dba SchoolboyPic
-	dba SchoolboyDPic
-	dba SchoolgirlPic
-	dba SchoolgirlDPic
+	dba SchoolKidMPic
+	dba SchoolKidFPic
 	dba ScientistPic
 	dba ScientistFPic
 	dba SwimmermPic

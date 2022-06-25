@@ -4,8 +4,8 @@
 	const NACRENEOUTSKIRT_IRON
 	const NACRENEOUTSKIRT_NUGGET
 	const NACRENEOUTSKIRT_PP_MAX
-	const NACRENEOUTSKIRT_SCHOOLBOY
-	const NACRENEOUTSKIRT_SCHOOLGIRL
+	const NACRENEOUTSKIRT_SCHOOL_KIDM
+	const NACRENEOUTSKIRT_SCHOOL_KIDF
 	const NACRENEOUTSKIRT_COOLTRAINER_M
 	const NACRENEOUTSKIRT_COOLTRAINER_F
 
@@ -14,24 +14,24 @@ NacreneOutskirt_MapScripts:
 
 	db 0 ; callbacks
 
-TrainerSchoolboyNacrene:
-	trainer SCHOOLBOY, SCHOOLBOY_NACRENE_OUTSKIRT, EVENT_BEAT_SCHOOLBOY_NACRENE_OUTSKIRT, SchoolboyNacreneSeenText, SchoolboyNacreneBeatenText, 0, .Script
+TrainerSchoolKidMNacrene:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_NACRENE_OUTSKIRT, EVENT_BEAT_SCHOOL_KIDM_NACRENE_OUTSKIRT, SchoolKidMNacreneSeenText, SchoolKidMNacreneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolboyNacreneAfterText
+	writetext SchoolKidMNacreneAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolgirlNacrene:
-	trainer SCHOOLGIRL_D, SCHOOLGIRL_NACRENE_OUTSKIRT, EVENT_BEAT_SCHOOLGIRL_NACRENE_OUTSKIRT, SchoolgirlNacreneSeenText, SchoolgirlNacreneBeatenText, 0, .Script
+TrainerSchoolKidFNacrene:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_NACRENE_OUTSKIRT, EVENT_BEAT_SCHOOL_KIDF_NACRENE_OUTSKIRT, SchoolKidFNacreneSeenText, SchoolKidFNacreneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolgirlNacreneAfterText
+	writetext SchoolKidFNacreneAfterText
 	waitbutton
 	closetext
 	end
@@ -84,27 +84,27 @@ NacreneOutskirtYoungsterText:
 	line "through!"
 	done
 	
-SchoolboyNacreneSeenText:
+SchoolKidMNacreneSeenText:
 	text "..."
 	done
 
-SchoolboyNacreneBeatenText:
+SchoolKidMNacreneBeatenText:
 	text "..."
 	done
 
-SchoolboyNacreneAfterText:
+SchoolKidMNacreneAfterText:
 	text "..."
 	done
 	
-SchoolgirlNacreneSeenText:
+SchoolKidFNacreneSeenText:
 	text "..."
 	done
 
-SchoolgirlNacreneBeatenText:
+SchoolKidFNacreneBeatenText:
 	text "..."
 	done
 
-SchoolgirlNacreneAfterText:
+SchoolKidFNacreneAfterText:
 	text "..."
 	done
 	
@@ -157,8 +157,8 @@ NacreneOutskirt_MapEvents:
 	object_event 13, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NacreneOutskirtIron, EVENT_NACRENE_OUTSKIRT_IRON
 	object_event  8, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NacreneOutskirtNugget, EVENT_NACRENE_OUTSKIRT_NUGGET
 	object_event 19, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NacreneOutskirtPPMax, EVENT_NACRENE_OUTSKIRT_PP_MAX
-	object_event  6, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyNacrene, -1
-	object_event 15, 29, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolgirlNacrene, -1
+	object_event  6, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidMNacrene, -1
+	object_event 15, 29, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFNacrene, -1
 	object_event  5, 34, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerMNacrene, -1
 	object_event 19, 41, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerFNacrene, -1
 	

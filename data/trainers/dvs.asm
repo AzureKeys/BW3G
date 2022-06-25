@@ -31,9 +31,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; PSYCHIC_T_M
 	dn  9,  8,  8,  8 ; PSYCHIC_T_F
 	dn  9,  8,  8,  8 ; SCHOOL_KID_M
-	dn  9,  8,  8,  8 ; SCHOOL_KID_M_D
 	dn  9,  8,  8,  8 ; SCHOOL_KID_F
-	dn  9,  8,  8,  8 ; SCHOOL_KID_F_D
 	dn  9,  8,  8,  8 ; SCIENTIST_M
 	dn  9,  8,  8,  8 ; SCIENTIST_F
 	dn  9,  8,  8,  8 ; SWIMMER_M

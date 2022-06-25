@@ -31,10 +31,8 @@ TrainerGroups:
 	dba OfficerGroup
 	dba PsychicGroup
 	dba PsychicFGroup
-	dba SchoolboyGroup
-	dba SchoolboyDGroup
-	dba SchoolgirlGroup
-	dba SchoolgirlDGroup
+	dba SchoolKidMGroup
+	dba SchoolKidFGroup
 	dba ScientistMGroup
 	dba ScientistFGroup
 	dba SwimmerMGroup

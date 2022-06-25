@@ -36,10 +36,8 @@ INCBIN "gfx/trainers/pokefan_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/officer.gbcpal", middle_colors
 INCBIN "gfx/trainers/psychic_t.gbcpal", middle_colors
 INCBIN "gfx/trainers/psychic_t_f.gbcpal", middle_colors
-INCBIN "gfx/trainers/schoolboy.gbcpal", middle_colors
-INCBIN "gfx/trainers/schoolboy_d.gbcpal", middle_colors
-INCBIN "gfx/trainers/schoolgirl.gbcpal", middle_colors
-INCBIN "gfx/trainers/schoolgirl_d.gbcpal", middle_colors
+INCBIN "gfx/trainers/school_kid_m.gbcpal", middle_colors
+INCBIN "gfx/trainers/school_kid_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/scientist.gbcpal", middle_colors
 INCBIN "gfx/trainers/scientist_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/swimmer_m.gbcpal", middle_colors

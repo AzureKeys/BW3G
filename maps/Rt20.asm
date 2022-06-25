@@ -3,13 +3,13 @@
 	const R20_MAX_POTION
 	const R20_PP_MAX
 	const R20_HEART_SCALE
-	const R20_SCHOOLBOY_1
-	const R20_SCHOOLBOY_2
-	const R20_SCHOOLBOY_3
-	const R20_SCHOOLBOY_4
-	const R20_SCHOOLGIRL_1
-	const R20_SCHOOLGIRL_2
-	const R20_SCHOOLGIRL_3
+	const R20_SCHOOL_KIDM_1
+	const R20_SCHOOL_KIDM_2
+	const R20_SCHOOL_KIDM_3
+	const R20_SCHOOL_KIDM_4
+	const R20_SCHOOL_KIDF_1
+	const R20_SCHOOL_KIDF_2
+	const R20_SCHOOL_KIDF_3
 	const R20_TEACHER
 
 Rt20_MapScripts:
@@ -17,79 +17,79 @@ Rt20_MapScripts:
 
 	db 0 ; callbacks
 
-TrainerSchoolboy1R20:
-	trainer SCHOOLBOY, SCHOOLBOY_R20_1, EVENT_BEAT_SCHOOLBOY_R20_1, Schoolboy1R20SeenText, Schoolboy1R20BeatenText, 0, .Script
+TrainerSchoolKidM1R20:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_R20_1, EVENT_BEAT_SCHOOL_KIDM_R20_1, SchoolKidM1R20SeenText, SchoolKidM1R20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Schoolboy1R20AfterText
+	writetext SchoolKidM1R20AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolboy2R20:
-	trainer SCHOOLBOY, SCHOOLBOY_R20_2, EVENT_BEAT_SCHOOLBOY_R20_2, Schoolboy2R20SeenText, Schoolboy2R20BeatenText, 0, .Script
+TrainerSchoolKidM2R20:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_R20_2, EVENT_BEAT_SCHOOL_KIDM_R20_2, SchoolKidM2R20SeenText, SchoolKidM2R20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Schoolboy2R20AfterText
+	writetext SchoolKidM2R20AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolboy3R20:
-	trainer SCHOOLBOY_D, SCHOOLBOY_R20_3, EVENT_BEAT_SCHOOLBOY_R20_3, Schoolboy3R20SeenText, Schoolboy3R20BeatenText, 0, .Script
+TrainerSchoolKidM3R20:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_R20_3, EVENT_BEAT_SCHOOL_KIDM_R20_3, SchoolKidM3R20SeenText, SchoolKidM3R20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Schoolboy3R20AfterText
+	writetext SchoolKidM3R20AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolboy4R20:
-	trainer SCHOOLBOY_D, SCHOOLBOY_R20_4, EVENT_BEAT_SCHOOLBOY_R20_4, Schoolboy4R20SeenText, Schoolboy4R20BeatenText, 0, .Script
+TrainerSchoolKidM4R20:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_R20_4, EVENT_BEAT_SCHOOL_KIDM_R20_4, SchoolKidM4R20SeenText, SchoolKidM4R20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Schoolboy4R20AfterText
+	writetext SchoolKidM4R20AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolgirl1R20:
-	trainer SCHOOLGIRL, SCHOOLGIRL_R20_1, EVENT_BEAT_SCHOOLGIRL_R20_1, Schoolgirl1R20SeenText, Schoolgirl1R20BeatenText, 0, .Script
+TrainerSchoolKidF1R20:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_R20_1, EVENT_BEAT_SCHOOL_KIDF_R20_1, SchoolKidF1R20SeenText, SchoolKidF1R20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Schoolgirl1R20AfterText
+	writetext SchoolKidF1R20AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolgirl2R20:
-	trainer SCHOOLGIRL_D, SCHOOLGIRL_R20_2, EVENT_BEAT_SCHOOLGIRL_R20_2, Schoolgirl2R20SeenText, Schoolgirl2R20BeatenText, 0, .Script
+TrainerSchoolKidF2R20:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_R20_2, EVENT_BEAT_SCHOOL_KIDF_R20_2, SchoolKidF2R20SeenText, SchoolKidF2R20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Schoolgirl2R20AfterText
+	writetext SchoolKidF2R20AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolgirl3R20:
-	trainer SCHOOLGIRL_D, SCHOOLGIRL_R20_3, EVENT_BEAT_SCHOOLGIRL_R20_3, Schoolgirl3R20SeenText, Schoolgirl3R20BeatenText, 0, .Script
+TrainerSchoolKidF3R20:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_R20_3, EVENT_BEAT_SCHOOL_KIDF_R20_3, SchoolKidF3R20SeenText, SchoolKidF3R20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Schoolgirl3R20AfterText
+	writetext SchoolKidF3R20AfterText
 	waitbutton
 	closetext
 	end
@@ -120,23 +120,23 @@ R20HeartScale:
 R20HPUp:
 	hiddenitem HP_UP, EVENT_R_20_HP_UP
 	
-Schoolboy1R20SeenText:
+SchoolKidM1R20SeenText:
 	text "My favorite class"
 	line "is gym!"
 	done
 
-Schoolboy1R20BeatenText:
+SchoolKidM1R20BeatenText:
 	text "Oh, no!"
 	line "How could I lose?"
 	done
 
-Schoolboy1R20AfterText:
+SchoolKidM1R20AfterText:
 	text "If #MON were a"
 	line "subject at school,"
 	cont "I'd be the best!"
 	done
 	
-Schoolboy2R20SeenText:
+SchoolKidM2R20SeenText:
 	text "All right! Time"
 	line "for a #MON"
 	
@@ -144,51 +144,51 @@ Schoolboy2R20SeenText:
 	line "begin!"
 	done
 
-Schoolboy2R20BeatenText:
+SchoolKidM2R20BeatenText:
 	text "Whew! You're way"
 	line "too strong!"
 	done
 
-Schoolboy2R20AfterText:
+SchoolKidM2R20AfterText:
 	text "Time for some"
 	line "special #MON"
 	cont "training!"
 	done
 	
-Schoolboy3R20SeenText:
+SchoolKidM3R20SeenText:
 	text "Let's battle."
 	line "I won't lose!"
 	done
 
-Schoolboy3R20BeatenText:
+SchoolKidM3R20BeatenText:
 	text "I forgot to do my"
 	line "homework!"
 	done
 
-Schoolboy3R20AfterText:
+SchoolKidM3R20AfterText:
 	text "Sayonara! I just"
 	line "learned that in my"
 	cont "Japanese class."
 	done
 	
-Schoolboy4R20SeenText:
+SchoolKidM4R20SeenText:
 	text "I'm gonna get a"
 	line "lot stronger so I"
 	cont "can battle ROXIE!"
 	done
 
-Schoolboy4R20BeatenText:
+SchoolKidM4R20BeatenText:
 	text "Ahaha…"
 	line "It can't be true…"
 	done
 
-Schoolboy4R20AfterText:
+SchoolKidM4R20AfterText:
 	text "I want to get a"
 	line "lot stronger so I"
 	cont "can impress ROXIE!"
 	done
 	
-Schoolgirl1R20SeenText:
+SchoolKidF1R20SeenText:
 	text "I have a feeling"
 	line "that I can win."
 
@@ -196,12 +196,12 @@ Schoolgirl1R20SeenText:
 	line "right!"
 	done
 
-Schoolgirl1R20BeatenText:
+SchoolKidF1R20BeatenText:
 	text "Aww, you are too"
 	line "strong."
 	done
 
-Schoolgirl1R20AfterText:
+SchoolKidF1R20AfterText:
 	text "EEVEE appear at"
 	line "the ranch!"
 
@@ -209,31 +209,31 @@ Schoolgirl1R20AfterText:
 	line "#MON!"
 	done
 	
-Schoolgirl2R20SeenText:
+SchoolKidF2R20SeenText:
 	text "Um…"
 	line "I…"
 	done
 
-Schoolgirl2R20BeatenText:
+SchoolKidF2R20BeatenText:
 	text "…"
 	done
 
-Schoolgirl2R20AfterText:
+SchoolKidF2R20AfterText:
 	text "……I'll go train"
 	line "some more…"
 	done
 	
-Schoolgirl3R20SeenText:
+SchoolKidF3R20SeenText:
 	text "Hang on. I have to"
 	line "phone my mom."
 	done
 
-Schoolgirl3R20BeatenText:
+SchoolKidF3R20BeatenText:
 	text "Sorry, Mom!"
 	line "I was beaten!"
 	done
 
-Schoolgirl3R20AfterText:
+SchoolKidF3R20AfterText:
 	text "My mom worries so"
 	line "much about me, I"
 
@@ -283,12 +283,12 @@ Rt20_MapEvents:
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R20MaxPotion, EVENT_R_20_MAX_POTION
 	object_event 18, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R20PPMax, EVENT_R_20_PP_MAX
 	object_event  6, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R20HeartScale, EVENT_R_20_HEART_SCALE
-	object_event  9, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolboy1R20, -1
-	object_event  9,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolboy2R20, -1
-	object_event 23,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolboy3R20, -1
-	object_event 36, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolboy4R20, -1
-	object_event 30, 21, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSchoolgirl1R20, -1
-	object_event 21, 11, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolgirl2R20, -1
-	object_event 33,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolgirl3R20, -1
+	object_event  9, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidM1R20, -1
+	object_event  9,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidM2R20, -1
+	object_event 23,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidM3R20, -1
+	object_event 36, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidM4R20, -1
+	object_event 30, 21, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidF1R20, -1
+	object_event 21, 11, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidF2R20, -1
+	object_event 33,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidF3R20, -1
 	object_event 38,  9, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerTeacherR20, -1
 	

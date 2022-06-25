@@ -8,7 +8,7 @@
 	const CELESTIALTOWER_HEX_MANIAC_3
 	const CELESTIALTOWER_PSYCHIC_1
 	const CELESTIALTOWER_PSYCHIC_2
-	const CELESTIALTOWER_SCHOOLGIRL
+	const CELESTIALTOWER_SCHOOL_KIDF
 	const CELESTIALTOWER_POKEFAN_M
 	const CELESTIALTOWER_POKEFAN_F
 	const CELESTIALTOWER_BEAUTY
@@ -74,13 +74,13 @@ TrainerPsychic2CelestialTower:
 	closetext
 	end
 
-TrainerSchoolgirlCelestialTower:
-	trainer SCHOOLGIRL_D, SCHOOLGIRL_CELESTIAL_TOWER, EVENT_BEAT_SCHOOLGIRL_CELESTIAL_TOWER, SchoolgirlCelestialTowerSeenText, SchoolgirlCelestialTowerBeatenText, 0, .Script
+TrainerSchoolKidFCelestialTower:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_CELESTIAL_TOWER, EVENT_BEAT_SCHOOL_KIDF_CELESTIAL_TOWER, SchoolKidFCelestialTowerSeenText, SchoolKidFCelestialTowerBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolgirlCelestialTowerAfterText
+	writetext SchoolKidFCelestialTowerAfterText
 	waitbutton
 	closetext
 	end
@@ -220,16 +220,16 @@ Psychic2CelestialTowerAfterText:
 	line "loss too…"
 	done
 	
-SchoolgirlCelestialTowerSeenText:
+SchoolKidFCelestialTowerSeenText:
 	text "Did you come to"
 	line "pay respects?"
 	done
 
-SchoolgirlCelestialTowerBeatenText:
+SchoolKidFCelestialTowerBeatenText:
 	text "Waaah!"
 	done
 
-SchoolgirlCelestialTowerAfterText:
+SchoolKidFCelestialTowerAfterText:
 	text "You better be more"
 	line "respectful!"
 	done
@@ -322,7 +322,7 @@ CelestialTower_MapEvents:
 	object_event  3,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiac3CelestialTower, -1
 	object_event  8, 21, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychic1CelestialTower, -1
 	object_event  9,  5, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychic2CelestialTower, -1
-	object_event  8, 37, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolgirlCelestialTower, -1
+	object_event  8, 37, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFCelestialTower, -1
 	object_event  9, 23, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMCelestialTower, -1
 	object_event  4, 23, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanFCelestialTower, -1
 	object_event  9, 41, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerBeautyCelestialTower, -1

@@ -850,7 +850,7 @@ RematchGiftMScript:
 
 AskNumber1FScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_BEAUTY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
@@ -882,7 +882,7 @@ AskNumber1FScript:
 
 AskNumber2FScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_BEAUTY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
@@ -921,7 +921,7 @@ RegisteredNumberFScript:
 
 NumberAcceptedFScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_BEAUTY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
@@ -967,7 +967,7 @@ NumberAcceptedFScript:
 
 NumberDeclinedFScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_BEAUTY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
@@ -1013,7 +1013,7 @@ NumberDeclinedFScript:
 
 PhoneFullFScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_BEAUTY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
@@ -1059,7 +1059,7 @@ PhoneFullFScript:
 
 RematchFScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOLGIRL_JEWEL, .Jewel
+	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_BEAUTY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla

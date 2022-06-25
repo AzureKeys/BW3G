@@ -6,8 +6,8 @@
 	const DREAMYARD_WIDE_LENS
 	const DREAMYARD_TM_DAZZLINGLEAM
 	const DREAMYARD_YOUNGSTER
-	const DREAMYARD_SCHOOLBOY
-	const DREAMYARD_SCHOOLGIRL
+	const DREAMYARD_SCHOOL_KIDM
+	const DREAMYARD_SCHOOL_KIDF
 
 Dreamyard_MapScripts:
 	db 0 ; scene scripts
@@ -94,24 +94,24 @@ TrainerYoungsterDreamyard:
 	closetext
 	end
 
-TrainerSchoolboyDreamyard:
-	trainer SCHOOLBOY_D, SCHOOLBOY_DREAMYARD, EVENT_BEAT_SCHOOLBOY_DREAMYARD, SchoolboyDreamyardSeenText, SchoolboyDreamyardBeatenText, 0, .Script
+TrainerSchoolKidMDreamyard:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_DREAMYARD, EVENT_BEAT_SCHOOL_KIDM_DREAMYARD, SchoolKidMDreamyardSeenText, SchoolKidMDreamyardBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolboyDreamyardAfterText
+	writetext SchoolKidMDreamyardAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolgirlDreamyard:
-	trainer SCHOOLGIRL, SCHOOLGIRL_DREAMYARD, EVENT_BEAT_SCHOOLGIRL_DREAMYARD, SchoolgirlDreamyardSeenText, SchoolgirlDreamyardBeatenText, 0, .Script
+TrainerSchoolKidFDreamyard:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_DREAMYARD, EVENT_BEAT_SCHOOL_KIDF_DREAMYARD, SchoolKidFDreamyardSeenText, SchoolKidFDreamyardBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolgirlDreamyardAfterText
+	writetext SchoolKidFDreamyardAfterText
 	waitbutton
 	closetext
 	end
@@ -152,27 +152,27 @@ YoungsterDreamyardAfterText:
 	text "..."
 	done
 	
-SchoolboyDreamyardSeenText:
+SchoolKidMDreamyardSeenText:
 	text "..."
 	done
 
-SchoolboyDreamyardBeatenText:
+SchoolKidMDreamyardBeatenText:
 	text "..."
 	done
 
-SchoolboyDreamyardAfterText:
+SchoolKidMDreamyardAfterText:
 	text "..."
 	done
 	
-SchoolgirlDreamyardSeenText:
+SchoolKidFDreamyardSeenText:
 	text "..."
 	done
 
-SchoolgirlDreamyardBeatenText:
+SchoolKidFDreamyardBeatenText:
 	text "..."
 	done
 
-SchoolgirlDreamyardAfterText:
+SchoolKidFDreamyardAfterText:
 	text "..."
 	done
 	
@@ -213,6 +213,6 @@ Dreamyard_MapEvents:
 	object_event  9,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DreamyardWideLens, EVENT_DREAMYARD_WIDE_LENS
 	object_event 12,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, DreamyardTMDazzlingleam, EVENT_DREAMYARD_TM_DAZZLINGLEAM
 	object_event 29, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerYoungsterDreamyard, -1
-	object_event 25, 33, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyDreamyard, -1
-	object_event 16,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerSchoolgirlDreamyard, -1
+	object_event 25, 33, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidMDreamyard, -1
+	object_event 16,  3, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFDreamyard, -1
 	

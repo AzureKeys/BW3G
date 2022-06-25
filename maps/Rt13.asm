@@ -6,7 +6,7 @@
 	const R13_YOUNGSTER
 	const R13_LASS
 	const R13_BUG_CATCHER
-	const R13_SCHOOLBOY
+	const R13_SCHOOL_KIDM
 	const R13_POTION
 	const R13_POKEBALL
 	const R13_FRUIT_TREE
@@ -149,13 +149,13 @@ TrainerBugCatcherR13:
 	closetext
 	end
 
-TrainerSchoolboyR13:
-	trainer SCHOOLBOY_D, SCHOOLBOY_R13, EVENT_BEAT_SCHOOLBOY_R13, SchoolboyR13SeenText, SchoolboyR13BeatenText, 0, .Script
+TrainerSchoolKidMR13:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_R13, EVENT_BEAT_SCHOOL_KIDM_R13, SchoolKidMR13SeenText, SchoolKidMR13BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolboyR13AfterText
+	writetext SchoolKidMR13AfterText
 	waitbutton
 	closetext
 	end
@@ -273,19 +273,19 @@ BugCatcherR13AfterText:
 	line "some more…"
 	done
 	
-SchoolboyR13SeenText:
+SchoolKidMR13SeenText:
 	text "I'm the strongest"
 	line "trainer in my"
 	cont "class!"
 	done
 
-SchoolboyR13BeatenText:
+SchoolKidMR13BeatenText:
 	text "I guess I'm not"
 	line "the strongest in"
 	cont "the world."
 	done
 
-SchoolboyR13AfterText:
+SchoolKidMR13AfterText:
 	text "I know! I'll go"
 	line "home and take a"
 	cont "nap!"
@@ -355,7 +355,7 @@ Rt13_MapEvents:
 	object_event  4, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR13, EVENT_R13_TRAINER
 	object_event  4, 16, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerLassR13, EVENT_R13_TRAINER
 	object_event  8, 24, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherR13, -1
-	object_event 15, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolboyR13, -1
+	object_event 15, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMR13, -1
 	object_event 10, 43, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R13Potion, EVENT_R_13_POTION
 	object_event  4, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R13Pokeball, EVENT_R_13_POKEBALL
 	object_event  6, 20, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R13FruitTree, -1

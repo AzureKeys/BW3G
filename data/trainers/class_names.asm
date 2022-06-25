@@ -31,8 +31,6 @@ TrainerClassNames::
 	db "PSYCHIC@"
 	db "SCHOOL KID@"
 	db "SCHOOL KID@"
-	db "SCHOOL KID@"
-	db "SCHOOL KID@"
 	db "SCIENTIST@"
 	db "SCIENTIST@"
 	db "SWIMMER@"

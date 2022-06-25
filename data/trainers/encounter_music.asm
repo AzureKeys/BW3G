@@ -33,9 +33,7 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychicm
 	db MUSIC_BEAUTY_ENCOUNTER      ; psychicf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolkidm
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolkidmD
 	db MUSIC_LASS_ENCOUNTER        ; schoolkidf
-	db MUSIC_LASS_ENCOUNTER        ; schoolkidfD
 	db MUSIC_OFFICER_ENCOUNTER     ; scientistm
 	db MUSIC_OFFICER_ENCOUNTER     ; scientistf
 	db MUSIC_HIKER_ENCOUNTER       ; swimmerm

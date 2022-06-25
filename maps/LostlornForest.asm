@@ -14,7 +14,7 @@
 	const LOSTLORNFOREST_PICNICKER
 	const LOSTLORNFOREST_YOUNGSTER
 	const LOSTLORNFOREST_LASS
-	const LOSTLORNFOREST_SCHOOLGIRL
+	const LOSTLORNFOREST_SCHOOL_KIDF
 
 LostlornForest_MapScripts:
 	db 3 ; scene scripts
@@ -199,13 +199,13 @@ TrainerLassLostlorn:
 	closetext
 	end
 
-TrainerSchoolgirlLostlorn:
-	trainer SCHOOLGIRL_D, SCHOOLGIRL_LOSTLORN, EVENT_BEAT_SCHOOLGIRL_LOSTLORN, SchoolgirlLostlornSeenText, SchoolgirlLostlornBeatenText, 0, .Script
+TrainerSchoolKidFLostlorn:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_LOSTLORN, EVENT_BEAT_SCHOOL_KIDF_LOSTLORN, SchoolKidFLostlornSeenText, SchoolKidFLostlornBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolgirlLostlornAfterText
+	writetext SchoolKidFLostlornAfterText
 	waitbutton
 	closetext
 	end
@@ -478,17 +478,17 @@ YoungsterLostlornAfterText:
 	line "in NIMBASA CITY!"
 	done
 	
-SchoolgirlLostlornSeenText:
+SchoolKidFLostlornSeenText:
 	text "Did you go to"
 	line "the GYM? Me too!"
 	done
 
-SchoolgirlLostlornBeatenText:
+SchoolKidFLostlornBeatenText:
 	text "Oh. I couldn't"
 	line "win…"
 	done
 
-SchoolgirlLostlornAfterText:
+SchoolKidFLostlornAfterText:
 	text "The GYM BADGES are"
 	line "pretty. I collect"
 	cont "them."
@@ -549,5 +549,5 @@ LostlornForest_MapEvents:
 	object_event 15, 22, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPicnickerLostlorn, -1
 	object_event 10,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerYoungsterLostlorn, -1
 	object_event  8, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerLassLostlorn, -1
-	object_event 12, 44, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolgirlLostlorn, -1
+	object_event 12, 44, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFLostlorn, -1
 	
