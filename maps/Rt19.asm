@@ -12,7 +12,7 @@
 	const R19_DEPOT_AGENT_1
 	const R19_DEPOT_AGENT_2
 	const R19_SAILOR
-	const R19_FIREBREATHER
+	const R19_BAKER
 	const R19_FAKE_JUNIPER
 
 Rt19_MapScripts:
@@ -158,13 +158,13 @@ TrainerDepotAgent2R19:
 	closetext
 	end
 
-TrainerFirebreatherR19:
-	trainer FIREBREATHER, FIREBREATHER_R19, EVENT_BEAT_FIREBREATHER_R19, FirebreatherR19SeenText, FirebreatherR19BeatenText, 0, .Script
+TrainerBakerR19:
+	trainer BAKER, BAKER_R19, EVENT_BEAT_BAKER_R19, BakerR19SeenText, BakerR19BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FirebreatherR19AfterText
+	writetext BakerR19AfterText
 	waitbutton
 	closetext
 	end
@@ -305,16 +305,16 @@ SailorR19AfterText:
 	line "so good!"
 	done
 	
-FirebreatherR19SeenText:
+BakerR19SeenText:
 	text "Step right up and"
 	line "take a look!"
 	done
 
-FirebreatherR19BeatenText:
+BakerR19BeatenText:
 	text "Yow! That's hot!"
 	done
 
-FirebreatherR19AfterText:
+BakerR19AfterText:
 	text "The greatest fire-"
 	line "breather in UNOVA,"
 	cont "that's me."
@@ -350,6 +350,6 @@ Rt19_MapEvents:
 	object_event 20, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerDepotAgent1R19, -1
 	object_event 30, 12, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerDepotAgent2R19, -1
 	object_event 18, 18, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSailorR19, -1
-	object_event 26, 17, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherR19, -1
+	object_event 26, 17, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBakerR19, -1
 	object_event 42, 16, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, -1, -1, EVENT_FLOCCESY_TOWN_JUNIPER
 	

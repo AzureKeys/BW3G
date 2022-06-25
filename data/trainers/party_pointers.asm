@@ -10,6 +10,7 @@ TrainerGroups:
 	dba CooltrainerMDGroup
 	dba CooltrainerFGroup
 	dba CooltrainerFDGroup
+	dba BakerGroup
 	dba BlackbeltGroup
 	dba BattleGirlGroup
 	dba BikerGroup

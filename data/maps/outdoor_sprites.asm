@@ -91,12 +91,12 @@ NimbasaGroupSprites:
 	db SPRITE_LASS
 	db SPRITE_BIKER
 	db SPRITE_COOLTRAINER_M
-	db SPRITE_POKEFAN_F
+	db SPRITE_TEACHER
 	db SPRITE_SUPER_NERD
 	db SPRITE_GRAMPS
 	db SPRITE_ROCKET
 	db SPRITE_CHEREN
-	; 8 of max 9 walking sprites
+	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db 0 ; end

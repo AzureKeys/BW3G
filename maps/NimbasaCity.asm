@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const NIMBASACITY_YOUNGSTER
 	const NIMBASACITY_GRAMPS
-	const NIMBASACITY_POKEFANF
+	const NIMBASACITY_TEACHER
 	const NIMBASACITY_LASS
 	const NIMBASACITY_YOUNGSTER2
 	const NIMBASACITY_LASS2
@@ -24,8 +24,8 @@ NimbasaCityYoungsterTextScript:
 NimbasaCityGrampsTextScript:
 	jumptextfaceplayer NimbasaCityGrampsText
 	
-NimbasaCityPokefanFTextScript:
-	jumptextfaceplayer NimbasaCityPokefanFText
+NimbasaCityTeacherTextScript:
+	jumptextfaceplayer NimbasaCityTeacherText
 	
 NimbasaCityLassTextScript:
 	jumptextfaceplayer NimbasaCityLassText
@@ -83,7 +83,7 @@ NimbasaCityGrampsText:
 	line "thing is."
 	done
 
-NimbasaCityPokefanFText:
+NimbasaCityTeacherText:
 	text "There used to be"
 	line "a GYM in the PARK"
 	cont "in town."
@@ -240,7 +240,7 @@ NimbasaCity_MapEvents:
 	db 8 ; object events
 	object_event 20, 24, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungsterTextScript, -1
 	object_event 25, 10, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaCityGrampsTextScript, -1
-	object_event 31, 25, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NimbasaCityPokefanFTextScript, -1
+	object_event 31, 25, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NimbasaCityTeacherTextScript, -1
 	object_event 25, 24, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCityLassTextScript, -1
 	object_event 16, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungster2TextScript, -1
 	object_event 12, 24, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityLass2TextScript, -1

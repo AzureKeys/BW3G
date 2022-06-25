@@ -10,6 +10,7 @@ TrainerPicPointers::
 	dba CooltrainermDPic
 	dba CooltrainerfPic
 	dba CooltrainerfDPic
+	dba BakerPic
 	dba BlackbeltTPic
 	dba BattleGirlPic
 	dba BikerPic

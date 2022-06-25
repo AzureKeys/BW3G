@@ -15,6 +15,7 @@ INCBIN "gfx/trainers/cooltrainer_m.gbcpal", middle_colors
 INCBIN "gfx/trainers/cooltrainer_m_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/cooltrainer_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/cooltrainer_f_d.gbcpal", middle_colors
+INCBIN "gfx/trainers/baker.gbcpal", middle_colors
 INCBIN "gfx/trainers/blackbelt_t.gbcpal", middle_colors
 INCBIN "gfx/trainers/battle_girl.gbcpal", middle_colors
 INCBIN "gfx/trainers/biker.gbcpal", middle_colors

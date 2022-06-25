@@ -9,6 +9,7 @@ TrainerClassDVs:
 	dn 13,  8, 12,  8 ; ACE_TRAINER_M_D
 	dn  7, 12, 12,  8 ; ACE_TRAINER_F
 	dn  7, 12, 12,  8 ; ACE_TRAINER_F_D
+	dn  6, 13,  8,  8 ; BAKER
 	dn  9,  8,  8,  8 ; BLACKBELT_T
 	dn  9,  8,  8,  8 ; BATTLE_GIRL
 	dn  9,  8,  8,  8 ; BIKER

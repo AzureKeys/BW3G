@@ -529,6 +529,33 @@ CooltrainerFDGroup:
 	db 42, PILOSWINE
 	dw $4800, $4800, $4800, $4800, $4800
 	db -1 ; end
+	
+BakerGroup:
+	; BAKER (R5)
+	db "ANNETTE@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM
+	db 16, FOONGUS
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db BERRY
+	db 16, SHROOMISH
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db BERRY
+	db 18, ROSELIA
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db BERRY
+	db -1 ; end
+
+	; BAKER (R19)
+	db "DARLA@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM
+	db 23, VULPIX
+	dw $2000, $2000, $2000, $2000, $2000
+	db BERRY
+	db 23, MAGBY
+	dw $2000, $2000, $2000, $2000, $2000
+	db BERRY
+	db 25, KOFFING
+	dw $2000, $2000, $2000, $2000, $2000
+	db BERRY
+	db -1 ; end
 
 BlackbeltGroup:
 	; BLACKBELT_T (REVERSAL)
@@ -1316,19 +1343,6 @@ PokefanMGroup:
 	db -1 ; end
 
 PokefanFGroup:
-	; POKEFANF (R5)
-	db "ANNETTE@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM
-	db 16, FOONGUS
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db BERRY
-	db 16, SHROOMISH
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db BERRY
-	db 18, ROSELIA
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db BERRY
-	db -1 ; end
-
 	; POKEFANF (R6)
 	db "RUTH@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM
 	db 40, CUBCHOO
@@ -2409,16 +2423,6 @@ FirebreatherGroup:
 	db "SVEN@", TRAINERTYPE_STAT_EXP
 	db 21, DARUMAKA
 	dw $1000, $1000, $1000, $1000, $1000
-	db -1 ; end
-
-	; FIREBREATHER (R19)
-	db "DREW@", TRAINERTYPE_STAT_EXP
-	db 23, VULPIX
-	dw $2000, $2000, $2000, $2000, $2000
-	db 23, MAGBY
-	dw $2000, $2000, $2000, $2000, $2000
-	db 25, KOFFING
-	dw $2000, $2000, $2000, $2000, $2000
 	db -1 ; end
 
 PicnickerGroup:

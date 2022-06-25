@@ -11,6 +11,7 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; acetrainermD
 	db MUSIC_BEAUTY_ENCOUNTER      ; acetrainerf
 	db MUSIC_BEAUTY_ENCOUNTER      ; acetrainerfD
+	db MUSIC_BEAUTY_ENCOUNTER      ; baker
 	db MUSIC_HIKER_ENCOUNTER       ; blackbelt
 	db MUSIC_HIKER_ENCOUNTER       ; battlegirl
 	db MUSIC_HIKER_ENCOUNTER       ; biker

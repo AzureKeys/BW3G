@@ -6,7 +6,7 @@
 	const R5_HEART_SCALE
 	const R5_SUPER_NERD_1
 	const R5_SUPER_NERD_2
-	const R5_POKEFAN_F
+	const R5_BAKER
 	const R5_YOUNGSTER
 	const R5_POKEMANIAC
 	const R5_PSYCHIC
@@ -155,13 +155,13 @@ TrainerSuperNerd2R5:
 	jumpstd rematchm
 	end
 
-TrainerPokefanFR5:
-	trainer POKEFANF, POKEFANF_R5, EVENT_BEAT_POKEFANF_R5, PokefanFR5SeenText, PokefanFR5BeatenText, 0, .Script
+TrainerBakerR5:
+	trainer BAKER, BAKER_R5, EVENT_BEAT_BAKER_R5, BakerR5SeenText, BakerR5BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PokefanFR5AfterText
+	writetext BakerR5AfterText
 	waitbutton
 	closetext
 	end
@@ -309,7 +309,7 @@ SuperNerd2R5AfterText:
 	line "actually any good…"
 	done
 	
-PokefanFR5SeenText:
+BakerR5SeenText:
 	text "You seem to be"
 	line "good at #MON."
 
@@ -318,12 +318,12 @@ PokefanFR5SeenText:
 	cont "some advice?"
 	done
 
-PokefanFR5BeatenText:
+BakerR5BeatenText:
 	text "I see. So you can"
 	line "battle that way."
 	done
 
-PokefanFR5AfterText:
+BakerR5AfterText:
 	text "I know something"
 	line "good!"
 
@@ -425,7 +425,7 @@ Rt5_MapEvents:
 	object_event 17, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5HeartScale, EVENT_R_5_HEART_SCALE
 	object_event 22, 15, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1
 	object_event 13, 11, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd2R5, -1
-	object_event 10, 13, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerPokefanFR5, -1
+	object_event 10, 13, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBakerR5, -1
 	object_event 14, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerYoungsterR5, -1
 	object_event 20, 10, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokemaniacR5, -1
 	object_event 17, 14, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPsychicR5, -1

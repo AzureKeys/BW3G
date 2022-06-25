@@ -100,6 +100,10 @@ CHRIS EQU __enum__
 	const COOLTRAINERF_NACRENE_OUTSKIRT
 	const CARLA_REMATCH_1
 	const JENNY_REMATCH_1
+	
+	trainerclass BAKER
+	const BAKER_R5
+	const BAKER_R19
 
 	trainerclass BLACKBELT_T ; 32
 	const BLACKBELT_REVERSAL
@@ -229,7 +233,6 @@ CHRIS EQU __enum__
 	const POKEFANM_CELESTIAL_TOWER
 
 	trainerclass POKEFANF ; 3e
-	const POKEFANF_R5
 	const POKEFANF_R6
 	const POKEFANF_CELESTIAL_TOWER
 
@@ -402,7 +405,6 @@ CHRIS EQU __enum__
 	trainerclass FIREBREATHER ; 30
 	const FIREBREATHER_OUTSKIRTS
 	const FIREBREATHER_DESERT
-	const FIREBREATHER_R19
 
 	trainerclass PICNICKER ; 35
 	const PICNICKER_R14
