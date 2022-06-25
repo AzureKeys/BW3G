@@ -15,6 +15,7 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; battlegirl
 	db MUSIC_HIKER_ENCOUNTER       ; biker
 	db MUSIC_HIKER_ENCOUNTER       ; roughneck
+	db MUSIC_OFFICER_ENCOUNTER     ; depotagent
 	db MUSIC_SAGE_ENCOUNTER        ; doctor
 	db MUSIC_SAGE_ENCOUNTER        ; nurse
 	db MUSIC_HIKER_ENCOUNTER       ; fisher

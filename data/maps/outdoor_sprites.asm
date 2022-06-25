@@ -149,13 +149,13 @@ FloccesyGroupSprites:
 	db SPRITE_YOUNGSTER
 	db SPRITE_BUENA
 	db SPRITE_FISHER
-	db SPRITE_SUPER_NERD
+	db SPRITE_OFFICER
 	db SPRITE_LASS
 	db SPRITE_TEACHER
 	db SPRITE_JUNIPER
 	db SPRITE_TWIN
 	db SPRITE_POKEFAN_M
-	; 8 of max 9 walking sprites
+	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db 0 ; end

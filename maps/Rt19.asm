@@ -9,9 +9,9 @@
 	const R19_YOUNGSTER
 	const R19_BIRD_KEEPER
 	const R19_BEAUTY
-	const R19_FISHER
+	const R19_DEPOT_AGENT_1
+	const R19_DEPOT_AGENT_2
 	const R19_SAILOR
-	const R19_SUPER_NERD
 	const R19_FIREBREATHER
 	const R19_FAKE_JUNIPER
 
@@ -136,24 +136,24 @@ TrainerBeautyR19:
 	closetext
 	end
 
-TrainerFisherR19:
-	trainer FISHER_D, FISHER_R19, EVENT_BEAT_FISHER_R19, FisherR19SeenText, FisherR19BeatenText, 0, .Script
+TrainerDepotAgent1R19:
+	trainer DEPOT_AGENT, DEPOT_AGENT_R19_1, EVENT_BEAT_DEPOT_AGENT_R19_1, DepotAgent1R19SeenText, DepotAgent1R19BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FisherR19AfterText
+	writetext DepotAgent1R19AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSuperNerdR19:
-	trainer SUPER_NERD, SUPER_NERD_R19, EVENT_BEAT_SUPER_NERD_R19, SuperNerdR19SeenText, SuperNerdR19BeatenText, 0, .Script
+TrainerDepotAgent2R19:
+	trainer DEPOT_AGENT, DEPOT_AGENT_R19_2, EVENT_BEAT_DEPOT_AGENT_R19_2, DepotAgent2R19SeenText, DepotAgent2R19BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SuperNerdR19AfterText
+	writetext DepotAgent2R19AfterText
 	waitbutton
 	closetext
 	end
@@ -252,19 +252,35 @@ BeautyR19AfterText:
 	line "it."
 	done
 	
-FisherR19SeenText:
+DepotAgent1R19SeenText:
 	text "Patience is the"
 	line "key to both fish-"
 	cont "ing and #MON."
 	done
 
-FisherR19BeatenText:
+DepotAgent1R19BeatenText:
 	text "Gwaaah!"
 	done
 
-FisherR19AfterText:
+DepotAgent1R19AfterText:
 	text "I'm too impatient"
 	line "for fishing…"
+	done
+	
+DepotAgent2R19SeenText:
+	text "Hmmm… I don't know"
+	line "what to do…"
+	done
+
+DepotAgent2R19BeatenText:
+	text "I knew I'd lose…"
+	done
+
+DepotAgent2R19AfterText:
+	text "You looked strong."
+
+	para "I was afraid to"
+	line "take you on…"
 	done
 	
 SailorR19SeenText:
@@ -287,22 +303,6 @@ SailorR19AfterText:
 
 	para "No wonder you're"
 	line "so good!"
-	done
-	
-SuperNerdR19SeenText:
-	text "Hmmm… I don't know"
-	line "what to do…"
-	done
-
-SuperNerdR19BeatenText:
-	text "I knew I'd lose…"
-	done
-
-SuperNerdR19AfterText:
-	text "You looked strong."
-
-	para "I was afraid to"
-	line "take you on…"
 	done
 	
 FirebreatherR19SeenText:
@@ -347,9 +347,9 @@ Rt19_MapEvents:
 	object_event  9, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR19, -1
 	object_event 33, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperR19, -1
 	object_event 21, 13, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyR19, -1
-	object_event 20, 10, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerFisherR19, -1
+	object_event 20, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerDepotAgent1R19, -1
+	object_event 30, 12, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerDepotAgent2R19, -1
 	object_event 18, 18, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSailorR19, -1
-	object_event 30, 12, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerSuperNerdR19, -1
 	object_event 26, 17, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherR19, -1
 	object_event 42, 16, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, -1, -1, EVENT_FLOCCESY_TOWN_JUNIPER
 	

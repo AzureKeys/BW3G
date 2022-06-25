@@ -747,6 +747,25 @@ RoughneckGroup:
 	db 50, DRAPION
 	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
+	
+DepotAgentGroup:
+	; DEPOT_AGENT (R19)
+	db "ANTON@", TRAINERTYPE_STAT_EXP
+	db 23, BASCULIN
+	dw $2000, $2000, $2000, $2000, $2000
+	db 26, STARYU
+	dw $2000, $2000, $2000, $2000, $2000
+	db -1 ; end
+
+	; DEPOT_AGENT (R19)
+	db "GREGG@", TRAINERTYPE_STAT_EXP
+	db 23, MAGNEMITE
+	dw $2000, $2000, $2000, $2000, $2000
+	db 25, CROAGUNK
+	dw $2000, $2000, $2000, $2000, $2000
+	db 23, ELEKID
+	dw $2000, $2000, $2000, $2000, $2000
+	db -1 ; end
 
 DoctorGroup:
 	; DOCTOR (OUTSKIRTS)
@@ -855,14 +874,6 @@ FisherDGroup:
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db 18, MANTYKE
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db -1 ; end
-	
-	; FISHER (R19)
-	db "ANTON@", TRAINERTYPE_STAT_EXP
-	db 23, BASCULIN
-	dw $2000, $2000, $2000, $2000, $2000
-	db 26, STARYU
-	dw $2000, $2000, $2000, $2000, $2000
 	db -1 ; end
 	
 	; FISHER (R3)
@@ -2349,16 +2360,6 @@ SuperNerdGroup:
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db 18, SOLOSIS
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db -1 ; end
-
-	; SUPER_NERD (R19)
-	db "GREGG@", TRAINERTYPE_STAT_EXP
-	db 23, MAGNEMITE
-	dw $2000, $2000, $2000, $2000, $2000
-	db 25, CROAGUNK
-	dw $2000, $2000, $2000, $2000, $2000
-	db 23, ELEKID
-	dw $2000, $2000, $2000, $2000, $2000
 	db -1 ; end
 	
 	; SUPER_NERD (R2)

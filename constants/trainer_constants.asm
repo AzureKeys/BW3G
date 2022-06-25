@@ -135,6 +135,10 @@ CHRIS EQU __enum__
 	const ROUGHNECK_R9_1
 	const ROUGHNECK_R9_2
 	
+	trainerclass DEPOT_AGENT
+	const DEPOT_AGENT_R19_1
+	const DEPOT_AGENT_R19_2
+	
 	trainerclass DOCTOR
 	const DOCTOR_OUTSKIRTS
 	const DOCTOR_R17
@@ -155,7 +159,6 @@ CHRIS EQU __enum__
 	
 	trainerclass FISHER_D
 	const FISHER_R4_2
-	const FISHER_R19
 	const FISHER_R3_2
 	const FISHER_R17_2
 	const FISHER_R21
@@ -395,7 +398,6 @@ CHRIS EQU __enum__
 	trainerclass SUPER_NERD ; 29
 	const SUPER_NERD_R5_1
 	const SUPER_NERD_R5_2
-	const SUPER_NERD_R19
 	const SUPER_NERD_R2
 	const ERIC_REMATCH_1
 	const ERIC_REMATCH_2

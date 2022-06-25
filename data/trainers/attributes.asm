@@ -73,6 +73,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; DepotAgent
+	db NO_ITEM, NO_ITEM ; items
+	db 6 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; Doctor
 	db NO_ITEM, NO_ITEM ; items
 	db 25 ; base reward

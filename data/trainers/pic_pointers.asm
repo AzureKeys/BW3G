@@ -14,6 +14,7 @@ TrainerPicPointers::
 	dba BattleGirlPic
 	dba BikerPic
 	dba RoughneckPic
+	dba DepotAgentPic
 	dba DoctorPic
 	dba NursePic
 	dba FisherPic

@@ -37,6 +37,7 @@ MareepFrontpic:   INCBIN "gfx/pokemon/mareep/front.animated.2bpp.lz"
 FlaaffyFrontpic:   INCBIN "gfx/pokemon/flaaffy/front.animated.2bpp.lz"
 PilotPic:           INCBIN "gfx/trainers/pilot.2bpp.lz"
 RoughneckPic:           INCBIN "gfx/trainers/roughneck.2bpp.lz"
+DepotAgentPic:          INCBIN "gfx/trainers/depot_agent.2bpp.lz"
 
 
 SECTION "Pics 2", ROMX
