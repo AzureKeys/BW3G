@@ -67,6 +67,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Roughneck
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; Doctor
 	db NO_ITEM, NO_ITEM ; items
 	db 25 ; base reward

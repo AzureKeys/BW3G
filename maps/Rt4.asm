@@ -4,7 +4,7 @@
 	const R4_ETHER
 	const R4_SUPER_POTION
 	const R4_BIRD_KEEPER
-	const R4_BUG_CATCHER
+	const R4_ROUGHNECK
 	const R4_FISHER1
 	const R4_FISHER2
 	const R4_BEAUTY
@@ -113,13 +113,13 @@ TrainerBirdKeeperR4:
 	closetext
 	end
 
-TrainerBugCatcherR4:
-	trainer BUG_CATCHER, BUG_CATCHER_R4, EVENT_BEAT_BUG_CATCHER_R4, BugCatcherR4SeenText, BugCatcherR4BeatenText, 0, .Script
+TrainerRoughneckR4:
+	trainer ROUGHNECK, ROUGHNECK_R4, EVENT_BEAT_ROUGHNECK_R4, RoughneckR4SeenText, RoughneckR4BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherR4AfterText
+	writetext RoughneckR4AfterText
 	waitbutton
 	closetext
 	end
@@ -247,17 +247,17 @@ BirdKeeperR4AfterText:
 	line "the DESERT RESORT."
 	done
 	
-BugCatcherR4SeenText:
+RoughneckR4SeenText:
 	text "I'm gonna win,"
 	line "for sure!"
 	done
 
-BugCatcherR4BeatenText:
+RoughneckR4BeatenText:
 	text "Arrgh… That's a"
 	line "shocking loss…"
 	done
 
-BugCatcherR4AfterText:
+RoughneckR4AfterText:
 	text "It's important to"
 	line "have conviction"
 	cont "on your side."
@@ -451,7 +451,7 @@ Rt4_MapEvents:
 	object_event 36, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4Ether, EVENT_R_4_ETHER_1
 	object_event 25, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4SuperPotion, EVENT_R_4_SUPER_POTION
 	object_event 31, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerBirdKeeperR4, -1
-	object_event 14, 30, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherR4, -1
+	object_event 14, 30, SPRITE_ROUGHNECK, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRoughneckR4, -1
 	object_event 12, 49, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerFisher1R4, -1
 	object_event 12, 53, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 0, TrainerFisher2R4, -1
 	object_event 20, 35, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 4, TrainerBeautyR4, -1

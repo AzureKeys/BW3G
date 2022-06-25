@@ -109,3 +109,4 @@ OverworldSprites:
 	overworld_sprite Badge6SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
 	overworld_sprite Badge7SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
 	overworld_sprite Badge8SpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
+	overworld_sprite RoughneckSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN

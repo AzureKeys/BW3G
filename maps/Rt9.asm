@@ -5,8 +5,8 @@
 	const R9_IRON
 	const R9_BIKER_1
 	const R9_BIKER_2
-	const R9_BIKER_3
-	const R9_BIKER_4
+	const R9_ROUGHNECK_1
+	const R9_ROUGHNECK_2
 
 Rt9_MapScripts:
 	db 0 ; scene scripts
@@ -35,24 +35,24 @@ TrainerBiker2R9:
 	closetext
 	end
 
-TrainerBiker3R9:
-	trainer BIKER, BIKER_R9_3, EVENT_BEAT_BIKER_R9_3, Biker3R9SeenText, Biker3R9BeatenText, 0, .Script
+TrainerRoughneck1R9:
+	trainer ROUGHNECK, ROUGHNECK_R9_1, EVENT_BEAT_ROUGHNECK_R9_1, Roughneck1R9SeenText, Roughneck1R9BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Biker3R9AfterText
+	writetext Roughneck1R9AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerBiker4R9:
-	trainer BIKER, BIKER_R9_4, EVENT_BEAT_BIKER_R9_4, Biker4R9SeenText, Biker4R9BeatenText, 0, .Script
+TrainerRoughneck2R9:
+	trainer ROUGHNECK, ROUGHNECK_R9_2, EVENT_BEAT_ROUGHNECK_R9_2, Roughneck2R9SeenText, Roughneck2R9BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Biker4R9AfterText
+	writetext Roughneck2R9AfterText
 	waitbutton
 	closetext
 	end
@@ -111,27 +111,27 @@ Biker2R9AfterText:
 	text "..."
 	done
 	
-Biker3R9SeenText:
+Roughneck1R9SeenText:
 	text "..."
 	done
 
-Biker3R9BeatenText:
+Roughneck1R9BeatenText:
 	text "..."
 	done
 
-Biker3R9AfterText:
+Roughneck1R9AfterText:
 	text "..."
 	done
 	
-Biker4R9SeenText:
+Roughneck2R9SeenText:
 	text "..."
 	done
 
-Biker4R9BeatenText:
+Roughneck2R9BeatenText:
 	text "..."
 	done
 
-Biker4R9AfterText:
+Roughneck2R9AfterText:
 	text "..."
 	done
 	
@@ -184,6 +184,6 @@ Rt9_MapEvents:
 	object_event 14, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R9Iron, EVENT_R9_IRON
 	object_event 34,  8, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBiker1R9, -1
 	object_event 25, 11, SPRITE_BIKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBiker2R9, -1
-	object_event  5, 10, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBiker3R9, -1
-	object_event 13, 10, SPRITE_BIKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBiker4R9, -1
+	object_event  5, 10, SPRITE_ROUGHNECK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRoughneck1R9, -1
+	object_event 13, 10, SPRITE_ROUGHNECK, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerRoughneck2R9, -1
 	

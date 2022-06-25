@@ -13,6 +13,7 @@ TrainerPicPointers::
 	dba BlackbeltTPic
 	dba BattleGirlPic
 	dba BikerPic
+	dba RoughneckPic
 	dba DoctorPic
 	dba NursePic
 	dba FisherPic

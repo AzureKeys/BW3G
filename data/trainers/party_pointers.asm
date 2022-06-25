@@ -13,6 +13,7 @@ TrainerGroups:
 	dba BlackbeltGroup
 	dba BattleGirlGroup
 	dba BikerGroup
+	dba RoughneckGroup
 	dba DoctorGroup
 	dba NurseGroup
 	dba FisherGroup

@@ -706,6 +706,33 @@ BikerGroup:
 	db -1 ; end
 	
 	; BIKER (R9)
+	db "CHANCE@", TRAINERTYPE_STAT_EXP
+	db 52, KROOKODILE
+	dw $5400, $5400, $5400, $5400, $5400
+	db -1 ; end
+	
+RoughneckGroup:
+	; ROUGHNECK (R4)
+	db "JEREMY@", TRAINERTYPE_STAT_EXP
+	db 15, SKORUPI
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 15, DWEBBLE
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 18, SKORUPI
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+	
+	; ROUGHNECK (DESERT)
+	db "HORACE@", TRAINERTYPE_STAT_EXP
+	db 16, SANDILE
+	dw $0E00, $0E00, $0E00, $0E00, $0E00
+	db 16, DRILBUR
+	dw $0E00, $0E00, $0E00, $0E00, $0E00
+	db 18, TRAPINCH
+	dw $0E00, $0E00, $0E00, $0E00, $0E00
+	db -1 ; end
+	
+	; ROUGHNECK (R9)
 	db "REESE@", TRAINERTYPE_STAT_EXP
 	db 48, PAWNIARD
 	dw $5400, $5400, $5400, $5400, $5400
@@ -713,13 +740,7 @@ BikerGroup:
 	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
 	
-	; BIKER (R9)
-	db "CHANCE@", TRAINERTYPE_STAT_EXP
-	db 52, KROOKODILE
-	dw $5400, $5400, $5400, $5400, $5400
-	db -1 ; end
-	
-	; BIKER (R9)
+	; ROUGHNECK (R9)
 	db "KAZ@", TRAINERTYPE_STAT_EXP
 	db 48, LAIRON
 	dw $5400, $5400, $5400, $5400, $5400
@@ -1163,16 +1184,6 @@ HikerDGroup:
 	db 12, ARON
 	dw $0600, $0600, $0600, $0600, $0600
 	db -1 ; end
-	
-	; HIKER_D (DESERT)
-	db "HORACE@", TRAINERTYPE_STAT_EXP
-	db 16, SANDILE
-	dw $0E00, $0E00, $0E00, $0E00, $0E00
-	db 16, DRILBUR
-	dw $0E00, $0E00, $0E00, $0E00, $0E00
-	db 18, TRAPINCH
-	dw $0E00, $0E00, $0E00, $0E00, $0E00
-	db -1 ; end
 
 	; HIKER_D (RELIC_PASSAGE)
 	db "KEN@", TRAINERTYPE_STAT_EXP
@@ -1262,11 +1273,6 @@ PokefanMGroup:
 	db 16, SANDILE
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db BERRY
-	db -1 ; end
-
-	; POKEFANM ()
-	db "DEREK@", TRAINERTYPE_ITEM
-	;db 17, PIKACHU,    BERRY
 	db -1 ; end
 
 	; POKEFANM (DESERT)
@@ -2247,16 +2253,6 @@ BugCatcherGroup:
 	dw $0800, $0800, $0800, $0800, $0800
 	db 14, SEWADDLE
 	dw $0800, $0800, $0800, $0800, $0800
-	db -1 ; end
-
-	; BUG_CATCHER (R4)
-	db "JEREMY@", TRAINERTYPE_STAT_EXP
-	db 15, SKORUPI
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 15, DWEBBLE
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 18, SKORUPI
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db -1 ; end
 
 	; BUG_CATCHER (PINWHEEL)

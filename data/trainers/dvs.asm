@@ -12,6 +12,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; BLACKBELT_T
 	dn  9,  8,  8,  8 ; BATTLE_GIRL
 	dn  9,  8,  8,  8 ; BIKER
+	dn  9,  8,  8,  8 ; ROUGHNECK
 	dn  9,  8,  8,  8 ; DOCTOR
 	dn  9,  8,  8,  8 ; NURSE
 	dn  9,  8,  8,  8 ; FISHER

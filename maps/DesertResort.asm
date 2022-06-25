@@ -3,7 +3,7 @@
 	const DESERT_FRESH_WATER
 	const DESERT_RARE_CANDY
 	const DESERT_HEART_SCALE
-	const DESERT_HIKER
+	const DESERT_ROUGHNECK
 	const DESERT_HEX_MANIAC
 	const DESERT_FIREBREATHER
 	const DESERT_POKEFANM
@@ -61,13 +61,13 @@ DesertNurseScript:
 	closetext
 	end
 
-TrainerHikerDesert:
-	trainer HIKER_D, HIKER_DESERT, EVENT_BEAT_HIKER_DESERT, HikerDesertSeenText, HikerDesertBeatenText, 0, .Script
+TrainerRoughneckDesert:
+	trainer ROUGHNECK, ROUGHNECK_DESERT, EVENT_BEAT_ROUGHNECK_DESERT, RoughneckDesertSeenText, RoughneckDesertBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HikerDesertAfterText
+	writetext RoughneckDesertAfterText
 	waitbutton
 	closetext
 	end
@@ -207,7 +207,7 @@ DesertNurseHealText:
 	cont "full health."
 	done
 	
-HikerDesertSeenText:
+RoughneckDesertSeenText:
 	text "I've hiked all"
 	line "over, so I know"
 
@@ -215,12 +215,12 @@ HikerDesertSeenText:
 	line "#MON!"
 	done
 
-HikerDesertBeatenText:
+RoughneckDesertBeatenText:
 	text "Your skill is"
 	line "world class!"
 	done
 
-HikerDesertAfterText:
+RoughneckDesertAfterText:
 	text "All kinds of peo-"
 	line "ple around the"
 
@@ -377,7 +377,7 @@ DesertResort_MapEvents:
 	object_event 10, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertFreshWater, EVENT_DESERT_FRESH_WATER
 	object_event 11, 42, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertRareCandy, EVENT_DESERT_RARE_CANDY
 	object_event 39, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertHeartScale, EVENT_DESERT_HEART_SCALE
-	object_event 34, 26, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerHikerDesert, -1
+	object_event 34, 26, SPRITE_ROUGHNECK, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRoughneckDesert, -1
 	object_event  2, 28, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacDesert, -1
 	object_event 49, 22, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerFirebreatherDesert, -1
 	object_event 21,  8, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMDesert, -1

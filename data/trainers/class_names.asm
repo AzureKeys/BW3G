@@ -11,6 +11,7 @@ TrainerClassNames::
 	db "BLACKBELT@"
 	db "BATTLE GIRL@"
 	db "BIKER@"
+	db "ROUGHNECK@"
 	db "DOCTOR@"
 	db "NURSE@"
 	db "FISHER@"

@@ -16,6 +16,7 @@ TeacherSpriteGFX::             INCBIN "gfx/sprites/teacher.2bpp"
 BuenaSpriteGFX::               INCBIN "gfx/sprites/buena.2bpp"
 SuperNerdSpriteGFX::           INCBIN "gfx/sprites/super_nerd.2bpp"
 RockerSpriteGFX::              INCBIN "gfx/sprites/rocker.2bpp"
+RoughneckSpriteGFX::           INCBIN "gfx/sprites/roughneck.2bpp"
 
 
 SECTION "Sprites 2", ROMX
