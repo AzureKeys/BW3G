@@ -17,14 +17,6 @@ YoungsterGroup:
 	db  4, PATRAT
 	db -1 ; end
 
-	; YOUNGSTER (R6)
-	db "CODY@", TRAINERTYPE_STAT_EXP
-	db 39, KARRABLAST
-	dw $4800, $4800, $4800, $4800, $4800
-	db 42, ESCAVALIER
-	dw $4800, $4800, $4800, $4800, $4800
-	db -1 ; end
-
 	; YOUNGSTER (R7)
 	db "PARKER@", TRAINERTYPE_STAT_EXP
 	db 42, STOUTLAND
@@ -200,14 +192,6 @@ LassDGroup:
 	dw $3400, $3400, $3400, $3400, $3400
 	db -1 ; end
 
-	; LASS (R6)
-	db "SHEENA@", TRAINERTYPE_STAT_EXP
-	db 39, SHELMET
-	dw $4800, $4800, $4800, $4800, $4800
-	db 42, ACCELGOR
-	dw $4800, $4800, $4800, $4800, $4800
-	db -1 ; end
-
 	; LASS (R7)
 	db "HOLLIE@", TRAINERTYPE_STAT_EXP
 	db 40, CUBCHOO
@@ -324,16 +308,6 @@ CooltrainerMDGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db -1 ; end
 	
-	; COOLTRAINERM (R8)
-	db "LEWIS@", TRAINERTYPE_STAT_EXP
-	db 50, PALPITOAD
-	dw $5400, $5400, $5400, $5400, $5400
-	db 48, DRATINI
-	dw $5400, $5400, $5400, $5400, $5400
-	db 50, TOXICROAK
-	dw $5400, $5400, $5400, $5400, $5400
-	db -1 ; end
-	
 	; COOLTRAINERM (OPELUCID_GYM)
 	db "JOSE@", TRAINERTYPE_STAT_EXP
 	db 52, SWABLU
@@ -352,16 +326,6 @@ CooltrainerMDGroup:
 	dw $5800, $5800, $5800, $5800, $5800
 	db -1 ; end
 
-	; COOLTRAINERM (NACRENE_OUTSKIRT)
-	db "KEL@", TRAINERTYPE_STAT_EXP
-	db 28, RUFFLET
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 28, PALPITOAD
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 31, WATCHOG
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db -1 ; end
-
 CooltrainerFGroup:
 	; COOLTRAINERF (R3)
 	db "ARIANA@", TRAINERTYPE_STAT_EXP
@@ -372,7 +336,7 @@ CooltrainerFGroup:
 	db -1 ; end
 
 	; COOLTRAINERF (GIANT_CHASM)
-	db "LOIS@", TRAINERTYPE_STAT_EXP
+	db "LOUISE@", TRAINERTYPE_STAT_EXP
 	db 34, ONIX
 	dw $2C00, $2C00, $2C00, $2C00, $2C00
 	db 36, PALPITOAD
@@ -1259,6 +1223,43 @@ HikerDGroup:
 	db "JEBEDIAH@", TRAINERTYPE_STAT_EXP
 	db 45, STEELIX
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
+	db -1 ; end
+	
+ParasolLadyGroup:
+	; PARASOL_LADY (NACRENE_OUTSKIRT)
+	db "KELLY@", TRAINERTYPE_STAT_EXP
+	db 28, RUFFLET
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 28, PALPITOAD
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 31, WATCHOG
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db -1 ; end
+
+	; PARASOL_LADY (R6)
+	db "KATY@", TRAINERTYPE_STAT_EXP
+	db 39, KARRABLAST
+	dw $4800, $4800, $4800, $4800, $4800
+	db 42, ESCAVALIER
+	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+
+	; PARASOL_LADY (R6)
+	db "STACY@", TRAINERTYPE_STAT_EXP
+	db 39, SHELMET
+	dw $4800, $4800, $4800, $4800, $4800
+	db 42, ACCELGOR
+	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+	
+	; PARASOL_LADY (R8)
+	db "LOIS@", TRAINERTYPE_STAT_EXP
+	db 50, PALPITOAD
+	dw $5400, $5400, $5400, $5400, $5400
+	db 48, DRATINI
+	dw $5400, $5400, $5400, $5400, $5400
+	db 50, TOXICROAK
+	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
 	
 PilotGroup:

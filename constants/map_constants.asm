@@ -280,9 +280,6 @@ ENDM
 	map_const DRIFTVEIL_STONE_EMPORIUM, 5, 6
 	map_const DRIFTVEIL_HOUSE, 4, 4
 	map_const DRIFTVEIL_TRADE_HOUSE, 4, 4
-	map_const R_6, 26, 25
-	map_const R_6_HOUSE, 4, 4
-	map_const R_6_LAB, 4, 4
 	
 	newgroup
 	map_const MISTRALTON_CITY, 20, 16
@@ -329,6 +326,11 @@ ENDM
 	map_const ICIRRUS_BOUTIQUE, 6, 4
 	map_const ICIRRUS_HOUSE, 4, 4
 	map_const ICIRRUS_FAN_CLUB, 5, 6
+	
+	newgroup
+	map_const R_6, 26, 25
+	map_const R_6_HOUSE, 4, 4
+	map_const R_6_LAB, 4, 4
 	
 	newgroup
 	map_const R_23_EAST, 17, 26

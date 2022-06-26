@@ -6,7 +6,7 @@
 	const NACRENEOUTSKIRT_PP_MAX
 	const NACRENEOUTSKIRT_SCHOOL_KIDM
 	const NACRENEOUTSKIRT_SCHOOL_KIDF
-	const NACRENEOUTSKIRT_COOLTRAINER_M
+	const NACRENEOUTSKIRT_PARASOL_LADY
 	const NACRENEOUTSKIRT_COOLTRAINER_F
 
 NacreneOutskirt_MapScripts:
@@ -36,13 +36,13 @@ TrainerSchoolKidFNacrene:
 	closetext
 	end
 
-TrainerCooltrainerMNacrene:
-	trainer COOLTRAINERM_D, COOLTRAINERM_NACRENE_OUTSKIRT, EVENT_BEAT_COOLTRAINERM_NACRENE_OUTSKIRT, CooltrainerMNacreneSeenText, CooltrainerMNacreneBeatenText, 0, .Script
+TrainerParasolLadyNacrene:
+	trainer PARASOL_LADY, PARASOL_LADY_NACRENE_OUTSKIRT, EVENT_BEAT_PARASOL_LADY_NACRENE_OUTSKIRT, ParasolLadyNacreneSeenText, ParasolLadyNacreneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerMNacreneAfterText
+	writetext ParasolLadyNacreneAfterText
 	waitbutton
 	closetext
 	end
@@ -108,15 +108,15 @@ SchoolKidFNacreneAfterText:
 	text "..."
 	done
 	
-CooltrainerMNacreneSeenText:
+ParasolLadyNacreneSeenText:
 	text "..."
 	done
 
-CooltrainerMNacreneBeatenText:
+ParasolLadyNacreneBeatenText:
 	text "..."
 	done
 
-CooltrainerMNacreneAfterText:
+ParasolLadyNacreneAfterText:
 	text "..."
 	done
 	
@@ -159,6 +159,6 @@ NacreneOutskirt_MapEvents:
 	object_event 19, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NacreneOutskirtPPMax, EVENT_NACRENE_OUTSKIRT_PP_MAX
 	object_event  6, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidMNacrene, -1
 	object_event 15, 29, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFNacrene, -1
-	object_event  5, 34, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerMNacrene, -1
+	object_event  5, 34, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerParasolLadyNacrene, -1
 	object_event 19, 41, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerFNacrene, -1
 	

@@ -8,9 +8,9 @@
 	const R6_AMOONGUSS_1
 	const R6_AMOONGUSS_2
 	const R6_AMOONGUSS_3
-	const R6_YOUNGSTER
+	const R6_PARASOL_LADY_1
+	const R6_PARASOL_LADY_2
 	const R6_LASS_1
-	const R6_LASS_2
 	const R6_PICNICKER
 	const R6_CAMPER
 	const R6_POKEFAN_F
@@ -136,17 +136,6 @@ TrainerScientistMR6:
 	jumpstd rematchm
 	end
 
-TrainerYoungsterR6:
-	trainer YOUNGSTER, YOUNGSTER_R6, EVENT_BEAT_YOUNGSTER_R6, YoungsterR6SeenText, YoungsterR6BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext YoungsterR6AfterText
-	waitbutton
-	closetext
-	end
-
 TrainerLass1R6:
 	trainer LASS, LASS_R6_1, EVENT_BEAT_LASS_R6_1, Lass1R6SeenText, Lass1R6BeatenText, 0, .Script
 
@@ -158,13 +147,24 @@ TrainerLass1R6:
 	closetext
 	end
 
-TrainerLass2R6:
-	trainer LASS_D, LASS_R6_2, EVENT_BEAT_LASS_R6_2, Lass2R6SeenText, Lass2R6BeatenText, 0, .Script
+TrainerParasolLady1R6:
+	trainer PARASOL_LADY, PARASOL_LADY_R6_1, EVENT_BEAT_PARASOL_LADY_R6_1, ParasolLady1R6SeenText, ParasolLady1R6BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Lass2R6AfterText
+	writetext ParasolLady1R6AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerParasolLady2R6:
+	trainer PARASOL_LADY, PARASOL_LADY_R6_2, EVENT_BEAT_PARASOL_LADY_R6_2, ParasolLady2R6SeenText, ParasolLady2R6BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext ParasolLady2R6AfterText
 	waitbutton
 	closetext
 	end
@@ -243,21 +243,6 @@ R6LabSign:
 R6ChargestoneSign:
 	jumptext R6ChargestoneText
 	
-YoungsterR6SeenText:
-	text "Lots of #MON"
-	line "come out after it"
-	cont "rains!"
-	done
-
-YoungsterR6BeatenText:
-	text "Hey!"
-	done
-
-YoungsterR6AfterText:
-	text "I love seeing all"
-	line "the #MON!"
-	done
-	
 Lass1R6SeenText:
 	text "There are some"
 	line "#MON that can"
@@ -276,17 +261,32 @@ Lass1R6AfterText:
 	cont "items!"
 	done
 	
-Lass2R6SeenText:
+ParasolLady1R6SeenText:
+	text "Lots of #MON"
+	line "come out after it"
+	cont "rains!"
+	done
+
+ParasolLady1R6BeatenText:
+	text "Hey!"
+	done
+
+ParasolLady1R6AfterText:
+	text "I love seeing all"
+	line "the #MON!"
+	done
+	
+ParasolLady2R6SeenText:
 	text "What a lovely day"
 	line "for a #MON"
 	cont "battle!"
 	done
 
-Lass2R6BeatenText:
+ParasolLady2R6BeatenText:
 	text "Not so lovely…"
 	done
 
-Lass2R6AfterText:
+ParasolLady2R6AfterText:
 	text "You must have"
 	line "trained hard!"
 	done
@@ -429,9 +429,9 @@ Rt6_MapEvents:
 	object_event  8, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmoongussScript1, EVENT_R_6_AMOONGUSS_1
 	object_event 16, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmoongussScript2, EVENT_R_6_AMOONGUSS_2
 	object_event 45, 26, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmoongussScript3, EVENT_R_6_AMOONGUSS_3
-	object_event 36, 32, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR6, -1
+	object_event 36, 32, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerParasolLady1R6, -1
+	object_event 27, 37, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerParasolLady2R6, -1
 	object_event 43, 27, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLass1R6, -1
-	object_event 27, 37, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLass2R6, -1
 	object_event 44, 34, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR6, -1
 	object_event 14, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerCamperR6, -1
 	object_event  5, 24, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerPokefanFR6, -1

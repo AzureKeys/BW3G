@@ -5,7 +5,7 @@
 	const R8_BIG_PEARL
 	const R8_LASS
 	const R8_FISHER
-	const R8_COOLTRAINER_M
+	const R8_PARASOL_LADY
 	const R8_COOLTRAINER_F
 
 Rt8_MapScripts:
@@ -35,13 +35,13 @@ TrainerFisherR8:
 	closetext
 	end
 
-TrainerCooltrainerMR8:
-	trainer COOLTRAINERM_D, COOLTRAINERM_R8, EVENT_BEAT_COOLTRAINERM_R8, CooltrainerMR8SeenText, CooltrainerMR8BeatenText, 0, .Script
+TrainerParasolLadyR8:
+	trainer PARASOL_LADY, PARASOL_LADY_R8, EVENT_BEAT_PARASOL_LADY_R8, ParasolLadyR8SeenText, ParasolLadyR8BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerMR8AfterText
+	writetext ParasolLadyR8AfterText
 	waitbutton
 	closetext
 	end
@@ -102,15 +102,15 @@ FisherR8AfterText:
 	text "..."
 	done
 	
-CooltrainerMR8SeenText:
+ParasolLadyR8SeenText:
 	text "..."
 	done
 
-CooltrainerMR8BeatenText:
+ParasolLadyR8BeatenText:
 	text "..."
 	done
 
-CooltrainerMR8AfterText:
+ParasolLadyR8AfterText:
 	text "..."
 	done
 	
@@ -163,6 +163,6 @@ Rt8_MapEvents:
 	object_event 21,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R8BigPearl, EVENT_R8_BIG_PEARL
 	object_event 27, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassR8, -1
 	object_event 32, 12, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherR8, -1
-	object_event  8,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerMR8, -1
+	object_event  8,  7, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerParasolLadyR8, -1
 	object_event 19,  9, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerFR8, -1
 	

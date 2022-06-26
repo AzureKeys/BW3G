@@ -24,6 +24,7 @@ OutdoorSprites:
 	dw MistraltonGroupSprites
 	dw OpelucidGroupSprites
 	dw IcirrusGroupSprites
+	dw ChargestoneGroupSprites
 	dw PkmnLeagueGroupSprites
 
 HumilauGroupSprites:
@@ -185,7 +186,8 @@ NacreneGroupSprites:
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_BLACK_BELT
-	; 8 of max 9 walking sprites
+	db SPRITE_BUENA
+	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db 0 ; end
 
@@ -251,8 +253,24 @@ PwtGroupSprites:
 	db 0 ; end
 
 DriftveilGroupSprites:
-; Driftveil City, R6
+; Driftveil City, Driftveil Drawbridge
 	db SPRITE_OFFICER
+	db SPRITE_ROCKET
+	db SPRITE_GRANNY
+	db SPRITE_GRAMPS
+	db SPRITE_PHARMACIST
+	db SPRITE_LASS
+	db SPRITE_YOUNGSTER
+	db SPRITE_SCIENTIST
+	db SPRITE_SCIENTIST_F
+	; 8 of max 9 walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_CABLE
+	db 0 ; end
+
+ChargestoneGroupSprites:
+; R6
+	db SPRITE_BUENA
 	db SPRITE_ROCKET
 	db SPRITE_GRANNY
 	db SPRITE_GRAMPS
@@ -264,7 +282,6 @@ DriftveilGroupSprites:
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
-	db SPRITE_CABLE
 	db 0 ; end
 
 MistraltonGroupSprites:
@@ -308,7 +325,8 @@ IcirrusGroupSprites:
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_YOUNGSTER
-	; 8 of max 9 walking sprites
+	db SPRITE_BUENA
+	; 6 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER

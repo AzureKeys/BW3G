@@ -32,6 +32,7 @@ MapGroupRoofs:
 	db ROOF_HUMILAU   ; Mistralton
 	db ROOF_HUMILAU   ; Opelucid
 	db ROOF_HUMILAU   ; Icirrus
+	db ROOF_HUMILAU   ; Chargestone
 	db ROOF_HUMILAU   ; PkmnLeague
 
 Roofs:
