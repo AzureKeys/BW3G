@@ -7,7 +7,7 @@
 	const CHARGESTONECAVE1F_MAGNET
 	const CHARGESTONECAVE1F_GUITARIST
 	const CHARGESTONECAVE1F_SCIENTISTM
-	const CHARGESTONECAVE1F_VETERAN
+	const CHARGESTONECAVE1F_PKMN_RANGERF
 	const CHARGESTONECAVE1F_COOLTRAINERM
 	const CHARGESTONECAVE1F_COOLTRAINERF
 	const CHARGESTONECAVE1F_HIKER
@@ -39,13 +39,13 @@ TrainerScientistMChargestone:
 	closetext
 	end
 
-TrainerVeteranChargestone:
-	trainer VETERAN, VETERAN_CHARGESTONE, EVENT_BEAT_VETERAN_CHARGESTONE, VeteranChargestoneSeenText, VeteranChargestoneBeatenText, 0, .Script
+TrainerPkmnRangerFChargestone:
+	trainer PKMN_RANGERF, PKMN_RANGERF_CHARGESTONE, EVENT_BEAT_PKMN_RANGERF_CHARGESTONE, PkmnRangerFChargestoneSeenText, PkmnRangerFChargestoneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext VeteranChargestoneAfterText
+	writetext PkmnRangerFChargestoneAfterText
 	waitbutton
 	closetext
 	end
@@ -133,16 +133,16 @@ ScientistMChargestoneAfterText:
 	line "charge come from?"
 	done
 	
-VeteranChargestoneSeenText:
+PkmnRangerFChargestoneSeenText:
 	text "Let's see how"
 	line "strong you are."
 	done
 
-VeteranChargestoneBeatenText:
+PkmnRangerFChargestoneBeatenText:
 	text "I'm impressed."
 	done
 
-VeteranChargestoneAfterText:
+PkmnRangerFChargestoneAfterText:
 	text "You've got a lot"
 	line "of potential, kid."
 	done
@@ -219,7 +219,7 @@ ChargestoneCave1F_MapEvents:
 	object_event 37, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ChargestoneMagnet, EVENT_CHARGESTONE_MAGNET
 	object_event  8,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerGuitarist1Chargestone, -1
 	object_event 15, 10, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerScientistMChargestone, -1
-	object_event 15, 25, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerVeteranChargestone, -1
+	object_event 15, 25, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerPkmnRangerFChargestone, -1
 	object_event 39, 29, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerM1Chargestone, -1
 	object_event 33,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerF1Chargestone, -1
 	object_event 38, 14, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerHiker1Chargestone, -1

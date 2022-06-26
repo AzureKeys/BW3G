@@ -21,7 +21,7 @@ PhoneContacts:
 	phone SUPER_NERD,     SUPER_NERD_R5_2,       R_5,                ANYTIME, EricPhoneCalleeScript,     0, EricPhoneCallerScript
 	phone LADY,           LADY_R4,               R_4,                ANYTIME, LaceyPhoneCalleeScript,    0, LaceyPhoneCallerScript
 	phone SAILOR,         SAILOR_R19,            R_19,               ANYTIME, StanleyPhoneCalleeScript,  0, StanleyPhoneCallerScript
-	phone COOLTRAINERF,   COOLTRAINERF_R3_1,     R_3,                ANYTIME, ArianaPhoneCalleeScript,   0, ArianaPhoneCallerScript
+	phone PKMN_RANGERF,   PKMN_RANGERF_R3,       R_3,                ANYTIME, ArianaPhoneCalleeScript,   0, ArianaPhoneCallerScript
 	phone COOLTRAINERF_D, COOLTRAINERF_R2,       R_2,                ANYTIME, CarlaPhoneCalleeScript,    0, CarlaPhoneCallerScript
 	phone LASS_D,         LASS_R1,               R_1,                ANYTIME, ClarissaPhoneCalleeScript, 0, ClarissaPhoneCallerScript
 	phone COOLTRAINERF_D, COOLTRAINERF_R18,      R_18,               ANYTIME, JennyPhoneCalleeScript,    0, JennyPhoneCallerScript

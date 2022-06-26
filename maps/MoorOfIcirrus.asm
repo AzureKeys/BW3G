@@ -8,8 +8,8 @@
 	const MOOROFICIRRUS_TM_FOCUS_BLAST
 	const MOOROFICIRRUS_FISHER_1
 	const MOOROFICIRRUS_FISHER_2
-	const MOOROFICIRRUS_PICNICKER
-	const MOOROFICIRRUS_CAMPER
+	const MOOROFICIRRUS_PKMN_RANGERF
+	const MOOROFICIRRUS_PKMN_RANGERM
 
 MoorOfIcirrus_MapScripts:
 	db 0 ; scene scripts
@@ -72,24 +72,24 @@ TrainerFisher2MoorOfIcirrus:
 	closetext
 	end
 
-TrainerPicnickerMoorOfIcirrus:
-	trainer PICNICKER, PICNICKER_MOOR_OF_ICIRRUS, EVENT_BEAT_PICNICKER_MOOR_OF_ICIRRUS, PicnickerMoorOfIcirrusSeenText, PicnickerMoorOfIcirrusBeatenText, 0, .Script
+TrainerPkmnRangerFMoorOfIcirrus:
+	trainer PKMN_RANGERF, PKMN_RANGERF_MOOR_OF_ICIRRUS, EVENT_BEAT_PKMN_RANGERF_MOOR_OF_ICIRRUS, PkmnRangerFMoorOfIcirrusSeenText, PkmnRangerFMoorOfIcirrusBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerMoorOfIcirrusAfterText
+	writetext PkmnRangerFMoorOfIcirrusAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCamperMoorOfIcirrus:
-	trainer CAMPER, CAMPER_MOOR_OF_ICIRRUS, EVENT_BEAT_CAMPER_MOOR_OF_ICIRRUS, CamperMoorOfIcirrusSeenText, CamperMoorOfIcirrusBeatenText, 0, .Script
+TrainerPkmnRangerMMoorOfIcirrus:
+	trainer PKMN_RANGERM, PKMN_RANGERM_MOOR_OF_ICIRRUS, EVENT_BEAT_PKMN_RANGERM_MOOR_OF_ICIRRUS, PkmnRangerMMoorOfIcirrusSeenText, PkmnRangerMMoorOfIcirrusBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CamperMoorOfIcirrusAfterText
+	writetext PkmnRangerMMoorOfIcirrusAfterText
 	waitbutton
 	closetext
 	end
@@ -151,27 +151,27 @@ Fisher2MoorOfIcirrusAfterText:
 	text "..."
 	done
 	
-PicnickerMoorOfIcirrusSeenText:
+PkmnRangerFMoorOfIcirrusSeenText:
 	text "..."
 	done
 
-PicnickerMoorOfIcirrusBeatenText:
+PkmnRangerFMoorOfIcirrusBeatenText:
 	text "..."
 	done
 
-PicnickerMoorOfIcirrusAfterText:
+PkmnRangerFMoorOfIcirrusAfterText:
 	text "..."
 	done
 	
-CamperMoorOfIcirrusSeenText:
+PkmnRangerMMoorOfIcirrusSeenText:
 	text "..."
 	done
 
-CamperMoorOfIcirrusBeatenText:
+PkmnRangerMMoorOfIcirrusBeatenText:
 	text "..."
 	done
 
-CamperMoorOfIcirrusAfterText:
+PkmnRangerMMoorOfIcirrusAfterText:
 	text "..."
 	done
 	
@@ -206,6 +206,6 @@ MoorOfIcirrus_MapEvents:
 	object_event  7, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, MoorOfIcirrusTMFocusBlast, EVENT_MOOR_OF_ICIRRUS_TM_FOCUS_BLAST
 	object_event 16,  8, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerFisher1MoorOfIcirrus, -1
 	object_event 40, 25, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerFisher2MoorOfIcirrus, -1
-	object_event  9, 27, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPicnickerMoorOfIcirrus, -1
-	object_event 18, 26, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerCamperMoorOfIcirrus, -1
+	object_event  9, 27, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerFMoorOfIcirrus, -1
+	object_event 18, 26, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMMoorOfIcirrus, -1
 	

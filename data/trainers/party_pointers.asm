@@ -31,6 +31,8 @@ TrainerGroups:
 	dba PilotGroup
 	dba PokefanMGroup
 	dba PokefanFGroup
+	dba PkmnRangerMGroup
+	dba PkmnRangerFGroup
 	dba OfficerGroup
 	dba PsychicGroup
 	dba PsychicFGroup

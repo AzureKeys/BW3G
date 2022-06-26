@@ -10,7 +10,7 @@ OutdoorSprites:
 	dw UndellaGroupSprites
 	dw LentimasGroupSprites
 	dw NimbasaGroupSprites
-	dw DesertGroupSprites
+	dw R4GroupSprites
 	dw CasteliaGroupSprites
 	dw AspertiaGroupSprites
 	dw FloccesyGroupSprites
@@ -25,6 +25,7 @@ OutdoorSprites:
 	dw OpelucidGroupSprites
 	dw IcirrusGroupSprites
 	dw ChargestoneGroupSprites
+	dw DesertGroupSprites
 	dw PkmnLeagueGroupSprites
 
 HumilauGroupSprites:
@@ -74,8 +75,8 @@ UndellaGroupSprites:
 LentimasGroupSprites:
 ; Lentimas Outskirts, Lentimas Town
 	db SPRITE_OFFICER
-	db SPRITE_LASS
-	db SPRITE_FISHER
+	db SPRITE_RANGER_M
+	db SPRITE_RANGER_F
 	db SPRITE_YOUNGSTER
 	db SPRITE_BLACK_BELT
 	db SPRITE_SCIENTIST
@@ -102,8 +103,8 @@ NimbasaGroupSprites:
 	db SPRITE_FRUIT_TREE
 	db 0 ; end
 
-DesertGroupSprites:
-; Route 4, Desert Resort
+R4GroupSprites:
+; Route 4
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
 	db SPRITE_BIKER
@@ -113,6 +114,21 @@ DesertGroupSprites:
 	db SPRITE_ROUGHNECK
 	db SPRITE_FISHER
 	db SPRITE_POKEFAN_F
+	; 9 of max 9 walking sprites
+	db SPRITE_POKE_BALL
+	db 0 ; end
+
+DesertGroupSprites:
+; Desert Resort
+	db SPRITE_ROUGHNECK
+	db SPRITE_POKEFAN_F
+	db SPRITE_YOUNGSTER
+	db SPRITE_LASS
+	db SPRITE_RANGER_M
+	db SPRITE_RANGER_F
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_BUENA
 	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db 0 ; end
@@ -199,10 +215,10 @@ StriatonGroupSprites:
 	db SPRITE_YOUNGSTER
 	db SPRITE_GENTLEMAN
 	db SPRITE_BUENA
-	db SPRITE_SUPER_NERD
-	db SPRITE_OFFICER
+	db SPRITE_RANGER_M
+	db SPRITE_RANGER_F
 	db SPRITE_TWIN
-	; 8 of max 9 walking sprites
+	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_BOULDER
@@ -211,15 +227,15 @@ StriatonGroupSprites:
 AccumulaGroupSprites:
 ; Accumula Town, R1, Nuvema Town
 	db SPRITE_YOUNGSTER
-	db SPRITE_LASS
+	db SPRITE_BLACK_BELT
 	db SPRITE_TWIN
-	db SPRITE_BUG_CATCHER
+	db SPRITE_RANGER_M
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_PZMA_SAGE
 	db SPRITE_TEACHER
 	db SPRITE_POKEFAN_M
-	db SPRITE_POKEFAN_F
-	; 8 of max 9 walking sprites
+	db SPRITE_RANGER_F
+	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db 0 ; end
@@ -271,8 +287,8 @@ DriftveilGroupSprites:
 ChargestoneGroupSprites:
 ; R6
 	db SPRITE_BUENA
-	db SPRITE_ROCKET
-	db SPRITE_GRANNY
+	db SPRITE_RANGER_F
+	db SPRITE_RANGER_M
 	db SPRITE_GRAMPS
 	db SPRITE_PHARMACIST
 	db SPRITE_LASS
@@ -319,14 +335,16 @@ OpelucidGroupSprites:
 	db 0 ; end
 
 IcirrusGroupSprites:
-; Icirrus City, R8, Tubeline Bridge
+; Icirrus City, R8, Moor of Icirrus, Tubeline Bridge
 	db SPRITE_LASS
 	db SPRITE_FISHER
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_COOLTRAINER_F
 	db SPRITE_YOUNGSTER
 	db SPRITE_BUENA
-	; 6 of max 9 walking sprites
+	db SPRITE_RANGER_M
+	db SPRITE_RANGER_F
+	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER

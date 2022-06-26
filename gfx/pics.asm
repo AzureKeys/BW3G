@@ -42,6 +42,8 @@ BakerPic:           INCBIN "gfx/trainers/baker.2bpp.lz"
 ParasolLadyPic:     INCBIN "gfx/trainers/parasol_lady.2bpp.lz"
 LadyPic:            INCBIN "gfx/trainers/lady.2bpp.lz"
 RichBoyPic:         INCBIN "gfx/trainers/rich_boy.2bpp.lz"
+PkmnRangerMPic:     INCBIN "gfx/trainers/pkmn_ranger_m.2bpp.lz"
+PkmnRangerFPic:     INCBIN "gfx/trainers/pkmn_ranger_f.2bpp.lz"
 
 
 SECTION "Pics 2", ROMX

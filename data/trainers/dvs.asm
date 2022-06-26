@@ -30,6 +30,8 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; PILOT
 	dn  9,  8,  8,  8 ; POKEFAN_M
 	dn  6, 13,  8,  8 ; POKEFAN_F
+	dn  9,  8,  8,  8 ; PKMN_RANGER_M
+	dn  6, 10, 10,  8 ; PKMN_RANGER_F
 	dn  9,  8,  8,  8 ; POLICEMAN
 	dn  9,  8,  8,  8 ; PSYCHIC_T_M
 	dn  6,  9, 12,  8 ; PSYCHIC_T_F

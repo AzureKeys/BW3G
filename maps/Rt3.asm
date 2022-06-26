@@ -3,8 +3,8 @@
 	const R3_SUPER_REPEL
 	const R3_RARE_CANDY
 	const R3_MAX_ETHER
-	const R3_COOLTRAINERM
-	const R3_COOLTRAINERF_1
+	const R3_PKMN_RANGERM
+	const R3_PKMN_RANGERF
 	const R3_COOLTRAINERF_2
 	const R3_FISHER_1
 	const R3_FISHER_2
@@ -52,19 +52,19 @@ R3DayCareManScript_Outside:
 	disappear R3_GRAMPS
 	end
 
-TrainerCooltrainerF1R3:
-	trainer COOLTRAINERF, COOLTRAINERF_R3_1, EVENT_BEAT_COOLTRAINERF_R3_1, CooltrainerF1R3SeenText, CooltrainerF1R3BeatenText, 0, .Script
+TrainerPkmnRangerFR3:
+	trainer PKMN_RANGERF, PKMN_RANGERF_R3, EVENT_BEAT_PKMN_RANGERF_R3, PkmnRangerFR3SeenText, PkmnRangerFR3BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_COOLTRAINER_ARIANA
+	writecode VAR_CALLERID, PHONE_PKMN_RANGER_ARIANA
 	opentext
 	checkflag ENGINE_ARIANA_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_COOLTRAINER_ARIANA
+	checkcellnum PHONE_PKMN_RANGER_ARIANA
 	iftrue .NumberAccepted
 	checkevent EVENT_ARIANA_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext CooltrainerF1R3AfterText
+	writetext PkmnRangerFR3AfterText
 	buttonsound
 	setevent EVENT_ARIANA_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -73,27 +73,27 @@ TrainerCooltrainerF1R3:
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_COOLTRAINER_ARIANA
+	askforphonenumber PHONE_PKMN_RANGER_ARIANA
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_ARIANA
-	trainertotext COOLTRAINERF, COOLTRAINERF_R3_1, MEM_BUFFER_0
+	trainertotext PKMN_RANGERF, PKMN_RANGERF_R3, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext CooltrainerF1R3BeatenText, 0
+	winlosstext PkmnRangerFR3BeatenText, 0
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight1
 ; Fight0
-	loadtrainer COOLTRAINERF, COOLTRAINERF_R3_1
+	loadtrainer PKMN_RANGERF, PKMN_RANGERF_R3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ARIANA_READY_FOR_REMATCH
 	end
 .LoadFight1
-	loadtrainer COOLTRAINERF, ARIANA_REMATCH_1
+	loadtrainer PKMN_RANGERF, ARIANA_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ARIANA_READY_FOR_REMATCH
@@ -127,6 +127,17 @@ TrainerCooltrainerF1R3:
 	jumpstd rematchf
 	end
 
+TrainerPkmnRangerMR3:
+	trainer PKMN_RANGERM, PKMN_RANGERM_R3, EVENT_BEAT_PKMN_RANGERM_R3, PkmnRangerMR3SeenText, PkmnRangerMR3BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PkmnRangerMR3AfterText
+	waitbutton
+	closetext
+	end
+
 TrainerCooltrainerF2R3:
 	trainer COOLTRAINERF_D, COOLTRAINERF_R3_2, EVENT_BEAT_COOLTRAINERF_R3_2, CooltrainerF2R3SeenText, CooltrainerF2R3BeatenText, 0, .Script
 
@@ -134,17 +145,6 @@ TrainerCooltrainerF2R3:
 	endifjustbattled
 	opentext
 	writetext CooltrainerF2R3AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerCooltrainerMR3:
-	trainer COOLTRAINERM_D, COOLTRAINERM_R3, EVENT_BEAT_COOLTRAINERM_R3, CooltrainerMR3SeenText, CooltrainerMR3BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CooltrainerMR3AfterText
 	waitbutton
 	closetext
 	end
@@ -229,21 +229,21 @@ R3GrampsRightMovement:
 	slow_step UP
 	step_end
 	
-CooltrainerMR3SeenText:
+PkmnRangerMR3SeenText:
 	text "Hahahah!"
 	done
 
-CooltrainerMR3BeatenText:
+PkmnRangerMR3BeatenText:
 	text "Hahaha-hachoo!"
 	done
 
-CooltrainerMR3AfterText:
+PkmnRangerMR3AfterText:
 	text "Hay fever is"
 	line "making me sneeze!"
 	cont "Ahahah-CHOO!"
 	done
 	
-CooltrainerF1R3SeenText:
+PkmnRangerFR3SeenText:
 	text "Have you ever been"
 	line "to a picnic?"
 
@@ -251,11 +251,11 @@ CooltrainerF1R3SeenText:
 	line "fun!"
 	done
 
-CooltrainerF1R3BeatenText:
+PkmnRangerFR3BeatenText:
 	text "Ohhhh!"
 	done
 
-CooltrainerF1R3AfterText:
+PkmnRangerFR3AfterText:
 	text "We bake lots of"
 	line "goodies and share"
 
@@ -393,8 +393,8 @@ Rt3_MapEvents:
 	object_event 20, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3SuperRepel, EVENT_R3_SUPER_REPEL
 	object_event 10, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3RareCandy, EVENT_R3_RARE_CANDY
 	object_event  7, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3MaxEther, EVENT_R3_MAX_ETHER
-	object_event 30, 27, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerMR3, -1
-	object_event 10, 34, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerF1R3, -1
+	object_event 30, 27, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerPkmnRangerMR3, -1
+	object_event 10, 34, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFR3, -1
 	object_event 25,  9, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerF2R3, -1
 	object_event 18, 32, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerFisher1R3, -1
 	object_event 21, 36, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 0, TrainerFisher2R3, -1

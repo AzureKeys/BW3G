@@ -3,23 +3,34 @@
 	const R8_FULL_RESTORE
 	const R8_LOVE_BALL
 	const R8_BIG_PEARL
-	const R8_LASS
+	const R8_PKMN_RANGERM
+	const R8_PKMN_RANGERF
 	const R8_FISHER
 	const R8_PARASOL_LADY
-	const R8_COOLTRAINER_F
 
 Rt8_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-TrainerLassR8:
-	trainer LASS_D, LASS_R8, EVENT_BEAT_LASS_R8, LassR8SeenText, LassR8BeatenText, 0, .Script
+TrainerPkmnRangerMR8:
+	trainer PKMN_RANGERM, PKMN_RANGERM_R8, EVENT_BEAT_PKMN_RANGERM_R8, PkmnRangerMR8SeenText, PkmnRangerMR8BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext LassR8AfterText
+	writetext PkmnRangerMR8AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerPkmnRangerFR8:
+	trainer PKMN_RANGERF, PKMN_RANGERF_R8, EVENT_BEAT_PKMN_RANGERF_R8, PkmnRangerFR8SeenText, PkmnRangerFR8BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PkmnRangerFR8AfterText
 	waitbutton
 	closetext
 	end
@@ -45,17 +56,6 @@ TrainerParasolLadyR8:
 	waitbutton
 	closetext
 	end
-
-TrainerCooltrainerFR8:
-	trainer COOLTRAINERF, COOLTRAINERF_R8, EVENT_BEAT_COOLTRAINERF_R8, CooltrainerFR8SeenText, CooltrainerFR8BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CooltrainerFR8AfterText
-	waitbutton
-	closetext
-	end
 	
 R8Elixer:
 	itemball ELIXER
@@ -78,15 +78,15 @@ R8Sign:
 R8TubelineSign:
 	jumptext R8TubelineSignText
 	
-LassR8SeenText:
+PkmnRangerMR8SeenText:
 	text "..."
 	done
 
-LassR8BeatenText:
+PkmnRangerMR8BeatenText:
 	text "..."
 	done
 
-LassR8AfterText:
+PkmnRangerMR8AfterText:
 	text "..."
 	done
 	
@@ -114,15 +114,15 @@ ParasolLadyR8AfterText:
 	text "..."
 	done
 	
-CooltrainerFR8SeenText:
+PkmnRangerFR8SeenText:
 	text "..."
 	done
 
-CooltrainerFR8BeatenText:
+PkmnRangerFR8BeatenText:
 	text "..."
 	done
 
-CooltrainerFR8AfterText:
+PkmnRangerFR8AfterText:
 	text "..."
 	done
 	
@@ -161,8 +161,8 @@ Rt8_MapEvents:
 	object_event 14,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R8FullRestore, EVENT_R8_FULL_RESTORE
 	object_event  7,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R8LoveBall, EVENT_R8_LOVE_BALL
 	object_event 21,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R8BigPearl, EVENT_R8_BIG_PEARL
-	object_event 27, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassR8, -1
+	object_event 27, 11, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerMR8, -1
+	object_event 19,  9, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFR8, -1
 	object_event 32, 12, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherR8, -1
 	object_event  8,  7, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerParasolLadyR8, -1
-	object_event 19,  9, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerFR8, -1
 	

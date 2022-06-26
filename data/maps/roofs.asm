@@ -18,7 +18,7 @@ MapGroupRoofs:
 	db ROOF_HUMILAU   ; Undella
 	db ROOF_LENTIMAS  ; Lentimas
 	db ROOF_NIMBASA   ; Nimbasa
-	db ROOF_HUMILAU   ; Desert
+	db ROOF_HUMILAU   ; R4
 	db ROOF_HUMILAU   ; Castelia
 	db ROOF_STRIATON  ; Aspertia
 	db ROOF_FLOCCESY  ; Floccesy
@@ -33,6 +33,7 @@ MapGroupRoofs:
 	db ROOF_HUMILAU   ; Opelucid
 	db ROOF_HUMILAU   ; Icirrus
 	db ROOF_HUMILAU   ; Chargestone
+	db ROOF_HUMILAU   ; Desert
 	db ROOF_HUMILAU   ; PkmnLeague
 
 Roofs:

@@ -8,8 +8,8 @@
 	const DESERT_FIREBREATHER
 	const DESERT_POKEFANM
 	const DESERT_LASS1
-	const DESERT_CAMPER
-	const DESERT_PICNICKER
+	const DESERT_PKMN_RANGERM
+	const DESERT_PKMN_RANGERF
 	const DESERT_LASS2
 	const DESERT_NURSE
 	const DESERT_SAND_MAN
@@ -105,24 +105,24 @@ TrainerPokefanMDesert:
 	closetext
 	end
 
-TrainerCamperDesert:
-	trainer CAMPER_D, CAMPER_DESERT, EVENT_BEAT_CAMPER_DESERT, CamperDesertSeenText, CamperDesertBeatenText, 0, .Script
+TrainerPkmnRangerMDesert:
+	trainer PKMN_RANGERM, PKMN_RANGERM_DESERT, EVENT_BEAT_PKMN_RANGERM_DESERT, PkmnRangerMDesertSeenText, PkmnRangerMDesertBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CamperDesertAfterText
+	writetext PkmnRangerMDesertAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerPicnickerDesert:
-	trainer PICNICKER, PICNICKER_DESERT, EVENT_BEAT_PICNICKER_DESERT, PicnickerDesertSeenText, PicnickerDesertBeatenText, 0, .Script
+TrainerPkmnRangerFDesert:
+	trainer PKMN_RANGERF, PKMN_RANGERF_DESERT, EVENT_BEAT_PKMN_RANGERF_DESERT, PkmnRangerFDesertSeenText, PkmnRangerFDesertBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerDesertAfterText
+	writetext PkmnRangerFDesertAfterText
 	waitbutton
 	closetext
 	end
@@ -283,23 +283,23 @@ FirebreatherDesertAfterText:
 	cont "ignition…"
 	done
 	
-CamperDesertSeenText:
+PkmnRangerMDesertSeenText:
 	text "Hmmm… I don't know"
 	line "what to do…"
 	done
 
-CamperDesertBeatenText:
+PkmnRangerMDesertBeatenText:
 	text "I knew I'd lose…"
 	done
 
-CamperDesertAfterText:
+PkmnRangerMDesertAfterText:
 	text "You looked strong."
 
 	para "I was afraid to"
 	line "take you on…"
 	done
 	
-PicnickerDesertSeenText:
+PkmnRangerFDesertSeenText:
 	text "You look strong."
 
 	para "Good trainers seek"
@@ -307,12 +307,12 @@ PicnickerDesertSeenText:
 	cont "instinctively."
 	done
 
-PicnickerDesertBeatenText:
+PkmnRangerFDesertBeatenText:
 	text "Nope! This won't"
 	line "do at all."
 	done
 
-PicnickerDesertAfterText:
+PkmnRangerFDesertAfterText:
 	text "We all get better"
 	line "by experiencing"
 	cont "many battles."
@@ -379,11 +379,11 @@ DesertResort_MapEvents:
 	object_event 39, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertHeartScale, EVENT_DESERT_HEART_SCALE
 	object_event 34, 26, SPRITE_ROUGHNECK, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRoughneckDesert, -1
 	object_event  2, 28, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacDesert, -1
-	object_event 49, 22, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerFirebreatherDesert, -1
+	object_event 49, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerFirebreatherDesert, -1
 	object_event 21,  8, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMDesert, -1
 	object_event 51, 28, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLass1Desert, -1
-	object_event 39, 38, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCamperDesert, -1
-	object_event 24, 14, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPicnickerDesert, -1
+	object_event 39, 38, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMDesert, -1
+	object_event 24, 14, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFDesert, -1
 	object_event 14, 24, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerLass2Desert, -1
 	object_event 54, 38, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DesertNurseScript, -1
 	object_event 12,  5, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, DesertSandManScript, -1

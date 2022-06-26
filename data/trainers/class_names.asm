@@ -29,6 +29,8 @@ TrainerClassNames::
 	db "PILOT@"
 	db "#FAN@"
 	db "#FAN@"
+	db "<PKMN> RANGER@"
+	db "<PKMN> RANGER@"
 	db "POLICEMAN@"
 	db "PSYCHIC@"
 	db "PSYCHIC@"

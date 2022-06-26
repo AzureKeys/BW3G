@@ -7,7 +7,7 @@
 	const CHARGESTONECAVEB1F_BATTLE_GIRL
 	const CHARGESTONECAVEB1F_NURSE
 	const CHARGESTONECAVEB1F_SCIENTISTF
-	const CHARGESTONECAVEB1F_POKEMANIAC
+	const CHARGESTONECAVEB1F_PKMN_RANGERM
 
 ChargestoneCaveB1F_MapScripts:
 	db 0 ; scene scripts
@@ -83,13 +83,13 @@ TrainerScientistFChargestone:
 	closetext
 	end
 
-TrainerPokemaniacChargestone:
-	trainer POKEMANIAC, POKEMANIAC_CHARGESTONE, EVENT_BEAT_POKEMANIAC_CHARGESTONE, PokemaniacChargestoneSeenText, PokemaniacChargestoneBeatenText, 0, .Script
+TrainerPkmnRangerMChargestone:
+	trainer PKMN_RANGERM, PKMN_RANGERM_CHARGESTONE, EVENT_BEAT_PKMN_RANGERM_CHARGESTONE, PkmnRangerMChargestoneSeenText, PkmnRangerMChargestoneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PokemaniacChargestoneAfterText
+	writetext PkmnRangerMChargestoneAfterText
 	waitbutton
 	closetext
 	end
@@ -191,16 +191,16 @@ ScientistFChargestoneAfterText:
 	line "fry my equipment…"
 	done
 	
-PokemaniacChargestoneSeenText:
+PkmnRangerMChargestoneSeenText:
 	text "There's rare #-"
 	line "MON down here!"
 	done
 
-PokemaniacChargestoneBeatenText:
+PkmnRangerMChargestoneBeatenText:
 	text "Wow!"
 	done
 
-PokemaniacChargestoneAfterText:
+PkmnRangerMChargestoneAfterText:
 	text "Your #MON are"
 	line "impressive!"
 	done
@@ -228,5 +228,5 @@ ChargestoneCaveB1F_MapEvents:
 	object_event 26, 21, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlChargestone, -1
 	object_event 21, 18, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerNurseChargestone, -1
 	object_event 24,  8, SPRITE_SCIENTIST_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerScientistFChargestone, -1
-	object_event 16,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPokemaniacChargestone, -1
+	object_event 16,  6, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerMChargestone, -1
 	

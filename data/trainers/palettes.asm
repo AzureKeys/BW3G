@@ -36,6 +36,8 @@ INCBIN "gfx/trainers/parasol_lady.gbcpal", middle_colors
 INCBIN "gfx/trainers/pilot.gbcpal", middle_colors
 INCBIN "gfx/trainers/pokefan_m.gbcpal", middle_colors
 INCBIN "gfx/trainers/pokefan_f.gbcpal", middle_colors
+INCBIN "gfx/trainers/pkmn_ranger_m.gbcpal", middle_colors
+INCBIN "gfx/trainers/pkmn_ranger_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/officer.gbcpal", middle_colors
 INCBIN "gfx/trainers/psychic_t.gbcpal", middle_colors
 INCBIN "gfx/trainers/psychic_t_f.gbcpal", middle_colors

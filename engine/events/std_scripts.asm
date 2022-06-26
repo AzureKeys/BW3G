@@ -852,7 +852,7 @@ AskNumber1FScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
-	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
@@ -884,7 +884,7 @@ AskNumber2FScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
-	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
@@ -923,7 +923,7 @@ NumberAcceptedFScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
-	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
@@ -969,7 +969,7 @@ NumberDeclinedFScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
-	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
@@ -1015,7 +1015,7 @@ PhoneFullFScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
-	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
@@ -1061,7 +1061,7 @@ RematchFScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
-	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
+	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny

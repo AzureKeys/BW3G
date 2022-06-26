@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
 	const NUVEMATOWN_POKEFAN_M
-	const NUVEMATOWN_POKEFAN_F
+	const NUVEMATOWN_TEACHER
 
 NuvemaTown_MapScripts:
 	db 0 ; scene scripts
@@ -15,8 +15,8 @@ NuvemaTown_MapScripts:
 NuvemaTownPokefanMScript:
 	jumptextfaceplayer NuvemaTownPokefanMText
 	
-NuvemaTownPokefanFScript:
-	jumptextfaceplayer NuvemaTownPokefanFText
+NuvemaTownTeacherScript:
+	jumptextfaceplayer NuvemaTownTeacherText
 
 NuvemaTownSign:
 	jumptext NuvemaTownSignText
@@ -34,7 +34,7 @@ NuvemaTownPokefanMText:
 	line "more proud!"
 	done
 	
-NuvemaTownPokefanFText:
+NuvemaTownTeacherText:
 	text "Welcome to NUVEMA"
 	line "TOWN! We may not"
 	
@@ -75,5 +75,5 @@ NuvemaTown_MapEvents:
 
 	db 2 ; object events
 	object_event  9, 16, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NuvemaTownPokefanMScript, -1
-	object_event 17,  9, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NuvemaTownPokefanFScript, -1
+	object_event 17,  9, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NuvemaTownTeacherScript, -1
 	

@@ -31,6 +31,8 @@ TrainerPicPointers::
 	dba PilotPic
 	dba PokefanmPic
 	dba PokefanfPic
+	dba PkmnRangerMPic
+	dba PkmnRangerFPic
 	dba OfficerPic
 	dba PsychicTPic
 	dba PsychicTFPic

@@ -159,8 +159,6 @@ ENDM
 	
 	map_const R_4, 23, 30
 	map_const R_4_HOUSE, 4, 4 
-	map_const DESERT_RESORT, 30, 23
-	map_const R_4_DESERT_GATE, 5, 4
 	map_const R_4_CASTELIA_GATE, 5, 4
 	
 	newgroup
@@ -331,6 +329,10 @@ ENDM
 	map_const R_6, 26, 25
 	map_const R_6_HOUSE, 4, 4
 	map_const R_6_LAB, 4, 4
+	
+	newgroup
+	map_const DESERT_RESORT, 30, 23
+	map_const R_4_DESERT_GATE, 5, 4
 	
 	newgroup
 	map_const R_23_EAST, 17, 26

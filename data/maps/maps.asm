@@ -23,7 +23,7 @@ MapGroupPointers::
 	dw MapGroup_Undella     ;  5
 	dw MapGroup_Lentimas    ;  6
 	dw MapGroup_Nimbasa     ;  7
-	dw MapGroup_Desert      ;  8
+	dw MapGroup_R4          ;  8
 	dw MapGroup_Castelia    ;  9
 	dw MapGroup_Aspertia    ; 10
 	dw MapGroup_Floccesy    ; 11
@@ -38,7 +38,8 @@ MapGroupPointers::
 	dw MapGroup_Opelucid    ; 20
 	dw MapGroup_Icirrus     ; 21
 	dw MapGroup_Chargestone ; 22
-	dw MapGroup_PkmnLeague  ; 23
+	dw MapGroup_Desert      ; 23
+	dw MapGroup_PkmnLeague  ; 24
 
 MapGroup_Dungeons:
 	map GiantChasm1F, TILESET_CAVE, CAVE, GIANT_CHASM, MUSIC_UNOVA_CAVE, TRUE, PALETTE_NITE, FISHGROUP_POND
@@ -162,11 +163,9 @@ MapGroup_Nimbasa:
 	map NimbasaSubway, TILESET_TRAIN_STATION, INDOOR, NIMBASA_CITY, MUSIC_NIMBASA_CITY, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map NimbasaParkOutside, TILESET_PARK, ROUTE, NIMBASA_PARK, MUSIC_NIMBASA_CITY, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	
-MapGroup_Desert:
+MapGroup_R4:
 	map Rt4, TILESET_DESERT, ROUTE, R_4, MUSIC_R_4, FALSE, PALETTE_AUTO, FISHGROUP_OCEAN
 	map Rt4House, TILESET_HOUSE, INDOOR, R_4, MUSIC_R_4, FALSE, PALETTE_DAY, FISHGROUP_SHORE
-	map DesertResort, TILESET_DESERT, ROUTE, DESERT_RESORT, MUSIC_DESERT_RESORT, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
-	map Rt4DesertGate, TILESET_GATE, GATE, R_4, MUSIC_R_4, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map Rt4CasteliaGate, TILESET_GATE, GATE, R_4, MUSIC_R_4, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	
 MapGroup_Castelia:
@@ -337,6 +336,10 @@ MapGroup_Chargestone:
 	map Rt6House, TILESET_HOUSE, INDOOR, R_6, MUSIC_R_6, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map Rt6Lab, TILESET_LAB, INDOOR, R_6, MUSIC_R_6, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 
+MapGroup_Desert:
+	map DesertResort, TILESET_DESERT, ROUTE, DESERT_RESORT, MUSIC_DESERT_RESORT, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	map Rt4DesertGate, TILESET_GATE, GATE, R_4, MUSIC_R_4, FALSE, PALETTE_DAY, FISHGROUP_SHORE
+	
 MapGroup_PkmnLeague:
 	map Rt23East, TILESET_UNOVA_NORTH, ROUTE, R_23, MUSIC_R_17, FALSE, PALETTE_AUTO, FISHGROUP_LAKE
 	map Rt23West, TILESET_UNOVA_NORTH, ROUTE, R_23, MUSIC_R_17, FALSE, PALETTE_AUTO, FISHGROUP_LAKE

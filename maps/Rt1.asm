@@ -2,8 +2,8 @@
 	const R1_FRUIT_TREE
 	const R1_HEAVY_BALL
 	const R1_PROTEIN
-	const R1_SCHOOL_KIDM
-	const R1_SCHOOL_KIDF
+	const R1_PKMN_RANGERM
+	const R1_PKMN_RANGERF
 	const R1_LASS
 	const R1_BUG_CATCHER
 	const R1_BATTLE_GIRL
@@ -90,24 +90,24 @@ TrainerLassR1:
 	jumpstd rematchf
 	end
 
-TrainerSchoolKidMR1:
-	trainer SCHOOL_KIDM, SCHOOL_KIDM_R1, EVENT_BEAT_SCHOOL_KIDM_R1, SchoolKidMR1SeenText, SchoolKidMR1BeatenText, 0, .Script
+TrainerPkmnRangerMR1:
+	trainer PKMN_RANGERM, PKMN_RANGERM_R1, EVENT_BEAT_PKMN_RANGERM_R1, PkmnRangerMR1SeenText, PkmnRangerMR1BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolKidMR1AfterText
+	writetext PkmnRangerMR1AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolKidFR1:
-	trainer SCHOOL_KIDF, SCHOOL_KIDF_R1, EVENT_BEAT_SCHOOL_KIDF_R1, SchoolKidFR1SeenText, SchoolKidFR1BeatenText, 0, .Script
+TrainerPkmnRangerFR1:
+	trainer PKMN_RANGERF, PKMN_RANGERF_R1, EVENT_BEAT_PKMN_RANGERF_R1, PkmnRangerFR1SeenText, PkmnRangerFR1BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolKidFR1AfterText
+	writetext PkmnRangerFR1AfterText
 	waitbutton
 	closetext
 	end
@@ -163,7 +163,7 @@ R1BigMushroom:
 R1Sign:
 	jumptext R1SignText
 	
-SchoolKidMR1SeenText:
+PkmnRangerMR1SeenText:
 	text "I'm raising #-"
 	line "MON too!"
 
@@ -171,11 +171,11 @@ SchoolKidMR1SeenText:
 	line "with me?"
 	done
 
-SchoolKidMR1BeatenText:
+PkmnRangerMR1BeatenText:
 	text "Wha…?"
 	done
 
-SchoolKidMR1AfterText:
+PkmnRangerMR1AfterText:
 	text "I did my best but"
 	line "came up short."
 
@@ -183,7 +183,7 @@ SchoolKidMR1AfterText:
 	line "admit I lost."
 	done
 	
-SchoolKidFR1SeenText:
+PkmnRangerFR1SeenText:
 	text "The world of"
 	line "#MON is deep."
 
@@ -195,11 +195,11 @@ SchoolKidFR1SeenText:
 	line "than you do!"
 	done
 
-SchoolKidFR1BeatenText:
+PkmnRangerFR1BeatenText:
 	text "Wha-wha-what?"
 	done
 
-SchoolKidFR1AfterText:
+PkmnRangerFR1AfterText:
 	text "There is a lot"
 	line "to learn."
 
@@ -311,10 +311,10 @@ Rt1_MapEvents:
 	object_event 31, 40, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R1FruitTree, -1
 	object_event 26,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R1HeavyBall, EVENT_R1_HEAVY_BALL
 	object_event 18, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R1Protein, EVENT_R1_PROTEIN
-	object_event 27, 23, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMR1, -1
-	object_event 30, 23, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFR1, -1
-	object_event 29,  7, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerLassR1, -1
-	object_event 27, 38, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherR1, -1
+	object_event 27, 23, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerMR1, -1
+	object_event 30, 23, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerFR1, -1
+	object_event 29,  7, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerLassR1, -1
+	object_event 27, 38, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherR1, -1
 	object_event 20, 15, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlR1, -1
 	object_event 33, 14, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerTwinsR1, -1
 	object_event 33, 15, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerTwinsR1, -1

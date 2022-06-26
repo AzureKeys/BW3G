@@ -106,6 +106,8 @@
 	const SPRITE_BADGE_7 ; 66
 	const SPRITE_BADGE_8 ; 67
 	const SPRITE_ROUGHNECK ; 68
+	const SPRITE_RANGER_M ; 69
+	const SPRITE_RANGER_F ; 6a
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

@@ -5,10 +5,10 @@
 	const LENTIMASOUTSKIRTS_QUICK_BALL
 	const LENTIMASOUTSKIRTS_PICNICKER
 	const LENTIMASOUTSKIRTS_SCHOOL_KIDM
-	const LENTIMASOUTSKIRTS_HIKER
 	const LENTIMASOUTSKIRTS_BIRD_KEEPER
 	const LENTIMASOUTSKIRTS_BLACKBELT
-	const LENTIMASOUTSKIRTS_FIREBREATHER
+	const LENTIMASOUTSKIRTS_PKMN_RANGERM
+	const LENTIMASOUTSKIRTS_PKMN_RANGERF
 	const LENTIMASOUTSKIRTS_DOCTOR
 
 LentimasOutskirts_MapScripts:
@@ -155,17 +155,6 @@ TrainerPicnickerOutskirts:
 	closetext
 	end
 
-TrainerHikerOutskirts:
-	trainer HIKER_D, HIKER_OUTSKIRTS, EVENT_BEAT_HIKER_OUTSKIRTS, HikerOutskirtsSeenText, HikerOutskirtsBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext HikerOutskirtsAfterText
-	waitbutton
-	closetext
-	end
-
 TrainerBlackbeltOutskirts:
 	trainer BLACKBELT_T, BLACKBELT_OUTSKIRTS, EVENT_BEAT_BLACKBELT_OUTSKIRTS, BlackbeltOutskirtsSeenText, BlackbeltOutskirtsBeatenText, 0, .Script
 
@@ -177,13 +166,24 @@ TrainerBlackbeltOutskirts:
 	closetext
 	end
 
-TrainerFirebreatherOutskirts:
-	trainer FIREBREATHER, FIREBREATHER_OUTSKIRTS, EVENT_BEAT_FIREBREATHER_OUTSKIRTS, FirebreatherOutskirtsSeenText, FirebreatherOutskirtsBeatenText, 0, .Script
+TrainerPkmnRangerMOutskirts:
+	trainer PKMN_RANGERM, PKMN_RANGERM_OUTSKIRTS, EVENT_BEAT_PKMN_RANGERM_OUTSKIRTS, PkmnRangerMOutskirtsSeenText, PkmnRangerMOutskirtsBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FirebreatherOutskirtsAfterText
+	writetext PkmnRangerMOutskirtsAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerPkmnRangerFOutskirts:
+	trainer PKMN_RANGERF, PKMN_RANGERF_OUTSKIRTS, EVENT_BEAT_PKMN_RANGERF_OUTSKIRTS, PkmnRangerFOutskirtsSeenText, PkmnRangerFOutskirtsBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PkmnRangerFOutskirtsAfterText
 	waitbutton
 	closetext
 	end
@@ -280,7 +280,7 @@ BirdKeeperOutskirtsAfterText:
 	line "some items…"
 	done
 	
-HikerOutskirtsSeenText:
+PkmnRangerFOutskirtsSeenText:
 	text "Every day is the"
 	line "same. I get bored"
 
@@ -289,7 +289,7 @@ HikerOutskirtsSeenText:
 	cont "mind battling you!"
 	done
 
-HikerOutskirtsBeatenText:
+PkmnRangerFOutskirtsBeatenText:
 	text "It's been quite"
 	line "some time since"
 	
@@ -297,7 +297,7 @@ HikerOutskirtsBeatenText:
 	line "battle!"
 	done
 
-HikerOutskirtsAfterText:
+PkmnRangerFOutskirtsAfterText:
 	text "It's okay if"
 	line "everything's the"
 	
@@ -325,17 +325,17 @@ BlackbeltOutskirtsAfterText:
 	cont "a GYM LEADER."
 	done
 	
-FirebreatherOutskirtsSeenText:
+PkmnRangerMOutskirtsSeenText:
 	text "I'm practicing my"
 	line "fire breathing."
 	done
 
-FirebreatherOutskirtsBeatenText:
+PkmnRangerMOutskirtsBeatenText:
 	text "Ow! I scorched the"
 	line "tip of my nose!"
 	done
 
-FirebreatherOutskirtsAfterText:
+PkmnRangerMOutskirtsAfterText:
 	text "I'm so blown away,"
 	line "I can't move."
 	done
@@ -389,11 +389,11 @@ LentimasOutskirts_MapEvents:
 	object_event 26, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LentimasOutskirtsPotion, EVENT_LENTIMAS_OUTSKIRTS_POTION
 	object_event 18,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LentimasOutskirtsAwakening, EVENT_LENTIMAS_OUTSKIRTS_AWAKENING
 	object_event  9, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LentimasOutskirtsQuickBall, EVENT_LENTIMAS_OUTSKIRTS_QUICK_BALL
-	object_event 31,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerOutskirts, -1
-	object_event 28, 17, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerHikerOutskirts, -1
+	object_event 31,  9, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerOutskirts, -1
 	object_event 34, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperOutskirts, -1
 	object_event 22, 13, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltOutskirts, -1
-	object_event 18, 12, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherOutskirts, -1
+	object_event 18, 12, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMOutskirts, -1
+	object_event 28, 17, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFOutskirts, -1
 	object_event 11, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMOutskirts, -1
 	object_event 29,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OutskirtsDoctorScript, -1
 	

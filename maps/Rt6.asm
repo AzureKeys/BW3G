@@ -10,10 +10,10 @@
 	const R6_AMOONGUSS_3
 	const R6_PARASOL_LADY_1
 	const R6_PARASOL_LADY_2
-	const R6_LASS_1
+	const R6_PKMN_RANGERM
+	const R6_PKMN_RANGERF
 	const R6_PICNICKER
 	const R6_CAMPER
-	const R6_POKEFAN_F
 	const R6_SCIENTIST_M
 	const R6_SCIENTIST_F
 
@@ -136,13 +136,24 @@ TrainerScientistMR6:
 	jumpstd rematchm
 	end
 
-TrainerLass1R6:
-	trainer LASS, LASS_R6_1, EVENT_BEAT_LASS_R6_1, Lass1R6SeenText, Lass1R6BeatenText, 0, .Script
+TrainerPkmnRangerMR6:
+	trainer PKMN_RANGERM, PKMN_RANGERM_R6, EVENT_BEAT_PKMN_RANGERM_R6, PkmnRangerMR6SeenText, PkmnRangerMR6BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Lass1R6AfterText
+	writetext PkmnRangerMR6AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerPkmnRangerFR6:
+	trainer PKMN_RANGERF, PKMN_RANGERF_R6, EVENT_BEAT_PKMN_RANGERF_R6, PkmnRangerFR6SeenText, PkmnRangerFR6BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PkmnRangerFR6AfterText
 	waitbutton
 	closetext
 	end
@@ -191,17 +202,6 @@ TrainerCamperR6:
 	closetext
 	end
 
-TrainerPokefanFR6:
-	trainer POKEFANF, POKEFANF_R6, EVENT_BEAT_POKEFANF_R6, PokefanFR6SeenText, PokefanFR6BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext PokefanFR6AfterText
-	waitbutton
-	closetext
-	end
-
 TrainerScientistFR6:
 	trainer SCIENTIST_F, SCIENTISTF_R6, EVENT_BEAT_SCIENTISTF_R6, ScientistFR6SeenText, ScientistFR6BeatenText, 0, .Script
 
@@ -243,7 +243,25 @@ R6LabSign:
 R6ChargestoneSign:
 	jumptext R6ChargestoneText
 	
-Lass1R6SeenText:
+PkmnRangerMR6SeenText:
+	text "This ROUTE is such"
+	line "a lovely stroll,"
+	
+	para "wouldn't you"
+	line "agree?"
+	done
+
+PkmnRangerMR6BeatenText:
+	text "Oh dear…"
+	done
+
+PkmnRangerMR6AfterText:
+	text "Now I'll have to"
+	line "take my #MON"
+	cont "back to town…"
+	done
+	
+PkmnRangerFR6SeenText:
 	text "There are some"
 	line "#MON that can"
 	
@@ -251,11 +269,11 @@ Lass1R6SeenText:
 	line "selves!"
 	done
 
-Lass1R6BeatenText:
+PkmnRangerFR6BeatenText:
 	text "I lost…"
 	done
 
-Lass1R6AfterText:
+PkmnRangerFR6AfterText:
 	text "Be careful when"
 	line "checking for"
 	cont "items!"
@@ -323,24 +341,6 @@ CamperR6AfterText:
 	text "I'm gonna go stomp"
 	line "around to cheer"
 	cont "myself up!"
-	done
-	
-PokefanFR6SeenText:
-	text "This ROUTE is such"
-	line "a lovely stroll,"
-	
-	para "wouldn't you"
-	line "agree?"
-	done
-
-PokefanFR6BeatenText:
-	text "Oh dear…"
-	done
-
-PokefanFR6AfterText:
-	text "Now I'll have to"
-	line "take my #MON"
-	cont "back to town…"
 	done
 	
 ScientistMR6SeenText:
@@ -431,10 +431,10 @@ Rt6_MapEvents:
 	object_event 45, 26, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmoongussScript3, EVENT_R_6_AMOONGUSS_3
 	object_event 36, 32, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerParasolLady1R6, -1
 	object_event 27, 37, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerParasolLady2R6, -1
-	object_event 43, 27, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLass1R6, -1
+	object_event  5, 24, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMR6, -1
+	object_event 43, 27, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerFR6, -1
 	object_event 44, 34, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR6, -1
 	object_event 14, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerCamperR6, -1
-	object_event  5, 24, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerPokefanFR6, -1
 	object_event 24, 22, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerScientistMR6, -1
 	object_event 30, 22, SPRITE_SCIENTIST_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerScientistFR6, -1
 	

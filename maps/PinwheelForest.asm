@@ -5,11 +5,11 @@
 	const PINWHEELFOREST_CARBOS
 	const PINWHEELFOREST_NET_BALL
 	const PINWHEELFOREST_SHELL_STONE
-	const PINWHEELFOREST_BUG_CATCHER_1
-	const PINWHEELFOREST_BUG_CATCHER_2
+	const PINWHEELFOREST_PKMN_RANGERM_1
+	const PINWHEELFOREST_PKMN_RANGERM_2
+	const PINWHEELFOREST_PKMN_RANGERF_1
+	const PINWHEELFOREST_PKMN_RANGERF_2
 	const PINWHEELFOREST_BUG_CATCHER_3
-	const PINWHEELFOREST_BUG_CATCHER_4
-	const PINWHEELFOREST_BUG_CATCHER_5
 	const PINWHEELFOREST_PSYCHIC
 	const PINWHEELFOREST_HEX_MANIAC
 	const PINWHEELFOREST_LASS
@@ -136,24 +136,46 @@ PinwheelOfficer2WalkScript:
 	applymovement PLAYER, PinwheelStepDownMovement
 	end
 
-TrainerBugCatcherPinwheel1:
-	trainer BUG_CATCHER, BUG_CATCHER_PINWHEEL_1, EVENT_BEAT_BUG_CATCHER_PINWHEEL_1, BugCatcherPinwheel1SeenText, BugCatcherPinwheel1BeatenText, 0, .Script
+TrainerPkmnRangerMPinwheel1:
+	trainer PKMN_RANGERM, PKMN_RANGERM_PINWHEEL_1, EVENT_BEAT_PKMN_RANGERM_PINWHEEL_1, PkmnRangerMPinwheel1SeenText, PkmnRangerMPinwheel1BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherPinwheel1AfterText
+	writetext PkmnRangerMPinwheel1AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerBugCatcherPinwheel2:
-	trainer BUG_CATCHER, BUG_CATCHER_PINWHEEL_2, EVENT_BEAT_BUG_CATCHER_PINWHEEL_2, BugCatcherPinwheel2SeenText, BugCatcherPinwheel2BeatenText, 0, .Script
+TrainerPkmnRangerMPinwheel2:
+	trainer PKMN_RANGERM, PKMN_RANGERM_PINWHEEL_2, EVENT_BEAT_PKMN_RANGERM_PINWHEEL_2, PkmnRangerMPinwheel2SeenText, PkmnRangerMPinwheel2BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherPinwheel2AfterText
+	writetext PkmnRangerMPinwheel2AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerPkmnRangerFPinwheel1:
+	trainer PKMN_RANGERF, PKMN_RANGERF_PINWHEEL_1, EVENT_BEAT_PKMN_RANGERF_PINWHEEL_1, PkmnRangerFPinwheel1SeenText, PkmnRangerFPinwheel1BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PkmnRangerFPinwheel1AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerPkmnRangerFPinwheel2:
+	trainer PKMN_RANGERF, PKMN_RANGERF_PINWHEEL_2, EVENT_BEAT_PKMN_RANGERF_PINWHEEL_2, PkmnRangerFPinwheel2SeenText, PkmnRangerFPinwheel2BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PkmnRangerFPinwheel2AfterText
 	waitbutton
 	closetext
 	end
@@ -165,28 +187,6 @@ TrainerBugCatcherPinwheel3:
 	endifjustbattled
 	opentext
 	writetext BugCatcherPinwheel3AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerBugCatcherPinwheel4:
-	trainer BUG_CATCHER, BUG_CATCHER_PINWHEEL_4, EVENT_BEAT_BUG_CATCHER_PINWHEEL_4, BugCatcherPinwheel4SeenText, BugCatcherPinwheel4BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BugCatcherPinwheel4AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerBugCatcherPinwheel5:
-	trainer BUG_CATCHER, BUG_CATCHER_PINWHEEL_5, EVENT_BEAT_BUG_CATCHER_PINWHEEL_5, BugCatcherPinwheel5SeenText, BugCatcherPinwheel5BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BugCatcherPinwheel5AfterText
 	waitbutton
 	closetext
 	end
@@ -334,16 +334,16 @@ PinwheelOfficerText:
 	cont "right now."
 	done
 	
-BugCatcherPinwheel1SeenText:
+PkmnRangerMPinwheel1SeenText:
 	text "Why don't girls"
 	line "like bug #MON?"
 	done
 
-BugCatcherPinwheel1BeatenText:
+PkmnRangerMPinwheel1BeatenText:
 	text "No good!"
 	done
 
-BugCatcherPinwheel1AfterText:
+PkmnRangerMPinwheel1AfterText:
 	text "Bug #MON squish"
 	line "like plush toys"
 
@@ -354,16 +354,16 @@ BugCatcherPinwheel1AfterText:
 	line "feel!"
 	done
 	
-BugCatcherPinwheel2SeenText:
+PkmnRangerMPinwheel2SeenText:
 	text "I came to explore"
 	line "PINWHEEL FOREST."
 	done
 
-BugCatcherPinwheel2BeatenText:
+PkmnRangerMPinwheel2BeatenText:
 	text "Whoa! Danger, man."
 	done
 
-BugCatcherPinwheel2AfterText:
+PkmnRangerMPinwheel2AfterText:
 	text "My #MON was"
 	line "hurt before even"
 
@@ -393,33 +393,33 @@ BugCatcherPinwheel3AfterText:
 	line "even more vital."
 	done
 	
-BugCatcherPinwheel4SeenText:
+PkmnRangerFPinwheel1SeenText:
 	text "My bug #MON are"
 	line "tough. Prepare to"
 	cont "lose!"
 	done
 
-BugCatcherPinwheel4BeatenText:
+PkmnRangerFPinwheel1BeatenText:
 	text "I was whipped…"
 	done
 
-BugCatcherPinwheel4AfterText:
+PkmnRangerFPinwheel1AfterText:
 	text "I'm going to look"
 	line "for stronger bug"
 	cont "#MON."
 	done
 	
-BugCatcherPinwheel5SeenText:
+PkmnRangerFPinwheel2SeenText:
 	text "Hey, you!"
 	line "Don't litter!"
 	done
 
-BugCatcherPinwheel5BeatenText:
+PkmnRangerFPinwheel2BeatenText:
 	text "I was just point-"
 	line "ing out…"
 	done
 
-BugCatcherPinwheel5AfterText:
+PkmnRangerFPinwheel2AfterText:
 	text "Sorry. You weren't"
 	line "littering. It was"
 	cont "my mistake."
@@ -511,11 +511,11 @@ PinwheelForest_MapEvents:
 	object_event 16, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PinwheelForestCarbos, EVENT_PINWHEEL_FOREST_CARBOS
 	object_event 14, 31, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PinwheelForestNetBall, EVENT_PINWHEEL_FOREST_NET_BALL
 	object_event 23, 29, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PinwheelForestShellStone, EVENT_PINWHEEL_FOREST_SHELL_STONE
-	object_event 30, 10, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherPinwheel1, -1
-	object_event  1, 19, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerBugCatcherPinwheel2, -1
+	object_event 30, 10, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerMPinwheel1, -1
+	object_event  1, 19, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerPkmnRangerMPinwheel2, -1
+	object_event 17,  9, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerFPinwheel1, -1
+	object_event 19, 28, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFPinwheel2, -1
 	object_event 30, 31, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherPinwheel3, -1
-	object_event 17,  9, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherPinwheel4, -1
-	object_event 19, 28, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherPinwheel5, -1
 	object_event 16, 32, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicPinwheel, -1
 	object_event 27, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacPinwheel, -1
 	object_event 12, 15, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassPinwheel, -1

@@ -32,6 +32,8 @@ TrainerEncounterMusic::
 	db MUSIC_OFFICER_ENCOUNTER     ; pilot
 	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
 	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
+	db MUSIC_HIKER_ENCOUNTER       ; pkmnrangerm
+	db MUSIC_BEAUTY_ENCOUNTER      ; pkmnrangerf
 	db MUSIC_HIKER_ENCOUNTER       ; policeman
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychicm
 	db MUSIC_BEAUTY_ENCOUNTER      ; psychicf
