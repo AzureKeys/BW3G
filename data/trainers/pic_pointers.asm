@@ -34,6 +34,7 @@ TrainerPicPointers::
 	dba OfficerPic
 	dba PsychicTPic
 	dba PsychicTFPic
+	dba RichBoyPic
 	dba SchoolKidMPic
 	dba SchoolKidFPic
 	dba ScientistPic

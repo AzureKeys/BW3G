@@ -32,7 +32,8 @@ TrainerClassDVs:
 	dn  6, 13,  8,  8 ; POKEFAN_F
 	dn  9,  8,  8,  8 ; POLICEMAN
 	dn  9,  8,  8,  8 ; PSYCHIC_T_M
-	dn  9,  8,  8,  8 ; PSYCHIC_T_F
+	dn  6,  9, 12,  8 ; PSYCHIC_T_F
+	dn  9,  8,  8,  8 ; RICH_BOY
 	dn  9,  8,  8,  8 ; SCHOOL_KID_M
 	dn  9,  8,  8,  8 ; SCHOOL_KID_F
 	dn  9,  8,  8,  8 ; SCIENTIST_M

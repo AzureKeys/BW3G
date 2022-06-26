@@ -32,6 +32,7 @@ TrainerClassNames::
 	db "POLICEMAN@"
 	db "PSYCHIC@"
 	db "PSYCHIC@"
+	db "RICH BOY@"
 	db "SCHOOL KID@"
 	db "SCHOOL KID@"
 	db "SCIENTIST@"

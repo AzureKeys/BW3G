@@ -34,6 +34,7 @@ TrainerGroups:
 	dba OfficerGroup
 	dba PsychicGroup
 	dba PsychicFGroup
+	dba RichBoyGroup
 	dba SchoolKidMGroup
 	dba SchoolKidFGroup
 	dba ScientistMGroup

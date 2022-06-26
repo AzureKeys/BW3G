@@ -193,6 +193,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; RichBoy
+	db NO_ITEM, NO_ITEM ; items
+	db 22 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; SchoolKidm
 	db NO_ITEM, NO_ITEM ; items
 	db 8 ; base reward

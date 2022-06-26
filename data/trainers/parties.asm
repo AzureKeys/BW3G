@@ -465,16 +465,6 @@ CooltrainerFDGroup:
 	db 58, ALTARIA
 	dw $5800, $5800, $5800, $5800, $5800
 	db -1 ; end
-
-	; COOLTRAINERF (NACRENE_OUTSKIRT)
-	db "KAT@", TRAINERTYPE_STAT_EXP
-	db 28, VULLABY
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 28, HERDIER
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 31, SWOOBAT
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db -1 ; end
 	
 	; COOLTRAINERF (CARLA REMATCH 1)
 	db "CARLA@", TRAINERTYPE_STAT_EXP
@@ -1523,6 +1513,25 @@ PsychicFGroup:
 	db 34, LAMPENT
 	dw $3400, $3400, $3400, $3400, $3400
 	db -1 ; end
+	
+RichBoyGroup:
+	; RICH_BOY (R4)
+	db "PETER@", TRAINERTYPE_STAT_EXP
+	db 17, VULLABY
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 18, SWABLU
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+
+	; RICH_BOY (NACRENE_OUTSKIRT)
+	db "CARTIS@", TRAINERTYPE_STAT_EXP
+	db 28, VULLABY
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 28, HERDIER
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 31, SWOOBAT
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db -1 ; end
 
 SchoolKidMGroup:
 	; SCHOOL_KIDM (R13)
@@ -2093,14 +2102,6 @@ BirdKeeperGroup:
 	dw $0A00, $0A00, $0A00, $0A00, $0A00
 	db 18, DUCKLETT
 	dw $0A00, $0A00, $0A00, $0A00, $0A00
-	db -1 ; end
-
-	; BIRD_KEEPER (R4)
-	db "PETE@", TRAINERTYPE_STAT_EXP
-	db 17, VULLABY
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 18, SWABLU
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db -1 ; end
 
 	; BIRD_KEEPER (R19)

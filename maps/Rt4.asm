@@ -3,7 +3,7 @@
 	const R4_X_ACCURACY
 	const R4_ETHER
 	const R4_SUPER_POTION
-	const R4_BIRD_KEEPER
+	const R4_RICH_BOY
 	const R4_ROUGHNECK
 	const R4_FISHER1
 	const R4_FISHER2
@@ -102,13 +102,13 @@ TrainerLadyR4:
 	jumpstd rematchf
 	end
 
-TrainerBirdKeeperR4:
-	trainer BIRD_KEEPER, BIRD_KEEPER_R4, EVENT_BEAT_BIRD_KEEPER_R4, BirdKeeperR4SeenText, BirdKeeperR4BeatenText, 0, .Script
+TrainerRichBoyR4:
+	trainer RICH_BOY, RICH_BOY_R4, EVENT_BEAT_RICH_BOY_R4, RichBoyR4SeenText, RichBoyR4BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeperR4AfterText
+	writetext RichBoyR4AfterText
 	waitbutton
 	closetext
 	end
@@ -231,18 +231,18 @@ R4DesertSign:
 R4CasteliaSign:
 	jumptext R4CasteliaSignText
 	
-BirdKeeperR4SeenText:
+RichBoyR4SeenText:
 	text "I can do so much"
 	line "with my #MON--"
 	cont "it's super-fun!"
 	done
 
-BirdKeeperR4BeatenText:
+RichBoyR4BeatenText:
 	text "Losing isn't fun"
 	line "at all…"
 	done
 
-BirdKeeperR4AfterText:
+RichBoyR4AfterText:
 	text "We were going to"
 	line "the DESERT RESORT."
 	done
@@ -450,7 +450,7 @@ Rt4_MapEvents:
 	object_event 17, 55, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4XAccuracy, EVENT_R_4_X_ACCURACY
 	object_event 36, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4Ether, EVENT_R_4_ETHER_1
 	object_event 25, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4SuperPotion, EVENT_R_4_SUPER_POTION
-	object_event 31, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerBirdKeeperR4, -1
+	object_event 31, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerRichBoyR4, -1
 	object_event 14, 30, SPRITE_ROUGHNECK, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRoughneckR4, -1
 	object_event 12, 49, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerFisher1R4, -1
 	object_event 12, 53, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 0, TrainerFisher2R4, -1

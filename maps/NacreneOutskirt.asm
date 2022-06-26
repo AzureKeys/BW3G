@@ -7,7 +7,7 @@
 	const NACRENEOUTSKIRT_SCHOOL_KIDM
 	const NACRENEOUTSKIRT_SCHOOL_KIDF
 	const NACRENEOUTSKIRT_PARASOL_LADY
-	const NACRENEOUTSKIRT_COOLTRAINER_F
+	const NACRENEOUTSKIRT_RICH_BOY
 
 NacreneOutskirt_MapScripts:
 	db 0 ; scene scripts
@@ -47,13 +47,13 @@ TrainerParasolLadyNacrene:
 	closetext
 	end
 
-TrainerCooltrainerFNacrene:
-	trainer COOLTRAINERF_D, COOLTRAINERF_NACRENE_OUTSKIRT, EVENT_BEAT_COOLTRAINERF_NACRENE_OUTSKIRT, CooltrainerFNacreneSeenText, CooltrainerFNacreneBeatenText, 0, .Script
+TrainerRichBoyNacrene:
+	trainer RICH_BOY, RICH_BOY_NACRENE_OUTSKIRT, EVENT_BEAT_RICH_BOY_NACRENE_OUTSKIRT, RichBoyNacreneSeenText, RichBoyNacreneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerFNacreneAfterText
+	writetext RichBoyNacreneAfterText
 	waitbutton
 	closetext
 	end
@@ -120,15 +120,15 @@ ParasolLadyNacreneAfterText:
 	text "..."
 	done
 	
-CooltrainerFNacreneSeenText:
+RichBoyNacreneSeenText:
 	text "..."
 	done
 
-CooltrainerFNacreneBeatenText:
+RichBoyNacreneBeatenText:
 	text "..."
 	done
 
-CooltrainerFNacreneAfterText:
+RichBoyNacreneAfterText:
 	text "..."
 	done
 	
@@ -160,5 +160,5 @@ NacreneOutskirt_MapEvents:
 	object_event  6, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidMNacrene, -1
 	object_event 15, 29, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFNacrene, -1
 	object_event  5, 34, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerParasolLadyNacrene, -1
-	object_event 19, 41, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerFNacrene, -1
+	object_event 19, 41, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerRichBoyNacrene, -1
 	
