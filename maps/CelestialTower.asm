@@ -5,7 +5,7 @@
 	const CELESTIALTOWER_SMOKE_BALL
 	const CELESTIALTOWER_HEX_MANIAC_1
 	const CELESTIALTOWER_HEX_MANIAC_2
-	const CELESTIALTOWER_HEX_MANIAC_3
+	const CELESTIALTOWER_MAID
 	const CELESTIALTOWER_PSYCHIC_1
 	const CELESTIALTOWER_PSYCHIC_2
 	const CELESTIALTOWER_SCHOOL_KIDF
@@ -41,13 +41,13 @@ TrainerHexManiac2CelestialTower:
 	closetext
 	end
 
-TrainerHexManiac3CelestialTower:
-	trainer HEX_MANIAC, HEX_MANIAC_CELESTIAL_TOWER_3, EVENT_BEAT_HEX_MANIAC_CELESTIAL_TOWER_3, HexManiac3CelestialTowerSeenText, HexManiac3CelestialTowerBeatenText, 0, .Script
+TrainerMaidCelestialTower:
+	trainer MAID, MAID_CELESTIAL_TOWER, EVENT_BEAT_MAID_CELESTIAL_TOWER, MaidCelestialTowerSeenText, MaidCelestialTowerBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HexManiac3CelestialTowerAfterText
+	writetext MaidCelestialTowerAfterText
 	waitbutton
 	closetext
 	end
@@ -171,7 +171,7 @@ HexManiac2CelestialTowerAfterText:
 	line "truly strong…"
 	done
 	
-HexManiac3CelestialTowerSeenText:
+MaidCelestialTowerSeenText:
 	text "If one wants to"
 	line "grow strong, one"
 	
@@ -179,11 +179,11 @@ HexManiac3CelestialTowerSeenText:
 	line "the soul…"
 	done
 
-HexManiac3CelestialTowerBeatenText:
+MaidCelestialTowerBeatenText:
 	text "I see…"
 	done
 
-HexManiac3CelestialTowerAfterText:
+MaidCelestialTowerAfterText:
 	text "It is my soul"
 	line "which needs"
 	cont "strengthening…"
@@ -318,8 +318,8 @@ CelestialTower_MapEvents:
 	object_event  1, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CelestialTowerPPUp, EVENT_CELESTIAL_PP_UP
 	object_event  9, 43, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CelestialTowerSmokeBall, EVENT_CELESTIAL_SMOKE_BALL
 	object_event  4, 43, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerHexManiac1CelestialTower, -1
-	object_event  4, 25, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerHexManiac2CelestialTower, -1
-	object_event  3,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiac3CelestialTower, -1
+	object_event  3,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiac2CelestialTower, -1
+	object_event  4, 25, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerMaidCelestialTower, -1
 	object_event  8, 21, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychic1CelestialTower, -1
 	object_event  9,  5, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychic2CelestialTower, -1
 	object_event  8, 37, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFCelestialTower, -1

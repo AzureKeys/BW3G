@@ -1,4 +1,4 @@
-StanleyPhoneAskRematchText:
+SophiePhoneAskRematchText:
 	text "Hey <PLAY_G>,"
 	line "it's DAN!"
 
@@ -14,7 +14,7 @@ StanleyPhoneAskRematchText:
 	line "ROUTE 13. See ya!"
 	done
 	
-StanleyPhoneAfterBattleText:
+SophiePhoneAfterBattleText:
 	text "Hey <PLAY_G>."
 
 	para "We're training"
@@ -25,7 +25,7 @@ StanleyPhoneAfterBattleText:
 	line "win for sure!"
 	done
 	
-StanleyPhoneWaitingText:
+SophiePhoneWaitingText:
 	text "Hey <PLAY_G>,"
 	line "I'm waiting for"
 	cont "you on ROUTE 13!"
@@ -33,7 +33,7 @@ StanleyPhoneWaitingText:
 	para "Don't be late!"
 	done
 	
-StanleyAskNumber1Text:
+SophieAskNumber1Text:
 	text "You're pretty"
 	line "good!"
 
@@ -45,7 +45,7 @@ StanleyAskNumber1Text:
 	line "your number?"
 	done
 
-StanleyAskNumber2Text:
+SophieAskNumber2Text:
 	text "You can call me"
 	line "if you want a"
 	cont "rematch!"
@@ -54,13 +54,13 @@ StanleyAskNumber2Text:
 	line "your number?"
 	done
 
-StanleyNumberAcceptedText:
+SophieNumberAcceptedText:
 	text "Call me whenever"
 	line "you're looking"
 	cont "for a match!"
 	done
 
-StanleyNumberDeclinedText:
+SophieNumberDeclinedText:
 	text "Oh, OK. Too bad…"
 
 	para "Well, if you ever"
@@ -68,7 +68,7 @@ StanleyNumberDeclinedText:
 	cont "come see me, OK?"
 	done
 
-StanleyPhoneFullText:
+SophiePhoneFullText:
 	text "Oh?"
 	line "Your phone's full."
 
@@ -76,7 +76,7 @@ StanleyPhoneFullText:
 	line "my number."
 	done
 
-StanleyRematchText:
+SophieRematchText:
 	text "Hi, I was waiting"
 	line "for you to show!"
 

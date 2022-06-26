@@ -54,9 +54,7 @@ CHRIS EQU __enum__
 	const LASS_R16
 	const LASS_DESERT_2
 	const LASS_PINWHEEL
-	const LASS_R1
 	const LASS_R7_2
-	const CLARISSA_REMATCH_1
 
 	trainerclass COOLTRAINERM ; 1b
 	const COOLTRAINERM_R2
@@ -189,7 +187,6 @@ CHRIS EQU __enum__
 	const HEX_MANIAC_RELIC_PASSAGE
 	const HEX_MANIAC_CELESTIAL_TOWER_1
 	const HEX_MANIAC_CELESTIAL_TOWER_2
-	const HEX_MANIAC_CELESTIAL_TOWER_3
 
 	trainerclass HIKER ; 2c
 	const HIKER_REVERSAL_1
@@ -212,6 +209,14 @@ CHRIS EQU __enum__
 	const LADY_R19
 	const LACEY_REMATCH_1
 	const LACEY_REMATCH_2
+	
+	trainerclass MAID
+	const MAID_R19
+	const MAID_R1
+	const MAID_CELESTIAL_TOWER
+	const SOPHIE_REMATCH_1
+	const SOPHIE_REMATCH_2
+	const CLARISSA_REMATCH_1
 	
 	trainerclass PARASOL_LADY
 	const PARASOL_LADY_NACRENE_OUTSKIRT
@@ -404,10 +409,7 @@ CHRIS EQU __enum__
 	const BUG_CATCHER_R1
 
 	trainerclass SAILOR ; 28
-	const SAILOR_R19
 	const SAILOR_R11
-	const STANLEY_REMATCH_1
-	const STANLEY_REMATCH_2
 
 	trainerclass SUPER_NERD ; 29
 	const SUPER_NERD_R5_1

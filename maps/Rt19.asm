@@ -11,7 +11,7 @@
 	const R19_LADY
 	const R19_DEPOT_AGENT_1
 	const R19_DEPOT_AGENT_2
-	const R19_SAILOR
+	const R19_MAID
 	const R19_BAKER
 	const R19_FAKE_JUNIPER
 
@@ -20,87 +20,87 @@ Rt19_MapScripts:
 
 	db 0 ; callbacks
 
-TrainerSailorR19:
-	trainer SAILOR, SAILOR_R19, EVENT_BEAT_SAILOR_R19, SailorR19SeenText, SailorR19BeatenText, 0, .Script
+TrainerMaidR19:
+	trainer MAID, MAID_R19, EVENT_BEAT_MAID_R19, MaidR19SeenText, MaidR19BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_SAILOR_STANLEY
+	writecode VAR_CALLERID, PHONE_MAID_SOPHIE
 	opentext
-	checkflag ENGINE_STANLEY_READY_FOR_REMATCH
+	checkflag ENGINE_SOPHIE_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_SAILOR_STANLEY
+	checkcellnum PHONE_MAID_SOPHIE
 	iftrue .NumberAccepted
-	checkevent EVENT_STANLEY_ASKED_FOR_PHONE_NUMBER
+	checkevent EVENT_SOPHIE_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext SailorR19AfterText
+	writetext MaidR19AfterText
 	buttonsound
-	setevent EVENT_STANLEY_ASKED_FOR_PHONE_NUMBER
+	setevent EVENT_SOPHIE_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
 	jump .ContinueAskForPhoneNumber
 	
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_SAILOR_STANLEY
+	askforphonenumber PHONE_MAID_SOPHIE
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
-	setflag ENGINE_STANLEY
-	trainertotext SAILOR, SAILOR_R19, MEM_BUFFER_0
+	setflag ENGINE_SOPHIE
+	trainertotext MAID, MAID_R19, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext SailorR19BeatenText, 0
+	winlosstext MaidR19BeatenText, 0
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight2
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
 	iftrue .LoadFight1
 ; Fight0
-	loadtrainer SAILOR, SAILOR_R19
+	loadtrainer MAID, MAID_R19
 	startbattle
 	reloadmapafterbattle
-	clearflag ENGINE_STANLEY_READY_FOR_REMATCH
+	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
 	end
 .LoadFight1
-	loadtrainer SAILOR, STANLEY_REMATCH_1
+	loadtrainer MAID, SOPHIE_REMATCH_1
 	startbattle
 	reloadmapafterbattle
-	clearflag ENGINE_STANLEY_READY_FOR_REMATCH
+	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
 	end
 .LoadFight2
-	loadtrainer SAILOR, STANLEY_REMATCH_2
+	loadtrainer MAID, SOPHIE_REMATCH_2
 	startbattle
 	reloadmapafterbattle
-	clearflag ENGINE_STANLEY_READY_FOR_REMATCH
+	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
 	end
 	
 .AskNumber1:
-	jumpstd asknumber1m
+	jumpstd asknumber1f
 	end
 	
 .AskNumber2:
-	jumpstd asknumber2m
+	jumpstd asknumber2f
 	end
 
 .RegisteredNumber:
-	jumpstd registerednumberm
+	jumpstd registerednumberf
 	end
 
 .NumberAccepted:
-	jumpstd numberacceptedm
+	jumpstd numberacceptedf
 	end
 
 .NumberDeclined:
-	jumpstd numberdeclinedm
+	jumpstd numberdeclinedf
 	end
 
 .PhoneFull:
-	jumpstd phonefullm
+	jumpstd phonefullf
 	end
 
 .Rematch:
-	jumpstd rematchm
+	jumpstd rematchf
 	end
 
 TrainerYoungsterR19:
@@ -283,7 +283,7 @@ DepotAgent2R19AfterText:
 	line "take you on…"
 	done
 	
-SailorR19SeenText:
+MaidR19SeenText:
 	text "I'm a sailor man!"
 
 	para "But I'm training"
@@ -291,12 +291,12 @@ SailorR19SeenText:
 	cont "become the CHAMP!"
 	done
 
-SailorR19BeatenText:
+MaidR19BeatenText:
 	text "My lack of train-"
 	line "ing is obvious…"
 	done
 
-SailorR19AfterText:
+MaidR19AfterText:
 	text "BADGES prove that"
 	line "you've beaten GYM"
 	cont "LEADERS."
@@ -349,7 +349,7 @@ Rt19_MapEvents:
 	object_event 21, 13, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLadyR19, -1
 	object_event 20, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerDepotAgent1R19, -1
 	object_event 30, 12, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerDepotAgent2R19, -1
-	object_event 18, 18, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSailorR19, -1
+	object_event 18, 18, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerMaidR19, -1
 	object_event 26, 17, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBakerR19, -1
 	object_event 42, 16, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, -1, -1, EVENT_FLOCCESY_TOWN_JUNIPER
 	

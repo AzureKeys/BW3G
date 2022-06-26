@@ -171,18 +171,6 @@ LassDGroup:
 	db 31, TROPIUS
 	dw $2C00, $2C00, $2C00, $2C00, $2C00
 	db -1 ; end
-	
-	; LASS (R1)
-	db "CLARISSA@", TRAINERTYPE_STAT_EXP
-	db 30, ZORUA
-	dw $3400, $3400, $3400, $3400, $3400
-	db 30, SPHEAL
-	dw $3400, $3400, $3400, $3400, $3400
-	db 30, PURRLOIN
-	dw $3400, $3400, $3400, $3400, $3400
-	db 30, SNORUNT
-	dw $3400, $3400, $3400, $3400, $3400
-	db -1 ; end
 
 	; LASS (R7)
 	db "HOLLIE@", TRAINERTYPE_STAT_EXP
@@ -192,18 +180,6 @@ LassDGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db 44, GLACEON
 	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-	
-	; LASS (CLARISSA REMATCH 1)
-	db "CLARISSA@", TRAINERTYPE_STAT_EXP
-	db 38, LIEPARD
-	dw $4800, $4800, $4800, $4800, $4800
-	db 39, SEALEO
-	dw $4800, $4800, $4800, $4800, $4800
-	db 38, ZOROARK
-	dw $4800, $4800, $4800, $4800, $4800
-	db 42, GLALIE
-	dw $4800, $4800, $4800, $4800, $4800
 	db -1 ; end
 
 CooltrainerMGroup:
@@ -1042,14 +1018,6 @@ HexManiacGroup:
 	db -1 ; end
 	
 	; HEX_MANIAC (CELESTIAL)
-	db "KASS@", TRAINERTYPE_STAT_EXP
-	db 44, YAMASK
-	dw $5000, $5000, $5000, $5000, $5000
-	db 45, GOTHORITA
-	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-	
-	; HEX_MANIAC (CELESTIAL)
 	db "JOYCE@", TRAINERTYPE_STAT_EXP
 	db 48, SPIRITOMB
 	dw $5000, $5000, $5000, $5000, $5000
@@ -1187,6 +1155,63 @@ LadyGroup:
 	db 41, BRELOOM
 	dw $4800, $4800, $4800, $4800, $4800
 	db 43, AMOONGUSS
+	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+	
+MaidGroup:
+	; MAID (R19)
+	db "SOPHIE@", TRAINERTYPE_STAT_EXP
+	db 26, REMORAID
+	dw $2000, $2000, $2000, $2000, $2000
+	db 26, MANTYKE
+	dw $2000, $2000, $2000, $2000, $2000
+	db -1 ; end
+	
+	; MAID (R1)
+	db "CLARISSA@", TRAINERTYPE_STAT_EXP
+	db 30, ZORUA
+	dw $3400, $3400, $3400, $3400, $3400
+	db 30, SPHEAL
+	dw $3400, $3400, $3400, $3400, $3400
+	db 30, PURRLOIN
+	dw $3400, $3400, $3400, $3400, $3400
+	db 30, SNORUNT
+	dw $3400, $3400, $3400, $3400, $3400
+	db -1 ; end
+	
+	; MAID (CELESTIAL)
+	db "KASSANDRA@", TRAINERTYPE_STAT_EXP
+	db 44, YAMASK
+	dw $5000, $5000, $5000, $5000, $5000
+	db 45, GOTHORITA
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+	
+	; MAID (SOPHIE REMATCH 1)
+	db "SOPHIE@", TRAINERTYPE_STAT_EXP
+	db 31, OCTILLERY
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 31, MANTINE
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db -1 ; end
+	
+	; MAID (SOPHIE REMATCH 2)
+	db "SOPHIE@", TRAINERTYPE_STAT_EXP
+	db 42, OCTILLERY
+	dw $4800, $4800, $4800, $4800, $4800
+	db 42, MANTINE
+	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+	
+	; LASS (CLARISSA REMATCH 1)
+	db "CLARISSA@", TRAINERTYPE_STAT_EXP
+	db 38, LIEPARD
+	dw $4800, $4800, $4800, $4800, $4800
+	db 39, SEALEO
+	dw $4800, $4800, $4800, $4800, $4800
+	db 38, ZOROARK
+	dw $4800, $4800, $4800, $4800, $4800
+	db 42, GLALIE
 	dw $4800, $4800, $4800, $4800, $4800
 	db -1 ; end
 	
@@ -2366,14 +2391,6 @@ BugCatcherGroup:
 	db -1 ; end
 
 SailorGroup:
-	; SAILOR (R19)
-	db "STANLEY@", TRAINERTYPE_STAT_EXP
-	db 26, REMORAID
-	dw $2000, $2000, $2000, $2000, $2000
-	db 26, MANTYKE
-	dw $2000, $2000, $2000, $2000, $2000
-	db -1 ; end
-	
 	; SAILOR (R11)
 	db "CROFT@", TRAINERTYPE_STAT_EXP
 	db 47, TYMPOLE
@@ -2382,22 +2399,6 @@ SailorGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db 50, SEISMITOAD
 	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-	
-	; SAILOR (STANLEY REMATCH 1)
-	db "STANLEY@", TRAINERTYPE_STAT_EXP
-	db 31, OCTILLERY
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 31, MANTINE
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db -1 ; end
-	
-	; SAILOR (STANLEY REMATCH 2)
-	db "STANLEY@", TRAINERTYPE_STAT_EXP
-	db 42, OCTILLERY
-	dw $4800, $4800, $4800, $4800, $4800
-	db 42, MANTINE
-	dw $4800, $4800, $4800, $4800, $4800
 	db -1 ; end
 
 SuperNerdGroup:
