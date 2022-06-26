@@ -851,7 +851,7 @@ RematchGiftMScript:
 AskNumber1FScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
-	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
@@ -883,7 +883,7 @@ AskNumber1FScript:
 AskNumber2FScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
-	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
@@ -922,7 +922,7 @@ RegisteredNumberFScript:
 NumberAcceptedFScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
-	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
@@ -968,7 +968,7 @@ NumberAcceptedFScript:
 NumberDeclinedFScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
-	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
@@ -1014,7 +1014,7 @@ NumberDeclinedFScript:
 PhoneFullFScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
-	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa
@@ -1060,7 +1060,7 @@ PhoneFullFScript:
 RematchFScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
-	ifequal PHONE_BEAUTY_LACEY, .Lacey
+	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_COOLTRAINER_ARIANA, .Ariana
 	ifequal PHONE_COOLTRAINER_CARLA, .Carla
 	ifequal PHONE_LASS_CLARISSA, .Clarissa

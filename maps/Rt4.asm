@@ -7,7 +7,7 @@
 	const R4_ROUGHNECK
 	const R4_FISHER1
 	const R4_FISHER2
-	const R4_BEAUTY
+	const R4_LADY
 	const R4_PICNICKER
 	const R4_OFFICER1
 	const R4_OFFICER2
@@ -19,19 +19,19 @@ Rt4_MapScripts:
 
 	db 0 ; callbacks
 
-TrainerBeautyR4:
-	trainer BEAUTY_D, BEAUTY_R4, EVENT_BEAT_BEAUTY_R4, BeautyR4SeenText, BeautyR4BeatenText, 0, .Script
+TrainerLadyR4:
+	trainer LADY, LADY_R4, EVENT_BEAT_LADY_R4, LadyR4SeenText, LadyR4BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_BEAUTY_LACEY
+	writecode VAR_CALLERID, PHONE_LADY_LACEY
 	opentext
 	checkflag ENGINE_LACEY_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_BEAUTY_LACEY
+	checkcellnum PHONE_LADY_LACEY
 	iftrue .NumberAccepted
 	checkevent EVENT_LACEY_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext BeautyR4AfterText
+	writetext LadyR4AfterText
 	buttonsound
 	setevent EVENT_LACEY_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -40,35 +40,35 @@ TrainerBeautyR4:
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_BEAUTY_LACEY
+	askforphonenumber PHONE_LADY_LACEY
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_LACEY
-	trainertotext BEAUTY_D, BEAUTY_R4, MEM_BUFFER_0
+	trainertotext LADY, LADY_R4, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext BeautyR4BeatenText, 0
+	winlosstext LadyR4BeatenText, 0
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight2
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
 	iftrue .LoadFight1
 ; Fight0
-	loadtrainer BEAUTY_D, BEAUTY_R4
+	loadtrainer LADY, LADY_R4
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH
 	end
 .LoadFight1
-	loadtrainer BEAUTY_D, LACEY_REMATCH_1
+	loadtrainer LADY, LACEY_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH
 	end
 .LoadFight2
-	loadtrainer BEAUTY_D, LACEY_REMATCH_2
+	loadtrainer LADY, LACEY_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH
@@ -304,7 +304,7 @@ Fisher2R4AfterText:
 	line "long friends!"
 	done
 	
-BeautyR4SeenText:
+LadyR4SeenText:
 	text "Oh, you are a cute"
 	line "little trainer! "
 
@@ -312,12 +312,12 @@ BeautyR4SeenText:
 	line "won't hold back!"
 	done
 
-BeautyR4BeatenText:
+LadyR4BeatenText:
 	text "Let's see… Oops,"
 	line "it's over?"
 	done
 
-BeautyR4AfterText:
+LadyR4AfterText:
 	text "Wow, you must be"
 	line "good to beat me!"
 	cont "Keep it up!"
@@ -454,7 +454,7 @@ Rt4_MapEvents:
 	object_event 14, 30, SPRITE_ROUGHNECK, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRoughneckR4, -1
 	object_event 12, 49, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerFisher1R4, -1
 	object_event 12, 53, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 0, TrainerFisher2R4, -1
-	object_event 20, 35, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 4, TrainerBeautyR4, -1
+	object_event 20, 35, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerLadyR4, -1
 	object_event 22, 20, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR4, -1
 	object_event 17, 12, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerOfficer1R4, -1
 	object_event 32, 50, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerOfficer2R4, -1

@@ -40,6 +40,7 @@ RoughneckPic:       INCBIN "gfx/trainers/roughneck.2bpp.lz"
 DepotAgentPic:      INCBIN "gfx/trainers/depot_agent.2bpp.lz"
 BakerPic:           INCBIN "gfx/trainers/baker.2bpp.lz"
 ParasolLadyPic:     INCBIN "gfx/trainers/parasol_lady.2bpp.lz"
+LadyPic:     INCBIN "gfx/trainers/lady.2bpp.lz"
 
 
 SECTION "Pics 2", ROMX

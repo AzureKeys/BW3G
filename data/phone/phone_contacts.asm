@@ -19,7 +19,7 @@ PhoneContacts:
 	phone SCHOOL_KIDF,    SCHOOL_KIDF_R14,       R_14,               ANYTIME, JewelPhoneCalleeScript,    0, JewelPhoneCallerScript
 	phone BIRD_KEEPER,    BIRD_KEEPER_OUTSKIRTS, LENTIMAS_OUTSKIRTS, ANYTIME, FreddyPhoneCalleeScript,   0, FreddyPhoneCallerScript
 	phone SUPER_NERD,     SUPER_NERD_R5_2,       R_5,                ANYTIME, EricPhoneCalleeScript,     0, EricPhoneCallerScript
-	phone BEAUTY_D,       BEAUTY_R4,             R_4,                ANYTIME, LaceyPhoneCalleeScript,    0, LaceyPhoneCallerScript
+	phone LADY,           LADY_R4,               R_4,                ANYTIME, LaceyPhoneCalleeScript,    0, LaceyPhoneCallerScript
 	phone SAILOR,         SAILOR_R19,            R_19,               ANYTIME, StanleyPhoneCalleeScript,  0, StanleyPhoneCallerScript
 	phone COOLTRAINERF,   COOLTRAINERF_R3_1,     R_3,                ANYTIME, ArianaPhoneCalleeScript,   0, ArianaPhoneCallerScript
 	phone COOLTRAINERF_D, COOLTRAINERF_R2,       R_2,                ANYTIME, CarlaPhoneCalleeScript,    0, CarlaPhoneCallerScript

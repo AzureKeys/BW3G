@@ -1225,6 +1225,41 @@ HikerDGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db -1 ; end
 	
+LadyGroup:
+	; LADY (R4)
+	db "LACEY@", TRAINERTYPE_STAT_EXP
+	db 16, FOONGUS
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 18, SHROOMISH
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+	
+	; LADY (R19)
+	db "CHELSEA@", TRAINERTYPE_STAT_EXP
+	db 23, COTTONEE
+	dw $2000, $2000, $2000, $2000, $2000
+	db 23, PETILIL
+	dw $2000, $2000, $2000, $2000, $2000
+	db 25, ROSELIA
+	dw $2000, $2000, $2000, $2000, $2000
+	db -1 ; end
+	
+	; LADY (LACEY REMATCH 1)
+	db "LACEY@", TRAINERTYPE_STAT_EXP
+	db 30, FOONGUS
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 32, BRELOOM
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db -1 ; end
+	
+	; LADY (LACEY REMATCH 2)
+	db "LACEY@", TRAINERTYPE_STAT_EXP
+	db 41, BRELOOM
+	dw $4800, $4800, $4800, $4800, $4800
+	db 43, AMOONGUSS
+	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+	
 ParasolLadyGroup:
 	; PARASOL_LADY (NACRENE_OUTSKIRT)
 	db "KELLY@", TRAINERTYPE_STAT_EXP
@@ -2123,16 +2158,6 @@ BirdKeeperGroup:
 	db -1 ; end
 
 BeautyGroup:
-	; BEAUTY (R19)
-	db "CHELSEA@", TRAINERTYPE_STAT_EXP
-	db 23, COTTONEE
-	dw $2000, $2000, $2000, $2000, $2000
-	db 23, PETILIL
-	dw $2000, $2000, $2000, $2000, $2000
-	db 25, ROSELIA
-	dw $2000, $2000, $2000, $2000, $2000
-	db -1 ; end
-	
 	; BEAUTY (R2)
 	db "JULIE@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
 	db 30, LARVESTA
@@ -2144,14 +2169,6 @@ BeautyGroup:
 	db -1 ; end
 
 BeautyDGroup:
-	; BEAUTY (R4)
-	db "LACEY@", TRAINERTYPE_STAT_EXP
-	db 16, FOONGUS
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 18, SHROOMISH
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db -1 ; end
-	
 	; BEAUTY (CELESTIAL)
 	db "DOREEN@", TRAINERTYPE_STAT_EXP
 	db 45, SNEASEL
@@ -2166,22 +2183,6 @@ BeautyDGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db 49, EXCADRILL
 	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-	
-	; BEAUTY (LACEY REMATCH 1)
-	db "LACEY@", TRAINERTYPE_STAT_EXP
-	db 30, FOONGUS
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 32, BRELOOM
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db -1 ; end
-	
-	; BEAUTY (LACEY REMATCH 2)
-	db "LACEY@", TRAINERTYPE_STAT_EXP
-	db 41, BRELOOM
-	dw $4800, $4800, $4800, $4800, $4800
-	db 43, AMOONGUSS
-	dw $4800, $4800, $4800, $4800, $4800
 	db -1 ; end
 
 PokemaniacGroup:

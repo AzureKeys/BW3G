@@ -215,6 +215,12 @@ CHRIS EQU __enum__
 	const HIKER_CHARGESTONE_3
 	const HIKER_MISTRALTON_CAVE_2
 	
+	trainerclass LADY
+	const LADY_R4
+	const LADY_R19
+	const LACEY_REMATCH_1
+	const LACEY_REMATCH_2
+	
 	trainerclass PARASOL_LADY
 	const PARASOL_LADY_NACRENE_OUTSKIRT
 	const PARASOL_LADY_R6_1
@@ -357,15 +363,11 @@ CHRIS EQU __enum__
 	const FREDDY_REMATCH_3
 
 	trainerclass BEAUTY ; 1d
-	const BEAUTY_R19
 	const BEAUTY_R2
 	
 	trainerclass BEAUTY_D
-	const BEAUTY_R4
 	const BEAUTY_CELESTIAL_TOWER
 	const BEAUTY_VILLAGE_BRIDGE
-	const LACEY_REMATCH_1
-	const LACEY_REMATCH_2
 
 	trainerclass POKEMANIAC ; 1e
 	const POKEMANIAC_R5

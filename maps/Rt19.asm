@@ -8,7 +8,7 @@
 	const R19_LURE_BALL
 	const R19_YOUNGSTER
 	const R19_BIRD_KEEPER
-	const R19_BEAUTY
+	const R19_LADY
 	const R19_DEPOT_AGENT_1
 	const R19_DEPOT_AGENT_2
 	const R19_SAILOR
@@ -125,13 +125,13 @@ TrainerBirdKeeperR19:
 	closetext
 	end
 
-TrainerBeautyR19:
-	trainer BEAUTY, BEAUTY_R19, EVENT_BEAT_BEAUTY_R19, BeautyR19SeenText, BeautyR19BeatenText, 0, .Script
+TrainerLadyR19:
+	trainer LADY, LADY_R19, EVENT_BEAT_LADY_R19, LadyR19SeenText, LadyR19BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BeautyR19AfterText
+	writetext LadyR19AfterText
 	waitbutton
 	closetext
 	end
@@ -227,18 +227,18 @@ BirdKeeperR19AfterText:
 	line "have trained hard."
 	done
 	
-BeautyR19SeenText:
+LadyR19SeenText:
 	text "I'm raising my"
 	line "#MON. Want to"
 	cont "battle with me?"
 	done
 
-BeautyR19BeatenText:
+LadyR19BeatenText:
 	text "Ack! I lost that"
 	line "one…"
 	done
 
-BeautyR19AfterText:
+LadyR19AfterText:
 	text "If you have a"
 	line "specific #MON"
 
@@ -346,7 +346,7 @@ Rt19_MapEvents:
 	object_event 13,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R19LureBall, EVENT_R_19_LURE_BALL
 	object_event  9, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR19, -1
 	object_event 33, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperR19, -1
-	object_event 21, 13, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyR19, -1
+	object_event 21, 13, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLadyR19, -1
 	object_event 20, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerDepotAgent1R19, -1
 	object_event 30, 12, SPRITE_OFFICER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerDepotAgent2R19, -1
 	object_event 18, 18, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSailorR19, -1
