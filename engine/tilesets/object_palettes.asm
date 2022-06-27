@@ -73,7 +73,7 @@ LoadSpecialMapObjectPalette:
 	cp 20 ; mapgroup_Opelucid
 	jr nz, .do_nothing
 	ld a, [wMapNumber]
-	cp 6 ; OpelucidCity
+	cp 4 ; OpelucidCity
 	jr nz, .do_nothing
 	ld a, [wCurTimeOfDay]
 	cp NITE_F

@@ -295,8 +295,6 @@ ENDM
 	map_const R_7_TRADE_HOUSE, 4, 4
 	
 	newgroup
-	map_const VILLAGE_BRIDGE, 34, 19
-	map_const R_11_VILLAGE_BRIDGE_GATE, 5, 4
 	map_const R_11, 22, 12
 	map_const R_11_TRUCK, 4, 3
 	map_const R_11_OPELUCID_GATE, 5, 4
@@ -333,6 +331,10 @@ ENDM
 	newgroup
 	map_const DESERT_RESORT, 30, 23
 	map_const R_4_DESERT_GATE, 5, 4
+	
+	newgroup
+	map_const VILLAGE_BRIDGE, 34, 19
+	map_const R_11_VILLAGE_BRIDGE_GATE, 5, 4
 	
 	newgroup
 	map_const R_23_EAST, 17, 26

@@ -151,6 +151,18 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Maid
+	db NO_ITEM, NO_ITEM ; items
+	db 20 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Musician
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; ParasolLady
 	db NO_ITEM, NO_ITEM ; items
 	db 22 ; base reward

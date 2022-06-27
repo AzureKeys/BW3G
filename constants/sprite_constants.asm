@@ -108,6 +108,7 @@
 	const SPRITE_ROUGHNECK ; 68
 	const SPRITE_RANGER_M ; 69
 	const SPRITE_RANGER_F ; 6a
+	const SPRITE_MUSICIAN ; 6b
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

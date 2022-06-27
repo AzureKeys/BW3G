@@ -794,28 +794,10 @@ GentlemanGroup:
 
 GuitaristGroup:
 	; GUITARIST (VIRBANK GYM)
-	db "KERRY@", TRAINERTYPE_STAT_EXP
-	db 27, KOFFING
-	dw $2400, $2400, $2400, $2400, $2400
-	db 29, TRUBBISH
-	dw $2400, $2400, $2400, $2400, $2400
-	db -1 ; end
-
-	; GUITARIST (VIRBANK GYM)
 	db "DAVE@", TRAINERTYPE_STAT_EXP
 	db 27, VENIPEDE
 	dw $2400, $2400, $2400, $2400, $2400
 	db 29, SKORUPI
-	dw $2400, $2400, $2400, $2400, $2400
-	db -1 ; end
-	
-	; GUITARIST (VIRBANK GYM)
-	db "TOM@", TRAINERTYPE_STAT_EXP
-	db 27, ZUBAT
-	dw $2400, $2400, $2400, $2400, $2400
-	db 28, CROAGUNK
-	dw $2400, $2400, $2400, $2400, $2400
-	db 27, ZUBAT
 	dw $2400, $2400, $2400, $2400, $2400
 	db -1 ; end
 
@@ -1141,7 +1123,7 @@ MaidGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db -1 ; end
 	
-	; LASS (CLARISSA REMATCH 1)
+	; MAID (CLARISSA REMATCH 1)
 	db "CLARISSA@", TRAINERTYPE_STAT_EXP
 	db 38, LIEPARD
 	dw $4800, $4800, $4800, $4800, $4800
@@ -1151,6 +1133,33 @@ MaidGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db 42, GLALIE
 	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+	
+MusicianGroup:
+	; MUSICIAN (VIRBANK GYM)
+	db "KERRY@", TRAINERTYPE_STAT_EXP
+	db 27, KOFFING
+	dw $2400, $2400, $2400, $2400, $2400
+	db 29, TRUBBISH
+	dw $2400, $2400, $2400, $2400, $2400
+	db -1 ; end
+	
+	; MUSICIAN (VIRBANK GYM)
+	db "HERMAN@", TRAINERTYPE_STAT_EXP
+	db 27, ZUBAT
+	dw $2400, $2400, $2400, $2400, $2400
+	db 28, CROAGUNK
+	dw $2400, $2400, $2400, $2400, $2400
+	db 27, ZUBAT
+	dw $2400, $2400, $2400, $2400, $2400
+	db -1 ; end
+	
+	; MUSICIAN (VILLAGE_BRIDGE)
+	db "TOM@", TRAINERTYPE_STAT_EXP
+	db 48, DURANT
+	dw $5000, $5000, $5000, $5000, $5000
+	db 50, HOUNDOOM
+	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
 ParasolLadyGroup:
@@ -2118,14 +2127,6 @@ VeteranFGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db 47, GLIGAR
 	dw $4800, $4800, $4800, $4800, $4800
-	db -1 ; end
-
-	; VETERANF (VILLAGE_BRIDGE)
-	db "AMY@", TRAINERTYPE_STAT_EXP
-	db 48, DURANT
-	dw $5000, $5000, $5000, $5000, $5000
-	db 50, HOUNDOOM
-	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
 	; VETERANF (OPELUCID_GYM)

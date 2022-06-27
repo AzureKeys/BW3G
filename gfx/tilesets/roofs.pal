@@ -94,6 +94,10 @@
 	RGB 23,17,10, 20,13,07 ; morn/day
 	RGB 11,08,07, 10,06,05 ; nite
 
+; group 30 (Village)
+	RGB 22,18,15, 17,13,10 ; morn/day
+	RGB 11,09,11, 08,06,07 ; nite
+
 ; group XX (PkmnLeague)
 	RGB 23,23,21, 15,15,13 ; morn/day
 	RGB 11,11,15, 07,07,09 ; nite

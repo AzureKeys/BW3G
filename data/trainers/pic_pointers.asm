@@ -27,6 +27,8 @@ TrainerPicPointers::
 	dba HikerPic
 	dba HikerDPic
 	dba LadyPic
+	dba MaidPic
+	dba MusicianPic
 	dba ParasolLadyPic
 	dba PilotPic
 	dba PokefanmPic

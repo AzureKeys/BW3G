@@ -2,8 +2,8 @@
 	const VIRBANKGYM_ROXIE
 	const VIRBANKGYM_GUITARIST_1
 	const VIRBANKGYM_GUITARIST_2
-	const VIRBANKGYM_GUITARIST_3
-	const VIRBANKGYM_GUITARIST_4
+	const VIRBANKGYM_MUSICIAN_1
+	const VIRBANKGYM_MUSICIAN_2
 
 VirbankGym_MapScripts:
 	db 0 ; scene scripts
@@ -33,8 +33,8 @@ VirbankGymRoxieScript:
 	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_GUITARIST_VIRBANK_GYM_1
 	setevent EVENT_BEAT_GUITARIST_VIRBANK_GYM_2
-	setevent EVENT_BEAT_GUITARIST_VIRBANK_GYM_3
-	setevent EVENT_BEAT_GUITARIST_VIRBANK_GYM_4
+	setevent EVENT_BEAT_MUSICIAN_VIRBANK_GYM_1
+	setevent EVENT_BEAT_MUSICIAN_VIRBANK_GYM_2
 	writetext RoxieToxicBadgeText
 	buttonsound
 	verbosegiveitem TM_VENOSHOCK
@@ -78,24 +78,24 @@ TrainerGuitaristVirbankGym2:
 	closetext
 	end
 
-TrainerGuitaristVirbankGym3:
-	trainer GUITARIST, GUITARIST_VIRBANK_GYM_3, EVENT_BEAT_GUITARIST_VIRBANK_GYM_3, GuitaristVirbankGym3SeenText, GuitaristVirbankGym3BeatenText, 0, .Script
+TrainerMusicianVirbankGym1:
+	trainer MUSICIAN, MUSICIAN_VIRBANK_GYM_1, EVENT_BEAT_MUSICIAN_VIRBANK_GYM_1, MusicianVirbankGym1SeenText, MusicianVirbankGym1BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GuitaristVirbankGym3AfterText
+	writetext MusicianVirbankGym1AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerGuitaristVirbankGym4:
-	trainer GUITARIST, GUITARIST_VIRBANK_GYM_4, EVENT_BEAT_GUITARIST_VIRBANK_GYM_4, GuitaristVirbankGym4SeenText, GuitaristVirbankGym4BeatenText, 0, .Script
+TrainerMusicianVirbankGym2:
+	trainer MUSICIAN, MUSICIAN_VIRBANK_GYM_2, EVENT_BEAT_MUSICIAN_VIRBANK_GYM_2, MusicianVirbankGym2SeenText, MusicianVirbankGym2BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GuitaristVirbankGym4AfterText
+	writetext MusicianVirbankGym2AfterText
 	waitbutton
 	closetext
 	end
@@ -157,17 +157,17 @@ RoxieFightDoneText:
 	cont "sorts of stuff!"
 	done
 	
-GuitaristVirbankGym1SeenText:
+MusicianVirbankGym1SeenText:
 	text "Hold it there,"
 	line "kid. This is an"
 	cont "exclusive club."
 	done
 
-GuitaristVirbankGym1BeatenText:
+MusicianVirbankGym1BeatenText:
 	text "Ah! Come right in!"
 	done
 
-GuitaristVirbankGym1AfterText:
+MusicianVirbankGym1AfterText:
 	text "VIRBANK GYM is"
 	line "known for our"
 
@@ -195,7 +195,7 @@ GuitaristVirbankGym2AfterText:
 	cont "all out for me!"
 	done
 	
-GuitaristVirbankGym3SeenText:
+MusicianVirbankGym2SeenText:
 	text "I can always be"
 	line "honest with myself"
 
@@ -206,13 +206,13 @@ GuitaristVirbankGym3SeenText:
 	line "battle!"
 	done
 
-GuitaristVirbankGym3BeatenText:
+MusicianVirbankGym2BeatenText:
 	text "Argh! The happy"
 	line "times always end"
 	cont "so quickly!"
 	done
 
-GuitaristVirbankGym3AfterText:
+MusicianVirbankGym2AfterText:
 	text "Because I'm with"
 	line "my #MON, I can"
 	
@@ -226,18 +226,18 @@ GuitaristVirbankGym3AfterText:
 	line "strong!"
 	done
 	
-GuitaristVirbankGym4SeenText:
+GuitaristVirbankGym1SeenText:
 	text "I'm going to take"
 	line "you down! Prepare"
 	cont "to be stung!"
 	done
 
-GuitaristVirbankGym4BeatenText:
+GuitaristVirbankGym1BeatenText:
 	text "Gwaaah!"
 	line "I was overpowered…"
 	done
 
-GuitaristVirbankGym4AfterText:
+GuitaristVirbankGym1AfterText:
 	text "Don't get too com-"
 	line "fortable about"
 
@@ -263,8 +263,8 @@ VirbankGym_MapEvents:
 
 	db 5 ; object events
 	object_event 10, 15, SPRITE_ROXIE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VirbankGymRoxieScript, -1
-	object_event  8,  2, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerGuitaristVirbankGym1, -1
-	object_event  0, 18, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerGuitaristVirbankGym2, -1
-	object_event 13, 19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerGuitaristVirbankGym3, -1
-	object_event  5, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerGuitaristVirbankGym4, -1
+	object_event  0, 18, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerGuitaristVirbankGym1, -1
+	object_event  5, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerGuitaristVirbankGym2, -1
+	object_event  8,  2, SPRITE_MUSICIAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerMusicianVirbankGym1, -1
+	object_event 13, 19, SPRITE_MUSICIAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerMusicianVirbankGym2, -1
 	

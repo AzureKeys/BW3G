@@ -45,6 +45,8 @@ RichBoyPic:         INCBIN "gfx/trainers/rich_boy.2bpp.lz"
 PkmnRangerMPic:     INCBIN "gfx/trainers/pkmn_ranger_m.2bpp.lz"
 PkmnRangerFPic:     INCBIN "gfx/trainers/pkmn_ranger_f.2bpp.lz"
 SmasherPic:         INCBIN "gfx/trainers/smasher.2bpp.lz"
+MusicianPic:        INCBIN "gfx/trainers/musician.2bpp.lz"
+MaidPic:            INCBIN "gfx/trainers/maid.2bpp.lz"
 
 
 SECTION "Pics 2", ROMX

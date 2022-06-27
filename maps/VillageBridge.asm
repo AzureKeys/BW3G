@@ -9,7 +9,7 @@
 	const VILLAGEBRIDGE_CARBOS
 	const VILLAGEBRIDGE_RARE_CANDY
 	const VILLAGEBRIDGE_HEART_SCALE
-	const VILLAGEBRIDGE_VETERANF
+	const VILLAGEBRIDGE_MUSICIAN
 	const VILLAGEBRIDGE_SMASHER_1
 	const VILLAGEBRIDGE_SMASHER_2
 	const VILLAGEBRIDGE_FISHER
@@ -91,13 +91,13 @@ VillageBridgeUpperScript:
 .done
 	end
 
-TrainerVeteranFVillageBridge:
-	trainer VETERANF, VETERANF_VILLAGE_BRIDGE, EVENT_BEAT_VETERANF_VILLAGE_BRIDGE, VeteranFVillageBridgeSeenText, VeteranFVillageBridgeBeatenText, 0, .Script
+TrainerMusicianVillageBridge:
+	trainer MUSICIAN, MUSICIAN_VILLAGE_BRIDGE, EVENT_BEAT_MUSICIAN_VILLAGE_BRIDGE, MusicianVillageBridgeSeenText, MusicianVillageBridgeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext VeteranFVillageBridgeAfterText
+	writetext MusicianVillageBridgeAfterText
 	waitbutton
 	closetext
 	end
@@ -187,15 +187,15 @@ VillageBridgeBigMushroom:
 VillageBridgeMaxEther:
 	hiddenitem MAX_ETHER, EVENT_VILLAGE_BRIDGE_MAX_ETHER
 	
-VeteranFVillageBridgeSeenText:
+MusicianVillageBridgeSeenText:
 	text "..."
 	done
 
-VeteranFVillageBridgeBeatenText:
+MusicianVillageBridgeBeatenText:
 	text "..."
 	done
 
-VeteranFVillageBridgeAfterText:
+MusicianVillageBridgeAfterText:
 	text "..."
 	done
 	
@@ -304,7 +304,7 @@ VillageBridge_MapEvents:
 	object_event 56, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeCarbos, EVENT_VILLAGE_BRIDGE_CARBOS
 	object_event 55,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeRareCandy, EVENT_VILLAGE_BRIDGE_RARE_CANDY
 	object_event 38, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeHeartScale, EVENT_VILLAGE_BRIDGE_HEART_SCALE
-	object_event 15,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranFVillageBridge, -1
+	object_event 15,  7, SPRITE_MUSICIAN, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerMusicianVillageBridge, -1
 	object_event 43, 28, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSmasher1VillageBridge, -1
 	object_event 54, 31, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSmasher2VillageBridge, -1
 	object_event 29, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerFisherVillageBridge, -1

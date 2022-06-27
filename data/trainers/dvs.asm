@@ -20,12 +20,14 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; FISHER
 	dn  9,  8,  8,  8 ; FISHER_D
 	dn  9,  8,  8,  8 ; GENTLEMAN
-	dn  9,  8,  8,  8 ; GUITARIST
+	dn  6,  9, 12,  8 ; GUITARIST
 	dn  9,  8,  8,  8 ; HARLEQUIN
 	dn  7,  8,  8,  8 ; HEX_MANIAC
 	dn 10,  8,  8,  8 ; HIKER
 	dn 10,  8,  8,  8 ; HIKER_D
 	dn  6,  9, 12,  8 ; LADY
+	dn  6,  9, 12,  8 ; MAID
+	dn  9,  8,  8,  8 ; MUSICIAN
 	dn  6,  9, 12,  8 ; PARASOL_LADY
 	dn  9,  8,  8,  8 ; PILOT
 	dn  9,  8,  8,  8 ; POKEFAN_M

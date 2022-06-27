@@ -25,6 +25,8 @@ TrainerClassNames::
 	db "HIKER@"
 	db "HIKER@"
 	db "LADY@"
+	db "MAID@"
+	db "MUSICIAN@"
 	db "PARASOL LADY@"
 	db "PILOT@"
 	db "#FAN@"

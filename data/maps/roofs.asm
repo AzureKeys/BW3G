@@ -34,6 +34,7 @@ MapGroupRoofs:
 	db ROOF_HUMILAU   ; Icirrus
 	db ROOF_HUMILAU   ; Chargestone
 	db ROOF_HUMILAU   ; Desert
+	db ROOF_HUMILAU   ; Village
 	db ROOF_HUMILAU   ; PkmnLeague
 
 Roofs:

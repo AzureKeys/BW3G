@@ -19,6 +19,7 @@ RockerSpriteGFX::              INCBIN "gfx/sprites/rocker.2bpp"
 RoughneckSpriteGFX::           INCBIN "gfx/sprites/roughneck.2bpp"
 RangerMSpriteGFX::             INCBIN "gfx/sprites/ranger_m.2bpp"
 RangerFSpriteGFX::             INCBIN "gfx/sprites/ranger_f.2bpp"
+MusicianSpriteGFX::            INCBIN "gfx/sprites/musician.2bpp"
 
 
 SECTION "Sprites 2", ROMX
