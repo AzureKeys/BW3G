@@ -39,6 +39,7 @@ TrainerClassNames::
 	db "SCHOOL KID@"
 	db "SCIENTIST@"
 	db "SCIENTIST@"
+	db "SMASHER@"
 	db "SWIMMER@"
 	db "SWIMMER@"
 	db "SWIMMER@"

@@ -41,6 +41,7 @@ TrainerGroups:
 	dba SchoolKidFGroup
 	dba ScientistMGroup
 	dba ScientistFGroup
+	dba SmasherGroup
 	dba SwimmerMGroup
 	dba SwimmerMDGroup
 	dba SwimmerFGroup

@@ -41,6 +41,7 @@ TrainerPicPointers::
 	dba SchoolKidFPic
 	dba ScientistPic
 	dba ScientistFPic
+	dba SmasherPic
 	dba SwimmermPic
 	dba SwimmermDPic
 	dba SwimmerfPic

@@ -892,14 +892,6 @@ HarlequinGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 
-	; HARLEQUIN (VILLAGE_BRIDGE)
-	db "KARL@", TRAINERTYPE_STAT_EXP
-	db 48, MAWILE
-	dw $5000, $5000, $5000, $5000, $5000
-	db 50, KLANG
-	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-
 HexManiacGroup:
 	; HEX_MANIAC (LENTIMASGYM1)
 	db "SYLVIA@", TRAINERTYPE_STAT_EXP
@@ -1958,6 +1950,23 @@ ScientistFGroup:
 	db 34, GARBODOR
 	dw $3400, $3400, $3400, $3400, $3400
 	db -1 ; end
+	
+SmasherGroup:
+	; SMASHER (VILLAGE_BRIDGE)
+	db "VENUS@", TRAINERTYPE_STAT_EXP
+	db 48, PIGNITE
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, EXCADRILL
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+
+	; SMASHER (VILLAGE_BRIDGE)
+	db "SERENA@", TRAINERTYPE_STAT_EXP
+	db 48, MAWILE
+	dw $5000, $5000, $5000, $5000, $5000
+	db 50, KLANG
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
 
 SwimmerMGroup:
 	; SWIMMERM (HUMILAU_GYM)
@@ -2282,14 +2291,6 @@ BeautyDGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 
-	; BEAUTY (VILLAGE_BRIDGE)
-	db "SHANNON@", TRAINERTYPE_STAT_EXP
-	db 48, PIGNITE
-	dw $5000, $5000, $5000, $5000, $5000
-	db 49, EXCADRILL
-	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-
 PokemaniacGroup:
 	; POKEMANIAC (R5)
 	db "LARS@", TRAINERTYPE_STAT_EXP
@@ -2497,7 +2498,7 @@ PicnickerDGroup:
 	db -1 ; end
 	
 	; PICNICKER_D (R4)
-	db "SERENA@", TRAINERTYPE_STAT_EXP
+	db "SELENE@", TRAINERTYPE_STAT_EXP
 	db 18, DRILBUR
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db 17, MARILL

@@ -319,7 +319,7 @@ MistraltonGroupSprites:
 OpelucidGroupSprites:
 ; Opelucid City, R11, Village Bridge, R9
 	db SPRITE_POKEFAN_F
-	db SPRITE_HARLEQUIN
+	db SPRITE_COOLTRAINER_F
 	db SPRITE_BUENA
 	db SPRITE_FISHER
 	db SPRITE_SUPER_NERD

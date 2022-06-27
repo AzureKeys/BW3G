@@ -10,8 +10,8 @@
 	const VILLAGEBRIDGE_RARE_CANDY
 	const VILLAGEBRIDGE_HEART_SCALE
 	const VILLAGEBRIDGE_VETERANF
-	const VILLAGEBRIDGE_HARLEQUIN
-	const VILLAGEBRIDGE_BEAUTY
+	const VILLAGEBRIDGE_SMASHER_1
+	const VILLAGEBRIDGE_SMASHER_2
 	const VILLAGEBRIDGE_FISHER
 	const VILLAGEBRIDGE_POKEMANIAC_1
 	const VILLAGEBRIDGE_POKEMANIAC_2
@@ -102,24 +102,24 @@ TrainerVeteranFVillageBridge:
 	closetext
 	end
 
-TrainerHarlequinVillageBridge:
-	trainer HARLEQUIN, HARLEQUIN_VILLAGE_BRIDGE, EVENT_BEAT_HARLEQUIN_VILLAGE_BRIDGE, HarlequinVillageBridgeSeenText, HarlequinVillageBridgeBeatenText, 0, .Script
+TrainerSmasher1VillageBridge:
+	trainer SMASHER, SMASHER_VILLAGE_BRIDGE_1, EVENT_BEAT_SMASHER_VILLAGE_BRIDGE_1, Smasher1VillageBridgeSeenText, Smasher1VillageBridgeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext HarlequinVillageBridgeAfterText
+	writetext Smasher1VillageBridgeAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerBeautyVillageBridge:
-	trainer BEAUTY_D, BEAUTY_VILLAGE_BRIDGE, EVENT_BEAT_BEAUTY_VILLAGE_BRIDGE, BeautyVillageBridgeSeenText, BeautyVillageBridgeBeatenText, 0, .Script
+TrainerSmasher2VillageBridge:
+	trainer SMASHER, SMASHER_VILLAGE_BRIDGE_2, EVENT_BEAT_SMASHER_VILLAGE_BRIDGE_2, Smasher2VillageBridgeSeenText, Smasher2VillageBridgeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BeautyVillageBridgeAfterText
+	writetext Smasher2VillageBridgeAfterText
 	waitbutton
 	closetext
 	end
@@ -199,27 +199,27 @@ VeteranFVillageBridgeAfterText:
 	text "..."
 	done
 	
-HarlequinVillageBridgeSeenText:
+Smasher1VillageBridgeSeenText:
 	text "..."
 	done
 
-HarlequinVillageBridgeBeatenText:
+Smasher1VillageBridgeBeatenText:
 	text "..."
 	done
 
-HarlequinVillageBridgeAfterText:
+Smasher1VillageBridgeAfterText:
 	text "..."
 	done
 	
-BeautyVillageBridgeSeenText:
+Smasher2VillageBridgeSeenText:
 	text "..."
 	done
 
-BeautyVillageBridgeBeatenText:
+Smasher2VillageBridgeBeatenText:
 	text "..."
 	done
 
-BeautyVillageBridgeAfterText:
+Smasher2VillageBridgeAfterText:
 	text "..."
 	done
 	
@@ -304,10 +304,10 @@ VillageBridge_MapEvents:
 	object_event 56, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeCarbos, EVENT_VILLAGE_BRIDGE_CARBOS
 	object_event 55,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeRareCandy, EVENT_VILLAGE_BRIDGE_RARE_CANDY
 	object_event 38, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeHeartScale, EVENT_VILLAGE_BRIDGE_HEART_SCALE
-	object_event 38, 18, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranFVillageBridge, -1
-	object_event 39,  7, SPRITE_HARLEQUIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerHarlequinVillageBridge, -1
-	object_event 15,  7, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerBeautyVillageBridge, -1
+	object_event 15,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranFVillageBridge, -1
+	object_event 43, 28, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSmasher1VillageBridge, -1
+	object_event 54, 31, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSmasher2VillageBridge, -1
 	object_event 29, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerFisherVillageBridge, -1
-	object_event 43, 28, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniac1VillageBridge, -1
+	object_event 39,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPokemaniac1VillageBridge, -1
 	object_event 22, 28, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniac2VillageBridge, -1
 	

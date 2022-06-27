@@ -42,6 +42,7 @@ TrainerEncounterMusic::
 	db MUSIC_LASS_ENCOUNTER        ; schoolkidf
 	db MUSIC_OFFICER_ENCOUNTER     ; scientistm
 	db MUSIC_OFFICER_ENCOUNTER     ; scientistf
+	db MUSIC_LASS_ENCOUNTER        ; smasher
 	db MUSIC_HIKER_ENCOUNTER       ; swimmerm
 	db MUSIC_HIKER_ENCOUNTER       ; swimmermD
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerf

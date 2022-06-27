@@ -40,6 +40,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; SCHOOL_KID_F
 	dn  9,  8,  8,  8 ; SCIENTIST_M
 	dn  9,  8,  8,  8 ; SCIENTIST_F
+	dn  6, 10, 10,  8 ; SMASHER
 	dn  9,  8,  8,  8 ; SWIMMER_M
 	dn  9,  8,  8,  8 ; SWIMMER_M_D
 	dn  7,  8,  8,  8 ; SWIMMER_F

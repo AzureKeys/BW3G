@@ -46,6 +46,7 @@ INCBIN "gfx/trainers/school_kid_m.gbcpal", middle_colors
 INCBIN "gfx/trainers/school_kid_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/scientist.gbcpal", middle_colors
 INCBIN "gfx/trainers/scientist_f.gbcpal", middle_colors
+INCBIN "gfx/trainers/smasher.gbcpal", middle_colors
 INCBIN "gfx/trainers/swimmer_m.gbcpal", middle_colors
 INCBIN "gfx/trainers/swimmer_m_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/swimmer_f.gbcpal", middle_colors
