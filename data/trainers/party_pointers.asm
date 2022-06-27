@@ -46,7 +46,8 @@ TrainerGroups:
 	dba SwimmerFGroup
 	dba SwimmerFDGroup
 	dba TwinsGroup
-	dba VeteranGroup
+	dba VeteranMGroup
+	dba VeteranFGroup
 	dba WaiterGroup
 	dba WaitressGroup
 	dba BirdKeeperGroup

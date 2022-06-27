@@ -9,7 +9,7 @@
 	const VILLAGEBRIDGE_CARBOS
 	const VILLAGEBRIDGE_RARE_CANDY
 	const VILLAGEBRIDGE_HEART_SCALE
-	const VILLAGEBRIDGE_VETERAN
+	const VILLAGEBRIDGE_VETERANF
 	const VILLAGEBRIDGE_HARLEQUIN
 	const VILLAGEBRIDGE_BEAUTY
 	const VILLAGEBRIDGE_FISHER
@@ -91,13 +91,13 @@ VillageBridgeUpperScript:
 .done
 	end
 
-TrainerVeteranVillageBridge:
-	trainer VETERAN, VETERAN_VILLAGE_BRIDGE, EVENT_BEAT_VETERAN_VILLAGE_BRIDGE, VeteranVillageBridgeSeenText, VeteranVillageBridgeBeatenText, 0, .Script
+TrainerVeteranFVillageBridge:
+	trainer VETERANF, VETERANF_VILLAGE_BRIDGE, EVENT_BEAT_VETERANF_VILLAGE_BRIDGE, VeteranFVillageBridgeSeenText, VeteranFVillageBridgeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext VeteranVillageBridgeAfterText
+	writetext VeteranFVillageBridgeAfterText
 	waitbutton
 	closetext
 	end
@@ -187,15 +187,15 @@ VillageBridgeBigMushroom:
 VillageBridgeMaxEther:
 	hiddenitem MAX_ETHER, EVENT_VILLAGE_BRIDGE_MAX_ETHER
 	
-VeteranVillageBridgeSeenText:
+VeteranFVillageBridgeSeenText:
 	text "..."
 	done
 
-VeteranVillageBridgeBeatenText:
+VeteranFVillageBridgeBeatenText:
 	text "..."
 	done
 
-VeteranVillageBridgeAfterText:
+VeteranFVillageBridgeAfterText:
 	text "..."
 	done
 	
@@ -304,7 +304,7 @@ VillageBridge_MapEvents:
 	object_event 56, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeCarbos, EVENT_VILLAGE_BRIDGE_CARBOS
 	object_event 55,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeRareCandy, EVENT_VILLAGE_BRIDGE_RARE_CANDY
 	object_event 38, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeHeartScale, EVENT_VILLAGE_BRIDGE_HEART_SCALE
-	object_event 38, 18, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranVillageBridge, -1
+	object_event 38, 18, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranFVillageBridge, -1
 	object_event 39,  7, SPRITE_HARLEQUIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerHarlequinVillageBridge, -1
 	object_event 15,  7, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerBeautyVillageBridge, -1
 	object_event 29, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerFisherVillageBridge, -1

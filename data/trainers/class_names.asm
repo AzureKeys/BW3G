@@ -45,6 +45,7 @@ TrainerClassNames::
 	db "SWIMMER@"
 	db "TWINS@"
 	db "VETERAN@"
+	db "VETERAN@"
 	db "WAITER@"
 	db "WAITRESS@"
 	db "BIRD KEEPER@"

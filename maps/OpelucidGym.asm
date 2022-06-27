@@ -1,11 +1,11 @@
 	const_def 2 ; object constants
 	const OPELUCIDGYM_DRAYDEN
-	const OPELUCIDGYM_COOLTRAINERM_1
-	const OPELUCIDGYM_COOLTRAINERM_2
-	const OPELUCIDGYM_COOLTRAINERM_3
-	const OPELUCIDGYM_COOLTRAINERF_1
-	const OPELUCIDGYM_COOLTRAINERF_2
-	const OPELUCIDGYM_COOLTRAINERF_3
+	const OPELUCIDGYM_VETERANM_1
+	const OPELUCIDGYM_VETERANM_2
+	const OPELUCIDGYM_VETERANM_3
+	const OPELUCIDGYM_VETERANF_1
+	const OPELUCIDGYM_VETERANF_2
+	const OPELUCIDGYM_VETERANF_3
 	const OPELUCIDGYM_GYM_GUY
 
 OpelucidGym_MapScripts:
@@ -26,12 +26,12 @@ OpelucidGymDraydenScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_DRAYDEN
-	setevent EVENT_BEAT_COOLTRAINERM_OPELUCID_GYM_1
-	setevent EVENT_BEAT_COOLTRAINERM_OPELUCID_GYM_2
-	setevent EVENT_BEAT_COOLTRAINERM_OPELUCID_GYM_3
-	setevent EVENT_BEAT_COOLTRAINERF_OPELUCID_GYM_1
-	setevent EVENT_BEAT_COOLTRAINERF_OPELUCID_GYM_2
-	setevent EVENT_BEAT_COOLTRAINERF_OPELUCID_GYM_3
+	setevent EVENT_BEAT_VETERANM_OPELUCID_GYM_1
+	setevent EVENT_BEAT_VETERANM_OPELUCID_GYM_2
+	setevent EVENT_BEAT_VETERANM_OPELUCID_GYM_3
+	setevent EVENT_BEAT_VETERANF_OPELUCID_GYM_1
+	setevent EVENT_BEAT_VETERANF_OPELUCID_GYM_2
+	setevent EVENT_BEAT_VETERANF_OPELUCID_GYM_3
 	opentext
 	writetext ReceivedLegendBadgeText
 	playsound SFX_GET_BADGE
@@ -69,68 +69,68 @@ OpelucidGymGuyScript:
 	closetext
 	end
 
-TrainerCooltrainerM1OpelucidGym:
-	trainer COOLTRAINERM, COOLTRAINERM_OPELUCID_GYM_1, EVENT_BEAT_COOLTRAINERM_OPELUCID_GYM_1, CooltrainerM1OpelucidGymSeenText, CooltrainerM1OpelucidGymBeatenText, 0, .Script
+TrainerVeteranM1OpelucidGym:
+	trainer VETERANM, VETERANM_OPELUCID_GYM_1, EVENT_BEAT_VETERANM_OPELUCID_GYM_1, VeteranM1OpelucidGymSeenText, VeteranM1OpelucidGymBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerM1OpelucidGymAfterText
+	writetext VeteranM1OpelucidGymAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerM2OpelucidGym:
-	trainer COOLTRAINERM_D, COOLTRAINERM_OPELUCID_GYM_2, EVENT_BEAT_COOLTRAINERM_OPELUCID_GYM_2, CooltrainerM2OpelucidGymSeenText, CooltrainerM2OpelucidGymBeatenText, 0, .Script
+TrainerVeteranM2OpelucidGym:
+	trainer VETERANM, VETERANM_OPELUCID_GYM_2, EVENT_BEAT_VETERANM_OPELUCID_GYM_2, VeteranM2OpelucidGymSeenText, VeteranM2OpelucidGymBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerM2OpelucidGymAfterText
+	writetext VeteranM2OpelucidGymAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerM3OpelucidGym:
-	trainer COOLTRAINERM_D, COOLTRAINERM_OPELUCID_GYM_3, EVENT_BEAT_COOLTRAINERM_OPELUCID_GYM_3, CooltrainerM3OpelucidGymSeenText, CooltrainerM3OpelucidGymBeatenText, 0, .Script
+TrainerVeteranM3OpelucidGym:
+	trainer VETERANM, VETERANM_OPELUCID_GYM_3, EVENT_BEAT_VETERANM_OPELUCID_GYM_3, VeteranM3OpelucidGymSeenText, VeteranM3OpelucidGymBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerM3OpelucidGymAfterText
+	writetext VeteranM3OpelucidGymAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerF1OpelucidGym:
-	trainer COOLTRAINERF, COOLTRAINERF_OPELUCID_GYM_1, EVENT_BEAT_COOLTRAINERF_OPELUCID_GYM_1, CooltrainerF1OpelucidGymSeenText, CooltrainerF1OpelucidGymBeatenText, 0, .Script
+TrainerVeteranF1OpelucidGym:
+	trainer VETERANF, VETERANF_OPELUCID_GYM_1, EVENT_BEAT_VETERANF_OPELUCID_GYM_1, VeteranF1OpelucidGymSeenText, VeteranF1OpelucidGymBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerF1OpelucidGymAfterText
+	writetext VeteranF1OpelucidGymAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerF2OpelucidGym:
-	trainer COOLTRAINERF, COOLTRAINERF_OPELUCID_GYM_2, EVENT_BEAT_COOLTRAINERF_OPELUCID_GYM_2, CooltrainerF2OpelucidGymSeenText, CooltrainerF2OpelucidGymBeatenText, 0, .Script
+TrainerVeteranF2OpelucidGym:
+	trainer VETERANF, VETERANF_OPELUCID_GYM_2, EVENT_BEAT_VETERANF_OPELUCID_GYM_2, VeteranF2OpelucidGymSeenText, VeteranF2OpelucidGymBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerF2OpelucidGymAfterText
+	writetext VeteranF2OpelucidGymAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerF3OpelucidGym:
-	trainer COOLTRAINERF_D, COOLTRAINERF_OPELUCID_GYM_3, EVENT_BEAT_COOLTRAINERF_OPELUCID_GYM_3, CooltrainerF3OpelucidGymSeenText, CooltrainerF3OpelucidGymBeatenText, 0, .Script
+TrainerVeteranF3OpelucidGym:
+	trainer VETERANF, VETERANF_OPELUCID_GYM_3, EVENT_BEAT_VETERANF_OPELUCID_GYM_3, VeteranF3OpelucidGymSeenText, VeteranF3OpelucidGymBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerF3OpelucidGymAfterText
+	writetext VeteranF3OpelucidGymAfterText
 	waitbutton
 	closetext
 	end
@@ -285,75 +285,75 @@ OpelucidGymGuyWinText:
 	cont "#MON is bright!"
 	done
 	
-CooltrainerM1OpelucidGymSeenText:
+VeteranM1OpelucidGymSeenText:
 	text "..."
 	done
 
-CooltrainerM1OpelucidGymBeatenText:
+VeteranM1OpelucidGymBeatenText:
 	text "..."
 	done
 
-CooltrainerM1OpelucidGymAfterText:
+VeteranM1OpelucidGymAfterText:
 	text "..."
 	done
 	
-CooltrainerM2OpelucidGymSeenText:
+VeteranM2OpelucidGymSeenText:
 	text "..."
 	done
 
-CooltrainerM2OpelucidGymBeatenText:
+VeteranM2OpelucidGymBeatenText:
 	text "..."
 	done
 
-CooltrainerM2OpelucidGymAfterText:
+VeteranM2OpelucidGymAfterText:
 	text "..."
 	done
 	
-CooltrainerM3OpelucidGymSeenText:
+VeteranM3OpelucidGymSeenText:
 	text "..."
 	done
 
-CooltrainerM3OpelucidGymBeatenText:
+VeteranM3OpelucidGymBeatenText:
 	text "..."
 	done
 
-CooltrainerM3OpelucidGymAfterText:
+VeteranM3OpelucidGymAfterText:
 	text "..."
 	done
 	
-CooltrainerF1OpelucidGymSeenText:
+VeteranF1OpelucidGymSeenText:
 	text "..."
 	done
 
-CooltrainerF1OpelucidGymBeatenText:
+VeteranF1OpelucidGymBeatenText:
 	text "..."
 	done
 
-CooltrainerF1OpelucidGymAfterText:
+VeteranF1OpelucidGymAfterText:
 	text "..."
 	done
 	
-CooltrainerF2OpelucidGymSeenText:
+VeteranF2OpelucidGymSeenText:
 	text "..."
 	done
 
-CooltrainerF2OpelucidGymBeatenText:
+VeteranF2OpelucidGymBeatenText:
 	text "..."
 	done
 
-CooltrainerF2OpelucidGymAfterText:
+VeteranF2OpelucidGymAfterText:
 	text "..."
 	done
 	
-CooltrainerF3OpelucidGymSeenText:
+VeteranF3OpelucidGymSeenText:
 	text "..."
 	done
 
-CooltrainerF3OpelucidGymBeatenText:
+VeteranF3OpelucidGymBeatenText:
 	text "..."
 	done
 
-CooltrainerF3OpelucidGymAfterText:
+VeteranF3OpelucidGymAfterText:
 	text "..."
 	done
 	
@@ -372,11 +372,11 @@ OpelucidGym_MapEvents:
 
 	db 8 ; object events
 	object_event 24,  2, SPRITE_DRAYDEN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OpelucidGymDraydenScript, -1
-	object_event  3, 26, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerM1OpelucidGym, -1
-	object_event 24, 19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerM2OpelucidGym, -1
-	object_event 11,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerM3OpelucidGym, -1
-	object_event 14, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerF1OpelucidGym, -1
-	object_event 11,  0, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerF2OpelucidGym, -1
-	object_event 25,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerF3OpelucidGym, -1
+	object_event  3, 26, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerVeteranM1OpelucidGym, -1
+	object_event 24, 19, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerVeteranM2OpelucidGym, -1
+	object_event 11,  5, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerVeteranM3OpelucidGym, -1
+	object_event 14, 10, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerVeteranF1OpelucidGym, -1
+	object_event 11,  0, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerVeteranF2OpelucidGym, -1
+	object_event 25,  8, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranF3OpelucidGym, -1
 	object_event  9, 26, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, OpelucidGymGuyScript, -1
 	

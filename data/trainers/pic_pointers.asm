@@ -46,7 +46,8 @@ TrainerPicPointers::
 	dba SwimmerfPic
 	dba SwimmerfDPic
 	dba TwinsPic
-	dba VeteranPic
+	dba VeteranMPic
+	dba VeteranFPic
 	dba WaiterPic
 	dba WaitressPic
 	dba BirdKeeperPic

@@ -51,7 +51,8 @@ INCBIN "gfx/trainers/swimmer_m_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/swimmer_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/swimmer_f_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/twins.gbcpal", middle_colors
-INCBIN "gfx/trainers/veteran.gbcpal", middle_colors
+INCBIN "gfx/trainers/veteran_m.gbcpal", middle_colors
+INCBIN "gfx/trainers/veteran_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/waiter.gbcpal", middle_colors
 INCBIN "gfx/trainers/waitress.gbcpal", middle_colors
 INCBIN "gfx/trainers/bird_keeper.gbcpal", middle_colors

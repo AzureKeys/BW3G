@@ -265,6 +265,12 @@ TrainerClassAttributes:
 	dw NO_AI
 	dw CONTEXT_USE | SWITCH_OFTEN
 
+; Veteranm
+	db HYPER_POTION, NO_ITEM ; items
+	db 18 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; Veteranf
 	db HYPER_POTION, NO_ITEM ; items
 	db 18 ; base reward

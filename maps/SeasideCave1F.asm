@@ -5,7 +5,7 @@
 	const SEASIDECAVE1F_DIVE_BALL
 	const SEASIDECAVE1F_HEART_SCALE
 	const SEASIDECAVE1F_NURSE
-	const SEASIDECAVE1F_VETERAN
+	const SEASIDECAVE1F_VETERANF
 	const SEASIDECAVE1F_BLACKBELT
 	const SEASIDECAVE1F_BATTLE_GIRL
 
@@ -73,13 +73,13 @@ TrainerNurseSeasideCave1F:
 	special HealParty
 	end
 
-TrainerVeteranSeasideCave1F:
-	trainer VETERAN, VETERAN_SEASIDE_CAVE, EVENT_BEAT_VETERAN_SEASIDE_CAVE, VeteranSeasideCave1FSeenText, VeteranSeasideCave1FBeatenText, 0, .Script
+TrainerVeteranFSeasideCave1F:
+	trainer VETERANF, VETERANF_SEASIDE_CAVE, EVENT_BEAT_VETERANF_SEASIDE_CAVE, VeteranFSeasideCave1FSeenText, VeteranFSeasideCave1FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext VeteranSeasideCave1FAfterText
+	writetext VeteranFSeasideCave1FAfterText
 	waitbutton
 	closetext
 	end
@@ -145,7 +145,7 @@ SeasideCaveNurseHealText:
 	cont "full health."
 	done
 	
-VeteranSeasideCave1FSeenText:
+VeteranFSeasideCave1FSeenText:
 	text "You look strong."
 
 	para "Good trainers seek"
@@ -153,12 +153,12 @@ VeteranSeasideCave1FSeenText:
 	cont "instinctively."
 	done
 
-VeteranSeasideCave1FBeatenText:
+VeteranFSeasideCave1FBeatenText:
 	text "Nope! This won't"
 	line "do at all."
 	done
 
-VeteranSeasideCave1FAfterText:
+VeteranFSeasideCave1FAfterText:
 	text "We all get better"
 	line "by experiencing"
 	cont "many battles."
@@ -238,7 +238,7 @@ SeasideCave1F_MapEvents:
 	object_event 14, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCave1FDiveBall, EVENT_SEASIDE_CAVE_DIVE_BALL
 	object_event  6, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCave1FHeartScale, EVENT_SEASIDE_CAVE_HEART_SCALE
 	object_event  4,  6, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerNurseSeasideCave1F, -1
-	object_event  3, 15, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerVeteranSeasideCave1F, -1
+	object_event  3, 15, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerVeteranFSeasideCave1F, -1
 	object_event  3, 25, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltSeasideCave1F, -1
 	object_event  9, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlSeasideCave1F, -1
 	

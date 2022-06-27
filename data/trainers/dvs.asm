@@ -45,6 +45,7 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; SWIMMER_F
 	dn  7,  8,  8,  8 ; SWIMMER_F_D
 	dn  6,  8, 10,  8 ; TWINS
+	dn 13,  8, 12,  8 ; VETERAN_M
 	dn  7, 12, 12,  8 ; VETERAN_F
 	dn  9,  8,  8,  8 ; WAITER
 	dn  6, 10, 10,  8 ; WAITRESS
