@@ -15,6 +15,7 @@ TrainerGroups:
 	dba BattleGirlGroup
 	dba BikerGroup
 	dba RoughneckGroup
+	dba DancerGroup
 	dba DepotAgentGroup
 	dba DoctorGroup
 	dba NurseGroup

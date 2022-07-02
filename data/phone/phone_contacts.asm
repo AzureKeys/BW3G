@@ -18,7 +18,7 @@ PhoneContacts:
 	phone YOUNGSTER,      YOUNGSTER_R13,         R_13,               ANYTIME, DanPhoneCalleeScript,    0, DanPhoneCallerScript
 	phone SCHOOL_KIDF,    SCHOOL_KIDF_R14,       R_14,               ANYTIME, JewelPhoneCalleeScript,    0, JewelPhoneCallerScript
 	phone BIRD_KEEPER,    BIRD_KEEPER_OUTSKIRTS, LENTIMAS_OUTSKIRTS, ANYTIME, FreddyPhoneCalleeScript,   0, FreddyPhoneCallerScript
-	phone SUPER_NERD,     SUPER_NERD_R5_2,       R_5,                ANYTIME, EricPhoneCalleeScript,     0, EricPhoneCallerScript
+	phone DANCER,         DANCER_R5_1,           R_5,                ANYTIME, EricPhoneCalleeScript,     0, EricPhoneCallerScript
 	phone LADY,           LADY_R4,               R_4,                ANYTIME, LaceyPhoneCalleeScript,    0, LaceyPhoneCallerScript
 	phone MAID,           MAID_R19,              R_19,               ANYTIME, SophiePhoneCalleeScript,   0, SophiePhoneCallerScript
 	phone PKMN_RANGERF,   PKMN_RANGERF_R3,       R_3,                ANYTIME, ArianaPhoneCalleeScript,   0, ArianaPhoneCallerScript

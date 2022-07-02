@@ -14,6 +14,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; BATTLE_GIRL
 	dn  9,  8,  8,  8 ; BIKER
 	dn  9,  8,  8,  8 ; ROUGHNECK
+	dn  9,  8,  8,  8 ; DANCER
 	dn  9,  8,  8,  8 ; DEPOT_AGENT
 	dn  9,  8,  8,  8 ; DOCTOR
 	dn  9,  8,  8,  8 ; NURSE

@@ -651,7 +651,7 @@ AskNumber1MScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_YOUNGSTER_DAN, .Dan
 	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
-	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
 .Dan:
@@ -672,7 +672,7 @@ AskNumber2MScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_YOUNGSTER_DAN, .Dan
 	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
-	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
 .Dan:
@@ -699,7 +699,7 @@ NumberAcceptedMScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_YOUNGSTER_DAN, .Dan
 	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
-	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
 .Dan:
@@ -727,7 +727,7 @@ NumberDeclinedMScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_YOUNGSTER_DAN, .Dan
 	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
-	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
 .Dan:
@@ -755,7 +755,7 @@ PhoneFullMScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_YOUNGSTER_DAN, .Dan
 	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
-	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
 .Dan:
@@ -783,7 +783,7 @@ RematchMScript:
 	checkcode VAR_CALLERID
 	ifequal PHONE_YOUNGSTER_DAN, .Dan
 	ifequal PHONE_BIRDKEEPER_FREDDY, .Freddy
-	ifequal PHONE_SUPERNERD_ERIC, .Eric
+	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 
 .Dan:

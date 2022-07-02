@@ -14,7 +14,25 @@ LoadSpecialMapObjectPalette:
 	jr z, .tower
 	cp TILESET_PKMN_LEAGUE
 	jr z, .pkmn_league
+	cp TILESET_NIMBASA
+	jr z, .nimbasa
 	jr .do_nothing
+
+.nimbasa
+	ld a, [wMapNumber]
+	cp 11 ; Rt5
+	jr nz, .do_nothing
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .r5_nite
+	call LoadR5ObPalette
+	scf
+	ret
+	
+.r5_nite
+	call LoadR5NiteObPalette
+	scf
+	ret
 
 .pkmn_league
 	ld a, [wCurTimeOfDay]
@@ -189,3 +207,25 @@ LoadVREntranceNiteObPalette:
 
 VREntranceNiteObPalette:
 INCLUDE "gfx/tilesets/victory_road_nite_ob.pal"
+
+LoadR5ObPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, R5ObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+R5ObPalette:
+INCLUDE "gfx/tilesets/r5_ob.pal"
+
+LoadR5NiteObPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, R5NiteObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+R5NiteObPalette:
+INCLUDE "gfx/tilesets/r5_nite_ob.pal"

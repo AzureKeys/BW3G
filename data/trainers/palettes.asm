@@ -20,6 +20,7 @@ INCBIN "gfx/trainers/blackbelt_t.gbcpal", middle_colors
 INCBIN "gfx/trainers/battle_girl.gbcpal", middle_colors
 INCBIN "gfx/trainers/biker.gbcpal", middle_colors
 INCBIN "gfx/trainers/roughneck.gbcpal", middle_colors
+INCBIN "gfx/trainers/dancer.gbcpal", middle_colors
 INCBIN "gfx/trainers/depot_agent.gbcpal", middle_colors
 INCBIN "gfx/trainers/doctor.gbcpal", middle_colors
 INCBIN "gfx/trainers/nurse.gbcpal", middle_colors

@@ -120,6 +120,10 @@ CHRIS EQU __enum__
 	const ROUGHNECK_R9_1
 	const ROUGHNECK_R9_2
 	
+	trainerclass DANCER
+	const DANCER_R5_1
+	const DANCER_R5_2
+	
 	trainerclass DEPOT_AGENT
 	const DEPOT_AGENT_R19_1
 	const DEPOT_AGENT_R19_2
@@ -397,7 +401,6 @@ CHRIS EQU __enum__
 	const BEAUTY_CELESTIAL_TOWER
 
 	trainerclass POKEMANIAC ; 1e
-	const POKEMANIAC_R5
 	const POKEMANIAC_R2
 	const POKEMANIAC_GIANT_CHASM_1
 	const POKEMANIAC_GIANT_CHASM_2
@@ -419,7 +422,6 @@ CHRIS EQU __enum__
 
 	trainerclass SUPER_NERD ; 29
 	const SUPER_NERD_R5_1
-	const SUPER_NERD_R5_2
 	const SUPER_NERD_R2
 	const ERIC_REMATCH_1
 	const ERIC_REMATCH_2

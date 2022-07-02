@@ -79,6 +79,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Dancer
+	db NO_ITEM, NO_ITEM ; items
+	db 15 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
 ; DepotAgent
 	db NO_ITEM, NO_ITEM ; items
 	db 6 ; base reward

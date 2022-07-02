@@ -599,6 +599,25 @@ RoughneckGroup:
 	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
 	
+DancerGroup:
+	; DANCER (R5)
+	db "ERIC@", TRAINERTYPE_STAT_EXP
+	db 16, MAGNEMITE
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 15, FERROSEED
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 18, SOLOSIS
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+	
+	; DANCER (R5)
+	db "LERON@", TRAINERTYPE_STAT_EXP
+	db 18, ELEKID
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 18, MAGBY
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+	
 DepotAgentGroup:
 	; DEPOT_AGENT (R19)
 	db "ANTON@", TRAINERTYPE_STAT_EXP
@@ -2293,14 +2312,6 @@ BeautyDGroup:
 	db -1 ; end
 
 PokemaniacGroup:
-	; POKEMANIAC (R5)
-	db "LARS@", TRAINERTYPE_STAT_EXP
-	db 18, ELEKID
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 18, MAGBY
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db -1 ; end
-	
 	; POKEMANIAC (R2)
 	db "ANDREW@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
 	db 30, NOSEPASS
@@ -2412,16 +2423,6 @@ SuperNerdGroup:
 	db 18, MAGNEMITE
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db 16, JOLTIK
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db -1 ; end
-
-	; SUPER_NERD (R5)
-	db "ERIC@", TRAINERTYPE_STAT_EXP
-	db 16, MAGNEMITE
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 15, FERROSEED
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 18, SOLOSIS
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db -1 ; end
 	

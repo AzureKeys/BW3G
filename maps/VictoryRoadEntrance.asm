@@ -58,38 +58,38 @@ VictoryRoadEntrance_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event 46, 17, R_23_WEST, 7
-	warp_event 47, 17, R_23_WEST, 8
+	warp_event 46, 35, R_23_WEST, 7
+	warp_event 47, 35, R_23_WEST, 8
 
 	db 10 ; coord events
-	coord_event 46, 16, -1, VictoryRoadEntranceBadge1Script
-	coord_event 47, 16, -1, VictoryRoadEntranceBadge1Script
-	coord_event 27, 10, -1, VictoryRoadEntranceBadge1Script
-	coord_event 27, 11, -1, VictoryRoadEntranceBadge1Script
-	coord_event 26, 10, -1, VictoryRoadEntranceBadge2Script
-	coord_event 26, 11, -1, VictoryRoadEntranceBadge2Script
-	coord_event  6,  2, -1, VictoryRoadEntranceBadge2Script
-	coord_event  7,  2, -1, VictoryRoadEntranceBadge2Script
-	coord_event  8,  2, -1, VictoryRoadEntranceBadge2Script
-	coord_event  9,  2, -1, VictoryRoadEntranceBadge2Script
+	coord_event 46, 34, -1, VictoryRoadEntranceBadge1Script
+	coord_event 47, 34, -1, VictoryRoadEntranceBadge1Script
+	coord_event 27, 28, -1, VictoryRoadEntranceBadge1Script
+	coord_event 27, 29, -1, VictoryRoadEntranceBadge1Script
+	coord_event 26, 28, -1, VictoryRoadEntranceBadge2Script
+	coord_event 26, 29, -1, VictoryRoadEntranceBadge2Script
+	coord_event  6, 20, -1, VictoryRoadEntranceBadge2Script
+	coord_event  7, 20, -1, VictoryRoadEntranceBadge2Script
+	coord_event  8, 20, -1, VictoryRoadEntranceBadge2Script
+	coord_event  9, 20, -1, VictoryRoadEntranceBadge2Script
 
 	db 0 ; bg events
 	
 	db 16 ; object events
-	object_event 42,  8, SPRITE_BADGE_1, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
-	object_event 42, 12, SPRITE_BADGE_1, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
-	object_event 38,  8, SPRITE_BADGE_2, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
-	object_event 38, 12, SPRITE_BADGE_2, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
-	object_event 34,  8, SPRITE_BADGE_3, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
-	object_event 34, 12, SPRITE_BADGE_3, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
-	object_event 30,  8, SPRITE_BADGE_4, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
-	object_event 30, 12, SPRITE_BADGE_4, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
-	object_event 26,  8, SPRITE_BADGE_5, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
-	object_event 26, 12, SPRITE_BADGE_5, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
-	object_event 22,  8, SPRITE_BADGE_6, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
-	object_event 22, 12, SPRITE_BADGE_6, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
-	object_event 18,  8, SPRITE_BADGE_7, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
-	object_event 18, 12, SPRITE_BADGE_7, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
-	object_event 14,  8, SPRITE_BADGE_8, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
-	object_event 14, 12, SPRITE_BADGE_8, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
+	object_event 42, 26, SPRITE_BADGE_1, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
+	object_event 42, 30, SPRITE_BADGE_1, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
+	object_event 38, 26, SPRITE_BADGE_2, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
+	object_event 38, 30, SPRITE_BADGE_2, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
+	object_event 34, 26, SPRITE_BADGE_3, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
+	object_event 34, 30, SPRITE_BADGE_3, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
+	object_event 30, 26, SPRITE_BADGE_4, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
+	object_event 30, 30, SPRITE_BADGE_4, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
+	object_event 26, 26, SPRITE_BADGE_5, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
+	object_event 26, 30, SPRITE_BADGE_5, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
+	object_event 22, 26, SPRITE_BADGE_6, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
+	object_event 22, 30, SPRITE_BADGE_6, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
+	object_event 18, 26, SPRITE_BADGE_7, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
+	object_event 18, 30, SPRITE_BADGE_7, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
+	object_event 14, 26, SPRITE_BADGE_8, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
+	object_event 14, 30, SPRITE_BADGE_8, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
 	

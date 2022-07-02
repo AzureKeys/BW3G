@@ -4,11 +4,11 @@
 	const R5_CALCIUM
 	const R5_REVIVE
 	const R5_HEART_SCALE
+	const R5_DANCER_1
+	const R5_DANCER_2
 	const R5_SUPER_NERD_1
-	const R5_SUPER_NERD_2
 	const R5_BAKER
 	const R5_YOUNGSTER
-	const R5_POKEMANIAC
 	const R5_PSYCHIC
 	const R5_BIKER
 
@@ -64,19 +64,19 @@ TrainerSuperNerd1R5:
 	closetext
 	end
 
-TrainerSuperNerd2R5:
-	trainer SUPER_NERD, SUPER_NERD_R5_2, EVENT_BEAT_SUPER_NERD_R5_2, SuperNerd2R5SeenText, SuperNerd2R5BeatenText, 0, .Script
+TrainerDancer1R5:
+	trainer DANCER, DANCER_R5_1, EVENT_BEAT_DANCER_R5_1, Dancer1R5SeenText, Dancer1R5BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_SUPERNERD_ERIC
+	writecode VAR_CALLERID, PHONE_DANCER_ERIC
 	opentext
 	checkflag ENGINE_ERIC_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_SUPERNERD_ERIC
+	checkcellnum PHONE_DANCER_ERIC
 	iftrue .NumberAccepted
 	checkevent EVENT_ERIC_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext SuperNerd2R5AfterText
+	writetext Dancer1R5AfterText
 	buttonsound
 	setevent EVENT_ERIC_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -85,17 +85,17 @@ TrainerSuperNerd2R5:
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_SUPERNERD_ERIC
+	askforphonenumber PHONE_DANCER_ERIC
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_ERIC
-	trainertotext SUPER_NERD, SUPER_NERD_R5_2, MEM_BUFFER_0
+	trainertotext DANCER, DANCER_R5_1, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext SuperNerd2R5BeatenText, 0
+	winlosstext Dancer1R5BeatenText, 0
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight3
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
@@ -103,25 +103,25 @@ TrainerSuperNerd2R5:
 	checkevent EVENT_BIANCA_CASTELIA_CALL
 	iftrue .LoadFight1
 ; Fight0
-	loadtrainer SUPER_NERD, SUPER_NERD_R5_2
+	loadtrainer DANCER, DANCER_R5_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
 	end
 .LoadFight1
-	loadtrainer SUPER_NERD, ERIC_REMATCH_1
+	loadtrainer DANCER, ERIC_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
 	end
 .LoadFight2
-	loadtrainer SUPER_NERD, ERIC_REMATCH_2
+	loadtrainer DANCER, ERIC_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
 	end
 .LoadFight3
-	loadtrainer SUPER_NERD, ERIC_REMATCH_3
+	loadtrainer DANCER, ERIC_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
@@ -155,6 +155,17 @@ TrainerSuperNerd2R5:
 	jumpstd rematchm
 	end
 
+TrainerDancer2R5:
+	trainer DANCER, DANCER_R5_2, EVENT_BEAT_DANCER_R5_2, Dancer2R5SeenText, Dancer2R5BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext Dancer2R5AfterText
+	waitbutton
+	closetext
+	end
+
 TrainerBakerR5:
 	trainer BAKER, BAKER_R5, EVENT_BEAT_BAKER_R5, BakerR5SeenText, BakerR5BeatenText, 0, .Script
 
@@ -173,17 +184,6 @@ TrainerYoungsterR5:
 	endifjustbattled
 	opentext
 	writetext YoungsterR5AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerPokemaniacR5:
-	trainer POKEMANIAC, POKEMANIAC_R5, EVENT_BEAT_POKEMANIAC_R5, PokemaniacR5SeenText, PokemaniacR5BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext PokemaniacR5AfterText
 	waitbutton
 	closetext
 	end
@@ -285,7 +285,25 @@ SuperNerd1R5AfterText:
 	cont "reading books."
 	done
 	
-SuperNerd2R5SeenText:
+Dancer1R5SeenText:
+	text "I think you have"
+	line "some rare #MON"
+	cont "with you."
+
+	para "Let me see them!"
+	done
+
+Dancer1R5BeatenText:
+	text "Gaah! I lost!"
+	line "That makes me mad!"
+	done
+
+Dancer1R5AfterText:
+	text "Are you making a"
+	line "#DEX?"
+	done
+	
+Dancer2R5SeenText:
 	text "Do you consider"
 	line "type alignments in"
 	cont "battle?"
@@ -297,11 +315,11 @@ SuperNerd2R5SeenText:
 	line "in battle."
 	done
 
-SuperNerd2R5BeatenText:
+Dancer2R5BeatenText:
 	text "Ow, ow, ow!"
 	done
 
-SuperNerd2R5AfterText:
+Dancer2R5AfterText:
 	text "I know my #MON"
 	line "type alignments."
 
@@ -349,24 +367,6 @@ YoungsterR5AfterText:
 	text "I'd be happy just"
 	line "to own a single"
 	cont "rare #MON."
-	done
-	
-PokemaniacR5SeenText:
-	text "I think you have"
-	line "some rare #MON"
-	cont "with you."
-
-	para "Let me see them!"
-	done
-
-PokemaniacR5BeatenText:
-	text "Gaah! I lost!"
-	line "That makes me mad!"
-	done
-
-PokemaniacR5AfterText:
-	text "Are you making a"
-	line "#DEX?"
 	done
 	
 PsychicR5SeenText:
@@ -423,11 +423,11 @@ Rt5_MapEvents:
 	object_event  5,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5Calcium, EVENT_R_5_CALCIUM
 	object_event  9, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5Revive, EVENT_R_5_REVIVE
 	object_event 17, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5HeartScale, EVENT_R_5_HEART_SCALE
-	object_event 22, 15, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1
-	object_event 13, 11, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd2R5, -1
+	object_event 22, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_TRAINER, 3, TrainerDancer1R5, -1
+	object_event 20, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_TRAINER, 3, TrainerDancer2R5, -1
+	object_event 13, 11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1
 	object_event 10, 13, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBakerR5, -1
 	object_event 14, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerYoungsterR5, -1
-	object_event 20, 10, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokemaniacR5, -1
-	object_event 17, 14, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPsychicR5, -1
+	object_event 17, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPsychicR5, -1
 	object_event  7, 11, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R5CharlesScript, -1
 	
