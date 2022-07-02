@@ -26,6 +26,7 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; HEX_MANIAC
 	dn 10,  8,  8,  8 ; HIKER
 	dn 10,  8,  8,  8 ; HIKER_D
+	dn  9,  8,  8,  8 ; HOOPSTER
 	dn  6,  9, 12,  8 ; LADY
 	dn  6,  9, 12,  8 ; MAID
 	dn  9,  8,  8,  8 ; MUSICIAN

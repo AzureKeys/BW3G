@@ -13,8 +13,8 @@
 	const VILLAGEBRIDGE_SMASHER_1
 	const VILLAGEBRIDGE_SMASHER_2
 	const VILLAGEBRIDGE_FISHER
-	const VILLAGEBRIDGE_POKEMANIAC_1
-	const VILLAGEBRIDGE_POKEMANIAC_2
+	const VILLAGEBRIDGE_HOOPSTER_1
+	const VILLAGEBRIDGE_HOOPSTER_2
 
 VillageBridge_MapScripts:
 	db 1 ; scene scripts
@@ -135,24 +135,24 @@ TrainerFisherVillageBridge:
 	closetext
 	end
 
-TrainerPokemaniac1VillageBridge:
-	trainer POKEMANIAC, POKEMANIAC_VILLAGE_BRIDGE_1, EVENT_BEAT_POKEMANIAC_VILLAGE_BRIDGE_1, Pokemaniac1VillageBridgeSeenText, Pokemaniac1VillageBridgeBeatenText, 0, .Script
+TrainerHoopster1VillageBridge:
+	trainer HOOPSTER, HOOPSTER_VILLAGE_BRIDGE_1, EVENT_BEAT_HOOPSTER_VILLAGE_BRIDGE_1, Hoopster1VillageBridgeSeenText, Hoopster1VillageBridgeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Pokemaniac1VillageBridgeAfterText
+	writetext Hoopster1VillageBridgeAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerPokemaniac2VillageBridge:
-	trainer POKEMANIAC, POKEMANIAC_VILLAGE_BRIDGE_2, EVENT_BEAT_POKEMANIAC_VILLAGE_BRIDGE_2, Pokemaniac2VillageBridgeSeenText, Pokemaniac2VillageBridgeBeatenText, 0, .Script
+TrainerHoopster2VillageBridge:
+	trainer HOOPSTER, HOOPSTER_VILLAGE_BRIDGE_2, EVENT_BEAT_HOOPSTER_VILLAGE_BRIDGE_2, Hoopster2VillageBridgeSeenText, Hoopster2VillageBridgeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Pokemaniac2VillageBridgeAfterText
+	writetext Hoopster2VillageBridgeAfterText
 	waitbutton
 	closetext
 	end
@@ -235,27 +235,27 @@ FisherVillageBridgeAfterText:
 	text "..."
 	done
 	
-Pokemaniac1VillageBridgeSeenText:
+Hoopster1VillageBridgeSeenText:
 	text "..."
 	done
 
-Pokemaniac1VillageBridgeBeatenText:
+Hoopster1VillageBridgeBeatenText:
 	text "..."
 	done
 
-Pokemaniac1VillageBridgeAfterText:
+Hoopster1VillageBridgeAfterText:
 	text "..."
 	done
 	
-Pokemaniac2VillageBridgeSeenText:
+Hoopster2VillageBridgeSeenText:
 	text "..."
 	done
 
-Pokemaniac2VillageBridgeBeatenText:
+Hoopster2VillageBridgeBeatenText:
 	text "..."
 	done
 
-Pokemaniac2VillageBridgeAfterText:
+Hoopster2VillageBridgeAfterText:
 	text "..."
 	done
 
@@ -290,8 +290,8 @@ VillageBridge_MapEvents:
 	bg_event 22,  7, BGEVENT_ITEM, VillageBridgePPMax
 	bg_event 38, 14, BGEVENT_ITEM, VillageBridgeFullRestore
 	bg_event  4, 31, BGEVENT_ITEM, VillageBridgeBigMushroom
-	bg_event 46, 28, BGEVENT_ITEM, VillageBridgeMaxEther
-	bg_event 47, 28, BGEVENT_ITEM, VillageBridgeMaxEther
+	bg_event 54, 28, BGEVENT_ITEM, VillageBridgeMaxEther
+	bg_event 55, 28, BGEVENT_ITEM, VillageBridgeMaxEther
 
 	db 16 ; object events
 	object_event 30, 13, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
@@ -304,10 +304,10 @@ VillageBridge_MapEvents:
 	object_event 56, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeCarbos, EVENT_VILLAGE_BRIDGE_CARBOS
 	object_event 55,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeRareCandy, EVENT_VILLAGE_BRIDGE_RARE_CANDY
 	object_event 38, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeHeartScale, EVENT_VILLAGE_BRIDGE_HEART_SCALE
-	object_event 15,  7, SPRITE_MUSICIAN, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerMusicianVillageBridge, -1
-	object_event 43, 28, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSmasher1VillageBridge, -1
+	object_event 22, 28, SPRITE_MUSICIAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerMusicianVillageBridge, -1
+	object_event 45, 28, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSmasher1VillageBridge, -1
 	object_event 54, 31, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSmasher2VillageBridge, -1
 	object_event 29, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerFisherVillageBridge, -1
-	object_event 39,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPokemaniac1VillageBridge, -1
-	object_event 22, 28, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPokemaniac2VillageBridge, -1
+	object_event 11,  6, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerHoopster1VillageBridge, -1
+	object_event 15,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerHoopster2VillageBridge, -1
 	

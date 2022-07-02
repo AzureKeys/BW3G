@@ -27,6 +27,7 @@ TrainerGroups:
 	dba HexManiacGroup
 	dba HikerGroup
 	dba HikerDGroup
+	dba HoopsterGroup
 	dba LadyGroup
 	dba MaidGroup
 	dba MusicianGroup

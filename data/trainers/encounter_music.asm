@@ -28,6 +28,7 @@ TrainerEncounterMusic::
 	db MUSIC_KIMONO_ENCOUNTER      ; hexmaniac
 	db MUSIC_HIKER_ENCOUNTER       ; hiker
 	db MUSIC_HIKER_ENCOUNTER       ; hikerD
+	db MUSIC_HIKER_ENCOUNTER       ; hoopster
 	db MUSIC_BEAUTY_ENCOUNTER      ; lady
 	db MUSIC_LASS_ENCOUNTER        ; maid
 	db MUSIC_HIKER_ENCOUNTER       ; musician

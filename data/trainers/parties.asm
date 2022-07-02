@@ -1062,6 +1062,27 @@ HikerDGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db -1 ; end
 	
+HoopsterGroup:
+	; HOOPSTER (VILLAGE_BRIDGE)
+	db "NICK@", TRAINERTYPE_STAT_EXP
+	db 47, MAGBY
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, MAGMAR
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, PUPITAR
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+
+	; HOOPSTER (VILLAGE_BRIDGE)
+	db "DEREK@", TRAINERTYPE_STAT_EXP
+	db 47, ELEKID
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, ELECTABUZZ
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, METANG
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+	
 LadyGroup:
 	; LADY (R4)
 	db "LACEY@", TRAINERTYPE_STAT_EXP
@@ -2334,26 +2355,6 @@ PokemaniacGroup:
 	db "SHANE@", TRAINERTYPE_STAT_EXP
 	db 38, BOUFFALANT
 	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db -1 ; end
-
-	; POKEMANIAC (VILLAGE_BRIDGE)
-	db "NICK@", TRAINERTYPE_STAT_EXP
-	db 47, MAGBY
-	dw $5000, $5000, $5000, $5000, $5000
-	db 49, MAGMAR
-	dw $5000, $5000, $5000, $5000, $5000
-	db 49, PUPITAR
-	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-
-	; POKEMANIAC (VILLAGE_BRIDGE)
-	db "DEREK@", TRAINERTYPE_STAT_EXP
-	db 47, ELEKID
-	dw $5000, $5000, $5000, $5000, $5000
-	db 49, ELECTABUZZ
-	dw $5000, $5000, $5000, $5000, $5000
-	db 49, METANG
-	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 
 TeacherGroup:

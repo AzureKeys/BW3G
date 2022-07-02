@@ -48,6 +48,7 @@ SmasherPic:         INCBIN "gfx/trainers/smasher.2bpp.lz"
 MusicianPic:        INCBIN "gfx/trainers/musician.2bpp.lz"
 MaidPic:            INCBIN "gfx/trainers/maid.2bpp.lz"
 DancerPic:          INCBIN "gfx/trainers/dancer.2bpp.lz"
+HoopsterPic:        INCBIN "gfx/trainers/hoopster.2bpp.lz"
 
 
 

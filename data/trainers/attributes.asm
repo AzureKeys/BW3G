@@ -151,6 +151,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Hoopster
+	db NO_ITEM, NO_ITEM ; items
+	db 15 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
 ; Lady
 	db NO_ITEM, NO_ITEM ; items
 	db 22 ; base reward
