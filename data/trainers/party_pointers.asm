@@ -28,6 +28,7 @@ TrainerGroups:
 	dba HikerGroup
 	dba HikerDGroup
 	dba HoopsterGroup
+	dba JanitorGroup
 	dba LadyGroup
 	dba MaidGroup
 	dba MusicianGroup

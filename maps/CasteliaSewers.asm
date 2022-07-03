@@ -10,9 +10,9 @@
 	const CASTELIASEWERS_SCIENTISTF
 	const CASTELIASEWERS_POKEFANM
 	const CASTELIASEWERS_GRUNTM_1
-	const CASTELIASEWERS_GRUNTM_2
-	const CASTELIASEWERS_GRUNTF_1
-	const CASTELIASEWERS_GRUNTF_2
+	const CASTELIASEWERS_JANITOR_1
+	const CASTELIASEWERS_JANITOR_2
+	const CASTELIASEWERS_JANITOR_3
 	const CASTELIASEWERS_BLOCKER
 	const CASTELIASEWERS_BOULDER_1
 	const CASTELIASEWERS_BOULDER_2
@@ -236,35 +236,35 @@ TrainerGruntM1CasteliaSewers:
 	closetext
 	end
 
-TrainerGruntM2CasteliaSewers:
-	trainer GRUNTM, GRUNTM_CASTELIA_SEWERS_2, EVENT_BEAT_GRUNTM_CASTELIA_SEWERS_2, GruntM2CasteliaSewersSeenText, GruntM2CasteliaSewersBeatenText, 0, .Script
+TrainerJanitor1CasteliaSewers:
+	trainer JANITOR, JANITOR_CASTELIA_SEWERS_1, EVENT_BEAT_JANITOR_CASTELIA_SEWERS_1, Janitor1CasteliaSewersSeenText, Janitor1CasteliaSewersBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GruntM2CasteliaSewersAfterText
+	writetext Janitor1CasteliaSewersAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerGruntF1CasteliaSewers:
-	trainer GRUNTF, GRUNTF_CASTELIA_SEWERS_1, EVENT_BEAT_GRUNTF_CASTELIA_SEWERS_1, GruntF1CasteliaSewersSeenText, GruntF1CasteliaSewersBeatenText, 0, .Script
+TrainerJanitor2CasteliaSewers:
+	trainer JANITOR, JANITOR_CASTELIA_SEWERS_2, EVENT_BEAT_JANITOR_CASTELIA_SEWERS_2, Janitor2CasteliaSewersSeenText, Janitor2CasteliaSewersBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GruntF1CasteliaSewersAfterText
+	writetext Janitor2CasteliaSewersAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerGruntF2CasteliaSewers:
-	trainer GRUNTF, GRUNTF_CASTELIA_SEWERS_2, EVENT_BEAT_GRUNTF_CASTELIA_SEWERS_2, GruntF2CasteliaSewersSeenText, GruntF2CasteliaSewersBeatenText, 0, .Script
+TrainerJanitor3CasteliaSewers:
+	trainer JANITOR, JANITOR_CASTELIA_SEWERS_4, EVENT_BEAT_JANITOR_CASTELIA_SEWERS_4, Janitor3CasteliaSewersSeenText, Janitor3CasteliaSewersBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GruntF2CasteliaSewersAfterText
+	writetext Janitor3CasteliaSewersAfterText
 	waitbutton
 	closetext
 	end
@@ -379,48 +379,48 @@ GruntM1CasteliaSewersAfterText:
 	line "you!"
 	done
 	
-GruntM2CasteliaSewersSeenText:
-	text "Uh-oh, busted!"
-	done
-
-GruntM2CasteliaSewersBeatenText:
-	text "Darn!"
-	done
-
-GruntM2CasteliaSewersAfterText:
-	text "My boss is gonna"
-	line "be upset…"
-	done
-	
-GruntF1CasteliaSewersSeenText:
+Janitor1CasteliaSewersSeenText:
 	text "Hey, kid! You'd"
 	line "better stay out"
 	cont "of our way!"
 	done
 
-GruntF1CasteliaSewersBeatenText:
+Janitor1CasteliaSewersBeatenText:
 	text "Busted!"
 	done
 
-GruntF1CasteliaSewersAfterText:
+Janitor1CasteliaSewersAfterText:
 	text "We won't let you"
 	line "mess up our plans"
 	cont "in the city."
 	done
 	
-GruntF2CasteliaSewersSeenText:
+Janitor2CasteliaSewersSeenText:
 	text "Kids are no match"
 	line "for TEAM PLASMA!"
 	done
 
-GruntF2CasteliaSewersBeatenText:
+Janitor2CasteliaSewersBeatenText:
 	text "I was wrong!"
 	done
 
-GruntF2CasteliaSewersAfterText:
+Janitor2CasteliaSewersAfterText:
 	text "Darn, we can't let"
 	line "the plan be"
 	cont "compromised…"
+	done
+	
+Janitor3CasteliaSewersSeenText:
+	text "Uh-oh, busted!"
+	done
+
+Janitor3CasteliaSewersBeatenText:
+	text "Darn!"
+	done
+
+Janitor3CasteliaSewersAfterText:
+	text "My boss is gonna"
+	line "be upset…"
 	done
 
 CasteliaSewersBlockerText:
@@ -461,9 +461,9 @@ CasteliaSewers_MapEvents:
 	object_event 17, 10, SPRITE_SCIENTIST_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerScientistFCasteliaSewers, -1
 	object_event 42, 11, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerPokefanMCasteliaSewers, -1
 	object_event 20, 19, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerGruntM1CasteliaSewers, EVENT_CASTELIA_SEWERS_GRUNTS
-	object_event 21, 33, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerGruntM2CasteliaSewers, EVENT_CASTELIA_SEWERS_GRUNTS
-	object_event 40, 21, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerGruntF1CasteliaSewers, EVENT_CASTELIA_SEWERS_GRUNTS
-	object_event 21, 25, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerGruntF2CasteliaSewers, EVENT_CASTELIA_SEWERS_GRUNTS
+	object_event 40, 21, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerJanitor1CasteliaSewers, -1
+	object_event 21, 25, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerJanitor2CasteliaSewers, -1
+	object_event 21, 33, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerJanitor3CasteliaSewers, -1
 	object_event 33,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CasteliaSewersBlockerScript, EVENT_CASTELIA_SEWER_BLOCKER
 	object_event 13,  3, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSewersBoulder, -1
 	object_event 36,  2, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CasteliaSewersBoulder, -1

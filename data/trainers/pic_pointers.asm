@@ -28,6 +28,7 @@ TrainerPicPointers::
 	dba HikerPic
 	dba HikerDPic
 	dba HoopsterPic
+	dba JanitorPic
 	dba LadyPic
 	dba MaidPic
 	dba MusicianPic

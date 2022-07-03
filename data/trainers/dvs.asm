@@ -27,6 +27,7 @@ TrainerClassDVs:
 	dn 10,  8,  8,  8 ; HIKER
 	dn 10,  8,  8,  8 ; HIKER_D
 	dn  9,  8,  8,  8 ; HOOPSTER
+	dn  9,  8,  8,  8 ; JANITOR
 	dn  6,  9, 12,  8 ; LADY
 	dn  6,  9, 12,  8 ; MAID
 	dn  9,  8,  8,  8 ; MUSICIAN
@@ -43,7 +44,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; SCHOOL_KID_M
 	dn  9,  8,  8,  8 ; SCHOOL_KID_F
 	dn  9,  8,  8,  8 ; SCIENTIST_M
-	dn  9,  8,  8,  8 ; SCIENTIST_F
+	dn  6, 10, 10,  8 ; SCIENTIST_F
 	dn  6, 10, 10,  8 ; SMASHER
 	dn  9,  8,  8,  8 ; SWIMMER_M
 	dn  9,  8,  8,  8 ; SWIMMER_M_D

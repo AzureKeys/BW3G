@@ -2,7 +2,7 @@
 	const CASTELIASEWERSROOMS_TWISTEDSPOON
 	const CASTELIASEWERSROOMS_HP_UP
 	const CASTELIASEWERSROOMS_GRUNTM
-	const CASTELIASEWERSROOMS_GRUNTF
+	const CASTELIASEWERSROOMS_JANITOR
 
 CasteliaSewersRooms_MapScripts:
 	db 0 ; scene scripts
@@ -40,13 +40,13 @@ TrainerGruntMCasteliaSewersRooms:
 	closetext
 	end
 
-TrainerGruntFCasteliaSewersRooms:
-	trainer GRUNTF, GRUNTF_CASTELIA_SEWERS_3, EVENT_BEAT_GRUNTF_CASTELIA_SEWERS_3, GruntFCasteliaSewersRoomsSeenText, GruntFCasteliaSewersRoomsBeatenText, 0, .Script
+TrainerJanitorCasteliaSewersRooms:
+	trainer JANITOR, JANITOR_CASTELIA_SEWERS_3, EVENT_BEAT_JANITOR_CASTELIA_SEWERS_3, JanitorCasteliaSewersRoomsSeenText, JanitorCasteliaSewersRoomsBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GruntFCasteliaSewersRoomsAfterText
+	writetext JanitorCasteliaSewersRoomsAfterText
 	waitbutton
 	closetext
 	end
@@ -79,17 +79,17 @@ GruntMCasteliaSewersRoomsAfterText:
 	para "It's so confusing!"
 	done
 	
-GruntFCasteliaSewersRoomsSeenText:
+JanitorCasteliaSewersRoomsSeenText:
 	text "Do you know how to"
 	line "get through the"
 	cont "sewers?"
 	done
 
-GruntFCasteliaSewersRoomsBeatenText:
+JanitorCasteliaSewersRoomsBeatenText:
 	text "I can't win!"
 	done
 
-GruntFCasteliaSewersRoomsAfterText:
+JanitorCasteliaSewersRoomsAfterText:
 	text "You need to use"
 	line "the machines to"
 
@@ -134,5 +134,5 @@ CasteliaSewersRooms_MapEvents:
 	object_event 17,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaSewersRoomsTwistedspoon, EVENT_CASTELIA_SEWERS_TWISTEDSPOON
 	object_event 21, 11, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaSewersRoomsHPUp, EVENT_CASTELIA_SEWERS_HP_UP
 	object_event  1,  4, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerGruntMCasteliaSewersRooms, EVENT_CASTELIA_SEWERS_GRUNTS
-	object_event  3, 13, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerGruntFCasteliaSewersRooms, EVENT_CASTELIA_SEWERS_GRUNTS
+	object_event  3, 13, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerJanitorCasteliaSewersRooms, -1
 	
