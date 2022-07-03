@@ -4,7 +4,7 @@
 	const R12_FRUIT_TREE
 	const R12_ANTIDOTE
 	const R12_YOUNGSTER
-	const R12_BUG_CATCHER
+	const R12_LASS
 	const R12_POKEFAN_F
 
 Rt12_MapScripts:
@@ -148,8 +148,8 @@ MarlonScript_ReceiveTheBalls:
 R12YoungsterTextScript:
 	jumptextfaceplayer R12YoungsterText
 	
-R12BugCatcherTextScript:
-	jumptextfaceplayer R12BugCatcherText
+R12LassTextScript:
+	jumptextfaceplayer R12LassText
 	
 R12PokefanFTextScript:
 	jumptextfaceplayer R12PokefanFText
@@ -410,7 +410,7 @@ R12YoungsterText:
 	line "trainers!"
 	done
 	
-R12BugCatcherText:
+R12LassText:
 	text "ROUTE 12 is a good"
 	line "place to find"
 	cont "wild #MON!"
@@ -468,6 +468,6 @@ Rt12_MapEvents:
 	object_event 15,  6, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R12FruitTree, -1
 	object_event  4,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R12Antidote, EVENT_R_12_ANTIDOTE
 	object_event 22, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, R12YoungsterTextScript, -1
-	object_event 13, 12, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, R12BugCatcherTextScript, -1
+	object_event 13, 12, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, R12LassTextScript, -1
 	object_event 19,  6, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, R12PokefanFTextScript, -1
 	

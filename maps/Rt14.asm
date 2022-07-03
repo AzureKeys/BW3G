@@ -1,8 +1,8 @@
 	const_def 2 ; object constants
-	const R14_YOUNGSTER
-	const R14_SCHOOL_KIDF
-	const R14_SCHOOL_KIDM
-	const R14_PICNICKER
+	const R14_PRESCHOOLERM_1
+	const R14_PRESCHOOLERF_1
+	const R14_PRESCHOOLERM_2
+	const R14_PRESCHOOLERF_2
 	const R14_PRIZE_GIVER
 	const R14_ANTIDOTE
 	const R14_POTION
@@ -15,135 +15,47 @@ Rt14_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
-	
-TrainerSchoolKidFR14:
-	trainer SCHOOL_KIDF, SCHOOL_KIDF_R14, EVENT_BEAT_SCHOOL_KIDF_R14, SchoolKidFR14SeenText, SchoolKidFR14BeatenText, 0, .Script
 
-.Script:
-	writecode VAR_CALLERID, PHONE_SCHOOL_KIDF_JEWEL
-	opentext
-	checkflag ENGINE_JEWEL_READY_FOR_REMATCH
-	iftrue .ChooseRematch
-	checkcellnum PHONE_SCHOOL_KIDF_JEWEL
-	iftrue .NumberAccepted
-	checkevent EVENT_JEWEL_ASKED_FOR_PHONE_NUMBER
-	iftrue .AskAgainForPhoneNumber
-	writetext SchoolKidFR14AfterText
-	buttonsound
-	setevent EVENT_JEWEL_ASKED_FOR_PHONE_NUMBER
-	scall .AskNumber1
-	jump .ContinueAskForPhoneNumber
-	
-.AskAgainForPhoneNumber:
-	scall .AskNumber2
-.ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_SCHOOL_KIDF_JEWEL
-	ifequal PHONE_CONTACTS_FULL, .PhoneFull
-	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
-	setflag ENGINE_JEWEL
-	trainertotext SCHOOL_KIDF, SCHOOL_KIDF_R14, MEM_BUFFER_0
-	scall .RegisteredNumber
-	jump .NumberAccepted
-	
-.ChooseRematch:
-	scall .Rematch
-	winlosstext SchoolKidFR14BeatenText, 0
-	checkevent EVENT_FINISHED_PWT
-	iftrue .LoadFight4
-	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
-	iftrue .LoadFight3
-	checkevent EVENT_BIANCA_CASTELIA_CALL
-	iftrue .LoadFight2
-	checkevent EVENT_BEAT_MARLON
-	iftrue .LoadFight1
-; Fight0
-	loadtrainer SCHOOL_KIDF, SCHOOL_KIDF_R14
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
-	end
-.LoadFight1
-	loadtrainer SCHOOL_KIDF, JEWEL_REMATCH_1
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
-	end
-.LoadFight2
-	loadtrainer SCHOOL_KIDF, JEWEL_REMATCH_2
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
-	end
-.LoadFight3
-	loadtrainer SCHOOL_KIDF, JEWEL_REMATCH_3
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
-	end
-.LoadFight4
-	loadtrainer SCHOOL_KIDF, JEWEL_REMATCH_4
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_JEWEL_READY_FOR_REMATCH
-	end
-	
-.AskNumber1:
-	jumpstd asknumber1f
-	end
-	
-.AskNumber2:
-	jumpstd asknumber2f
-	end
-
-.RegisteredNumber:
-	jumpstd registerednumberf
-	end
-
-.NumberAccepted:
-	jumpstd numberacceptedf
-	end
-
-.NumberDeclined:
-	jumpstd numberdeclinedf
-	end
-
-.PhoneFull:
-	jumpstd phonefullf
-	end
-
-.Rematch:
-	jumpstd rematchf
-	end
-
-TrainerYoungsterR14:
-	trainer YOUNGSTER_D, YOUNGSTER_R14, EVENT_BEAT_YOUNGSTER_R14, YoungsterR14SeenText, YoungsterR14BeatenText, 0, .Script
+TrainerPreschoolerM1R14:
+	trainer PRESCHOOLERM, PRESCHOOLERM_R14_1, EVENT_BEAT_PRESCHOOLERM_R14_1, PreschoolerM1R14SeenText, PreschoolerM1R14BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterR14AfterText
+	writetext PreschoolerM1R14AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolKidMR14:
-	trainer SCHOOL_KIDM, SCHOOL_KIDM_R14, EVENT_BEAT_SCHOOL_KIDM_R14, SchoolKidMR14SeenText, SchoolKidMR14BeatenText, 0, .Script
+TrainerPreschoolerM2R14:
+	trainer PRESCHOOLERM, PRESCHOOLERM_R14_2, EVENT_BEAT_PRESCHOOLERM_R14_2, PreschoolerM2R14SeenText, PreschoolerM2R14BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolKidMR14AfterText
+	writetext PreschoolerM2R14AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerPicnickerR14:
-	trainer PICNICKER, PICNICKER_R14, EVENT_BEAT_PICNICKER_R14, PicnickerR14SeenText, PicnickerR14BeatenText, 0, .Script
+TrainerPreschoolerF1R14:
+	trainer PRESCHOOLERF, PRESCHOOLERF_R14_1, EVENT_BEAT_PRESCHOOLERF_R14_1, PreschoolerF1R14SeenText, PreschoolerF1R14BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerR14AfterText
+	writetext PreschoolerF1R14AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerPreschoolerF2R14:
+	trainer PRESCHOOLERF, PRESCHOOLERF_R14_2, EVENT_BEAT_PRESCHOOLERF_R14_2, PreschoolerF2R14SeenText, PreschoolerF2R14BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PreschoolerF2R14AfterText
 	waitbutton
 	closetext
 	end
@@ -217,7 +129,7 @@ R14TMBulkUp:
 R14FruitTree:
 	fruittree FRUITTREE_R_14
 	
-YoungsterR14SeenText:
+PreschoolerM1R14SeenText:
 	text "Beat the five of"
 	line "us trainers to win"
 	cont "a fabulous prize!"
@@ -226,53 +138,53 @@ YoungsterR14SeenText:
 	line "what it takes?"
 	done
 
-YoungsterR14BeatenText:
+PreschoolerM1R14BeatenText:
 	text "Whoo! Good stuff."
 	done
 
-YoungsterR14AfterText:
+PreschoolerM1R14AfterText:
 	text "I did my best."
 	line "I have no regrets."
 	done
 	
-SchoolKidFR14SeenText:
+PreschoolerF1R14SeenText:
 	text "I'm second."
 	line "Now it's serious!"
 	done
 
-SchoolKidFR14BeatenText:
+PreschoolerF1R14BeatenText:
 	text "How could I lose?"
 	done
 
-SchoolKidFR14AfterText:
+PreschoolerF1R14AfterText:
 	text "I did my best."
 	line "I have no regrets."
 	done
 	
-SchoolKidMR14SeenText:
+PreschoolerM2R14SeenText:
 	text "Here's No. 3!"
 	line "I won't be easy."
 	done
 
-SchoolKidMR14BeatenText:
+PreschoolerM2R14BeatenText:
 	text "Ow! Stomped flat!"
 	done
 
-SchoolKidMR14AfterText:
+PreschoolerM2R14AfterText:
 	text "I did my best."
 	line "I have no regrets."
 	done
 	
-PicnickerR14SeenText:
+PreschoolerF2R14SeenText:
 	text "I'm No. 4!"
 	line "Getting tired?"
 	done
 
-PicnickerR14BeatenText:
+PreschoolerF2R14BeatenText:
 	text "I lost too…"
 	done
 
-PicnickerR14AfterText:
+PreschoolerF2R14AfterText:
 	text "I did my best."
 	line "I have no regrets."
 	done
@@ -337,10 +249,10 @@ Rt14_MapEvents:
 	db 0 ; bg events
 
 	db 11 ; object events
-	object_event 31,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR14, -1
-	object_event 20,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFR14, -1
-	object_event 18, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMR14, -1
-	object_event 10, 22, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPicnickerR14, -1
+	object_event 31,  3, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPreschoolerM1R14, -1
+	object_event 20,  9, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPreschoolerF1R14, -1
+	object_event 18, 15, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPreschoolerM2R14, -1
+	object_event 10, 22, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPreschoolerF2R14, -1
 	object_event  4, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, TrainerR14PrizeGiver, -1
 	object_event 31,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R14Antidote, EVENT_R_14_ANTIDOTE
 	object_event 14, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R14Potion, EVENT_R_14_POTION

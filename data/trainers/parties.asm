@@ -60,12 +60,6 @@ YoungsterGroup:
 	db -1 ; end
 
 YoungsterDGroup:
-	; YOUNGSTER (R14)
-	db "GEOFF@", TRAINERTYPE_NORMAL
-	db  5, PATRAT
-	db  6, LILLIPUP
-	db -1 ; end
-	
 	; YOUNGSTER (LOSTLORN)
 	db "BENNY@", TRAINERTYPE_STAT_EXP
 	db 14, COTTONEE
@@ -1553,6 +1547,32 @@ OfficerGroup:
 	dw $3400, $3400, $3400, $3400, $3400
 	db AURORA_BEAM, ACID_ARMOR, MIST, SCALD
 	db -1 ; end
+	
+PreschoolerMGroup:
+	; PRESCHOOLERM (R14)
+	db "FREDDY@", TRAINERTYPE_NORMAL
+	db 6, PURRLOIN
+	db 8, LILLIPUP
+	db -1 ; end
+	
+	; PRESCHOOLERM (R14)
+	db "GEOFF@", TRAINERTYPE_NORMAL
+	db  5, PATRAT
+	db  6, LILLIPUP
+	db -1 ; end
+	
+PreschoolerFGroup:
+	; PRESCHOOLERF (R14)
+	db "JILL@", TRAINERTYPE_NORMAL
+	db 6, MAREEP
+	db 5, DRILBUR
+	db -1 ; end
+	
+	; PRESCHOOLERF (R14)
+	db "BONNIE@", TRAINERTYPE_NORMAL
+	db  8, SNUBBULL
+	db  8, RALTS
+	db -1 ; end
 
 PsychicGroup:
 	; PSYCHIC_T (R5)
@@ -1674,15 +1694,8 @@ RichBoyGroup:
 SchoolKidMGroup:
 	; SCHOOL_KIDM (R13)
 	db "JOHNNY@", TRAINERTYPE_NORMAL
-	db 3, AZURILL
-	db 3, BUDEW
-	db 3, IGGLYBUFF
-	db -1 ; end
-	
-	; SCHOOL_KIDM (R14)
-	db "FREDDY@", TRAINERTYPE_NORMAL
-	db 6, PURRLOIN
-	db 8, LILLIPUP
+	db  4, SEWADDLE
+	db  4, VENIPEDE
 	db -1 ; end
 	
 	; SCHOOL_KIDM (OUTSKIRTS)
@@ -1774,10 +1787,11 @@ SchoolKidMGroup:
 	db -1 ; end
 
 SchoolKidFGroup:
-	; SCHOOL_KIDF (R14)
+	; SCHOOL_KIDF (R13)
 	db "JEWEL@", TRAINERTYPE_NORMAL
-	db 6, MAREEP
-	db 5, DRILBUR
+	db 3, AZURILL
+	db 3, BUDEW
+	db 3, IGGLYBUFF
 	db -1 ; end
 	
 	; SCHOOL_KIDF (REVERSAL)
@@ -1987,7 +2001,7 @@ ScientistFGroup:
 	db -1 ; end
 
 	; SCIENTIST (CASTELIA_SEWERS)
-	db "JILL@", TRAINERTYPE_STAT_EXP
+	db "CAROLINE@", TRAINERTYPE_STAT_EXP
 	db 37, KOFFING
 	dw $4000, $4000, $4000, $4000, $4000
 	db 37, VANILLITE
@@ -2422,12 +2436,6 @@ TeacherGroup:
 	db -1 ; end
 
 BugCatcherGroup:
-	; BUG_CATCHER (R13)
-	db "CHUCK@", TRAINERTYPE_NORMAL
-	db  4, SEWADDLE
-	db  4, VENIPEDE
-	db -1 ; end
-
 	; BUG_CATCHER (LOSTLORN1)
 	db "ROBBIE@", TRAINERTYPE_STAT_EXP
 	db 14, KARRABLAST
@@ -2524,12 +2532,6 @@ FirebreatherGroup:
 	db -1 ; end
 
 PicnickerGroup:
-	; PICNICKER (R14)
-	db "BONNIE@", TRAINERTYPE_NORMAL
-	db  8, SNUBBULL
-	db  8, RALTS
-	db -1 ; end
-
 	; PICNICKER (LOSTLORN)
 	db "SUZY@", TRAINERTYPE_STAT_EXP
 	db 14, BUDEW

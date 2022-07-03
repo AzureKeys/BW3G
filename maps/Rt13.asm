@@ -5,8 +5,8 @@
 	const R13_BLOCKER4
 	const R13_YOUNGSTER
 	const R13_LASS
-	const R13_BUG_CATCHER
 	const R13_SCHOOL_KIDM
+	const R13_SCHOOL_KIDF
 	const R13_POTION
 	const R13_POKEBALL
 	const R13_FRUIT_TREE
@@ -138,17 +138,6 @@ TrainerLassR13:
 	closetext
 	end
 
-TrainerBugCatcherR13:
-	trainer BUG_CATCHER, BUG_CATCHER_R13, EVENT_BEAT_BUG_CATCHER_R13, BugCatcherR13SeenText, BugCatcherR13BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BugCatcherR13AfterText
-	waitbutton
-	closetext
-	end
-
 TrainerSchoolKidMR13:
 	trainer SCHOOL_KIDM, SCHOOL_KIDM_R13, EVENT_BEAT_SCHOOL_KIDM_R13, SchoolKidMR13SeenText, SchoolKidMR13BeatenText, 0, .Script
 
@@ -156,6 +145,17 @@ TrainerSchoolKidMR13:
 	endifjustbattled
 	opentext
 	writetext SchoolKidMR13AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerSchoolKidFR13:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_R13, EVENT_BEAT_SCHOOL_KIDF_R13, SchoolKidFR13SeenText, SchoolKidFR13BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SchoolKidFR13AfterText
 	waitbutton
 	closetext
 	end
@@ -253,18 +253,18 @@ LassR13AfterText:
 	line "win…"
 	done
 	
-BugCatcherR13SeenText:
+SchoolKidFR13SeenText:
 	text "Instead of a bug"
 	line "#MON, I found"
 	cont "a trainer!"
 	done
 
-BugCatcherR13BeatenText:
+SchoolKidFR13BeatenText:
 	text "Argh! You're too"
 	line "strong!"
 	done
 
-BugCatcherR13AfterText:
+SchoolKidFR13AfterText:
 	text "I ran out of #"
 	line "BALLS while I was"
 	cont "catching #MON."
@@ -353,9 +353,9 @@ Rt13_MapEvents:
 	object_event  6, 12, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R13Blocker3TextScript, EVENT_R13_BLOCKER
 	object_event  7, 12, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, R13Blocker4TextScript, EVENT_R13_BLOCKER
 	object_event  4, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR13, EVENT_R13_TRAINER
-	object_event  4, 16, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerLassR13, EVENT_R13_TRAINER
-	object_event  8, 24, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherR13, -1
+	object_event  4, 16, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerLassR13, EVENT_R13_TRAINER
 	object_event 15, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMR13, -1
+	object_event  8, 24, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 4, TrainerSchoolKidFR13, -1
 	object_event 10, 43, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R13Potion, EVENT_R_13_POTION
 	object_event  4, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R13Pokeball, EVENT_R_13_POKEBALL
 	object_event  6, 20, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R13FruitTree, -1

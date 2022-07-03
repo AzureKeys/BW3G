@@ -223,6 +223,18 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Preschoolerm
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Preschoolerf
+	db NO_ITEM, NO_ITEM ; items
+	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
 ; Psychicm
 	db NO_ITEM, NO_ITEM ; items
 	db 8 ; base reward

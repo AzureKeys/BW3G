@@ -37,6 +37,8 @@ TrainerClassNames::
 	db "<PKMN> RANGER@"
 	db "<PKMN> RANGER@"
 	db "POLICEMAN@"
+	db "PRESCHOOLER@"
+	db "PRESCHOOLER@"
 	db "PSYCHIC@"
 	db "PSYCHIC@"
 	db "RICH BOY@"

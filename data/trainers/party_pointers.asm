@@ -39,6 +39,8 @@ TrainerGroups:
 	dba PkmnRangerMGroup
 	dba PkmnRangerFGroup
 	dba OfficerGroup
+	dba PreschoolerMGroup
+	dba PreschoolerFGroup
 	dba PsychicGroup
 	dba PsychicFGroup
 	dba RichBoyGroup

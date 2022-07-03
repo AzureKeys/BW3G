@@ -40,6 +40,8 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; pkmnrangerm
 	db MUSIC_BEAUTY_ENCOUNTER      ; pkmnrangerf
 	db MUSIC_HIKER_ENCOUNTER       ; policeman
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; preschoolerm
+	db MUSIC_LASS_ENCOUNTER        ; preschoolerf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychicm
 	db MUSIC_BEAUTY_ENCOUNTER      ; psychicf
 	db MUSIC_HIKER_ENCOUNTER       ; richboy

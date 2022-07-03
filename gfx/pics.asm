@@ -51,6 +51,8 @@ DancerPic:          INCBIN "gfx/trainers/dancer.2bpp.lz"
 HoopsterPic:        INCBIN "gfx/trainers/hoopster.2bpp.lz"
 JanitorPic:         INCBIN "gfx/trainers/janitor.2bpp.lz"
 WorkerPic:          INCBIN "gfx/trainers/worker.2bpp.lz"
+PreschoolerMPic:    INCBIN "gfx/trainers/preschooler_m.2bpp.lz"
+PreschoolerFPic:    INCBIN "gfx/trainers/preschooler_f.2bpp.lz"
 
 
 

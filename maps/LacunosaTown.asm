@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const LACUNOSATOWN_LASS
 	const LACUNOSATOWN_YOUNGSTER
-	const LACUNOSATOWN_BUG_CATCHER
+	const LACUNOSATOWN_YOUNGSTER2
 	const LACUNOSATOWN_POKEFAN_F
 	const LACUNOSATOWN_LASS2
 	const LACUNOSATOWN_TEACHER
@@ -44,8 +44,8 @@ LacunosaTownLassTextScript:
 LacunosaTownYoungsterTextScript:
 	jumptextfaceplayer LacunosaTownYoungsterText
 	
-LacunosaTownBugCatcherTextScript:
-	jumptextfaceplayer LacunosaTownBugCatcherText
+LacunosaTownYoungster2TextScript:
+	jumptextfaceplayer LacunosaTownYoungster2Text
 	
 LacunosaTownPokefanFTextScript:
 	jumptextfaceplayer LacunosaTownPokefanFText
@@ -91,7 +91,7 @@ LacunosaTownYoungsterText:
 	cont "suspicious."
 	done
 	
-LacunosaTownBugCatcherText:
+LacunosaTownYoungster2Text:
 	text "The #MON in"
 	line "ROUTE 12 are"
 	
@@ -149,7 +149,7 @@ LacunosaTown_MapEvents:
 	db 6 ; object events
 	object_event  9,  3, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, LacunosaTownLassTextScript, -1
 	object_event 10, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LacunosaTownYoungsterTextScript, -1
-	object_event  5,  7, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, LacunosaTownBugCatcherTextScript, -1
+	object_event  5,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, LacunosaTownYoungster2TextScript, -1
 	object_event 15, 17, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LacunosaTownPokefanFTextScript, -1
 	object_event  6, 16, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, LacunosaTownLass2TextScript, -1
 	object_event 16, 10, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, LacunosaTownTeacherTextScript, -1

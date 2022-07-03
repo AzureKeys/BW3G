@@ -36,7 +36,6 @@ CHRIS EQU __enum__
 	const DAN_REMATCH_4
 	
 	trainerclass YOUNGSTER_D
-	const YOUNGSTER_R14
 	const YOUNGSTER_LOSTLORN
 	const YOUNGSTER_R5
 	const YOUNGSTER_R19
@@ -277,6 +276,14 @@ CHRIS EQU __enum__
 	const OFFICER_R4_1
 	const OFFICER_R4_2
 	const OFFICER_R2
+	
+	trainerclass PRESCHOOLERM
+	const PRESCHOOLERM_R14_1
+	const PRESCHOOLERM_R14_2
+	
+	trainerclass PRESCHOOLERF
+	const PRESCHOOLERF_R14_1
+	const PRESCHOOLERF_R14_2
 
 	trainerclass PSYCHIC_T ; 34
 	const PSYCHIC_R5
@@ -300,7 +307,6 @@ CHRIS EQU __enum__
 
 	trainerclass SCHOOL_KIDM ; 17
 	const SCHOOL_KIDM_R13
-	const SCHOOL_KIDM_R14
 	const SCHOOL_KIDM_OUTSKIRTS
 	const SCHOOL_KIDM_R16
 	const SCHOOL_KIDM_R20_1
@@ -312,7 +318,7 @@ CHRIS EQU __enum__
 	const SCHOOL_KIDM_DREAMYARD
 	
 	trainerclass SCHOOL_KIDF
-	const SCHOOL_KIDF_R14
+	const SCHOOL_KIDF_R13
 	const SCHOOL_KIDF_REVERSAL
 	const SCHOOL_KIDF_LOSTLORN
 	const SCHOOL_KIDF_R16
@@ -423,7 +429,6 @@ CHRIS EQU __enum__
 	const TEACHER_R20
 
 	trainerclass BUG_CATCHER ; 24
-	const BUG_CATCHER_R13
 	const BUG_CATCHER_LOSTLORN_1
 	const BUG_CATCHER_LOSTLORN_2
 	const BUG_CATCHER_PINWHEEL_3
@@ -443,7 +448,6 @@ CHRIS EQU __enum__
 	const FIREBREATHER_DESERT
 
 	trainerclass PICNICKER ; 35
-	const PICNICKER_R14
 	const PICNICKER_LOSTLORN
 	
 	trainerclass PICNICKER_D

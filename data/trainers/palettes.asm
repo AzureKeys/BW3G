@@ -44,6 +44,8 @@ INCBIN "gfx/trainers/pokefan_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/pkmn_ranger_m.gbcpal", middle_colors
 INCBIN "gfx/trainers/pkmn_ranger_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/officer.gbcpal", middle_colors
+INCBIN "gfx/trainers/preschooler_m.gbcpal", middle_colors
+INCBIN "gfx/trainers/preschooler_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/psychic_t.gbcpal", middle_colors
 INCBIN "gfx/trainers/psychic_t_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/rich_boy.gbcpal", middle_colors

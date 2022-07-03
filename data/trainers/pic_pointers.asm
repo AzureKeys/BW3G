@@ -39,6 +39,8 @@ TrainerPicPointers::
 	dba PkmnRangerMPic
 	dba PkmnRangerFPic
 	dba OfficerPic
+	dba PreschoolerMPic
+	dba PreschoolerFPic
 	dba PsychicTPic
 	dba PsychicTFPic
 	dba RichBoyPic

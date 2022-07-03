@@ -52,10 +52,9 @@ LacunosaGroupSprites:
 	db SPRITE_LASS
 	db SPRITE_MARLON
 	db SPRITE_INFER
-	db SPRITE_BUG_CATCHER
 	db SPRITE_POKEFAN_F
 	db SPRITE_TEACHER
-	; 8 of max 9 walking sprites
+	; 7 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
 	db 0 ; end
@@ -68,7 +67,8 @@ UndellaGroupSprites:
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
 	db SPRITE_BUG_CATCHER
-	; 8 of max 9 walking sprites
+	db SPRITE_TWIN
+	; 7 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
 	db 0 ; end
