@@ -56,6 +56,7 @@ TrainerPicPointers::
 	dba VeteranFPic
 	dba WaiterPic
 	dba WaitressPic
+	dba WorkerPic
 	dba BirdKeeperPic
 	dba BeautyPic
 	dba BeautyDPic

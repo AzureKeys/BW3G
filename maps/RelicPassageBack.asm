@@ -5,7 +5,7 @@
 	const RELICPASSAGEBACK_PROTEIN
 	const RELICPASSAGEBACK_SMOOTH_ROCK
 	const RELICPASSAGEBACK_TM_ROCK_SLIDE
-	const RELICPASSAGEBACK_HIKER
+	const RELICPASSAGEBACK_WORKER
 	const RELICPASSAGEBACK_LASS
 	const RELICPASSAGEBACK_CAMPER
 	const RELICPASSAGEBACK_HEX_MANIAC
@@ -66,13 +66,13 @@ RelicPassageBack_MapScripts:
 	earthquake 80
 	end
 
-TrainerHiker3RelicPassage:
-	trainer HIKER_D, HIKER_RELIC_PASSAGE_3, EVENT_BEAT_HIKER_RELIC_PASSAGE_3, Hiker3RelicPassageSeenText, Hiker3RelicPassageBeatenText, 0, .Script
+TrainerWorkerRelicPassage:
+	trainer WORKER, WORKER_RELIC_PASSAGE, EVENT_BEAT_WORKER_RELIC_PASSAGE, WorkerRelicPassageSeenText, WorkerRelicPassageBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Hiker3RelicPassageAfterText
+	writetext WorkerRelicPassageAfterText
 	waitbutton
 	closetext
 	end
@@ -125,17 +125,17 @@ RelicPassageTMRockSlide:
 RelicPassageBackBoulder:
 	jumpstd strengthboulder
 	
-Hiker3RelicPassageSeenText:
+WorkerRelicPassageSeenText:
 	text "My #MON are"
 	line "strong enough to"
 	cont "move boulders!"
 	done
 
-Hiker3RelicPassageBeatenText:
+WorkerRelicPassageBeatenText:
 	text "Not strong enough!"
 	done
 
-Hiker3RelicPassageAfterText:
+WorkerRelicPassageAfterText:
 	text "I guess my #MON"
 	line "need to get"
 	cont "stronger!"
@@ -223,7 +223,7 @@ RelicPassageBack_MapEvents:
 	object_event 25,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicPassageProtein, EVENT_RELIC_PASSAGE_PROTEIN
 	object_event 11, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicPassageSmoothRock, EVENT_RELIC_PASSAGE_SMOOTH_ROCK
 	object_event 26, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, RelicPassageTMRockSlide, EVENT_RELIC_PASSAGE_TM_ROCK_SLIDE
-	object_event 17, 22, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerHiker3RelicPassage, -1
+	object_event 17, 22, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerWorkerRelicPassage, -1
 	object_event 16, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLassRelicPassage, -1
 	object_event 23,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperRelicPassage, -1
 	object_event  5,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerHexManiacRelicPassage, -1

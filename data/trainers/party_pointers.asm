@@ -56,6 +56,7 @@ TrainerGroups:
 	dba VeteranFGroup
 	dba WaiterGroup
 	dba WaitressGroup
+	dba WorkerGroup
 	dba BirdKeeperGroup
 	dba BeautyGroup
 	dba BeautyDGroup

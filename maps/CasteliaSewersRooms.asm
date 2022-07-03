@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const CASTELIASEWERSROOMS_TWISTEDSPOON
 	const CASTELIASEWERSROOMS_HP_UP
-	const CASTELIASEWERSROOMS_GRUNTM
+	const CASTELIASEWERSROOMS_WORKER
 	const CASTELIASEWERSROOMS_JANITOR
 
 CasteliaSewersRooms_MapScripts:
@@ -29,13 +29,13 @@ CasteliaSewersWaterToggleScript:
 	closetext
 	end
 
-TrainerGruntMCasteliaSewersRooms:
-	trainer GRUNTM, GRUNTM_CASTELIA_SEWERS_3, EVENT_BEAT_GRUNTM_CASTELIA_SEWERS_3, GruntMCasteliaSewersRoomsSeenText, GruntMCasteliaSewersRoomsBeatenText, 0, .Script
+TrainerWorkerCasteliaSewersRooms:
+	trainer WORKER, WORKER_CASTELIA_SEWERS_3, EVENT_BEAT_WORKER_CASTELIA_SEWERS_3, WorkerCasteliaSewersRoomsSeenText, WorkerCasteliaSewersRoomsBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext GruntMCasteliaSewersRoomsAfterText
+	writetext WorkerCasteliaSewersRoomsAfterText
 	waitbutton
 	closetext
 	end
@@ -60,18 +60,18 @@ CasteliaSewersRoomsHPUp:
 CasteliaSewersRoomsBigPearl:
 	hiddenitem BIG_PEARL, EVENT_CASTELIA_SEWERS_BIG_PEARL
 	
-GruntMCasteliaSewersRoomsSeenText:
+WorkerCasteliaSewersRoomsSeenText:
 	text "I can't figure out"
 	line "how to get through"
 	cont "this place!"
 	done
 
-GruntMCasteliaSewersRoomsBeatenText:
+WorkerCasteliaSewersRoomsBeatenText:
 	text "Gah! I'm"
 	line "frustrated!."
 	done
 
-GruntMCasteliaSewersRoomsAfterText:
+WorkerCasteliaSewersRoomsAfterText:
 	text "The water blocks"
 	line "off some paths,"
 	cont "but opens others…"
@@ -133,6 +133,6 @@ CasteliaSewersRooms_MapEvents:
 	db 4 ; object events
 	object_event 17,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaSewersRoomsTwistedspoon, EVENT_CASTELIA_SEWERS_TWISTEDSPOON
 	object_event 21, 11, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CasteliaSewersRoomsHPUp, EVENT_CASTELIA_SEWERS_HP_UP
-	object_event  1,  4, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerGruntMCasteliaSewersRooms, EVENT_CASTELIA_SEWERS_GRUNTS
+	object_event  1,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerWorkerCasteliaSewersRooms, -1
 	object_event  3, 13, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerJanitorCasteliaSewersRooms, -1
 	

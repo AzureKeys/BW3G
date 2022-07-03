@@ -55,6 +55,7 @@ TrainerClassDVs:
 	dn  7, 12, 12,  8 ; VETERAN_F
 	dn  9,  8,  8,  8 ; WAITER
 	dn  6, 10, 10,  8 ; WAITRESS
+	dn 10,  8,  8,  8 ; WORKER
 	dn  9,  8,  8,  8 ; BIRD_KEEPER
 	dn  6,  9, 12,  8 ; BEAUTY
 	dn  6,  9, 12,  8 ; BEAUTY_D
