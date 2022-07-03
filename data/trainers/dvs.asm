@@ -60,13 +60,11 @@ TrainerClassDVs:
 	dn 10,  8,  8,  8 ; WORKER
 	dn  9,  8,  8,  8 ; BIRD_KEEPER
 	dn  6,  9, 12,  8 ; BEAUTY
-	dn  6,  9, 12,  8 ; BEAUTY_D
 	dn  9,  8,  8,  8 ; POKEMANIAC
 	dn  6,  8,  8,  8 ; TEACHER
 	dn  9,  8,  8,  8 ; BUG_CATCHER
 	dn  9,  8,  8,  8 ; SAILOR
 	dn  9,  8,  8,  8 ; SUPER_NERD
-	dn  9,  8,  8,  8 ; FIREBREATHER
 	dn  6, 10, 10,  8 ; PICNICKER
 	dn  6, 10, 10,  8 ; PICNICKER_D
 	dn  9,  8,  8,  8 ; CAMPER

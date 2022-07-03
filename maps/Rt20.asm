@@ -6,7 +6,8 @@
 	const R20_SCHOOL_KIDM_1
 	const R20_SCHOOL_KIDM_2
 	const R20_SCHOOL_KIDM_3
-	const R20_SCHOOL_KIDM_4
+	const R20_TWINS_1
+	const R20_TWINS_2
 	const R20_SCHOOL_KIDF_1
 	const R20_SCHOOL_KIDF_2
 	const R20_SCHOOL_KIDF_3
@@ -50,13 +51,13 @@ TrainerSchoolKidM3R20:
 	closetext
 	end
 
-TrainerSchoolKidM4R20:
-	trainer SCHOOL_KIDM, SCHOOL_KIDM_R20_4, EVENT_BEAT_SCHOOL_KIDM_R20_4, SchoolKidM4R20SeenText, SchoolKidM4R20BeatenText, 0, .Script
+TrainerTwinsR20:
+	trainer TWINS, TWINS_R20, EVENT_BEAT_TWINS_R20, TwinsR20SeenText, TwinsR20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolKidM4R20AfterText
+	writetext TwinsR20AfterText
 	waitbutton
 	closetext
 	end
@@ -171,20 +172,20 @@ SchoolKidM3R20AfterText:
 	cont "Japanese class."
 	done
 	
-SchoolKidM4R20SeenText:
-	text "I'm gonna get a"
-	line "lot stronger so I"
+TwinsR20SeenText:
+	text "We're gonna get a"
+	line "lot stronger so we"
 	cont "can battle ROXIE!"
 	done
 
-SchoolKidM4R20BeatenText:
+TwinsR20BeatenText:
 	text "Ahaha…"
 	line "It can't be true…"
 	done
 
-SchoolKidM4R20AfterText:
+TwinsR20AfterText:
 	text "I want to get a"
-	line "lot stronger so I"
+	line "lot stronger so we"
 	cont "can impress ROXIE!"
 	done
 	
@@ -278,15 +279,16 @@ Rt20_MapEvents:
 	db 1 ; bg events
 	bg_event 39, 14, BGEVENT_ITEM, R20HPUp
 
-	db 12 ; object events
+	db 13 ; object events
 	object_event  6,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R20FruitTree, -1
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R20MaxPotion, EVENT_R_20_MAX_POTION
 	object_event 18, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R20PPMax, EVENT_R_20_PP_MAX
 	object_event  6, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R20HeartScale, EVENT_R_20_HEART_SCALE
 	object_event  9, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidM1R20, -1
-	object_event  9,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidM2R20, -1
+	object_event 36, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidM2R20, -1
 	object_event 23,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidM3R20, -1
-	object_event 36, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidM4R20, -1
+	object_event 12,  6, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR20, -1
+	object_event 13,  6, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR20, -1
 	object_event 30, 21, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidF1R20, -1
 	object_event 21, 11, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidF2R20, -1
 	object_event 33,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidF3R20, -1

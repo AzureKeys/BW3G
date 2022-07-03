@@ -61,13 +61,11 @@ TrainerGroups:
 	dba WorkerGroup
 	dba BirdKeeperGroup
 	dba BeautyGroup
-	dba BeautyDGroup
 	dba PokemaniacGroup
 	dba TeacherGroup
 	dba BugCatcherGroup
 	dba SailorGroup
 	dba SuperNerdGroup
-	dba FirebreatherGroup
 	dba PicnickerGroup
 	dba PicnickerDGroup
 	dba CamperGroup

@@ -355,12 +355,6 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; BeautyD
-	db NO_ITEM, NO_ITEM ; items
-	db 22 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Pokemaniac
 	db NO_ITEM, NO_ITEM ; items
 	db 15 ; base reward
@@ -389,12 +383,6 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 8 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Firebreather
-	db NO_ITEM, NO_ITEM ; items
-	db 12 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Picnicker

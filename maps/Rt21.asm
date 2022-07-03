@@ -4,11 +4,11 @@
 	const R21_LURE_BALL
 	const R21_SWIMMERM_1
 	const R21_SWIMMERM_2
+	const R21_SWIMMERM_3
 	const R21_SWIMMERF_1
 	const R21_SWIMMERF_2
 	const R21_SWIMMERF_3
-	const R21_FISHER
-	const R21_BATTLE_GIRL
+	const R21_BLACKBELT
 
 Rt21_MapScripts:
 	db 0 ; scene scripts
@@ -33,6 +33,17 @@ TrainerSwimmerM2R21:
 	endifjustbattled
 	opentext
 	writetext SwimmerM2R21AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerSwimmerM3R21:
+	trainer SWIMMERM_D, SWIMMER_M_R21_3, EVENT_BEAT_SWIMMERM_R21_3, SwimmerM3R21SeenText, SwimmerM3R21BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SwimmerM3R21AfterText
 	waitbutton
 	closetext
 	end
@@ -70,24 +81,13 @@ TrainerSwimmerF3R21:
 	closetext
 	end
 
-TrainerFisherR21:
-	trainer FISHER_D, FISHER_R21, EVENT_BEAT_FISHER_R21, FisherR21SeenText, FisherR21BeatenText, 0, .Script
+TrainerBlackbeltR21:
+	trainer BLACKBELT_T, BLACKBELT_R21, EVENT_BEAT_BLACKBELT_R21, BlackbeltR21SeenText, BlackbeltR21BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FisherR21AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerBattleGirlR21:
-	trainer BATTLE_GIRL, BATTLE_GIRL_R21, EVENT_BEAT_BATTLE_GIRL_R21, BattleGirlR21SeenText, BattleGirlR21BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BattleGirlR21AfterText
+	writetext BlackbeltR21AfterText
 	waitbutton
 	closetext
 	end
@@ -168,30 +168,30 @@ SwimmerM1R21AfterText:
 	cont "HUMILAU CITY…"
 	done
 	
-FisherR21SeenText:
+SwimmerM3R21SeenText:
 	text "I'm bored by fish-"
 	line "ing. Let's battle!"
 	done
 
-FisherR21BeatenText:
+SwimmerM3R21BeatenText:
 	text "Utter failure…"
 	done
 
-FisherR21AfterText:
+SwimmerM3R21AfterText:
 	text "I'll just go back"
 	line "to fishing…"
 	done
 	
-BattleGirlR21SeenText:
+BlackbeltR21SeenText:
 	text "Hm? You're good,"
 	line "aren't you?"
 	done
 
-BattleGirlR21BeatenText:
+BlackbeltR21BeatenText:
 	text "Just as I thought!"
 	done
 
-BattleGirlR21AfterText:
+BlackbeltR21AfterText:
 	text "A good trainer can"
 	line "recognize other"
 	cont "good trainers."
@@ -230,9 +230,9 @@ Rt21_MapEvents:
 	object_event 19, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R21LureBall, EVENT_R21_LURE_BALL
 	object_event  4, 14, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSwimmerM1R21, -1
 	object_event 13, 24, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSwimmerM2R21, -1
+	object_event  5, 31, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSwimmerM3R21, -1
 	object_event  4,  7, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSwimmerF1R21, -1
 	object_event 18, 32, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSwimmerF2R21, -1
 	object_event  3, 20, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSwimmerF3R21, -1
-	object_event  5, 32, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerFisherR21, -1
-	object_event 15, 46, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlR21, -1
+	object_event 15, 46, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltR21, -1
 	

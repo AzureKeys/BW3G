@@ -22,7 +22,7 @@ PhoneContacts:
 	phone LADY,           LADY_R4,               R_4,                ANYTIME, LaceyPhoneCalleeScript,    0, LaceyPhoneCallerScript
 	phone MAID,           MAID_R19,              R_19,               ANYTIME, SophiePhoneCalleeScript,   0, SophiePhoneCallerScript
 	phone PKMN_RANGERF,   PKMN_RANGERF_R3,       R_3,                ANYTIME, ArianaPhoneCalleeScript,   0, ArianaPhoneCallerScript
-	phone COOLTRAINERF_D, COOLTRAINERF_R2,       R_2,                ANYTIME, CarlaPhoneCalleeScript,    0, CarlaPhoneCallerScript
+	phone LASS_D,         LASS_R2,               R_2,                ANYTIME, CarlaPhoneCalleeScript,    0, CarlaPhoneCallerScript
 	phone MAID,           MAID_R1,               R_1,                ANYTIME, ClarissaPhoneCalleeScript, 0, ClarissaPhoneCallerScript
 	phone COOLTRAINERF_D, COOLTRAINERF_R18,      R_18,               ANYTIME, JennyPhoneCalleeScript,    0, JennyPhoneCallerScript
 	phone SCIENTIST_M,    SCIENTISTM_R6,         R_6,                ANYTIME, MarcoPhoneCalleeScript,    0, MarcoPhoneCallerScript

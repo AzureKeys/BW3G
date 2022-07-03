@@ -11,7 +11,7 @@
 	const CELESTIALTOWER_SCHOOL_KIDF
 	const CELESTIALTOWER_POKEFAN_M
 	const CELESTIALTOWER_POKEFAN_F
-	const CELESTIALTOWER_BEAUTY
+	const CELESTIALTOWER_LASS
 	const CELESTIALTOWER_GENTLEMAN
 
 CelestialTower_MapScripts:
@@ -107,13 +107,13 @@ TrainerPokefanFCelestialTower:
 	closetext
 	end
 
-TrainerBeautyCelestialTower:
-	trainer BEAUTY_D, BEAUTY_CELESTIAL_TOWER, EVENT_BEAT_BEAUTY_CELESTIAL_TOWER, BeautyCelestialTowerSeenText, BeautyCelestialTowerBeatenText, 0, .Script
+TrainerLassCelestialTower:
+	trainer LASS, LASS_CELESTIAL_TOWER, EVENT_BEAT_LASS_CELESTIAL_TOWER, LassCelestialTowerSeenText, LassCelestialTowerBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BeautyCelestialTowerAfterText
+	writetext LassCelestialTowerAfterText
 	waitbutton
 	closetext
 	end
@@ -261,15 +261,15 @@ PokefanFCelestialTowerAfterText:
 	line "one!"
 	done
 	
-BeautyCelestialTowerSeenText:
+LassCelestialTowerSeenText:
 	text "Waaggh! A ghost!"
 	done
 
-BeautyCelestialTowerBeatenText:
+LassCelestialTowerBeatenText:
 	text "Huh?"
 	done
 
-BeautyCelestialTowerAfterText:
+LassCelestialTowerAfterText:
 	text "Sorry, you spooked"
 	line "me."
 	done
@@ -325,6 +325,6 @@ CelestialTower_MapEvents:
 	object_event  8, 37, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFCelestialTower, -1
 	object_event  9, 23, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMCelestialTower, -1
 	object_event  4, 23, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPokefanFCelestialTower, -1
-	object_event  9, 41, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerBeautyCelestialTower, -1
+	object_event  9, 41, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerLassCelestialTower, -1
 	object_event  8,  9, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerGentlemanCelestialTower, -1
 	

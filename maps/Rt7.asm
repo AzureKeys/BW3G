@@ -8,7 +8,7 @@
 	const R7_BIRD_KEEPER
 	const R7_LASS_1
 	const R7_LASS_2
-	const R7_YOUNGSTER
+	const R7_SCHOOL_KIDF
 	const R7_PSYCHIC
 
 Rt7_MapScripts:
@@ -117,13 +117,13 @@ TrainerPsychicR7:
 	jumpstd rematchf
 	end
 
-TrainerYoungsterR7:
-	trainer YOUNGSTER_D, YOUNGSTER_R7_1, EVENT_BEAT_YOUNGSTER_R7_1, YoungsterR7SeenText, YoungsterR7BeatenText, 0, .Script
+TrainerSchoolKidFR7:
+	trainer SCHOOL_KIDF, SCHOOL_KIDF_R7, EVENT_BEAT_SCHOOL_KIDF_R7, SchoolKidFR7SeenText, SchoolKidFR7BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterR7AfterText
+	writetext SchoolKidFR7AfterText
 	waitbutton
 	closetext
 	end
@@ -182,17 +182,17 @@ R7Sign:
 R7TowerSign:
 	jumptext R7TowerSignText
 	
-YoungsterR7SeenText:
+SchoolKidFR7SeenText:
 	text "The TOWER's so"
 	line "tall. I wonder"
 	cont "what's at the top."
 	done
 
-YoungsterR7BeatenText:
+SchoolKidFR7BeatenText:
 	text "Yowch!"
 	done
 
-YoungsterR7AfterText:
+SchoolKidFR7AfterText:
 	text "I'm not strong"
 	line "enough to climb"
 	cont "it."
@@ -301,7 +301,7 @@ Rt7_MapEvents:
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R7AmoongussScript2, EVENT_R_7_AMOONGUSS_2
 	object_event  9, 45, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLass1R7, -1
 	object_event 18, 27, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLass2R7, -1
-	object_event 13, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR7, -1
+	object_event 13, 19, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFR7, -1
 	object_event  4, 39, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeperR7, -1
 	object_event 16, 13, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicR7, -1
 	

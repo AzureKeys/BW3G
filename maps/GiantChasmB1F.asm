@@ -7,7 +7,7 @@
 	const GIANTCHASMB1F_COOLTRAINERF_1
 	const GIANTCHASMB1F_COOLTRAINERF_2
 	const GIANTCHASMB1F_COOLTRAINERM
-	const GIANTCHASMB1F_POKEMANIAC_1
+	const GIANTCHASMB1F_HIKER
 	const GIANTCHASMB1F_POKEMANIAC_2
 
 GiantChasmB1F_MapScripts:
@@ -48,13 +48,13 @@ TrainerCooltrainerMGiantChasm:
 	closetext
 	end
 
-TrainerPokemaniac1GiantChasm:
-	trainer POKEMANIAC, POKEMANIAC_GIANT_CHASM_1, EVENT_BEAT_POKEMANIAC_GIANT_CHASM_1, Pokemaniac1GiantChasmSeenText, Pokemaniac1GiantChasmBeatenText, 0, .Script
+TrainerHikerGiantChasm:
+	trainer HIKER_D, HIKER_GIANT_CHASM, EVENT_BEAT_HIKER_GIANT_CHASM, HikerGiantChasmSeenText, HikerGiantChasmBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Pokemaniac1GiantChasmAfterText
+	writetext HikerGiantChasmAfterText
 	waitbutton
 	closetext
 	end
@@ -172,18 +172,18 @@ CooltrainerMGiantChasmAfterText:
 	line "me."
 	done
 	
-Pokemaniac1GiantChasmSeenText:
+HikerGiantChasmSeenText:
 	text "I'll do anything"
 	line "to get my hands on"
 	cont "rare #MON!"
 	done
 
-Pokemaniac1GiantChasmBeatenText:
+HikerGiantChasmBeatenText:
 	text "Oooh, your #MON"
 	line "are so appealing."
 	done
 
-Pokemaniac1GiantChasmAfterText:
+HikerGiantChasmAfterText:
 	text "If a #MON has"
 	line "different colors"
 
@@ -238,6 +238,6 @@ GiantChasmB1F_MapEvents:
 	object_event 13, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerF1GiantChasm, -1
 	object_event 20, 12, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerF2GiantChasm, -1
 	object_event 36, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerMGiantChasm, -1
-	object_event 10, 28, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerPokemaniac1GiantChasm, -1
+	object_event 10, 28, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerHikerGiantChasm, -1
 	object_event 16, 26, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerPokemaniac2GiantChasm, -1
 	

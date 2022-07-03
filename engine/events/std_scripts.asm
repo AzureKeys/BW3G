@@ -821,7 +821,7 @@ AskNumber1FScript:
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
-	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
@@ -857,7 +857,7 @@ AskNumber2FScript:
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
-	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
@@ -900,7 +900,7 @@ NumberAcceptedFScript:
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
-	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
@@ -952,7 +952,7 @@ NumberDeclinedFScript:
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
-	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
@@ -1004,7 +1004,7 @@ PhoneFullFScript:
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
-	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
@@ -1056,7 +1056,7 @@ RematchFScript:
 	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
-	ifequal PHONE_COOLTRAINER_CARLA, .Carla
+	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla

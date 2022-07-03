@@ -15,7 +15,6 @@ MaleTrainers:
 	db GUITARIST
 	db HIKER
 	db HIKER_D
-	db FIREBREATHER
 	db BLACKBELT_T
 	db PSYCHIC_T
 	db CAMPER

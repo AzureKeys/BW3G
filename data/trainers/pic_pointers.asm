@@ -61,13 +61,11 @@ TrainerPicPointers::
 	dba WorkerPic
 	dba BirdKeeperPic
 	dba BeautyPic
-	dba BeautyDPic
 	dba PokemaniacPic
 	dba TeacherPic
 	dba BugCatcherPic
 	dba SailorPic
 	dba SuperNerdPic
-	dba FirebreatherPic
 	dba PicnickerPic
 	dba PicnickerDPic
 	dba CamperPic

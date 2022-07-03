@@ -5,7 +5,7 @@
 	const R1_PKMN_RANGERM
 	const R1_PKMN_RANGERF
 	const R1_MAID
-	const R1_BUG_CATCHER
+	const R1_BLACKBELT
 	const R1_BATTLE_GIRL
 	const R1_TWIN1
 	const R1_TWIN2
@@ -112,13 +112,13 @@ TrainerPkmnRangerFR1:
 	closetext
 	end
 
-TrainerBugCatcherR1:
-	trainer BUG_CATCHER, BUG_CATCHER_R1, EVENT_BEAT_BUG_CATCHER_R1, BugCatcherR1SeenText, BugCatcherR1BeatenText, 0, .Script
+TrainerBlackbeltR1:
+	trainer BLACKBELT_T, BLACKBELT_R1, EVENT_BEAT_BLACKBELT_R1, BlackbeltR1SeenText, BlackbeltR1BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherR1AfterText
+	writetext BlackbeltR1AfterText
 	waitbutton
 	closetext
 	end
@@ -232,18 +232,18 @@ MaidR1AfterText:
 	cont "cute, too."
 	done
 	
-BugCatcherR1SeenText:
+BlackbeltR1SeenText:
 	text "I'll go anywhere"
 	line "if bug #MON"
 	cont "appear there."
 	done
 
-BugCatcherR1BeatenText:
+BlackbeltR1BeatenText:
 	text "Huh? I shouldn't"
 	line "have lost that…"
 	done
 
-BugCatcherR1AfterText:
+BlackbeltR1AfterText:
 	text "I caught my #-"
 	line "MON in PINWHEEL"
 	cont "FOREST."
@@ -314,7 +314,7 @@ Rt1_MapEvents:
 	object_event 27, 23, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerMR1, -1
 	object_event 30, 23, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerFR1, -1
 	object_event 29,  7, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerMaidR1, -1
-	object_event 27, 38, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherR1, -1
+	object_event 27, 38, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBlackbeltR1, -1
 	object_event 20, 15, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlR1, -1
 	object_event 33, 14, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerTwinsR1, -1
 	object_event 33, 15, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerTwinsR1, -1

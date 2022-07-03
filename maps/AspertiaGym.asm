@@ -1,8 +1,8 @@
 	const_def 2 ; object constants
 	const ASPERTIAGYM_CHEREN
 	const ASPERTIAGYM_GYMGUY
-	const ASPERTIAGYM_SCHOOL_KIDM
-	const ASPERTIAGYM_SCHOOL_KIDF
+	const ASPERTIAGYM_YOUNGSTER
+	const ASPERTIAGYM_LASS
 
 AspertiaGym_MapScripts:
 	db 1 ; scene scripts
@@ -71,89 +71,89 @@ AspertiaGymStatue:
 	trainertotext CHEREN, CHEREN1, MEM_BUFFER_1
 	jumpstd gymstatue2
 	
-AspertiaGymSchoolKidMScript1:
-	checkevent EVENT_BEAT_SCHOOL_KIDM_ASPERTIA_GYM
+AspertiaGymYoungsterScript1:
+	checkevent EVENT_BEAT_YOUNGSTER_ASPERTIA_GYM
 	iftrue .done
-	applymovement PLAYER, AspertiaGymSchoolKidMPlayerMovement1
-	jump AspertiaGymSchoolKidMScript
+	applymovement PLAYER, AspertiaGymYoungsterPlayerMovement1
+	jump AspertiaGymYoungsterScript
 .done
 	end
 	
-AspertiaGymSchoolKidMScript2:
-	checkevent EVENT_BEAT_SCHOOL_KIDM_ASPERTIA_GYM
+AspertiaGymYoungsterScript2:
+	checkevent EVENT_BEAT_YOUNGSTER_ASPERTIA_GYM
 	iftrue .done
-	applymovement PLAYER, AspertiaGymSchoolKidMPlayerMovement2
-	jump AspertiaGymSchoolKidMScript
+	applymovement PLAYER, AspertiaGymYoungsterPlayerMovement2
+	jump AspertiaGymYoungsterScript
 .done
 	end
 	
-AspertiaGymSchoolKidMScript:
+AspertiaGymYoungsterScript:
 	opentext
-	writetext SchoolKidMAspertiaGymSeenText
+	writetext YoungsterAspertiaGymSeenText
 	waitbutton
 	closetext
-	applymovement PLAYER, AspertiaGymSchoolKidMPlayerMovement
-	applymovement ASPERTIAGYM_SCHOOL_KIDM, AspertiaGymSchoolKidMMovement
-	winlosstext SchoolKidMAspertiaGymBeatenText, 0
-	loadtrainer SCHOOL_KIDM, SCHOOL_KIDM_ASPERTIA_GYM
+	applymovement PLAYER, AspertiaGymYoungsterPlayerMovement
+	applymovement ASPERTIAGYM_YOUNGSTER, AspertiaGymYoungsterMovement
+	winlosstext YoungsterAspertiaGymBeatenText, 0
+	loadtrainer YOUNGSTER, YOUNGSTER_ASPERTIA_GYM
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_SCHOOL_KIDM_ASPERTIA_GYM
+	setevent EVENT_BEAT_YOUNGSTER_ASPERTIA_GYM
 	end
 	
-AspertiaGymSchoolKidFScript1:
-	checkevent EVENT_BEAT_SCHOOL_KIDF_ASPERTIA_GYM
+AspertiaGymLassScript1:
+	checkevent EVENT_BEAT_LASS_ASPERTIA_GYM
 	iftrue .done
-	applymovement PLAYER, AspertiaGymSchoolKidMPlayerMovement1
-	jump AspertiaGymSchoolKidFScript
+	applymovement PLAYER, AspertiaGymYoungsterPlayerMovement1
+	jump AspertiaGymLassScript
 .done
 	end
 	
-AspertiaGymSchoolKidFScript2:
-	checkevent EVENT_BEAT_SCHOOL_KIDF_ASPERTIA_GYM
+AspertiaGymLassScript2:
+	checkevent EVENT_BEAT_LASS_ASPERTIA_GYM
 	iftrue .done
-	applymovement PLAYER, AspertiaGymSchoolKidMPlayerMovement2
-	jump AspertiaGymSchoolKidFScript
+	applymovement PLAYER, AspertiaGymYoungsterPlayerMovement2
+	jump AspertiaGymLassScript
 .done
 	end
 	
-AspertiaGymSchoolKidFScript:
+AspertiaGymLassScript:
 	opentext
-	writetext SchoolKidFAspertiaGymSeenText
+	writetext LassAspertiaGymSeenText
 	waitbutton
 	closetext
-	applymovement PLAYER, AspertiaGymSchoolKidMPlayerMovement
-	applymovement ASPERTIAGYM_SCHOOL_KIDF, AspertiaGymSchoolKidMMovement
-	winlosstext SchoolKidFAspertiaGymBeatenText, 0
-	loadtrainer SCHOOL_KIDF, SCHOOL_KIDF_ASPERTIA_GYM
+	applymovement PLAYER, AspertiaGymYoungsterPlayerMovement
+	applymovement ASPERTIAGYM_LASS, AspertiaGymYoungsterMovement
+	winlosstext LassAspertiaGymBeatenText, 0
+	loadtrainer LASS_D, LASS_ASPERTIA_GYM
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_SCHOOL_KIDF_ASPERTIA_GYM
+	setevent EVENT_BEAT_LASS_ASPERTIA_GYM
 	end
 
-AspertiaGymSchoolKidMBeatenScript:
-	jumptextfaceplayer SchoolKidMAspertiaGymAfterText
+AspertiaGymYoungsterBeatenScript:
+	jumptextfaceplayer YoungsterAspertiaGymAfterText
 	
-AspertiaGymSchoolKidFBeatenScript:
-	jumptextfaceplayer SchoolKidFAspertiaGymAfterText
+AspertiaGymLassBeatenScript:
+	jumptextfaceplayer LassAspertiaGymAfterText
 	
-AspertiaGymSchoolKidMPlayerMovement1:
+AspertiaGymYoungsterPlayerMovement1:
 	step UP
 	step RIGHT
 	turn_head UP
 	step_end
 	
-AspertiaGymSchoolKidMPlayerMovement2:
+AspertiaGymYoungsterPlayerMovement2:
 	step UP
 	step_end
 	
-AspertiaGymSchoolKidMPlayerMovement:
+AspertiaGymYoungsterPlayerMovement:
 	step LEFT
 	step UP
 	turn_head RIGHT
 	step_end
 	
-AspertiaGymSchoolKidMMovement:
+AspertiaGymYoungsterMovement:
 	turn_head LEFT
 	step_end
 	
@@ -281,7 +281,7 @@ AspertiaGymGuyWinText:
 	cont "#MON is bright!"
 	done
 	
-SchoolKidMAspertiaGymSeenText:
+YoungsterAspertiaGymSeenText:
 	text "CHEREN saw"
 	line "potential in me"
 	
@@ -290,7 +290,7 @@ SchoolKidMAspertiaGymSeenText:
 	cont "GYM!"
 	done
 
-SchoolKidMAspertiaGymBeatenText:
+YoungsterAspertiaGymBeatenText:
 	text "You're strong. Or"
 	line "should I say your"
 	
@@ -298,7 +298,7 @@ SchoolKidMAspertiaGymBeatenText:
 	line "strong?"
 	done
 
-SchoolKidMAspertiaGymAfterText:
+YoungsterAspertiaGymAfterText:
 	text "The reason he saw"
 	line "potential in me"
 
@@ -312,7 +312,7 @@ SchoolKidMAspertiaGymAfterText:
 	line "stronger!"
 	done
 	
-SchoolKidFAspertiaGymSeenText:
+LassAspertiaGymSeenText:
 	text "Now I'll show you"
 	line "all of the things"
 
@@ -320,7 +320,7 @@ SchoolKidFAspertiaGymSeenText:
 	line "CHEREN!"
 	done
 
-SchoolKidFAspertiaGymBeatenText:
+LassAspertiaGymBeatenText:
 	text "For knowledge to"
 	line "become your own,"
 	
@@ -328,7 +328,7 @@ SchoolKidFAspertiaGymBeatenText:
 	line "it out yourself."
 	done
 
-SchoolKidFAspertiaGymAfterText:
+LassAspertiaGymAfterText:
 	text "I have to learn"
 	line "even more about"
 	cont "my #MON!"
@@ -342,10 +342,10 @@ AspertiaGym_MapEvents:
 	warp_event  5, 21, ASPERTIA_CITY, 7
 
 	db 4 ; coord events
-	coord_event  4, 17, SCENE_DEFAULT, AspertiaGymSchoolKidMScript1
-	coord_event  5, 17, SCENE_DEFAULT, AspertiaGymSchoolKidMScript2
-	coord_event  4, 11, SCENE_DEFAULT, AspertiaGymSchoolKidFScript1
-	coord_event  5, 11, SCENE_DEFAULT, AspertiaGymSchoolKidFScript2
+	coord_event  4, 17, SCENE_DEFAULT, AspertiaGymYoungsterScript1
+	coord_event  5, 17, SCENE_DEFAULT, AspertiaGymYoungsterScript2
+	coord_event  4, 11, SCENE_DEFAULT, AspertiaGymLassScript1
+	coord_event  5, 11, SCENE_DEFAULT, AspertiaGymLassScript2
 
 	db 2 ; bg events
 	bg_event  3, 19, BGEVENT_READ, AspertiaGymStatue
@@ -354,6 +354,6 @@ AspertiaGym_MapEvents:
 	db 4 ; object events
 	object_event  5,  1, SPRITE_CHEREN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AspertiaGymCherenScript, -1
 	object_event  5, 19, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AspertiaGymGuyScript, -1
-	object_event  5, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AspertiaGymSchoolKidMBeatenScript, -1
-	object_event  5,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, AspertiaGymSchoolKidFBeatenScript, -1
+	object_event  5, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, AspertiaGymYoungsterBeatenScript, -1
+	object_event  5,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, AspertiaGymLassBeatenScript, -1
 	

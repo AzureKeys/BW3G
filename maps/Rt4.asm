@@ -8,10 +8,10 @@
 	const R4_FISHER1
 	const R4_FISHER2
 	const R4_LADY
-	const R4_PICNICKER
 	const R4_OFFICER1
 	const R4_OFFICER2
 	const R4_POKEFANM
+	const R4_POKEFANF
 	const R4_BIKER
 
 Rt4_MapScripts:
@@ -146,17 +146,6 @@ TrainerFisher2R4:
 	closetext
 	end
 
-TrainerPicnickerR4:
-	trainer PICNICKER_D, PICNICKER_R4, EVENT_BEAT_PICNICKER_R4, PicnickerR4SeenText, PicnickerR4BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext PicnickerR4AfterText
-	waitbutton
-	closetext
-	end
-
 TrainerOfficer1R4:
 	trainer OFFICER, OFFICER_R4_1, EVENT_BEAT_OFFICER_R4_1, Officer1R4SeenText, Officer1R4BeatenText, 0, .Script
 
@@ -186,6 +175,17 @@ TrainerPokefanMR4:
 	endifjustbattled
 	opentext
 	writetext PokefanMR4AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerPokefanFR4:
+	trainer POKEFANF, POKEFANF_R4, EVENT_BEAT_POKEFANF_R4, PokefanFR4SeenText, PokefanFR4BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PokefanFR4AfterText
 	waitbutton
 	closetext
 	end
@@ -338,25 +338,6 @@ BikerR4AfterText:
 	line "on the road!"
 	done
 	
-PicnickerR4SeenText:
-	text "Hi! Aren't you a"
-	line "cute trainer!"
-
-	para "May I see your"
-	line "#MON?"
-	done
-
-PicnickerR4BeatenText:
-	text "I'm glad I got to"
-	line "see your #MON!"
-	done
-
-PicnickerR4AfterText:
-	text "When I see #-"
-	line "MON, it seems to"
-	cont "soothe my nerves."
-	done
-	
 Officer1R4SeenText:
 	text "Who goes there?"
 	line "What are you up"
@@ -415,6 +396,25 @@ PokefanMR4AfterText:
 	line "people brag!"
 	done
 	
+PokefanFR4SeenText:
+	text "Hi! Aren't you a"
+	line "cute trainer!"
+
+	para "May I see your"
+	line "#MON?"
+	done
+
+PokefanFR4BeatenText:
+	text "I'm glad I got to"
+	line "see your #MON!"
+	done
+
+PokefanFR4AfterText:
+	text "When I see #-"
+	line "MON, it seems to"
+	cont "soothe my nerves."
+	done
+	
 R4DesertSignText:
 	text "DESERT RESORT"
 	line "ahead."
@@ -455,9 +455,9 @@ Rt4_MapEvents:
 	object_event 12, 49, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerFisher1R4, -1
 	object_event 12, 53, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 0, TrainerFisher2R4, -1
 	object_event 20, 35, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerLadyR4, -1
-	object_event 22, 20, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR4, -1
 	object_event 17, 12, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerOfficer1R4, -1
 	object_event 32, 50, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerOfficer2R4, -1
 	object_event 34,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMR4, -1
+	object_event 22, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanFR4, -1
 	object_event 24, 46, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBikerR4, -1
 	

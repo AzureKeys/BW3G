@@ -9,7 +9,7 @@
 	const PINWHEELFOREST_PKMN_RANGERM_2
 	const PINWHEELFOREST_PKMN_RANGERF_1
 	const PINWHEELFOREST_PKMN_RANGERF_2
-	const PINWHEELFOREST_BUG_CATCHER_3
+	const PINWHEELFOREST_YOUNGSTER
 	const PINWHEELFOREST_PSYCHIC
 	const PINWHEELFOREST_HEX_MANIAC
 	const PINWHEELFOREST_LASS
@@ -180,19 +180,19 @@ TrainerPkmnRangerFPinwheel2:
 	closetext
 	end
 
-TrainerBugCatcherPinwheel3:
-	trainer BUG_CATCHER, BUG_CATCHER_PINWHEEL_3, EVENT_BEAT_BUG_CATCHER_PINWHEEL_3, BugCatcherPinwheel3SeenText, BugCatcherPinwheel3BeatenText, 0, .Script
+TrainerYoungsterPinwheel:
+	trainer YOUNGSTER, YOUNGSTER_PINWHEEL, EVENT_BEAT_YOUNGSTER_PINWHEEL, YoungsterPinwheelSeenText, YoungsterPinwheelBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherPinwheel3AfterText
+	writetext YoungsterPinwheelAfterText
 	waitbutton
 	closetext
 	end
 
 TrainerPsychicPinwheel:
-	trainer PSYCHIC_T_F, PSYCHIC_PINWHEEL, EVENT_BEAT_PSYCHIC_PINWHEEL, PsychicPinwheelSeenText, PsychicPinwheelBeatenText, 0, .Script
+	trainer PSYCHIC_T, PSYCHIC_PINWHEEL, EVENT_BEAT_PSYCHIC_PINWHEEL, PsychicPinwheelSeenText, PsychicPinwheelBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -375,17 +375,17 @@ PkmnRangerMPinwheel2AfterText:
 	cont "CENTER right away."
 	done
 	
-BugCatcherPinwheel3SeenText:
+YoungsterPinwheelSeenText:
 	text "People shouldn't"
 	line "leave any litter"
 	cont "behind."
 	done
 
-BugCatcherPinwheel3BeatenText:
+YoungsterPinwheelBeatenText:
 	text "Ohh… I lost…"
 	done
 
-BugCatcherPinwheel3AfterText:
+YoungsterPinwheelAfterText:
 	text "Conserving energy"
 	line "is important, but"
 
@@ -515,8 +515,8 @@ PinwheelForest_MapEvents:
 	object_event  1, 19, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerPkmnRangerMPinwheel2, -1
 	object_event 17,  9, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerFPinwheel1, -1
 	object_event 19, 28, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFPinwheel2, -1
-	object_event 30, 31, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherPinwheel3, -1
-	object_event 16, 32, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicPinwheel, -1
+	object_event 30, 31, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerYoungsterPinwheel, -1
+	object_event 16, 32, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicPinwheel, -1
 	object_event 27, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacPinwheel, -1
 	object_event 12, 15, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassPinwheel, -1
 	object_event 36, 20, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PinwheelOfficer1Script, EVENT_PINWHEEL_FOREST_OFFICER

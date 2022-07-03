@@ -15,7 +15,6 @@ BattleTowerTrainers:
 	db "DIAZ@@@@@@", PICNICKER
 	db "ERICKSON@@", BIKER
 	db "HUNTER@@@@", POKEFANF
-	db "HILL@@@@@@", FIREBREATHER
 	db "JAVIER@@@@", SWIMMERF
 	db "KAUFMAN@@@", SWIMMERM
 	db "McMAHILL@@", CAMPER
@@ -64,4 +63,3 @@ BattleTowerTrainers:
 	db "SMART@@@@@", SUPER_NERD
 	db "DYKSTRA@@@", SWIMMERF
 	db "EATON@@@@@", BIKER
-	db "WONG@@@@@@", FIREBREATHER

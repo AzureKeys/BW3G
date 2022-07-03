@@ -6,7 +6,7 @@
 	const RELICPASSAGEBACK_SMOOTH_ROCK
 	const RELICPASSAGEBACK_TM_ROCK_SLIDE
 	const RELICPASSAGEBACK_WORKER
-	const RELICPASSAGEBACK_LASS
+	const RELICPASSAGEBACK_PSYCHIC_F
 	const RELICPASSAGEBACK_CAMPER
 	const RELICPASSAGEBACK_HEX_MANIAC
 
@@ -77,13 +77,13 @@ TrainerWorkerRelicPassage:
 	closetext
 	end
 
-TrainerLassRelicPassage:
-	trainer LASS, LASS_RELIC_PASSAGE, EVENT_BEAT_LASS_RELIC_PASSAGE, LassRelicPassageSeenText, LassRelicPassageBeatenText, 0, .Script
+TrainerPsychicFRelicPassage:
+	trainer PSYCHIC_T_F, PSYCHICF_RELIC_PASSAGE, EVENT_BEAT_PSYCHICF_RELIC_PASSAGE, PsychicFRelicPassageSeenText, PsychicFRelicPassageBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext LassRelicPassageAfterText
+	writetext PsychicFRelicPassageAfterText
 	waitbutton
 	closetext
 	end
@@ -141,7 +141,7 @@ WorkerRelicPassageAfterText:
 	cont "stronger!"
 	done
 	
-LassRelicPassageSeenText:
+PsychicFRelicPassageSeenText:
 	text "I couldn't get"
 	line "across the bridge,"
 	
@@ -149,11 +149,11 @@ LassRelicPassageSeenText:
 	line "tunnel instead."
 	done
 
-LassRelicPassageBeatenText:
+PsychicFRelicPassageBeatenText:
 	text "You're good."
 	done
 
-LassRelicPassageAfterText:
+PsychicFRelicPassageAfterText:
 	text "Is there something"
 	line "going on in the"
 	cont "city?"
@@ -224,7 +224,7 @@ RelicPassageBack_MapEvents:
 	object_event 11, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicPassageSmoothRock, EVENT_RELIC_PASSAGE_SMOOTH_ROCK
 	object_event 26, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, RelicPassageTMRockSlide, EVENT_RELIC_PASSAGE_TM_ROCK_SLIDE
 	object_event 17, 22, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerWorkerRelicPassage, -1
-	object_event 16, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLassRelicPassage, -1
+	object_event 16, 13, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicFRelicPassage, -1
 	object_event 23,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperRelicPassage, -1
 	object_event  5,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerHexManiacRelicPassage, -1
 	

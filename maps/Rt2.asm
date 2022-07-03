@@ -7,10 +7,10 @@
 	const R2_CALCIUM
 	const R2_CARBOS
 	const R2_TM_DOUBLE_TEAM
-	const R2_COOLTRAINERM
-	const R2_COOLTRAINERF
+	const R2_YOUNGSTER
+	const R2_LASS
 	const R2_BEAUTY
-	const R2_POKEMANIAC
+	const R2_GENTLEMAN
 	const R2_SUPER_NERD
 	const R2_PICNICKER
 	const R2_OFFICER
@@ -56,19 +56,19 @@ Rt2_MapScripts:
 	earthquake 80
 	end
 
-TrainerCooltrainerFR2:
-	trainer COOLTRAINERF_D, COOLTRAINERF_R2, EVENT_BEAT_COOLTRAINERF_R2, CooltrainerFR2SeenText, CooltrainerFR2BeatenText, 0, .Script
+TrainerLassR2:
+	trainer LASS_D, LASS_R2, EVENT_BEAT_LASS_R2, LassR2SeenText, LassR2BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_COOLTRAINER_CARLA
+	writecode VAR_CALLERID, PHONE_LASS_CARLA
 	opentext
 	checkflag ENGINE_CARLA_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_COOLTRAINER_CARLA
+	checkcellnum PHONE_LASS_CARLA
 	iftrue .NumberAccepted
 	checkevent EVENT_CARLA_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext CooltrainerFR2AfterText
+	writetext LassR2AfterText
 	buttonsound
 	setevent EVENT_CARLA_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -77,27 +77,27 @@ TrainerCooltrainerFR2:
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_COOLTRAINER_CARLA
+	askforphonenumber PHONE_LASS_CARLA
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_CARLA
-	trainertotext COOLTRAINERF_D, COOLTRAINERF_R2, MEM_BUFFER_0
+	trainertotext LASS_D, LASS_R2, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext CooltrainerFR2BeatenText, 0
+	winlosstext LassR2BeatenText, 0
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight1
 ; Fight0
-	loadtrainer COOLTRAINERF_D, COOLTRAINERF_R2
+	loadtrainer LASS_D, LASS_R2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_CARLA_READY_FOR_REMATCH
 	end
 .LoadFight1
-	loadtrainer COOLTRAINERF_D, CARLA_REMATCH_1
+	loadtrainer LASS_D, CARLA_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_CARLA_READY_FOR_REMATCH
@@ -131,13 +131,13 @@ TrainerCooltrainerFR2:
 	jumpstd rematchf
 	end
 
-TrainerCooltrainerMR2:
-	trainer COOLTRAINERM, COOLTRAINERM_R2, EVENT_BEAT_COOLTRAINERM_R2, CooltrainerMR2SeenText, CooltrainerMR2BeatenText, 0, .Script
+TrainerYoungsterR2:
+	trainer YOUNGSTER_D, YOUNGSTER_R2, EVENT_BEAT_YOUNGSTER_R2, YoungsterR2SeenText, YoungsterR2BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerMR2AfterText
+	writetext YoungsterR2AfterText
 	waitbutton
 	closetext
 	end
@@ -153,13 +153,13 @@ TrainerBeautyR2:
 	closetext
 	end
 
-TrainerPokemaniacR2:
-	trainer POKEMANIAC, POKEMANIAC_R2, EVENT_BEAT_POKEMANIAC_R2, PokemaniacR2SeenText, PokemaniacR2BeatenText, 0, .Script
+TrainerGentlemanR2:
+	trainer GENTLEMAN, GENTLEMAN_R2, EVENT_BEAT_GENTLEMAN_R2, GentlemanR2SeenText, GentlemanR2BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PokemaniacR2AfterText
+	writetext GentlemanR2AfterText
 	waitbutton
 	closetext
 	end
@@ -241,7 +241,7 @@ R2MaxRevive:
 R2Sign:
 	jumptext R2SignText
 	
-CooltrainerMR2SeenText:
+YoungsterR2SeenText:
 	text "If you're looking"
 	line "for #MON, you"
 
@@ -249,26 +249,26 @@ CooltrainerMR2SeenText:
 	line "the tall grass."
 	done
 
-CooltrainerMR2BeatenText:
+YoungsterR2BeatenText:
 	text "Ayieee!"
 	done
 
-CooltrainerMR2AfterText:
+YoungsterR2AfterText:
 	text "Since you're so"
 	line "strong, it must be"
 	cont "fun to battle."
 	done
 	
-CooltrainerFR2SeenText:
+LassR2SeenText:
 	text "Hey, you! You're"
 	line "from HUMILAU, huh?"
 	done
 
-CooltrainerFR2BeatenText:
+LassR2BeatenText:
 	text "Whoa, you kick!"
 	done
 
-CooltrainerFR2AfterText:
+LassR2AfterText:
 	text "Don't get cocky,"
 	line "you punk!"
 	done
@@ -289,17 +289,17 @@ BeautyR2AfterText:
 	cont "rare #MON."
 	done
 	
-PokemaniacR2SeenText:
+GentlemanR2SeenText:
 	text "Wow, your #MON"
 	line "look cool!"
 	done
 
-PokemaniacR2BeatenText:
+GentlemanR2BeatenText:
 	text "But you don't just"
 	line "look cool…"
 	done
 
-PokemaniacR2AfterText:
+GentlemanR2AfterText:
 	text "I look cool, but"
 	line "I'm weak, so I'm"
 	cont "not really cool."
@@ -432,12 +432,12 @@ Rt2_MapEvents:
 	object_event  3,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R2Calcium, EVENT_R2_CALCIUM
 	object_event 38, 11, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R2Carbos, EVENT_R2_CARBOS
 	object_event  8, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, R2TMDoubleTeam, EVENT_R2_TM_DOUBLE_TEAM
-	object_event 26,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerMR2, -1
-	object_event 21,  8, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerFR2, -1
+	object_event 26,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR2, -1
+	object_event 21,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassR2, -1
 	object_event 19, 17, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyR2, -1
-	object_event 38,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPokemaniacR2, -1
+	object_event 38,  7, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerGentlemanR2, -1
 	object_event  7, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerSuperNerdR2, -1
-	object_event 25, 15, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR2, -1
+	object_event 25, 15, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR2, -1
 	object_event 10, 21, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerOfficerR2, -1
 	object_event 14, 18, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR2, -1
 	object_event 15, 18, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR2, -1

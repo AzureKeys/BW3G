@@ -66,13 +66,11 @@ INCBIN "gfx/trainers/waitress.gbcpal", middle_colors
 INCBIN "gfx/trainers/worker.gbcpal", middle_colors
 INCBIN "gfx/trainers/bird_keeper.gbcpal", middle_colors
 INCBIN "gfx/trainers/beauty.gbcpal", middle_colors
-INCBIN "gfx/trainers/beauty_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/pokemaniac.gbcpal", middle_colors
 INCBIN "gfx/trainers/teacher.gbcpal", middle_colors
 INCBIN "gfx/trainers/bug_catcher.gbcpal", middle_colors
 INCBIN "gfx/trainers/sailor.gbcpal", middle_colors
 INCBIN "gfx/trainers/super_nerd.gbcpal", middle_colors
-INCBIN "gfx/trainers/firebreather.gbcpal", middle_colors
 INCBIN "gfx/trainers/picnicker.gbcpal", middle_colors
 INCBIN "gfx/trainers/picnicker_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/camper.gbcpal", middle_colors

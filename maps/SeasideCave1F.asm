@@ -4,7 +4,7 @@
 	const SEASIDECAVE1F_RARE_CANDY
 	const SEASIDECAVE1F_DIVE_BALL
 	const SEASIDECAVE1F_HEART_SCALE
-	const SEASIDECAVE1F_NURSE
+	const SEASIDECAVE1F_DOCTOR
 	const SEASIDECAVE1F_VETERANF
 	const SEASIDECAVE1F_BLACKBELT
 	const SEASIDECAVE1F_BATTLE_GIRL
@@ -48,24 +48,24 @@ SeasideCaveUpperFloorScript:
 .done
 	end
 	
-TrainerNurseSeasideCave1F:
+TrainerDoctorSeasideCave1F:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_NURSE_SEASIDE_CAVE
+	checkevent EVENT_BEAT_DOCTOR_SEASIDE_CAVE
 	iftrue .beaten
-	writetext SeasideCaveNurseIntroText
+	writetext SeasideCaveDoctorIntroText
 	waitbutton
 	closetext
-	winlosstext SeasideCaveNurseWinText, 0
-	setlasttalked SEASIDECAVE1F_NURSE
-	loadtrainer NURSE, NURSE_SEASIDE_CAVE
+	winlosstext SeasideCaveDoctorWinText, 0
+	setlasttalked SEASIDECAVE1F_DOCTOR
+	loadtrainer DOCTOR, DOCTOR_SEASIDE_CAVE
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_NURSE_SEASIDE_CAVE
+	setevent EVENT_BEAT_DOCTOR_SEASIDE_CAVE
 	opentext
 .beaten
-	writetext SeasideCaveNurseHealText
+	writetext SeasideCaveDoctorHealText
 	waitbutton
 	closetext
 	special StubbedTrainerRankings_Healings
@@ -124,8 +124,8 @@ SeasideCave1FHeartScale:
 SeasideCave1FCalcium:
 	hiddenitem CALCIUM, EVENT_SEASIDE_CAVE_CALCIUM
 	
-SeasideCaveNurseIntroText:
-	text "I'm a nurse, but"
+SeasideCaveDoctorIntroText:
+	text "I'm a doctor, but"
 	line "I'm also a #-"
 	cont "MON trainer."
 
@@ -135,11 +135,11 @@ SeasideCaveNurseIntroText:
 	cont "#MON."
 	done
 	
-SeasideCaveNurseWinText:
+SeasideCaveDoctorWinText:
 	text "Ah, I see."
 	done
 	
-SeasideCaveNurseHealText:
+SeasideCaveDoctorHealText:
 	text "I'll restore your"
 	line "#MON back to"
 	cont "full health."
@@ -237,7 +237,7 @@ SeasideCave1F_MapEvents:
 	object_event  8,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCave1FRareCandy, EVENT_SEASIDE_CAVE_RARE_CANDY
 	object_event 14, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCave1FDiveBall, EVENT_SEASIDE_CAVE_DIVE_BALL
 	object_event  6, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCave1FHeartScale, EVENT_SEASIDE_CAVE_HEART_SCALE
-	object_event  4,  6, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerNurseSeasideCave1F, -1
+	object_event  4,  6, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TrainerDoctorSeasideCave1F, -1
 	object_event  3, 15, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerVeteranFSeasideCave1F, -1
 	object_event  3, 25, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltSeasideCave1F, -1
 	object_event  9, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlSeasideCave1F, -1

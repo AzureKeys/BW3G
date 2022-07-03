@@ -6,7 +6,7 @@
 	const LENTIMASOUTSKIRTS_PICNICKER
 	const LENTIMASOUTSKIRTS_SCHOOL_KIDM
 	const LENTIMASOUTSKIRTS_BIRD_KEEPER
-	const LENTIMASOUTSKIRTS_BLACKBELT
+	const LENTIMASOUTSKIRTS_YOUNGSTER
 	const LENTIMASOUTSKIRTS_PKMN_RANGERM
 	const LENTIMASOUTSKIRTS_PKMN_RANGERF
 	const LENTIMASOUTSKIRTS_DOCTOR
@@ -155,13 +155,13 @@ TrainerPicnickerOutskirts:
 	closetext
 	end
 
-TrainerBlackbeltOutskirts:
-	trainer BLACKBELT_T, BLACKBELT_OUTSKIRTS, EVENT_BEAT_BLACKBELT_OUTSKIRTS, BlackbeltOutskirtsSeenText, BlackbeltOutskirtsBeatenText, 0, .Script
+TrainerYoungsterOutskirts:
+	trainer YOUNGSTER, YOUNGSTER_OUTSKIRTS, EVENT_BEAT_YOUNGSTER_OUTSKIRTS, YoungsterOutskirtsSeenText, YoungsterOutskirtsBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BlackbeltOutskirtsAfterText
+	writetext YoungsterOutskirtsAfterText
 	waitbutton
 	closetext
 	end
@@ -306,17 +306,17 @@ PkmnRangerFOutskirtsAfterText:
 	cont "problems!"
 	done
 	
-BlackbeltOutskirtsSeenText:
+YoungsterOutskirtsSeenText:
 	text "This is where I do"
 	line "my training!"
 	done
 
-BlackbeltOutskirtsBeatenText:
+YoungsterOutskirtsBeatenText:
 	text "Beaten by a"
 	line "passing stranger!"
 	done
 
-BlackbeltOutskirtsAfterText:
+YoungsterOutskirtsAfterText:
 	text "I'm going to train"
 	line "even harder."
 
@@ -391,7 +391,7 @@ LentimasOutskirts_MapEvents:
 	object_event  9, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LentimasOutskirtsQuickBall, EVENT_LENTIMAS_OUTSKIRTS_QUICK_BALL
 	object_event 31,  9, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerOutskirts, -1
 	object_event 34, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperOutskirts, -1
-	object_event 22, 13, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltOutskirts, -1
+	object_event 22, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerYoungsterOutskirts, -1
 	object_event 18, 12, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMOutskirts, -1
 	object_event 28, 17, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFOutskirts, -1
 	object_event 11, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMOutskirts, -1

@@ -1,11 +1,11 @@
 	const_def 2 ; object constants
-	const NACRENEOUTSKIRT_YOUNGSTER
+	const NACRENEOUTSKIRT_YOUNGSTER_2
 	const NACRENEOUTSKIRT_FULL_HEAL
 	const NACRENEOUTSKIRT_IRON
 	const NACRENEOUTSKIRT_NUGGET
 	const NACRENEOUTSKIRT_PP_MAX
-	const NACRENEOUTSKIRT_SCHOOL_KIDM
-	const NACRENEOUTSKIRT_SCHOOL_KIDF
+	const NACRENEOUTSKIRT_YOUNGSTER
+	const NACRENEOUTSKIRT_LASS
 	const NACRENEOUTSKIRT_PARASOL_LADY
 	const NACRENEOUTSKIRT_RICH_BOY
 
@@ -14,24 +14,24 @@ NacreneOutskirt_MapScripts:
 
 	db 0 ; callbacks
 
-TrainerSchoolKidMNacrene:
-	trainer SCHOOL_KIDM, SCHOOL_KIDM_NACRENE_OUTSKIRT, EVENT_BEAT_SCHOOL_KIDM_NACRENE_OUTSKIRT, SchoolKidMNacreneSeenText, SchoolKidMNacreneBeatenText, 0, .Script
+TrainerYoungsterNacrene:
+	trainer YOUNGSTER_D, YOUNGSTER_NACRENE_OUTSKIRT, EVENT_BEAT_YOUNGSTER_NACRENE_OUTSKIRT, YoungsterNacreneSeenText, YoungsterNacreneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolKidMNacreneAfterText
+	writetext YoungsterNacreneAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolKidFNacrene:
-	trainer SCHOOL_KIDF, SCHOOL_KIDF_NACRENE_OUTSKIRT, EVENT_BEAT_SCHOOL_KIDF_NACRENE_OUTSKIRT, SchoolKidFNacreneSeenText, SchoolKidFNacreneBeatenText, 0, .Script
+TrainerLassNacrene:
+	trainer LASS, LASS_NACRENE_OUTSKIRT, EVENT_BEAT_LASS_NACRENE_OUTSKIRT, LassNacreneSeenText, LassNacreneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolKidFNacreneAfterText
+	writetext LassNacreneAfterText
 	waitbutton
 	closetext
 	end
@@ -84,27 +84,27 @@ NacreneOutskirtYoungsterText:
 	line "through!"
 	done
 	
-SchoolKidMNacreneSeenText:
+YoungsterNacreneSeenText:
 	text "..."
 	done
 
-SchoolKidMNacreneBeatenText:
+YoungsterNacreneBeatenText:
 	text "..."
 	done
 
-SchoolKidMNacreneAfterText:
+YoungsterNacreneAfterText:
 	text "..."
 	done
 	
-SchoolKidFNacreneSeenText:
+LassNacreneSeenText:
 	text "..."
 	done
 
-SchoolKidFNacreneBeatenText:
+LassNacreneBeatenText:
 	text "..."
 	done
 
-SchoolKidFNacreneAfterText:
+LassNacreneAfterText:
 	text "..."
 	done
 	
@@ -157,8 +157,8 @@ NacreneOutskirt_MapEvents:
 	object_event 13, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NacreneOutskirtIron, EVENT_NACRENE_OUTSKIRT_IRON
 	object_event  8, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NacreneOutskirtNugget, EVENT_NACRENE_OUTSKIRT_NUGGET
 	object_event 19, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NacreneOutskirtPPMax, EVENT_NACRENE_OUTSKIRT_PP_MAX
-	object_event  6, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidMNacrene, -1
-	object_event 15, 29, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFNacrene, -1
+	object_event  6, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterNacrene, -1
+	object_event 15, 29, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerLassNacrene, -1
 	object_event  5, 34, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerParasolLadyNacrene, -1
 	object_event 19, 41, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerRichBoyNacrene, -1
 	

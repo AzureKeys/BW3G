@@ -5,7 +5,7 @@
 	const DESERT_HEART_SCALE
 	const DESERT_ROUGHNECK
 	const DESERT_HEX_MANIAC
-	const DESERT_FIREBREATHER
+	const DESERT_YOUNGSTER
 	const DESERT_POKEFANM
 	const DESERT_LASS1
 	const DESERT_PKMN_RANGERM
@@ -83,13 +83,13 @@ TrainerHexManiacDesert:
 	closetext
 	end
 
-TrainerFirebreatherDesert:
-	trainer FIREBREATHER, FIREBREATHER_DESERT, EVENT_BEAT_FIREBREATHER_DESERT, FirebreatherDesertSeenText, FirebreatherDesertBeatenText, 0, .Script
+TrainerYoungsterDesert:
+	trainer YOUNGSTER_D, YOUNGSTER_DESERT, EVENT_BEAT_YOUNGSTER_DESERT, YoungsterDesertSeenText, YoungsterDesertBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FirebreatherDesertAfterText
+	writetext YoungsterDesertAfterText
 	waitbutton
 	closetext
 	end
@@ -267,17 +267,17 @@ PokefanMDesertAfterText:
 	line "it. Please?"
 	done
 	
-FirebreatherDesertSeenText:
+YoungsterDesertSeenText:
 	text "Ah! The weather's"
 	line "as fine as ever."
 	done
 
-FirebreatherDesertBeatenText:
+YoungsterDesertBeatenText:
 	text "It's sunny, but"
 	line "I'm all wet…"
 	done
 
-FirebreatherDesertAfterText:
+YoungsterDesertAfterText:
 	text "When it rains,"
 	line "it's hard to get"
 	cont "ignition…"
@@ -379,7 +379,7 @@ DesertResort_MapEvents:
 	object_event 39, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DesertHeartScale, EVENT_DESERT_HEART_SCALE
 	object_event 34, 26, SPRITE_ROUGHNECK, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRoughneckDesert, -1
 	object_event  2, 28, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacDesert, -1
-	object_event 49, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerFirebreatherDesert, -1
+	object_event 49, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 4, TrainerYoungsterDesert, -1
 	object_event 21,  8, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMDesert, -1
 	object_event 51, 28, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLass1Desert, -1
 	object_event 39, 38, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMDesert, -1
