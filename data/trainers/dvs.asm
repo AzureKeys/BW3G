@@ -48,6 +48,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; SCIENTIST_M
 	dn  6, 10, 10,  8 ; SCIENTIST_F
 	dn  6, 10, 10,  8 ; SMASHER
+	dn  6,  9, 12,  8 ; SOCIALITE
 	dn  9,  8,  8,  8 ; SWIMMER_M
 	dn  9,  8,  8,  8 ; SWIMMER_M_D
 	dn  7,  8,  8,  8 ; SWIMMER_F
@@ -59,7 +60,6 @@ TrainerClassDVs:
 	dn  6, 10, 10,  8 ; WAITRESS
 	dn 10,  8,  8,  8 ; WORKER
 	dn  9,  8,  8,  8 ; BIRD_KEEPER
-	dn  6,  9, 12,  8 ; BEAUTY
 	dn  9,  8,  8,  8 ; POKEMANIAC
 	dn  6,  8,  8,  8 ; TEACHER
 	dn  9,  8,  8,  8 ; BUG_CATCHER

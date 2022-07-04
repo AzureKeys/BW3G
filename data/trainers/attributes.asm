@@ -283,6 +283,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Socialite
+	db NO_ITEM, NO_ITEM ; items
+	db 18 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; Swimmerm
 	db NO_ITEM, NO_ITEM ; items
 	db 2 ; base reward
@@ -347,12 +353,6 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 6 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Beauty
-	db NO_ITEM, NO_ITEM ; items
-	db 22 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Pokemaniac

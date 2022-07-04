@@ -20,7 +20,6 @@ BattleTowerTrainers:
 	db "McMAHILL@@", CAMPER
 ; The following can only be sampled in Crystal 1.1.
 	db "OBRIEN@@@@", GENTLEMAN
-	db "FROST@@@@@", BEAUTY
 	db "MORSE@@@@@", SUPER_NERD
 	db "YUFUNE@@@@", BLACKBELT_T
 	db "RAJAN@@@@@", COOLTRAINERF
@@ -28,7 +27,6 @@ BattleTowerTrainers:
 	db "SANTIAGO@@", PSYCHIC_T
 	db "STOCK@@@@@", POKEFANM
 	db "THURMAN@@@", SCIENTIST_M
-	db "VALENTINO@", BEAUTY
 	db "WAGNER@@@@", CAMPER
 	db "YATES@@@@@", BIRD_KEEPER
 	db "ANDREWS@@@", PICNICKER

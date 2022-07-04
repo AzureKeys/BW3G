@@ -49,6 +49,7 @@ TrainerPicPointers::
 	dba ScientistPic
 	dba ScientistFPic
 	dba SmasherPic
+	dba SocialitePic
 	dba SwimmermPic
 	dba SwimmermDPic
 	dba SwimmerfPic
@@ -60,7 +61,6 @@ TrainerPicPointers::
 	dba WaitressPic
 	dba WorkerPic
 	dba BirdKeeperPic
-	dba BeautyPic
 	dba PokemaniacPic
 	dba TeacherPic
 	dba BugCatcherPic

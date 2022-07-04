@@ -340,14 +340,6 @@ CooltrainerFGroup:
 	db -1 ; end
 
 CooltrainerFDGroup:
-	; COOLTRAINERF (R3)
-	db "KRISS@", TRAINERTYPE_STAT_EXP
-	db 30, GLIGAR
-	dw $3000, $3000, $3000, $3000, $3000
-	db 30, SPHEAL
-	dw $3000, $3000, $3000, $3000, $3000
-	db -1 ; end
-	
 	; COOLTRAINERF (R18)
 	db "JENNY@", TRAINERTYPE_STAT_EXP
 	db 36, HORSEA
@@ -1956,12 +1948,6 @@ SchoolKidFGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
-	; SCHOOL_KIDF (CELESTIAL)
-	db "BELLE@", TRAINERTYPE_STAT_EXP
-	db 48, ESPEON
-	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-	
 	; SCHOOL_KIDF (JEWEL REMATCH 1)
 	db "JEWEL@", TRAINERTYPE_STAT_EXP
 	db 11, MAREEP
@@ -2122,6 +2108,31 @@ SmasherGroup:
 	db 48, MAWILE
 	dw $5000, $5000, $5000, $5000, $5000
 	db 50, KLANG
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+	
+SocialiteGroup:
+	; SOCIALITE (R3)
+	db "CHRISTY@", TRAINERTYPE_STAT_EXP
+	db 30, GLIGAR
+	dw $3000, $3000, $3000, $3000, $3000
+	db 30, SPHEAL
+	dw $3000, $3000, $3000, $3000, $3000
+	db -1 ; end
+	
+	; SOCIALITE (R2)
+	db "JULIE@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
+	db 30, LARVESTA
+	dw $3400, $3400, $3400, $3400, $3400
+	db EMBER, TAKE_DOWN, LEECH_LIFE, BUG_BITE
+	db 32, FLAREON
+	dw $3400, $3400, $3400, $3400, $3400
+	db FIRE_FANG, FIRE_SPIN, SCARY_FACE, SLUDGE
+	db -1 ; end
+	
+	; SOCIALITE (CELESTIAL)
+	db "BELLE@", TRAINERTYPE_STAT_EXP
+	db 48, ESPEON
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 
@@ -2469,17 +2480,6 @@ BirdKeeperGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db 42, UNFEZANT
 	dw $4800, $4800, $4800, $4800, $4800
-	db -1 ; end
-
-BeautyGroup:
-	; BEAUTY (R2)
-	db "JULIE@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
-	db 30, LARVESTA
-	dw $3400, $3400, $3400, $3400, $3400
-	db EMBER, TAKE_DOWN, LEECH_LIFE, BUG_BITE
-	db 32, FLAREON
-	dw $3400, $3400, $3400, $3400, $3400
-	db FIRE_FANG, FIRE_SPIN, SCARY_FACE, SLUDGE
 	db -1 ; end
 
 PokemaniacGroup:

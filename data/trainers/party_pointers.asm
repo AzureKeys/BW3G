@@ -49,6 +49,7 @@ TrainerGroups:
 	dba ScientistMGroup
 	dba ScientistFGroup
 	dba SmasherGroup
+	dba SocialiteGroup
 	dba SwimmerMGroup
 	dba SwimmerMDGroup
 	dba SwimmerFGroup
@@ -60,7 +61,6 @@ TrainerGroups:
 	dba WaitressGroup
 	dba WorkerGroup
 	dba BirdKeeperGroup
-	dba BeautyGroup
 	dba PokemaniacGroup
 	dba TeacherGroup
 	dba BugCatcherGroup

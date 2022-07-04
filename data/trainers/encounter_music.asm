@@ -50,6 +50,7 @@ TrainerEncounterMusic::
 	db MUSIC_OFFICER_ENCOUNTER     ; scientistm
 	db MUSIC_OFFICER_ENCOUNTER     ; scientistf
 	db MUSIC_LASS_ENCOUNTER        ; smasher
+	db MUSIC_BEAUTY_ENCOUNTER      ; socialite
 	db MUSIC_HIKER_ENCOUNTER       ; swimmerm
 	db MUSIC_HIKER_ENCOUNTER       ; swimmermD
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerf
@@ -61,7 +62,6 @@ TrainerEncounterMusic::
 	db MUSIC_LASS_ENCOUNTER        ; waitress
 	db MUSIC_HIKER_ENCOUNTER       ; worker
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
-	db MUSIC_BEAUTY_ENCOUNTER      ; beauty
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; pokemaniac
 	db MUSIC_BEAUTY_ENCOUNTER      ; teacher
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bug_catcher

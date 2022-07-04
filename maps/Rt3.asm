@@ -5,7 +5,7 @@
 	const R3_MAX_ETHER
 	const R3_PKMN_RANGERM
 	const R3_PKMN_RANGERF
-	const R3_COOLTRAINERF_2
+	const R3_SOCIALITE
 	const R3_FISHER_1
 	const R3_FISHER_2
 	const R3_PSYCHIC
@@ -138,13 +138,13 @@ TrainerPkmnRangerMR3:
 	closetext
 	end
 
-TrainerCooltrainerF2R3:
-	trainer COOLTRAINERF_D, COOLTRAINERF_R3_2, EVENT_BEAT_COOLTRAINERF_R3_2, CooltrainerF2R3SeenText, CooltrainerF2R3BeatenText, 0, .Script
+TrainerSocialiteR3:
+	trainer SOCIALITE, SOCIALITE_R3, EVENT_BEAT_SOCIALITE_R3, SocialiteR3SeenText, SocialiteR3BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerF2R3AfterText
+	writetext SocialiteR3AfterText
 	waitbutton
 	closetext
 	end
@@ -263,19 +263,19 @@ PkmnRangerFR3AfterText:
 	line "They're delicious!"
 	done
 	
-CooltrainerF2R3SeenText:
+SocialiteR3SeenText:
 	text "You like #MON,"
 	line "don't you?"
 
 	para "Me too!"
 	done
 
-CooltrainerF2R3BeatenText:
+SocialiteR3BeatenText:
 	text "I'd have to say"
 	line "that's my loss."
 	done
 
-CooltrainerF2R3AfterText:
+SocialiteR3AfterText:
 	text "Look what you did"
 	line "to my #MON…"
 
@@ -395,7 +395,7 @@ Rt3_MapEvents:
 	object_event  7, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R3MaxEther, EVENT_R3_MAX_ETHER
 	object_event 30, 27, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerPkmnRangerMR3, -1
 	object_event 10, 34, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFR3, -1
-	object_event 25,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerF2R3, -1
+	object_event 25,  9, SPRITE_SOCIALITE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSocialiteR3, -1
 	object_event 18, 32, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerFisher1R3, -1
 	object_event 21, 36, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 0, TrainerFisher2R3, -1
 	object_event 27, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicR3, -1

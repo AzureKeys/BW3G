@@ -113,3 +113,4 @@ OverworldSprites:
 	overworld_sprite RangerMSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED_D
 	overworld_sprite RangerFSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite MusicianSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite SocialiteSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE

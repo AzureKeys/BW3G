@@ -9,7 +9,7 @@
 	const R2_TM_DOUBLE_TEAM
 	const R2_YOUNGSTER
 	const R2_LASS
-	const R2_BEAUTY
+	const R2_SOCIALITE
 	const R2_GENTLEMAN
 	const R2_SUPER_NERD
 	const R2_PICNICKER
@@ -142,13 +142,13 @@ TrainerYoungsterR2:
 	closetext
 	end
 
-TrainerBeautyR2:
-	trainer BEAUTY, BEAUTY_R2, EVENT_BEAT_BEAUTY_R2, BeautyR2SeenText, BeautyR2BeatenText, 0, .Script
+TrainerSocialiteR2:
+	trainer SOCIALITE, SOCIALITE_R2, EVENT_BEAT_SOCIALITE_R2, SocialiteR2SeenText, SocialiteR2BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BeautyR2AfterText
+	writetext SocialiteR2AfterText
 	waitbutton
 	closetext
 	end
@@ -273,17 +273,17 @@ LassR2AfterText:
 	line "you punk!"
 	done
 	
-BeautyR2SeenText:
+SocialiteR2SeenText:
 	text "Hey! Do you have"
 	line "any rare #MON?"
 	done
 
-BeautyR2BeatenText:
+SocialiteR2BeatenText:
 	text "Oh, my poor #-"
 	line "MON! Darlings!"
 	done
 
-BeautyR2AfterText:
+SocialiteR2AfterText:
 	text "I'd be happy just"
 	line "to own a single"
 	cont "rare #MON."
@@ -434,7 +434,7 @@ Rt2_MapEvents:
 	object_event  8, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, R2TMDoubleTeam, EVENT_R2_TM_DOUBLE_TEAM
 	object_event 26,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR2, -1
 	object_event 21,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassR2, -1
-	object_event 19, 17, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyR2, -1
+	object_event 19, 17, SPRITE_SOCIALITE, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSocialiteR2, -1
 	object_event 38,  7, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerGentlemanR2, -1
 	object_event  7, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerSuperNerdR2, -1
 	object_event 25, 15, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR2, -1
