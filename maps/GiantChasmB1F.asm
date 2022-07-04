@@ -4,35 +4,46 @@
 	const GIANTCHASMB1F_X_SPEED
 	const GIANTCHASMB1F_HYPER_POTION
 	const GIANTCHASMB1F_ELIXER
-	const GIANTCHASMB1F_COOLTRAINERF_1
-	const GIANTCHASMB1F_COOLTRAINERF_2
+	const GIANTCHASMB1F_BACKPACKERM
+	const GIANTCHASMB1F_BACKPACKERF
+	const GIANTCHASMB1F_COOLTRAINERF
 	const GIANTCHASMB1F_COOLTRAINERM
 	const GIANTCHASMB1F_HIKER
-	const GIANTCHASMB1F_POKEMANIAC_2
 
 GiantChasmB1F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-TrainerCooltrainerF1GiantChasm:
-	trainer COOLTRAINERF, COOLTRAINERF_GIANT_CHASM_1, EVENT_BEAT_COOLTRAINERF_GIANT_CHASM_1, CooltrainerF1GiantChasmSeenText, CooltrainerF1GiantChasmBeatenText, 0, .Script
+TrainerBackpackerMGiantChasm:
+	trainer BACKPACKERM, BACKPACKERM_GIANT_CHASM, EVENT_BEAT_BACKPACKERM_GIANT_CHASM, BackpackerMGiantChasmSeenText, BackpackerMGiantChasmBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerF1GiantChasmAfterText
+	writetext BackpackerMGiantChasmAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerF2GiantChasm:
-	trainer COOLTRAINERF_D, COOLTRAINERF_GIANT_CHASM_2, EVENT_BEAT_COOLTRAINERF_GIANT_CHASM_2, CooltrainerF2GiantChasmSeenText, CooltrainerF2GiantChasmBeatenText, 0, .Script
+TrainerBackpackerFGiantChasm:
+	trainer BACKPACKERF, BACKPACKERF_GIANT_CHASM, EVENT_BEAT_BACKPACKERF_GIANT_CHASM, BackpackerFGiantChasmSeenText, BackpackerFGiantChasmBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerF2GiantChasmAfterText
+	writetext BackpackerFGiantChasmAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerCooltrainerFGiantChasm:
+	trainer COOLTRAINERF_D, COOLTRAINERF_GIANT_CHASM, EVENT_BEAT_COOLTRAINERF_GIANT_CHASM, CooltrainerFGiantChasmSeenText, CooltrainerFGiantChasmBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CooltrainerFGiantChasmAfterText
 	waitbutton
 	closetext
 	end
@@ -55,17 +66,6 @@ TrainerHikerGiantChasm:
 	endifjustbattled
 	opentext
 	writetext HikerGiantChasmAfterText
-	waitbutton
-	closetext
-	end
-
-TrainerPokemaniac2GiantChasm:
-	trainer POKEMANIAC, POKEMANIAC_GIANT_CHASM_2, EVENT_BEAT_POKEMANIAC_GIANT_CHASM_2, Pokemaniac2GiantChasmSeenText, Pokemaniac2GiantChasmBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext Pokemaniac2GiantChasmAfterText
 	waitbutton
 	closetext
 	end
@@ -94,7 +94,7 @@ GiantChasmB1FRareCandy:
 GiantChasmB1FMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_GIANT_CHASM_B1F_MAX_REVIVE
 	
-CooltrainerF1GiantChasmSeenText:
+BackpackerFGiantChasmSeenText:
 	text "It's rare to see"
 	line "anyone come here."
 
@@ -102,12 +102,12 @@ CooltrainerF1GiantChasmSeenText:
 	line "on your own?"
 	done
 
-CooltrainerF1GiantChasmBeatenText:
+BackpackerFGiantChasmBeatenText:
 	text "Oh! You're really"
 	line "strong!"
 	done
 
-CooltrainerF1GiantChasmAfterText:
+BackpackerFGiantChasmAfterText:
 	text "I'm checking out"
 	line "pre- and post-"
 	cont "evolution #MON."
@@ -121,7 +121,7 @@ CooltrainerF1GiantChasmAfterText:
 	cont "later on."
 	done
 	
-CooltrainerF2GiantChasmSeenText:
+CooltrainerFGiantChasmSeenText:
 	text "I'll tell you a"
 	line "secret."
 
@@ -129,12 +129,12 @@ CooltrainerF2GiantChasmSeenText:
 	line "battle!"
 	done
 
-CooltrainerF2GiantChasmBeatenText:
+CooltrainerFGiantChasmBeatenText:
 	text "Oh, dang!"
 	line "I lost that…"
 	done
 
-CooltrainerF2GiantChasmAfterText:
+CooltrainerFGiantChasmAfterText:
 	text "There's a cave up"
 	line "past a small"
 	cont "waterfall."
@@ -194,7 +194,7 @@ HikerGiantChasmAfterText:
 	line "that's not true?"
 	done
 	
-Pokemaniac2GiantChasmSeenText:
+BackpackerMGiantChasmSeenText:
 	text "I love #MON!"
 
 	para "That's why I"
@@ -204,12 +204,12 @@ Pokemaniac2GiantChasmSeenText:
 	line "lecting #MON!"
 	done
 
-Pokemaniac2GiantChasmBeatenText:
+BackpackerMGiantChasmBeatenText:
 	text "How could you do"
 	line "this to me?"
 	done
 
-Pokemaniac2GiantChasmAfterText:
+BackpackerMGiantChasmAfterText:
 	text "What else do I"
 	line "like besides"
 	cont "#MON?"
@@ -235,9 +235,9 @@ GiantChasmB1F_MapEvents:
 	object_event  3, 31, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiantChasmB1FXSpeed, EVENT_GIANT_CHASM_B1F_X_SPEED
 	object_event 26, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiantChasmB1FHyperPotion, EVENT_GIANT_CHASM_B1F_HYPER_POTION
 	object_event 14, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiantChasmB1FElixer, EVENT_GIANT_CHASM_B1F_ELIXER
-	object_event 13, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerF1GiantChasm, -1
-	object_event 20, 12, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerF2GiantChasm, -1
+	object_event 16, 26, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMGiantChasm, -1
+	object_event 13, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFGiantChasm, -1
+	object_event 20, 12, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerFGiantChasm, -1
 	object_event 36, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerMGiantChasm, -1
 	object_event 10, 28, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerHikerGiantChasm, -1
-	object_event 16, 26, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerPokemaniac2GiantChasm, -1
 	

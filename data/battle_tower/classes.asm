@@ -3,7 +3,6 @@ BattleTowerTrainers:
 ; Instead, the sixth character in the trainer's name is used.
 ; See BattleTowerText in engine/events/battle_tower/trainer_text.asm.
 	db "HANSON@@@@", FISHER
-	db "SAWYER@@@@", POKEMANIAC
 	db "MASUDA@@@@", GUITARIST
 	db "NICKEL@@@@", SCIENTIST_M
 	db "OLSON@@@@@", POKEFANM
@@ -17,7 +16,6 @@ BattleTowerTrainers:
 	db "HUNTER@@@@", POKEFANF
 	db "JAVIER@@@@", SWIMMERF
 	db "KAUFMAN@@@", SWIMMERM
-	db "McMAHILL@@", CAMPER
 ; The following can only be sampled in Crystal 1.1.
 	db "OBRIEN@@@@", GENTLEMAN
 	db "MORSE@@@@@", SUPER_NERD
@@ -27,19 +25,15 @@ BattleTowerTrainers:
 	db "SANTIAGO@@", PSYCHIC_T
 	db "STOCK@@@@@", POKEFANM
 	db "THURMAN@@@", SCIENTIST_M
-	db "WAGNER@@@@", CAMPER
 	db "YATES@@@@@", BIRD_KEEPER
 	db "ANDREWS@@@", PICNICKER
-	db "BAHN@@@@@@", POKEMANIAC
 	db "MORI@@@@@@", SCIENTIST_M
 	db "COBB@@@@@@", SCHOOL_KIDM
 	db "HUGHES@@@@", FISHER
 	db "EASTON@@@@", PSYCHIC_T
-	db "FREEMAN@@@", CAMPER
 	db "GIESE@@@@@", LASS
 	db "HATCHER@@@", GENTLEMAN
 	db "JACKSON@@@", POKEFANF
-	db "KAHN@@@@@@", POKEMANIAC
 	db "LEONG@@@@@", YOUNGSTER
 	db "MARINO@@@@", TEACHER
 	db "NEWMAN@@@@", SAILOR
@@ -56,7 +50,6 @@ BattleTowerTrainers:
 	db "ADAMS@@@@@", GUITARIST
 	db "SMITH@@@@@", BUG_CATCHER
 	db "TAJIRI@@@@", BUG_CATCHER
-	db "BAKER@@@@@", POKEMANIAC
 	db "COLLINS@@@", SCIENTIST_M
 	db "SMART@@@@@", SUPER_NERD
 	db "DYKSTRA@@@", SWIMMERF

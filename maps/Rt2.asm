@@ -11,8 +11,8 @@
 	const R2_LASS
 	const R2_SOCIALITE
 	const R2_GENTLEMAN
-	const R2_SUPER_NERD
-	const R2_PICNICKER
+	const R2_BACKPACKERM
+	const R2_BACKPACKERF
 	const R2_OFFICER
 	const R2_TWIN_1
 	const R2_TWIN_2
@@ -164,24 +164,24 @@ TrainerGentlemanR2:
 	closetext
 	end
 
-TrainerSuperNerdR2:
-	trainer SUPER_NERD, SUPER_NERD_R2, EVENT_BEAT_SUPER_NERD_R2, SuperNerdR2SeenText, SuperNerdR2BeatenText, 0, .Script
+TrainerBackpackerMR2:
+	trainer BACKPACKERM, BACKPACKERM_R2, EVENT_BEAT_BACKPACKERM_R2, BackpackerMR2SeenText, BackpackerMR2BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SuperNerdR2AfterText
+	writetext BackpackerMR2AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerPicnickerR2:
-	trainer PICNICKER_D, PICNICKER_R2, EVENT_BEAT_PICNICKER_R2, PicnickerR2SeenText, PicnickerR2BeatenText, 0, .Script
+TrainerBackpackerFR2:
+	trainer BACKPACKERF, BACKPACKERF_R2, EVENT_BEAT_BACKPACKERF_R2, BackpackerFR2SeenText, BackpackerFR2BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerR2AfterText
+	writetext BackpackerFR2AfterText
 	waitbutton
 	closetext
 	end
@@ -308,17 +308,17 @@ GentlemanR2AfterText:
 	line "harder…"
 	done
 	
-SuperNerdR2SeenText:
+BackpackerMR2SeenText:
 	text "You look pretty"
 	line "strong."
 	cont "Let me battle you!"
 	done
 
-SuperNerdR2BeatenText:
+BackpackerMR2BeatenText:
 	text "Yow!"
 	done
 
-SuperNerdR2AfterText:
+BackpackerMR2AfterText:
 	text "If you prevail on"
 	line "this harsh trek,"
 
@@ -330,7 +330,7 @@ SuperNerdR2AfterText:
 	cont "something cool."
 	done
 	
-PicnickerR2SeenText:
+BackpackerFR2SeenText:
 	text "I raise #MON"
 	line "too!"
 
@@ -338,11 +338,11 @@ PicnickerR2SeenText:
 	line "with me?"
 	done
 
-PicnickerR2BeatenText:
+BackpackerFR2BeatenText:
 	text "Oh, rats!"
 	done
 
-PicnickerR2AfterText:
+BackpackerFR2AfterText:
 	text "I've been to many"
 	line "GYMS, but the GYM"
 
@@ -436,8 +436,8 @@ Rt2_MapEvents:
 	object_event 21,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassR2, -1
 	object_event 19, 17, SPRITE_SOCIALITE, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSocialiteR2, -1
 	object_event 38,  7, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerGentlemanR2, -1
-	object_event  7, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerSuperNerdR2, -1
-	object_event 25, 15, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR2, -1
+	object_event  7, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBackpackerMR2, -1
+	object_event 25, 15, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR2, -1
 	object_event 10, 21, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerOfficerR2, -1
 	object_event 14, 18, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR2, -1
 	object_event 15, 18, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR2, -1

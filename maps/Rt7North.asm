@@ -3,7 +3,7 @@
 	const R7NORTH_SHELL_STONE
 	const R7NORTH_HEAT_ROCK
 	const R7NORTH_TM_X_SCISSOR
-	const R7NORTH_YOUNGSTER
+	const R7NORTH_BACKPACKERM
 	const R7NORTH_HARLEQUIN
 	const R7NORTH_TWIN_1
 	const R7NORTH_TWIN_2
@@ -13,13 +13,13 @@ Rt7North_MapScripts:
 
 	db 0 ; callbacks
 
-TrainerYoungsterR7North:
-	trainer YOUNGSTER, YOUNGSTER_R7_2, EVENT_BEAT_YOUNGSTER_R7_2, YoungsterR7NorthSeenText, YoungsterR7NorthBeatenText, 0, .Script
+TrainerBackpackerMR7North:
+	trainer BACKPACKERM, BACKPACKERM_R7, EVENT_BEAT_BACKPACKERM_R7, BackpackerMR7NorthSeenText, BackpackerMR7NorthBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterR7NorthAfterText
+	writetext BackpackerMR7NorthAfterText
 	waitbutton
 	closetext
 	end
@@ -61,16 +61,16 @@ R7NorthRareCandy:
 R7NorthSign:
 	jumptext R7NorthSignText
 	
-YoungsterR7NorthSeenText:
+BackpackerMR7NorthSeenText:
 	text "I love playing in"
 	line "the tall grass!"
 	done
 
-YoungsterR7NorthBeatenText:
+BackpackerMR7NorthBeatenText:
 	text "Woah!"
 	done
 
-YoungsterR7NorthAfterText:
+BackpackerMR7NorthAfterText:
 	text "It's fun to jump"
 	line "out and surprise"
 	cont "people!"
@@ -135,7 +135,7 @@ Rt7North_MapEvents:
 	object_event 25, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R7NorthShellStone, EVENT_R_7_SHELL_STONE
 	object_event 14, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R7NorthHeatRock, EVENT_R_7_HEAT_ROCK
 	object_event 29, 42, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, R7NorthTMXScissor, EVENT_R_7_TM_X_SCISSOR
-	object_event 21, 41, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerYoungsterR7North, -1
+	object_event 21, 41, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMR7North, -1
 	object_event 16, 31, SPRITE_HARLEQUIN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerHarlequinR7North, -1
 	object_event 15, 38, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerTwinsR7North, -1
 	object_event 15, 39, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerTwinsR7North, -1

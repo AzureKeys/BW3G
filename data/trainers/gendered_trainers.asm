@@ -5,7 +5,6 @@ MaleTrainers:
 	db YOUNGSTER_D
 	db SCHOOL_KIDM
 	db BIRD_KEEPER
-	db POKEMANIAC
 	db GENTLEMAN
 	db BUG_CATCHER
 	db FISHER
@@ -17,7 +16,6 @@ MaleTrainers:
 	db HIKER_D
 	db BLACKBELT_T
 	db PSYCHIC_T
-	db CAMPER
 	db CAMPER_D
 	db COOLTRAINERM
 	db POKEFANM

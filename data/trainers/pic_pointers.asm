@@ -10,6 +10,8 @@ TrainerPicPointers::
 	dba CooltrainermDPic
 	dba CooltrainerfPic
 	dba CooltrainerfDPic
+	dba BackpackerMPic
+	dba BackpackerFPic
 	dba BakerPic
 	dba BlackbeltTPic
 	dba BattleGirlPic
@@ -61,14 +63,12 @@ TrainerPicPointers::
 	dba WaitressPic
 	dba WorkerPic
 	dba BirdKeeperPic
-	dba PokemaniacPic
 	dba TeacherPic
 	dba BugCatcherPic
 	dba SailorPic
 	dba SuperNerdPic
 	dba PicnickerPic
 	dba PicnickerDPic
-	dba CamperPic
 	dba CamperDPic
 	dba GruntmPic
 	dba GruntfPic

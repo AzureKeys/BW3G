@@ -10,6 +10,8 @@ TrainerGroups:
 	dba CooltrainerMDGroup
 	dba CooltrainerFGroup
 	dba CooltrainerFDGroup
+	dba BackpackerMGroup
+	dba BackpackerFGroup
 	dba BakerGroup
 	dba BlackbeltGroup
 	dba BattleGirlGroup
@@ -61,14 +63,12 @@ TrainerGroups:
 	dba WaitressGroup
 	dba WorkerGroup
 	dba BirdKeeperGroup
-	dba PokemaniacGroup
 	dba TeacherGroup
 	dba BugCatcherGroup
 	dba SailorGroup
 	dba SuperNerdGroup
 	dba PicnickerGroup
 	dba PicnickerDGroup
-	dba CamperGroup
 	dba CamperDGroup
 	dba GruntMGroup
 	dba GruntFGroup

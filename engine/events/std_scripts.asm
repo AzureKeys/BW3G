@@ -823,7 +823,7 @@ AskNumber1FScript:
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
-	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
@@ -859,7 +859,7 @@ AskNumber2FScript:
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
-	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
@@ -902,7 +902,7 @@ NumberAcceptedFScript:
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
-	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
@@ -954,7 +954,7 @@ NumberDeclinedFScript:
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
-	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
@@ -1006,7 +1006,7 @@ PhoneFullFScript:
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
-	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
@@ -1058,7 +1058,7 @@ RematchFScript:
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
-	ifequal PHONE_COOLTRAINER_JENNY, .Jenny
+	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_PSYCHIC_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 

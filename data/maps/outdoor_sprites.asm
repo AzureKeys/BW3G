@@ -27,6 +27,7 @@ OutdoorSprites:
 	dw ChargestoneGroupSprites
 	dw DesertGroupSprites
 	dw VillageGroupSprites
+	dw NimbasaOuterGroupSprites
 	dw PkmnLeagueGroupSprites
 
 HumilauGroupSprites:
@@ -88,16 +89,33 @@ LentimasGroupSprites:
 	db 0 ; end
 
 NimbasaGroupSprites:
-; Route 16, Nimbasa City, Route 5
+; Nimbasa City, Nimbasa Park Outside
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
 	db SPRITE_BIKER
 	db SPRITE_COOLTRAINER_M
+	db SPRITE_COOLTRAINER_F
 	db SPRITE_TEACHER
 	db SPRITE_GRAMPS
 	db SPRITE_ROCKET
 	db SPRITE_CHEREN
-	; 8 of max 9 walking sprites
+	; 9 of max 9 walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
+	db 0 ; end
+
+NimbasaOuterGroupSprites:
+; Route 16, Route 5
+	db SPRITE_YOUNGSTER
+	db SPRITE_LASS
+	db SPRITE_BIKER
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_TEACHER
+	db SPRITE_GRAMPS
+	db SPRITE_ROCKET
+	db SPRITE_CHEREN
+	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db 0 ; end
@@ -208,7 +226,7 @@ NacreneGroupSprites:
 
 StriatonGroupSprites:
 ; Striaton City, R3, R2
-	db SPRITE_COOLTRAINER_M
+	db SPRITE_OFFICER
 	db SPRITE_LASS
 	db SPRITE_FISHER
 	db SPRITE_YOUNGSTER
@@ -307,9 +325,9 @@ MistraltonGroupSprites:
 	db SPRITE_LASS
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_GYM_GUY
-	db SPRITE_OFFICER
+	db SPRITE_COOLTRAINER_F
 	db SPRITE_SKYLA
-	db SPRITE_POKEFAN_F
+	db SPRITE_TEACHER
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL

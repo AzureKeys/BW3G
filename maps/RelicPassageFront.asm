@@ -6,7 +6,7 @@
 	const RELICPASSAGEFRONT_PSYCHIC
 	const RELICPASSAGEFRONT_HIKER_1
 	const RELICPASSAGEFRONT_HIKER_2
-	const RELICPASSAGEFRONT_PICNICKER
+	const RELICPASSAGEFRONT_BACKPACKERF
 	
 RelicPassageFront_MapScripts:
 	db 0 ; scene scripts
@@ -105,13 +105,13 @@ TrainerHiker2RelicPassage:
 	closetext
 	end
 
-TrainerPicnickerRelicPassage:
-	trainer PICNICKER_D, PICNICKER_RELIC_PASSAGE, EVENT_BEAT_PICNICKER_RELIC_PASSAGE, PicnickerRelicPassageSeenText, PicnickerRelicPassageBeatenText, 0, .Script
+TrainerBackpackerFRelicPassage:
+	trainer BACKPACKERF, BACKPACKERF_RELIC_PASSAGE, EVENT_BEAT_BACKPACKERF_RELIC_PASSAGE, BackpackerFRelicPassageSeenText, BackpackerFRelicPassageBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerRelicPassageAfterText
+	writetext BackpackerFRelicPassageAfterText
 	waitbutton
 	closetext
 	end
@@ -204,17 +204,17 @@ Hiker2RelicPassageAfterText:
 	cont "to find treasure!"
 	done
 	
-PicnickerRelicPassageSeenText:
+BackpackerFRelicPassageSeenText:
 	text "I always take my"
 	line "#MON with me on"
 	cont "trips!"
 	done
 
-PicnickerRelicPassageBeatenText:
+BackpackerFRelicPassageBeatenText:
 	text "You're too good!"
 	done
 
-PicnickerRelicPassageAfterText:
+BackpackerFRelicPassageAfterText:
 	text "You have to have"
 	line "#MON to defend"
 	cont "you in a place"
@@ -250,5 +250,5 @@ RelicPassageFront_MapEvents:
 	object_event 43,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicRelicPassage, -1
 	object_event 13, 20, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerHiker1RelicPassage, -1
 	object_event 31, 14, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerHiker2RelicPassage, -1
-	object_event 27, 16, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerPicnickerRelicPassage, -1
+	object_event 27, 16, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBackpackerFRelicPassage, -1
 	

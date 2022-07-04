@@ -16,11 +16,14 @@ LoadSpecialMapObjectPalette:
 	jr z, .pkmn_league
 	cp TILESET_NIMBASA
 	jr z, .nimbasa
-	jr .do_nothing
+	jp .do_nothing
 
 .nimbasa
+	ld a, [wMapGroup]
+	cp 25 ; NimbasaOuter
+	jr nz, .do_nothing
 	ld a, [wMapNumber]
-	cp 11 ; Rt5
+	cp 4 ; Rt5
 	jr nz, .do_nothing
 	ld a, [wCurTimeOfDay]
 	cp NITE_F

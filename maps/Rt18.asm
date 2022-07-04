@@ -7,27 +7,27 @@
 	const R18_HIKER
 	const R18_BLACKBELT_T
 	const R18_BATTLE_GIRL
-	const R18_COOLTRAINER_M
-	const R18_COOLTRAINER_F
+	const R18_BACKPACKERM
+	const R18_BACKPACKERF
 
 Rt18_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-TrainerCooltrainerFR18:
-	trainer COOLTRAINERF_D, COOLTRAINERF_R18, EVENT_BEAT_COOLTRAINERF_R18, CooltrainerFR18SeenText, CooltrainerFR18BeatenText, 0, .Script
+TrainerBackpackerFR18:
+	trainer BACKPACKERF, BACKPACKERF_R18, EVENT_BEAT_BACKPACKERF_R18, BackpackerFR18SeenText, BackpackerFR18BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_COOLTRAINER_JENNY
+	writecode VAR_CALLERID, PHONE_BACKPACKER_JENNY
 	opentext
 	checkflag ENGINE_JENNY_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_COOLTRAINER_JENNY
+	checkcellnum PHONE_BACKPACKER_JENNY
 	iftrue .NumberAccepted
 	checkevent EVENT_JENNY_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext CooltrainerFR18AfterText
+	writetext BackpackerFR18AfterText
 	buttonsound
 	setevent EVENT_JENNY_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -36,27 +36,27 @@ TrainerCooltrainerFR18:
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_COOLTRAINER_JENNY
+	askforphonenumber PHONE_BACKPACKER_JENNY
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_JENNY
-	trainertotext COOLTRAINERF_D, COOLTRAINERF_R18, MEM_BUFFER_0
+	trainertotext BACKPACKERF, BACKPACKERF_R18, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext CooltrainerFR18BeatenText, 0
+	winlosstext BackpackerFR18BeatenText, 0
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight1
 ; Fight0
-	loadtrainer COOLTRAINERF_D, COOLTRAINERF_R18
+	loadtrainer BACKPACKERF, BACKPACKERF_R18
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_JENNY_READY_FOR_REMATCH
 	end
 .LoadFight1
-	loadtrainer COOLTRAINERF_D, JENNY_REMATCH_1
+	loadtrainer BACKPACKERF, JENNY_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_JENNY_READY_FOR_REMATCH
@@ -123,13 +123,13 @@ TrainerBattleGirlR18:
 	closetext
 	end
 
-TrainerCooltrainerMR18:
-	trainer COOLTRAINERM_D, COOLTRAINERM_R18, EVENT_BEAT_COOLTRAINERM_R18, CooltrainerMR18SeenText, CooltrainerMR18BeatenText, 0, .Script
+TrainerBackpackerMR18:
+	trainer BACKPACKERM, BACKPACKERM_R18, EVENT_BEAT_BACKPACKERM_R18, BackpackerMR18SeenText, BackpackerMR18BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerMR18AfterText
+	writetext BackpackerMR18AfterText
 	waitbutton
 	closetext
 	end
@@ -206,18 +206,18 @@ BattleGirlR18AfterText:
 	cont "on your side."
 	done
 	
-CooltrainerMR18SeenText:
+BackpackerMR18SeenText:
 	text "What are your"
 	line "thoughts on rais-"
 	cont "ing #MON?"
 	done
 
-CooltrainerMR18BeatenText:
+BackpackerMR18BeatenText:
 	text "You've won my"
 	line "respect."
 	done
 
-CooltrainerMR18AfterText:
+BackpackerMR18AfterText:
 	text "I see you're rais-"
 	line "ing your #MON"
 	cont "with care."
@@ -227,7 +227,7 @@ CooltrainerMR18AfterText:
 	cont "tough situations."
 	done
 	
-CooltrainerFR18SeenText:
+BackpackerFR18SeenText:
 	text "What is your"
 	line "battle strategy?"
 
@@ -236,11 +236,11 @@ CooltrainerFR18SeenText:
 	cont "indiscriminately."
 	done
 
-CooltrainerFR18BeatenText:
+BackpackerFR18BeatenText:
 	text "Fine. I lost."
 	done
 
-CooltrainerFR18AfterText:
+BackpackerFR18AfterText:
 	text "I'm not in favor"
 	line "of overly power-"
 	cont "ful moves."
@@ -272,6 +272,6 @@ Rt18_MapEvents:
 	object_event 31, 22, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerHikerR18, -1
 	object_event 25, 23, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBlackbeltR18, -1
 	object_event  9,  9, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlR18, -1
-	object_event 33, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerMR18, -1
-	object_event 26, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerFR18, -1
+	object_event 33, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMR18, -1
+	object_event 26, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBackpackerFR18, -1
 	

@@ -24,7 +24,7 @@ PhoneContacts:
 	phone PKMN_RANGERF,   PKMN_RANGERF_R3,       R_3,                ANYTIME, ArianaPhoneCalleeScript,   0, ArianaPhoneCallerScript
 	phone LASS_D,         LASS_R2,               R_2,                ANYTIME, CarlaPhoneCalleeScript,    0, CarlaPhoneCallerScript
 	phone MAID,           MAID_R1,               R_1,                ANYTIME, ClarissaPhoneCalleeScript, 0, ClarissaPhoneCallerScript
-	phone COOLTRAINERF_D, COOLTRAINERF_R18,      R_18,               ANYTIME, JennyPhoneCalleeScript,    0, JennyPhoneCallerScript
+	phone BACKPACKERF,    BACKPACKERF_R18,       R_18,               ANYTIME, JennyPhoneCalleeScript,    0, JennyPhoneCallerScript
 	phone SCIENTIST_M,    SCIENTISTM_R6,         R_6,                ANYTIME, MarcoPhoneCalleeScript,    0, MarcoPhoneCallerScript
 	phone PSYCHIC_T_F,    PSYCHIC_R7,            R_7,                ANYTIME, MarlaPhoneCalleeScript,    0, MarlaPhoneCallerScript
 	; phone BUG_CATCHER,  ARNIE1,                ROUTE_35,                  ANYTIME, ArniePhoneCalleeScript,    0, ArniePhoneCallerScript

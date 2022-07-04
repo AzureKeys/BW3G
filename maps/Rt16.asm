@@ -4,8 +4,8 @@
 	const R16_AIR_BALLOON
 	const R16_TM_SUNNY_DAY
 	const R16_LASS
-	const R16_SCHOOL_KIDM
-	const R16_SCHOOL_KIDF
+	const R16_BACKPACKERM
+	const R16_BACKPACKERF
 	const R16_BIRD_KEEPER
 	const R16_BIKER
 
@@ -25,24 +25,24 @@ TrainerLassR16:
 	closetext
 	end
 
-TrainerSchoolKidMR16:
-	trainer SCHOOL_KIDM, SCHOOL_KIDM_R16, EVENT_BEAT_SCHOOL_KIDM_R16, SchoolKidMR16SeenText, SchoolKidMR16BeatenText, 0, .Script
+TrainerBackpackerMR16:
+	trainer BACKPACKERM, BACKPACKERM_R16, EVENT_BEAT_BACKPACKERM_R16, BackpackerMR16SeenText, BackpackerMR16BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolKidMR16AfterText
+	writetext BackpackerMR16AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSchoolKidFR16:
-	trainer SCHOOL_KIDF, SCHOOL_KIDF_R16, EVENT_BEAT_SCHOOL_KIDF_R16, SchoolKidFR16SeenText, SchoolKidFR16BeatenText, 0, .Script
+TrainerBackpackerFR16:
+	trainer BACKPACKERF, BACKPACKERF_R16, EVENT_BEAT_BACKPACKERF_R16, BackpackerFR16SeenText, BackpackerFR16BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SchoolKidFR16AfterText
+	writetext BackpackerFR16AfterText
 	waitbutton
 	closetext
 	end
@@ -105,18 +105,18 @@ LassR16AfterText:
 	line "time!"
 	done
 	
-SchoolKidMR16SeenText:
+BackpackerMR16SeenText:
 	text "Let me try some-"
 	line "thing I learned"
 	cont "today."
 	done
 
-SchoolKidMR16BeatenText:
+BackpackerMR16BeatenText:
 	text "I didn't study"
 	line "enough, I guess."
 	done
 
-SchoolKidMR16AfterText:
+BackpackerMR16AfterText:
 	text "I have to take so"
 	line "many tests, I"
 
@@ -128,18 +128,18 @@ SchoolKidMR16AfterText:
 	cont "concentrate."
 	done
 	
-SchoolKidFR16SeenText:
+BackpackerFR16SeenText:
 	text "Give it your best"
 	line "shot, or I'll take"
 	cont "you down!"
 	done
 
-SchoolKidFR16BeatenText:
+BackpackerFR16BeatenText:
 	text "No! Oh, my #-"
 	line "MON, I'm so sorry!"
 	done
 
-SchoolKidFR16AfterText:
+BackpackerFR16AfterText:
 	text "I taught my #-"
 	line "MON moves for"
 	cont "taking on any"
@@ -204,8 +204,8 @@ Rt16_MapEvents:
 	object_event  8, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R16AirBalloon, EVENT_R_16_AIR_BALLOON
 	object_event 33, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, R16TMSunnyDay, EVENT_R_16_TM_SUNNY_DAY
 	object_event 22,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 4, TrainerLassR16, -1
-	object_event 18, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidMR16, -1
-	object_event 14, 22, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFR16, -1
+	object_event 18, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMR16, -1
+	object_event 14, 22, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR16, -1
 	object_event 13, 18, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperR16, -1
 	object_event 30, 22, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBikerR16, -1
 	

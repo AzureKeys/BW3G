@@ -138,19 +138,12 @@ ENDM
 	newgroup
 	
 	map_const NIMBASA_CITY, 23, 18
-	map_const R_16, 18, 15
-	map_const R_16_LOSTLORN_GATE, 5, 4
-	map_const R_16_NIMBASA_GATE, 5, 4
 	map_const NIMBASA_TM_MART, 6, 4
 	map_const NIMBASA_VITAMIN_MART, 6, 4
 	map_const NIMBASA_BALL_MART, 6, 4
 	map_const NIMBASA_POKECENTER_1F, 5, 5
 	map_const NIMBASA_HOUSE, 4, 4 
 	map_const NIMBASA_NAME_RATER, 4, 4 
-	map_const R_5, 20, 11
-	map_const R_5_NIMBASA_GATE, 5, 4
-	map_const R_5_BRIDGE_GATE, 5, 4
-	map_const R_5_TRUCK, 4, 3
 	map_const R_4_NIMBASA_GATE, 5, 11
 	map_const NIMBASA_SUBWAY, 10, 9
 	map_const NIMBASA_PARK_OUTSIDE, 27, 10
@@ -335,6 +328,16 @@ ENDM
 	newgroup
 	map_const VILLAGE_BRIDGE, 34, 19
 	map_const R_11_VILLAGE_BRIDGE_GATE, 5, 4
+	
+	newgroup
+	
+	map_const R_16, 18, 15
+	map_const R_16_LOSTLORN_GATE, 5, 4
+	map_const R_16_NIMBASA_GATE, 5, 4
+	map_const R_5, 20, 11
+	map_const R_5_NIMBASA_GATE, 5, 4
+	map_const R_5_BRIDGE_GATE, 5, 4
+	map_const R_5_TRUCK, 4, 3
 	
 	newgroup
 	map_const R_23_EAST, 17, 26

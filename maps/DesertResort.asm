@@ -6,11 +6,11 @@
 	const DESERT_ROUGHNECK
 	const DESERT_HEX_MANIAC
 	const DESERT_YOUNGSTER
-	const DESERT_POKEFANM
-	const DESERT_LASS1
+	const DESERT_BACKPACKERM
+	const DESERT_BACKPACKERF
 	const DESERT_PKMN_RANGERM
 	const DESERT_PKMN_RANGERF
-	const DESERT_LASS2
+	const DESERT_LASS
 	const DESERT_NURSE
 	const DESERT_SAND_MAN
 
@@ -94,13 +94,24 @@ TrainerYoungsterDesert:
 	closetext
 	end
 
-TrainerPokefanMDesert:
-	trainer POKEFANM, POKEFANM_DESERT, EVENT_BEAT_POKEFANM_DESERT, PokefanMDesertSeenText, PokefanMDesertBeatenText, 0, .Script
+TrainerBackpackerMDesert:
+	trainer BACKPACKERM, BACKPACKERM_DESERT, EVENT_BEAT_BACKPACKERM_DESERT, BackpackerMDesertSeenText, BackpackerMDesertBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PokefanMDesertAfterText
+	writetext BackpackerMDesertAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerBackpackerFDesert:
+	trainer BACKPACKERF, BACKPACKERF_DESERT, EVENT_BEAT_BACKPACKERF_DESERT, BackpackerFDesertSeenText, BackpackerFDesertBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BackpackerFDesertAfterText
 	waitbutton
 	closetext
 	end
@@ -127,24 +138,13 @@ TrainerPkmnRangerFDesert:
 	closetext
 	end
 
-TrainerLass1Desert:
-	trainer LASS, LASS_DESERT_1, EVENT_BEAT_LASS_DESERT_1, Lass1DesertSeenText, Lass1DesertBeatenText, 0, .Script
+TrainerLassDesert:
+	trainer LASS, LASS_DESERT, EVENT_BEAT_LASS_DESERT, LassDesertSeenText, LassDesertBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Lass1DesertAfterText
-	waitbutton
-	closetext
-	end
-
-TrainerLass2Desert:
-	trainer LASS_D, LASS_DESERT_2, EVENT_BEAT_LASS_DESERT_2, Lass2DesertSeenText, Lass2DesertBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext Lass2DesertAfterText
+	writetext LassDesertAfterText
 	waitbutton
 	closetext
 	end
@@ -242,7 +242,7 @@ HexManiacDesertAfterText:
 	line "here."
 	done
 	
-PokefanMDesertSeenText:
+BackpackerMDesertSeenText:
 	text "HEY!"
 
 	para "This is my secret"
@@ -250,12 +250,12 @@ PokefanMDesertSeenText:
 	cont "you outsider!"
 	done
 
-PokefanMDesertBeatenText:
+BackpackerMDesertBeatenText:
 	text "I should have"
 	line "picked that move…"
 	done
 
-PokefanMDesertAfterText:
+BackpackerMDesertAfterText:
 	text "You're working on"
 	line "a #DEX?"
 
@@ -318,7 +318,7 @@ PkmnRangerFDesertAfterText:
 	cont "many battles."
 	done
 	
-Lass1DesertSeenText:
+LassDesertSeenText:
 	text "I love #MON!"
 
 	para "That's why I"
@@ -328,18 +328,18 @@ Lass1DesertSeenText:
 	line "lecting #MON!"
 	done
 
-Lass1DesertBeatenText:
+LassDesertBeatenText:
 	text "How could you do"
 	line "this to me?"
 	done
 
-Lass1DesertAfterText:
+LassDesertAfterText:
 	text "What else do I"
 	line "like besides"
 	cont "#MON?"
 	done
 	
-Lass2DesertSeenText:
+BackpackerFDesertSeenText:
 	text "Be prepared for"
 	line "anything!"
 
@@ -348,11 +348,11 @@ Lass2DesertSeenText:
 	cont "raised properly!"
 	done
 
-Lass2DesertBeatenText:
+BackpackerFDesertBeatenText:
 	text "Oh, I lost that!"
 	done
 
-Lass2DesertAfterText:
+BackpackerFDesertAfterText:
 	text "I'll have to do"
 	line "more training in"
 	cont "the DESERT RESORT."
@@ -380,11 +380,11 @@ DesertResort_MapEvents:
 	object_event 34, 26, SPRITE_ROUGHNECK, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerRoughneckDesert, -1
 	object_event  2, 28, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacDesert, -1
 	object_event 49, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 4, TrainerYoungsterDesert, -1
-	object_event 21,  8, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMDesert, -1
-	object_event 51, 28, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLass1Desert, -1
+	object_event 21,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBackpackerMDesert, -1
+	object_event 14, 24, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBackpackerFDesert, -1
 	object_event 39, 38, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMDesert, -1
 	object_event 24, 14, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFDesert, -1
-	object_event 14, 24, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerLass2Desert, -1
+	object_event 51, 28, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLassDesert, -1
 	object_event 54, 38, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DesertNurseScript, -1
 	object_event 12,  5, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, DesertSandManScript, -1
 	

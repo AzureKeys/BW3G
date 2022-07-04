@@ -5,8 +5,8 @@
 	const REVERSALMOUNTAIN_X_DUSK_BALL
 	const REVERSALMOUNTAIN_SCHOOL_KIDF
 	const REVERSALMOUNTAIN_HIKER_2
-	const REVERSALMOUNTAIN_PICNICKER
-	const REVERSALMOUNTAIN_CAMPER
+	const REVERSALMOUNTAIN_BACKPACKERF
+	const REVERSALMOUNTAIN_BACKPACKERM
 	const REVERSALMOUNTAIN_BLACKBELT
 	const REVERSALMOUNTAIN_LASS
 	const REVERSALMOUNTAIN_GRUNT
@@ -73,24 +73,24 @@ TrainerHiker2Reversal:
 	closetext
 	end
 
-TrainerPicnickerReversal:
-	trainer PICNICKER_D, PICNICKER_REVERSAL, EVENT_BEAT_PICNICKER_REVERSAL, PicnickerReversalSeenText, PicnickerReversalBeatenText, 0, .Script
+TrainerBackpackerFReversal:
+	trainer BACKPACKERF, BACKPACKERF_REVERSAL, EVENT_BEAT_BACKPACKERF_REVERSAL, BackpackerFReversalSeenText, BackpackerFReversalBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerReversalAfterText
+	writetext BackpackerFReversalAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCamperReversal:
-	trainer CAMPER, CAMPER_REVERSAL, EVENT_BEAT_CAMPER_REVERSAL, CamperReversalSeenText, CamperReversalBeatenText, 0, .Script
+TrainerBackpackerMReversal:
+	trainer BACKPACKERM, BACKPACKERM_REVERSAL, EVENT_BEAT_BACKPACKERM_REVERSAL, BackpackerMReversalSeenText, BackpackerMReversalBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CamperReversalAfterText
+	writetext BackpackerMReversalAfterText
 	waitbutton
 	closetext
 	end
@@ -178,13 +178,13 @@ ReversalGruntLeaveText:
 	cont "done for!"
 	done
 	
-PicnickerReversalSeenText:
+BackpackerFReversalSeenText:
 	text "Let's see who has"
 	line "the most admirable"
 	cont "#MON!"
 	done
 
-PicnickerReversalBeatenText:
+BackpackerFReversalBeatenText:
 	text "Even though we"
 	line "lost, my #MON"
 	
@@ -192,7 +192,7 @@ PicnickerReversalBeatenText:
 	line "admirable."
 	done
 
-PicnickerReversalAfterText:
+BackpackerFReversalAfterText:
 	text "If we can't win"
 	line "with these, maybe"
 	
@@ -238,7 +238,7 @@ SchoolKidFReversalAfterText:
 	cont "even if we lose!"
 	done
 	
-CamperReversalSeenText:
+BackpackerMReversalSeenText:
 	text "You sure are"
 	line "unlucky to have"
 
@@ -246,13 +246,13 @@ CamperReversalSeenText:
 	line "as strong as me!"
 	done
 
-CamperReversalBeatenText:
+BackpackerMReversalBeatenText:
 	text "I guess it was I"
 	line "who was unlucky to"
 	cont "run into you!"
 	done
 
-CamperReversalAfterText:
+BackpackerMReversalAfterText:
 	text "Turning bad luck"
 	line "into good luck…"
 
@@ -322,8 +322,8 @@ ReversalMountain1F_MapEvents:
 	object_event 41, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ReversalMountainDuskBall, EVENT_REVERSAL_MOUNTAIN_DUSK_BALL
 	object_event 31, 41, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFReversal, -1
 	object_event 16, 25, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerHiker2Reversal, -1
-	object_event  6, 16, SPRITE_LASS, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerReversal, -1
-	object_event  6, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCamperReversal, -1
+	object_event  6, 16, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFReversal, -1
+	object_event  6, 27, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBackpackerMReversal, -1
 	object_event 33, 15, SPRITE_BLACK_BELT, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltReversal, -1
 	object_event 26, 24, SPRITE_LASS, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerLassReversal, -1
 	object_event  4,  7, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ReversalGruntScript, EVENT_REVERSAL_MOUNTAIN_GRUNT

@@ -35,6 +35,7 @@ MapGroupRoofs:
 	db ROOF_HUMILAU   ; Chargestone
 	db ROOF_HUMILAU   ; Desert
 	db ROOF_HUMILAU   ; Village
+	db ROOF_NIMBASA   ; NimbasaOuter
 	db ROOF_HUMILAU   ; PkmnLeague
 
 Roofs:

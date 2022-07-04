@@ -6,7 +6,7 @@
 	const R7_AMOONGUSS_1
 	const R7_AMOONGUSS_2
 	const R7_BIRD_KEEPER
-	const R7_LASS_1
+	const R7_BACKPACKERF
 	const R7_LASS_2
 	const R7_SCHOOL_KIDF
 	const R7_PSYCHIC
@@ -128,19 +128,19 @@ TrainerSchoolKidFR7:
 	closetext
 	end
 
-TrainerLass1R7:
-	trainer LASS, LASS_R7_1, EVENT_BEAT_LASS_R7_1, Lass1R7SeenText, Lass1R7BeatenText, 0, .Script
+TrainerBackpackerFR7:
+	trainer BACKPACKERF, BACKPACKERF_R7, EVENT_BEAT_BACKPACKERF_R7, BackpackerFR7SeenText, BackpackerFR7BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Lass1R7AfterText
+	writetext BackpackerFR7AfterText
 	waitbutton
 	closetext
 	end
 
 TrainerLass2R7:
-	trainer LASS_D, LASS_R7_2, EVENT_BEAT_LASS_R7_2, Lass2R7SeenText, Lass2R7BeatenText, 0, .Script
+	trainer LASS_D, LASS_R7_1, EVENT_BEAT_LASS_R7_2, Lass2R7SeenText, Lass2R7BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -198,17 +198,17 @@ SchoolKidFR7AfterText:
 	cont "it."
 	done
 	
-Lass1R7SeenText:
+BackpackerFR7SeenText:
 	text "Raising #MON is"
 	line "my passion. What's"
 	cont "yours?"
 	done
 
-Lass1R7BeatenText:
+BackpackerFR7BeatenText:
 	text "Oh no, my #MON!"
 	done
 
-Lass1R7AfterText:
+BackpackerFR7AfterText:
 	text "Your passion must"
 	line "be #MON"
 	cont "battles!"
@@ -299,9 +299,9 @@ Rt7_MapEvents:
 	object_event 17, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R7MaxEther, EVENT_R_7_MAX_ETHER
 	object_event 16, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R7AmoongussScript1, EVENT_R_7_AMOONGUSS_1
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R7AmoongussScript2, EVENT_R_7_AMOONGUSS_2
-	object_event  9, 45, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLass1R7, -1
+	object_event  9, 45, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR7, -1
 	object_event 18, 27, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLass2R7, -1
 	object_event 13, 19, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFR7, -1
 	object_event  4, 39, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeperR7, -1
-	object_event 16, 13, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicR7, -1
+	object_event 16, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicR7, -1
 	

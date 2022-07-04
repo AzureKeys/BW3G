@@ -49,6 +49,18 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; BackpackerM
+	db NO_ITEM, NO_ITEM ; items
+	db 5 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; BackpackerF
+	db NO_ITEM, NO_ITEM ; items
+	db 5 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; Baker
 	db NO_ITEM, NO_ITEM ; items
 	db 20 ; base reward
@@ -355,12 +367,6 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Pokemaniac
-	db NO_ITEM, NO_ITEM ; items
-	db 15 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; Teacher
 	db NO_ITEM, NO_ITEM ; items
 	db 18 ; base reward
@@ -392,12 +398,6 @@ TrainerClassAttributes:
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; PicnickerD
-	db NO_ITEM, NO_ITEM ; items
-	db 5 ; base reward
-	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Camper
 	db NO_ITEM, NO_ITEM ; items
 	db 5 ; base reward
 	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
