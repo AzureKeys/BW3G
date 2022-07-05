@@ -10,6 +10,8 @@ TrainerGroups:
 	dba CooltrainerMDGroup
 	dba CooltrainerFGroup
 	dba CooltrainerFDGroup
+	dba BackersMGroup
+	dba BackersFGroup
 	dba BackpackerMGroup
 	dba BackpackerFGroup
 	dba BakerGroup
@@ -65,7 +67,6 @@ TrainerGroups:
 	dba BirdKeeperGroup
 	dba TeacherGroup
 	dba BugCatcherGroup
-	dba SailorGroup
 	dba SuperNerdGroup
 	dba PicnickerGroup
 	dba PicnickerDGroup

@@ -49,6 +49,18 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; BackersM
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; BackersF
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; BackpackerM
 	db NO_ITEM, NO_ITEM ; items
 	db 5 ; base reward
@@ -377,12 +389,6 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 4 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Sailor
-	db NO_ITEM, NO_ITEM ; items
-	db 10 ; base reward
-	dw AI_BASIC | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Super Nerd

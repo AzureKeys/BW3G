@@ -328,6 +328,40 @@ CooltrainerFDGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db -1 ; end
 	
+BackersMGroup:
+	; BACKERSM (R16)
+	db "TYLER@", TRAINERTYPE_STAT_EXP
+	db 16, PIDOVE
+	dw $0A00, $0A00, $0A00, $0A00, $0A00
+	db 18, DUCKLETT
+	dw $0A00, $0A00, $0A00, $0A00, $0A00
+	db -1 ; end
+	
+	; BACKERSM (R11)
+	db "TALON@", TRAINERTYPE_STAT_EXP
+	db 48, EMOLGA
+	dw $5000, $5000, $5000, $5000, $5000
+	db 50, ALTARIA
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+
+BackersFGroup:
+	; BACKERSF (R5)
+	db "NATE@", TRAINERTYPE_STAT_EXP
+	db 16, MUNNA
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 18, RALTS
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+	
+	; BACKERSF (R11)
+	db "CROFT@", TRAINERTYPE_STAT_EXP
+	db 50, PALPITOAD
+	dw $5000, $5000, $5000, $5000, $5000
+	db 50, SEISMITOAD
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+	
 BackpackerMGroup:
 	; BACKPACKERM (REVERSAL)
 	db "FRANK@", TRAINERTYPE_STAT_EXP
@@ -1731,14 +1765,6 @@ PreschoolerFGroup:
 	db -1 ; end
 
 PsychicGroup:
-	; PSYCHIC_T (R5)
-	db "NATE@", TRAINERTYPE_STAT_EXP
-	db 16, MUNNA
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 18, RALTS
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db -1 ; end
-
 	; PSYCHIC_T (RELICCASTLE)
 	db "FELIX@", TRAINERTYPE_STAT_EXP
 	db 20, GOTHITA
@@ -2466,14 +2492,6 @@ BirdKeeperGroup:
 	dw $0600, $0600, $0600, $0600, $0600
 	db -1 ; end
 
-	; BIRD_KEEPER (R16)
-	db "TYLER@", TRAINERTYPE_STAT_EXP
-	db 16, PIDOVE
-	dw $0A00, $0A00, $0A00, $0A00, $0A00
-	db 18, DUCKLETT
-	dw $0A00, $0A00, $0A00, $0A00, $0A00
-	db -1 ; end
-
 	; BIRD_KEEPER (R19)
 	db "BRENT@", TRAINERTYPE_STAT_EXP
 	db 25, RUFFLET
@@ -2487,14 +2505,6 @@ BirdKeeperGroup:
 	db 43, DUCKLETT
 	dw $5000, $5000, $5000, $5000, $5000
 	db 45, TRANQUILL
-	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
-	
-	; BIRD_KEEPER (R11)
-	db "TALON@", TRAINERTYPE_STAT_EXP
-	db 48, EMOLGA
-	dw $5000, $5000, $5000, $5000, $5000
-	db 50, ALTARIA
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
@@ -2548,17 +2558,6 @@ BugCatcherGroup:
 	dw $0800, $0800, $0800, $0800, $0800
 	db 17, JIGGLYPUFF
 	dw $0800, $0800, $0800, $0800, $0800
-	db -1 ; end
-
-SailorGroup:
-	; SAILOR (R11)
-	db "CROFT@", TRAINERTYPE_STAT_EXP
-	db 47, TYMPOLE
-	dw $5000, $5000, $5000, $5000, $5000
-	db 48, PALPITOAD
-	dw $5000, $5000, $5000, $5000, $5000
-	db 50, SEISMITOAD
-	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 
 SuperNerdGroup:

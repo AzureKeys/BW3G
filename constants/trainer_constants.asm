@@ -79,6 +79,14 @@ CHRIS EQU __enum__
 	const COOLTRAINERF_PWT
 	const COOLTRAINERF_CHARGESTONE_2
 	
+	trainerclass BACKERSM
+	const BACKERSM_R16
+	const BACKERSM_R11
+	
+	trainerclass BACKERSF
+	const BACKERSF_R5
+	const BACKERSF_R11
+	
 	trainerclass BACKPACKERM
 	const BACKPACKERM_REVERSAL
 	const BACKPACKERM_R16
@@ -309,7 +317,6 @@ CHRIS EQU __enum__
 	const PRESCHOOLERF_R14_2
 
 	trainerclass PSYCHIC_T ; 34
-	const PSYCHIC_R5
 	const PSYCHIC_RELIC_CASTLE_2
 	const PSYCHIC_PINWHEEL
 	const PSYCHIC_R3
@@ -432,10 +439,8 @@ CHRIS EQU __enum__
 
 	trainerclass BIRD_KEEPER ; 18
 	const BIRD_KEEPER_OUTSKIRTS
-	const BIRD_KEEPER_R16
 	const BIRD_KEEPER_R19
 	const BIRD_KEEPER_R7
-	const BIRD_KEEPER_R11
 	const FREDDY_REMATCH_1
 	const FREDDY_REMATCH_2
 	const FREDDY_REMATCH_3
@@ -445,9 +450,6 @@ CHRIS EQU __enum__
 
 	trainerclass BUG_CATCHER ; 24
 	const BUG_CATCHER_LOSTLORN_1
-
-	trainerclass SAILOR ; 28
-	const SAILOR_R11
 
 	trainerclass SUPER_NERD ; 29
 	const SUPER_NERD_R5_1

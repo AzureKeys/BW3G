@@ -10,6 +10,8 @@ TrainerPicPointers::
 	dba CooltrainermDPic
 	dba CooltrainerfPic
 	dba CooltrainerfDPic
+	dba BackersMPic
+	dba BackersFPic
 	dba BackpackerMPic
 	dba BackpackerFPic
 	dba BakerPic
@@ -65,7 +67,6 @@ TrainerPicPointers::
 	dba BirdKeeperPic
 	dba TeacherPic
 	dba BugCatcherPic
-	dba SailorPic
 	dba SuperNerdPic
 	dba PicnickerPic
 	dba PicnickerDPic

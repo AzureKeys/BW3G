@@ -9,6 +9,8 @@ TrainerClassDVs:
 	dn 13,  8, 12,  8 ; ACE_TRAINER_M_D
 	dn  7, 12, 12,  8 ; ACE_TRAINER_F
 	dn  7, 12, 12,  8 ; ACE_TRAINER_F_D
+	dn  9,  8,  8,  8 ; BACKERS_M
+	dn  6, 10, 10,  8 ; BACKERS_F
 	dn  9,  8,  8,  8 ; BACKPACKER_M
 	dn  6, 10, 10,  8 ; BACKPACKER_F
 	dn  6, 13,  8,  8 ; BAKER
@@ -64,7 +66,6 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; BIRD_KEEPER
 	dn  6,  8,  8,  8 ; TEACHER
 	dn  9,  8,  8,  8 ; BUG_CATCHER
-	dn  9,  8,  8,  8 ; SAILOR
 	dn  9,  8,  8,  8 ; SUPER_NERD
 	dn  6, 10, 10,  8 ; PICNICKER
 	dn  6, 10, 10,  8 ; PICNICKER_D

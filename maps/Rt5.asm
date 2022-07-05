@@ -9,7 +9,8 @@
 	const R5_SUPER_NERD_1
 	const R5_BAKER
 	const R5_YOUNGSTER
-	const R5_PSYCHIC
+	const R5_BACKERSF_1
+	const R5_BACKERSF_2
 	const R5_BIKER
 
 Rt5_MapScripts:
@@ -188,13 +189,13 @@ TrainerYoungsterR5:
 	closetext
 	end
 
-TrainerPsychicR5:
-	trainer PSYCHIC_T, PSYCHIC_R5, EVENT_BEAT_PSYCHIC_R5, PsychicR5SeenText, PsychicR5BeatenText, 0, .Script
+TrainerBackersFR5:
+	trainer BACKERSF, BACKERSF_R5, EVENT_BEAT_BACKERSF_R5, BackersFR5SeenText, BackersFR5BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PsychicR5AfterText
+	writetext BackersFR5AfterText
 	waitbutton
 	closetext
 	end
@@ -369,16 +370,16 @@ YoungsterR5AfterText:
 	cont "rare #MON."
 	done
 	
-PsychicR5SeenText:
+BackersFR5SeenText:
 	text "I'm going to read"
 	line "your thoughts!"
 	done
 
-PsychicR5BeatenText:
+BackersFR5BeatenText:
 	text "I misread you!"
 	done
 
-PsychicR5AfterText:
+BackersFR5AfterText:
 	text "I'd be strong if"
 	line "only I could tell"
 
@@ -417,7 +418,7 @@ Rt5_MapEvents:
 	bg_event 31,  5, BGEVENT_UP, R5HiddenGrotto
 	bg_event 32,  5, BGEVENT_UP, R5HiddenGrotto
 
-	db 12 ; object events
+	db 13 ; object events
 	object_event 28, 11, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R5FruitTree, -1
 	object_event 33,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5FriendBall, EVENT_R_5_FRIEND_BALL
 	object_event  5,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5Calcium, EVENT_R_5_CALCIUM
@@ -425,9 +426,10 @@ Rt5_MapEvents:
 	object_event 17, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5HeartScale, EVENT_R_5_HEART_SCALE
 	object_event 22, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_TRAINER, 3, TrainerDancer1R5, -1
 	object_event 20, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_TRAINER, 3, TrainerDancer2R5, -1
-	object_event 13, 11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1
+	object_event 17, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1
 	object_event 10, 13, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBakerR5, -1
 	object_event 14, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerYoungsterR5, -1
-	object_event 17, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerPsychicR5, -1
+	object_event 12, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersFR5, -1
+	object_event 13, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersFR5, -1
 	object_event  7, 11, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R5CharlesScript, -1
 	

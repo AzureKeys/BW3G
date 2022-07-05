@@ -5,8 +5,10 @@
 	const R11_HP_UP
 	const R11_AMOONGUSS_1
 	const R11_AMOONGUSS_2
-	const R11_BIRD_KEEPER
-	const R11_SAILOR
+	const R11_BACKERSM_1
+	const R11_BACKERSM_2
+	const R11_BACKERSF_1
+	const R11_BACKERSF_2
 
 Rt11_MapScripts:
 	db 1 ; scene scripts
@@ -64,24 +66,24 @@ Rt11UpperFloorScript:
 .done
 	end
 
-TrainerBirdKeeperR11:
-	trainer BIRD_KEEPER, BIRD_KEEPER_R11, EVENT_BEAT_BIRD_KEEPER_R11, BirdKeeperR11SeenText, BirdKeeperR11BeatenText, 0, .Script
+TrainerBackersMR11:
+	trainer BACKERSM, BACKERSM_R11, EVENT_BEAT_BACKERSM_R11, BackersMR11SeenText, BackersMR11BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeperR11AfterText
+	writetext BackersMR11AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerSailorR11:
-	trainer SAILOR, SAILOR_R11, EVENT_BEAT_SAILOR_R11, SailorR11SeenText, SailorR11BeatenText, 0, .Script
+TrainerBackersFR11:
+	trainer BACKERSF, BACKERSF_R11, EVENT_BEAT_BACKERSF_R11, BackersFR11SeenText, BackersFR11BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SailorR11AfterText
+	writetext BackersFR11AfterText
 	waitbutton
 	closetext
 	end
@@ -133,27 +135,27 @@ R11MaxPotion:
 R11PPUp:
 	hiddenitem PP_UP, EVENT_R11_PP_UP
 	
-BirdKeeperR11SeenText:
+BackersMR11SeenText:
 	text "..."
 	done
 
-BirdKeeperR11BeatenText:
+BackersMR11BeatenText:
 	text "..."
 	done
 
-BirdKeeperR11AfterText:
+BackersMR11AfterText:
 	text "..."
 	done
 	
-SailorR11SeenText:
+BackersFR11SeenText:
 	text "..."
 	done
 
-SailorR11BeatenText:
+BackersFR11BeatenText:
 	text "..."
 	done
 
-SailorR11AfterText:
+BackersFR11AfterText:
 	text "..."
 	done
 
@@ -190,13 +192,15 @@ Rt11_MapEvents:
 	bg_event 28,  6, BGEVENT_ITEM, R11MaxPotion
 	bg_event 26,  4, BGEVENT_ITEM, R11PPUp
 
-	db 8 ; object events
+	db 10 ; object events
 	object_event  6,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R11HyperPotion, EVENT_R11_HYPER_POTION
 	object_event 35,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R11RazorClaw, EVENT_R11_RAZOR_CLAW
 	object_event 10, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R11FullRestore, EVENT_R11_FULL_RESTORE
 	object_event 13,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R11HPUp, EVENT_R11_HP_UP
 	object_event 10,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R11Amoonguss1, EVENT_R11_AMOONGUSS_1
 	object_event 30,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R11Amoonguss2, EVENT_R11_AMOONGUSS_2
-	object_event 12, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperR11, -1
-	object_event 19, 13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSailorR11, -1
+	object_event 12, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersMR11, -1
+	object_event 13, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersMR11, -1
+	object_event 19, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersFR11, -1
+	object_event 20, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersFR11, -1
 	

@@ -55,6 +55,8 @@ PreschoolerMPic:    INCBIN "gfx/trainers/preschooler_m.2bpp.lz"
 PreschoolerFPic:    INCBIN "gfx/trainers/preschooler_f.2bpp.lz"
 BackpackerMPic:     INCBIN "gfx/trainers/backpacker_m.2bpp.lz"
 BackpackerFPic:     INCBIN "gfx/trainers/backpacker_f.2bpp.lz"
+BackersMPic:        INCBIN "gfx/trainers/backers_m.2bpp.lz"
+BackersFPic:        INCBIN "gfx/trainers/backers_f.2bpp.lz"
 
 
 
@@ -354,7 +356,6 @@ DragoniteBackpic:   INCBIN "gfx/pokemon/dragonite/back.2bpp.lz"
 DeinoBackpic:   INCBIN "gfx/pokemon/deino/back.2bpp.lz"
 ZweilousBackpic:   INCBIN "gfx/pokemon/zweilous/back.2bpp.lz"
 HydreigonBackpic:   INCBIN "gfx/pokemon/hydreigon/back.2bpp.lz"
-SailorPic:           INCBIN "gfx/trainers/sailor.2bpp.lz"
 SocialitePic:           INCBIN "gfx/trainers/socialite.2bpp.lz"
 WalreinBackpic:   INCBIN "gfx/pokemon/walrein/back.2bpp.lz"
 SnoruntBackpic:   INCBIN "gfx/pokemon/snorunt/back.2bpp.lz"

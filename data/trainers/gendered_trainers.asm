@@ -9,7 +9,6 @@ MaleTrainers:
 	db BUG_CATCHER
 	db FISHER
 	db SWIMMERM
-	db SAILOR
 	db SUPER_NERD
 	db GUITARIST
 	db HIKER

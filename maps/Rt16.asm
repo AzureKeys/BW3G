@@ -6,7 +6,8 @@
 	const R16_LASS
 	const R16_BACKPACKERM
 	const R16_BACKPACKERF
-	const R16_BIRD_KEEPER
+	const R16_BACKERSM_1
+	const R16_BACKERSM_2
 	const R16_BIKER
 
 Rt16_MapScripts:
@@ -47,13 +48,13 @@ TrainerBackpackerFR16:
 	closetext
 	end
 
-TrainerBirdKeeperR16:
-	trainer BIRD_KEEPER, BIRD_KEEPER_R16, EVENT_BEAT_BIRD_KEEPER_R16, BirdKeeperR16SeenText, BirdKeeperR16BeatenText, 0, .Script
+TrainerBackersMR16:
+	trainer BACKERSM, BACKERSM_R16, EVENT_BEAT_BACKERSM_R16, BackersMR16SeenText, BackersMR16BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeperR16AfterText
+	writetext BackersMR16AfterText
 	waitbutton
 	closetext
 	end
@@ -146,18 +147,18 @@ BackpackerFR16AfterText:
 	cont "type…"
 	done
 	
-BirdKeeperR16SeenText:
+BackersMR16SeenText:
 	text "Fly high into the"
 	line "sky, my beloved"
 	cont "bird #MON!"
 	done
 
-BirdKeeperR16BeatenText:
+BackersMR16BeatenText:
 	text "I feel like just"
 	line "flying away now."
 	done
 
-BirdKeeperR16AfterText:
+BackersMR16AfterText:
 	text "I plan to train"
 	line "around NIMBASA"
 	cont "CITY."
@@ -198,14 +199,15 @@ Rt16_MapEvents:
 	db 1 ; bg events
 	bg_event  5, 20, BGEVENT_READ, R16Sign
 
-	db 9 ; object events
+	db 10 ; object events
 	object_event 29, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R16RareCandy, EVENT_R_16_RARE_CANDY
 	object_event 17,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R16Tinymushroom, EVENT_R_16_TINYMUSHROOM
 	object_event  8, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R16AirBalloon, EVENT_R_16_AIR_BALLOON
 	object_event 33, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, R16TMSunnyDay, EVENT_R_16_TM_SUNNY_DAY
 	object_event 22,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 4, TrainerLassR16, -1
 	object_event 18, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMR16, -1
-	object_event 14, 22, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR16, -1
-	object_event 13, 18, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperR16, -1
+	object_event 13, 18, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR16, -1
+	object_event 14, 22, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersMR16, -1
+	object_event 15, 22, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersMR16, -1
 	object_event 30, 22, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBikerR16, -1
 	

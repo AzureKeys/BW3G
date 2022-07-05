@@ -36,7 +36,6 @@ BattleTowerTrainers:
 	db "JACKSON@@@", POKEFANF
 	db "LEONG@@@@@", YOUNGSTER
 	db "MARINO@@@@", TEACHER
-	db "NEWMAN@@@@", SAILOR
 	db "NGUYEN@@@@", BLACKBELT_T
 	db "OGDEN@@@@@", SUPER_NERD
 	db "PARK@@@@@@", COOLTRAINERF
