@@ -3868,6 +3868,7 @@ BattleCommand_Poison:
 	jr .failed
 
 .do_poison
+	ld hl, AvoidStatusText
 	call CheckSubstituteOpp
 	jr nz, .failed
 	ld a, [wAttackMissed]

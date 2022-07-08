@@ -330,7 +330,7 @@ CooltrainerFDGroup:
 	
 BackersMGroup:
 	; BACKERSM (R16)
-	db "TYLER@", TRAINERTYPE_STAT_EXP
+	db "AL&FREDO@", TRAINERTYPE_STAT_EXP
 	db 16, PIDOVE
 	dw $0A00, $0A00, $0A00, $0A00, $0A00
 	db 18, DUCKLETT
