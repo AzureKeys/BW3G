@@ -169,6 +169,7 @@ CHRIS EQU __enum__
 	const NURSE_CELESTIAL_TOWER
 
 	trainerclass FISHER ; 25
+	const FISHER_UNDELLA_1
 	const FISHER_R4_1
 	const FISHER_R3_1
 	const FISHER_R17_1
@@ -176,6 +177,7 @@ CHRIS EQU __enum__
 	const FISHER_MOOR_OF_ICIRRUS_1
 	
 	trainerclass FISHER_D
+	const FISHER_UNDELLA_2
 	const FISHER_R4_2
 	const FISHER_R3_2
 	const FISHER_R17_2
@@ -309,10 +311,12 @@ CHRIS EQU __enum__
 	const OFFICER_R2
 	
 	trainerclass PRESCHOOLERM
+	const PRESCHOOLERM_MARINE_TUBE
 	const PRESCHOOLERM_R14_1
 	const PRESCHOOLERM_R14_2
 	
 	trainerclass PRESCHOOLERF
+	const PRESCHOOLERF_MARINE_TUBE
 	const PRESCHOOLERF_R14_1
 	const PRESCHOOLERF_R14_2
 
@@ -405,6 +409,7 @@ CHRIS EQU __enum__
 	const SWIMMER_F_R21_3
 
 	trainerclass TWINS ; 3d
+	const TWINS_MARINE_TUBE
 	const TWINS_R20
 	const TWINS_R2
 	const TWINS_R1

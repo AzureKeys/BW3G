@@ -4,12 +4,48 @@
 	const MARINETUBE_LASS
 	const MARINETUBE_POKEFAN_M
 	const MARINETUBE_TEACHER
-	const MARINETUBE_TWIN
+	const MARINETUBE_TWIN_1
+	const MARINETUBE_TWIN_2
+	const MARINETUBE_PRESCHOOLER_M
+	const MARINETUBE_PRESCHOOLER_F
 
 MarineTube_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
+
+TrainerPreschoolerMMarineTube:
+	trainer PRESCHOOLERM, PRESCHOOLERM_MARINE_TUBE, EVENT_BEAT_PRESCHOOLERM_MARINE_TUBE, PreschoolerMMarineTubeSeenText, PreschoolerMMarineTubeBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PreschoolerMMarineTubeAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerPreschoolerFMarineTube:
+	trainer PRESCHOOLERF, PRESCHOOLERF_MARINE_TUBE, EVENT_BEAT_PRESCHOOLERF_MARINE_TUBE, PreschoolerFMarineTubeSeenText, PreschoolerFMarineTubeBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PreschoolerFMarineTubeAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerTwinsMarineTube:
+	trainer TWINS, TWINS_MARINE_TUBE, EVENT_BEAT_TWINS_MARINE_TUBE, TwinsMarineTubeSeenText, TwinsMarineTubeBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext TwinsMarineTubeAfterText
+	waitbutton
+	closetext
+	end
 	
 MarineTubeCooltrainerFTextScript:
 	jumptextfaceplayer MarineTubeCooltrainerFText
@@ -26,14 +62,47 @@ MarineTubePokefanMTextScript:
 MarineTubeTeacherTextScript:
 	jumptextfaceplayer MarineTubeTeacherText
 	
-MarineTubeTwinTextScript:
-	jumptext MarineTubeTwinText
-	
 MarineTubeFullRestore:
 	hiddenitem FULL_RESTORE, EVENT_MARINE_TUBE_FULL_RESTORE
 	
 MarineTubeEther:
 	hiddenitem ETHER, EVENT_MARINE_TUBE_ETHER
+	
+PreschoolerMMarineTubeSeenText:
+	text "..."
+	done
+
+PreschoolerMMarineTubeBeatenText:
+	text "..."
+	done
+
+PreschoolerMMarineTubeAfterText:
+	text "..."
+	done
+	
+PreschoolerFMarineTubeSeenText:
+	text "..."
+	done
+
+PreschoolerFMarineTubeBeatenText:
+	text "..."
+	done
+
+PreschoolerFMarineTubeAfterText:
+	text "..."
+	done
+	
+TwinsMarineTubeSeenText:
+	text "..."
+	done
+
+TwinsMarineTubeBeatenText:
+	text "..."
+	done
+
+TwinsMarineTubeAfterText:
+	text "..."
+	done
 	
 MarineTubeCooltrainerFText:
 	text "Wow, look at all"
@@ -92,11 +161,14 @@ MarineTube_MapEvents:
 	bg_event  5, 10, BGEVENT_ITEM, MarineTubeFullRestore
 	bg_event  8, 18, BGEVENT_ITEM, MarineTubeEther
 
-	db 6 ; object events
-	object_event  5, 18, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MarineTubeCooltrainerFTextScript, -1
-	object_event  5, 17, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MarineTubeCooltrainerMTextScript, -1
+	db 9 ; object events
+	object_event  5, 15, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, MarineTubeCooltrainerFTextScript, -1
+	object_event  5, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MarineTubeCooltrainerMTextScript, -1
 	object_event  8,  7, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, MarineTubeLassTextScript, -1
 	object_event  7, 11, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MarineTubePokefanMTextScript, -1
 	object_event  6, 24, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MarineTubeTeacherTextScript, -1
-	object_event  5, 29, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MarineTubeTwinTextScript, -1
+	object_event  5, 29, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsMarineTube, -1
+	object_event  6, 29, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsMarineTube, -1
+	object_event  5, 19, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPreschoolerMMarineTube, -1
+	object_event  8, 21, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPreschoolerFMarineTube, -1
 	

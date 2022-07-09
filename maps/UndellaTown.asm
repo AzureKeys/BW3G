@@ -90,15 +90,31 @@ UndellaTownBlocker_Safe:
 	waitbutton
 	closetext
 	end
+
+TrainerFisher1UndellaTown:
+	trainer FISHER, FISHER_UNDELLA_1, EVENT_BEAT_FISHER_UNDELLA_1, Fisher1UndellaTownSeenText, Fisher1UndellaTownBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext Fisher1UndellaTownAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerFisher2UndellaTown:
+	trainer FISHER_D, FISHER_UNDELLA_2, EVENT_BEAT_FISHER_UNDELLA_2, Fisher2UndellaTownSeenText, Fisher2UndellaTownBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext Fisher2UndellaTownAfterText
+	waitbutton
+	closetext
+	end
 	
 UndellaTownBugCatcherTextScript:
 	jumptextfaceplayer UndellaTownBugCatcherText
-	
-UndellaTownFisher1TextScript:
-	jumptext UndellaTownFisher1Text
-	
-UndellaTownFisher2TextScript:
-	jumptext UndellaTownFisher2Text
 	
 UndellaTownFisher3TextScript:
 	jumptext UndellaTownFisher3Text
@@ -249,6 +265,30 @@ UndellaTownBlockerText_Safe:
 	line "there!"
 	done
 	
+Fisher1UndellaTownSeenText:
+	text "..."
+	done
+
+Fisher1UndellaTownBeatenText:
+	text "..."
+	done
+
+Fisher1UndellaTownAfterText:
+	text "..."
+	done
+	
+Fisher2UndellaTownSeenText:
+	text "..."
+	done
+
+Fisher2UndellaTownBeatenText:
+	text "..."
+	done
+
+Fisher2UndellaTownAfterText:
+	text "..."
+	done
+	
 UndellaTownBugCatcherText:
 	text "I wanted to learn"
 	line "how to fish for"
@@ -258,7 +298,7 @@ UndellaTownBugCatcherText:
 	cont "dangerous…"
 	done
 	
-UndellaTownFisher1Text:
+UndellaTownFisher3Text:
 	text "This little beach-"
 	line "side town is so"
 	cont "nice for fishing!"
@@ -268,24 +308,6 @@ UndellaTownFisher1Text:
 	
 	para "go see the fishing"
 	line "guru in town!"
-	done
-	
-UndellaTownFisher2Text:
-	text "I'm looking for"
-	line "a REMORAID."
-	
-	para "They're hard to"
-	line "find here though…"
-	done
-	
-UndellaTownFisher3Text:
-	text "Shhh! Careful,"
-	line "you'll scare away"
-	cont "all the fish!"
-	
-	para "Why don't you go"
-	line "check the beach"
-	cont "for treasure."
 	done
 	
 UndellaTownCooltrainerMText:
@@ -351,9 +373,9 @@ UndellaTown_MapEvents:
 	object_event 20,  8, SPRITE_MARLON, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, -1, -1, EVENT_UNDELLA_TOWN_MARLON
 	object_event  5,  8, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, -1, UndellaTownBlockerTextScript, -1
 	object_event 19,  8, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, UndellaTownBugCatcherTextScript, -1
-	object_event 24, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, UndellaTownFisher1TextScript, -1
-	object_event 18, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, UndellaTownFisher2TextScript, -1
-	object_event 11, 19, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, UndellaTownFisher3TextScript, -1
+	object_event 24, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerFisher1UndellaTown, -1
+	object_event 11, 19, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerFisher2UndellaTown, -1
+	object_event 18, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, UndellaTownFisher3TextScript, -1
 	object_event 25, 23, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, UndellaTownCooltrainerMTextScript, -1
 	object_event 35, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UndellaTownLuckyEgg, EVENT_UNDELLA_TOWN_LUCKY_EGG
 	object_event 14,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UndellaTownFriendBall, EVENT_UNDELLA_TOWN_FRIEND_BALL

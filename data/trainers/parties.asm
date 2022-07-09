@@ -338,7 +338,7 @@ BackersMGroup:
 	db -1 ; end
 	
 	; BACKERSM (R11)
-	db "TALON@", TRAINERTYPE_STAT_EXP
+	db "CARL&MICK@", TRAINERTYPE_STAT_EXP
 	db 48, EMOLGA
 	dw $5000, $5000, $5000, $5000, $5000
 	db 50, ALTARIA
@@ -347,7 +347,7 @@ BackersMGroup:
 
 BackersFGroup:
 	; BACKERSF (R5)
-	db "NATE@", TRAINERTYPE_STAT_EXP
+	db "MAY&JUNE@", TRAINERTYPE_STAT_EXP
 	db 16, MUNNA
 	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db 18, RALTS
@@ -355,7 +355,7 @@ BackersFGroup:
 	db -1 ; end
 	
 	; BACKERSF (R11)
-	db "CROFT@", TRAINERTYPE_STAT_EXP
+	db "RUBY&IRIS@", TRAINERTYPE_STAT_EXP
 	db 50, PALPITOAD
 	dw $5000, $5000, $5000, $5000, $5000
 	db 50, SEISMITOAD
@@ -873,6 +873,12 @@ NurseGroup:
 	db -1 ; end
 
 FisherGroup:
+	; FISHER (UNDELLA_TOWN)
+	db "SID@", TRAINERTYPE_NORMAL
+	db 5, TYMPOLE
+	db 5, TYMPOLE
+	db -1 ; end
+	
 	; FISHER (R4)
 	db "ORSON@", TRAINERTYPE_STAT_EXP
 	db 20, BASCULIN
@@ -914,6 +920,11 @@ FisherGroup:
 	db -1 ; end
 
 FisherDGroup:
+	; FISHER (UNDELLA_TOWN)
+	db "HUBERT@", TRAINERTYPE_NORMAL
+	db 6, MANTYKE
+	db -1 ; end
+	
 	; FISHER (R4)
 	db "JACKSON@", TRAINERTYPE_STAT_EXP
 	db 18, REMORAID
@@ -989,7 +1000,7 @@ GentlemanGroup:
 
 GuitaristGroup:
 	; GUITARIST (VIRBANK GYM)
-	db "DAVE@", TRAINERTYPE_STAT_EXP
+	db "JOAN@", TRAINERTYPE_STAT_EXP
 	db 27, VENIPEDE
 	dw $2400, $2400, $2400, $2400, $2400
 	db 29, SKORUPI
@@ -997,13 +1008,13 @@ GuitaristGroup:
 	db -1 ; end
 
 	; GUITARIST (VIRBANK GYM)
-	db "HERMAN@", TRAINERTYPE_STAT_EXP
+	db "NITA@", TRAINERTYPE_STAT_EXP
 	db 31, WHIRLIPEDE
 	dw $2400, $2400, $2400, $2400, $2400
 	db -1 ; end
 
 	; GUITARIST (CHARGESTONE)
-	db "AMEN@", TRAINERTYPE_STAT_EXP
+	db "MIDORI@", TRAINERTYPE_STAT_EXP
 	db 42, FLAAFFY
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db 42, EELEKTRIK
@@ -1011,7 +1022,7 @@ GuitaristGroup:
 	db -1 ; end
 
 	; GUITARIST (CHARGESTONE)
-	db "KIRK@", TRAINERTYPE_STAT_EXP
+	db "MIYAKO@", TRAINERTYPE_STAT_EXP
 	db 42, EMOLGA
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db 42, FLAAFFY
@@ -1739,6 +1750,12 @@ OfficerGroup:
 	db -1 ; end
 	
 PreschoolerMGroup:
+	; PRESCHOOLERM (MARINE_TUBE)
+	db "EVAN@", TRAINERTYPE_NORMAL
+	db 5, AZURILL
+	db 5, LILLIPUP
+	db -1 ; end
+	
 	; PRESCHOOLERM (R14)
 	db "FREDDY@", TRAINERTYPE_NORMAL
 	db 6, PURRLOIN
@@ -1752,6 +1769,12 @@ PreschoolerMGroup:
 	db -1 ; end
 	
 PreschoolerFGroup:
+	; PRESCHOOLERF (MARINE_TUBE)
+	db "MIA@", TRAINERTYPE_NORMAL
+	db 5, BUDEW
+	db 5, SHROOMISH
+	db -1 ; end
+	
 	; PRESCHOOLERF (R14)
 	db "JILL@", TRAINERTYPE_NORMAL
 	db 6, MAREEP
@@ -2308,8 +2331,14 @@ SwimmerFDGroup:
 	db -1 ; end
 
 TwinsGroup:
+	; TWINS (MARINE_TUBE)
+	db "JEN&JULIE@", TRAINERTYPE_NORMAL
+	db 5, IGGLYBUFF
+	db 5, CLEFFA
+	db -1 ; end
+	
 	; TWINS (R20)
-	db "ABBY&ALLIE@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
+	db "YANNI&LAUREL@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
 	db 25, EEVEE
 	dw $2000, $2000, $2000, $2000, $2000
 	db BITE, SWIFT, FURY_SWIPES, TAKE_DOWN
@@ -2335,7 +2364,7 @@ TwinsGroup:
 	db -1 ; end
 
 	; TWINS (R7)
-	db "SOLA&ANA@", TRAINERTYPE_STAT_EXP
+	db "ALY&AJ@", TRAINERTYPE_STAT_EXP
 	db 44, GLIGAR
 	dw $5000, $5000, $5000, $5000, $5000
 	db 44, SNEASEL
