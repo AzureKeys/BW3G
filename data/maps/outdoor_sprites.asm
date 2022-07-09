@@ -113,7 +113,7 @@ NimbasaOuterGroupSprites:
 	db SPRITE_BIKER
 	db SPRITE_TEACHER
 	db SPRITE_GRAMPS
-	db SPRITE_ROCKET
+	db SPRITE_LINEBACKER
 	db SPRITE_CHEREN
 	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
@@ -358,7 +358,7 @@ VillageGroupSprites:
 	db SPRITE_FISHER
 	db SPRITE_SUPER_NERD
 	db SPRITE_COOLTRAINER_M
-	db SPRITE_IRIS
+	db SPRITE_LINEBACKER
 	db SPRITE_BIKER
 	db SPRITE_ROUGHNECK
 	; 9 of max 9 walking sprites

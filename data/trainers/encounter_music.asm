@@ -36,6 +36,7 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; hoopster
 	db MUSIC_OFFICER_ENCOUNTER     ; janitor
 	db MUSIC_BEAUTY_ENCOUNTER      ; lady
+	db MUSIC_HIKER_ENCOUNTER       ; linebacker
 	db MUSIC_LASS_ENCOUNTER        ; maid
 	db MUSIC_HIKER_ENCOUNTER       ; musician
 	db MUSIC_BEAUTY_ENCOUNTER      ; parasollady
@@ -69,7 +70,6 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
 	db MUSIC_BEAUTY_ENCOUNTER      ; teacher
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bug_catcher
-	db MUSIC_POKEMANIAC_ENCOUNTER  ; super_nerd
 	db MUSIC_LASS_ENCOUNTER        ; picnicker
 	db MUSIC_LASS_ENCOUNTER        ; picnickerD
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; camperD

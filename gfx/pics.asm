@@ -58,6 +58,7 @@ BackpackerFPic:     INCBIN "gfx/trainers/backpacker_f.2bpp.lz"
 BackersMPic:        INCBIN "gfx/trainers/backers_m.2bpp.lz"
 BackersFPic:        INCBIN "gfx/trainers/backers_f.2bpp.lz"
 ArtistPic:          INCBIN "gfx/trainers/artist.2bpp.lz"
+LinebackerPic:      INCBIN "gfx/trainers/linebacker.2bpp.lz"
 
 
 
@@ -518,7 +519,6 @@ MagnezoneBackpic:   INCBIN "gfx/pokemon/magnezone/back.2bpp.lz"
 PicnickerPic:        INCBIN "gfx/trainers/picnicker.2bpp.lz"
 ZoruaBackpic:   INCBIN "gfx/pokemon/zorua/back.2bpp.lz"
 ZoroarkBackpic:   INCBIN "gfx/pokemon/zoroark/back.2bpp.lz"
-SuperNerdPic:        INCBIN "gfx/trainers/super_nerd.2bpp.lz"
 GalvantulaBackpic:   INCBIN "gfx/pokemon/galvantula/back.2bpp.lz"
 SpiritombBackpic:   INCBIN "gfx/pokemon/spiritomb/back.2bpp.lz"
 JoltikBackpic:   INCBIN "gfx/pokemon/joltik/back.2bpp.lz"

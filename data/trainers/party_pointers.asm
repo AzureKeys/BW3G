@@ -35,6 +35,7 @@ TrainerGroups:
 	dba HoopsterGroup
 	dba JanitorGroup
 	dba LadyGroup
+	dba LinebackerGroup
 	dba MaidGroup
 	dba MusicianGroup
 	dba ParasolLadyGroup
@@ -68,7 +69,6 @@ TrainerGroups:
 	dba BirdKeeperGroup
 	dba TeacherGroup
 	dba BugCatcherGroup
-	dba SuperNerdGroup
 	dba PicnickerGroup
 	dba PicnickerDGroup
 	dba CamperDGroup

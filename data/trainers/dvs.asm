@@ -34,6 +34,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; HOOPSTER
 	dn  9,  8,  8,  8 ; JANITOR
 	dn  6,  9, 12,  8 ; LADY
+	dn  9,  8,  8,  8 ; LINEBACKER
 	dn  6,  9, 12,  8 ; MAID
 	dn  9,  8,  8,  8 ; MUSICIAN
 	dn  6,  9, 12,  8 ; PARASOL_LADY
@@ -67,7 +68,6 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; BIRD_KEEPER
 	dn  6,  8,  8,  8 ; TEACHER
 	dn  9,  8,  8,  8 ; BUG_CATCHER
-	dn  9,  8,  8,  8 ; SUPER_NERD
 	dn  6, 10, 10,  8 ; PICNICKER
 	dn  6, 10, 10,  8 ; PICNICKER_D
 	dn  9,  8,  8,  8 ; CAMPER_D

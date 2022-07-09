@@ -6,7 +6,7 @@
 	const R5_HEART_SCALE
 	const R5_DANCER_1
 	const R5_DANCER_2
-	const R5_SUPER_NERD_1
+	const R5_LINEBACKER
 	const R5_BAKER
 	const R5_ARTIST
 	const R5_BACKERSF_1
@@ -54,13 +54,13 @@ R5CharlesScript:
 	closetext
 	end
 
-TrainerSuperNerd1R5:
-	trainer SUPER_NERD, SUPER_NERD_R5_1, EVENT_BEAT_SUPER_NERD_R5_1, SuperNerd1R5SeenText, SuperNerd1R5BeatenText, 0, .Script
+TrainerLinebackerR5:
+	trainer LINEBACKER, LINEBACKER_R5, EVENT_BEAT_LINEBACKER_R5, LinebackerR5SeenText, LinebackerR5BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext SuperNerd1R5AfterText
+	writetext LinebackerR5AfterText
 	waitbutton
 	closetext
 	end
@@ -266,18 +266,18 @@ R5CharlesBeatenText:
 	cont "heartbreaker…"
 	done
 	
-SuperNerd1R5SeenText:
+LinebackerR5SeenText:
 	text "Thanks to my stud-"
 	line "ies, I'm ready for"
 	cont "any #MON!"
 	done
 
-SuperNerd1R5BeatenText:
+LinebackerR5BeatenText:
 	text "Oops! Computation"
 	line "error?"
 	done
 
-SuperNerd1R5AfterText:
+LinebackerR5AfterText:
 	text "Darn. I study five"
 	line "hours a day too."
 
@@ -426,7 +426,7 @@ Rt5_MapEvents:
 	object_event 17, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5HeartScale, EVENT_R_5_HEART_SCALE
 	object_event 22, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_TRAINER, 3, TrainerDancer1R5, -1
 	object_event 20, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_TRAINER, 3, TrainerDancer2R5, -1
-	object_event 17, 14, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1
+	object_event 17, 14, SPRITE_LINEBACKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerLinebackerR5, -1
 	object_event 10, 13, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBakerR5, -1
 	object_event 14, 16, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerArtistR5, -1
 	object_event 12, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersFR5, -1

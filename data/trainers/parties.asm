@@ -965,16 +965,6 @@ FisherDGroup:
 	db 34, BASCULIN
 	dw $3800, $3800, $3800, $3800, $3800
 	db -1 ; end
-
-	; FISHER (VILLAGE_BRIDGE)
-	db "DEAN@", TRAINERTYPE_STAT_EXP
-	db 49, CORSOLA
-	dw $5000, $5000, $5000, $5000, $5000
-	db 47, CORPHISH
-	dw $5000, $5000, $5000, $5000, $5000
-	db 49, SEADRA
-	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
 	
 	; FISHER (MOOR_OF_ICIRRUS)
 	db "EUSTACE@", TRAINERTYPE_STAT_EXP
@@ -1351,6 +1341,27 @@ LadyGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db 43, AMOONGUSS
 	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+	
+LinebackerGroup:
+	; LINEBACKER (R5)
+	db "STAN@", TRAINERTYPE_STAT_EXP
+	db 15, TRUBBISH
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 18, MAGNEMITE
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 16, JOLTIK
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+	
+	; LINEBACKER (VILLAGE_BRIDGE)
+	db "DEAN@", TRAINERTYPE_STAT_EXP
+	db 49, CORSOLA
+	dw $5000, $5000, $5000, $5000, $5000
+	db 47, CORPHISH
+	dw $5000, $5000, $5000, $5000, $5000
+	db 49, SEADRA
+	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
 MaidGroup:
@@ -2588,17 +2599,6 @@ BugCatcherGroup:
 	dw $0800, $0800, $0800, $0800, $0800
 	db 17, JIGGLYPUFF
 	dw $0800, $0800, $0800, $0800, $0800
-	db -1 ; end
-
-SuperNerdGroup:
-	; SUPER_NERD (R5)
-	db "STAN@", TRAINERTYPE_STAT_EXP
-	db 15, TRUBBISH
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 18, MAGNEMITE
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 16, JOLTIK
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
 	db -1 ; end
 
 PicnickerGroup:

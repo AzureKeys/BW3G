@@ -199,6 +199,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Linebacker
+	db NO_ITEM, NO_ITEM ; items
+	db 15 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_OFTEN
+
 ; Maid
 	db NO_ITEM, NO_ITEM ; items
 	db 20 ; base reward
@@ -395,12 +401,6 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 4 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Super Nerd
-	db NO_ITEM, NO_ITEM ; items
-	db 8 ; base reward
-	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Picnicker

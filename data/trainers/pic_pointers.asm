@@ -35,6 +35,7 @@ TrainerPicPointers::
 	dba HoopsterPic
 	dba JanitorPic
 	dba LadyPic
+	dba LinebackerPic
 	dba MaidPic
 	dba MusicianPic
 	dba ParasolLadyPic
@@ -68,7 +69,6 @@ TrainerPicPointers::
 	dba BirdKeeperPic
 	dba TeacherPic
 	dba BugCatcherPic
-	dba SuperNerdPic
 	dba PicnickerPic
 	dba PicnickerDPic
 	dba CamperDPic

@@ -18,7 +18,6 @@ BattleTowerTrainers:
 	db "KAUFMAN@@@", SWIMMERM
 ; The following can only be sampled in Crystal 1.1.
 	db "OBRIEN@@@@", GENTLEMAN
-	db "MORSE@@@@@", SUPER_NERD
 	db "YUFUNE@@@@", BLACKBELT_T
 	db "RAJAN@@@@@", COOLTRAINERF
 	db "RODRIGUEZ@", OFFICER
@@ -37,7 +36,6 @@ BattleTowerTrainers:
 	db "LEONG@@@@@", YOUNGSTER
 	db "MARINO@@@@", TEACHER
 	db "NGUYEN@@@@", BLACKBELT_T
-	db "OGDEN@@@@@", SUPER_NERD
 	db "PARK@@@@@@", COOLTRAINERF
 	db "RAINE@@@@@", SWIMMERM
 	db "SELLS@@@@@", BIRD_KEEPER
@@ -50,6 +48,5 @@ BattleTowerTrainers:
 	db "SMITH@@@@@", BUG_CATCHER
 	db "TAJIRI@@@@", BUG_CATCHER
 	db "COLLINS@@@", SCIENTIST_M
-	db "SMART@@@@@", SUPER_NERD
 	db "DYKSTRA@@@", SWIMMERF
 	db "EATON@@@@@", BIKER

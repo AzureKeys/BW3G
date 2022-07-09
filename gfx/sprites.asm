@@ -21,6 +21,7 @@ RangerMSpriteGFX::             INCBIN "gfx/sprites/ranger_m.2bpp"
 RangerFSpriteGFX::             INCBIN "gfx/sprites/ranger_f.2bpp"
 MusicianSpriteGFX::            INCBIN "gfx/sprites/musician.2bpp"
 SocialiteSpriteGFX::           INCBIN "gfx/sprites/socialite.2bpp"
+LinebackerSpriteGFX::          INCBIN "gfx/sprites/linebacker.2bpp"
 
 
 SECTION "Sprites 2", ROMX

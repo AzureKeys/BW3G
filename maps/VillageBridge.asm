@@ -12,7 +12,7 @@
 	const VILLAGEBRIDGE_MUSICIAN
 	const VILLAGEBRIDGE_SMASHER_1
 	const VILLAGEBRIDGE_SMASHER_2
-	const VILLAGEBRIDGE_FISHER
+	const VILLAGEBRIDGE_LINEBACKER
 	const VILLAGEBRIDGE_HOOPSTER_1
 	const VILLAGEBRIDGE_HOOPSTER_2
 
@@ -124,13 +124,13 @@ TrainerSmasher2VillageBridge:
 	closetext
 	end
 
-TrainerFisherVillageBridge:
-	trainer FISHER_D, FISHER_VILLAGE_BRIDGE, EVENT_BEAT_FISHER_VILLAGE_BRIDGE, FisherVillageBridgeSeenText, FisherVillageBridgeBeatenText, 0, .Script
+TrainerLinebackerVillageBridge:
+	trainer LINEBACKER, LINEBACKER_VILLAGE_BRIDGE, EVENT_BEAT_LINEBACKER_VILLAGE_BRIDGE, LinebackerVillageBridgeSeenText, LinebackerVillageBridgeBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FisherVillageBridgeAfterText
+	writetext LinebackerVillageBridgeAfterText
 	waitbutton
 	closetext
 	end
@@ -223,15 +223,15 @@ Smasher2VillageBridgeAfterText:
 	text "..."
 	done
 	
-FisherVillageBridgeSeenText:
+LinebackerVillageBridgeSeenText:
 	text "..."
 	done
 
-FisherVillageBridgeBeatenText:
+LinebackerVillageBridgeBeatenText:
 	text "..."
 	done
 
-FisherVillageBridgeAfterText:
+LinebackerVillageBridgeAfterText:
 	text "..."
 	done
 	
@@ -307,7 +307,7 @@ VillageBridge_MapEvents:
 	object_event 22, 28, SPRITE_MUSICIAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerMusicianVillageBridge, -1
 	object_event 45, 28, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSmasher1VillageBridge, -1
 	object_event 54, 31, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSmasher2VillageBridge, -1
-	object_event 29, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerFisherVillageBridge, -1
+	object_event 29, 23, SPRITE_LINEBACKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerLinebackerVillageBridge, -1
 	object_event 11,  6, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerHoopster1VillageBridge, -1
 	object_event 15,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerHoopster2VillageBridge, -1
 	

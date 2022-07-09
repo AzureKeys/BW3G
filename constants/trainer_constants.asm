@@ -184,7 +184,6 @@ CHRIS EQU __enum__
 	const FISHER_R4_2
 	const FISHER_R3_2
 	const FISHER_R17_2
-	const FISHER_VILLAGE_BRIDGE
 	const FISHER_MOOR_OF_ICIRRUS_2
 
 	trainerclass GENTLEMAN ; 20
@@ -248,6 +247,10 @@ CHRIS EQU __enum__
 	const LADY_R19
 	const LACEY_REMATCH_1
 	const LACEY_REMATCH_2
+	
+	trainerclass LINEBACKER
+	const LINEBACKER_R5
+	const LINEBACKER_VILLAGE_BRIDGE
 	
 	trainerclass MAID
 	const MAID_R19
@@ -456,9 +459,6 @@ CHRIS EQU __enum__
 
 	trainerclass BUG_CATCHER ; 24
 	const BUG_CATCHER_LOSTLORN_1
-
-	trainerclass SUPER_NERD ; 29
-	const SUPER_NERD_R5_1
 
 	trainerclass PICNICKER ; 35
 	const PICNICKER_LOSTLORN

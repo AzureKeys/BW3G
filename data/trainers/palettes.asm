@@ -40,6 +40,7 @@ INCBIN "gfx/trainers/hiker_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/hoopster.gbcpal", middle_colors
 INCBIN "gfx/trainers/janitor.gbcpal", middle_colors
 INCBIN "gfx/trainers/lady.gbcpal", middle_colors
+INCBIN "gfx/trainers/linebacker.gbcpal", middle_colors
 INCBIN "gfx/trainers/maid.gbcpal", middle_colors
 INCBIN "gfx/trainers/musician.gbcpal", middle_colors
 INCBIN "gfx/trainers/parasol_lady.gbcpal", middle_colors
@@ -73,7 +74,6 @@ INCBIN "gfx/trainers/worker.gbcpal", middle_colors
 INCBIN "gfx/trainers/bird_keeper.gbcpal", middle_colors
 INCBIN "gfx/trainers/teacher.gbcpal", middle_colors
 INCBIN "gfx/trainers/bug_catcher.gbcpal", middle_colors
-INCBIN "gfx/trainers/super_nerd.gbcpal", middle_colors
 INCBIN "gfx/trainers/picnicker.gbcpal", middle_colors
 INCBIN "gfx/trainers/picnicker_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/camper_d.gbcpal", middle_colors
