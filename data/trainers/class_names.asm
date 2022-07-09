@@ -8,6 +8,7 @@ TrainerClassNames::
 	db "ACE TRAINER@"
 	db "ACE TRAINER@"
 	db "ACE TRAINER@"
+	db "ARTIST@"
 	db "BACKERS@"
 	db "BACKERS@"
 	db "BACKPACKER@"

@@ -84,16 +84,6 @@ YoungsterDGroup:
 	dw $0800, $0800, $0800, $0800, $0800
 	db -1 ; end
 	
-	; YOUNGSTER (R5)
-	db "GEORGE@", TRAINERTYPE_STAT_EXP
-	db 16, DEERLING
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 17, TYMPOLE
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db 18, MAREEP
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db -1 ; end
-	
 	; YOUNGSTER (DESERT)
 	db "SVEN@", TRAINERTYPE_STAT_EXP
 	db 21, DARUMAKA
@@ -326,6 +316,27 @@ CooltrainerFDGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db 40, FERROSEED
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
+	db -1 ; end
+	
+ArtistGroup:
+	; ARTIST (R5)
+	db "GEORGE@", TRAINERTYPE_STAT_EXP
+	db 16, DEERLING
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 17, TYMPOLE
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db 18, MAREEP
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+
+	; ARTIST (R3)
+	db "SEAN@", TRAINERTYPE_STAT_EXP
+	db 29, RALTS
+	dw $3000, $3000, $3000, $3000, $3000
+	db 29, MUNNA
+	dw $3000, $3000, $3000, $3000, $3000
+	db 32, KIRLIA
+	dw $3000, $3000, $3000, $3000, $3000
 	db -1 ; end
 	
 BackersMGroup:
@@ -1802,16 +1813,6 @@ PsychicGroup:
 	dw $2C00, $2C00, $2C00, $2C00, $2C00
 	db 31, GOTHORITA
 	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db -1 ; end
-
-	; PSYCHIC_T (R3)
-	db "SEAN@", TRAINERTYPE_STAT_EXP
-	db 29, RALTS
-	dw $3000, $3000, $3000, $3000, $3000
-	db 29, MUNNA
-	dw $3000, $3000, $3000, $3000, $3000
-	db 32, KIRLIA
-	dw $3000, $3000, $3000, $3000, $3000
 	db -1 ; end
 
 	; PSYCHIC_T (RELIC_PASSAGE)

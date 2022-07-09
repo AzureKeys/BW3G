@@ -10,6 +10,7 @@ TrainerPicPointers::
 	dba CooltrainermDPic
 	dba CooltrainerfPic
 	dba CooltrainerfDPic
+	dba ArtistPic
 	dba BackersMPic
 	dba BackersFPic
 	dba BackpackerMPic

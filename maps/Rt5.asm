@@ -8,7 +8,7 @@
 	const R5_DANCER_2
 	const R5_SUPER_NERD_1
 	const R5_BAKER
-	const R5_YOUNGSTER
+	const R5_ARTIST
 	const R5_BACKERSF_1
 	const R5_BACKERSF_2
 	const R5_BIKER
@@ -178,13 +178,13 @@ TrainerBakerR5:
 	closetext
 	end
 
-TrainerYoungsterR5:
-	trainer YOUNGSTER_D, YOUNGSTER_R5, EVENT_BEAT_YOUNGSTER_R5, YoungsterR5SeenText, YoungsterR5BeatenText, 0, .Script
+TrainerArtistR5:
+	trainer ARTIST, ARTIST_R5, EVENT_BEAT_ARTIST_R5, ArtistR5SeenText, ArtistR5BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterR5AfterText
+	writetext ArtistR5AfterText
 	waitbutton
 	closetext
 	end
@@ -354,17 +354,17 @@ BakerR5AfterText:
 	cont "in battle."
 	done
 	
-YoungsterR5SeenText:
+ArtistR5SeenText:
 	text "Hey! Do you have"
 	line "any rare #MON?"
 	done
 
-YoungsterR5BeatenText:
+ArtistR5BeatenText:
 	text "Oh, my poor #-"
 	line "MON!"
 	done
 
-YoungsterR5AfterText:
+ArtistR5AfterText:
 	text "I'd be happy just"
 	line "to own a single"
 	cont "rare #MON."
@@ -426,9 +426,9 @@ Rt5_MapEvents:
 	object_event 17, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R5HeartScale, EVENT_R_5_HEART_SCALE
 	object_event 22, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_TRAINER, 3, TrainerDancer1R5, -1
 	object_event 20, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_TRAINER, 3, TrainerDancer2R5, -1
-	object_event 17, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1
+	object_event 17, 14, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSuperNerd1R5, -1
 	object_event 10, 13, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBakerR5, -1
-	object_event 14, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerYoungsterR5, -1
+	object_event 14, 16, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerArtistR5, -1
 	object_event 12, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersFR5, -1
 	object_event 13, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBackersFR5, -1
 	object_event  7, 11, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R5CharlesScript, -1

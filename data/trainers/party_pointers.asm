@@ -10,6 +10,7 @@ TrainerGroups:
 	dba CooltrainerMDGroup
 	dba CooltrainerFGroup
 	dba CooltrainerFDGroup
+	dba ArtistGroup
 	dba BackersMGroup
 	dba BackersFGroup
 	dba BackpackerMGroup

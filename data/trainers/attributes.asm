@@ -49,6 +49,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Artist
+	db NO_ITEM, NO_ITEM ; items
+	db 4 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; BackersM
 	db NO_ITEM, NO_ITEM ; items
 	db 10 ; base reward

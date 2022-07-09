@@ -8,7 +8,7 @@
 	const R3_SOCIALITE
 	const R3_FISHER_1
 	const R3_FISHER_2
-	const R3_PSYCHIC
+	const R3_ARTIST
 	const R3_GENTLEMAN
 	const R3_GRAMPS
 
@@ -171,13 +171,13 @@ TrainerFisher2R3:
 	closetext
 	end
 
-TrainerPsychicR3:
-	trainer PSYCHIC_T, PSYCHIC_R3, EVENT_BEAT_PSYCHIC_R3, PsychicR3SeenText, PsychicR3BeatenText, 0, .Script
+TrainerArtistR3:
+	trainer ARTIST, ARTIST_R3, EVENT_BEAT_ARTIST_R3, ArtistR3SeenText, ArtistR3BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PsychicR3AfterText
+	writetext ArtistR3AfterText
 	waitbutton
 	closetext
 	end
@@ -323,15 +323,15 @@ Fisher2R3AfterText:
 	line "good variety here."
 	done
 	
-PsychicR3SeenText:
+ArtistR3SeenText:
 	text "…"
 	done
 
-PsychicR3BeatenText:
+ArtistR3BeatenText:
 	text "…"
 	done
 
-PsychicR3AfterText:
+ArtistR3AfterText:
 	text "…"
 
 	para "I lost while I had"
@@ -398,7 +398,7 @@ Rt3_MapEvents:
 	object_event 25,  9, SPRITE_SOCIALITE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSocialiteR3, -1
 	object_event 18, 32, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerFisher1R3, -1
 	object_event 21, 36, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 0, TrainerFisher2R3, -1
-	object_event 27, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicR3, -1
+	object_event 27, 18, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerArtistR3, -1
 	object_event 13,  8, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerGentlemanR3, -1
 	object_event 38,  7, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, R3DayCareManScript_Outside, EVENT_DAY_CARE_MAN_ON_R3
 	

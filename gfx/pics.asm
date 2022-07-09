@@ -57,6 +57,7 @@ BackpackerMPic:     INCBIN "gfx/trainers/backpacker_m.2bpp.lz"
 BackpackerFPic:     INCBIN "gfx/trainers/backpacker_f.2bpp.lz"
 BackersMPic:        INCBIN "gfx/trainers/backers_m.2bpp.lz"
 BackersFPic:        INCBIN "gfx/trainers/backers_f.2bpp.lz"
+ArtistPic:          INCBIN "gfx/trainers/artist.2bpp.lz"
 
 
 

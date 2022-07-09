@@ -11,6 +11,7 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; acetrainermD
 	db MUSIC_BEAUTY_ENCOUNTER      ; acetrainerf
 	db MUSIC_BEAUTY_ENCOUNTER      ; acetrainerfD
+	db MUSIC_SAGE_ENCOUNTER        ; artist
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; backersm
 	db MUSIC_LASS_ENCOUNTER        ; backersf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; backpackerm
