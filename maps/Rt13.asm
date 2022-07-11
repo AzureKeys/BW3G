@@ -254,23 +254,19 @@ LassR13AfterText:
 	done
 	
 SchoolKidFR13SeenText:
-	text "Instead of a bug"
-	line "#MON, I found"
-	cont "a trainer!"
+	text "My favorite class"
+	line "is math!"
 	done
 
 SchoolKidFR13BeatenText:
-	text "Argh! You're too"
-	line "strong!"
+	text "Oh, no!"
+	line "How could I lose?"
 	done
 
 SchoolKidFR13AfterText:
-	text "I ran out of #"
-	line "BALLS while I was"
-	cont "catching #MON."
-
-	para "I should've bought"
-	line "some more…"
+	text "If #MON were a"
+	line "subject at school,"
+	cont "I'd be the best!"
 	done
 	
 SchoolKidMR13SeenText:

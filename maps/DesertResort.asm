@@ -208,148 +208,172 @@ DesertNurseHealText:
 	done
 	
 RoughneckDesertSeenText:
-	text "I've hiked all"
-	line "over, so I know"
-
-	para "about all sorts of"
-	line "#MON!"
+	text "My shiny head is a"
+	line "reflection of my"
+	cont "fighting spirit!"
 	done
 
 RoughneckDesertBeatenText:
-	text "Your skill is"
-	line "world class!"
+	text "My shine is set"
+	line "to blind!"
 	done
 
 RoughneckDesertAfterText:
-	text "All kinds of peo-"
-	line "ple around the"
+	text "My dumb little bro"
+	line "decided to follow"
 
-	para "world live happily"
-	line "with #MON."
+	para "in my footsteps"
+	line "and became a bad"
+	
+	para "dude. I really"
+	line "wanted him to grow"
+	
+	para "up and live resp-"
+	line "ectfully though…"
 	done
 	
 HexManiacDesertSeenText:
-	text "Hmmm… This is a"
-	line "strange place."
+	text "Hm… You're strong,"
+	line "aren't you?"
+	
+	para "It's tough when"
+	line "you know that"
+	
+	para "before you even"
+	line "start the fight."
 	done
 
 HexManiacDesertBeatenText:
-	text "…"
+	text "Urk… I can't do"
+	line "anything to you…"
 	done
 
 HexManiacDesertAfterText:
-	text "I like thinking"
-	line "here."
+	text "I like to play tag"
+	line "with my #MON"
+	cont "that teleport."
 	done
 	
 BackpackerMDesertSeenText:
-	text "HEY!"
+	text "If you want to"
+	line "know what I've got"
 
-	para "This is my secret"
-	line "place! Get lost,"
-	cont "you outsider!"
+	para "in my backpack,"
+	line "why don't you try"
+	cont "to beat me!"
 	done
 
 BackpackerMDesertBeatenText:
-	text "I should have"
-	line "picked that move…"
+	text "Wooah! I'm going"
+	line "to be buried!"
 	done
 
 BackpackerMDesertAfterText:
-	text "You're working on"
-	line "a #DEX?"
-
-	para "Wow, you must know"
-	line "some pretty rare"
-	cont "#MON!"
-
-	para "May I please see"
-	line "it. Please?"
+	text "My backpack is"
+	line "full of sand from"
+	cont "the desert."
 	done
 	
 YoungsterDesertSeenText:
-	text "Ah! The weather's"
-	line "as fine as ever."
+	text "Starting a day"
+	line "ago, I decided to"
+	cont "become a bad dude!"
 	done
 
 YoungsterDesertBeatenText:
-	text "It's sunny, but"
-	line "I'm all wet…"
+	text "I guess I can't"
+	line "just become a bad"
+	
+	para "dude. It's tougher"
+	line "than it looks!"
 	done
 
 YoungsterDesertAfterText:
-	text "When it rains,"
-	line "it's hard to get"
-	cont "ignition…"
+	text "I want to be like"
+	line "my big bro and"
+	cont "have a shiny head!"
 	done
 	
 PkmnRangerMDesertSeenText:
-	text "Hmmm… I don't know"
-	line "what to do…"
+	text "I will show you"
+	line "the harshness of"
+	
+	para "the desert through"
+	line "a battle!"
 	done
 
 PkmnRangerMDesertBeatenText:
-	text "I knew I'd lose…"
+	text "Desert… hot…"
+	line "Mouth… dry…"
 	done
 
 PkmnRangerMDesertAfterText:
-	text "You looked strong."
+	text "Beware of burns!"
+	line "If a #MON gets"
 
-	para "I was afraid to"
-	line "take you on…"
+	para "a burn, it also"
+	line "weakens physical"
+	cont "attacks."
 	done
 	
 PkmnRangerFDesertSeenText:
-	text "You look strong."
-
-	para "Good trainers seek"
-	line "tough opponents"
-	cont "instinctively."
+	text "A scorching"
+	line "deset! A passion"
+	
+	para "for adventure! And"
+	line "a heated battle!"
 	done
 
 PkmnRangerFDesertBeatenText:
-	text "Nope! This won't"
-	line "do at all."
+	text "Hot! Hot! Hot!"
+	line "Hot!!!"
 	done
 
 PkmnRangerFDesertAfterText:
-	text "We all get better"
-	line "by experiencing"
-	cont "many battles."
+	text "Whether it's hot"
+	line "or cold, there is"
+	
+	para "no problem if you"
+	line "have passion!"
 	done
 	
 LassDesertSeenText:
-	text "I love #MON!"
-
-	para "That's why I"
-	line "started--and why"
-
-	para "I'll keep on col-"
-	line "lecting #MON!"
+	text "No matter how"
+	line "desperately I try"
+	
+	para "to scoop up the"
+	line "sand, it flows"
+	cont "through my hands."
+	
+	para "It's kind of sad"
+	line "somehow…"
 	done
 
 LassDesertBeatenText:
-	text "How could you do"
-	line "this to me?"
+	text "Victory slips"
+	line "away… Just like"
+	cont "the sand…"
 	done
 
 LassDesertAfterText:
-	text "What else do I"
-	line "like besides"
-	cont "#MON?"
+	text "Be careful, but"
+	line "never be afraid"
+	cont "of the journey."
 	done
 	
 BackpackerFDesertSeenText:
-	text "Be prepared for"
-	line "anything!"
+	text "A desert is like"
+	line "one giant sandbox,"
 
-	para "Let me see if your"
-	line "#MON have been"
-	cont "raised properly!"
+	para "right? So come on,"
+	line "let's let our"
+	cont "#MON play!"
 	done
 
 BackpackerFDesertBeatenText:
-	text "Oh, I lost that!"
+	text "Since this is for"
+	line "play, whoever has"
+	cont "the most fun wins!"
 	done
 
 BackpackerFDesertAfterText:

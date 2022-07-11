@@ -22,25 +22,26 @@ RelicCastleRevive:
 	itemball REVIVE
 	
 PsychicRelicCastle1FSeenText:
-	text "Let me see what"
-	line "your #MON are"
-	cont "capable of."
+	text "I will use my"
+	line "supernatural power"
+	
+	para "to help my #-"
+	line "MON!"
 	done
 
 PsychicRelicCastle1FBeatenText:
-	text "Ooh, your #MON"
-	line "have potential."
+	text "Wow! That's"
+	line "amazing!"
 	done
 
 PsychicRelicCastle1FAfterText:
-	text "You know how #-"
-	line "MON have different"
-	cont "abilities?"
+	text "Drawing out your"
+	line "#MON's power"
+	cont "like that…"
 
-	para "People are like"
-	line "that too. Every-"
-	cont "one has different"
-	cont "potential."
+	para "I think that is a"
+	line "real supernatural"
+	cont "power!"
 	done
 
 RelicCastle1F_MapEvents:

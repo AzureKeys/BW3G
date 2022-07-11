@@ -104,23 +104,23 @@ TrainerMaidR19:
 	end
 
 TrainerYoungsterR19:
-	trainer YOUNGSTER_D, YOUNGSTER_R19, EVENT_BEAT_YOUNGSTER_R19, YoungsterR19SeenText, YoungsterR19BeatenText, 0, .Script
+	trainer YOUNGSTER_D, YOUNGSTER_R19, EVENT_BEAT_YOUNGSTER_R19, PkmnBreederFR19SeenText, PkmnBreederFR19BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterR19AfterText
+	writetext PkmnBreederFR19AfterText
 	waitbutton
 	closetext
 	end
 
 TrainerBirdKeeperR19:
-	trainer BIRD_KEEPER, BIRD_KEEPER_R19, EVENT_BEAT_BIRD_KEEPER_R19, BirdKeeperR19SeenText, BirdKeeperR19BeatenText, 0, .Script
+	trainer BIRD_KEEPER, BIRD_KEEPER_R19, EVENT_BEAT_BIRD_KEEPER_R19, PkmnBreederMR19SeenText, PkmnBreederMR19BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeperR19AfterText
+	writetext PkmnBreederMR19AfterText
 	waitbutton
 	closetext
 	end
@@ -193,38 +193,46 @@ R19RareCandy:
 R19LureBall:
 	itemball LURE_BALL
 	
-YoungsterR19SeenText:
-	text "If you walk in"
-	line "tall grass wearing"
-
-	para "shorts, do you get"
-	line "nicks and cuts?"
+PkmnBreederFR19SeenText:
+	text "We are totally in"
+	line "sync! I will teach"
+	
+	para "you all about"
+	line "#MON breeders!"
 	done
 
-YoungsterR19BeatenText:
-	text "Ouch, ouch, ouch!"
+PkmnBreederFR19BeatenText:
+	text "In fact, we"
+	line "learned all about"
+	cont "you!"
 	done
 
-YoungsterR19AfterText:
-	text "They'll really"
-	line "sting when you"
-	cont "take a bath."
+PkmnBreederFR19AfterText:
+	text "Listen carefully…"
+	line "You may hear the"
+	
+	para "sound of breathing"
+	line "#MON."
 	done
 	
-BirdKeeperR19SeenText:
-	text "You there!"
-	line "Want to battle?"
+PkmnBreederMR19SeenText:
+	text "I'm always"
+	line "patrolling this"
+	cont "area!"
 	done
 
-BirdKeeperR19BeatenText:
-	text "Down and out…"
+PkmnBreederMR19BeatenText:
+	text "I couldn't take"
+	line "advantage of the"
+	cont "terrain!"
 	done
 
-BirdKeeperR19AfterText:
-	text "You're strong."
+PkmnBreederMR19AfterText:
+	text "Something changes"
+	line "here every day, so"
 
-	para "You obviously must"
-	line "have trained hard."
+	para "it's always fun"
+	line "to patrol!"
 	done
 	
 LadyR19SeenText:
@@ -253,18 +261,19 @@ LadyR19AfterText:
 	done
 	
 DepotAgent1R19SeenText:
-	text "Patience is the"
-	line "key to both fish-"
-	cont "ing and #MON."
+	text "This is the battle"
+	line "train! All aboard!"
 	done
 
 DepotAgent1R19BeatenText:
-	text "Gwaaah!"
+	text "You're the non-"
+	line "stop express line!"
 	done
 
 DepotAgent1R19AfterText:
-	text "I'm too impatient"
-	line "for fishing…"
+	text "Have you taken the"
+	line "subway in NIMBASA"
+	cont "CITY?"
 	done
 	
 DepotAgent2R19SeenText:

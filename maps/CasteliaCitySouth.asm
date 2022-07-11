@@ -198,26 +198,20 @@ CasteliaSouthTeacherText:
 	done
 
 CasteliaSouthSailor2Text:
-	text "Dark roads are"
-	line "dangerous at"
-	cont "night."
+	text "Everyone's faces"
+	line "blend together!"
 
-	para "But in the pitch-"
-	line "black of night,"
-
-	para "the sea is even"
-	line "more treacherous!"
+	para "Is that because"
+	line "I'm tired?"
 	done
 	
 CasteliaSouthSailor3Text:
-	text "The sea is sweet!"
-
-	para "Sunsets on the sea"
-	line "are marvelous!"
-
-	para "Sing with me! "
-	line "Yo-ho! Blow the"
-	cont "man down!…"
+	text "When you just"
+	line "can't stand it"
+	
+	para "anymore, try"
+	line "shouting at the"
+	cont "open ocean!"
 	done
 	
 CasteliaBattleCompanySignText:

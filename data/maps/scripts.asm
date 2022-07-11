@@ -94,10 +94,10 @@ INCLUDE "maps/CasteliaBridgeGate.asm"
 INCLUDE "maps/NimbasaSubway.asm"
 INCLUDE "maps/AspertiaSubway.asm"
 INCLUDE "maps/CasteliaGym.asm"
-INCLUDE "maps/NimbasaParkOutside.asm"
 
 SECTION "Map Scripts 6", ROMX
 
+INCLUDE "maps/NimbasaParkOutside.asm"
 INCLUDE "maps/CasteliaMassage.asm"
 INCLUDE "maps/BattleCompany1F.asm"
 INCLUDE "maps/BattleCompany2F.asm"
@@ -189,11 +189,11 @@ INCLUDE "maps/RelicCastleB4F.asm"
 INCLUDE "maps/PWTOutside.asm"
 INCLUDE "maps/PWTInside.asm"
 INCLUDE "maps/PWTHallway.asm"
-INCLUDE "maps/PWTQualifierRoom.asm"
-INCLUDE "maps/PWTDriftveilGate.asm"
 
 SECTION "Map Scripts 10", ROMX
 
+INCLUDE "maps/PWTQualifierRoom.asm"
+INCLUDE "maps/PWTDriftveilGate.asm"
 INCLUDE "maps/NacreneMuseum.asm"
 INCLUDE "maps/R18House.asm"
 INCLUDE "maps/Rt21.asm"
@@ -205,11 +205,11 @@ INCLUDE "maps/DriftveilFossilHouse.asm"
 INCLUDE "maps/DriftveilBridgeGate.asm"
 INCLUDE "maps/DriftveilShelter.asm"
 INCLUDE "maps/DriftveilDrawbridge.asm"
-INCLUDE "maps/Rt6.asm"
-INCLUDE "maps/R6House.asm"
 
 SECTION "Map Scripts 11", ROMX
 
+INCLUDE "maps/Rt6.asm"
+INCLUDE "maps/R6House.asm"
 INCLUDE "maps/ChargestoneCave1F.asm"
 INCLUDE "maps/ChargestoneCaveB1F.asm"
 INCLUDE "maps/ChargestoneCaveB2F.asm"
@@ -237,11 +237,11 @@ INCLUDE "maps/MistraltonGym2F.asm"
 INCLUDE "maps/R7House.asm"
 INCLUDE "maps/R7TradeHouse.asm"
 INCLUDE "maps/CelestialTower1F.asm"
-INCLUDE "maps/CelestialTower.asm"
-INCLUDE "maps/CelestialTowerRoof.asm"
 
 SECTION "Map Scripts 12", ROMX
 
+INCLUDE "maps/CelestialTower.asm"
+INCLUDE "maps/CelestialTowerRoof.asm"
 INCLUDE "maps/MistraltonAirport.asm"
 INCLUDE "maps/VillageBridge.asm"
 INCLUDE "maps/OpelucidCity.asm"
@@ -271,10 +271,10 @@ INCLUDE "maps/MistraltonCave3F.asm"
 INCLUDE "maps/Rt9.asm"
 INCLUDE "maps/ShoppingMallNine.asm"
 INCLUDE "maps/MoorOfIcirrus.asm"
-INCLUDE "maps/OpelucidGym.asm"
 
 SECTION "Map Scripts 13", ROMX
 
+INCLUDE "maps/OpelucidGym.asm"
 INCLUDE "maps/OpelucidCuriosityShop.asm"
 INCLUDE "maps/IcirrusHouse.asm"
 INCLUDE "maps/Dreamyard.asm"

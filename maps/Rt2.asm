@@ -354,21 +354,23 @@ BackpackerFR2AfterText:
 	done
 	
 OfficerR2SeenText:
-	text "Danger lurks in"
-	line "the night!"
+	text "Hey, you! Stop"
+	line "right there!"
 	done
 
 OfficerR2BeatenText:
-	text "Whoops!"
+	text "There's no one"
+	line "stopping you!"
+	
+	para "You're what could"
+	line "be called"
+	cont "unstoppable!"
 	done
 
 OfficerR2AfterText:
-	text "You know, night-"
-	line "time is fun in its"
-	cont "own ways."
-
-	para "But don't overdo"
-	line "it, OK?"
+	text "Go all out while"
+	line "you're still"
+	cont "young!"
 	done
 	
 TwinsR2SeenText:

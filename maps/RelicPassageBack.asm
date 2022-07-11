@@ -126,72 +126,102 @@ RelicPassageBackBoulder:
 	jumpstd strengthboulder
 	
 WorkerRelicPassageSeenText:
-	text "My #MON are"
-	line "strong enough to"
-	cont "move boulders!"
+	text "The fact that you"
+	line "are here means…"
+	
+	para "You are also part"
+	line "of the sewers?!"
+	
+	para "Then I will survey"
+	line "you too!"
 	done
 
 WorkerRelicPassageBeatenText:
-	text "Not strong enough!"
+	text "Huh… Where am I?"
+	line "Who are you?"
 	done
 
 WorkerRelicPassageAfterText:
-	text "I guess my #MON"
-	line "need to get"
-	cont "stronger!"
+	text "What? I got so"
+	line "caught up in my"
+	
+	para "survey of the"
+	line "sewer that I ended"
+	
+	para "up in the RELIC"
+	line "PASSAGE?"
 	done
 	
 PsychicFRelicPassageSeenText:
-	text "I couldn't get"
-	line "across the bridge,"
+	text "The sewer and this"
+	line "RELIC PASSAGE…"
 	
-	para "so I'm taking the"
-	line "tunnel instead."
+	para "Is it really"
+	line "coincidence that"
+	
+	para "they exist so"
+	line "close to each"
+	cont "other?"
 	done
 
 PsychicFRelicPassageBeatenText:
-	text "You're good."
+	text "No! There must be"
+	line "a reason why!"
 	done
 
 PsychicFRelicPassageAfterText:
-	text "Is there something"
-	line "going on in the"
-	cont "city?"
+	text "Modern men make"
+	line "sewers, ancient"
+	
+	para "men made these"
+	line "paths…"
 	done
 	
 BackpackerMRelicPassageSeenText:
-	text "I'm an expert on"
-	line "outdoor travel!"
+	text "It's 'The Waving"
+	line "Weaving Walk'-"
+	
+	para "Wawalk for short!"
+	
+	para "I wonder what kind"
+	line "of #MON we'll"
+	cont "meet today?"
 	done
 
 BackpackerMRelicPassageBeatenText:
-	text "It's too much!"
+	text "Your #MON have"
+	line "strong abilities,"
+	cont "don't they?"
 	done
 
 BackpackerMRelicPassageAfterText:
-	text "I guess I'm not"
-	line "an expert at #-"
-	cont "MON battles yet."
+	text "I totally loved"
+	line "the Wawalk show,"
+	
+	para "but they took it"
+	line "off the air."
 	done
 	
 HexManiacRelicPassageSeenText:
-	text "This tunnel is"
-	line "connected to the"
-	
-	para "haunted castle in"
-	line "the desert."
+	text "Just being here"
+	line "fills me with"
+	cont "magical power…"
 	done
 
 HexManiacRelicPassageBeatenText:
-	text "You're scary good…"
+	text "You seem to be"
+	line "full of magical"
+	cont "power, too…"
 	done
 
 HexManiacRelicPassageAfterText:
-	text "There must be"
-	line "something special"
+	text "In ancient places,"
+	line "magical energy"
+	cont "remains…"
 
-	para "hidden in that"
-	line "castle…"
+	para "I can understand"
+	line "it. So much sorrow"
+	cont "and joy…"
 	done
 	
 RelicPassageBackBoulderFellText:

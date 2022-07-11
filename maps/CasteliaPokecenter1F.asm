@@ -52,8 +52,8 @@ CasteliaPokecenterGymGuyText:
 	line "the abandoned"
 	cont "park…"
 
-	para "I smell a conspir-"
-	line "acy. I know it!"
+	para "Something is going"
+	line "on, I know it!"
 	done
 
 CasteliaPokecenter1F_MapEvents:

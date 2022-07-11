@@ -145,12 +145,12 @@ LostlornForestInferScript:
 	end
 
 TrainerBugCatcherLostlorn1:
-	trainer BUG_CATCHER, BUG_CATCHER_LOSTLORN_1, EVENT_BEAT_BUG_CATCHER_LOSTLORN_1, BugCatcherLostlorn1SeenText, BugCatcherLostlorn1BeatenText, 0, .Script
+	trainer BUG_CATCHER, BUG_CATCHER_LOSTLORN_1, EVENT_BEAT_BUG_CATCHER_LOSTLORN_1, PkmnBreederFLostlornSeenText, PkmnBreederFLostlornBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherLostlorn1AfterText
+	writetext PkmnBreederFLostlornAfterText
 	waitbutton
 	closetext
 	end
@@ -167,12 +167,12 @@ TrainerSchoolKidMLostlorn:
 	end
 
 TrainerPicnickerLostlorn:
-	trainer PICNICKER, PICNICKER_LOSTLORN, EVENT_BEAT_PICNICKER_LOSTLORN, PicnickerLostlornSeenText, PicnickerLostlornBeatenText, 0, .Script
+	trainer PICNICKER, PICNICKER_LOSTLORN, EVENT_BEAT_PICNICKER_LOSTLORN, PkmnBreederMLostlornSeenText, PkmnBreederMLostlornBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerLostlornAfterText
+	writetext PkmnBreederMLostlornAfterText
 	waitbutton
 	closetext
 	end
@@ -402,27 +402,27 @@ LostlornR16SignText:
 	line "NIMBASA CITY."
 	done
 	
-BugCatcherLostlorn1SeenText:
-	text "Bug #MON are"
-	line "cool and tough!"
-
-	para "I'll prove it to"
-	line "you!"
+PkmnBreederFLostlornSeenText:
+	text "I need to practice"
+	line "more as a #MON"
+	cont "breeder."
+	
+	para "Please, be my"
+	line "opponent!"
 	done
 
-BugCatcherLostlorn1BeatenText:
-	text "You proved how"
-	line "tough you are…"
+PkmnBreederFLostlornBeatenText:
+	text "I've still got a"
+	line "long way to go…"
+	
+	para "I'll keep raising"
+	line "my #MON!"
 	done
 
-BugCatcherLostlorn1AfterText:
-	text "They're so cool,"
-	line "but most girls"
-
-	para "don't like bug"
-	line "#MON."
-
-	para "I don't know why…"
+PkmnBreederFLostlornAfterText:
+	text "Thank you so much!"
+	line "I learned a lot"
+	cont "from our battle."
 	done
 	
 SchoolKidMLostlornSeenText:
@@ -441,22 +441,26 @@ SchoolKidMLostlornAfterText:
 	line "find more bugs…"
 	done
 	
-PicnickerLostlornSeenText:
-	text "Are you a trainer?"
+PkmnBreederMLostlornSeenText:
+	text "Having lots of"
+	line "battles is the"
 
-	para "Let's have a"
-	line "practice battle."
+	para "best way to raise"
+	line "#MON quickly."
 	done
 
-PicnickerLostlornBeatenText:
-	text "Oh, no! I just"
-	line "can't win…"
+PkmnBreederMLostlornBeatenText:
+	text "Your training"
+	line "method is great,"
+	
+	para "I'm going to copy"
+	line "it!"
 	done
 
-PicnickerLostlornAfterText:
-	text "You're too strong"
-	line "to be a practice"
-	cont "partner."
+PkmnBreederMLostlornAfterText:
+	text "I want to battle"
+	line "you again some"
+	cont "time!"
 	done
 	
 YoungsterLostlornSeenText:

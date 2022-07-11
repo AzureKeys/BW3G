@@ -326,18 +326,27 @@ YoungsterOutskirtsAfterText:
 	done
 	
 PkmnRangerMOutskirtsSeenText:
-	text "I'm practicing my"
-	line "fire breathing."
+	text "I'm wandering the"
+	line "world trying to"
+	
+	para "find a place where"
+	line "I belong…"
+	
+	para "How about you?"
 	done
 
 PkmnRangerMOutskirtsBeatenText:
-	text "Ow! I scorched the"
-	line "tip of my nose!"
+	text "I lost… So this"
+	line "isn't where I"
+	cont "belong either…"
 	done
 
 PkmnRangerMOutskirtsAfterText:
-	text "I'm so blown away,"
-	line "I can't move."
+	text "You don't find"
+	line "your place in the"
+	
+	para "world. You've got"
+	line "to make it!"
 	done
 	
 SchoolKidMOutskirtsSeenText:

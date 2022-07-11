@@ -284,64 +284,66 @@ CasteliaGymGuyWinText:
 	done
 	
 HarlequinCasteliaGym1SeenText:
-	text "Bug #MON are"
-	line "cool and tough!"
+	text "What do you think?"
+	line "This GYM… How"
+	cont "should I say?"
 
-	para "I'll prove it to"
-	line "you!"
+	para "Isn't it full of…"
+	line "mysterious charms?"
 	done
 
 HarlequinCasteliaGym1BeatenText:
-	text "You proved how"
-	line "tough you are…"
+	text "You've got quite a"
+	line "bit of charm your-"
+	cont "self, don't you?"
 	done
 
 HarlequinCasteliaGym1AfterText:
-	text "They're so cool,"
-	line "but most girls"
+	text "The cocoons some-"
+	line "times have secret"
 
-	para "don't like bug"
-	line "#MON."
-
-	para "I don't know why…"
+	para "paths. Try going"
+	line "through them all!"
 	done
 	
 HarlequinCasteliaGym2SeenText:
-	text "Are you challeng-"
-	line "ing the LEADER?"
-	cont "No way!"
+	text "You thought you"
+	line "could get through"
+	cont "here? Think again!"
 	done
 
 HarlequinCasteliaGym2BeatenText:
-	text "Oh, goodness!"
+	text "My, my! Aren't you"
+	line "a bit too strong?"
 	done
 
 HarlequinCasteliaGym2AfterText:
-	text "My BUG #MON"
-	line "lost. What a"
-	cont "shame."
+	text "Here's a secret:"
+	line "If you enter this"
+	
+	para "cocoon, a secret"
+	line "path will open on"
+	cont "the first floor!"
 	done
 	
 HarlequinCasteliaGym3SeenText:
-	text "Can you figure out"
-	line "how to reach the"
-	cont "top of the GYM?"
+	text "When the cocoon"
+	line "opens, the one who"
+	cont "pops out is moi!"
+	
+	para "On that note, have"
+	line "a battle with moi!"
 	done
 
 HarlequinCasteliaGym3BeatenText:
-	text "Okay! I'll tell"
-	line "you!"
+	text "I was taking a"
+	line "nap!"
 	done
 
 HarlequinCasteliaGym3AfterText:
-	text "Go up on the right"
-	line "side of the GYM,"
-
-	para "and enter the"
-	line "cocoon there to"
-	
-	para "open the secret"
-	line "path!"
+	text "Hiding and waiting"
+	line "makes instincts"
+	cont "dull, you know?"
 	done
 	
 HarlequinCasteliaGym4SeenText:
@@ -366,22 +368,35 @@ HarlequinCasteliaGym4AfterText:
 	done
 	
 HarlequinCasteliaGym5SeenText:
-	text "I've studied"
-	line "about bug #MON"
-	cont "a lot."
+	text "You're just one"
+	line "step away from"
 
-	para "I'm going to win"
-	line "for sure."
+	para "being able to"
+	line "challenge BURGH!"
 	done
 
 HarlequinCasteliaGym5BeatenText:
-	text "Impossible!"
+	text "Your battle style"
+	line "is almost as"
+	cont "artistic as BURGH!"
 	done
 
 HarlequinCasteliaGym5AfterText:
-	text "I guess there's"
-	line "more to #MON"
-	cont "than sudying."
+	text "BURGH remodeled"
+	line "the GYM in order"
+	
+	para "to understand the"
+	line "feelings of #-"
+	
+	para "MON that wrap"
+	line "themselves in"
+	cont "cocoons."
+	
+	para "Unfortunately, we"
+	line "can never seem to"
+	
+	para "find our way"
+	line "around!"
 	done
 	
 CasteliaGym_MapEvents:

@@ -248,38 +248,42 @@ RichBoyR4AfterText:
 	done
 	
 RoughneckR4SeenText:
-	text "I'm gonna win,"
-	line "for sure!"
+	text "This ain't no"
+	line "place for kids"
+	cont "like you!"
 	done
 
 RoughneckR4BeatenText:
-	text "Arrgh… That's a"
-	line "shocking loss…"
+	text "Just who are you?"
+	line "You looked pretty"
+	cont "timid."
 	done
 
 RoughneckR4AfterText:
-	text "It's important to"
-	line "have conviction"
-	cont "on your side."
+	text "All I know is if"
+	line "you're a trainer,"
+	
+	para "you're gonna get"
+	line "challenged!"
 	done
 	
 Fisher1R4SeenText:
-	text "Whoa!"
-
-	para "You made me lose"
-	line "that fish!"
+	text "You've been caught"
+	line "by a powerful"
+	cont "hook, which is me!"
 	done
 
 Fisher1R4BeatenText:
-	text "Sploosh!"
+	text "That one got away!"
 	done
 
 Fisher1R4AfterText:
-	text "Calm, collected…"
-	line "The essence of"
+	text "I like to think"
+	line "#MON cling to"
 
-	para "fishing and #-"
-	line "MON is the same."
+	para "my hook because"
+	line "they want to"
+	cont "battle me!"
 	done
 	
 Fisher2R4SeenText:
@@ -324,54 +328,80 @@ LadyR4AfterText:
 	done
 	
 BikerR4SeenText:
-	text "Hey! Want to have"
-	line "a speed battle?"
+	text "A motorcycle in"
+	line "the desert! It"
+	
+	para "doesn't get much"
+	line "more wild than"
+	cont "this, eh?"
 	done
 
 BikerR4BeatenText:
-	text "Yikes! You've got"
-	line "awesome torque!"
+	text "Motorcycles aren't"
+	line "comptible with"
+	
+	para "sand, and I'm not"
+	line "compatible with"
+	cont "you!"
 	done
 
 BikerR4AfterText:
-	text "I love riding free"
-	line "on the road!"
+	text "Both bicycles and"
+	line "motorcycles get"
+	
+	para "their tires stuck"
+	line "in the sand!"
 	done
 	
 Officer1R4SeenText:
-	text "Who goes there?"
-	line "What are you up"
-	cont "to?"
+	text "What's a kid like"
+	line "you doing around"
+	cont "these parts?"
 	done
 
 Officer1R4BeatenText:
-	text "You're a tough"
-	line "little kid."
+	text "To have bested an"
+	line "officer like me…"
+	
+	para "What kind of a kid"
+	line "are you?"
 	done
 
 Officer1R4AfterText:
-	text "Yep, I see nothing"
-	line "wrong today. You"
-
-	para "be good and stay"
-	line "out of trouble."
+	text "An officer's job"
+	line "is to keep on"
+	
+	para "patrolling even"
+	line "when nothing's"
+	cont "going on!"
 	done
 	
 Officer2R4SeenText:
-	text "Danger lurks in"
-	line "the night!"
+	text "Ah, that smell?"
+	
+	para "My #MON here"
+	line "seems to say that"
+	
+	para "you've got a"
+	line "dangerous smell"
+	cont "about you!"
 	done
 
 Officer2R4BeatenText:
-	text "Whoops!"
+	text "I see…"
+	line "Your strength is"
+	
+	para "certainly quite"
+	line "dangerous…"
 	done
 
 Officer2R4AfterText:
-	text "Your #MON look"
-	line "pretty tough."
+	text "Just because"
+	line "you're strong"
 
-	para "You could go any-"
-	line "where safely."
+	para "doesn't mean you"
+	line "can look down on"
+	cont "those who aren't!"
 	done
 	
 PokefanMR4SeenText:

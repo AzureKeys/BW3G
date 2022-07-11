@@ -88,15 +88,21 @@ R9TubelineSign:
 	jumptext R9TubelineSignText
 	
 Biker1R9SeenText:
-	text "..."
+	text "Hey, hey! I'll"
+	line "take care of you!"
 	done
 
 Biker1R9BeatenText:
-	text "..."
+	text "My baby lost!"
 	done
 
 Biker1R9AfterText:
-	text "..."
+	text "Some cute #MON"
+	line "you've got there!"
+	
+	para "You aren't too"
+	line "shabby of a"
+	cont "trainer either!"
 	done
 	
 Biker2R9SeenText:
@@ -112,15 +118,21 @@ Biker2R9AfterText:
 	done
 	
 Roughneck1R9SeenText:
-	text "..."
+	text "Hey, hey! What's"
+	line "wrong? Are you"
+	cont "lost or something?"
 	done
 
 Roughneck1R9BeatenText:
-	text "..."
+	text "Beaten down!"
 	done
 
 Roughneck1R9AfterText:
-	text "..."
+	text "Us bad dudes are"
+	line "getting together"
+	
+	para "to boast about our"
+	line "#MON!"
 	done
 	
 Roughneck2R9SeenText:

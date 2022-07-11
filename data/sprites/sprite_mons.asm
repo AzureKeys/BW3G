@@ -6,3 +6,4 @@ SpriteMons:
 	db LARVESTA
 	db FLAAFFY
 	db GENESECT
+	db TRUBBISH

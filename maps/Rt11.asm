@@ -136,15 +136,25 @@ R11PPUp:
 	hiddenitem PP_UP, EVENT_R11_PP_UP
 	
 BackersMR11SeenText:
-	text "..."
+	text "Sports and #-"
+	line "MON battles are"
+	
+	para "dramas that don't"
+	line "need scripts!"
 	done
 
 BackersMR11BeatenText:
-	text "..."
+	text "We were the"
+	line "underdogs…"
 	done
 
 BackersMR11AfterText:
-	text "..."
+	text "To a great sport"
+	line "player, you have"
+	
+	para "to be able to play"
+	line "defense, hit, and"
+	cont "run!"
 	done
 	
 BackersFR11SeenText:

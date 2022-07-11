@@ -266,27 +266,45 @@ UndellaTownBlockerText_Safe:
 	done
 	
 Fisher1UndellaTownSeenText:
-	text "..."
+	text "Okay, good catch!"
+	line "My next catch will"
+	cont "be called victory!"
 	done
 
 Fisher1UndellaTownBeatenText:
-	text "..."
+	text "The victory that"
+	line "got away was"
+	cont "thiiiis big!"
 	done
 
 Fisher1UndellaTownAfterText:
-	text "..."
+	text "Life is just like"
+	line "fishing. You can't"
+	
+	para "catch what you"
+	line "don't aim for, but"
+	
+	para "even if you aim"
+	line "for something, you"
+	
+	para "still can't catch"
+	line "it!"
 	done
 	
 Fisher2UndellaTownSeenText:
-	text "..."
+	text "I'll battle you"
+	line "with my freshly"
+	cont "caught #MON!"
 	done
 
 Fisher2UndellaTownBeatenText:
-	text "..."
+	text "I lost it!"
 	done
 
 Fisher2UndellaTownAfterText:
-	text "..."
+	text "I guess I'd better"
+	line "fish up some more"
+	cont "#MON!"
 	done
 	
 UndellaTownBugCatcherText:

@@ -22,20 +22,25 @@ RelicCastleTMDig:
 	itemball TM_DIG
 	
 PsychicRelicCastleB2FSeenText:
-	text "I was training"
-	line "here alone."
+	text "…When I am here, I"
+	line "feel like I might"
 
-	para "Behold the fruits"
-	line "of my labor!"
+	para "be crushed by"
+	line "sorrow. You there…"
+	cont "Let's have a bout!"
 	done
 
 PsychicRelicCastleB2FBeatenText:
-	text "Waaaargh!"
+	text "This bout… I will"
+	line "not forget it…"
 	done
 
 PsychicRelicCastleB2FAfterText:
-	text "This calls for"
-	line "extreme measures."
+	text "This castle will"
+	line "be buried by the"
+	
+	para "sands and for-"
+	line "gotten in time…"
 	done
 
 RelicCastleB2F_MapEvents:

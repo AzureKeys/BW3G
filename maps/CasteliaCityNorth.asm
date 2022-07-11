@@ -60,7 +60,7 @@ CasteliaNorthTimerBall:
 CasteliaNorthHeartScale:
 	hiddenitem HEART_SCALE, EVENT_CASTELIA_CITY_HEART_SCALE
 
-CasteliaNorthLassText:
+CasteliaNorthTwinText:
 	text "My mom has a #-"
 	line "MON called YANMA."
 
@@ -73,45 +73,53 @@ CasteliaNorthLassText:
 	done
 
 CasteliaNorthYoungsterText:
-	text "Going into an"
-	line "alley for the"
+	text "When you're tired,"
+	line "you should rest!"
 
-	para "first time makes"
-	line "me sorta anxious."
+	para "Don't force your-"
+	line "self to be"
+	cont "energetic."
 	done
 
 CasteliaNorthPokefanFText:
-	text "Our city was"
-	line "featured on a"
-	cont "radio program."
+	text "I wonder what"
+	line "CASTELIA was like"
 
-	para "It's nice to hear"
-	line "praise for your"
-
-	para "city, but it's a"
-	line "bit embarrassing"
-	cont "too."
+	para "before it got"
+	line "this big."
 	done
 
-CasteliaNorthTwinText:
-	text "That thing you"
-	line "have--it's an X-"
-	cont "TRANSCIEVER, huh?"
-	cont "Wow that's cool."
+CasteliaNorthLassText:
+	text "It's wonderful how"
+	line "the #MON and"
+	
+	para "women here are so"
+	line "full of life!"
 	done
 
 CasteliaNorthTwin2Text:
-	text "Wow, you have a"
-	line "#DEX!"
+	text "My mom says there"
+	line "are some #MON"
 
-	para "That is just so"
-	line "awesome."
+	para "that evolve when"
+	line "you use stones on"
+	
+	para "them. Some of them"
+	line "may not be what"
+	
+	para "you expect. Try"
+	line "all of them!"
 	done
 
 CasteliaNorthLass2Text:
-	text "I'm a huge fan of"
-	line "CASTELIA GYM's"
-	cont "BURGH."
+	text "To live surrounded"
+	line "by people, do you"
+	
+	para "have to grow to"
+	line "like everyone, or"
+	
+	para "do you only have"
+	line "to like yourself?"
 	done
 	
 CasteliaCitySignText:

@@ -61,22 +61,19 @@ CasteliaSewersRoomsBigPearl:
 	hiddenitem BIG_PEARL, EVENT_CASTELIA_SEWERS_BIG_PEARL
 	
 WorkerCasteliaSewersRoomsSeenText:
-	text "I can't figure out"
-	line "how to get through"
-	cont "this place!"
+	text "Whoooa!"
 	done
 
 WorkerCasteliaSewersRoomsBeatenText:
-	text "Gah! I'm"
-	line "frustrated!."
+	text "I looost!"
 	done
 
 WorkerCasteliaSewersRoomsAfterText:
-	text "The water blocks"
-	line "off some paths,"
-	cont "but opens others…"
-
-	para "It's so confusing!"
+	text "Isn't it fun how"
+	line "shouting in a"
+	
+	para "sewer tunnel makes"
+	cont "your voice echo?"
 	done
 	
 JanitorCasteliaSewersRoomsSeenText:

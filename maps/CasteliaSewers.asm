@@ -332,21 +332,31 @@ ScientistFCasteliaSewersAfterText:
 	done
 	
 Worker1CasteliaSewersSeenText:
-	text "Hey! You're that"
-	line "kid who's been"
-	cont "messing with our"
-	cont "plans!"
+	text "We need sewers,"
+	line "but what about"
+	cont "#MON?"
 	done
 
 Worker1CasteliaSewersBeatenText:
-	text "Grrr…"
+	text "There appears to"
+	line "no barrier between"
+	
+	para "you and your"
+	line "#MON!"
 	done
 
 Worker1CasteliaSewersAfterText:
-	text "What are we up to?"
+	text "Since we built"
+	line "this sewer, all"
 
-	para "Ha! Like I'd tell"
-	line "you!"
+	para "kinds of #MON"
+	line "have gathered."
+	
+	para "It's like there's"
+	line "no boundary"
+	
+	para "between people and"
+	line "#MON!"
 	done
 	
 Worker2CasteliaSewersSeenText:
@@ -380,34 +390,41 @@ Worker2CasteliaSewersAfterText:
 	done
 	
 Janitor1CasteliaSewersSeenText:
-	text "Hey, kid! You'd"
-	line "better stay out"
-	cont "of our way!"
+	text "Cleaning actually"
+	line "takes a lot of"
+	cont "strength…"
 	done
 
 Janitor1CasteliaSewersBeatenText:
-	text "Busted!"
+	text "Who cares about"
+	line "losing! There's a"
+	cont "spot over there!"
 	done
 
 Janitor1CasteliaSewersAfterText:
-	text "We won't let you"
-	line "mess up our plans"
-	cont "in the city."
+	text "When you clean, do"
+	line "you ever feel like"
+	
+	para "it's never going"
+	line "to end?"
 	done
 	
 Janitor2CasteliaSewersSeenText:
-	text "Kids are no match"
-	line "for TEAM PLASMA!"
+	text "I've been training"
+	line "real hard doing"
+	cont "all this cleaning!"
 	done
 
 Janitor2CasteliaSewersBeatenText:
-	text "I was wrong!"
+	text "I missed a spot!"
 	done
 
 Janitor2CasteliaSewersAfterText:
-	text "Darn, we can't let"
-	line "the plan be"
-	cont "compromised…"
+	text "I sure love to"
+	line "clean, and I can"
+	
+	para "clean forever down"
+	line "here!"
 	done
 	
 Janitor3CasteliaSewersSeenText:

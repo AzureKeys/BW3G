@@ -205,9 +205,11 @@ Hiker2RelicPassageAfterText:
 	done
 	
 BackpackerFRelicPassageSeenText:
-	text "I always take my"
-	line "#MON with me on"
-	cont "trips!"
+	text "The fact that you"
+	line "are here means…"
+	
+	para "You are also part"
+	line "of the sewers?!"
 	done
 
 BackpackerFRelicPassageBeatenText:

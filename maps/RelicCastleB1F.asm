@@ -25,24 +25,30 @@ RelicCastleElixer:
 	hiddenitem ELIXER, EVENT_RELIC_CASTLE_ELIXER
 	
 PsychicRelicCastleB1FSeenText:
-	text "#MON can't do a"
-	line "thing if they are"
-	cont "asleep."
+	text "My psychic type"
+	line "#MON just"
 
-	para "I'll show you how"
-	line "scary that is!"
+	para "started making"
+	line "noises. Is that"
+	
+	para "because we're in"
+	line "the ruins… or is"
+	cont "it because of you?"
 	done
 
 PsychicRelicCastleB1FBeatenText:
-	text "I lost. That's"
-	line "pretty sad…"
+	text "So… strong! Who"
+	line "are you?"
 	done
 
 PsychicRelicCastleB1FAfterText:
-	text "Putting #MON to"
-	line "sleep or paralyz-"
-	cont "ing them are good"
-	cont "battle techniques."
+	text "RELIC CASTLE…"
+	
+	para "Apparently people"
+	line "and #MON came"
+	
+	para "together here to"
+	line "create UNOVA."
 	done
 
 RelicCastleB1F_MapEvents:

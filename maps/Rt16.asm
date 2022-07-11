@@ -16,12 +16,12 @@ Rt16_MapScripts:
 	db 0 ; callbacks
 
 TrainerLassR16:
-	trainer LASS_D, LASS_R16, EVENT_BEAT_LASS_R16, LassR16SeenText, LassR16BeatenText, 0, .Script
+	trainer LASS_D, LASS_R16, EVENT_BEAT_LASS_R16, CyclistFR16SeenText, CyclistFR16BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext LassR16AfterText
+	writetext CyclistFR16AfterText
 	waitbutton
 	closetext
 	end
@@ -60,12 +60,12 @@ TrainerBackersMR16:
 	end
 
 TrainerBikerR16:
-	trainer BIKER, BIKER_R16, EVENT_BEAT_BIKER_R16, BikerR16SeenText, BikerR16BeatenText, 0, .Script
+	trainer BIKER, BIKER_R16, EVENT_BEAT_BIKER_R16, CyclistMR16SeenText, CyclistMR16BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BikerR16AfterText
+	writetext CyclistMR16AfterText
 	waitbutton
 	closetext
 	end
@@ -85,48 +85,53 @@ R16AirBalloon:
 R16TMSunnyDay:
 	itemball TM_SUNNY_DAY
 	
-LassR16SeenText:
-	text "I like cute #-"
-	line "MON better than"
-	cont "strong #MON."
-
-	para "But I have strong"
-	line "and cute #MON!"
+CyclistFR16SeenText:
+	text "Ting-a-ling-ling!"
+	line "Full speed attack,"
+	cont "coming your way!"
 	done
 
-LassR16BeatenText:
-	text "Oh, no, no, no!"
+CyclistFR16BeatenText:
+	text "Ting-a-ling-ling!"
+	line "Ting-a-ling-ling!"
 	done
 
-LassR16AfterText:
-	text "I'm okay! If I"
-	line "lose, I'll just"
+CyclistFR16AfterText:
+	text "When people are"
+	line "running by, you"
 
-	para "try harder next"
-	line "time!"
+	para "can't help but"
+	line "stop and look at"
+	cont "them."
 	done
 	
 BackpackerMR16SeenText:
-	text "Let me try some-"
-	line "thing I learned"
-	cont "today."
+	text "A spot of greenery"
+	line "growing right next"
+	cont "to a big city!"
+	
+	para "Truly an oasis! I"
+	line "feel so refreshed…"
+	
+	para "And now I'd like"
+	line "to battle!"
 	done
 
 BackpackerMR16BeatenText:
-	text "I didn't study"
-	line "enough, I guess."
+	text "Oh… It no longer"
+	line "feels like an"
+	cont "oasis if I lose."
 	done
 
 BackpackerMR16AfterText:
-	text "I have to take so"
-	line "many tests, I"
+	text "There are some"
+	line "moves that can be"
 
-	para "don't have much"
-	line "time for #MON."
-
-	para "So when I do get"
-	line "to play, I really"
-	cont "concentrate."
+	para "used on things in"
+	line "the environment."
+	
+	para "Do you know any"
+	line "of them?"
 	done
 	
 BackpackerFR16SeenText:
@@ -148,36 +153,39 @@ BackpackerFR16AfterText:
 	done
 	
 BackersMR16SeenText:
-	text "Fly high into the"
-	line "sky, my beloved"
-	cont "bird #MON!"
+	text "Tomorrow will be a"
+	line "home run!"
 	done
 
 BackersMR16BeatenText:
-	text "I feel like just"
-	line "flying away now."
+	text "Farewell, you won!"
 	done
 
 BackersMR16AfterText:
-	text "I plan to train"
-	line "around NIMBASA"
-	cont "CITY."
+	text "Your #MON"
+	line "certainly have"
+	cont "what it takes!"
 	done
 	
-BikerR16SeenText:
-	text "I'm a fearless"
-	line "highway star!"
+CyclistMR16SeenText:
+	text "When I'm riding my"
+	line "bicycle, don't you"
+	
+	para "think I look"
+	line "stronger?"
 	done
 
-BikerR16BeatenText:
-	text "Arrrgh! Crash and"
-	line "burn!"
+CyclistMR16BeatenText:
+	text "The cool breeze in"
+	line "my face stopped!"
 	done
 
-BikerR16AfterText:
-	text "Reckless driving"
-	line "causes accidents!"
-	cont "Take it easy!"
+CyclistMR16AfterText:
+	text "Cycling is a sport"
+	line "too! Follow the"
+	
+	para "rules and ride"
+	line "safely!"
 	done
 	
 R16SignText:

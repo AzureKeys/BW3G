@@ -1,9 +1,9 @@
 	const_def 2 ; object constants
 	const NIMBASAPOKECENTER_NURSE
 	const NIMBASAPOKECENTER_CLERK
-	const NIMBASAPOKECENTER_GAMEBOY_KID
+	const NIMBASAPOKECENTER_GRAMPS
 	const NIMBASAPOKECENTER_LASS
-	const NIMBASAPOKECENTER_GRANNY
+	const NIMBASAPOKECENTER_TRUBBISH
 
 NimbasaPokecenter1F_MapScripts:
 	db 0 ; scene scripts
@@ -19,52 +19,48 @@ NimbasaPokecenterClerkScript:
 	closetext
 	end
 
-NimbasaPokecenterGameboyKidScript:
-	jumptextfaceplayer NimbasaPokecenterGameboyKidText
+NimbasaPokecenterGrampsScript:
+	jumptextfaceplayer NimbasaPokecenterGrampsText
 
 NimbasaPokecenterLassScript:
 	jumptextfaceplayer NimbasaPokecenterLassText
 
-NimbasaPokecenterGrannyScript:
-	jumptextfaceplayer NimbasaPokecenterGrannyText
+NimbasaPokecenterTrubbishScript:
+	opentext
+	writetext NimbasaPokecenterTrubbishText
+	cry TRUBBISH
+	waitbutton
+	closetext
+	end
 
-NimbasaPokecenterGameboyKidText:
-	text "My EEVEE evolved"
-	line "into an ESPEON."
+NimbasaPokecenterGrampsText:
+	text "Have you found"
+	line "any colored shards"
 
-	para "But my friend's"
-	line "EEVEE turned into"
-	cont "an UMBREON."
+	para "around? I hear"
+	line "there's a place in"
 
-	para "I wonder why? We"
-	line "both were raising"
+	para "DRIFTVEIL CITY"
+	line "where you can"
 
-	para "our EEVEE in the"
-	line "same way…"
+	para "trade them in for"
+	line "something good."
 	done
 
 NimbasaPokecenterLassText:
-	text "A higher level"
-	line "#MON doesn't"
-	cont "always win."
+	text "This is my #-"
+	line "MON, TRUBBISH!"
 
-	para "After all, it may"
-	line "have a type dis-"
-	cont "advantage."
+	para "I caught it in"
+	line "ROUTE 16."
 
-	para "I don't think"
-	line "there is a single"
-
-	para "#MON that is"
-	line "the toughest."
+	para "It may be trash,"
+	line "but it's my"
+	cont "special trash!"
 	done
 
-NimbasaPokecenterGrannyText:
-	text "If you use REVIVE,"
-	line "a #MON that's"
-
-	para "fainted will wake"
-	line "right up."
+NimbasaPokecenterTrubbishText:
+	text "Truuub."
 	done
 
 NimbasaPokecenter1F_MapEvents:
@@ -81,6 +77,6 @@ NimbasaPokecenter1F_MapEvents:
 	db 5 ; object events
 	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaPokecenterNurseScript, -1
 	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, NimbasaPokecenterClerkScript, -1
-	object_event  1,  7, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaPokecenterGameboyKidScript, -1
-	object_event  8,  4, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaPokecenterLassScript, -1
-	object_event  1,  9, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaPokecenterGrannyScript, -1
+	object_event  7,  3, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NimbasaPokecenterGrampsScript, -1
+	object_event  1,  7, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaPokecenterLassScript, -1
+	object_event  2,  7, SPRITE_TRUBBISH, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NimbasaPokecenterTrubbishScript, -1

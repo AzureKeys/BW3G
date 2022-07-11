@@ -345,13 +345,9 @@ CasteliaStreetsLassText:
 	done
 
 CasteliaStreetsCooltrainerMText:
-	text "You're collecting"
-	line "every single kind"
-	cont "of #MON?"
-
-	para "That must be quite"
-	line "a challenge, but"
-	cont "it sounds fun too."
+	text "Should I change my"
+	line "#MON's moves or"
+	cont "its held items?"
 	done
 	
 CasteliaGaveRestText:
