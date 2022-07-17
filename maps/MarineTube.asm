@@ -3,7 +3,7 @@
 	const MARINETUBE_COOLTRAINER_M
 	const MARINETUBE_LASS
 	const MARINETUBE_POKEFAN_M
-	const MARINETUBE_TEACHER
+	const MARINETUBE_NURSERY_AIDE
 	const MARINETUBE_TWIN_1
 	const MARINETUBE_TWIN_2
 	const MARINETUBE_PRESCHOOLER_M
@@ -13,6 +13,17 @@ MarineTube_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
+
+TrainerNurseryAideMarineTube:
+	trainer NURSERY_AIDE, NURSERY_AIDE_MARINE_TUBE, EVENT_BEAT_NURSERY_AIDE_MARINE_TUBE, NurseryAideMarineTubeSeenText, NurseryAideMarineTubeBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext NurseryAideMarineTubeAfterText
+	waitbutton
+	closetext
+	end
 
 TrainerPreschoolerMMarineTube:
 	trainer PRESCHOOLERM, PRESCHOOLERM_MARINE_TUBE, EVENT_BEAT_PRESCHOOLERM_MARINE_TUBE, PreschoolerMMarineTubeSeenText, PreschoolerMMarineTubeBeatenText, 0, .Script
@@ -104,6 +115,18 @@ TwinsMarineTubeAfterText:
 	text "..."
 	done
 	
+NurseryAideMarineTubeSeenText:
+	text "..."
+	done
+
+NurseryAideMarineTubeBeatenText:
+	text "..."
+	done
+
+NurseryAideMarineTubeAfterText:
+	text "..."
+	done
+	
 MarineTubeCooltrainerFText:
 	text "Wow, look at all"
 	line "of the #MON"
@@ -166,7 +189,7 @@ MarineTube_MapEvents:
 	object_event  5, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MarineTubeCooltrainerMTextScript, -1
 	object_event  8,  7, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, MarineTubeLassTextScript, -1
 	object_event  7, 11, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MarineTubePokefanMTextScript, -1
-	object_event  6, 24, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MarineTubeTeacherTextScript, -1
+	object_event  6, 24, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 0, TrainerNurseryAideMarineTube, -1
 	object_event  5, 29, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsMarineTube, -1
 	object_event  6, 29, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsMarineTube, -1
 	object_event  5, 19, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPreschoolerMMarineTube, -1

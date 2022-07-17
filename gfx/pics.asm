@@ -59,6 +59,7 @@ BackersMPic:        INCBIN "gfx/trainers/backers_m.2bpp.lz"
 BackersFPic:        INCBIN "gfx/trainers/backers_f.2bpp.lz"
 ArtistPic:          INCBIN "gfx/trainers/artist.2bpp.lz"
 LinebackerPic:      INCBIN "gfx/trainers/linebacker.2bpp.lz"
+NurseryAidePic:     INCBIN "gfx/trainers/nursery_aide.2bpp.lz"
 
 
 
@@ -394,7 +395,6 @@ PiloswineBackpic:   INCBIN "gfx/pokemon/piloswine/back.2bpp.lz"
 MamoswineBackpic:   INCBIN "gfx/pokemon/mamoswine/back.2bpp.lz"
 LarvitarBackpic:   INCBIN "gfx/pokemon/larvitar/back.2bpp.lz"
 PupitarBackpic:   INCBIN "gfx/pokemon/pupitar/back.2bpp.lz"
-TeacherPic:          INCBIN "gfx/trainers/teacher.2bpp.lz"
 HaxorusBackpic:   INCBIN "gfx/pokemon/haxorus/back.2bpp.lz"
 BouffalantBackpic:   INCBIN "gfx/pokemon/bouffalant/back.2bpp.lz"
 KlinkBackpic:   INCBIN "gfx/pokemon/klink/back.2bpp.lz"

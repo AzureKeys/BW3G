@@ -11,7 +11,7 @@
 	const R20_SCHOOL_KIDF_1
 	const R20_SCHOOL_KIDF_2
 	const R20_SCHOOL_KIDF_3
-	const R20_TEACHER
+	const R20_NURSERY_AIDE
 
 Rt20_MapScripts:
 	db 0 ; scene scripts
@@ -95,13 +95,13 @@ TrainerSchoolKidF3R20:
 	closetext
 	end
 
-TrainerTeacherR20:
-	trainer TEACHER, TEACHER_R20, EVENT_BEAT_TEACHER_R20, TeacherR20SeenText, TeacherR20BeatenText, 0, .Script
+TrainerNurseryAideR20:
+	trainer NURSERY_AIDE, NURSERY_AIDE_R20, EVENT_BEAT_NURSERY_AIDE_R20, NurseryAideR20SeenText, NurseryAideR20BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext TeacherR20AfterText
+	writetext NurseryAideR20AfterText
 	waitbutton
 	closetext
 	end
@@ -242,7 +242,7 @@ SchoolKidF3R20AfterText:
 	line "all the time."
 	done
 	
-TeacherR20SeenText:
+NurseryAideR20SeenText:
 	text "I always give it"
 	line "my best when I'm"
 
@@ -250,7 +250,7 @@ TeacherR20SeenText:
 	line "#MON!"
 	done
 
-TeacherR20BeatenText:
+NurseryAideR20BeatenText:
 	text "Oh no! I'm not"
 	line "being a very good"
 	
@@ -258,7 +258,7 @@ TeacherR20BeatenText:
 	line "kids, am I?"
 	done
 
-TeacherR20AfterText:
+NurseryAideR20AfterText:
 	text "Every day is full"
 	line "of amazing, new"
 	
@@ -292,5 +292,5 @@ Rt20_MapEvents:
 	object_event 30, 21, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidF1R20, -1
 	object_event 21, 11, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidF2R20, -1
 	object_event 33,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidF3R20, -1
-	object_event 38,  9, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerTeacherR20, -1
+	object_event 38,  9, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerNurseryAideR20, -1
 	

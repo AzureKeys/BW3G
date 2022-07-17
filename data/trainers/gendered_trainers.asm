@@ -27,7 +27,6 @@ FemaleTrainers:
 	db HEX_MANIAC
 	db LASS
 	db LASS_D
-	db TEACHER
 	db SWIMMERF
 	db SWIMMERF_D
 	db PICNICKER

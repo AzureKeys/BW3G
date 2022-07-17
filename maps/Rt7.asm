@@ -7,7 +7,7 @@
 	const R7_AMOONGUSS_2
 	const R7_BIRD_KEEPER
 	const R7_BACKPACKERF
-	const R7_LASS_2
+	const R7_NURSERY_AIDE
 	const R7_SCHOOL_KIDF
 	const R7_PSYCHIC
 
@@ -139,13 +139,13 @@ TrainerBackpackerFR7:
 	closetext
 	end
 
-TrainerLass2R7:
-	trainer LASS_D, LASS_R7_1, EVENT_BEAT_LASS_R7_2, Lass2R7SeenText, Lass2R7BeatenText, 0, .Script
+TrainerNurseryAideR7:
+	trainer NURSERY_AIDE, NURSERY_AIDE_R7, EVENT_BEAT_NURSERY_AIDE_R7, NurseryAideR7SeenText, NurseryAideR7BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Lass2R7AfterText
+	writetext NurseryAideR7AfterText
 	waitbutton
 	closetext
 	end
@@ -214,7 +214,7 @@ BackpackerFR7AfterText:
 	cont "battles!"
 	done
 	
-Lass2R7SeenText:
+NurseryAideR7SeenText:
 	text "The GYM LEADER"
 	line "often comes to"
 	
@@ -222,11 +222,11 @@ Lass2R7SeenText:
 	line "CELESTIAL TOWER."
 	done
 
-Lass2R7BeatenText:
+NurseryAideR7BeatenText:
 	text "You're good!"
 	done
 
-Lass2R7AfterText:
+NurseryAideR7AfterText:
 	text "Maybe I should"
 	line "start training"
 	cont "there too."
@@ -300,7 +300,7 @@ Rt7_MapEvents:
 	object_event 16, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R7AmoongussScript1, EVENT_R_7_AMOONGUSS_1
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R7AmoongussScript2, EVENT_R_7_AMOONGUSS_2
 	object_event  9, 45, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR7, -1
-	object_event 18, 27, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLass2R7, -1
+	object_event 18, 27, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerNurseryAideR7, -1
 	object_event 13, 19, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFR7, -1
 	object_event  4, 39, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeperR7, -1
 	object_event 16, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicR7, -1

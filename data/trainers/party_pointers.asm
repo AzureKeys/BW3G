@@ -38,6 +38,7 @@ TrainerGroups:
 	dba LinebackerGroup
 	dba MaidGroup
 	dba MusicianGroup
+	dba NurseryAideGroup
 	dba ParasolLadyGroup
 	dba PilotGroup
 	dba PokefanMGroup
@@ -67,7 +68,6 @@ TrainerGroups:
 	dba WaitressGroup
 	dba WorkerGroup
 	dba BirdKeeperGroup
-	dba TeacherGroup
 	dba BugCatcherGroup
 	dba PicnickerGroup
 	dba PicnickerDGroup

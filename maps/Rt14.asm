@@ -64,7 +64,7 @@ TrainerR14PrizeGiver:
 	faceplayer
 	checkevent EVENT_GOT_RIOLU_EGG
 	iftrue .beaten
-	checkevent EVENT_BEAT_CAMPER_R14
+	checkevent EVENT_BEAT_NURSERY_AIDE_R14
 	iftrue .offeregg
 	opentext
 	writetext R14PrizeGiverSeenText
@@ -72,11 +72,11 @@ TrainerR14PrizeGiver:
 	closetext
 	winlosstext R14PrizeGiverWinText, 0
 	setlasttalked R14_PRIZE_GIVER
-	loadtrainer CAMPER_D, CAMPER_R14
+	loadtrainer NURSERY_AIDE, NURSERY_AIDE_R14
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_CAMPER_R14
+	setevent EVENT_BEAT_NURSERY_AIDE_R14
 .offeregg
 	opentext
 	writetext R14PrizeGiverGiveEggText
@@ -253,7 +253,7 @@ Rt14_MapEvents:
 	object_event 20,  9, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPreschoolerF1R14, -1
 	object_event 18, 15, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPreschoolerM2R14, -1
 	object_event 10, 22, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPreschoolerF2R14, -1
-	object_event  4, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, TrainerR14PrizeGiver, -1
+	object_event  4, 20, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TrainerR14PrizeGiver, -1
 	object_event 31,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R14Antidote, EVENT_R_14_ANTIDOTE
 	object_event 14, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R14Potion, EVENT_R_14_POTION
 	object_event 15, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R14NetBall, EVENT_R_14_NET_BALL

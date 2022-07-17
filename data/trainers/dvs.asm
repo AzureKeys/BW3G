@@ -37,6 +37,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; LINEBACKER
 	dn  6,  9, 12,  8 ; MAID
 	dn  9,  8,  8,  8 ; MUSICIAN
+	dn  6,  8,  8,  8 ; NURSERY_AIDE
 	dn  6,  9, 12,  8 ; PARASOL_LADY
 	dn  9,  8,  8,  8 ; PILOT
 	dn  9,  8,  8,  8 ; POKEFAN_M
@@ -66,7 +67,6 @@ TrainerClassDVs:
 	dn  6, 10, 10,  8 ; WAITRESS
 	dn 10,  8,  8,  8 ; WORKER
 	dn  9,  8,  8,  8 ; BIRD_KEEPER
-	dn  6,  8,  8,  8 ; TEACHER
 	dn  9,  8,  8,  8 ; BUG_CATCHER
 	dn  6, 10, 10,  8 ; PICNICKER
 	dn  6, 10, 10,  8 ; PICNICKER_D

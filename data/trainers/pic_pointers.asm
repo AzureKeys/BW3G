@@ -38,6 +38,7 @@ TrainerPicPointers::
 	dba LinebackerPic
 	dba MaidPic
 	dba MusicianPic
+	dba NurseryAidePic
 	dba ParasolLadyPic
 	dba PilotPic
 	dba PokefanmPic
@@ -67,7 +68,6 @@ TrainerPicPointers::
 	dba WaitressPic
 	dba WorkerPic
 	dba BirdKeeperPic
-	dba TeacherPic
 	dba BugCatcherPic
 	dba PicnickerPic
 	dba PicnickerDPic

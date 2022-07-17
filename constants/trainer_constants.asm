@@ -49,7 +49,6 @@ CHRIS EQU __enum__
 	const LASS_LOSTLORN
 	const LASS_DESERT
 	const LASS_NACRENE_OUTSKIRT
-	const LASS_R7_1
 	const LASS_CELESTIAL_TOWER
 	
 	trainerclass LASS_D
@@ -265,6 +264,12 @@ CHRIS EQU __enum__
 	const MUSICIAN_VIRBANK_GYM_2
 	const MUSICIAN_VILLAGE_BRIDGE
 	
+	trainerclass NURSERY_AIDE
+	const NURSERY_AIDE_MARINE_TUBE
+	const NURSERY_AIDE_R14
+	const NURSERY_AIDE_R20
+	const NURSERY_AIDE_R7
+	
 	trainerclass PARASOL_LADY
 	const PARASOL_LADY_NACRENE_OUTSKIRT
 	const PARASOL_LADY_R6_1
@@ -454,9 +459,6 @@ CHRIS EQU __enum__
 	const FREDDY_REMATCH_2
 	const FREDDY_REMATCH_3
 
-	trainerclass TEACHER ; 22
-	const TEACHER_R20
-
 	trainerclass BUG_CATCHER ; 24
 	const BUG_CATCHER_LOSTLORN_1
 
@@ -468,7 +470,6 @@ CHRIS EQU __enum__
 	const PICNICKER_R6
 	
 	trainerclass CAMPER_D
-	const CAMPER_R14
 	const CAMPER_R6
 
 	trainerclass GRUNTM ; 1f

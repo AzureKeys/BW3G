@@ -217,6 +217,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; NurseryAide
+	db NO_ITEM, NO_ITEM ; items
+	db 18 ; base reward
+	dw AI_BASIC | AI_OPPORTUNIST | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 ; ParasolLady
 	db NO_ITEM, NO_ITEM ; items
 	db 22 ; base reward
@@ -389,12 +395,6 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 6 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Teacher
-	db NO_ITEM, NO_ITEM ; items
-	db 18 ; base reward
-	dw AI_BASIC | AI_OPPORTUNIST | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Bug Catcher

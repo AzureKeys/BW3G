@@ -148,14 +148,6 @@ LassGroup:
 	db 31, MARACTUS
 	dw $2C00, $2C00, $2C00, $2C00, $2C00
 	db -1 ; end
-
-	; LASS (R7)
-	db "MARY@", TRAINERTYPE_STAT_EXP
-	db 43, DARUMAKA
-	dw $5000, $5000, $5000, $5000, $5000
-	db 45, DARMANITAN
-	dw $5000, $5000, $5000, $5000, $5000
-	db -1 ; end
 	
 	; LASS (CELESTIAL)
 	db "DOREEN@", TRAINERTYPE_STAT_EXP
@@ -1448,6 +1440,35 @@ MusicianGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
 	
+NurseryAideGroup:
+	; NURSERY_AIDE (MARINE_TUBE)
+	db "LISA@", TRAINERTYPE_NORMAL
+	db 7, AUDINO
+	db -1 ; end
+	
+	; NURSERY_AIDE (R14)
+	db "BRIE@", TRAINERTYPE_NORMAL
+	db 10, BLITZLE
+	db -1 ; end
+	
+	; NURSERY_AIDE (R20)
+	db "ANGIE@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
+	db 25, EEVEE
+	dw $2000, $2000, $2000, $2000, $2000
+	db BITE, SWIFT, FURY_SWIPES, TAKE_DOWN
+	db 28, SYLVEON
+	dw $2000, $2000, $2000, $2000, $2000
+	db SWIFT, DRAININGKISS, SWEET_KISS, REFLECT
+	db -1 ; end
+
+	; NURSERY_AIDE (R7)
+	db "MARY@", TRAINERTYPE_STAT_EXP
+	db 43, DARUMAKA
+	dw $5000, $5000, $5000, $5000, $5000
+	db 45, DARMANITAN
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+	
 ParasolLadyGroup:
 	; PARASOL_LADY (NACRENE_OUTSKIRT)
 	db "KELLY@", TRAINERTYPE_STAT_EXP
@@ -2246,8 +2267,8 @@ SocialiteGroup:
 SwimmerMGroup:
 	; SWIMMERM (HUMILAU_GYM)
 	db "BARRY@", TRAINERTYPE_NORMAL
-	db 9, AZURILL
-	db 11, TYMPOLE
+	db 8, AZURILL
+	db 9, TYMPOLE
 	db -1 ; end
 
 	; SWIMMERM (R17)
@@ -2323,7 +2344,7 @@ SwimmerFGroup:
 SwimmerFDGroup:
 	; SWIMMERF (HUMILAU_GYM)
 	db "ANGELA@", TRAINERTYPE_NORMAL
-	db 12, REMORAID
+	db 10, REMORAID
 	db -1 ; end
 	
 	; SWIMMERF (R17)
@@ -2579,17 +2600,6 @@ BirdKeeperGroup:
 	dw $4800, $4800, $4800, $4800, $4800
 	db -1 ; end
 
-TeacherGroup:
-	; TEACHER (R20)
-	db "ANDREA@", TRAINERTYPE_STAT_EXP | TRAINERTYPE_MOVES
-	db 25, EEVEE
-	dw $2000, $2000, $2000, $2000, $2000
-	db BITE, SWIFT, FURY_SWIPES, TAKE_DOWN
-	db 28, SYLVEON
-	dw $2000, $2000, $2000, $2000, $2000
-	db SWIFT, DRAININGKISS, SWEET_KISS, REFLECT
-	db -1 ; end
-
 BugCatcherGroup:
 	; SCHOOL_KIDF (LOSTLORN)
 	db "ROBBIE@", TRAINERTYPE_STAT_EXP
@@ -2628,11 +2638,6 @@ PicnickerDGroup:
 	db -1 ; end
 
 CamperDGroup:
-	; CAMPER (R14)
-	db "BRIAN@", TRAINERTYPE_NORMAL
-	db 10, BLITZLE
-	db -1 ; end
-	
 	; CAMPER (R6)
 	db "RUBEN@", TRAINERTYPE_STAT_EXP
 	db 40, CUBCHOO

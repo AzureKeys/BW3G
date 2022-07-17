@@ -45,10 +45,10 @@ INCLUDE "maps/StrangeHouseB1F.asm"
 INCLUDE "maps/StrangeHouseRooms.asm"
 INCLUDE "maps/LacunosaHouse.asm"
 INCLUDE "maps/R12VillageBridgeGate.asm"
-INCLUDE "maps/LentimasClawHouse.asm"
 
 SECTION "Map Scripts 4", ROMX
 
+INCLUDE "maps/LentimasClawHouse.asm"
 INCLUDE "maps/LentimasPokecenter1F.asm"
 INCLUDE "maps/LentimasHouse.asm"
 INCLUDE "maps/LentimasGym.asm"
