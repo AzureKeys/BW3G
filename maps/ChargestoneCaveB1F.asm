@@ -2,7 +2,7 @@
 	const CHARGESTONECAVEB1F_FULL_HEAL
 	const CHARGESTONECAVEB1F_BIG_PEARL
 	const CHARGESTONECAVEB1F_IRON
-	const CHARGESTONECAVEB1F_COOLTRAINERF
+	const CHARGESTONECAVEB1F_ACE_TRAINERF
 	const CHARGESTONECAVEB1F_HIKER
 	const CHARGESTONECAVEB1F_BATTLE_GIRL
 	const CHARGESTONECAVEB1F_DOCTOR
@@ -39,13 +39,13 @@ TrainerDoctorChargestone:
 	special HealParty
 	end
 
-TrainerCooltrainerF2Chargestone:
-	trainer COOLTRAINERF_D, COOLTRAINERF_CHARGESTONE_2, EVENT_BEAT_COOLTRAINERF_CHARGESTONE_2, CooltrainerF2ChargestoneSeenText, CooltrainerF2ChargestoneBeatenText, 0, .Script
+TrainerAceTrainerF2Chargestone:
+	trainer ACE_TRAINERF_D, ACE_TRAINERF_CHARGESTONE_2, EVENT_BEAT_ACE_TRAINERF_CHARGESTONE_2, AceTrainerF2ChargestoneSeenText, AceTrainerF2ChargestoneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerF2ChargestoneAfterText
+	writetext AceTrainerF2ChargestoneAfterText
 	waitbutton
 	closetext
 	end
@@ -127,7 +127,7 @@ ChargestoneDoctorHealText:
 	cont "full health."
 	done
 	
-CooltrainerF2ChargestoneSeenText:
+AceTrainerF2ChargestoneSeenText:
 	text "Some #MON"
 	line "evolve by level,"
 	
@@ -136,11 +136,11 @@ CooltrainerF2ChargestoneSeenText:
 	cont "stone."
 	done
 
-CooltrainerF2ChargestoneBeatenText:
+AceTrainerF2ChargestoneBeatenText:
 	text "Schooled!"
 	done
 
-CooltrainerF2ChargestoneAfterText:
+AceTrainerF2ChargestoneAfterText:
 	text "But some #MON"
 	line "need to be holding"
 	cont "a certain item to"
@@ -223,7 +223,7 @@ ChargestoneCaveB1F_MapEvents:
 	object_event 19, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ChargestoneFullHeal, EVENT_CHARGESTONE_FULL_HEAL
 	object_event 27, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ChargestoneBigPearl, EVENT_CHARGESTONE_BIG_PEARL
 	object_event  6, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ChargestoneIron, EVENT_CHARGESTONE_IRON
-	object_event 14, 34, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerF2Chargestone, -1
+	object_event 14, 34, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerAceTrainerF2Chargestone, -1
 	object_event 18, 22, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerHiker2Chargestone, -1
 	object_event 26, 21, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlChargestone, -1
 	object_event 21, 18, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TrainerDoctorChargestone, -1

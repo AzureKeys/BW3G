@@ -8,8 +8,8 @@
 	const R4_FISHER1
 	const R4_FISHER2
 	const R4_LADY
-	const R4_OFFICER1
-	const R4_OFFICER2
+	const R4_POLICEMAN1
+	const R4_POLICEMAN2
 	const R4_POKEFANM
 	const R4_POKEFANF
 	const R4_BIKER
@@ -146,24 +146,24 @@ TrainerFisher2R4:
 	closetext
 	end
 
-TrainerOfficer1R4:
-	trainer OFFICER, OFFICER_R4_1, EVENT_BEAT_OFFICER_R4_1, Officer1R4SeenText, Officer1R4BeatenText, 0, .Script
+TrainerPoliceman1R4:
+	trainer POLICEMAN, POLICEMAN_R4_1, EVENT_BEAT_POLICEMAN_R4_1, Policeman1R4SeenText, Policeman1R4BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Officer1R4AfterText
+	writetext Policeman1R4AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerOfficer2R4:
-	trainer OFFICER, OFFICER_R4_2, EVENT_BEAT_OFFICER_R4_2, Officer2R4SeenText, Officer2R4BeatenText, 0, .Script
+TrainerPoliceman2R4:
+	trainer POLICEMAN, POLICEMAN_R4_2, EVENT_BEAT_POLICEMAN_R4_2, Policeman2R4SeenText, Policeman2R4BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext Officer2R4AfterText
+	writetext Policeman2R4AfterText
 	waitbutton
 	closetext
 	end
@@ -353,13 +353,13 @@ BikerR4AfterText:
 	line "in the sand!"
 	done
 	
-Officer1R4SeenText:
+Policeman1R4SeenText:
 	text "What's a kid like"
 	line "you doing around"
 	cont "these parts?"
 	done
 
-Officer1R4BeatenText:
+Policeman1R4BeatenText:
 	text "To have bested an"
 	line "officer like me…"
 	
@@ -367,7 +367,7 @@ Officer1R4BeatenText:
 	line "are you?"
 	done
 
-Officer1R4AfterText:
+Policeman1R4AfterText:
 	text "An officer's job"
 	line "is to keep on"
 	
@@ -376,7 +376,7 @@ Officer1R4AfterText:
 	cont "going on!"
 	done
 	
-Officer2R4SeenText:
+Policeman2R4SeenText:
 	text "Ah, that smell?"
 	
 	para "My #MON here"
@@ -387,7 +387,7 @@ Officer2R4SeenText:
 	cont "about you!"
 	done
 
-Officer2R4BeatenText:
+Policeman2R4BeatenText:
 	text "I see…"
 	line "Your strength is"
 	
@@ -395,7 +395,7 @@ Officer2R4BeatenText:
 	line "dangerous…"
 	done
 
-Officer2R4AfterText:
+Policeman2R4AfterText:
 	text "Just because"
 	line "you're strong"
 
@@ -485,8 +485,8 @@ Rt4_MapEvents:
 	object_event 12, 49, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerFisher1R4, -1
 	object_event 12, 53, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 0, TrainerFisher2R4, -1
 	object_event 20, 35, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerLadyR4, -1
-	object_event 17, 12, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerOfficer1R4, -1
-	object_event 32, 50, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerOfficer2R4, -1
+	object_event 17, 12, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPoliceman1R4, -1
+	object_event 32, 50, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPoliceman2R4, -1
 	object_event 34,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanMR4, -1
 	object_event 22, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerPokefanFR4, -1
 	object_event 24, 46, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBikerR4, -1

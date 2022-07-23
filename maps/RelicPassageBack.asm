@@ -6,7 +6,7 @@
 	const RELICPASSAGEBACK_SMOOTH_ROCK
 	const RELICPASSAGEBACK_TM_ROCK_SLIDE
 	const RELICPASSAGEBACK_WORKER
-	const RELICPASSAGEBACK_PSYCHIC_F
+	const RELICPASSAGEBACK_PSYCHICF
 	const RELICPASSAGEBACK_BACKPACKERM
 	const RELICPASSAGEBACK_HEX_MANIAC
 
@@ -78,7 +78,7 @@ TrainerWorkerRelicPassage:
 	end
 
 TrainerPsychicFRelicPassage:
-	trainer PSYCHIC_T_F, PSYCHICF_RELIC_PASSAGE, EVENT_BEAT_PSYCHICF_RELIC_PASSAGE, PsychicFRelicPassageSeenText, PsychicFRelicPassageBeatenText, 0, .Script
+	trainer PSYCHICF_T, PSYCHICF_RELIC_PASSAGE, EVENT_BEAT_PSYCHICF_RELIC_PASSAGE, PsychicFRelicPassageSeenText, PsychicFRelicPassageBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

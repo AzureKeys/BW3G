@@ -6,10 +6,10 @@ TrainerPicPointers::
 	dba YoungsterDPic
 	dba LassPic
 	dba LassDPic
-	dba CooltrainermPic
-	dba CooltrainermDPic
-	dba CooltrainerfPic
-	dba CooltrainerfDPic
+	dba AceTrainermPic
+	dba AceTrainermDPic
+	dba AceTrainerfPic
+	dba AceTrainerfDPic
 	dba ArtistPic
 	dba BackersMPic
 	dba BackersFPic
@@ -47,11 +47,11 @@ TrainerPicPointers::
 	dba PkmnBreederFPic
 	dba PkmnRangerMPic
 	dba PkmnRangerFPic
-	dba OfficerPic
+	dba PolicemanPic
 	dba PreschoolerMPic
 	dba PreschoolerFPic
-	dba PsychicTPic
-	dba PsychicTFPic
+	dba PsychicMTPic
+	dba PsychicFTPic
 	dba RichBoyPic
 	dba SchoolKidMPic
 	dba SchoolKidFPic

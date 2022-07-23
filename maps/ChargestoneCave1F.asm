@@ -8,8 +8,8 @@
 	const CHARGESTONECAVE1F_GUITARIST
 	const CHARGESTONECAVE1F_SCIENTISTM
 	const CHARGESTONECAVE1F_PKMN_RANGERF
-	const CHARGESTONECAVE1F_COOLTRAINERM
-	const CHARGESTONECAVE1F_COOLTRAINERF
+	const CHARGESTONECAVE1F_ACE_TRAINERM
+	const CHARGESTONECAVE1F_ACE_TRAINERF
 	const CHARGESTONECAVE1F_HIKER
 
 ChargestoneCave1F_MapScripts:
@@ -50,24 +50,24 @@ TrainerPkmnRangerFChargestone:
 	closetext
 	end
 
-TrainerCooltrainerM1Chargestone:
-	trainer COOLTRAINERM, COOLTRAINERM_CHARGESTONE_1, EVENT_BEAT_COOLTRAINERM_CHARGESTONE_1, CooltrainerM1ChargestoneSeenText, CooltrainerM1ChargestoneBeatenText, 0, .Script
+TrainerAceTrainerM1Chargestone:
+	trainer ACE_TRAINERM, ACE_TRAINERM_CHARGESTONE_1, EVENT_BEAT_ACE_TRAINERM_CHARGESTONE_1, AceTrainerM1ChargestoneSeenText, AceTrainerM1ChargestoneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerM1ChargestoneAfterText
+	writetext AceTrainerM1ChargestoneAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerF1Chargestone:
-	trainer COOLTRAINERF, COOLTRAINERF_CHARGESTONE_1, EVENT_BEAT_COOLTRAINERF_CHARGESTONE_1, CooltrainerF1ChargestoneSeenText, CooltrainerF1ChargestoneBeatenText, 0, .Script
+TrainerAceTrainerF1Chargestone:
+	trainer ACE_TRAINERF, ACE_TRAINERF_CHARGESTONE_1, EVENT_BEAT_ACE_TRAINERF_CHARGESTONE_1, AceTrainerF1ChargestoneSeenText, AceTrainerF1ChargestoneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerF1ChargestoneAfterText
+	writetext AceTrainerF1ChargestoneAfterText
 	waitbutton
 	closetext
 	end
@@ -147,33 +147,33 @@ PkmnRangerFChargestoneAfterText:
 	line "of potential, kid."
 	done
 	
-CooltrainerM1ChargestoneSeenText:
+AceTrainerM1ChargestoneSeenText:
 	text "Some #MON"
 	line "evolve in special"
 	cont "ways!"
 	done
 
-CooltrainerM1ChargestoneBeatenText:
+AceTrainerM1ChargestoneBeatenText:
 	text "Taken down!"
 	done
 
-CooltrainerM1ChargestoneAfterText:
+AceTrainerM1ChargestoneAfterText:
 	text "Try giving your"
 	line "#MON items to"
 	cont "hold."
 	done
 	
-CooltrainerF1ChargestoneSeenText:
+AceTrainerF1ChargestoneSeenText:
 	text "You know items can"
 	line "strengthen a #-"
 	cont "MON's moves?"
 	done
 
-CooltrainerF1ChargestoneBeatenText:
+AceTrainerF1ChargestoneBeatenText:
 	text "You're good!"
 	done
 
-CooltrainerF1ChargestoneAfterText:
+AceTrainerF1ChargestoneAfterText:
 	text "But some of those"
 	line "items can also"
 	cont "make #MON"
@@ -220,7 +220,7 @@ ChargestoneCave1F_MapEvents:
 	object_event  8,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerGuitarist1Chargestone, -1
 	object_event 15, 10, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerScientistMChargestone, -1
 	object_event 15, 25, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerPkmnRangerFChargestone, -1
-	object_event 39, 29, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerM1Chargestone, -1
-	object_event 33,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerF1Chargestone, -1
+	object_event 39, 29, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerM1Chargestone, -1
+	object_event 33,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerF1Chargestone, -1
 	object_event 38, 14, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerHiker1Chargestone, -1
 	

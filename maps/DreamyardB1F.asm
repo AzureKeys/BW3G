@@ -3,10 +3,10 @@
 	const DREAMYARDB1F_IRON
 	const DREAMYARDB1F_CALCIUM
 	const DREAMYARDB1F_RARE_CANDY
-	const DREAMYARDB1F_SCIENTIST_M
-	const DREAMYARDB1F_SCIENTIST_F
-	const DREAMYARDB1F_PSYCHIC_M
-	const DREAMYARDB1F_PSYCHIC_F
+	const DREAMYARDB1F_SCIENTISTM
+	const DREAMYARDB1F_SCIENTISTF
+	const DREAMYARDB1F_PSYCHICM
+	const DREAMYARDB1F_PSYCHICF
 
 DreamyardB1F_MapScripts:
 	db 0 ; scene scripts
@@ -36,7 +36,7 @@ TrainerScientistFDreamyard:
 	end
 
 TrainerPsychicMDreamyard:
-	trainer PSYCHIC_T, PSYCHIC_DREAMYARD_1, EVENT_BEAT_PSYCHIC_DREAMYARD_1, PsychicMDreamyardSeenText, PsychicMDreamyardBeatenText, 0, .Script
+	trainer PSYCHICM_T, PSYCHICM_DREAMYARD, EVENT_BEAT_PSYCHICM_DREAMYARD, PsychicMDreamyardSeenText, PsychicMDreamyardBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -47,7 +47,7 @@ TrainerPsychicMDreamyard:
 	end
 
 TrainerPsychicFDreamyard:
-	trainer PSYCHIC_T_F, PSYCHIC_DREAMYARD_2, EVENT_BEAT_PSYCHIC_DREAMYARD_2, PsychicFDreamyardSeenText, PsychicFDreamyardBeatenText, 0, .Script
+	trainer PSYCHICF_T, PSYCHICF_DREAMYARD, EVENT_BEAT_PSYCHICF_DREAMYARD, PsychicFDreamyardSeenText, PsychicFDreamyardBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

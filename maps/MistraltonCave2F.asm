@@ -6,8 +6,8 @@
 	const MISTRALTONCAVE2F_DUSK_BALL
 	const MISTRALTONCAVE2F_REVIVE
 	const MISTRALTONCAVE2F_KINGS_ROCK
-	const MISTRALTONCAVE2F_COOLTRAINER_M
-	const MISTRALTONCAVE2F_COOLTRAINER_F
+	const MISTRALTONCAVE2F_ACE_TRAINER_M
+	const MISTRALTONCAVE2F_ACE_TRAINER_F
 
 MistraltonCave2F_MapScripts:
 	db 0 ; scene scripts
@@ -82,24 +82,24 @@ MistraltonCave2F_MapScripts:
 	earthquake 80
 	end
 
-TrainerCooltrainerMMistraltonCave:
-	trainer COOLTRAINERM, COOLTRAINERM_MISTRALTON_CAVE, EVENT_BEAT_COOLTRAINERM_MISTRALTON_CAVE, CooltrainerMMistraltonCaveSeenText, CooltrainerMMistraltonCaveBeatenText, 0, .Script
+TrainerAceTrainerMMistraltonCave:
+	trainer ACE_TRAINERM, ACE_TRAINERM_MISTRALTON_CAVE, EVENT_BEAT_ACE_TRAINERM_MISTRALTON_CAVE, AceTrainerMMistraltonCaveSeenText, AceTrainerMMistraltonCaveBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerMMistraltonCaveAfterText
+	writetext AceTrainerMMistraltonCaveAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerFMistraltonCave:
-	trainer COOLTRAINERF, COOLTRAINERF_MISTRALTON_CAVE, EVENT_BEAT_COOLTRAINERF_MISTRALTON_CAVE, CooltrainerFMistraltonCaveSeenText, CooltrainerFMistraltonCaveBeatenText, 0, .Script
+TrainerAceTrainerFMistraltonCave:
+	trainer ACE_TRAINERF, ACE_TRAINERF_MISTRALTON_CAVE, EVENT_BEAT_ACE_TRAINERF_MISTRALTON_CAVE, AceTrainerFMistraltonCaveSeenText, AceTrainerFMistraltonCaveBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerFMistraltonCaveAfterText
+	writetext AceTrainerFMistraltonCaveAfterText
 	waitbutton
 	closetext
 	end
@@ -131,27 +131,27 @@ MistraltonCave2FProtein:
 MistraltonCave2FMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_MISTRALTON_CAVE_MAX_REVIVE
 	
-CooltrainerMMistraltonCaveSeenText:
+AceTrainerMMistraltonCaveSeenText:
 	text "..."
 	done
 
-CooltrainerMMistraltonCaveBeatenText:
+AceTrainerMMistraltonCaveBeatenText:
 	text "..."
 	done
 
-CooltrainerMMistraltonCaveAfterText:
+AceTrainerMMistraltonCaveAfterText:
 	text "..."
 	done
 	
-CooltrainerFMistraltonCaveSeenText:
+AceTrainerFMistraltonCaveSeenText:
 	text "..."
 	done
 
-CooltrainerFMistraltonCaveBeatenText:
+AceTrainerFMistraltonCaveBeatenText:
 	text "..."
 	done
 
-CooltrainerFMistraltonCaveAfterText:
+AceTrainerFMistraltonCaveAfterText:
 	text "..."
 	done
 	
@@ -186,6 +186,6 @@ MistraltonCave2F_MapEvents:
 	object_event 17, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MistraltonCave2FDuskBall, EVENT_MISTRALTON_CAVE_DUSK_BALL
 	object_event 21, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MistraltonCave2FRevive, EVENT_MISTRALTON_CAVE_REVIVE
 	object_event  4,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MistraltonCave2FKingsRock, EVENT_MISTRALTON_CAVE_KINGS_ROCK
-	object_event  3, 11, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerMMistraltonCave, -1
-	object_event 23,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerFMistraltonCave, -1
+	object_event  3, 11, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerMMistraltonCave, -1
+	object_event 23,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerFMistraltonCave, -1
 	

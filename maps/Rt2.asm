@@ -13,7 +13,7 @@
 	const R2_GENTLEMAN
 	const R2_BACKPACKERM
 	const R2_BACKPACKERF
-	const R2_OFFICER
+	const R2_POLICEMAN
 	const R2_TWIN_1
 	const R2_TWIN_2
 
@@ -186,13 +186,13 @@ TrainerBackpackerFR2:
 	closetext
 	end
 
-TrainerOfficerR2:
-	trainer OFFICER, OFFICER_R2, EVENT_BEAT_OFFICER_R2, OfficerR2SeenText, OfficerR2BeatenText, 0, .Script
+TrainerPolicemanR2:
+	trainer POLICEMAN, POLICEMAN_R2, EVENT_BEAT_POLICEMAN_R2, PolicemanR2SeenText, PolicemanR2BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext OfficerR2AfterText
+	writetext PolicemanR2AfterText
 	waitbutton
 	closetext
 	end
@@ -353,12 +353,12 @@ BackpackerFR2AfterText:
 	line "little place!"
 	done
 	
-OfficerR2SeenText:
+PolicemanR2SeenText:
 	text "Hey, you! Stop"
 	line "right there!"
 	done
 
-OfficerR2BeatenText:
+PolicemanR2BeatenText:
 	text "There's no one"
 	line "stopping you!"
 	
@@ -367,7 +367,7 @@ OfficerR2BeatenText:
 	cont "unstoppable!"
 	done
 
-OfficerR2AfterText:
+PolicemanR2AfterText:
 	text "Go all out while"
 	line "you're still"
 	cont "young!"
@@ -440,7 +440,7 @@ Rt2_MapEvents:
 	object_event 38,  7, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerGentlemanR2, -1
 	object_event  7, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBackpackerMR2, -1
 	object_event 25, 15, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR2, -1
-	object_event 10, 21, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerOfficerR2, -1
+	object_event 10, 21, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPolicemanR2, -1
 	object_event 14, 18, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR2, -1
 	object_event 15, 18, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR2, -1
 	

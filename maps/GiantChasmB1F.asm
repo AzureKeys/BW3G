@@ -6,8 +6,8 @@
 	const GIANTCHASMB1F_ELIXER
 	const GIANTCHASMB1F_BACKPACKERM
 	const GIANTCHASMB1F_BACKPACKERF
-	const GIANTCHASMB1F_COOLTRAINERF
-	const GIANTCHASMB1F_COOLTRAINERM
+	const GIANTCHASMB1F_ACE_TRAINERF
+	const GIANTCHASMB1F_ACE_TRAINERM
 	const GIANTCHASMB1F_HIKER
 
 GiantChasmB1F_MapScripts:
@@ -37,24 +37,24 @@ TrainerBackpackerFGiantChasm:
 	closetext
 	end
 
-TrainerCooltrainerFGiantChasm:
-	trainer COOLTRAINERF_D, COOLTRAINERF_GIANT_CHASM, EVENT_BEAT_COOLTRAINERF_GIANT_CHASM, CooltrainerFGiantChasmSeenText, CooltrainerFGiantChasmBeatenText, 0, .Script
+TrainerAceTrainerFGiantChasm:
+	trainer ACE_TRAINERF_D, ACE_TRAINERF_GIANT_CHASM, EVENT_BEAT_ACE_TRAINERF_GIANT_CHASM, AceTrainerFGiantChasmSeenText, AceTrainerFGiantChasmBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerFGiantChasmAfterText
+	writetext AceTrainerFGiantChasmAfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCooltrainerMGiantChasm:
-	trainer COOLTRAINERM, COOLTRAINERM_GIANT_CHASM, EVENT_BEAT_COOLTRAINERM_GIANT_CHASM, CooltrainerMGiantChasmSeenText, CooltrainerMGiantChasmBeatenText, 0, .Script
+TrainerAceTrainerMGiantChasm:
+	trainer ACE_TRAINERM, ACE_TRAINERM_GIANT_CHASM, EVENT_BEAT_ACE_TRAINERM_GIANT_CHASM, AceTrainerMGiantChasmSeenText, AceTrainerMGiantChasmBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerMGiantChasmAfterText
+	writetext AceTrainerMGiantChasmAfterText
 	waitbutton
 	closetext
 	end
@@ -121,7 +121,7 @@ BackpackerFGiantChasmAfterText:
 	cont "later on."
 	done
 	
-CooltrainerFGiantChasmSeenText:
+AceTrainerFGiantChasmSeenText:
 	text "I'll tell you a"
 	line "secret."
 
@@ -129,18 +129,18 @@ CooltrainerFGiantChasmSeenText:
 	line "battle!"
 	done
 
-CooltrainerFGiantChasmBeatenText:
+AceTrainerFGiantChasmBeatenText:
 	text "Oh, dang!"
 	line "I lost that…"
 	done
 
-CooltrainerFGiantChasmAfterText:
+AceTrainerFGiantChasmAfterText:
 	text "There's a cave up"
 	line "past a small"
 	cont "waterfall."
 	done
 	
-CooltrainerMGiantChasmSeenText:
+AceTrainerMGiantChasmSeenText:
 	text "I can tell you're"
 	line "a good trainer by"
 	cont "looking at you."
@@ -150,12 +150,12 @@ CooltrainerMGiantChasmSeenText:
 	cont "that you are too."
 	done
 
-CooltrainerMGiantChasmBeatenText:
+AceTrainerMGiantChasmBeatenText:
 	text "Tch! It's a total"
 	line "loss on my part."
 	done
 
-CooltrainerMGiantChasmAfterText:
+AceTrainerMGiantChasmAfterText:
 	text "Wow. You have a"
 	line "lot of BADGES."
 
@@ -237,7 +237,7 @@ GiantChasmB1F_MapEvents:
 	object_event 14, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiantChasmB1FElixer, EVENT_GIANT_CHASM_B1F_ELIXER
 	object_event 16, 26, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMGiantChasm, -1
 	object_event 13, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFGiantChasm, -1
-	object_event 20, 12, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerFGiantChasm, -1
-	object_event 36, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerMGiantChasm, -1
+	object_event 20, 12, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerFGiantChasm, -1
+	object_event 36, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerMGiantChasm, -1
 	object_event 10, 28, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerHikerGiantChasm, -1
 	

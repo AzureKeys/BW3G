@@ -1,19 +1,19 @@
 	const_def 2 ; object constants
 	const RELICCASTLEB1F_MAX_POTION
-	const RELICCASTLEB1F_PSYCHIC
+	const RELICCASTLEB1F_PSYCHICF
 
 RelicCastleB1F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-TrainerPsychicRelicCastleB1F:
-	trainer PSYCHIC_T_F, PSYCHIC_RELIC_CASTLE_1, EVENT_BEAT_PSYCHIC_RELIC_CASTLE_1, PsychicRelicCastleB1FSeenText, PsychicRelicCastleB1FBeatenText, 0, .Script
+TrainerPsychicFRelicCastleB1F:
+	trainer PSYCHICF_T, PSYCHICF_RELIC_CASTLE_1, EVENT_BEAT_PSYCHICF_RELIC_CASTLE_1, PsychicFRelicCastleB1FSeenText, PsychicFRelicCastleB1FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PsychicRelicCastleB1FAfterText
+	writetext PsychicFRelicCastleB1FAfterText
 	waitbutton
 	closetext
 	end
@@ -24,7 +24,7 @@ RelicCastleMaxPotion:
 RelicCastleElixer:
 	hiddenitem ELIXER, EVENT_RELIC_CASTLE_ELIXER
 	
-PsychicRelicCastleB1FSeenText:
+PsychicFRelicCastleB1FSeenText:
 	text "My psychic type"
 	line "#MON just"
 
@@ -36,12 +36,12 @@ PsychicRelicCastleB1FSeenText:
 	cont "it because of you?"
 	done
 
-PsychicRelicCastleB1FBeatenText:
+PsychicFRelicCastleB1FBeatenText:
 	text "So… strong! Who"
 	line "are you?"
 	done
 
-PsychicRelicCastleB1FAfterText:
+PsychicFRelicCastleB1FAfterText:
 	text "RELIC CASTLE…"
 	
 	para "Apparently people"
@@ -69,5 +69,5 @@ RelicCastleB1F_MapEvents:
 
 	db 2 ; object events
 	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicCastleMaxPotion, EVENT_RELIC_CASTLE_MAX_POTION
-	object_event  9,  8, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicRelicCastleB1F, -1
+	object_event  9,  8, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicFRelicCastleB1F, -1
 	

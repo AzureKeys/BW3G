@@ -1,19 +1,19 @@
 	const_def 2 ; object constants
 	const RELICCASTLEB2F_TM_DIG
-	const RELICCASTLEB2F_PSYCHIC
+	const RELICCASTLEB2F_PSYCHICF
 
 RelicCastleB2F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 	
-TrainerPsychicRelicCastleB2F:
-	trainer PSYCHIC_T_F, PSYCHIC_RELIC_CASTLE_3, EVENT_BEAT_PSYCHIC_RELIC_CASTLE_3, PsychicRelicCastleB2FSeenText, PsychicRelicCastleB2FBeatenText, 0, .Script
+TrainerPsychicFRelicCastleB2F:
+	trainer PSYCHICF_T, PSYCHICF_RELIC_CASTLE_2, EVENT_BEAT_PSYCHICF_RELIC_CASTLE_2, PsychicFRelicCastleB2FSeenText, PsychicFRelicCastleB2FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PsychicRelicCastleB2FAfterText
+	writetext PsychicFRelicCastleB2FAfterText
 	waitbutton
 	closetext
 	end
@@ -21,7 +21,7 @@ TrainerPsychicRelicCastleB2F:
 RelicCastleTMDig:
 	itemball TM_DIG
 	
-PsychicRelicCastleB2FSeenText:
+PsychicFRelicCastleB2FSeenText:
 	text "…When I am here, I"
 	line "feel like I might"
 
@@ -30,12 +30,12 @@ PsychicRelicCastleB2FSeenText:
 	cont "Let's have a bout!"
 	done
 
-PsychicRelicCastleB2FBeatenText:
+PsychicFRelicCastleB2FBeatenText:
 	text "This bout… I will"
 	line "not forget it…"
 	done
 
-PsychicRelicCastleB2FAfterText:
+PsychicFRelicCastleB2FAfterText:
 	text "This castle will"
 	line "be buried by the"
 	
@@ -58,5 +58,5 @@ RelicCastleB2F_MapEvents:
 
 	db 2 ; object events
 	object_event  2,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, RelicCastleTMDig, EVENT_RELIC_CASTLE_TM_DIG
-	object_event  5,  6, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychicRelicCastleB2F, -1
+	object_event  5,  6, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychicFRelicCastleB2F, -1
 	

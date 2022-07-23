@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
-	const PWTQUALIFIERROOM_COOLTRAINER_M
-	const PWTQUALIFIERROOM_COOLTRAINER_F
+	const PWTQUALIFIERROOM_ACE_TRAINER_M
+	const PWTQUALIFIERROOM_ACE_TRAINER_F
 	const PWTQUALIFIERROOM_RECEPTIONIST
 
 PWTQualifierRoom_MapScripts:
@@ -22,26 +22,26 @@ PWTQualifierRoom_MapScripts:
 	pause 15
 	playsound SFX_ENTER_DOOR
 	waitsfx
-	appear PWTQUALIFIERROOM_COOLTRAINER_M
-	applymovement PWTQUALIFIERROOM_COOLTRAINER_M, PwtQualifierRoomEnemyEnterMovement
+	appear PWTQUALIFIERROOM_ACE_TRAINER_M
+	applymovement PWTQUALIFIERROOM_ACE_TRAINER_M, PwtQualifierRoomEnemyEnterMovement
 	opentext
 	writetext PwtQualifierRoomFirstBattleText
 	waitbutton
 	closetext
 	applymovement PLAYER, PwtQualifierRoomPlayerStepUpMovement
-	applymovement PWTQUALIFIERROOM_COOLTRAINER_M, PwtQualifierRoomEnemyStepUpMovement
+	applymovement PWTQUALIFIERROOM_ACE_TRAINER_M, PwtQualifierRoomEnemyStepUpMovement
 	opentext
-	writetext PwtQualifierRoomCooltrainerMBattleText
+	writetext PwtQualifierRoomAceTrainerMBattleText
 	waitbutton
 	closetext
-	winlosstext PwtQualifierRoomCooltrainerMWinText, 0
-	setlasttalked PWTQUALIFIERROOM_COOLTRAINER_M
-	loadtrainer COOLTRAINERM, COOLTRAINERM_PWT
+	winlosstext PwtQualifierRoomAceTrainerMWinText, 0
+	setlasttalked PWTQUALIFIERROOM_ACE_TRAINER_M
+	loadtrainer ACE_TRAINERM, ACE_TRAINERM_PWT
 	startbattle
 	reloadmapafterbattle
 	applymovement PLAYER, PwtQualifierRoomPlayerStepBackMovement
-	applymovement PWTQUALIFIERROOM_COOLTRAINER_M, PwtQualifierRoomEnemyExitMovement
-	disappear PWTQUALIFIERROOM_COOLTRAINER_M
+	applymovement PWTQUALIFIERROOM_ACE_TRAINER_M, PwtQualifierRoomEnemyExitMovement
+	disappear PWTQUALIFIERROOM_ACE_TRAINER_M
 	playsound SFX_ENTER_DOOR
 	waitsfx
 	opentext
@@ -56,26 +56,26 @@ PWTQualifierRoom_MapScripts:
 	applymovement PWTQUALIFIERROOM_RECEPTIONIST, PwtQualifierRoomReceptionistReturnMovement
 	playsound SFX_ENTER_DOOR
 	waitsfx
-	appear PWTQUALIFIERROOM_COOLTRAINER_F
-	applymovement PWTQUALIFIERROOM_COOLTRAINER_F, PwtQualifierRoomEnemyEnterMovement
+	appear PWTQUALIFIERROOM_ACE_TRAINER_F
+	applymovement PWTQUALIFIERROOM_ACE_TRAINER_F, PwtQualifierRoomEnemyEnterMovement
 	opentext
 	writetext PwtQualifierRoomSecondBattleText
 	waitbutton
 	closetext
 	applymovement PLAYER, PwtQualifierRoomPlayerStepUpMovement
-	applymovement PWTQUALIFIERROOM_COOLTRAINER_F, PwtQualifierRoomEnemyStepUpMovement
+	applymovement PWTQUALIFIERROOM_ACE_TRAINER_F, PwtQualifierRoomEnemyStepUpMovement
 	opentext
-	writetext PwtQualifierRoomCooltrainerFBattleText
+	writetext PwtQualifierRoomAceTrainerFBattleText
 	waitbutton
 	closetext
-	winlosstext PwtQualifierRoomCooltrainerFWinText, 0
-	setlasttalked PWTQUALIFIERROOM_COOLTRAINER_F
-	loadtrainer COOLTRAINERF_D, COOLTRAINERF_PWT
+	winlosstext PwtQualifierRoomAceTrainerFWinText, 0
+	setlasttalked PWTQUALIFIERROOM_ACE_TRAINER_F
+	loadtrainer ACE_TRAINERF_D, ACE_TRAINERF_PWT
 	startbattle
 	reloadmapafterbattle
 	applymovement PLAYER, PwtQualifierRoomPlayerStepBackMovement
-	applymovement PWTQUALIFIERROOM_COOLTRAINER_F, PwtQualifierRoomEnemyExitMovement
-	disappear PWTQUALIFIERROOM_COOLTRAINER_F
+	applymovement PWTQUALIFIERROOM_ACE_TRAINER_F, PwtQualifierRoomEnemyExitMovement
+	disappear PWTQUALIFIERROOM_ACE_TRAINER_F
 	playsound SFX_ENTER_DOOR
 	waitsfx
 	opentext
@@ -212,31 +212,33 @@ PwtQualifierRoomLeaveText:
 	cont "qualified."
 	done
 	
-PwtQualifierRoomCooltrainerMBattleText:
+PwtQualifierRoomAceTrainerMBattleText:
 	text "The #MON WORLD"
 	line "TOURNAMENT brings"
-	cont "great trainers"
-	cont "from all over!"
+	
+	para "great trainers"
+	line "from all over!"
 	
 	para "There's no way I'm"
 	line "missing out!"
 	done
 	
-PwtQualifierRoomCooltrainerMWinText:
+PwtQualifierRoomAceTrainerMWinText:
 	text "Not good enough!"
 	done
 	
-PwtQualifierRoomCooltrainerFBattleText:
+PwtQualifierRoomAceTrainerFBattleText:
 	text "You're the last"
 	line "one I need to beat"
-	cont "to make it into"
-	cont "the tournament."
+	
+	para "to make it into"
+	line "the tournament."
 	
 	para "I'm taking you"
 	line "down!"
 	done
 	
-PwtQualifierRoomCooltrainerFWinText:
+PwtQualifierRoomAceTrainerFWinText:
 	text "It… It can't be!"
 	done
 
@@ -251,7 +253,7 @@ PWTQualifierRoom_MapEvents:
 	db 0 ; bg events
 	
 	db 3 ; object events
-	object_event  4,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_QUALIFIER_ROOM_COOLTRAINER_M
-	object_event  4,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_QUALIFIER_ROOM_COOLTRAINER_F
+	object_event  4,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_M
+	object_event  4,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_F
 	object_event  3,  1, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, 0, -1
 	

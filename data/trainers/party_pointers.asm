@@ -6,10 +6,10 @@ TrainerGroups:
 	dba YoungsterDGroup
 	dba LassGroup
 	dba LassDGroup
-	dba CooltrainerMGroup
-	dba CooltrainerMDGroup
-	dba CooltrainerFGroup
-	dba CooltrainerFDGroup
+	dba AceTrainerMGroup
+	dba AceTrainerMDGroup
+	dba AceTrainerFGroup
+	dba AceTrainerFDGroup
 	dba ArtistGroup
 	dba BackersMGroup
 	dba BackersFGroup
@@ -47,10 +47,10 @@ TrainerGroups:
 	dba PkmnBreederFGroup
 	dba PkmnRangerMGroup
 	dba PkmnRangerFGroup
-	dba OfficerGroup
+	dba PolicemanGroup
 	dba PreschoolerMGroup
 	dba PreschoolerFGroup
-	dba PsychicGroup
+	dba PsychicMGroup
 	dba PsychicFGroup
 	dba RichBoyGroup
 	dba SchoolKidMGroup

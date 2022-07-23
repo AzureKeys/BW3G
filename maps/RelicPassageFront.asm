@@ -3,7 +3,7 @@
 	const RELICPASSAGEFRONT_HARD_STONE
 	const RELICPASSAGEFRONT_ESCAPE_ROPE
 	const RELICPASSAGEFRONT_NURSE
-	const RELICPASSAGEFRONT_PSYCHIC
+	const RELICPASSAGEFRONT_PSYCHICM
 	const RELICPASSAGEFRONT_HIKER_1
 	const RELICPASSAGEFRONT_HIKER_2
 	const RELICPASSAGEFRONT_BACKPACKERF
@@ -72,13 +72,13 @@ TrainerNurseRelicPassage:
 	special HealParty
 	end
 
-TrainerPsychicRelicPassage:
-	trainer PSYCHIC_T, PSYCHIC_RELIC_PASSAGE, EVENT_BEAT_PSYCHIC_RELIC_PASSAGE, PsychicRelicPassageSeenText, PsychicRelicPassageBeatenText, 0, .Script
+TrainerPsychicMRelicPassage:
+	trainer PSYCHICM_T, PSYCHICM_RELIC_PASSAGE, EVENT_BEAT_PSYCHICM_RELIC_PASSAGE, PsychicMRelicPassageSeenText, PsychicMRelicPassageBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PsychicRelicPassageAfterText
+	writetext PsychicMRelicPassageAfterText
 	waitbutton
 	closetext
 	end
@@ -152,16 +152,16 @@ RelicPassageNurseHealText:
 	cont "full health."
 	done
 	
-PsychicRelicPassageSeenText:
+PsychicMRelicPassageSeenText:
 	text "This tunnel has"
 	line "strange energy…"
 	done
 
-PsychicRelicPassageBeatenText:
+PsychicMRelicPassageBeatenText:
 	text "Wah! Your energy!"
 	done
 
-PsychicRelicPassageAfterText:
+PsychicMRelicPassageAfterText:
 	text "This place must be"
 	line "connected to"
 	cont "somewhere"
@@ -249,7 +249,7 @@ RelicPassageFront_MapEvents:
 	object_event 28,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicPassageHardStone, EVENT_RELIC_PASSAGE_HARD_STONE
 	object_event 29, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicPassageEscapeRope, EVENT_RELIC_PASSAGE_ESCAPE_ROPE
 	object_event 37, 22, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerNurseRelicPassage, -1
-	object_event 43,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicRelicPassage, -1
+	object_event 43,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicMRelicPassage, -1
 	object_event 13, 20, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerHiker1RelicPassage, -1
 	object_event 31, 14, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerHiker2RelicPassage, -1
 	object_event 27, 16, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBackpackerFRelicPassage, -1

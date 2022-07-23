@@ -4,7 +4,7 @@
 	const CHARGESTONECAVEB2F_TM_WILD_CHARGE
 	const CHARGESTONECAVEB2F_GUITARIST
 	const CHARGESTONECAVEB2F_HIKER
-	const CHARGESTONECAVEB2F_COOLTRAINERM
+	const CHARGESTONECAVEB2F_ACE_TRAINERM
 
 ChargestoneCaveB2F_MapScripts:
 	db 0 ; scene scripts
@@ -33,13 +33,13 @@ TrainerHiker3Chargestone:
 	closetext
 	end
 
-TrainerCooltrainerM2Chargestone:
-	trainer COOLTRAINERM_D, COOLTRAINERM_CHARGESTONE_2, EVENT_BEAT_COOLTRAINERM_CHARGESTONE_2, CooltrainerM2ChargestoneSeenText, CooltrainerM2ChargestoneBeatenText, 0, .Script
+TrainerAceTrainerM2Chargestone:
+	trainer ACE_TRAINERM_D, ACE_TRAINERM_CHARGESTONE_2, EVENT_BEAT_ACE_TRAINERM_CHARGESTONE_2, AceTrainerM2ChargestoneSeenText, AceTrainerM2ChargestoneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CooltrainerM2ChargestoneAfterText
+	writetext AceTrainerM2ChargestoneAfterText
 	waitbutton
 	closetext
 	end
@@ -86,7 +86,7 @@ Hiker3ChargestoneAfterText:
 	cont "ROPE!"
 	done
 	
-CooltrainerM2ChargestoneSeenText:
+AceTrainerM2ChargestoneSeenText:
 	text "There's an item"
 	line "called METAL COAT."
 	
@@ -97,11 +97,11 @@ CooltrainerM2ChargestoneSeenText:
 	line "magnetic #MON…"
 	done
 
-CooltrainerM2ChargestoneBeatenText:
+AceTrainerM2ChargestoneBeatenText:
 	text "Slipped up!"
 	done
 
-CooltrainerM2ChargestoneAfterText:
+AceTrainerM2ChargestoneAfterText:
 	text "Maybe if the #-"
 	line "MON holding the"
 	cont "item levels up…"
@@ -124,5 +124,5 @@ ChargestoneCaveB2F_MapEvents:
 	object_event 18,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, ChargestoneTMWildCharge, EVENT_CHARGESTONE_TM_WILD_CHARGE
 	object_event  6,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerGuitarist2Chargestone, -1
 	object_event  8, 21, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerHiker3Chargestone, -1
-	object_event 18, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerCooltrainerM2Chargestone, -1
+	object_event 18, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerM2Chargestone, -1
 	

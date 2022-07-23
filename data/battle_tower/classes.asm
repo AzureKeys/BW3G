@@ -17,26 +17,26 @@ BattleTowerTrainers:
 ; The following can only be sampled in Crystal 1.1.
 	db "OBRIEN@@@@", GENTLEMAN
 	db "YUFUNE@@@@", BLACKBELT_T
-	db "RAJAN@@@@@", COOLTRAINERF
-	db "RODRIGUEZ@", OFFICER
-	db "SANTIAGO@@", PSYCHIC_T
+	db "RAJAN@@@@@", ACE_TRAINERF
+	db "RODRIGUEZ@", POLICEMAN
+	db "SANTIAGO@@", PSYCHICM_T
 	db "STOCK@@@@@", POKEFANM
 	db "THURMAN@@@", SCIENTIST_M
 	db "YATES@@@@@", BIRD_KEEPER
 	db "MORI@@@@@@", SCIENTIST_M
 	db "COBB@@@@@@", SCHOOL_KIDM
 	db "HUGHES@@@@", FISHER
-	db "EASTON@@@@", PSYCHIC_T
+	db "EASTON@@@@", PSYCHICM_T
 	db "GIESE@@@@@", LASS
 	db "HATCHER@@@", GENTLEMAN
 	db "JACKSON@@@", POKEFANF
 	db "LEONG@@@@@", YOUNGSTER
 	db "NGUYEN@@@@", BLACKBELT_T
-	db "PARK@@@@@@", COOLTRAINERF
+	db "PARK@@@@@@", ACE_TRAINERF
 	db "RAINE@@@@@", SWIMMERM
 	db "SELLS@@@@@", BIRD_KEEPER
 	db "THORNTON@@", LASS
-	db "TURNER@@@@", OFFICER
+	db "TURNER@@@@", POLICEMAN
 	db "WALKER@@@@", SCHOOL_KIDM
 	db "MEYER@@@@@", SWIMMERF
 	db "JOHNSON@@@", YOUNGSTER

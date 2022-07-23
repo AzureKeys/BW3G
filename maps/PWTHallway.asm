@@ -18,8 +18,8 @@ PWTHallway_MapScripts:
 	setscene SCENE_DEFAULT
 	checkevent EVENT_FINISHED_PWT_QUALIFIER
 	iftrue .gomainroom
-	setevent EVENT_PWT_QUALIFIER_ROOM_COOLTRAINER_M
-	setevent EVENT_PWT_QUALIFIER_ROOM_COOLTRAINER_F
+	setevent EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_M
+	setevent EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_F
 	applymovement PLAYER, PwtHallwayEnterLeftMovement
 	warpcheck
 	end
