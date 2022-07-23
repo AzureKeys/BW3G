@@ -6,7 +6,6 @@ MaleTrainers:
 	db SCHOOL_KIDM
 	db BIRD_KEEPER
 	db GENTLEMAN
-	db BUG_CATCHER
 	db FISHER
 	db SWIMMERM
 	db GUITARIST
@@ -14,7 +13,6 @@ MaleTrainers:
 	db HIKER_D
 	db BLACKBELT_T
 	db PSYCHIC_T
-	db CAMPER_D
 	db COOLTRAINERM
 	db POKEFANM
 	db OFFICER
@@ -29,8 +27,6 @@ FemaleTrainers:
 	db LASS_D
 	db SWIMMERF
 	db SWIMMERF_D
-	db PICNICKER
-	db PICNICKER_D
 	db POKEFANF
 	db COOLTRAINERF
 	db SCIENTIST_F

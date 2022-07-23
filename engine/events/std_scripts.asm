@@ -824,7 +824,7 @@ AskNumber1FScript:
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PSYCHIC_MARLA, .Marla
+	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
 .Jewel:
@@ -860,7 +860,7 @@ AskNumber2FScript:
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PSYCHIC_MARLA, .Marla
+	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
 .Jewel:
@@ -903,7 +903,7 @@ NumberAcceptedFScript:
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PSYCHIC_MARLA, .Marla
+	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
 .Jewel:
@@ -955,7 +955,7 @@ NumberDeclinedFScript:
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PSYCHIC_MARLA, .Marla
+	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
 .Jewel:
@@ -1007,7 +1007,7 @@ PhoneFullFScript:
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PSYCHIC_MARLA, .Marla
+	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
 .Jewel:
@@ -1059,7 +1059,7 @@ RematchFScript:
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PSYCHIC_MARLA, .Marla
+	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
 .Jewel:

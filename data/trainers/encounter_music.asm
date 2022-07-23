@@ -44,6 +44,8 @@ TrainerEncounterMusic::
 	db MUSIC_OFFICER_ENCOUNTER     ; pilot
 	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
 	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; pkmnbreederm
+	db MUSIC_LASS_ENCOUNTER        ; pkmnbreederf
 	db MUSIC_HIKER_ENCOUNTER       ; pkmnrangerm
 	db MUSIC_BEAUTY_ENCOUNTER      ; pkmnrangerf
 	db MUSIC_HIKER_ENCOUNTER       ; policeman
@@ -69,10 +71,7 @@ TrainerEncounterMusic::
 	db MUSIC_LASS_ENCOUNTER        ; waitress
 	db MUSIC_HIKER_ENCOUNTER       ; worker
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; bug_catcher
-	db MUSIC_LASS_ENCOUNTER        ; picnicker
 	db MUSIC_LASS_ENCOUNTER        ; picnickerD
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; camperD
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntm
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; marlon

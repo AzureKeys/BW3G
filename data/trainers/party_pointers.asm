@@ -43,6 +43,8 @@ TrainerGroups:
 	dba PilotGroup
 	dba PokefanMGroup
 	dba PokefanFGroup
+	dba PkmnBreederMGroup
+	dba PkmnBreederFGroup
 	dba PkmnRangerMGroup
 	dba PkmnRangerFGroup
 	dba OfficerGroup
@@ -68,10 +70,7 @@ TrainerGroups:
 	dba WaitressGroup
 	dba WorkerGroup
 	dba BirdKeeperGroup
-	dba BugCatcherGroup
-	dba PicnickerGroup
 	dba PicnickerDGroup
-	dba CamperDGroup
 	dba GruntMGroup
 	dba GruntFGroup
 	dba MarlonGroup

@@ -42,6 +42,8 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; PILOT
 	dn  9,  8,  8,  8 ; POKEFAN_M
 	dn  6, 13,  8,  8 ; POKEFAN_F
+	dn  9,  8,  8,  8 ; PKMN_BREEDER_M
+	dn  6, 10, 10,  8 ; PKMN_BREEDER_F
 	dn  9,  8,  8,  8 ; PKMN_RANGER_M
 	dn  6, 10, 10,  8 ; PKMN_RANGER_F
 	dn  9,  8,  8,  8 ; POLICEMAN
@@ -67,10 +69,7 @@ TrainerClassDVs:
 	dn  6, 10, 10,  8 ; WAITRESS
 	dn 10,  8,  8,  8 ; WORKER
 	dn  9,  8,  8,  8 ; BIRD_KEEPER
-	dn  9,  8,  8,  8 ; BUG_CATCHER
-	dn  6, 10, 10,  8 ; PICNICKER
 	dn  6, 10, 10,  8 ; PICNICKER_D
-	dn  9,  8,  8,  8 ; CAMPER_D
 	dn 13,  8, 10,  8 ; GRUNTM
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn  9, 10,  7,  7 ; MARLON

@@ -5,11 +5,11 @@
 	const R7_MAX_ETHER
 	const R7_AMOONGUSS_1
 	const R7_AMOONGUSS_2
-	const R7_BIRD_KEEPER
 	const R7_BACKPACKERF
 	const R7_NURSERY_AIDE
 	const R7_SCHOOL_KIDF
-	const R7_PSYCHIC
+	const R7_PKMN_BREEDERM
+	const R7_PKMN_BREEDERF
 
 Rt7_MapScripts:
 	db 0 ; scene scripts
@@ -42,19 +42,19 @@ R7AmoongussScript2:
 	reloadmapafterbattle
 	end
 
-TrainerPsychicR7:
-	trainer PSYCHIC_T_F, PSYCHIC_R7, EVENT_BEAT_PSYCHIC_R7, PsychicR7SeenText, PsychicR7BeatenText, 0, .Script
+TrainerPkmnBreederFR7:
+	trainer PKMN_BREEDERF, PKMN_BREEDERF_R7, EVENT_BEAT_PKMN_BREEDERF_R7, PkmnBreederFR7SeenText, PkmnBreederFR7BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_PSYCHIC_MARLA
+	writecode VAR_CALLERID, PHONE_PKMN_BREEDER_MARLA
 	opentext
 	checkflag ENGINE_MARLA_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_PSYCHIC_MARLA
+	checkcellnum PHONE_PKMN_BREEDER_MARLA
 	iftrue .NumberAccepted
 	checkevent EVENT_MARLA_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext PsychicR7AfterText
+	writetext PkmnBreederFR7AfterText
 	buttonsound
 	setevent EVENT_MARLA_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -63,27 +63,27 @@ TrainerPsychicR7:
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_PSYCHIC_MARLA
+	askforphonenumber PHONE_PKMN_BREEDER_MARLA
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_MARLA
-	trainertotext PSYCHIC_T_F, PSYCHIC_R7, MEM_BUFFER_0
+	trainertotext PKMN_BREEDERF, PKMN_BREEDERF_R7, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext PsychicR7BeatenText, 0
+	winlosstext PkmnBreederFR7BeatenText, 0
 	;checkevent EVENT_
 	;iftrue .LoadFight1
 ; Fight0
-	loadtrainer PSYCHIC_T_F, PSYCHIC_R7
+	loadtrainer PKMN_BREEDERF, PKMN_BREEDERF_R7
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_MARLA_READY_FOR_REMATCH
 	end
 ; .LoadFight1
-	; loadtrainer PSYCHIC_T_F, MARLA_REMATCH_1
+	; loadtrainer PKMN_BREEDERF, MARLA_REMATCH_1
 	; startbattle
 	; reloadmapafterbattle
 	; clearflag ENGINE_MARLA_READY_FOR_REMATCH
@@ -150,13 +150,13 @@ TrainerNurseryAideR7:
 	closetext
 	end
 
-TrainerBirdKeeperR7:
-	trainer BIRD_KEEPER, BIRD_KEEPER_R7, EVENT_BEAT_BIRD_KEEPER_R7, BirdKeeperR7SeenText, BirdKeeperR7BeatenText, 0, .Script
+TrainerPkmnBreederMR7:
+	trainer PKMN_BREEDERM, PKMN_BREEDERM_R7, EVENT_BEAT_PKMN_BREEDERM_R7, PkmnBreederMR7SeenText, PkmnBreederMR7BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BirdKeeperR7AfterText
+	writetext PkmnBreederMR7AfterText
 	waitbutton
 	closetext
 	end
@@ -232,30 +232,30 @@ NurseryAideR7AfterText:
 	cont "there too."
 	done
 	
-BirdKeeperR7SeenText:
+PkmnBreederMR7SeenText:
 	text "I'm training to"
 	line "join the gym!"
 	done
 
-BirdKeeperR7BeatenText:
+PkmnBreederMR7BeatenText:
 	text "Too fast!"
 	done
 
-BirdKeeperR7AfterText:
+PkmnBreederMR7AfterText:
 	text "I guess I need"
 	line "more training…"
 	done
 	
-PsychicR7SeenText:
+PkmnBreederFR7SeenText:
 	text "Shh… I'm"
 	line "meditating."
 	done
 
-PsychicR7BeatenText:
+PkmnBreederFR7BeatenText:
 	text "…!"
 	done
 
-PsychicR7AfterText:
+PkmnBreederFR7AfterText:
 	text "What? Sorry, I"
 	line "dozed off…"
 	done
@@ -302,6 +302,6 @@ Rt7_MapEvents:
 	object_event  9, 45, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR7, -1
 	object_event 18, 27, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerNurseryAideR7, -1
 	object_event 13, 19, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFR7, -1
-	object_event  4, 39, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerBirdKeeperR7, -1
-	object_event 16, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicR7, -1
+	object_event  4, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerPkmnBreederMR7, -1
+	object_event 16, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnBreederFR7, -1
 	

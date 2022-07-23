@@ -11,10 +11,10 @@
 	const LOSTLORNFOREST_TM_SOLARBEAM
 	const LOSTLORNFOREST_SCHOOL_KIDF
 	const LOSTLORNFOREST_SCHOOL_KIDM
-	const LOSTLORNFOREST_PICNICKER
+	const LOSTLORNFOREST_PKMN_BREEDERM
+	const LOSTLORNFOREST_PKMN_BREEDERF
 	const LOSTLORNFOREST_YOUNGSTER
 	const LOSTLORNFOREST_LASS
-	const LOSTLORNFOREST_BUG_CATCHER_1
 
 LostlornForest_MapScripts:
 	db 3 ; scene scripts
@@ -144,8 +144,8 @@ LostlornForestInferScript:
 	setscene SCENE_LOSTLORN_NOTHING
 	end
 
-TrainerBugCatcherLostlorn1:
-	trainer BUG_CATCHER, BUG_CATCHER_LOSTLORN_1, EVENT_BEAT_BUG_CATCHER_LOSTLORN_1, PkmnBreederFLostlornSeenText, PkmnBreederFLostlornBeatenText, 0, .Script
+TrainerPkmnBreederFLostlorn:
+	trainer PKMN_BREEDERF, PKMN_BREEDERF_LOSTLORN, EVENT_BEAT_PKMN_BREEDERF_LOSTLORN, PkmnBreederFLostlornSeenText, PkmnBreederFLostlornBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -166,8 +166,8 @@ TrainerSchoolKidMLostlorn:
 	closetext
 	end
 
-TrainerPicnickerLostlorn:
-	trainer PICNICKER, PICNICKER_LOSTLORN, EVENT_BEAT_PICNICKER_LOSTLORN, PkmnBreederMLostlornSeenText, PkmnBreederMLostlornBeatenText, 0, .Script
+TrainerPkmnBreederMLostlorn:
+	trainer PKMN_BREEDERM, PKMN_BREEDERM_LOSTLORN, EVENT_BEAT_PKMN_BREEDERM_LOSTLORN, PkmnBreederMLostlornSeenText, PkmnBreederMLostlornBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -550,8 +550,8 @@ LostlornForest_MapEvents:
 	object_event 26, 29, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, LostlornTMSolarbeam, EVENT_LOSTLORN_TM_SOLARBEAM
 	object_event 30, 17, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidFLostlorn, -1
 	object_event  1,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidMLostlorn, -1
-	object_event 15, 22, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPicnickerLostlorn, -1
+	object_event 15, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPkmnBreederMLostlorn, -1
+	object_event 12, 44, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnBreederFLostlorn, -1
 	object_event 10,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerYoungsterLostlorn, -1
 	object_event  8, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerLassLostlorn, -1
-	object_event 12, 44, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherLostlorn1, -1
 	

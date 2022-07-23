@@ -12,8 +12,8 @@
 	const R6_PARASOL_LADY_2
 	const R6_PKMN_RANGERM
 	const R6_PKMN_RANGERF
-	const R6_PICNICKER
-	const R6_CAMPER
+	const R6_PKMN_BREEDERF
+	const R6_PKMN_BREEDERM
 	const R6_SCIENTIST_M
 	const R6_SCIENTIST_F
 
@@ -180,24 +180,24 @@ TrainerParasolLady2R6:
 	closetext
 	end
 
-TrainerPicnickerR6:
-	trainer PICNICKER_D, PICNICKER_R6, EVENT_BEAT_PICNICKER_R6, PicnickerR6SeenText, PicnickerR6BeatenText, 0, .Script
+TrainerPkmnBreederFR6:
+	trainer PKMN_BREEDERF, PKMN_BREEDERF_R6, EVENT_BEAT_PKMN_BREEDERF_R6, PkmnBreederFR6SeenText, PkmnBreederFR6BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerR6AfterText
+	writetext PkmnBreederFR6AfterText
 	waitbutton
 	closetext
 	end
 
-TrainerCamperR6:
-	trainer CAMPER_D, CAMPER_R6, EVENT_BEAT_CAMPER_R6, CamperR6SeenText, CamperR6BeatenText, 0, .Script
+TrainerPkmnBreederMR6:
+	trainer PKMN_BREEDERM, PKMN_BREEDERM_R6, EVENT_BEAT_PKMN_BREEDERM_R6, PkmnBreederMR6SeenText, PkmnBreederMR6BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext CamperR6AfterText
+	writetext PkmnBreederMR6AfterText
 	waitbutton
 	closetext
 	end
@@ -309,7 +309,7 @@ ParasolLady2R6AfterText:
 	line "trained hard!"
 	done
 	
-PicnickerR6SeenText:
+PkmnBreederFR6SeenText:
 	text "This ROUTE is a"
 	line "lousy spot for a"
 	cont "picnic."
@@ -318,26 +318,26 @@ PicnickerR6SeenText:
 	line "wet!"
 	done
 
-PicnickerR6BeatenText:
+PkmnBreederFR6BeatenText:
 	text "I got soaked!"
 	done
 
-PicnickerR6AfterText:
+PkmnBreederFR6AfterText:
 	text "At least the"
 	line "puddles are fun to"
 	cont "splash in!"
 	done
 	
-CamperR6SeenText:
+PkmnBreederMR6SeenText:
 	text "I love stomping"
 	line "in puddles!"
 	done
 
-CamperR6BeatenText:
+PkmnBreederMR6BeatenText:
 	text "Woah!"
 	done
 
-CamperR6AfterText:
+PkmnBreederMR6AfterText:
 	text "I'm gonna go stomp"
 	line "around to cheer"
 	cont "myself up!"
@@ -433,8 +433,8 @@ Rt6_MapEvents:
 	object_event 27, 37, SPRITE_BUENA, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerParasolLady2R6, -1
 	object_event  5, 24, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMR6, -1
 	object_event 43, 27, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnRangerFR6, -1
-	object_event 44, 34, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerR6, -1
-	object_event 14, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerCamperR6, -1
+	object_event 44, 34, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnBreederFR6, -1
+	object_event 14, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPkmnBreederMR6, -1
 	object_event 24, 22, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerScientistMR6, -1
 	object_event 30, 22, SPRITE_SCIENTIST_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerScientistFR6, -1
 	

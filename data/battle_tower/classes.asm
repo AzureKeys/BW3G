@@ -10,7 +10,6 @@ BattleTowerTrainers:
 	db "WRIGHT@@@@", YOUNGSTER
 	db "ALEXANDER@", HIKER
 	db "BICKETT@@@", POKEFANM
-	db "DIAZ@@@@@@", PICNICKER
 	db "ERICKSON@@", BIKER
 	db "HUNTER@@@@", POKEFANF
 	db "JAVIER@@@@", SWIMMERF
@@ -24,7 +23,6 @@ BattleTowerTrainers:
 	db "STOCK@@@@@", POKEFANM
 	db "THURMAN@@@", SCIENTIST_M
 	db "YATES@@@@@", BIRD_KEEPER
-	db "ANDREWS@@@", PICNICKER
 	db "MORI@@@@@@", SCIENTIST_M
 	db "COBB@@@@@@", SCHOOL_KIDM
 	db "HUGHES@@@@", FISHER
@@ -43,8 +41,6 @@ BattleTowerTrainers:
 	db "MEYER@@@@@", SWIMMERF
 	db "JOHNSON@@@", YOUNGSTER
 	db "ADAMS@@@@@", GUITARIST
-	db "SMITH@@@@@", BUG_CATCHER
-	db "TAJIRI@@@@", BUG_CATCHER
 	db "COLLINS@@@", SCIENTIST_M
 	db "DYKSTRA@@@", SWIMMERF
 	db "EATON@@@@@", BIKER

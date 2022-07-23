@@ -235,13 +235,25 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Pokefanm
+; PokefanM
 	db NO_ITEM, NO_ITEM ; items
 	db 20 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Pokefanf
+; PokefanF
+	db NO_ITEM, NO_ITEM ; items
+	db 20 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; PkmnBreederM
+	db NO_ITEM, NO_ITEM ; items
+	db 20 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; PkmnBreederF
 	db NO_ITEM, NO_ITEM ; items
 	db 20 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
@@ -397,25 +409,7 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Bug Catcher
-	db NO_ITEM, NO_ITEM ; items
-	db 4 ; base reward
-	dw AI_BASIC | AI_SETUP | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; Picnicker
-	db NO_ITEM, NO_ITEM ; items
-	db 5 ; base reward
-	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
 ; PicnickerD
-	db NO_ITEM, NO_ITEM ; items
-	db 5 ; base reward
-	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
-	dw CONTEXT_USE | SWITCH_SOMETIMES
-
-; CamperD
 	db NO_ITEM, NO_ITEM ; items
 	db 5 ; base reward
 	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS

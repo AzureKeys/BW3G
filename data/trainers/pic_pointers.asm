@@ -43,6 +43,8 @@ TrainerPicPointers::
 	dba PilotPic
 	dba PokefanmPic
 	dba PokefanfPic
+	dba PkmnBreederMPic
+	dba PkmnBreederFPic
 	dba PkmnRangerMPic
 	dba PkmnRangerFPic
 	dba OfficerPic
@@ -68,10 +70,7 @@ TrainerPicPointers::
 	dba WaitressPic
 	dba WorkerPic
 	dba BirdKeeperPic
-	dba BugCatcherPic
-	dba PicnickerPic
 	dba PicnickerDPic
-	dba CamperDPic
 	dba GruntmPic
 	dba GruntfPic
 	dba MarlonPic
