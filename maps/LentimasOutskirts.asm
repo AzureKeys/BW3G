@@ -307,22 +307,20 @@ PkmnRangerFOutskirtsAfterText:
 	done
 	
 YoungsterOutskirtsSeenText:
-	text "This is where I do"
-	line "my training!"
+	text "I'm going to over-"
+	line "whelm you with my"
+	cont "speed!"
 	done
 
 YoungsterOutskirtsBeatenText:
-	text "Beaten by a"
-	line "passing stranger!"
+	text "Roll, roll, roll,"
+	line "roll on!"
 	done
 
 YoungsterOutskirtsAfterText:
-	text "I'm going to train"
-	line "even harder."
-
-	para "After all, I'm"
-	line "trying to become"
-	cont "a GYM LEADER."
+	text "Your way of"
+	line "battling, it's got"
+	cont "style!"
 	done
 	
 PkmnRangerMOutskirtsSeenText:
@@ -350,19 +348,25 @@ PkmnRangerMOutskirtsAfterText:
 	done
 	
 SchoolKidMOutskirtsSeenText:
-	text "I'm the best in my"
-	line "class at #MON."
+	text "I've been training"
+	line "to take on the"
+	
+	para "GYM. I won't give"
+	line "up easily!"
 	done
 
 SchoolKidMOutskirtsBeatenText:
-	text "No! There are bet-"
-	line "ter trainers…"
+	text "What! My victory"
+	line "was taken away"
+	cont "from me!"
 	done
 
 SchoolKidMOutskirtsAfterText:
-	text "I'm trying hard so"
-	line "I can be the star"
-	cont "in my class."
+	text "The trainers in"
+	line "the gym are tough."
+	
+	para "It's hard to even"
+	line "hit their #MON!"
 	done
 	
 LentimasReversalSignText:

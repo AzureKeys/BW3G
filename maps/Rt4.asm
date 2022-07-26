@@ -232,19 +232,24 @@ R4CasteliaSign:
 	jumptext R4CasteliaSignText
 	
 RichBoyR4SeenText:
-	text "I can do so much"
-	line "with my #MON--"
-	cont "it's super-fun!"
+	text "I'll see if you're"
+	line "worthy to stand on"
+	
+	para "the same stage as"
+	line "me!"
 	done
 
 RichBoyR4BeatenText:
-	text "Losing isn't fun"
-	line "at all…"
+	text "You've got what"
+	line "it takes!"
 	done
 
 RichBoyR4AfterText:
-	text "We were going to"
-	line "the DESERT RESORT."
+	text "A match with a"
+	line "worthy challenger…"
+	
+	para "It makes me gleam"
+	line "with joy!"
 	done
 	
 RoughneckR4SeenText:
@@ -309,22 +314,20 @@ Fisher2R4AfterText:
 	done
 	
 LadyR4SeenText:
-	text "Oh, you are a cute"
-	line "little trainer! "
-
-	para "I like you, but I"
-	line "won't hold back!"
+	text "A stylish #MON"
+	line "battle is starting"
+	cont "now!"
 	done
 
 LadyR4BeatenText:
-	text "Let's see… Oops,"
-	line "it's over?"
+	text "…What? It's over"
+	line "already?"
 	done
 
 LadyR4AfterText:
-	text "Wow, you must be"
-	line "good to beat me!"
-	cont "Keep it up!"
+	text "You're both strong"
+	line "and beautiful,"
+	cont "I'm impressed!"
 	done
 	
 BikerR4SeenText:

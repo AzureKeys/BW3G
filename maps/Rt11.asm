@@ -158,15 +158,27 @@ BackersMR11AfterText:
 	done
 	
 BackersFR11SeenText:
-	text "..."
+	text "Knowing what a"
+	line "truly heated"
+	
+	para "battle is all"
+	line "about is the key"
+	
+	para "to truly passion-"
+	line "ate cheering!"
 	done
 
 BackersFR11BeatenText:
-	text "..."
+	text "I cheered as best"
+	line "as I could…"
 	done
 
 BackersFR11AfterText:
-	text "..."
+	text "A fan needs to be"
+	line "100 percent about"
+	
+	para "both battles and"
+	line "cheering!"
 	done
 
 R11AmoongussText:

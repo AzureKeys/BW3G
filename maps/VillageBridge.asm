@@ -188,15 +188,24 @@ VillageBridgeMaxEther:
 	hiddenitem MAX_ETHER, EVENT_VILLAGE_BRIDGE_MAX_ETHER
 	
 MusicianVillageBridgeSeenText:
-	text "..."
+	text "Hum fiercely! My"
+	line "battle song!"
+	
+	para "Battle fiercely!"
+	line "My #MON!"
 	done
 
 MusicianVillageBridgeBeatenText:
-	text "..."
+	text "Hm… I guess"
+	line "strumming instead"
+	
+	para "of tapping would"
+	line "be best…"
 	done
 
 MusicianVillageBridgeAfterText:
-	text "..."
+	text "Your song is truly"
+	line "inspirational!"
 	done
 	
 Smasher1VillageBridgeSeenText:

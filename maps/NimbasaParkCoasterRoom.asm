@@ -279,45 +279,50 @@ NimbasaParkOldGymText2:
 	done
 	
 GruntMNimbasaPark1SeenText:
-	text "You rotten little"
-	line "pest!"
+	text "I stole this #-"
+	line "MON years ago, and"
+	
+	para "I've been training"
+	line "it ever since!"
+	
+	para "It's tough!"
 	done
 
 GruntMNimbasaPark1BeatenText:
-	text "Grrrr…"
+	text "Don't let it go to"
+	line "your head… but you"
+	
+	para "put up a good"
+	line "fight…"
 	done
 
 GruntMNimbasaPark1AfterText:
-	text "What are we up to"
-	line "here? Ha!"
+	text "You've got to be"
+	line "kidding! And I"
 
-	para "Like we'd tell the"
-	line "likes of you."
+	para "toughened it up so"
+	line "much, too!"
 	done
 	
 GruntMNimbasaPark2SeenText:
-	text "Oh, a kid? I don't"
-	line "really like this,"
-
-	para "but eliminate you"
-	line "I must."
+	text "Just to warn you,"
+	line "I show no mercy!"
 	done
 
 GruntMNimbasaPark2BeatenText:
-	text "I knew I'd lose…"
+	text "What's the big"
+	line "idea? The #MON"
+	
+	para "I stole was"
+	cont "useless!"
 	done
 
 GruntMNimbasaPark2AfterText:
-	text "I got wiped out on"
-	line "the last mission"
-	cont "by a kid too."
+	text "If we keep going"
+	line "like this, it'll"
 
-	para "A few years ago,"
-	line "when we were ab-"
-	cont "ducting #MON,"
-
-	para "I was beaten by a"
-	line "kid like you…"
+	para "end up like it did"
+	line "last time!"
 	done
 	
 GruntMNimbasaPark3SeenText:

@@ -225,13 +225,12 @@ R5HiddenGrotto:
 	hiddengrotto HIDDENGROTTO_R_5
 	
 R5CharlesSeenText:
-	text "I am… CHARLES…"
-	line "I am…"
-	cont "heartbreaker…"
+	text "I'm a heart-"
+	line "breaker… My name…"
+	cont "CHARLES…"
 
 	para "You… You wish to"
-	line "challenge…"
-	cont "CHARLES…?"
+	line "challenge me…?"
 	
 	para "Prepare… to be…"
 	line "heartbroken…"
@@ -287,21 +286,22 @@ LinebackerR5AfterText:
 	done
 	
 Dancer1R5SeenText:
-	text "I think you have"
-	line "some rare #MON"
-	cont "with you."
+	text "Turn around, and"
+	line "it's my turn. Turn"
 
-	para "Let me see them!"
+	para "around, and it's"
+	line "your turn!"
 	done
 
 Dancer1R5BeatenText:
-	text "Gaah! I lost!"
-	line "That makes me mad!"
+	text "Turn around, turn"
+	line "around… and turn"
+	cont "around some more!"
 	done
 
 Dancer1R5AfterText:
-	text "Are you making a"
-	line "#DEX?"
+	text "My #MON are"
+	line "masters of dance!"
 	done
 	
 Dancer2R5SeenText:
@@ -329,29 +329,24 @@ Dancer2R5AfterText:
 	done
 	
 BakerR5SeenText:
-	text "You seem to be"
-	line "good at #MON."
+	text "These #MON"
+	line "usually help me"
 
-	para "If you are, how"
-	line "about giving me"
-	cont "some advice?"
+	para "bake. But today,"
+	line "they'll help me"
+	cont "battle you!"
 	done
 
 BakerR5BeatenText:
-	text "I see. So you can"
-	line "battle that way."
+	text "Battling is much"
+	line "more difficult"
+	cont "than baking!"
 	done
 
 BakerR5AfterText:
-	text "I know something"
-	line "good!"
-
-	para "CHARLES the heart-"
-	line "breaker will give"
-	
-	para "you something good"
-	line "if you beat him"
-	cont "in battle."
+	text "My #MON and I"
+	line "bake bread. It's"
+	cont "so fun!"
 	done
 	
 ArtistR5SeenText:
@@ -371,20 +366,24 @@ ArtistR5AfterText:
 	done
 	
 BackersFR5SeenText:
-	text "I'm going to read"
-	line "your thoughts!"
+	text "After watching a"
+	line "football game, we"
+	
+	para "want to get rowdy"
+	line "ourselves!"
 	done
 
 BackersFR5BeatenText:
-	text "I misread you!"
+	text "Too rowdy!"
 	done
 
 BackersFR5AfterText:
-	text "I'd be strong if"
-	line "only I could tell"
+	text "Keeping track of"
+	line "wins is important,"
 
-	para "what my opponent"
-	line "was thinking."
+	para "but don't lose"
+	line "sight of every-"
+	cont "thing else!"
 	done
 	
 R5BridgeSignText:

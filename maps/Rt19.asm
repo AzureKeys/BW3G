@@ -236,28 +236,21 @@ PkmnBreederMR19AfterText:
 	done
 	
 LadyR19SeenText:
-	text "I'm raising my"
-	line "#MON. Want to"
-	cont "battle with me?"
+	text "Are you beautiful"
+	line "as a trainer?"
+	cont "Surprise me!"
 	done
 
 LadyR19BeatenText:
-	text "Ack! I lost that"
-	line "one…"
+	text "…Strong and"
+	line "beautiful! You"
+	cont "captivated me!"
 	done
 
 LadyR19AfterText:
-	text "If you have a"
-	line "specific #MON"
-
-	para "that you want to"
-	line "raise, put it out"
-
-	para "first, then switch"
-	line "it right away."
-
-	para "That's how to do"
-	line "it."
+	text "Your #MON were"
+	line "truly beautiful"
+	cont "too!"
 	done
 	
 DepotAgent1R19SeenText:
