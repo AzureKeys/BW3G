@@ -25,6 +25,8 @@ INCBIN "gfx/trainers/blackbelt_t.gbcpal", middle_colors
 INCBIN "gfx/trainers/battle_girl.gbcpal", middle_colors
 INCBIN "gfx/trainers/biker.gbcpal", middle_colors
 INCBIN "gfx/trainers/roughneck.gbcpal", middle_colors
+INCBIN "gfx/trainers/cyclist_m.gbcpal", middle_colors
+INCBIN "gfx/trainers/cyclist_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/dancer.gbcpal", middle_colors
 INCBIN "gfx/trainers/depot_agent.gbcpal", middle_colors
 INCBIN "gfx/trainers/doctor.gbcpal", middle_colors
@@ -74,8 +76,6 @@ INCBIN "gfx/trainers/veteran_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/waiter.gbcpal", middle_colors
 INCBIN "gfx/trainers/waitress.gbcpal", middle_colors
 INCBIN "gfx/trainers/worker.gbcpal", middle_colors
-INCBIN "gfx/trainers/bird_keeper.gbcpal", middle_colors
-INCBIN "gfx/trainers/picnicker_d.gbcpal", middle_colors
 INCBIN "gfx/trainers/grunt_m.gbcpal", middle_colors
 INCBIN "gfx/trainers/grunt_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/marlon.gbcpal", middle_colors

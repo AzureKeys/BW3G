@@ -155,14 +155,6 @@ LassDGroup:
 	db 14, MUNNA
 	dw $0800, $0800, $0800, $0800, $0800
 	db -1 ; end
-	
-	; LASS_D (R16)
-	db "LESLIE@", TRAINERTYPE_STAT_EXP
-	db 16, GOTHITA
-	dw $0A00, $0A00, $0A00, $0A00, $0A00
-	db 18, CLEFAIRY
-	dw $0A00, $0A00, $0A00, $0A00, $0A00
-	db -1 ; end
 
 	; LASS (ASPERTIA_GYM)
 	db "LILIAN@", TRAINERTYPE_STAT_EXP
@@ -667,12 +659,6 @@ BattleGirlGroup:
 	db -1 ; end
 
 BikerGroup:
-	; BIKER (R16)
-	db "BRUNO@", TRAINERTYPE_STAT_EXP
-	db 19, HOUNDOUR
-	dw $0C00, $0C00, $0C00, $0C00, $0C00
-	db -1 ; end
-
 	; BIKER (R5)
 	db "CHARLES@", TRAINERTYPE_STAT_EXP
 	db 18, KOFFING
@@ -738,6 +724,70 @@ RoughneckGroup:
 	dw $5400, $5400, $5400, $5400, $5400
 	db 50, DRAPION
 	dw $5400, $5400, $5400, $5400, $5400
+	db -1 ; end
+	
+CyclistMGroup:
+	; CYCLISTM (OUTSKIRTS)
+	db "FREDDY@", TRAINERTYPE_STAT_EXP
+	db  8, PIDOVE
+	dw $0600, $0600, $0600, $0600, $0600
+	db 10, RUFFLET
+	dw $0600, $0600, $0600, $0600, $0600
+	db 10, VULLABY
+	dw $0600, $0600, $0600, $0600, $0600
+	db -1 ; end
+	
+	; CYCLISTM (R16)
+	db "BRUNO@", TRAINERTYPE_STAT_EXP
+	db 19, HOUNDOUR
+	dw $0C00, $0C00, $0C00, $0C00, $0C00
+	db -1 ; end
+	
+	; CYCLISTM (FREDDY REMATCH 1)
+	db "FREDDY@", TRAINERTYPE_STAT_EXP
+	db 20, RUFFLET
+	dw $1000, $1000, $1000, $1000, $1000
+	db 20, VULLABY
+	dw $1000, $1000, $1000, $1000, $1000
+	db 22, TRANQUILL
+	dw $1000, $1000, $1000, $1000, $1000
+	db -1 ; end
+	
+	; CYCLISTM (FREDDY REMATCH 2)
+	db "FREDDY@", TRAINERTYPE_STAT_EXP
+	db 29, RUFFLET
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 29, VULLABY
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 30, TRANQUILL
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db -1 ; end
+	
+	; CYCLISTM (FREDDY REMATCH 3)
+	db "FREDDY@", TRAINERTYPE_STAT_EXP
+	db 39, RUFFLET
+	dw $4800, $4800, $4800, $4800, $4800
+	db 39, VULLABY
+	dw $4800, $4800, $4800, $4800, $4800
+	db 42, UNFEZANT
+	dw $4800, $4800, $4800, $4800, $4800
+	db -1 ; end
+	
+CyclistFGroup:
+	; CYCLISTF (OUTSKIRTS)
+	db "SHELLY@", TRAINERTYPE_STAT_EXP
+	db 10, LILLIPUP
+	dw $0600, $0600, $0600, $0600, $0600
+	db 12, MARILL
+	dw $0600, $0600, $0600, $0600, $0600
+	db -1 ; end
+	
+	; CYCLISTF (R16)
+	db "LESLIE@", TRAINERTYPE_STAT_EXP
+	db 16, GOTHITA
+	dw $0A00, $0A00, $0A00, $0A00, $0A00
+	db 18, CLEFAIRY
+	dw $0A00, $0A00, $0A00, $0A00, $0A00
 	db -1 ; end
 	
 DancerGroup:
@@ -2610,56 +2660,6 @@ WorkerGroup:
 	dw $4400, $4400, $4400, $4400, $4400
 	db 40, BOLDORE
 	dw $4400, $4400, $4400, $4400, $4400
-	db -1 ; end
-
-BirdKeeperGroup:
-	; BIRD_KEEPER (OUTSKIRTS)
-	db "FREDDY@", TRAINERTYPE_STAT_EXP
-	db  8, PIDOVE
-	dw $0600, $0600, $0600, $0600, $0600
-	db 10, RUFFLET
-	dw $0600, $0600, $0600, $0600, $0600
-	db 10, VULLABY
-	dw $0600, $0600, $0600, $0600, $0600
-	db -1 ; end
-	
-	; BIRD_KEEPER (FREDDY REMATCH 1)
-	db "FREDDY@", TRAINERTYPE_STAT_EXP
-	db 20, RUFFLET
-	dw $1000, $1000, $1000, $1000, $1000
-	db 20, VULLABY
-	dw $1000, $1000, $1000, $1000, $1000
-	db 22, TRANQUILL
-	dw $1000, $1000, $1000, $1000, $1000
-	db -1 ; end
-	
-	; BIRD_KEEPER (FREDDY REMATCH 2)
-	db "FREDDY@", TRAINERTYPE_STAT_EXP
-	db 29, RUFFLET
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 29, VULLABY
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 30, TRANQUILL
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db -1 ; end
-	
-	; BIRD_KEEPER (FREDDY REMATCH 3)
-	db "FREDDY@", TRAINERTYPE_STAT_EXP
-	db 39, RUFFLET
-	dw $4800, $4800, $4800, $4800, $4800
-	db 39, VULLABY
-	dw $4800, $4800, $4800, $4800, $4800
-	db 42, UNFEZANT
-	dw $4800, $4800, $4800, $4800, $4800
-	db -1 ; end
-
-PicnickerDGroup:
-	; PICNICKER_D (OUTSKIRTS)
-	db "ROCHELLE@", TRAINERTYPE_STAT_EXP
-	db 10, LILLIPUP
-	dw $0600, $0600, $0600, $0600, $0600
-	db 12, MARILL
-	dw $0600, $0600, $0600, $0600, $0600
 	db -1 ; end
 
 GruntMGroup:

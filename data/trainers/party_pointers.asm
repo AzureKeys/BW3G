@@ -20,6 +20,8 @@ TrainerGroups:
 	dba BattleGirlGroup
 	dba BikerGroup
 	dba RoughneckGroup
+	dba CyclistMGroup
+	dba CyclistFGroup
 	dba DancerGroup
 	dba DepotAgentGroup
 	dba DoctorGroup
@@ -69,8 +71,6 @@ TrainerGroups:
 	dba WaiterGroup
 	dba WaitressGroup
 	dba WorkerGroup
-	dba BirdKeeperGroup
-	dba PicnickerDGroup
 	dba GruntMGroup
 	dba GruntFGroup
 	dba MarlonGroup

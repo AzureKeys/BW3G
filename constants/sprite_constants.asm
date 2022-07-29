@@ -111,6 +111,8 @@
 	const SPRITE_MUSICIAN ; 6b
 	const SPRITE_SOCIALITE ; 6c
 	const SPRITE_LINEBACKER ; 6d
+	const SPRITE_CYCLIST_M ; 6e
+	const SPRITE_CYCLIST_F ; 6f
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

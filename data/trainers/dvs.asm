@@ -19,6 +19,8 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; BATTLE_GIRL
 	dn  9,  8,  8,  8 ; BIKER
 	dn  9,  8,  8,  8 ; ROUGHNECK
+	dn  9,  8,  8,  8 ; CYCLIST_M
+	dn  6, 10, 10,  8 ; CYCLIST_F
 	dn  9,  8,  8,  8 ; DANCER
 	dn  9,  8,  8,  8 ; DEPOT_AGENT
 	dn  9,  8,  8,  8 ; DOCTOR
@@ -68,8 +70,6 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; WAITER
 	dn  6, 10, 10,  8 ; WAITRESS
 	dn 10,  8,  8,  8 ; WORKER
-	dn  9,  8,  8,  8 ; BIRD_KEEPER
-	dn  6, 10, 10,  8 ; PICNICKER_D
 	dn 13,  8, 10,  8 ; GRUNTM
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn  9, 10,  7,  7 ; MARLON

@@ -21,6 +21,8 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; battlegirl
 	db MUSIC_HIKER_ENCOUNTER       ; biker
 	db MUSIC_HIKER_ENCOUNTER       ; roughneck
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; cyclistm
+	db MUSIC_LASS_ENCOUNTER        ; cyclistf
 	db MUSIC_HIKER_ENCOUNTER       ; dancer
 	db MUSIC_OFFICER_ENCOUNTER     ; depotagent
 	db MUSIC_SAGE_ENCOUNTER        ; doctor
@@ -70,8 +72,6 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; waiter
 	db MUSIC_LASS_ENCOUNTER        ; waitress
 	db MUSIC_HIKER_ENCOUNTER       ; worker
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; bird_keeper
-	db MUSIC_LASS_ENCOUNTER        ; picnickerD
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntm
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; marlon

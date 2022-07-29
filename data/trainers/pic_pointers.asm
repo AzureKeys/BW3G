@@ -20,6 +20,8 @@ TrainerPicPointers::
 	dba BattleGirlPic
 	dba BikerPic
 	dba RoughneckPic
+	dba CyclistMPic
+	dba CyclistFPic
 	dba DancerPic
 	dba DepotAgentPic
 	dba DoctorPic
@@ -69,8 +71,6 @@ TrainerPicPointers::
 	dba WaiterPic
 	dba WaitressPic
 	dba WorkerPic
-	dba BirdKeeperPic
-	dba PicnickerDPic
 	dba GruntmPic
 	dba GruntfPic
 	dba MarlonPic

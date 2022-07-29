@@ -4,7 +4,6 @@ MaleTrainers:
 	db YOUNGSTER
 	db YOUNGSTER_D
 	db SCHOOL_KIDM
-	db BIRD_KEEPER
 	db GENTLEMAN
 	db FISHER
 	db SWIMMERM

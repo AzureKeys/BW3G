@@ -4,7 +4,7 @@
 	const LENTIMASTOWN_AIRPORT_GUARD
 	const LENTIMASTOWN_GRANNY
 	const LENTIMASTOWN_GRAMPS
-	const LENTIMASTOWN_POKEFAN_F
+	const LENTIMASTOWN_RANGER_F
 
 LentimasTown_MapScripts:
 	db 1 ; scene scripts
@@ -55,8 +55,8 @@ LentimasTownGrannyTextScript:
 LentimasTownGrampsTextScript:
 	jumptextfaceplayer LentimasTownGrampsText
 	
-LentimasTownPokefanFTextScript:
-	jumptextfaceplayer LentimasTownPokefanFText
+LentimasTownRangerFTextScript:
+	jumptextfaceplayer LentimasTownRangerFText
 	
 LentimasTownFireStone:
 	itemball FIRE_STONE
@@ -122,7 +122,7 @@ LentimasTownGrampsText:
 	cont "for far longer…"
 	done
 	
-LentimasTownPokefanFText:
+LentimasTownRangerFText:
 	text "Shhh…"
 	
 	para "I'm in training to"
@@ -169,5 +169,5 @@ LentimasTown_MapEvents:
 	object_event  9, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LentimasTownGuardScript, -1
 	object_event 23, 14, SPRITE_GRANNY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasTownGrannyTextScript, -1
 	object_event 15, 17, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasTownGrampsTextScript, -1
-	object_event 13,  6, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasTownPokefanFTextScript, -1
+	object_event 13,  6, SPRITE_RANGER_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasTownRangerFTextScript, -1
 	

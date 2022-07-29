@@ -77,14 +77,15 @@ UndellaGroupSprites:
 
 LentimasGroupSprites:
 ; Lentimas Outskirts, Lentimas Town
-	db SPRITE_OFFICER
 	db SPRITE_RANGER_M
 	db SPRITE_RANGER_F
+	db SPRITE_CYCLIST_M
+	db SPRITE_CYCLIST_F
 	db SPRITE_YOUNGSTER
 	db SPRITE_SCIENTIST
 	db SPRITE_GRANNY
 	db SPRITE_GRAMPS
-	db SPRITE_POKEFAN_F
+	db SPRITE_OFFICER
 	; 8 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db 0 ; end
@@ -113,9 +114,9 @@ NimbasaOuterGroupSprites:
 	db SPRITE_LASS
 	db SPRITE_BIKER
 	db SPRITE_TEACHER
-	db SPRITE_GRAMPS
+	db SPRITE_CYCLIST_M
+	db SPRITE_CYCLIST_F
 	db SPRITE_LINEBACKER
-	db SPRITE_CHEREN
 	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE

@@ -3,9 +3,9 @@
 	const LENTIMASOUTSKIRTS_POTION
 	const LENTIMASOUTSKIRTS_AWAKENING
 	const LENTIMASOUTSKIRTS_QUICK_BALL
-	const LENTIMASOUTSKIRTS_PICNICKER
 	const LENTIMASOUTSKIRTS_SCHOOL_KIDM
-	const LENTIMASOUTSKIRTS_BIRD_KEEPER
+	const LENTIMASOUTSKIRTS_CYCLISTM
+	const LENTIMASOUTSKIRTS_CYCLISTF
 	const LENTIMASOUTSKIRTS_YOUNGSTER
 	const LENTIMASOUTSKIRTS_PKMN_RANGERM
 	const LENTIMASOUTSKIRTS_PKMN_RANGERF
@@ -53,19 +53,19 @@ OutskirtsDoctorScript:
 	special FadeInPalettes
 	end
 
-TrainerBirdKeeperOutskirts:
-	trainer BIRD_KEEPER, BIRD_KEEPER_OUTSKIRTS, EVENT_BEAT_BIRD_KEEPER_OUTSKIRTS, BirdKeeperOutskirtsSeenText, BirdKeeperOutskirtsBeatenText, 0, .Script
+TrainerCyclistMOutskirts:
+	trainer CYCLISTM, CYCLISTM_OUTSKIRTS, EVENT_BEAT_CYCLISTM_OUTSKIRTS, CyclistMOutskirtsSeenText, CyclistMOutskirtsBeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_BIRDKEEPER_FREDDY
+	writecode VAR_CALLERID, PHONE_CYCLIST_FREDDY
 	opentext
 	checkflag ENGINE_FREDDY_READY_FOR_REMATCH
 	iftrue .ChooseRematch
-	checkcellnum PHONE_BIRDKEEPER_FREDDY
+	checkcellnum PHONE_CYCLIST_FREDDY
 	iftrue .NumberAccepted
 	checkevent EVENT_FREDDY_ASKED_FOR_PHONE_NUMBER
 	iftrue .AskAgainForPhoneNumber
-	writetext BirdKeeperOutskirtsAfterText
+	writetext CyclistMOutskirtsAfterText
 	buttonsound
 	setevent EVENT_FREDDY_ASKED_FOR_PHONE_NUMBER
 	scall .AskNumber1
@@ -74,17 +74,17 @@ TrainerBirdKeeperOutskirts:
 .AskAgainForPhoneNumber:
 	scall .AskNumber2
 .ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_BIRDKEEPER_FREDDY
+	askforphonenumber PHONE_CYCLIST_FREDDY
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_FREDDY
-	trainertotext BIRD_KEEPER, BIRD_KEEPER_OUTSKIRTS, MEM_BUFFER_0
+	trainertotext CYCLISTM, CYCLISTM_OUTSKIRTS, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
 .ChooseRematch:
 	scall .Rematch
-	winlosstext BirdKeeperOutskirtsBeatenText, 0
+	winlosstext CyclistMOutskirtsBeatenText, 0
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight3
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
@@ -92,25 +92,25 @@ TrainerBirdKeeperOutskirts:
 	checkevent EVENT_BIANCA_CASTELIA_CALL
 	iftrue .LoadFight1
 ; Fight0
-	loadtrainer BIRD_KEEPER, BIRD_KEEPER_OUTSKIRTS
+	loadtrainer CYCLISTM, CYCLISTM_OUTSKIRTS
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
 	end
 .LoadFight1
-	loadtrainer BIRD_KEEPER, FREDDY_REMATCH_1
+	loadtrainer CYCLISTM, FREDDY_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
 	end
 .LoadFight2
-	loadtrainer BIRD_KEEPER, FREDDY_REMATCH_2
+	loadtrainer CYCLISTM, FREDDY_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
 	end
 .LoadFight3
-	loadtrainer BIRD_KEEPER, FREDDY_REMATCH_3
+	loadtrainer CYCLISTM, FREDDY_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
@@ -144,13 +144,13 @@ TrainerBirdKeeperOutskirts:
 	jumpstd rematchm
 	end
 
-TrainerPicnickerOutskirts:
-	trainer PICNICKER_D, PICNICKER_OUTSKIRTS, EVENT_BEAT_PICNICKER_OUTSKIRTS, PicnickerOutskirtsSeenText, PicnickerOutskirtsBeatenText, 0, .Script
+TrainerCyclistFOutskirts:
+	trainer CYCLISTF, CYCLISTF_OUTSKIRTS, EVENT_BEAT_CYCLISTF_OUTSKIRTS, CyclistFOutskirtsSeenText, CyclistFOutskirtsBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerOutskirtsAfterText
+	writetext CyclistFOutskirtsAfterText
 	waitbutton
 	closetext
 	end
@@ -241,25 +241,25 @@ OutskirtsDoctorHealText:
 	cont "full health."
 	done
 	
-PicnickerOutskirtsSeenText:
+CyclistFOutskirtsSeenText:
 	text "That BADGE! It's"
 	line "from HUMILAU CITY!"
 
 	para "You beat MARLON?"
 	done
 
-PicnickerOutskirtsBeatenText:
+CyclistFOutskirtsBeatenText:
 	text "I know what my"
 	line "weaknesses are."
 	done
 
-PicnickerOutskirtsAfterText:
+CyclistFOutskirtsAfterText:
 	text "I should train"
 	line "more at the GYM"
 	cont "in LENTIMAS TOWN."
 	done
 	
-BirdKeeperOutskirtsSeenText:
+CyclistMOutskirtsSeenText:
 	text "I'm confident in"
 	line "my ability to"
 	cont "raise #MON."
@@ -267,12 +267,12 @@ BirdKeeperOutskirtsSeenText:
 	para "Want to see?"
 	done
 
-BirdKeeperOutskirtsBeatenText:
+CyclistMOutskirtsBeatenText:
 	text "Did I screw up my"
 	line "training?"
 	done
 
-BirdKeeperOutskirtsAfterText:
+CyclistMOutskirtsAfterText:
 	text "Maybe I should"
 	line "take one to a DAY-"
 
@@ -402,11 +402,11 @@ LentimasOutskirts_MapEvents:
 	object_event 26, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LentimasOutskirtsPotion, EVENT_LENTIMAS_OUTSKIRTS_POTION
 	object_event 18,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LentimasOutskirtsAwakening, EVENT_LENTIMAS_OUTSKIRTS_AWAKENING
 	object_event  9, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LentimasOutskirtsQuickBall, EVENT_LENTIMAS_OUTSKIRTS_QUICK_BALL
-	object_event 31,  9, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerPicnickerOutskirts, -1
-	object_event 34, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperOutskirts, -1
+	object_event 11, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMOutskirts, -1
+	object_event 34, 18, SPRITE_CYCLIST_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerCyclistMOutskirts, -1
+	object_event 31,  9, SPRITE_CYCLIST_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerCyclistFOutskirts, -1
 	object_event 22, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerYoungsterOutskirts, -1
 	object_event 18, 12, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMOutskirts, -1
 	object_event 28, 17, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFOutskirts, -1
-	object_event 11, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerSchoolKidMOutskirts, -1
 	object_event 29,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OutskirtsDoctorScript, -1
 	

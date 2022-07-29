@@ -22,7 +22,6 @@ BattleTowerTrainers:
 	db "SANTIAGO@@", PSYCHICM_T
 	db "STOCK@@@@@", POKEFANM
 	db "THURMAN@@@", SCIENTIST_M
-	db "YATES@@@@@", BIRD_KEEPER
 	db "MORI@@@@@@", SCIENTIST_M
 	db "COBB@@@@@@", SCHOOL_KIDM
 	db "HUGHES@@@@", FISHER
@@ -34,7 +33,6 @@ BattleTowerTrainers:
 	db "NGUYEN@@@@", BLACKBELT_T
 	db "PARK@@@@@@", ACE_TRAINERF
 	db "RAINE@@@@@", SWIMMERM
-	db "SELLS@@@@@", BIRD_KEEPER
 	db "THORNTON@@", LASS
 	db "TURNER@@@@", POLICEMAN
 	db "WALKER@@@@", SCHOOL_KIDM

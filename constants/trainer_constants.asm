@@ -52,7 +52,6 @@ CHRIS EQU __enum__
 	
 	trainerclass LASS_D
 	const LASS_REVERSAL
-	const LASS_R16
 	const LASS_ASPERTIA_GYM
 	const LASS_PINWHEEL
 	const LASS_R2
@@ -135,7 +134,6 @@ CHRIS EQU __enum__
 	const BATTLE_GIRL_NACRENE_OUTSKIRT
 
 	trainerclass BIKER ; 2d
-	const BIKER_R16
 	const BIKER_R5
 	const BIKER_R4
 	const BIKER_R9_1
@@ -146,6 +144,17 @@ CHRIS EQU __enum__
 	const ROUGHNECK_DESERT
 	const ROUGHNECK_R9_1
 	const ROUGHNECK_R9_2
+
+	trainerclass CYCLISTM ; 18
+	const CYCLISTM_OUTSKIRTS
+	const CYCLISTM_R16
+	const FREDDY_REMATCH_1
+	const FREDDY_REMATCH_2
+	const FREDDY_REMATCH_3
+	
+	trainerclass CYCLISTF
+	const CYCLISTF_OUTSKIRTS
+	const CYCLISTF_R16
 	
 	trainerclass DANCER
 	const DANCER_R5_1
@@ -460,15 +469,6 @@ CHRIS EQU __enum__
 	const WORKER_CASTELIA_SEWERS_2
 	const WORKER_CASTELIA_SEWERS_3
 	const WORKER_RELIC_PASSAGE
-
-	trainerclass BIRD_KEEPER ; 18
-	const BIRD_KEEPER_OUTSKIRTS
-	const FREDDY_REMATCH_1
-	const FREDDY_REMATCH_2
-	const FREDDY_REMATCH_3
-	
-	trainerclass PICNICKER_D
-	const PICNICKER_OUTSKIRTS
 
 	trainerclass GRUNTM ; 1f
 	const GRUNTM_REVERSAL
