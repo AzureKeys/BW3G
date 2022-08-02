@@ -347,24 +347,25 @@ HarlequinCasteliaGym3AfterText:
 	done
 	
 HarlequinCasteliaGym4SeenText:
-	text "I've been"
-	line "collecting bug"
+	text "The one you meet"
+	line "at this cocoon is"
 
-	para "#MON since I"
-	line "was just a baby."
-
-	para "There's no way I'm"
-	line "going to lose!"
+	para "none other than"
+	line "me!"
 	done
 
 HarlequinCasteliaGym4BeatenText:
-	text "No! My precious"
-	line "BUG #MON!"
+	text "Looks like the"
+	line "cocoons brought"
+	cont "you to me!"
 	done
 
 HarlequinCasteliaGym4AfterText:
-	text "I guess I need"
-	line "more training…"
+	text "Try going up the"
+	line "right side of the"
+	
+	para "gym to open up"
+	line "this cocoon!"
 	done
 	
 HarlequinCasteliaGym5SeenText:

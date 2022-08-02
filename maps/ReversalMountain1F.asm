@@ -202,24 +202,31 @@ BackpackerFReversalAfterText:
 	done
 	
 Hiker2ReversalSeenText:
-	text "If it's light, a"
-	line "cave isn't scary."
+	text "My #MON dig"
+	line "cause they believe"
 
-	para "If you're strong,"
-	line "#MON aren't"
-	cont "scary."
+	para "they're gonna find"
+	line "something, and"
+	
+	para "they battle cause"
+	line "they believe"
+	cont "they're gonna win!"
 	done
 
 Hiker2ReversalBeatenText:
-	text "FLASH!"
+	text "I may have lost,"
+	line "but I still"
+	
+	para "believe in my"
+	line "#MON!"
 	done
 
 Hiker2ReversalAfterText:
-	text "My #MON is so"
-	line "big, so I'm not"
+	text "Me and my #MON"
+	line "will be wherever"
 
-	para "afraid of anything"
-	line "in the cave!"
+	para "there's ore to be"
+	line "found!"
 	done
 	
 SchoolKidFReversalSeenText:

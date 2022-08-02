@@ -305,27 +305,23 @@ Dancer1R5AfterText:
 	done
 	
 Dancer2R5SeenText:
-	text "Do you consider"
-	line "type alignments in"
-	cont "battle?"
+	text "I can feel it in"
+	line "the air… This"
 
-	para "If you know your"
-	line "type advantages,"
-
-	para "you'll do better"
-	line "in battle."
+	para "battle will be"
+	line "electrifying!"
 	done
 
 Dancer2R5BeatenText:
-	text "Ow, ow, ow!"
+	text "What electrifying"
+	line "strength! You"
+	cont "shocked me good!"
 	done
 
 Dancer2R5AfterText:
-	text "I know my #MON"
-	line "type alignments."
-
-	para "But I'm not"
-	line "actually any good…"
+	text "I'm shocked! I"
+	line "need a CHERI"
+	cont "BERRY!"
 	done
 	
 BakerR5SeenText:
@@ -350,19 +346,21 @@ BakerR5AfterText:
 	done
 	
 ArtistR5SeenText:
-	text "Hey! Do you have"
-	line "any rare #MON?"
+	text "Art is explosions!"
+	line "Life forces colli-"
+	cont "ding together!"
 	done
 
 ArtistR5BeatenText:
-	text "Oh, my poor #-"
-	line "MON!"
+	text "Oh, I just got"
+	line "whitewashed!"
 	done
 
 ArtistR5AfterText:
-	text "I'd be happy just"
-	line "to own a single"
-	cont "rare #MON."
+	text "Boom!"
+	
+	para "Colors collide to"
+	line "form new colors!"
 	done
 	
 BackersFR5SeenText:

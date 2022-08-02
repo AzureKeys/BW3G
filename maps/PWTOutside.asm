@@ -201,8 +201,9 @@ PwtOutsideBugCatcherText:
 PwtOutsideCooltrainerFText:
 	text "All the best"
 	line "trainers in the"
-	cont "region come to"
-	cont "compete here."
+	
+	para "region come to"
+	line "compete here."
 	
 	para "I'm getting all"
 	line "fired up!"

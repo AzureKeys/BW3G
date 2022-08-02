@@ -122,19 +122,21 @@ R20HPUp:
 	hiddenitem HP_UP, EVENT_R_20_HP_UP
 	
 SchoolKidM1R20SeenText:
-	text "My favorite class"
-	line "is gym!"
+	text "To me, the battle-"
+	line "field is a place"
+	cont "for learning!"
 	done
 
 SchoolKidM1R20BeatenText:
-	text "Oh, no!"
-	line "How could I lose?"
+	text "W-wait! I've got"
+	line "to analyze this"
+	cont "defeat!"
 	done
 
 SchoolKidM1R20AfterText:
-	text "If #MON were a"
-	line "subject at school,"
-	cont "I'd be the best!"
+	text "By losing, you can"
+	line "discover what your"
+	cont "true strength is!"
 	done
 	
 SchoolKidM2R20SeenText:

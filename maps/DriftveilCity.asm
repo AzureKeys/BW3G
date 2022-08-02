@@ -259,11 +259,12 @@ DriftveilGruntText:
 	done
 	
 DriftveilLassText:
-	text "Ever since the"
-	line "WORLD TOURNAMENT"
+	text "I want to level up"
+	line "my dear #MON so"
 	
-	para "came to town, it's"
-	line "been so busy here!"
+	para "they never have to"
+	line "feel the sting of"
+	cont "defeat!"
 	done
 	
 DriftveilYoungsterText:
@@ -298,8 +299,9 @@ DriftveilGrampsText:
 DriftveilGramps2Text:
 	text "It seems there was"
 	line "some commotion at"
-	cont "the #MON WORLD"
-	cont "TOURNAMENT!"
+	
+	para "the #MON WORLD"
+	line "TOURNAMENT!"
 	done
 	
 DriftveilLass2Text:

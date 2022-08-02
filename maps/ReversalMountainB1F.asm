@@ -45,22 +45,24 @@ ReversalMountainHyperPotion:
 	hiddenitem HYPER_POTION, EVENT_REVERSAL_MOUNTAIN_HYPER_POTION
 	
 Hiker1ReversalSeenText:
-	text "Whoa! What a"
-	line "surprise!"
+	text "Me and my #MON"
+	line "are professional"
 
-	para "I didn't expect to"
-	line "see anyone here!"
+	para "tunnellers! We"
+	line "have no rival!"
 	done
 
 Hiker1ReversalBeatenText:
-	text "Whoa! I'm beaten"
-	line "big time!"
+	text "To hit a wall like"
+	line "this…"
 	done
 
 Hiker1ReversalAfterText:
-	text "I'm on the hunt"
-	line "for rare #MON"
-	cont "in this cave."
+	text "When we dig"
+	line "through tunnels,"
+	
+	para "I get all wound"
+	line "up!"
 	done
 	
 BattleGirlReversalSeenText:

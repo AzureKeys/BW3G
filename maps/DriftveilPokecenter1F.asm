@@ -42,11 +42,12 @@ DriftveilPokecenterCooltrainerFScript:
 	jumptextfaceplayer DriftveilPokecenterCooltrainerFText
 
 DriftveilPokecenterCooltrainerFText:
-	text "There's a bunch of"
-	line "specialty shops"
+	text "There's a shelter"
+	line "for #MON here"
 	
-	para "across the bridge"
-	line "in NIMBASA."
+	para "in town, run by"
+	line "former members of"
+	cont "TEAM PLASMA."
 	done
 
 DriftveilPokecenterFisherText:
@@ -77,13 +78,14 @@ DriftveilPokecenterFisher2Text:
 
 DriftveilPokecenterYoungsterText:
 	text "The marketplace,"
-	line "the #MON"
+	line "the #MON WORLD"
 
-	para "shelter, the STONE"
-	line "EMPOREUM, they're"
+	para "TOURNAMENT, the"
+	line "STONE EMPOREUM,"
 	
-	para "the places to see"
-	line "in DRIFTVEIL."
+	para "they're the places"
+	line "to see in"
+	cont "DRIFTVEIL CITY."
 	done
 
 DriftveilPokecenter1F_MapEvents:

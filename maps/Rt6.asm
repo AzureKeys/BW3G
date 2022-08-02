@@ -244,21 +244,20 @@ R6ChargestoneSign:
 	jumptext R6ChargestoneText
 	
 PkmnRangerMR6SeenText:
-	text "This ROUTE is such"
-	line "a lovely stroll,"
-	
-	para "wouldn't you"
-	line "agree?"
+	text "Nature!"
 	done
 
 PkmnRangerMR6BeatenText:
-	text "Oh dear…"
+	text "Natuuure!"
 	done
 
 PkmnRangerMR6AfterText:
-	text "Now I'll have to"
-	line "take my #MON"
-	cont "back to town…"
+	text "When we are"
+	line "surrounded by"
+	
+	para "green, we feel"
+	line "more energetic."
+	cont "Don't you think?"
 	done
 	
 PkmnRangerFR6SeenText:
@@ -280,52 +279,62 @@ PkmnRangerFR6AfterText:
 	done
 	
 ParasolLady1R6SeenText:
-	text "Lots of #MON"
-	line "come out after it"
-	cont "rains!"
+	text "Pouring rain…"
+	line "Fighting #MON…"
 	done
 
 ParasolLady1R6BeatenText:
-	text "Hey!"
+	text "Ah, the sad melody"
+	line "of a total defeat…"
 	done
 
 ParasolLady1R6AfterText:
-	text "I love seeing all"
-	line "the #MON!"
+	text "Rain, rain! I love"
+	line "rain! If I'm"
+	
+	para "crying, I can hide"
+	line "my tears with my"
+	cont "parasol!"
 	done
 	
 ParasolLady2R6SeenText:
-	text "What a lovely day"
-	line "for a #MON"
-	cont "battle!"
+	text "Water fun with"
+	line "#MON! Do you"
+	
+	para "want to play with"
+	line "us?"
 	done
 
 ParasolLady2R6BeatenText:
-	text "Not so lovely…"
+	text "My oh my… I lost."
 	done
 
 ParasolLady2R6AfterText:
-	text "You must have"
-	line "trained hard!"
+	text "I'll go home and"
+	line "get my boyfriend"
+	
+	para "to… No, I'll get"
+	line "my #MON to"
+	cont "cheer me up!"
 	done
 	
 PkmnBreederFR6SeenText:
-	text "This ROUTE is a"
-	line "lousy spot for a"
-	cont "picnic."
+	text "Going through"
+	line "trials is the best"
 	
-	para "The grass is all"
-	line "wet!"
+	para "for growing"
+	line "stronger!"
 	done
 
 PkmnBreederFR6BeatenText:
-	text "I got soaked!"
+	text "You were the"
+	line "perfect trial!"
 	done
 
 PkmnBreederFR6AfterText:
-	text "At least the"
-	line "puddles are fun to"
-	cont "splash in!"
+	text "We raise our #-"
+	line "MON by having them"
+	cont "battle!"
 	done
 	
 PkmnBreederMR6SeenText:
@@ -344,36 +353,54 @@ PkmnBreederMR6AfterText:
 	done
 	
 ScientistMR6SeenText:
-	text "ROUTE 6 is home to"
-	line "a research lab."
+	text "Testing out one's"
+	line "theory is all a"
+	cont "part of science!"
 	done
 
 ScientistMR6BeatenText:
-	text "Interesting!"
+	text "Analyzing the"
+	line "current situation"
+	
+	para "is also a part of"
+	line "science!"
 	done
 
 ScientistMR6AfterText:
-	text "We're always"
-	line "looking for rare"
-	cont "#MON!"
+	text "Just because a"
+	line "previous method"
+	
+	para "worked before,"
+	line "doesn't mean it"
+	cont "will again!"
 	done
 	
 ScientistFR6SeenText:
-	text "I work at the"
-	line "research lab here."
+	text "I shall uncover"
+	line "the mechanism"
 	
-	para "Would you mind"
-	line "showing me your"
-	cont "#MON?"
+	para "behind trainer and"
+	line "#MON relation-"
+	cont "ships!"
 	done
 
 ScientistFR6BeatenText:
-	text "So that's it…"
+	text "Why are #MON"
+	line "able to understand"
+	
+	para "their trainers'"
+	line "orders?"
 	done
 
 ScientistFR6AfterText:
-	text "Thank you for the"
-	line "demonstration!"
+	text "I wonder if PROF."
+	line "ROWAN of the"
+	
+	para "SINNOH region has"
+	line "managed to unlock"
+	
+	para "the mystery of how"
+	line "#MON evolve."
 	done
 
 AmoongussText:

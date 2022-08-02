@@ -90,24 +90,30 @@ BattleGirlWellspringB1FAfterText:
 	done
 	
 HikerWellspringB1FSeenText:
-	text "There's no cheat-"
-	line "ing in #MON."
+	text "Here in the dark-"
+	line "ness… I feel my"
 
-	para "Let's keep it fair"
-	line "and square!"
+	para "way through thanks"
+	line "to my #MON!"
+	
+	para "I'll show you the"
+	line "power of our bond!"
 	done
 
 HikerWellspringB1FBeatenText:
-	text "Huh? How did this"
-	line "happen?"
+	text "Our power went"
+	line "dark!"
 	done
 
 HikerWellspringB1FAfterText:
-	text "I fought fair and"
-	line "square with honor."
+	text "Isn't darkness"
+	line "great? It's the"
 
-	para "I don't regret"
-	line "this at all."
+	para "space of dreams"
+	line "where you don't"
+	
+	para "know what's even"
+	line "there!"
 	done
 
 WellspringCaveB1F_MapEvents:

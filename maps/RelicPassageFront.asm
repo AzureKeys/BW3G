@@ -169,39 +169,48 @@ PsychicMRelicPassageAfterText:
 	done
 	
 Hiker1RelicPassageSeenText:
-	text "This tunnel goes"
-	line "all the way to"
-	cont "DRIFTVEIL."
+	text "When I say dig,"
+	line "say, How Low?"
 	done
 
 Hiker1RelicPassageBeatenText:
-	text "I'm too tuckered"
-	line "out!"
+	text "I didn't notice"
+	line "the pitfall!"
 	done
 
 Hiker1RelicPassageAfterText:
-	text "You can get a lot"
-	line "of places by"
-	cont "traveling"
-	cont "underground!"
+	text "Life is filled"
+	line "with pitfalls! If"
+	
+	para "You fall in, do"
+	line "your best to crawl"
+	cont "out!"
 	done
 	
 Hiker2RelicPassageSeenText:
-	text "Gems! Jewels!"
-	line "Diamonds!"
+	text "Just because you"
+	line "work hard doesn't"
 	
-	para "They must be"
-	line "around!"
+	para "mean you're gonna"
+	line "get what you want!"
+	
+	para "But if you don't"
+	line "work hard, there"
+	
+	para "are many things"
+	line "you can't do!"
 	done
 
 Hiker2RelicPassageBeatenText:
-	text "Dazzling!"
+	text "Everything went"
+	line "dark all of a"
+	cont "sudden!"
 	done
 
 Hiker2RelicPassageAfterText:
-	text "Exploring caves"
-	line "is the best way"
-	cont "to find treasure!"
+	text "This tunnel was"
+	line "dug out of the"
+	cont "rock by #MON!"
 	done
 	
 BackpackerFRelicPassageSeenText:

@@ -10,16 +10,11 @@ Rt5NimbasaGateOfficerScript:
 	jumptextfaceplayer Rt5NimbasaGateOfficerText
 
 Rt5NimbasaGateOfficerText:
-	text "Where did you say"
-	line "you're from?"
+	text "There are athletes"
+	line "and performers"
 
-	para "HUMILAU CITY?"
-
-	para "I hear that's a"
-	line "nice place!"
-
-	para "You've come a long"
-	line "way to get here."
+	para "that gather on"
+	line "ROUTE 5."
 	done
 
 Rt5NimbasaGate_MapEvents:

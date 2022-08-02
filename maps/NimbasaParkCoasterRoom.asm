@@ -326,16 +326,21 @@ GruntMNimbasaPark2AfterText:
 	done
 	
 GruntMNimbasaPark3SeenText:
-	text "Hey!"
-	line "Intruder alert!"
+	text "It's no use!"
+	line "You're outmatched!"
 	done
 
 GruntMNimbasaPark3BeatenText:
-	text "Dang… I failed…"
+	text "So you're a"
+	line "trainer who fights"
+	
+	para "for your #MON,"
+	line "eh?"
 	done
 
 GruntMNimbasaPark3AfterText:
-	text "There's no escape!"
+	text "Ack! I need"
+	line "backup!"
 	done
 	
 GruntMNimbasaPark4SeenText:
@@ -382,25 +387,23 @@ GruntFNimbasaPark1AfterText:
 	done
 	
 GruntFNimbasaPark2SeenText:
-	text "Hahaha!"
-
-	para "How boring."
-	line "It was far too"
-
-	para "easy to take over"
-	line "this place!"
-
-	para "Come on, keep me"
-	line "amused!"
+	text "Okay, it's my"
+	line "turn!"
 	done
 
 GruntFNimbasaPark2BeatenText:
-	text "Wh-who are you?"
+	text "Plasma! Plasmaaa!"
 	done
 
 GruntFNimbasaPark2AfterText:
-	text "You beat me, and"
-	line "I won't forget it!"
+	text "What's with this"
+	line "trainer?!"
+	
+	para "This reminds me of"
+	line "that trainer who"
+	
+	para "messed with us"
+	line "years ago…"
 	done
 	
 GruntFNimbasaPark3SeenText:

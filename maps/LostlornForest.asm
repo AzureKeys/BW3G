@@ -426,19 +426,23 @@ PkmnBreederFLostlornAfterText:
 	done
 	
 SchoolKidMLostlornSeenText:
-	text "I'll go anywhere"
-	line "if bug #MON"
-	cont "appear there."
+	text "I have a riddle"
+	line "for you! Do you"
+	
+	para "know what is"
+	line "distant but close?"
 	done
 
 SchoolKidMLostlornBeatenText:
-	text "Huh? I shouldn't"
-	line "have lost that…"
+	text "The difference"
+	line "between winning"
+	cont "and losing!"
 	done
 
 SchoolKidMLostlornAfterText:
-	text "I guess I need to"
-	line "find more bugs…"
+	text "I guess it was"
+	line "pretty distant for"
+	cont "me…"
 	done
 	
 PkmnBreederMLostlornSeenText:
@@ -483,19 +487,28 @@ YoungsterLostlornAfterText:
 	done
 	
 SchoolKidFLostlornSeenText:
-	text "Did you go to"
-	line "the GYM? Me too!"
+	text "I need to research"
+	line "the EXP points of"
+	
+	para "#MON for my"
+	line "homework!"
 	done
 
 SchoolKidFLostlornBeatenText:
-	text "Oh. I couldn't"
-	line "win…"
+	text "It's not fair to"
+	line "use moves I wasn't"
+	cont "expecting!"
 	done
 
 SchoolKidFLostlornAfterText:
-	text "The GYM BADGES are"
-	line "pretty. I collect"
-	cont "them."
+	text "I see! If a high-"
+	line "level #MON"
+	
+	para "defeats a lower"
+	line "level #MON,"
+	
+	para "they don't receive"
+	line "many EXP points!"
 	done
 	
 LassLostlornSeenText:
