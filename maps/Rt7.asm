@@ -5,8 +5,8 @@
 	const R7_MAX_ETHER
 	const R7_AMOONGUSS_1
 	const R7_AMOONGUSS_2
-	const R7_BACKPACKERF
 	const R7_NURSERY_AIDE
+	const R7_SCHOOL_KIDM
 	const R7_SCHOOL_KIDF
 	const R7_PKMN_BREEDERM
 	const R7_PKMN_BREEDERF
@@ -117,6 +117,17 @@ TrainerPkmnBreederFR7:
 	jumpstd rematchf
 	end
 
+TrainerSchoolKidMR7:
+	trainer SCHOOL_KIDM, SCHOOL_KIDM_R7, EVENT_BEAT_SCHOOL_KIDM_R7, SchoolKidMR7SeenText, SchoolKidMR7BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SchoolKidMR7AfterText
+	waitbutton
+	closetext
+	end
+
 TrainerSchoolKidFR7:
 	trainer SCHOOL_KIDF, SCHOOL_KIDF_R7, EVENT_BEAT_SCHOOL_KIDF_R7, SchoolKidFR7SeenText, SchoolKidFR7BeatenText, 0, .Script
 
@@ -124,17 +135,6 @@ TrainerSchoolKidFR7:
 	endifjustbattled
 	opentext
 	writetext SchoolKidFR7AfterText
-	waitbutton
-	closetext
-	end
-
-TrainerBackpackerFR7:
-	trainer BACKPACKERF, BACKPACKERF_R7, EVENT_BEAT_BACKPACKERF_R7, BackpackerFR7SeenText, BackpackerFR7BeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BackpackerFR7AfterText
 	waitbutton
 	closetext
 	end
@@ -182,6 +182,22 @@ R7Sign:
 R7TowerSign:
 	jumptext R7TowerSignText
 	
+SchoolKidMR7SeenText:
+	text "The TOWER's so"
+	line "tall. I wonder"
+	cont "what's at the top."
+	done
+
+SchoolKidMR7BeatenText:
+	text "Yowch!"
+	done
+
+SchoolKidMR7AfterText:
+	text "I'm not strong"
+	line "enough to climb"
+	cont "it."
+	done
+	
 SchoolKidFR7SeenText:
 	text "The TOWER's so"
 	line "tall. I wonder"
@@ -196,22 +212,6 @@ SchoolKidFR7AfterText:
 	text "I'm not strong"
 	line "enough to climb"
 	cont "it."
-	done
-	
-BackpackerFR7SeenText:
-	text "Raising #MON is"
-	line "my passion. What's"
-	cont "yours?"
-	done
-
-BackpackerFR7BeatenText:
-	text "Oh no, my #MON!"
-	done
-
-BackpackerFR7AfterText:
-	text "Your passion must"
-	line "be #MON"
-	cont "battles!"
 	done
 	
 NurseryAideR7SeenText:
@@ -299,9 +299,9 @@ Rt7_MapEvents:
 	object_event 17, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R7MaxEther, EVENT_R_7_MAX_ETHER
 	object_event 16, 37, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R7AmoongussScript1, EVENT_R_7_AMOONGUSS_1
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R7AmoongussScript2, EVENT_R_7_AMOONGUSS_2
-	object_event  9, 45, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFR7, -1
 	object_event 18, 27, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerNurseryAideR7, -1
+	object_event 16, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidMR7, -1
 	object_event 13, 19, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerSchoolKidFR7, -1
 	object_event  4, 39, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerPkmnBreederMR7, -1
-	object_event 16, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnBreederFR7, -1
+	object_event  9, 45, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerPkmnBreederFR7, -1
 	

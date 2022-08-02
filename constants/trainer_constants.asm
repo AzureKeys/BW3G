@@ -377,6 +377,7 @@ CHRIS EQU __enum__
 	const SCHOOL_KIDM_R20_2
 	const SCHOOL_KIDM_R20_3
 	const SCHOOL_KIDM_DREAMYARD
+	const SCHOOL_KIDM_R7
 	
 	trainerclass SCHOOL_KIDF
 	const SCHOOL_KIDF_R13

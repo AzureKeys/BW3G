@@ -2123,6 +2123,12 @@ SchoolKidMGroup:
 	dw $3400, $3400, $3400, $3400, $3400
 	db -1 ; end
 
+	; SCHOOL_KIDM (R7)
+	db "BARRETT@", TRAINERTYPE_STAT_EXP
+	db 48, AZUMARILL
+	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+
 SchoolKidFGroup:
 	; SCHOOL_KIDF (R13)
 	db "JEWEL@", TRAINERTYPE_NORMAL

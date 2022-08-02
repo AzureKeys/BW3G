@@ -72,10 +72,10 @@ INCLUDE "maps/RelicCastleB1F.asm"
 INCLUDE "maps/RelicCastleB2F.asm"
 INCLUDE "maps/RelicCastleB3F.asm"
 INCLUDE "maps/NimbasaHouse.asm"
-INCLUDE "maps/R4House.asm"
 
 SECTION "Map Scripts 5", ROMX
 
+INCLUDE "maps/R4House.asm"
 INCLUDE "maps/R4DesertGate.asm"
 INCLUDE "maps/DesertResort.asm"
 INCLUDE "maps/CasteliaCityNorth.asm"
@@ -145,12 +145,12 @@ INCLUDE "maps/NacreneOutskirtConnectionDummy.asm"
 INCLUDE "maps/NacrenePokecenter1F.asm"
 INCLUDE "maps/NacreneStatExpHouse.asm"
 INCLUDE "maps/NacreneHouse.asm"
+INCLUDE "maps/R3NacreneGate.asm"
 
 SECTION "Map Scripts 8", ROMX
 
 INCLUDE "maps/NacreneCafe.asm"
 INCLUDE "maps/R3DayCare.asm"
-INCLUDE "maps/R3NacreneGate.asm"
 INCLUDE "maps/Rt3.asm"
 INCLUDE "maps/WellspringCave1F.asm"
 INCLUDE "maps/WellspringCaveB1F.asm"
@@ -235,11 +235,11 @@ INCLUDE "maps/MistraltonHouse.asm"
 INCLUDE "maps/MistraltonGym1F.asm"
 INCLUDE "maps/MistraltonGym2F.asm"
 INCLUDE "maps/R7House.asm"
-INCLUDE "maps/R7TradeHouse.asm"
 INCLUDE "maps/CelestialTower1F.asm"
 
 SECTION "Map Scripts 12", ROMX
 
+INCLUDE "maps/R7TradeHouse.asm"
 INCLUDE "maps/CelestialTower.asm"
 INCLUDE "maps/CelestialTowerRoof.asm"
 INCLUDE "maps/MistraltonAirport.asm"
