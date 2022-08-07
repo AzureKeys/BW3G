@@ -169,10 +169,10 @@ INCLUDE "maps/NuvemaTown.asm"
 INCLUDE "maps/NuvemaMomHouse.asm"
 INCLUDE "maps/Rt17.asm"
 INCLUDE "maps/Rt18.asm"
-INCLUDE "maps/P2Lab.asm"
 
 SECTION "Map Scripts 9", ROMX
 
+INCLUDE "maps/P2Lab.asm"
 INCLUDE "maps/R1R17Gate.asm"
 INCLUDE "maps/NuvemaLab.asm"
 INCLUDE "maps/P2LabEntrance.asm"
@@ -186,12 +186,12 @@ INCLUDE "maps/CasteliaSewersRooms.asm"
 INCLUDE "maps/RelicPassageFront.asm"
 INCLUDE "maps/RelicPassageBack.asm"
 INCLUDE "maps/RelicCastleB4F.asm"
-INCLUDE "maps/PWTOutside.asm"
-INCLUDE "maps/PWTInside.asm"
-INCLUDE "maps/PWTHallway.asm"
 
 SECTION "Map Scripts 10", ROMX
 
+INCLUDE "maps/PWTOutside.asm"
+INCLUDE "maps/PWTInside.asm"
+INCLUDE "maps/PWTHallway.asm"
 INCLUDE "maps/PWTQualifierRoom.asm"
 INCLUDE "maps/PWTDriftveilGate.asm"
 INCLUDE "maps/NacreneMuseum.asm"
@@ -203,11 +203,11 @@ INCLUDE "maps/DriftveilCity.asm"
 INCLUDE "maps/DriftveilPokecenter1F.asm"
 INCLUDE "maps/DriftveilFossilHouse.asm"
 INCLUDE "maps/DriftveilBridgeGate.asm"
-INCLUDE "maps/DriftveilShelter.asm"
-INCLUDE "maps/DriftveilDrawbridge.asm"
 
 SECTION "Map Scripts 11", ROMX
 
+INCLUDE "maps/DriftveilShelter.asm"
+INCLUDE "maps/DriftveilDrawbridge.asm"
 INCLUDE "maps/Rt6.asm"
 INCLUDE "maps/R6House.asm"
 INCLUDE "maps/ChargestoneCave1F.asm"
@@ -232,13 +232,13 @@ INCLUDE "maps/MistraltonMoveReminderHouse.asm"
 INCLUDE "maps/Rt7.asm"
 INCLUDE "maps/Rt7North.asm"
 INCLUDE "maps/MistraltonHouse.asm"
+
+SECTION "Map Scripts 12", ROMX
+
 INCLUDE "maps/MistraltonGym1F.asm"
 INCLUDE "maps/MistraltonGym2F.asm"
 INCLUDE "maps/R7House.asm"
 INCLUDE "maps/CelestialTower1F.asm"
-
-SECTION "Map Scripts 12", ROMX
-
 INCLUDE "maps/R7TradeHouse.asm"
 INCLUDE "maps/CelestialTower.asm"
 INCLUDE "maps/CelestialTowerRoof.asm"
@@ -266,14 +266,14 @@ INCLUDE "maps/IcirrusBoutique.asm"
 INCLUDE "maps/R11Truck.asm"
 INCLUDE "maps/DragonspiralTowerOutside.asm"
 INCLUDE "maps/MistraltonCave1F.asm"
+
+SECTION "Map Scripts 13", ROMX
+
 INCLUDE "maps/MistraltonCave2F.asm"
 INCLUDE "maps/MistraltonCave3F.asm"
 INCLUDE "maps/Rt9.asm"
 INCLUDE "maps/ShoppingMallNine.asm"
 INCLUDE "maps/MoorOfIcirrus.asm"
-
-SECTION "Map Scripts 13", ROMX
-
 INCLUDE "maps/OpelucidGym.asm"
 INCLUDE "maps/OpelucidCuriosityShop.asm"
 INCLUDE "maps/IcirrusHouse.asm"

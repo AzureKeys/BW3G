@@ -148,17 +148,22 @@ AceTrainerF2ChargestoneAfterText:
 	done
 	
 Hiker2ChargestoneSeenText:
-	text "I'm a rugged dude!"
+	text "When I say dig,"
+	line "say, How Low?"
 	done
 
 Hiker2ChargestoneBeatenText:
-	text "So rugged!"
+	text "I didn't notice"
+	line "the pitfall!"
 	done
 
 Hiker2ChargestoneAfterText:
-	text "Be honest, on a"
-	line "scale of 1 to 10,"
-	cont "how rugged am I?"
+	text "Life is filled"
+	line "with pitfalls! If"
+	
+	para "You fall in, do"
+	line "your best to crawl"
+	cont "out!"
 	done
 	
 BattleGirlChargestoneSeenText:

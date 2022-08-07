@@ -153,38 +153,57 @@ RelicPassageNurseHealText:
 	done
 	
 PsychicMRelicPassageSeenText:
-	text "This tunnel has"
-	line "strange energy…"
+	text "It's coming… It's"
+	line "coming! The"
+	
+	para "ancient spiritual"
+	line "power!"
 	done
 
 PsychicMRelicPassageBeatenText:
-	text "Wah! Your energy!"
+	text "The ancient power!"
+	line "The sacred power!"
 	done
 
 PsychicMRelicPassageAfterText:
-	text "This place must be"
-	line "connected to"
-	cont "somewhere"
-	cont "important…"
+	text "I feel an extra-"
+	line "ordinary power"
+	
+	para "emanating from up"
+	line "ahead!"
+	
+	para "Yes! It is a power"
+	line "that burns as warm"
+	
+	para "and bright as the"
+	line "sun!"
 	done
 	
 Hiker1RelicPassageSeenText:
-	text "When I say dig,"
-	line "say, How Low?"
+	text "Hold up! Did you"
+	line "know this path was"
+	
+	para "supposedly made"
+	line "ages and ages ago?"
 	done
 
 Hiker1RelicPassageBeatenText:
-	text "I didn't notice"
-	line "the pitfall!"
+	text "S-sorry… I just"
+	line "got so excited…"
 	done
 
 Hiker1RelicPassageAfterText:
-	text "Life is filled"
-	line "with pitfalls! If"
+	text "Did people really"
+	line "make a tunnel this"
 	
-	para "You fall in, do"
-	line "your best to crawl"
-	cont "out!"
+	para "long all those"
+	line "ages ago?"
+	
+	para "No, they must have"
+	line "had many #MON"
+	
+	para "helping them with"
+	line "the work."
 	done
 	
 Hiker2RelicPassageSeenText:
@@ -214,22 +233,28 @@ Hiker2RelicPassageAfterText:
 	done
 	
 BackpackerFRelicPassageSeenText:
-	text "The fact that you"
-	line "are here means…"
-	
-	para "You are also part"
-	line "of the sewers?!"
+	text "My path and yours…"
+	line "They cross here"
+	cont "and now…"
 	done
 
 BackpackerFRelicPassageBeatenText:
-	text "You're too good!"
+	text "Now that I think"
+	line "about it, I've"
+	cont "come quite far…"
 	done
 
 BackpackerFRelicPassageAfterText:
-	text "You have to have"
-	line "#MON to defend"
-	cont "you in a place"
-	cont "like this!"
+	text "I am going"
+	line "wherever I can"
+	
+	para "have glorious"
+	line "battles against"
+	cont "new people…"
+	
+	para "It sounds quite"
+	line "daring, doesn't"
+	cont "it?"
 	done
 	
 RelicPassageFrontBoulderFellText:

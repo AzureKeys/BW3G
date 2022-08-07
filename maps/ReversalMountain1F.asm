@@ -179,26 +179,21 @@ ReversalGruntLeaveText:
 	done
 	
 BackpackerFReversalSeenText:
-	text "Let's see who has"
-	line "the most admirable"
-	cont "#MON!"
+	text "Hello, lo, lo!"
 	done
 
 BackpackerFReversalBeatenText:
-	text "Even though we"
-	line "lost, my #MON"
-	
-	para "are still pretty"
-	line "admirable."
+	text "I, I, I…"
+	line "Lost, lost, lost!"
 	done
 
 BackpackerFReversalAfterText:
-	text "If we can't win"
-	line "with these, maybe"
+	text "Echo, oh, oh!"
+	line "…"
 	
-	para "I should find my"
-	line "#MON some more"
-	cont "friends!"
+	para "Your voice really"
+	line "echoes in a path"
+	cont "like this, huh?"
 	done
 	
 Hiker2ReversalSeenText:

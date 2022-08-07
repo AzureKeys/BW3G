@@ -60,18 +60,30 @@ WellspringCaveB1FMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_WELLSPRING_CAVE_MAX_REVIVE
 	
 BlackbeltWellspringB1FSeenText:
-	text "We martial artists"
-	line "fear nothing!"
+	text "Here in the dark-"
+	line "ness… I feel my"
+
+	para "way through thanks"
+	line "to my #MON!"
+	
+	para "I'll show you the"
+	line "power of our bond!"
 	done
 
 BlackbeltWellspringB1FBeatenText:
-	text "That's shocking!"
+	text "Our power went"
+	line "dark!"
 	done
 
 BlackbeltWellspringB1FAfterText:
-	text "Fighting #MON"
-	line "are afraid of psy-"
-	cont "chics…"
+	text "Isn't darkness"
+	line "great? It's the"
+
+	para "space of dreams"
+	line "where you don't"
+	
+	para "know what's even"
+	line "there!"
 	done
 	
 BattleGirlWellspringB1FSeenText:
@@ -90,30 +102,29 @@ BattleGirlWellspringB1FAfterText:
 	done
 	
 HikerWellspringB1FSeenText:
-	text "Here in the dark-"
-	line "ness… I feel my"
+	text "A lake that"
+	line "spreads beneath"
 
-	para "way through thanks"
-	line "to my #MON!"
-	
-	para "I'll show you the"
-	line "power of our bond!"
+	para "the earth… And the"
+	line "HIKER who waits"
+	cont "beside it!"
 	done
 
 HikerWellspringB1FBeatenText:
-	text "Our power went"
-	line "dark!"
+	text "You seized victory"
+	line "with ease, young"
+	cont "trainer…"
 	done
 
 HikerWellspringB1FAfterText:
-	text "Isn't darkness"
-	line "great? It's the"
+	text "This lake was"
+	line "formed by the"
 
-	para "space of dreams"
-	line "where you don't"
+	para "water from under-"
+	line "ground rivers…"
 	
-	para "know what's even"
-	line "there!"
+	para "Such a clear,"
+	line "flawless blue…"
 	done
 
 WellspringCaveB1F_MapEvents:

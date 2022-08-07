@@ -178,28 +178,30 @@ PsychicFRelicPassageAfterText:
 	done
 	
 BackpackerMRelicPassageSeenText:
-	text "It's 'The Waving"
-	line "Weaving Walk'-"
+	text "First, one big"
+	line "last gulp…"
 	
-	para "Wawalk for short!"
-	
-	para "I wonder what kind"
-	line "of #MON we'll"
-	cont "meet today?"
+	para "Hold your breath!"
 	done
 
 BackpackerMRelicPassageBeatenText:
-	text "Your #MON have"
-	line "strong abilities,"
-	cont "don't they?"
+	text "Puuaaah!"
+	line "Holding your"
+	
+	para "breath is really"
+	line "tough…"
 	done
 
 BackpackerMRelicPassageAfterText:
-	text "I totally loved"
-	line "the Wawalk show,"
+	text "The air that I"
+	line "just breathed in…"
 	
-	para "but they took it"
-	line "off the air."
+	para "It could actually"
+	line "be really ancient"
+	
+	para "air that hasn't"
+	line "changed for ages,"
+	cont "you know?"
 	done
 	
 HexManiacRelicPassageSeenText:

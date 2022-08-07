@@ -142,19 +142,25 @@ CelestialTowerSmokeBall:
 	itemball SMOKE_BALL
 	
 HexManiac1CelestialTowerSeenText:
-	text "I can see the"
-	line "spirits…"
+	text "I'll borrow this"
+	line "tower's power to…"
+	
+	para "power up my own…"
+	line "powers!"
 	done
 
 HexManiac1CelestialTowerBeatenText:
-	text "Keeyaah!"
+	text "I couldn't expect"
+	line "that to make my"
+	
+	para "#MON more"
+	line "powerful too…"
 	done
 
 HexManiac1CelestialTowerAfterText:
-	text "I should have been"
-	line "paying more"
-	cont "attention to the"
-	cont "battle…"
+	text "I should focus"
+	line "more on increasing"
+	cont "my own power…"
 	done
 	
 HexManiac2CelestialTowerSeenText:

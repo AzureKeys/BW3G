@@ -309,48 +309,51 @@ GentlemanR2AfterText:
 	done
 	
 BackpackerMR2SeenText:
-	text "You look pretty"
-	line "strong."
-	cont "Let me battle you!"
+	text "It's 'The Waving"
+	line "Weaving Walk'-"
+	
+	para "Wawalk for short!"
+	
+	para "I wonder what kind"
+	line "of #MON we'll"
+	cont "meet today?"
 	done
 
-BackpackerMR2BeatenText:
-	text "Yow!"
+BackpackerMR2BeatenText
+	text "Your #MON have"
+	line "strong abilities,"
+	cont "don't they?"
 	done
 
 BackpackerMR2AfterText:
-	text "If you prevail on"
-	line "this harsh trek,"
-
-	para "the truth will be"
-	line "revealed!"
-
-	para "Heh, sorry, I just"
-	line "wanted to say"
-	cont "something cool."
+	text "I totally loved"
+	line "the Wawalk show,"
+	
+	para "but they took it"
+	line "off the air."
 	done
 	
 BackpackerFR2SeenText:
-	text "I raise #MON"
-	line "too!"
-
-	para "Will you battle"
-	line "with me?"
+	text "Let's see who has"
+	line "the most admirable"
+	cont "#MON!"
 	done
 
 BackpackerFR2BeatenText:
-	text "Oh, rats!"
+	text "Even though we"
+	line "lost, my #MON"
+	
+	para "are still pretty"
+	line "admirable."
 	done
 
 BackpackerFR2AfterText:
-	text "I've been to many"
-	line "GYMS, but the GYM"
-
-	para "in STRIATON is my"
-	line "favorite."
-
-	para "It's such a quaint"
-	line "little place!"
+	text "If we can't win"
+	line "with these, maybe"
+	
+	para "I should find my"
+	line "#MON some more"
+	cont "friends!"
 	done
 	
 PolicemanR2SeenText:
