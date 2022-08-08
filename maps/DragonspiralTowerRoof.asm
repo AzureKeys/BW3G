@@ -142,7 +142,7 @@ DragonspiralTowerRoofScript:
 	pause 30
 	applymovement PLAYER, DragonspiralTowerRoofStepDownMovement
 	turnobject DRAGONSPIRALTOWERROOF_JUNIPER, RIGHT
-	turnobject DRAGONSPIRALTOWERROOF_DRAYDEN, LEFT
+	turnobject DRAGONSPIRALTOWERROOF_DRAYDEN, RIGHT
 	opentext
 	writetext DragonspiralTowerRoofJuniperThanksText
 	waitbutton
@@ -240,7 +240,7 @@ DragonspiralTowerRoofZinzolinLeaveMovement:
 	
 DragonspiralTowerRoofDraydenAfterMovement:
 	step UP
-	turn_head LEFT
+	turn_head RIGHT
 	step_end
 	
 DragonspiralTowerRoofStepUpMovement:
@@ -260,59 +260,367 @@ DragonspiralTowerRoofTeleportOutMovement:
 	step_end
 	
 DragonspiralTowerRoofIntroText:
-	text "..."
+	text "ZINZOLIN: So,"
+	line "you've come to"
+	cont "try to stop me?"
+	
+	para "Ha! Once again,"
+	line "you're too late!"
+	
+	para "While you were"
+	line "busy dealing with"
+	
+	para "my SAGEs, I've"
+	line "extracted the ICE"
+	
+	para "ELEMENT from atop"
+	line "this tower. Now,"
+	
+	para "with the ELEMENTS"
+	line "of FIRE, WATER,"
+	
+	para "THUNDER, and ICE,"
+	line "TEAM PLASMA's"
+	
+	para "ultimate weapon"
+	line "will be unstopp-"
+	cont "able!"
 	done
 	
 DragonspiralTowerRoofPoweredOnText:
-	text "..."
+	text "ZINZOLIN: That's"
+	line "right! What you're"
+	
+	para "looking at is the"
+	line "end result of TEAM"
+	
+	para "PLASMA's efforts"
+	line "to create the"
+	cont "ultimate #MON!"
+	
+	para "Behold, the"
+	line "GENESIS PROJECT!"
+	
+	para "The foolish boy"
+	line "king tried to have"
+	
+	para "the project shut"
+	line "down, but it was"
+	
+	para "continued in"
+	line "secret. And now,"
+	
+	para "we will use its"
+	line "power to conquer"
+	cont "UNOVA!"
+	
+	para "It just needs one"
+	line "more final touch."
+	
+	para "SHADOWs! To me!"
 	done
 	
 DragonspiralTowerRoofJuniperRevealText:
-	text "..."
+	text "DRAYDEN: PROF."
+	line "JUNIPER!"
+	
+	para "JUNIPER: …huh?"
+	line "Wha… What's"
+	cont "happening…?"
+	
+	para "What am I doing"
+	line "here?"
+	
+	para "ZINZOLIN: Mwa ha"
+	line "ha! Thanks to the"
+	
+	para "PROF here, I was"
+	line "finally able to"
+	
+	para "get my hands on"
+	line "the one piece"
+	
+	para "missing for my"
+	line "plan: the MIND"
+	cont "LINK!"
+	
+	para "JUNIPER: Wha…?"
+	
+	para "ZINZOLIN: It"
+	line "may have taken the"
+	
+	para "power of two of my"
+	line "SHADOWs to influ-"
+	cont "ence her mind, but"
+	
+	para "with our dear"
+	line "PROF. under my"
+	
+	para "control, taking"
+	line "the MIND LINK from"
+	
+	para "the #MON LEAGUE"
+	line "was no problem at"
+	cont "all!"
+	
+	para "DRAYDEN: You- You"
+	line "villains!"
 	done
 	
 DragonspiralTowerRoofTimeForBattleText:
-	text "..."
+	text "JUNIPER: Ah… I'm"
+	line "sorry. I wasn't"
+	cont "myself…"
+	
+	para "ZINZOLIN: A-ha-ha!"
+	line "It's too late!"
+	
+	para "You've already"
+	line "given me every-"
+	cont "thing I need!"
+	
+	para "Now, before I put"
+	line "the finishing"
+	
+	para "touches on my"
+	line "plan, there's just"
+	
+	para "one more thing to"
+	line "take care of."
 	done
 	
 DragonspiralTowerRoofStartBattleText:
-	text "..."
+	text "You will not stand"
+	line "in my way any"
+	
+	para "longer! Prepare to"
+	line "feel the freezing"
+	
+	para "vengeance of TEAM"
+	line "PLASMA!"
 	done
 	
 DragonspiralTowerRoofBattleWinText:
-	text "..."
+	text "I- Impossible!"
 	done
 	
 DragonspiralTowerRoofAfterBattleText:
-	text "..."
+	text "ZINZOLIN: …It"
+	line "matters not. With"
+	
+	para "the GENESIS"
+	line "PROJECT under my"
+	
+	para "control, I am"
+	line "unstoppable!"
 	done
 	
 DragonspiralTowerRoofBetrayalRevealText:
-	text "..."
+	text "Come SHADOWs! Let"
+	line "us prepare the"
+	
+	para "final stages of"
+	line "my plan!"
+	
+	para "I will use the"
+	line "GENESIS PROJECT to"
+	
+	para "become the ruler"
+	line "of UNOVA!"
+	
+	para "SHADOW: …How"
+	line "amusing."
+	
+	para "ZINZOLIN: Wha…?"
+	
+	para "SHADOW: You truly"
+	line "believe you were"
+	
+	para "to become a ruler?"
+	
+	para "SHADOW: How sad…"
 	done
 	
 DragonspiralTowerRoofShadowBetrayalText:
-	text "..."
+	text "ZINZOLIN: Wha-"
+	line "What are you"
+	
+	para "doing?! Stop this"
+	line "at once! Your"
+	cont "king demands it!"
+	
+	para "SHADOW: You fool…"
+	
+	para "SHADOW: We only"
+	line "serve one king."
+	
+	para "SHADOW: The one"
+	line "true king of TEAM"
+	cont "PLASMA."
+	
+	para "SHADOW: The great"
+	line "and mighty"
+	cont "GHETSIS!"
+	
+	para "ZINZOLIN: What?!"
+	line "GHETSIS?! GHETSIS"
+	cont "is gone! He's lost"
+	
+	para "his mind! That's"
+	line "why I'm the king"
+	cont "now!"
+	
+	para "SHADOW: You're"
+	line "wrong! GHETSIS"
+	
+	para "will return to"
+	line "take his rightful"
+	
+	para "place as the ruler"
+	line "of TEAM PLASMA."
+	
+	para "SHADOW: And you"
+	line "were but a pawn in"
+	cont "our plan."
+	
+	para "SHADOW: We must"
+	line "thank you for"
+	
+	para "finding the"
+	line "GENESIS PROJECT,"
+	
+	para "and collecting the"
+	line "ELEMENTs needed to"
+	cont "restore its power."
+	
+	para "SHADOW: Thanks to"
+	line "you and the other"
+	
+	para "SAGEs, we were"
+	line "able to override"
+	
+	para "the security lock"
+	line "to activate the"
+	cont "MIND LINK."
+	
+	para "SHADOW: How"
+	line "convenient that"
+	
+	para "ROOD had a grand-"
+	line "daughter who could"
+	
+	para "unlock his part of"
+	line "the seal…"
+	
+	para "SHADOW: But though"
+	line "you've been of"
+	
+	para "use, now that we"
+	line "have the MIND LINK"
+	
+	para "and the GENESIS"
+	line "PROJECT, you are"
+	
+	para "no longer of use"
+	line "to us…"
+	
+	para "SHADOW: Farewell…"
+	
+	para "ZINZOLIN: No! You"
+	line "can't do this to"
+	
+	para "me! I am your"
+	line "king!"
 	done
 	
 DragonspiralTowerRoofZinzolinFreakoutText:
-	text "..."
+	text "ZINZOLIN: This…"
+	line "This is not"
+	cont "possible!"
+	
+	para "I am the king of"
+	line "TEAM PLASMA!!"
+	
+	para "… … … …"
+	
+	para "I… I think I'd"
+	line "better get out of"
+	cont "here…"
 	done
 	
 DragonspiralTowerRoofJuniperThanksText:
-	text "..."
+	text "JUNIPER: <PLAY_G>!"
+	
+	para "That was quite a"
+	line "battle! I'm"
+	cont "impressed!"
+	
+	para "Thank you for your"
+	line "help. I… I'm not"
+	
+	para "truly sure what"
+	line "happened to me…"
+	
+	para "My memories have"
+	line "been hazy ever"
+	
+	para "since the WORLD"
+	line "TOURNAMENT."
+	
+	para "But if I've been"
+	line "used for those"
+	cont "SHADOWs' plan…"
+	
+	para "Then I'm going to"
+	line "put a stop to it!"
+	
+	para "Safe travels,"
+	line "<PLAY_G>."
 	done
 	
 DragonspiralTowerRoofDraydenThanksText:
-	text "..."
+	text "DRAYDEN: Thank you"
+	line "for your help,"
+	cont "<PLAY_G>."
+	
+	para "You handled your-"
+	line "self quite well."
+	
+	para "I look forward to"
+	line "challenging you in"
+	cont "my GYM."
+	
+	para "But before I go,"
+	line "I'd like you to"
+	cont "have this."
 	done
 	
 DragonspiralTowerRoofDraydenNoRoomText:
-	text "..."
+	text "Oh, it seems you"
+	line "don't have room"
+	cont "for it."
+	
+	para "I will leave it"
+	line "for you in my"
+	
+	para "house in OPELUCID"
+	line "CITY. Stop by and"
+	
+	para "pick it up at your"
+	line "convenience."
 	done
 	
 DragonspiralTowerRoofDraydenLeaveText:
-	text "..."
+	text "I'm going back to"
+	line "my GYM in OPELUCID"
+	cont "CITY now."
+	
+	para "Stop by if you'd"
+	line "like to challenge"
+	
+	para "me. I'll be"
+	line "I'll be looking"
+	cont "forward to it."
 	done
 	
 DragonspiralTowerRoofCryText:

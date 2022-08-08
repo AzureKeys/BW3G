@@ -11,7 +11,6 @@ TrainerDragonspiralTowerBronius:
 	trainer BRONIUS, BRONIUS2, EVENT_BEAT_BRONIUS_2, DragonspiralTowerBroniusSeenText, DragonspiralTowerBroniusBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	writetext DragonspiralTowerBroniusAfterText
 	waitbutton
@@ -22,15 +21,33 @@ DragonspiralDragonScale:
 	itemball DRAGON_SCALE
 	
 DragonspiralTowerBroniusSeenText:
-	text "..."
+	text "When I saw you in"
+	line "VIRBANK, I did not"
+	
+	para "care about your"
+	line "existence. Now,"
+	
+	para "I will put a stop"
+	line "to your little"
+	
+	para "game! You shall"
+	line "not interfere with"
+	cont "TEAM PLASMA!"
 	done
 	
 DragonspiralTowerBroniusBeatenText:
-	text "..."
+	text "Accursed trainer!"
 	done
 	
 DragonspiralTowerBroniusAfterText:
-	text "..."
+	text "When the way is"
+	line "forgotten, duty"
+	
+	para "and justice will"
+	line "appear. I… Have I"
+	
+	para "forgotten the way"
+	line "as well…?"
 	done
 
 DragonspiralTower4F_MapEvents:

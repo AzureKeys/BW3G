@@ -13,7 +13,6 @@ TrainerDragonspiralTowerRyoku:
 	trainer RYOKU, RYOKU2, EVENT_BEAT_RYOKU_2, DragonspiralTowerRyokuSeenText, DragonspiralTowerRyokuBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	writetext DragonspiralTowerRyokuAfterText
 	waitbutton
@@ -30,15 +29,27 @@ DragonspiralZoomLens:
 	itemball ZOOM_LENS
 	
 DragonspiralTowerRyokuSeenText:
-	text "..."
+	text "I… I will once"
+	line "again test how"
+	
+	para "much power you"
+	line "have. I will see"
+	
+	para "if you can stand"
+	line "up to TEAM PLASMA!"
 	done
 	
 DragonspiralTowerRyokuBeatenText:
-	text "..."
+	text "I- I can't…"
 	done
 	
 DragonspiralTowerRyokuAfterText:
-	text "..."
+	text "I've done every-"
+	line "thing in my power."
+	
+	para "I can only do my"
+	line "best and leave the"
+	cont "rest up to fate."
 	done
 
 DragonspiralTower3F_MapEvents:

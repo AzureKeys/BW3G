@@ -319,7 +319,7 @@ BackpackerMR2SeenText:
 	cont "meet today?"
 	done
 
-BackpackerMR2BeatenText
+BackpackerMR2BeatenText:
 	text "Your #MON have"
 	line "strong abilities,"
 	cont "don't they?"

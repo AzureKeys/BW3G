@@ -3,8 +3,8 @@ BiancaPhoneCalleeScript:
 	buttonsound
 	checkflag ENGINE_RISINGBADGE
 	iftrue .victory_road
-	; checkmapscene DRAGONSPIRAL_TOWER_ROOF, SCENE_FINISHED
-	; iftrue .opelucid_gym
+	checkmapscene DRAGONSPIRAL_TOWER_ROOF, SCENE_FINISHED
+	iftrue .opelucid_gym
 	checkmapscene OPELUCID_CITY, SCENE_FINISHED
 	iftrue .find_drayden
 	checkmapscene SEASIDE_CAVE_CHAMBER, SCENE_FINISHED

@@ -13,7 +13,6 @@ TrainerDragonspiralTowerGorm:
 	trainer GORM, GORM2, EVENT_BEAT_GORM_2, DragonspiralTowerGormSeenText, DragonspiralTowerGormBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	writetext DragonspiralTowerGormAfterText
 	waitbutton
@@ -30,15 +29,28 @@ DragonspiralNugget:
 	itemball NUGGET
 	
 DragonspiralTowerGormSeenText:
-	text "..."
+	text "… … … …"
+	
+	para "TEAM PLASMA…"
 	done
 	
 DragonspiralTowerGormBeatenText:
-	text "..."
+	text "…"
 	done
 	
 DragonspiralTowerGormAfterText:
-	text "..."
+	text "TEAM PLASMA…"
+	
+	para "The seven SAGEs…"
+	
+	para "… … … …"
+	
+	para "Are we… being"
+	line "used…?"
+	
+	para "The dream…"
+	
+	para "The dream is over…"
 	done
 
 DragonspiralTower5F_MapEvents:

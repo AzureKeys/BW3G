@@ -89,7 +89,6 @@ TrainerDragonspiralTowerGiallo:
 	trainer GIALLO, GIALLO2, EVENT_BEAT_GIALLO_2, DragonspiralTowerGialloSeenText, DragonspiralTowerGialloBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
 	writetext DragonspiralTowerGialloAfterText
 	waitbutton
@@ -106,15 +105,24 @@ DragonspiralFullRestore:
 	itemball FULL_RESTORE
 	
 DragonspiralTowerGialloSeenText:
-	text "..."
+	text "So, you've come."
+	line "We, the SAGEs of"
+	
+	para "TEAM PLASMA shall"
+	line "defeat you here!"
 	done
 	
 DragonspiralTowerGialloBeatenText:
-	text "..."
+	text "Y-you!"
 	done
 	
 DragonspiralTowerGialloAfterText:
-	text "..."
+	text "Those in accord"
+	line "with fate are pre-"
+	cont "served, and those"
+	
+	para "who rebel against"
+	line "fate perish!"
 	done
 	
 DragonspiralBoulderFellText:

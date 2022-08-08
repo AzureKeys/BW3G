@@ -89,8 +89,9 @@ CherenPhoneMistraltonText:
 	
 	para "That's your home-"
 	line "town, right? You"
-	cont "can reach the cave"
-	cont "by SURFing to the"
+	
+	para "can reach the cave"
+	line "by SURFing to the"
 	cont "EAST of town."
 	
 	para "See you, <PLAY_G>."
