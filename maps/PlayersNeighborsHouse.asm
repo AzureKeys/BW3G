@@ -17,7 +17,7 @@ PlayersNeighborsDaughterScript:
 	opentext
 	writetext PlayersNeighborGiveScaleText
 	buttonsound
-	giveitem HEART_SCALE
+	verbosegiveitem HEART_SCALE
 	iffalse .no_room
 	setevent EVENT_HUMILAU_CITY_HEART_SCALE
 .no_room

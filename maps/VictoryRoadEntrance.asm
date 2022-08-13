@@ -66,12 +66,16 @@ VictoryRoadEntrance_MapEvents:
 	coord_event 47, 34, -1, VictoryRoadEntranceBadge1Script
 	coord_event 27, 28, -1, VictoryRoadEntranceBadge1Script
 	coord_event 27, 29, -1, VictoryRoadEntranceBadge1Script
+	coord_event 27, 22, -1, VictoryRoadEntranceBadge1Script
+	coord_event 27, 14, -1, VictoryRoadEntranceBadge1Script
 	coord_event 26, 28, -1, VictoryRoadEntranceBadge2Script
 	coord_event 26, 29, -1, VictoryRoadEntranceBadge2Script
-	coord_event  6, 20, -1, VictoryRoadEntranceBadge2Script
-	coord_event  7, 20, -1, VictoryRoadEntranceBadge2Script
-	coord_event  8, 20, -1, VictoryRoadEntranceBadge2Script
-	coord_event  9, 20, -1, VictoryRoadEntranceBadge2Script
+	coord_event  6,  6, -1, VictoryRoadEntranceBadge2Script
+	coord_event  7,  6, -1, VictoryRoadEntranceBadge2Script
+	coord_event  8,  6, -1, VictoryRoadEntranceBadge2Script
+	coord_event  9,  6, -1, VictoryRoadEntranceBadge2Script
+	coord_event 26, 22, -1, VictoryRoadEntranceBadge2Script
+	coord_event 27, 13, -1, VictoryRoadEntranceBadge2Script
 
 	db 0 ; bg events
 	
