@@ -388,8 +388,11 @@ IcirrusGroupSprites:
 PkmnLeagueGroupSprites:
 ; R23
 	db SPRITE_OFFICER
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_RANGER_M
+	db SPRITE_RANGER_F
 	; 8 of max 9 walking sprites
-	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
 	db SPRITE_BADGE_1
