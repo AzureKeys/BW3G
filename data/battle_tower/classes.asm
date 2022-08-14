@@ -4,7 +4,7 @@ BattleTowerTrainers:
 ; See BattleTowerText in engine/events/battle_tower/trainer_text.asm.
 	db "HANSON@@@@", FISHER
 	db "MASUDA@@@@", GUITARIST
-	db "NICKEL@@@@", SCIENTIST_M
+	db "NICKEL@@@@", SCIENTISTM
 	db "OLSON@@@@@", POKEFANM
 	db "ZABOROWSKI", LASS
 	db "WRIGHT@@@@", YOUNGSTER
@@ -21,8 +21,8 @@ BattleTowerTrainers:
 	db "RODRIGUEZ@", POLICEMAN
 	db "SANTIAGO@@", PSYCHICM_T
 	db "STOCK@@@@@", POKEFANM
-	db "THURMAN@@@", SCIENTIST_M
-	db "MORI@@@@@@", SCIENTIST_M
+	db "THURMAN@@@", SCIENTISTM
+	db "MORI@@@@@@", SCIENTISTM
 	db "COBB@@@@@@", SCHOOL_KIDM
 	db "HUGHES@@@@", FISHER
 	db "EASTON@@@@", PSYCHICM_T
@@ -39,6 +39,6 @@ BattleTowerTrainers:
 	db "MEYER@@@@@", SWIMMERF
 	db "JOHNSON@@@", YOUNGSTER
 	db "ADAMS@@@@@", GUITARIST
-	db "COLLINS@@@", SCIENTIST_M
+	db "COLLINS@@@", SCIENTISTM
 	db "DYKSTRA@@@", SWIMMERF
 	db "EATON@@@@@", BIKER

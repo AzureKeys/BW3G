@@ -62,7 +62,7 @@ AmoongussScript3:
 	end
 
 TrainerScientistMR6:
-	trainer SCIENTIST_M, SCIENTISTM_R6, EVENT_BEAT_SCIENTISTM_R6, ScientistMR6SeenText, ScientistMR6BeatenText, 0, .Script
+	trainer SCIENTISTM, SCIENTISTM_R6, EVENT_BEAT_SCIENTISTM_R6, ScientistMR6SeenText, ScientistMR6BeatenText, 0, .Script
 
 .Script:
 	writecode VAR_CALLERID, PHONE_SCIENTIST_MARCO
@@ -86,7 +86,7 @@ TrainerScientistMR6:
 	ifequal PHONE_CONTACTS_FULL, .PhoneFull
 	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
 	setflag ENGINE_MARCO
-	trainertotext SCIENTIST_M, SCIENTISTM_R6, MEM_BUFFER_0
+	trainertotext SCIENTISTM, SCIENTISTM_R6, MEM_BUFFER_0
 	scall .RegisteredNumber
 	jump .NumberAccepted
 	
@@ -96,13 +96,13 @@ TrainerScientistMR6:
 	;checkevent EVENT_
 	;iftrue .LoadFight1
 ; Fight0
-	loadtrainer SCIENTIST_M, SCIENTISTM_R6
+	loadtrainer SCIENTISTM, SCIENTISTM_R6
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_MARCO_READY_FOR_REMATCH
 	end
 ; .LoadFight1
-	; loadtrainer SCIENTIST_M, MARCO_REMATCH_1
+	; loadtrainer SCIENTISTM, MARCO_REMATCH_1
 	; startbattle
 	; reloadmapafterbattle
 	; clearflag ENGINE_MARCO_READY_FOR_REMATCH
@@ -203,7 +203,7 @@ TrainerPkmnBreederMR6:
 	end
 
 TrainerScientistFR6:
-	trainer SCIENTIST_F, SCIENTISTF_R6, EVENT_BEAT_SCIENTISTF_R6, ScientistFR6SeenText, ScientistFR6BeatenText, 0, .Script
+	trainer SCIENTISTF, SCIENTISTF_R6, EVENT_BEAT_SCIENTISTF_R6, ScientistFR6SeenText, ScientistFR6BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

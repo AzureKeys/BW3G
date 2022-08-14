@@ -73,7 +73,7 @@ TrainerBattleGirlChargestone:
 	end
 
 TrainerScientistFChargestone:
-	trainer SCIENTIST_F, SCIENTISTF_CHARGESTONE, EVENT_BEAT_SCIENTISTF_CHARGESTONE, ScientistFChargestoneSeenText, ScientistFChargestoneBeatenText, 0, .Script
+	trainer SCIENTISTF, SCIENTISTF_CHARGESTONE, EVENT_BEAT_SCIENTISTF_CHARGESTONE, ScientistFChargestoneSeenText, ScientistFChargestoneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

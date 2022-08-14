@@ -29,7 +29,7 @@ TrainerGuitarist1Chargestone:
 	end
 
 TrainerScientistMChargestone:
-	trainer SCIENTIST_M, SCIENTISTM_CHARGESTONE, EVENT_BEAT_SCIENTISTM_CHARGESTONE, ScientistMChargestoneSeenText, ScientistMChargestoneBeatenText, 0, .Script
+	trainer SCIENTISTM, SCIENTISTM_CHARGESTONE, EVENT_BEAT_SCIENTISTM_CHARGESTONE, ScientistMChargestoneSeenText, ScientistMChargestoneBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -217,7 +217,7 @@ ChargestoneCave1F_MapEvents:
 	object_event 28,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ChargestoneHyperPotion, EVENT_CHARGESTONE_HYPER_POTION
 	object_event 32, 30, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ChargestoneTimerBall, EVENT_CHARGESTONE_TIMER_BALL
 	object_event 37, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ChargestoneMagnet, EVENT_CHARGESTONE_MAGNET
-	object_event  8,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerGuitarist1Chargestone, -1
+	object_event  8,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerGuitarist1Chargestone, -1
 	object_event 15, 10, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerScientistMChargestone, -1
 	object_event 15, 25, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerPkmnRangerFChargestone, -1
 	object_event 39, 29, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerM1Chargestone, -1

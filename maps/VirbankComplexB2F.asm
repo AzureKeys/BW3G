@@ -571,7 +571,7 @@ TrainerGruntFVirbankComplexB2F:
 	end
 
 TrainerScientistMVirbankComplexB2F:
-	trainer SCIENTIST_M, SCIENTISTM_VIRBANK_COMPLEX, EVENT_BEAT_SCIENTISTM_VIRBANK_COMPLEX, ScientistMVirbankComplexB2FSeenText, ScientistMVirbankComplexB2FBeatenText, 0, .Script
+	trainer SCIENTISTM, SCIENTISTM_VIRBANK_COMPLEX, EVENT_BEAT_SCIENTISTM_VIRBANK_COMPLEX, ScientistMVirbankComplexB2FSeenText, ScientistMVirbankComplexB2FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -582,7 +582,7 @@ TrainerScientistMVirbankComplexB2F:
 	end
 
 TrainerScientistFVirbankComplexB2F:
-	trainer SCIENTIST_F, SCIENTISTF_VIRBANK_COMPLEX_2, EVENT_BEAT_SCIENTISTF_VIRBANK_COMPLEX_2, ScientistFVirbankComplexB2FSeenText, ScientistFVirbankComplexB2FBeatenText, 0, .Script
+	trainer SCIENTISTF, SCIENTISTF_VIRBANK_COMPLEX_2, EVENT_BEAT_SCIENTISTF_VIRBANK_COMPLEX_2, ScientistFVirbankComplexB2FSeenText, ScientistFVirbankComplexB2FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

@@ -14,7 +14,7 @@ DreamyardB1F_MapScripts:
 	db 0 ; callbacks
 
 TrainerScientistMDreamyard:
-	trainer SCIENTIST_M, SCIENTISTM_DREAMYARD, EVENT_BEAT_SCIENTISTM_DREAMYARD, ScientistMDreamyardSeenText, ScientistMDreamyardBeatenText, 0, .Script
+	trainer SCIENTISTM, SCIENTISTM_DREAMYARD, EVENT_BEAT_SCIENTISTM_DREAMYARD, ScientistMDreamyardSeenText, ScientistMDreamyardBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -25,7 +25,7 @@ TrainerScientistMDreamyard:
 	end
 
 TrainerScientistFDreamyard:
-	trainer SCIENTIST_F, SCIENTISTF_DREAMYARD, EVENT_BEAT_SCIENTISTF_DREAMYARD, ScientistFDreamyardSeenText, ScientistFDreamyardBeatenText, 0, .Script
+	trainer SCIENTISTF, SCIENTISTF_DREAMYARD, EVENT_BEAT_SCIENTISTF_DREAMYARD, ScientistFDreamyardSeenText, ScientistFDreamyardBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

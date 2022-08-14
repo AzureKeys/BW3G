@@ -194,7 +194,7 @@ TrainerGruntF2P2Lab:
 	end
 
 TrainerScientistP2Lab:
-	trainer SCIENTIST_M, SCIENTISTM_P2, EVENT_BEAT_SCIENTISTM_P2, ScientistP2LabSeenText, ScientistP2LabBeatenText, 0, .Script
+	trainer SCIENTISTM, SCIENTISTM_P2, EVENT_BEAT_SCIENTISTM_P2, ScientistP2LabSeenText, ScientistP2LabBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

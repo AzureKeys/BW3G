@@ -193,7 +193,7 @@ CasteliaSewersBlockerScript:
 	end
 
 TrainerScientistMCasteliaSewers:
-	trainer SCIENTIST_M, SCIENTISTM_CASTELIA_SEWERS, EVENT_BEAT_SCIENTISTM_CASTELIA_SEWERS, ScientistMCasteliaSewersSeenText, ScientistMCasteliaSewersBeatenText, 0, .Script
+	trainer SCIENTISTM, SCIENTISTM_CASTELIA_SEWERS, EVENT_BEAT_SCIENTISTM_CASTELIA_SEWERS, ScientistMCasteliaSewersSeenText, ScientistMCasteliaSewersBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -204,7 +204,7 @@ TrainerScientistMCasteliaSewers:
 	end
 
 TrainerScientistFCasteliaSewers:
-	trainer SCIENTIST_F, SCIENTISTF_CASTELIA_SEWERS, EVENT_BEAT_SCIENTISTF_CASTELIA_SEWERS, ScientistFCasteliaSewersSeenText, ScientistFCasteliaSewersBeatenText, 0, .Script
+	trainer SCIENTISTF, SCIENTISTF_CASTELIA_SEWERS, EVENT_BEAT_SCIENTISTF_CASTELIA_SEWERS, ScientistFCasteliaSewersSeenText, ScientistFCasteliaSewersBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

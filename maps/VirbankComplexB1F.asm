@@ -109,7 +109,7 @@ VirbankComplexBroniusScript:
 	end
 	
 TrainerScientistFVirbankComplexB1F:
-	trainer SCIENTIST_F, SCIENTISTF_VIRBANK_COMPLEX_1, EVENT_BEAT_SCIENTISTF_VIRBANK_COMPLEX_1, ScientistFVirbankComplexB1FSeenText, ScientistFVirbankComplexB1FBeatenText, 0, .Script
+	trainer SCIENTISTF, SCIENTISTF_VIRBANK_COMPLEX_1, EVENT_BEAT_SCIENTISTF_VIRBANK_COMPLEX_1, ScientistFVirbankComplexB1FSeenText, ScientistFVirbankComplexB1FBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
