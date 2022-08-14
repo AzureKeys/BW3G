@@ -5,6 +5,13 @@
 	const R23_OFFICER4
 	const R23_OFFICER5
 	const R23_OFFICER6
+	const R23_ULTRA_BALL
+	const R23_HP_UP
+	const R23_PP_UP
+	const R23_REPEAT_BALL
+	const R23_HEART_SCALE
+	const R23_ACE_TRAINERM_1
+	const R23_ACE_TRAINERF_1
 
 Rt23East_MapScripts:
 	db 7 ; scene scripts
@@ -293,9 +300,46 @@ R23Officer6Script:
 	waitbutton
 	closetext
 	end
+
+TrainerAceTrainerM1R23:
+	trainer ACE_TRAINERM, ACE_TRAINERM_R23_1, EVENT_BEAT_ACE_TRAINERM_R23_1, AceTrainerM1R23SeenText, AceTrainerM1R23BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext AceTrainerM1R23AfterText
+	waitbutton
+	closetext
+	end
+
+TrainerAceTrainerF1R23:
+	trainer ACE_TRAINERF_D, ACE_TRAINERF_R23_1, EVENT_BEAT_ACE_TRAINERF_R23_1, AceTrainerF1R23SeenText, AceTrainerF1R23BeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext AceTrainerF1R23AfterText
+	waitbutton
+	closetext
+	end
 	
 R23HiddenGrotto:
 	hiddengrotto HIDDENGROTTO_R_23
+	
+R23UltraBall:
+	itemball ULTRA_BALL
+	
+R23HPUp:
+	itemball HP_UP
+	
+R23PPUp:
+	itemball PP_UP
+	
+R23RepeatBall:
+	itemball REPEAT_BALL
+	
+R23HeartScale:
+	itemball HEART_SCALE
 	
 R23Movement1:
 	step DOWN
@@ -464,6 +508,30 @@ R23Officer6HaveBadgeText:
 	
 	para "You may pass."
 	done
+	
+AceTrainerM1R23SeenText:
+	text "..."
+	done
+
+AceTrainerM1R23BeatenText:
+	text "..."
+	done
+
+AceTrainerM1R23AfterText:
+	text "..."
+	done
+	
+AceTrainerF1R23SeenText:
+	text "..."
+	done
+
+AceTrainerF1R23BeatenText:
+	text "..."
+	done
+
+AceTrainerF1R23AfterText:
+	text "..."
+	done
 
 Rt23East_MapEvents:
 	db 0, 0 ; filler
@@ -500,11 +568,18 @@ Rt23East_MapEvents:
 	bg_event  7, 41, BGEVENT_UP, R23HiddenGrotto
 	bg_event  8, 41, BGEVENT_UP, R23HiddenGrotto
 
-	db 6 ; object events
+	db 13 ; object events
 	object_event 12, 35, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer1Script, -1
 	object_event 16, 30, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer2Script, -1
 	object_event 23, 25, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer3Script, -1
 	object_event 23, 18, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer4Script, -1
 	object_event 12, 12, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer5Script, -1
 	object_event  4, 10, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R23Officer6Script, -1
+	object_event 19, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R23UltraBall, EVENT_R23_ULTRA_BALL
+	object_event  5, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R23HPUp, EVENT_R23_HP_UP
+	object_event  9, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R23PPUp, EVENT_R23_PP_UP
+	object_event 14, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R23RepeatBall, EVENT_R23_REPEAT_BALL
+	object_event 16, 46, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R23HeartScale, EVENT_R23_HEART_SCALE
+	object_event 15, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerM1R23, -1
+	object_event  8, 18, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerF1R23, -1
 	

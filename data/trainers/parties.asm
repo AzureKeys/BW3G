@@ -230,6 +230,14 @@ AceTrainerMGroup:
 	db 40, DEINO
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db -1 ; end
+	
+	; ACE_TRAINERM (R23)
+	db "TRENT@", TRAINERTYPE_STAT_EXP
+	db 51, EMOLGA
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 53, AZUMARILL
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db -1 ; end
 
 AceTrainerMDGroup:
 	; ACE_TRAINERM (CHARGESTONE)
@@ -238,6 +246,14 @@ AceTrainerMDGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db 44, ELECTABUZZ
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
+	db -1 ; end
+	
+	; ACE_TRAINERM (R23)
+	db "GRANT@", TRAINERTYPE_STAT_EXP
+	db 55, MAGMAR
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 57, MAGMORTAR
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
 	db -1 ; end
 
 AceTrainerFGroup:
@@ -257,6 +273,14 @@ AceTrainerFGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db 40, DEINO
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
+	db -1 ; end
+	
+	; ACE_TRAINERF (R23)
+	db "MILA@", TRAINERTYPE_STAT_EXP
+	db 55, SCOLIPEDE
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 57, HOUNDOOM
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
 	db -1 ; end
 
 AceTrainerFDGroup:
@@ -292,6 +316,14 @@ AceTrainerFDGroup:
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
 	db 40, FERROSEED
 	dw $4C00, $4C00, $4C00, $4C00, $4C00
+	db -1 ; end
+	
+	; ACE_TRAINERF (R23)
+	db "JULIET@", TRAINERTYPE_STAT_EXP
+	db 51, SWANNA
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 53, GALVANTULA
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
 	db -1 ; end
 	
 ArtistGroup:
@@ -413,6 +445,14 @@ BackpackerMGroup:
 	db 44, LEAFEON
 	dw $5000, $5000, $5000, $5000, $5000
 	db -1 ; end
+	
+	; BACKPACKERM (R23)
+	db "DON@", TRAINERTYPE_STAT_EXP
+	db 55, PILOSWINE
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 57, PROBOPASS
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db -1 ; end
 
 BackpackerFGroup:
 	; BACKPACKERF (REVERSAL)
@@ -477,6 +517,14 @@ BackpackerFGroup:
 	dw $5000, $5000, $5000, $5000, $5000
 	db 44, GLACEON
 	dw $5000, $5000, $5000, $5000, $5000
+	db -1 ; end
+	
+	; BACKPACKERF (R23)
+	db "TIFFANY@", TRAINERTYPE_STAT_EXP
+	db 55, BOLDORE
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 57, AGGRON
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
 	db -1 ; end
 	
 	; BACKPACKERF (JENNY REMATCH 1)
@@ -656,6 +704,14 @@ BattleGirlGroup:
 	dw $2C00, $2C00, $2C00, $2C00, $2C00
 	db 31, BRELOOM
 	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db -1 ; end
+	
+	; BATTLE_GIRL (R23)
+	db "MIKI@", TRAINERTYPE_STAT_EXP
+	db 55, GURDURR
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 57, MEDICHAM
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
 	db -1 ; end
 
 BikerGroup:
@@ -1806,6 +1862,14 @@ PkmnRangerMGroup:
 	dw $5400, $5400, $5400, $5400, $5400
 	db -1 ; end
 	
+	; PKMN_RANGERM (R23)
+	db "STEVE@", TRAINERTYPE_STAT_EXP
+	db 55, STUNFISK
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 57, AMOONGUSS
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db -1 ; end
+	
 PkmnRangerFGroup:
 	; PKMN_RANGERF (OUTSKIRTS)
 	db "TERRI@", TRAINERTYPE_STAT_EXP
@@ -1887,6 +1951,14 @@ PkmnRangerFGroup:
 	dw $5400, $5400, $5400, $5400, $5400
 	db 52, BOUFFALANT
 	dw $5400, $5400, $5400, $5400, $5400
+	db -1 ; end
+	
+	; PKMN_RANGERF (R23)
+	db "LENA@", TRAINERTYPE_STAT_EXP
+	db 55, SEALEO
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 57, LUCARIO
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
 	db -1 ; end
 	
 	; PKMN_RANGERF (ARIANA REMATCH 1)
@@ -2556,6 +2628,16 @@ VeteranMGroup:
 	dw $5800, $5800, $5800, $5800, $5800
 	db 55, DRAGONAIR
 	dw $5800, $5800, $5800, $5800, $5800
+	db -1 ; end
+	
+	; VETERANM (R23)
+	db "LUKE@", TRAINERTYPE_STAT_EXP
+	db 54, DRATINI
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 54, DRATINI
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
+	db 57, DRAGONAIR
+	dw $5C00, $5C00, $5C00, $5C00, $5C00
 	db -1 ; end
 	
 VeteranFGroup:
