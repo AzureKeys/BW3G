@@ -193,16 +193,6 @@ LassDGroup:
 	db -1 ; end
 
 AceTrainerMGroup:
-	; ACE_TRAINERM (GIANT_CHASM)
-	db "AARON@", TRAINERTYPE_STAT_EXP
-	db 35, SNIVY
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 35, TEPIG
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db 35, OSHAWOTT
-	dw $2C00, $2C00, $2C00, $2C00, $2C00
-	db -1 ; end
-
 	; ACE_TRAINERM (PWT)
 	db "SHAWN@", TRAINERTYPE_STAT_EXP
 	db 39, VANILLISH
@@ -240,6 +230,16 @@ AceTrainerMGroup:
 	db -1 ; end
 
 AceTrainerMDGroup:
+	; ACE_TRAINERM (GIANT_CHASM)
+	db "AARON@", TRAINERTYPE_STAT_EXP
+	db 35, SNIVY
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 35, TEPIG
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db 35, OSHAWOTT
+	dw $2C00, $2C00, $2C00, $2C00, $2C00
+	db -1 ; end
+	
 	; ACE_TRAINERM (CHARGESTONE)
 	db "RILEY@", TRAINERTYPE_STAT_EXP
 	db 42, ARCHEN
