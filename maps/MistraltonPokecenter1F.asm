@@ -59,12 +59,16 @@ MistraltonPokecenterCooltrainerMText_SkylaReturned:
 	done
 
 MistraltonPokecenterCooltrainerFText:
-	text "I heard that the"
-	line "path to TWIST"
-	cont "MOUNTAIN is gone."
+	text "MISTRALTON CITY"
+	line "used to be a"
 
-	para "I wonder what"
-	line "happened to it."
+	para "desolate patch of"
+	line "land… This place"
+	
+	para "was built through"
+	line "the cooperation of"
+	cont "people and #-"
+	cont "MON."
 	done
 
 MistraltonPokecenterBugCatcherText:

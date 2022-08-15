@@ -135,21 +135,33 @@ BackpackerMR16AfterText:
 	done
 	
 BackpackerFR16SeenText:
-	text "Give it your best"
-	line "shot, or I'll take"
-	cont "you down!"
+	text "City #MON or"
+	line "#MON that live"
+	cont "in the forest…"
+	
+	para "Which do you"
+	line "prefer?"
 	done
 
 BackpackerFR16BeatenText:
-	text "No! Oh, my #-"
-	line "MON, I'm so sorry!"
+	text "I love both kinds"
+	line "of #MON, but I"
+	cont "don't like losing…"
 	done
 
 BackpackerFR16AfterText:
-	text "I taught my #-"
-	line "MON moves for"
-	cont "taking on any"
-	cont "type…"
+	text "The best place for"
+	line "humans to live"
+	
+	para "isn't necessarily"
+	line "the best place for"
+	cont "#MON."
+	
+	para "Of course, the"
+	line "best place for me"
+	
+	para "to live is in my"
+	line "bed!"
 	done
 	
 BackersMR16SeenText:

@@ -57,27 +57,47 @@ ChargestoneElixer:
 	hiddenitem ELIXER, EVENT_CHARGESTONE_ELIXER
 	
 Guitarist2ChargestoneSeenText:
-	text "You think you can"
-	line "handle my sick"
-	cont "moves?"
+	text "Here I go!"
 	done
 
 Guitarist2ChargestoneBeatenText:
-	text "I got shredded!"
+	text "Your style is"
+	line "electrifying!"
 	done
 
 Guitarist2ChargestoneAfterText:
-	text "I come here to"
-	line "jam out!"
+	text "You know what? At"
+	line "first I would"
+	
+	para "practice real"
+	line "quiet so I"
+	
+	para "wouldn't bother"
+	line "the #MON living"
+	
+	para "here… But then"
+	line "guess what! The"
+	
+	para "#MON come and"
+	line "listen to me play!"
 	done
 	
 Hiker3ChargestoneSeenText:
-	text "I hiked too far"
-	line "and got lost!"
+	text "It is the way of"
+	line "greeting high in"
+	
+	para "the mountains and"
+	line "down in the caves."
+	
+	para "That's right! We"
+	line "each get our #-"
+	cont "MON, and begin!"
 	done
 
 Hiker3ChargestoneBeatenText:
-	text "I'm dazed!"
+	text "Farewell…"
+	line "Farewell, my"
+	cont "victory…"
 	done
 
 Hiker3ChargestoneAfterText:
@@ -87,24 +107,28 @@ Hiker3ChargestoneAfterText:
 	done
 	
 AceTrainerM2ChargestoneSeenText:
-	text "There's an item"
-	line "called METAL COAT."
+	text "I researched on"
+	line "the PC the best"
 	
-	para "It has strange"
-	line "properties when"
-	
-	para "held by certain"
-	line "magnetic #MON…"
+	para "way to battle, and"
+	line "now I'm sure to"
+	cont "win!"
 	done
 
 AceTrainerM2ChargestoneBeatenText:
-	text "Slipped up!"
+	text "Seriously?"
 	done
 
 AceTrainerM2ChargestoneAfterText:
-	text "Maybe if the #-"
-	line "MON holding the"
-	cont "item levels up…"
+	text "What I found on"
+	line "the PC was just"
+	
+	para "someone else's"
+	line "idea and not an"
+	
+	para "answer that I had"
+	line "come up with"
+	cont "myself…"
 	done
 
 ChargestoneCaveB2F_MapEvents:

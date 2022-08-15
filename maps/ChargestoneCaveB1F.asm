@@ -128,23 +128,26 @@ ChargestoneDoctorHealText:
 	done
 	
 AceTrainerF2ChargestoneSeenText:
-	text "Some #MON"
-	line "evolve by level,"
-	
-	para "some by happiness,"
-	line "and some with a"
-	cont "stone."
+	text "My beloved #MON"
+	line "will make their"
+	cont "debut!"
 	done
 
 AceTrainerF2ChargestoneBeatenText:
-	text "Schooled!"
+	text "You were the one"
+	line "with the stronger"
+	cont "power as a team!"
 	done
 
 AceTrainerF2ChargestoneAfterText:
-	text "But some #MON"
-	line "need to be holding"
-	cont "a certain item to"
-	cont "evolve."
+	text "Do you think that"
+	line "maybe you need"
+	
+	para "some #MON that"
+	line "can take attacks,"
+	
+	para "not just deal them"
+	line "out?"
 	done
 	
 Hiker2ChargestoneSeenText:
@@ -182,32 +185,55 @@ BattleGirlChargestoneAfterText:
 	done
 	
 ScientistFChargestoneSeenText:
-	text "The electricity in"
-	line "this place is all"
-	cont "over!"
+	text "I love this place!"
+	line "The electricity"
+	
+	para "charges up my"
+	line "inspiration!"
 	done
 
 ScientistFChargestoneBeatenText:
-	text "You're too good."
+	text "Aha! A lightbulb"
+	line "went off in my"
+	cont "head!"
 	done
 
 ScientistFChargestoneAfterText:
-	text "I hope it doesn't"
-	line "fry my equipment…"
+	text "When a person"
+	line "moves, electric"
+	
+	para "signals travel in"
+	line "the body! When a"
+	
+	para "person has an"
+	line "inspiration,"
+	
+	para "electric signals"
+	line "travel to the"
+	cont "brain!"
 	done
 	
 PkmnRangerMChargestoneSeenText:
-	text "There's rare #-"
-	line "MON down here!"
+	text "I am a #MON"
+	line "RANGER, here to"
+	
+	para "gather up some"
+	line "electric power!"
 	done
 
 PkmnRangerMChargestoneBeatenText:
-	text "Wow!"
+	text "I still can't draw"
+	line "forth my electric"
+	cont "powers!"
 	done
 
 PkmnRangerMChargestoneAfterText:
-	text "Your #MON are"
-	line "impressive!"
+	text "I don't know if"
+	line "it's unfair or"
+	
+	para "just plain cool"
+	line "when #MON use"
+	cont "electricity!"
 	done
 
 ChargestoneCaveB1F_MapEvents:

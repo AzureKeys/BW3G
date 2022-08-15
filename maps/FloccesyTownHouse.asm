@@ -27,11 +27,11 @@ FloccesyHouseBookshelf:
 	jumpstd picturebookshelf
 
 FloccesyHouseTwinIntroText:
-	text "I love FAIRY type"
+	text "I love fairy type"
 	line "#MON! They're"
 	cont "so cute!"
 	
-	para "Do you like FAIRY"
+	para "Do you like fairy"
 	line "type #MON too?"
 	
 	para "You should give"
@@ -40,11 +40,11 @@ FloccesyHouseTwinIntroText:
 
 FloccesyHouseGotBowText:
 	text "This pretty bow"
-	line "makes FAIRY moves"
+	line "makes fairy moves"
 	cont "stronger!"
 	
 	para "Give it to your"
-	line "favorite FAIRY"
+	line "favorite fairy"
 	cont "#MON!"
 	done
 

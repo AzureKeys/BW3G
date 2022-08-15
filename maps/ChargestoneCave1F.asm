@@ -105,94 +105,139 @@ ChargestoneMaxPotion:
 	hiddenitem MAX_POTION, EVENT_CHARGESTONE_MAX_POTION
 	
 Guitarist1ChargestoneSeenText:
-	text "This place is"
-	line "amped up!"
+	text "All right, let me"
+	line "introduce you to"
+	
+	para "the other super-"
+	line "cool and cute"
+	cont "member of my band!"
 	done
 
 Guitarist1ChargestoneBeatenText:
-	text "That's metal!"
+	text "If we don't"
+	line "recruit more"
+	
+	para "members, the sound"
+	line "won't have enough"
+	cont "depth."
 	done
 
 Guitarist1ChargestoneAfterText:
-	text "I need more"
-	line "practice!"
+	text "Even though we"
+	line "lost, I think my"
+	cont "#MON had fun!"
 	done
 	
 ScientistMChargestoneSeenText:
-	text "The stones in this"
-	line "cave are charged"
-	cont "with electricity."
+	text "This cave is full"
+	line "of electricity-"
+	cont "generating rocks!"
+	
+	para "It's charging me"
+	line "up!"
 	done
 
 ScientistMChargestoneBeatenText:
-	text "Shocking!"
+	text "Yowch! A lightning"
+	line "spark!"
 	done
 
 ScientistMChargestoneAfterText:
-	text "Where does the"
-	line "charge come from?"
+	text "The sources of my"
+	line "energy are my"
+	cont "precious #MON!"
 	done
 	
 PkmnRangerFChargestoneSeenText:
-	text "Let's see how"
-	line "strong you are."
+	text "There was a"
+	line "whisper on the"
+	
+	para "wind that told me"
+	line "of your coming!"
 	done
 
 PkmnRangerFChargestoneBeatenText:
-	text "I'm impressed."
+	text "I will become the"
+	line "wind and go…"
 	done
 
 PkmnRangerFChargestoneAfterText:
-	text "You've got a lot"
-	line "of potential, kid."
+	text "Wind blows into"
+	line "caves when you're"
+	
+	para "close to an"
+	line "entrance or exit."
 	done
 	
 AceTrainerM1ChargestoneSeenText:
-	text "Some #MON"
-	line "evolve in special"
-	cont "ways!"
+	text "Behold the force"
+	line "created by my"
+	cont "prized #MON!"
 	done
 
 AceTrainerM1ChargestoneBeatenText:
-	text "Taken down!"
+	text "Your combined"
+	line "force as a team is"
+	cont "greater than ours!"
 	done
 
 AceTrainerM1ChargestoneAfterText:
-	text "Try giving your"
-	line "#MON items to"
-	cont "hold."
+	text "Perhaps I need to"
+	line "meet my #MON"
+	
+	para "head on… Then we"
+	line "could be a"
+	cont "stronger team!"
 	done
 	
 AceTrainerF1ChargestoneSeenText:
-	text "You know items can"
-	line "strengthen a #-"
-	cont "MON's moves?"
+	text "Hey! My #MON"
+	line "are great. Look,"
+	cont "look!"
 	done
 
 AceTrainerF1ChargestoneBeatenText:
-	text "You're good!"
+	text "Argh!!"
 	done
 
 AceTrainerF1ChargestoneAfterText:
-	text "But some of those"
-	line "items can also"
-	cont "make #MON"
-	cont "evolve!"
+	text "I'm called an ACE"
+	line "TRAINER, but that"
+	
+	para "doesn't sit well"
+	line "with me. Cause I"
+	
+	para "just love #MON,"
+	line "and I just want to"
+	cont "be strong!"
 	done
 	
 Hiker1ChargestoneSeenText:
-	text "I'm on the lookout"
-	line "for rare stones!"
+	text "This HIKER wander-"
+	line "ing the expanses"
+	
+	para "of the world will"
+	line "teach a child like"
+	
+	para "you the harshness"
+	line "of life and the"
+	
+	para "difficulty of"
+	line "#MON battles!"
 	done
 
 Hiker1ChargestoneBeatenText:
-	text "Dropped it!"
+	text "The teacher was"
+	line "schooled… You're"
+	
+	para "very strict,"
+	line "aren't you?"
 	done
 
 Hiker1ChargestoneAfterText:
-	text "There's got to be"
-	line "treasure in a"
-	cont "place like this!"
+	text "#MON are every-"
+	line "where inside caves"
+	cont "like this!"
 	done
 
 ChargestoneCave1F_MapEvents:

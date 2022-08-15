@@ -226,8 +226,9 @@ MistraltonAirportPokefanFText:
 	
 	para "It will be nice to"
 	line "spend some time"
-	cont "out in the"
-	cont "mountains."
+	
+	para "out in the"
+	line "mountains."
 	done
 
 MistraltonAirportOfficerText:

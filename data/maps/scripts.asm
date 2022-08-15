@@ -69,10 +69,10 @@ INCLUDE "maps/R4NimbasaGate.asm"
 INCLUDE "maps/Rt4.asm"
 INCLUDE "maps/RelicCastle1F.asm"
 INCLUDE "maps/RelicCastleB1F.asm"
-INCLUDE "maps/RelicCastleB2F.asm"
 
 SECTION "Map Scripts 5", ROMX
 
+INCLUDE "maps/RelicCastleB2F.asm"
 INCLUDE "maps/RelicCastleB3F.asm"
 INCLUDE "maps/NimbasaHouse.asm"
 INCLUDE "maps/R4House.asm"
@@ -230,11 +230,11 @@ INCLUDE "maps/DriftveilTradeHouse.asm"
 INCLUDE "maps/MistraltonPokecenter1F.asm"
 INCLUDE "maps/MistraltonMoveReminderHouse.asm"
 INCLUDE "maps/Rt7.asm"
-INCLUDE "maps/Rt7North.asm"
-INCLUDE "maps/MistraltonHouse.asm"
 
 SECTION "Map Scripts 12", ROMX
 
+INCLUDE "maps/Rt7North.asm"
+INCLUDE "maps/MistraltonHouse.asm"
 INCLUDE "maps/MistraltonGym1F.asm"
 INCLUDE "maps/MistraltonGym2F.asm"
 INCLUDE "maps/R7House.asm"
@@ -262,13 +262,13 @@ INCLUDE "maps/IcirrusCitySouth.asm"
 INCLUDE "maps/IcirrusCityNorth.asm"
 INCLUDE "maps/Rt8.asm"
 INCLUDE "maps/IcirrusPokecenter1F.asm"
+
+SECTION "Map Scripts 13", ROMX
+
 INCLUDE "maps/IcirrusBoutique.asm"
 INCLUDE "maps/R11Truck.asm"
 INCLUDE "maps/DragonspiralTowerOutside.asm"
 INCLUDE "maps/MistraltonCave1F.asm"
-
-SECTION "Map Scripts 13", ROMX
-
 INCLUDE "maps/MistraltonCave2F.asm"
 INCLUDE "maps/MistraltonCave3F.asm"
 INCLUDE "maps/Rt9.asm"
