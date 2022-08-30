@@ -631,4 +631,13 @@ Rt1_Blocks:
 
 VictoryRoadEntrance_Blocks:
 	INCBIN "maps/VictoryRoadEntrance.ablk"
+
+VictoryRoadCave2F_Blocks:
+	INCBIN "maps/VictoryRoadCave2F.ablk"
+
+VictoryRoadCave3F_Blocks:
+	INCBIN "maps/VictoryRoadCave3F.ablk"
+
+VictoryRoadOutdoor2F_Blocks:
+	INCBIN "maps/VictoryRoadOutdoor2F.ablk"
 	

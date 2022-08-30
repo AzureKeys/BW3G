@@ -121,20 +121,27 @@ HarlequinR7NorthAfterText:
 	done
 	
 TwinsR7NorthSeenText:
-	text "What happened to"
-	line "the MOUNTAIN? We"
-	cont "wanna see!"
+	text "The teamwork of"
+	line "twins… A true"
+	
+	para "example of"
+	line "perfection!"
 	done
 
 TwinsR7NorthBeatenText:
-	text "Waaah!"
+	text "I can't believe"
+	line "it! We should have"
+	
+	para "been perfect, but"
+	line "we lost!"
 	done
 
 TwinsR7NorthAfterText:
-	text "We tried to go to"
-	line "the MOUNTAIN, but"
-	cont "it was all closed"
-	cont "up…"
+	text "If my sister is"
+	line "full of energy,"
+	
+	para "then I'm full of"
+	line "energy, too!"
 	done
 
 R7NorthSignText:

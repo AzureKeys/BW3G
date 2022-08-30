@@ -512,21 +512,24 @@ SchoolKidFLostlornAfterText:
 	done
 	
 LassLostlornSeenText:
-	text "Don't let my"
-	line "#MON's cute"
-
-	para "looks fool you."
-	line "They can whip you!"
+	text "Are you ready? I"
+	line "am! Let's go!"
 	done
 
 LassLostlornBeatenText:
-	text "Darn… I thought"
-	line "you were weak…"
+	text "What? I never even"
+	line "considered losing"
+	
+	para "before going into"
+	line "battle!"
 	done
 
 LassLostlornAfterText:
-	text "Do my #MON"
-	line "think I'm cute?"
+	text "If you don't have"
+	line "many #MON with"
+	
+	para "you, it's easy to"
+	line "get into trouble."
 	done
 
 LostlornForest_MapEvents:

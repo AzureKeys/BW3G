@@ -119,14 +119,18 @@ SwimmerMHumilauGymAfterText:
 	done
 	
 SwimmerFHumilauGymSeenText:
-	text "Let me see if you"
-	line "are good enough to"
-	cont "face MARLON!"
+	text "If you can beat"
+	line "me, you'll get to"
+	
+	para "face MARLON. Don't"
+	line "let your guard"
+	cont "down yet!"
 	done
 
 SwimmerFHumilauGymBeatenText:
-	text "This can't be"
-	line "true!"
+	text "How can this be?"
+	line "I wasn't being"
+	cont "careless at all!"
 	done
 
 SwimmerFHumilauGymAfterText:

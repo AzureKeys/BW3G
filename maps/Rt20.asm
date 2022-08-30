@@ -175,20 +175,24 @@ SchoolKidM3R20AfterText:
 	done
 	
 TwinsR20SeenText:
-	text "We're gonna get a"
-	line "lot stronger so we"
-	cont "can battle ROXIE!"
+	text "The two of us make"
+	line "an amazing"
+	cont "combination!"
+	
+	para "Let's battle!"
 	done
 
 TwinsR20BeatenText:
-	text "Ahaha…"
-	line "It can't be true…"
+	text "Our amazing"
+	line "combination…"
 	done
 
 TwinsR20AfterText:
-	text "I want to get a"
-	line "lot stronger so we"
-	cont "can impress ROXIE!"
+	text "Even though we"
+	line "look the same, our"
+	
+	para "parents can always"
+	line "tell us apart!"
 	done
 	
 SchoolKidF1R20SeenText:

@@ -183,67 +183,79 @@ R7TowerSign:
 	jumptext R7TowerSignText
 	
 SchoolKidMR7SeenText:
-	text "The TOWER's so"
-	line "tall. I wonder"
-	cont "what's at the top."
+	text "Can you keep up"
+	line "without having"
+	cont "your head spin?"
 	done
 
 SchoolKidMR7BeatenText:
-	text "Yowch!"
+	text "Oh… My head is"
+	line "spinning…"
 	done
 
 SchoolKidMR7AfterText:
-	text "I'm not strong"
-	line "enough to climb"
-	cont "it."
+	text "To have so easily"
+	line "emerged from a"
+	
+	para "battle… You're"
+	line "cool! Too cool,"
+	cont "in fact!"
 	done
 	
 SchoolKidFR7SeenText:
-	text "The TOWER's so"
-	line "tall. I wonder"
-	cont "what's at the top."
+	text "My victory is"
+	line "coming into view!"
 	done
 
 SchoolKidFR7BeatenText:
-	text "Yowch!"
+	text "Ahh, how could I"
+	line "possibly lose?"
 	done
 
 SchoolKidFR7AfterText:
-	text "I'm not strong"
-	line "enough to climb"
-	cont "it."
+	text "Losing a battle is"
+	line "so draining. I"
+	
+	para "feel really bummed"
+	line "out."
 	done
 	
 NurseryAideR7SeenText:
-	text "The GYM LEADER"
-	line "often comes to"
-	
-	para "train at the"
-	line "CELESTIAL TOWER."
+	text "Well, well, well…"
+	line "If it isn't a lost"
+	cont "#MON!"
 	done
 
 NurseryAideR7BeatenText:
-	text "You're good!"
+	text "Sorry! I mistook"
+	line "you for a #MON!"
 	done
 
 NurseryAideR7AfterText:
-	text "Maybe I should"
-	line "start training"
-	cont "there too."
+	text "Everyone loves"
+	line "playing hide-and-"
+	
+	para "seek… I have"
+	line "trouble finding"
+	cont "them!"
 	done
 	
 PkmnBreederMR7SeenText:
-	text "I'm training to"
-	line "join the gym!"
+	text "I have a request"
+	line "for you! Please"
+	cont "battle me!"
 	done
 
 PkmnBreederMR7BeatenText:
-	text "Too fast!"
+	text "I'm happy my #-"
+	line "MON got some good"
+	cont "experience."
 	done
 
 PkmnBreederMR7AfterText:
-	text "I guess I need"
-	line "more training…"
+	text "Battling you was a"
+	line "truly meaningful"
+	cont "experience!"
 	done
 	
 PkmnBreederFR7SeenText:

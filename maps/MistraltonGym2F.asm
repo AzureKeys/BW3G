@@ -87,18 +87,29 @@ Pilot1MistraltonGym2FAfterText:
 	done
 	
 Pilot2MistraltonGym2FSeenText:
-	text "We've trained hard"
-	line "to become masters"
-	cont "of the air!"
+	text "My #MON are"
+	line "stronger than the"
+	
+	para "wind! They're my"
+	line "pride and joy!"
 	done
 
 Pilot2MistraltonGym2FBeatenText:
-	text "What?"
+	text "They may be"
+	line "stronger than the"
+	
+	para "wind, but they're"
+	line "not as strong as"
+	cont "yours!"
 	done
 
 Pilot2MistraltonGym2FAfterText:
-	text "I guess we need"
-	line "more training…"
+	text "I became a pilot"
+	line "so I could soar"
+	
+	para "through the skies"
+	line "alongside my"
+	cont "flying #MON!"
 	done
 	
 MistraltonGym2FFanFellText:

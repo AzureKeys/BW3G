@@ -352,4 +352,7 @@ ENDM
 	map_attributes TwistMountain3F, TWIST_MOUNTAIN_3F, $09, 0
 	map_attributes Rt23House, R_23_HOUSE, $00, 0
 	map_attributes VictoryRoadEntrance, VICTORY_ROAD_ENTRANCE, $15, 0
+	map_attributes VictoryRoadCave2F, VICTORY_ROAD_CAVE_2F, $09, 0
+	map_attributes VictoryRoadCave3F, VICTORY_ROAD_CAVE_3F, $09, 0
+	map_attributes VictoryRoadOutdoor2F, VICTORY_ROAD_OUTDOOR_2F, $1d, 0
 	

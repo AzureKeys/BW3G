@@ -80,27 +80,39 @@ MarineTubeEther:
 	hiddenitem ETHER, EVENT_MARINE_TUBE_ETHER
 	
 PreschoolerMMarineTubeSeenText:
-	text "..."
+	text "Teacher?"
+	
+	para "Oh, you're not"
+	line "Teacher! You're a"
+	cont "trainer!"
 	done
 
 PreschoolerMMarineTubeBeatenText:
-	text "..."
+	text "It's hard to see"
+	line "in here!"
 	done
 
 PreschoolerMMarineTubeAfterText:
-	text "..."
+	text "Teacher took us to"
+	line "see all the pretty"
+	cont "#MON!"
 	done
 	
 PreschoolerFMarineTubeSeenText:
-	text "..."
+	text "Roar!"
+	
+	para "I'm a #MON!"
 	done
 
 PreschoolerFMarineTubeBeatenText:
-	text "..."
+	text "I'm not really a"
+	line "#MON!"
 	done
 
 PreschoolerFMarineTubeAfterText:
-	text "..."
+	text "There are so many"
+	line "pretty #MON"
+	cont "outside!"
 	done
 	
 TwinsMarineTubeSeenText:

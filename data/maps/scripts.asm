@@ -42,10 +42,10 @@ INCLUDE "maps/LentimasOutskirts.asm"
 INCLUDE "maps/LentimasTown.asm"
 INCLUDE "maps/StrangeHouse1F.asm"
 INCLUDE "maps/StrangeHouseB1F.asm"
-INCLUDE "maps/StrangeHouseRooms.asm"
 
 SECTION "Map Scripts 4", ROMX
 
+INCLUDE "maps/StrangeHouseRooms.asm"
 INCLUDE "maps/LacunosaHouse.asm"
 INCLUDE "maps/R12VillageBridgeGate.asm"
 INCLUDE "maps/LentimasClawHouse.asm"
@@ -66,12 +66,12 @@ INCLUDE "maps/Rt5.asm"
 INCLUDE "maps/R5NimbasaGate.asm"
 INCLUDE "maps/R5BridgeGate.asm"
 INCLUDE "maps/R4NimbasaGate.asm"
-INCLUDE "maps/Rt4.asm"
-INCLUDE "maps/RelicCastle1F.asm"
-INCLUDE "maps/RelicCastleB1F.asm"
 
 SECTION "Map Scripts 5", ROMX
 
+INCLUDE "maps/Rt4.asm"
+INCLUDE "maps/RelicCastle1F.asm"
+INCLUDE "maps/RelicCastleB1F.asm"
 INCLUDE "maps/RelicCastleB2F.asm"
 INCLUDE "maps/RelicCastleB3F.asm"
 INCLUDE "maps/NimbasaHouse.asm"
@@ -91,11 +91,11 @@ INCLUDE "maps/CasteliaPlazaElevator.asm"
 INCLUDE "maps/CasteliaBikeShop.asm"
 INCLUDE "maps/CasteliaGameFreak.asm"
 INCLUDE "maps/CasteliaBridgeGate.asm"
-INCLUDE "maps/NimbasaSubway.asm"
-INCLUDE "maps/AspertiaSubway.asm"
 
 SECTION "Map Scripts 6", ROMX
 
+INCLUDE "maps/NimbasaSubway.asm"
+INCLUDE "maps/AspertiaSubway.asm"
 INCLUDE "maps/CasteliaGym.asm"
 INCLUDE "maps/NimbasaParkOutside.asm"
 INCLUDE "maps/CasteliaMassage.asm"
@@ -113,11 +113,11 @@ INCLUDE "maps/FloccesyRanch.asm"
 INCLUDE "maps/AspertiaBlackbeltHouse.asm"
 INCLUDE "maps/AspertiaPokecenter1F.asm"
 INCLUDE "maps/FloccesyPokecenter1F.asm"
-INCLUDE "maps/AspertiaMomHouse.asm"
-INCLUDE "maps/AspertiaMoveDeleterHouse.asm"
 
 SECTION "Map Scripts 7", ROMX
 
+INCLUDE "maps/AspertiaMomHouse.asm"
+INCLUDE "maps/AspertiaMoveDeleterHouse.asm"
 INCLUDE "maps/FloccesyRanchBarn.asm"
 INCLUDE "maps/FloccesyRanchHouse.asm"
 INCLUDE "maps/VirbankCity.asm"
@@ -135,10 +135,10 @@ INCLUDE "maps/VirbankGym.asm"
 INCLUDE "maps/AspertiaGym.asm"
 INCLUDE "maps/VirbankPort.asm"
 INCLUDE "maps/CasteliaPort.asm"
-INCLUDE "maps/PinwheelForest.asm"
 
 SECTION "Map Scripts 8", ROMX
 
+INCLUDE "maps/PinwheelForest.asm"
 INCLUDE "maps/PinwheelBridgeGate.asm"
 INCLUDE "maps/SkyarrowBridge.asm"
 INCLUDE "maps/NacreneCity.asm"
@@ -166,11 +166,11 @@ INCLUDE "maps/AccumulaPokecenter1F.asm"
 INCLUDE "maps/AccumulaBallManiacHouse.asm"
 INCLUDE "maps/Rt1.asm"
 INCLUDE "maps/NuvemaTown.asm"
-INCLUDE "maps/NuvemaMomHouse.asm"
-INCLUDE "maps/Rt17.asm"
 
 SECTION "Map Scripts 9", ROMX
 
+INCLUDE "maps/NuvemaMomHouse.asm"
+INCLUDE "maps/Rt17.asm"
 INCLUDE "maps/Rt18.asm"
 INCLUDE "maps/P2Lab.asm"
 INCLUDE "maps/R1R17Gate.asm"
@@ -182,11 +182,11 @@ INCLUDE "maps/SeasideCave1F.asm"
 INCLUDE "maps/SeasideCaveB1F.asm"
 INCLUDE "maps/StriatonGym.asm"
 INCLUDE "maps/CasteliaSewers.asm"
-INCLUDE "maps/CasteliaSewersRooms.asm"
-INCLUDE "maps/RelicPassageFront.asm"
 
 SECTION "Map Scripts 10", ROMX
 
+INCLUDE "maps/CasteliaSewersRooms.asm"
+INCLUDE "maps/RelicPassageFront.asm"
 INCLUDE "maps/RelicPassageBack.asm"
 INCLUDE "maps/RelicCastleB4F.asm"
 INCLUDE "maps/PWTOutside.asm"
@@ -199,13 +199,13 @@ INCLUDE "maps/R18House.asm"
 INCLUDE "maps/Rt21.asm"
 INCLUDE "maps/PWTBackRoom.asm"
 INCLUDE "maps/PWTBattleRoom.asm"
+
+SECTION "Map Scripts 11", ROMX
+
 INCLUDE "maps/DriftveilCity.asm"
 INCLUDE "maps/DriftveilPokecenter1F.asm"
 INCLUDE "maps/DriftveilFossilHouse.asm"
 INCLUDE "maps/DriftveilBridgeGate.asm"
-
-SECTION "Map Scripts 11", ROMX
-
 INCLUDE "maps/DriftveilShelter.asm"
 INCLUDE "maps/DriftveilDrawbridge.asm"
 INCLUDE "maps/Rt6.asm"
@@ -223,6 +223,9 @@ INCLUDE "maps/CasteliaTradeHouse1.asm"
 INCLUDE "maps/CasteliaTradeHouse2.asm"
 INCLUDE "maps/R5Truck.asm"
 INCLUDE "maps/DriftveilStoneEmporium.asm"
+
+SECTION "Map Scripts 12", ROMX
+
 INCLUDE "maps/LacunosaHouse2.asm"
 INCLUDE "maps/AccumulaTradeHouse.asm"
 INCLUDE "maps/DriftveilHouse.asm"
@@ -230,9 +233,6 @@ INCLUDE "maps/DriftveilTradeHouse.asm"
 INCLUDE "maps/MistraltonPokecenter1F.asm"
 INCLUDE "maps/MistraltonMoveReminderHouse.asm"
 INCLUDE "maps/Rt7.asm"
-
-SECTION "Map Scripts 12", ROMX
-
 INCLUDE "maps/Rt7North.asm"
 INCLUDE "maps/MistraltonHouse.asm"
 INCLUDE "maps/MistraltonGym1F.asm"
@@ -255,6 +255,9 @@ INCLUDE "maps/R9OpelucidGate.asm"
 INCLUDE "maps/OpelucidPokecenter1F.asm"
 INCLUDE "maps/OpelucidSuperRodHouse.asm"
 INCLUDE "maps/SeasideCaveB2F.asm"
+
+SECTION "Map Scripts 13", ROMX
+
 INCLUDE "maps/SeasideCaveChamber.asm"
 INCLUDE "maps/TubelineBridge.asm"
 INCLUDE "maps/IcirrusCitySouthConnectionDummy.asm"
@@ -262,9 +265,6 @@ INCLUDE "maps/IcirrusCitySouth.asm"
 INCLUDE "maps/IcirrusCityNorth.asm"
 INCLUDE "maps/Rt8.asm"
 INCLUDE "maps/IcirrusPokecenter1F.asm"
-
-SECTION "Map Scripts 13", ROMX
-
 INCLUDE "maps/IcirrusBoutique.asm"
 INCLUDE "maps/R11Truck.asm"
 INCLUDE "maps/DragonspiralTowerOutside.asm"
@@ -285,16 +285,19 @@ INCLUDE "maps/OpelucidBattleHouse.asm"
 INCLUDE "maps/DraydensHouse1F.asm"
 INCLUDE "maps/DraydensHouse2F.asm"
 INCLUDE "maps/IcirrusFanClub.asm"
+
+SECTION "Map Scripts 14", ROMX
+
 INCLUDE "maps/DragonspiralTower1F.asm"
 INCLUDE "maps/DragonspiralTower2F.asm"
 INCLUDE "maps/DragonspiralTower3F.asm"
 INCLUDE "maps/DragonspiralTower4F.asm"
 INCLUDE "maps/DragonspiralTower5F.asm"
 INCLUDE "maps/DragonspiralTower6F.asm"
-
-SECTION "Map Scripts 14", ROMX
-
 INCLUDE "maps/DragonspiralTowerRoof.asm"
 INCLUDE "maps/TwistMountain3F.asm"
 INCLUDE "maps/R23House.asm"
 INCLUDE "maps/VictoryRoadEntrance.asm"
+INCLUDE "maps/VictoryRoadCave2F.asm"
+INCLUDE "maps/VictoryRoadCave3F.asm"
+INCLUDE "maps/VictoryRoadOutdoor2F.asm"

@@ -164,107 +164,168 @@ HexManiac1CelestialTowerAfterText:
 	done
 	
 HexManiac2CelestialTowerSeenText:
-	text "This is a sacred"
-	line "place!"
+	text "I'm here to under-"
+	line "stand the end of"
+	
+	para "the world, but I"
+	line "don't quite get"
+	
+	para "it. If I have a"
+	line "battle, will I be"
+	cont "enlightened…?"
 	done
 
 HexManiac2CelestialTowerBeatenText:
-	text "Curses!"
+	text "The end…"
+	line "Is that it?"
 	done
 
 HexManiac2CelestialTowerAfterText:
-	text "Your spirit is"
-	line "truly strong…"
+	text "People, #MON…"
+	line "Even if the world"
+	
+	para "is gone, that is"
+	line "not the end."
 	done
 	
 MaidCelestialTowerSeenText:
-	text "If one wants to"
-	line "grow strong, one"
+	text "…I still want to"
+	line "fight! The wander-"
 	
-	para "must strengthen"
-	line "the soul…"
+	para "ing spirits are"
+	line "commanding me!"
 	done
 
 MaidCelestialTowerBeatenText:
-	text "I see…"
+	text "Hah… Hah… The"
+	line "spirit just left"
+	cont "me."
 	done
 
 MaidCelestialTowerAfterText:
-	text "It is my soul"
-	line "which needs"
-	cont "strengthening…"
+	text "So many voices"
+	line "fill this tower,"
+	
+	para "eternally"
+	line "silenced…"
+	
+	para "If only someone"
+	line "would just listen…"
 	done
 	
 PsychicMCelestialTowerSeenText:
-	text "I have honed my"
-	line "psychic powers in"
-	cont "this tower."
+	text "Let's show the"
+	line "resting spirits"
 	
-	para "You're no match!"
+	para "the dazzling"
+	line "splendor of life!"
 	done
 
 PsychicMCelestialTowerBeatenText:
-	text "No way!"
+	text "Hm… Was that a"
+	line "spirit just now?"
 	done
 
 PsychicMCelestialTowerAfterText:
-	text "My powers have"
-	line "failed me!"
+	text "When I come to"
+	line "CELESTIAL TOWER,"
+	
+	para "strangely, I feel"
+	line "the urge to fight."
 	done
 	
 PsychicFCelestialTowerSeenText:
-	text "I have foreseen"
-	line "this battle…"
+	text "Indescribable"
+	line "energy is flowing"
+	cont "to me!"
 	done
 
 PsychicFCelestialTowerBeatenText:
-	text "Hmm…"
+	text "The energy is"
+	line "escaping… Aww…"
 	done
 
 PsychicFCelestialTowerAfterText:
-	text "I foresaw this"
-	line "loss too…"
+	text "The thoughts and"
+	line "wishes of the"
+	
+	para "#MON that rest"
+	line "here also provide"
+	cont "energy!"
 	done
 	
 SocialiteCelestialTowerSeenText:
-	text "Did you come to"
-	line "pay respects?"
+	text "Oh my, what a"
+	line "young trainer. If"
+	
+	para "it's all right,"
+	line "why don't we"
+	cont "battle?"
 	done
 
 SocialiteCelestialTowerBeatenText:
-	text "Waaah!"
+	text "There at the end,"
+	line "I nearly called"
+	
+	para "out my late #-"
+	line "MON's name."
 	done
 
 SocialiteCelestialTowerAfterText:
-	text "You better be more"
-	line "respectful!"
+	text "Is it a good thing"
+	line "to forget your"
+	
+	para "#MON after they"
+	line "are gone? Or is it"
+	
+	para "better when you"
+	line "cannot forget?"
 	done
 	
 PokefanMCelestialTowerSeenText:
-	text "Hi there! Are you"
-	line "lost?"
+	text "When #MON"
+	line "trainers meet,"
+	
+	para "what we do is, of"
+	line "course, engage in"
+	cont "a #MON battle!"
 	done
 
 PokefanMCelestialTowerBeatenText:
-	text "Wow!"
+	text "Oh no…"
+	line "I'm pathetic…"
 	done
 
 PokefanMCelestialTowerAfterText:
-	text "I guess not…"
+	text "Perhaps I meet"
+	line "people here"
+	
+	para "because of guid-"
+	line "ance from my"
+	cont "#MON."
 	done
 	
 PokefanFCelestialTowerSeenText:
-	text "Oh, aren't you"
-	line "cute?"
+	text "Oh, you want to"
+	line "have a battle with"
+	
+	para "me? All right! I"
+	line "have strong #-"
+	cont "MON."
 	done
 
 PokefanFCelestialTowerBeatenText:
-	text "My, my!"
+	text "My strongest #-"
+	line "MON is no longer"
+	cont "with me…"
 	done
 
 PokefanFCelestialTowerAfterText:
-	text "You're a feisty"
-	line "one!"
+	text "…That's not true."
+	line "As long as I rem-"
+	
+	para "ember, it will be"
+	line "with me forever."
 	done
 	
 LassCelestialTowerSeenText:
@@ -281,20 +342,27 @@ LassCelestialTowerAfterText:
 	done
 	
 GentlemanCelestialTowerSeenText:
-	text "Do you wish to"
-	line "challenge me?"
+	text "Let us have our"
+	line "#MON battle"
 	
-	para "Very well."
+	para "with gentlemanly"
+	line "reserve!"
 	done
 
 GentlemanCelestialTowerBeatenText:
-	text "Impressive."
+	text "Ho ho ho! Quite"
+	line "the affront!"
 	done
 
 GentlemanCelestialTowerAfterText:
-	text "You battle with"
-	line "experience beyond"
-	cont "your years."
+	text "I have enjoyed"
+	line "every day I spend"
+	
+	para "with my #MON."
+	line "If only my #MON"
+	
+	para "feel the same, I"
+	line "can die happy!"
 	done
 
 CelestialTower_MapEvents:

@@ -320,50 +320,83 @@ MistraltonGymGuyWinText:
 	done
 	
 Pilot1MistraltonGym1FSeenText:
-	text "Only masters of"
-	line "the air can make"
-	cont "it through this"
-	cont "GYM!"
+	text "The strong winds"
+	line "represent the"
+	
+	para "strength of us and"
+	line "our GYM LEADER!"
 	done
 
 Pilot1MistraltonGym1FBeatenText:
-	text "Shot down!"
+	text "I felt some"
+	line "intense pressure"
+	
+	para "coming from you"
+	line "and your #MON!"
 	done
 
 Pilot1MistraltonGym1FAfterText:
-	text "Are you a master?"
+	text "I'll give you some"
+	line "advice. There are"
+	
+	para "fans hidden in the"
+	line "ceiling that can"
+	cont "be pushed down."
 	done
 	
 Pilot2MistraltonGym1FSeenText:
-	text "I've trained my"
-	line "bird #MON under"
-	cont "SKYLA."
+	text "Right side clear!"
+	line "Left side clear!"
 	
-	para "You're no match!"
+	para "Battle flight is"
+	line "ready for takeout!"
+	
+	para "Err… I mean"
+	line "takeoff!"
 	done
 
 Pilot2MistraltonGym1FBeatenText:
-	text "Shocking!"
+	text "Unfortunately… we"
+	line "are forced to"
+	cont "land."
 	done
 
 Pilot2MistraltonGym1FAfterText:
-	text "No way you're even"
-	line "stronger than me!"
+	text "High performance"
+	line "is important for"
+	
+	para "planes, but maybe"
+	line "feelings are what"
+	
+	para "is important for"
+	line "#MON."
 	done
 	
 Pilot3MistraltonGym1FSeenText:
-	text "Can you withstand"
-	line "our onslaught from"
-	cont "the skies?"
+	text "Sometimes you need"
+	line "to be bold, while"
+	
+	para "other times you"
+	line "need to be"
+	
+	para "careful. React"
+	line "accordingly!"
 	done
 
 Pilot3MistraltonGym1FBeatenText:
-	text "Taken down!"
+	text "I couldn't block"
+	line "your path!"
 	done
 
 Pilot3MistraltonGym1FAfterText:
-	text "You have what it"
-	line "takes."
+	text "Landing is the"
+	line "hardest part about"
+	
+	para "piloting a plane."
+	line "You'd better stay"
+	
+	para "alert until the"
+	line "very end!"
 	done
 	
 MistraltonGym1FFanFellText:
