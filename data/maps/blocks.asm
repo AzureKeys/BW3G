@@ -638,6 +638,11 @@ VictoryRoadCave2F_Blocks:
 VictoryRoadCave3F_Blocks:
 	INCBIN "maps/VictoryRoadCave3F.ablk"
 
+VictoryRoadOutdoor1F_Blocks:
+	INCBIN "maps/VictoryRoadOutdoor1F.ablk"
+
+SECTION "Map Blocks 6", ROMX
+
 VictoryRoadOutdoor2F_Blocks:
 	INCBIN "maps/VictoryRoadOutdoor2F.ablk"
 	

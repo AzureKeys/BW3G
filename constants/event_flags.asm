@@ -1662,14 +1662,9 @@
 	const EVENT_R23_PP_UP
 	const EVENT_R23_REPEAT_BALL
 	const EVENT_R23_HEART_SCALE
-	const EVENT_63F
-; Sprite visibility flags
-; When these events are cleared, the sprite becomes visible; when set, the sprite is hidden.
-; The map script command macros `disappear` and `appear` set/clear these flags and immediately apply the effect on visibility.
-; The map script command macros `setevent` and `clearevent` set/clear these flags, and their effects will be seen when the map is reloaded.
-; Johto itemballs
-	const EVENT_CYNDAQUIL_POKEBALL_IN_ELMS_LAB
-	const EVENT_TOTODILE_POKEBALL_IN_ELMS_LAB
+	const EVENT_VICTORY_ROAD_CAVE_BOULDER_1
+	const EVENT_VICTORY_ROAD_CAVE_BOULDER_2
+	const EVENT_VICTORY_ROAD_OUTDOOR_BOULDER
 	const EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
 	const EVENT_VIOLET_CITY_PP_UP
 	const EVENT_VIOLET_CITY_RARE_CANDY

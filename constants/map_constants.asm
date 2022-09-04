@@ -83,8 +83,9 @@ ENDM
 	map_const DREAMYARD_B1F, 12, 12
 	map_const VICTORY_ROAD_CAVE_2F, 23, 26
 	map_const VICTORY_ROAD_CAVE_3F, 11, 16
-	map_const VICTORY_ROAD_OUTDOOR_2F, 20, 20
-
+	map_const VICTORY_ROAD_OUTDOOR_1F, 32, 13
+	map_const VICTORY_ROAD_OUTDOOR_2F, 20, 21
+	
 	newgroup                                                      ; 20
 
 	map_const POKECENTER_2F,                                8,  4 ;  1

@@ -2,9 +2,9 @@
 	RGB 21,21,21, 11,11,11 ; morn/day
 	RGB 21,21,21, 11,11,11 ; nite
 	
-; group 3 (dungeons)
-	RGB 21,24,25, 23,23,21 ; morn/day
-	RGB 05,05,08, 11,11,15 ; nite
+; group 3 (dungeons) (this is only used for Victory Road Outside maps)
+	RGB 22,20,10, 17,14,03 ; morn/day
+	RGB 11,11,05, 10,09,07 ; nite
 
 ; group 20 (Cable Club)
 	RGB 21,21,21, 11,11,11 ; morn/day

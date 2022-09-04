@@ -36,11 +36,11 @@ _AnimateTileset::
 Tileset0Anim:
 TilesetJohtoModernAnim:
 TilesetMistraltonAnim:
+TilesetNacreneAnim:
 	;dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
-	;dw NULL,  AnimateWaterPalette
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateFlowerTile
 	dw NULL,  WaitTileAnimation
@@ -71,20 +71,6 @@ TilesetVillageBridgeAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  IncWaterFrame
-	dw NULL,  DoneTileAnimation
-	
-TilesetNacreneAnim:
-TilesetDreamyardAnim:
-TilesetPkmnLeagueAnim:
-	;dw vTiles2 tile $14, AnimateWaterTile
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  AnimateFlowerTile
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 	
 TilesetVirbankAnim:
@@ -196,6 +182,19 @@ TilesetUnovaEastAnim:
 	dw vTiles2 tile $63, WriteTileToBuffer
 	dw wTileAnimBuffer, ScrollTileUp
 	dw vTiles2 tile $63, WriteTileFromBuffer
+	dw NULL,  IncWaterFrame
+	dw NULL,  DoneTileAnimation
+	
+TilesetDreamyardAnim:
+	dw vTiles2 tile $6f, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $6f, WriteTileFromBuffer
+	dw WhirlpoolFrames1, AnimateWhirlpoolTile
+	dw WhirlpoolFrames2, AnimateWhirlpoolTile
+	dw WhirlpoolFrames3, AnimateWhirlpoolTile
+	dw WhirlpoolFrames4, AnimateWhirlpoolTile
+	dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
 	dw NULL,  IncWaterFrame
 	dw NULL,  DoneTileAnimation
 	
@@ -335,6 +334,7 @@ TilesetChampionsRoomAnim:
 TilesetPlayersRoomAnim:
 TilesetBattleTowerAnim:
 TilesetLentimasAnim:
+TilesetPkmnLeagueAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
