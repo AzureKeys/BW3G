@@ -470,11 +470,11 @@ INCBIN "data/tilesets/ice_path_attributes.bin"
 TilesetForestAttr:
 INCBIN "data/tilesets/forest_attributes.bin"
 
-TilesetLentimasAttr:
-INCBIN "data/tilesets/lentimas_attributes.bin"
-
 
 SECTION "Tileset Data 14", ROMX
+
+TilesetLentimasAttr:
+INCBIN "data/tilesets/lentimas_attributes.bin"
 
 TilesetDesertAttr:
 INCBIN "data/tilesets/desert_attributes.bin"
@@ -491,11 +491,11 @@ INCBIN "data/tilesets/mistralton_attributes.bin"
 TilesetUnovaBeachAttr:
 INCBIN "data/tilesets/unova_beach_attributes.bin"
 
-TilesetUnovaEastAttr:
-INCBIN "data/tilesets/unova_east_attributes.bin"
-
 
 SECTION "Tileset Data 15", ROMX
+
+TilesetUnovaEastAttr:
+INCBIN "data/tilesets/unova_east_attributes.bin"
 
 TilesetStriatonGFX:
 INCBIN "gfx/tilesets/striaton.2bpp.lz"
@@ -512,14 +512,14 @@ INCBIN "data/tilesets/striaton_attributes.bin"
 TilesetUnovaWestGFX:
 INCBIN "gfx/tilesets/unova_west.2bpp.lz"
 
+
+SECTION "Tileset Data 16", ROMX
+
 TilesetUnovaWestMeta:
 INCBIN "data/tilesets/unova_west_metatiles.bin"
 
 TilesetUnovaWestColl:
 INCLUDE "data/tilesets/unova_west_collision.asm"
-
-
-SECTION "Tileset Data 16", ROMX
 
 TilesetUnovaWestAttr:
 INCBIN "data/tilesets/unova_west_attributes.bin"
@@ -539,11 +539,11 @@ INCBIN "data/tilesets/nacrene_attributes.bin"
 TilesetNimbasaGFX:
 INCBIN "gfx/tilesets/nimbasa.2bpp.lz"
 
-TilesetNimbasaMeta:
-INCBIN "data/tilesets/nimbasa_metatiles.bin"
-
 
 SECTION "Tileset Data 17", ROMX
+
+TilesetNimbasaMeta:
+INCBIN "data/tilesets/nimbasa_metatiles.bin"
 
 TilesetNimbasaColl:
 INCLUDE "data/tilesets/nimbasa_collision.asm"
@@ -563,11 +563,11 @@ INCBIN "data/tilesets/virbank_metatiles.bin"
 TilesetVirbankColl:
 INCLUDE "data/tilesets/virbank_collision.asm"
 
-TilesetVirbankAttr:
-INCBIN "data/tilesets/virbank_attributes.bin"
-
 
 SECTION "Tileset Data 18", ROMX
+
+TilesetVirbankAttr:
+INCBIN "data/tilesets/virbank_attributes.bin"
 
 TilesetUnovaNorthGFX:
 INCBIN "gfx/tilesets/unova_north.2bpp.lz"
@@ -584,11 +584,11 @@ INCBIN "data/tilesets/unova_north_attributes.bin"
 TilesetRadioTowerGFX:
 INCBIN "gfx/tilesets/radio_tower.2bpp.lz"
 
-TilesetRadioTowerMeta:
-INCBIN "data/tilesets/radio_tower_metatiles.bin"
-
 
 SECTION "Tileset Data 19", ROMX
+
+TilesetRadioTowerMeta:
+INCBIN "data/tilesets/radio_tower_metatiles.bin"
 
 TilesetCasteliaGFX:
 INCBIN "gfx/tilesets/castelia.2bpp.lz"
@@ -695,11 +695,11 @@ INCBIN "gfx/tilesets/dreamyard.2bpp.lz"
 TilesetDreamyardMeta:
 INCBIN "data/tilesets/dreamyard_metatiles.bin"
 
-TilesetDreamyardColl:
-INCLUDE "data/tilesets/dreamyard_collision.asm"
-
 
 SECTION "Tileset Data 23", ROMX
+
+TilesetDreamyardColl:
+INCLUDE "data/tilesets/dreamyard_collision.asm"
 
 TilesetDreamyardAttr:
 INCBIN "data/tilesets/dreamyard_attributes.bin"
@@ -715,6 +715,9 @@ INCLUDE "data/tilesets/pkmn_league_collision.asm"
 
 TilesetPkmnLeagueAttr:
 INCBIN "data/tilesets/pkmn_league_attributes.bin"
+
+
+SECTION "Tileset Data 24", ROMX
 
 TilesetCaveMeta:
 ;TilesetDarkCaveMeta:
