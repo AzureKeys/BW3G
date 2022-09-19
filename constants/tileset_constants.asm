@@ -47,6 +47,7 @@
 	const TILESET_ICIRRUS
 	const TILESET_DREAMYARD
 	const TILESET_PKMN_LEAGUE
+	const TILESET_CAVE_RUINS
 
 ; bg palette values (see gfx/tilesets/*_palette_map.asm)
 ; TilesetBGPalette indexes (see gfx/tilesets/bg_tiles.pal)

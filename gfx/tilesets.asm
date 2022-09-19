@@ -85,6 +85,7 @@ TilesetMansionColl:
 INCLUDE "data/tilesets/mansion_collision.asm"
 
 TilesetCaveGFX:
+TilesetCaveRuinsGFX:
 INCBIN "gfx/tilesets/cave.2bpp.lz"
 
 
@@ -155,15 +156,6 @@ INCLUDE "data/tilesets/park_collision.asm"
 
 TilesetUndergroundGFX:
 INCBIN "gfx/tilesets/underground.2bpp.lz"
-
-; TilesetDarkCaveGFX:
-; INCBIN "gfx/tilesets/dark_cave.2bpp.lz"
-
-; UnusedTilesetDarkCaveMeta:
-; INCBIN "data/tilesets/unused_dark_cave_metatiles.bin"
-
-; UnusedTilesetDarkCaveColl:
-; INCLUDE "data/tilesets/unused_dark_cave_collision.asm"
 
 
 SECTION "Tileset Data 5", ROMX
@@ -452,7 +444,6 @@ TilesetBattleTowerAttr:
 INCBIN "data/tilesets/battle_tower_attributes.bin"
 
 TilesetCaveAttr:
-;TilesetDarkCaveAttr:
 INCBIN "data/tilesets/cave_attributes.bin"
 
 TilesetParkAttr:
@@ -720,5 +711,13 @@ INCBIN "data/tilesets/pkmn_league_attributes.bin"
 SECTION "Tileset Data 24", ROMX
 
 TilesetCaveMeta:
-;TilesetDarkCaveMeta:
 INCBIN "data/tilesets/cave_metatiles.bin"
+
+TilesetCaveRuinsAttr:
+INCBIN "data/tilesets/cave_ruins_attributes.bin"
+
+TilesetCaveRuinsColl:
+INCLUDE "data/tilesets/cave_ruins_collision.asm"
+
+TilesetCaveRuinsMeta:
+INCBIN "data/tilesets/cave_ruins_metatiles.bin"

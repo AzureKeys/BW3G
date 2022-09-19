@@ -224,6 +224,7 @@ TilesetEliteFourRoomAnim:
 	dw NULL,  DoneTileAnimation
 
 TilesetCaveAnim:
+TilesetCaveRuinsAnim:
 	dw vTiles2 tile $14, WriteTileToBuffer
 	dw NULL,  FlickeringCaveEntrancePalette
 	dw wTileAnimBuffer, ScrollTileRightLeft

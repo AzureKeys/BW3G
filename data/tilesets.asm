@@ -58,3 +58,4 @@ Tilesets::
 	tileset TilesetIcirrus
 	tileset TilesetDreamyard
 	tileset TilesetPkmnLeague
+	tileset TilesetCaveRuins
