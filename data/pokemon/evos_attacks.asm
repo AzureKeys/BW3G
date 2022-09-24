@@ -4778,6 +4778,7 @@ HydreigonEvosAttacks:
 	db 79, OUTRAGE
 	; db 100, SURF
 	; db 100, STRENGTH
+	; db 100, WATERFALL
 	db 0 ; no more level-up moves
 
 GenesectEvosAttacks:

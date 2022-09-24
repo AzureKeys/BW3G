@@ -3,7 +3,7 @@
 	const VICTORYROADCAVE1F_BOULDER_2
 
 VictoryRoadCave1F_MapScripts:
-	db 0 ; scene scripts
+	db 1 ; scene scripts
 	scene_script .DummyScene0 ; SCENE_DEFAULT
 
 	db 2 ; callbacks

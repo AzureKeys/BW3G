@@ -1188,10 +1188,12 @@ CanUseSweetScent::
 	jr z, .ice_check
 	cp CAVE
 	jr nz, .grass_check
-; Only load encounters in grass for Pinwheel Forest
+; Only load encounters in grass for Pinwheel Forest & Grove in Victory Road
 ; All CAVE maps are in MapGroup_Dungeons, so just check wMapNumber
 	ld a, [wMapNumber]
 	cp 21 ; PinwheelForest
+	jr z, .grass_check
+	cp 59 ; VictoryRoadGrove
 	jr nz, .ice_check
 .grass_check
 	farcall CheckGrassCollision
