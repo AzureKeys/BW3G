@@ -81,10 +81,12 @@ ENDM
 	map_const TWIST_MOUNTAIN_3F, 16, 16
 	map_const DREAMYARD, 20, 19
 	map_const DREAMYARD_B1F, 12, 12
+	map_const VICTORY_ROAD_CAVE_1F, 20, 19
 	map_const VICTORY_ROAD_CAVE_2F, 23, 26
 	map_const VICTORY_ROAD_CAVE_3F, 11, 16
 	map_const VICTORY_ROAD_OUTDOOR_1F, 32, 13
 	map_const VICTORY_ROAD_OUTDOOR_2F, 20, 21
+	map_const VICTORY_ROAD_GROVE, 9, 13
 	
 	newgroup                                                      ; 20
 

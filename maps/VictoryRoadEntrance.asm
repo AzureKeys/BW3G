@@ -57,9 +57,13 @@ VictoryRoadEntranceBadge2Script:
 VictoryRoadEntrance_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 6 ; warp events
 	warp_event 46, 35, R_23_WEST, 7
 	warp_event 47, 35, R_23_WEST, 8
+	warp_event  6,  4, VICTORY_ROAD_CAVE_1F, 1
+	warp_event  7,  4, VICTORY_ROAD_CAVE_1F, 2
+	warp_event  8,  4, VICTORY_ROAD_CAVE_1F, 3
+	warp_event  9,  4, VICTORY_ROAD_CAVE_1F, 4
 
 	db 10 ; coord events
 	coord_event 46, 34, -1, VictoryRoadEntranceBadge1Script
