@@ -16,7 +16,7 @@ VictoryRoadCave2F_MapScripts:
 .check2
 	checkevent EVENT_VICTORY_ROAD_CAVE_BOULDER_2
 	iffalse .done
-	changeblock 24, 30, $ab ; boulder in pit
+	changeblock 24, 30, $6f ; boulder in pit
 .done
 	return
 
@@ -48,7 +48,7 @@ VictoryRoadCave2F_MapScripts:
 	writetext VictoryRoadCave2FBoulderFellText
 	waitbutton
 	disappear VICTORYROADCAVE2F_BOULDER_2
-	changeblock 24, 30, $ab ; boulder in pit
+	changeblock 24, 30, $6f ; boulder in pit
 	reloadmappart
 	closetext
 	end

@@ -17,10 +17,14 @@
 	const VICTORYROADENTRANCE_BADGE_8_LOWER
 
 VictoryRoadEntrance_MapScripts:
-	db 0 ; scene scripts
+	db 1 ; scene scripts
+	scene_script .DummyScene0 ; SCENE_DEFAULT
 
 	db 1 ; callbacks
 	callback MAPCALLBACK_NEWMAP, .Clear_R23_Flag
+
+.DummyScene0:
+	end
 	
 .Clear_R23_Flag:
 	clearevent EVENT_R23_WEST_UPPER_LEVEL
@@ -65,21 +69,21 @@ VictoryRoadEntrance_MapEvents:
 	warp_event  8,  4, VICTORY_ROAD_CAVE_1F, 3
 	warp_event  9,  4, VICTORY_ROAD_CAVE_1F, 4
 
-	db 10 ; coord events
-	coord_event 46, 34, -1, VictoryRoadEntranceBadge1Script
-	coord_event 47, 34, -1, VictoryRoadEntranceBadge1Script
-	coord_event 27, 28, -1, VictoryRoadEntranceBadge1Script
-	coord_event 27, 29, -1, VictoryRoadEntranceBadge1Script
-	coord_event 27, 22, -1, VictoryRoadEntranceBadge1Script
-	coord_event 27, 14, -1, VictoryRoadEntranceBadge1Script
-	coord_event 26, 28, -1, VictoryRoadEntranceBadge2Script
-	coord_event 26, 29, -1, VictoryRoadEntranceBadge2Script
-	coord_event  6,  6, -1, VictoryRoadEntranceBadge2Script
-	coord_event  7,  6, -1, VictoryRoadEntranceBadge2Script
-	coord_event  8,  6, -1, VictoryRoadEntranceBadge2Script
-	coord_event  9,  6, -1, VictoryRoadEntranceBadge2Script
-	coord_event 26, 22, -1, VictoryRoadEntranceBadge2Script
-	coord_event 27, 13, -1, VictoryRoadEntranceBadge2Script
+	db 14 ; coord events
+	coord_event 46, 34, SCENE_DEFAULT, VictoryRoadEntranceBadge1Script
+	coord_event 47, 34, SCENE_DEFAULT, VictoryRoadEntranceBadge1Script
+	coord_event 27, 28, SCENE_DEFAULT, VictoryRoadEntranceBadge1Script
+	coord_event 27, 29, SCENE_DEFAULT, VictoryRoadEntranceBadge1Script
+	coord_event 27, 22, SCENE_DEFAULT, VictoryRoadEntranceBadge1Script
+	coord_event 27, 14, SCENE_DEFAULT, VictoryRoadEntranceBadge1Script
+	coord_event 26, 28, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
+	coord_event 26, 29, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
+	coord_event  6,  6, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
+	coord_event  7,  6, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
+	coord_event  8,  6, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
+	coord_event  9,  6, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
+	coord_event 26, 22, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
+	coord_event 27, 13, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
 
 	db 0 ; bg events
 	
