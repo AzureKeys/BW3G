@@ -152,7 +152,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, VICTORY_ROAD_ENTRANCE, 1
+	;warp_event  7,  0, VIRBANK_COMPLEX_B1F, 2
 
 	db 0 ; coord events
 
