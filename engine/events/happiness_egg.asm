@@ -80,6 +80,7 @@ ChangeHappiness:
 	jr nc, .negative
 	add [hl]
 	jr nc, .extra
+	;jr nc, .done
 	ld a, -1
 	jr .done
 	
@@ -118,12 +119,15 @@ GetExtraHappiness:
 	
 	ld a, [wCurPartyMon]
 	ld hl, wPartyMon1Item
+	push bc
 	call GetPartyLocation
+	pop bc
 	ld a, [hl]
 	cp SOOTHE_BELL
 	jr nz, .no_soothe_bell
 	
-; Soothe Bell adds 1
+; Soothe Bell adds 2
+	inc b
 	inc b
 	
 .no_soothe_bell

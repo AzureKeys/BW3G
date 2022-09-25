@@ -51,6 +51,9 @@ PlayersHousePosterScript:
 	describedecoration DECODESC_POSTER
 
 PlayersHouseRadioScript:
+	;addcellnum PHONE_CHEREN
+	;end
+	
 	; opentext
 	; givepoke HYDREIGON, 100, NO_ITEM
 	; closetext
