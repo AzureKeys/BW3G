@@ -2616,8 +2616,9 @@ wDragonspiralTower6FSceneID::                     db ; d9c0
 wDragonspiralTowerRoofSceneID::                   db ; d9c0
 wVictoryRoadEntranceSceneID::                     db ; d9c0
 wVictoryRoadCave1FSceneID::                       db ; d9c0
+wR18SceneID::                                     db ; d9c0
 
-	ds 57
+	ds 56
 	
 wBattleHouseOpponent:: db
 wNumShards:: db

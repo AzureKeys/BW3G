@@ -4,6 +4,7 @@
 	const R18_MAX_ELIXER
 	const R18_BLACKBELT
 	const R18_HEART_SCALE
+	const R18_TM_CALM_MIND
 	const R18_HIKER
 	const R18_BLACKBELT_T
 	const R18_BATTLE_GIRL
@@ -11,9 +12,43 @@
 	const R18_BACKPACKERF
 
 Rt18_MapScripts:
-	db 0 ; scene scripts
+	db 1 ; scene scripts
+	scene_script .DummyScene0 ; SCENE_DEFAULT
 
-	db 0 ; callbacks
+	db 1 ; callbacks
+	callback MAPCALLBACK_TILES, .Tiles
+
+.DummyScene0:
+	end
+	
+.Tiles:
+	checkevent EVENT_R_18_LOWER
+	iffalse .done
+	changeblock 16, 22, $ce ; bridge top
+	changeblock 16, 24, $cf ; bridge main
+	changeblock 16, 26, $d0 ; up_wall
+.done
+	return
+	
+R18LowerScript:
+	checkevent EVENT_R_18_LOWER
+	iftrue .done
+	changeblock 16, 22, $ce ; bridge top
+	changeblock 16, 24, $cf ; bridge main
+	changeblock 16, 26, $d0 ; up_wall
+	setevent EVENT_R_18_LOWER
+.done
+	end
+	
+R18UpperScript:
+	checkevent EVENT_R_18_LOWER
+	iffalse .done
+	changeblock 16, 22, $cc ; bridge top
+	changeblock 16, 24, $cd ; bridge main
+	changeblock 16, 26, $02 ; up_wall
+	clearevent EVENT_R_18_LOWER
+.done
+	end
 
 TrainerBackpackerFR18:
 	trainer BACKPACKERF, BACKPACKERF_R18, EVENT_BEAT_BACKPACKERF_R18, BackpackerFR18SeenText, BackpackerFR18BeatenText, 0, .Script
@@ -152,6 +187,9 @@ R18Blackbelt:
 R18HeartScale:
 	itemball HEART_SCALE
 	
+R18TMCalmMind:
+	itemball TM_CALM_MIND
+	
 R18BigPearl:
 	hiddenitem BIG_PEARL, EVENT_R18_BIG_PEARL
 	
@@ -256,19 +294,28 @@ Rt18_MapEvents:
 	db 1 ; warp events
 	warp_event 17, 16, R_18_HOUSE, 1
 
-	db 0 ; coord events
+	db 8 ; coord events
+	coord_event  6, 24, SCENE_DEFAULT, R18LowerScript
+	coord_event  6, 25, SCENE_DEFAULT, R18LowerScript
+	coord_event  5, 24, SCENE_DEFAULT, R18UpperScript
+	coord_event  5, 25, SCENE_DEFAULT, R18UpperScript
+	coord_event 25, 16, SCENE_DEFAULT, R18UpperScript
+	coord_event 25, 17, SCENE_DEFAULT, R18UpperScript
+	coord_event  4, 20, SCENE_DEFAULT, R18UpperScript
+	coord_event  5, 20, SCENE_DEFAULT, R18UpperScript
 
 	db 3 ; bg events
 	bg_event 36, 28, BGEVENT_ITEM, R18BigPearl
 	bg_event 29, 31, BGEVENT_UP, R18HiddenGrotto
 	bg_event 30, 31, BGEVENT_UP, R18HiddenGrotto
 
-	db 10 ; object events
+	db 11 ; object events
 	object_event 10, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R18Pearl, EVENT_R18_PEARL
 	object_event 39, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R18Calcium, EVENT_R18_CALCIUM
 	object_event  2, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R18MaxElixer, EVENT_R18_MAX_ELIXER
 	object_event 24, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R18Blackbelt, EVENT_R18_BLACKBELT
 	object_event  5, 31, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R18HeartScale, EVENT_R18_HEART_SCALE
+	object_event 25, 32, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, R18TMCalmMind, EVENT_R18_TM_CALM_MIND
 	object_event 31, 22, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerHikerR18, -1
 	object_event 25, 23, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBlackbeltR18, -1
 	object_event  9,  9, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlR18, -1

@@ -77,4 +77,5 @@ MapScenes::
 	scene_var DRAGONSPIRAL_TOWER_ROOF,                     wDragonspiralTowerRoofSceneID
 	scene_var VICTORY_ROAD_ENTRANCE,                       wVictoryRoadEntranceSceneID
 	scene_var VICTORY_ROAD_CAVE_1F,                        wVictoryRoadCave1FSceneID
+	scene_var R_18,                                        wR18SceneID
 	db -1
