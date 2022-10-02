@@ -1341,9 +1341,15 @@ LoadMapPals:
 	ret z
 .CheckIcirrus
 	cp 21 ; Icirrus
-	jr nz, .LoadRoof
+	jr nz, .CheckPkmnLeague
 	ld a, [wMapNumber]
 	cp 1 ; TubelineBridge
+	ret z
+.CheckPkmnLeague
+	cp 26 ; PkmnLeague
+	jr nz, .LoadRoof
+	ld a, [wMapNumber]
+	cp 6 ; PkmnLeagueEntrance
 	ret z
 .LoadRoof
 	ld a, [wMapGroup]

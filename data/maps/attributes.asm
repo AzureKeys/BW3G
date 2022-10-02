@@ -358,4 +358,6 @@ ENDM
 	map_attributes VictoryRoadOutdoor1F, VICTORY_ROAD_OUTDOOR_1F, $4d, 0
 	map_attributes VictoryRoadOutdoor2F, VICTORY_ROAD_OUTDOOR_2F, $51, 0
 	map_attributes VictoryRoadGrove, VICTORY_ROAD_GROVE, $4f, 0
+	map_attributes PkmnLeagueEntrance, PKMN_LEAGUE_ENTRANCE, $21, 0
+	map_attributes PkmnLeagueMain, PKMN_LEAGUE_MAIN, $ec, 0
 	

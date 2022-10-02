@@ -63,6 +63,15 @@ LoadSpecialMapPalette:
 	ret
 
 .pkmn_league
+	ld a, [wMapGroup]
+	cp 1 ; mapgroup_Dungeons
+; PkmnLeagueMain is only map with Tileset PkmnLeague in Dungeons Group
+	jr z, .load_league
+; All other maps with PkmnLeague Tileset are in PkmnLeague Group
+	ld a, [wMapNumber]
+	cp 6 ; PkmnLeagueEntrance
+	jr z, .load_league
+; If not, it must be VictoryRoadEntrance
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .vr_entrance_nite
@@ -72,6 +81,19 @@ LoadSpecialMapPalette:
 	
 .vr_entrance_nite
 	call LoadVREntranceNitePalette
+	scf
+	ret
+	
+.load_league
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .league_nite
+	call LoadLeaguePalette
+	scf
+	ret
+	
+.league_nite
+	call LoadLeagueNitePalette
 	scf
 	ret
 
@@ -901,3 +923,25 @@ LoadVREntranceNitePalette:
 	
 VREntranceNitePalette:
 INCLUDE "gfx/tilesets/victory_road_nite.pal"
+
+LoadLeaguePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, LeaguePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+LeaguePalette:
+INCLUDE "gfx/tilesets/pkmn_league.pal"
+
+LoadLeagueNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, LeagueNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+LeagueNitePalette:
+INCLUDE "gfx/tilesets/pkmn_league_nite.pal"

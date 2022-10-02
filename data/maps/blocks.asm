@@ -651,4 +651,10 @@ VictoryRoadCave1F_Blocks:
 
 VictoryRoadGrove_Blocks:
 	INCBIN "maps/VictoryRoadGrove.ablk"
+
+PkmnLeagueEntrance_Blocks:
+	INCBIN "maps/PkmnLeagueEntrance.ablk"
+
+PkmnLeagueMain_Blocks:
+	INCBIN "maps/PkmnLeagueMain.ablk"
 	

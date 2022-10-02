@@ -24,7 +24,7 @@ Flypoints:
 	flypoint MISTRALTON,   MISTRALTON_CITY
 	flypoint OPELUCID,     OPELUCID_CITY
 	flypoint ICIRRUS,      ICIRRUS_CITY
-	flypoint PKMN_LEAGUE,      HUMILAU_CITY
+	flypoint PKMN_LEAGUE,  POKEMON_LEAGUE
 
 ; Kanto
 KANTO_FLYPOINT EQU const_value

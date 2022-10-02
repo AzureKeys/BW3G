@@ -387,6 +387,7 @@ IcirrusGroupSprites:
 
 PkmnLeagueGroupSprites:
 ; R23
+	db SPRITE_INFER
 	db SPRITE_OFFICER
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_COOLTRAINER_F

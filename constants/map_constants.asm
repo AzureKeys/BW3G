@@ -87,6 +87,7 @@ ENDM
 	map_const VICTORY_ROAD_OUTDOOR_1F, 32, 13
 	map_const VICTORY_ROAD_OUTDOOR_2F, 20, 21
 	map_const VICTORY_ROAD_GROVE, 9, 13
+	map_const PKMN_LEAGUE_MAIN, 14, 12
 	
 	newgroup                                                      ; 20
 
@@ -351,4 +352,5 @@ ENDM
 	map_const R_23_GATE, 5, 4
 	map_const R_23_HOUSE, 4, 4
 	map_const VICTORY_ROAD_ENTRANCE, 28, 20
+	map_const PKMN_LEAGUE_ENTRANCE, 15, 12
 	
