@@ -95,5 +95,6 @@ INCBIN "gfx/trainers/mysteryman.gbcpal", middle_colors
 INCBIN "gfx/trainers/zinzolin.gbcpal", middle_colors
 INCBIN "gfx/trainers/infer.gbcpal", middle_colors
 INCBIN "gfx/trainers/infer_sage.gbcpal", middle_colors
+INCBIN "gfx/trainers/infer2.gbcpal", middle_colors
 KrisPalette:
 INCLUDE "gfx/player/kris.pal"

@@ -90,3 +90,4 @@ TrainerGroups:
 	dba ZinzolinGroup
 	dba InferGroup
 	dba InferSageGroup
+	dba Infer2Group

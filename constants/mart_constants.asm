@@ -39,3 +39,4 @@
 	const MART_MALL_3
 	const MART_MALL_4
 	const MART_MALL_5
+	const MART_PKMN_LEAGUE

@@ -645,6 +645,7 @@ RoseliaBackpic:   INCBIN "gfx/pokemon/roselia/back.2bpp.lz"
 RoseradeBackpic:   INCBIN "gfx/pokemon/roserade/back.2bpp.lz"
 EggPic:   INCBIN "gfx/pokemon/egg/front.animated.2bpp.lz"
 InferSagePic:        INCBIN "gfx/trainers/infer_sage.2bpp.lz"
+Infer2Pic:        INCBIN "gfx/trainers/infer2.2bpp.lz"
 
 
 SECTION "Pics 19", ROMX

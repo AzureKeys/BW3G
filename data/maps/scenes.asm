@@ -78,4 +78,6 @@ MapScenes::
 	scene_var VICTORY_ROAD_ENTRANCE,                       wVictoryRoadEntranceSceneID
 	scene_var VICTORY_ROAD_CAVE_1F,                        wVictoryRoadCave1FSceneID
 	scene_var R_18,                                        wR18SceneID
+	scene_var PKMN_LEAGUE_ENTRANCE,                        wPkmnLeagueEntranceSceneID
+	scene_var PKMN_LEAGUE_MAIN,                            wPkmnLeagueMainSceneID
 	db -1

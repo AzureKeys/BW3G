@@ -29,6 +29,7 @@ Marts:
 	dw MartMall3
 	dw MartMall4
 	dw MartMall5
+	dw MartPkmnLeague
 .End
 
 MartUnderground:
@@ -349,6 +350,17 @@ MartMall5:
 	db FIRE_STONE
 	db WATER_STONE
 	db THUNDERSTONE
+	db -1 ; end
+
+MartPkmnLeague:
+	db 7 ; # items
+	db ULTRA_BALL
+	db MAX_POTION
+	db FULL_HEAL
+	db FULL_RESTORE
+	db REVIVE
+	db ESCAPE_ROPE
+	db MAX_REPEL
 	db -1 ; end
 
 DefaultMart:

@@ -32,10 +32,11 @@ VeteranFVictoryRoadCave3FAfterText:
 VictoryRoadCave3F_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
+	db 4 ; warp events
 	warp_event 19, 19, VICTORY_ROAD_OUTDOOR_2F, 4
 	warp_event  7, 29, VICTORY_ROAD_OUTDOOR_2F, 5
 	warp_event 15,  7, VICTORY_ROAD_OUTDOOR_2F, 6
+	warp_event  7,  5, PKMN_LEAGUE_ENTRANCE, 1
 
 	db 0 ; coord events
 

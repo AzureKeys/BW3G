@@ -94,6 +94,8 @@ DriftveilPokecenter1F_Blocks:
 MistraltonPokecenter1F_Blocks:
 OpelucidPokecenter1F_Blocks:
 IcirrusPokecenter1F_Blocks:
+VictoryRoadPokecenter1F_Blocks:
+PkmnLeaguePokecenter1F_Blocks:
 	INCBIN "maps/PokecenterNew.ablk"
 
 Colosseum_Blocks:

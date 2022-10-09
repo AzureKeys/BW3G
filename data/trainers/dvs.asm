@@ -89,3 +89,4 @@ TrainerClassDVs:
 	dn 14, 14, 14, 14 ; ZINZOLIN
 	dn 13, 13, 13, 13 ; INFER
 	dn 13, 13, 13, 13 ; INFER_SAGE
+	dn 13, 13, 13, 13 ; INFER2

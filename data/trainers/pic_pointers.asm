@@ -90,3 +90,4 @@ TrainerPicPointers::
 	dba ZinzolinPic
 	dba InferPic
 	dba InferSagePic
+	dba Infer2Pic

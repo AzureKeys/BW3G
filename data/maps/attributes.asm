@@ -360,4 +360,6 @@ ENDM
 	map_attributes VictoryRoadGrove, VICTORY_ROAD_GROVE, $4f, 0
 	map_attributes PkmnLeagueEntrance, PKMN_LEAGUE_ENTRANCE, $21, 0
 	map_attributes PkmnLeagueMain, PKMN_LEAGUE_MAIN, $ec, 0
+	map_attributes VictoryRoadPokecenter1F, VICTORY_ROAD_POKECENTER_1F, $00, 0
+	map_attributes PkmnLeaguePokecenter1F, PKMN_LEAGUE_POKECENTER_1F, $00, 0
 	

@@ -57,17 +57,26 @@ VictoryRoadEntranceBadge2Script:
 	appear VICTORYROADENTRANCE_BADGE_8_LOWER
 .done
 	end
+	
+VictoryRoadSign:
+	jumptext VictoryRoadSignText
+	
+VictoryRoadSignText:
+	text "VICTORY ROAD"
+	line "ahead."
+	done
 
 VictoryRoadEntrance_MapEvents:
 	db 0, 0 ; filler
 
-	db 6 ; warp events
+	db 7 ; warp events
 	warp_event 46, 35, R_23_WEST, 7
 	warp_event 47, 35, R_23_WEST, 8
 	warp_event  6,  4, VICTORY_ROAD_CAVE_1F, 1
 	warp_event  7,  4, VICTORY_ROAD_CAVE_1F, 2
 	warp_event  8,  4, VICTORY_ROAD_CAVE_1F, 3
 	warp_event  9,  4, VICTORY_ROAD_CAVE_1F, 4
+	warp_event 15,  5, VICTORY_ROAD_POKECENTER_1F, 1
 
 	db 14 ; coord events
 	coord_event 46, 34, SCENE_DEFAULT, VictoryRoadEntranceBadge1Script
@@ -85,7 +94,8 @@ VictoryRoadEntrance_MapEvents:
 	coord_event 26, 22, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
 	coord_event 27, 13, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
 
-	db 0 ; bg events
+	db 1 ; bg events
+	bg_event 10,  7, BGEVENT_READ, VictoryRoadSign
 	
 	db 16 ; object events
 	object_event 42, 26, SPRITE_BADGE_1, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
