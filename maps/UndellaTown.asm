@@ -371,7 +371,7 @@ UndellaTown_MapEvents:
 	db 6 ; warp events
 	warp_event 25,  7, R_13_UNDELLA_GATE, 3
 	warp_event 29,  9, UNDELLA_POKECENTER_1F, 1
-	warp_event 11,  5, UNDELLA_OLD_ROD_HOUSE, 1
+	warp_event 11,  7, UNDELLA_OLD_ROD_HOUSE, 1
 	warp_event 15,  7, MARINE_TUBE_ENTRANCE, 1
 	warp_event  4,  7, REVERSAL_MOUNTAIN_B1F, 1
 	warp_event 36, 13, SEASIDE_CAVE_1F, 2
@@ -381,10 +381,10 @@ UndellaTown_MapEvents:
 
 	db 6 ; bg events
 	bg_event  6,  8, BGEVENT_READ, UndellaReversalSign
-	bg_event 10,  6, BGEVENT_READ, UndellaFishingSign
+	bg_event 10,  8, BGEVENT_READ, UndellaFishingSign
 	bg_event 16,  8, BGEVENT_READ, UndellaMarineTubeSign
 	bg_event 27,  9, BGEVENT_READ, UndellaTownSign
-	bg_event  6, 18, BGEVENT_ITEM, UndellaTownPearl1
+	bg_event 18,  6, BGEVENT_ITEM, UndellaTownPearl1
 	bg_event  8, 16, BGEVENT_ITEM, UndellaTownPearl2
 
 	db 9 ; object events
@@ -396,5 +396,5 @@ UndellaTown_MapEvents:
 	object_event 18, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, UndellaTownFisher3TextScript, -1
 	object_event 25, 23, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, UndellaTownCooltrainerMTextScript, -1
 	object_event 35, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UndellaTownLuckyEgg, EVENT_UNDELLA_TOWN_LUCKY_EGG
-	object_event 14,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UndellaTownFriendBall, EVENT_UNDELLA_TOWN_FRIEND_BALL
+	object_event 11,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, UndellaTownFriendBall, EVENT_UNDELLA_TOWN_FRIEND_BALL
 	

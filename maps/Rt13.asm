@@ -333,14 +333,14 @@ Rt13_MapEvents:
 
 	db 3 ; warp events
 	warp_event  8,  3, GIANT_CHASM_1F, 2
-	warp_event 27, 45, R_13_UNDELLA_GATE, 1
-	warp_event 28, 45, R_13_UNDELLA_GATE, 2
+	warp_event 27, 49, R_13_UNDELLA_GATE, 1
+	warp_event 28, 49, R_13_UNDELLA_GATE, 2
 
 	db 0 ; coord events
 
 	db 3 ; bg events
 	bg_event  9,  5, BGEVENT_READ, R13Sign
-	bg_event 28, 42, BGEVENT_READ, R13UndellaSign
+	bg_event 28, 46, BGEVENT_READ, R13UndellaSign
 	bg_event  4, 27, BGEVENT_UP, R13HiddenGrotto
 
 	db 14 ; object events

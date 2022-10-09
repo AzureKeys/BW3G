@@ -113,7 +113,7 @@ ENDM
 	
 	newgroup
 	
-	map_const R_13, 18, 25
+	map_const R_13, 18, 27
 	map_const LACUNOSA_TOWN, 10, 11
 	map_const LACUNOSA_POKECENTER_1F, 5, 5 
 	map_const R_12, 14, 10
