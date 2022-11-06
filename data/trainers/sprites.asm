@@ -79,6 +79,10 @@ BTTrainerClassSprites:
 	db SPRITE_CILAN         ; cilan
 	db SPRITE_SKYLA         ; skyla
 	db SPRITE_DRAYDEN       ; drayden
+	db SPRITE_MARSHAL       ; marshal
+	db SPRITE_GRIMSLEY      ; grimsley
+	db SPRITE_ELESA         ; elesa
+	db SPRITE_COLRESS       ; colress
 	db SPRITE_BIANCA        ; bianca
 	db SPRITE_PZMA_SAGE     ; giallo
 	db SPRITE_PZMA_SAGE     ; bronius
@@ -88,4 +92,5 @@ BTTrainerClassSprites:
 	db SPRITE_PZMA_SAGE     ; zinzolin
 	db SPRITE_INFER         ; infer
 	db SPRITE_INFER_SAGE    ; infer_sage
+	db SPRITE_INFER         ; infer2
 	

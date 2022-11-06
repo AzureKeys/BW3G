@@ -86,6 +86,10 @@ INCBIN "gfx/trainers/cheren.gbcpal", middle_colors
 INCBIN "gfx/trainers/cilan.gbcpal", middle_colors
 INCBIN "gfx/trainers/skyla.gbcpal", middle_colors
 INCBIN "gfx/trainers/drayden.gbcpal", middle_colors
+INCBIN "gfx/trainers/marshal.gbcpal", middle_colors
+INCBIN "gfx/trainers/grimsley.gbcpal", middle_colors
+INCBIN "gfx/trainers/elesa.gbcpal", middle_colors
+INCBIN "gfx/trainers/colress.gbcpal", middle_colors
 INCBIN "gfx/trainers/bianca.gbcpal", middle_colors
 INCBIN "gfx/trainers/giallo.gbcpal", middle_colors
 INCBIN "gfx/trainers/bronius.gbcpal", middle_colors

@@ -81,6 +81,10 @@ TrainerGroups:
 	dba CilanGroup
 	dba SkylaGroup
 	dba DraydenGroup
+	dba MarshalGroup
+	dba GrimsleyGroup
+	dba ElesaGroup
+	dba ColressGroup
 	dba BiancaGroup
 	dba GialloGroup
 	dba BroniusGroup

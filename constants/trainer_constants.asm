@@ -573,6 +573,18 @@ CHRIS EQU __enum__
 	const DRAYDEN1
 	const DRAYDEN2
 	
+	trainerclass MARSHAL
+	const MARSHAL1
+	
+	trainerclass GRIMSLEY
+	const GRIMSLEY1
+	
+	trainerclass ELESA
+	const ELESA1
+	
+	trainerclass COLRESS
+	const COLRESS1
+	
 	trainerclass BIANCA
 	const BIANCA1
 	

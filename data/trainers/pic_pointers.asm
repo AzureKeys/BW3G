@@ -81,6 +81,10 @@ TrainerPicPointers::
 	dba CilanPic
 	dba SkylaPic
 	dba DraydenPic
+	dba MarshalPic
+	dba GrimsleyPic
+	dba ElesaPic
+	dba ColressPic
 	dba BiancaPic
 	dba GialloPic
 	dba BroniusPic
