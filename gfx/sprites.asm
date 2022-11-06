@@ -24,6 +24,10 @@ SocialiteSpriteGFX::           INCBIN "gfx/sprites/socialite.2bpp"
 LinebackerSpriteGFX::          INCBIN "gfx/sprites/linebacker.2bpp"
 CyclistMSpriteGFX::            INCBIN "gfx/sprites/cyclist_m.2bpp"
 CyclistFSpriteGFX::            INCBIN "gfx/sprites/cyclist_f.2bpp"
+MarshalSpriteGFX::             INCBIN "gfx/sprites/marshal.2bpp"
+GrimsleySpriteGFX::            INCBIN "gfx/sprites/grimsley.2bpp"
+ElesaSpriteGFX::               INCBIN "gfx/sprites/elesa.2bpp"
+ColressSpriteGFX::             INCBIN "gfx/sprites/colress.2bpp"
 
 
 SECTION "Sprites 2", ROMX

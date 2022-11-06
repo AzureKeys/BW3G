@@ -113,6 +113,10 @@
 	const SPRITE_LINEBACKER ; 6d
 	const SPRITE_CYCLIST_M ; 6e
 	const SPRITE_CYCLIST_F ; 6f
+	const SPRITE_MARSHAL ; 70
+	const SPRITE_GRIMSLEY ; 71
+	const SPRITE_ELESA ; 72
+	const SPRITE_COLRESS ; 73
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

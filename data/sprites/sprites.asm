@@ -117,3 +117,7 @@ OverworldSprites:
 	overworld_sprite LinebackerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite CyclistMSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite CyclistFSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite MarshalSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite GrimsleySpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite ElesaSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite ColressSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
