@@ -42,11 +42,11 @@ INCBIN "gfx/tilesets/complex.2bpp.lz"
 TilesetComplexMeta:
 INCBIN "data/tilesets/complex_metatiles.bin"
 
-TilesetComplexColl:
-INCLUDE "data/tilesets/complex_collision.asm"
-
 
 SECTION "Tileset Data 2", ROMX
+
+TilesetComplexColl:
+INCLUDE "data/tilesets/complex_collision.asm"
 
 TilesetPlayersRoomGFX:
 INCBIN "gfx/tilesets/players_room.2bpp.lz"

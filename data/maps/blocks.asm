@@ -659,4 +659,7 @@ PkmnLeagueEntrance_Blocks:
 
 PkmnLeagueMain_Blocks:
 	INCBIN "maps/PkmnLeagueMain.ablk"
+
+IcirrusCave_Blocks:
+	INCBIN "maps/IcirrusCave.ablk"
 	
