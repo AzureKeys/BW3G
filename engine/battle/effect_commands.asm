@@ -6078,6 +6078,8 @@ BattleCommand_Burn:
 	ld a, [wTypeModifier]
 	and $7f
 	jr z, .didnt_affect
+	call CheckMoveTypeMatchesTarget ; Don't burn a Fire-type
+	ret z
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_BURN
