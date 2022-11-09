@@ -29,7 +29,7 @@ NimbasaNameRater_MapEvents:
 
 	db 0 ; coord events
 
-	db 3 ; bg events
+	db 2 ; bg events
 	bg_event  2,  1, BGEVENT_READ, NimbasaNameRaterBookshelf
 	bg_event  7,  0, BGEVENT_READ, NimbasaNameRaterStairs
 
