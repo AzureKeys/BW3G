@@ -213,14 +213,20 @@ TilesetUnovaNorthAnim:
 	dw NULL,  DoneTileAnimation
 
 TilesetEliteFourRoomAnim:
-	dw NULL,  LavaBubbleAnim2
 	dw FanFrames1, AnimateFanTile
 	dw FanFrames2, AnimateFanTile
 	dw FanFrames3, AnimateFanTile
 	dw FanFrames4, AnimateFanTile
-	dw NULL,  LavaBubbleAnim1
-	dw NULL,  WaitTileAnimation
+	dw FireFrames1, AnimateFountainTile
+	dw FireFrames5, AnimateFountainTile
+	dw FireFrames2, AnimateFountainTile
+	dw FireFrames6, AnimateFountainTile
+	dw FireFrames3, AnimateFountainTile
+	dw FireFrames7, AnimateFountainTile
+	dw FireFrames4, AnimateFountainTile
+	dw FireFrames8, AnimateFountainTile
 	dw NULL,  StandingTileFrame8
+	dw NULL,  IncFountainFrame
 	dw NULL,  DoneTileAnimation
 
 TilesetCaveAnim:
@@ -1319,3 +1325,21 @@ FountainTiles3: INCBIN "gfx/tilesets/castelia-fountain/3.2bpp"
 FountainTiles4: INCBIN "gfx/tilesets/castelia-fountain/4.2bpp"
 FountainTiles5: INCBIN "gfx/tilesets/castelia-fountain/5.2bpp"
 FountainTiles6: INCBIN "gfx/tilesets/castelia-fountain/6.2bpp"
+
+FireFrames1: dw vTiles2 tile $0E, FireTiles1
+FireFrames2: dw vTiles2 tile $1E, FireTiles2
+FireFrames3: dw vTiles2 tile $2E, FireTiles3
+FireFrames4: dw vTiles2 tile $3E, FireTiles4
+FireFrames5: dw vTiles2 tile $0F, FireTiles5
+FireFrames6: dw vTiles2 tile $1F, FireTiles6
+FireFrames7: dw vTiles2 tile $2F, FireTiles7
+FireFrames8: dw vTiles2 tile $3F, FireTiles8
+
+FireTiles1: INCBIN "gfx/tilesets/grimsley-fire/1.2bpp"
+FireTiles2: INCBIN "gfx/tilesets/grimsley-fire/2.2bpp"
+FireTiles3: INCBIN "gfx/tilesets/grimsley-fire/3.2bpp"
+FireTiles4: INCBIN "gfx/tilesets/grimsley-fire/4.2bpp"
+FireTiles5: INCBIN "gfx/tilesets/grimsley-fire/5.2bpp"
+FireTiles6: INCBIN "gfx/tilesets/grimsley-fire/6.2bpp"
+FireTiles7: INCBIN "gfx/tilesets/grimsley-fire/7.2bpp"
+FireTiles8: INCBIN "gfx/tilesets/grimsley-fire/8.2bpp"
