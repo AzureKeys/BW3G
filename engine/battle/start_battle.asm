@@ -91,6 +91,16 @@ PlayBattleMusic:
 	; ld de, MUSIC_CHAMPION_BATTLE
 	; cp CHAMPION
 	; jr z, .done
+	
+	ld de, MUSIC_ELITE_FOUR
+	cp GRIMSLEY
+	jr z, .done
+	cp MARSHAL
+	jr z, .done
+	cp ELESA
+	jr z, .done
+	cp COLRESS
+	jr z, .done
 
 	ld de, MUSIC_ROCKET_BATTLE
 	cp GRUNTM

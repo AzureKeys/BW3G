@@ -662,4 +662,7 @@ PkmnLeagueMain_Blocks:
 
 IcirrusCave_Blocks:
 	INCBIN "maps/IcirrusCave.ablk"
+
+GrimsleysRoom_Blocks:
+	INCBIN "maps/GrimsleysRoom.ablk"
 	

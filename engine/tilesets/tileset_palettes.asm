@@ -269,7 +269,17 @@ LoadSpecialMapPalette:
 .elite_four_room
 	ld a, [wMapGroup]
 	cp 19 ; mapgroup_Mistralton
+	jr z, .MistraltonGym
+	cp 1 ; mapgroup_Dungeons
 	jp nz, .do_nothing
+	ld a, [wMapNumber]
+	cp 61 ; GrimsleysRoom
+	jp nz, .do_nothing
+	call LoadGrimsleyPalette
+	scf
+	ret
+	
+.MistraltonGym
 	call LoadMistraltonGymPalette
 	scf
 	ret
@@ -945,3 +955,14 @@ LoadLeagueNitePalette:
 	
 LeagueNitePalette:
 INCLUDE "gfx/tilesets/pkmn_league_nite.pal"
+
+LoadGrimsleyPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, GrimsleyPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+GrimsleyPalette:
+INCLUDE "gfx/tilesets/grimsley.pal"

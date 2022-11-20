@@ -137,3 +137,4 @@ Music:
 	dba Music_Solaceon
 	dba Music_IcirrusCity
 	dba Music_Mart
+	dba Music_UnovaEliteFourBattle

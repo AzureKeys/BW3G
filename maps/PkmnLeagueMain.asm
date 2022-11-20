@@ -20,12 +20,18 @@ PkmnLeagueMain_MapScripts:
 	end
 	
 .SetTiles:
-	checkscene SCENE_ELITE_FOUR_ROOM_ENTER
-	iftrue .Done
+; Set E4 Rooms to Enter Scene, so entry animation will play if Player re-enters a room
+	; setmapscene MARSHALS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
+	setmapscene GRIMSLEYS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
+	; setmapscene ELESAS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
+	; setmapscene COLRESSS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
+	
+	checkscene 
+	ifequal SCENE_ELITE_FOUR_ROOM_ENTER, .Done
 	changeblock 12, 14, $b9
 	changeblock 14, 14, $ba
-	checkscene SCENE_ELITE_FOUR_ROOM_FINISHED
-	iffalse .CheckMarshal
+	checkscene 
+	ifnotequal SCENE_ELITE_FOUR_ROOM_FINISHED, .CheckMarshal
 	changeblock 12, 12, $ee
 .CheckMarshal
 	checkevent EVENT_BEAT_ELITE_FOUR_MARSHAL
@@ -68,9 +74,14 @@ PkmnLeagueMainEnterMovement:
 PkmnLeagueMain_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 4 ; warp events
 	warp_event 13, 19, PKMN_LEAGUE_ENTRANCE, 2
 	warp_event 14, 19, PKMN_LEAGUE_ENTRANCE, 3
+	warp_event 13, 13, PKMN_LEAGUE_MAIN, 3
+	warp_event 10,  5, GRIMSLEYS_ROOM, 1
+	;warp_event  6,  9, COLRESSS_ROOM, 1
+	;warp_event 17,  5, ELESAS_ROOM, 1
+	;warp_event 21,  9, MARSHALS_ROOM, 1
 
 	db 0 ; coord events
 

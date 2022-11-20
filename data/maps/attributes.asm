@@ -363,4 +363,5 @@ ENDM
 	map_attributes PkmnLeagueMain, PKMN_LEAGUE_MAIN, $ec, 0
 	map_attributes VictoryRoadPokecenter1F, VICTORY_ROAD_POKECENTER_1F, $00, 0
 	map_attributes PkmnLeaguePokecenter1F, PKMN_LEAGUE_POKECENTER_1F, $00, 0
+	map_attributes GrimsleysRoom, GRIMSLEYS_ROOM, $00, 0
 	

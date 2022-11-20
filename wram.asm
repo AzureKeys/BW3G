@@ -2619,8 +2619,12 @@ wVictoryRoadCave1FSceneID::                       db ; d9c0
 wR18SceneID::                                     db ; d9c0
 wPkmnLeagueEntranceSceneID::                      db ; d9c0
 wPkmnLeagueMainSceneID::                          db ; d9c0
+wGrimsleysRoomSceneID::                           db ; d9c0
+wMarshalsRoomSceneID::                            db ; d9c0
+wElesasRoomSceneID::                              db ; d9c0
+wColresssRoomSceneID::                            db ; d9c0
 
-	ds 54
+	ds 50
 	
 wBattleHouseOpponent:: db
 wNumShards:: db

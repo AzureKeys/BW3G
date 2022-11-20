@@ -88,6 +88,7 @@ ENDM
 	map_const VICTORY_ROAD_OUTDOOR_2F, 20, 21
 	map_const VICTORY_ROAD_GROVE, 9, 13
 	map_const PKMN_LEAGUE_MAIN, 14, 12
+	map_const GRIMSLEYS_ROOM, 8, 7
 	
 	newgroup                                                      ; 20
 
