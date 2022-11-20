@@ -42,17 +42,21 @@ GrimsleysRoom_MapScripts:
 	iffalse .MovePlayer
 	changeblock  8,  4, $1f
 .MovePlayer
-	applymovement PLAYER, GrimsleysRoomEnterMovement1
+	pause 10
 	playsound SFX_EMBER
-	changeblock  2,  4, $06
-	changeblock  4, 10, $06
 	changeblock  4, 12, $06
-	changeblock 10,  4, $12
-	changeblock  8, 10, $07
 	changeblock  8, 12, $07
 	refreshscreen
-	waitsfx
+	applymovement PLAYER, GrimsleysRoomEnterMovement1
+	playsound SFX_EMBER
+	changeblock  4, 10, $06
+	changeblock  8, 10, $07
+	refreshscreen
 	applymovement PLAYER, GrimsleysRoomEnterMovement2
+	playsound SFX_EMBER
+	changeblock  2,  4, $06
+	changeblock 10,  4, $12
+	pause 30
 	playsound SFX_STRENGTH
 	earthquake 80
 	changeblock  6,  8, $09
@@ -93,6 +97,7 @@ GrimsleysRoomEnterMovement1:
 	step_end
 	
 GrimsleysRoomEnterMovement2:
+	step UP
 	step UP
 	step UP
 	step_end

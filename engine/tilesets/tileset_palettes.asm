@@ -274,7 +274,12 @@ LoadSpecialMapPalette:
 	jp nz, .do_nothing
 	ld a, [wMapNumber]
 	cp 61 ; GrimsleysRoom
-	jp nz, .do_nothing
+	jp z, .Grimsley
+	call LoadMarshalPalette
+	scf
+	ret
+	
+.Grimsley
 	call LoadGrimsleyPalette
 	scf
 	ret
@@ -966,3 +971,14 @@ LoadGrimsleyPalette:
 	
 GrimsleyPalette:
 INCLUDE "gfx/tilesets/grimsley.pal"
+
+LoadMarshalPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, MarshalPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+MarshalPalette:
+INCLUDE "gfx/tilesets/marshal.pal"

@@ -665,4 +665,7 @@ IcirrusCave_Blocks:
 
 GrimsleysRoom_Blocks:
 	INCBIN "maps/GrimsleysRoom.ablk"
+
+MarshalsRoom_Blocks:
+	INCBIN "maps/MarshalsRoom.ablk"
 	
