@@ -275,6 +275,13 @@ LoadSpecialMapPalette:
 	ld a, [wMapNumber]
 	cp 61 ; GrimsleysRoom
 	jp z, .Grimsley
+	cp 62 ; MarshalsRoom
+	jp z, .Marshal
+	call LoadElesaPalette
+	scf
+	ret
+	
+.Marshal
 	call LoadMarshalPalette
 	scf
 	ret
@@ -982,3 +989,14 @@ LoadMarshalPalette:
 	
 MarshalPalette:
 INCLUDE "gfx/tilesets/marshal.pal"
+
+LoadElesaPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, ElesaPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+ElesaPalette:
+INCLUDE "gfx/tilesets/elesa.pal"

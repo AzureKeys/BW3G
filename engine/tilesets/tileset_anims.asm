@@ -217,6 +217,7 @@ TilesetEliteFourRoomAnim:
 	dw FanFrames2, AnimateFanTile
 	dw FanFrames3, AnimateFanTile
 	dw FanFrames4, AnimateFanTile
+	dw NULL,  LightsAnim1
 	dw FireFrames1, AnimateFountainTile
 	dw FireFrames5, AnimateFountainTile
 	dw FireFrames2, AnimateFountainTile
@@ -225,6 +226,7 @@ TilesetEliteFourRoomAnim:
 	dw FireFrames7, AnimateFountainTile
 	dw FireFrames4, AnimateFountainTile
 	dw FireFrames8, AnimateFountainTile
+	dw NULL,  LightsAnim2
 	dw NULL,  StandingTileFrame8
 	dw NULL,  IncFountainFrame
 	dw NULL,  DoneTileAnimation
@@ -774,6 +776,50 @@ LavaBubbleFrames:
 	INCBIN "gfx/tilesets/lava/2.2bpp"
 	INCBIN "gfx/tilesets/lava/3.2bpp"
 	INCBIN "gfx/tilesets/lava/4.2bpp"
+
+LightsAnim1:
+; Splash in the bottom-right corner of the fountain.
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+	and %110
+	srl a
+	inc a
+	inc a
+	and %011
+	swap a
+	ld e, a
+	ld d, 0
+	ld hl, LightsFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $1d
+	jp WriteTile
+
+LightsAnim2:
+; Splash in the top-left corner of the fountain.
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+	and %110
+	add a
+	add a
+	add a
+	ld e, a
+	ld d, 0
+	ld hl, LightsFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $2d
+	jp WriteTile
+
+LightsFrames:
+	INCBIN "gfx/tilesets/lights/1.2bpp"
+	INCBIN "gfx/tilesets/lights/2.2bpp"
+	INCBIN "gfx/tilesets/lights/3.2bpp"
+	INCBIN "gfx/tilesets/lights/4.2bpp"
 
 AnimateTowerPillarTile:
 ; Read from struct at de:

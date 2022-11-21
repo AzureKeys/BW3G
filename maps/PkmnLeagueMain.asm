@@ -23,7 +23,7 @@ PkmnLeagueMain_MapScripts:
 ; Set E4 Rooms to Enter Scene, so entry animation will play if Player re-enters a room
 	setmapscene MARSHALS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
 	setmapscene GRIMSLEYS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
-	; setmapscene ELESAS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
+	setmapscene ELESAS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
 	; setmapscene COLRESSS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
 	
 	checkscene 
@@ -75,14 +75,14 @@ PkmnLeagueMainEnterMovement:
 PkmnLeagueMain_MapEvents:
 	db 0, 0 ; filler
 
-	db 5 ; warp events
+	db 6 ; warp events
 	warp_event 13, 19, PKMN_LEAGUE_ENTRANCE, 2
 	warp_event 14, 19, PKMN_LEAGUE_ENTRANCE, 3
 	warp_event 13, 13, PKMN_LEAGUE_MAIN, 3
 	warp_event 10,  5, GRIMSLEYS_ROOM, 1
 	warp_event 21,  9, MARSHALS_ROOM, 1
+	warp_event 17,  5, ELESAS_ROOM, 1
 	;warp_event  6,  9, COLRESSS_ROOM, 1
-	;warp_event 17,  5, ELESAS_ROOM, 1
 
 	db 0 ; coord events
 

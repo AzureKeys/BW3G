@@ -668,4 +668,7 @@ GrimsleysRoom_Blocks:
 
 MarshalsRoom_Blocks:
 	INCBIN "maps/MarshalsRoom.ablk"
+
+ElesasRoom_Blocks:
+	INCBIN "maps/ElesasRoom.ablk"
 	
