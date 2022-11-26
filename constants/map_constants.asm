@@ -87,10 +87,6 @@ ENDM
 	map_const VICTORY_ROAD_OUTDOOR_1F, 32, 13
 	map_const VICTORY_ROAD_OUTDOOR_2F, 20, 21
 	map_const VICTORY_ROAD_GROVE, 9, 13
-	map_const PKMN_LEAGUE_MAIN, 14, 12
-	map_const GRIMSLEYS_ROOM, 8, 7
-	map_const MARSHALS_ROOM, 8, 7
-	map_const ELESAS_ROOM, 8, 7
 	
 	newgroup                                                      ; 20
 
@@ -359,4 +355,8 @@ ENDM
 	map_const PKMN_LEAGUE_ENTRANCE, 15, 12
 	map_const VICTORY_ROAD_POKECENTER_1F, 5, 5
 	map_const PKMN_LEAGUE_POKECENTER_1F, 5, 5
+	map_const PKMN_LEAGUE_MAIN, 14, 12
+	map_const GRIMSLEYS_ROOM, 8, 7
+	map_const MARSHALS_ROOM, 8, 7
+	map_const ELESAS_ROOM, 8, 7
 	

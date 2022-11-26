@@ -177,6 +177,8 @@ INCLUDE "audio/music/mistraltoncity.asm"
 INCLUDE "audio/music/icirruscity.asm"
 INCLUDE "audio/music/mart.asm"
 INCLUDE "audio/music/elitefour.asm"
+INCLUDE "audio/music/aspertiacity.asm"
+INCLUDE "audio/music/BWpokemonLeagueV2.asm"
 
 SECTION "Sound Effects", ROMX
 

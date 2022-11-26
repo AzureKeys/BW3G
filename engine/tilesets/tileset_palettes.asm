@@ -63,15 +63,11 @@ LoadSpecialMapPalette:
 	ret
 
 .pkmn_league
-	ld a, [wMapGroup]
-	cp 1 ; mapgroup_Dungeons
-; PkmnLeagueMain is only map with Tileset PkmnLeague in Dungeons Group
-	jr z, .load_league
-; All other maps with PkmnLeague Tileset are in PkmnLeague Group
+; All maps with PkmnLeague Tileset are in PkmnLeague Group
 	ld a, [wMapNumber]
-	cp 6 ; PkmnLeagueEntrance
-	jr z, .load_league
-; If not, it must be VictoryRoadEntrance
+	cp 5 ; VictoryRoadEntrance
+; If not, it must be PkmnLeagueEntrance/Main
+	jr nz, .load_league
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .vr_entrance_nite
@@ -270,12 +266,12 @@ LoadSpecialMapPalette:
 	ld a, [wMapGroup]
 	cp 19 ; mapgroup_Mistralton
 	jr z, .MistraltonGym
-	cp 1 ; mapgroup_Dungeons
+	cp 26 ; mapgroup_PkmnLeague
 	jp nz, .do_nothing
 	ld a, [wMapNumber]
-	cp 61 ; GrimsleysRoom
+	cp 10 ; GrimsleysRoom
 	jp z, .Grimsley
-	cp 62 ; MarshalsRoom
+	cp 11 ; MarshalsRoom
 	jp z, .Marshal
 	call LoadElesaPalette
 	scf

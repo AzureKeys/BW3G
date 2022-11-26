@@ -139,6 +139,8 @@
 	const MUSIC_ICIRRUS_CITY
 	const MUSIC_MART
 	const MUSIC_ELITE_FOUR
+	const MUSIC_PKMN_LEAGUE
+	const MUSIC_OPELUCID_CITY
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $fc

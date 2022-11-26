@@ -120,7 +120,7 @@ Music:
 	dba Music_CasteliaCity
 	dba Music_RoadToReversalMountain
 	dba Music_AccumulaTown
-	dba Music_AnvilleTown
+	dba Music_AspertiaCity
 	dba Music_SinnohGameCorner
 	dba Music_OldaleTown
 	dba Music_JubilifeCity
@@ -134,7 +134,9 @@ Music:
 	dba Music_DriftveilCity
 	dba Music_UnovaRoute6
 	dba Music_CasteliaSewers
-	dba Music_Solaceon
+	dba Music_MistraltonCity
 	dba Music_IcirrusCity
 	dba Music_Mart
 	dba Music_UnovaEliteFourBattle
+	dba Music_BWPokemonLeague
+	dba Music_AnvilleTown
