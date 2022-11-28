@@ -66,25 +66,26 @@ Hiker1ReversalAfterText:
 	done
 	
 BattleGirlReversalSeenText:
-	text "You're headed to"
-	line "LENTIMAS, are you?"
-
-	para "Let my #MON see"
-	line "if you are good"
-	cont "enough to battle."
+	text "I can feel the"
+	line "energy that over-"
+	
+	para "flows from the"
+	line "earth!"
 	done
 
 BattleGirlReversalBeatenText:
-	text "Oh, oh, oh!"
+	text "I felt the energy"
+	line "that overflowed"
+	cont "from your #MON!"
 	done
 
 BattleGirlReversalAfterText:
-	text "All right, then!"
-	line "I've decided."
+	text "This mountain was"
+	line "once a volcano."
 
-	para "I'm not leaving"
-	line "until my #MON"
-	cont "get tougher!"
+	para "And volcanoes hold"
+	line "the planet's"
+	cont "energy!"
 	done
 	
 ReversalMountainB1F_MapEvents:

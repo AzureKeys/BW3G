@@ -132,15 +132,26 @@ MistraltonCave2FMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_MISTRALTON_CAVE_MAX_REVIVE
 	
 AceTrainerMMistraltonCaveSeenText:
-	text "..."
+	text "Behold my"
+	line "impressive"
+	
+	para "physique. It's"
+	line "fitting of an ACE"
+	cont "TRAINER!"
 	done
 
 AceTrainerMMistraltonCaveBeatenText:
-	text "..."
+	text "My #MON didn't"
+	line "do my physique"
+	cont "justice!"
 	done
 
 AceTrainerMMistraltonCaveAfterText:
-	text "..."
+	text "You can do all"
+	line "sorts of crazy"
+	
+	para "stuff as long as"
+	line "you've got energy!"
 	done
 	
 AceTrainerFMistraltonCaveSeenText:

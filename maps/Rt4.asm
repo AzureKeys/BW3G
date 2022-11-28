@@ -292,25 +292,27 @@ Fisher1R4AfterText:
 	done
 	
 Fisher2R4SeenText:
-	text "I'm really good at"
-	line "both fishing and"
-	cont "#MON."
+	text "Check out my"
+	line "lively #MON,"
 
-	para "I'm not about to"
-	line "lose to any kid!"
+	para "which I've"
+	line "gathered from all"
+	cont "around UNOVA!"
 	done
 
 Fisher2R4BeatenText:
-	text "Tch! I tried to"
-	line "rush things…"
+	text "Mm hm… Looks like"
+	line "you're even more"
+	cont "lively and fresh!"
 	done
 
 Fisher2R4AfterText:
-	text "Fishing is a life-"
-	line "long passion."
+	text "As long as you've"
+	line "got momentum, you"
 
-	para "#MON are life-"
-	line "long friends!"
+	para "don't need"
+	line "experience or"
+	cont "knowledge!"
 	done
 	
 LadyR4SeenText:

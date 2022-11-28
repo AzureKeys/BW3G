@@ -233,41 +233,35 @@ MaidR1AfterText:
 	done
 	
 BlackbeltR1SeenText:
-	text "I'll go anywhere"
-	line "if bug #MON"
-	cont "appear there."
+	text "This is my path!"
 	done
 
 BlackbeltR1BeatenText:
-	text "Huh? I shouldn't"
-	line "have lost that…"
+	text "This is everyone's"
+	line "path!"
 	done
 
 BlackbeltR1AfterText:
-	text "I caught my #-"
-	line "MON in PINWHEEL"
-	cont "FOREST."
+	text "Go forth on your"
+	line "path!"
 	done
 	
 BattleGirlR1SeenText:
-	text "You shouldn't"
-	line "underestimate the"
-
-	para "wild #MON in"
-	line "these parts."
+	text "Let me test what"
+	line "fighting style is"
+	cont "more effective!"
 	done
 
 BattleGirlR1BeatenText:
-	text "Oh! You're much"
-	line "too strong!"
+	text "By any chance, are"
+	line "you a battle"
+	cont "genius?"
 	done
 
 BattleGirlR1AfterText:
-	text "You're just a kid,"
-	line "but you're not to"
-
-	para "be underestimated"
-	line "either."
+	text "To get stronger,"
+	line "have battles with"
+	cont "your friends!"
 	done
 	
 TwinsR1SeenText:

@@ -144,129 +144,152 @@ R17DoctorHealText:
 	done
 	
 Fisher1R17SeenText:
-	text "I'm in a slump."
-
-	para "Maybe it's the"
-	line "gear I'm using."
-
-	para "Let's battle for a"
-	line "change of pace!"
+	text "I'm showing off"
+	line "the sea to my"
+	cont "beloved #MON…"
 	done
 
 Fisher1R17BeatenText:
-	text "I lost, but I feel"
-	line "better anyway."
+	text "Wow! How powerful!"
 	done
 
 Fisher1R17AfterText:
-	text "The LURE BALL"
-	line "is the best for"
+	text "I want to see all"
+	line "kinds of scenery!"
 
-	para "catching hooked"
-	line "#MON."
+	para "You can only truly"
+	line "have hope for"
 
-	para "It's much more"
-	line "effective than a"
-	cont "ULTRA BALL."
+	para "tomorrow when you"
+	line "learn how big the"
+	
+	para "world is and how"
+	line "small you are!"
 	done
 	
 Fisher2R17SeenText:
-	text "Let me demonstrate"
-	line "the power of the"
-	cont "#MON I caught!"
+	text "The sounds of"
+	line "gently crashing"
+	
+	para "waves… The smell"
+	line "of salt in the"
+	
+	para "air… And a battle"
+	line "with a trainer!"
 	done
 
 Fisher2R17BeatenText:
-	text "What? That's not"
-	line "right."
+	text "Simply excellent!"
+	line "That's what being"
+	cont "young is about!"
 	done
 
 Fisher2R17AfterText:
-	text "I want to become"
-	line "the trainer CHAMP"
+	text "I feel rejuvenated"
+	line "when I get the"
 
-	para "using the #MON"
-	line "I caught."
+	para "chance to have a"
+	line "battle with some-"
 
-	para "That's the best"
-	line "part of fishing!"
+	para "one younger than"
+	line "myself!"
 	done
 	
 SwimmerM1R17SeenText:
-	text "Have you ever gone"
-	line "swimming in the"
-	cont "sea at night?"
+	text "I've been taking"
+	line "on the #MON"
+	
+	para "Gyms all across"
+	line "the world!"
 	done
 
 SwimmerM1R17BeatenText:
-	text "Glub…"
+	text "I couldn't defeat"
+	line "them all, but I"
+	
+	para "learned a lot, and"
+	line "became stronger!"
 	done
 
 SwimmerM1R17AfterText:
-	text "At night, the sea"
-	line "turns black. It"
+	text "It's fine! I just"
+	line "want to have fun"
 
-	para "feels like it will"
-	line "swallow you up."
+	para "with #MON"
+	line "battles!"
 	done
 	
 SwimmerM2R17SeenText:
-	text "Pant, pant…"
-	line "Just… a little…"
+	text "We spend our lives"
+	line "swimming! Of"
 
-	para "farther… to…"
-	line "land…"
+	para "course we battle"
+	line "while swimming,"
+	cont "too!"
 	done
 
 SwimmerM2R17BeatenText:
-	text "I'm drowning!"
+	text "I lost, but I'm"
+	line "still cool. Not"
+	
+	para "many people can"
+	line "say they've"
+	
+	para "battled while"
+	line "swimming!"
 	done
 
 SwimmerM2R17AfterText:
-	text "I… asked my girl-"
-	line "friend to swim to"
-	cont "ROUTE 18… Gasp…"
+	text "My #MON and I"
+	line "saw it with our"
+	
+	para "own eyes! I'm"
+	line "talking about the"
+	
+	para "secret lab on the"
+	line "island here!"
 	done
 	
 SwimmerF1R17SeenText:
-	text "I'm disgusted by"
-	line "wimpy people!"
+	text "Time for an"
+	line "aquatic battle in"
+	cont "the sea!"
 	done
 
 SwimmerF1R17BeatenText:
-	text "I could beat you"
-	line "at swimming…"
+	text "I'm just going to"
+	line "float on by…"
 	done
 
 SwimmerF1R17AfterText:
-	text "It's a quick swim"
-	line "between ROUTE 18"
-	cont "and NUVEMA TOWN…"
+	text "Sometimes jelly-"
+	line "fish #MON are"
 
-	para "Sheesh, some big"
-	line "man my boyfriend"
-
-	para "is! What a wimp!"
+	para "floating in the"
+	line "water around here!"
 	done
 	
 SwimmerF2R17SeenText:
-	text "Swimming?"
-	line "I'm lousy at it."
+	text "Seeing a #MON"
+	line "use its best moves"
 
-	para "I'm just splashing"
-	line "around in these"
-	cont "shallow waters."
+	para "against another"
+	line "#MON is really"
+	cont "an adventure!"
 	done
 
 SwimmerF2R17BeatenText:
-	text "I thought I could"
-	line "win."
+	text "The adventure is"
+	line "over already."
 	done
 
 SwimmerF2R17AfterText:
-	text "I might be bad at"
-	line "swimming, but I"
-	cont "love the sea."
+	text "It appears that my"
+	line "vacation shall"
+	cont "never end."
+	
+	para "I wonder if that's"
+	line "okay…"
 	done
 	
 R17SignText:

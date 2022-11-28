@@ -36,27 +36,45 @@ NacreneOutskirtMaxElixer:
 	hiddenitem MAX_ELIXER, EVENT_NACRENE_OUTSKIRT_MAX_ELIXER
 	
 BattleGirlNacreneSeenText:
-	text "..."
+	text "Heh, I wonder what"
+	line "would happen if I"
+	
+	para "had all my #MON"
+	line "attack at once?"
 	done
 
 BattleGirlNacreneBeatenText:
-	text "..."
+	text "I couldn't focus"
+	line "on the target!"
 	done
 
 BattleGirlNacreneAfterText:
-	text "..."
+	text "A flood of attacks"
+	line "from #MON…"
+	
+	para "I know! Jetstream"
+	line "Attack! Let's call"
+	cont "it that!"
 	done
 	
 BlackbeltNacreneSeenText:
-	text "..."
+	text "I will read your"
+	line "mind and predict"
+	cont "your every move!"
 	done
 
 BlackbeltNacreneBeatenText:
-	text "..."
+	text "Your moves… They"
+	line "are entirely"
+	cont "unpredictable!"
 	done
 
 BlackbeltNacreneAfterText:
-	text "..."
+	text "I am a trainer who"
+	line "fights as freely"
+	
+	para "as the clouds"
+	line "drift in the sky!"
 	done
 
 NacreneOutskirtEast_MapEvents:

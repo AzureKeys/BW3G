@@ -335,23 +335,26 @@ PinwheelOfficerText:
 	done
 	
 PkmnRangerMPinwheel1SeenText:
-	text "Why don't girls"
-	line "like bug #MON?"
+	text "Onward, my bug"
+	line "#MON swarm!"
 	done
 
 PkmnRangerMPinwheel1BeatenText:
-	text "No good!"
+	text "Pretty cool, huh?"
+	line "My bug-type #-"
+	cont "MON are the best!"
 	done
 
 PkmnRangerMPinwheel1AfterText:
-	text "Bug #MON squish"
-	line "like plush toys"
+	text "It's not like I'm"
+	line "collecting them,"
 
-	para "when you squeeze"
-	line "their bellies."
+	para "but when I'm with"
+	line "lots of bug-type"
 
-	para "I love how they"
-	line "feel!"
+	para "#MON, my lust"
+	line "for adventure is"
+	cont "fulfilled!"
 	done
 	
 PkmnRangerMPinwheel2SeenText:
@@ -442,22 +445,27 @@ PsychicMPinwheelAfterText:
 	done
 	
 HexManiacPinwheelSeenText:
-	text "Can you inflict"
-	line "any damage on my"
-	cont "#MON?"
+	text "You… Who are you?"
+	
+	para "There is another"
+	line "person here aside"
+	cont "from me?"
 	done
 
 HexManiacPinwheelBeatenText:
-	text "Ah! Well done!"
+	text "So, you are a"
+	line "normal person… A"
+	
+	para "normal #MON"
+	line "trainer…"
 	done
 
 HexManiacPinwheelAfterText:
-	text "I use only ghost-"
-	line "type #MON."
+	text "So many feelings"
+	line "fill this forest,"
 
-	para "No normal-type"
-	line "attack can harm"
-	cont "them!"
+	para "giving rise to a"
+	line "mysterious energy."
 	done
 	
 LassPinwheelSeenText:

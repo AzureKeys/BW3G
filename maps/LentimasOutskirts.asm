@@ -242,42 +242,48 @@ OutskirtsDoctorHealText:
 	done
 	
 CyclistFOutskirtsSeenText:
-	text "That BADGE! It's"
-	line "from HUMILAU CITY!"
+	text "Shift gears and"
+	line "Bob's your uncle!"
 
-	para "You beat MARLON?"
+	para "You'll be going"
+	line "full speed in no"
+	cont "time!"
 	done
 
 CyclistFOutskirtsBeatenText:
-	text "I know what my"
-	line "weaknesses are."
+	text "No matter how I"
+	line "shift my gears, it"
+	
+	para "looks like I'll"
+	line "never match your"
+	cont "speed!"
 	done
 
 CyclistFOutskirtsAfterText:
-	text "I should train"
-	line "more at the GYM"
-	cont "in LENTIMAS TOWN."
+	text "Whee! Mountain"
+	line "biking is tough,"
+	
+	para "but that's why"
+	line "it's so fun!"
 	done
 	
 CyclistMOutskirtsSeenText:
-	text "I'm confident in"
-	line "my ability to"
-	cont "raise #MON."
-
-	para "Want to see?"
+	text "Yahooo! If you"
+	line "call, I'll come"
+	cont "right away!"
 	done
 
 CyclistMOutskirtsBeatenText:
-	text "Did I screw up my"
-	line "training?"
+	text "I'm on fire, baby!"
+	line "On fire!"
 	done
 
 CyclistMOutskirtsAfterText:
-	text "Maybe I should"
-	line "take one to a DAY-"
+	text "Riding a bicycle"
+	line "is fun, but I want"
 
-	para "CARE. Or maybe use"
-	line "some items…"
+	para "to ride away on a"
+	line "#MON!"
 	done
 	
 PkmnRangerFOutskirtsSeenText:

@@ -274,19 +274,27 @@ LassR2AfterText:
 	done
 	
 SocialiteR2SeenText:
-	text "Hey! Do you have"
-	line "any rare #MON?"
+	text "Hello there, young"
+	line "trainer. Please,"
+	
+	para "battle with me for"
+	line "a spell."
 	done
 
 SocialiteR2BeatenText:
-	text "Oh, my poor #-"
-	line "MON! Darlings!"
+	text "My, oh my. Looks"
+	line "like I lost!"
 	done
 
 SocialiteR2AfterText:
-	text "I'd be happy just"
-	line "to own a single"
-	cont "rare #MON."
+	text "When I was young,"
+	line "I traveled all"
+	
+	para "around, together"
+	line "with my #MON."
+	
+	para "Oh, I was such a"
+	line "tomboy! Ah ha ha!"
 	done
 	
 GentlemanR2SeenText:

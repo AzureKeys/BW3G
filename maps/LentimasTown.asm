@@ -102,8 +102,9 @@ LentimasTownGuardHavePassText:
 LentimasTownGrannyText:
 	text "What brings one so"
 	line "young as you to"
-	cont "our sleepy little"
-	cont "town?"
+	
+	para "our sleepy little"
+	line "town?"
 	
 	para "Strange things are"
 	line "known to have"
@@ -131,8 +132,9 @@ LentimasTownRangerFText:
 	
 	para "But first, I need"
 	line "to be able to at"
-	cont "least see the"
-	cont "spirits…"
+	
+	para "least see the"
+	line "spirits…"
 	done
 	
 LentimasAirportSignText:

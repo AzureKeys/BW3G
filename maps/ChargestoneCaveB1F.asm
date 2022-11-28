@@ -170,18 +170,22 @@ Hiker2ChargestoneAfterText:
 	done
 	
 BattleGirlChargestoneSeenText:
-	text "I've been honing"
-	line "my skills for this"
-	cont "moment!"
+	text "Ai! Ai! Ai!"
+	line "Hi-yaaah!"
 	done
 
 BattleGirlChargestoneBeatenText:
-	text "Wooaargh!"
+	text "Aww… It was my"
+	line "turn next…"
 	done
 
 BattleGirlChargestoneAfterText:
-	text "I guess it wasn't"
-	line "enough…"
+	text "If you like"
+	line "sparring with"
+	
+	para "#MON, you've"
+	line "got to see SKYLA"
+	cont "in MISTRALTON gym!"
 	done
 	
 ScientistFChargestoneSeenText:

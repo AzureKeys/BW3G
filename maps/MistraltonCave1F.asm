@@ -115,27 +115,43 @@ MistraltonCave1FCarbos:
 	hiddenitem CARBOS, EVENT_MISTRALTON_CAVE_CARBOS
 	
 Hiker1MistraltonCaveSeenText:
-	text "..."
+	text "Whooo! Mountain!!"
 	done
 
 Hiker1MistraltonCaveBeatenText:
-	text "..."
+	text "Let the scales"
+	line "fall from your"
+	cont "eyes!"
 	done
 
 Hiker1MistraltonCaveAfterText:
-	text "..."
+	text "Mountains are"
+	line "sacred places. I"
+	
+	para "am here to purify"
+	line "my heart and mind."
 	done
 	
 Hiker2MistraltonCaveSeenText:
-	text "..."
+	text "I'll knock you"
+	line "down with mountain"
+	cont "power!"
 	done
 
 Hiker2MistraltonCaveBeatenText:
-	text "..."
+	text "Your power is off"
+	line "the charts!"
 	done
 
 Hiker2MistraltonCaveAfterText:
-	text "..."
+	text "As great as a"
+	line "mountain… That's"
+	
+	para "right! I'll become"
+	line "a mountain man!"
+	
+	para "Oh wait, I suppose"
+	line "I already am!"
 	done
 	
 MistraltonCave1FBoulderFellText:

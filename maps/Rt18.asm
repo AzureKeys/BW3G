@@ -229,19 +229,22 @@ BlackbeltR18AfterText:
 	done
 	
 BattleGirlR18SeenText:
-	text "I'm gonna win,"
-	line "for sure!"
+	text "Number! Eight!"
+	line "Teen!"
 	done
 
 BattleGirlR18BeatenText:
-	text "Arrgh… That's a"
-	line "shocking loss…"
+	text "OK! Thank you very"
+	line "much!"
 	done
 
 BattleGirlR18AfterText:
-	text "It's important to"
-	line "have conviction"
-	cont "on your side."
+	text "Whether they win"
+	line "or lose, #MON"
+	
+	para "can become just a"
+	line "bit stronger after"
+	cont "each battle."
 	done
 	
 BackpackerMR18SeenText:
