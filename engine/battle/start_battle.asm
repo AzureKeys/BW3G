@@ -70,20 +70,11 @@ PlayBattleMusic:
 	and a
 	jr nz, .trainermusic
 
-	farcall RegionCheck
-	ld a, e
-	and a
-	jr nz, .kantowild
-
 	ld de, MUSIC_JOHTO_WILD_BATTLE
 	ld a, [wTimeOfDay]
 	cp NITE_F
 	jp nz, .done
 	ld de, MUSIC_JOHTO_WILD_BATTLE_NIGHT
-	jr .done
-
-.kantowild
-	ld de, MUSIC_JOHTO_WILD_BATTLE
 	jr .done
 
 .trainermusic
@@ -120,10 +111,6 @@ PlayBattleMusic:
 	cp INFER_SAGE
 	jr z, .done
 
-	ld de, MUSIC_JOHTO_GYM_LEADER_BATTLE
-	farcall IsKantoGymLeader
-	jr c, .done
-
 	; IsGymLeader also counts CHAMPION, RED, and the Kanto gym leaders
 	; but they have been taken care of before this
 	ld de, MUSIC_JOHTO_GYM_LEADER_BATTLE
@@ -134,21 +121,9 @@ PlayBattleMusic:
 	ld a, [wOtherTrainerClass]
 	cp INFER
 	jr z, .done
+	cp INFER2
+	jr z, .done
 
-	ld a, [wLinkMode]
-	and a
-	jr nz, .johtotrainer
-
-	farcall RegionCheck
-	ld a, e
-	and a
-	jr nz, .kantotrainer
-
-.johtotrainer
-	ld de, MUSIC_JOHTO_TRAINER_BATTLE
-	jr .done
-
-.kantotrainer
 	ld de, MUSIC_JOHTO_TRAINER_BATTLE
 
 .done

@@ -10,6 +10,10 @@ GymLeaders:
 	db CILAN
 	db SKYLA
 	db DRAYDEN
+	db ELESA
+	db MARSHAL
+	db GRIMSLEY
+	db COLRESS
 ; fallthrough
 KantoGymLeaders:
 	db -1
