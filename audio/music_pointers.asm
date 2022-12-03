@@ -60,7 +60,7 @@ Music:
 	dba Music_LookYoungster
 	dba Music_LookBeauty
 	dba Music_LookRocket
-	dba Music_LookPokemaniac
+	dba Music_LookPsychic
 	dba Music_LookSage
 	dba Music_NewBarkTown
 	dba Music_GoldenrodCity

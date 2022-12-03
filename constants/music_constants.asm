@@ -60,7 +60,7 @@
 	const MUSIC_YOUNGSTER_ENCOUNTER          ; 37
 	const MUSIC_BEAUTY_ENCOUNTER             ; 38
 	const MUSIC_ROCKET_ENCOUNTER             ; 39
-	const MUSIC_POKEMANIAC_ENCOUNTER         ; 3a
+	const MUSIC_PSYCHIC_ENCOUNTER            ; 3a
 	const MUSIC_SAGE_ENCOUNTER               ; 3b
 	const MUSIC_NEW_BARK_TOWN                ; 3c
 	const MUSIC_GOLDENROD_CITY               ; 3d

@@ -29,7 +29,7 @@ SECTION "Songs 2", ROMX
 
 INCLUDE "audio/music/vermilioncity.asm"
 INCLUDE "audio/music/ruinsofalphinterior.asm"
-INCLUDE "audio/music/lookpokemaniac.asm"
+INCLUDE "audio/music/lookpsychic.asm"
 INCLUDE "audio/music/trainervictory.asm"
 INCLUDE "audio/music/route1.asm"
 INCLUDE "audio/music/route3.asm"
