@@ -61,7 +61,7 @@ Music:
 	dba Music_LookLady
 	dba Music_LookRocket
 	dba Music_LookPsychic
-	dba Music_LookSage
+	dba Music_LookScientist
 	dba Music_NewBarkTown
 	dba Music_GoldenrodCity
 	dba Music_VermilionCity

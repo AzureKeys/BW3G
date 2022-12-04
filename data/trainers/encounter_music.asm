@@ -11,7 +11,7 @@ TrainerEncounterMusic::
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainermD
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainerf
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainerfD
-	db MUSIC_SAGE_ENCOUNTER        ; artist
+	db MUSIC_SCIENTIST_ENCOUNTER   ; artist
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; backersm
 	db MUSIC_LASS_ENCOUNTER        ; backersf
 	db MUSIC_HIKER_ENCOUNTER       ; backpackerm
@@ -25,14 +25,14 @@ TrainerEncounterMusic::
 	db MUSIC_CYCLIST_ENCOUNTER     ; cyclistf
 	db MUSIC_HIKER_ENCOUNTER       ; dancer
 	db MUSIC_CYCLIST_ENCOUNTER     ; depotagent
-	db MUSIC_SAGE_ENCOUNTER        ; doctor
-	db MUSIC_SAGE_ENCOUNTER        ; nurse
+	db MUSIC_SCIENTIST_ENCOUNTER   ; doctor
+	db MUSIC_SCIENTIST_ENCOUNTER   ; nurse
 	db MUSIC_HIKER_ENCOUNTER       ; fisher
 	db MUSIC_HIKER_ENCOUNTER       ; fisherD
 	db MUSIC_HIKER_ENCOUNTER       ; gentleman
 	db MUSIC_HIKER_ENCOUNTER       ; guitarist
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; harlequin
-	db MUSIC_SAGE_ENCOUNTER        ; hexmaniac
+	db MUSIC_SCIENTIST_ENCOUNTER   ; hexmaniac
 	db MUSIC_HIKER_ENCOUNTER       ; hiker
 	db MUSIC_HIKER_ENCOUNTER       ; hikerD
 	db MUSIC_HIKER_ENCOUNTER       ; hoopster
@@ -58,8 +58,8 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; richboy
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolkidm
 	db MUSIC_LASS_ENCOUNTER        ; schoolkidf
-	db MUSIC_CYCLIST_ENCOUNTER     ; scientistm
-	db MUSIC_CYCLIST_ENCOUNTER     ; scientistf
+	db MUSIC_SCIENTIST_ENCOUNTER   ; scientistm
+	db MUSIC_SCIENTIST_ENCOUNTER   ; scientistf
 	db MUSIC_LASS_ENCOUNTER        ; smasher
 	db MUSIC_LADY_ENCOUNTER        ; socialite
 	db MUSIC_CYCLIST_ENCOUNTER     ; swimmerm
