@@ -8,9 +8,6 @@
 	const MUSIC_ROUTE_3                      ; 03
 	const MUSIC_ROUTE_12                     ; 04
 	const MUSIC_MAGNET_TRAIN                 ; 05
-	;const MUSIC_KANTO_GYM_LEADER_BATTLE      ; 06
-	;const MUSIC_KANTO_TRAINER_BATTLE         ; 07
-	;const MUSIC_KANTO_WILD_BATTLE            ; 08
 	const MUSIC_POKEMON_CENTER               ; 09
 	const MUSIC_HIKER_ENCOUNTER              ; 0a
 	const MUSIC_LASS_ENCOUNTER               ; 0b
@@ -141,6 +138,7 @@
 	const MUSIC_ELITE_FOUR
 	const MUSIC_PKMN_LEAGUE
 	const MUSIC_OPELUCID_CITY
+	const MUSIC_ROUGHNECK_ENCOUNTER
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $fc

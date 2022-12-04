@@ -19,8 +19,8 @@ TrainerEncounterMusic::
 	db MUSIC_LADY_ENCOUNTER        ; baker
 	db MUSIC_PSYCHIC_ENCOUNTER     ; blackbelt
 	db MUSIC_PSYCHIC_ENCOUNTER     ; battlegirl
-	db MUSIC_HIKER_ENCOUNTER       ; biker
-	db MUSIC_HIKER_ENCOUNTER       ; roughneck
+	db MUSIC_ROUGHNECK_ENCOUNTER   ; biker
+	db MUSIC_ROUGHNECK_ENCOUNTER   ; roughneck
 	db MUSIC_CYCLIST_ENCOUNTER     ; cyclistm
 	db MUSIC_CYCLIST_ENCOUNTER     ; cyclistf
 	db MUSIC_HIKER_ENCOUNTER       ; dancer

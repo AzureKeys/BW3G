@@ -8,9 +8,6 @@ Music:
 	dba Music_Route3
 	dba Music_Route12
 	dba Music_MagnetTrain
-	;dba Music_KantoGymBattle
-	;dba Music_KantoTrainerBattle
-	;dba Music_KantoWildBattle
 	dba Music_PokemonCenter
 	dba Music_LookHiker
 	dba Music_LookLass
@@ -140,3 +137,4 @@ Music:
 	dba Music_UnovaEliteFourBattle
 	dba Music_BWPokemonLeague
 	dba Music_AnvilleTown
+	dba Music_LookRoughneck

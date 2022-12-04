@@ -176,6 +176,7 @@ INCLUDE "audio/music/mart.asm"
 INCLUDE "audio/music/elitefour.asm"
 INCLUDE "audio/music/aspertiacity.asm"
 INCLUDE "audio/music/BWpokemonLeagueV2.asm"
+INCLUDE "audio/music/lookroughneck.asm"
 
 SECTION "Sound Effects", ROMX
 
