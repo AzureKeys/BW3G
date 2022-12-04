@@ -99,7 +99,7 @@ Music:
 	dba Music_Clair
 	;dba Music_MobileAdapter
 	dba Music_BuenasPassword
-	dba Music_LookMysticalMan
+	dba Music_LookTwins
 	dba Music_CrystalOpening
 	dba Music_BattleTowerTheme
 	dba Music_SuicuneBattle

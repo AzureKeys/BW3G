@@ -66,7 +66,7 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; swimmermD
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerf
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerfD
-	db MUSIC_LASS_ENCOUNTER        ; twins
+	db MUSIC_TWINS_ENCOUNTER       ; twins
 	db MUSIC_HIKER_ENCOUNTER       ; veteranm
 	db MUSIC_BEAUTY_ENCOUNTER      ; veteranf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; waiter
