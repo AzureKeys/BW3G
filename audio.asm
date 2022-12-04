@@ -111,7 +111,7 @@ INCLUDE "audio/music/pokemonmarch.asm"
 SECTION "Songs 5", ROMX
 
 INCLUDE "audio/music/mainmenu.asm"
-INCLUDE "audio/music/lookkimonogirl.asm"
+INCLUDE "audio/music/lookacetrainer.asm"
 INCLUDE "audio/music/pokeflutechannel.asm"
 INCLUDE "audio/music/bugcatchingcontest.asm"
 INCLUDE "audio/music/mobileadaptermenu.asm"

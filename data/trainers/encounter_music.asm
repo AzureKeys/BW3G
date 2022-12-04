@@ -7,18 +7,18 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; youngsterD
 	db MUSIC_LASS_ENCOUNTER        ; lass
 	db MUSIC_LASS_ENCOUNTER        ; lassD
-	db MUSIC_HIKER_ENCOUNTER       ; acetrainerm
-	db MUSIC_HIKER_ENCOUNTER       ; acetrainermD
-	db MUSIC_BEAUTY_ENCOUNTER      ; acetrainerf
-	db MUSIC_BEAUTY_ENCOUNTER      ; acetrainerfD
+	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainerm
+	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainermD
+	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainerf
+	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainerfD
 	db MUSIC_SAGE_ENCOUNTER        ; artist
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; backersm
 	db MUSIC_LASS_ENCOUNTER        ; backersf
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; backpackerm
-	db MUSIC_LASS_ENCOUNTER        ; backpackerf
+	db MUSIC_HIKER_ENCOUNTER       ; backpackerm
+	db MUSIC_HIKER_ENCOUNTER       ; backpackerf
 	db MUSIC_BEAUTY_ENCOUNTER      ; baker
-	db MUSIC_HIKER_ENCOUNTER       ; blackbelt
-	db MUSIC_HIKER_ENCOUNTER       ; battlegirl
+	db MUSIC_PSYCHIC_ENCOUNTER     ; blackbelt
+	db MUSIC_PSYCHIC_ENCOUNTER     ; battlegirl
 	db MUSIC_HIKER_ENCOUNTER       ; biker
 	db MUSIC_HIKER_ENCOUNTER       ; roughneck
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; cyclistm
@@ -32,7 +32,7 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; gentleman
 	db MUSIC_HIKER_ENCOUNTER       ; guitarist
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; harlequin
-	db MUSIC_KIMONO_ENCOUNTER      ; hexmaniac
+	db MUSIC_SAGE_ENCOUNTER        ; hexmaniac
 	db MUSIC_HIKER_ENCOUNTER       ; hiker
 	db MUSIC_HIKER_ENCOUNTER       ; hikerD
 	db MUSIC_HIKER_ENCOUNTER       ; hoopster
@@ -48,13 +48,13 @@ TrainerEncounterMusic::
 	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; pkmnbreederm
 	db MUSIC_LASS_ENCOUNTER        ; pkmnbreederf
-	db MUSIC_HIKER_ENCOUNTER       ; pkmnrangerm
-	db MUSIC_BEAUTY_ENCOUNTER      ; pkmnrangerf
+	db MUSIC_ACE_TRAINER_ENCOUNTER ; pkmnrangerm
+	db MUSIC_ACE_TRAINER_ENCOUNTER ; pkmnrangerf
 	db MUSIC_HIKER_ENCOUNTER       ; policeman
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; preschoolerm
 	db MUSIC_LASS_ENCOUNTER        ; preschoolerf
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychicm
-	db MUSIC_BEAUTY_ENCOUNTER      ; psychicf
+	db MUSIC_PSYCHIC_ENCOUNTER     ; psychicm
+	db MUSIC_PSYCHIC_ENCOUNTER     ; psychicf
 	db MUSIC_HIKER_ENCOUNTER       ; richboy
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolkidm
 	db MUSIC_LASS_ENCOUNTER        ; schoolkidf

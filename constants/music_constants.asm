@@ -41,7 +41,7 @@
 	const MUSIC_CREDITS                      ; 24
 	const MUSIC_AZALEA_TOWN                  ; 25
 	const MUSIC_CHERRYGROVE_CITY             ; 26
-	const MUSIC_KIMONO_ENCOUNTER             ; 27
+	const MUSIC_ACE_TRAINER_ENCOUNTER        ; 27
 	const MUSIC_UNION_CAVE                   ; 28
 	const MUSIC_JOHTO_WILD_BATTLE            ; 29
 	const MUSIC_JOHTO_TRAINER_BATTLE         ; 2a

@@ -104,7 +104,7 @@ LentimasGymStatue:
 LentimasGymTrainer1Script1:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_1
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_1
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_1, 15
 	turnobject PLAYER, UP
@@ -115,7 +115,7 @@ LentimasGymTrainer1Script1:
 LentimasGymTrainer1Script2:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_1
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_1
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_1, 15
 	turnobject PLAYER, UP
@@ -127,7 +127,7 @@ LentimasGymTrainer1Script2:
 LentimasGymTrainer1Script3:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_1
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_1
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_1, 15
 	turnobject PLAYER, UP
@@ -155,7 +155,7 @@ TrainerHexManiacLentimasGym1:
 LentimasGymTrainer2Script1:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_2
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_2
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_2, 15
 	turnobject PLAYER, LEFT
@@ -166,7 +166,7 @@ LentimasGymTrainer2Script1:
 LentimasGymTrainer2Script2:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_2
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_2
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_2, 15
 	turnobject PLAYER, LEFT
@@ -178,7 +178,7 @@ LentimasGymTrainer2Script2:
 LentimasGymTrainer2Script3:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_2
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_2
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_2, 15
 	turnobject PLAYER, LEFT
@@ -206,7 +206,7 @@ TrainerHexManiacLentimasGym2:
 LentimasGymTrainer3Script1:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_3
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_3
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_3, 15
 	turnobject PLAYER, LEFT
@@ -217,7 +217,7 @@ LentimasGymTrainer3Script1:
 LentimasGymTrainer3Script2:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_3
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_3
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_3, 15
 	turnobject PLAYER, LEFT
@@ -245,7 +245,7 @@ TrainerHexManiacLentimasGym3:
 LentimasGymTrainer4Script:
 	checkevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_4
 	iftrue .done
-	playmusic MUSIC_KIMONO_ENCOUNTER
+	playmusic MUSIC_SAGE_ENCOUNTER
 	appear LENTIMASGYM_HEX_MANIAC_4
 	showemote EMOTE_SHOCK, LENTIMASGYM_HEX_MANIAC_4, 15
 	turnobject PLAYER, RIGHT
