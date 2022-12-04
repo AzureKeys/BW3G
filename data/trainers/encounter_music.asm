@@ -16,7 +16,7 @@ TrainerEncounterMusic::
 	db MUSIC_LASS_ENCOUNTER        ; backersf
 	db MUSIC_HIKER_ENCOUNTER       ; backpackerm
 	db MUSIC_HIKER_ENCOUNTER       ; backpackerf
-	db MUSIC_BEAUTY_ENCOUNTER      ; baker
+	db MUSIC_LADY_ENCOUNTER        ; baker
 	db MUSIC_PSYCHIC_ENCOUNTER     ; blackbelt
 	db MUSIC_PSYCHIC_ENCOUNTER     ; battlegirl
 	db MUSIC_HIKER_ENCOUNTER       ; biker
@@ -37,15 +37,15 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; hikerD
 	db MUSIC_HIKER_ENCOUNTER       ; hoopster
 	db MUSIC_CYCLIST_ENCOUNTER     ; janitor
-	db MUSIC_BEAUTY_ENCOUNTER      ; lady
+	db MUSIC_LADY_ENCOUNTER        ; lady
 	db MUSIC_HIKER_ENCOUNTER       ; linebacker
 	db MUSIC_LASS_ENCOUNTER        ; maid
 	db MUSIC_HIKER_ENCOUNTER       ; musician
-	db MUSIC_BEAUTY_ENCOUNTER      ; nurseryaide
-	db MUSIC_BEAUTY_ENCOUNTER      ; parasollady
+	db MUSIC_LADY_ENCOUNTER        ; nurseryaide
+	db MUSIC_LADY_ENCOUNTER        ; parasollady
 	db MUSIC_CYCLIST_ENCOUNTER     ; pilot
 	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
-	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
+	db MUSIC_LADY_ENCOUNTER        ; pokefanf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; pkmnbreederm
 	db MUSIC_LASS_ENCOUNTER        ; pkmnbreederf
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; pkmnrangerm
@@ -61,14 +61,14 @@ TrainerEncounterMusic::
 	db MUSIC_CYCLIST_ENCOUNTER     ; scientistm
 	db MUSIC_CYCLIST_ENCOUNTER     ; scientistf
 	db MUSIC_LASS_ENCOUNTER        ; smasher
-	db MUSIC_BEAUTY_ENCOUNTER      ; socialite
+	db MUSIC_LADY_ENCOUNTER        ; socialite
 	db MUSIC_CYCLIST_ENCOUNTER     ; swimmerm
-	db MUSIC_HIKER_ENCOUNTER       ; swimmermD
-	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerf
-	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerfD
+	db MUSIC_CYCLIST_ENCOUNTER     ; swimmermD
+	db MUSIC_LADY_ENCOUNTER        ; swimmerf
+	db MUSIC_LADY_ENCOUNTER        ; swimmerfD
 	db MUSIC_TWINS_ENCOUNTER       ; twins
 	db MUSIC_HIKER_ENCOUNTER       ; veteranm
-	db MUSIC_BEAUTY_ENCOUNTER      ; veteranf
+	db MUSIC_LADY_ENCOUNTER        ; veteranf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; waiter
 	db MUSIC_LASS_ENCOUNTER        ; waitress
 	db MUSIC_HIKER_ENCOUNTER       ; worker

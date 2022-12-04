@@ -58,7 +58,7 @@ Music:
 	dba Music_Route36
 	dba Music_SSAqua
 	dba Music_LookYoungster
-	dba Music_LookBeauty
+	dba Music_LookLady
 	dba Music_LookRocket
 	dba Music_LookPsychic
 	dba Music_LookSage

@@ -58,7 +58,7 @@
 	const MUSIC_ROUTE_36                     ; 35
 	const MUSIC_SS_AQUA                      ; 36
 	const MUSIC_YOUNGSTER_ENCOUNTER          ; 37
-	const MUSIC_BEAUTY_ENCOUNTER             ; 38
+	const MUSIC_LADY_ENCOUNTER               ; 38
 	const MUSIC_ROCKET_ENCOUNTER             ; 39
 	const MUSIC_PSYCHIC_ENCOUNTER            ; 3a
 	const MUSIC_SAGE_ENCOUNTER               ; 3b
