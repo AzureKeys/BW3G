@@ -138,3 +138,4 @@ Music:
 	dba Music_BWPokemonLeague
 	dba Music_AnvilleTown
 	dba Music_LookRoughneck
+	dba Music_LookGentleman

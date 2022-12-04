@@ -178,6 +178,10 @@ INCLUDE "audio/music/aspertiacity.asm"
 INCLUDE "audio/music/BWpokemonLeagueV2.asm"
 INCLUDE "audio/music/lookroughneck.asm"
 
+SECTION "New Songs 3", ROMX
+
+INCLUDE "audio/music/lookgentleman.asm"
+
 SECTION "Sound Effects", ROMX
 
 INCLUDE "audio/sfx.asm"

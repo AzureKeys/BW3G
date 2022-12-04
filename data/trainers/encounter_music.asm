@@ -29,7 +29,7 @@ TrainerEncounterMusic::
 	db MUSIC_SCIENTIST_ENCOUNTER   ; nurse
 	db MUSIC_HIKER_ENCOUNTER       ; fisher
 	db MUSIC_HIKER_ENCOUNTER       ; fisherD
-	db MUSIC_HIKER_ENCOUNTER       ; gentleman
+	db MUSIC_GENTLEMAN_ENCOUNTER   ; gentleman
 	db MUSIC_HIKER_ENCOUNTER       ; guitarist
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; harlequin
 	db MUSIC_SCIENTIST_ENCOUNTER   ; hexmaniac
@@ -61,7 +61,7 @@ TrainerEncounterMusic::
 	db MUSIC_SCIENTIST_ENCOUNTER   ; scientistm
 	db MUSIC_SCIENTIST_ENCOUNTER   ; scientistf
 	db MUSIC_LASS_ENCOUNTER        ; smasher
-	db MUSIC_LADY_ENCOUNTER        ; socialite
+	db MUSIC_GENTLEMAN_ENCOUNTER   ; socialite
 	db MUSIC_CYCLIST_ENCOUNTER     ; swimmerm
 	db MUSIC_CYCLIST_ENCOUNTER     ; swimmermD
 	db MUSIC_LADY_ENCOUNTER        ; swimmerf
