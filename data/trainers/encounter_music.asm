@@ -21,10 +21,10 @@ TrainerEncounterMusic::
 	db MUSIC_PSYCHIC_ENCOUNTER     ; battlegirl
 	db MUSIC_HIKER_ENCOUNTER       ; biker
 	db MUSIC_HIKER_ENCOUNTER       ; roughneck
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; cyclistm
-	db MUSIC_LASS_ENCOUNTER        ; cyclistf
+	db MUSIC_CYCLIST_ENCOUNTER     ; cyclistm
+	db MUSIC_CYCLIST_ENCOUNTER     ; cyclistf
 	db MUSIC_HIKER_ENCOUNTER       ; dancer
-	db MUSIC_OFFICER_ENCOUNTER     ; depotagent
+	db MUSIC_CYCLIST_ENCOUNTER     ; depotagent
 	db MUSIC_SAGE_ENCOUNTER        ; doctor
 	db MUSIC_SAGE_ENCOUNTER        ; nurse
 	db MUSIC_HIKER_ENCOUNTER       ; fisher
@@ -36,14 +36,14 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; hiker
 	db MUSIC_HIKER_ENCOUNTER       ; hikerD
 	db MUSIC_HIKER_ENCOUNTER       ; hoopster
-	db MUSIC_OFFICER_ENCOUNTER     ; janitor
+	db MUSIC_CYCLIST_ENCOUNTER     ; janitor
 	db MUSIC_BEAUTY_ENCOUNTER      ; lady
 	db MUSIC_HIKER_ENCOUNTER       ; linebacker
 	db MUSIC_LASS_ENCOUNTER        ; maid
 	db MUSIC_HIKER_ENCOUNTER       ; musician
 	db MUSIC_BEAUTY_ENCOUNTER      ; nurseryaide
 	db MUSIC_BEAUTY_ENCOUNTER      ; parasollady
-	db MUSIC_OFFICER_ENCOUNTER     ; pilot
+	db MUSIC_CYCLIST_ENCOUNTER     ; pilot
 	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
 	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; pkmnbreederm
@@ -58,11 +58,11 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; richboy
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolkidm
 	db MUSIC_LASS_ENCOUNTER        ; schoolkidf
-	db MUSIC_OFFICER_ENCOUNTER     ; scientistm
-	db MUSIC_OFFICER_ENCOUNTER     ; scientistf
+	db MUSIC_CYCLIST_ENCOUNTER     ; scientistm
+	db MUSIC_CYCLIST_ENCOUNTER     ; scientistf
 	db MUSIC_LASS_ENCOUNTER        ; smasher
 	db MUSIC_BEAUTY_ENCOUNTER      ; socialite
-	db MUSIC_HIKER_ENCOUNTER       ; swimmerm
+	db MUSIC_CYCLIST_ENCOUNTER     ; swimmerm
 	db MUSIC_HIKER_ENCOUNTER       ; swimmermD
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerf
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerfD

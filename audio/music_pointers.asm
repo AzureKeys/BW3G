@@ -14,7 +14,7 @@ Music:
 	dba Music_PokemonCenter
 	dba Music_LookHiker
 	dba Music_LookLass
-	dba Music_LookOfficer
+	dba Music_LookCyclist
 	dba Music_HealPokemon
 	dba Music_LavenderTown
 	dba Music_Route2

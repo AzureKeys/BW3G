@@ -14,7 +14,7 @@
 	const MUSIC_POKEMON_CENTER               ; 09
 	const MUSIC_HIKER_ENCOUNTER              ; 0a
 	const MUSIC_LASS_ENCOUNTER               ; 0b
-	const MUSIC_OFFICER_ENCOUNTER            ; 0c
+	const MUSIC_CYCLIST_ENCOUNTER            ; 0c
 	const MUSIC_HEAL                         ; 0d
 	const MUSIC_LAVENDER_TOWN                ; 0e
 	const MUSIC_ROUTE_2                      ; 0f
