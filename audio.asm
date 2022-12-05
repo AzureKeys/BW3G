@@ -131,11 +131,10 @@ INCLUDE "audio/music/clair.asm"
 SECTION "Extra Songs 2", ROMX
 
 INCLUDE "audio/music/postcredits.asm"
-INCLUDE "audio/music/rockettheme.asm"
 INCLUDE "audio/music/goldsilveropening.asm"
 INCLUDE "audio/music/goldsilveropening2.asm"
 INCLUDE "audio/music/lookhiker.asm"
-INCLUDE "audio/music/lookrocket.asm"
+INCLUDE "audio/music/lookplasma.asm"
 
 SECTION "New Songs", ROMX
 

@@ -56,7 +56,7 @@ Music:
 	dba Music_SSAqua
 	dba Music_LookYoungster
 	dba Music_LookLady
-	dba Music_LookRocket
+	dba Music_LookPlasma
 	dba Music_LookPsychic
 	dba Music_LookScientist
 	dba Music_NewBarkTown
@@ -85,7 +85,6 @@ Music:
 	dba Music_GoldSilverOpening2
 	dba Music_MainMenu
 	dba Music_RuinsOfAlphInterior
-	dba Music_RocketTheme
 	dba Music_DancingHall
 	dba Music_ContestResults
 	dba Music_BugCatchingContest

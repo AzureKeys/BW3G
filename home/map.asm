@@ -2274,7 +2274,7 @@ GetMapMusic::
 	ld a, [wStatusFlags2]
 	bit STATUSFLAGS2_ROCKETS_IN_RADIO_TOWER_F, a
 	jr z, .clearedradiotower
-	ld de, MUSIC_ROCKET_OVERTURE
+	ld de, MUSIC_ROCKET_ENCOUNTER
 	jr .done
 
 .clearedradiotower

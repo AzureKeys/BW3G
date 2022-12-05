@@ -85,7 +85,6 @@
 	const MUSIC_GS_OPENING_2                 ; 53
 	const MUSIC_MAIN_MENU                    ; 54
 	const MUSIC_RUINS_OF_ALPH_INTERIOR       ; 55
-	const MUSIC_ROCKET_OVERTURE              ; 56
 	const MUSIC_DANCING_HALL                 ; 57
 	const MUSIC_BUG_CATCHING_CONTEST_RANKING ; 58
 	const MUSIC_BUG_CATCHING_CONTEST         ; 59
