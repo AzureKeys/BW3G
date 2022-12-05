@@ -44,8 +44,8 @@ TrainerEncounterMusic::
 	db MUSIC_LADY_ENCOUNTER        ; nurseryaide
 	db MUSIC_LADY_ENCOUNTER        ; parasollady
 	db MUSIC_CYCLIST_ENCOUNTER     ; pilot
-	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
-	db MUSIC_LADY_ENCOUNTER        ; pokefanf
+	db MUSIC_POKEFAN_ENCOUNTER     ; pokefanm
+	db MUSIC_POKEFAN_ENCOUNTER     ; pokefanf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; pkmnbreederm
 	db MUSIC_LASS_ENCOUNTER        ; pkmnbreederf
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; pkmnrangerm

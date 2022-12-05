@@ -140,6 +140,7 @@
 	const MUSIC_OPELUCID_CITY
 	const MUSIC_ROUGHNECK_ENCOUNTER
 	const MUSIC_GENTLEMAN_ENCOUNTER
+	const MUSIC_POKEFAN_ENCOUNTER
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $fc

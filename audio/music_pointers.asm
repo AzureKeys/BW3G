@@ -139,3 +139,4 @@ Music:
 	dba Music_AnvilleTown
 	dba Music_LookRoughneck
 	dba Music_LookGentleman
+	dba Music_LookPokefan
