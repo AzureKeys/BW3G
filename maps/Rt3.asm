@@ -230,17 +230,29 @@ R3GrampsRightMovement:
 	step_end
 	
 PkmnRangerMR3SeenText:
-	text "Hahahah!"
+	text "Forming a team of"
+	line "#MON that can"
+	
+	para "work well together"
+	line "is key in battle!"
+	cont "Let's begin!"
 	done
 
 PkmnRangerMR3BeatenText:
-	text "Hahaha-hachoo!"
+	text "Oh no! The way I"
+	line "positioned my"
+	
+	para "#MON was"
+	line "terrible!"
 	done
 
 PkmnRangerMR3AfterText:
-	text "Hay fever is"
-	line "making me sneeze!"
-	cont "Ahahah-CHOO!"
+	text "You need to be"
+	line "able to predict"
+	
+	para "your opponent's"
+	line "moves. It's a true"
+	cont "test of skill!"
 	done
 	
 PkmnRangerFR3SeenText:
@@ -284,43 +296,42 @@ SocialiteR3AfterText:
 	done
 	
 Fisher1R3SeenText:
-	text "Do you remember?"
+	text "I am a wonderful"
+	line "fisherman who"
+	cont "loves everything!"
 	done
 
 Fisher1R3BeatenText:
-	text "Do you remember?"
+	text "I even love a"
+	line "disappointing"
+	cont "result!"
 	done
 
 Fisher1R3AfterText:
-	text "The tug you feel"
-	line "on the ROD when"
-
-	para "you hook a #-"
-	line "MON…"
-
-	para "That's the best"
-	line "feeling ever for"
-	cont "an angler like me."
+	text "I want to go deep"
+	line "sea fishing on the"
+	cont "ROYAL UNOVA!"
 	done
 	
 Fisher2R3SeenText:
-	text "I feel so content,"
-	line "fishing while lis-"
-	cont "tening to some"
-	cont "tunes on my radio."
+	text "Hey! What kinds of"
+	line "great #MON have"
+	cont "you caught?"
 	done
 
 Fisher2R3BeatenText:
-	text "My stupid radio"
-	line "distracted me!"
+	text "Ho ho! These are"
+	line "some impressive"
+	cont "#MON!"
 	done
 
 Fisher2R3AfterText:
-	text "Have you checked"
-	line "out UNOVA's radio"
+	text "My own #MON are"
+	line "the best ones for"
 
-	para "programs? We get a"
-	line "good variety here."
+	para "me! I won't"
+	line "compare them with"
+	cont "anyone else's!"
 	done
 	
 ArtistR3SeenText:

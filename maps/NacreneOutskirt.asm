@@ -109,15 +109,25 @@ LassNacreneAfterText:
 	done
 	
 ParasolLadyNacreneSeenText:
-	text "..."
+	text "A woman standing"
+	line "alone with a para-"
+	cont "sol in one hand…"
+	
+	para "Hi… Please have a"
+	line "battle with me."
 	done
 
 ParasolLadyNacreneBeatenText:
-	text "..."
+	text "The parasol can't"
+	line "block defeat…"
 	done
 
 ParasolLadyNacreneAfterText:
-	text "..."
+	text "I heard a parasol"
+	line "is great… But I'm"
+	
+	para "the only one who"
+	line "has one?"
 	done
 	
 RichBoyNacreneSeenText:

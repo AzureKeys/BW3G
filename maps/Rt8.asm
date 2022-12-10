@@ -91,15 +91,26 @@ PkmnRangerMR8AfterText:
 	done
 	
 FisherR8SeenText:
-	text "..."
+	text "Argh! It got away!"
+	line "I almost caught"
+	cont "it, too!"
 	done
 
 FisherR8BeatenText:
-	text "..."
+	text "I lost again, but"
+	line "it was nice to"
+	
+	para "take my mind off"
+	line "of fishing for a"
+	cont "bit."
 	done
 
 FisherR8AfterText:
-	text "..."
+	text "You've got to stay"
+	line "optimistic if you"
+	
+	para "want to be a good"
+	line "fisherman!"
 	done
 	
 ParasolLadyR8SeenText:

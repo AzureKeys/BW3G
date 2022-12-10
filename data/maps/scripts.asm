@@ -164,10 +164,10 @@ INCLUDE "maps/AccumulaTown.asm"
 INCLUDE "maps/AccumulaHouse.asm"
 INCLUDE "maps/AccumulaPokecenter1F.asm"
 INCLUDE "maps/AccumulaBallManiacHouse.asm"
-INCLUDE "maps/Rt1.asm"
 
 SECTION "Map Scripts 9", ROMX
 
+INCLUDE "maps/Rt1.asm"
 INCLUDE "maps/NuvemaTown.asm"
 INCLUDE "maps/NuvemaMomHouse.asm"
 INCLUDE "maps/Rt17.asm"

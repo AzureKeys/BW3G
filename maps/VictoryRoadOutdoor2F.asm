@@ -181,15 +181,32 @@ AceTrainerMVictoryRoadOutdoor2FAfterText:
 	done
 	
 AceTrainerFVictoryRoadOutdoor2FSeenText:
-	text "..."
+	text "To battle in a"
+	line "high-up place…"
+	
+	para "This is a perfect"
+	line "situation for an"
+	
+	para "ACE TRAINER such"
+	line "as I!"
 	done
 
 AceTrainerFVictoryRoadOutdoor2FBeatenText:
-	text "..."
+	text "To tell the truth…"
+	line "I'm actually"
+	cont "afraid of heights…"
 	done
 
 AceTrainerFVictoryRoadOutdoor2FAfterText:
-	text "..."
+	text "Overcoming one's"
+	line "fears is an"
+	
+	para "important part of"
+	line "being an ACE"
+	cont "TRAINER!"
+	
+	para "But still, I hate"
+	line "being up so high…"
 	done
 	
 ScientistMVictoryRoadOutdoor2FSeenText:

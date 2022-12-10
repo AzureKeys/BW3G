@@ -128,15 +128,28 @@ MoorOfIcirrusRevive:
 	hiddenitem REVIVE, EVENT_MOOR_OF_ICIRRUS_REVIVE
 	
 Fisher1MoorOfIcirrusSeenText:
-	text "..."
+	text "Check out my #-"
+	line "MON! It took me"
+	
+	para "100 # BALLs to"
+	line "catch it!"
 	done
 
 Fisher1MoorOfIcirrusBeatenText:
-	text "..."
+	text "It doesn't mean"
+	line "much if it can't"
+	cont "win in battle…"
 	done
 
 Fisher1MoorOfIcirrusAfterText:
-	text "..."
+	text "There are other"
+	line "#MON of the"
+	
+	para "same kind, but I"
+	line "feel like I was"
+	
+	para "destined to be"
+	line "with these!"
 	done
 	
 Fisher2MoorOfIcirrusSeenText:
