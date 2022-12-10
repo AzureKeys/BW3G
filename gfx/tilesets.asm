@@ -140,12 +140,15 @@ TilesetForestMeta:
 INCBIN "data/tilesets/forest_metatiles.bin"
 
 TilesetEliteFourRoomGFX:
+TilesetEliteFourRoom2GFX:
 INCBIN "gfx/tilesets/elite_four_room.2bpp.lz"
 
 TilesetEliteFourRoomMeta:
+TilesetEliteFourRoom2Meta:
 INCBIN "data/tilesets/elite_four_room_metatiles.bin"
 
 TilesetEliteFourRoomColl:
+TilesetEliteFourRoom2Coll:
 INCLUDE "data/tilesets/elite_four_room_collision.asm"
 
 TilesetParkMeta:
@@ -153,9 +156,6 @@ INCBIN "data/tilesets/park_metatiles.bin"
 
 TilesetParkColl:
 INCLUDE "data/tilesets/park_collision.asm"
-
-TilesetUndergroundGFX:
-INCBIN "gfx/tilesets/underground.2bpp.lz"
 
 
 SECTION "Tileset Data 5", ROMX
@@ -426,10 +426,8 @@ TilesetGameCornerAttr:
 INCBIN "data/tilesets/game_corner_attributes.bin"
 
 TilesetEliteFourRoomAttr:
+TilesetEliteFourRoom2Attr:
 INCBIN "data/tilesets/elite_four_room_attributes.bin"
-
-TilesetTraditionalHouseAttr:
-INCBIN "data/tilesets/traditional_house_attributes.bin"
 
 
 SECTION "Tileset Data 13", ROMX
@@ -721,3 +719,9 @@ INCLUDE "data/tilesets/cave_ruins_collision.asm"
 
 TilesetCaveRuinsMeta:
 INCBIN "data/tilesets/cave_ruins_metatiles.bin"
+
+TilesetUndergroundGFX:
+INCBIN "gfx/tilesets/underground.2bpp.lz"
+
+TilesetTraditionalHouseAttr:
+INCBIN "data/tilesets/traditional_house_attributes.bin"

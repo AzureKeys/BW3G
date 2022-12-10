@@ -359,4 +359,5 @@ ENDM
 	map_const GRIMSLEYS_ROOM, 8, 7
 	map_const MARSHALS_ROOM, 8, 7
 	map_const ELESAS_ROOM, 8, 7
+	map_const COLRESSS_ROOM, 8, 7
 	

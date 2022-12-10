@@ -366,4 +366,5 @@ ENDM
 	map_attributes GrimsleysRoom, GRIMSLEYS_ROOM, $00, 0
 	map_attributes MarshalsRoom, MARSHALS_ROOM, $00, 0
 	map_attributes ElesasRoom, ELESAS_ROOM, $00, 0
+	map_attributes ColresssRoom, COLRESSS_ROOM, $00, 0
 	

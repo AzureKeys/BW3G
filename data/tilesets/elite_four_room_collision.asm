@@ -143,3 +143,21 @@
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 8e
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 8f
 	tilecoll WALL, WALL, WALL, WALL ; 90
+	tilecoll FLOOR, WALL, FLOOR, WALL ; 91
+	tilecoll WALL, WALL, WALL, WALL ; 92
+	tilecoll WALL, WALL, WALL, WALL ; 93
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 94
+	tilecoll FLOOR, WALL, WALL, FLOOR ; 95
+	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 96
+	tilecoll FLOOR, WALL, FLOOR, WALL ; 97
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 98
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 99
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 9a
+	tilecoll FLOOR, FLOOR, FLOOR, WARP_PANEL ; 9b
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 9c
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 9d
+	tilecoll FLOOR, WALL, FLOOR, WALL ; 9e
+	tilecoll WALL, FLOOR, WALL, FLOOR ; 9f
+	tilecoll WALL, FLOOR, WALL, FLOOR ; a0
+	tilecoll WALL, FLOOR, WALL, FLOOR ; a1
+	tilecoll WALL, WALL, WALL, FLOOR ; a2

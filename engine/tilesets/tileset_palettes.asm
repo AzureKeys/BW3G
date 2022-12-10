@@ -38,6 +38,8 @@ LoadSpecialMapPalette:
 	jp z, .cave
 	cp TILESET_ELITE_FOUR_ROOM
 	jp z, .elite_four_room
+	cp TILESET_ELITE_FOUR_ROOM_2
+	jp z, .elite_four_room
 	cp TILESET_TRADITIONAL_HOUSE
 	jp z, .traditional_house
 	cp TILESET_AIRPORT
@@ -273,6 +275,13 @@ LoadSpecialMapPalette:
 	jp z, .Grimsley
 	cp 11 ; MarshalsRoom
 	jp z, .Marshal
+	cp 12 ; ElesasRoom
+	jp z, .Elesa
+	call LoadColressPalette
+	scf
+	ret
+	
+.Elesa
 	call LoadElesaPalette
 	scf
 	ret
@@ -996,3 +1005,14 @@ LoadElesaPalette:
 	
 ElesaPalette:
 INCLUDE "gfx/tilesets/elesa.pal"
+
+LoadColressPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, ColressPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+ColressPalette:
+INCLUDE "gfx/tilesets/colress.pal"

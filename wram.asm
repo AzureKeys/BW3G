@@ -2660,7 +2660,7 @@ wParryFightCount::   db
 wErinFightCount::    db
 ; da0e
 
-	ds 66
+	ds 54
 
 wEventFlags:: flag_array NUM_EVENTS ; da72
 ; db6c

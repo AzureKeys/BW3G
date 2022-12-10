@@ -59,3 +59,4 @@ Tilesets::
 	tileset TilesetDreamyard
 	tileset TilesetPkmnLeague
 	tileset TilesetCaveRuins
+	tileset TilesetEliteFourRoom2

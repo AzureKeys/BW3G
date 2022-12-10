@@ -48,6 +48,7 @@
 	const TILESET_DREAMYARD
 	const TILESET_PKMN_LEAGUE
 	const TILESET_CAVE_RUINS
+	const TILESET_ELITE_FOUR_ROOM_2
 
 ; bg palette values (see gfx/tilesets/*_palette_map.asm)
 ; TilesetBGPalette indexes (see gfx/tilesets/bg_tiles.pal)

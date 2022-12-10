@@ -213,11 +213,23 @@ TilesetUnovaNorthAnim:
 	dw NULL,  DoneTileAnimation
 
 TilesetEliteFourRoomAnim:
+	dw vTiles2 tile $57, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileUp
+	dw vTiles2 tile $57, WriteTileFromBuffer
 	dw FanFrames1, AnimateFanTile
 	dw FanFrames2, AnimateFanTile
 	dw FanFrames3, AnimateFanTile
 	dw FanFrames4, AnimateFanTile
-	dw NULL,  LightsAnim1
+	dw ComputerFrames0L, AnimateComputerTile0
+	dw ComputerFrames0R, AnimateComputerTile0
+	dw ComputerFrames1L, AnimateComputerTile1
+	dw ComputerFrames1R, AnimateComputerTile1
+	dw ComputerFrames2L, AnimateComputerTile2
+	dw ComputerFrames2R, AnimateComputerTile2
+	dw NULL,  StandingTileFrame8
+	dw NULL,  DoneTileAnimation
+
+TilesetEliteFourRoom2Anim:
 	dw FireFrames1, AnimateFountainTile
 	dw FireFrames5, AnimateFountainTile
 	dw FireFrames2, AnimateFountainTile
@@ -226,6 +238,7 @@ TilesetEliteFourRoomAnim:
 	dw FireFrames7, AnimateFountainTile
 	dw FireFrames4, AnimateFountainTile
 	dw FireFrames8, AnimateFountainTile
+	dw NULL,  LightsAnim1
 	dw NULL,  LightsAnim2
 	dw NULL,  StandingTileFrame8
 	dw NULL,  IncFountainFrame
@@ -778,7 +791,6 @@ LavaBubbleFrames:
 	INCBIN "gfx/tilesets/lava/4.2bpp"
 
 LightsAnim1:
-; Splash in the bottom-right corner of the fountain.
 	ld hl, sp+0
 	ld b, h
 	ld c, l
@@ -798,7 +810,6 @@ LightsAnim1:
 	jp WriteTile
 
 LightsAnim2:
-; Splash in the top-left corner of the fountain.
 	ld hl, sp+0
 	ld b, h
 	ld c, l
@@ -893,6 +904,107 @@ IncFountainFrame:
 	ld [wFountainAnimationTimer], a
 .done
 	ret
+
+AnimateComputerTile0:
+; Update computer tile using struct at de.
+
+; Struct:
+; 	VRAM address
+;	Address of the first tile
+
+; Save sp in bc (see WriteTile).
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+; de = VRAM address
+	ld l, e
+	ld h, d
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	inc hl
+; Tile address is now at hl.
+
+; Get the tile for this frame.
+	ld a, [wTileAnimationTimer]
+	and %11 ; 4 frames x2
+	swap a  ; * 16 bytes per tile
+	jr AnimateComputerTile
+
+AnimateComputerTile1:
+; Update computer tile using struct at de.
+
+; Struct:
+; 	VRAM address
+;	Address of the first tile
+
+; Save sp in bc (see WriteTile).
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+; de = VRAM address
+	ld l, e
+	ld h, d
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	inc hl
+; Tile address is now at hl.
+
+; Get the tile for this frame.
+	ld a, [wTileAnimationTimer]
+	inc a
+	and %11 ; 4 frames x2
+	swap a  ; * 16 bytes per tile
+	jr AnimateComputerTile
+
+AnimateComputerTile2:
+; Update computer tile using struct at de.
+
+; Struct:
+; 	VRAM address
+;	Address of the first tile
+
+; Save sp in bc (see WriteTile).
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+
+; de = VRAM address
+	ld l, e
+	ld h, d
+	ld e, [hl]
+	inc hl
+	ld d, [hl]
+	inc hl
+; Tile address is now at hl.
+
+; Get the tile for this frame.
+	ld a, [wTileAnimationTimer]
+	inc a
+	inc a
+	and %11 ; 4 frames x2
+	swap a  ; * 16 bytes per tile
+; fallthrough
+
+AnimateComputerTile:
+	add [hl]
+	inc hl
+	ld h, [hl]
+	ld l, a
+	ld a, 0
+	adc h
+	ld h, a
+
+; The stack now points to the desired frame.
+	ld sp, hl
+
+	ld l, e
+	ld h, d
+
+	jp WriteTile
 
 AnimateWhirlpoolTile:
 ; Update whirlpool tile using struct at de.
@@ -1389,3 +1501,13 @@ FireTiles5: INCBIN "gfx/tilesets/grimsley-fire/5.2bpp"
 FireTiles6: INCBIN "gfx/tilesets/grimsley-fire/6.2bpp"
 FireTiles7: INCBIN "gfx/tilesets/grimsley-fire/7.2bpp"
 FireTiles8: INCBIN "gfx/tilesets/grimsley-fire/8.2bpp"
+
+ComputerFrames0L: dw vTiles2 tile $45, ComputerTilesL
+ComputerFrames0R: dw vTiles2 tile $46, ComputerTilesR
+ComputerFrames1L: dw vTiles2 tile $55, ComputerTilesL
+ComputerFrames1R: dw vTiles2 tile $56, ComputerTilesR
+ComputerFrames2L: dw vTiles2 tile $4A, ComputerTilesL
+ComputerFrames2R: dw vTiles2 tile $4B, ComputerTilesR
+
+ComputerTilesL: INCBIN "gfx/tilesets/computer/1.2bpp"
+ComputerTilesR: INCBIN "gfx/tilesets/computer/2.2bpp"

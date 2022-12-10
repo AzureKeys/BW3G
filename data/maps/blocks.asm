@@ -671,4 +671,7 @@ MarshalsRoom_Blocks:
 
 ElesasRoom_Blocks:
 	INCBIN "maps/ElesasRoom.ablk"
+
+ColresssRoom_Blocks:
+	INCBIN "maps/ColresssRoom.ablk"
 	

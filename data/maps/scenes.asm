@@ -83,5 +83,5 @@ MapScenes::
 	scene_var GRIMSLEYS_ROOM,                              wGrimsleysRoomSceneID
 	scene_var MARSHALS_ROOM,                               wMarshalsRoomSceneID
 	scene_var ELESAS_ROOM,                                 wElesasRoomSceneID
-	;scene_var COLRESSS_ROOM,                               wColresssRoomSceneID
+	scene_var COLRESSS_ROOM,                               wColresssRoomSceneID
 	db -1
