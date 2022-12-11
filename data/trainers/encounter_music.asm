@@ -11,67 +11,67 @@ TrainerEncounterMusic::
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainermD
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainerf
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; acetrainerfD
-	db MUSIC_SCIENTIST_ENCOUNTER   ; artist
+	db MUSIC_GENTLEMAN_ENCOUNTER   ; artist
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; backersm
 	db MUSIC_LASS_ENCOUNTER        ; backersf
 	db MUSIC_HIKER_ENCOUNTER       ; backpackerm
 	db MUSIC_HIKER_ENCOUNTER       ; backpackerf
-	db MUSIC_LADY_ENCOUNTER        ; baker
+	db MUSIC_WORKER_ENCOUNTER      ; baker
 	db MUSIC_PSYCHIC_ENCOUNTER     ; blackbelt
 	db MUSIC_PSYCHIC_ENCOUNTER     ; battlegirl
-	db MUSIC_ROUGHNECK_ENCOUNTER   ; biker
+	db MUSIC_PSYCHIC_ENCOUNTER     ; biker
 	db MUSIC_ROUGHNECK_ENCOUNTER   ; roughneck
 	db MUSIC_CYCLIST_ENCOUNTER     ; cyclistm
 	db MUSIC_CYCLIST_ENCOUNTER     ; cyclistf
-	db MUSIC_HIKER_ENCOUNTER       ; dancer
-	db MUSIC_CYCLIST_ENCOUNTER     ; depotagent
-	db MUSIC_SCIENTIST_ENCOUNTER   ; doctor
-	db MUSIC_SCIENTIST_ENCOUNTER   ; nurse
+	db MUSIC_ROUGHNECK_ENCOUNTER   ; dancer
+	db MUSIC_WORKER_ENCOUNTER      ; depotagent
+	db MUSIC_WORKER_ENCOUNTER      ; doctor
+	db MUSIC_WORKER_ENCOUNTER      ; nurse
 	db MUSIC_HIKER_ENCOUNTER       ; fisher
 	db MUSIC_HIKER_ENCOUNTER       ; fisherD
 	db MUSIC_GENTLEMAN_ENCOUNTER   ; gentleman
-	db MUSIC_HIKER_ENCOUNTER       ; guitarist
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; harlequin
+	db MUSIC_ROUGHNECK_ENCOUNTER   ; guitarist
+	db MUSIC_SCIENTIST_ENCOUNTER   ; harlequin
 	db MUSIC_SCIENTIST_ENCOUNTER   ; hexmaniac
 	db MUSIC_HIKER_ENCOUNTER       ; hiker
 	db MUSIC_HIKER_ENCOUNTER       ; hikerD
 	db MUSIC_HIKER_ENCOUNTER       ; hoopster
-	db MUSIC_CYCLIST_ENCOUNTER     ; janitor
-	db MUSIC_LADY_ENCOUNTER        ; lady
+	db MUSIC_WORKER_ENCOUNTER      ; janitor
+	db MUSIC_LASS_ENCOUNTER        ; lady
 	db MUSIC_HIKER_ENCOUNTER       ; linebacker
-	db MUSIC_LASS_ENCOUNTER        ; maid
+	db MUSIC_GENTLEMAN_ENCOUNTER   ; maid
 	db MUSIC_HIKER_ENCOUNTER       ; musician
-	db MUSIC_LADY_ENCOUNTER        ; nurseryaide
-	db MUSIC_LADY_ENCOUNTER        ; parasollady
-	db MUSIC_CYCLIST_ENCOUNTER     ; pilot
+	db MUSIC_BEAUTY_ENCOUNTER      ; nurseryaide
+	db MUSIC_BEAUTY_ENCOUNTER      ; parasollady
+	db MUSIC_WORKER_ENCOUNTER      ; pilot
 	db MUSIC_POKEFAN_ENCOUNTER     ; pokefanm
 	db MUSIC_POKEFAN_ENCOUNTER     ; pokefanf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; pkmnbreederm
-	db MUSIC_LASS_ENCOUNTER        ; pkmnbreederf
+	db MUSIC_BEAUTY_ENCOUNTER      ; pkmnbreederf
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; pkmnrangerm
 	db MUSIC_ACE_TRAINER_ENCOUNTER ; pkmnrangerf
-	db MUSIC_HIKER_ENCOUNTER       ; policeman
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; preschoolerm
-	db MUSIC_LASS_ENCOUNTER        ; preschoolerf
+	db MUSIC_WORKER_ENCOUNTER      ; policeman
+	db MUSIC_TWINS_ENCOUNTER       ; preschoolerm
+	db MUSIC_TWINS_ENCOUNTER       ; preschoolerf
 	db MUSIC_PSYCHIC_ENCOUNTER     ; psychicm
 	db MUSIC_PSYCHIC_ENCOUNTER     ; psychicf
-	db MUSIC_HIKER_ENCOUNTER       ; richboy
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; richboy
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; schoolkidm
 	db MUSIC_LASS_ENCOUNTER        ; schoolkidf
 	db MUSIC_SCIENTIST_ENCOUNTER   ; scientistm
 	db MUSIC_SCIENTIST_ENCOUNTER   ; scientistf
-	db MUSIC_LASS_ENCOUNTER        ; smasher
+	db MUSIC_HIKER_ENCOUNTER       ; smasher
 	db MUSIC_GENTLEMAN_ENCOUNTER   ; socialite
 	db MUSIC_CYCLIST_ENCOUNTER     ; swimmerm
 	db MUSIC_CYCLIST_ENCOUNTER     ; swimmermD
-	db MUSIC_LADY_ENCOUNTER        ; swimmerf
-	db MUSIC_LADY_ENCOUNTER        ; swimmerfD
+	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerf
+	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerfD
 	db MUSIC_TWINS_ENCOUNTER       ; twins
-	db MUSIC_HIKER_ENCOUNTER       ; veteranm
-	db MUSIC_LADY_ENCOUNTER        ; veteranf
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; waiter
-	db MUSIC_LASS_ENCOUNTER        ; waitress
-	db MUSIC_HIKER_ENCOUNTER       ; worker
+	db MUSIC_ACE_TRAINER_ENCOUNTER ; veteranm
+	db MUSIC_ACE_TRAINER_ENCOUNTER ; veteranf
+	db MUSIC_WORKER_ENCOUNTER      ; waiter
+	db MUSIC_WORKER_ENCOUNTER      ; waitress
+	db MUSIC_WORKER_ENCOUNTER      ; worker
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntm
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntf
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; marlon

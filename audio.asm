@@ -181,6 +181,7 @@ SECTION "New Songs 3", ROMX
 
 INCLUDE "audio/music/lookgentleman.asm"
 INCLUDE "audio/music/lookpokefan.asm"
+INCLUDE "audio/music/lookworker.asm"
 
 SECTION "Sound Effects", ROMX
 

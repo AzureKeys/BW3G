@@ -55,7 +55,7 @@
 	const MUSIC_ROUTE_36                     ; 35
 	const MUSIC_SS_AQUA                      ; 36
 	const MUSIC_YOUNGSTER_ENCOUNTER          ; 37
-	const MUSIC_LADY_ENCOUNTER               ; 38
+	const MUSIC_BEAUTY_ENCOUNTER             ; 38
 	const MUSIC_ROCKET_ENCOUNTER             ; 39
 	const MUSIC_PSYCHIC_ENCOUNTER            ; 3a
 	const MUSIC_SCIENTIST_ENCOUNTER          ; 3b
@@ -140,6 +140,7 @@
 	const MUSIC_ROUGHNECK_ENCOUNTER
 	const MUSIC_GENTLEMAN_ENCOUNTER
 	const MUSIC_POKEFAN_ENCOUNTER
+	const MUSIC_WORKER_ENCOUNTER
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $fc
