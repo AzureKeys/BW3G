@@ -112,10 +112,6 @@ InitClock:
 	jr .HourIsSet
 
 .MinutesAreSet:
-	call InitTimeOfDay
-	ld hl, OakText_ResponseToSetTime
-	call PrintText
-	call WaitPressAorB_BlinkCursor
 	pop af
 	ldh [hInMenu], a
 	ret
@@ -306,7 +302,7 @@ Text_WhatHrs:
 	; What?@ @
 	text_far UnknownText_0x1bc2fd
 	text_asm
-	hlcoord 1, 16
+	hlcoord 4, 14
 	call DisplayHourOClock
 	ld hl, .QuestionMark
 	ret
@@ -326,9 +322,9 @@ String_min:
 
 Text_WhoaMins:
 	; Whoa!@ @
-	text_far UnknownText_0x1bc31b
+	text_far UnknownText_0x1bc2fd
 	text_asm
-	hlcoord 7, 14
+	hlcoord 4, 14
 	call DisplayMinutesWithMinString
 	ld hl, .QuestionMark
 	ret
@@ -336,51 +332,6 @@ Text_WhoaMins:
 .QuestionMark:
 	; ?
 	text_far UnknownText_0x1bc323
-	text_end
-
-OakText_ResponseToSetTime:
-	text_asm
-	decoord 1, 14
-	ld a, [wInitHourBuffer]
-	ld c, a
-	call PrintHour
-	ld [hl], ":"
-	inc hl
-	ld de, wInitMinuteBuffer
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
-	call PrintNum
-	ld b, h
-	ld c, l
-	ld a, [wInitHourBuffer]
-	cp MORN_HOUR
-	jr c, .nite
-	cp DAY_HOUR + 1
-	jr c, .morn
-	cp NITE_HOUR
-	jr c, .day
-.nite:
-	ld hl, .sodark
-	ret
-.morn:
-	ld hl, .overslept
-	ret
-.day:
-	ld hl, .yikes
-	ret
-
-.overslept
-	; ! I overslept!
-	text_far UnknownText_0x1bc326
-	text_end
-
-.yikes
-	; ! Yikes! I over- slept!
-	text_far UnknownText_0x1bc336
-	text_end
-
-.sodark
-	; ! No wonder it's so dark!
-	text_far UnknownText_0x1bc34f
 	text_end
 
 TimeSetBackgroundGFX:

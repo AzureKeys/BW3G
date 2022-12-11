@@ -629,6 +629,8 @@ Continue_DisplayGameTime:
 
 OakSpeech:
 	farcall InitClock
+	ld hl, OakText1
+	call PrintText
 	call RotateFourPalettesLeft
 	call ClearTileMap
 
@@ -647,7 +649,7 @@ OakSpeech:
 	call GetSGBLayout
 	call Intro_RotatePalettesLeftFrontpic
 
-	ld hl, OakText1
+	ld hl, OakText2
 	call PrintText
 	call RotateThreePalettesRight
 	call ClearTileMap
@@ -668,7 +670,7 @@ OakSpeech:
 	call GetSGBLayout
 	call Intro_WipeInFrontpic
 
-	ld hl, OakText2
+	ld hl, OakText3
 	call PrintText
 	ld hl, OakText4
 	call PrintText
@@ -705,22 +707,26 @@ OakSpeech:
 	call PrintText
 	ret
 
+OakText0:
+	text_far _OakText0
+	text_end
+
 OakText1:
 	text_far _OakText1
 	text_end
 
 OakText2:
 	text_far _OakText2
+	text_end
+
+OakText3:
+	text_far _OakText3
 	text_asm
 	ld a, AZURILL
 	call PlayMonCry
 	call WaitSFX
-	ld hl, OakText3
+	ld hl, OakText0
 	ret
-
-OakText3:
-	text_far _OakText3
-	text_end
 
 OakText4:
 	text_far _OakText4

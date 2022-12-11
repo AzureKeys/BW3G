@@ -166,38 +166,29 @@ UnknownText_0x1bc288::
 	text_end
 
 UnknownText_0x1bc29c::
-	text "<……><……><……><……><……><……>"
-	line "<……><……><……><……><……><……>"
-
-	para "Zzz… Hm? Wha…?"
-	line "You woke me up!"
-
-	para "Will you check the"
-	line "clock for me?"
+	text "Please set the"
+	line "time."
 	prompt
 
 UnknownText_0x1bc2eb::
-	text "What time is it?"
+	text "Set the hour."
 	done
 
 UnknownText_0x1bc2fd::
-	text "What?@"
+	text "Is @"
 	text_end
 
 UnknownText_0x1bc305::
-	text "?"
+	text ""
+	line "okay?"
 	done
 
 UnknownText_0x1bc308::
-	text "How many minutes?"
+	text "Set the minutes."
 	done
 
-UnknownText_0x1bc31b::
-	text "Whoa!@"
-	text_end
-
 UnknownText_0x1bc323::
-	text "?"
+	text " okay?"
 	done
 
 UnknownText_0x1bc326::

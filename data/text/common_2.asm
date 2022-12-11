@@ -1499,22 +1499,45 @@ UnknownText_0x1c1cf3::
 	para "registered for use"
 	line "on SELECT Button."
 	done
+	
+_OakText0::
+	text_waitbutton
+	text_end
 
 _OakText1::
+	text "… … … …"
+
+	para "Hm…?"
+
+	para "Oh! You must be"
+	line "the new trainer"
+	cont "I was asked about!"
+
+	para "I'm the new #-"
+	line "MON PROF. here in"
+	cont "the UNOVA region."
+	
+	para "My name is PROF."
+	line "BEL."
+	
+	para "But that's way too"
+	line "formal! You can"
+	cont "just call me PROF."
+	cont "BIANCA!"
+	prompt
+
+_OakText2::
 	text "Hi there!"
 
 	para "Welcome to the"
 	line "world of #MON!"
 
-	para "My name is BIANCA."
-
 	para "I recently became"
 	line "the #MON PROF."
-	cont "here in the"
-	cont "UNOVA region."
+	cont "here in UNOVA!"
 	prompt
 
-_OakText2::
+_OakText3::
 	text "That's right! This"
 	line "world is widely"
 	cont "inhabited by"
@@ -1523,12 +1546,6 @@ _OakText2::
 	line "creatures called"
 	cont "#MON!@"
 	text_end
-
-_OakText3::
-	text_waitbutton
-	text_end
-
-	text_end ; unused
 
 _OakText4::
 	text "#MON have"

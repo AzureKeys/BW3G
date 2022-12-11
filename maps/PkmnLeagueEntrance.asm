@@ -27,6 +27,10 @@ PkmnLeagueEntrance_MapScripts:
 PkmnLeagueInferScript1:
 	special FadeOutMusic
 	pause 15
+	opentext
+	writetext PkmnLeagueEntranceInferHeyText
+	waitbutton
+	closetext
 	appear PKMNLEAGUEENTRANCE_INFER
 	playsound SFX_ENTER_DOOR
 	waitsfx
@@ -38,9 +42,14 @@ PkmnLeagueInferScript1:
 PkmnLeagueInferScript2:
 	special FadeOutMusic
 	pause 15
+	opentext
+	writetext PkmnLeagueEntranceInferHeyText
+	waitbutton
+	closetext
 	appear PKMNLEAGUEENTRANCE_INFER
 	playsound SFX_ENTER_DOOR
 	waitsfx
+	playmusic MUSIC_RIVAL_ENCOUNTER
 	turnobject PLAYER, DOWN
 	applymovement PKMNLEAGUEENTRANCE_INFER, PkmnLeagueInferApproachMovement2
 ; fallthrough
@@ -118,6 +127,10 @@ PkmnLeagueInferApproachMovement2:
 PkmnLeagueInferLeaveMovement:
 	teleport_from
 	step_end
+	
+PkmnLeagueEntranceInferHeyText:
+	text "Hey!"
+	done
 	
 PkmnLeagueEntranceInferIntroText:
 	text "..."
