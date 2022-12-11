@@ -309,6 +309,9 @@ INCLUDE "maps/PkmnLeagueMain.asm"
 INCLUDE "maps/VictoryRoadPokecenter1F.asm"
 INCLUDE "maps/PkmnLeaguePokecenter1F.asm"
 INCLUDE "maps/IcirrusCave.asm"
+
+SECTION "Map Scripts 15", ROMX
+
 INCLUDE "maps/GrimsleysRoom.asm"
 INCLUDE "maps/MarshalsRoom.asm"
 INCLUDE "maps/ElesasRoom.asm"

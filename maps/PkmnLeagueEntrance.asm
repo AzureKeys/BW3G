@@ -133,19 +133,115 @@ PkmnLeagueEntranceInferHeyText:
 	done
 	
 PkmnLeagueEntranceInferIntroText:
-	text "..."
+	text "I figured I'd find"
+	line "you here. I've"
+	
+	para "done a lot of"
+	line "thinking since the"
+	cont "last time we met."
+	
+	para "All that stuff"
+	line "that happened back"
+	cont "at the tower…"
+	
+	para "I'm… I'm sorry"
+	line "about all that."
+	
+	para "I just wanted to"
+	line "be a great #MON"
+	cont "trainer so bad,"
+	
+	para "and it made me so"
+	line "mad that I just"
+	cont "couldn't beat you."
+	
+	para "But it wasn't just"
+	line "you, I was mad at"
+	cont "a lot of things…"
+	
+	para "My grandpa…"
+	line "TEAM PLASMA…"
+	
+	para "All that anger"
+	line "made me lose sight"
+	
+	para "of why I wanted to"
+	line "be a #MON"
+	cont "trainer in the"
+	cont "first place…"
+	
+	para "Because I love"
+	line "#MON! With all"
+	cont "my heart!"
+	
+	para "I'm going to be a"
+	line "better trainer"
+	
+	para "from here on out,"
+	line "for my #MON's"
+	cont "sake."
+	
+	para "So I'm not mad at"
+	line "you anymore,"
+	cont "<PLAY_G>."
+	
+	para "And I want to"
+	line "challenge you one"
+	cont "last time!"
+	
+	para "So come on! Give"
+	line "it everything"
+	cont "you've got!"
 	done
 	
 PkmnLeagueEntranceInferWinText:
-	text "..."
+	text "So that's how it"
+	line "ends, huh…"
 	done
 	
 PkmnLeagueEntranceInferAfterText:
-	text "..."
+	text "I had a feeling it"
+	line "would end this"
+	cont "way…"
+	
+	para "Looks like I've"
+	line "still got a lot to"
+	cont "learn."
+	
+	para "Before I go, I"
+	line "want you to have"
+	
+	para "this. Think of it"
+	line "as an apology for"
+	
+	para "all the hassle I"
+	line "put you through."
 	done
 	
 PkmnLeagueEntranceInferLeaveText:
-	text "..."
+	text "That TM teaches"
+	line "EARTHQUAKE. It's"
+	
+	para "one of the most"
+	line "powerful moves out"
+	
+	para "there. You'll need"
+	line "it if you want to"
+	
+	para "take on the ELITE"
+	line "FOUR. Good luck in"
+	
+	para "there! And you'd"
+	line "better not lose!"
+	
+	para "If you can take"
+	line "out the #MON"
+	
+	para "LEAGUE, I won't"
+	line "feel as bad for"
+	cont "losing to you!"
+	
+	para "See you, <PLAY_G>!"
 	done
 
 PkmnLeagueEntrance_MapEvents:
