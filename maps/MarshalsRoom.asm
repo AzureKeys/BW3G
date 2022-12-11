@@ -93,15 +93,59 @@ MarshalsRoomEnterMovement:
 	step_end
 	
 EliteFourMarshalIntroText:
-	text "..."
+	text "Greetings,"
+	line "challenger. My"
+	cont "name is MARSHAL."
+	
+	para "I am the No. 1"
+	line "pupil of the great"
+	cont "ALDER."
+	
+	para "In order to master"
+	line "the art of"
+	
+	para "fighting, I've"
+	line "kept training."
+	
+	para "You're also"
+	line "walking a similar"
+	
+	para "path with your"
+	line "#MON. It is my"
+	
+	para "intention to test"
+	line "you- to take you"
+	
+	para "to the limits of"
+	line "your strength."
+	cont "Kiai!"
 	done
 	
 EliteFourMarshalWinText:
-	text "..."
+	text "Whew! Well done!"
+	line "As your battles"
+	
+	para "continue, aim for"
+	line "even greater"
+	cont "heights!"
 	done
 	
 EliteFourMarshalAfterText:
-	text "..."
+	text "You are a strong"
+	line "challenger. Walk"
+	
+	para "the path you"
+	line "believe in with"
+	
+	para "the #MON you"
+	line "believe in. The"
+	
+	para "members of the"
+	line "ELITE FOUR are"
+	
+	para "powerful. Do not"
+	line "underestimate"
+	cont "them!"
 	done
 
 MarshalsRoom_MapEvents:

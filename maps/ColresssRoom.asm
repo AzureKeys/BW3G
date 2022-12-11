@@ -82,15 +82,92 @@ ColresssRoomEnterMovement:
 	step_end
 	
 EliteFourColressIntroText:
-	text "..."
+	text "Greetings. I am"
+	line "a scientist. My"
+	cont "name is COLRESS."
+	
+	para "As a member of the"
+	line "ELITE FOUR, I am"
+	
+	para "able to carry out"
+	line "my research on the"
+	
+	para "most powerful"
+	line "trainers across"
+	cont "the region."
+	
+	para "The theme of my"
+	line "research is bring-"
+	cont "ing out the power"
+	cont "of #MON."
+	
+	para "Is it possible to"
+	line "bring out their"
+	
+	para "maximum power"
+	line "through the bond"
+	
+	para "they share with"
+	line "their trainers?"
+	
+	para "Or is there some"
+	line "other different"
+	
+	para "method? I'd like"
+	line "to test my theory"
+	cont "by battling you."
+	
+	para "Do you find this"
+	line "acceptable?"
 	done
 	
 EliteFourColressWinText:
-	text "..."
+	text "Just as I"
+	line "expected! Your"
+	
+	para "#MON must be"
+	line "happy to be by"
+	cont "your side!"
+	
+	para "You bring out the"
+	line "best in their"
+	cont "power!"
 	done
 	
 EliteFourColressAfterText:
-	text "..."
+	text "In #MON battles"
+	line "where you can't"
+	
+	para "afford to make a"
+	line "mistake, the true"
+	
+	para "nature of the"
+	line "trainer's person-"
+	cont "ality becomes"
+	cont "clear."
+	
+	para "If trainers"
+	line "believe in their"
+	
+	para "#MON to the"
+	line "fullest extent,"
+	
+	para "as you do, their"
+	line "#MON partners"
+	
+	para "will also give"
+	line "everything they"
+	
+	para "have. I'm closer"
+	line "now to the answer"
+	cont "I'm looking for."
+	
+	para "I am glad you won."
+	line "Now, use that"
+	
+	para "power against the"
+	line "rest of the ELITE"
+	cont "FOUR!"
 	done
 
 ColresssRoom_MapEvents:

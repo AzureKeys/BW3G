@@ -103,15 +103,72 @@ GrimsleysRoomEnterMovement2:
 	step_end
 	
 EliteFourGrimsleyIntroText:
-	text "..."
+	text "What will be"
+	line "determined here is"
+	cont "which of us can"
+	
+	para "absorb the oppo-"
+	line "nent's light and"
+	cont "shine…"
+	
+	para "But who will"
+	line "decide that? It"
+	
+	para "shall be I,"
+	line "GRIMSLEY of the"
+	cont "ELITE FOUR, and I"
+	
+	para "will fulfill my"
+	line "duty to be your"
+	cont "opponent."
 	done
 	
 EliteFourGrimsleyWinText:
-	text "..."
+	text "Whether or not you"
+	line "get to fight at"
+	
+	para "full strength,"
+	line "whether or not"
+	
+	para "luck smiles on"
+	line "you- none of that"
+	
+	para "matters. Only"
+	line "results matter."
+	
+	para "And a loss is a"
+	line "loss. See, victory"
+	
+	para "shines like a"
+	line "bright light. And"
+	
+	para "right now, you and"
+	line "your #MON are"
+	cont "shining!"
 	done
 	
 EliteFourGrimsleyAfterText:
-	text "..."
+	text "Now, I'm nothing"
+	line "more than the one"
+	cont "who lost my light…"
+	
+	para "But this loss will"
+	line "make me shine even"
+	
+	para "brighter the next"
+	line "time…"
+	
+	para "If I think that"
+	line "way, it's not too"
+	
+	para "bad. Sigh… You"
+	line "should take that"
+	
+	para "strength and test"
+	line "it against the"
+	
+	para "rest of the ELITE"
+	line "FOUR."
 	done
 
 GrimsleysRoom_MapEvents:
