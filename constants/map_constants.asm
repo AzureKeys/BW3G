@@ -169,13 +169,13 @@ ENDM
 	map_const CASTELIA_BIKE_SHOP, 4,  4
 	map_const CASTELIA_MASSAGE, 4,  4
 	map_const CASTELIA_GAME_FREAK, 4,  5
-	map_const CASTELIA_BRIDGE_GATE, 5,  4
+	map_const CASTELIA_BRIDGE_GATE, 6,  9
 	map_const BATTLE_COMPANY_1F, 4, 4
 	map_const BATTLE_COMPANY_2F, 4, 4
 	map_const CASTELIA_GYM, 7, 22
 	map_const CASTELIA_PORT, 5, 4
 	map_const FERRY_LEFT, 9, 2
-	map_const PINWHEEL_BRIDGE_GATE, 5, 4
+	map_const PINWHEEL_BRIDGE_GATE, 5, 9
 	map_const SKYARROW_BRIDGE, 20, 8
 	map_const CASTELIA_TRADE_HOUSE_1, 4, 4
 	map_const CASTELIA_TRADE_HOUSE_2, 4, 4

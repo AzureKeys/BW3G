@@ -52,11 +52,13 @@ CasteliaBridgeGateOfficerText:
 CasteliaBridgeGate_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 6 ; warp events
 	warp_event  2,  7, CASTELIA_CITY_SOUTH, 11
 	warp_event  3,  7, CASTELIA_CITY_SOUTH, 11
-	warp_event  9,  2, SKYARROW_BRIDGE, 1
-	warp_event  9,  3, SKYARROW_BRIDGE, 2
+	warp_event  9,  2, CASTELIA_BRIDGE_GATE, 4
+	warp_event  2, 15, CASTELIA_BRIDGE_GATE, 3
+	warp_event  7, 14, SKYARROW_BRIDGE, 1
+	warp_event  7, 15, SKYARROW_BRIDGE, 2
 
 	db 2 ; coord events
 	coord_event  6,  3, SCENE_DEFAULT, CasteliaBridgeGateStopScript

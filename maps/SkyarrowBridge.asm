@@ -53,10 +53,10 @@ SkyarrowBridge_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event  4,  8, CASTELIA_BRIDGE_GATE, 3
-	warp_event  4,  9, CASTELIA_BRIDGE_GATE, 4
-	warp_event 33,  8, PINWHEEL_BRIDGE_GATE, 3
-	warp_event 33,  9, PINWHEEL_BRIDGE_GATE, 4
+	warp_event  4,  8, CASTELIA_BRIDGE_GATE, 5
+	warp_event  4,  9, CASTELIA_BRIDGE_GATE, 6
+	warp_event 33,  8, PINWHEEL_BRIDGE_GATE, 5
+	warp_event 33,  9, PINWHEEL_BRIDGE_GATE, 6
 
 	db 0 ; coord events
 

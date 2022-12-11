@@ -21,11 +21,13 @@ PinwheelBridgeGateOfficerText:
 PinwheelBridgeGate_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 6 ; warp events
 	warp_event  5,  7, PINWHEEL_FOREST, 1
 	warp_event  6,  7, PINWHEEL_FOREST, 1
-	warp_event  0,  2, SKYARROW_BRIDGE, 3
-	warp_event  0,  3, SKYARROW_BRIDGE, 4
+	warp_event  1,  2, PINWHEEL_BRIDGE_GATE, 4
+	warp_event  6, 15, PINWHEEL_BRIDGE_GATE, 3
+	warp_event  0, 14, SKYARROW_BRIDGE, 3
+	warp_event  0, 15, SKYARROW_BRIDGE, 4
 
 	db 0 ; coord events
 
