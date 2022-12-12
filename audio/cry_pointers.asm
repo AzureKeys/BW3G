@@ -77,3 +77,6 @@ Cries:
 	dba Cry_Tirtouga
 	dba Cry_Cubchoo
 	dba Cry_Hydreigon
+	dba Cry_Deerling
+	dba Cry_Mudkip
+	dba Cry_Stoutland

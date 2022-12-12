@@ -2,6 +2,18 @@ Cry_Patrat:
 	musicheader 2, 5, Cry_Patrat_Ch5
 	musicheader 1, 6, Cry_Patrat_Ch6
 	
+Cry_Stoutland:
+	musicheader 2, 5, Cry_Stoutland_Ch5
+	musicheader 1, 6, Cry_Stoutland_Ch6
+	
+Cry_Mudkip:
+	musicheader 2, 5, Cry_Mudkip_Ch5
+	musicheader 1, 6, Cry_Mudkip_Ch6
+
+Cry_Deerling:
+	musicheader 2, 5, Cry_Deerling_Ch5
+	musicheader 1, 6, Cry_Deerling_Ch6
+	
 Cry_Yamask:
 	musicheader 2, 5, Cry_Yamask_Ch5
 	musicheader 1, 6, Cry_Yamask_Ch6
@@ -463,6 +475,36 @@ Cry_Hoothoot_Ch8:
 	noise C_,  1, $88, $6a
 	noise __,  2, $98, $5e
 	noise C_,  1, $a7, $6e
+	endchannel
+	
+Cry_Mudkip_Ch5:
+	sound_duty 3, 0, 3, 0
+	sound __, 4, $b6, $0548
+	sound __, 3, $b6, $0543
+	sound __, 4, $b6, $0548
+	sound __, 5, $d6, $055c
+	sound __, 2, $51, $055c
+	sound __, 2, $21, $055c
+	endchannel
+	
+Cry_Mudkip_Ch6:
+	sound_duty 3, 0, 3, 0
+	sound __, 13, $96, $044c
+	sound __, 2, $41, $044c
+	sound __, 2, $11, $044c
+	endchannel
+
+Cry_Deerling_Ch5:
+	tone $0020
+	dutycycle $0
+	jumpchannel Cry_Deerling_branch_f312b
+
+Cry_Deerling_Ch6:
+	sound_duty 3, 2, 1, 0
+Cry_Deerling_branch_f312b:
+	sound __,  9, $f1, $0720
+	sound __,  14, $00, $0
+	sound __,  9, $38, $072d
 	endchannel
 
 Cry_Trubbish_Ch5:
@@ -2287,6 +2329,32 @@ Cry_Tirtouga_Ch6:
 	sound __, 7, $a5, 1793
 	sound __, 7, $00, 0
 	sound __, 9, $91, 1819
+	endchannel
+
+Cry_Stoutland_Ch5:
+	sound_duty 1, 1, 2, 2
+	sound __, 5, $e1, 1236
+	sound __, 5, $e2, 1256
+	sound __, 3, $96, 1056
+	sound __, 15, $e2, 1036
+	sound __, 15, $96, 172
+	sound __, 3, $93, 1762
+	sound __, 15, $e3, 1792
+	sound __, 3, $93, 1762
+	sound __, 15, $e3, 1792
+	endchannel
+
+Cry_Stoutland_Ch6:
+	sound_duty 2, 2, 0, 0
+	sound __, 5, $b1, 1105
+	sound __, 4, $c2, 1105
+	sound __, 4, $66, 1265
+	sound __, 15, $b1, 1105
+	sound __, 15, $66, 165
+	sound __, 4, $62, 1761
+	sound __, 15, $b3, 1665
+	sound __, 4, $62, 1761
+	sound __, 15, $b3, 1665
 	endchannel
 
 Cry_Cubchoo_Ch5:

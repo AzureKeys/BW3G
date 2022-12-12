@@ -84,3 +84,6 @@
 	const CRY_TIRTOUGA
 	const CRY_CUBCHOO
 	const CRY_HYDREIGON
+	const CRY_DEERLING
+	const CRY_MUDKIP
+	const CRY_STOUTLAND
