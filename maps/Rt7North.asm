@@ -18,11 +18,75 @@ TrainerBackpackerMR7North:
 	trainer BACKPACKERM, BACKPACKERM_R7, EVENT_BEAT_BACKPACKERM_R7, BackpackerMR7NorthSeenText, BackpackerMR7NorthBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	writecode VAR_CALLERID, PHONE_BACKPACKER_PARKER
 	opentext
+	checkflag ENGINE_PARKER_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_BACKPACKER_PARKER
+	iftrue .NumberAccepted
+	checkevent EVENT_PARKER_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
 	writetext BackpackerMR7NorthAfterText
-	waitbutton
-	closetext
+	buttonsound
+	setevent EVENT_PARKER_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_BACKPACKER_PARKER
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_PARKER
+	trainertotext BACKPACKERM, BACKPACKERM_R7, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext BackpackerMR7NorthBeatenText, 0
+	;checkevent EVENT_
+	;iftrue .LoadFight1
+; Fight0
+	loadtrainer BACKPACKERM, BACKPACKERM_R7
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_PARKER_READY_FOR_REMATCH
+	end
+; .LoadFight1
+	; loadtrainer BACKPACKERM, PARKER_REMATCH_1
+	; startbattle
+	; reloadmapafterbattle
+	; clearflag ENGINE_PARKER_READY_FOR_REMATCH
+	; end
+	
+.AskNumber1:
+	jumpstd asknumber1m
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2m
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberm
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedm
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedm
+	end
+
+.PhoneFull:
+	jumpstd phonefullm
+	end
+
+.Rematch:
+	jumpstd rematchm
 	end
 
 TrainerBackpackerFR7North:

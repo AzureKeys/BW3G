@@ -656,6 +656,7 @@ AskNumber1MScript:
 	ifequal PHONE_CYCLIST_FREDDY, .Freddy
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
+	ifequal PHONE_BACKPACKER_PARKER, .Parker
 
 .Dan:
 	farwritetext DanAskNumber1Text
@@ -669,6 +670,9 @@ AskNumber1MScript:
 .Marco:
 	farwritetext MarcoAskNumber1Text
 	end
+.Parker:
+	farwritetext ParkerAskNumber1Text
+	end
 	
 AskNumber2MScript:
 	special RandomPhoneMon
@@ -677,6 +681,7 @@ AskNumber2MScript:
 	ifequal PHONE_CYCLIST_FREDDY, .Freddy
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
+	ifequal PHONE_BACKPACKER_PARKER, .Parker
 
 .Dan:
 	farwritetext DanAskNumber2Text
@@ -689,6 +694,9 @@ AskNumber2MScript:
 	end
 .Marco:
 	farwritetext MarcoAskNumber2Text
+	end
+.Parker:
+	farwritetext ParkerAskNumber2Text
 	end
 
 RegisteredNumberMScript:
@@ -704,6 +712,7 @@ NumberAcceptedMScript:
 	ifequal PHONE_CYCLIST_FREDDY, .Freddy
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
+	ifequal PHONE_BACKPACKER_PARKER, .Parker
 
 .Dan:
 	farwritetext DanNumberAcceptedText
@@ -725,6 +734,11 @@ NumberAcceptedMScript:
 	waitbutton
 	closetext
 	end
+.Parker:
+	farwritetext ParkerNumberAcceptedText
+	waitbutton
+	closetext
+	end
 
 NumberDeclinedMScript:
 	checkcode VAR_CALLERID
@@ -732,6 +746,7 @@ NumberDeclinedMScript:
 	ifequal PHONE_CYCLIST_FREDDY, .Freddy
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
+	ifequal PHONE_BACKPACKER_PARKER, .Parker
 
 .Dan:
 	farwritetext DanNumberDeclinedText
@@ -753,6 +768,11 @@ NumberDeclinedMScript:
 	waitbutton
 	closetext
 	end
+.Parker:
+	farwritetext ParkerNumberDeclinedText
+	waitbutton
+	closetext
+	end
 
 PhoneFullMScript:
 	checkcode VAR_CALLERID
@@ -760,6 +780,7 @@ PhoneFullMScript:
 	ifequal PHONE_CYCLIST_FREDDY, .Freddy
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
+	ifequal PHONE_BACKPACKER_PARKER, .Parker
 
 .Dan:
 	farwritetext DanPhoneFullText
@@ -781,6 +802,11 @@ PhoneFullMScript:
 	waitbutton
 	closetext
 	end
+.Parker:
+	farwritetext ParkerPhoneFullText
+	waitbutton
+	closetext
+	end
 
 RematchMScript:
 	checkcode VAR_CALLERID
@@ -788,6 +814,7 @@ RematchMScript:
 	ifequal PHONE_CYCLIST_FREDDY, .Freddy
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
+	ifequal PHONE_BACKPACKER_PARKER, .Parker
 
 .Dan:
 	farwritetext DanRematchText
@@ -809,6 +836,11 @@ RematchMScript:
 	waitbutton
 	closetext
 	end
+.Parker:
+	farwritetext ParkerRematchText
+	waitbutton
+	closetext
+	end
 
 GiftMScript:
 	end
@@ -821,18 +853,13 @@ RematchGiftMScript:
 
 AskNumber1FScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
-.Jewel:
-	farwritetext JewelAskNumber1Text
-	end
 .Lacey:
 	farwritetext LaceyAskNumber1Text
 	end
@@ -848,27 +875,19 @@ AskNumber1FScript:
 .Jenny:
 	farwritetext JennyAskNumber1Text
 	end
-.Marla:
-	farwritetext MarlaAskNumber1Text
-	end
 .Sophie:
 	farwritetext SophieAskNumber1Text
 	end
 
 AskNumber2FScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
-.Jewel:
-	farwritetext JewelAskNumber2Text
-	end
 .Lacey:
 	farwritetext LaceyAskNumber2Text
 	end
@@ -884,9 +903,6 @@ AskNumber2FScript:
 .Jenny:
 	farwritetext JennyAskNumber2Text
 	end
-.Marla:
-	farwritetext MarlaAskNumber2Text
-	end
 .Sophie:
 	farwritetext SophieAskNumber2Text
 	end
@@ -900,20 +916,13 @@ RegisteredNumberFScript:
 
 NumberAcceptedFScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
-.Jewel:
-	farwritetext JewelNumberAcceptedText
-	waitbutton
-	closetext
-	end
 .Lacey:
 	farwritetext LaceyNumberAcceptedText
 	waitbutton
@@ -939,11 +948,6 @@ NumberAcceptedFScript:
 	waitbutton
 	closetext
 	end
-.Marla:
-	farwritetext MarlaNumberAcceptedText
-	waitbutton
-	closetext
-	end
 .Sophie:
 	farwritetext SophieNumberAcceptedText
 	waitbutton
@@ -952,20 +956,13 @@ NumberAcceptedFScript:
 
 NumberDeclinedFScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
-.Jewel:
-	farwritetext JewelNumberDeclinedText
-	waitbutton
-	closetext
-	end
 .Lacey:
 	farwritetext LaceyNumberDeclinedText
 	waitbutton
@@ -991,11 +988,6 @@ NumberDeclinedFScript:
 	waitbutton
 	closetext
 	end
-.Marla:
-	farwritetext MarlaNumberDeclinedText
-	waitbutton
-	closetext
-	end
 .Sophie:
 	farwritetext SophieNumberDeclinedText
 	waitbutton
@@ -1004,20 +996,13 @@ NumberDeclinedFScript:
 
 PhoneFullFScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
-.Jewel:
-	farwritetext JewelPhoneFullText
-	waitbutton
-	closetext
-	end
 .Lacey:
 	farwritetext LaceyPhoneFullText
 	waitbutton
@@ -1043,11 +1028,6 @@ PhoneFullFScript:
 	waitbutton
 	closetext
 	end
-.Marla:
-	farwritetext MarlaPhoneFullText
-	waitbutton
-	closetext
-	end
 .Sophie:
 	farwritetext SophiePhoneFullText
 	waitbutton
@@ -1056,20 +1036,13 @@ PhoneFullFScript:
 
 RematchFScript:
 	checkcode VAR_CALLERID
-	ifequal PHONE_SCHOOL_KIDF_JEWEL, .Jewel
 	ifequal PHONE_LADY_LACEY, .Lacey
 	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
 	ifequal PHONE_LASS_CARLA, .Carla
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
-	ifequal PHONE_PKMN_BREEDER_MARLA, .Marla
 	ifequal PHONE_MAID_SOPHIE, .Sophie
 
-.Jewel:
-	farwritetext JewelRematchText
-	waitbutton
-	closetext
-	end
 .Lacey:
 	farwritetext LaceyRematchText
 	waitbutton
@@ -1092,11 +1065,6 @@ RematchFScript:
 	end
 .Jenny:
 	farwritetext JennyRematchText
-	waitbutton
-	closetext
-	end
-.Marla:
-	farwritetext MarlaRematchText
 	waitbutton
 	closetext
 	end

@@ -46,75 +46,11 @@ TrainerPkmnBreederFR7:
 	trainer PKMN_BREEDERF, PKMN_BREEDERF_R7, EVENT_BEAT_PKMN_BREEDERF_R7, PkmnBreederFR7SeenText, PkmnBreederFR7BeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_PKMN_BREEDER_MARLA
+	endifjustbattled
 	opentext
-	checkflag ENGINE_MARLA_READY_FOR_REMATCH
-	iftrue .ChooseRematch
-	checkcellnum PHONE_PKMN_BREEDER_MARLA
-	iftrue .NumberAccepted
-	checkevent EVENT_MARLA_ASKED_FOR_PHONE_NUMBER
-	iftrue .AskAgainForPhoneNumber
 	writetext PkmnBreederFR7AfterText
-	buttonsound
-	setevent EVENT_MARLA_ASKED_FOR_PHONE_NUMBER
-	scall .AskNumber1
-	jump .ContinueAskForPhoneNumber
-	
-.AskAgainForPhoneNumber:
-	scall .AskNumber2
-.ContinueAskForPhoneNumber:
-	askforphonenumber PHONE_PKMN_BREEDER_MARLA
-	ifequal PHONE_CONTACTS_FULL, .PhoneFull
-	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
-	setflag ENGINE_MARLA
-	trainertotext PKMN_BREEDERF, PKMN_BREEDERF_R7, MEM_BUFFER_0
-	scall .RegisteredNumber
-	jump .NumberAccepted
-	
-.ChooseRematch:
-	scall .Rematch
-	winlosstext PkmnBreederFR7BeatenText, 0
-	;checkevent EVENT_
-	;iftrue .LoadFight1
-; Fight0
-	loadtrainer PKMN_BREEDERF, PKMN_BREEDERF_R7
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_MARLA_READY_FOR_REMATCH
-	end
-; .LoadFight1
-	; loadtrainer PKMN_BREEDERF, MARLA_REMATCH_1
-	; startbattle
-	; reloadmapafterbattle
-	; clearflag ENGINE_MARLA_READY_FOR_REMATCH
-	; end
-	
-.AskNumber1:
-	jumpstd asknumber1f
-	end
-	
-.AskNumber2:
-	jumpstd asknumber2f
-	end
-
-.RegisteredNumber:
-	jumpstd registerednumberf
-	end
-
-.NumberAccepted:
-	jumpstd numberacceptedf
-	end
-
-.NumberDeclined:
-	jumpstd numberdeclinedf
-	end
-
-.PhoneFull:
-	jumpstd phonefullf
-	end
-
-.Rematch:
-	jumpstd rematchf
+	waitbutton
+	closetext
 	end
 
 TrainerSchoolKidMR7:

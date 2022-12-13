@@ -1,4 +1,4 @@
-MarlaPhoneAskRematchText:
+ParkerPhoneAskRematchText:
 	text "Hey <PLAY_G>,"
 	line "it's DAN!"
 
@@ -14,7 +14,7 @@ MarlaPhoneAskRematchText:
 	line "ROUTE 13. See ya!"
 	done
 	
-MarlaPhoneAfterBattleText:
+ParkerPhoneAfterBattleText:
 	text "Hey <PLAY_G>."
 
 	para "We're training"
@@ -25,7 +25,7 @@ MarlaPhoneAfterBattleText:
 	line "win for sure!"
 	done
 	
-MarlaPhoneWaitingText:
+ParkerPhoneWaitingText:
 	text "Hey <PLAY_G>,"
 	line "I'm waiting for"
 	cont "you on ROUTE 13!"
@@ -33,7 +33,7 @@ MarlaPhoneWaitingText:
 	para "Don't be late!"
 	done
 	
-MarlaAskNumber1Text:
+ParkerAskNumber1Text:
 	text "You're pretty"
 	line "good!"
 
@@ -45,7 +45,7 @@ MarlaAskNumber1Text:
 	line "your number?"
 	done
 
-MarlaAskNumber2Text:
+ParkerAskNumber2Text:
 	text "You can call me"
 	line "if you want a"
 	cont "rematch!"
@@ -54,13 +54,13 @@ MarlaAskNumber2Text:
 	line "your number?"
 	done
 
-MarlaNumberAcceptedText:
+ParkerNumberAcceptedText:
 	text "Call me whenever"
 	line "you're looking"
 	cont "for a match!"
 	done
 
-MarlaNumberDeclinedText:
+ParkerNumberDeclinedText:
 	text "Oh, OK. Too bad…"
 
 	para "Well, if you ever"
@@ -68,7 +68,7 @@ MarlaNumberDeclinedText:
 	cont "come see me, OK?"
 	done
 
-MarlaPhoneFullText:
+ParkerPhoneFullText:
 	text "Oh?"
 	line "Your phone's full."
 
@@ -76,7 +76,7 @@ MarlaPhoneFullText:
 	line "my number."
 	done
 
-MarlaRematchText:
+ParkerRematchText:
 	text "Hi, I was waiting"
 	line "for you to show!"
 

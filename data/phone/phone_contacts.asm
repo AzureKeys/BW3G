@@ -10,13 +10,12 @@ ENDM
 
 PhoneContacts:
 ; entries correspond to PHONE_* constants
-	phone TRAINER_NONE,   PHONE_00,              N_A,                0,       UnusedPhoneScript,       0, UnusedPhoneScript
-	phone TRAINER_NONE,   PHONECONTACT_MOM,      PLAYERS_HOUSE_1F,   ANYTIME, MomPhoneCalleeScript,    0, UnusedPhoneScript
-	phone TRAINER_NONE,   PHONECONTACT_BILL,     N_A,                ANYTIME, BillPhoneCalleeScript,   0, BillPhoneCallerScript
-	phone TRAINER_NONE,   PHONECONTACT_CHEREN,   N_A,                ANYTIME, CherenPhoneCalleeScript, 0, CherenPhoneCallerScript
-	phone TRAINER_NONE,   PHONECONTACT_BIANCA,   N_A,                ANYTIME, BiancaPhoneCalleeScript, 0, BiancaPhoneCallerScript
-	phone YOUNGSTER,      YOUNGSTER_R13,         R_13,               ANYTIME, DanPhoneCalleeScript,    0, DanPhoneCallerScript
-	phone SCHOOL_KIDF,    SCHOOL_KIDF_R13,       R_13,               ANYTIME, JewelPhoneCalleeScript,    0, JewelPhoneCallerScript
+	phone TRAINER_NONE,   PHONE_00,              N_A,                0,       UnusedPhoneScript,         0, UnusedPhoneScript
+	phone TRAINER_NONE,   PHONECONTACT_MOM,      PLAYERS_HOUSE_1F,   ANYTIME, MomPhoneCalleeScript,      0, UnusedPhoneScript
+	phone TRAINER_NONE,   PHONECONTACT_BILL,     N_A,                ANYTIME, BillPhoneCalleeScript,     0, BillPhoneCallerScript
+	phone TRAINER_NONE,   PHONECONTACT_CHEREN,   N_A,                ANYTIME, CherenPhoneCalleeScript,   0, CherenPhoneCallerScript
+	phone TRAINER_NONE,   PHONECONTACT_BIANCA,   N_A,                ANYTIME, BiancaPhoneCalleeScript,   0, BiancaPhoneCallerScript
+	phone YOUNGSTER,      YOUNGSTER_R13,         R_13,               ANYTIME, DanPhoneCalleeScript,      0, DanPhoneCallerScript
 	phone CYCLISTM,       CYCLISTM_OUTSKIRTS,    LENTIMAS_OUTSKIRTS, ANYTIME, FreddyPhoneCalleeScript,   0, FreddyPhoneCallerScript
 	phone DANCER,         DANCER_R5_1,           R_5,                ANYTIME, EricPhoneCalleeScript,     0, EricPhoneCallerScript
 	phone LADY,           LADY_R4,               R_4,                ANYTIME, LaceyPhoneCalleeScript,    0, LaceyPhoneCallerScript
@@ -26,7 +25,7 @@ PhoneContacts:
 	phone MAID,           MAID_R1,               R_1,                ANYTIME, ClarissaPhoneCalleeScript, 0, ClarissaPhoneCallerScript
 	phone BACKPACKERF,    BACKPACKERF_R18,       R_18,               ANYTIME, JennyPhoneCalleeScript,    0, JennyPhoneCallerScript
 	phone SCIENTISTM,     SCIENTISTM_R6,         R_6,                ANYTIME, MarcoPhoneCalleeScript,    0, MarcoPhoneCallerScript
-	phone PKMN_BREEDERF,  PKMN_BREEDERF_R7,      R_7,                ANYTIME, MarlaPhoneCalleeScript,    0, MarlaPhoneCallerScript
+	phone BACKPACKERM,    BACKPACKERM_R7,        R_7_NORTH,          ANYTIME, ParkerPhoneCalleeScript,   0, ParkerPhoneCallerScript
 	; phone BUG_CATCHER,  ARNIE1,                ROUTE_35,                  ANYTIME, ArniePhoneCalleeScript,    0, ArniePhoneCallerScript
 	; phone SCHOOLBOY,    ALAN1,                 ROUTE_36,                  ANYTIME, AlanPhoneCalleeScript,     0, AlanPhoneCallerScript
 	phone TRAINER_NONE, PHONE_00,              N_A,                       0,       UnusedPhoneScript,        0,       UnusedPhoneScript

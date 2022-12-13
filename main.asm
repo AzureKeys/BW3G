@@ -348,10 +348,9 @@ INCLUDE "engine/phone/scripts/clarissa.asm"
 INCLUDE "engine/phone/scripts/eric.asm"
 INCLUDE "engine/phone/scripts/freddy.asm"
 INCLUDE "engine/phone/scripts/jenny.asm"
-INCLUDE "engine/phone/scripts/jewel.asm"
 INCLUDE "engine/phone/scripts/lacey.asm"
 INCLUDE "engine/phone/scripts/marco.asm"
-INCLUDE "engine/phone/scripts/marla.asm"
+INCLUDE "engine/phone/scripts/parker.asm"
 INCLUDE "engine/phone/scripts/sophie.asm"
 
 
@@ -366,10 +365,9 @@ INCLUDE "data/phone/text/clarissa.asm"
 INCLUDE "data/phone/text/eric.asm"
 INCLUDE "data/phone/text/freddy.asm"
 INCLUDE "data/phone/text/jenny.asm"
-INCLUDE "data/phone/text/jewel.asm"
 INCLUDE "data/phone/text/lacey.asm"
 INCLUDE "data/phone/text/marco.asm"
-INCLUDE "data/phone/text/marla.asm"
+INCLUDE "data/phone/text/parker.asm"
 INCLUDE "data/phone/text/sophie.asm"
 
 
