@@ -15,7 +15,7 @@ PokemonCries::
 	mon_cry CRY_DIGLETT,     $033,  $0d0 ; DEWOTT
 	mon_cry CRY_VULPIX,     -$15c,  $100 ; SAMUROTT
 	mon_cry CRY_PATRAT,      $150,  $067 ; PATRAT
-	mon_cry CRY_RATTATA,     $020,  $17f ; RATICATE*
+	mon_cry CRY_CLEFAIRY,   -$026,  $0b0 ; WATCHOG
 	mon_cry CRY_MAREEP,      $04d,  $0b8 ; PURRLOIN
 	mon_cry CRY_MAREEP,      $03d,  $148 ; LIEPARD
 	mon_cry CRY_PIDGEOTTO,  -$0c5,  $0a0 ; PIDOVE
