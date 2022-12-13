@@ -354,15 +354,50 @@ BattleHouseDraydenAfterText:
 	done
 	
 BattleHouseGymGuyText:
-	text "..."
+	text "Hi, welcome to the"
+	line "BATTLE HOUSE!"
+	
+	para "GYM LEADERS from"
+	line "all over UNOVA"
+	
+	para "come here to spar"
+	line "with each other!"
+	
+	para "A different LEADER"
+	line "comes by each day,"
+	
+	para "so you never know"
+	line "who you'll be up"
+	cont "against!"
+	
+	para "How exciting!"
 	done
 	
 BattleHouseGymGuyNotOpenText:
-	text "..."
+	text "Hi, welcome to the"
+	line "BATTLE HOUSE!"
+	
+	para "GYM LEADERS from"
+	line "all over UNOVA"
+	
+	para "come here to spar"
+	line "with each other!"
+	
+	para "…unfortunately,"
+	line "we're not open"
+	cont "quite yet."
+	
+	para "You should come"
+	line "back and check us"
+	cont "out later!"
 	done
 	
 BattleHouseStatueText:
-	text "..."
+	text "OPELUCID CITY"
+	line "BATTLE HOUSE"
+	
+	para "Where the best"
+	line "come to battle!"
 	done
 
 OpelucidBattleHouse_MapEvents:
