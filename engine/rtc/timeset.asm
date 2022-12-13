@@ -112,6 +112,7 @@ InitClock:
 	jr .HourIsSet
 
 .MinutesAreSet:
+	call InitTimeOfDay
 	pop af
 	ldh [hInMenu], a
 	ret
