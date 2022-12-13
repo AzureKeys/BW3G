@@ -304,14 +304,14 @@ INCLUDE "maps/VictoryRoadCave3F.asm"
 INCLUDE "maps/VictoryRoadOutdoor1F.asm"
 INCLUDE "maps/VictoryRoadOutdoor2F.asm"
 INCLUDE "maps/VictoryRoadGrove.asm"
+
+SECTION "Map Scripts 15", ROMX
+
 INCLUDE "maps/PkmnLeagueEntrance.asm"
 INCLUDE "maps/PkmnLeagueMain.asm"
 INCLUDE "maps/VictoryRoadPokecenter1F.asm"
 INCLUDE "maps/PkmnLeaguePokecenter1F.asm"
 INCLUDE "maps/IcirrusCave.asm"
-
-SECTION "Map Scripts 15", ROMX
-
 INCLUDE "maps/GrimsleysRoom.asm"
 INCLUDE "maps/MarshalsRoom.asm"
 INCLUDE "maps/ElesasRoom.asm"

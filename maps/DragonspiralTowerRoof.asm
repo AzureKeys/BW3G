@@ -162,6 +162,7 @@ DragonspiralTowerRoofScript:
 .no_room
 	writetext DragonspiralTowerRoofDraydenNoRoomText
 	buttonsound
+	clearevent EVENT_DRAYDENS_HOUSE_DRAGON_FANG
 .got_item
 	writetext DragonspiralTowerRoofDraydenLeaveText
 	waitbutton
@@ -171,6 +172,7 @@ DragonspiralTowerRoofScript:
 	disappear DRAGONSPIRALTOWERROOF_DRAYDEN
 	setevent EVENT_FINISHED_DRAGONSPIRAL_TOWER
 	setevent EVENT_OPELUCID_CITY_IRIS
+	clearevent EVENT_DRAYDENS_HOUSE_IRIS
 	setscene SCENE_FINISHED
 	end
 	
