@@ -184,22 +184,52 @@ TrainerPkmnBreederFR6:
 	trainer PKMN_BREEDERF, PKMN_BREEDERF_R6, EVENT_BEAT_PKMN_BREEDERF_R6, PkmnBreederFR6SeenText, PkmnBreederFR6BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
+	checkjustbattled
+	iftrue .RematchText
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iftrue .RematchText
+	writetext PkmnBreederFR6SeenText
+	waitbutton
+	closetext
+	winlosstext PkmnBreederFR6BeatenText, 0
+	setlasttalked R6_PKMN_BREEDERF
+	loadtrainer PKMN_BREEDERF, PKMN_BREEDERF_R6
+	startbattle
+	reloadmapafterbattle
+	opentext
+; fallthrough
+.RematchText
 	writetext PkmnBreederFR6AfterText
 	waitbutton
 	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	end
 
 TrainerPkmnBreederMR6:
 	trainer PKMN_BREEDERM, PKMN_BREEDERM_R6, EVENT_BEAT_PKMN_BREEDERM_R6, PkmnBreederMR6SeenText, PkmnBreederMR6BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
+	checkjustbattled
+	iftrue .RematchText
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
+	iftrue .RematchText
+	writetext PkmnBreederMR6SeenText
+	waitbutton
+	closetext
+	winlosstext PkmnBreederMR6BeatenText, 0
+	setlasttalked R6_PKMN_BREEDERM
+	loadtrainer PKMN_BREEDERM, PKMN_BREEDERM_R6
+	startbattle
+	reloadmapafterbattle
+	opentext
+; fallthrough
+.RematchText
 	writetext PkmnBreederMR6AfterText
 	waitbutton
 	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
 	end
 
 TrainerScientistFR6:
@@ -335,6 +365,10 @@ PkmnBreederFR6AfterText:
 	text "We raise our #-"
 	line "MON by having them"
 	cont "battle!"
+	
+	para "If you want to"
+	line "battle again, come"
+	cont "and see me!"
 	done
 	
 PkmnBreederMR6SeenText:

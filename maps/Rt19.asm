@@ -107,22 +107,52 @@ TrainerPkmnBreederFR19:
 	trainer PKMN_BREEDERF, PKMN_BREEDERF_R19, EVENT_BEAT_PKMN_BREEDERF_R19, PkmnBreederFR19SeenText, PkmnBreederFR19BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
+	checkjustbattled
+	iftrue .RematchText
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iftrue .RematchText
+	writetext PkmnBreederFR19SeenText
+	waitbutton
+	closetext
+	winlosstext PkmnBreederFR19BeatenText, 0
+	setlasttalked R19_PKMN_BREEDERF
+	loadtrainer PKMN_BREEDERF, PKMN_BREEDERF_R19
+	startbattle
+	reloadmapafterbattle
+	opentext
+; fallthrough
+.RematchText
 	writetext PkmnBreederFR19AfterText
 	waitbutton
 	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	end
 
 TrainerPkmnBreederMR19:
 	trainer PKMN_BREEDERM, PKMN_BREEDERM_R19, EVENT_BEAT_PKMN_BREEDERM_R19, PkmnBreederMR19SeenText, PkmnBreederMR19BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
+	checkjustbattled
+	iftrue .RematchText
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
+	iftrue .RematchText
+	writetext PkmnBreederMR19SeenText
+	waitbutton
+	closetext
+	winlosstext PkmnBreederMR19BeatenText, 0
+	setlasttalked R19_PKMN_BREEDERM
+	loadtrainer PKMN_BREEDERM, PKMN_BREEDERM_R19
+	startbattle
+	reloadmapafterbattle
+	opentext
+; fallthrough
+.RematchText
 	writetext PkmnBreederMR19AfterText
 	waitbutton
 	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
 	end
 
 TrainerLadyR19:
@@ -213,6 +243,12 @@ PkmnBreederFR19AfterText:
 	
 	para "sound of breathing"
 	line "#MON."
+	
+	para "If you want to"
+	line "have another"
+	
+	para "battle, come talk"
+	line "to me again!"
 	done
 	
 PkmnBreederMR19SeenText:
@@ -233,6 +269,10 @@ PkmnBreederMR19AfterText:
 
 	para "it's always fun"
 	line "to patrol!"
+	
+	para "Come and see me if"
+	line "you want another"
+	cont "battle!"
 	done
 	
 LadyR19SeenText:

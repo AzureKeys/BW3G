@@ -100,12 +100,12 @@ LostlornForestInferScript:
 	writetext LostlornForestInferText_Intro
 	waitbutton
 	closetext
+	winlosstext LostlornForestInferWinText, 0
+	setlasttalked LOSTLORNFOREST_INFER
 	checkevent EVENT_GOT_OSHAWOTT
 	iftrue .Oshawott
 	checkevent EVENT_GOT_SNIVY
 	iftrue .Snivy
-	winlosstext LostlornForestInferWinText, 0
-	setlasttalked LOSTLORNFOREST_INFER
 	loadtrainer INFER, INFER2_OSHAWOTT
 	startbattle
 	dontrestartmapmusic
@@ -113,8 +113,6 @@ LostlornForestInferScript:
 	jump .AfterVictorious
 	
 .Oshawott:
-	winlosstext LostlornForestInferWinText, 0
-	setlasttalked LOSTLORNFOREST_INFER
 	loadtrainer INFER, INFER2_SNIVY
 	startbattle
 	dontrestartmapmusic
@@ -122,8 +120,6 @@ LostlornForestInferScript:
 	jump .AfterVictorious
 
 .Snivy:
-	winlosstext LostlornForestInferWinText, 0
-	setlasttalked LOSTLORNFOREST_INFER
 	loadtrainer INFER, INFER2_TEPIG
 	startbattle
 	dontrestartmapmusic
@@ -139,7 +135,6 @@ LostlornForestInferScript:
 	disappear LOSTLORNFOREST_INFER
 	special FadeOutMusic
 	pause 30
-	;playmusic MUSIC_FOREST
 	playmapmusic
 	setscene SCENE_LOSTLORN_NOTHING
 	end
@@ -148,11 +143,26 @@ TrainerPkmnBreederFLostlorn:
 	trainer PKMN_BREEDERF, PKMN_BREEDERF_LOSTLORN, EVENT_BEAT_PKMN_BREEDERF_LOSTLORN, PkmnBreederFLostlornSeenText, PkmnBreederFLostlornBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
+	checkjustbattled
+	iftrue .RematchText
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iftrue .RematchText
+	writetext PkmnBreederFLostlornSeenText
+	waitbutton
+	closetext
+	winlosstext PkmnBreederFLostlornBeatenText, 0
+	setlasttalked LOSTLORNFOREST_PKMN_BREEDERF
+	loadtrainer PKMN_BREEDERF, PKMN_BREEDERF_LOSTLORN
+	startbattle
+	reloadmapafterbattle
+	opentext
+; fallthrough
+.RematchText
 	writetext PkmnBreederFLostlornAfterText
 	waitbutton
 	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	end
 
 TrainerSchoolKidMLostlorn:
@@ -170,11 +180,26 @@ TrainerPkmnBreederMLostlorn:
 	trainer PKMN_BREEDERM, PKMN_BREEDERM_LOSTLORN, EVENT_BEAT_PKMN_BREEDERM_LOSTLORN, PkmnBreederMLostlornSeenText, PkmnBreederMLostlornBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
+	checkjustbattled
+	iftrue .RematchText
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
+	iftrue .RematchText
+	writetext PkmnBreederMLostlornSeenText
+	waitbutton
+	closetext
+	winlosstext PkmnBreederMLostlornBeatenText, 0
+	setlasttalked LOSTLORNFOREST_PKMN_BREEDERM
+	loadtrainer PKMN_BREEDERM, PKMN_BREEDERM_LOSTLORN
+	startbattle
+	reloadmapafterbattle
+	opentext
+; fallthrough
+.RematchText
 	writetext PkmnBreederMLostlornAfterText
 	waitbutton
 	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
 	end
 
 TrainerYoungsterLostlorn:
@@ -423,6 +448,10 @@ PkmnBreederFLostlornAfterText:
 	text "Thank you so much!"
 	line "I learned a lot"
 	cont "from our battle."
+	
+	para "Come talk to me if"
+	line "you want to"
+	cont "battle again!"
 	done
 	
 SchoolKidMLostlornSeenText:
@@ -465,6 +494,10 @@ PkmnBreederMLostlornAfterText:
 	text "I want to battle"
 	line "you again some"
 	cont "time!"
+	
+	para "Come talk to me if"
+	line "you want another"
+	cont "battle!"
 	done
 	
 YoungsterLostlornSeenText:

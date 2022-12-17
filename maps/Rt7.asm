@@ -46,11 +46,26 @@ TrainerPkmnBreederFR7:
 	trainer PKMN_BREEDERF, PKMN_BREEDERF_R7, EVENT_BEAT_PKMN_BREEDERF_R7, PkmnBreederFR7SeenText, PkmnBreederFR7BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
+	checkjustbattled
+	iftrue .RematchText
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iftrue .RematchText
+	writetext PkmnBreederFR7SeenText
+	waitbutton
+	closetext
+	winlosstext PkmnBreederFR7BeatenText, 0
+	setlasttalked R7_PKMN_BREEDERF
+	loadtrainer PKMN_BREEDERF, PKMN_BREEDERF_R7
+	startbattle
+	reloadmapafterbattle
+	opentext
+; fallthrough
+.RematchText
 	writetext PkmnBreederFR7AfterText
 	waitbutton
 	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	end
 
 TrainerSchoolKidMR7:
@@ -90,11 +105,26 @@ TrainerPkmnBreederMR7:
 	trainer PKMN_BREEDERM, PKMN_BREEDERM_R7, EVENT_BEAT_PKMN_BREEDERM_R7, PkmnBreederMR7SeenText, PkmnBreederMR7BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
 	opentext
+	checkjustbattled
+	iftrue .RematchText
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
+	iftrue .RematchText
+	writetext PkmnBreederMR7SeenText
+	waitbutton
+	closetext
+	winlosstext PkmnBreederMR7BeatenText, 0
+	setlasttalked R7_PKMN_BREEDERM
+	loadtrainer PKMN_BREEDERM, PKMN_BREEDERM_R7
+	startbattle
+	reloadmapafterbattle
+	opentext
+; fallthrough
+.RematchText
 	writetext PkmnBreederMR7AfterText
 	waitbutton
 	closetext
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
 	end
 	
 R7FruitTree:
@@ -192,6 +222,12 @@ PkmnBreederMR7AfterText:
 	text "Battling you was a"
 	line "truly meaningful"
 	cont "experience!"
+	
+	para "Please, if you"
+	line "wish to battle"
+	
+	para "again, come and"
+	line "talk to me!"
 	done
 	
 PkmnBreederFR7SeenText:
