@@ -17,22 +17,11 @@ Rt17_MapScripts:
 	db 0 ; callbacks
 	
 R17DoctorScript:
+	trainer DOCTOR, DOCTOR_R17, EVENT_BEAT_DOCTOR_R17, R17DoctorIntroText, R17DoctorWinText, 0, .Script
+
+.Script:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_DOCTOR_R17
-	iftrue .beaten
-	writetext R17DoctorIntroText
-	waitbutton
-	closetext
-	winlosstext R17DoctorWinText, 0
-	setlasttalked R17_DOCTOR
-	loadtrainer DOCTOR, DOCTOR_R17
-	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
-	startbattle
-	reloadmapafterbattle
-	setevent EVENT_BEAT_DOCTOR_R17
-	opentext
-.beaten
 	writetext R17DoctorHealText
 	waitbutton
 	closetext
@@ -323,5 +312,5 @@ Rt17_MapEvents:
 	object_event 14, 13, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerSwimmerM2R17, -1
 	object_event  7, 16, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSwimmerF1R17, -1
 	object_event 17, 32, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSwimmerF2R17, -1
-	object_event 35,  7, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, R17DoctorScript, -1
+	object_event 35,  7, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 0, R17DoctorScript, -1
 	

@@ -27,36 +27,24 @@ LentimasOutskirts_MapScripts:
 	return
 	
 OutskirtsDoctorScript:
+	trainer DOCTOR, DOCTOR_OUTSKIRTS, EVENT_BEAT_DOCTOR_OUTSKIRTS, OutskirtsDoctorIntroText, OutskirtsDoctorWinText, 0, .Script
+
+.Script:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_DOCTOR_OUTSKIRTS
-	iftrue .beaten
-	writetext OutskirtsDoctorIntroText
-	waitbutton
-	closetext
-	winlosstext OutskirtsDoctorWinText, 0
-	setlasttalked LENTIMASOUTSKIRTS_DOCTOR
-	loadtrainer DOCTOR, DOCTOR_OUTSKIRTS
-	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
-	startbattle
-	reloadmapafterbattle
-	setevent EVENT_BEAT_DOCTOR_OUTSKIRTS
-	opentext
-.beaten
 	writetext OutskirtsDoctorHealText
 	waitbutton
 	closetext
-	special FadeOutPalettes
 	special StubbedTrainerRankings_Healings
 	playsound SFX_FULL_HEAL
 	special HealParty
-	special FadeInPalettes
 	end
 
 TrainerCyclistMOutskirts:
 	trainer CYCLISTM, CYCLISTM_OUTSKIRTS, EVENT_BEAT_CYCLISTM_OUTSKIRTS, CyclistMOutskirtsSeenText, CyclistMOutskirtsBeatenText, 0, .Script
 
 .Script:
+	faceplayer
 	writecode VAR_CALLERID, PHONE_CYCLIST_FREDDY
 	opentext
 	checkflag ENGINE_FREDDY_READY_FOR_REMATCH
@@ -414,5 +402,5 @@ LentimasOutskirts_MapEvents:
 	object_event 22, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerYoungsterOutskirts, -1
 	object_event 18, 12, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMOutskirts, -1
 	object_event 28, 17, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFOutskirts, -1
-	object_event 29,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OutskirtsDoctorScript, -1
+	object_event 29,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 0, OutskirtsDoctorScript, -1
 	

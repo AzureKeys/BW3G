@@ -10,22 +10,11 @@ VictoryRoadOutdoor1F_MapScripts:
 	db 0 ; callbacks
 	
 TrainerNurseVictoryRoadOutdoor1F:
+	trainer NURSE, NURSE_VICTORY_ROAD, EVENT_BEAT_NURSE_VICTORY_ROAD, VictoryRoadNurseIntroText, VictoryRoadNurseWinText, 0, .Script
+
+.Script:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_NURSE_VICTORY_ROAD
-	iftrue .beaten
-	writetext VictoryRoadNurseIntroText
-	waitbutton
-	closetext
-	winlosstext VictoryRoadNurseWinText, 0
-	setlasttalked VICTORYROADOUTDOOR1F_NURSE
-	loadtrainer NURSE, NURSE_VICTORY_ROAD
-	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
-	startbattle
-	reloadmapafterbattle
-	setevent EVENT_BEAT_NURSE_VICTORY_ROAD
-	opentext
-.beaten
 	writetext VictoryRoadNurseHealText
 	waitbutton
 	closetext
@@ -142,7 +131,7 @@ VictoryRoadOutdoor1F_MapEvents:
 	db 0 ; bg events
 
 	db 4 ; object events
-	object_event  6,  6, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerNurseVictoryRoadOutdoor1F, -1
+	object_event  6,  6, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerNurseVictoryRoadOutdoor1F, -1
 	object_event 25, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerBackpackerFVictoryRoadOutdoor1F, -1
 	object_event  8, 13, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranFVictoryRoadOutdoor1F, -1
 	object_event 49, 12, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerVeteranMVictoryRoadOutdoor1F, -1

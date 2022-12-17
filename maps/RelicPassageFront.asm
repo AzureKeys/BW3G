@@ -48,22 +48,11 @@ RelicPassageFront_MapScripts:
 	end
 	
 TrainerNurseRelicPassage:
+	trainer NURSE, NURSE_RELIC_PASSAGE, EVENT_BEAT_NURSE_RELIC_PASSAGE, RelicPassageNurseIntroText, RelicPassageNurseWinText, 0, .Script
+
+.Script:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_NURSE_RELIC_PASSAGE
-	iftrue .beaten
-	writetext RelicPassageNurseIntroText
-	waitbutton
-	closetext
-	winlosstext RelicPassageNurseWinText, 0
-	setlasttalked RELICPASSAGEFRONT_NURSE
-	loadtrainer NURSE, NURSE_RELIC_PASSAGE
-	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
-	startbattle
-	reloadmapafterbattle
-	setevent EVENT_BEAT_NURSE_RELIC_PASSAGE
-	opentext
-.beaten
 	writetext RelicPassageNurseHealText
 	waitbutton
 	closetext
@@ -282,7 +271,7 @@ RelicPassageFront_MapEvents:
 	object_event 13, 15, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RelicPassageFrontBoulder, EVENT_RELIC_PASSAGE_FRONT_BOULDER
 	object_event 28,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicPassageHardStone, EVENT_RELIC_PASSAGE_HARD_STONE
 	object_event 29, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RelicPassageEscapeRope, EVENT_RELIC_PASSAGE_ESCAPE_ROPE
-	object_event 37, 22, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerNurseRelicPassage, -1
+	object_event 37, 22, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerNurseRelicPassage, -1
 	object_event 43,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerPsychicMRelicPassage, -1
 	object_event 13, 20, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerHiker1RelicPassage, -1
 	object_event 31, 14, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerHiker2RelicPassage, -1

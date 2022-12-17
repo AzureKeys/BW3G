@@ -37,28 +37,17 @@ DesertSandManScript:
 	end
 	
 DesertNurseScript:
+	trainer NURSE, NURSE_DESERT, EVENT_BEAT_NURSE_DESERT, DesertNurseIntroText, DesertNurseWinText, 0, .Script
+
+.Script:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_NURSE_DESERT
-	iftrue .beaten
-	writetext DesertNurseIntroText
-	waitbutton
-	closetext
-	winlosstext DesertNurseWinText, 0
-	setlasttalked DESERT_NURSE
-	loadtrainer NURSE, NURSE_DESERT
-	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
-	startbattle
-	reloadmapafterbattle
-	setevent EVENT_BEAT_NURSE_DESERT
-	opentext
-.beaten
 	writetext DesertNurseHealText
 	waitbutton
+	closetext
 	special StubbedTrainerRankings_Healings
 	playsound SFX_FULL_HEAL
 	special HealParty
-	closetext
 	end
 
 TrainerRoughneckDesert:
@@ -409,6 +398,6 @@ DesertResort_MapEvents:
 	object_event 39, 38, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerMDesert, -1
 	object_event 24, 14, SPRITE_RANGER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFDesert, -1
 	object_event 51, 28, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerLassDesert, -1
-	object_event 54, 38, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DesertNurseScript, -1
+	object_event 54, 38, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, DesertNurseScript, -1
 	object_event 12,  5, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, DesertSandManScript, -1
 	

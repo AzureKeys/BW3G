@@ -49,22 +49,11 @@ SeasideCaveUpperFloorScript:
 	end
 	
 TrainerDoctorSeasideCave1F:
+	trainer DOCTOR, DOCTOR_SEASIDE_CAVE, EVENT_BEAT_DOCTOR_SEASIDE_CAVE, SeasideCaveDoctorIntroText, SeasideCaveDoctorWinText, 0, .Script
+
+.Script:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_DOCTOR_SEASIDE_CAVE
-	iftrue .beaten
-	writetext SeasideCaveDoctorIntroText
-	waitbutton
-	closetext
-	winlosstext SeasideCaveDoctorWinText, 0
-	setlasttalked SEASIDECAVE1F_DOCTOR
-	loadtrainer DOCTOR, DOCTOR_SEASIDE_CAVE
-	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
-	startbattle
-	reloadmapafterbattle
-	setevent EVENT_BEAT_DOCTOR_SEASIDE_CAVE
-	opentext
-.beaten
 	writetext SeasideCaveDoctorHealText
 	waitbutton
 	closetext
@@ -237,7 +226,7 @@ SeasideCave1F_MapEvents:
 	object_event  8,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCave1FRareCandy, EVENT_SEASIDE_CAVE_RARE_CANDY
 	object_event 14, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCave1FDiveBall, EVENT_SEASIDE_CAVE_DIVE_BALL
 	object_event  6, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SeasideCave1FHeartScale, EVENT_SEASIDE_CAVE_HEART_SCALE
-	object_event  4,  6, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TrainerDoctorSeasideCave1F, -1
+	object_event  4,  6, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 0, TrainerDoctorSeasideCave1F, -1
 	object_event  3, 15, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerVeteranFSeasideCave1F, -1
 	object_event  3, 25, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltSeasideCave1F, -1
 	object_event  9, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlSeasideCave1F, -1
