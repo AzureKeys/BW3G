@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const DRAGONSPIRALTOWER3F_REVIVE
 	const DRAGONSPIRALTOWER3F_IRON
-	const DRAGONSPIRALTOWER3F_ZOOM_LENS
+	const DRAGONSPIRALTOWER3F_LIGHT_CLAY
 	const DRAGONSPIRALTOWER3F_RYOKU
 
 DragonspiralTower3F_MapScripts:
@@ -25,8 +25,8 @@ DragonspiralRevive:
 DragonspiralIron:
 	itemball IRON
 	
-DragonspiralZoomLens:
-	itemball ZOOM_LENS
+DragonspiralLightClay:
+	itemball LIGHT_CLAY
 	
 DragonspiralTowerRyokuSeenText:
 	text "I… I will once"
@@ -68,6 +68,6 @@ DragonspiralTower3F_MapEvents:
 	db 4 ; object events
 	object_event  9,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralRevive, EVENT_DRAGONSPIRAL_REVIVE
 	object_event 14,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralIron, EVENT_DRAGONSPIRAL_IRON
-	object_event  8,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralZoomLens, EVENT_DRAGONSPIRAL_ZOOM_LENS
+	object_event  8,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonspiralLightClay, EVENT_DRAGONSPIRAL_LIGHT_CLAY
 	object_event  1,  4, SPRITE_PZMA_SAGE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerDragonspiralTowerRyoku, EVENT_DRAGONSPIRAL_TOWER_SAGES
 	
