@@ -2624,8 +2624,9 @@ wMarshalsRoomSceneID::                            db ; d9c0
 wElesasRoomSceneID::                              db ; d9c0
 wColresssRoomSceneID::                            db ; d9c0
 wChampionsRoomEntranceSceneID::                   db ; d9c0
+wChampionsRoomSceneID::                           db ; d9c0
 
-	ds 49
+	ds 48
 	
 wBattleHouseOpponent:: db
 wNumShards:: db

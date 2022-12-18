@@ -680,4 +680,7 @@ ColresssRoom_Blocks:
 
 ChampionsRoomEntrance_Blocks:
 	INCBIN "maps/ChampionsRoomEntrance.ablk"
+
+ChampionsRoom_Blocks:
+	INCBIN "maps/ChampionsRoom.ablk"
 	

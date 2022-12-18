@@ -211,6 +211,18 @@ TilesetUnovaNorthAnim:
 	dw NULL,  StandingTileFrame8
 	dw NULL,  IncWaterFrame
 	dw NULL,  DoneTileAnimation
+	
+TilesetChampionsRoomAnim:
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  StarsAnim1
+	dw NULL,  StarsAnim2
+	dw NULL,  StarsAnim3
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
+	dw NULL,  DoneTileAnimation
 
 TilesetEliteFourRoomAnim:
 	dw vTiles2 tile $57, WriteTileToBuffer
@@ -352,7 +364,6 @@ TilesetMartAnim:
 TilesetGameCornerAnim:
 TilesetTraditionalHouseAnim:
 TilesetTrainStationAnim:
-TilesetChampionsRoomAnim:
 TilesetPlayersRoomAnim:
 TilesetBattleTowerAnim:
 TilesetLentimasAnim:
@@ -831,6 +842,61 @@ LightsFrames:
 	INCBIN "gfx/tilesets/lights/2.2bpp"
 	INCBIN "gfx/tilesets/lights/3.2bpp"
 	INCBIN "gfx/tilesets/lights/4.2bpp"
+
+StarsAnim1:
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+	and %110
+	srl a
+	swap a
+	ld e, a
+	ld d, 0
+	ld hl, StarFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $77
+	jp WriteTile
+
+StarsAnim2:
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+	and %110
+	srl a
+	inc a
+	and %11
+	swap a
+	ld e, a
+	ld d, 0
+	ld hl, StarFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $78
+	jp WriteTile
+
+StarsAnim3:
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+	and %110
+	srl a
+	inc a
+	inc a
+	and %11
+	swap a
+	ld e, a
+	ld d, 0
+	ld hl, StarFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $75
+	jp WriteTile
+
+StarFrames: INCBIN "gfx/tilesets/stars/1.2bpp"
 
 AnimateTowerPillarTile:
 ; Read from struct at de:

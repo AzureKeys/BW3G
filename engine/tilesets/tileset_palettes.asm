@@ -1,9 +1,9 @@
 LoadSpecialMapPalette:
 	ld a, [wMapTileset]
 	cp TILESET_BATTLE_TOWER
-	jr z, .battle_tower
+	jp z, .battle_tower
 	cp TILESET_POKECENTER
-	jr z, .pokecenter
+	jp z, .pokecenter
 	cp TILESET_ICE_PATH
 	jp z, .ice_path
 	cp TILESET_HOUSE
@@ -52,6 +52,8 @@ LoadSpecialMapPalette:
 	jr z, .tower
 	cp TILESET_PKMN_LEAGUE
 	jr z, .pkmn_league
+	cp TILESET_CHAMPIONS_ROOM
+	jp z, .champions_room
 	jr .do_nothing
 
 .battle_tower
@@ -159,6 +161,14 @@ LoadSpecialMapPalette:
 	scf
 	ret
 
+.champions_room
+	ld a, [wMapGroup]
+	cp 26 ; mapgroup_PkmnLeague
+	jr nz, .do_nothing
+	call LoadChampionPalette
+	scf
+	ret
+
 .radio_tower
 	ld a, [wMapGroup]
 	cp 18 ; mapgroup_Driftveil
@@ -232,7 +242,7 @@ LoadSpecialMapPalette:
 .cave
 	ld a, [wMapGroup]
 	cp 1 ; mapgroup_Dungeons
-	jr nz, .do_nothing
+	jp nz, .do_nothing
 	ld a, [wMapNumber]
 	cp 32 ; ChargestoneCave1F
 	jr z, .chargestone
@@ -1016,3 +1026,14 @@ LoadColressPalette:
 	
 ColressPalette:
 INCLUDE "gfx/tilesets/colress.pal"
+
+LoadChampionPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, ChampionPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+ChampionPalette:
+INCLUDE "gfx/tilesets/champions_room.pal"

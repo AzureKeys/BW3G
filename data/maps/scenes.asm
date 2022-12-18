@@ -85,4 +85,5 @@ MapScenes::
 	scene_var ELESAS_ROOM,                                 wElesasRoomSceneID
 	scene_var COLRESSS_ROOM,                               wColresssRoomSceneID
 	scene_var CHAMPIONS_ROOM_ENTRANCE,                     wChampionsRoomEntranceSceneID
+	scene_var CHAMPIONS_ROOM,                              wChampionsRoomSceneID
 	db -1

@@ -362,4 +362,5 @@ ENDM
 	map_const ELESAS_ROOM, 8, 7
 	map_const COLRESSS_ROOM, 8, 7
 	map_const CHAMPIONS_ROOM_ENTRANCE, 9, 11
+	map_const CHAMPIONS_ROOM, 8, 10
 	

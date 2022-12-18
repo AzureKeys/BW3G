@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
 
-ChampionsRoomEntrance_MapScripts:
+ChampionsRoom_MapScripts:
 	db 2 ; scene scripts
 	scene_script .DummyScene0 ; SCENE_DEFAULT
 	scene_script .DummyScene1 ; SCENE_FINISHED
@@ -13,11 +13,12 @@ ChampionsRoomEntrance_MapScripts:
 .DummyScene1:
 	end
 
-ChampionsRoomEntrance_MapEvents:
+ChampionsRoom_MapEvents:
 	db 0, 0 ; filler
 
-	db 1 ; warp events
-	warp_event  7,  5, CHAMPIONS_ROOM, 1
+	db 2 ; warp events
+	warp_event  7, 19, CHAMPIONS_ROOM_ENTRANCE, 1
+	warp_event  7,  4, CHAMPIONS_ROOM, 2
 
 	db 0 ; coord events
 
