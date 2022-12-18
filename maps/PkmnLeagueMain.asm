@@ -63,6 +63,24 @@ PkmnLeagueMain_MapScripts:
 	waitsfx
 	end
 	
+PkmnLeagueStatueScript:
+	checkscene
+	ifequal SCENE_ELITE_FOUR_ROOM_FINISHED, .warp
+	opentext
+	writetext PkmnLeagueMainStatueText
+	waitbutton
+	closetext
+	end
+	
+.warp
+	special FadeOutMusic
+	pause 15
+	special FadeBlackQuickly
+	playsound SFX_ELEVATOR
+	pause 60
+	warp CHAMPIONS_ROOM_ENTRANCE,  7, 16
+	end
+	
 PkmnLeagueMainEnterMovement:
 	step UP
 	step UP
@@ -71,6 +89,49 @@ PkmnLeagueMainEnterMovement:
 	step UP
 	step UP
 	step_end
+	
+PkmnLeagueMainStatueText:
+	text "Four great"
+	line "warriors form this"
+	cont "#MON LEAGUE."
+	
+	para "To the southwest"
+	line "is one who has"
+	
+	para "great knowledge of"
+	line "the steel type."
+	
+	para "To the southeast"
+	line "is one who"
+	
+	para "channels the power"
+	line "of the fighting"
+	cont "type."
+	
+	para "To the northwest"
+	line "is one who has"
+	
+	para "mastered the dark"
+	line "type."
+	
+	para "To the northeast"
+	line "is one who shines"
+	
+	para "with the electric"
+	line "type."
+	
+	para "If you can defeat"
+	line "these warriors"
+	
+	para "with your courage"
+	line "and wisdom, you"
+	
+	para "shall be led to"
+	line "the summit, where"
+	
+	para "the strongest"
+	line "CHAMPION awaits."
+	done
 
 PkmnLeagueMain_MapEvents:
 	db 0, 0 ; filler
@@ -86,7 +147,9 @@ PkmnLeagueMain_MapEvents:
 
 	db 0 ; coord events
 
-	db 0 ; bg events
+	db 2 ; bg events
+	bg_event 13, 11, BGEVENT_UP, PkmnLeagueStatueScript
+	bg_event 14, 11, BGEVENT_UP, PkmnLeagueStatueScript
 
 	db 0 ; object events
 	

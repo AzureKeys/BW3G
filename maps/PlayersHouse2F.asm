@@ -51,7 +51,7 @@ PlayersHousePosterScript:
 	describedecoration DECODESC_POSTER
 
 PlayersHouseRadioScript:
-	;addcellnum PHONE_CHEREN
+	;setmapscene PKMN_LEAGUE_MAIN, SCENE_ELITE_FOUR_ROOM_FINISHED
 	;end
 	
 	; opentext
@@ -152,7 +152,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, LOSTLORN_FOREST, 2
+	;warp_event  7,  0, PKMN_LEAGUE_MAIN, 3
 
 	db 0 ; coord events
 

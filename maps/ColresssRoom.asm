@@ -67,6 +67,14 @@ EliteFourColressScript:
 	closetext
 	setevent EVENT_BEAT_ELITE_FOUR_COLRESS
 	setscene SCENE_ELITE_FOUR_ROOM_FINISHED
+	checkevent EVENT_BEAT_ELITE_FOUR_MARSHAL
+	iffalse .done
+	checkevent EVENT_BEAT_ELITE_FOUR_GRIMSLEY
+	iffalse .done
+	checkevent EVENT_BEAT_ELITE_FOUR_ELESA
+	iffalse .done
+	setmapscene PKMN_LEAGUE_MAIN, SCENE_ELITE_FOUR_ROOM_FINISHED
+.done
 	end
 	
 ColresssRoomEnterMovement:
