@@ -237,3 +237,17 @@
 	tilecoll WALL, WALL, WALL, WALL ; ec
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ed
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ee
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; ef
+	tilecoll FLOOR, FLOOR, FLOOR, WALL ; f0
+	tilecoll FLOOR, FLOOR, WALL, FLOOR ; f1
+	tilecoll WALL, WALL, WALL, WALL ; f2
+	tilecoll WALL, WALL, WALL, WALL ; f3
+	tilecoll FLOOR, WALL, FLOOR, WALL ; f4
+	tilecoll WALL, FLOOR, WALL, FLOOR ; f5
+	tilecoll WALL, FLOOR, WALL, FLOOR ; f6
+	tilecoll FLOOR, WALL, FLOOR, WALL ; f7
+	tilecoll WALL, WALL, WALL, WALL ; f8
+	tilecoll WALL, WALL, WALL, WALL ; f9
+	tilecoll WALL, WALL, WALL, DOOR ; fa
+	tilecoll WALL, WALL, WALL, WALL ; fb
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; fc

@@ -702,11 +702,11 @@ INCBIN "data/tilesets/pkmn_league_metatiles.bin"
 TilesetPkmnLeagueColl:
 INCLUDE "data/tilesets/pkmn_league_collision.asm"
 
-TilesetPkmnLeagueAttr:
-INCBIN "data/tilesets/pkmn_league_attributes.bin"
-
 
 SECTION "Tileset Data 24", ROMX
+
+TilesetPkmnLeagueAttr:
+INCBIN "data/tilesets/pkmn_league_attributes.bin"
 
 TilesetCaveMeta:
 INCBIN "data/tilesets/cave_metatiles.bin"
@@ -722,6 +722,9 @@ INCBIN "data/tilesets/cave_ruins_metatiles.bin"
 
 TilesetUndergroundGFX:
 INCBIN "gfx/tilesets/underground.2bpp.lz"
+
+
+SECTION "Tileset Data 25", ROMX
 
 TilesetTraditionalHouseAttr:
 INCBIN "data/tilesets/traditional_house_attributes.bin"

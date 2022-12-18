@@ -677,4 +677,7 @@ ElesasRoom_Blocks:
 
 ColresssRoom_Blocks:
 	INCBIN "maps/ColresssRoom.ablk"
+
+ChampionsRoomEntrance_Blocks:
+	INCBIN "maps/ChampionsRoomEntrance.ablk"
 	
