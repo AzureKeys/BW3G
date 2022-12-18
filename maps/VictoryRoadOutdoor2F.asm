@@ -272,7 +272,7 @@ BattleGirlVictoryRoadOutdoor2FAfterText:
 VictoryRoadOutdoor2F_MapEvents:
 	db 0, 0 ; filler
 
-	db 8 ; warp events
+	db 9 ; warp events
 	warp_event  9, 34, VICTORY_ROAD_CAVE_2F, 4
 	warp_event 37, 34, VICTORY_ROAD_CAVE_2F, 5
 	warp_event 17, 14, VICTORY_ROAD_CAVE_2F, 6
@@ -281,6 +281,7 @@ VictoryRoadOutdoor2F_MapEvents:
 	warp_event 19,  1, VICTORY_ROAD_CAVE_3F, 3
 	warp_event 18,  8, VICTORY_ROAD_OUTDOOR_2F, 8
 	warp_event 16,  8, VICTORY_ROAD_OUTDOOR_2F, 8
+	warp_event 23, 20, VICTORY_ROAD_CASTLE_OUTSIDE, 1
 
 	db 0 ; coord events
 

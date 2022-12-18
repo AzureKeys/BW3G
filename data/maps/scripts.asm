@@ -304,6 +304,7 @@ INCLUDE "maps/VictoryRoadCave3F.asm"
 INCLUDE "maps/VictoryRoadOutdoor1F.asm"
 INCLUDE "maps/VictoryRoadOutdoor2F.asm"
 INCLUDE "maps/VictoryRoadGrove.asm"
+INCLUDE "maps/VictoryRoadCastleOutside.asm"
 
 SECTION "Map Scripts 15", ROMX
 

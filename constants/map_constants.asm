@@ -87,6 +87,7 @@ ENDM
 	map_const VICTORY_ROAD_OUTDOOR_1F, 32, 13
 	map_const VICTORY_ROAD_OUTDOOR_2F, 20, 21
 	map_const VICTORY_ROAD_GROVE, 9, 13
+	map_const VICTORY_ROAD_CASTLE_OUTSIDE, 11, 10
 	
 	newgroup                                                      ; 20
 
