@@ -1,5 +1,8 @@
 	const_def 2 ; object constants
 	const VICTORYROADOUTDOOR2F_BOULDER
+	const VICTORYROADOUTDOOR2F_PP_MAX
+	const VICTORYROADOUTDOOR2F_MAX_REVIVE
+	const VICTORYROADOUTDOOR2F_MAX_ELIXER
 	const VICTORYROADOUTDOOR2F_VETERANM
 	const VICTORYROADOUTDOOR2F_VETERANF
 	const VICTORYROADOUTDOOR2F_ACE_TRAINERM
@@ -139,6 +142,15 @@ TrainerBattleGirlVictoryRoadOutdoor2F:
 	closetext
 	end
 	
+VictoryRoadOutdoor2FPPMax:
+	itemball PP_MAX
+	
+VictoryRoadOutdoor2FMaxRevive:
+	itemball MAX_REVIVE
+	
+VictoryRoadOutdoor2FMaxElixer:
+	itemball MAX_ELIXER
+	
 VictoryRoadOutdoor2FBoulderFellText:
 	text "The boulder fell"
 	line "through!"
@@ -274,8 +286,11 @@ VictoryRoadOutdoor2F_MapEvents:
 
 	db 0 ; bg events
 
-	db 9 ; object events
+	db 12 ; object events
 	object_event 20,  8, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadOutdoor2FBoulder, EVENT_VICTORY_ROAD_OUTDOOR_BOULDER
+	object_event 13, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadOutdoor2FPPMax, EVENT_VICTORY_ROAD_EXT_PP_MAX
+	object_event 16, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadOutdoor2FMaxRevive, EVENT_VICTORY_ROAD_EXT_MAX_REVIVE
+	object_event 28, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadOutdoor2FMaxElixer, EVENT_VICTORY_ROAD_EXT_MAX_ELIXER_2
 	object_event 18,  3, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerVeteranMVictoryRoadOutdoor2F, -1
 	object_event 20,  6, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranFVictoryRoadOutdoor2F, -1
 	object_event  6, 31, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerMVictoryRoadOutdoor2F, -1

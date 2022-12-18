@@ -1,4 +1,5 @@
 	const_def 2 ; object constants
+	const VICTORYROADCAVE3F_PP_UP
 	const VICTORYROADCAVE3F_VETERANF
 
 VictoryRoadCave3F_MapScripts:
@@ -16,6 +17,15 @@ TrainerVeteranFVictoryRoadCave3F:
 	waitbutton
 	closetext
 	end
+	
+VictoryRoadCave3FPPUp:
+	itemball PP_UP
+	
+VictoryRoadCave3FNugget:
+	hiddenitem NUGGET, EVENT_VICTORY_ROAD_INT_NUGGET
+	
+VictoryRoadCave3FFullRestore:
+	hiddenitem FULL_RESTORE, EVENT_VICTORY_ROAD_INT_FULL_RESTORE_2
 	
 VeteranFVictoryRoadCave3FSeenText:
 	text "..."
@@ -40,8 +50,11 @@ VictoryRoadCave3F_MapEvents:
 
 	db 0 ; coord events
 
-	db 0 ; bg events
+	db 2 ; bg events
+	bg_event  4, 23, BGEVENT_ITEM, VictoryRoadCave3FNugget
+	bg_event 19, 14, BGEVENT_ITEM, VictoryRoadCave3FFullRestore
 
-	db 1 ; object events
+	db 2 ; object events
+	object_event  5, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadCave3FPPUp, EVENT_VICTORY_ROAD_INT_PP_UP
 	object_event 15, 26, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerVeteranFVictoryRoadCave3F, -1
 	

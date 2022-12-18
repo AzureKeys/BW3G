@@ -1,6 +1,10 @@
 	const_def 2 ; object constants
 	const VICTORYROADCAVE1F_BOULDER_1
 	const VICTORYROADCAVE1F_BOULDER_2
+	const VICTORYROADCAVE1F_FULL_RESTORE
+	const VICTORYROADCAVE1F_ESCAPE_ROPE
+	const VICTORYROADCAVE1F_RARE_CANDY
+	const VICTORYROADCAVE1F_LIFE_ORB
 	const VICTORYROADCAVE1F_ACE_TRAINERM
 	const VICTORYROADCAVE1F_ACE_TRAINERF
 	const VICTORYROADCAVE1F_VETERANM
@@ -184,6 +188,21 @@ TrainerHexManiacVictoryRoadCave1F:
 	closetext
 	end
 	
+VictoryRoadCave1FFullRestore:
+	itemball FULL_RESTORE
+	
+VictoryRoadCave1FEscapeRope:
+	itemball ESCAPE_ROPE
+	
+VictoryRoadCave1FRareCandy:
+	itemball RARE_CANDY
+	
+VictoryRoadCave1FLifeOrb:
+	itemball LIFE_ORB
+	
+VictoryRoadCave1FMaxElixer:
+	hiddenitem MAX_ELIXER, EVENT_VICTORY_ROAD_INT_MAX_ELIXER
+	
 VictoryRoadCave1FBoulderFellText:
 	text "The boulder fell"
 	line "through!"
@@ -303,11 +322,16 @@ VictoryRoadCave1F_MapEvents:
 	coord_event  5, 10, SCENE_DEFAULT, VictoryRoadCave1FUpperScript
 	coord_event  6, 10, SCENE_DEFAULT, VictoryRoadCave1FUpperScript
 
-	db 0 ; bg events
+	db 1 ; bg events
+	bg_event 10, 35, BGEVENT_ITEM, VictoryRoadCave1FMaxElixer
 
-	db 9 ; object events
+	db 13 ; object events
 	object_event 13, 23, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadCave1FBoulder, EVENT_VICTORY_ROAD_RUINS_BOULDER_1
 	object_event 32,  8, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadCave1FBoulder, EVENT_VICTORY_ROAD_RUINS_BOULDER_2
+	object_event 28, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadCave1FFullRestore, EVENT_VICTORY_ROAD_INT_FULL_RESTORE_1
+	object_event  6, 24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadCave1FEscapeRope, EVENT_VICTORY_ROAD_INT_ESCAPE_ROPE
+	object_event 20, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadCave1FRareCandy, EVENT_VICTORY_ROAD_INT_RARE_CANDY
+	object_event 22, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadCave1FLifeOrb, EVENT_VICTORY_ROAD_INT_LIFE_ORB
 	object_event 24, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerMVictoryRoadCave1F, -1
 	object_event 24, 21, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerFVictoryRoadCave1F, -1
 	object_event 15, 30, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerVeteranMVictoryRoadCave1F, -1

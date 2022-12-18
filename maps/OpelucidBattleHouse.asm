@@ -258,7 +258,12 @@ BattleHouseStatue:
 	jumptext BattleHouseStatueText
 	
 BattleHouseMarlonIntroText:
-	text "..."
+	text "Hey there,"
+	line "<PLAY_G>!"
+	
+	para "You ready for a"
+	line "battle? Show me"
+	cont "what you've got!"
 	done
 	
 BattleHouseMarlonWinLossText:

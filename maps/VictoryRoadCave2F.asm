@@ -1,6 +1,9 @@
 	const_def 2 ; object constants
 	const VICTORYROADCAVE2F_BOULDER_1
 	const VICTORYROADCAVE2F_BOULDER_2
+	const VICTORYROADCAVE2F_ULTRA_BALL
+	const VICTORYROADCAVE2F_MAX_REPEL
+	const VICTORYROADCAVE2F_METAL_COAT
 	const VICTORYROADCAVE2F_ACE_TRAINERM
 	const VICTORYROADCAVE2F_ACE_TRAINERF
 	const VICTORYROADCAVE2F_PKMN_RANGERM
@@ -133,6 +136,21 @@ TrainerBackpackerMVictoryRoadCave2F:
 	closetext
 	end
 	
+VictoryRoadCave2FUltraBall:
+	itemball ULTRA_BALL
+	
+VictoryRoadCave2FMaxRepel:
+	itemball MAX_REPEL
+	
+VictoryRoadCave2FMetalCoat:
+	itemball METAL_COAT
+	
+VictoryRoadCave2FProtein:
+	hiddenitem PROTEIN, EVENT_VICTORY_ROAD_INT_PROTEIN
+	
+VictoryRoadCave2FMaxRevive:
+	hiddenitem MAX_REVIVE, EVENT_VICTORY_ROAD_INT_MAX_REVIVE_2
+	
 VictoryRoadCave2FBoulderFellText:
 	text "The boulder fell"
 	line "through!"
@@ -228,11 +246,16 @@ VictoryRoadCave2F_MapEvents:
 
 	db 0 ; coord events
 
-	db 0 ; bg events
+	db 2 ; bg events
+	bg_event  9, 47, BGEVENT_ITEM, VictoryRoadCave2FMaxRevive
+	bg_event 32, 42, BGEVENT_ITEM, VictoryRoadCave2FProtein
 
-	db 8 ; object events
+	db 11 ; object events
 	object_event 22, 35, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadCave2FBoulder, EVENT_VICTORY_ROAD_CAVE_BOULDER_1
 	object_event 24, 30, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VictoryRoadCave2FBoulder, EVENT_VICTORY_ROAD_CAVE_BOULDER_2
+	object_event 43, 44, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadCave2FUltraBall, EVENT_VICTORY_ROAD_INT_ULTRA_BALL
+	object_event  5, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadCave2FMaxRepel, EVENT_VICTORY_ROAD_INT_MAX_REPEL
+	object_event 26, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadCave2FMetalCoat, EVENT_VICTORY_ROAD_INT_METAL_COAT
 	object_event 15, 45, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerMVictoryRoadCave2F, -1
 	object_event 15, 42, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerFVictoryRoadCave2F, -1
 	object_event 36, 28, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerPkmnRangerMVictoryRoadCave2F, -1

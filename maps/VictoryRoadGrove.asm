@@ -1,4 +1,6 @@
 	const_def 2 ; object constants
+	const VICTORYROADGROVE_MAX_REVIVE
+	const VICTORYROADGROVE_BRIGHTPOWDER
 	const VICTORYROADGROVE_ACE_TRAINERM
 	const VICTORYROADGROVE_ACE_TRAINERF
 
@@ -28,6 +30,12 @@ TrainerAceTrainerFVictoryRoadGrove:
 	waitbutton
 	closetext
 	end
+	
+VictoryRoadGroveMaxRevive:
+	itemball MAX_REVIVE
+	
+VictoryRoadGroveBrightPowder:
+	itemball BRIGHTPOWDER
 	
 AceTrainerMVictoryRoadGroveSeenText:
 	text "..."
@@ -66,7 +74,9 @@ VictoryRoadGrove_MapEvents:
 
 	db 0 ; bg events
 
-	db 2 ; object events
+	db 4 ; object events
+	object_event 17,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadGroveMaxRevive, EVENT_VICTORY_ROAD_INT_MAX_REVIVE_1
+	object_event  5, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadGroveBrightPowder, EVENT_VICTORY_ROAD_INT_BRIGHTPOWDER
 	object_event 11, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerMVictoryRoadGrove, -1
 	object_event 11, 20, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerFVictoryRoadGrove, -1
 	
