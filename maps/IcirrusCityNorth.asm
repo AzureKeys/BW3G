@@ -1,4 +1,5 @@
 	const_def 2 ; object constants
+	const ICIRRUSCITYNORTH_DUMMY_ITEM
 
 IcirrusCityNorth_MapScripts:
 	db 0 ; scene scripts
@@ -42,5 +43,6 @@ IcirrusCityNorth_MapEvents:
 	bg_event 14, 12, BGEVENT_READ, IcirrusBoutiqueSign
 	bg_event  4, 20, BGEVENT_READ, IcirrusFanClubSign
 	
-	db 0 ; object events
+	db 1 ; object events
+	object_event  4, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, 0, EVENT_ICIRRUS_CITY_MAX_POTION
 	

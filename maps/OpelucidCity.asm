@@ -1,6 +1,7 @@
 	const_def 2 ; object constants
 	const OPELUCIDCITY_FOUNTAIN
 	const OPELUCIDCITY_IRIS
+	const OPELUCIDCITY_PROTEIN
 
 OpelucidCity_MapScripts:
 	db 2 ; scene scripts
@@ -60,6 +61,9 @@ OpelucidR11Sign:
 
 OpelucidDraydenHouseSign:
 	jumptext OpelucidDraydenHouseSignText
+	
+OpelucidCityProtein:
+	itemball PROTEIN
 	
 OpelucidCityIrisArriveMovement:
 	step DOWN
@@ -186,7 +190,8 @@ OpelucidCity_MapEvents:
 	bg_event 44, 24, BGEVENT_READ, OpelucidR11Sign
 	bg_event 30, 18, BGEVENT_READ, OpelucidDraydenHouseSign
 
-	db 2 ; object events
+	db 3 ; object events
 	object_event 17, 25, SPRITE_FOUNTAIN, SPRITEMOVEDATA_FOUNTAIN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
 	object_event 17,  6, SPRITE_IRIS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, OpelucidCityBlockerScript, EVENT_OPELUCID_CITY_IRIS
+	object_event 33, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OpelucidCityProtein, EVENT_OPELUCID_CITY_PROTEIN
 	

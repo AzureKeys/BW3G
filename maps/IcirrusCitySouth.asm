@@ -1,4 +1,7 @@
 	const_def 2 ; object constants
+	const ICIRRUSCITYSOUTH_ULTRA_BALL
+	const ICIRRUSCITYSOUTH_TIMER_BALL
+	const ICIRRUSCITYSOUTH_MAX_POTION
 
 IcirrusCitySouth_MapScripts:
 	db 1 ; scene scripts
@@ -84,6 +87,21 @@ IcirrusCityLowerFloorScript:
 IcirrusCitySign:
 	jumptext IcirrusCitySignText
 	
+IcirrusCityUltraBall:
+	itemball ULTRA_BALL
+	
+IcirrusCityTimerBall:
+	itemball TIMER_BALL
+	
+IcirrusCityMaxPotion:
+	itemball MAX_POTION
+	
+IcirrusCityBigMushroom:
+	hiddenitem BIG_MUSHROOM, EVENT_ICIRRUS_CITY_BIG_MUSHROOM
+	
+IcirrusCityMaxRevive:
+	hiddenitem MAX_REVIVE, EVENT_ICIRRUS_CITY_MAX_REVIVE
+	
 IcirrusCitySignText:
 	text "ICIRRUS CITY"
 	
@@ -117,8 +135,13 @@ IcirrusCitySouth_MapEvents:
 	coord_event 13,  5, SCENE_DEFAULT, IcirrusCityUpperFloorScript
 	coord_event 14,  4, SCENE_DEFAULT, IcirrusCityUpperFloorScript
 
-	db 1 ; bg events
+	db 3 ; bg events
 	bg_event  8, 13, BGEVENT_READ, IcirrusCitySign
+	bg_event 29,  2, BGEVENT_ITEM, IcirrusCityBigMushroom
+	bg_event 44,  0, BGEVENT_ITEM, IcirrusCityMaxRevive
 	
-	db 0 ; object events
+	db 3 ; object events
+	object_event 22,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcirrusCityUltraBall, EVENT_ICIRRUS_CITY_ULTRA_BALL
+	object_event 15, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcirrusCityTimerBall, EVENT_ICIRRUS_CITY_TIMER_BALL
+	object_event  4,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcirrusCityMaxPotion, EVENT_ICIRRUS_CITY_MAX_POTION
 	
