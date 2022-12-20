@@ -93,20 +93,28 @@ TrainerScientistMR6:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext ScientistMR6BeatenText, 0
-	;checkevent EVENT_
-	;iftrue .LoadFight1
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight2
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight1
 ; Fight0
 	loadtrainer SCIENTISTM, SCIENTISTM_R6
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_MARCO_READY_FOR_REMATCH
 	end
-; .LoadFight1
-	; loadtrainer SCIENTISTM, MARCO_REMATCH_1
-	; startbattle
-	; reloadmapafterbattle
-	; clearflag ENGINE_MARCO_READY_FOR_REMATCH
-	; end
+.LoadFight1
+	loadtrainer SCIENTISTM, MARCO_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_MARCO_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer SCIENTISTM, MARCO_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_MARCO_READY_FOR_REMATCH
+	end
 	
 .AskNumber1:
 	jumpstd asknumber1m

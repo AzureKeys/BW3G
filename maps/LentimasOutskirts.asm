@@ -73,6 +73,10 @@ TrainerCyclistMOutskirts:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext CyclistMOutskirtsBeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight5
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight4
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight3
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
@@ -99,6 +103,18 @@ TrainerCyclistMOutskirts:
 	end
 .LoadFight3
 	loadtrainer CYCLISTM, FREDDY_REMATCH_3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
+	end
+.LoadFight4
+	loadtrainer CYCLISTM, FREDDY_REMATCH_4
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
+	end
+.LoadFight5
+	loadtrainer CYCLISTM, FREDDY_REMATCH_5
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH

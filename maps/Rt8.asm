@@ -50,11 +50,75 @@ TrainerParasolLadyR8:
 	trainer PARASOL_LADY, PARASOL_LADY_R8, EVENT_BEAT_PARASOL_LADY_R8, ParasolLadyR8SeenText, ParasolLadyR8BeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	writecode VAR_CALLERID, PHONE_PARASOL_LADY_LOIS
 	opentext
+	checkflag ENGINE_LOIS_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_PARASOL_LADY_LOIS
+	iftrue .NumberAccepted
+	checkevent EVENT_LOIS_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
 	writetext ParasolLadyR8AfterText
-	waitbutton
-	closetext
+	buttonsound
+	setevent EVENT_LOIS_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_PARASOL_LADY_LOIS
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_LOIS
+	trainertotext PARASOL_LADY, PARASOL_LADY_R8, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext ParasolLadyR8BeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer PARASOL_LADY, PARASOL_LADY_R8
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_LOIS_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer PARASOL_LADY, LOIS_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_LOIS_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
 	end
 	
 R8Elixer:

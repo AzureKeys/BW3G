@@ -46,20 +46,28 @@ TrainerBackpackerMR7North:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext BackpackerMR7NorthBeatenText, 0
-	;checkevent EVENT_
-	;iftrue .LoadFight1
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight2
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight1
 ; Fight0
 	loadtrainer BACKPACKERM, BACKPACKERM_R7
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_PARKER_READY_FOR_REMATCH
 	end
-; .LoadFight1
-	; loadtrainer BACKPACKERM, PARKER_REMATCH_1
-	; startbattle
-	; reloadmapafterbattle
-	; clearflag ENGINE_PARKER_READY_FOR_REMATCH
-	; end
+.LoadFight1
+	loadtrainer BACKPACKERM, PARKER_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_PARKER_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer BACKPACKERM, PARKER_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_PARKER_READY_FOR_REMATCH
+	end
 	
 .AskNumber1:
 	jumpstd asknumber1m

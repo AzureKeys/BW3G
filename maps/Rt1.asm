@@ -47,6 +47,10 @@ TrainerMaidR1:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext MaidR1BeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight3
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight2
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight1
 ; Fight0
@@ -57,6 +61,18 @@ TrainerMaidR1:
 	end
 .LoadFight1
 	loadtrainer MAID, CLARISSA_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_CLARISSA_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer MAID, CLARISSA_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_CLARISSA_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer MAID, CLARISSA_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_CLARISSA_READY_FOR_REMATCH

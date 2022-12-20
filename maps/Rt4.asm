@@ -51,6 +51,10 @@ TrainerLadyR4:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext LadyR4BeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight4
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight3
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight2
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
@@ -69,6 +73,18 @@ TrainerLadyR4:
 	end
 .LoadFight2
 	loadtrainer LADY, LACEY_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_LACEY_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer LADY, LACEY_REMATCH_3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_LACEY_READY_FOR_REMATCH
+	end
+.LoadFight4
+	loadtrainer LADY, LACEY_REMATCH_4
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH

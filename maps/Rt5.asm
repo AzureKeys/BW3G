@@ -97,6 +97,10 @@ TrainerDancer1R5:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext Dancer1R5BeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight5
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight4
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight3
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
@@ -123,6 +127,18 @@ TrainerDancer1R5:
 	end
 .LoadFight3
 	loadtrainer DANCER, ERIC_REMATCH_3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_ERIC_READY_FOR_REMATCH
+	end
+.LoadFight4
+	loadtrainer DANCER, ERIC_REMATCH_4
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_ERIC_READY_FOR_REMATCH
+	end
+.LoadFight5
+	loadtrainer DANCER, ERIC_REMATCH_5
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH

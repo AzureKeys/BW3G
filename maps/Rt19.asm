@@ -52,6 +52,10 @@ TrainerMaidR19:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext MaidR19BeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight4
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight3
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight2
 	checkevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
@@ -70,6 +74,18 @@ TrainerMaidR19:
 	end
 .LoadFight2
 	loadtrainer MAID, SOPHIE_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer MAID, SOPHIE_REMATCH_3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
+	end
+.LoadFight4
+	loadtrainer MAID, SOPHIE_REMATCH_4
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH

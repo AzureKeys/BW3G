@@ -128,11 +128,75 @@ TrainerLinebackerVillageBridge:
 	trainer LINEBACKER, LINEBACKER_VILLAGE_BRIDGE, EVENT_BEAT_LINEBACKER_VILLAGE_BRIDGE, LinebackerVillageBridgeSeenText, LinebackerVillageBridgeBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	writecode VAR_CALLERID, PHONE_LINEBACKER_DEAN
 	opentext
+	checkflag ENGINE_DEAN_READY_FOR_REMATCH
+	iftrue .ChooseRematch
+	checkcellnum PHONE_LINEBACKER_DEAN
+	iftrue .NumberAccepted
+	checkevent EVENT_DEAN_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskAgainForPhoneNumber
 	writetext LinebackerVillageBridgeAfterText
-	waitbutton
-	closetext
+	buttonsound
+	setevent EVENT_DEAN_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .ContinueAskForPhoneNumber
+	
+.AskAgainForPhoneNumber:
+	scall .AskNumber2
+.ContinueAskForPhoneNumber:
+	askforphonenumber PHONE_LINEBACKER_DEAN
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	setflag ENGINE_DEAN
+	trainertotext LINEBACKER, LINEBACKER_VILLAGE_BRIDGE, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+	
+.ChooseRematch:
+	scall .Rematch
+	winlosstext LinebackerVillageBridgeBeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight1
+; Fight0
+	loadtrainer LINEBACKER, LINEBACKER_VILLAGE_BRIDGE
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_DEAN_READY_FOR_REMATCH
+	end
+.LoadFight1
+	loadtrainer LINEBACKER, DEAN_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_DEAN_READY_FOR_REMATCH
+	end
+	
+.AskNumber1:
+	jumpstd asknumber1m
+	end
+	
+.AskNumber2:
+	jumpstd asknumber2m
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberm
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedm
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedm
+	end
+
+.PhoneFull:
+	jumpstd phonefullm
+	end
+
+.Rematch:
+	jumpstd rematchm
 	end
 
 TrainerHoopster1VillageBridge:

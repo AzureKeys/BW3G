@@ -88,6 +88,10 @@ TrainerLassR2:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext LassR2BeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight3
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight2
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight1
 ; Fight0
@@ -98,6 +102,18 @@ TrainerLassR2:
 	end
 .LoadFight1
 	loadtrainer LASS_D, CARLA_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_CARLA_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer LASS_D, CARLA_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_CARLA_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer LASS_D, CARLA_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_CARLA_READY_FOR_REMATCH

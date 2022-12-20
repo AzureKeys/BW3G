@@ -245,10 +245,10 @@ INCLUDE "maps/CelestialTowerRoof.asm"
 INCLUDE "maps/MistraltonAirport.asm"
 INCLUDE "maps/VillageBridge.asm"
 INCLUDE "maps/OpelucidCity.asm"
-INCLUDE "maps/Rt11.asm"
 
 SECTION "Map Scripts 13", ROMX
 
+INCLUDE "maps/Rt11.asm"
 INCLUDE "maps/LentimasAirport.asm"
 INCLUDE "maps/PlaneRight.asm"
 INCLUDE "maps/PlaneLeft.asm"
@@ -277,11 +277,11 @@ INCLUDE "maps/MoorOfIcirrus.asm"
 INCLUDE "maps/OpelucidGym.asm"
 INCLUDE "maps/OpelucidCuriosityShop.asm"
 INCLUDE "maps/IcirrusHouse.asm"
-INCLUDE "maps/Dreamyard.asm"
 INCLUDE "maps/DreamyardB1F.asm"
 
 SECTION "Map Scripts 14", ROMX
 
+INCLUDE "maps/Dreamyard.asm"
 INCLUDE "maps/GameCorner.asm"
 INCLUDE "maps/OpelucidBlackbeltHouse.asm"
 INCLUDE "maps/OpelucidBattleHouse.asm"
@@ -303,11 +303,11 @@ INCLUDE "maps/VictoryRoadCave2F.asm"
 INCLUDE "maps/VictoryRoadCave3F.asm"
 INCLUDE "maps/VictoryRoadOutdoor1F.asm"
 INCLUDE "maps/VictoryRoadOutdoor2F.asm"
-INCLUDE "maps/VictoryRoadGrove.asm"
 INCLUDE "maps/VictoryRoadCastleOutside.asm"
 
 SECTION "Map Scripts 15", ROMX
 
+INCLUDE "maps/VictoryRoadGrove.asm"
 INCLUDE "maps/PkmnLeagueEntrance.asm"
 INCLUDE "maps/PkmnLeagueMain.asm"
 INCLUDE "maps/VictoryRoadPokecenter1F.asm"

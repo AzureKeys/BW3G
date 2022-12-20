@@ -82,6 +82,10 @@ TrainerBackpackerFR18:
 .ChooseRematch:
 	scall .Rematch
 	winlosstext BackpackerFR18BeatenText, 0
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .LoadFight3
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .LoadFight2
 	checkevent EVENT_FINISHED_PWT
 	iftrue .LoadFight1
 ; Fight0
@@ -92,6 +96,18 @@ TrainerBackpackerFR18:
 	end
 .LoadFight1
 	loadtrainer BACKPACKERF, JENNY_REMATCH_1
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JENNY_READY_FOR_REMATCH
+	end
+.LoadFight2
+	loadtrainer BACKPACKERF, JENNY_REMATCH_2
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_JENNY_READY_FOR_REMATCH
+	end
+.LoadFight3
+	loadtrainer BACKPACKERF, JENNY_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_JENNY_READY_FOR_REMATCH
