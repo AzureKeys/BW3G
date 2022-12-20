@@ -662,6 +662,7 @@ AskNumber1MScript:
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 	ifequal PHONE_BACKPACKER_PARKER, .Parker
+	ifequal PHONE_LINEBACKER_DEAN, .Dean
 
 .Dan:
 	farwritetext DanAskNumber1Text
@@ -678,6 +679,9 @@ AskNumber1MScript:
 .Parker:
 	farwritetext ParkerAskNumber1Text
 	end
+.Dean:
+	farwritetext DeanAskNumber1Text
+	end
 	
 AskNumber2MScript:
 	special RandomPhoneMon
@@ -687,6 +691,7 @@ AskNumber2MScript:
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 	ifequal PHONE_BACKPACKER_PARKER, .Parker
+	ifequal PHONE_LINEBACKER_DEAN, .Dean
 
 .Dan:
 	farwritetext DanAskNumber2Text
@@ -703,6 +708,9 @@ AskNumber2MScript:
 .Parker:
 	farwritetext ParkerAskNumber2Text
 	end
+.Dean:
+	farwritetext DeanAskNumber2Text
+	end
 
 RegisteredNumberMScript:
 	farwritetext RegisteredNumber1Text
@@ -718,6 +726,7 @@ NumberAcceptedMScript:
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 	ifequal PHONE_BACKPACKER_PARKER, .Parker
+	ifequal PHONE_LINEBACKER_DEAN, .Dean
 
 .Dan:
 	farwritetext DanNumberAcceptedText
@@ -744,6 +753,11 @@ NumberAcceptedMScript:
 	waitbutton
 	closetext
 	end
+.Dean:
+	farwritetext DeanNumberAcceptedText
+	waitbutton
+	closetext
+	end
 
 NumberDeclinedMScript:
 	checkcode VAR_CALLERID
@@ -752,6 +766,7 @@ NumberDeclinedMScript:
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 	ifequal PHONE_BACKPACKER_PARKER, .Parker
+	ifequal PHONE_LINEBACKER_DEAN, .Dean
 
 .Dan:
 	farwritetext DanNumberDeclinedText
@@ -778,6 +793,11 @@ NumberDeclinedMScript:
 	waitbutton
 	closetext
 	end
+.Dean:
+	farwritetext DeanNumberDeclinedText
+	waitbutton
+	closetext
+	end
 
 PhoneFullMScript:
 	checkcode VAR_CALLERID
@@ -786,6 +806,7 @@ PhoneFullMScript:
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 	ifequal PHONE_BACKPACKER_PARKER, .Parker
+	ifequal PHONE_LINEBACKER_DEAN, .Dean
 
 .Dan:
 	farwritetext DanPhoneFullText
@@ -812,6 +833,11 @@ PhoneFullMScript:
 	waitbutton
 	closetext
 	end
+.Dean:
+	farwritetext DeanPhoneFullText
+	waitbutton
+	closetext
+	end
 
 RematchMScript:
 	checkcode VAR_CALLERID
@@ -820,6 +846,7 @@ RematchMScript:
 	ifequal PHONE_DANCER_ERIC, .Eric
 	ifequal PHONE_SCIENTIST_MARCO, .Marco
 	ifequal PHONE_BACKPACKER_PARKER, .Parker
+	ifequal PHONE_LINEBACKER_DEAN, .Dean
 
 .Dan:
 	farwritetext DanRematchText
@@ -846,6 +873,11 @@ RematchMScript:
 	waitbutton
 	closetext
 	end
+.Dean:
+	farwritetext DeanRematchText
+	waitbutton
+	closetext
+	end
 
 GiftMScript:
 	end
@@ -864,6 +896,7 @@ AskNumber1FScript:
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_MAID_SOPHIE, .Sophie
+	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
 
 .Lacey:
 	farwritetext LaceyAskNumber1Text
@@ -883,6 +916,9 @@ AskNumber1FScript:
 .Sophie:
 	farwritetext SophieAskNumber1Text
 	end
+.Lois:
+	farwritetext LoisAskNumber1Text
+	end
 
 AskNumber2FScript:
 	checkcode VAR_CALLERID
@@ -892,6 +928,7 @@ AskNumber2FScript:
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_MAID_SOPHIE, .Sophie
+	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
 
 .Lacey:
 	farwritetext LaceyAskNumber2Text
@@ -911,6 +948,9 @@ AskNumber2FScript:
 .Sophie:
 	farwritetext SophieAskNumber2Text
 	end
+.Lois:
+	farwritetext LoisAskNumber2Text
+	end
 
 RegisteredNumberFScript:
 	farwritetext RegisteredNumber2Text
@@ -927,6 +967,7 @@ NumberAcceptedFScript:
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_MAID_SOPHIE, .Sophie
+	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
 
 .Lacey:
 	farwritetext LaceyNumberAcceptedText
@@ -958,6 +999,11 @@ NumberAcceptedFScript:
 	waitbutton
 	closetext
 	end
+.Lois:
+	farwritetext LoisNumberAcceptedText
+	waitbutton
+	closetext
+	end
 
 NumberDeclinedFScript:
 	checkcode VAR_CALLERID
@@ -967,6 +1013,7 @@ NumberDeclinedFScript:
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_MAID_SOPHIE, .Sophie
+	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
 
 .Lacey:
 	farwritetext LaceyNumberDeclinedText
@@ -998,6 +1045,11 @@ NumberDeclinedFScript:
 	waitbutton
 	closetext
 	end
+.Lois:
+	farwritetext LoisNumberDeclinedText
+	waitbutton
+	closetext
+	end
 
 PhoneFullFScript:
 	checkcode VAR_CALLERID
@@ -1007,6 +1059,7 @@ PhoneFullFScript:
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_MAID_SOPHIE, .Sophie
+	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
 
 .Lacey:
 	farwritetext LaceyPhoneFullText
@@ -1038,6 +1091,11 @@ PhoneFullFScript:
 	waitbutton
 	closetext
 	end
+.Lois:
+	farwritetext LoisPhoneFullText
+	waitbutton
+	closetext
+	end
 
 RematchFScript:
 	checkcode VAR_CALLERID
@@ -1047,6 +1105,7 @@ RematchFScript:
 	ifequal PHONE_MAID_CLARISSA, .Clarissa
 	ifequal PHONE_BACKPACKER_JENNY, .Jenny
 	ifequal PHONE_MAID_SOPHIE, .Sophie
+	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
 
 .Lacey:
 	farwritetext LaceyRematchText
@@ -1075,6 +1134,11 @@ RematchFScript:
 	end
 .Sophie:
 	farwritetext SophieRematchText
+	waitbutton
+	closetext
+	end
+.Lois:
+	farwritetext LoisRematchText
 	waitbutton
 	closetext
 	end

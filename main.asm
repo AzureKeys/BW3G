@@ -352,6 +352,8 @@ INCLUDE "engine/phone/scripts/lacey.asm"
 INCLUDE "engine/phone/scripts/marco.asm"
 INCLUDE "engine/phone/scripts/parker.asm"
 INCLUDE "engine/phone/scripts/sophie.asm"
+INCLUDE "engine/phone/scripts/dean.asm"
+INCLUDE "engine/phone/scripts/lois.asm"
 
 
 SECTION "Phone Text", ROMX
@@ -369,6 +371,8 @@ INCLUDE "data/phone/text/lacey.asm"
 INCLUDE "data/phone/text/marco.asm"
 INCLUDE "data/phone/text/parker.asm"
 INCLUDE "data/phone/text/sophie.asm"
+INCLUDE "data/phone/text/dean.asm"
+INCLUDE "data/phone/text/lois.asm"
 
 
 SECTION "bank2E", ROMX
