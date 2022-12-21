@@ -708,7 +708,24 @@ INCLUDE "gfx/overworld/trainer_battle_day.pal"
 INCLUDE "gfx/overworld/trainer_battle_nite.pal"
 
 .loadpokeballgfx
+	ld de, PlasmaTransition
 	ld a, [wOtherTrainerClass]
+	cp GRUNTM
+	ret z
+	cp GRUNTF
+	ret z
+	cp GIALLO
+	ret z
+	cp BRONIUS
+	ret z
+	cp RYOKU
+	ret z
+	cp GORM
+	ret z
+	cp ZINZOLIN
+	ret z
+	cp INFER_SAGE
+	ret z
 	ld de, PokeBallTransition
 	ret
 
@@ -732,6 +749,27 @@ opt b.X ; . = 0, X = 1
 	bigdw %..XXXX....XXXX..
 	bigdw %....XXXXXXXX....
 	bigdw %......XXXX......
+popo
+
+PlasmaTransition:
+pusho
+opt b.X ; . = 0, X = 1
+	bigdw %XXXXXXXXXXXXXXXX
+	bigdw %X......XXXX....X
+	bigdw %X......X...X...X
+	bigdw %X......X....X..X
+	bigdw %XXXXXXXXXXXXXXXX
+	bigdw %X.XX...X....X..X
+	bigdw %.X..X..X...X..X.
+	bigdw %.X...XXXXXX...X.
+	bigdw %.X.....X......X.
+	bigdw %..X...XXXX...X..
+	bigdw %..X..X.XX.X..X..
+	bigdw %...XXXXXXXXXX...
+	bigdw %....X..X...X....
+	bigdw %.....X.X..X.....
+	bigdw %......XX.X......
+	bigdw %.......XX.......
 popo
 
 WipeLYOverrides:
