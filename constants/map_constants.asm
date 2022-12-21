@@ -107,7 +107,7 @@ ENDM
 	map_const MARLONS_HOUSE, 5, 4
 	map_const PLAYERS_NEIGHBORS_HOUSE, 4, 4 
 	map_const HUMILAU_TRADE_HOUSE, 4, 4 
-	map_const HUMILAU_GYM, 5, 8
+	map_const HUMILAU_GYM, 5, 10
 	map_const R_22, 19, 10
 	map_const R_21, 11, 29
 	
