@@ -207,9 +207,12 @@ BurghInsectBadgeText:
 
 	para "I mean incredible!"
 
-	para "It will increase"
-	line "the SPEED of all"
-	cont "of your #MON!"
+	para "It will allow you"
+	line "to command all"
+	
+	para "#MON up to Lv."
+	line "40, even ones from"
+	cont "a trade!"
 
 	para "And, since I'm"
 	line "such a generous"

@@ -180,9 +180,9 @@ MarlonWaveBadgeText:
 	line "official #MON"
 	cont "league WAVEBADGE."
 	
-	para "The WAVEBADGE"
-	line "raises the attack"
-	cont "power of #MON."
+	para "With that, traded"
+	line "#MON up to Lv."
+	cont "20 will obey you."
 
 	para "Here--take this"
 	line "too."

@@ -232,15 +232,14 @@ SkylaJetBadgeText:
 	cont "LEAGUE GYM BADGE."
 
 	para "The JETBADGE will"
-	line "increase the SP."
-	cont "ATK and SP.DEF of"
-
-	para "your #MON a"
-	line "little. It will"
+	line "let you control"
 	
-	para "also allow you to"
-	line "use the move"
-	cont "WATERFALL outside"
+	para "any #MON up to"
+	line "level 80. It will"
+	cont "also allow you to"
+	
+	para "use the move"
+	line "WATERFALL outside"
 	cont "of battle."
 	
 	para "Also, as thanks"

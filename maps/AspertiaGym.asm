@@ -204,10 +204,11 @@ CherenBasicBadgeText:
 	cont "showed."
 
 	para "With the BASIC"
-	line "BADGE, the SPEED"
+	line "BADGE, you'll be"
 
-	para "of your #MON"
-	line "will increase."
+	para "able to command"
+	line "all #MON up to"
+	cont "level 60."
 
 	para "You will also be"
 	line "able to use the"
