@@ -271,18 +271,18 @@ HumilauGym_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  4, 19, HUMILAU_CITY, 6
-	warp_event  5, 19, HUMILAU_CITY, 6
+	warp_event  4, 23, HUMILAU_CITY, 6
+	warp_event  5, 23, HUMILAU_CITY, 6
 
 	db 0 ; coord events
 
 	db 2 ; bg events
-	bg_event  2, 17, BGEVENT_READ, HumilauGymStatue
-	bg_event  7, 17, BGEVENT_READ, HumilauGymStatue
+	bg_event  2, 21, BGEVENT_READ, HumilauGymStatue
+	bg_event  7, 21, BGEVENT_READ, HumilauGymStatue
 
 	db 4 ; object events
-	object_event  5,  0, SPRITE_MARLON, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, HumilauGymMarlonScript, -1
-	object_event  6, 17, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, HumilauGymGuyScript, -1
-	object_event  4, 10, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerSwimmerMHumilauGym, -1
-	object_event  3,  5, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSwimmerFHumilauGym, -1
+	object_event  5,  4, SPRITE_MARLON, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, HumilauGymMarlonScript, -1
+	object_event  6, 21, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, HumilauGymGuyScript, -1
+	object_event  4, 14, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerSwimmerMHumilauGym, -1
+	object_event  3,  9, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 2, TrainerSwimmerFHumilauGym, -1
 	

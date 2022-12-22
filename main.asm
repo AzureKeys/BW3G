@@ -201,7 +201,6 @@ INCLUDE "engine/events/celebi.asm"
 INCLUDE "engine/menus/main_menu.asm"
 INCLUDE "mobile/mobile_menu.asm"
 INCLUDE "engine/pokemon/search.asm"
-INCLUDE "mobile/mobile_12_2.asm"
 INCLUDE "engine/events/buena_menu.asm"
 
 SECTION "bank13", ROMX
@@ -511,6 +510,7 @@ INCLUDE "engine/gfx/load_overworld_font.asm"
 
 SECTION "Mobile 42", ROMX
 
+INCLUDE "mobile/mobile_12_2.asm"
 INCLUDE "mobile/mobile_42.asm"
 
 

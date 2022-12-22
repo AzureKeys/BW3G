@@ -54,7 +54,9 @@ LoadSpecialMapPalette:
 	jr z, .pkmn_league
 	cp TILESET_CHAMPIONS_ROOM
 	jp z, .champions_room
-	jr .do_nothing
+	cp TILESET_PORT
+	jp z, .port
+	jp .do_nothing
 
 .battle_tower
 	call LoadBattleTowerPalette
@@ -63,6 +65,14 @@ LoadSpecialMapPalette:
 
 .pokecenter
 	call LoadPokecenterPalette
+	scf
+	ret
+
+.port
+	ld a, [wMapGroup]
+	cp 3 ; MapGroup_Humilau
+	jr nz, .do_nothing
+	call LoadHumilauGymPalette
 	scf
 	ret
 
@@ -1037,3 +1047,14 @@ LoadChampionPalette:
 	
 ChampionPalette:
 INCLUDE "gfx/tilesets/champions_room.pal"
+
+LoadHumilauGymPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, HumilauGymPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+HumilauGymPalette:
+INCLUDE "gfx/tilesets/humilau_gym.pal"
