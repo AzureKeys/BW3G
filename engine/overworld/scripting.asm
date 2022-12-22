@@ -2096,12 +2096,14 @@ Script_takeitem:
 
 Script_checkitem:
 ; script command 0x21
-; parameters: item
+; parameters: item, quantity
 
 	xor a
 	ld [wScriptVar], a
 	call GetScriptByte
 	ld [wCurItem], a
+	call GetScriptByte
+	ld [wItemQuantityChangeBuffer], a
 	ld hl, wNumItems
 	call CheckItem
 	ret nc

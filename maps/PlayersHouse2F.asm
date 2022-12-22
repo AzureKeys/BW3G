@@ -51,8 +51,10 @@ PlayersHousePosterScript:
 	describedecoration DECODESC_POSTER
 
 PlayersHouseRadioScript:
-	;setmapscene PKMN_LEAGUE_MAIN, SCENE_ELITE_FOUR_ROOM_FINISHED
-	;end
+	; opentext
+	; verbosegiveitem POTION
+	; closetext
+	; end
 	
 	; opentext
 	; givepoke HYDREIGON, 100, NO_ITEM
@@ -110,8 +112,16 @@ PlayersHouseRadioScript:
 	end
 
 PlayersHouseBookshelfScript:
+	; checkitem POTION, 2
+	; iffalse .No
 	; opentext
-	; special DVChecker
+	; writetext TESTYESTEXT
+	; waitbutton
+	; closetext
+	; end
+; .No
+	; opentext
+	; writetext TESTNOTEXT
 	; waitbutton
 	; closetext
 	; end
@@ -145,6 +155,14 @@ PlayersRadioText3:
 PlayersRadioText4:
 	text "#MON!"
 	line "#MON CHANNEL…"
+	done
+
+TESTYESTEXT:
+	text "YES"
+	done
+
+TESTNOTEXT:
+	text "NO"
 	done
 
 PlayersHouse2F_MapEvents:

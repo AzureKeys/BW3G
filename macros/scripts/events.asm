@@ -216,8 +216,13 @@ ENDM
 
 	enum checkitem_command ; $21
 checkitem: MACRO
+if _NARG == 1
+	checkitem \1, 1
+else
 	db checkitem_command
 	db \1 ; item
+	db \2 ; quantity
+endc
 ENDM
 
 	enum givemoney_command ; $22

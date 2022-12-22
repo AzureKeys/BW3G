@@ -330,6 +330,11 @@ CheckTheItem:
 	jr z, .done
 	cp c
 	jr nz, .loop
+	ld a, [wItemQuantityChangeBuffer]
+	ld c, a
+	ld a, [hl]
+	cp c
+	jr c, .done
 	scf
 	ret
 
