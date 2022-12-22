@@ -31,116 +31,59 @@ MoveTutorRedScript:
 	
 .IronDefense:
 	checkitem RED_SHARD
-	iffalse .NotEnough
-	takeitem RED_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 1, .IronDefense
+	iffalse MoveTutorNotEnoughScript
 	writebyte IRON_DEFENSE
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem RED_SHARD
+	jump MoveTutorTaughtScript
 	
 .SteelWing:
-	checkitem RED_SHARD
-	iffalse .NotEnough
-	takeitem RED_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 2, .SteelWing
+	checkitem RED_SHARD, 2
+	iffalse MoveTutorNotEnoughScript
 	writebyte STEEL_WING
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem RED_SHARD, 2
+	jump MoveTutorTaughtScript
 	
 .IronTail:
-	checkitem RED_SHARD
-	iffalse .NotEnough
-	takeitem RED_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 3, .IronTail
+	checkitem RED_SHARD, 3
+	iffalse MoveTutorNotEnoughScript
 	writebyte IRON_TAIL
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem RED_SHARD, 3
+	jump MoveTutorTaughtScript
 	
 .ZenHeadbutt:
-	checkitem RED_SHARD
-	iffalse .NotEnough
-	takeitem RED_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 4, .ZenHeadbutt
+	checkitem RED_SHARD, 4
+	iffalse MoveTutorNotEnoughScript
 	writebyte ZEN_HEADBUTT
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem RED_SHARD, 4
+	jump MoveTutorTaughtScript
 	
 .FirePunch:
-	checkitem RED_SHARD
-	iffalse .NotEnough
-	takeitem RED_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 5, .FirePunch
+	checkitem RED_SHARD, 5
+	iffalse MoveTutorNotEnoughScript
 	writebyte FIRE_PUNCH
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem RED_SHARD, 5
+	jump MoveTutorTaughtScript
 	
 .Outrage:
-	checkitem RED_SHARD
-	iffalse .NotEnough
-	takeitem RED_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 5, .Outrage
+	checkitem RED_SHARD, 5
+	iffalse MoveTutorNotEnoughScript
 	writebyte OUTRAGE
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem RED_SHARD, 5
+	jump MoveTutorTaughtScript
 	
-.NotEnough:
-	copybytetovar wNumShards
-	ifequal 0, .done1
-.loop1
-	giveitem RED_SHARD
-	copybytetovar wNumShards
-	addvar -1
-	copyvartobyte wNumShards
-	ifnotequal 0, .loop1
-.done1
-	writetext MoveTutorNotEnoughText
-	waitbutton
-	closetext
-	end
-	
-.Incompatible:
-	copybytetovar wNumShards
-	ifequal 0, .done2
-.loop2
-	giveitem RED_SHARD
-	copybytetovar wNumShards
-	addvar -1
-	copyvartobyte wNumShards
-	ifnotequal 0, .loop2
-.done2
-	writetext MoveTutorRefusedText
-	waitbutton
-	closetext
+.done
 	end
 	
 MoveTutorBlueScript:
@@ -164,116 +107,59 @@ MoveTutorBlueScript:
 	
 .HoneClaws:
 	checkitem BLUE_SHARD
-	iffalse .NotEnough
-	takeitem BLUE_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 1, .HoneClaws
+	iffalse MoveTutorNotEnoughScript
 	writebyte HONE_CLAWS
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem BLUE_SHARD
+	jump MoveTutorTaughtScript
 	
 .SignalBeam:
-	checkitem BLUE_SHARD
-	iffalse .NotEnough
-	takeitem BLUE_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 2, .SignalBeam
+	checkitem BLUE_SHARD, 2
+	iffalse MoveTutorNotEnoughScript
 	writebyte SIGNAL_BEAM
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem BLUE_SHARD, 2
+	jump MoveTutorTaughtScript
 	
 .IcyWind:
-	checkitem BLUE_SHARD
-	iffalse .NotEnough
-	takeitem BLUE_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 3, .IcyWind
+	checkitem BLUE_SHARD, 3
+	iffalse MoveTutorNotEnoughScript
 	writebyte ICY_WIND
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem BLUE_SHARD, 3
+	jump MoveTutorTaughtScript
 	
 .AquaTail:
-	checkitem BLUE_SHARD
-	iffalse .NotEnough
-	takeitem BLUE_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 4, .AquaTail
+	checkitem BLUE_SHARD, 4
+	iffalse MoveTutorNotEnoughScript
 	writebyte AQUA_TAIL
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem BLUE_SHARD, 4
+	jump MoveTutorTaughtScript
 	
 .IcePunch:
-	checkitem BLUE_SHARD
-	iffalse .NotEnough
-	takeitem BLUE_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 5, .IcePunch
+	checkitem BLUE_SHARD, 5
+	iffalse MoveTutorNotEnoughScript
 	writebyte ICE_PUNCH
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem BLUE_SHARD, 5
+	jump MoveTutorTaughtScript
 	
 .DragonPulse:
-	checkitem BLUE_SHARD
-	iffalse .NotEnough
-	takeitem BLUE_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 5, .DragonPulse
+	checkitem BLUE_SHARD, 5
+	iffalse MoveTutorNotEnoughScript
 	writebyte DRAGON_PULSE
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem BLUE_SHARD, 5
+	jump MoveTutorTaughtScript
 	
-.NotEnough:
-	copybytetovar wNumShards
-	ifequal 0, .done1
-.loop1
-	giveitem BLUE_SHARD
-	copybytetovar wNumShards
-	addvar -1
-	copyvartobyte wNumShards
-	ifnotequal 0, .loop1
-.done1
-	writetext MoveTutorNotEnoughText
-	waitbutton
-	closetext
-	end
-	
-.Incompatible:
-	copybytetovar wNumShards
-	ifequal 0, .done2
-.loop2
-	giveitem BLUE_SHARD
-	copybytetovar wNumShards
-	addvar -1
-	copyvartobyte wNumShards
-	ifnotequal 0, .loop2
-.done2
-	writetext MoveTutorRefusedText
-	waitbutton
-	closetext
+.done
 	end
 	
 MoveTutorGreenScript:
@@ -297,116 +183,59 @@ MoveTutorGreenScript:
 	
 .BugBite:
 	checkitem GREEN_SHARD
-	iffalse .NotEnough
-	takeitem GREEN_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 1, .BugBite
+	iffalse MoveTutorNotEnoughScript
 	writebyte BUG_BITE
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem GREEN_SHARD
+	jump MoveTutorTaughtScript
 	
 .Synthesis:
-	checkitem GREEN_SHARD
-	iffalse .NotEnough
-	takeitem GREEN_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 2, .Synthesis
+	checkitem GREEN_SHARD, 2
+	iffalse MoveTutorNotEnoughScript
 	writebyte SYNTHESIS
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem GREEN_SHARD, 2
+	jump MoveTutorTaughtScript
 	
 .SeedBomb:
-	checkitem GREEN_SHARD
-	iffalse .NotEnough
-	takeitem GREEN_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 3, .SeedBomb
+	checkitem GREEN_SHARD, 3
+	iffalse MoveTutorNotEnoughScript
 	writebyte SEED_BOMB
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem GREEN_SHARD, 3
+	jump MoveTutorTaughtScript
 	
 .GunkShot:
-	checkitem GREEN_SHARD
-	iffalse .NotEnough
-	takeitem GREEN_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 4, .GunkShot
+	checkitem GREEN_SHARD, 4
+	iffalse MoveTutorNotEnoughScript
 	writebyte GUNK_SHOT
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem GREEN_SHARD, 4
+	jump MoveTutorTaughtScript
 	
 .GigaDrain:
-	checkitem GREEN_SHARD
-	iffalse .NotEnough
-	takeitem GREEN_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 5, .GigaDrain
+	checkitem GREEN_SHARD, 5
+	iffalse MoveTutorNotEnoughScript
 	writebyte GIGA_DRAIN
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem GREEN_SHARD, 5
+	jump MoveTutorTaughtScript
 	
 .DarkPulse:
-	checkitem GREEN_SHARD
-	iffalse .NotEnough
-	takeitem GREEN_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 5, .DarkPulse
+	checkitem GREEN_SHARD, 5
+	iffalse MoveTutorNotEnoughScript
 	writebyte DARK_PULSE
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem GREEN_SHARD, 5
+	jump MoveTutorTaughtScript
 	
-.NotEnough:
-	copybytetovar wNumShards
-	ifequal 0, .done1
-.loop1
-	giveitem GREEN_SHARD
-	copybytetovar wNumShards
-	addvar -1
-	copyvartobyte wNumShards
-	ifnotequal 0, .loop1
-.done1
-	writetext MoveTutorNotEnoughText
-	waitbutton
-	closetext
-	end
-	
-.Incompatible:
-	copybytetovar wNumShards
-	ifequal 0, .done2
-.loop2
-	giveitem GREEN_SHARD
-	copybytetovar wNumShards
-	addvar -1
-	copyvartobyte wNumShards
-	ifnotequal 0, .loop2
-.done2
-	writetext MoveTutorRefusedText
-	waitbutton
-	closetext
+.done
 	end
 	
 MoveTutorYellowScript:
@@ -430,116 +259,59 @@ MoveTutorYellowScript:
 	
 .LowKick:
 	checkitem YELLOW_SHARD
-	iffalse .NotEnough
-	takeitem YELLOW_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 1, .LowKick
+	iffalse MoveTutorNotEnoughScript
 	writebyte LOW_KICK
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem YELLOW_SHARD
+	jump MoveTutorTaughtScript
 	
 .SuperFang:
-	checkitem YELLOW_SHARD
-	iffalse .NotEnough
-	takeitem YELLOW_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 2, .SuperFang
+	checkitem YELLOW_SHARD, 2
+	iffalse MoveTutorNotEnoughScript
 	writebyte SUPER_FANG
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem YELLOW_SHARD, 2
+	jump MoveTutorTaughtScript
 	
 .HyperVoice:
-	checkitem YELLOW_SHARD
-	iffalse .NotEnough
-	takeitem YELLOW_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 3, .HyperVoice
+	checkitem YELLOW_SHARD, 3
+	iffalse MoveTutorNotEnoughScript
 	writebyte HYPER_VOICE
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem YELLOW_SHARD, 3
+	jump MoveTutorTaughtScript
 	
 .EarthPower:
-	checkitem YELLOW_SHARD
-	iffalse .NotEnough
-	takeitem YELLOW_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 4, .EarthPower
+	checkitem YELLOW_SHARD, 4
+	iffalse MoveTutorNotEnoughScript
 	writebyte EARTH_POWER
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem YELLOW_SHARD, 4
+	jump MoveTutorTaughtScript
 	
 .ThunderPunch:
-	checkitem YELLOW_SHARD
-	iffalse .NotEnough
-	takeitem YELLOW_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 5, .ThunderPunch
+	checkitem YELLOW_SHARD, 5
+	iffalse MoveTutorNotEnoughScript
 	writebyte THUNDERPUNCH
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem YELLOW_SHARD, 5
+	jump MoveTutorTaughtScript
 	
 .DrainPunch:
-	checkitem YELLOW_SHARD
-	iffalse .NotEnough
-	takeitem YELLOW_SHARD
-	copybytetovar wNumShards
-	addvar 1
-	copyvartobyte wNumShards
-	ifnotequal 5, .DrainPunch
+	checkitem YELLOW_SHARD, 5
+	iffalse MoveTutorNotEnoughScript
 	writebyte DRAIN_PUNCH
-	writetext TutorMoveStartText
-	special MoveTutor
-	ifequal FALSE, MoveTutorTeachMoveScript
-	jump .Incompatible
+	scall MoveTutorStartTeachScript
+	ifnotequal FALSE, .done
+	takeitem YELLOW_SHARD, 5
+	jump MoveTutorTaughtScript
 	
-.NotEnough:
-	copybytetovar wNumShards
-	ifequal 0, .done1
-.loop1
-	giveitem YELLOW_SHARD
-	copybytetovar wNumShards
-	addvar -1
-	copyvartobyte wNumShards
-	ifnotequal 0, .loop1
-.done1
-	writetext MoveTutorNotEnoughText
-	waitbutton
-	closetext
-	end
-	
-.Incompatible:
-	copybytetovar wNumShards
-	ifequal 0, .done2
-.loop2
-	giveitem YELLOW_SHARD
-	copybytetovar wNumShards
-	addvar -1
-	copyvartobyte wNumShards
-	ifnotequal 0, .loop2
-.done2
-	writetext MoveTutorRefusedText
-	waitbutton
-	closetext
+.done
 	end
 
 RedMoveMenuHeader:
@@ -610,15 +382,25 @@ YellowMoveMenuHeader:
 	db "DRAIN PUNCH  5@"
 	db "CANCEL@"
 	
+MoveTutorStartTeachScript:
+	writetext TutorMoveStartText
+	special MoveTutor
+	ifnotequal FALSE, MoveTutorRefusedScript
+	end
+	
 MoveTutorRefusedScript:
 	writetext MoveTutorRefusedText
 	waitbutton
 	closetext
 	end
 	
-MoveTutorTeachMoveScript:
-	writebyte 0
-	copyvartobyte wNumShards
+MoveTutorNotEnoughScript:
+	writetext MoveTutorNotEnoughText
+	waitbutton
+	closetext
+	end
+	
+MoveTutorTaughtScript:
 	writetext MoveTutorTaughtText
 	waitbutton
 	closetext
