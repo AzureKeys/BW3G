@@ -34,8 +34,9 @@ HiddenGrottoScript::
 	end
 
 GetCurGrottoItem:
-	ld a, [wCurHiddenGrotto]
+	ld a, [wHiddenGrottoTier]
 	dec a
+	swap a
 	call GetHiddenGrottoItem
 	ld [wCurGrottoItem], a
 	ret
@@ -86,35 +87,21 @@ GetHiddenGrottoFlag:
 GetHiddenGrottoItem:
 	push hl
 	push de
-	;ld e, a
-	;ld d, 0
-	;ld hl, HiddenGrottoItems
-	;add hl, de
-	;ld a, [hl]
-	ld a, 4
+	ld e, a
+	ld d, 0
+	ld hl, HiddenGrottoItemsTier1
+	add hl, de
+	ld a, 16
 	call RandomRange
-	cp 0
-	jr z, .red
-	cp 1
-	jr z, .blue
-	cp 2
-	jr z, .green
-	ld a, YELLOW_SHARD
-	jp .done
-.blue
-	ld a, BLUE_SHARD
-	jp .done
-.red
-	ld a, RED_SHARD
-	jp .done
-.green
-	ld a, GREEN_SHARD
-.done
+	ld e, a
+	ld d, 0
+	add hl, de
+	ld a, [hl]
 	pop de
 	pop hl
 	ret
 
-;INCLUDE "data/items/hidden_grotto.asm"
+INCLUDE "data/items/hidden_grotto.asm"
 
 FoundHiddenGrottoText:
 	text_far _FoundHiddenGrottoText

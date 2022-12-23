@@ -324,7 +324,7 @@ TrainerAceTrainerF1R23:
 	end
 	
 R23HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_23
+	hiddengrotto HIDDENGROTTO_R_23, HIDDENGROTTO_TIER_3
 	
 R23UltraBall:
 	itemball ULTRA_BALL

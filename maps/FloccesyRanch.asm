@@ -17,7 +17,7 @@ FloccesyRanchSign:
 	jumptext FloccesyRanchSignText
 	
 FloccesyRanchHiddenGrotto:
-	hiddengrotto HIDDENGROTTO_FLOCCESY
+	hiddengrotto HIDDENGROTTO_FLOCCESY, HIDDENGROTTO_TIER_2
 	
 FloccesyRanchSignText:
 	text "FLOCCESY RANCH"

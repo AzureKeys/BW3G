@@ -1066,7 +1066,8 @@ ENDM
 	enum hiddengrotto_command ; $aa
 hiddengrotto: MACRO
 	db hiddengrotto_command
-	db \1 ; tree_id
+	db \1 ; grotto_id
+	db \2 ; item_tier
 ENDM
 
 	enum reloadmappartnotext_command ; $7c

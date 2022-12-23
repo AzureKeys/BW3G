@@ -225,7 +225,7 @@ TrainerLassPinwheel:
 	end
 	
 PinwheelForestHiddenGrotto:
-	hiddengrotto HIDDENGROTTO_PINWHEEL
+	hiddengrotto HIDDENGROTTO_PINWHEEL, HIDDENGROTTO_TIER_2
 	
 PinwheelForestSilverPowder:
 	itemball SILVERPOWDER

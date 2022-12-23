@@ -257,7 +257,7 @@ LostlornTMSolarbeam:
 	itemball TM_SOLARBEAM
 	
 LostlornHiddenGrotto:
-	hiddengrotto HIDDENGROTTO_LOSTLORN
+	hiddengrotto HIDDENGROTTO_LOSTLORN, HIDDENGROTTO_TIER_1
 	
 LostlornSuperPotion2:
 	hiddenitem SUPER_POTION, EVENT_LOSTLORN_SUPER_POTION_2

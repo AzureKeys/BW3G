@@ -745,6 +745,8 @@ Script_hiddengrotto:
 
 	call GetScriptByte
 	ld [wCurHiddenGrotto], a
+	call GetScriptByte
+	ld [wHiddenGrottoTier], a
 	ld b, BANK(HiddenGrottoScript)
 	ld hl, HiddenGrottoScript
 	jp ScriptJump

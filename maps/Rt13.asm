@@ -202,7 +202,7 @@ R13FruitTree:
 	fruittree FRUITTREE_R_13
 	
 R13HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_13
+	hiddengrotto HIDDENGROTTO_R_13, HIDDENGROTTO_TIER_1
 	
 R13Potion:
 	itemball POTION

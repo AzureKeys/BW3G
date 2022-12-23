@@ -2629,7 +2629,7 @@ wChampionsRoomSceneID::                           db ; d9c0
 	ds 48
 	
 wBattleHouseOpponent:: db
-wNumShards:: db
+wHiddenGrottoTier:: db
 
 ; fight counts
 wJackFightCount::    db ; d9f2

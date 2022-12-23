@@ -186,7 +186,7 @@ TrainerBackpackerMR18:
 	end
 	
 R18HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_18
+	hiddengrotto HIDDENGROTTO_R_18, HIDDENGROTTO_TIER_2
 	
 R18Pearl:
 	itemball PEARL

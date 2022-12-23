@@ -131,7 +131,7 @@ R7FruitTree:
 	fruittree FRUITTREE_R_7
 	
 R7HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_7
+	hiddengrotto HIDDENGROTTO_R_7, HIDDENGROTTO_TIER_3
 	
 R7UltraBall:
 	itemball ULTRA_BALL

@@ -71,7 +71,7 @@ TrainerHikerGiantChasm:
 	end
 	
 GiantChasmB1FHiddenGrotto:
-	hiddengrotto HIDDENGROTTO_GIANT_CHASM
+	hiddengrotto HIDDENGROTTO_GIANT_CHASM, HIDDENGROTTO_TIER_3
 	
 GiantChasmB1FTMHail:
 	itemball TM_HAIL

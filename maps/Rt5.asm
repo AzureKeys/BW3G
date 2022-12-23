@@ -238,7 +238,7 @@ R5NimbasaSign:
 	jumptext R5NimbasaSignText
 	
 R5HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_5
+	hiddengrotto HIDDENGROTTO_R_5, HIDDENGROTTO_TIER_1
 	
 R5CharlesSeenText:
 	text "I'm a heart-"

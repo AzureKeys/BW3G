@@ -231,7 +231,7 @@ R2FruitTree:
 	fruittree FRUITTREE_R_2
 	
 R2HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_2
+	hiddengrotto HIDDENGROTTO_R_2, HIDDENGROTTO_TIER_2
 	
 R2RareCandy:
 	itemball RARE_CANDY

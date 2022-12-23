@@ -1,17 +1,54 @@
-HiddenGrottoItems:
-; entries correspond to HIDDENGROTTO* constants
-	db RED_SHARD    ; R22
-	db BLUE_SHARD   ; R13
-	db GREEN_SHARD  ; LOSTLORN
-	db YELLOW_SHARD ; R5
-	db BLUE_SHARD   ; R19
-	db RED_SHARD    ; FLOCCESY
-	db GREEN_SHARD  ; PINWHEEL
-	db BLUE_SHARD   ; R3
-	db YELLOW_SHARD ; R2
-	db RED_SHARD    ; R18
-	db GREEN_SHARD  ; GIANT_CHASM
-	db BLUE_SHARD   ; R6
-	db YELLOW_SHARD ; R23
-	db RED_SHARD    ; R7
+HiddenGrottoItemsTier1:
+	db RED_SHARD
+	db RED_SHARD
+	db BLUE_SHARD
+	db BLUE_SHARD
+	db GREEN_SHARD
+	db GREEN_SHARD
+	db YELLOW_SHARD
+	db YELLOW_SHARD
+	db MOOMOO_MILK
+	db MOOMOO_MILK
+	db PEARL
+	db PEARL
+	db ETHER
+	db ETHER
+	db REVIVE
+	db REVIVE
+	
+HiddenGrottoItemsTier2:
+	db RED_SHARD
+	db BLUE_SHARD
+	db GREEN_SHARD
+	db YELLOW_SHARD
+	db DAMP_ROCK
+	db HEAT_ROCK
+	db SMOOTH_ROCK
+	db ICY_ROCK
+	db BIG_PEARL
+	db BIG_PEARL
+	db PROTEIN
+	db IRON
+	db CARBOS
+	db CALCIUM
+	db HP_UP
+	db ELIXER
+	
+HiddenGrottoItemsTier3:
+	db DAMP_ROCK
+	db DAMP_ROCK
+	db HEAT_ROCK
+	db HEAT_ROCK
+	db SMOOTH_ROCK
+	db SMOOTH_ROCK
+	db ICY_ROCK
+	db ICY_ROCK
+	db PROTEIN
+	db IRON
+	db CARBOS
+	db CALCIUM
+	db PP_UP
+	db MAX_ELIXER
+	db MAX_REVIVE
+	db RARE_CANDY
 	

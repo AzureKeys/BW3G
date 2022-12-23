@@ -219,7 +219,7 @@ R19FruitTree:
 	fruittree FRUITTREE_R_19
 	
 R19HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_19
+	hiddengrotto HIDDENGROTTO_R_19, HIDDENGROTTO_TIER_2
 	
 R19XSpclDef:
 	itemball X_SP_DEF

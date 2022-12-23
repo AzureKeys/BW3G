@@ -186,6 +186,12 @@ NUM_FRUIT_TREES EQU const_value + -1
 	const HIDDENGROTTO_R_9          ; 0f
 NUM_HIDDEN_GROTTO EQU const_value + -1
 
+; Hidden Grotto/Gift Item Tiers
+	const_def 1
+	const HIDDENGROTTO_TIER_1 ; 1
+	const HIDDENGROTTO_TIER_2 ; 2
+	const HIDDENGROTTO_TIER_3 ; 3
+
 ; describedecoration arguments
 ; DescribeDecoration.JumpTable indexes (see engine/overworld/decorations.asm)
 	const_def

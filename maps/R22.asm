@@ -20,7 +20,7 @@ R22FruitTree:
 	fruittree FRUITTREE_R_22
 	
 R22HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_22
+	hiddengrotto HIDDENGROTTO_R_22, HIDDENGROTTO_TIER_1
 	
 R22Potion:
 	itemball POTION

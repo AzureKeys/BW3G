@@ -255,7 +255,7 @@ R6FruitTree:
 	fruittree FRUITTREE_R_6
 	
 R6HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_6
+	hiddengrotto HIDDENGROTTO_R_6, HIDDENGROTTO_TIER_3
 	
 R6HyperPotion:
 	itemball HYPER_POTION

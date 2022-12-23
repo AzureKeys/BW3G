@@ -222,7 +222,7 @@ R3MaxEther:
 	itemball MAX_ETHER
 	
 R3HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_3
+	hiddengrotto HIDDENGROTTO_R_3, HIDDENGROTTO_TIER_2
 	
 R3HPUp:
 	hiddenitem HP_UP, EVENT_R3_HP_UP

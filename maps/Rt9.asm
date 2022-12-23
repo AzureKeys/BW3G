@@ -76,7 +76,7 @@ R9Nugget:
 	hiddenitem NUGGET, EVENT_R9_NUGGET
 	
 R9HiddenGrotto:
-	hiddengrotto HIDDENGROTTO_R_9
+	hiddengrotto HIDDENGROTTO_R_9, HIDDENGROTTO_TIER_3
 	
 R9Sign:
 	jumptext R9SignText
