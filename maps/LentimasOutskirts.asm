@@ -387,8 +387,8 @@ LentimasReversalSignText:
 	done
 	
 LentimasLostlornSignText:
-	text "LOSTLORN FOREST"
-	line "ahead."
+	text "South to"
+	line "LOSTLORN FOREST."
 	done
 	
 LentimasOutskirts_MapEvents:
