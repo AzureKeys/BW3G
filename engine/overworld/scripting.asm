@@ -234,7 +234,8 @@ ScriptCommandTable:
 	dw Script_wait                       ; a8
 	dw Script_checksave                  ; a9
 	dw Script_hiddengrotto               ; aa
-	dw Script_reloadmappartnotext        ; ab
+	dw Script_rematchgift                ; ab
+	dw Script_reloadmappartnotext        ; ac
 
 StartScript:
 	ld hl, wScriptFlags
@@ -741,7 +742,7 @@ Script_fruittree:
 
 Script_hiddengrotto:
 ; script command 0xaa
-; parameters: grotto_id
+; parameters: grotto_id, item_tier
 
 	call GetScriptByte
 	ld [wCurHiddenGrotto], a
@@ -749,6 +750,16 @@ Script_hiddengrotto:
 	ld [wHiddenGrottoTier], a
 	ld b, BANK(HiddenGrottoScript)
 	ld hl, HiddenGrottoScript
+	jp ScriptJump
+
+Script_rematchgift:
+; script command 0xab
+; parameters: item_tier
+
+	call GetScriptByte
+	ld [wHiddenGrottoTier], a
+	ld b, BANK(RematchGiftScript)
+	ld hl, RematchGiftScript
 	jp ScriptJump
 
 Script_swarm:

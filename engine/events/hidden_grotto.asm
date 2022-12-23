@@ -100,6 +100,26 @@ GetHiddenGrottoItem:
 	pop de
 	pop hl
 	ret
+	
+RematchGiftScript::
+	callasm GetCurGrottoItem
+	copybytetovar wCurGrottoItem
+	itemtotext USE_SCRIPT_VAR, MEM_BUFFER_0
+	writetext ObtainedTrainerGiftText
+	copybytetovar wCurGrottoItem
+	giveitem ITEM_FROM_MEM
+	iffalse .packisfull
+	specialsound
+	itemnotify
+	jump .end
+
+.packisfull
+	buttonsound
+	writetext GrottoPackIsFullText
+	waitbutton
+
+.end
+	end
 
 INCLUDE "data/items/hidden_grotto.asm"
 
@@ -113,6 +133,10 @@ GrottoItemText:
 
 ObtainedGrottoItemText:
 	text_far _ObtainedFruitText
+	text_end
+
+ObtainedTrainerGiftText:
+	text_far _ObtainedTrainerGiftText
 	text_end
 
 GrottoPackIsFullText:

@@ -1070,7 +1070,13 @@ hiddengrotto: MACRO
 	db \2 ; item_tier
 ENDM
 
-	enum reloadmappartnotext_command ; $7c
+	enum rematchgift_command ; $ab
+rematchgift: MACRO
+	db rematchgift_command
+	db \1 ; item_tier
+ENDM
+
+	enum reloadmappartnotext_command ; $ac
 reloadmappartnotext: MACRO
 	db reloadmappartnotext_command
 ENDM

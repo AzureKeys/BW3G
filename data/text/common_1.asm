@@ -39,6 +39,13 @@ _NothingHereText::
 	line "here…"
 	done
 
+_ObtainedTrainerGiftText::
+	text "You received a"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
+	done
+
 UnknownText_0x1bc06b::
 	text "Which APRICORN"
 	line "should I use?"
