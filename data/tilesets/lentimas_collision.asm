@@ -57,6 +57,18 @@
 	tilecoll WALL, FLOOR, WALL, WALL ; 38
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 39
 	tilecoll FLOOR, WALL, WALL, WALL ; 3a
-	tilecoll FLOOR, FLOOR, CAVE, WALL ; 3b
+	tilecoll WALL, WALL, CAVE, WALL ; 3b
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 3c
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 3d
+	tilecoll WALL, WALL, WALL, WALL ; 3e
+	tilecoll WALL, FLOOR, WALL, FLOOR ; 3f
+	tilecoll UP_WALL, UP_WALL, TALL_GRASS, TALL_GRASS ; 40
+	tilecoll FLOOR, WALL, STAIRS_RIGHT_UP, WALL ; 41
+	tilecoll STAIRS_LEFT_DOWN, WALL, TALL_GRASS, WALL ; 42
+	tilecoll TALL_GRASS, WALL, TALL_GRASS, WALL ; 43
+	tilecoll WALL, WALL, WALL, WALL ; 44
+	tilecoll WALL, WALL, TALL_GRASS, WALL ; 45
+	tilecoll FLOOR, WALL, WALL, WALL ; 46
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 47
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 48
+	tilecoll WALL, FLOOR, WALL, FLOOR ; 49
