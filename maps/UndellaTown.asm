@@ -15,8 +15,9 @@ UndellaTown_MapScripts:
 	scene_script .DummyScene1 ; SCENE_UNDELLA_TOWN_CANT_LEAVE
 	scene_script .DummyScene2 ; SCENE_UNDELLA_TOWN_NOTHING
 
-	db 1 ; callbacks
+	db 2 ; callbacks
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
+	callback MAPCALLBACK_TILES, .SetTiles
 
 .UndellaTownMeetMarlon:
 	priorityjump .UndellaTown_MarlonScene
@@ -30,6 +31,13 @@ UndellaTown_MapScripts:
 
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_UNDELLA
+	return
+	
+.SetTiles:
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iffalse .done
+	changeblock 10,  6, $16 ; open door
+.done
 	return
 	
 .UndellaTown_MarlonScene:
@@ -145,6 +153,13 @@ UndellaFishingSign:
 	
 UndellaReversalSign:
 	jumptext UndellaReversalSignText
+	
+UndellaTownLockedDoor:
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .done
+	jumptext UndellaLockedDoorText
+.done
+	end
 	
 UndellaTownMarlon_ArriveMovement:
 	step RIGHT
@@ -364,33 +379,39 @@ UndellaReversalSignText:
 	para "Enter at your"
 	line "own risk!"
 	done
+	
+UndellaLockedDoorText:
+	text "Huh? It's locked…"
+	done
 
 UndellaTown_MapEvents:
 	db 0, 0 ; filler
 
-	db 6 ; warp events
+	db 7 ; warp events
 	warp_event 25,  7, R_13_UNDELLA_GATE, 3
 	warp_event 29,  9, UNDELLA_POKECENTER_1F, 1
-	warp_event 11,  7, UNDELLA_OLD_ROD_HOUSE, 1
+	warp_event 21,  7, UNDELLA_OLD_ROD_HOUSE, 1
 	warp_event 15,  7, MARINE_TUBE_ENTRANCE, 1
 	warp_event  4,  7, REVERSAL_MOUNTAIN_B1F, 1
 	warp_event 36, 13, SEASIDE_CAVE_1F, 2
+	warp_event 11,  7, UNDELLA_TOWN, 7
 
 	db 1 ; coord events
 	coord_event  4,  9, SCENE_UNDELLA_TOWN_CANT_LEAVE, UndellaTownBlockerScript
 
-	db 6 ; bg events
+	db 7 ; bg events
 	bg_event  6,  8, BGEVENT_READ, UndellaReversalSign
-	bg_event 10,  8, BGEVENT_READ, UndellaFishingSign
+	bg_event 20,  8, BGEVENT_READ, UndellaFishingSign
 	bg_event 16,  8, BGEVENT_READ, UndellaMarineTubeSign
 	bg_event 27,  9, BGEVENT_READ, UndellaTownSign
 	bg_event 18,  6, BGEVENT_ITEM, UndellaTownPearl1
 	bg_event  8, 16, BGEVENT_ITEM, UndellaTownPearl2
+	bg_event 11,  7, BGEVENT_UP, UndellaTownLockedDoor
 
 	db 9 ; object events
 	object_event 20,  8, SPRITE_MARLON, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, -1, -1, EVENT_UNDELLA_TOWN_MARLON
 	object_event  5,  8, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, -1, UndellaTownBlockerTextScript, -1
-	object_event 19,  8, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, UndellaTownBugCatcherTextScript, -1
+	object_event 17, 10, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, UndellaTownBugCatcherTextScript, -1
 	object_event 24, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerFisher1UndellaTown, -1
 	object_event 11, 19, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 1, TrainerFisher2UndellaTown, -1
 	object_event 18, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, UndellaTownFisher3TextScript, -1
