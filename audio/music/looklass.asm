@@ -13,211 +13,174 @@ Music_LookLass:
 Music_LookLass_Ch1:
 	volume $77
 	dutycycle $2
-	notetype 12, $a7
+	notetype 12, $77
 	tempo 111
 ;Bar 1
 Music_LookLass_Ch1_loop:
-	octave 5
-	note F_, 1
+	note __, 2
+	octave 3
+	note F_, 2 ; WARNING: Auto-Sync says: Rounded up!
+	octave 4
+	note F_, 6
+	note __, 2
+	note D#, 2
+	note __, 2 ; WARNING: Auto-Sync says: Rounded up!
+;Bar 2
+	note D_, 1
 	note __, 1
+	note D_, 1
+	note __, 2
+	note C#, 1 ; WARNING: Auto-Sync says: Rounded up!
+	note D_, 4
+	octave 3
+	note G_, 2
+	octave 4
+	note G#, 4 ; WARNING: Auto-Sync says: Rounded up!
+;Bar 3
+	note D#, 1
+	note __, 1
+	note D#, 1
+	note __, 3
+	note F_, 4
+	notetype 6, $77
+	octave 3
+	note B_, 1
+	octave 4
+	note C_, 3
+	notetype 12, $97
+	note G_, 2
+	note __, 2
+;Bar 4
 	octave 3
 	note F_, 1
 	note __, 1
+	note C_, 2
 	octave 4
-	note F_, 1
+	note D#, 2
+	note __, 2
+	notetype 6, $77
+	octave 3
+	note B_, 1
+	octave 4
+	note C_, 3
+	notetype 12, $97
+	octave 3
+	note C_, 2
+	octave 4
+	note F_, 2
+	octave 3
+	note A_, 2
+;Bar 5
+	octave 4
+	note C_, 1
 	note __, 1
 	octave 3
-	note F_, 1
+	note A#, 1
+	note __, 1
+	note D_, 1
 	note __, 1
 	octave 4
-	note G_, 1
+	note F_, 4
+	octave 3
+	note A#, 1
 	note __, 1
+	octave 4
+	note C#, 1
+	note __, 1
+	note D_, 1
+	note __, 1
+;Bar 6
+	octave 3
+	note B_, 2
+	note G_, 2
+	octave 4
+	note D#, 1
+	notetype 6, $97
+	note E_, 1
+	note F_, 9
+	notetype 12, $97
+	note D_, 2
+	note C_, 2
+	octave 3
+	note B_, 2
+;Bar 7
+	octave 4
+	note F_, 2
+	note D#, 2
+	note D_, 1
+	note __, 1
+	note D#, 3
+	note __, 1
+	note D#, 3
+	note __, 1
+	octave 3
+	note A#, 1
+	note __, 1
+;Bar 8
 	note F_, 1
 	note __, 1
-	note A_, 1
-	note __, 1
-	notetype 6, $a7
 	note F_, 1
 	note __, 3
-	notetype 12, $a7
-	octave 5
-;Bar 2
-	note C_, 1
-	note __, 1
 	octave 4
-	note A#, 1
-	note __, 1
-	note A_, 1
-	note __, 1
-	note A#, 1
-	note __, 1
-	octave 5
-	note D#, 1
-	note __, 1
-	note D_, 1
-	note __, 1
+	note D_, 2
+	note __, 2
 	note D#, 1
 	note __, 1
 	note F_, 1
 	note __, 1
-	octave 4
-;Bar 3
-	note A_, 1
+	note A#, 1
 	note __, 1
-	note G_, 1
-	note __, 1
-	note F#, 1
-	note __, 1
-	note G_, 1
-	note __, 1
+;Bar 9
+	notetype 6, $97
 	octave 5
 	note D_, 1
+	note __, 3
+	note D_, 1
+	note __, 3
+	octave 4
+	notetype 12, $97
+	note E_, 1
 	note __, 1
+	note F_, 4
+	octave 3
+	note F_, 1
+	notetype 6, $77
+	note __, 3
+	octave 4
+	note D_, 1
+	notetype 12, $77
+	note __, 1
+	note F_, 1
+	note __, 1
+;Bar 10
+	octave 5
 	note C_, 1
-	note __, 1
+	note __, 3
+	note C_, 1
+	note __, 3
 	octave 4
 	note B_, 1
 	note __, 1
+	note B_, 1
+	note __, 2
+	note G#, 1
 	octave 5
 	note C_, 1
-	note __, 1
-	octave 4
-;Bar 4
-	note G_, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	note E_, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	note A#, 1
-	note __, 1
-	note A_, 1
-	note __, 1
-	note G#, 1
-	note __, 1
-	note A_, 1
-	note __, 1
-	octave 5
-;Bar 5
-	note D#, 1
-	note __, 1
-	note D_, 1
-	note __, 1
-	note C#, 1
-	note __, 1
-	note D_, 1
-	note __, 1
-	octave 4
-	note G_, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	note E_, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	octave 5
-;Bar 6
-	note F_, 1
-	note __, 1
-	note G_, 1
-	note __, 1
-	note G#, 1
-	note __, 1
-	note G_, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	octave 4
-	note G#, 1
-	note __, 1
-	note G_, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	octave 5
-;Bar 7
-	note D_, 1
-	note __, 1
-	note D#, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	note D#, 1
-	note __, 1
-	note D_, 1
-	note __, 1
-	octave 4
-	note F#, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	note D#, 1
-	note __, 1
-;Bar 8
-	note D#, 1
-	note __, 1
-	note D_, 1
-	note __, 1
-	note C#, 1
-	note __, 1
-	note D_, 1
-	note __, 1
-	note G_, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	octave 5
-	note C_, 1
-	note __, 1
-	octave 4
-	note A#, 1
-	note __, 1
-	octave 5
-;Bar 9
-	note D#, 1
-	note __, 1
-	note D_, 1
-	note __, 1
-	note C#, 1
-	note __, 1
-	note D_, 1
-	note __, 1
-	note G_, 1
-	note __, 1
-	note F_, 1
-	note __, 1
-	note E_, 1
-	note __, 1
-	note G_, 1
-	note __, 1
-;Bar 10
-	note F_, 1
-	note __, 3
-	note F_, 1
-	note __, 3
-	note E_, 1
-	note __, 1
-	note E_, 1
-	note __, 3
-	note F_, 1
 	note __, 3
 ;Bar 11
 	octave 4
 	note F_, 1
 	note __, 1
+	octave 3
+	note A_, 2
 	octave 5
 	note F_, 4
-	note __, 2
-	octave 4
+	octave 3
 	note F_, 1
 	note __, 1
-	note G_, 1
-	note __, 1
-	note A_, 1
-	note __, 1
+	octave 4
+	note D#, 2
+	note __, 2
 	loopchannel 0, Music_LookLass_Ch1_loop
 
 ; ============================================================================================================
@@ -386,197 +349,210 @@ Music_LookLass_Ch2_loop:
 ; ============================================================================================================
 
 Music_LookLass_Ch3:
-	notetype 12, $10
+	notetype 12, $13
 ;Bar 1
 Music_LookLass_Ch3_loop:
-	intensity $10
-	note __, 2
-	octave 3
-	note F_, 2 ; WARNING: Auto-Sync says: Rounded up!
-	octave 4
-	note F_, 6
-	note __, 2
-	note D#, 2
-	note __, 2 ; WARNING: Auto-Sync says: Rounded up!
-;Bar 2
-	intensity $20
-	note D_, 1
+	octave 5
+	note F_, 1
 	note __, 1
-	intensity $10
-	note D_, 1
-	note __, 2
-	intensity $20
-	note C#, 1 ; WARNING: Auto-Sync says: Rounded up!
-	intensity $10
-	note D_, 4
-	octave 3
-	note G_, 2
-	octave 4
-	note G#, 4 ; WARNING: Auto-Sync says: Rounded up!
-;Bar 3
-	intensity $20
-	note D#, 1
-	note __, 1
-	intensity $10
-	note D#, 1
-	note __, 3
-	note F_, 4
-	notetype 6, $10
-	octave 3
-	note B_, 1
-	octave 4
-	note C_, 3
-	notetype 12, $20
-	intensity $10
-	note G_, 2
-	note __, 2
-;Bar 4
 	octave 3
 	note F_, 1
 	note __, 1
-	note C_, 2
 	octave 4
-	note D#, 2
-	note __, 2
-	notetype 6, $10
-	octave 3
-	note B_, 1
-	octave 4
-	intensity $10
-	note C_, 3
-	notetype 12, $10
-	octave 3
-	note C_, 2
-	octave 4
-	note F_, 2
-	octave 3
-	note A_, 2
-;Bar 5
-	octave 4
-	note C_, 1
+	note F_, 1
 	note __, 1
 	octave 3
+	note F_, 1
+	note __, 1
+	octave 4
+	note G_, 1
+	note __, 1
+	note F_, 1
+	note __, 1
+	note A_, 1
+	note __, 1
+	notetype 6, $13
+	note F_, 1
+	note __, 3
+	notetype 12, $13
+	octave 5
+;Bar 2
+	note C_, 1
+	note __, 1
+	octave 4
 	note A#, 1
+	note __, 1
+	note A_, 1
+	note __, 1
+	note A#, 1
+	note __, 1
+	octave 5
+	note D#, 1
 	note __, 1
 	note D_, 1
 	note __, 1
-	octave 4
-	note F_, 4
-	octave 3
-	intensity $20
-	note A#, 1
+	note D#, 1
+	note __, 1
+	note F_, 1
 	note __, 1
 	octave 4
-	intensity $10
+;Bar 3
+	note A_, 1
+	note __, 1
+	note G_, 1
+	note __, 1
+	note F#, 1
+	note __, 1
+	note G_, 1
+	note __, 1
+	octave 5
+	note D_, 1
+	note __, 1
+	note C_, 1
+	note __, 1
+	octave 4
+	note B_, 1
+	note __, 1
+	octave 5
+	note C_, 1
+	note __, 1
+	octave 4
+;Bar 4
+	note G_, 1
+	note __, 1
+	note F_, 1
+	note __, 1
+	note E_, 1
+	note __, 1
+	note F_, 1
+	note __, 1
+	note A#, 1
+	note __, 1
+	note A_, 1
+	note __, 1
+	note G#, 1
+	note __, 1
+	note A_, 1
+	note __, 1
+	octave 5
+;Bar 5
+	note D#, 1
+	note __, 1
+	note D_, 1
+	note __, 1
 	note C#, 1
 	note __, 1
 	note D_, 1
 	note __, 1
-;Bar 6
-	octave 3
-	note B_, 2
-	note G_, 2
 	octave 4
-	note D#, 1
-	intensity $20
-	notetype 6, $20
+	note G_, 1
+	note __, 1
+	note F_, 1
+	note __, 1
 	note E_, 1
-	note F_, 9
-	notetype 12, $20
-	note D_, 2
-	note C_, 2
-	octave 3
-	intensity $20
-	note B_, 2
-;Bar 7
+	note __, 1
+	note F_, 1
+	note __, 1
+	octave 5
+;Bar 6
+	note F_, 1
+	note __, 1
+	note G_, 1
+	note __, 1
+	note G#, 1
+	note __, 1
+	note G_, 1
+	note __, 1
+	note F_, 1
+	note __, 1
 	octave 4
-	intensity $10
-	note F_, 2
-	note D#, 2
+	note G#, 1
+	note __, 1
+	note G_, 1
+	note __, 1
+	note F_, 1
+	note __, 1
+	octave 5
+;Bar 7
 	note D_, 1
 	note __, 1
-	note D#, 3
+	note D#, 1
 	note __, 1
-	note D#, 3
+	note F_, 1
 	note __, 1
-	octave 3
-	note A#, 1
+	note D#, 1
+	note __, 1
+	note D_, 1
+	note __, 1
+	octave 4
+	note F#, 1
+	note __, 1
+	note F_, 1
+	note __, 1
+	note D#, 1
 	note __, 1
 ;Bar 8
-	note F_, 1
-	note __, 1
-	intensity $20
-	note F_, 1
-	note __, 3
-	octave 4
-	intensity $10
-	note D_, 2
-	note __, 2
 	note D#, 1
 	note __, 1
+	note D_, 1
+	note __, 1
+	note C#, 1
+	note __, 1
+	note D_, 1
+	note __, 1
+	note G_, 1
+	note __, 1
 	note F_, 1
 	note __, 1
-	intensity $20
+	octave 5
+	note C_, 1
+	note __, 1
+	octave 4
 	note A#, 1
 	note __, 1
-;Bar 9
-	notetype 6, $20
 	octave 5
-	intensity $10
+;Bar 9
+	note D#, 1
+	note __, 1
 	note D_, 1
-	note __, 3
+	note __, 1
+	note C#, 1
+	note __, 1
 	note D_, 1
-	note __, 3
-	octave 4
-	notetype 12, $20
-	intensity $20
+	note __, 1
+	note G_, 1
+	note __, 1
+	note F_, 1
+	note __, 1
 	note E_, 1
 	note __, 1
-	intensity $10
-	note F_, 4
-	octave 3
-	note F_, 1
-	notetype 6, $10
-	note __, 3
-	octave 4
-	note D_, 1
-	notetype 12, $10
-	note __, 1
-	note F_, 1
+	note G_, 1
 	note __, 1
 ;Bar 10
-	octave 5
-	note C_, 1
+	note F_, 1
 	note __, 3
-	note C_, 1
+	note F_, 1
 	note __, 3
-	octave 4
-	note B_, 1
+	note E_, 1
 	note __, 1
-	note B_, 1
-	note __, 2
-	intensity $20
-	note G#, 1
-	octave 5
-	intensity $10
-	note C_, 1
+	note E_, 1
+	note __, 3
+	note F_, 1
 	note __, 3
 ;Bar 11
 	octave 4
 	note F_, 1
 	note __, 1
-	octave 3
-	intensity $20
-	note A_, 2
 	octave 5
-	intensity $10
 	note F_, 4
-	octave 3
+	note __, 2
+	octave 4
 	note F_, 1
 	note __, 1
-	octave 4
-	note D#, 2
-	note __, 2
+	note G_, 1
+	note __, 1
+	note A_, 1
+	note __, 1
 	loopchannel 0, Music_LookLass_Ch3_loop
 
 ; ============================================================================================================
