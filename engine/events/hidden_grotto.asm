@@ -111,13 +111,16 @@ RematchGiftScript::
 	iffalse .packisfull
 	specialsound
 	itemnotify
+	closetext
+	writebyte TRUE
 	jump .end
 
 .packisfull
 	buttonsound
 	writetext GrottoPackIsFullText
 	waitbutton
-
+	closetext
+	writebyte FALSE
 .end
 	end
 

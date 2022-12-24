@@ -55,18 +55,27 @@ TrainerBackpackerMR7North:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_PARKER_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer BACKPACKERM, PARKER_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_PARKER_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight2
 	loadtrainer BACKPACKERM, PARKER_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_PARKER_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -96,6 +105,17 @@ TrainerBackpackerMR7North:
 .Rematch:
 	jumpstd rematchm
 	end
+
+.GiftText:
+	jumpstd giftm
+	end
+
+.PackIsFull:
+	jumpstd packfullm
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_3
 
 TrainerBackpackerFR7North:
 	trainer BACKPACKERF, BACKPACKERF_R7, EVENT_BEAT_BACKPACKERF_R7, BackpackerFR7NorthSeenText, BackpackerFR7NorthBeatenText, 0, .Script

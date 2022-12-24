@@ -88,36 +88,48 @@ TrainerCyclistMOutskirts:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer CYCLISTM, FREDDY_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight2
 	loadtrainer CYCLISTM, FREDDY_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight3
 	loadtrainer CYCLISTM, FREDDY_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight4
 	loadtrainer CYCLISTM, FREDDY_REMATCH_4
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight5
 	loadtrainer CYCLISTM, FREDDY_REMATCH_5
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_FREDDY_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -147,6 +159,17 @@ TrainerCyclistMOutskirts:
 .Rematch:
 	jumpstd rematchm
 	end
+
+.GiftText:
+	jumpstd giftm
+	end
+
+.PackIsFull:
+	jumpstd packfullm
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_1
 
 TrainerCyclistFOutskirts:
 	trainer CYCLISTF, CYCLISTF_OUTSKIRTS, EVENT_BEAT_CYCLISTF_OUTSKIRTS, CyclistFOutskirtsSeenText, CyclistFOutskirtsBeatenText, 0, .Script

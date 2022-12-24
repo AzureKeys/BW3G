@@ -65,30 +65,41 @@ TrainerMaidR19:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer MAID, SOPHIE_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight2
 	loadtrainer MAID, SOPHIE_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight3
 	loadtrainer MAID, SOPHIE_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight4
 	loadtrainer MAID, SOPHIE_REMATCH_4
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_SOPHIE_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -118,6 +129,17 @@ TrainerMaidR19:
 .Rematch:
 	jumpstd rematchf
 	end
+
+.GiftText:
+	jumpstd giftf
+	end
+
+.PackIsFull:
+	jumpstd packfullf
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_2
 
 TrainerPkmnBreederFR19:
 	trainer PKMN_BREEDERF, PKMN_BREEDERF_R19, EVENT_BEAT_PKMN_BREEDERF_R19, PkmnBreederFR19SeenText, PkmnBreederFR19BeatenText, 0, .Script

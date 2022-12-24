@@ -163,12 +163,20 @@ TrainerLinebackerVillageBridge:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_DEAN_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer LINEBACKER, DEAN_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_DEAN_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -198,6 +206,17 @@ TrainerLinebackerVillageBridge:
 .Rematch:
 	jumpstd rematchm
 	end
+
+.GiftText:
+	jumpstd giftm
+	end
+
+.PackIsFull:
+	jumpstd packfullm
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_3
 
 TrainerHoopster1VillageBridge:
 	trainer HOOPSTER, HOOPSTER_VILLAGE_BRIDGE_1, EVENT_BEAT_HOOPSTER_VILLAGE_BRIDGE_1, Hoopster1VillageBridgeSeenText, Hoopster1VillageBridgeBeatenText, 0, .Script

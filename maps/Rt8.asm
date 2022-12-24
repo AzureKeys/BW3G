@@ -85,12 +85,20 @@ TrainerParasolLadyR8:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LOIS_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer PARASOL_LADY, LOIS_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LOIS_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -120,6 +128,17 @@ TrainerParasolLadyR8:
 .Rematch:
 	jumpstd rematchf
 	end
+
+.GiftText:
+	jumpstd giftf
+	end
+
+.PackIsFull:
+	jumpstd packfullf
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_3
 	
 R8Elixer:
 	itemball ELIXER

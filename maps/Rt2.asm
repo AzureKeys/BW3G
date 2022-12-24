@@ -99,24 +99,34 @@ TrainerLassR2:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_CARLA_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer LASS_D, CARLA_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_CARLA_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight2
 	loadtrainer LASS_D, CARLA_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_CARLA_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight3
 	loadtrainer LASS_D, CARLA_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_CARLA_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -146,6 +156,17 @@ TrainerLassR2:
 .Rematch:
 	jumpstd rematchf
 	end
+
+.GiftText:
+	jumpstd giftf
+	end
+
+.PackIsFull:
+	jumpstd packfullf
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_2
 
 TrainerYoungsterR2:
 	trainer YOUNGSTER_D, YOUNGSTER_R2, EVENT_BEAT_YOUNGSTER_R2, YoungsterR2SeenText, YoungsterR2BeatenText, 0, .Script

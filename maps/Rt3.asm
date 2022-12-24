@@ -95,24 +95,34 @@ TrainerPkmnRangerFR3:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ARIANA_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer PKMN_RANGERF, ARIANA_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ARIANA_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight2
 	loadtrainer PKMN_RANGERF, ARIANA_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ARIANA_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight3
 	loadtrainer PKMN_RANGERF, ARIANA_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ARIANA_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -142,6 +152,17 @@ TrainerPkmnRangerFR3:
 .Rematch:
 	jumpstd rematchf
 	end
+
+.GiftText:
+	jumpstd giftf
+	end
+
+.PackIsFull:
+	jumpstd packfullf
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_2
 
 TrainerPkmnRangerMR3:
 	trainer PKMN_RANGERM, PKMN_RANGERM_R3, EVENT_BEAT_PKMN_RANGERM_R3, PkmnRangerMR3SeenText, PkmnRangerMR3BeatenText, 0, .Script

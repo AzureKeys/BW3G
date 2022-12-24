@@ -64,30 +64,41 @@ TrainerLadyR4:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer LADY, LACEY_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight2
 	loadtrainer LADY, LACEY_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight3
 	loadtrainer LADY, LACEY_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight4
 	loadtrainer LADY, LACEY_REMATCH_4
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_LACEY_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -117,6 +128,17 @@ TrainerLadyR4:
 .Rematch:
 	jumpstd rematchf
 	end
+
+.GiftText:
+	jumpstd giftf
+	end
+
+.PackIsFull:
+	jumpstd packfullf
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_1
 
 TrainerRichBoyR4:
 	trainer RICH_BOY, RICH_BOY_R4, EVENT_BEAT_RICH_BOY_R4, RichBoyR4SeenText, RichBoyR4BeatenText, 0, .Script

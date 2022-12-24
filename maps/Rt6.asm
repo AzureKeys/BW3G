@@ -102,18 +102,27 @@ TrainerScientistMR6:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_MARCO_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer SCIENTISTM, MARCO_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_MARCO_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight2
 	loadtrainer SCIENTISTM, MARCO_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_MARCO_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -143,6 +152,17 @@ TrainerScientistMR6:
 .Rematch:
 	jumpstd rematchm
 	end
+
+.GiftText:
+	jumpstd giftm
+	end
+
+.PackIsFull:
+	jumpstd packfullm
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_3
 
 TrainerPkmnRangerMR6:
 	trainer PKMN_RANGERM, PKMN_RANGERM_R6, EVENT_BEAT_PKMN_RANGERM_R6, PkmnRangerMR6SeenText, PkmnRangerMR6BeatenText, 0, .Script

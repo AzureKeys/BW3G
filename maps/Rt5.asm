@@ -112,36 +112,48 @@ TrainerDancer1R5:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight1
 	loadtrainer DANCER, ERIC_REMATCH_1
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight2
 	loadtrainer DANCER, ERIC_REMATCH_2
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight3
 	loadtrainer DANCER, ERIC_REMATCH_3
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight4
 	loadtrainer DANCER, ERIC_REMATCH_4
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
-	end
+	jump .Gift
+	
 .LoadFight5
 	loadtrainer DANCER, ERIC_REMATCH_5
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_ERIC_READY_FOR_REMATCH
+	; fallthrough
+	
+.Gift:
+	opentext
+	scall .GiftText
+	scall .GiveGift
+	ifequal FALSE, .PackIsFull
 	end
 	
 .AskNumber1:
@@ -171,6 +183,17 @@ TrainerDancer1R5:
 .Rematch:
 	jumpstd rematchm
 	end
+
+.GiftText:
+	jumpstd giftm
+	end
+
+.PackIsFull:
+	jumpstd packfullm
+	end
+	
+.GiveGift:
+	rematchgift HIDDENGROTTO_TIER_1
 
 TrainerDancer2R5:
 	trainer DANCER, DANCER_R5_2, EVENT_BEAT_DANCER_R5_2, Dancer2R5SeenText, Dancer2R5BeatenText, 0, .Script

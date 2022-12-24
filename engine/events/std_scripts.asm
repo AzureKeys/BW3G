@@ -890,33 +890,27 @@ GiftMScript:
 
 .Dan:
 	farwritetext DanGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Freddy:
 	farwritetext FreddyGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Eric:
 	farwritetext EricGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Marco:
 	farwritetext MarcoGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Parker:
 	farwritetext ParkerGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Dean:
 	farwritetext DeanGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 
 PackFullMScript:
@@ -929,31 +923,37 @@ PackFullMScript:
 	ifequal PHONE_LINEBACKER_DEAN, .Dean
 
 .Dan:
+	opentext
 	farwritetext DanPackFullText
 	waitbutton
 	closetext
 	end
 .Freddy:
+	opentext
 	farwritetext FreddyPackFullText
 	waitbutton
 	closetext
 	end
 .Eric:
+	opentext
 	farwritetext EricPackFullText
 	waitbutton
 	closetext
 	end
 .Marco:
+	opentext
 	farwritetext MarcoPackFullText
 	waitbutton
 	closetext
 	end
 .Parker:
+	opentext
 	farwritetext ParkerPackFullText
 	waitbutton
 	closetext
 	end
 .Dean:
+	opentext
 	farwritetext DeanPackFullText
 	waitbutton
 	closetext
@@ -1229,38 +1229,31 @@ GiftFScript:
 
 .Lacey:
 	farwritetext LaceyGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Ariana:
 	farwritetext ArianaGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Carla:
 	farwritetext CarlaGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Clarissa:
 	farwritetext ClarissaGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Jenny:
 	farwritetext JennyGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Sophie:
 	farwritetext SophieGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 .Lois:
 	farwritetext LoisGiftText
-	waitbutton
-	closetext
+	buttonsound
 	end
 
 PackFullFScript:
@@ -1274,36 +1267,43 @@ PackFullFScript:
 	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
 
 .Lacey:
+	opentext
 	farwritetext LaceyPackFullText
 	waitbutton
 	closetext
 	end
 .Ariana:
+	opentext
 	farwritetext ArianaPackFullText
 	waitbutton
 	closetext
 	end
 .Carla:
+	opentext
 	farwritetext CarlaPackFullText
 	waitbutton
 	closetext
 	end
 .Clarissa:
+	opentext
 	farwritetext ClarissaPackFullText
 	waitbutton
 	closetext
 	end
 .Jenny:
+	opentext
 	farwritetext JennyPackFullText
 	waitbutton
 	closetext
 	end
 .Sophie:
+	opentext
 	farwritetext SophiePackFullText
 	waitbutton
 	closetext
 	end
 .Lois:
+	opentext
 	farwritetext LoisPackFullText
 	waitbutton
 	closetext
