@@ -243,6 +243,12 @@ R13Nugget:
 R13RareCandy:
 	itemball RARE_CANDY
 	
+R13RedShard:
+	hiddenitem RED_SHARD, EVENT_R13_RED_SHARD
+	
+R13BlueShard:
+	hiddenitem BLUE_SHARD, EVENT_R13_BLUE_SHARD
+	
 R13Sign:
 	jumptext R13SignText
 	
@@ -378,10 +384,12 @@ Rt13_MapEvents:
 
 	db 0 ; coord events
 
-	db 3 ; bg events
+	db 5 ; bg events
 	bg_event  9,  5, BGEVENT_READ, R13Sign
 	bg_event 28, 46, BGEVENT_READ, R13UndellaSign
 	bg_event  4, 27, BGEVENT_UP, R13HiddenGrotto
+	bg_event 28, 41, BGEVENT_ITEM, R13RedShard
+	bg_event 24, 45, BGEVENT_ITEM, R13BlueShard
 
 	db 14 ; object events
 	object_event  4, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, R13Blocker1TextScript, EVENT_R13_BLOCKER

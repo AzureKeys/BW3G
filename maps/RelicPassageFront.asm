@@ -117,6 +117,9 @@ RelicPassageMaxRepel:
 RelicPassageRareCandy:
 	hiddenitem RARE_CANDY, EVENT_RELIC_PASSAGE_RARE_CANDY
 	
+RelicPassageRedShard:
+	hiddenitem RED_SHARD, EVENT_RELIC_PASSAGE_RED_SHARD
+	
 RelicPassageFrontBoulder:
 	jumpstd strengthboulder
 	
@@ -263,9 +266,10 @@ RelicPassageFront_MapEvents:
 
 	db 0 ; coord events
 
-	db 2 ; bg events
+	db 3 ; bg events
 	bg_event 35, 14, BGEVENT_ITEM, RelicPassageMaxRepel
 	bg_event 43, 19, BGEVENT_ITEM, RelicPassageRareCandy
+	bg_event 22, 10, BGEVENT_ITEM, RelicPassageRedShard
 	
 	db 8 ; object events
 	object_event 13, 15, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RelicPassageFrontBoulder, EVENT_RELIC_PASSAGE_FRONT_BOULDER

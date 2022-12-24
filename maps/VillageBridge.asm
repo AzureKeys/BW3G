@@ -270,6 +270,9 @@ VillageBridgeBigMushroom:
 VillageBridgeMaxEther:
 	hiddenitem MAX_ETHER, EVENT_VILLAGE_BRIDGE_MAX_ETHER
 	
+VillageBridgeBlueShard:
+	hiddenitem BLUE_SHARD, EVENT_VILLAGE_BRIDGE_BLUE_SHARD
+	
 MusicianVillageBridgeSeenText:
 	text "Hum fiercely! My"
 	line "battle song!"
@@ -378,12 +381,14 @@ VillageBridge_MapEvents:
 	coord_event 43, 30, SCENE_DEFAULT, VillageBridgeLowerScript
 	coord_event 43, 31, SCENE_DEFAULT, VillageBridgeLowerScript
 
-	db 5 ; bg events
+	db 7 ; bg events
 	bg_event 22,  7, BGEVENT_ITEM, VillageBridgePPMax
 	bg_event 38, 14, BGEVENT_ITEM, VillageBridgeFullRestore
 	bg_event  4, 31, BGEVENT_ITEM, VillageBridgeBigMushroom
 	bg_event 54, 28, BGEVENT_ITEM, VillageBridgeMaxEther
 	bg_event 55, 28, BGEVENT_ITEM, VillageBridgeMaxEther
+	bg_event 60, 14, BGEVENT_ITEM, VillageBridgeBlueShard
+	bg_event 61, 14, BGEVENT_ITEM, VillageBridgeBlueShard
 
 	db 16 ; object events
 	object_event 30, 13, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1

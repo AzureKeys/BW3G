@@ -1,4 +1,5 @@
 	const_def 2 ; object constants
+	const NIMBASACITY_RED_SHARD
 	const NIMBASACITY_YOUNGSTER
 	const NIMBASACITY_GRAMPS
 	const NIMBASACITY_TEACHER
@@ -66,6 +67,9 @@ NimbasaVitaminMartSign:
 	
 NimbasaBallMartSign:
 	jumptext NimbasaBallMartSignText
+	
+NimbasaCityRedShard:
+	itemball RED_SHARD
 
 NimbasaCityYoungsterText:
 	text "E-he-he-he…"
@@ -237,7 +241,8 @@ NimbasaCity_MapEvents:
 	bg_event 12,  8, BGEVENT_READ, NimbasaVitaminMartSign
 	bg_event 22,  8, BGEVENT_READ, NimbasaTMMartSign
 
-	db 8 ; object events
+	db 9 ; object events
+	object_event 16, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaCityRedShard, EVENT_NIMBASA_CITY_RED_SHARD
 	object_event 20, 24, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungsterTextScript, -1
 	object_event 25, 10, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaCityGrampsTextScript, -1
 	object_event 31, 25, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NimbasaCityTeacherTextScript, -1

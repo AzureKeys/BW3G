@@ -263,6 +263,15 @@ R4BurnHeal:
 R4Ether2:
 	hiddenitem ETHER, EVENT_R_4_ETHER_2
 	
+R4RedShard:
+	hiddenitem RED_SHARD, EVENT_R4_RED_SHARD
+	
+R4YellowShard:
+	hiddenitem YELLOW_SHARD, EVENT_R4_YELLOW_SHARD
+	
+R4GreenShard:
+	hiddenitem GREEN_SHARD, EVENT_R4_GREEN_SHARD
+	
 R4DesertSign:
 	jumptext R4DesertSignText
 	
@@ -510,13 +519,16 @@ Rt4_MapEvents:
 
 	db 0 ; coord events
 
-	db 6 ; bg events
+	db 9 ; bg events
 	bg_event  4,  6, BGEVENT_READ, R4DesertSign
 	bg_event 36, 50, BGEVENT_READ, R4CasteliaSign
 	bg_event 30, 52, BGEVENT_ITEM, R4UltraBall
 	bg_event 12, 26, BGEVENT_ITEM, R4Pearl
 	bg_event 23, 28, BGEVENT_ITEM, R4BurnHeal
 	bg_event 10, 34, BGEVENT_ITEM, R4Ether2
+	bg_event 14, 44, BGEVENT_ITEM, R4RedShard
+	bg_event 37, 46, BGEVENT_ITEM, R4GreenShard
+	bg_event  3,  9, BGEVENT_ITEM, R4YellowShard
 
 	db 14 ; object events
 	object_event 10, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R4HeavyBall, EVENT_R_4_HEAVY_BALL

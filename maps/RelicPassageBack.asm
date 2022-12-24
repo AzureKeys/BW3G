@@ -122,6 +122,15 @@ RelicPassageSmoothRock:
 RelicPassageTMRockSlide:
 	itemball TM_ROCK_SLIDE
 	
+RelicPassageBlueShard:
+	hiddenitem BLUE_SHARD, EVENT_RELIC_PASSAGE_BLUE_SHARD
+	
+RelicPassageYellowShard:
+	hiddenitem YELLOW_SHARD, EVENT_RELIC_PASSAGE_YELLOW_SHARD
+	
+RelicPassageGreenShard:
+	hiddenitem GREEN_SHARD, EVENT_RELIC_PASSAGE_GREEN_SHARD
+	
 RelicPassageBackBoulder:
 	jumpstd strengthboulder
 	
@@ -246,7 +255,10 @@ RelicPassageBack_MapEvents:
 
 	db 0 ; coord events
 
-	db 0 ; bg events
+	db 3 ; bg events
+	bg_event 16, 25, BGEVENT_ITEM, RelicPassageYellowShard
+	bg_event 11, 16, BGEVENT_ITEM, RelicPassageGreenShard
+	bg_event  6,  8, BGEVENT_ITEM, RelicPassageBlueShard
 	
 	db 10 ; object events
 	object_event 27,  4, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RelicPassageBackBoulder, EVENT_RELIC_PASSAGE_BACK_BOULDER_1

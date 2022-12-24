@@ -90,10 +90,10 @@ INCLUDE "maps/CasteliaPlazaRestaurant.asm"
 INCLUDE "maps/CasteliaPlazaElevator.asm"
 INCLUDE "maps/CasteliaBikeShop.asm"
 INCLUDE "maps/CasteliaGameFreak.asm"
-INCLUDE "maps/CasteliaBridgeGate.asm"
 
 SECTION "Map Scripts 6", ROMX
 
+INCLUDE "maps/CasteliaBridgeGate.asm"
 INCLUDE "maps/NimbasaSubway.asm"
 INCLUDE "maps/AspertiaSubway.asm"
 INCLUDE "maps/CasteliaGym.asm"
@@ -112,10 +112,10 @@ INCLUDE "maps/Rt20.asm"
 INCLUDE "maps/FloccesyRanch.asm"
 INCLUDE "maps/AspertiaBlackbeltHouse.asm"
 INCLUDE "maps/AspertiaPokecenter1F.asm"
-INCLUDE "maps/FloccesyPokecenter1F.asm"
 
 SECTION "Map Scripts 7", ROMX
 
+INCLUDE "maps/FloccesyPokecenter1F.asm"
 INCLUDE "maps/AspertiaMomHouse.asm"
 INCLUDE "maps/AspertiaMoveDeleterHouse.asm"
 INCLUDE "maps/FloccesyRanchBarn.asm"

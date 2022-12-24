@@ -254,6 +254,9 @@ PinwheelForestHyperPotion:
 PinwheelForestNugget:
 	hiddenitem NUGGET, EVENT_PINWHEEL_FOREST_NUGGET
 	
+PinwheelForestGreenShard:
+	hiddenitem GREEN_SHARD, EVENT_PINWHEEL_FOREST_GREEN_SHARD
+	
 PinwheelInferArriveMovement1:
 	step UP
 	step LEFT
@@ -505,10 +508,11 @@ PinwheelForest_MapEvents:
 	coord_event  8, 26, SCENE_DEFAULT, PinwheelInferScript1
 	coord_event  8, 27, SCENE_DEFAULT, PinwheelInferScript2
 
-	db 5 ; bg events
+	db 6 ; bg events
 	bg_event 25, 37, BGEVENT_ITEM, PinwheelForestUltraBall
 	bg_event 14, 19, BGEVENT_ITEM, PinwheelForestHyperPotion
 	bg_event 27, 41, BGEVENT_ITEM, PinwheelForestNugget
+	bg_event  6, 16, BGEVENT_ITEM, PinwheelForestGreenShard
 	bg_event 17, 25, BGEVENT_UP, PinwheelForestHiddenGrotto
 	bg_event 18, 25, BGEVENT_UP, PinwheelForestHiddenGrotto
 
@@ -525,7 +529,7 @@ PinwheelForest_MapEvents:
 	object_event 19, 28, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPkmnRangerFPinwheel2, -1
 	object_event 30, 31, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerYoungsterPinwheel, -1
 	object_event 16, 32, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicMPinwheel, -1
-	object_event 27, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerHexManiacPinwheel, -1
+	object_event 27, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerHexManiacPinwheel, -1
 	object_event 12, 15, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_TRAINER, 2, TrainerLassPinwheel, -1
 	object_event 36, 20, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PinwheelOfficer1Script, EVENT_PINWHEEL_FOREST_OFFICER
 	object_event 39, 25, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PinwheelOfficer2Script, EVENT_PINWHEEL_FOREST_OFFICER
