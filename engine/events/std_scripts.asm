@@ -880,9 +880,83 @@ RematchMScript:
 	end
 
 GiftMScript:
+	checkcode VAR_CALLERID
+	ifequal PHONE_YOUNGSTER_DAN, .Dan
+	ifequal PHONE_CYCLIST_FREDDY, .Freddy
+	ifequal PHONE_DANCER_ERIC, .Eric
+	ifequal PHONE_SCIENTIST_MARCO, .Marco
+	ifequal PHONE_BACKPACKER_PARKER, .Parker
+	ifequal PHONE_LINEBACKER_DEAN, .Dean
+
+.Dan:
+	farwritetext DanGiftText
+	waitbutton
+	closetext
+	end
+.Freddy:
+	farwritetext FreddyGiftText
+	waitbutton
+	closetext
+	end
+.Eric:
+	farwritetext EricGiftText
+	waitbutton
+	closetext
+	end
+.Marco:
+	farwritetext MarcoGiftText
+	waitbutton
+	closetext
+	end
+.Parker:
+	farwritetext ParkerGiftText
+	waitbutton
+	closetext
+	end
+.Dean:
+	farwritetext DeanGiftText
+	waitbutton
+	closetext
 	end
 
 PackFullMScript:
+	checkcode VAR_CALLERID
+	ifequal PHONE_YOUNGSTER_DAN, .Dan
+	ifequal PHONE_CYCLIST_FREDDY, .Freddy
+	ifequal PHONE_DANCER_ERIC, .Eric
+	ifequal PHONE_SCIENTIST_MARCO, .Marco
+	ifequal PHONE_BACKPACKER_PARKER, .Parker
+	ifequal PHONE_LINEBACKER_DEAN, .Dean
+
+.Dan:
+	farwritetext DanPackFullText
+	waitbutton
+	closetext
+	end
+.Freddy:
+	farwritetext FreddyPackFullText
+	waitbutton
+	closetext
+	end
+.Eric:
+	farwritetext EricPackFullText
+	waitbutton
+	closetext
+	end
+.Marco:
+	farwritetext MarcoPackFullText
+	waitbutton
+	closetext
+	end
+.Parker:
+	farwritetext ParkerPackFullText
+	waitbutton
+	closetext
+	end
+.Dean:
+	farwritetext DeanPackFullText
+	waitbutton
+	closetext
 	end
 
 RematchGiftMScript:
@@ -1144,9 +1218,95 @@ RematchFScript:
 	end
 
 GiftFScript:
+	checkcode VAR_CALLERID
+	ifequal PHONE_LADY_LACEY, .Lacey
+	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
+	ifequal PHONE_LASS_CARLA, .Carla
+	ifequal PHONE_MAID_CLARISSA, .Clarissa
+	ifequal PHONE_BACKPACKER_JENNY, .Jenny
+	ifequal PHONE_MAID_SOPHIE, .Sophie
+	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
+
+.Lacey:
+	farwritetext LaceyGiftText
+	waitbutton
+	closetext
+	end
+.Ariana:
+	farwritetext ArianaGiftText
+	waitbutton
+	closetext
+	end
+.Carla:
+	farwritetext CarlaGiftText
+	waitbutton
+	closetext
+	end
+.Clarissa:
+	farwritetext ClarissaGiftText
+	waitbutton
+	closetext
+	end
+.Jenny:
+	farwritetext JennyGiftText
+	waitbutton
+	closetext
+	end
+.Sophie:
+	farwritetext SophieGiftText
+	waitbutton
+	closetext
+	end
+.Lois:
+	farwritetext LoisGiftText
+	waitbutton
+	closetext
 	end
 
 PackFullFScript:
+	checkcode VAR_CALLERID
+	ifequal PHONE_LADY_LACEY, .Lacey
+	ifequal PHONE_PKMN_RANGER_ARIANA, .Ariana
+	ifequal PHONE_LASS_CARLA, .Carla
+	ifequal PHONE_MAID_CLARISSA, .Clarissa
+	ifequal PHONE_BACKPACKER_JENNY, .Jenny
+	ifequal PHONE_MAID_SOPHIE, .Sophie
+	ifequal PHONE_PARASOL_LADY_LOIS, .Lois
+
+.Lacey:
+	farwritetext LaceyPackFullText
+	waitbutton
+	closetext
+	end
+.Ariana:
+	farwritetext ArianaPackFullText
+	waitbutton
+	closetext
+	end
+.Carla:
+	farwritetext CarlaPackFullText
+	waitbutton
+	closetext
+	end
+.Clarissa:
+	farwritetext ClarissaPackFullText
+	waitbutton
+	closetext
+	end
+.Jenny:
+	farwritetext JennyPackFullText
+	waitbutton
+	closetext
+	end
+.Sophie:
+	farwritetext SophiePackFullText
+	waitbutton
+	closetext
+	end
+.Lois:
+	farwritetext LoisPackFullText
+	waitbutton
+	closetext
 	end
 
 RematchGiftFScript:

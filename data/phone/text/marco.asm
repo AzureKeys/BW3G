@@ -83,4 +83,19 @@ MarcoRematchText:
 	para "Let's get started"
 	line "right away!"
 	done
+
+MarcoGiftText:
+	text "Hey, there you"
+	line "are!"
+
+	para "Here's a gift, as"
+	line "promised!"
+	done
+
+MarcoPackFullText:
+	text "Your PACK's full?"
+
+	para "Come back later--"
+	line "that'll do it."
+	done
 	
