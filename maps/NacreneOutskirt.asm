@@ -85,15 +85,22 @@ NacreneOutskirtYoungsterText:
 	done
 	
 YoungsterNacreneSeenText:
-	text "..."
+	text "I'm just gonna run"
+	line "around! I've got"
+	
+	para "the whole field to"
+	line "myself!"
 	done
 
 YoungsterNacreneBeatenText:
-	text "..."
+	text "I know… I shouldn't"
+	line "take it all for"
+	cont "myself…"
 	done
 
 YoungsterNacreneAfterText:
-	text "..."
+	text "I ran around a"
+	line "ton today!"
 	done
 	
 LassNacreneSeenText:

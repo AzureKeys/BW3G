@@ -231,17 +231,32 @@ PkmnBreederMR7AfterText:
 	done
 	
 PkmnBreederFR7SeenText:
-	text "Shh… I'm"
-	line "meditating."
+	text "I'm proud of my"
+	line "#MON, which I"
+	
+	para "raised with love"
+	line "and care!"
 	done
 
 PkmnBreederFR7BeatenText:
-	text "…!"
+	text "Looks like I lost"
+	line "to you in the"
+	
+	para "love and care"
+	line "department!"
 	done
 
 PkmnBreederFR7AfterText:
-	text "What? Sorry, I"
-	line "dozed off…"
+	text "If you don't raise"
+	line "your #MON with"
+	
+	para "love and care,"
+	line "they'll grow up to"
+	cont "be sad!"
+	
+	para "Come and see me if"
+	line "you'd like to"
+	cont "battle again!"
 	done
 
 R7AmoongussText:

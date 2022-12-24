@@ -295,27 +295,48 @@ MusicianVillageBridgeAfterText:
 	done
 	
 Smasher1VillageBridgeSeenText:
-	text "..."
+	text "My serve is 120"
+	line "miles per hour!"
+	
+	para "That's the kind of"
+	line "killer attack I'm"
+	cont "about to show you!"
 	done
 
 Smasher1VillageBridgeBeatenText:
-	text "..."
+	text "I wanted to cont-"
+	line "inue the rally a"
+	cont "little bit longer!"
 	done
 
 Smasher1VillageBridgeAfterText:
-	text "..."
+	text "A rally that goes"
+	line "on for ages… It's"
+	
+	para "tough, but still"
+	line "so fulfilling!"
 	done
 	
 Smasher2VillageBridgeSeenText:
-	text "..."
+	text "Watch my furious"
+	line "tennis footwork!"
+	
+	para "you get it now?"
+	line "We're tough!"
 	done
 
 Smasher2VillageBridgeBeatenText:
-	text "..."
+	text "But… I'm tough"
+	line "enough to play all"
+	cont "day and all night…"
 	done
 
 Smasher2VillageBridgeAfterText:
-	text "..."
+	text "Someday I want to"
+	line "play a doubles"
+	
+	para "match with people"
+	line "and #MON!"
 	done
 	
 LinebackerVillageBridgeSeenText:
@@ -331,27 +352,44 @@ LinebackerVillageBridgeAfterText:
 	done
 	
 Hoopster1VillageBridgeSeenText:
-	text "..."
+	text "Oh! You look"
+	line "pretty good! Let's"
+	cont "play some pickup!"
 	done
 
 Hoopster1VillageBridgeBeatenText:
-	text "..."
+	text "That's game! You"
+	line "totally crushed"
+	cont "me!"
 	done
 
 Hoopster1VillageBridgeAfterText:
-	text "..."
+	text "I wanna play in"
+	line "NIMBASA CITY"
+	cont "someday…"
 	done
 	
 Hoopster2VillageBridgeSeenText:
-	text "..."
+	text "Fooling you fair"
+	line "and square! That's"
+	
+	para "what we call a"
+	line "trick play!"
 	done
 
 Hoopster2VillageBridgeBeatenText:
-	text "..."
+	text "What the hoops? I"
+	line "was the one who"
+	cont "was tricked!"
 	done
 
 Hoopster2VillageBridgeAfterText:
-	text "..."
+	text "How are you gonna"
+	line "get past an oppo-"
+	cont "nent? That's vital"
+	
+	para "for battles and"
+	line "basketball."
 	done
 
 VillageBridge_MapEvents:

@@ -180,10 +180,10 @@ INCLUDE "maps/GiantChasmRooms.asm"
 INCLUDE "maps/GiantChasmB1F.asm"
 INCLUDE "maps/SeasideCave1F.asm"
 INCLUDE "maps/SeasideCaveB1F.asm"
-INCLUDE "maps/StriatonGym.asm"
 
 SECTION "Map Scripts 10", ROMX
 
+INCLUDE "maps/StriatonGym.asm"
 INCLUDE "maps/CasteliaSewers.asm"
 INCLUDE "maps/CasteliaSewersRooms.asm"
 INCLUDE "maps/RelicPassageFront.asm"
@@ -197,10 +197,10 @@ INCLUDE "maps/PWTDriftveilGate.asm"
 INCLUDE "maps/NacreneMuseum.asm"
 INCLUDE "maps/R18House.asm"
 INCLUDE "maps/Rt21.asm"
-INCLUDE "maps/PWTBackRoom.asm"
 
 SECTION "Map Scripts 11", ROMX
 
+INCLUDE "maps/PWTBackRoom.asm"
 INCLUDE "maps/PWTBattleRoom.asm"
 INCLUDE "maps/DriftveilCity.asm"
 INCLUDE "maps/DriftveilPokecenter1F.asm"
@@ -211,6 +211,9 @@ INCLUDE "maps/DriftveilDrawbridge.asm"
 INCLUDE "maps/Rt6.asm"
 INCLUDE "maps/R6House.asm"
 INCLUDE "maps/ChargestoneCave1F.asm"
+
+SECTION "Map Scripts 12", ROMX
+
 INCLUDE "maps/ChargestoneCaveB1F.asm"
 INCLUDE "maps/ChargestoneCaveB2F.asm"
 INCLUDE "maps/MistraltonCity.asm"
@@ -222,9 +225,6 @@ INCLUDE "maps/FloccesyTradeHouse.asm"
 INCLUDE "maps/CasteliaTradeHouse1.asm"
 INCLUDE "maps/CasteliaTradeHouse2.asm"
 INCLUDE "maps/R5Truck.asm"
-
-SECTION "Map Scripts 12", ROMX
-
 INCLUDE "maps/DriftveilStoneEmporium.asm"
 INCLUDE "maps/LacunosaHouse2.asm"
 INCLUDE "maps/AccumulaTradeHouse.asm"
@@ -240,14 +240,14 @@ INCLUDE "maps/MistraltonGym2F.asm"
 INCLUDE "maps/R7House.asm"
 INCLUDE "maps/CelestialTower1F.asm"
 INCLUDE "maps/R7TradeHouse.asm"
+
+SECTION "Map Scripts 13", ROMX
+
 INCLUDE "maps/CelestialTower.asm"
 INCLUDE "maps/CelestialTowerRoof.asm"
 INCLUDE "maps/MistraltonAirport.asm"
 INCLUDE "maps/VillageBridge.asm"
 INCLUDE "maps/OpelucidCity.asm"
-
-SECTION "Map Scripts 13", ROMX
-
 INCLUDE "maps/Rt11.asm"
 INCLUDE "maps/LentimasAirport.asm"
 INCLUDE "maps/PlaneRight.asm"
@@ -271,6 +271,9 @@ INCLUDE "maps/DragonspiralTowerOutside.asm"
 INCLUDE "maps/MistraltonCave1F.asm"
 INCLUDE "maps/MistraltonCave2F.asm"
 INCLUDE "maps/MistraltonCave3F.asm"
+
+SECTION "Map Scripts 14", ROMX
+
 INCLUDE "maps/Rt9.asm"
 INCLUDE "maps/ShoppingMallNine.asm"
 INCLUDE "maps/MoorOfIcirrus.asm"
@@ -278,9 +281,6 @@ INCLUDE "maps/OpelucidGym.asm"
 INCLUDE "maps/OpelucidCuriosityShop.asm"
 INCLUDE "maps/IcirrusHouse.asm"
 INCLUDE "maps/DreamyardB1F.asm"
-
-SECTION "Map Scripts 14", ROMX
-
 INCLUDE "maps/Dreamyard.asm"
 INCLUDE "maps/GameCorner.asm"
 INCLUDE "maps/OpelucidBlackbeltHouse.asm"
@@ -294,6 +294,9 @@ INCLUDE "maps/DragonspiralTower3F.asm"
 INCLUDE "maps/DragonspiralTower4F.asm"
 INCLUDE "maps/DragonspiralTower5F.asm"
 INCLUDE "maps/DragonspiralTower6F.asm"
+
+SECTION "Map Scripts 15", ROMX
+
 INCLUDE "maps/DragonspiralTowerRoof.asm"
 INCLUDE "maps/TwistMountain3F.asm"
 INCLUDE "maps/R23House.asm"
@@ -304,9 +307,6 @@ INCLUDE "maps/VictoryRoadCave3F.asm"
 INCLUDE "maps/VictoryRoadOutdoor1F.asm"
 INCLUDE "maps/VictoryRoadOutdoor2F.asm"
 INCLUDE "maps/VictoryRoadCastleOutside.asm"
-
-SECTION "Map Scripts 15", ROMX
-
 INCLUDE "maps/VictoryRoadGrove.asm"
 INCLUDE "maps/PkmnLeagueEntrance.asm"
 INCLUDE "maps/PkmnLeagueMain.asm"

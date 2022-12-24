@@ -37,22 +37,24 @@ WellspringCave1FPPUp:
 	hiddenitem PP_UP, EVENT_WELLSPRING_CAVE_PP_UP
 	
 BlackbeltWellspring1FSeenText:
-	text "My #MON and I"
-	line "are bound togeth-"
-	cont "er by friendship."
+	text "Travel the uneven"
+	line "road to hone your-"
 
-	para "Our bond will"
-	line "never be broken!"
+	para "self! You've got"
+	line "to train your gut!"
 	done
 
 BlackbeltWellspring1FBeatenText:
-	text "This isn't real!"
+	text "You can't win with"
+	line "just guts!"
 	done
 
 BlackbeltWellspring1FAfterText:
-	text "You seem to have a"
-	line "strong bond with"
-	cont "your #MON too!"
+	text "You can't win with"
+	line "just guts, but"
+	
+	para "that doesn't mean"
+	line "you don't need em!"
 	done
 
 WellspringCave1F_MapEvents:

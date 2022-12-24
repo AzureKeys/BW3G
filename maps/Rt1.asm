@@ -302,18 +302,20 @@ BattleGirlR1AfterText:
 	done
 	
 TwinsR1SeenText:
-	text "Who are you?"
+	text "My sister and I"
+	line "are of one mind!"
 	done
 
 TwinsR1BeatenText:
-	text "Meanie."
+	text "Wow! We lost!"
 	done
 
 TwinsR1AfterText:
-	text "We'll tell on you."
-
-	para "PROF. will be"
-	line "angry with you."
+	text "We have to get"
+	line "stronger so we can"
+	
+	para "take care of each"
+	line "other!"
 	done
 	
 R1SignText:

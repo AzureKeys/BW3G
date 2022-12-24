@@ -372,18 +372,25 @@ Fisher2R3AfterText:
 	done
 	
 ArtistR3SeenText:
-	text "…"
+	text "A high level"
+	line "battling technique"
+	
+	para "is art in its own"
+	line "way!"
 	done
 
 ArtistR3BeatenText:
-	text "…"
+	text "Your strength can't"
+	line "be put into words!"
 	done
 
 ArtistR3AfterText:
-	text "…"
+	text "I'll draw how I"
+	line "want to draw! I'll"
 
-	para "I lost while I had"
-	line "my eyes closed…"
+	para "live how I want to"
+	line "live! That's the"
+	cont "best way!"
 	done
 	
 GentlemanR3SeenText:

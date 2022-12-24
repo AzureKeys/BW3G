@@ -87,18 +87,23 @@ BlackbeltWellspringB1FAfterText:
 	done
 	
 BattleGirlWellspringB1FSeenText:
-	text "Words are useless."
-	line "Let your fists do"
-	cont "the talking!"
+	text "You gotta have"
+	line "stamina! Burn the"
+	
+	para "flames of life,"
+	line "and never stop"
+	cont "moving forward!"
 	done
 
 BattleGirlWellspringB1FBeatenText:
-	text "…"
+	text "I'm out of"
+	line "stamina!"
 	done
 
 BattleGirlWellspringB1FAfterText:
-	text "I lost! "
-	line "I'm speechless!"
+	text "I was just joking"
+	line "about never"
+	cont "stopping!"
 	done
 	
 HikerWellspringB1FSeenText:

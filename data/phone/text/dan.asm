@@ -85,17 +85,19 @@ DanRematchText:
 	done
 
 DanGiftText:
-	text "Hey, there you"
-	line "are!"
+	text "Aw man, I lost"
+	line "again!"
 
-	para "Here's a gift, as"
-	line "promised!"
+	para "Here, you can have"
+	line "this for winning."
 	done
 
 DanPackFullText:
-	text "Your PACK's full?"
+	text "Oh, looks like"
+	line "your PACK's full."
 
-	para "Come back later--"
-	line "that'll do it."
+	para "Oh well, call me"
+	line "again if you want"
+	cont "another rematch!"
 	done
 	

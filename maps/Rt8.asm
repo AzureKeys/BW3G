@@ -162,15 +162,25 @@ R8TubelineSign:
 	jumptext R8TubelineSignText
 	
 PkmnRangerMR8SeenText:
-	text "..."
+	text "I trained my body"
+	line "and mind by"
+	
+	para "standing under a"
+	line "waterfall! Nothing"
+	cont "will faze me now!"
 	done
 
 PkmnRangerMR8BeatenText:
-	text "..."
+	text "What… I mean how?"
 	done
 
 PkmnRangerMR8AfterText:
-	text "..."
+	text "Maybe I should"
+	line "train more under"
+	
+	para "that waterfall. I"
+	line "can get clean too"
+	cont "while I'm at it!"
 	done
 	
 FisherR8SeenText:

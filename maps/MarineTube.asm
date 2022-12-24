@@ -116,15 +116,20 @@ PreschoolerFMarineTubeAfterText:
 	done
 	
 TwinsMarineTubeSeenText:
-	text "..."
+	text "It's so fun to"
+	line "battle along with"
+	cont "my sister!"
 	done
 
 TwinsMarineTubeBeatenText:
-	text "..."
+	text "Wow! What a"
+	line "surprise!"
 	done
 
 TwinsMarineTubeAfterText:
-	text "..."
+	text "Being able to play"
+	line "together is a"
+	cont "great thing!"
 	done
 	
 NurseryAideMarineTubeSeenText:
