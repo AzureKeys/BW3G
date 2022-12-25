@@ -293,10 +293,10 @@ INCLUDE "maps/DragonspiralTower2F.asm"
 INCLUDE "maps/DragonspiralTower3F.asm"
 INCLUDE "maps/DragonspiralTower4F.asm"
 INCLUDE "maps/DragonspiralTower5F.asm"
-INCLUDE "maps/DragonspiralTower6F.asm"
 
 SECTION "Map Scripts 15", ROMX
 
+INCLUDE "maps/DragonspiralTower6F.asm"
 INCLUDE "maps/DragonspiralTowerRoof.asm"
 INCLUDE "maps/TwistMountain3F.asm"
 INCLUDE "maps/R23House.asm"

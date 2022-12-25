@@ -6,6 +6,12 @@
 	const SHOPPINGMALLNINE_CLERK_5
 	const SHOPPINGMALLNINE_RECEPTIONIST
 	const SHOPPINGMALLNINE_BLOCKER
+	const SHOPPINGMALLNINE_TEACHER
+	const SHOPPINGMALLNINE_COOLTRAINER_M
+	const SHOPPINGMALLNINE_COOLTRAINER_F
+	const SHOPPINGMALLNINE_YOUNGSTER
+	const SHOPPINGMALLNINE_BUG_CATCHER
+	const SHOPPINGMALLNINE_BUENA
 
 ShoppingMallNine_MapScripts:
 	db 0 ; scene scripts
@@ -36,6 +42,24 @@ MallMemberScript:
 
 ShoppingMallNineBlockerScript:
 	jumptextfaceplayer MallBlockerText
+
+ShoppingMallNineTeacherScript:
+	jumptextfaceplayer MallTeacherText
+
+ShoppingMallNineCooltrainerMScript:
+	jumptextfaceplayer MallCooltrainerMText
+
+ShoppingMallNineCooltrainerFScript:
+	jumptextfaceplayer MallCooltrainerFText
+
+ShoppingMallNineYoungsterScript:
+	jumptextfaceplayer MallYoungsterText
+
+ShoppingMallNineBugCatcherScript:
+	jumptextfaceplayer MallBugCatcherText
+
+ShoppingMallNineBuenaScript:
+	jumptextfaceplayer MallBuenaText
 
 ShoppingMallNineReceptionistScript:
 	jumptext MallReceptionistText
@@ -231,6 +255,75 @@ MallNotMemberText:
 	cont "enter."
 	done
 
+MallTeacherText:
+	text "My LAMPENT's not"
+	line "very good at #-"
+	cont "MON battles,"
+	
+	para "but it's great at"
+	line "making toast!"
+	done
+
+MallCooltrainerMText:
+	text "The better trainer"
+	line "you are, the more"
+	
+	para "you'll find your-"
+	line "self thinking!"
+	
+	para "That's so you can"
+	line "help your #MON"
+	cont "partners win!"
+	done
+
+MallCooltrainerFText:
+	text "The thing I buy"
+	line "most often is the"
+	
+	para "item that raises a"
+	line "#MON's HP, it's"
+	cont "called HP UP."
+	
+	para "There are also a"
+	line "lot of other items"
+	cont "that catch my eye."
+	done
+
+MallYoungsterText:
+	text "If you want all"
+	line "the TMs, the MALL"
+	cont "is a must-visit!"
+	
+	para "You should brag"
+	line "about coming here"
+	
+	para "to any TM"
+	line "collector!"
+	done
+
+MallBugCatcherText:
+	text "If I were to play"
+	line "hide and seek with"
+	
+	para "my #MON, they'd"
+	line "find me right"
+	
+	para "away! But if I"
+	line "were to get lost,"
+	
+	para "I'd be glad they"
+	line "could find me"
+	cont "right away!"
+	done
+
+MallBuenaText:
+	text "Shopping is so"
+	line "much fun! I'm"
+	
+	para "thrilled with all"
+	line "I've accomplished!"
+	done
+
 ShoppingMallNine_MapEvents:
 	db 0, 0 ; filler
 
@@ -245,7 +338,7 @@ ShoppingMallNine_MapEvents:
 	bg_event 14,  1, BGEVENT_UP, MallVendingMachine
 	bg_event 15,  1, BGEVENT_UP, MallVendingMachine
 
-	db 7 ; object events
+	db 13 ; object events
 	object_event  1, 14, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk1Script, -1
 	object_event  4,  8, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk2Script, -1
 	object_event 13,  8, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk3Script, -1
@@ -253,4 +346,10 @@ ShoppingMallNine_MapEvents:
 	object_event  3,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineClerk5Script, -1
 	object_event  8, 21, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineReceptionistScript, -1
 	object_event 15, 14, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineBlockerScript, -1
+	object_event 13,  2, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineTeacherScript, -1
+	object_event 10,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineCooltrainerMScript, -1
+	object_event  7,  2, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineCooltrainerFScript, -1
+	object_event 11, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineYoungsterScript, -1
+	object_event  2, 19, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineBugCatcherScript, -1
+	object_event 13, 24, SPRITE_BUENA, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, ShoppingMallNineBuenaScript, -1
 	

@@ -561,18 +561,21 @@ Waiter1StriatonGymAfterText:
 	done
 	
 Waiter2StriatonGymSeenText:
-	text "Aha! I tricked"
-	line "you! Let's battle!"
+	text "Aha! I'm a WAITER"
+	line "who's also a #-"
+	cont "MON trainer!"
 	done
 
 Waiter2StriatonGymBeatenText:
-	text "Darn it!"
-	line "I wanted to win!"
+	text "Wonderful battle!"
+	line "The experience is"
+	cont "my tip!"
 	done
 
 Waiter2StriatonGymAfterText:
-	text "You must be"
-	line "getting tired."
+	text "Our specialty is"
+	line "the best #MON"
+	cont "battles."
 	done
 	
 Waitress1StriatonGymSeenText:
@@ -586,9 +589,9 @@ Waitress1StriatonGymBeatenText:
 	done
 
 Waitress1StriatonGymAfterText:
-	text "Well, I knew you"
-	line "would check under"
-	cont "there."
+	text "I had a feeling"
+	line "you would check"
+	cont "under there."
 	done
 	
 Waitress2StriatonGymSeenText:
