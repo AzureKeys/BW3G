@@ -269,11 +269,11 @@ INCLUDE "maps/IcirrusBoutique.asm"
 INCLUDE "maps/R11Truck.asm"
 INCLUDE "maps/DragonspiralTowerOutside.asm"
 INCLUDE "maps/MistraltonCave1F.asm"
-INCLUDE "maps/MistraltonCave2F.asm"
-INCLUDE "maps/MistraltonCave3F.asm"
 
 SECTION "Map Scripts 14", ROMX
 
+INCLUDE "maps/MistraltonCave2F.asm"
+INCLUDE "maps/MistraltonCave3F.asm"
 INCLUDE "maps/Rt9.asm"
 INCLUDE "maps/ShoppingMallNine.asm"
 INCLUDE "maps/MoorOfIcirrus.asm"

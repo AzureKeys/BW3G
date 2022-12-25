@@ -2,6 +2,10 @@
 	const OPELUCIDCITY_FOUNTAIN
 	const OPELUCIDCITY_IRIS
 	const OPELUCIDCITY_PROTEIN
+	const OPELUCIDCITY_LASS
+	const OPELUCIDCITY_FISHER
+	const OPELUCIDCITY_YOUNGSTER
+	const OPELUCIDCITY_GENTLEMAN
 
 OpelucidCity_MapScripts:
 	db 2 ; scene scripts
@@ -49,6 +53,18 @@ OpelucidCityIrisScript:
 	
 OpelucidCityBlockerScript:
 	jumptextfaceplayer OpelucidCityBlockerText
+	
+OpelucidCityLassScript:
+	jumptextfaceplayer OpelucidCityLassText
+	
+OpelucidCityFisherScript:
+	jumptextfaceplayer OpelucidCityFisherText
+	
+OpelucidCityYoungsterScript:
+	jumptextfaceplayer OpelucidCityYoungsterText
+	
+OpelucidCityGentlemanScript:
+	jumptextfaceplayer OpelucidCityGentlemanText
 	
 OpelucidCitySign:
 	jumptext OpelucidCitySignText
@@ -135,6 +151,48 @@ OpelucidCityBlockerText:
 	cont "to the gym."
 	done
 	
+OpelucidCityLassText:
+	text "Gym leader DRAYDEN"
+	line "leads OPELUCID"
+	cont "CITY as its mayor."
+	
+	para "He's always train-"
+	line "ing by wrestling"
+	cont "with his #MON."
+	done
+	
+OpelucidCityFisherText:
+	text "UNOVA's symbols"
+	line "are legendary"
+	cont "dragon #MON."
+	
+	para "But I wonder where"
+	line "they are now?"
+	done
+	
+OpelucidCityYoungsterText:
+	text "There was a person"
+	line "called N who had a"
+	
+	para "legendary #MON"
+	line "with him. Do you"
+	
+	para "think he was"
+	line "really the hero?"
+	done
+	
+OpelucidCityGentlemanText:
+	text "Why do #MON"
+	line "stay by our sides?"
+	
+	para "If we could talk"
+	line "to them, we could"
+	
+	para "ask. I'm a bit"
+	line "scared about what"
+	cont "they'd say."
+	done
+	
 OpelucidCitySignText:
 	text "OPELUCID CITY."
 	
@@ -190,8 +248,12 @@ OpelucidCity_MapEvents:
 	bg_event 44, 24, BGEVENT_READ, OpelucidR11Sign
 	bg_event 30, 18, BGEVENT_READ, OpelucidDraydenHouseSign
 
-	db 3 ; object events
+	db 7 ; object events
 	object_event 17, 25, SPRITE_FOUNTAIN, SPRITEMOVEDATA_FOUNTAIN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
 	object_event 17,  6, SPRITE_IRIS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, OpelucidCityBlockerScript, EVENT_OPELUCID_CITY_IRIS
 	object_event 33, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OpelucidCityProtein, EVENT_OPELUCID_CITY_PROTEIN
+	object_event 16, 20, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OpelucidCityLassScript, -1
+	object_event 18, 10, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OpelucidCityFisherScript, -1
+	object_event 37, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, OpelucidCityYoungsterScript, -1
+	object_event 38, 23, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, OpelucidCityGentlemanScript, -1
 	
