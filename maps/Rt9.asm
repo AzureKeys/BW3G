@@ -106,15 +106,27 @@ Biker1R9AfterText:
 	done
 	
 Biker2R9SeenText:
-	text "..."
+	text "Do you want to"
+	line "pass through here?"
+	
+	para "Then, you must"
+	line "greet me!"
 	done
 
 Biker2R9BeatenText:
-	text "..."
+	text "You! What great"
+	line "strength you have!"
 	done
 
 Biker2R9AfterText:
-	text "..."
+	text "Chase the sun"
+	line "during the day,"
+	
+	para "and sleep all"
+	line "night… That might"
+	
+	para "be a good life for"
+	line "me."
 	done
 	
 Roughneck1R9SeenText:
@@ -136,15 +148,27 @@ Roughneck1R9AfterText:
 	done
 	
 Roughneck2R9SeenText:
-	text "..."
+	text "Join our team!"
+	
+	para "Actually, I will"
+	line "force you to join"
+	cont "our team!"
 	done
 
 Roughneck2R9BeatenText:
-	text "..."
+	text "Our team doesn't"
+	line "need a trainer who"
+	
+	para "is quite that"
+	line "strong!"
 	done
 
 Roughneck2R9AfterText:
-	text "..."
+	text "We hang out here"
+	line "every day! Every"
+	
+	para "day until the end"
+	line "of time!"
 	done
 	
 R9SignText:

@@ -576,13 +576,13 @@ Waiter2StriatonGymAfterText:
 	done
 	
 Waitress1StriatonGymSeenText:
-	text "Got you!"
-	line "Hahaha!"
+	text "Welcome! Would you"
+	line "like a water with"
+	cont "your battle?"
 	done
 
 Waitress1StriatonGymBeatenText:
-	text "Ooh… I lost…"
-	line "You're not weak…"
+	text "Ah, bravo!"
 	done
 
 Waitress1StriatonGymAfterText:

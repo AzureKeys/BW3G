@@ -305,23 +305,25 @@ R5CharlesBeatenText:
 	done
 	
 LinebackerR5SeenText:
-	text "Thanks to my stud-"
-	line "ies, I'm ready for"
-	cont "any #MON!"
+	text "Heheh! Nobody can"
+	line "beat my speed and"
+	cont "fury!"
 	done
 
 LinebackerR5BeatenText:
-	text "Oops! Computation"
-	line "error?"
+	text "I have lost! I am"
+	line "such a loser!"
 	done
 
 LinebackerR5AfterText:
-	text "Darn. I study five"
-	line "hours a day too."
+	text "Ah! Maybe I should"
+	line "just pick up my"
 
-	para "There's more to"
-	line "learning than just"
-	cont "reading books."
+	para "ball and charge"
+	line "outta here! No one"
+	
+	para "would doubt how"
+	line "wild I am then!"
 	done
 	
 Dancer1R5SeenText:

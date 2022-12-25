@@ -344,23 +344,24 @@ GruntMNimbasaPark3AfterText:
 	done
 	
 GruntMNimbasaPark4SeenText:
-	text "A few years ago,"
-	line "TEAM PLASMA was"
-	cont "forced to disband."
+	text "Hey, hey, what do"
+	line "we have here? You"
 
-	para "But we're making a"
-	line "comeback here!"
+	para "have good #MON."
+	line "Let me see!"
 	done
 
 GruntMNimbasaPark4BeatenText:
-	text "Gwah! Don't get"
-	line "cute!"
+	text "What? My #MON"
+	line "weren't enough?"
 	done
 
 GruntMNimbasaPark4AfterText:
-	text "We won't let you"
-	line "ruin our plans"
-	cont "for our comeback!"
+	text "If I only had some"
+	line "better #MON…"
+	
+	para "Then no one could"
+	line "stop me!"
 	done
 	
 GruntFNimbasaPark1SeenText:
@@ -407,24 +408,19 @@ GruntFNimbasaPark2AfterText:
 	done
 	
 GruntFNimbasaPark3SeenText:
-	text "I've been given"
-	line "strict orders."
-
-	para "I'm to crush any-"
-	line "one who challenges"
-	cont "TEAM PLASMA!"
+	text "If I win, give me"
+	line "your #MON!"
 	done
 
 GruntFNimbasaPark3BeatenText:
-	text "What?!"
+	text "What?! What a"
+	line "joke!"
 	done
 
 GruntFNimbasaPark3AfterText:
-	text "I failed in my"
-	line "duties…"
-
-	para "I'll be docked pay"
-	line "for this…"
+	text "I'd take your weak"
+	line "#MON and raise"
+	cont "them up strong…"
 	done
 	
 NimbasaParkCoasterMoveText:
