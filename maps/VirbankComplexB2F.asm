@@ -603,38 +603,50 @@ VirbankComplexSwitchText:
 	done
 	
 GruntMVirbankComplexB2FSeenText:
-	text "Fork over your"
-	line "goodies!"
+	text "#MON are pawns!"
+	line "They're a means to"
+	cont "an end."
+	
+	para "That's what I was"
+	line "taught! Don't think"
+	cont "about it too much."
 	done
 
 GruntMVirbankComplexB2FBeatenText:
-	text "Mercy!"
+	text "You little… You"
+	line "knocked out my"
+	cont "stupid pawns!"
 	done
 
 GruntMVirbankComplexB2FAfterText:
-	text "Steal and sell!"
-	line "That's basic in"
-	cont "crime, kid!"
+	text "How can this be?"
+	line "Is that the kind"
+	
+	para "of power #MON"
+	line "have when they're"
+	
+	para "not treated like"
+	line "objects?"
 	done
 	
 GruntFVirbankComplexB2FSeenText:
-	text "I don't care if"
-	line "you're lost."
+	text "Don't get in our"
+	line "way! You bother!"
 
-	para "You show up here,"
-	line "you're nothing but"
-	cont "a victim!"
+	para "Bother, bother,"
+	line "bother!"
 	done
 
 GruntFVirbankComplexB2FBeatenText:
-	text "Urk! Yeah, think"
-	line "you're cool, huh?"
+	text "Arrgh! Lame!"
+	line "Stupid! Fool!"
+	cont "Plasmaaa!"
 	done
 
 GruntFVirbankComplexB2FAfterText:
-	text "You must have ice"
-	line "in your veins to"
-	cont "diss TEAM PLASMA."
+	text "How humiliating…"
+	line "Being bothered by"
+	cont "a bother…"
 	done
 	
 ScientistMVirbankComplexB2FSeenText:

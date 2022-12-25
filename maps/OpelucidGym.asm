@@ -286,63 +286,103 @@ OpelucidGymGuyWinText:
 	done
 	
 VeteranM1OpelucidGymSeenText:
-	text "..."
+	text "Always aim for the"
+	line "top, like a dragon"
+	cont "taking flight!"
 	done
 
 VeteranM1OpelucidGymBeatenText:
-	text "..."
+	text "The energy I feel"
+	line "from you… It's just"
+	cont "like a dragon!"
 	done
 
 VeteranM1OpelucidGymAfterText:
-	text "..."
+	text "Trainers far"
+	line "stronger than I"
+	cont "wait for you!"
 	done
 	
 VeteranM2OpelucidGymSeenText:
-	text "..."
+	text "A strong defense"
+	line "is everything!"
 	done
 
 VeteranM2OpelucidGymBeatenText:
-	text "..."
+	text "Your defense is"
+	line "beyond comparison!"
 	done
 
 VeteranM2OpelucidGymAfterText:
-	text "..."
+	text "The trainers that"
+	line "wait beyond all"
+	
+	para "have different"
+	line "fighting styles."
 	done
 	
 VeteranM3OpelucidGymSeenText:
-	text "..."
+	text "Use your #MON"
+	line "in combination to"
+	
+	para "raise their"
+	line "destructive power!"
 	done
 
 VeteranM3OpelucidGymBeatenText:
-	text "..."
+	text "The #MON you"
+	line "picked gave me a"
+	cont "run for my money!"
 	done
 
 VeteranM3OpelucidGymAfterText:
-	text "..."
+	text "You are certainly"
+	line "strong enough to"
+	
+	para "challenge mayor"
+	line "DRAYDEN!"
 	done
 	
 VeteranF1OpelucidGymSeenText:
-	text "..."
+	text "I believe the best"
+	line "defense is a"
+	cont "strong offense!"
 	done
 
 VeteranF1OpelucidGymBeatenText:
-	text "..."
+	text "Such energy… You"
+	line "are truly without"
+	cont "equal!"
 	done
 
 VeteranF1OpelucidGymAfterText:
-	text "..."
+	text "You must choose"
+	line "the style of"
+	
+	para "battle that suits"
+	line "you best!"
 	done
 	
 VeteranF2OpelucidGymSeenText:
-	text "..."
+	text "In battles, how"
+	line "your #MON"
+	
+	para "follow each other"
+	line "is key."
 	done
 
 VeteranF2OpelucidGymBeatenText:
-	text "..."
+	text "Your #MON all"
+	line "supported each"
+	cont "other well."
 	done
 
 VeteranF2OpelucidGymAfterText:
-	text "..."
+	text "A battle between"
+	line "you and mayor"
+	
+	para "DRAYDEN will be"
+	line "stirring! Now go!"
 	done
 	
 VeteranF3OpelucidGymSeenText:

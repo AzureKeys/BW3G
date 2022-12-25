@@ -337,22 +337,26 @@ P2LabJuniperAfterText:
 	done
 	
 GruntM1P2LabSeenText:
-	text "You want to find"
-	line "the secret of this"
-	cont "LAB?"
-
-	para "That won't be pos-"
-	line "sible because I'm"
-	cont "going to beat you!"
+	text "This time, we'll"
+	line "take over the"
+	cont "UNOVA region!"
 	done
 
 GruntM1P2LabBeatenText:
-	text "No! Unbelievable!"
+	text "Even if I lose, I"
+	line "will not give up"
+	
+	para "on justice for"
+	line "TEAM PLASMA!"
 	done
 
 GruntM1P2LabAfterText:
-	text "I don't believe"
-	line "it! I was beaten!"
+	text "Now that I think"
+	line "of it, I don't"
+	
+	para "think I was told"
+	line "what exactly we're"
+	cont "looking for here…"
 	done
 	
 GruntM2P2LabSeenText:
