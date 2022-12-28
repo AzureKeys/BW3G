@@ -654,46 +654,47 @@ ScientistMVirbankComplexB2FSeenText:
 	line "the COMPLEX, but"
 
 	para "now I run research"
-	line "for TEAM PLASMA."
-
-	para "A meddlesome child"
-	line "like you needs to"
-	cont "be punished."
+	line "for TEAM PLASMA!"
 	done
 
 ScientistMVirbankComplexB2FBeatenText:
-	text "A mere tactical"
-	line "error cost me…"
+	text "Battling isn't"
+	line "exactly my strong"
+	cont "suit…"
 	done
 
 ScientistMVirbankComplexB2FAfterText:
-	text "My promotion is"
-	line "assured. This loss"
-
-	para "means absolutely"
-	line "nothing."
+	text "This better not"
+	line "affect my new"
+	cont "promotion!"
 	done
 	
 ScientistFVirbankComplexB2FSeenText:
-	text "I don't care that"
-	line "#MON are hurt"
-	cont "by our experiment."
+	text "Even if you win a"
+	line "battle, you won't"
+	
+	para "necessarily get"
+	line "the answer you're"
+	cont "looking for."
+	
+	para "You might get"
+	line "something else,"
+	cont "though!"
 	done
 
 ScientistFVirbankComplexB2FBeatenText:
-	text "Thinking is my"
-	line "strong suit, not"
-	cont "battling."
+	text "Grr… What even is"
+	line "the point of a"
+	cont "#MON battle?"
 	done
 
 ScientistFVirbankComplexB2FAfterText:
-	text "When we finish"
-	line "extracting the"
-	cont "power from the"
-	cont "COMPLEX…"
+	text "Don't you think"
+	line "there will be less"
 
-	para "The very thought"
-	line "excites me!"
+	para "war if TEAM PLASMA"
+	line "takes over the"
+	cont "world?"
 	done
 	
 VirbankComplexB2F_MapEvents:

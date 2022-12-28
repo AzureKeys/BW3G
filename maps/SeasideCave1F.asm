@@ -162,46 +162,40 @@ VeteranFSeasideCave1FAfterText:
 	done
 	
 BlackbeltSeasideCave1FSeenText:
-	text "Yo! You're spunky!"
-	line "But you know what?"
+	text "The path of karate"
+	line "is the path of"
 
-	para "When it comes to"
-	line "sheer spunkiness,"
-	cont "I'm the man!"
+	para "humanity… and the"
+	line "path of #MON!"
 	done
 
 BlackbeltSeasideCave1FBeatenText:
-	text "My #MON weren't"
-	line "spunky enough!"
+	text "Oof! It is not by"
+	line "chance that you"
+	cont "have won!"
 	done
 
 BlackbeltSeasideCave1FAfterText:
-	text "Boy, do I love"
-	line "HP UP! Mmmm, yum!"
-
-	para "I keep drinking my"
-	line "#MON's!"
-
-	para "I can't help it!"
+	text "Winners win"
+	line "because they"
+	cont "deserve to win!"
 	done
 	
 BattleGirlSeasideCave1FSeenText:
-	text "My #MON and I"
-	line "are bound togeth-"
-	cont "er by friendship."
-
-	para "Our bond will"
-	line "never be broken!"
+	text "Greetings! So…"
+	line "shall we do this?"
 	done
 
 BattleGirlSeasideCave1FBeatenText:
-	text "This isn't real!"
+	text "What an upset!"
 	done
 
 BattleGirlSeasideCave1FAfterText:
-	text "You seem to have a"
-	line "strong bond with"
-	cont "your #MON too!"
+	text "Hmm… I just can't"
+	line "act naturally when"
+	
+	para "I'm focused on"
+	line "winning!"
 	done
 
 SeasideCave1F_MapEvents:

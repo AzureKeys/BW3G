@@ -457,25 +457,25 @@ Policeman2R4AfterText:
 	done
 	
 PokefanMR4SeenText:
-	text "This is a good"
-	line "time to brag about"
-	cont "my SEWADDLE!"
+	text "What? You're a"
+	line "trainer? Awesome!"
 	done
 
 PokefanMR4BeatenText:
-	text "I had no time to"
-	line "show off SEWADDLE…"
+	text "Oh well… Time for"
+	line "my #MON to"
+	cont "return…"
 	done
 
 PokefanMR4AfterText:
-	text "I'm not listening"
-	line "to your bragging!"
-
-	para "We # FANS have"
-	line "a policy of not"
-
-	para "listening to other"
-	line "people brag!"
+	text "#MON just wait"
+	line "inside their #-"
+	
+	para "BALLs until they"
+	line "are needed…"
+	
+	para "#MON sure are"
+	line "convenient!"
 	done
 	
 PokefanFR4SeenText:

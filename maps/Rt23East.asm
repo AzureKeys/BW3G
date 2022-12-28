@@ -517,27 +517,52 @@ R23Officer6HaveBadgeText:
 	done
 	
 AceTrainerM1R23SeenText:
-	text "..."
+	text "Our battle will"
+	line "surely be worth a"
+	
+	para "page in the book"
+	line "of your journey!"
 	done
 
 AceTrainerM1R23BeatenText:
-	text "..."
+	text "If only I could've"
+	line "won, I would have"
+	
+	para "made an impression"
+	line "on you."
 	done
 
 AceTrainerM1R23AfterText:
-	text "..."
+	text "To be remembered"
+	line "by someone… That"
+	
+	para "may be what it"
+	line "means to be alive."
 	done
 	
 AceTrainerF1R23SeenText:
-	text "..."
+	text "I can see the plea"
+	line "in my #MON's"
+	
+	para "eyes. To fight!"
+	line "And to win!"
 	done
 
 AceTrainerF1R23BeatenText:
-	text "..."
+	text "The eyes of your"
+	line "#MON are"
+	
+	para "glimmering with"
+	line "strength!"
 	done
 
 AceTrainerF1R23AfterText:
-	text "..."
+	text "I can see the plea"
+	line "in my #MON's"
+	
+	para "eyes. They're say-"
+	line "ing, Get back up!"
+	cont "I'm okay!"
 	done
 
 Rt23East_MapEvents:

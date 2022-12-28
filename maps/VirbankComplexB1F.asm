@@ -292,22 +292,31 @@ VirbankComplexB1FCherenLeaveText:
 	done
 	
 ScientistFVirbankComplexB1FSeenText:
-	text "An unknown child"
-	line "wandering here?"
+	text "TEAM PLASMA is"
+	line "studying things"
 
-	para "Who are you?"
+	para "you couldn't"
+	line "possibly under-"
+	
+	para "stand. For that"
+	line "purpose, please"
+	
+	para "hand over your"
+	line "#MON."
 	done
 
 ScientistFVirbankComplexB1FBeatenText:
-	text "Tch! I took you"
-	line "too lightly!"
+	text "What? You can"
+	line "actually draw out"
+	
+	para "the power of your"
+	line "#MON?"
 	done
 
 ScientistFVirbankComplexB1FAfterText:
-	text "Bwahahaha…"
-
-	para "You'll never stop"
-	line "our experiment!"
+	text "Hm… I must study"
+	line "this development"
+	cont "further…"
 	done
 
 VirbankComplexOpenDoorText:

@@ -205,48 +205,53 @@ GruntM1VirbankComplexOutsideAfterText:
 	done
 	
 GruntM2VirbankComplexOutsideSeenText:
-	text "Are you lost? No,"
-	line "you can't be."
+	text "I trained myself"
+	line "endlessly to get"
 
-	para "You don't have"
-	line "that scared look."
+	para "justice for TEAM"
+	line "PLASMA! I won't"
 
-	para "I'll give you"
-	line "something to be"
-	cont "scared about!"
+	para "lose to anyone"
+	line "anymore!"
 	done
 
 GruntM2VirbankComplexOutsideBeatenText:
-	text "How could you?"
+	text "…But if I lose, I"
+	line "won't be able to"
+	
+	para "carry out my"
+	line "justice!"
 	done
 
 GruntM2VirbankComplexOutsideAfterText:
-	text "Go wherever you'd"
-	line "like! Get lost!"
-	cont "See if I care!"
+	text "I will carry out"
+	line "my justice no"
+	
+	para "matter what anyone"
+	line "says! No matter"
+	cont "what!"
 	done
 	
 GruntFVirbankComplexOutsideSeenText:
-	text "They ditched this"
-	line "project when we"
-	cont "ran them off."
-
-	para "I'm searching for"
-	line "leftover loot."
+	text "What do you want,"
+	line "intruder?!"
 	done
 
 GruntFVirbankComplexOutsideBeatenText:
-	text "Over the top!"
+	text "Hmph! I missed my"
+	line "chance to grab"
+	cont "your #MON!"
 	done
 
 GruntFVirbankComplexOutsideAfterText:
-	text "VIRBANK COMPLEX?"
+	text "I'm not even that"
+	line "interested in the"
 
-	para "What do you want"
-	line "to go there for?"
+	para "plan for this"
+	line "place, I'm just"
 
-	para "There's nothing"
-	line "down there."
+	para "here to grab some"
+	line "loot!"
 	done
 	
 VirbankComplexOutside_MapEvents:

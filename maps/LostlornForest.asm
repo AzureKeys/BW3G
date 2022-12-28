@@ -501,22 +501,26 @@ PkmnBreederMLostlornAfterText:
 	done
 	
 YoungsterLostlornSeenText:
-	text "What kinds of"
-	line "BALLS do you use?"
+	text "I might be lost"
+	line "right now, but"
+	
+	para "I'll battle you"
+	line "anyway!"
 	done
 
 YoungsterLostlornBeatenText:
-	text "Yikes! Not fast"
-	line "enough!"
+	text "I don't stand a"
+	line "chance if I fight"
+	cont "when I'm lost!"
 	done
 
 YoungsterLostlornAfterText:
-	text "Try using a DUSK"
-	line "BALL when it's"
-	cont "night out."
-
-	para "You can buy them"
-	line "in NIMBASA CITY!"
+	text "I still have no"
+	line "idea what this"
+	cont "place is like!"
+	
+	para "I never carry a"
+	line "map with me."
 	done
 	
 SchoolKidFLostlornSeenText:

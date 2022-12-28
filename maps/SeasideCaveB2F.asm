@@ -90,75 +90,133 @@ SeasideCaveB2FTMPsychic:
 	itemball TM_PSYCHIC_M
 	
 GruntM1SeasideCaveSeenText:
-	text "..."
+	text "Target acquired!"
+	line "Termination will"
+	cont "now begin!"
 	done
 
 GruntM1SeasideCaveBeatenText:
-	text "..."
+	text "I was terminated…?"
+	line "What a trainer!"
 	done
 
 GruntM1SeasideCaveAfterText:
-	text "..."
+	text "We in TEAM PLASMA"
+	line "are trying to keep"
+	
+	para "all the world's"
+	line "#MON for our-"
+	cont "selves!"
 	done
 	
 GruntM2SeasideCaveSeenText:
-	text "..."
+	text "Aren't you pretty"
+	line "confident, just"
+	
+	para "waltzing right"
+	line "into the enemy!"
 	done
 
 GruntM2SeasideCaveBeatenText:
-	text "..."
+	text "Argh… No wonder"
+	line "you're confident"
+	
+	para "with that kind of"
+	line "strength."
 	done
 
 GruntM2SeasideCaveAfterText:
-	text "..."
+	text "The members of"
+	line "TEAM PLASMA who"
+	
+	para "are left are the"
+	line "real thugs who"
+	
+	para "want to take over"
+	line "the world!"
 	done
 	
 GruntM3SeasideCaveSeenText:
-	text "..."
+	text "Knave! I do ambush"
+	line "thee!"
 	done
 
 GruntM3SeasideCaveBeatenText:
-	text "..."
+	text "Woe is me!"
 	done
 
 GruntM3SeasideCaveAfterText:
-	text "..."
+	text "If that be the"
+	line "case then… Forgive"
+	cont "me!"
 	done
 	
 GruntF1SeasideCaveSeenText:
-	text "..."
+	text "How about we see"
+	line "how well I can use"
+	
+	para "this #MON I"
+	line "just got!"
 	done
 
 GruntF1SeasideCaveBeatenText:
-	text "..."
+	text "Hmph… No good,"
+	line "huh?"
 	done
 
 GruntF1SeasideCaveAfterText:
-	text "..."
+	text "They said if I"
+	line "joined TEAM PLASMA"
+	
+	para "that I could get"
+	line "powerful #MON"
+	
+	para "and do whatever I"
+	line "liked!"
+	
+	para "But this #MON"
+	line "is useless!"
 	done
 	
 GruntF2SeasideCaveSeenText:
-	text "..."
+	text "Even if we don't"
+	line "have our king any-"
+	
+	para "more, we still"
+	line "won't lose!"
 	done
 
 GruntF2SeasideCaveBeatenText:
-	text "..."
+	text "Plasmaaa! Glory to"
+	line "TEAM PLASMA!"
 	done
 
 GruntF2SeasideCaveAfterText:
-	text "..."
+	text "Maybe if TEAM"
+	line "PLASMA can take"
+	
+	para "over the UNOVA"
+	line "region, our king"
+	cont "will come back…"
 	done
 	
 GruntF3SeasideCaveSeenText:
-	text "..."
+	text "Oh-ho-ho! You've"
+	line "been ambushed!"
 	done
 
 GruntF3SeasideCaveBeatenText:
-	text "..."
+	text "I lost! No!"
+	line "Plasmaaa!!"
 	done
 
 GruntF3SeasideCaveAfterText:
-	text "..."
+	text "Lose! J-just go"
+	line "and lose already!"
+	
+	para "A kid like you"
+	line "should definitely"
+	cont "lose!"
 	done
 
 SeasideCaveB2F_MapEvents:

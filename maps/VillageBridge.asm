@@ -340,15 +340,16 @@ Smasher2VillageBridgeAfterText:
 	done
 	
 LinebackerVillageBridgeSeenText:
-	text "..."
+	text "Shut up and battle"
+	line "with me!"
 	done
 
 LinebackerVillageBridgeBeatenText:
-	text "..."
+	text "…!"
 	done
 
 LinebackerVillageBridgeAfterText:
-	text "..."
+	text "You're strong!"
 	done
 	
 Hoopster1VillageBridgeSeenText:

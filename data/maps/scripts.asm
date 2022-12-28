@@ -268,10 +268,10 @@ INCLUDE "maps/IcirrusPokecenter1F.asm"
 INCLUDE "maps/IcirrusBoutique.asm"
 INCLUDE "maps/R11Truck.asm"
 INCLUDE "maps/DragonspiralTowerOutside.asm"
-INCLUDE "maps/MistraltonCave1F.asm"
 
 SECTION "Map Scripts 14", ROMX
 
+INCLUDE "maps/MistraltonCave1F.asm"
 INCLUDE "maps/MistraltonCave2F.asm"
 INCLUDE "maps/MistraltonCave3F.asm"
 INCLUDE "maps/Rt9.asm"
@@ -292,10 +292,10 @@ INCLUDE "maps/DragonspiralTower1F.asm"
 INCLUDE "maps/DragonspiralTower2F.asm"
 INCLUDE "maps/DragonspiralTower3F.asm"
 INCLUDE "maps/DragonspiralTower4F.asm"
-INCLUDE "maps/DragonspiralTower5F.asm"
 
 SECTION "Map Scripts 15", ROMX
 
+INCLUDE "maps/DragonspiralTower5F.asm"
 INCLUDE "maps/DragonspiralTower6F.asm"
 INCLUDE "maps/DragonspiralTowerRoof.asm"
 INCLUDE "maps/TwistMountain3F.asm"

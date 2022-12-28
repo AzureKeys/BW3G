@@ -102,116 +102,169 @@ R21HPUp:
 	itemball HP_UP
 	
 SwimmerM2R21SeenText:
-	text "I feel so much"
-	line "lighter in water."
+	text "It is said that"
+	line "water will not"
+	
+	para "grow stagnant as"
+	line "long as it keeps"
+	cont "flowing…"
+	
+	para "So as long as I"
+	line "keep moving on…"
 	done
 
 SwimmerM2R21BeatenText:
-	text "Oh, no!"
+	text "Looks like I've"
+	line "gotten stagnant…"
 	done
 
 SwimmerM2R21AfterText:
-	text "Swimming exercises"
-	line "your full body."
+	text "When floating in"
+	line "the water, keep"
 
-	para "It's really good"
-	line "for you."
+	para "moving to keep"
+	line "yourself limber!"
 	done
 	
 SwimmerF1R21SeenText:
-	text "What an impressive"
-	line "collection of GYM"
+	text "The thing about"
+	line "water is that it's"
+	cont "always changing…"
 
-	para "BADGES. We should"
-	line "battle!"
+	para "From the piercing"
+	line "strength of a jet,"
+	
+	para "to the crushing"
+	line "power of a wave…"
+	
+	para "That's what I'm"
+	line "about to show you!"
 	done
 
 SwimmerF1R21BeatenText:
-	text "No!"
+	text "You're just as"
+	line "strong, perhaps"
+	cont "even stronger!"
 	done
 
 SwimmerF1R21AfterText:
-	text "SURF isn't the"
-	line "only HM move"
-	cont "you use in water."
+	text "All #MON have"
+	line "their own"
+	
+	para "strengths. I've"
+	line "got to learn more"
+	
+	para "about the stengths"
+	line "of my own #MON!"
 	
 SwimmerF2R21SeenText:
-	text "I guess it's im-"
-	line "possible to swim"
-
-	para "all the way across"
-	line "the ocean."
+	text "Catch this! My"
+	line "#MON is huge!"
 	done
 
 SwimmerF2R21BeatenText:
-	text "Aiyah!"
+	text "Wow, you're even"
+	line "more than I"
+	cont "expected!"
 	done
 
 SwimmerF2R21AfterText:
-	text "Besides the sea, I"
-	line "can also swim in"
-	cont "ponds and rivers."
+	text "Some #MON are"
+	line "huge, but they can"
+	
+	para "still fit inside"
+	line "a #BALL!"
 	done
 	
 SwimmerM1R21SeenText:
-	text "Land ho! Gotta"
-	line "keep going!"
+	text "I trained with"
+	line "MARLON, the gym"
+	
+	para "leader of HUMILAU"
+	line "CITY!"
 	done
 
 SwimmerM1R21BeatenText:
-	text "Glug…"
+	text "I still have room"
+	line "to improve!"
 	done
 
 SwimmerM1R21AfterText:
-	text "Just a little"
-	line "farther to"
-	cont "HUMILAU CITY…"
+	text "They say that"
+	line "MARLON can stay in"
+	
+	para "the ocean for"
+	line "seven days and"
+	cont "seven nights!"
 	done
 	
 SwimmerM3R21SeenText:
-	text "I'm bored by fish-"
-	line "ing. Let's battle!"
+	text "You see this enor-"
+	line "mous puddle? They"
+	cont "call it an ocean!"
 	done
 
 SwimmerM3R21BeatenText:
-	text "Utter failure…"
+	text "Woah! You're"
+	line "enormous too!"
 	done
 
 SwimmerM3R21AfterText:
-	text "I'll just go back"
-	line "to fishing…"
+	text "Big things are"
+	line "awesome! Why?"
+	
+	para "Because they're"
+	line "big!"
 	done
 	
 BlackbeltR21SeenText:
-	text "Hm? You're good,"
-	line "aren't you?"
+	text "Hi-yah! Hi-yah!"
+	line "I'm practicing my"
+	
+	para "punching technique"
+	line "in front of the"
+	
+	para "sea! Give it a"
+	line "try!"
 	done
 
 BlackbeltR21BeatenText:
-	text "Just as I thought!"
+	text "I won't stop"
+	line "punching just"
+	cont "because I lost!"
 	done
 
 BlackbeltR21AfterText:
-	text "A good trainer can"
-	line "recognize other"
-	cont "good trainers."
+	text "I'm training to"
+	line "not be fooled by"
+	
+	para "the swimming"
+	line "ladies… I'm not"
+	
+	para "just looking at"
+	line "them!"
 	done
 	
 SwimmerF3R21SeenText:
-	text "If I win, you have"
-	line "to help me with my"
-	cont "suntan lotion!"
+	text "What? You're a"
+	line "trainer? Awesome!"
 	done
 
 SwimmerF3R21BeatenText:
-	text "I'm worried about"
-	line "sunburn…"
+	text "Oh well… Time for"
+	line "my #MON to"
+	cont "return…"
 	done
 
 SwimmerF3R21AfterText:
-	text "I have to watch"
-	line "out for blemishes"
-	cont "caused by the sun."
+	text "#MON just wait"
+	line "inside their #-"
+	
+	para "BALLs until they"
+	line "are needed…"
+	
+	para "#MON sure are"
+	line "convenient!"
 	done
 
 Rt21_MapEvents:

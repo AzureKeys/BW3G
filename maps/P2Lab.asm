@@ -360,69 +360,68 @@ GruntM1P2LabAfterText:
 	done
 	
 GruntM2P2LabSeenText:
-	text "Stop! I'm known as"
-	line "the TEAM PLASMA"
-	cont "fortress!"
+	text "I'm the fighting"
+	line "sweeper! I'll"
 
-	para "You're not taking"
-	line "another step!"
+	para "clean up garbage"
+	line "like you!"
 	done
 
 GruntM2P2LabBeatenText:
-	text "The fortress came"
-	line "down!"
+	text "Oops…"
 	done
 
 GruntM2P2LabAfterText:
-	text "You've earned my"
-	line "respect, so here's"
-	cont "some advice."
+	text "The fact that I"
+	line "let you get by"
 
-	para "It's not too late."
-	line "You can still turn"
-	cont "back."
+	para "here means I'll"
+	line "probably lose my"
+	cont "#MON, huh?"
 	done
 	
 GruntF1P2LabSeenText:
-	text "Don't I think"
-	line "#MON are cute?"
+	text "I'm going to go"
+	line "ahead and say it:"
 
-	para "I'll think my"
-	line "#MON are cute--"
-
-	para "after they beat"
-	line "yours!"
+	para "Plasmaaaa!!"
 	done
 
 GruntF1P2LabBeatenText:
-	text "Oh, no! They're so"
-	line "useless!"
+	text "Do-over! C'mon,"
+	line "let me have a"
+	cont "do-over!"
 	done
 
 GruntF1P2LabAfterText:
-	text "I love my"
-	line "beautiful self!"
+	text "#MON are like"
+	line "our puppets! They"
 
-	para "Who cares about"
-	line "#MON?"
+	para "are bound by their"
+	line "#BALLs and"
+	
+	para "controlled by our"
+	line "orders!"
 	done
 	
 GruntF2P2LabSeenText:
-	text "It feels great"
-	line "ordering #MON"
-	cont "to commit crimes."
+	text "Our king is gone…"
+	line "But we are still"
+	cont "here!"
 	done
 
 GruntF2P2LabBeatenText:
-	text "You're kidding!"
+	text "Ugh… Losing is"
+	line "the worst…"
 	done
 
 GruntF2P2LabAfterText:
-	text "I feel lousy over"
-	line "losing!"
+	text "What did we even"
+	line "want from this"
 
-	para "Darn it! I hate"
-	line "useless #MON!"
+	para "Place? I guess the"
+	line "SAGEs must have a"
+	cont "plan…"
 	done
 	
 ScientistP2LabSeenText:

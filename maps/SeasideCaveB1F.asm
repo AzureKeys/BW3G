@@ -144,42 +144,56 @@ SeasideCaveB1FIcyRock:
 	itemball ICY_ROCK
 	
 BlackbeltSeasideCaveB1FSeenText:
-	text "My #MON are"
-	line "power packed!"
+	text "I will never turn"
+	line "my back and run!"
 	done
 
 BlackbeltSeasideCaveB1FBeatenText:
-	text "Wahahah! I'm the"
-	line "big loser!"
+	text "Ugh… Sometimes you"
+	line "must retreat to"
+	cont "win."
 	done
 
 BlackbeltSeasideCaveB1FAfterText:
-	text "I'm not much good"
-	line "at thinking, see?"
+	text "I will reexamine"
+	line "my own weaknesses."
 
-	para "So, I just plow"
-	line "ahead with power!"
+	para "At times I may"
+	line "hate myself for"
+	
+	para "doing so, but I"
+	line "cannot run from"
+	cont "myself!"
 	done
 	
 BattleGirlSeasideCaveB1FSeenText:
-	text "I was training"
-	line "here alone."
+	text "My training will"
+	line "never betray me."
 
-	para "Behold the fruits"
-	line "of my labor!"
+	para "After training"
+	line "this much, I am"
+	cont "certain to win!"
 	done
 
 BattleGirlSeasideCaveB1FBeatenText:
-	text "Waaaargh!"
+	text "…how can that be?"
+	line "even after I"
+	cont "trained so much?"
 	done
 
 BattleGirlSeasideCaveB1FAfterText:
-	text "This calls for"
-	line "extreme measures."
+	text "Defeat leads to"
+	line "enlightenment. I"
 
-	para "I must take to the"
-	line "hills and train in"
-	cont "solitude."
+	para "realize now my own"
+	line "deficiency… But I"
+	
+	para "will not make"
+	line "excuses! I will"
+	
+	para "use this knowledge"
+	line "as fuel for"
+	cont "tomorrow!"
 	done
 	
 SeasideCaveB1FBoulderFellText:

@@ -166,18 +166,30 @@ R7NorthSign:
 	jumptext R7NorthSignText
 	
 BackpackerMR7NorthSeenText:
-	text "I love playing in"
-	line "the tall grass!"
+	text "I travel the world"
+	line "because I'm look-"
+	cont "ing for danger!"
+	
+	para "Are you dangerous?"
 	done
 
 BackpackerMR7NorthBeatenText:
-	text "Woah!"
+	text "You're so danger-"
+	line "ous, I was in"
+	
+	para "danger of giving"
+	line "up the match!"
 	done
 
 BackpackerMR7NorthAfterText:
-	text "It's fun to jump"
-	line "out and surprise"
-	cont "people!"
+	text "Why do I seek out"
+	line "danger? Because"
+	
+	para "it's exciting,"
+	line "that's why! It"
+	
+	para "makes me feel"
+	line "alive!"
 	done
 	
 BackpackerFR7NorthSeenText:

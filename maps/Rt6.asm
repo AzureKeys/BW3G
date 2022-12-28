@@ -400,18 +400,28 @@ PkmnBreederFR6AfterText:
 	done
 	
 PkmnBreederMR6SeenText:
-	text "I love stomping"
-	line "in puddles!"
+	text "We've just got to"
+	line "do what we can!"
 	done
 
 PkmnBreederMR6BeatenText:
-	text "Woah!"
+	text "I feel like I"
+	line "understood what I"
+	
+	para "could and couldn't"
+	line "do…"
 	done
 
 PkmnBreederMR6AfterText:
-	text "I'm gonna go stomp"
-	line "around to cheer"
-	cont "myself up!"
+	text "I'll try to"
+	line "increase the"
+	
+	para "things I can do"
+	line "and challenge you"
+	
+	para "again! Come talk"
+	line "to me if you want"
+	cont "a rematch!"
 	done
 	
 ScientistMR6SeenText:

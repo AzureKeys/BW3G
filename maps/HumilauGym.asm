@@ -92,30 +92,27 @@ HumilauGymStatue:
 	jumpstd gymstatue2
 	
 SwimmerMHumilauGymSeenText:
-	text "The keyword is"
-	line "guts!"
-
-	para "Those here are"
-	line "training night and"
-
-	para "day to become"
-	line "masters of water"
-	cont "#MON!"
-
-	para "Come on!"
+	text "To be as clear as"
+	line "water… That is the"
+	cont "style that I seek!"
 	done
 
 SwimmerMHumilauGymBeatenText:
-	text "Gaaah!"
+	text "When I lose, I"
+	line "feel like I might"
+	cont "just disappear…"
 	done
 
 SwimmerMHumilauGymAfterText:
-	text "MARLON's skills"
-	line "are for real!"
+	text "I may have been"
+	line "the one to lose,"
 
-	para "Don't get cocky"
-	line "just because you"
-	cont "beat me!"
+	para "but I'm still"
+	line "going to go ahead"
+	
+	para "and say it… You"
+	line "should definitely"
+	cont "seek a style!"
 	done
 	
 SwimmerFHumilauGymSeenText:

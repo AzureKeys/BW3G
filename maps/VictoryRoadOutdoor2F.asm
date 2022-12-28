@@ -181,15 +181,35 @@ VeteranFVictoryRoadOutdoor2FAfterText:
 	done
 	
 AceTrainerMVictoryRoadOutdoor2FSeenText:
-	text "..."
+	text "When I win, and"
+	line "even when the"
+	
+	para "impossible happens"
+	line "and I lose, I"
+	
+	para "analyze every one"
+	line "of my battles to"
+	cont "grow stronger."
 	done
 
 AceTrainerMVictoryRoadOutdoor2FBeatenText:
-	text "..."
+	text "I want to ride"
+	line "away on my #-"
+	
+	para "MON so I can"
+	line "ponder why I lost…"
 	done
 
 AceTrainerMVictoryRoadOutdoor2FAfterText:
-	text "..."
+	text "Riding on a #-"
+	line "MON and thinking"
+	
+	para "about things is so"
+	line "nice that you'll"
+	
+	para "find you come up"
+	line "with all kinds of"
+	cont "good ideas."
 	done
 	
 AceTrainerFVictoryRoadOutdoor2FSeenText:

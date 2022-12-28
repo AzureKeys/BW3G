@@ -361,24 +361,31 @@ PkmnRangerMPinwheel1AfterText:
 	done
 	
 PkmnRangerMPinwheel2SeenText:
-	text "I came to explore"
-	line "PINWHEEL FOREST."
+	text "Hey, hey, hey! It's"
+	line "all because of"
+	
+	para "havin' love for"
+	line "#MON, right?"
+	
+	para "Yeah, you know"
+	line "what I mean!"
 	done
 
 PkmnRangerMPinwheel2BeatenText:
-	text "Whoa! Danger, man."
+	text "Man, your love for"
+	line "#MON hit me"
+	
+	para "like a ton of"
+	line "bricks!"
 	done
 
 PkmnRangerMPinwheel2AfterText:
-	text "My #MON was"
-	line "hurt before even"
+	text "#MON are always"
+	line "standing by their"
+	cont "trainers, right?"
 
-	para "entering PINWHEEL"
-	line "FOREST."
-
-	para "I'd better take"
-	line "them to a #MON"
-	cont "CENTER right away."
+	para "You have no idea"
+	line "how lucky we are!"
 	done
 	
 YoungsterPinwheelSeenText:
@@ -400,19 +407,27 @@ YoungsterPinwheelAfterText:
 	done
 	
 PkmnRangerFPinwheel1SeenText:
-	text "My bug #MON are"
-	line "tough. Prepare to"
-	cont "lose!"
+	text "I hold no grudge,"
+	line "whether I win or"
+	
+	para "lose. The point of"
+	line "battle is to train"
+	
+	para "my #MON, after"
+	line "all."
 	done
 
 PkmnRangerFPinwheel1BeatenText:
-	text "I was whipped…"
+	text "Aww… But I really"
+	line "wanted to win!"
 	done
 
 PkmnRangerFPinwheel1AfterText:
-	text "I'm going to look"
-	line "for stronger bug"
-	cont "#MON."
+	text "My #MON really"
+	line "go into a funk"
+	
+	para "when we don't win,"
+	line "though."
 	done
 	
 PkmnRangerFPinwheel2SeenText:

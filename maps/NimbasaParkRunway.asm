@@ -63,63 +63,67 @@ NimbasaParkOldGymText:
 	done
 	
 GruntMNimbasaPark5SeenText:
-	text "We're TEAM PLASMA,"
-	line "the exploiters of"
-	cont "#MON!"
-
-	para "We love being"
-	line "evil! Scared?"
+	text "Here I come!"
+	line "Plasmaaa!"
 	done
 
 GruntMNimbasaPark5BeatenText:
-	text "You think you're a"
-	line "hero?"
+	text "Wh-wh-wh-what is"
+	line "this? P-p-plasma!"
 	done
 
 GruntMNimbasaPark5AfterText:
-	text "We're not always"
-	line "evil. We just do"
-	cont "whatever we like."
+	text "Well, it's not like"
+	line "you'll be able to"
+	
+	para "find the secret"
+	line "entrance."
 	done
 	
 GruntFNimbasaPark4SeenText:
-	text "We've taken over"
-	line "The PARK! What"
-	cont "are we after?"
-
-	para "That's a secret!"
+	text "In my own way, I'm"
+	line "a strong part of"
+	
+	para "this TEAM PLASMA"
+	line "group!"
 	done
 
 GruntFNimbasaPark4BeatenText:
-	text "Too strong! We"
-	line "must watch you…"
+	text "Great plans are"
+	line "always getting"
+	cont "interrupted…"
 	done
 
 GruntFNimbasaPark4AfterText:
-	text "You're too strong."
+	text "You getting in our"
+	line "way means that you"
 
-	para "Our plan could be"
-	line "ruined. I must"
-	cont "warn the others…"
+	para "find us worth the"
+	line "time, doesn't it?"
 	done
 	
 GruntFNimbasaPark5SeenText:
-	text "Hey, hey! Keep out"
-	line "of our way!"
+	text "Intruder sighted!"
 	done
 
 GruntFNimbasaPark5BeatenText:
-	text "Arggh. I give up."
+	text "What a weak #-"
+	line "MON… I'll just"
+	
+	para "have to steal some"
+	line "better ones!"
 	done
 
 GruntFNimbasaPark5AfterText:
-	text "Our SAGEs want"
-	line "something from"
-	cont "this place."
+	text "If we steal #-"
+	line "MON, the number of"
 
-	para "They have some big"
-	line "plan. I wonder"
-	cont "what that is?"
+	para "trainers in the"
+	line "world will go"
+	
+	para "down. Then we won't"
+	line "have any more"
+	cont "enemies!"
 	done
 	
 NimbasaParkCherenRunwayText:

@@ -157,15 +157,25 @@ Fisher1MoorOfIcirrusAfterText:
 	done
 	
 Fisher2MoorOfIcirrusSeenText:
-	text "..."
+	text "I'll have a battle"
+	line "with you using my"
+	
+	para "freshly caught"
+	line "#MON!"
 	done
 
 Fisher2MoorOfIcirrusBeatenText:
-	text "..."
+	text "I had no idea how"
+	line "my #MON would"
+	cont "fight…"
 	done
 
 Fisher2MoorOfIcirrusAfterText:
-	text "..."
+	text "I may have just"
+	line "caught them, but"
+	
+	para "I'll raise them to"
+	line "be strong!"
 	done
 	
 PkmnRangerFMoorOfIcirrusSeenText:
