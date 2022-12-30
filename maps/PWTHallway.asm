@@ -68,17 +68,18 @@ PwtHallwayEnterRightMovement:
 	
 PwtHallwayExitRightMovement:
 	step DOWN
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
 	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
 	step DOWN
 	step DOWN
 	step_end
 	
 PwtHallwayLeftToRightMovement:
 	step DOWN
+	step DOWN
 	step RIGHT
 	step RIGHT
 	step RIGHT
@@ -89,6 +90,7 @@ PwtHallwayLeftToRightMovement:
 	step RIGHT
 	step RIGHT
 	step RIGHT
+	step UP
 	step UP
 	step UP
 	step_end
@@ -97,14 +99,14 @@ PWTHallway_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event  7,  5, PWT_INSIDE, 3
-	warp_event  8,  5, PWT_INSIDE, 3
-	warp_event  2,  0, PWT_QUALIFIER_ROOM, 1
-	warp_event 12,  0, PWT_BACK_ROOM, 1
+	warp_event  9,  5, PWT_INSIDE, 3
+	warp_event 10,  5, PWT_INSIDE, 3
+	warp_event  4,  0, PWT_QUALIFIER_ROOM, 1
+	warp_event 14,  0, PWT_BACK_ROOM, 1
 
 	db 2 ; coord events
-	coord_event  2,  1, SCENE_DEFAULT, PwtEnterFromLeftScript
-	coord_event 12,  1, SCENE_DEFAULT, PwtEnterFromRightScript
+	coord_event  4,  1, SCENE_DEFAULT, PwtEnterFromLeftScript
+	coord_event 14,  1, SCENE_DEFAULT, PwtEnterFromRightScript
 
 	db 0 ; bg events
 	

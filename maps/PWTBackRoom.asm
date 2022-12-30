@@ -571,8 +571,8 @@ PwtBackRoomArriveText:
 	line "MON LEAGUE CHAMP,"
 	cont "IRIS!"
 	
-	para "UNOVA's own #-"
-	line "MON PROF, BIANCA!"
+	para "UNOVA's own #MON"
+	line "PROF, BIANCA BEL!"
 	
 	para "And her former"
 	line "mentor, PROF."

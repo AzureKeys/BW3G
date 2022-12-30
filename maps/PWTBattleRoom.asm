@@ -156,12 +156,14 @@ PWTBattleRoom_MapScripts:
 	end
 	
 PwtBattleRoomPlayerEnterMovement:
-	step UP
-	step LEFT
-	step UP
-	step UP
-	step UP
-	turn_head RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
 	step_end
 	
 PwtBattleRoomPlayerStepUpMovement:
@@ -183,6 +185,7 @@ PwtBattleRoomEnemyStepBackMovement:
 	step_end
 	
 PwtBattleRoomReceptionistApproachMovement:
+	step DOWN
 	step LEFT
 	step DOWN
 	step_end
@@ -190,15 +193,19 @@ PwtBattleRoomReceptionistApproachMovement:
 PwtBattleRoomReceptionistReturnMovement:
 	step UP
 	step RIGHT
+	step UP
 	turn_head DOWN
 	step_end
 	
 PwtBattleRoomPlayerExitMovement:
-	step DOWN
-	step DOWN
-	step DOWN
-	step RIGHT
-	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
 	step_end
 	
 PwtBattleRoomFirstRoundText:
@@ -344,15 +351,15 @@ PWTBattleRoom_MapEvents:
 	db 0, 0 ; filler
 
 	db 1 ; warp events
-	warp_event  3,  7, PWT_BACK_ROOM, 3
+	warp_event  0,  5, PWT_BACK_ROOM, 3
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 	
 	db 4 ; object events
-	object_event  3,  1, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, 0, -1
-	object_event  5,  3, SPRITE_BIANCA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_BATTLE_ROOM_BIANCA
-	object_event  5,  3, SPRITE_INFER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_BATTLE_ROOM_INFER
-	object_event  5,  3, SPRITE_VIO, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_BATTLE_ROOM_VIO
+	object_event  9,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, 0, -1
+	object_event 11,  5, SPRITE_BIANCA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_BATTLE_ROOM_BIANCA
+	object_event 11,  5, SPRITE_INFER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_BATTLE_ROOM_INFER
+	object_event 11,  5, SPRITE_VIO, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_BATTLE_ROOM_VIO
 	

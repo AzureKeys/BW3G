@@ -4,6 +4,8 @@
 	const PWTINSIDE_RECEPTIONIST_2
 	const PWTINSIDE_YOUNGSTER
 	const PWTINSIDE_COOLTRAINER_F
+	const PWTINSIDE_OFFICER_1
+	const PWTINSIDE_OFFICER_2
 
 PWTInside_MapScripts:
 	db 1 ; scene scripts
@@ -72,6 +74,9 @@ PwtYoungsterScript:
 	
 PwtCooltrainerFScript:
 	jumptextfaceplayer PwtInsideCooltrainerFText
+	
+PwtOfficerScript:
+	jumptextfaceplayer PwtInsideOfficerText
 	
 PwtInsidePlayerEnteringMovement:
 	step DOWN
@@ -168,13 +173,27 @@ PwtInsideCooltrainerFText:
 	
 	para "It's tough!"
 	done
+	
+PwtInsideOfficerText:
+	text "This way leads to"
+	line "the stands for"
+	
+	para "watching the"
+	line "matches."
+	
+	para "If you want to"
+	line "enter, you should"
+	
+	para "go talk to the"
+	line "receptionist."
+	done
 
 PWTInside_MapEvents:
 	db 0, 0 ; filler
 
 	db 3 ; warp events
-	warp_event  7, 11, PWT_OUTSIDE, 2
-	warp_event  8, 11, PWT_OUTSIDE, 3
+	warp_event  7, 17, PWT_OUTSIDE, 2
+	warp_event  8, 17, PWT_OUTSIDE, 3
 	warp_event  7,  0, PWT_HALLWAY, 1
 
 	db 1 ; coord events
@@ -182,10 +201,12 @@ PWTInside_MapEvents:
 
 	db 0 ; bg events
 	
-	db 5 ; object events
+	db 7 ; object events
 	object_event  7,  3, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PwtBlockerScript, -1
-	object_event  2,  3, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PwtReceptionist1Script, -1
-	object_event 13,  3, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PwtReceptionist2Script, -1
-	object_event  4,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PwtYoungsterScript, -1
-	object_event 11,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PwtCooltrainerFScript, -1
+	object_event  2,  7, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PwtReceptionist1Script, -1
+	object_event 13,  7, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PwtReceptionist2Script, -1
+	object_event  3, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PwtYoungsterScript, -1
+	object_event 11, 14, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PwtCooltrainerFScript, -1
+	object_event  1,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PwtOfficerScript, -1
+	object_event 14,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PwtOfficerScript, -1
 	

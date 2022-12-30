@@ -261,11 +261,11 @@ ENDM
 	
 	newgroup
 	map_const PWT_OUTSIDE, 19, 15
-	map_const PWT_INSIDE, 8, 6
-	map_const PWT_HALLWAY, 8, 3
-	map_const PWT_QUALIFIER_ROOM, 4, 4
+	map_const PWT_INSIDE, 8, 9
+	map_const PWT_HALLWAY, 10, 3
+	map_const PWT_QUALIFIER_ROOM, 8, 6
 	map_const PWT_BACK_ROOM, 4, 6
-	map_const PWT_BATTLE_ROOM, 4, 4
+	map_const PWT_BATTLE_ROOM, 8, 6
 	
 	newgroup
 	map_const DRIFTVEIL_CITY, 26, 20

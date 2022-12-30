@@ -99,21 +99,20 @@ PWTQualifierRoom_MapScripts:
 	end
 	
 PwtQualifierRoomPlayerEnterMovement:
-	step UP
-	step LEFT
-	step UP
-	step UP
-	step UP
-	turn_head RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
 	step_end
 	
 PwtQualifierRoomEnemyEnterMovement:
-	step UP
-	step RIGHT
-	step UP
-	step UP
-	step UP
-	turn_head LEFT
+	step LEFT
+	step LEFT
+	step LEFT
 	step_end
 	
 PwtQualifierRoomPlayerStepUpMovement:
@@ -130,6 +129,7 @@ PwtQualifierRoomPlayerStepBackMovement:
 	step_end
 	
 PwtQualifierRoomReceptionistApproachMovement:
+	step DOWN
 	step LEFT
 	step DOWN
 	step_end
@@ -137,24 +137,26 @@ PwtQualifierRoomReceptionistApproachMovement:
 PwtQualifierRoomReceptionistReturnMovement:
 	step UP
 	step RIGHT
+	step UP
 	turn_head DOWN
 	step_end
 	
 PwtQualifierRoomPlayerExitMovement:
-	step DOWN
-	step DOWN
-	step DOWN
-	step RIGHT
-	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
 	step_end
 	
 PwtQualifierRoomEnemyExitMovement:
 	step RIGHT
-	step DOWN
-	step DOWN
-	step DOWN
-	step LEFT
-	step DOWN
+	step RIGHT
+	step RIGHT
+	step RIGHT
 	step_end
 	
 PwtQualifierRoomFirstBattleText:
@@ -246,14 +248,14 @@ PWTQualifierRoom_MapEvents:
 	db 0, 0 ; filler
 
 	db 1 ; warp events
-	warp_event  3,  7, PWT_HALLWAY, 3
+	warp_event  0,  5, PWT_HALLWAY, 3
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 	
 	db 3 ; object events
-	object_event  4,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_M
-	object_event  4,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_F
-	object_event  3,  1, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, 0, -1
+	object_event 14,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_M
+	object_event 14,  5, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, 0, EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_F
+	object_event  9,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, 0, -1
 	
