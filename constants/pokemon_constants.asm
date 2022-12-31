@@ -271,10 +271,10 @@
 	const ZWEILOUS   ; fa
 	const HYDREIGON  ; fb
 	const GENESECT   ; fc
+	const GENESIS_MON; fd
 JOHTO_POKEMON EQU const_value
 NUM_POKEMON EQU const_value + -1
-	const EGG        ; fd
-	const MON_FE     ; fe
+	const EGG        ; fe
 	
 	const_def 1
 	const UNOWN_A ;  1

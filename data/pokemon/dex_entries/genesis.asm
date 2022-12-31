@@ -1,0 +1,6 @@
+	db "???@" ; species name
+	dw 608, 2219 ; height, weight
+
+	db "???"
+
+	page "???@"

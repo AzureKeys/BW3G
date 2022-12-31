@@ -97,6 +97,7 @@ INCBIN "gfx/trainers/ryoku.gbcpal", middle_colors
 INCBIN "gfx/trainers/gorm.gbcpal", middle_colors
 INCBIN "gfx/trainers/mysteryman.gbcpal", middle_colors
 INCBIN "gfx/trainers/zinzolin.gbcpal", middle_colors
+INCBIN "gfx/trainers/genesis_project.gbcpal", middle_colors
 INCBIN "gfx/trainers/infer.gbcpal", middle_colors
 INCBIN "gfx/trainers/infer_sage.gbcpal", middle_colors
 INCBIN "gfx/trainers/infer2.gbcpal", middle_colors

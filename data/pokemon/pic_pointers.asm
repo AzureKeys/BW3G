@@ -506,5 +506,7 @@ PokemonPicPointers::
 	dba HydreigonBackpic
 	dba GenesectFrontpic
 	dba GenesectBackpic
+	dba GenesisFrontpic
+	dba GenesisBackpic
 	dba EggPic
 	dbw -1, -1 ; unused

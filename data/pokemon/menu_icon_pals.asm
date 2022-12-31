@@ -257,5 +257,5 @@ MonMenuIconPals:
 	icon_pals BLUE,		GREEN ; ZWEILOUS
 	icon_pals BLUE,		GREEN ; HYDREIGON
 	icon_pals PURPLE,	RED ; GENESECT
-	icon_pals RED,		BLUE ; 253
+	icon_pals PURPLE,	RED ; GENESIS
 	icon_pals RED,		BLUE ; 254

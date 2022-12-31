@@ -252,3 +252,4 @@ PokedexDataPointerTable:
 	dw ZweilousPokedexEntry
 	dw HydreigonPokedexEntry
 	dw GenesectPokedexEntry
+	dw GenesisPokedexEntry

@@ -140,3 +140,4 @@ Music:
 	dba Music_LookGentleman
 	dba Music_LookPokefan
 	dba Music_LookWorker
+	dba Music_BattleGhetsis

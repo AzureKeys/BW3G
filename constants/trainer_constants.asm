@@ -631,6 +631,9 @@ CHRIS EQU __enum__
 	const ZINZOLIN1
 	const ZINZOLIN2
 	
+	trainerclass GENESIS
+	const GENESIS1
+	
 	trainerclass INFER
 	const INFER1_SNIVY
 	const INFER1_TEPIG

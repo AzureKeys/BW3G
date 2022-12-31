@@ -92,6 +92,7 @@ TrainerPicPointers::
 	dba GormPic
 	dba MysterymanPic
 	dba ZinzolinPic
+	dba GenesisPic
 	dba InferPic
 	dba InferSagePic
 	dba Infer2Pic

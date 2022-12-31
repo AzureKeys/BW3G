@@ -60,7 +60,7 @@ PlayBattleMusic:
 
 	ld a, [wBattleType]
 	cp BATTLETYPE_SUICUNE
-	ld de, MUSIC_SUICUNE_BATTLE
+	ld de, MUSIC_GHETSIS_BATTLE
 	jp z, .done
 	cp BATTLETYPE_ROAMING
 	jp z, .done
@@ -109,6 +109,10 @@ PlayBattleMusic:
 	cp ZINZOLIN
 	jr z, .done
 	cp INFER_SAGE
+	jr z, .done
+	
+	ld de, MUSIC_GHETSIS_BATTLE
+	cp GENESIS
 	jr z, .done
 
 	; IsGymLeader also counts CHAMPION, RED, and the Kanto gym leaders

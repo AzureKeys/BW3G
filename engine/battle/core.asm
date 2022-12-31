@@ -2523,6 +2523,10 @@ FaintEnemyPokemon:
 	hlcoord 1, 0
 	lb bc, 4, 10
 	call ClearBox
+	ld hl, BattleText_GenesisProjectFainted
+	ld a, [wBattleType]
+	cp BATTLETYPE_SUICUNE
+	jp z, StdBattleTextBox
 	ld hl, BattleText_EnemyMonFainted
 	jp StdBattleTextBox
 
@@ -2802,6 +2806,9 @@ PlayVictoryMusic:
 	ld de, MUSIC_NONE
 	call PlayMusic
 	call DelayFrame
+	ld a, [wBattleType]
+	cp BATTLETYPE_SUICUNE
+	jr z, .lost
 	ld de, MUSIC_WILD_VICTORY
 	ld a, [wBattleMode]
 	dec a
@@ -2816,6 +2823,9 @@ PlayVictoryMusic:
 	jr .play_music
 
 .trainer_victory
+	ld a, [wOtherTrainerClass]
+	cp GENESIS
+	jr z, .lost
 	ld de, MUSIC_GYM_VICTORY
 	call IsGymLeader
 	jr c, .play_music
@@ -2844,10 +2854,20 @@ IsGymLeaderCommon:
 
 INCLUDE "data/trainers/leaders.asm"
 
+IsGenesisProjectTrainer:
+; return z for Genesis Project Trainer
+	ld a, [wOtherTrainerClass]
+	cp GENESIS
+	ret
+
 IsPluralTrainer:
 ; return z for plural trainers
 	ld a, [wOtherTrainerClass]
 	cp TWINS
+	ret z
+	cp BACKERSM
+	ret z
+	cp BACKERSF
 	ret
 
 HandlePlayerMonFaint:
@@ -4401,7 +4421,7 @@ PursuitSwitch:
 	call GetMoveEffect
 	ld a, b
 	cp EFFECT_PURSUIT
-	jr nz, .done
+	jp nz, .done
 
 	ld a, [wCurBattleMon]
 	push af
@@ -4462,6 +4482,10 @@ PursuitSwitch:
 	call PlaySFX
 	call WaitSFX
 	call EnemyMonFaintedAnimation
+	ld hl, BattleText_GenesisProjectFainted
+	ld a, [wBattleType]
+	cp BATTLETYPE_SUICUNE
+	jr z, .done_fainted
 	ld hl, BattleText_EnemyMonFainted
 
 .done_fainted
@@ -9286,6 +9310,9 @@ BattleStartMessage:
 	ld hl, WantToBattlePluralText
 	call IsPluralTrainer
 	jr z, .PlaceBattleStartText
+	ld hl, GenesisWantsToBattleText
+	call IsGenesisProjectTrainer
+	jr z, .PlaceBattleStartText
 	ld hl, WantsToBattleText
 	jr .PlaceBattleStartText
 
@@ -9326,6 +9353,9 @@ BattleStartMessage:
 	jr z, .PlaceBattleStartText
 	ld hl, WildCelebiAppearedText
 	cp BATTLETYPE_CELEBI
+	jr z, .PlaceBattleStartText
+	ld hl, GenesisProjectAppearedText
+	cp BATTLETYPE_SUICUNE
 	jr z, .PlaceBattleStartText
 	ld hl, WildPokemonAppearedText
 

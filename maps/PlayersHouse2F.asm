@@ -70,6 +70,12 @@ PlayersHouseRadioScript:
 	; setflag ENGINE_FLYPOINT_LACUNOSA
 	; end
 	
+	; writecode VAR_BATTLETYPE, BATTLETYPE_SUICUNE
+	; loadwildmon GENESIS_MON, 30
+	; startbattle
+	; reloadmapafterbattle
+	; end
+	
 	; opentext
 	; givepoke CRYOGONAL, 5, RAZOR_CLAW
 	; closetext

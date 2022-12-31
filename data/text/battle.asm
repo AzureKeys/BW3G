@@ -18,6 +18,11 @@ BattleText_QuickClaw:
 	cont "move first!"
 	prompt
 
+GenesisProjectAppearedText:
+	text "The GENESIS"
+	line "PROJECT attacks!"
+	prompt
+
 WildPokemonAppearedText:
 	text "Wild @"
 	text_ram wEnemyMonNick
@@ -44,6 +49,12 @@ WildCelebiAppearedText:
 	text_ram wEnemyMonNick
 	text_start
 	line "appeared!"
+	prompt
+
+GenesisWantsToBattleText::
+	text "The GENESIS"
+	line "PROJECT wants to"
+	cont "battle!"
 	prompt
 
 WantsToBattleText::
@@ -272,6 +283,12 @@ BattleText_0x80a4f:
 	text "<RIVAL>: Huh? I"
 	line "should've chosen"
 	cont "your #MON!"
+	prompt
+
+BattleText_GenesisProjectFainted:
+	text "The GENESIS"
+	line "PROJECT was"
+	cont "defeated!"
 	prompt
 
 BattleText_MonFainted:

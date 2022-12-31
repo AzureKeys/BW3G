@@ -4801,3 +4801,11 @@ GenesectEvosAttacks:
 	db 73, HYPER_BEAM
 	db 77, SELFDESTRUCT
 	db 0 ; no more level-up moves
+
+GenesisEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, EARTHQUAKE
+	db 1, FLAMETHROWER
+	db 1, ICE_BEAM
+	db 1, THUNDERBOLT
+	db 0 ; no more level-up moves

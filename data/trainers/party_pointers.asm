@@ -92,6 +92,7 @@ TrainerGroups:
 	dba GormGroup
 	dba MysterymanGroup
 	dba ZinzolinGroup
+	dba GenesisGroup
 	dba InferGroup
 	dba InferSageGroup
 	dba Infer2Group

@@ -90,6 +90,7 @@ BTTrainerClassSprites:
 	db SPRITE_PZMA_SAGE     ; gorm
 	db SPRITE_VIO           ; mysteryman
 	db SPRITE_PZMA_SAGE     ; zinzolin
+	db SPRITE_PZMA_SAGE     ; genesis
 	db SPRITE_INFER         ; infer
 	db SPRITE_INFER_SAGE    ; infer_sage
 	db SPRITE_INFER         ; infer2

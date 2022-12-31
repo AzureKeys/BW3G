@@ -91,6 +91,7 @@ TrainerClassDVs:
 	dn 14, 14, 14, 14 ; GORM
 	dn 14, 14, 14, 14 ; MYSTERYMAN
 	dn 14, 14, 14, 14 ; ZINZOLIN
+	dn 15, 15, 15, 15 ; GENESIS
 	dn 13, 13, 13, 13 ; INFER
 	dn 13, 13, 13, 13 ; INFER_SAGE
 	dn 13, 13, 13, 13 ; INFER2

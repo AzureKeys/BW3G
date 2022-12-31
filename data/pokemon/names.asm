@@ -251,7 +251,7 @@ PokemonNames::
 	db "ZWEILOUS@@"
 	db "HYDREIGON@"
 	db "GENESECT@@"
+	db "G.PROJECT@"
 	db "EGG@@@@@@@"
-	db "?????@@@@@"
 	db "?????@@@@@"
 	db "?????@@@@@"

@@ -257,6 +257,6 @@ PokemonCries::
 	mon_cry CRY_VULPIX,     -$0ee,  $090 ; ZWEILOUS
 	mon_cry CRY_HYDREIGON,   $000,  $0f4 ; HYDREIGON
 	mon_cry CRY_LAPRAS,      $102,  $0e0 ; GENESECT
-	mon_cry CRY_NIDORAN_M,      0,     0 ; 253
+	mon_cry CRY_LAPRAS,      $102,  $0e0 ; GENESIS
 	mon_cry CRY_NIDORAN_M,      0,     0 ; 254
 	mon_cry CRY_NIDORAN_M,      0,     0 ; 255

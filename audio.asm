@@ -182,6 +182,7 @@ SECTION "New Songs 3", ROMX
 INCLUDE "audio/music/lookgentleman.asm"
 INCLUDE "audio/music/lookpokefan.asm"
 INCLUDE "audio/music/lookworker.asm"
+INCLUDE "audio/music/ghetsisbattle.asm"
 
 SECTION "Sound Effects", ROMX
 
