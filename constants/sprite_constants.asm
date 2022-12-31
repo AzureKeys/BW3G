@@ -117,6 +117,7 @@
 	const SPRITE_GRIMSLEY ; 71
 	const SPRITE_ELESA ; 72
 	const SPRITE_COLRESS ; 73
+	const SPRITE_GENESIS ; 74
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

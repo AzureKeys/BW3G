@@ -1,13 +1,13 @@
 LoadSpecialMapObjectPalette:
 	ld a, [wMapTileset]
 	cp TILESET_BRIDGE
-	jr z, .bridge
+	jp z, .bridge
 	cp TILESET_VILLAGE_BRIDGE
-	jr z, .bridge
+	jp z, .bridge
 	cp TILESET_ELITE_FOUR_ROOM
 	jr z, .elite_four_room
 	cp TILESET_OPELUCID
-	jr z, .opelucid
+	jp z, .opelucid
 	cp TILESET_TRADITIONAL_HOUSE
 	jr z, .traditional_house
 	cp TILESET_TOWER
@@ -16,8 +16,18 @@ LoadSpecialMapObjectPalette:
 	jr z, .pkmn_league
 	cp TILESET_NIMBASA
 	jr z, .nimbasa
+	cp TILESET_CHAMPIONS_ROOM
+	jr z, .champions_room
 	jp .do_nothing
 
+.champions_room
+	ld a, [wMapGroup]
+	cp 26 ; mapgroup_PkmnLeague
+	jp nz, .do_nothing
+	call LoadDragonspiralRoofObPalette
+	scf
+	ret
+	
 .nimbasa
 	ld a, [wMapGroup]
 	cp 25 ; NimbasaOuter

@@ -121,3 +121,4 @@ OverworldSprites:
 	overworld_sprite GrimsleySpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite ElesaSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite ColressSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite GenesisSpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED

@@ -28,6 +28,7 @@ MarshalSpriteGFX::             INCBIN "gfx/sprites/marshal.2bpp"
 GrimsleySpriteGFX::            INCBIN "gfx/sprites/grimsley.2bpp"
 ElesaSpriteGFX::               INCBIN "gfx/sprites/elesa.2bpp"
 ColressSpriteGFX::             INCBIN "gfx/sprites/colress.2bpp"
+GenesisSpriteGFX::             INCBIN "gfx/sprites/genesis.2bpp"
 
 
 SECTION "Sprites 2", ROMX
