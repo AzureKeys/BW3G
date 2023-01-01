@@ -86,6 +86,7 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; grimsley
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; elesa
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; colress
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; juniper
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; bianca
 	db MUSIC_ROCKET_ENCOUNTER      ; giallo
 	db MUSIC_ROCKET_ENCOUNTER      ; bronius

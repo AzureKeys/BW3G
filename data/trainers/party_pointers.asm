@@ -85,6 +85,7 @@ TrainerGroups:
 	dba GrimsleyGroup
 	dba ElesaGroup
 	dba ColressGroup
+	dba JuniperGroup
 	dba BiancaGroup
 	dba GialloGroup
 	dba BroniusGroup

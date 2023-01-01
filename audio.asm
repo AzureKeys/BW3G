@@ -183,6 +183,7 @@ INCLUDE "audio/music/lookgentleman.asm"
 INCLUDE "audio/music/lookpokefan.asm"
 INCLUDE "audio/music/lookworker.asm"
 INCLUDE "audio/music/ghetsisbattle.asm"
+INCLUDE "audio/music/unovachampion.asm"
 
 SECTION "Sound Effects", ROMX
 

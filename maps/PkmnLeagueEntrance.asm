@@ -17,11 +17,18 @@ PkmnLeagueEntrance_MapScripts:
 	
 .PrepareEliteFour:
 	setmapscene PKMN_LEAGUE_MAIN, SCENE_ELITE_FOUR_ROOM_ENTER
+	setmapscene HALL_OF_FAME, SCENE_DEFAULT
+	clearevent EVENT_BEAT_CHAMPION
+	checkmapscene CHAMPIONS_ROOM_ENTRANCE
+	ifequal SCENE_DEFAULT, .ClearEliteFour
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iffalse .done
+.ClearEliteFour
 	clearevent EVENT_BEAT_ELITE_FOUR_MARSHAL
 	clearevent EVENT_BEAT_ELITE_FOUR_GRIMSLEY
 	clearevent EVENT_BEAT_ELITE_FOUR_ELESA
 	clearevent EVENT_BEAT_ELITE_FOUR_COLRESS
-	clearevent EVENT_BEAT_CHAMPION
+.done
 	return
 	
 PkmnLeagueInferScript1:

@@ -85,6 +85,7 @@ TrainerPicPointers::
 	dba GrimsleyPic
 	dba ElesaPic
 	dba ColressPic
+	dba JuniperPic
 	dba BiancaPic
 	dba GialloPic
 	dba BroniusPic

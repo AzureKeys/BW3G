@@ -86,4 +86,5 @@ MapScenes::
 	scene_var COLRESSS_ROOM,                               wColresssRoomSceneID
 	scene_var CHAMPIONS_ROOM_ENTRANCE,                     wChampionsRoomEntranceSceneID
 	scene_var CHAMPIONS_ROOM,                              wChampionsRoomSceneID
+	scene_var HALL_OF_FAME,                                wHallOfFameSceneID
 	db -1

@@ -317,5 +317,9 @@ INCLUDE "maps/GrimsleysRoom.asm"
 INCLUDE "maps/MarshalsRoom.asm"
 INCLUDE "maps/ElesasRoom.asm"
 INCLUDE "maps/ColresssRoom.asm"
+
+SECTION "Map Scripts 16", ROMX
+
 INCLUDE "maps/ChampionsRoomEntrance.asm"
 INCLUDE "maps/ChampionsRoom.asm"
+INCLUDE "maps/HallOfFame.asm"

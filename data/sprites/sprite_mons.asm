@@ -7,3 +7,4 @@ SpriteMons:
 	db FLAAFFY
 	db GENESECT
 	db TRUBBISH
+	db METAGROSS

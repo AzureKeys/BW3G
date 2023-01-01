@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const HALLOFFAME_LANCE
+	const HALLOFFAME_JUNIPER
 
 HallOfFame_MapScripts:
 	db 2 ; scene scripts
@@ -16,36 +16,26 @@ HallOfFame_MapScripts:
 	end
 
 .EnterHallOfFameScript:
-	follow HALLOFFAME_LANCE, PLAYER
-	applymovement HALLOFFAME_LANCE, HallOfFame_WalkUpWithLance
+	follow HALLOFFAME_JUNIPER, PLAYER
+	applymovement HALLOFFAME_JUNIPER, HallOfFame_WalkUpWithJuniper
 	stopfollow
 	turnobject PLAYER, RIGHT
 	opentext
-	writetext HallOfFame_LanceText
+	writetext HallOfFame_JuniperText
 	waitbutton
 	closetext
-	turnobject HALLOFFAME_LANCE, UP
+	turnobject HALLOFFAME_JUNIPER, UP
 	applymovement PLAYER, HallOfFame_SlowlyApproachMachine
 	setscene SCENE_FINISHED
 	pause 15
 	writebyte HEALMACHINE_HALL_OF_FAME
 	special HealMachineAnim
-	setevent EVENT_BEAT_ELITE_FOUR
-	setevent EVENT_TELEPORT_GUY
-	setevent EVENT_RIVAL_SPROUT_TOWER
-	clearevent EVENT_RED_IN_MT_SILVER
-	setevent EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME
-	clearevent EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME
-	setmapscene SPROUT_TOWER_3F, SCENE_FINISHED
+	setevent EVENT_BEAT_POKEMON_LEAGUE
 	special HealParty
-	checkevent EVENT_GOT_SS_TICKET_FROM_ELM
-	iftrue .SkipPhoneCall
-	specialphonecall SPECIALCALL_SSTICKET
-.SkipPhoneCall:
 	halloffame
 	end
 
-HallOfFame_WalkUpWithLance:
+HallOfFame_WalkUpWithJuniper:
 	step UP
 	step UP
 	step UP
@@ -62,62 +52,66 @@ HallOfFame_SlowlyApproachMachine:
 	slow_step UP
 	step_end
 
-HallOfFame_LanceText:
-	text "LANCE: It's been a"
-	line "long time since I"
-	cont "last came here."
+HallOfFame_JuniperText:
+	text "JUNIPER: This room"
+	line "is the HALL OF"
+	cont "FAME."
 
-	para "This is where we"
-	line "honor the LEAGUE"
+	para "It exists to"
+	line "commemorate the"
 
-	para "CHAMPIONS for all"
-	line "eternity."
+	para "trainers and #-"
+	line "MON who have"
 
-	para "Their courageous"
-	line "#MON are also"
-	cont "inducted."
+	para "demonstrated their"
+	line "stellar strength"
 
-	para "Here today, we"
-	line "witnessed the rise"
+	para "and kindness of"
+	line "heart."
 
-	para "of a new LEAGUE"
-	line "CHAMPION--a"
+	para "<PLAY_G>, with your"
+	line "skill and persis-"
+	cont "tence, you have"
 
-	para "trainer who feels"
-	line "compassion for,"
+	para "earned your place"
+	line "in this HALL OF"
+	cont "FAME."
 
-	para "and trust toward,"
-	line "all #MON."
+	para "Your name, the"
+	line "account of your"
 
-	para "A trainer who"
-	line "succeeded through"
+	para "journey, and the"
+	line "history of your"
 
-	para "perseverance and"
-	line "determination."
+	para "battles will all"
+	line "be recorded here."
 
-	para "The new LEAGUE"
-	line "CHAMPION who has"
+	para "I hope all of this"
+	line "becomes a support"
 
-	para "all the makings"
-	line "of greatness!"
+	para "to you and helps"
+	line "you grow stronger."
 
-	para "<PLAY_G>, allow me"
-	line "to register you"
+	para "Now, <PLAY_G>, you"
+	line "and the #MON"
 
-	para "and your partners"
-	line "as CHAMPIONS!"
+	para "who fought by your"
+	line "side will be"
+	
+	para "recorded in this"
+	line "machine, as"
+	cont "CHAMPIONS!"
 	done
 
 HallOfFame_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
-	warp_event  4, 13, LANCES_ROOM, 3
-	warp_event  5, 13, LANCES_ROOM, 4
+	db 1 ; warp events
+	warp_event  4, 13, CHAMPIONS_ROOM, 2
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 
 	db 1 ; object events
-	object_event  4, 12, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  4, 12, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1

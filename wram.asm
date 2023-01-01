@@ -2625,8 +2625,9 @@ wElesasRoomSceneID::                              db ; d9c0
 wColresssRoomSceneID::                            db ; d9c0
 wChampionsRoomEntranceSceneID::                   db ; d9c0
 wChampionsRoomSceneID::                           db ; d9c0
+wHallOfFameSceneID::                              db ; d9c0
 
-	ds 48
+	ds 47
 	
 wBattleHouseOpponent:: db
 wHiddenGrottoTier:: db

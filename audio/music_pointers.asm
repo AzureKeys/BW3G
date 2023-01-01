@@ -141,3 +141,4 @@ Music:
 	dba Music_LookPokefan
 	dba Music_LookWorker
 	dba Music_BattleGhetsis
+	dba Music_LastPokemon

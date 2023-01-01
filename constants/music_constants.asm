@@ -142,6 +142,7 @@
 	const MUSIC_POKEFAN_ENCOUNTER
 	const MUSIC_WORKER_ENCOUNTER
 	const MUSIC_GHETSIS_BATTLE
+	const MUSIC_UNOVA_CHAMPION_BATTLE
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $fc

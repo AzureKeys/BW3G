@@ -14,6 +14,7 @@ GymLeaders:
 	db MARSHAL
 	db GRIMSLEY
 	db COLRESS
+	db JUNIPER
 ; fallthrough
 KantoGymLeaders:
 	db -1

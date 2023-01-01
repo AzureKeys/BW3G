@@ -84,6 +84,7 @@ TrainerClassDVs:
 	dn 15, 15, 15, 15 ; GRIMSLEY
 	dn 15, 15, 15, 15 ; ELESA
 	dn 15, 15, 15, 15 ; COLRESS
+	dn 15, 15, 15, 15 ; JUNIPER
 	dn 14, 14, 14, 14 ; BIANCA
 	dn 11, 11, 11, 11 ; GIALLO
 	dn 12, 12, 12, 12 ; BRONIUS

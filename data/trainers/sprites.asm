@@ -83,6 +83,7 @@ BTTrainerClassSprites:
 	db SPRITE_GRIMSLEY      ; grimsley
 	db SPRITE_ELESA         ; elesa
 	db SPRITE_COLRESS       ; colress
+	db SPRITE_JUNIPER       ; juniper
 	db SPRITE_BIANCA        ; bianca
 	db SPRITE_PZMA_SAGE     ; giallo
 	db SPRITE_PZMA_SAGE     ; bronius

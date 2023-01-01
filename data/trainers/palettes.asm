@@ -90,6 +90,7 @@ INCBIN "gfx/trainers/marshal.gbcpal", middle_colors
 INCBIN "gfx/trainers/grimsley.gbcpal", middle_colors
 INCBIN "gfx/trainers/elesa.gbcpal", middle_colors
 INCBIN "gfx/trainers/colress.gbcpal", middle_colors
+INCBIN "gfx/trainers/juniper.gbcpal", middle_colors
 INCBIN "gfx/trainers/bianca.gbcpal", middle_colors
 INCBIN "gfx/trainers/giallo.gbcpal", middle_colors
 INCBIN "gfx/trainers/bronius.gbcpal", middle_colors

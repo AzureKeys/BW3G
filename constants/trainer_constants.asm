@@ -605,6 +605,11 @@ CHRIS EQU __enum__
 	trainerclass COLRESS
 	const COLRESS1
 	
+	trainerclass JUNIPER
+	const JUNIPER_SNIVY
+	const JUNIPER_TEPIG
+	const JUNIPER_OSHAWOTT
+	
 	trainerclass BIANCA
 	const BIANCA1
 	

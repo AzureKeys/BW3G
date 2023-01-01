@@ -78,10 +78,9 @@ PlayBattleMusic:
 	jr .done
 
 .trainermusic
-	; Use this to set the Champion music when I add that trainer class
-	; ld de, MUSIC_CHAMPION_BATTLE
-	; cp CHAMPION
-	; jr z, .done
+	ld de, MUSIC_UNOVA_CHAMPION_BATTLE
+	cp JUNIPER
+	jr z, .done
 	
 	ld de, MUSIC_ELITE_FOUR
 	cp GRIMSLEY

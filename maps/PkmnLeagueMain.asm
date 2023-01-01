@@ -27,12 +27,9 @@ PkmnLeagueMain_MapScripts:
 	setmapscene COLRESSS_ROOM, SCENE_ELITE_FOUR_ROOM_ENTER
 	
 	checkscene 
-	ifequal SCENE_ELITE_FOUR_ROOM_ENTER, .Done
+	ifequal SCENE_ELITE_FOUR_ROOM_ENTER, .CheckMarshal
 	changeblock 12, 14, $b9
 	changeblock 14, 14, $ba
-	checkscene 
-	ifnotequal SCENE_ELITE_FOUR_ROOM_FINISHED, .CheckMarshal
-	changeblock 12, 12, $ee
 .CheckMarshal
 	checkevent EVENT_BEAT_ELITE_FOUR_MARSHAL
 	iffalse .CheckElesa
@@ -47,8 +44,17 @@ PkmnLeagueMain_MapScripts:
 	changeblock 10,  8, $c8
 .CheckColress
 	checkevent EVENT_BEAT_ELITE_FOUR_COLRESS
-	iffalse .Done
+	iffalse .CheckFinished
 	changeblock 10, 12, $c8
+.CheckFinished
+	checkscene 
+	ifequal SCENE_ELITE_FOUR_ROOM_FINISHED, .Finished
+	checkmapscene CHAMPIONS_ROOM_ENTRANCE
+	ifequal SCENE_DEFAULT, .Done
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .Done
+.Finished
+	changeblock 12, 12, $ee
 .Done
 	return
 	
@@ -59,8 +65,16 @@ PkmnLeagueMain_MapScripts:
 	changeblock 12, 14, $b9
 	changeblock 14, 14, $ba
 	refreshscreen
-	setscene SCENE_ELITE_FOUR_ROOM_NOTHING
 	waitsfx
+	checkmapscene CHAMPIONS_ROOM_ENTRANCE
+	ifequal SCENE_DEFAULT, .nothing
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .nothing
+	setscene SCENE_ELITE_FOUR_ROOM_FINISHED
+	end
+	
+.nothing
+	setscene SCENE_ELITE_FOUR_ROOM_NOTHING
 	end
 	
 PkmnLeagueStatueScript:

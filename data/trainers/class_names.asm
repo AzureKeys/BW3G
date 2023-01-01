@@ -83,6 +83,7 @@ TrainerClassNames::
 	db "ELITE 4@"
 	db "ELITE 4@"
 	db "ELITE 4@"
+	db "CHAMPION@"
 	db "<PKMN> PROF.@"
 	db "PZMA SAGE@"
 	db "PZMA SAGE@"

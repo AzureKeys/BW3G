@@ -129,6 +129,7 @@ SPRITE_POKEMON EQU const_value
 	const SPRITE_FLAAFFY ; a4
 	const SPRITE_GENESECT ; a5
 	const SPRITE_TRUBBISH ; a6
+	const SPRITE_METAGROSS ; a7
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)
 	const_def $e0
