@@ -42,14 +42,17 @@ DragonspiralTowerRoofScript:
 	pause 15
 	playsound SFX_SHINE
 	waitsfx
+	pause 15
 	playsound SFX_SHINE
 	waitsfx
-	pause 15
+	pause 30
 	playsound SFX_BOOT_PC
+	special FadeOutPalettes
 	appear DRAGONSPIRALTOWERROOF_GENESECT_2
 	disappear DRAGONSPIRALTOWERROOF_GENESECT_1
 	waitsfx
-	pause 15
+	special FadeInPalettes
+	pause 30
 	opentext
 	writetext DragonspiralTowerRoofCryText
 	cry GENESECT
