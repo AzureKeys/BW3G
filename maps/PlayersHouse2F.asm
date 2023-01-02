@@ -51,6 +51,8 @@ PlayersHousePosterScript:
 	describedecoration DECODESC_POSTER
 
 PlayersHouseRadioScript:
+	; halloffame
+	; end
 	; opentext
 	; verbosegiveitem POTION
 	; closetext

@@ -103,6 +103,41 @@
 	const US_COORDINATION
 	const TEXT_TRANSLATION
 	const PAAD_TESTING
+	const A_GAME_BY
+	const AZURE_KEYS
+	const CUSTOM_SPRITES
+	const CUSTOM_TILES
+	const CUSTOM_MUSIC
+	const CUSTOM_CRIES
+	const PROGRAMMING_HELP
+	const EXTRA_SPECIAL_THANKS
+	const MADE_POSSIBLE_BY
+	const ORIGINAL_CRYSTAL_STAFF
+	const JACE
+	const RANGI
+	const INTERNET_GOBLIN
+	const SCARLAX
+	const BLOODLESS
+	const SHADOWONE333
+	const EEVEEEE
+	const SOLO993
+	const PIA_CARROT
+	const LUNA
+	const BEES
+	const MMMMM
+	const TRITE_HEXAGON
+	const REGEN
+	const FROGGEST_SPIRIT
+	const CELADONK
+	const SOUR_APPLE
+	const AX6
+	const FIQ
+	const DARSH
+	const POLISHED_STAFF
+	const PRET
+	const POKECRYSTAL
+	const MRS_AZURE_KEYS
+	const DOGS
 
 ; CreditsScript indexes (see data/credits_script.asm)
 	const_def -7

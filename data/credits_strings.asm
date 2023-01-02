@@ -103,6 +103,41 @@ CreditsStrings:
 	dw .UsCoordination
 	dw .TextTranslation
 	dw .PaadTesting
+	dw .AGameBy
+	dw .AzureKeys
+	dw .CustomSprites
+	dw .CustomTiles
+	dw .CustomMusic
+	dw .CustomCries
+	dw .ProgrammingHelp
+	dw .ExtraSpecialThanks
+	dw .MadePossibleBy
+	dw .OriginalCrystalStaff
+	dw .Jace
+	dw .Rangi
+	dw .InternetGoblin
+	dw .Scarlax
+	dw .Bloodless
+	dw .ShadowOne333
+	dw .EeveeEe
+	dw .Solo993
+	dw .PiaCarrot
+	dw .Luna
+	dw .Bees
+	dw .Mmmmm
+	dw .TriteHexagon
+	dw .Regen
+	dw .FroggestSpirit
+	dw .Celadonk
+	dw .SourApple
+	dw .Ax6
+	dw .Fiq
+	dw .Darsh
+	dw .PolishedStaff
+	dw .Pret
+	dw .Pokecrystal
+	dw .MrsAzureKeys
+	dw .Dogs
 
 .SatoshiTajiri:       db "   SATOSHI TAJIRI@"         ; "たじり　さとし@"
 .JunichiMasuda:       db "   JUNICHI MASUDA@"         ; "ますだ　じゅんいち@"
@@ -179,8 +214,8 @@ CreditsStrings:
 .KazuyoshiOsawa:      db "  KAZUYOSHI OSAWA@"
 .KimikoNakamichi:     db "  KIMIKO NAKAMICHI@"
 .Staff:               db "      #MON"                 ; "ポケットモンスター"
-                    next "  CRYSTAL VERSION"          ; "　　クりスタル　バージョン"
-                    next "       STAFF@"              ; "　　　　スタッフ@"
+                    next "  BLACK & WHITE 3:"          ; "　　クりスタル　バージョン"
+                    next "      GENESIS@"              ; "　　　　スタッフ@"
 .Director:            db "      DIRECTOR@"            ; "エグゼクティブ　ディレクター@"
 .CoDirector:          db "    CO-DIRECTOR@"           ; "ディレクター@"
 .Programmers:         db "    PROGRAMMERS@"           ; "プログラム@"
@@ -210,6 +245,46 @@ CreditsStrings:
 .UsCoordination:      db "  US COORDINATION@"
 .TextTranslation:     db "  TEXT TRANSLATION@"
 .PaadTesting:         db "    PAAD TESTING@"
+.AGameBy:             db "     A GAME BY@"
+.AzureKeys:           db "     AZURE KEYS@"
+.CustomSprites:       db "   CUSTOM SPRITES@"
+.CustomTiles:         db "    CUSTOM TILES@"
+.CustomMusic:         db "    CUSTOM MUSIC@"
+.CustomCries:         db "    CUSTOM CRIES@"
+.ProgrammingHelp:     db "  PROGRAMMING HELP@"
+.ExtraSpecialThanks:  db "EXTRA SPECIAL THANKS@"
+.MadePossibleBy:      db " THIS GAME WAS MADE"
+                    next "    POSSIBLE BY@"
+.OriginalCrystalStaff:db "  ORIGINAL #MON"
+                    next "  CRYSTAL VERSION"
+					next "       STAFF@"
+.Jace:                db "        JACE@"
+.Rangi:               db "       RANGI@"
+.InternetGoblin:      db "  INTERNET GOBLIN@"
+.Scarlax:             db "      SCARLAX@"
+.Bloodless:           db "     BLOODLESS@"
+.ShadowOne333:        db "    SHADOWONE333@"
+.EeveeEe:             db "      EEVEEEE@"
+.Solo993:             db "      SOLO993@"
+.PiaCarrot:           db "     PIA CARROT@"
+.Luna:                db "        LUNA@"
+.Bees:                db "        BEES@"
+.Mmmmm:               db " MMMMMMMMMMMMMMMMM@"
+.TriteHexagon:        db "   TRITE HEXAGON@"
+.Regen:               db "       REGEN@"
+.FroggestSpirit:      db "  FROGGEST SPIRIT@"
+.Celadonk:            db "      CELADONK@"
+.SourApple:           db "     SOUR APPLE@"
+.Ax6:                 db "        AX6@"
+.Fiq:                 db "        FIQ@"
+.Darsh:               db "       DARSH@"
+.PolishedStaff:       db "  POLISHED CRYSTAL"
+                    next "       STAFF@"
+.Pret:                db "        PRET@"
+.Pokecrystal:         db "    POKECRYSTAL@"
+.MrsAzureKeys:        db "   MRS AZURE KEYS@"
+.Dogs:                db " CALAVERA, FORTUNA,"
+                    next "     & GHIDORAH@"
 
 .Copyright:
 	;    (C) 1  9  9  5 - 2  0  0  1     N  i  n  t  e  n  d  o
