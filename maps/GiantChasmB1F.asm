@@ -175,25 +175,22 @@ AceTrainerMGiantChasmAfterText:
 	done
 	
 HikerGiantChasmSeenText:
-	text "I'll do anything"
-	line "to get my hands on"
-	cont "rare #MON!"
+	text "Hi-ho!"
 	done
 
 HikerGiantChasmBeatenText:
-	text "Oooh, your #MON"
-	line "are so appealing."
+	text "Hi-ho…"
 	done
 
 HikerGiantChasmAfterText:
-	text "If a #MON has"
-	line "different colors"
+	text "Once you've"
+	line "reached the top of"
 
-	para "from usual, it's"
-	line "more valuable."
+	para "a peak, there's no"
+	line "place to go but"
 
-	para "What? You mean"
-	line "that's not true?"
+	para "down. Life is full"
+	line "of ups and downs."
 	done
 	
 BackpackerMGiantChasmSeenText:

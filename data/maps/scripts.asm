@@ -39,9 +39,6 @@ INCLUDE "maps/R23Gate.asm"
 INCLUDE "maps/ReversalMountain1F.asm"
 INCLUDE "maps/ReversalMountainB1F.asm"
 INCLUDE "maps/LentimasOutskirts.asm"
-INCLUDE "maps/LentimasTown.asm"
-INCLUDE "maps/StrangeHouse1F.asm"
-INCLUDE "maps/StrangeHouseB1F.asm"
 
 SECTION "Map Scripts 4", ROMX
 
@@ -320,6 +317,9 @@ INCLUDE "maps/ColresssRoom.asm"
 
 SECTION "Map Scripts 16", ROMX
 
+INCLUDE "maps/LentimasTown.asm"
+INCLUDE "maps/StrangeHouse1F.asm"
+INCLUDE "maps/StrangeHouseB1F.asm"
 INCLUDE "maps/ChampionsRoomEntrance.asm"
 INCLUDE "maps/ChampionsRoom.asm"
 INCLUDE "maps/HallOfFame.asm"

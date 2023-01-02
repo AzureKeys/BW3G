@@ -248,21 +248,22 @@ HikerR18AfterText:
 	done
 	
 BlackbeltR18SeenText:
-	text "Be prepared for"
-	line "anything!"
+	text "I just won a"
+	line "battle back there,"
 
-	para "Let me see if your"
-	line "#MON have been"
-	cont "raised properly!"
+	para "so I'm feeling"
+	line "good!"
 	done
 
 BlackbeltR18BeatenText:
-	text "Oh, I lost that!"
+	text "Oh whatever! I'm"
+	line "in a terrible mood"
+	cont "now!"
 	done
 
 BlackbeltR18AfterText:
-	text "I'll have to train"
-	line "some more."
+	text "I think I'm gonna"
+	line "go to bed…"
 	done
 	
 BattleGirlR18SeenText:

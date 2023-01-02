@@ -379,7 +379,7 @@ Continue:
 	ret
 
 .SpawnAfterE4:
-	ld a, SPAWN_HUMILAU
+	ld a, SPAWN_HOME
 	ld [wDefaultSpawnpoint], a
 	call PostCreditsSpawn
 	jp FinishContinueFunction

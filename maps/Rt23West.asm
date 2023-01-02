@@ -372,27 +372,62 @@ R23WestBoulderFellText:
 	done
 	
 AceTrainerM2R23SeenText:
-	text "..."
+	text "I keep a tally of"
+	line "all of the times"
+	
+	para "that I have won or"
+	line "lost up until"
+	
+	para "today. If I battle"
+	line "you, I wonder"
+	
+	para "which number will"
+	line "be increased."
 	done
 
 AceTrainerM2R23BeatenText:
-	text "..."
+	text "So my number of"
+	line "losses went up…"
 	done
 
 AceTrainerM2R23AfterText:
-	text "..."
+	text "I'm not interested"
+	line "in anything but"
+	cont "#MON!"
+	
+	para "It may not be"
+	line "balanced, but I'm"
+	
+	para "satisfied living"
+	line "like this!"
 	done
 	
 AceTrainerF2R23SeenText:
-	text "..."
+	text "This is the"
+	line "concerto I perform"
+	
+	para "with my most"
+	line "beloved #MON!"
 	done
 
 AceTrainerF2R23BeatenText:
-	text "..."
+	text "Your side is much"
+	line "more in harmony!"
 	done
 
 AceTrainerF2R23AfterText:
-	text "..."
+	text "I have been"
+	line "together with"
+	
+	para "#MON since I"
+	line "was born, and I've"
+	
+	para "battled my whole"
+	line "life. I hope we're"
+	
+	para "together even at"
+	line "the end of all"
+	cont "things."
 	done
 	
 BackpackerMR23SeenText:
@@ -420,27 +455,56 @@ BackpackerFR23AfterText:
 	done
 	
 PkmnRangerMR23SeenText:
-	text "..."
+	text "I've been waiting"
+	line "for this! Waiting"
+	
+	para "for this very"
+	line "moment!"
 	done
 
 PkmnRangerMR23BeatenText:
-	text "..."
+	text "I had been waiting"
+	line "for such a strong"
+	
+	para "trainer as your-"
+	line "self!"
 	done
 
 PkmnRangerMR23AfterText:
-	text "..."
+	text "I've been lying in"
+	line "wait for ages!"
+	
+	para "An AMOONGUSS"
+	line "couldn't have"
+	
+	para "pulled off a"
+	line "better ambush…"
+	cont "right?"
 	done
 	
 PkmnRangerFR23SeenText:
-	text "..."
+	text "Oh trainer,"
+	line "embarking on the"
+	
+	para "path to VICTORY"
+	line "ROAD! Won't you"
+	
+	para "show me your true"
+	line "power?!"
 	done
 
 PkmnRangerFR23BeatenText:
-	text "..."
+	text "You didn't have to"
+	line "show me quite that"
+	cont "much power…"
 	done
 
 PkmnRangerFR23AfterText:
-	text "..."
+	text "Beyond the stairs"
+	line "to the north,"
+	
+	para "VICTORY ROAD lies"
+	line "before you…"
 	done
 	
 VeteranMR23SeenText:
@@ -456,15 +520,25 @@ VeteranMR23AfterText:
 	done
 	
 BattleGirlR23SeenText:
-	text "..."
+	text "Your #MON must"
+	line "be really some-"
+	
+	para "thing if you're"
+	line "here on ROUTE 23!"
 	done
 
 BattleGirlR23BeatenText:
-	text "..."
+	text "Hahaha! #MON"
+	line "are so much fun!"
 	done
 
 BattleGirlR23AfterText:
-	text "..."
+	text "It's lots of fun"
+	line "here, cause there"
+	
+	para "are only awesome"
+	line "#MON. I'm so"
+	cont "pumped!"
 	done
 
 Rt23West_MapEvents:
