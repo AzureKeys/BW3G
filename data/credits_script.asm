@@ -109,8 +109,6 @@ CreditsScript:
 	db CREDITS_CLEAR
 
 	db CREDITS_WAIT, 1
-	
-	db CREDITS_SCENE, 0 ; Pichu
 
 	db ORIGINAL_CRYSTAL_STAFF, 1
 
@@ -174,7 +172,6 @@ CreditsScript:
 	db CREDITS_WAIT, 1
 
 ; Update the banner.
-	db CREDITS_SCENE, 1 ; Smoochum
 
 	db      GRAPHICS_DESIGN, 0
 	db     HIRONOBU_YOSHIDA, 1
@@ -242,7 +239,6 @@ CreditsScript:
 	db CREDITS_WAIT, 1
 
 ; Update the banner.
-	db CREDITS_SCENE, 2 ; Ditto
 
 	db        SCRIPT_DESIGN, 1
 	db         TETSUJI_OOTA, 2
@@ -286,7 +282,6 @@ CreditsScript:
 	db CREDITS_WAIT, 1
 
 ; Update the banner.
-	db CREDITS_SCENE, 3 ; Igglybuff
 
 	db     US_VERSION_STAFF, 2
 

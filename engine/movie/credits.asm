@@ -55,12 +55,12 @@ Credits::
 	xor a
 	ld [wCreditsBorderMon], a
 
-	call Credits_LoadBorderGFX
-	ld e, l
-	ld d, h
-	ld hl, vTiles2
-	lb bc, BANK(CreditsMonsGFX), 16
-	call Request2bpp
+	; call Credits_LoadBorderGFX
+	; ld e, l
+	; ld d, h
+	; ld hl, vTiles2
+	; lb bc, BANK(CreditsMonsGFX), 16
+	; call Request2bpp
 
 	call ConstructCreditsTilemap
 	xor a
@@ -210,9 +210,13 @@ Credits_LYOverride:
 	dec a
 	dec a
 	ld [wCreditsLYOverride], a
-	ld hl, wLYOverrides + $1f
+	ld hl, wLYOverrides + $07
 	call .Fill
-	ld hl, wLYOverrides + $87
+	ld hl, wLYOverrides + $0f
+	call .Fill
+	ld hl, wLYOverrides + $77
+	call .Fill
+	ld hl, wLYOverrides + $7f
 	call .Fill
 	jp Credits_Next
 
@@ -244,7 +248,7 @@ ParseCredits:
 ; starting from line 5.
 	xor a
 	ldh [hBGMapMode], a
-	hlcoord 0, 5
+	hlcoord 0, 3
 	ld bc, 20 * 12
 	ld a, " "
 	call ByteFill
@@ -293,15 +297,15 @@ ParseCredits:
 
 ; The rest start from line 6.
 
-	hlcoord 0, 6
+	hlcoord 0, 4
 	jr .print
 
 .copyright
-	hlcoord 2, 6
+	hlcoord 2, 4
 	jr .print
 
 .staff
-	hlcoord 0, 6
+	hlcoord 0, 4
 
 .print
 ; Print strings spaced every two lines.
@@ -407,36 +411,49 @@ ConstructCreditsTilemap:
 	call ByteFill
 
 	ld a, $7f
-	hlcoord 0, 4
-	ld bc, (SCREEN_HEIGHT - 4) * SCREEN_WIDTH
+	hlcoord 0, 1
+	ld bc, (SCREEN_HEIGHT - 2) * SCREEN_WIDTH
 	call ByteFill
 
-	hlcoord 0, 4
-	ld a, $24
-	call DrawCreditsBorder
-
-	hlcoord 0, 17
+	hlcoord 0, 1
 	ld a, $20
 	call DrawCreditsBorder
 
+	hlcoord 0, 2
+	ld a, $24
+	call DrawCreditsBorder
+
+	hlcoord 0, 15
+	ld a, $20
+	call DrawCreditsBorder
+
+	hlcoord 0, 16
+	ld a, $24
+	call DrawCreditsBorder
+
 	hlcoord 0, 0, wAttrMap
-	ld bc, 4 * SCREEN_WIDTH
+	ld bc, SCREEN_WIDTH
 	xor a
 	call ByteFill
 
-	hlcoord 0, 4, wAttrMap
-	ld bc, SCREEN_WIDTH
+	hlcoord 0, 1, wAttrMap
+	ld bc, 2 * SCREEN_WIDTH
 	ld a, $1
 	call ByteFill
 
-	hlcoord 0, 5, wAttrMap
+	hlcoord 0, 3, wAttrMap
 	ld bc, 12 * SCREEN_WIDTH
 	ld a, $2
 	call ByteFill
 
+	hlcoord 0, 15, wAttrMap
+	ld bc, 2 * SCREEN_WIDTH
+	ld a, $1
+	call ByteFill
+
 	hlcoord 0, 17, wAttrMap
 	ld bc, SCREEN_WIDTH
-	ld a, $1
+	xor a
 	call ByteFill
 
 	call WaitBGMap2
@@ -444,7 +461,7 @@ ConstructCreditsTilemap:
 	ldh [hBGMapMode], a
 	ldh [hBGMapAddress], a
 	hlcoord 0, 0
-	call .InitTopPortion
+	;call .InitTopPortion
 	call WaitBGMap2
 	ret
 
@@ -587,9 +604,9 @@ Credits_LoadBorderGFX:
 
 Credits_TheEnd:
 	ld a, $40
-	hlcoord 6, 9
+	hlcoord 6, 7
 	call .Load
-	hlcoord 6, 10
+	hlcoord 6, 8
 .Load:
 	ld c, 8
 .loop
