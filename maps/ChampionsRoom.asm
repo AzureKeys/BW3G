@@ -61,7 +61,7 @@ ChampionsRoom_MapScripts:
 	cry GENESIS_MON
 	waitsfx
 	writecode VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon GENESIS_MON, 75
+	loadwildmon GENESIS_MON, 70
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -146,6 +146,7 @@ ChampionsRoom_MapScripts:
 	jump StartChampionBattleScript
 	
 .JuniperFightScript:
+	appear CHAMPIONSROOM_JUNIPER
 	special FadeOutMusic
 	pause 15
 	applymovement PLAYER, ChampionsRoomGoAroundGenesectMovement
@@ -157,6 +158,7 @@ ChampionsRoom_MapScripts:
 	jump StartChampionBattleScript
 	
 .ChampionBattleScript:
+	appear CHAMPIONSROOM_JUNIPER
 	special FadeOutMusic
 	pause 15
 	applymovement PLAYER, ChampionsRoomPlayerApproachGenesisMovement

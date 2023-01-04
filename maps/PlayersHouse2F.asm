@@ -60,8 +60,6 @@ PlayersHouseRadioScript:
 	
 	; opentext
 	; givepoke HYDREIGON, 100, NO_ITEM
-	; givepoke HYDREIGON, 100, NO_ITEM
-	; givepoke HYDREIGON, 100, NO_ITEM
 	; closetext
 	; setflag ENGINE_ZEPHYRBADGE
 	; setflag ENGINE_HIVEBADGE
@@ -71,7 +69,7 @@ PlayersHouseRadioScript:
 	; setflag ENGINE_MINERALBADGE
 	; setflag ENGINE_GLACIERBADGE
 	; setflag ENGINE_RISINGBADGE
-	; setflag ENGINE_FLYPOINT_LACUNOSA
+	; setflag ENGINE_FLYPOINT_PKMN_LEAGUE
 	; end
 	
 	; writecode VAR_BATTLETYPE, BATTLETYPE_SUICUNE
@@ -180,7 +178,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, DRAGONSPIRAL_TOWER_ROOF, 1
+	;warp_event  7,  0, CHAMPIONS_ROOM_ENTRANCE, 1
 
 	db 0 ; coord events
 
