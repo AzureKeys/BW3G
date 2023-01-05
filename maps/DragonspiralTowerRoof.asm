@@ -49,6 +49,8 @@ DragonspiralTowerRoofScript:
 	playsound SFX_BOOT_PC
 	special FadeOutPalettes
 	appear DRAGONSPIRALTOWERROOF_GENESECT_2
+	pause 5
+	turnobject PLAYER, UP
 	disappear DRAGONSPIRALTOWERROOF_GENESECT_1
 	waitsfx
 	special FadeInPalettes

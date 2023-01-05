@@ -1080,3 +1080,8 @@ ENDM
 reloadmappartnotext: MACRO
 	db reloadmappartnotext_command
 ENDM
+
+	enum returnfromcredits_command ; $ac
+returnfromcredits: MACRO
+	db returnfromcredits_command
+ENDM

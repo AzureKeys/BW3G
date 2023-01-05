@@ -236,6 +236,7 @@ ScriptCommandTable:
 	dw Script_hiddengrotto               ; aa
 	dw Script_rematchgift                ; ab
 	dw Script_reloadmappartnotext        ; ac
+	dw Script_returnfromcredits          ; ad
 
 StartScript:
 	ld hl, wScriptFlags
@@ -2814,13 +2815,16 @@ Script_halloffame:
 	farcall HallOfFame
 	ld hl, wGameTimerPause
 	set GAMETIMERPAUSE_TIMER_PAUSED_F, [hl]
-	jr ReturnFromCredits
+	ret
 
 Script_credits:
 ; script command 0xa2
 
 	farcall RedCredits
-ReturnFromCredits:
+	; fallthrough
+	
+Script_returnfromcredits:
+; script command 0xad
 	call Script_endall
 	ld a, $3
 	call LoadMapStatus

@@ -1,20 +1,21 @@
 	const_def 2 ; object constants
-	const CHAMPIONSROOM_GENESIS
 	const CHAMPIONSROOM_JUNIPER
 	const CHAMPIONSROOM_SHADOW_1
 	const CHAMPIONSROOM_SHADOW_2
 	const CHAMPIONSROOM_SHADOW_3
-	const CHAMPIONSROOM_GENESECT_1
 	const CHAMPIONSROOM_GENESECT_2
-
+	const CHAMPIONSROOM_GENESECT_1
+	const CHAMPIONSROOM_GENESIS
+	
 ChampionsRoom_MapScripts:
-	db 3 ; scene scripts
+	db 4 ; scene scripts
 	scene_script .EnterGenesisFight ; SCENE_START_GENESIS_BATTLE
 	scene_script .EnterJuniperFight ; SCENE_START_JUNIPER_BATTLE
 	scene_script .EnterChampionBattle ; SCENE_START_CHAMPION_BATTLE
+	scene_script .StartPostCreditsScene ; SCENE_POST_CREDITS
 
 	db 1 ; callbacks
-	callback MAPCALLBACK_NEWMAP, .AppearJuniper
+	callback MAPCALLBACK_OBJECTS, .DisappearPlayer
 
 .EnterGenesisFight:
 	priorityjump .GenesisFightScript
@@ -27,16 +28,19 @@ ChampionsRoom_MapScripts:
 .EnterChampionBattle:
 	priorityjump .ChampionBattleScript
 	end
+
+.StartPostCreditsScene:
+	priorityjump .PostCreditsSceneScript
+	end
 	
-.AppearJuniper:
-	checkevent EVENT_BEAT_POKEMON_LEAGUE
-	iffalse .done
-	appear CHAMPIONSROOM_JUNIPER
-.done
+.DisappearPlayer:
+	checkscene
+	ifnotequal SCENE_POST_CREDITS, .finish
+	disappear PLAYER
+.finish
 	return
 	
 .GenesisFightScript:
-	special FadeOutMusic
 	pause 15
 	applymovement PLAYER, ChampionsRoomPlayerApproachGenesisMovement
 	pause 60
@@ -66,16 +70,20 @@ ChampionsRoom_MapScripts:
 	dontrestartmapmusic
 	reloadmapafterbattle
 	setevent EVENT_BEAT_GENESIS_PROJECT
-	writebyte GENESIS_MON
-	special PlaySlowCry
+	cry GENESIS_MON
 	opentext
 	writetext ChampionsRoomGenesisRoarText
 	buttonsound
+	waitsfx
 	writebyte GENESIS_MON
 	special PlaySlowCry
 	writetext ChampionsRoomGenesisRoarText
 	waitbutton
 	closetext
+	waitsfx
+	playsound SFX_SHUT_DOWN_PC
+	waitsfx
+	pause 60
 	moveobject CHAMPIONSROOM_JUNIPER, 7, 18
 	playsound SFX_ENTER_DOOR
 	appear CHAMPIONSROOM_JUNIPER
@@ -108,9 +116,12 @@ ChampionsRoom_MapScripts:
 	closetext
 	playsound SFX_BOOT_PC
 	special FadeOutPalettes
-	disappear CHAMPIONSROOM_GENESIS
 	appear CHAMPIONSROOM_GENESECT_1
+	turnobject PLAYER, DOWN
+	pause 5
+	disappear CHAMPIONSROOM_GENESIS
 	waitsfx
+	pause 15
 	special FadeInPalettes
 	opentext
 	writetext ChampionsRoomShadowsLeaveText
@@ -147,7 +158,6 @@ ChampionsRoom_MapScripts:
 	
 .JuniperFightScript:
 	appear CHAMPIONSROOM_JUNIPER
-	special FadeOutMusic
 	pause 15
 	applymovement PLAYER, ChampionsRoomGoAroundGenesectMovement
 	applymovement CHAMPIONSROOM_JUNIPER, ChampionsRoomJuniperApproachPlayerMovement
@@ -157,9 +167,31 @@ ChampionsRoom_MapScripts:
 	closetext
 	jump StartChampionBattleScript
 	
+.PostCreditsSceneScript:
+	pause 60
+	playsound SFX_BOOT_PC
+	appear CHAMPIONSROOM_GENESECT_2
+	turnobject CHAMPIONSROOM_GENESECT_2, DOWN
+	pause 5
+	disappear CHAMPIONSROOM_GENESECT_1
+	waitsfx
+	pause 60
+	cry GENESECT
+	waitsfx
+	pause 60
+	playsound SFX_WARP_TO
+	applymovement CHAMPIONSROOM_GENESECT_2, ChampionsRoomGenesectLeaveMovement
+	disappear CHAMPIONSROOM_GENESECT_2
+	waitsfx
+	pause 60
+	special FadeOutPalettes
+	pause 30
+	returnfromcredits
+	end
+	
 .ChampionBattleScript:
+	disappear CHAMPIONSROOM_GENESECT_1
 	appear CHAMPIONSROOM_JUNIPER
-	special FadeOutMusic
 	pause 15
 	applymovement PLAYER, ChampionsRoomPlayerApproachGenesisMovement
 	opentext
@@ -202,6 +234,7 @@ StartChampionBattleScript:
 	disappear CHAMPIONSROOM_JUNIPER
 	waitsfx
 	applymovement PLAYER, ChampionsRoomStepUpMovement
+	setmapscene HALL_OF_FAME, SCENE_DEFAULT
 	warpcheck
 	end
 	
@@ -305,6 +338,17 @@ ChampionsRoomGoAroundGenesectMovement:
 ChampionsRoomJuniperApproachPlayerMovement:
 	step DOWN
 	turn_head LEFT
+	step_end
+	
+ChampionsRoomGenesectLeaveMovement:
+	fix_facing
+	set_sliding
+	step UP
+	step UP
+	step UP
+	step UP
+	remove_fixed_facing
+	remove_sliding
 	step_end
 	
 ChampionsRoomGenesisWinText:
@@ -509,11 +553,11 @@ ChampionsRoom_MapEvents:
 	db 0 ; bg events
 
 	db 7 ; object events
-	object_event  7, 10, SPRITE_GENESIS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_GENESIS
 	object_event  7, 10, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_JUNIPER
 	object_event  7, 16, SPRITE_SHADOW, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_SHADOWS
 	object_event  7, 16, SPRITE_SHADOW, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_SHADOWS
 	object_event  7, 16, SPRITE_SHADOW, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_SHADOWS
-	object_event  7, 12, SPRITE_GENESECT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_GENESECT_1
 	object_event  7, 12, SPRITE_GENESECT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_GENESECT_2
+	object_event  7, 12, SPRITE_GENESECT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_GENESECT_1
+	object_event  7, 10, SPRITE_GENESIS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_GENESIS
 	

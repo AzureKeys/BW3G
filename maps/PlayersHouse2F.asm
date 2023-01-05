@@ -52,6 +52,7 @@ PlayersHousePosterScript:
 
 PlayersHouseRadioScript:
 	; halloffame
+	; returnfromcredits
 	; end
 	; opentext
 	; verbosegiveitem POTION

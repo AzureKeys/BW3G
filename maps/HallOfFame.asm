@@ -30,9 +30,19 @@ HallOfFame_MapScripts:
 	pause 15
 	writebyte HEALMACHINE_HALL_OF_FAME
 	special HealMachineAnim
-	setevent EVENT_BEAT_POKEMON_LEAGUE
 	special HealParty
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .done
+	setevent EVENT_BEAT_POKEMON_LEAGUE
 	halloffame
+	setmapscene CHAMPIONS_ROOM, SCENE_POST_CREDITS
+	disappear PLAYER
+	warp CHAMPIONS_ROOM,  7, 13
+	end
+	
+.done
+	halloffame
+	returnfromcredits
 	end
 
 HallOfFame_WalkUpWithJuniper:
