@@ -15,6 +15,9 @@
 	const VICTORYROADENTRANCE_BADGE_7_LOWER
 	const VICTORYROADENTRANCE_BADGE_8_UPPER
 	const VICTORYROADENTRANCE_BADGE_8_LOWER
+	const VICTORYROADENTRANCE_PP_UP
+	const VICTORYROADENTRANCE_IRON
+	const VICTORYROADENTRANCE_RAZOR_FANG
 
 VictoryRoadEntrance_MapScripts:
 	db 1 ; scene scripts
@@ -58,6 +61,24 @@ VictoryRoadEntranceBadge2Script:
 .done
 	end
 	
+VictoryRoadEntrancePPUp:
+	itemball PP_UP
+	
+VictoryRoadEntranceIron:
+	itemball IRON
+	
+VictoryRoadEntranceRazorFang:
+	itemball RAZOR_FANG
+	
+VictoryRoadEntranceMaxEther:
+	hiddenitem MAX_ETHER, EVENT_VICTORY_ROAD_ENTRANCE_MAX_ETHER
+	
+VictoryRoadEntranceMaxPotion:
+	hiddenitem MAX_POTION, EVENT_VICTORY_ROAD_ENTRANCE_MAX_POTION
+	
+VictoryRoadEntranceBigMushroom:
+	hiddenitem BIG_MUSHROOM, EVENT_VICTORY_ROAD_ENTRANCE_BIG_MUSHROOM
+	
 VictoryRoadSign:
 	jumptext VictoryRoadSignText
 	
@@ -94,10 +115,13 @@ VictoryRoadEntrance_MapEvents:
 	coord_event 26, 22, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
 	coord_event 27, 13, SCENE_DEFAULT, VictoryRoadEntranceBadge2Script
 
-	db 1 ; bg events
+	db 4 ; bg events
 	bg_event 10,  7, BGEVENT_READ, VictoryRoadSign
+	bg_event 25, 16, BGEVENT_ITEM, VictoryRoadEntranceMaxEther
+	bg_event 17, 16, BGEVENT_ITEM, VictoryRoadEntranceMaxPotion
+	bg_event 27, 18, BGEVENT_ITEM, VictoryRoadEntranceBigMushroom
 	
-	db 16 ; object events
+	db 19 ; object events
 	object_event 42, 26, SPRITE_BADGE_1, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, -1
 	object_event 42, 30, SPRITE_BADGE_1, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, -1
 	object_event 38, 26, SPRITE_BADGE_2, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_1
@@ -114,4 +138,7 @@ VictoryRoadEntrance_MapEvents:
 	object_event 18, 30, SPRITE_BADGE_7, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
 	object_event 14, 26, SPRITE_BADGE_8, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
 	object_event 14, 30, SPRITE_BADGE_8, SPRITEMOVEDATA_BADGE, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_3, 0, 0, EVENT_BADGE_GATES_2
+	object_event 23,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadEntrancePPUp, EVENT_VICTORY_ROAD_ENTRANCE_PP_UP
+	object_event 22, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadEntranceIron, EVENT_VICTORY_ROAD_ENTRANCE_IRON
+	object_event 45,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VictoryRoadEntranceRazorFang, EVENT_VICTORY_ROAD_ENTRANCE_RAZOR_FANG
 	

@@ -179,7 +179,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, CHAMPIONS_ROOM_ENTRANCE, 1
+	;warp_event  7,  0, VICTORY_ROAD_ENTRANCE, 3
 
 	db 0 ; coord events
 

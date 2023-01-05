@@ -7,4 +7,4 @@
 
 	page "generate the"
 	next "energy they need"
-	next "to live"
+	next "to live.@"

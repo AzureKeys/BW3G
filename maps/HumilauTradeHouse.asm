@@ -25,13 +25,6 @@ HumilauTradeHouseScript:
 HumilauTradeHouseBookshelfScript:
 	jumpstd magazinebookshelf
 
-HumilauTradeHouseRadioScript:
-	opentext
-	writetext HumilauTradeHouseRadioText4
-	pause 45
-	closetext
-	end
-
 HumilauTradeHouseNoPokeText:
 	text "Hi, I'm looking to"
 	line "trade #MON."
@@ -39,11 +32,6 @@ HumilauTradeHouseNoPokeText:
 	para "Oh, you don't have"
 	line "any #MON?"
 	cont "That's too bad."
-	done
-
-HumilauTradeHouseRadioText4:
-	text "#MON!"
-	line "#MON CHANNEL…"
 	done
 
 HumilauTradeHouse_MapEvents:
@@ -55,11 +43,10 @@ HumilauTradeHouse_MapEvents:
 
 	db 0 ; coord events
 
-	db 3 ; bg events
+	db 2 ; bg events
 	bg_event  0,  1, BGEVENT_READ, HumilauTradeHouseBookshelfScript
 	bg_event  1,  1, BGEVENT_READ, HumilauTradeHouseBookshelfScript
-	bg_event  7,  1, BGEVENT_READ, HumilauTradeHouseRadioScript
-
+	
 	db 1 ; object events
 	object_event  2,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, HumilauTradeHouseScript, -1
 	

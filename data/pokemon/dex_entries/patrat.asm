@@ -7,4 +7,4 @@
 
 	page "for days. They"
 	next "use their tails"
-	next "to communicate."
+	next "to communicate.@"

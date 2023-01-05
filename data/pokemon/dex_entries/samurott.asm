@@ -7,4 +7,4 @@
 
 	page "sword. Its cry"
 	next "can intimidate"
-	next "most enemies."
+	next "most enemies.@"
