@@ -27,7 +27,7 @@
 	tilecoll WALL, WALL, BOOKSHELF, BOOKSHELF ; 1a
 	tilecoll WARP_CARPET_LEFT, FLOOR, FLOOR, FLOOR ; 1b
 	tilecoll WALL, WALL, FLOOR, PC ; 1c
-	tilecoll WALL, WALL, FLOOR, RADIO ; 1d
+	tilecoll WALL, WALL, FLOOR, WALL ; 1d
 	tilecoll WALL, TOWN_MAP, TV, FLOOR ; 1e
 	tilecoll WALL, WALL, WALL, WALL ; 1f
 	tilecoll WALL, WALL, WALL, WALL ; 20
