@@ -129,6 +129,20 @@ ENDM
 	map_attributes NacreneOutskirtEast, NACRENE_OUTSKIRT_EAST, $25, WEST
 	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, -10
 	
+	map_attributes VictoryRoadEntranceNorth, VICTORY_ROAD_ENTRANCE_NORTH, $15, SOUTH
+	connection south, VictoryRoadEntranceNorthConnectionDummy, VICTORY_ROAD_ENTRANCE_NORTH_CONNECTION_DUMMY, 0
+	
+	map_attributes VictoryRoadEntranceNorthConnectionDummy, VICTORY_ROAD_ENTRANCE_NORTH_CONNECTION_DUMMY, $15, NORTH
+	connection north, VictoryRoadEntranceNorth, VICTORY_ROAD_ENTRANCE_NORTH, 0
+	
+	map_attributes VictoryRoadEntranceSouthLeft, VICTORY_ROAD_ENTRANCE_SOUTH_LEFT, $15, NORTH | EAST
+	connection north, VictoryRoadEntranceNorth, VICTORY_ROAD_ENTRANCE_NORTH, 0
+	connection east, VictoryRoadEntranceSouthRight, VICTORY_ROAD_ENTRANCE_SOUTH_RIGHT, 0
+	
+	map_attributes VictoryRoadEntranceSouthRight, VICTORY_ROAD_ENTRANCE_SOUTH_RIGHT, $21, NORTH | WEST
+	connection north, VictoryRoadEntranceNorth, VICTORY_ROAD_ENTRANCE_NORTH, -14
+	connection west, VictoryRoadEntranceSouthLeft, VICTORY_ROAD_ENTRANCE_SOUTH_LEFT, 0
+	
 	map_attributes Pokecenter2F, POKECENTER_2F, $00, 0
 	map_attributes TradeCenter, TRADE_CENTER, $00, 0
 	map_attributes Colosseum, COLOSSEUM, $00, 0
@@ -352,7 +366,6 @@ ENDM
 	map_attributes DraydensHouse2F, DRAYDENS_HOUSE_2F, $00, 0
 	map_attributes TwistMountain3F, TWIST_MOUNTAIN_3F, $09, 0
 	map_attributes Rt23House, R_23_HOUSE, $00, 0
-	map_attributes VictoryRoadEntrance, VICTORY_ROAD_ENTRANCE, $15, 0
 	map_attributes VictoryRoadCave1F, VICTORY_ROAD_CAVE_1F, $09, 0
 	map_attributes VictoryRoadCave2F, VICTORY_ROAD_CAVE_2F, $09, 0
 	map_attributes VictoryRoadCave3F, VICTORY_ROAD_CAVE_3F, $09, 0

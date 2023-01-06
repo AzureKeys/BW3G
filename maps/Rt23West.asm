@@ -551,8 +551,8 @@ Rt23West_MapEvents:
 	warp_event 29, 18, R_23_WEST, 6
 	warp_event 40, 18, R_23_WEST, 6
 	warp_event 29, 12, R_23_WEST, 6
-	warp_event 52,  4, VICTORY_ROAD_ENTRANCE, 1
-	warp_event 53,  4, VICTORY_ROAD_ENTRANCE, 2
+	warp_event 52,  4, VICTORY_ROAD_ENTRANCE_SOUTH_RIGHT, 1
+	warp_event 53,  4, VICTORY_ROAD_ENTRANCE_SOUTH_RIGHT, 2
 
 	db 8 ; coord events
 	coord_event 53,  4, SCENE_DEFAULT, R23Badge7Script

@@ -78,23 +78,17 @@ LoadSpecialMapPalette:
 
 .pkmn_league
 ; All maps with PkmnLeague Tileset are in PkmnLeague Group
+; Are we in Victory Road Entrance?
 	ld a, [wMapNumber]
-	cp 5 ; VictoryRoadEntrance
+	cp 5 ; VictoryRoadEntranceSouthRight
+	jr z, .load_vr_entrance
+	cp 6 ; VictoryRoadEntranceSouthLeft
+	jr z, .load_vr_entrance
+	cp 7 ; VictoryRoadEntranceNorth
+	jr z, .load_vr_entrance
+	cp 8 ; VictoryRoadEntranceNorthConnectionDummy
+	jr z, .load_vr_entrance
 ; If not, it must be PkmnLeagueEntrance/Main
-	jr nz, .load_league
-	ld a, [wCurTimeOfDay]
-	cp NITE_F
-	jr z, .vr_entrance_nite
-	call LoadVREntrancePalette
-	scf
-	ret
-	
-.vr_entrance_nite
-	call LoadVREntranceNitePalette
-	scf
-	ret
-	
-.load_league
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .league_nite
@@ -104,6 +98,19 @@ LoadSpecialMapPalette:
 	
 .league_nite
 	call LoadLeagueNitePalette
+	scf
+	ret
+	
+.load_vr_entrance
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .vr_entrance_nite
+	call LoadVREntrancePalette
+	scf
+	ret
+	
+.vr_entrance_nite
+	call LoadVREntranceNitePalette
 	scf
 	ret
 
@@ -291,11 +298,11 @@ LoadSpecialMapPalette:
 	cp 26 ; mapgroup_PkmnLeague
 	jp nz, .do_nothing
 	ld a, [wMapNumber]
-	cp 10 ; GrimsleysRoom
+	cp 13 ; GrimsleysRoom
 	jp z, .Grimsley
-	cp 11 ; MarshalsRoom
+	cp 14 ; MarshalsRoom
 	jp z, .Marshal
-	cp 12 ; ElesasRoom
+	cp 15 ; ElesasRoom
 	jp z, .Elesa
 	call LoadColressPalette
 	scf

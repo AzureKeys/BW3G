@@ -50,4 +50,8 @@ DualMapConnections:
 ; then use "connection east, NacreneCity, NACRENE_CITY, -2";
 ; else use "connection east, NacreneOutskirtEast, NacreneOutskirtEast, 10".
 	dual_connection east, NACRENE_OUTSKIRT, 19, NacreneCity, NACRENE_CITY, -2, NacreneOutskirtEast, NACRENE_OUTSKIRT_EAST, 10
+; When you walk north off of VictoryRoadEntranceNorth, if [wXCoord] < 14,
+; then use "connection south, VictoryRoadEntranceSouthLeft, VICTORY_ROAD_ENTRANCE_SOUTH_LEFT, 0";
+; else use "connection south, VictoryRoadEntranceSouthRight, VICTORY_ROAD_ENTRANCE_SOUTH_RIGHT, 14".
+	dual_connection south, VICTORY_ROAD_ENTRANCE_NORTH, 14, VictoryRoadEntranceSouthLeft, VICTORY_ROAD_ENTRANCE_SOUTH_LEFT, 0, VictoryRoadEntranceSouthRight, VICTORY_ROAD_ENTRANCE_SOUTH_RIGHT, 14
 	db 0 ; end

@@ -20,8 +20,8 @@ VictoryRoadPokecenter1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  4,  9, VICTORY_ROAD_ENTRANCE, 7
-	warp_event  5,  9, VICTORY_ROAD_ENTRANCE, 7
+	warp_event  4,  9, VICTORY_ROAD_ENTRANCE_NORTH, 5
+	warp_event  5,  9, VICTORY_ROAD_ENTRANCE_NORTH, 5
 
 	db 0 ; coord events
 

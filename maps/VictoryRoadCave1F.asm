@@ -296,10 +296,10 @@ VictoryRoadCave1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 11 ; warp events
-	warp_event 31, 36, VICTORY_ROAD_ENTRANCE, 3
-	warp_event 32, 36, VICTORY_ROAD_ENTRANCE, 4
-	warp_event 33, 36, VICTORY_ROAD_ENTRANCE, 5
-	warp_event 34, 36, VICTORY_ROAD_ENTRANCE, 6
+	warp_event 31, 36, VICTORY_ROAD_ENTRANCE_NORTH, 1
+	warp_event 32, 36, VICTORY_ROAD_ENTRANCE_NORTH, 2
+	warp_event 33, 36, VICTORY_ROAD_ENTRANCE_NORTH, 3
+	warp_event 34, 36, VICTORY_ROAD_ENTRANCE_NORTH, 4
 	warp_event  5,  8, VICTORY_ROAD_GROVE, 1
 	warp_event  6,  8, VICTORY_ROAD_GROVE, 2
 	warp_event 15,  1, VICTORY_ROAD_OUTDOOR_1F, 4

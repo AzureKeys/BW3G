@@ -631,8 +631,17 @@ TwistMountain3F_Blocks:
 Rt1_Blocks:
 	INCBIN "maps/Rt1.ablk"
 
-VictoryRoadEntrance_Blocks:
-	INCBIN "maps/VictoryRoadEntrance.ablk"
+VictoryRoadEntranceSouthRight_Blocks::
+	INCBIN "maps/VictoryRoadEntranceSouthRight.ablk"
+
+VictoryRoadEntranceSouthLeft_Blocks::
+	INCBIN "maps/VictoryRoadEntranceSouthLeft.ablk"
+
+VictoryRoadEntranceNorth_Blocks:
+	INCBIN "maps/VictoryRoadEntranceNorth.ablk"
+
+VictoryRoadEntranceNorthConnectionDummy_Blocks:
+	INCBIN "maps/VictoryRoadEntranceNorthConnectionDummy.ablk"
 
 VictoryRoadCave2F_Blocks:
 	INCBIN "maps/VictoryRoadCave2F.ablk"
