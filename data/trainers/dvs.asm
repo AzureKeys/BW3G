@@ -96,4 +96,7 @@ TrainerClassDVs:
 	dn 13, 13, 13, 13 ; INFER
 	dn 13, 13, 13, 13 ; INFER_SAGE
 	dn 13, 13, 13, 13 ; INFER2
+	dn 15, 15, 15, 15 ; ALDER
 	dn 15, 15, 15, 15 ; IRIS
+	dn 15, 15, 15, 15 ; CAITLIN
+	dn 15, 15, 15, 15 ; CYNTHIA

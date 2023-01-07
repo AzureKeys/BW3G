@@ -96,3 +96,6 @@ TrainerClassNames::
 	db "PZMA SAGE@"
 	db "<PKMN> TRAINER@"
 	db "<PKMN> TRAINER@"
+	db "<PKMN> TRAINER@"
+	db "<PKMN> TRAINER@"
+	db "<PKMN> TRAINER@"

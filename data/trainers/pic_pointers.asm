@@ -97,4 +97,7 @@ TrainerPicPointers::
 	dba InferPic
 	dba InferSagePic
 	dba Infer2Pic
+	dba AlderPic
 	dba IrisPic
+	dba CaitlinPic
+	dba CynthiaPic

@@ -666,8 +666,17 @@ CHRIS EQU __enum__
 	const INFER7_TEPIG
 	const INFER7_OSHAWOTT
 	
+	trainerclass ALDER
+	const ALDER1
+	
 	trainerclass IRIS
 	const IRIS1
+	
+	trainerclass CAITLIN
+	const CAITLIN1
+	
+	trainerclass CYNTHIA
+	const CYNTHIA1
 
 KRIS EQU __enum__
 NUM_TRAINER_CLASSES EQU __enum__

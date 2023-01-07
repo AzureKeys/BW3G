@@ -15,7 +15,10 @@ GymLeaders:
 	db GRIMSLEY
 	db COLRESS
 	db JUNIPER
+	db ALDER
 	db IRIS
+	db CAITLIN
+	db CYNTHIA
 ; fallthrough
 KantoGymLeaders:
 	db -1

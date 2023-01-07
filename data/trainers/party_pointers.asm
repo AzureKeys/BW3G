@@ -97,4 +97,7 @@ TrainerGroups:
 	dba InferGroup
 	dba InferSageGroup
 	dba Infer2Group
+	dba AlderGroup
 	dba IrisGroup
+	dba CaitlinGroup
+	dba CynthiaGroup
