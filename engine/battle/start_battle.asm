@@ -78,8 +78,16 @@ PlayBattleMusic:
 	jr .done
 
 .trainermusic
+	ld de, MUSIC_CYNTHIA_BATTLE
+	cp CYNTHIA
+	jr z, .done
+	
 	ld de, MUSIC_CHAMPION_BATTLE
 	cp JUNIPER
+	jr z, .done
+	cp IRIS
+	jr z, .done
+	cp ALDER
 	jr z, .done
 	
 	ld de, MUSIC_ELITE_FOUR
@@ -90,6 +98,8 @@ PlayBattleMusic:
 	cp ELESA
 	jr z, .done
 	cp COLRESS
+	jr z, .done
+	cp CAITLIN
 	jr z, .done
 
 	ld de, MUSIC_PLASMA_BATTLE

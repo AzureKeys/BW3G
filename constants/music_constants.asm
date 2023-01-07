@@ -91,6 +91,8 @@
 	const MUSIC_GHETSIS_BATTLE               ; 56
 	const MUSIC_NUVEMA_TOWN                  ; 57
 	const MUSIC_ROCKET_HIDEOUT               ; 58
+	const MUSIC_CYNTHIA_ENCOUNTER            ; 59
+	const MUSIC_CYNTHIA_BATTLE               ; 5a
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $fc

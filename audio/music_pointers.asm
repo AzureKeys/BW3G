@@ -91,3 +91,5 @@ Music:
 	dba Music_BattleGhetsis
 	dba Music_NuvemaTown
 	dba Music_RocketHideout
+	dba Music_CynthiaEncounter
+	dba Music_BattleCynthia

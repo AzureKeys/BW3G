@@ -16,6 +16,8 @@ SECTION "Songs 1", ROMX
 INCLUDE "audio/music/rivalbattle.asm"
 INCLUDE "audio/music/rocketbattle.asm"
 INCLUDE "audio/music/johtogymbattle.asm"
+INCLUDE "audio/music/cynthiabattle.asm"
+INCLUDE "audio/music/cynthiaencounter.asm"
 
 
 SECTION "Songs 2", ROMX

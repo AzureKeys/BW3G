@@ -726,6 +726,8 @@ INCLUDE "gfx/overworld/trainer_battle_nite.pal"
 	ret z
 	cp INFER_SAGE
 	ret z
+	cp GENESIS
+	ret z
 	ld de, GymLeaderTransition
 	cp MARLON
 	ret z
