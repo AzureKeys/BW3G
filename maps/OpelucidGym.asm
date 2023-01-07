@@ -36,7 +36,7 @@ OpelucidGymDraydenScript:
 	writetext ReceivedLegendBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_RISINGBADGE
+	setflag ENGINE_LEGENDBADGE
 .FightDone:
 	checkevent EVENT_GOT_DRAGON_CLAW_TM
 	iftrue .SpeechAfterTM
@@ -136,7 +136,7 @@ TrainerVeteranF3OpelucidGym:
 	end
 
 OpelucidGymStatue:
-	checkflag ENGINE_RISINGBADGE
+	checkflag ENGINE_LEGENDBADGE
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:

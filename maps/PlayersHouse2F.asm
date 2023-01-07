@@ -50,45 +50,23 @@ PlayersHousePosterScript:
 .Script:
 	describedecoration DECODESC_POSTER
 
-PlayersHouseRadioScript:
+PlayersHouseRadioScript:	
 	; halloffame
 	; returnfromcredits
-	; end
-	; opentext
-	; verbosegiveitem POTION
-	; closetext
 	; end
 	
 	; opentext
 	; givepoke HYDREIGON, 100, NO_ITEM
 	; closetext
-	; setflag ENGINE_ZEPHYRBADGE
-	; setflag ENGINE_HIVEBADGE
-	; setflag ENGINE_PLAINBADGE
-	; setflag ENGINE_FOGBADGE
-	; setflag ENGINE_STORMBADGE
-	; setflag ENGINE_MINERALBADGE
-	; setflag ENGINE_GLACIERBADGE
-	; setflag ENGINE_RISINGBADGE
+	; setflag ENGINE_WAVEBADGE
+	; setflag ENGINE_SPOOKYBADGE
+	; setflag ENGINE_INSECTBADGE
+	; setflag ENGINE_TOXICBADGE
+	; setflag ENGINE_BASICBADGE
+	; setflag ENGINE_GARNISHBADGE
+	; setflag ENGINE_JETBADGE
+	; setflag ENGINE_LEGENDBADGE
 	; setflag ENGINE_FLYPOINT_PKMN_LEAGUE
-	; end
-	
-	; writecode VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	; loadwildmon GENESIS_MON, 30
-	; startbattle
-	; reloadmapafterbattle
-	; end
-	
-	; opentext
-	; givepoke CRYOGONAL, 5, RAZOR_CLAW
-	; closetext
-	; setflag ENGINE_POKEDEX
-	; writebyte DEINO
-	; special UnusedSetSeenMon
-	; writebyte ZWEILOUS
-	; special UnusedSetSeenMon
-	; writebyte HYDREIGON
-	; special UnusedSetSeenMon
 	; end
 	
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
@@ -121,6 +99,7 @@ PlayersHouseRadioScript:
 	end
 
 PlayersHouseBookshelfScript:
+	;jumpstd scalingmart
 	; checkitem POTION, 2
 	; iffalse .No
 	; opentext

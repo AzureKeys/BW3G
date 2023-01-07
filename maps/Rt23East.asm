@@ -91,7 +91,7 @@ R23Badge1Script:
 	turnobject R23_OFFICER1, RIGHT
 	opentext
 	writetext R23Officer1StopText
-	checkflag ENGINE_HIVEBADGE
+	checkflag ENGINE_SPOOKYBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -112,7 +112,7 @@ R23Badge2Script:
 	turnobject R23_OFFICER2, LEFT
 	opentext
 	writetext R23Officer2StopText
-	checkflag ENGINE_PLAINBADGE
+	checkflag ENGINE_INSECTBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -133,7 +133,7 @@ R23Badge3Script:
 	turnobject R23_OFFICER3, DOWN
 	opentext
 	writetext R23Officer3StopText
-	checkflag ENGINE_FOGBADGE
+	checkflag ENGINE_TOXICBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -154,7 +154,7 @@ R23Badge4Script:
 	turnobject R23_OFFICER4, DOWN
 	opentext
 	writetext R23Officer4StopText
-	checkflag ENGINE_STORMBADGE
+	checkflag ENGINE_BASICBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -175,7 +175,7 @@ R23Badge5Script:
 	turnobject R23_OFFICER5, RIGHT
 	opentext
 	writetext R23Officer5StopText
-	checkflag ENGINE_MINERALBADGE
+	checkflag ENGINE_GARNISHBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -196,7 +196,7 @@ R23Badge6Script:
 	turnobject R23_OFFICER6, DOWN
 	opentext
 	writetext R23Officer6StopText
-	checkflag ENGINE_GLACIERBADGE
+	checkflag ENGINE_JETBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -218,7 +218,7 @@ R23Officer1Script:
 	checkscene
 	ifnotequal SCENE_R23_SHOWED_NONE, .showed
 	writetext R23Officer1StopText
-	checkflag ENGINE_HIVEBADGE
+	checkflag ENGINE_SPOOKYBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -245,7 +245,7 @@ R23Officer2Script:
 	checkscene
 	ifnotequal SCENE_R23_SHOWED_SPOOKY, .showed
 	writetext R23Officer2StopText
-	checkflag ENGINE_PLAINBADGE
+	checkflag ENGINE_INSECTBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -281,7 +281,7 @@ R23Officer6Script:
 	checkscene
 	ifnotequal SCENE_R23_SHOWED_GARNISH, .showed
 	writetext R23Officer6StopText
-	checkflag ENGINE_GLACIERBADGE
+	checkflag ENGINE_JETBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx

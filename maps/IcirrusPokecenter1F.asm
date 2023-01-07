@@ -14,10 +14,7 @@ IcirrusPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 IcirrusPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_ICIRRUS
-	closetext
-	end
+	jumpstd scalingmart
 
 IcirrusPokecenterCooltrainerMScript:
 	jumptextfaceplayer IcirrusPokecenterCooltrainerMText

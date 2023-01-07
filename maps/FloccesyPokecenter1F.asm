@@ -14,10 +14,7 @@ FloccesyPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 FlocessyPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_FLOCESSY
-	closetext
-	end
+	jumpstd scalingmart
 
 FloccesyPokecenterPokefanMScript:
 	jumptextfaceplayer FloccesyPokecenterPokefanMText

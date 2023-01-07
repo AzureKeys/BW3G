@@ -11,10 +11,7 @@ PkmnLeaguePokecenterNurseScript:
 	jumpstd pokecenternurse
 
 PkmnLeaguePokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_PKMN_LEAGUE
-	closetext
-	end
+	jumpstd scalingmart
 
 PkmnLeaguePokecenter1F_MapEvents:
 	db 0, 0 ; filler

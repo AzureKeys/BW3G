@@ -14,17 +14,7 @@ LacunosaPokecenterNurse:
 	jumpstd pokecenternurse
 
 LacunosaPokecenterClerkScript:
-	opentext
-	checkflag ENGINE_POKEDEX
-	iftrue .PokeBallsInStock
-	pokemart MARTTYPE_STANDARD, MART_HUMILAU
-	closetext
-	end
-
-.PokeBallsInStock:
-	pokemart MARTTYPE_STANDARD, MART_HUMILAU_DEX
-	closetext
-	end
+	jumpstd scalingmart
 
 LacunosaPokecenterGameboyKidScript:
 	jumptextfaceplayer LacunosaPokecenterGameboyKidText

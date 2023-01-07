@@ -184,7 +184,7 @@ R23Badge7Script:
 	turnobject R23WEST_OFFICER7, RIGHT
 	opentext
 	writetext R23Officer7StopText
-	checkflag ENGINE_RISINGBADGE
+	checkflag ENGINE_LEGENDBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx
@@ -206,7 +206,7 @@ R23Officer7Script:
 	checkscene
 	ifequal SCENE_FINISHED, .showed
 	writetext R23Officer7StopText
-	checkflag ENGINE_RISINGBADGE
+	checkflag ENGINE_LEGENDBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx

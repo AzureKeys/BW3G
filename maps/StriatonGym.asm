@@ -72,7 +72,7 @@ StriatonGymCilanScript:
 	writetext ReceivedGarnishBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_MINERALBADGE
+	setflag ENGINE_GARNISHBADGE
 .FightDone:
 	checkevent EVENT_GOT_ENERGY_BALL_TM
 	iftrue .SpeechAfterTM
@@ -106,7 +106,7 @@ StriatonGymGuyScript:
 	end
 
 StriatonGymStatue:
-	checkflag ENGINE_MINERALBADGE
+	checkflag ENGINE_GARNISHBADGE
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:

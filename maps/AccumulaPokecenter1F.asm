@@ -13,10 +13,7 @@ AccumulaPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 AccumulaPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_ACCUMULA
-	closetext
-	end
+	jumpstd scalingmart
 
 AccumulaPokecenterCooltrainerFScript:
 	jumptextfaceplayer AccumulaPokecenterCooltrainerFText

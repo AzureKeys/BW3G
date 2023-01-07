@@ -14,10 +14,7 @@ VirbankPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 VirbankPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_VIRBANK
-	closetext
-	end
+	jumpstd scalingmart
 
 VirbankPokecenterLassScript:
 	jumptextfaceplayer VirbankPokecenterLassText

@@ -14,10 +14,7 @@ StriatonPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 StriatonPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_STRIATON
-	closetext
-	end
+	jumpstd scalingmart
 
 StriatonPokecenterSuperNerdScript:
 	jumptextfaceplayer StriatonPokecenterSuperNerdText

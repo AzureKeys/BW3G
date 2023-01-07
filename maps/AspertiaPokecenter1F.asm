@@ -14,10 +14,7 @@ AspertiaPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 AspertiaPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_ASPERTIA
-	closetext
-	end
+	jumpstd scalingmart
 
 AspertiaPokecenterFisherScript:
 	jumptextfaceplayer AspertiaPokecenterFisherText

@@ -133,7 +133,7 @@ CutFunction:
 	dw .FailCut
 
 .CheckAble:
-	ld de, ENGINE_HIVEBADGE
+	ld de, ENGINE_SPOOKYBADGE
 	call CheckBadge
 	jr c, .nohivebadge
 	call CheckMapForSomethingToCut
@@ -286,7 +286,7 @@ OWFlash:
 
 .CheckUseFlash:
 ; Flash
-	ld de, ENGINE_ZEPHYRBADGE
+	ld de, ENGINE_WAVEBADGE
 	farcall CheckBadge
 	jr c, .nozephyrbadge
 	push hl
@@ -352,7 +352,7 @@ SurfFunction:
 	dw .AlreadySurfing
 
 .TrySurf:
-	ld de, ENGINE_MINERALBADGE
+	ld de, ENGINE_GARNISHBADGE
 	call CheckBadge
 	jr c, .asm_c956
 	ld hl, wBikeFlags
@@ -509,7 +509,7 @@ TrySurfOW::
 	call CheckDirection
 	jr c, .quit
 
-	ld de, ENGINE_MINERALBADGE
+	ld de, ENGINE_GARNISHBADGE
 	call CheckEngineFlag
 	jr c, .quit
 
@@ -566,7 +566,7 @@ FlyFunction:
 
 .TryFly:
 ; Fly
-	ld de, ENGINE_FOGBADGE
+	ld de, ENGINE_TOXICBADGE
 	call CheckBadge
 	jr c, .nostormbadge
 	call GetMapEnvironment
@@ -646,7 +646,7 @@ WaterfallFunction:
 
 .TryWaterfall:
 ; Waterfall
-	ld de, ENGINE_GLACIERBADGE
+	ld de, ENGINE_JETBADGE
 	farcall CheckBadge
 	ld a, $80
 	ret c
@@ -884,7 +884,7 @@ TryWaterfallOW::
 	ld d, WATERFALL
 	call CheckPartyMove
 	jr c, .failed
-	ld de, ENGINE_GLACIERBADGE
+	ld de, ENGINE_JETBADGE
 	call CheckEngineFlag
 	jr c, .failed
 	call CheckMapCanWaterfall
@@ -1217,7 +1217,7 @@ StrengthFunction:
 
 .TryStrength:
 ; Strength
-	ld de, ENGINE_STORMBADGE
+	ld de, ENGINE_BASICBADGE
 	call CheckBadge
 	jr c, .Failed
 	jr .UseStrength
@@ -1317,7 +1317,7 @@ TryStrengthOW:
 	call CheckPartyMove
 	jr c, .nope
 
-	ld de, ENGINE_STORMBADGE
+	ld de, ENGINE_BASICBADGE
 	call CheckEngineFlag
 	jr c, .nope
 
@@ -1356,7 +1356,7 @@ Jumptable_cdae:
 	dw .FailWhirlpool
 
 .TryWhirlpool:
-	ld de, ENGINE_GLACIERBADGE
+	ld de, ENGINE_JETBADGE
 	call CheckBadge
 	jr c, .noglacierbadge
 	call TryWhirlpoolMenu
@@ -1450,7 +1450,7 @@ TryWhirlpoolOW::
 	;ld d, WHIRLPOOL
 	call CheckPartyMove
 	jr c, .failed
-	ld de, ENGINE_GLACIERBADGE
+	ld de, ENGINE_JETBADGE
 	call CheckEngineFlag
 	jr c, .failed
 	call TryWhirlpoolMenu
@@ -2076,7 +2076,7 @@ TryCutOW::
 	call CheckPartyMove
 	jr c, .cant_cut
 
-	ld de, ENGINE_HIVEBADGE
+	ld de, ENGINE_SPOOKYBADGE
 	call CheckEngineFlag
 	jr c, .cant_cut
 

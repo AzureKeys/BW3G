@@ -48,7 +48,7 @@ HumilauGymMarlonScript:
 	writetext ReceivedWaveBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_ZEPHYRBADGE
+	setflag ENGINE_WAVEBADGE
 .FightDone:
 	checkevent EVENT_GOT_RAIN_DANCE_TM
 	iftrue .SpeechAfterTM
@@ -84,7 +84,7 @@ HumilauGymGuyScript:
 	end
 
 HumilauGymStatue:
-	checkflag ENGINE_ZEPHYRBADGE
+	checkflag ENGINE_WAVEBADGE
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:

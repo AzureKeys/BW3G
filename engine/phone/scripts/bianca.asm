@@ -1,7 +1,7 @@
 BiancaPhoneCalleeScript:
 	farwritetext BiancaPhoneGreetingText
 	buttonsound
-	checkflag ENGINE_RISINGBADGE
+	checkflag ENGINE_LEGENDBADGE
 	iftrue .victory_road
 	checkmapscene DRAGONSPIRAL_TOWER_ROOF, SCENE_FINISHED
 	iftrue .opelucid_gym
@@ -9,7 +9,7 @@ BiancaPhoneCalleeScript:
 	iftrue .find_drayden
 	checkmapscene SEASIDE_CAVE_CHAMBER, SCENE_FINISHED
 	iftrue .village_bridge
-	checkflag ENGINE_GLACIERBADGE
+	checkflag ENGINE_JETBADGE
 	iftrue .seaside_cave
 	checkmapscene DRIFTVEIL_SHELTER, SCENE_FINISHED
 	iftrue .mistralton_gym
@@ -25,17 +25,17 @@ BiancaPhoneCalleeScript:
 	iftrue .complex
 	checkmapscene NIMBASA_PARK_BASEMENT, SCENE_NIMBASA_PARK_BASEMENT_NOTHING
 	iftrue .aspertia
-	checkflag ENGINE_PLAINBADGE
+	checkflag ENGINE_INSECTBADGE
 	iftrue .nimbasa_park
 	checkevent EVENT_BIANCA_CASTELIA_CALL
 	iftrue .castelia_gym
 	checkmapscene LOSTLORN_FOREST, SCENE_LOSTLORN_NOTHING
 	iftrue .go_to_castelia
-	checkflag ENGINE_HIVEBADGE
+	checkflag ENGINE_SPOOKYBADGE
 	iftrue .get_cut
 	checkmapscene UNDELLA_TOWN, SCENE_UNDELLA_TOWN_NOTHING
 	iftrue .go_to_lentimas
-	checkflag ENGINE_ZEPHYRBADGE
+	checkflag ENGINE_WAVEBADGE
 	iftrue .reversal
 	checkmapscene UNDELLA_TOWN, SCENE_UNDELLA_TOWN_CANT_LEAVE
 	iftrue .humilau_gym

@@ -10,7 +10,7 @@ Rt4NimbasaGate_MapScripts:
 
 R4NimbasaGateMerchantScript:
 	opentext
-	pokemart MARTTYPE_BITTER, MART_UNDERGROUND
+	pokemart MARTTYPE_BITTER, MART_R4_NIMBASA_GATE
 	closetext
 	end
 	

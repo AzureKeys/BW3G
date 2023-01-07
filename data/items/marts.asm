@@ -1,100 +1,30 @@
 Marts:
 ; entries correspond to MART_* constants
-	dw MartUnderground
-	dw MartHumilau
-	dw MartHumilauDex
-	dw MartUndella
-	dw MartLentimas
-	dw MartNimbasa
 	dw MartNimbasaTM
 	dw MartNimbasaVitamin
 	dw MartNimbasaBall
 	dw MartR4NimbasaGate
-	dw MartCastelia
-	dw MartAspertia
-	dw MartFlocessy
-	dw MartVirbank
-	dw MartNacrene
-	dw MartStriaton
-	dw MartAccumula
-	dw MartDriftveil
 	dw MartMerchant1
 	dw MartMerchant2
-	dw MartMistralton
-	dw MartOpelucid
-	dw MartIcirrus
 	dw MartBoutique
 	dw MartMall1
 	dw MartMall2
 	dw MartMall3
 	dw MartMall4
 	dw MartMall5
-	dw MartPkmnLeague
+	dw MartNoDex
+	dw MartNoBadges
+	dw MartOneBadge
+	dw MartTwoBadges
+	dw MartThreeBadges
+	dw MartFourBadges
+	dw MartFiveBadges
+	dw MartSevenBadges
+	dw MartEightBadges
 .End
-
-MartUnderground:
-	db 4 ; # items
-	db ENERGYPOWDER
-	db ENERGY_ROOT
-	db HEAL_POWDER
-	db REVIVAL_HERB
-	db -1 ; end
-	
-MartHumilau:
-	db 4 ; # items
-	db POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db -1 ; end
-	
-MartHumilauDex:
-	db 5 ; # items
-	db POKE_BALL
-	db POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db -1 ; end
-	
-MartUndella:
-	db 6 ; # items
-	db POKE_BALL
-	db POTION
-	db ESCAPE_ROPE
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db -1 ; end
-
-MartLentimas:
-	db 8 ; # items
-	db POKE_BALL
-	db POTION
-	db SUPER_POTION
-	db ESCAPE_ROPE
-	db REPEL
-	db ANTIDOTE
-	db AWAKENING
-	db PARLYZ_HEAL
-	db -1 ; end
-
-MartNimbasa:
-	db 10 ; # items
-	db POKE_BALL
-	db GREAT_BALL
-	db POTION
-	db SUPER_POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db BURN_HEAL
-	db ICE_HEAL
-	db REPEL
-	db -1 ; end
 	
 MartNimbasaTM:
-	db 4 ; # items
+	db 5 ; # items
 	db TM_REFLECT
 	db TM_LIGHT_SCREEN
 	db TM_PROTECT
@@ -134,100 +64,6 @@ MartR4NimbasaGate:
 	db REVIVAL_HERB
 	db -1 ; end
 
-MartCastelia:
-	db 10 ; # items
-	db GREAT_BALL
-	db POTION
-	db SUPER_POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db BURN_HEAL
-	db ICE_HEAL
-	db ESCAPE_ROPE
-	db REPEL
-	db -1 ; end
-
-MartAspertia:
-	db 8 ; # items
-	db GREAT_BALL
-	db SUPER_POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db BURN_HEAL
-	db REPEL
-	db SUPER_REPEL
-	db -1 ; end
-
-MartFlocessy:
-	db 8 ; # items
-	db GREAT_BALL
-	db SUPER_POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db BURN_HEAL
-	db ICE_HEAL
-	db SUPER_REPEL
-	db -1 ; end
-
-MartVirbank:
-	db 8 ; # items
-	db GREAT_BALL
-	db SUPER_POTION
-	db HYPER_POTION
-	db PARLYZ_HEAL
-	db AWAKENING
-	db BURN_HEAL
-	db ESCAPE_ROPE
-	db SUPER_REPEL
-	db -1 ; end
-
-MartNacrene:
-	db 7 ; # items
-	db GREAT_BALL
-	db ULTRA_BALL
-	db SUPER_POTION
-	db HYPER_POTION
-	db FULL_HEAL
-	db ESCAPE_ROPE
-	db SUPER_REPEL
-	db -1 ; end
-	
-MartStriaton:
-	db 8 ; # items
-	db GREAT_BALL
-	db ULTRA_BALL
-	db SUPER_POTION
-	db HYPER_POTION
-	db FULL_HEAL
-	db SUPER_REPEL
-	db GUARD_SPEC
-	db DIRE_HIT
-	db -1 ; end
-
-MartAccumula:
-	db 7 ; # items
-	db ULTRA_BALL
-	db SUPER_POTION
-	db HYPER_POTION
-	db REVIVE
-	db PARLYZ_HEAL
-	db AWAKENING
-	db BURN_HEAL
-	db -1 ; end
-
-MartDriftveil:
-	db 6 ; # items
-	db ULTRA_BALL
-	db HYPER_POTION
-	db REVIVE
-	db FULL_HEAL
-	db SUPER_REPEL
-	db MAX_REPEL
-	db -1 ; end
-
 MartMerchant1:
 	db 4 ; # items
 	db SILK_SCARF
@@ -246,40 +82,6 @@ MartMerchant2:
 	db X_ACCURACY
 	db DIRE_HIT
 	db GUARD_SPEC
-	db -1 ; end
-
-MartMistralton:
-	db 7 ; # items
-	db ULTRA_BALL
-	db HYPER_POTION
-	db REVIVE
-	db FULL_HEAL
-	db MAX_REPEL
-	db X_SPEED
-	db X_DEFEND
-	db -1 ; end
-
-MartOpelucid:
-	db 8 ; # items
-	db ULTRA_BALL
-	db HYPER_POTION
-	db REVIVE
-	db FULL_HEAL
-	db MAX_REPEL
-	db X_ATTACK
-	db X_SPECIAL
-	db X_SP_DEF
-	db -1 ; end
-
-MartIcirrus:
-	db 7 ; # items
-	db ULTRA_BALL
-	db MAX_POTION
-	db REVIVE
-	db FULL_HEAL
-	db MAX_REPEL
-	db X_DEFEND
-	db X_SPEED
 	db -1 ; end
 
 MartBoutique:
@@ -352,14 +154,131 @@ MartMall5:
 	db THUNDERSTONE
 	db -1 ; end
 
-MartPkmnLeague:
-	db 7 ; # items
+MartNoDex:
+	db 3 ; # items
+	db POTION
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db -1 ; end
+
+MartNoBadges:
+	db 4 ; # items
+	db POKE_BALL
+	db POTION
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db -1 ; end
+
+MartOneBadge:
+	db 8 ; # items
+	db POKE_BALL
+	db POTION
+	db SUPER_POTION
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db ESCAPE_ROPE
+	db REPEL
+	db -1 ; end
+
+MartTwoBadges:
+	db 11 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db POTION
+	db SUPER_POTION
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db BURN_HEAL
+	db ICE_HEAL
+	db ESCAPE_ROPE
+	db REPEL
+	db -1 ; end
+
+MartThreeBadges:
+	db 13 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db POTION
+	db SUPER_POTION
+	db REVIVE
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db BURN_HEAL
+	db ICE_HEAL
+	db ESCAPE_ROPE
+	db REPEL
+	db SUPER_REPEL
+	db -1 ; end
+
+MartFourBadges:
+	db 14 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db POTION
+	db SUPER_POTION
+	db HYPER_POTION
+	db REVIVE
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db BURN_HEAL
+	db ICE_HEAL
+	db ESCAPE_ROPE
+	db REPEL
+	db SUPER_REPEL
+	db -1 ; end
+
+MartFiveBadges:
+	db 12 ; # items
+	db POKE_BALL
+	db GREAT_BALL
 	db ULTRA_BALL
-	db MAX_POTION
+	db POTION
+	db SUPER_POTION
+	db HYPER_POTION
+	db REVIVE
 	db FULL_HEAL
+	db ESCAPE_ROPE
+	db REPEL
+	db SUPER_REPEL
+	db MAX_REPEL
+	db -1 ; end
+
+MartSevenBadges:
+	db 13 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db ULTRA_BALL
+	db POTION
+	db SUPER_POTION
+	db HYPER_POTION
+	db MAX_POTION
+	db REVIVE
+	db FULL_HEAL
+	db ESCAPE_ROPE
+	db REPEL
+	db SUPER_REPEL
+	db MAX_REPEL
+	db -1 ; end
+
+MartEightBadges:
+	db 14 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db ULTRA_BALL
+	db POTION
+	db SUPER_POTION
+	db HYPER_POTION
+	db MAX_POTION
 	db FULL_RESTORE
 	db REVIVE
+	db FULL_HEAL
 	db ESCAPE_ROPE
+	db REPEL
+	db SUPER_REPEL
 	db MAX_REPEL
 	db -1 ; end
 

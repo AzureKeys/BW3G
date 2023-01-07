@@ -52,7 +52,7 @@ LentimasGymShauntalScript:
 	writetext ReceivedSpookyBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_HIVEBADGE
+	setflag ENGINE_SPOOKYBADGE
 .FightDone:
 	checkevent EVENT_GOT_HEX_TM
 	iftrue .SpeechAfterTM
@@ -94,7 +94,7 @@ LentimasGymGuyScript:
 	end
 
 LentimasGymStatue:
-	checkflag ENGINE_HIVEBADGE
+	checkflag ENGINE_SPOOKYBADGE
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:

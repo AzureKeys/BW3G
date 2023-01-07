@@ -13,7 +13,7 @@ DraydensHouseIris:
 	iffalse .CheckDrayden
 ; Postgame Battle Goes Here
 .CheckDrayden
-	checkflag ENGINE_RISINGBADGE
+	checkflag ENGINE_LEGENDBADGE
 	iffalse .GoToGym
 	writetext DraydensHouseIrisBeatGymText
 	waitbutton

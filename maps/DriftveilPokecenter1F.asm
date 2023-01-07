@@ -14,10 +14,7 @@ DriftveilPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 DriftveilPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_DRIFTVEIL
-	closetext
-	end
+	jumpstd scalingmart
 
 DriftveilPokecenterFisherScript:
 	faceplayer

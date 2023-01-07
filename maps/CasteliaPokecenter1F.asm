@@ -14,10 +14,7 @@ CasteliaPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 CasteliaPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_CASTELIA
-	closetext
-	end
+	jumpstd scalingmart
 
 CasteliaPokecenterPokefanMScript:
 	jumptextfaceplayer CasteliaPokecenterPokefanMText

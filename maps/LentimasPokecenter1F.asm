@@ -14,10 +14,7 @@ LentimasPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 LentimasPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_LENTIMAS
-	closetext
-	end
+	jumpstd scalingmart
 
 LentimasPokecenterGentlemanScript:
 	jumptextfaceplayer LentimasPokecenterGentlemanText

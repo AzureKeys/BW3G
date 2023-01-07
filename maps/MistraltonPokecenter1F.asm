@@ -14,10 +14,7 @@ MistraltonPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 MistraltonPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_MISTRALTON
-	closetext
-	end
+	jumpstd scalingmart
 
 MistraltonPokecenterCooltrainerMScript:
 	faceplayer

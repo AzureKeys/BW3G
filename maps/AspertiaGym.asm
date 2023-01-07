@@ -30,7 +30,7 @@ AspertiaGymCherenScript:
 	writetext ReceivedBasicBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_STORMBADGE
+	setflag ENGINE_BASICBADGE
 .FightDone:
 	checkevent EVENT_GOT_GIGA_IMPACT_TM
 	iftrue .SpeechAfterTM
@@ -64,7 +64,7 @@ AspertiaGymGuyScript:
 	end
 
 AspertiaGymStatue:
-	checkflag ENGINE_STORMBADGE
+	checkflag ENGINE_BASICBADGE
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:

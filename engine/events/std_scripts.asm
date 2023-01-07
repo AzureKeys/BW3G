@@ -53,6 +53,7 @@ StdScripts::
 	dba GameCornerCoinVendorScript
 	dba HappinessCheckScript
 	dba ApartmentStairsScript
+	dba ScalingMartScript
 
 PokecenterNurseScript:
 ; EVENT_WELCOMED_TO_POKECOM_CENTER is never set
@@ -1453,3 +1454,66 @@ Movement_ContestResults_WalkAfterWarp:
 	step DOWN
 	turn_head UP
 	step_end
+	
+ScalingMartScript:
+	opentext
+	checkflag ENGINE_LEGENDBADGE
+	iffalse .check_jet
+	checkflag ENGINE_TOXICBADGE
+	iffalse .seven_badge
+	pokemart MARTTYPE_STANDARD, MART_EIGHT_BADGES
+	jump .done
+.check_jet
+	checkflag ENGINE_JETBADGE
+	iffalse .check_garnish
+	checkflag ENGINE_TOXICBADGE
+	iffalse .five_badge
+.seven_badge
+	pokemart MARTTYPE_STANDARD, MART_SEVEN_BADGES
+	jump .done
+.check_garnish
+	checkflag ENGINE_GARNISHBADGE
+	iffalse .check_basic
+	checkflag ENGINE_TOXICBADGE
+	iftrue .five_badge
+	checkflag ENGINE_BASICBADGE
+	iffalse .four_badge
+.five_badge
+	pokemart MARTTYPE_STANDARD, MART_FIVE_BADGES
+	jump .done
+.check_basic
+	checkflag ENGINE_BASICBADGE
+	iffalse .check_toxic
+	checkflag ENGINE_TOXICBADGE
+	iftrue .five_badge
+.four_badge
+	pokemart MARTTYPE_STANDARD, MART_FOUR_BADGES
+	jump .done
+.check_toxic
+	checkflag ENGINE_TOXICBADGE
+	iftrue .four_badge
+	checkflag ENGINE_INSECTBADGE
+	iffalse .check_spooky
+	pokemart MARTTYPE_STANDARD, MART_THREE_BADGES
+	jump .done
+.check_spooky
+	checkflag ENGINE_SPOOKYBADGE
+	iffalse .check_wave
+	pokemart MARTTYPE_STANDARD, MART_TWO_BADGES
+	jump .done
+.check_wave
+	checkflag ENGINE_WAVEBADGE
+	iffalse .check_dex
+	pokemart MARTTYPE_STANDARD, MART_ONE_BADGE
+	jump .done
+.check_dex
+	checkflag ENGINE_POKEDEX
+	iffalse .no_dex
+	pokemart MARTTYPE_STANDARD, MART_NO_BADGES
+	jump .done
+.no_dex
+	pokemart MARTTYPE_STANDARD, MART_NO_DEX
+.done
+	closetext
+	end
+	

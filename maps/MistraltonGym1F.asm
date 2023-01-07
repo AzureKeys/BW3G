@@ -124,7 +124,7 @@ MistraltonGymSkylaScript:
 	writetext ReceivedJetBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_GLACIERBADGE
+	setflag ENGINE_JETBADGE
 .FightDone:
 	checkevent EVENT_GOT_ACROBATICS_TM
 	iftrue .SpeechAfterTM
@@ -158,7 +158,7 @@ MistraltonGymGuyScript:
 	end
 
 MistraltonGymStatue:
-	checkflag ENGINE_GLACIERBADGE
+	checkflag ENGINE_JETBADGE
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:

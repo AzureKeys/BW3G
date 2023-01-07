@@ -18,7 +18,7 @@ R23GateBadgeScript:
 	turnobject PLAYER, UP
 	opentext
 	writetext R23GateOfficerStopText
-	checkflag ENGINE_ZEPHYRBADGE
+	checkflag ENGINE_WAVEBADGE
 	iffalse .nobadge
 	buttonsound
 	waitsfx

@@ -60,7 +60,7 @@ CasteliaGymBurghScript:
 	writetext ReceivedInsectBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_PLAINBADGE
+	setflag ENGINE_INSECTBADGE
 	setmapscene CASTELIA_CITY_STREETS, SCENE_CASTELIA_CHEREN
 .FightDone:
 	checkevent EVENT_GOT_STRUGGLE_BUG_TM
@@ -100,7 +100,7 @@ CasteliaGymGuyScript:
 	end
 
 CasteliaGymStatue:
-	checkflag ENGINE_PLAINBADGE
+	checkflag ENGINE_INSECTBADGE
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:

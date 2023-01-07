@@ -14,7 +14,7 @@ BattleCompanyPresidentScript:
 	iftrue .GotEXPShare
 	writetext BattleCompanyPresidentIntroText
 	waitbutton
-	checkflag ENGINE_PLAINBADGE
+	checkflag ENGINE_INSECTBADGE
 	iffalse .NotEnoughBadges
 	writetext BattleCompanyPresidentGiveEXPShareText
 	buttonsound

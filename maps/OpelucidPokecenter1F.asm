@@ -14,10 +14,7 @@ OpelucidPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 OpelucidPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_OPELUCID
-	closetext
-	end
+	jumpstd scalingmart
 
 OpelucidPokecenterCooltrainerMScript:
 	jumptextfaceplayer OpelucidPokecenterCooltrainerMText

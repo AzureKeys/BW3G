@@ -13,10 +13,7 @@ UndellaPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 UndellaPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_UNDELLA
-	closetext
-	end
+	jumpstd scalingmart
 
 UndellaPokecenterGentlemanScript:
 	jumptextfaceplayer UndellaPokecenterGentlemanText

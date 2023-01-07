@@ -66,7 +66,7 @@ UndellaTownBlockerScript:
 	turnobject UNDELLATOWN_BLOCKER, DOWN
 	turnobject PLAYER, UP
 	opentext
-	checkflag ENGINE_ZEPHYRBADGE
+	checkflag ENGINE_WAVEBADGE
 	iftrue .Okay
 	writetext UndellaTownBlockerText_Blocked
 	waitbutton
@@ -86,7 +86,7 @@ UndellaTownBlockerScript:
 UndellaTownBlockerTextScript:
 	faceplayer
 	opentext
-	checkflag ENGINE_ZEPHYRBADGE
+	checkflag ENGINE_WAVEBADGE
 	iftrue UndellaTownBlocker_Safe
 	writetext UndellaTownBlockerText_Dangerous
 	waitbutton

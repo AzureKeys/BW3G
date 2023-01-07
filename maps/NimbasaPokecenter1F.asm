@@ -14,10 +14,7 @@ NimbasaPokecenterNurseScript:
 	jumpstd pokecenternurse
 
 NimbasaPokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_NIMBASA
-	closetext
-	end
+	jumpstd scalingmart
 
 NimbasaPokecenterGrampsScript:
 	jumptextfaceplayer NimbasaPokecenterGrampsText

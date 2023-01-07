@@ -27,7 +27,7 @@ VirbankGymRoxieScript:
 	writetext ReceivedToxicBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
-	setflag ENGINE_FOGBADGE
+	setflag ENGINE_TOXICBADGE
 .FightDone:
 	checkevent EVENT_GOT_VENOSHOCK_TM
 	iftrue .SpeechAfterTM
@@ -49,7 +49,7 @@ VirbankGymRoxieScript:
 	end
 
 VirbankGymStatue:
-	checkflag ENGINE_FOGBADGE
+	checkflag ENGINE_TOXICBADGE
 	iftrue .Beaten
 	jumpstd gymstatue1
 .Beaten:

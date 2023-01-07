@@ -14,10 +14,7 @@ NacrenePokecenterNurseScript:
 	jumpstd pokecenternurse
 
 NacrenePokecenterClerkScript:
-	opentext
-	pokemart MARTTYPE_STANDARD, MART_NACRENE
-	closetext
-	end
+	jumpstd scalingmart
 
 NacrenePokecenterTeacherScript:
 	jumptextfaceplayer NacrenePokecenterTeacherText

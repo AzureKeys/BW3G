@@ -54,3 +54,4 @@
 	enum gamecornercoinvendor
 	enum happinesschecknpc
 	enum apartmentstairs
+	enum scalingmart
