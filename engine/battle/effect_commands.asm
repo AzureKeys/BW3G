@@ -3795,7 +3795,8 @@ BattleCommand_PoisonTarget:
 	ld a, [wTypeModifier]
 	and $7f
 	ret z
-	call CheckIfTargetIsPoisonType
+	ld c, POISON
+	call CheckIfTargetIsSpecificType
 	ret z
 	call GetOpponentItem
 	ld a, b
@@ -3859,7 +3860,8 @@ BattleCommand_Poison:
 	and $7f
 	jp z, .failed
 
-	call CheckIfTargetIsPoisonType
+	ld c, POISON
+	call CheckIfTargetIsSpecificType
 	jp z, .failed
 
 	call CheckAlreadyHasStatus
@@ -3928,7 +3930,8 @@ BattleCommand_Poison:
 	cp EFFECT_TOXIC
 	ret
 
-CheckIfTargetIsPoisonType:
+CheckIfTargetIsSpecificType:
+; Return z if target has type loaded in c
 	ld de, wEnemyMonType1
 	ldh a, [hBattleTurn]
 	and a
@@ -3937,10 +3940,10 @@ CheckIfTargetIsPoisonType:
 .ok
 	ld a, [de]
 	inc de
-	cp POISON
+	cp c
 	ret z
 	ld a, [de]
-	cp POISON
+	cp c
 	ret
 
 PoisonOpponent:
@@ -4115,7 +4118,8 @@ BattleCommand_BurnTarget:
 	ld a, [wTypeModifier]
 	and $7f
 	ret z
-	call CheckMoveTypeMatchesTarget ; Don't burn a Fire-type
+	ld c, FIRE
+	call CheckIfTargetIsSpecificType
 	ret z
 	call GetOpponentItem
 	ld a, b
@@ -4184,7 +4188,8 @@ BattleCommand_FreezeTarget:
 	ld a, [wBattleWeather]
 	cp WEATHER_SUN
 	ret z
-	call CheckMoveTypeMatchesTarget ; Don't freeze an Ice-type
+	ld c, ICE
+	call CheckIfTargetIsSpecificType
 	ret z
 	call GetOpponentItem
 	ld a, b
@@ -6083,7 +6088,8 @@ BattleCommand_Burn:
 	ld a, [wTypeModifier]
 	and $7f
 	jr z, .didnt_affect
-	call CheckMoveTypeMatchesTarget ; Don't burn a Fire-type
+	ld c, FIRE
+	call CheckIfTargetIsSpecificType
 	ret z
 	call GetOpponentItem
 	ld a, b
@@ -6191,44 +6197,6 @@ BattleCommand_Paralyze:
 .didnt_affect
 	call AnimateFailedMove
 	jp PrintDoesntAffect
-
-CheckMoveTypeMatchesTarget:
-; Compare move type to opponent type.
-; Return z if matching the opponent type,
-; unless the move is Normal (Tri Attack).
-
-	push hl
-
-	ld hl, wEnemyMonType1
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .ok
-	ld hl, wBattleMonType1
-.ok
-
-	ld a, BATTLE_VARS_MOVE_TYPE
-	call GetBattleVar
-	and TYPE_MASK
-	cp NORMAL
-	jr z, .normal
-
-	cp [hl]
-	jr z, .return
-
-	inc hl
-	cp [hl]
-
-.return
-	pop hl
-	ret
-
-.normal
-	ld a, 1
-	and a
-	pop hl
-	ret
-
-;INCLUDE "engine/battle/move_effects/substitute.asm"
 
 BattleCommand_RechargeNextTurn:
 ; rechargenextturn
