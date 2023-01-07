@@ -50,7 +50,7 @@ PlayersHousePosterScript:
 .Script:
 	describedecoration DECODESC_POSTER
 
-PlayersHouseRadioScript:	
+PlayersHouseRadioScript:
 	; halloffame
 	; returnfromcredits
 	; end
@@ -66,7 +66,7 @@ PlayersHouseRadioScript:
 	; setflag ENGINE_GARNISHBADGE
 	; setflag ENGINE_JETBADGE
 	; setflag ENGINE_LEGENDBADGE
-	; setflag ENGINE_FLYPOINT_PKMN_LEAGUE
+	; setflag ENGINE_FLYPOINT_ASPERTIA
 	; end
 	
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
@@ -158,7 +158,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, R_23_WEST, 7
+	;warp_event  7,  0, VICTORY_ROAD_ENTRANCE_NORTH, 1
 
 	db 0 ; coord events
 

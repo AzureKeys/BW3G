@@ -421,11 +421,24 @@ RestartMapMusic::
 	ret
 
 SpecialMapMusic::
+; don't play surf music in Victory Road or Pkmn League
+	push hl
+	push bc
+	ld de, MAP_MUSIC
+	call GetMapField
+	ld a, c
+	pop bc
+	pop hl
+	cp MUSIC_VICTORY_ROAD
+	jr z, .no
+	cp MUSIC_PKMN_LEAGUE
+	jr z, .no
 	ld a, [wPlayerState]
 	cp PLAYER_SURF
 	jr z, .surf
 	cp PLAYER_SURF_PIKA
 	jr z, .surf
+.no
 	and a
 	ret
 

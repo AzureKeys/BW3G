@@ -1948,6 +1948,18 @@ BikeFunction:
 	ld de, Script_GetOnBike_Register
 	call .CheckIfRegistered
 	call QueueScript
+; Don't play bike music in Victory Road or Pkmn League
+	push hl
+	push bc
+	ld de, MAP_MUSIC
+	call GetMapField
+	ld a, c
+	pop bc
+	pop hl
+	cp MUSIC_VICTORY_ROAD
+	jr z, .skip_music
+	cp MUSIC_PKMN_LEAGUE
+	jr z, .skip_music
 	xor a
 	ld [wMusicFade], a
 	ld de, MUSIC_NONE
@@ -1958,6 +1970,7 @@ BikeFunction:
 	ld a, e
 	ld [wMapMusic], a
 	call PlayMusic
+.skip_music
 	ld a, $1
 	ret
 
