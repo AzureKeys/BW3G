@@ -95,3 +95,4 @@ TrainerClassNames::
 	db "<PKMN> TRAINER@"
 	db "PZMA SAGE@"
 	db "<PKMN> TRAINER@"
+	db "<PKMN> TRAINER@"

@@ -95,4 +95,5 @@ BTTrainerClassSprites:
 	db SPRITE_INFER         ; infer
 	db SPRITE_INFER_SAGE    ; infer_sage
 	db SPRITE_INFER         ; infer2
+	db SPRITE_IRIS          ; iris
 	

@@ -97,3 +97,4 @@ TrainerPicPointers::
 	dba InferPic
 	dba InferSagePic
 	dba Infer2Pic
+	dba IrisPic

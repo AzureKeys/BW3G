@@ -74,6 +74,7 @@ GrimsleyPic:        INCBIN "gfx/trainers/grimsley.2bpp.lz"
 ElesaPic:           INCBIN "gfx/trainers/elesa.2bpp.lz"
 ColressPic:         INCBIN "gfx/trainers/colress.2bpp.lz"
 JuniperPic:         INCBIN "gfx/trainers/juniper.2bpp.lz"
+IrisPic:            INCBIN "gfx/trainers/iris.2bpp.lz"
 GenesisFrontpic:
 GenesisPic:         INCBIN "gfx/trainers/genesis_project.2bpp.lz"
 GolbatFrontpic:     INCBIN "gfx/pokemon/golbat/front.animated.2bpp.lz"

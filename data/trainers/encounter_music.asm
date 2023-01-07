@@ -98,3 +98,4 @@ TrainerEncounterMusic::
 	db MUSIC_RIVAL_ENCOUNTER       ; infer
 	db MUSIC_ROCKET_ENCOUNTER      ; infer_sage
 	db MUSIC_RIVAL_ENCOUNTER       ; infer2
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; iris
