@@ -469,12 +469,16 @@ PokeBallEffect:
 	ld [hl], a
 
 .load_data
+	ld a, [wCurItem]
+	push af
 	ld a, [wTempEnemyMonSpecies]
 	ld [wCurPartySpecies], a
 	ld a, [wEnemyMonLevel]
 	ld [wCurPartyLevel], a
 	farcall LoadEnemyMon
 
+	pop af
+	ld [wCurItem], a
 	pop af
 	ld [wEnemySubStatus5], a
 
@@ -561,7 +565,7 @@ PokeBallEffect:
 	xor a ; PARTYMON
 	ld [wMonType], a
 	call ClearSprites
-
+	
 	predef TryAddMonToParty
 
 	farcall SetCaughtData

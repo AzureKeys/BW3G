@@ -251,4 +251,5 @@ NewPokedexOrder:
 	db ZWEILOUS   ; fa
 	db HYDREIGON  ; fb
 	db GENESECT   ; fc
+	db GENESIS_MON
 	

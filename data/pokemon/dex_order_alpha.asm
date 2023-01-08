@@ -253,3 +253,4 @@ AlphabeticalPokedexOrder:
 	db ZORUA
 	db ZUBAT
 	db ZWEILOUS
+	db GENESIS_MON
