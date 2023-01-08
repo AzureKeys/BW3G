@@ -2426,7 +2426,7 @@ JohtoGrassWildMons:
 	db 46, DRAGONAIR
 	db 46, ALTARIA
 
-	map_id R_23_EAST
+	map_id R_23_WEST
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, AUDINO
@@ -2461,5 +2461,293 @@ JohtoGrassWildMons:
 	db 18, SAWK
 	db 20, FERROSEED
 	db 21, AUDINO
+
+	map_id R_23_EAST
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 50, AUDINO
+	db 49, ELECTABUZZ
+	db 49, MAGMAR
+	db 47, FERROTHORN
+	db 48, HOUNDOOM
+	db 49, VIBRAVA
+	db 50, THROH
+	db 50, SAWK
+	db 52, FERROTHORN
+	db 54, AUDINO
+	; day
+	db 50, AUDINO
+	db 49, ELECTABUZZ
+	db 49, MAGMAR
+	db 47, FERROTHORN
+	db 48, HOUNDOOM
+	db 49, VIBRAVA
+	db 50, THROH
+	db 50, SAWK
+	db 52, FERROTHORN
+	db 54, AUDINO
+	; nite
+	db 50, AUDINO
+	db 49, ELECTABUZZ
+	db 49, MAGMAR
+	db 47, FERROTHORN
+	db 48, HOUNDOOM
+	db 49, VIBRAVA
+	db 50, THROH
+	db 50, SAWK
+	db 52, FERROTHORN
+	db 54, AUDINO
+
+	map_id VICTORY_ROAD_CAVE_1F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+	; day
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+	; nite
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+
+	map_id VICTORY_ROAD_CAVE_2F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+	; day
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+	; nite
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+
+	map_id VICTORY_ROAD_CAVE_3F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+	; day
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+	; nite
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+
+	map_id VICTORY_ROAD_CASTLE_OUTSIDE
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+	; day
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+	; nite
+	db 52, GOLBAT
+	db 51, SWOOBAT
+	db 52, LAIRON
+	db 50, CRUSTLE
+	db 51, PILOSWINE
+	db 52, LAMPENT
+	db 48, DEINO
+	db 50, METANG
+	db 52, COFAGRIGUS
+	db 55, ZWEILOUS
+
+	map_id VICTORY_ROAD_OUTDOOR_1F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 52, GURDURR
+	db 51, KROKOROK
+	db 52, EXCADRILL
+	db 50, MEDICHAM
+	db 51, FERROTHORN
+	db 52, TOXICROAK
+	db 50, PUPITAR
+	db 50, DRIFBLIM
+	db 52, FRAXURE
+	db 55, FRAXURE
+	; day
+	db 52, GURDURR
+	db 51, KROKOROK
+	db 52, EXCADRILL
+	db 50, MEDICHAM
+	db 51, FERROTHORN
+	db 52, TOXICROAK
+	db 50, PUPITAR
+	db 50, DRIFBLIM
+	db 52, FRAXURE
+	db 55, FRAXURE
+	; nite
+	db 52, GURDURR
+	db 51, KROKOROK
+	db 52, EXCADRILL
+	db 50, MEDICHAM
+	db 51, FERROTHORN
+	db 52, TOXICROAK
+	db 50, PUPITAR
+	db 50, DRIFBLIM
+	db 52, FRAXURE
+	db 55, FRAXURE
+
+	map_id VICTORY_ROAD_OUTDOOR_2F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 52, GURDURR
+	db 51, KROKOROK
+	db 52, EXCADRILL
+	db 50, MEDICHAM
+	db 51, FERROTHORN
+	db 52, TOXICROAK
+	db 50, PUPITAR
+	db 50, DRIFBLIM
+	db 52, FRAXURE
+	db 55, FRAXURE
+	; day
+	db 52, GURDURR
+	db 51, KROKOROK
+	db 52, EXCADRILL
+	db 50, MEDICHAM
+	db 51, FERROTHORN
+	db 52, TOXICROAK
+	db 50, PUPITAR
+	db 50, DRIFBLIM
+	db 52, FRAXURE
+	db 55, FRAXURE
+	; nite
+	db 52, GURDURR
+	db 51, KROKOROK
+	db 52, EXCADRILL
+	db 50, MEDICHAM
+	db 51, FERROTHORN
+	db 52, TOXICROAK
+	db 50, PUPITAR
+	db 50, DRIFBLIM
+	db 52, FRAXURE
+	db 55, FRAXURE
+
+	map_id VICTORY_ROAD_GROVE
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 52, ROSELIA
+	db 50, COTTONEE
+	db 50, PETILIL
+	db 52, AUDINO
+	db 51, FERROTHORN
+	db 52, TROPIUS
+	db 50, WHIMSICOTT
+	db 50, LILLIGANT
+	db 55, ROSELIA
+	db 55, ROSERADE
+	; day
+	db 52, ROSELIA
+	db 50, COTTONEE
+	db 50, PETILIL
+	db 52, AUDINO
+	db 51, FERROTHORN
+	db 52, TROPIUS
+	db 50, WHIMSICOTT
+	db 50, LILLIGANT
+	db 55, ROSELIA
+	db 55, ROSERADE
+	; nite
+	db 52, ROSELIA
+	db 50, COTTONEE
+	db 50, PETILIL
+	db 52, AUDINO
+	db 51, FERROTHORN
+	db 52, TROPIUS
+	db 50, WHIMSICOTT
+	db 50, LILLIGANT
+	db 55, ROSELIA
+	db 55, ROSERADE
 
 	db -1 ; end
