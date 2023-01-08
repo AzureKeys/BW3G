@@ -698,4 +698,7 @@ HallOfFame_Blocks:
 
 NsRoom_Blocks:
 	INCBIN "maps/NsRoom.ablk"
+
+CaitlinsHouse_Blocks:
+	INCBIN "maps/CaitlinsHouse.ablk"
 	
