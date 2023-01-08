@@ -366,7 +366,7 @@ ChampionsRoomJustBeatGenesisText:
 
 ChampionsRoomShadowsDefeatedText:
 	text "SHADOW: N-no!"
-	line "this can't be!"
+	line "This can't be!"
 	
 	para "SHADOW: Our king"
 	line "has been…"

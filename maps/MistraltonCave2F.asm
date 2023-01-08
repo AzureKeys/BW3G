@@ -155,15 +155,29 @@ AceTrainerMMistraltonCaveAfterText:
 	done
 	
 AceTrainerFMistraltonCaveSeenText:
-	text "..."
+	text "Why don't you prove"
+	line "to me how much you"
+	
+	para "and your #MON"
+	line "are capable of!"
 	done
 
 AceTrainerFMistraltonCaveBeatenText:
-	text "..."
+	text "You are capable of"
+	line "far more than we"
+	cont "are!"
 	done
 
 AceTrainerFMistraltonCaveAfterText:
-	text "..."
+	text "There actually"
+	line "wasn't any need to"
+	
+	para "prove how strong"
+	line "we are. I already"
+	
+	para "know how capable"
+	line "my #MON and I"
+	cont "are!"
 	done
 	
 MistraltonCave2FBoulderFellText:

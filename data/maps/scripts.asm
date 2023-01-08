@@ -288,10 +288,10 @@ INCLUDE "maps/IcirrusFanClub.asm"
 INCLUDE "maps/DragonspiralTower1F.asm"
 INCLUDE "maps/DragonspiralTower2F.asm"
 INCLUDE "maps/DragonspiralTower3F.asm"
-INCLUDE "maps/DragonspiralTower4F.asm"
 
 SECTION "Map Scripts 15", ROMX
 
+INCLUDE "maps/DragonspiralTower4F.asm"
 INCLUDE "maps/DragonspiralTower5F.asm"
 INCLUDE "maps/DragonspiralTower6F.asm"
 INCLUDE "maps/DragonspiralTowerRoof.asm"
@@ -314,12 +314,12 @@ INCLUDE "maps/VictoryRoadPokecenter1F.asm"
 INCLUDE "maps/PkmnLeaguePokecenter1F.asm"
 INCLUDE "maps/IcirrusCave.asm"
 INCLUDE "maps/GrimsleysRoom.asm"
-INCLUDE "maps/MarshalsRoom.asm"
-INCLUDE "maps/ElesasRoom.asm"
-INCLUDE "maps/ColresssRoom.asm"
 
 SECTION "Map Scripts 16", ROMX
 
+INCLUDE "maps/MarshalsRoom.asm"
+INCLUDE "maps/ElesasRoom.asm"
+INCLUDE "maps/ColresssRoom.asm"
 INCLUDE "maps/LentimasTown.asm"
 INCLUDE "maps/StrangeHouse1F.asm"
 INCLUDE "maps/StrangeHouseB1F.asm"

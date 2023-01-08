@@ -157,51 +157,99 @@ VictoryRoadCave2FBoulderFellText:
 	done
 	
 AceTrainerMVictoryRoadCave2FSeenText:
-	text "..."
+	text "It's not enough for"
+	line "me just to be"
+	
+	para "together with"
+	line "#MON! I want to"
+	cont "win!"
 	done
 
 AceTrainerMVictoryRoadCave2FBeatenText:
-	text "..."
+	text "How… How could you"
+	line "defeat me this"
+	cont "utterly?"
 	done
 
 AceTrainerMVictoryRoadCave2FAfterText:
-	text "..."
+	text "It's not enough for"
+	line "me just to be"
+	
+	para "together with"
+	line "#MON! I want to"
+	cont "win!"
+	
+	para "But I do know that"
+	line "some people feel"
+	
+	para "at ease just by"
+	line "being with their"
+	cont "#MON…"
 	done
 	
 AceTrainerFVictoryRoadCave2FSeenText:
-	text "..."
+	text "Our unity won't be"
+	line "bested by anyone!"
 	done
 
 AceTrainerFVictoryRoadCave2FBeatenText:
-	text "..."
+	text "We couldn't win…"
+	line "but that's alright."
 	done
 
 AceTrainerFVictoryRoadCave2FAfterText:
-	text "..."
-	done
+	text "My #MON was"
+	line "once stolen by"
+	cont "TEAM PLASMA."
 	
-PkmnRangerMVictoryRoadCave2FSeenText:
-	text "..."
-	done
-
-PkmnRangerMVictoryRoadCave2FBeatenText:
-	text "..."
-	done
-
-PkmnRangerMVictoryRoadCave2FAfterText:
-	text "..."
+	para "I'm just so grate-"
+	line "ful that we can be"
+	cont "together now."
 	done
 	
 PkmnRangerFVictoryRoadCave2FSeenText:
-	text "..."
+	text "Something about"
+	line "you reminds me of"
+	
+	para "that trainer from"
+	line "years ago…"
 	done
 
 PkmnRangerFVictoryRoadCave2FBeatenText:
-	text "..."
+	text "Yes! That mix of"
+	line "kindness and power"
+	
+	para "is just like that"
+	line "trainer!"
 	done
 
 PkmnRangerFVictoryRoadCave2FAfterText:
-	text "..."
+	text "I wonder where"
+	line "that trainer is"
+	cont "now…"
+	done
+	
+PkmnRangerMVictoryRoadCave2FSeenText:
+	text "Behold the blind-"
+	line "ing brilliance of"
+	cont "my many BADGEs!"
+	done
+
+PkmnRangerMVictoryRoadCave2FBeatenText:
+	text "Your skill is too"
+	line "brilliant to"
+	cont "behold!"
+	done
+
+PkmnRangerMVictoryRoadCave2FAfterText:
+	text "That BADGE you"
+	line "have there… No it"
+	
+	para "is your skill and"
+	line "the #MON with"
+	
+	para "you that are so"
+	line "brilliant!"
 	done
 	
 VeteranMVictoryRoadCave2FSeenText:

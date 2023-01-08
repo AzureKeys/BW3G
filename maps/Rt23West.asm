@@ -508,15 +508,29 @@ PkmnRangerFR23AfterText:
 	done
 	
 VeteranMR23SeenText:
-	text "..."
+	text "Hey there, future"
+	line "champion!"
 	done
 
 VeteranMR23BeatenText:
-	text "..."
+	text "When someone wins,"
+	line "their opponent has"
+	cont "to lose, right?"
 	done
 
 VeteranMR23AfterText:
-	text "..."
+	text "If there were no"
+	line "#MON, we would"
+	
+	para "not worry about"
+	line "who's strong or"
+	
+	para "weak. But we also"
+	line "wouldn't have had"
+	
+	para "the chance to meet"
+	line "and battle like"
+	cont "this, I suppose."
 	done
 	
 BattleGirlR23SeenText:

@@ -266,15 +266,22 @@ ScientistFVictoryRoadOutdoor2FAfterText:
 	done
 	
 BlackbeltVictoryRoadOutdoor2FSeenText:
-	text "..."
+	text "Let's fight!"
 	done
 
 BlackbeltVictoryRoadOutdoor2FBeatenText:
-	text "..."
+	text "You took a win"
+	line "from me! It's so"
+	cont "frustrating!"
 	done
 
 BlackbeltVictoryRoadOutdoor2FAfterText:
-	text "..."
+	text "I'll use the"
+	line "bitterness of this"
+	
+	para "defeat to reach"
+	line "even greater"
+	cont "heights!"
 	done
 	
 BattleGirlVictoryRoadOutdoor2FSeenText:

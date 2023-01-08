@@ -209,87 +209,191 @@ VictoryRoadCave1FBoulderFellText:
 	done
 	
 AceTrainerMVictoryRoadCave1FSeenText:
-	text "..."
+	text "An ACE TRAINER"
+	line "like me has pride,"
+	cont "so I won't lose!"
 	done
 
 AceTrainerMVictoryRoadCave1FBeatenText:
-	text "..."
+	text "I couldn't protect"
+	line "my pride! I'm"
+	cont "mortified!"
 	done
 
 AceTrainerMVictoryRoadCave1FAfterText:
-	text "..."
+	text "Pride doesn't mean"
+	line "acting arrogantly!"
+	
+	para "I'm really proud"
+	line "of what I've"
+	
+	para "achieved in my"
+	line "life!"
 	done
 	
 AceTrainerFVictoryRoadCave1FSeenText:
-	text "..."
+	text "Challenging the"
+	line "#MON LEAGUE?"
+	
+	para "It's no wonder you"
+	line "might feel a bit"
+	
+	para "nervous, but you"
+	line "just have to"
+	
+	para "believe in your"
+	line "#MON and do it!"
 	done
 
 AceTrainerFVictoryRoadCave1FBeatenText:
-	text "..."
+	text "Am I really going"
+	line "to be alright with"
+	
+	para "only this trifling"
+	line "power?"
 	done
 
 AceTrainerFVictoryRoadCave1FAfterText:
-	text "..."
+	text "When you feel un-"
+	line "easy or afraid,"
+	
+	para "just hug your"
+	line "#MON real"
+	cont "tight!"
 	done
 	
 VeteranMVictoryRoadCave1FSeenText:
-	text "..."
+	text "You bothered to"
+	line "come all the way"
+	
+	para "here? Good! I will"
+	line "reward your hard"
+	
+	para "work by battling"
+	line "with all of my"
+	cont "strength!"
 	done
 
 VeteranMVictoryRoadCave1FBeatenText:
-	text "..."
+	text "A battle with a"
+	line "good trainer fills"
+	
+	para "my heart with"
+	line "warmth!"
 	done
 
 VeteranMVictoryRoadCave1FAfterText:
-	text "..."
+	text "The fact that you"
+	line "made it out here…"
+	
+	para "That's it! It must"
+	line "have been thanks"
+	
+	para "to a #MON using"
+	line "a hidden move!"
 	done
 	
 VeteranFVictoryRoadCave1FSeenText:
-	text "..."
+	text "Hey, since you"
+	line "worked so hard to"
+	
+	para "get here, how"
+	line "about I be your"
+	cont "opponent?"
 	done
 
 VeteranFVictoryRoadCave1FBeatenText:
-	text "..."
+	text "Thanks a bunch. It"
+	line "was a lot of fun!"
 	done
 
 VeteranFVictoryRoadCave1FAfterText:
-	text "..."
+	text "My #MON lets me"
+	line "ride on its back"
+	
+	para "as it uses SURF or"
+	line "WATERFALL. I"
+	
+	para "really feel its"
+	line "love at those"
+	cont "times!"
 	done
 	
 PsychicMVictoryRoadCave1FSeenText:
-	text "..."
+	text "You… Who's brought"
+	line "you this far?"
 	done
 
 PsychicMVictoryRoadCave1FBeatenText:
-	text "..."
+	text "It's your reliable"
+	line "#MON who've"
+	
+	para "brought you this"
+	line "far, isn't it?"
 	done
 
 PsychicMVictoryRoadCave1FAfterText:
-	text "..."
+	text "All people know"
+	line "what they can do"
+	cont "alone, but…"
+	
+	para "There are things"
+	line "you can only do"
+	cont "with #MON."
 	done
 	
 PsychicFVictoryRoadCave1FSeenText:
-	text "..."
+	text "I'll use my psychic"
+	line "powers to release"
+	
+	para "my #MON from"
+	line "its #BALL!"
 	done
 
 PsychicFVictoryRoadCave1FBeatenText:
-	text "..."
+	text "Well, that didn't"
+	line "go the way I"
+	cont "wanted it to!"
 	done
 
 PsychicFVictoryRoadCave1FAfterText:
-	text "..."
+	text "I heard that the"
+	line "former ELITE FOUR"
+	
+	para "member, CAITLIN,"
+	line "is an amazing"
+	cont "PSYCHIC."
+	
+	para "I wonder why she"
+	line "stepped down. I'd"
+	
+	para "sure love to have"
+	line "faced her…"
 	done
 	
 HexManiacVictoryRoadCave1FSeenText:
-	text "..."
+	text "You are no ordin-"
+	line "ary opponent…"
+	
+	para "That is what my"
+	line "ghost type #MON"
+	
+	para "is whispering to"
+	line "me."
 	done
 
 HexManiacVictoryRoadCave1FBeatenText:
-	text "..."
+	text "My premonition was"
+	line "spot on!"
 	done
 
 HexManiacVictoryRoadCave1FAfterText:
-	text "..."
+	text "Could it be that"
+	line "you and your #-"
+	
+	para "MON are the ones"
+	line "emitting that"
+	cont "strong aura?!"
 	done
 
 VictoryRoadCave1F_MapEvents:

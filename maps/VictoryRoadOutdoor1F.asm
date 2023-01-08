@@ -93,27 +93,53 @@ VictoryRoadNurseHealText:
 	done
 	
 BackpackerFVictoryRoadOutdoor1FSeenText:
-	text "..."
+	text "I am…"
+	
+	para "Ex-TEAM PLASMA!"
 	done
 
 BackpackerFVictoryRoadOutdoor1FBeatenText:
-	text "..."
+	text "Eek! You're like"
+	line "that trainer from"
+	
+	para "all those years"
+	line "ago!"
 	done
 
 BackpackerFVictoryRoadOutdoor1FAfterText:
-	text "..."
+	text "There are some"
+	line "people who don't"
+	
+	para "love #MON even"
+	line "if they're strong."
+	
+	para "And there are some"
+	line "people who love"
+	
+	para "even the weakest"
+	line "#MON."
 	done
 	
 VeteranFVictoryRoadOutdoor1FSeenText:
-	text "..."
+	text "Wait! You, young"
+	line "trainer over"
+	
+	para "there! Look at my"
+	line "#MON."
 	done
 
 VeteranFVictoryRoadOutdoor1FBeatenText:
-	text "..."
+	text "Not bad! I like"
+	line "your strength."
 	done
 
 VeteranFVictoryRoadOutdoor1FAfterText:
-	text "..."
+	text "I'd love to brag"
+	line "about my #MON,"
+	
+	para "but it would take"
+	line "too long, so I'll"
+	cont "resist!"
 	done
 	
 VeteranMVictoryRoadOutdoor1FSeenText:
