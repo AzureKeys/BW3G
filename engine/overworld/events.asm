@@ -1191,9 +1191,9 @@ CanUseSweetScent::
 ; Only load encounters in grass for Pinwheel Forest & Grove in Victory Road
 ; All CAVE maps are in MapGroup_Dungeons, so just check wMapNumber
 	ld a, [wMapNumber]
-	cp 21 ; PinwheelForest
+	cp MAP_PINWHEEL_FOREST
 	jr z, .grass_check
-	cp 59 ; VictoryRoadGrove
+	cp MAP_VICTORY_ROAD_GROVE
 	jr nz, .ice_check
 .grass_check
 	farcall CheckGrassCollision

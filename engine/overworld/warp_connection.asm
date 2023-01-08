@@ -231,8 +231,9 @@ LoadWarpData:
 	call CheckIndoorMap
 	ret nz
 
-; GIANT_CHASM_B1F, CELESTIAL_TOWER_ROOF, and DRAGONSPIRAL_TOWER_ROOF 
-; are outdoor maps within indoor maps.
+; The following are outdoor maps within indoor maps:
+; GIANT_CHASM_B1F, CELESTIAL_TOWER_ROOF, DRAGONSPIRAL_TOWER_ROOF
+; VICTORY_ROAD_OUTDOOR_1F, VICTORY_ROAD_OUTDOOR_2F
 ; Dig and Escape Rope should not take you to them.
 	ld a, [wPrevMapGroup]
 	cp GROUP_CELESTIAL_TOWER_ROOF ; all 3 are in group DUNGEONS
@@ -243,6 +244,10 @@ LoadWarpData:
 	cp MAP_CELESTIAL_TOWER_ROOF
 	ret z
 	cp MAP_DRAGONSPIRAL_TOWER_ROOF
+	ret z
+	cp MAP_VICTORY_ROAD_OUTDOOR_1F
+	ret z
+	cp MAP_VICTORY_ROAD_OUTDOOR_2F
 	ret z
 .not_mt_moon_or_tin_tower
 
