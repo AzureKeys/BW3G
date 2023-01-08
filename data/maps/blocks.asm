@@ -695,4 +695,7 @@ ChampionsRoom_Blocks:
 
 HallOfFame_Blocks:
 	INCBIN "maps/HallOfFame.ablk"
+
+NsRoom_Blocks:
+	INCBIN "maps/NsRoom.ablk"
 	

@@ -384,4 +384,5 @@ ENDM
 	map_attributes ChampionsRoomEntrance, CHAMPIONS_ROOM_ENTRANCE, $00, 0
 	map_attributes ChampionsRoom, CHAMPIONS_ROOM, $00, 0
 	map_attributes HallOfFame, HALL_OF_FAME, $00, 0
+	map_attributes NsRoom, NS_ROOM, $00, 0
 	

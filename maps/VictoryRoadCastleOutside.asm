@@ -8,8 +8,9 @@ VictoryRoadCastleOutside_MapScripts:
 VictoryRoadCastleOutside_MapEvents:
 	db 0, 0 ; filler
 
-	db 1 ; warp events
+	db 2 ; warp events
 	warp_event  3, 15, VICTORY_ROAD_OUTDOOR_2F, 9
+	warp_event 18, 11, NS_ROOM, 1
 
 	db 0 ; coord events
 
