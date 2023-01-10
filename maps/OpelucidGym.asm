@@ -386,15 +386,28 @@ VeteranF2OpelucidGymAfterText:
 	done
 	
 VeteranF3OpelucidGymSeenText:
-	text "..."
+	text "I just felt a"
+	line "great wind… Are"
+	
+	para "you the one who"
+	line "kicked it up?"
 	done
 
 VeteranF3OpelucidGymBeatenText:
-	text "..."
+	text "This defeat will"
+	line "also be blown far"
+	cont "away…"
 	done
 
 VeteranF3OpelucidGymAfterText:
-	text "..."
+	text "You are the wind."
+	
+	para "A supple and"
+	line "comforting wind"
+	
+	para "blowing through to"
+	line "the #MON"
+	cont "LEAGUE!"
 	done
 	
 OpelucidGym_MapEvents:

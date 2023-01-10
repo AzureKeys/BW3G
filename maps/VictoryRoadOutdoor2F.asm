@@ -157,27 +157,52 @@ VictoryRoadOutdoor2FBoulderFellText:
 	done
 	
 VeteranMVictoryRoadOutdoor2FSeenText:
-	text "..."
+	text "The people who"
+	line "pass by here have"
+	
+	para "such different"
+	line "moods! It's fun to"
+	
+	para "watch, and even"
+	line "more fun to fight"
+	cont "against them!"
 	done
 
 VeteranMVictoryRoadOutdoor2FBeatenText:
-	text "..."
+	text "Mwa haha!"
+	line "It's fun!"
 	done
 
 VeteranMVictoryRoadOutdoor2FAfterText:
-	text "..."
+	text "Your #MON was"
+	line "in a really good"
+	
+	para "mood the moment"
+	line "that you won!"
 	done
 	
 VeteranFVictoryRoadOutdoor2FSeenText:
-	text "..."
+	text "Are you sure? I'm"
+	line "strong, you know."
+	
+	para "You still want to"
+	line "take me on?"
 	done
 
 VeteranFVictoryRoadOutdoor2FBeatenText:
-	text "..."
+	text "Yes, I'm sure…"
 	done
 
 VeteranFVictoryRoadOutdoor2FAfterText:
-	text "..."
+	text "Not wanting to"
+	line "admit my own"
+	
+	para "limits, I am cont-"
+	line "inuing to battle…"
+	
+	para "That's right! At"
+	line "least I'm"
+	cont "persistent!"
 	done
 	
 AceTrainerMVictoryRoadOutdoor2FSeenText:
@@ -285,15 +310,33 @@ BlackbeltVictoryRoadOutdoor2FAfterText:
 	done
 	
 BattleGirlVictoryRoadOutdoor2FSeenText:
-	text "..."
+	text "Life is all about"
+	line "overcoming"
+	
+	para "hurdles! Could you"
+	line "be a hurdle for"
+	cont "me?"
 	done
 
 BattleGirlVictoryRoadOutdoor2FBeatenText:
-	text "..."
+	text "I couldn't overcome"
+	line "the hurdle you"
+	cont "presented to me…"
 	done
 
 BattleGirlVictoryRoadOutdoor2FAfterText:
-	text "..."
+	text "If you can't over-"
+	line "come a hurdle, you"
+	
+	para "can always just go"
+	line "around it. Head up"
+	
+	para "here, and you'll"
+	line "find the greatest"
+	
+	para "hurdle for #MON"
+	line "trainers: the"
+	cont "#MON LEAGUE!"
 	done
 
 VictoryRoadOutdoor2F_MapEvents:

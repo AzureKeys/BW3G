@@ -253,27 +253,49 @@ PkmnRangerMVictoryRoadCave2FAfterText:
 	done
 	
 VeteranMVictoryRoadCave2FSeenText:
-	text "..."
+	text "The endless cycle"
+	line "of wins and"
+	
+	para "losses… Will it"
+	line "always continue?"
 	done
 
 VeteranMVictoryRoadCave2FBeatenText:
-	text "..."
+	text "Every win and loss"
+	line "is a precious"
+	cont "memory."
 	done
 
 VeteranMVictoryRoadCave2FAfterText:
-	text "..."
+	text "Fighting together"
+	line "with a young kid"
+	
+	para "like you makes me"
+	line "feel young again"
+	cont "myself."
 	done
 	
 BackpackerMVictoryRoadCave2FSeenText:
-	text "..."
+	text "I'm gonna numb you"
+	line "and your #MON!"
 	done
 
 BackpackerMVictoryRoadCave2FBeatenText:
-	text "..."
+	text "Unbelievable! I"
+	line "was the one struck"
+	cont "numb…"
 	done
 
 BackpackerMVictoryRoadCave2FAfterText:
-	text "..."
+	text "A fighting style"
+	line "overflowing with"
+	
+	para "power or a strat-"
+	line "egy that excels"
+	cont "technically…"
+	
+	para "It depends on the"
+	line "#MON, see!"
 	done
 
 VictoryRoadCave2F_MapEvents:

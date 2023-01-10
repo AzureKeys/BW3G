@@ -38,27 +38,50 @@ VictoryRoadGroveBrightPowder:
 	itemball BRIGHTPOWDER
 	
 AceTrainerMVictoryRoadGroveSeenText:
-	text "..."
+	text "One, you are a"
+	line "#MON trainer."
+	
+	para "Two, I am an ACE"
+	line "TRAINER. Put them"
+	
+	para "together, and it's"
+	line "obvious that we're"
+	cont "going to battle!"
 	done
 
 AceTrainerMVictoryRoadGroveBeatenText:
-	text "..."
+	text "One, you won! Two,"
+	line "I lost…"
 	done
 
 AceTrainerMVictoryRoadGroveAfterText:
-	text "..."
+	text "One, I'm strong."
+	line "Two, you're"
+	cont "stronger."
 	done
 	
 AceTrainerFVictoryRoadGroveSeenText:
-	text "..."
+	text "I want to show how"
+	line "much I love #-"
+	cont "MON by winning!"
 	done
 
 AceTrainerFVictoryRoadGroveBeatenText:
-	text "..."
+	text "I can't show my"
+	line "love for my #-"
+	
+	para "MON if I go and"
+	line "lose…"
 	done
 
 AceTrainerFVictoryRoadGroveAfterText:
-	text "..."
+	text "I-I can't express"
+	line "my gratitude"
+	
+	para "toward my #MON"
+	line "except by winning."
+	
+	para "What should I do?"
 	done
 
 VictoryRoadGrove_MapEvents:

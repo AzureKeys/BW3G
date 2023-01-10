@@ -143,15 +143,30 @@ VeteranFVictoryRoadOutdoor1FAfterText:
 	done
 	
 VeteranMVictoryRoadOutdoor1FSeenText:
-	text "..."
+	text "Are you sure you"
+	line "want to seriously"
+	
+	para "take on someone"
+	line "like me, who"
+	cont "battles seriously?"
 	done
 
 VeteranMVictoryRoadOutdoor1FBeatenText:
-	text "..."
+	text "This is the pain"
+	line "that comes from"
+	
+	para "seriously taking"
+	line "someone head on…"
 	done
 
 VeteranMVictoryRoadOutdoor1FAfterText:
-	text "..."
+	text "I battle seriously"
+	line "because I am after"
+	cont "serious strength."
+	
+	para "There's nothing"
+	line "worse that a half-"
+	cont "hearted opponent."
 	done
 
 VictoryRoadOutdoor1F_MapEvents:

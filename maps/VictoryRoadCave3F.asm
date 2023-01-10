@@ -28,15 +28,26 @@ VictoryRoadCave3FFullRestore:
 	hiddenitem FULL_RESTORE, EVENT_VICTORY_ROAD_INT_FULL_RESTORE_2
 	
 VeteranFVictoryRoadCave3FSeenText:
-	text "..."
+	text "All I want are"
+	line "powerful #MON!"
 	done
 
 VeteranFVictoryRoadCave3FBeatenText:
-	text "..."
+	text "I can't comprehend"
+	line "this! How could my"
+	cont "#MON lose?"
 	done
 
 VeteranFVictoryRoadCave3FAfterText:
-	text "..."
+	text "All I want are"
+	line "powerful #MON!"
+	
+	para "Only a #MON"
+	line "that understands"
+	
+	para "that can become"
+	line "one of my"
+	cont "partners!"
 	done
 
 VictoryRoadCave3F_MapEvents:

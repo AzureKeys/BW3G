@@ -431,27 +431,51 @@ AceTrainerF2R23AfterText:
 	done
 	
 BackpackerMR23SeenText:
-	text "..."
+	text "You look like an"
+	line "opponent who will"
+	
+	para "highlight my"
+	line "weaknesses."
 	done
 
 BackpackerMR23BeatenText:
-	text "..."
+	text "Now I see my"
+	line "faults clearly."
 	done
 
 BackpackerMR23AfterText:
-	text "..."
+	text "Accept your own"
+	line "weaknesses. That"
+	
+	para "is the first step"
+	line "to getting"
+	cont "stronger."
 	done
 	
 BackpackerFR23SeenText:
-	text "..."
+	text "A heated battle is"
+	line "good, but get too"
+	
+	para "hot and you might"
+	line "end up getting"
+	cont "burned!"
 	done
 
 BackpackerFR23BeatenText:
-	text "..."
+	text "Amazing! I think I"
+	line "got a bit singed…"
 	done
 
 BackpackerFR23AfterText:
-	text "..."
+	text "Burning competit-"
+	line "iveness and cool"
+	
+	para "logic… You'll need"
+	line "both if you're"
+	
+	para "going to go up"
+	line "against the #-"
+	cont "MON LEAGUE."
 	done
 	
 PkmnRangerMR23SeenText:
