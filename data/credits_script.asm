@@ -3,13 +3,13 @@ CreditsScript:
 ; Clear the banner.
 	db CREDITS_CLEAR
 
+	db CREDITS_MUSIC
 ; Pokemon Crystal Version Staff
 	db                STAFF, 1
 
 	db CREDITS_WAIT, 8
 
 ; Play the credits music.
-	db CREDITS_MUSIC
 
 	db CREDITS_WAIT2, 10
 
@@ -28,7 +28,7 @@ CreditsScript:
 	db      INTERNET_GOBLIN, 3
 	db            BLOODLESS, 4
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db       CUSTOM_SPRITES, 0
 	db              SCARLAX, 1
@@ -36,7 +36,7 @@ CreditsScript:
 	db              EEVEEEE, 3
 	db              SOLO993, 4
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db         CUSTOM_TILES, 0
 	db           AZURE_KEYS, 1
@@ -44,14 +44,14 @@ CreditsScript:
 	db                 JACE, 3
 	db            BLOODLESS, 4
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db         CUSTOM_TILES, 0
 	db                 BEES, 1
 	db                 LUNA, 2
 	db           PIA_CARROT, 3
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db         CUSTOM_MUSIC, 0
 	db                REGEN, 1
@@ -60,7 +60,7 @@ CreditsScript:
 	db      FROGGEST_SPIRIT, 4
 	db           AZURE_KEYS, 5
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db         CUSTOM_CRIES, 0
 	db           AZURE_KEYS, 1
@@ -69,21 +69,21 @@ CreditsScript:
 	db                  AX6, 4
 	db           SOUR_APPLE, 5
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db     PROGRAMMING_HELP, 0
 	db                RANGI, 1
 	db                  FIQ, 2
 	db                  AX6, 3
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db     PROGRAMMING_HELP, 0
 	db            BLOODLESS, 1
 	db                 LUNA, 2
 	db                 PRET, 3
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db       SPECIAL_THANKS, 0
 	db       POLISHED_STAFF, 1
@@ -91,13 +91,13 @@ CreditsScript:
 	db                  FIQ, 4
 	db                DARSH, 5
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db EXTRA_SPECIAL_THANKS, 0
 	db       MRS_AZURE_KEYS, 1
 	db                 DOGS, 2
 
-	db CREDITS_WAIT, 12
+	db CREDITS_WAIT, 15
 
 	db     MADE_POSSIBLE_BY, 0
 	db                 PRET, 2

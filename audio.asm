@@ -78,7 +78,7 @@ INCLUDE "audio/music/rockethideout.asm"
 
 SECTION "Extra Songs 1", ROMX
 
-INCLUDE "audio/music/credits.asm"
+INCLUDE "audio/music/BWEnding.asm"
 
 
 SECTION "Extra Songs 2", ROMX

@@ -23,7 +23,7 @@ Music:
 	dba Music_AfterTheRivalFight
 	dba Music_Surf
 	dba Music_Evolution
-	dba Music_Credits
+	dba Music_BWEnding
 	dba Music_LookAceTrainer
 	dba Music_JohtoWildBattle
 	dba Music_UnovaTrainerBattle
