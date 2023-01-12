@@ -312,6 +312,7 @@ ENDM
 	map_const DRAYDENS_HOUSE_2F, 4, 4
 	map_const R_9, 22, 11
 	map_const SHOPPING_MALL_NINE, 9, 14
+	map_const MEMBERS_ROOM, 7, 4
 	
 	newgroup
 	map_const TUBELINE_BRIDGE, 9, 7

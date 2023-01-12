@@ -327,9 +327,10 @@ MallBuenaText:
 ShoppingMallNine_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 3 ; warp events
 	warp_event  8, 27, R_9, 6
 	warp_event  9, 27, R_9, 7
+	warp_event 16, 13, MEMBERS_ROOM, 1
 
 	db 1 ; coord events
 	coord_event 16, 14, SCENE_DEFAULT, MallMemberScript

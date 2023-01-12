@@ -701,4 +701,7 @@ NsRoom_Blocks:
 
 CaitlinsHouse_Blocks:
 	INCBIN "maps/CaitlinsHouse.ablk"
+
+MembersRoom_Blocks:
+	INCBIN "maps/MembersRoom.ablk"
 	
