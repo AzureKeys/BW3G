@@ -267,43 +267,96 @@ BattleHouseMarlonIntroText:
 	done
 	
 BattleHouseMarlonWinLossText:
-	text "..."
+	text "Ah, ya got me!"
 	done
 	
 BattleHouseMarlonAfterText:
-	text "..."
+	text "You've really"
+	line "gotten strong"
+	
+	para "since ya first"
+	line "started training"
+	cont "#MON!"
+	
+	para "Your vibes are"
+	line "immaculate!"
 	done
 	
 BattleHouseShauntalIntroText:
-	text "..."
+	text "Hm? Oh, I'm just"
+	line "taking a little"
+	
+	para "break from my"
+	line "novel to practice"
+	
+	para "my #MON"
+	line "training."
+	
+	para "Would you like to"
+	line "be my challenger?"
 	done
 	
 BattleHouseShauntalWinLossText:
-	text "..."
+	text "Wow, I'm"
+	line "dumbstruck!"
 	done
 	
 BattleHouseShauntalAfterText:
-	text "..."
+	text "I'm just going to"
+	line "stay and practice"
+	cont "a little longer."
+	
+	para "I just need a"
+	line "little more"
+	
+	para "inspiration before"
+	line "getting back to my"
+	cont "writing…"
 	done
 	
 BattleHouseBurghIntroText:
-	text "..."
+	text "Why hello there,"
+	line "young trainer!"
+	
+	para "How would you like"
+	line "to experience the"
+	
+	para "incredible art-"
+	line "istry of my #-"
+	cont "MON and I?"
 	done
 	
 BattleHouseBurghWinLossText:
-	text "..."
+	text "Oh, ho ho! You're"
+	line "quite the feisty"
+	cont "one!"
 	done
 	
 BattleHouseBurghAfterText:
-	text "..."
+	text "Every now and"
+	line "then, I get a"
+	
+	para "case of artists"
+	line "block, but every"
+	
+	para "time I battle with"
+	line "#MON, I feel"
+	
+	para "the urge to draw,"
+	line "and I just can't"
+	cont "stop!"
 	done
 	
 BattleHouseRoxieIntroText:
-	text "..."
+	text "HEY!"
+	
+	para "Let's fight!"
+	line "Ready, go!"
 	done
 	
 BattleHouseRoxieWinLossText:
-	text "..."
+	text "Wait! I wasn't"
+	line "finished yet!"
 	done
 	
 BattleHouseRoxieAfterText:

@@ -191,47 +191,52 @@ UndellaTownMarlonText:
 	text "MARLON: Hey,"
 	line "<PLAY_G>!"
 	
-	para "I'm sure you got"
-	line "a taste of #-"
-	cont "MON battling on"
-	cont "the way here."
+	para "I'm sure ya got a"
+	line "taste of #MON"
 	
-	para "By the way,"
-	line "there's a contest"
+	para "battling on the"
+	line "way here!"
 	
-	para "for #MON"
-	line "trainers being"
+	para "By the way, some"
+	line "#MON trainers"
 	
-	para "held on ROUTE 14,"
-	line "just south of"
-	cont "town."
+	para "are havin' a"
+	line "contest down on"
+	
+	para "ROUTE 14, just"
+	line "south of town."
 	
 	para "There's a prize"
 	line "for anyone who"
 	
 	para "can beat all of"
-	line "the trainers"
-	cont "there."
+	line "'em!"
 	
 	para "It should give"
-	line "you some valuable"
-	cont "experience."
+	line "you some sweet"
+	cont "experience!"
 	
-	para "Once you do, you"
+	para "After that, you"
 	line "may even be ready"
 	
 	para "to take on my"
-	line "GYM."
+	line "GYM!"
 	
-	para "The MARINE TUBE"
-	line "here in town can"
+	para "By the way, the"
+	line "MARINE TUBE here"
 	
-	para "take you back to"
-	line "HUMILAU CITY"
-	cont "quickly."
+	para "in town can take"
+	line "ya right back home"
 	
-	para "I'll be waiting"
-	line "for you, <PLAY_G>!"
+	para "to HUMILAU CITY"
+	line "real quick!"
+	
+	para "Come on by the"
+	line "GYM when you're"
+	
+	para "ready, I'll be"
+	line "waitin' for ya,"
+	cont "<PLAY_G>!"
 	done
 	
 UndellaTownBlockerText_Blocked:

@@ -449,7 +449,7 @@ SeasideCaveMarlonExplanationText:
 	
 	para "Good luck,"
 	line "<PLAY_G>, I'm"
-	cont "rooting for you!"
+	cont "rooting for ya!"
 	done
 
 SeasideCaveChamber_MapEvents:

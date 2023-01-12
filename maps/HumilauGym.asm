@@ -140,22 +140,22 @@ MarlonGymIntroText:
 	text "MARLON: <PLAY_G>!"
 
 	para "How's your"
-	line "training coming?"
+	line "trainin' coming?"
 
 	para "You're finally"
 	line "ready to take"
 	cont "on my GYM"
 	cont "challenge?"
 
-	para "Very well, I"
-	line "won't hold back,"
-	cont "<PLAY_G>."
+	para "Sweet! I won't"
+	line "hold back,"
+	cont "<PLAY_G>!"
 
 	para "Come on!"
 	done
 
 MarlonWinLossText:
-	text "Wow, great job,"
+	text "Wow, sweet moves,"
 	line "<PLAY_G>!"
 
 	para "You've gotten"
@@ -186,39 +186,40 @@ MarlonWaveBadgeText:
 	done
 
 MarlonTMRainDanceText:
-	text "By using a TM, a"
-	line "#MON will"
+	text "When ya use a TM,"
+	line "a #MON will"
+	cont "learn a new move!"
 
-	para "instantly learn a"
-	line "new move."
+	para "And don't worry"
+	line "about usin' it up!"
+	
+	para "You can use a TM"
+	line "as many times as"
+	cont "ya want!"
 
-	para "And don't worry,"
-	line "a TM can be used"
-	cont "as many times as"
-	cont "you want!"
+	para "TM18 teaches the"
+	line "move RAIN DANCE."
 
-	para "TM18 contains"
-	line "RAIN DANCE."
+	para "It causes a crazy"
+	line "rain storm that"
 
-	para "It causes a rain"
-	line "storm that raises"
-
-	para "the power of WATER"
-	line "type attacks!"
-
-	para "It'll give a"
-	line "boost to your"
-	cont "WATER #MON!"
+	para "makes water type"
+	line "attacks stronger!"
 	done
 
 MarlonFightDoneText:
-	text "There are #MON"
-	line "GYMS in cities and"
-	cont "towns ahead."
+	text "Ya know, <PLAY_G>,"
+	line "there are #MON"
+	
+	para "GYMs in all kinds"
+	line "of cities and"
+	
+	para "towns across"
+	line "UNOVA."
 
 	para "You should test"
 	line "your skills at"
-	cont "those GYMS."
+	cont "those GYMs too!"
 
 	para "If you head back"
 	line "to UNDELLA TOWN,"

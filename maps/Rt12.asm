@@ -307,30 +307,33 @@ R12MarlonText_Greeting:
 	para "Sorry I didn't"
 	line "step in earlier,"
 	
-	para "I saw you battling"
-	line "and I wanted to"
+	para "I saw ya battling"
+	line "and wanted to see"
 	
-	para "see how you would"
-	line "do."
+	para "how you'd hang in"
+	line "there!"
 	
 	para "I'm impressed!"
 	line "You're a natural"
 	cont "with #MON!"
 	
 	para "Oh! That reminds"
-	line "me, I'd asked you"
-	cont "to meet me today."
+	line "me, I'd asked ya"
 	
-	para "I thought you"
-	line "might make a good"
+	para "to swing by my"
+	line "place today."
 	
-	para "#MON trainer,"
-	line "so I asked the"
+	para "See, I had this"
+	line "feelin' that you'd"
 	
-	para "PROF. to send"
-	line "some #MON for"
-	cont "you to choose"
-	cont "from."
+	para "make a pretty fine"
+	line "#MON trainer,"
+	
+	para "so I asked the"
+	line "PROF. to send over"
+	
+	para "some #MON for"
+	line "you to pick from."
 	
 	para "Looks like my"
 	line "hunch was right!"
@@ -339,12 +342,14 @@ R12MarlonText_Greeting:
 R12MarlonText_Package:
 	text "Oh! My package!"
 	
-	para "That girl ran off"
-	line "with a package"
+	para "That's right! That"
+	line "girl ran off with"
 	
-	para "from my GYM, so"
-	line "I took off after"
-	cont "her."
+	para "a package from my"
+	line "GYM, so I took off"
+	
+	para "and tailed her"
+	line "here."
 	
 	para "Looks like you"
 	line "managed to get"
@@ -359,23 +364,22 @@ R12MarlonText_Pokedex:
 	
 	para "It'll keep track"
 	line "of any #MON"
-	cont "you come across!"
+	cont "ya come across!"
 	
 	para "The PROF. sent it"
-	line "along with the"
-	cont "#MON."
+	line "for ya along with"
+	cont "the #MON."
 	
-	para "I wonder what"
-	line "that girl could"
-	cont "have wanted with"
+	para "Wonder what that"
+	line "girl wanted with"
 	cont "it…"
 	
 	para "Oh! And now that"
-	line "you have a #-"
-	cont "DEX, I'd like"
+	line "ya have a #-"
+	cont "DEX, you should"
 	
-	para "you to have"
-	line "these."
+	para "have some of"
+	line "these!"
 	done
 	
 R12MarlonText_Pokeballs:
@@ -383,16 +387,20 @@ R12MarlonText_Pokeballs:
 	line "to catch #-"
 	cont "MON!"
 	
-	para "I'm going to"
-	line "UNDELLA TOWN."
+	para "Well, I think I'm"
+	line "gonna head on down"
+	cont "to UNDELLA TOWN."
 	
-	para "You just go past"
-	line "LACUNOSA TOWN and"
+	para "You can get there"
+	line "by passin' through"
 	
-	para "go south on"
-	line "ROUTE 13."
+	para "LACUNOSA TOWN, and"
+	line "then just head"
 	
-	para "I'll meet you"
+	para "South along the"
+	line "beach on ROUTE 13."
+	
+	para "I'll meet ya"
 	line "there!"
 	done
 
