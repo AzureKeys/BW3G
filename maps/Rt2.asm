@@ -279,35 +279,47 @@ R2Sign:
 	jumptext R2SignText
 	
 YoungsterR2SeenText:
-	text "If you're looking"
-	line "for #MON, you"
-
-	para "have to look in"
-	line "the tall grass."
+	text "My #MON are"
+	line "gonna steam you"
+	cont "out!"
 	done
 
 YoungsterR2BeatenText:
-	text "Ayieee!"
+	text "We haven't lost in"
+	line "terms of coolness!"
+	
+	para "I'll just keep"
+	line "thinking that…"
 	done
 
 YoungsterR2AfterText:
-	text "Since you're so"
-	line "strong, it must be"
-	cont "fun to battle."
+	text "I like playing in"
+	line "the rain! Who got"
+	
+	para "to decide that"
+	line "bright, airy"
+	cont "places are best?"
 	done
 	
 LassR2SeenText:
-	text "Hey, you! You're"
-	line "from HUMILAU, huh?"
+	text "Hi, hi! Trainer!"
+	line "I will let you see"
+	
+	para "what kind of #-"
+	line "MON I have!"
 	done
 
 LassR2BeatenText:
-	text "Whoa, you kick!"
+	text "Oooh, quit bugging"
+	line "me!"
 	done
 
 LassR2AfterText:
-	text "Don't get cocky,"
-	line "you punk!"
+	text "I'll bring out all"
+	line "the great sides of"
+	
+	para "my #MON for"
+	line "everyone to see…"
 	done
 	
 SocialiteR2SeenText:
@@ -335,22 +347,38 @@ SocialiteR2AfterText:
 	done
 	
 GentlemanR2SeenText:
-	text "Wow, your #MON"
-	line "look cool!"
+	text "I've asked myself"
+	line "if it really is"
+	
+	para "natural for #-"
+	line "MON to live with"
+	cont "people."
+	
+	para "I still haven't"
+	line "come up with an"
+	cont "answer."
 	done
 
 GentlemanR2BeatenText:
-	text "But you don't just"
-	line "look cool…"
+	text "All sorts of feel-"
+	line "ings are stirred"
+	cont "up by battling."
 	done
 
 GentlemanR2AfterText:
-	text "I look cool, but"
-	line "I'm weak, so I'm"
-	cont "not really cool."
+	text "Lose… and then"
+	line "accept all of the"
 
-	para "I have to train"
-	line "harder…"
+	para "sorrow and frust-"
+	line "ration that comes"
+	cont "with the loss."
+	
+	para "That's what it"
+	line "means to be a"
+	
+	para "trainer- what it"
+	line "means to live with"
+	cont "#MON."
 	done
 	
 BackpackerMR2SeenText:

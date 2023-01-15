@@ -246,25 +246,27 @@ BlackbeltR21AfterText:
 	done
 	
 SwimmerF3R21SeenText:
-	text "What? You're a"
-	line "trainer? Awesome!"
+	text "I learned all the"
+	line "good points of my"
+	
+	para "water type #MON"
+	line "by swimming with"
+	cont "them!"
 	done
 
 SwimmerF3R21BeatenText:
-	text "Oh well… Time for"
-	line "my #MON to"
-	cont "return…"
+	text "What a fresh"
+	line "trainer! Really,"
+	cont "really fresh!"
 	done
 
 SwimmerF3R21AfterText:
-	text "#MON just wait"
-	line "inside their #-"
+	text "I'm a girl with"
+	line "everything…"
 	
-	para "BALLs until they"
-	line "are needed…"
-	
-	para "#MON sure are"
-	line "convenient!"
+	para "Well, everything"
+	line "but a place to put"
+	cont "my #BALLs!"
 	done
 
 Rt21_MapEvents:

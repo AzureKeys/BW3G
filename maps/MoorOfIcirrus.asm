@@ -179,27 +179,56 @@ Fisher2MoorOfIcirrusAfterText:
 	done
 	
 PkmnRangerFMoorOfIcirrusSeenText:
-	text "..."
+	text "#MON trainers"
+	line "nurture friendship"
+	cont "with battles!"
 	done
 
 PkmnRangerFMoorOfIcirrusBeatenText:
-	text "..."
+	text "This feeling of"
+	line "defeat… It's like a"
+	cont "bottomless swamp…"
 	done
 
 PkmnRangerFMoorOfIcirrusAfterText:
-	text "..."
+	text "Stay still and"
+	line "listen carefully!"
+	
+	para "Hear the sounds of"
+	line "nearby #MON…"
+	
+	para "The breath of"
+	line "trees and swamps."
 	done
 	
 PkmnRangerMMoorOfIcirrusSeenText:
-	text "..."
+	text "Knowing oneself,"
+	line "knowing the other,"
+	
+	para "and knowing the"
+	line "surroundings…"
+	
+	para "That's a RANGER!"
 	done
 
 PkmnRangerMMoorOfIcirrusBeatenText:
-	text "..."
+	text "Knowing your "
+	line "opponent is a"
+	cont "difficult feat!"
 	done
 
 PkmnRangerMMoorOfIcirrusAfterText:
-	text "..."
+	text "If you know what"
+	line "kind of wild #-"
+	cont "MON inhabit an"
+	
+	para "area, you can"
+	line "bring along #-"
+	cont "MON who are strong"
+	
+	para "against them and"
+	line "will have no prob-"
+	cont "lem moving ahead."
 	done
 	
 MoorOfIcirrusBoulderFellText:

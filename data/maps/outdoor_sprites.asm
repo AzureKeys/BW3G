@@ -379,6 +379,7 @@ IcirrusGroupSprites:
 	db SPRITE_BUENA
 	db SPRITE_RANGER_M
 	db SPRITE_RANGER_F
+	db SPRITE_BLACK_BELT
 	; 8 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL

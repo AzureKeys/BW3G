@@ -8,3 +8,4 @@ SpriteMons:
 	db GENESECT
 	db TRUBBISH
 	db METAGROSS
+	db KROKOROK

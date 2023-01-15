@@ -389,21 +389,23 @@ PkmnRangerMPinwheel2AfterText:
 	done
 	
 YoungsterPinwheelSeenText:
-	text "People shouldn't"
-	line "leave any litter"
-	cont "behind."
+	text "The forest is full"
+	line "of little hollows"
+	
+	para "and hillocks, and"
+	line "walking in it is"
+	cont "so fun!"
 	done
 
 YoungsterPinwheelBeatenText:
-	text "Ohh… I lost…"
+	text "Your #MON are"
+	line "so cool!"
 	done
 
 YoungsterPinwheelAfterText:
-	text "Conserving energy"
-	line "is important, but"
-
-	para "the environment is"
-	line "even more vital."
+	text "I want to ride"
+	line "through the forest"
+	cont "on a #MON!"
 	done
 	
 PkmnRangerFPinwheel1SeenText:
@@ -431,35 +433,54 @@ PkmnRangerFPinwheel1AfterText:
 	done
 	
 PkmnRangerFPinwheel2SeenText:
-	text "Hey, you!"
-	line "Don't litter!"
+	text "Get great powers"
+	line "drawn from nature"
+	
+	para "without opposing"
+	line "it. That is the"
+	
+	para "strength of #-"
+	line "MON RANGERs!"
 	done
 
 PkmnRangerFPinwheel2BeatenText:
-	text "I was just point-"
-	line "ing out…"
+	text "What great power!"
+	line "Your #MON are"
+	cont "marvelous!"
 	done
 
 PkmnRangerFPinwheel2AfterText:
-	text "Sorry. You weren't"
-	line "littering. It was"
-	cont "my mistake."
+	text "#MON are just"
+	line "too amazing, so we"
+	
+	para "end up depending"
+	line "on them for every-"
+	cont "thing. Great power"
+	cont "can be dangerous."
 	done
 	
 PsychicMPinwheelSeenText:
-	text "Hm… You've got"
-	line "many GYM BADGES."
+	text "This is a power"
+	line "spot! It awakens"
+	
+	para "your dormant"
+	line "power!"
 	done
 
 PsychicMPinwheelBeatenText:
-	text "Just as I thought…"
-	line "You're tough!"
+	text "Did you spot my"
+	line "weakness?"
 	done
 
 PsychicMPinwheelAfterText:
-	text "GYM BADGES give"
-	line "you advantages in"
-	cont "battles."
+	text "There is a #MON"
+	line "called MUSHARNA"
+	
+	para "that can eat"
+	line "dreams… And even"
+	
+	para "make dreams real,"
+	line "or so people say."
 	done
 	
 HexManiacPinwheelSeenText:
@@ -487,22 +508,21 @@ HexManiacPinwheelAfterText:
 	done
 	
 LassPinwheelSeenText:
-	text "If trainers meet,"
-	line "the first thing to"
-	cont "do is battle."
+	text "Oh! And I just"
+	line "heard a #MON,"
+	cont "too! Oh, boo…"
 	done
 
 LassPinwheelBeatenText:
-	text "Awww… I've got a"
-	line "losing record…"
+	text "Your #MON seem"
+	line "kinda happy,"
+	cont "trainer!"
 	done
 
 LassPinwheelAfterText:
-	text "For trainers, it's"
-	line "a given that we'll"
-
-	para "battle whenever we"
-	line "meet."
+	text "There are #MON"
+	line "hiding beyond the"
+	cont "bushes!"
 	done
 
 PinwheelForest_MapEvents:

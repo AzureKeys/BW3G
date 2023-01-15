@@ -293,43 +293,71 @@ PkmnRangerMR3AfterText:
 	done
 	
 PkmnRangerFR3SeenText:
-	text "Have you ever been"
-	line "to a picnic?"
+	text "Melding into the"
+	line "wild landscape…"
 
-	para "They're so much"
-	line "fun!"
+	para "That's what a #-"
+	line "MON RANGER does!"
 	done
 
 PkmnRangerFR3BeatenText:
-	text "Ohhhh!"
+	text "I am such a weak-"
+	line "ling! I will dis-"
+	cont "appear back into"
+	cont "the wilderness!"
 	done
 
 PkmnRangerFR3AfterText:
-	text "We bake lots of"
-	line "goodies and share"
+	text "If you blend into"
+	line "the wilderness too"
 
-	para "them all around."
-	line "They're delicious!"
+	para "well, you won't be"
+	line "noticed by #-"
+	cont "MON, let alone by"
+	cont "people."
 	done
 	
 SocialiteR3SeenText:
-	text "You like #MON,"
-	line "don't you?"
+	text "Two years ago, I"
+	line "parted ways with"
+	cont "my #MON…"
 
-	para "Me too!"
+	para "Yet in my heart,"
+	line "I've never stopped"
+	
+	para "being a #MON"
+	line "trainer!"
 	done
 
 SocialiteR3BeatenText:
-	text "I'd have to say"
-	line "that's my loss."
+	text "This is the type"
+	line "of defeat that"
+	
+	para "only a #MON"
+	line "trainer can"
+	cont "experience."
 	done
 
 SocialiteR3AfterText:
-	text "Look what you did"
-	line "to my #MON…"
-
-	para "I won't forget"
-	line "this…"
+	text "Those lives that"
+	line "come into our"
+	cont "world as #MON…"
+	
+	para "For me, being"
+	line "unsure if they"
+	
+	para "really wanted to"
+	line "live with humans,"
+	
+	para "I parted ways with"
+	line "my #MON."
+	
+	para "But as it turns"
+	line "out, the time we"
+	
+	para "spent together"
+	line "seems to be the"
+	cont "best of all."
 	done
 	
 Fisher1R3SeenText:
@@ -394,22 +422,37 @@ ArtistR3AfterText:
 	done
 	
 GentlemanR3SeenText:
-	text "I'll tell you a"
-	line "secret."
+	text "I came here"
+	line "because this place"
 
-	para "But first, we"
-	line "battle!"
+	para "feels quite"
+	line "nostalgic to me…"
+	
+	para "But I'd rather"
+	line "battle than stroll"
+	cont "down memory lane!"
 	done
 
 GentlemanR3BeatenText:
-	text "Oh, dang!"
-	line "I lost that…"
+	text "I see… So that's"
+	line "it. I sed to also"
+	
+	para "be that focused"
+	line "long ago."
 	done
 
 GentlemanR3AfterText:
-	text "There are secrets"
-	line "hidden in the"
-	cont "WELLSPRING CAVE."
+	text "I am reminded of"
+	line "my childhood and"
+	
+	para "chasing innocently"
+	line "after bug #MON…"
+	
+	para "It was that day"
+	line "that I started on"
+	
+	para "the path to"
+	line "trainerhood."
 	done
 	
 R3WellspringSignText:

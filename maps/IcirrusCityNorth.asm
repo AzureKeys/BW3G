@@ -1,16 +1,57 @@
 	const_def 2 ; object constants
 	const ICIRRUSCITYNORTH_DUMMY_ITEM
+	const ICIRRUSCITYNORTH_BUENA
+	const ICIRRUSCITYNORTH_BLACKBELT
 
 IcirrusCityNorth_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 	
+IcirrusCityNorthBuenaScript:
+	jumptextfaceplayer IcirrusCityNorthBuenaText
+	
+IcirrusCityNorthBlackbeltScript:
+	jumptextfaceplayer IcirrusCityNorthBlackbeltText
+	
 IcirrusBoutiqueSign:
 	jumptext IcirrusBoutiqueText
 	
 IcirrusFanClubSign:
 	jumptext IcirrusFanClubSignText
+	
+IcirrusCityNorthBuenaText:
+	text "Always, the tower"
+	line "looms, disdainful"
+	
+	para "of the wind and"
+	line "snow. Perhaps its"
+	
+	para "presence is tell-"
+	line "ing us not to"
+	
+	para "forget dreams and"
+	line "ideals…"
+	done
+	
+IcirrusCityNorthBlackbeltText:
+	text "Our former GYM"
+	line "LEADER, BRYCEN,"
+	
+	para "has been surround-"
+	line "ed by ice type"
+	
+	para "#MON and has"
+	line "trained in the"
+	
+	para "martial arts ever"
+	line "since he was a"
+	cont "child."
+	
+	para "He's become an"
+	line "action star using"
+	cont "that experience!"
+	done
 	
 IcirrusBoutiqueText:
 	text "ICIRRUS BOUTIQUE"
@@ -43,6 +84,8 @@ IcirrusCityNorth_MapEvents:
 	bg_event 14, 12, BGEVENT_READ, IcirrusBoutiqueSign
 	bg_event  4, 20, BGEVENT_READ, IcirrusFanClubSign
 	
-	db 1 ; object events
+	db 3 ; object events
 	object_event  4, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, 0, EVENT_ICIRRUS_CITY_MAX_POTION
+	object_event 13, 21, SPRITE_BUENA, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, IcirrusCityNorthBuenaScript, -1
+	object_event  6, 12, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IcirrusCityNorthBlackbeltScript, -1
 	

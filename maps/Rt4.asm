@@ -479,22 +479,29 @@ PokefanMR4AfterText:
 	done
 	
 PokefanFR4SeenText:
-	text "Hi! Aren't you a"
-	line "cute trainer!"
+	text "Now dance grace-"
+	line "fully! Bring forth"
 
-	para "May I see your"
-	line "#MON?"
+	para "your beautiful"
+	line "moves! Let us"
+	
+	para "perform, my lovely"
+	line "#MON!"
 	done
 
 PokefanFR4BeatenText:
-	text "I'm glad I got to"
-	line "see your #MON!"
+	text "Even though they"
+	line "lost, my #MON"
+	cont "are still cute!"
 	done
 
 PokefanFR4AfterText:
-	text "When I see #-"
-	line "MON, it seems to"
-	cont "soothe my nerves."
+	text "I'll make my cute"
+	line "#MON even"
+	
+	para "stronger by having"
+	line "battles with lots"
+	cont "of trainers!"
 	done
 	
 R4DesertSignText:

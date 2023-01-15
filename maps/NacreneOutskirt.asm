@@ -104,15 +104,30 @@ YoungsterNacreneAfterText:
 	done
 	
 LassNacreneSeenText:
-	text "..."
+	text "Hey, trainer! Let's"
+	line "have a refreshing"
+	
+	para "battle and blow"
+	line "away all my"
+	cont "troubles!"
 	done
 
 LassNacreneBeatenText:
-	text "..."
+	text "You guys feel like"
+	line "an unbeatable"
+	cont "combination!"
 	done
 
 LassNacreneAfterText:
-	text "..."
+	text "I've been thinking"
+	line "lately. Even if I"
+	
+	para "were separated"
+	line "from my #MON,"
+	
+	para "would they choose"
+	line "me as their"
+	cont "trainer again…?"
 	done
 	
 ParasolLadyNacreneSeenText:

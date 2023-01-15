@@ -231,20 +231,29 @@ R18BigPearl:
 	hiddenitem BIG_PEARL, EVENT_R18_BIG_PEARL
 	
 HikerR18SeenText:
-	text "Awright! I'll show"
-	line "you the power of"
-	cont "mountain #MON!"
+	text "When I look down"
+	line "from a high place,"
+	cont "I feel very good!"
+	
+	para "#MON battles"
+	line "are the same!"
 	done
 
 HikerR18BeatenText:
-	text "Mercy! You showed"
-	line "me your power!"
+	text "You're great! I"
+	line "can't help but look"
+	cont "up to you!"
 	done
 
 HikerR18AfterText:
-	text "It's over. I don't"
-	line "mind. We HIKERS"
-	cont "are like that."
+	text "We climb mountains"
+	line "because, no matter"
+	
+	para "how hard it is,"
+	line "the higher we"
+	
+	para "climb, the closer"
+	line "we get to the sky!"
 	done
 	
 BlackbeltR18SeenText:
@@ -286,47 +295,64 @@ BattleGirlR18AfterText:
 	done
 	
 BackpackerMR18SeenText:
-	text "What are your"
-	line "thoughts on rais-"
-	cont "ing #MON?"
+	text "BACKPACKERs are"
+	line "exactly what they"
+	cont "sound like."
+	
+	para "They set out on"
+	line "the road with only"
+	
+	para "the packs on their"
+	line "backs and the"
+	
+	para "#MON in their"
+	line "#BALLs!"
 	done
 
 BackpackerMR18BeatenText:
-	text "You've won my"
-	line "respect."
+	text "I wish I could"
+	line "pack some wins in"
+	cont "my backpack too…"
 	done
 
 BackpackerMR18AfterText:
-	text "I see you're rais-"
-	line "ing your #MON"
-	cont "with care."
+	text "The purpose of the"
+	line "journey is found"
 
-	para "The bond you build"
-	line "will save you in"
-	cont "tough situations."
+	para "in those that I"
+	line "meet! Isn't it"
+	
+	para "great to encounter"
+	line "all the different"
+	
+	para "#MON there are"
+	line "in the world?"
 	done
 	
 BackpackerFR18SeenText:
-	text "What is your"
-	line "battle strategy?"
+	text "Your #MON and"
+	line "your strategy!"
 
-	para "It is foolish to"
-	line "use strong moves"
-	cont "indiscriminately."
+	para "I'll be taking"
+	line "notes on both!"
 	done
 
 BackpackerFR18BeatenText:
-	text "Fine. I lost."
+	text "There's still so"
+	line "much more to"
+	cont "learn!"
 	done
 
 BackpackerFR18AfterText:
-	text "I'm not in favor"
-	line "of overly power-"
-	cont "ful moves."
+	text "Stronger #MON…"
+	line "An unbeatable"
+	cont "strategy… "
 
-	para "I want to win, but"
-	line "I also don't want"
-	cont "to harm #MON."
+	para "There are no such"
+	line "certainties in"
+	
+	para "#MON… and that's"
+	line "why it's so deep!"
 	done
 
 Rt18_MapEvents:

@@ -201,72 +201,87 @@ R1Sign:
 	jumptext R1SignText
 	
 PkmnRangerMR1SeenText:
-	text "I'm raising #-"
-	line "MON too!"
+	text "I choose a move,"
+	line "and my #MON"
+	cont "will do the move."
 
-	para "Will you battle"
-	line "with me?"
+	para "In a moment, that"
+	line "move will reach"
+	cont "your #MON!"
 	done
 
 PkmnRangerMR1BeatenText:
-	text "Wha…?"
+	text "I lost, but during"
+	line "the battle, we"
+	
+	para "were connected,"
+	line "right?"
 	done
 
 PkmnRangerMR1AfterText:
-	text "I did my best but"
-	line "came up short."
+	text "From today to"
+	line "tomorrow… people,"
 
-	para "No excuses--I"
-	line "admit I lost."
+	para "#MON, and the"
+	line "world… They're all"
+	
+	para "connected, you"
+	line "know?"
 	done
 	
 PkmnRangerFR1SeenText:
-	text "The world of"
-	line "#MON is deep."
+	text "Hm? You're headed"
+	line "for the JUNIPER"
 
-	para "There are still"
-	line "lots of things we"
-	cont "don't know."
+	para "#MON LAB, aren't"
+	line "you? Didn't you"
 
-	para "But I know more"
-	line "than you do!"
+	para "know? There's a new"
+	line "PROF. there now!"
 	done
 
 PkmnRangerFR1BeatenText:
-	text "Wha-wha-what?"
+	text "You're not an"
+	line "opponent one could"
+	
+	para "defeat without"
+	line "trying!"
 	done
 
 PkmnRangerFR1AfterText:
-	text "There is a lot"
-	line "to learn."
+	text "I came all the way"
+	line "here to hear PROF."
 
-	para "For example…"
+	para "BEL talk! She used"
+	line "to be a #MON"
 
-	para "There are 50 kinds"
-	line "of TMs."
+	para "trainer too, so I"
+	line "bet we'd have a"
 
-	para "Traded #MON"
-	line "level up faster."
+	para "great time"
+	line "swapping tales!"
 	done
 	
 MaidR1SeenText:
-	text "My #MON are"
-	line "simply darling."
-
-	para "Let me tell you"
-	line "how proud my"
-	cont "darlings make me."
+	text "What? You're a"
+	line "trainer? Awesome!"
 	done
 
 MaidR1BeatenText:
-	text "I can beat you in"
-	line "pride, but…"
+	text "Oh well… Time for"
+	line "my #MON to"
+	cont "return…"
 	done
 
 MaidR1AfterText:
-	text "I must say, your"
-	line "#MON are quite"
-	cont "cute, too."
+	text "#MON just wait"
+	line "inside their #-"
+	
+	para "BALLs until they"
+	line "are needed…"
+	
+	para "#MON sure are"
+	line "convenient!"
 	done
 	
 BlackbeltR1SeenText:

@@ -140,38 +140,48 @@ SchoolKidM1R20AfterText:
 	done
 	
 SchoolKidM2R20SeenText:
-	text "All right! Time"
-	line "for a #MON"
-	
-	para "battle! Let's"
-	line "begin!"
+	text "Hey, you! You're"
+	line "gonna lose and"
+	cont "cry!"
 	done
 
 SchoolKidM2R20BeatenText:
-	text "Whew! You're way"
-	line "too strong!"
+	text "…Grrr!"
 	done
 
 SchoolKidM2R20AfterText:
-	text "Time for some"
-	line "special #MON"
-	cont "training!"
+	text "That's it! I'm"
+	line "gonna become the"
+	
+	para "Champion, and then"
+	line "I'll blow you out"
+	cont "of the water!"
 	done
 	
 SchoolKidM3R20SeenText:
-	text "Let's battle."
-	line "I won't lose!"
+	text "You look tough!"
+	
+	para "All right! My"
+	line "#MON are burn-"
+	cont "ing for a fight"
+	
+	para "against a tough"
+	line "opponent!"
 	done
 
 SchoolKidM3R20BeatenText:
-	text "I forgot to do my"
-	line "homework!"
+	text "Arg! I wasn't able"
+	line "to give good"
+	cont "orders!"
 	done
 
 SchoolKidM3R20AfterText:
-	text "Sayonara! I just"
-	line "learned that in my"
-	cont "Japanese class."
+	text "What do you think"
+	line "would happen if we"
+	
+	para "had our #MON"
+	line "fight without any"
+	cont "orders?"
 	done
 	
 TwinsR20SeenText:
@@ -196,56 +206,73 @@ TwinsR20AfterText:
 	done
 	
 SchoolKidF1R20SeenText:
-	text "I have a feeling"
-	line "that I can win."
+	text "Is that a #DEX?"
 
-	para "Let's see if I'm"
-	line "right!"
+	para "I'd love it if you"
+	line "would show me lots"
+	
+	para "of different kinds"
+	line "of #MON!"
 	done
 
 SchoolKidF1R20BeatenText:
-	text "Aww, you are too"
-	line "strong."
+	text "I've never seen a"
+	line "#MON like that!"
 	done
 
 SchoolKidF1R20AfterText:
-	text "EEVEE appear at"
-	line "the ranch!"
+	text "Hmm… I wonder if I"
+	line "would meet some"
 
-	para "It's my favorite"
-	line "#MON!"
+	para "new #MON if I"
+	line "went to the RANCH?"
 	done
 	
 SchoolKidF2R20SeenText:
-	text "Um…"
-	line "I…"
+	text "Hi, hi! Trainer!"
+	line "Please show me"
+	
+	para "what kinds of"
+	line "#MON you are"
+	cont "training!"
 	done
 
 SchoolKidF2R20BeatenText:
-	text "…"
+	text "Great, great! I"
+	line "didn't know that"
+	
+	para "way to raise #-"
+	line "MON!"
 	done
 
 SchoolKidF2R20AfterText:
-	text "……I'll go train"
-	line "some more…"
+	text "When you let a"
+	line "#MON evolve, it"
+	
+	para "will be stronger,"
+	line "but if you don't"
+	
+	para "let it evolve, it"
+	line "will learn moves"
+	cont "quicker."
 	done
 	
 SchoolKidF3R20SeenText:
-	text "Hang on. I have to"
-	line "phone my mom."
+	text "Ta-da! Here's my"
+	line "cute #MON!"
 	done
 
 SchoolKidF3R20BeatenText:
-	text "Sorry, Mom!"
-	line "I was beaten!"
+	text "Oh maaaan!"
 	done
 
 SchoolKidF3R20AfterText:
-	text "My mom worries so"
-	line "much about me, I"
+	text "…It's okay. My"
+	line "precious #MON"
 
-	para "have to phone her"
-	line "all the time."
+	para "will make me feel"
+	line "better when we get"
+	cont "home."
 	done
 	
 NurseryAideR20SeenText:

@@ -329,16 +329,29 @@ PokefanFCelestialTowerAfterText:
 	done
 	
 LassCelestialTowerSeenText:
-	text "Waaggh! A ghost!"
+	text "Instead of a ghost"
+	line "type #MON, I've"
+	
+	para "found myself a"
+	line "spectacular"
+	cont "trainer!"
 	done
 
 LassCelestialTowerBeatenText:
-	text "Huh?"
+	text "You were spectac-"
+	line "ular, and more"
+	
+	para "than that, so"
+	line "strong!"
 	done
 
 LassCelestialTowerAfterText:
-	text "Sorry, you spooked"
-	line "me."
+	text "I'm going to catch"
+	line "ghost type #MON"
+	
+	para "because I want to"
+	line "meet SHAUNTAL"
+	cont "someday!"
 	done
 	
 GentlemanCelestialTowerSeenText:

@@ -193,19 +193,30 @@ BackpackerMR7NorthAfterText:
 	done
 	
 BackpackerFR7NorthSeenText:
-	text "Raising #MON is"
-	line "my passion. What's"
-	cont "yours?"
+	text "Oh my! My #MON"
+	line "really seem raring"
+	cont "to go today!"
 	done
 
 BackpackerFR7NorthBeatenText:
-	text "Oh no, my #MON!"
+	text "It seems my #-"
+	line "MON weren't as"
+	
+	para "ready as I had"
+	line "thought!"
 	done
 
 BackpackerFR7NorthAfterText:
-	text "Your passion must"
-	line "be #MON"
-	cont "battles!"
+	text "#MON are alive,"
+	line "just like you or"
+	
+	para "me, so it's no"
+	line "wonder that they"
+	cont "might feel down."
+	
+	para "When that happens,"
+	line "just let them take"
+	cont "it easy."
 	done
 	
 HarlequinR7NorthSeenText:

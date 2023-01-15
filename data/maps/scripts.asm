@@ -107,10 +107,10 @@ INCLUDE "maps/Rt19.asm"
 INCLUDE "maps/Rt20.asm"
 INCLUDE "maps/FloccesyRanch.asm"
 INCLUDE "maps/AspertiaBlackbeltHouse.asm"
-INCLUDE "maps/AspertiaPokecenter1F.asm"
 
 SECTION "Map Scripts 7", ROMX
 
+INCLUDE "maps/AspertiaPokecenter1F.asm"
 INCLUDE "maps/FloccesyPokecenter1F.asm"
 INCLUDE "maps/AspertiaMomHouse.asm"
 INCLUDE "maps/AspertiaMoveDeleterHouse.asm"
@@ -158,11 +158,11 @@ INCLUDE "maps/Rt2.asm"
 INCLUDE "maps/R2AccumulaGate.asm"
 INCLUDE "maps/AccumulaTown.asm"
 INCLUDE "maps/AccumulaHouse.asm"
-INCLUDE "maps/AccumulaPokecenter1F.asm"
-INCLUDE "maps/AccumulaBallManiacHouse.asm"
 
 SECTION "Map Scripts 9", ROMX
 
+INCLUDE "maps/AccumulaPokecenter1F.asm"
+INCLUDE "maps/AccumulaBallManiacHouse.asm"
 INCLUDE "maps/Rt1.asm"
 INCLUDE "maps/NuvemaTown.asm"
 INCLUDE "maps/NuvemaMomHouse.asm"
@@ -260,13 +260,13 @@ INCLUDE "maps/IcirrusCitySouthConnectionDummy.asm"
 INCLUDE "maps/IcirrusCitySouth.asm"
 INCLUDE "maps/IcirrusCityNorth.asm"
 INCLUDE "maps/Rt8.asm"
+
+SECTION "Map Scripts 14", ROMX
+
 INCLUDE "maps/IcirrusPokecenter1F.asm"
 INCLUDE "maps/IcirrusBoutique.asm"
 INCLUDE "maps/R11Truck.asm"
 INCLUDE "maps/DragonspiralTowerOutside.asm"
-
-SECTION "Map Scripts 14", ROMX
-
 INCLUDE "maps/MistraltonCave1F.asm"
 INCLUDE "maps/MistraltonCave2F.asm"
 INCLUDE "maps/MistraltonCave3F.asm"
@@ -280,14 +280,14 @@ INCLUDE "maps/DreamyardB1F.asm"
 INCLUDE "maps/Dreamyard.asm"
 INCLUDE "maps/GameCorner.asm"
 INCLUDE "maps/OpelucidBlackbeltHouse.asm"
+
+SECTION "Map Scripts 15", ROMX
+
 INCLUDE "maps/OpelucidBattleHouse.asm"
 INCLUDE "maps/DraydensHouse1F.asm"
 INCLUDE "maps/DraydensHouse2F.asm"
 INCLUDE "maps/IcirrusFanClub.asm"
 INCLUDE "maps/DragonspiralTower1F.asm"
-
-SECTION "Map Scripts 15", ROMX
-
 INCLUDE "maps/DragonspiralTower2F.asm"
 INCLUDE "maps/DragonspiralTower3F.asm"
 INCLUDE "maps/DragonspiralTower4F.asm"
@@ -303,13 +303,13 @@ INCLUDE "maps/VictoryRoadEntranceNorthConnectionDummy.asm"
 INCLUDE "maps/VictoryRoadCave1F.asm"
 INCLUDE "maps/VictoryRoadCave2F.asm"
 INCLUDE "maps/VictoryRoadCave3F.asm"
+
+SECTION "Map Scripts 16", ROMX
+
 INCLUDE "maps/VictoryRoadOutdoor1F.asm"
 INCLUDE "maps/VictoryRoadOutdoor2F.asm"
 INCLUDE "maps/VictoryRoadCastleOutside.asm"
 INCLUDE "maps/VictoryRoadGrove.asm"
-
-SECTION "Map Scripts 16", ROMX
-
 INCLUDE "maps/PkmnLeagueEntrance.asm"
 INCLUDE "maps/PkmnLeagueMain.asm"
 INCLUDE "maps/VictoryRoadPokecenter1F.asm"
@@ -324,6 +324,9 @@ INCLUDE "maps/LentimasTown.asm"
 INCLUDE "maps/StrangeHouse1F.asm"
 INCLUDE "maps/StrangeHouseB1F.asm"
 INCLUDE "maps/ChampionsRoomEntrance.asm"
+
+SECTION "Map Scripts 17", ROMX
+
 INCLUDE "maps/ChampionsRoom.asm"
 INCLUDE "maps/HallOfFame.asm"
 INCLUDE "maps/NsRoom.asm"

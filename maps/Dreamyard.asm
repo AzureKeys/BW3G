@@ -141,39 +141,71 @@ DreamyardRevive:
 	hiddenitem REVIVE, EVENT_DREAMYARD_REVIVE
 	
 YoungsterDreamyardSeenText:
-	text "..."
+	text "Shorts and #-"
+	line "MON! This is the"
+	
+	para "ultimate"
+	line "combination!"
 	done
 
 YoungsterDreamyardBeatenText:
-	text "..."
+	text "It's not my #-"
+	line "MON's fault! It's"
+	
+	para "not my shorts'"
+	line "fault either!"
 	done
 
 YoungsterDreamyardAfterText:
-	text "..."
+	text "I'm wearing shorts"
+	line "to help toughen up"
+	
+	para "my kneecaps! Do"
+	line "you want to feel"
+	cont "them?"
 	done
 	
 SchoolKidMDreamyardSeenText:
-	text "..."
+	text "My #MON's"
+	line "strong points!"
+	
+	para "You'll see them if"
+	line "you fight!"
 	done
 
 SchoolKidMDreamyardBeatenText:
-	text "..."
+	text "Hey! Did you see"
+	line "my #MON's strong"
+	cont "points?"
 	done
 
 SchoolKidMDreamyardAfterText:
-	text "..."
+	text "My #MON's strong"
+	line "points? Hmm… I"
+	
+	para "don't know, 'cause"
+	line "there are too many"
+	cont "to count!"
 	done
 	
 SchoolKidFDreamyardSeenText:
-	text "..."
+	text "See my extra-"
+	line "ordinarily pretty"
+	cont "#MON!"
 	done
 
 SchoolKidFDreamyardBeatenText:
-	text "..."
+	text "Ah! Its beauty has"
+	line "been weakened!"
 	done
 
 SchoolKidFDreamyardAfterText:
-	text "..."
+	text "When you feel a"
+	line "#MON breathing,"
+	
+	para "you can really"
+	line "feel how alive"
+	cont "they are!"
 	done
 	
 DreamyardBoulderFellText:

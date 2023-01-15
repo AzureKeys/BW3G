@@ -139,26 +139,25 @@ SeasideCaveDoctorHealText:
 	done
 	
 VeteranFSeasideCave1FSeenText:
-	text "You look strong."
-
-	para "Good trainers seek"
-	line "tough opponents"
-	cont "instinctively."
+	text "Let me show you"
+	line "the #MON that I"
+	cont "met by fate!"
 	done
 
 VeteranFSeasideCave1FBeatenText:
-	text "Nope! This won't"
-	line "do at all."
+	text "The #MON that"
+	line "you've met are"
+	
+	para "quite formidable,"
+	line "aren't they?"
 	done
 
 VeteranFSeasideCave1FAfterText:
-	text "We all get better"
-	line "by experiencing"
-	cont "many battles."
+	text "Young kids sure"
+	line "have it good. They"
 
-	para "I battled a lot to"
-	line "become what I am"
-	cont "today--an elite."
+	para "get to meet all"
+	line "kinds of #MON!"
 	done
 	
 BlackbeltSeasideCave1FSeenText:

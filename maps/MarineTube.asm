@@ -133,15 +133,31 @@ TwinsMarineTubeAfterText:
 	done
 	
 NurseryAideMarineTubeSeenText:
-	text "..."
+	text "You… are a rather"
+	line "adult looking kid…"
+	
+	para "A kiddish adult…"
+	line "Oh, jeez! I'll"
+	
+	para "kust find out when"
+	line "we battle!"
 	done
 
 NurseryAideMarineTubeBeatenText:
-	text "..."
+	text "You are an alto-"
+	line "gether mysterious"
+	cont "trainer!"
 	done
 
 NurseryAideMarineTubeAfterText:
-	text "..."
+	text "A precocious child"
+	line "or a childish"
+	
+	para "adult… Both can be"
+	line "hard to deal with,"
+	
+	para "but both are also"
+	line "cute in their way!"
 	done
 	
 MarineTubeCooltrainerFText:

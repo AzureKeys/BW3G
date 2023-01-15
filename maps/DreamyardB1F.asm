@@ -76,27 +76,55 @@ DreamyardFullHeal:
 	hiddenitem FULL_HEAL, EVENT_DREAMYARD_FULL_HEAL
 	
 ScientistMDreamyardSeenText:
-	text "..."
+	text "Let us conduct"
+	line "some #MON"
+	
+	para "research. Yes, let"
+	line "us show each"
+	cont "other our #MON."
 	done
 
 ScientistMDreamyardBeatenText:
-	text "..."
+	text "A new discovery…"
+	line "And an ever deep-"
+	cont "ening mystery!"
 	done
 
 ScientistMDreamyardAfterText:
-	text "..."
+	text "The more you"
+	line "research, the more"
+	cont "you can discover."
+	
+	para "But with #MON,"
+	line "you can become"
+	
+	para "friends even with-"
+	line "out understanding"
+	cont "everything."
 	done
 	
 ScientistFDreamyardSeenText:
-	text "..."
+	text "The mysterious"
+	line "psychic power! You"
+	
+	para "cannot see it, yet"
+	line "it is definitely"
+	cont "there!"
 	done
 
 ScientistFDreamyardBeatenText:
-	text "..."
+	text "Argh! I cannot see"
+	line "what really"
+	cont "matters!"
 	done
 
 ScientistFDreamyardAfterText:
-	text "..."
+	text "The hole in a"
+	line "donut… There is"
+	
+	para "nothing there, and"
+	line "yet it exists. I"
+	cont "love that!"
 	done
 	
 PsychicMDreamyardSeenText:
@@ -112,15 +140,24 @@ PsychicMDreamyardAfterText:
 	done
 	
 PsychicFDreamyardSeenText:
-	text "..."
+	text "I foresaw your"
+	line "move… Should I run"
+	cont "away from you?"
 	done
 
 PsychicFDreamyardBeatenText:
-	text "..."
+	text "Eek! I foresaw"
+	line "your thoughts, but"
+	cont "I lost!"
 	done
 
 PsychicFDreamyardAfterText:
-	text "..."
+	text "You can't help but"
+	line "to chase after"
+	
+	para "what runs and to"
+	line "want what you"
+	cont "can't have!"
 	done
 
 DreamyardB1F_MapEvents:

@@ -206,28 +206,58 @@ FisherR8AfterText:
 	line "fisherman!"
 	done
 	
-ParasolLadyR8SeenText:
-	text "..."
-	done
-
-ParasolLadyR8BeatenText:
-	text "..."
-	done
-
-ParasolLadyR8AfterText:
-	text "..."
-	done
-	
 PkmnRangerFR8SeenText:
-	text "..."
+	text "The splish-splosh"
+	line "sounds! Those were"
+	
+	para "your footsteps,"
+	line "weren't they?"
+	
+	para "So cute!"
 	done
 
 PkmnRangerFR8BeatenText:
-	text "..."
+	text "You're so strong!"
+	line "Too strong to be"
+	cont "cute!"
 	done
 
 PkmnRangerFR8AfterText:
-	text "..."
+	text "According to foot-"
+	line "step fortune"
+	cont "telling…"
+	
+	para "Those whose foot-"
+	line "steps make a"
+	
+	para "splish and splosh"
+	line "are trainers that"
+	cont "#MON like."
+	done
+	
+ParasolLadyR8SeenText:
+	text "If you turn a"
+	line "parasol around,"
+	
+	para "it's like a flower"
+	line "blossoming in the"
+	cont "rain!"
+	done
+
+ParasolLadyR8BeatenText:
+	text "I'll spin my para-"
+	line "sol around and"
+	
+	para "send some water"
+	line "droplets your way!"
+	done
+
+ParasolLadyR8AfterText:
+	text "On rainy days, use"
+	line "a parasol, wear a"
+	
+	para "coat, or get wet."
+	line "Do as you like!"
 	done
 	
 R8SignText:

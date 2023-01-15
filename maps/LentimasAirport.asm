@@ -1,5 +1,7 @@
 	const_def 2 ; object constants
 	const LENTIMASAIRPORT_RECEPTIONIST
+	const LENTIMASAIRPORT_LASS
+	const LENTIMASAIRPORT_KROKOROK
 
 LentimasAirport_MapScripts:
 	db 1 ; scene scripts
@@ -51,6 +53,17 @@ Script_ArriveFromMistralton:
 	applymovement LENTIMASAIRPORT_RECEPTIONIST, LentimasAirportReceptionistResetMovement
 	opentext
 	writetext LentimasAirportArrivedText
+	waitbutton
+	closetext
+	end
+
+LentimasAirportLassScript:
+	jumptextfaceplayer LentimasAirportLassText
+
+LentimasAirportKrokorokScript:
+	opentext
+	writetext LentimasAirportKrokorokText
+	cry KROKOROK
 	waitbutton
 	closetext
 	end
@@ -133,6 +146,19 @@ LentimasAirportArrivedText:
 	
 	para "Enjoy your trip!"
 	done
+	
+LentimasAirportLassText:
+	text "I'm fine even"
+	line "right by a volcano"
+	
+	para "thanks to my lil"
+	line "KROKOROK! It"
+	cont "really rocks!"
+	done
+	
+LentimasAirportKrokorokText:
+	text "Krakaah!"
+	done
 
 LentimasAirport_MapEvents:
 	db 0, 0 ; filler
@@ -147,6 +173,8 @@ LentimasAirport_MapEvents:
 
 	db 0 ; bg events
 
-	db 1 ; object events
+	db 3 ; object events
 	object_event  5,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, LentimasAirportReceptionistScript, -1
+	object_event  2,  4, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LentimasAirportLassScript, -1
+	object_event  1,  4, SPRITE_KROKOROK, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LentimasAirportKrokorokScript, -1
 	

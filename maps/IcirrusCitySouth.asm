@@ -2,6 +2,8 @@
 	const ICIRRUSCITYSOUTH_ULTRA_BALL
 	const ICIRRUSCITYSOUTH_TIMER_BALL
 	const ICIRRUSCITYSOUTH_MAX_POTION
+	const ICIRRUSCITYSOUTH_BUENA
+	const ICIRRUSCITYSOUTH_FISHER
 
 IcirrusCitySouth_MapScripts:
 	db 1 ; scene scripts
@@ -84,6 +86,12 @@ IcirrusCityLowerFloorScript:
 .done
 	end
 	
+IcirrusCitySouthBuenaScript:
+	jumptextfaceplayer IcirrusCitySouthBuenaText
+	
+IcirrusCitySouthFisherScript:
+	jumptextfaceplayer IcirrusCitySouthFisherText
+	
 IcirrusCitySign:
 	jumptext IcirrusCitySignText
 	
@@ -101,6 +109,27 @@ IcirrusCityBigMushroom:
 	
 IcirrusCityMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_ICIRRUS_CITY_MAX_REVIVE
+	
+IcirrusCitySouthBuenaText:
+	text "If you walk in the"
+	line "wetlands, you"
+	
+	para "might surprise"
+	line "wild #MON into"
+	cont "popping out!"
+	done
+	
+IcirrusCitySouthFisherText:
+	text "Two legendary"
+	line "dragons, awoken at"
+	cont "the tower…"
+	
+	para "The stories I"
+	line "heard when I was"
+	
+	para "little turned out"
+	line "to be true!"
+	done
 	
 IcirrusCitySignText:
 	text "ICIRRUS CITY"
@@ -140,8 +169,10 @@ IcirrusCitySouth_MapEvents:
 	bg_event 29,  2, BGEVENT_ITEM, IcirrusCityBigMushroom
 	bg_event 44,  0, BGEVENT_ITEM, IcirrusCityMaxRevive
 	
-	db 3 ; object events
+	db 5 ; object events
 	object_event 22,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcirrusCityUltraBall, EVENT_ICIRRUS_CITY_ULTRA_BALL
 	object_event 15, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcirrusCityTimerBall, EVENT_ICIRRUS_CITY_TIMER_BALL
 	object_event  4,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcirrusCityMaxPotion, EVENT_ICIRRUS_CITY_MAX_POTION
+	object_event 13, 14, SPRITE_BUENA, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, IcirrusCitySouthBuenaScript, -1
+	object_event 42, 11, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, IcirrusCitySouthFisherScript, -1
 	
