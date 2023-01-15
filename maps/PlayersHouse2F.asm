@@ -158,7 +158,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, WELLSPRING_CAVE_1F, 1
+	;warp_event  7,  0, HALL_OF_FAME, 1
 
 	db 0 ; coord events
 

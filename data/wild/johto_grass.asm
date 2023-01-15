@@ -2426,7 +2426,7 @@ JohtoGrassWildMons:
 	db 46, DRAGONAIR
 	db 46, ALTARIA
 
-	map_id R_23_WEST
+	map_id R_23_EAST
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, AUDINO
@@ -2462,7 +2462,7 @@ JohtoGrassWildMons:
 	db 20, FERROSEED
 	db 21, AUDINO
 
-	map_id R_23_EAST
+	map_id R_23_WEST
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 50, AUDINO

@@ -46,14 +46,14 @@ HallOfFame_MapScripts:
 	end
 
 HallOfFame_WalkUpWithJuniper:
-	step UP
-	step UP
-	step UP
-	step UP
-	step UP
-	step UP
-	step UP
-	step UP
+	slow_step UP
+	slow_step UP
+	slow_step UP
+	slow_step UP
+	slow_step UP
+	slow_step UP
+	slow_step UP
+	slow_step UP
 	step RIGHT
 	turn_head LEFT
 	step_end
