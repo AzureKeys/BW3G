@@ -360,55 +360,155 @@ BattleHouseRoxieWinLossText:
 	done
 	
 BattleHouseRoxieAfterText:
-	text "..."
+	text "Battling tough"
+	line "opponents gives me"
+	
+	para "just the kind of"
+	line "motivation I need"
+	cont "to rock out!"
 	done
 	
 BattleHouseCherenIntroText:
-	text "..."
+	text "Ah, <PLAY_G>."
+	line "Welcome to the"
+	cont "BATTLE HOUSE."
+	
+	para "I come here every"
+	line "now and then to"
+	
+	para "hone my skills as"
+	line "a GYM LEADER."
+	
+	para "How'd you like to"
+	line "be my opponent"
+	cont "today?"
 	done
 	
 BattleHouseCherenWinLossText:
-	text "..."
+	text "I see, so that was"
+	line "your strategy."
 	done
 	
 BattleHouseCherenAfterText:
-	text "..."
+	text "If you want to be"
+	line "a great #MON"
+	
+	para "trainer, you've"
+	line "got to keep imp-"
+	cont "roving yourself."
+	
+	para "Keep focusing on"
+	line "your goals, and go"
+	
+	para "as far as your"
+	line "dreams can take"
+	cont "you!"
 	done
 	
 BattleHouseCilanIntroText:
-	text "..."
+	text "I've been working"
+	line "on a recipe for a"
+	
+	para "new type of #-"
+	line "MON strategy."
+	
+	para "Here, I'll give"
+	line "you a taste!"
 	done
 	
 BattleHouseCilanWinLossText:
-	text "..."
+	text "A truly savory"
+	line "outcome!"
 	done
 	
 BattleHouseCilanAfterText:
-	text "..."
+	text "Cooking is just"
+	line "like #MON"
+	
+	para "battles. There's"
+	line "no one right way"
+	cont "to go about it!"
+	
+	para "You've just got to"
+	line "keep trying diff-"
+	cont "erent things until"
+	
+	para "you find something"
+	line "that works for"
+	cont "you!"
 	done
 	
 BattleHouseSkylaIntroText:
-	text "..."
+	text "Hi there! I came"
+	line "here for a battle"
+	
+	para "that can really"
+	line "test my limits as"
+	cont "a #MON trainer!"
+	
+	para "You've got me"
+	line "excited! Let's go!"
 	done
 	
 BattleHouseSkylaWinLossText:
-	text "..."
+	text "Whew… That was"
+	line "really something!"
 	done
 	
 BattleHouseSkylaAfterText:
-	text "..."
+	text "When I think of a"
+	line "good battle, I"
+	
+	para "want to start"
+	line "training again."
+	
+	para "Maybe I should"
+	line "take my #MON"
+	
+	para "out on my plane"
+	line "for a training"
+	cont "trip soon!"
 	done
 	
 BattleHouseDraydenIntroText:
-	text "..."
+	text "Greetings, young"
+	line "<PLAY_G>."
+	
+	para "If you've come to"
+	line "the BATTLE HOUSE,"
+	
+	para "you must be"
+	line "serious about your"
+	cont "#MON training."
+	
+	para "Allow me to put"
+	line "that training to"
+	cont "the test."
 	done
 	
 BattleHouseDraydenWinLossText:
-	text "..."
+	text "Your #MON are"
+	line "filled with the"
+	cont "heat of battle!"
 	done
 	
 BattleHouseDraydenAfterText:
-	text "..."
+	text "People and #MON"
+	line "don't age because"
+	
+	para "of the passage of"
+	line "time, but because"
+	
+	para "the energy flowing"
+	line "through their"
+	cont "hearts dries up."
+	
+	para "Heh… If I keep up"
+	line "my training like"
+	
+	para "this, I may just"
+	line "go on living"
+	cont "forever!"
 	done
 	
 BattleHouseGymGuyText:

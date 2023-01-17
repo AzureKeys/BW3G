@@ -301,11 +301,11 @@ INCLUDE "maps/VictoryRoadEntranceSouthLeft.asm"
 INCLUDE "maps/VictoryRoadEntranceNorth.asm"
 INCLUDE "maps/VictoryRoadEntranceNorthConnectionDummy.asm"
 INCLUDE "maps/VictoryRoadCave1F.asm"
-INCLUDE "maps/VictoryRoadCave2F.asm"
-INCLUDE "maps/VictoryRoadCave3F.asm"
 
 SECTION "Map Scripts 16", ROMX
 
+INCLUDE "maps/VictoryRoadCave2F.asm"
+INCLUDE "maps/VictoryRoadCave3F.asm"
 INCLUDE "maps/VictoryRoadOutdoor1F.asm"
 INCLUDE "maps/VictoryRoadOutdoor2F.asm"
 INCLUDE "maps/VictoryRoadCastleOutside.asm"
@@ -323,10 +323,10 @@ INCLUDE "maps/LentimasOutskirts.asm"
 INCLUDE "maps/LentimasTown.asm"
 INCLUDE "maps/StrangeHouse1F.asm"
 INCLUDE "maps/StrangeHouseB1F.asm"
-INCLUDE "maps/ChampionsRoomEntrance.asm"
 
 SECTION "Map Scripts 17", ROMX
 
+INCLUDE "maps/ChampionsRoomEntrance.asm"
 INCLUDE "maps/ChampionsRoom.asm"
 INCLUDE "maps/HallOfFame.asm"
 INCLUDE "maps/NsRoom.asm"
