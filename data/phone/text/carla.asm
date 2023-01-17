@@ -1,101 +1,107 @@
 CarlaPhoneAskRematchText:
 	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	line "it's me, CARLA!"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "Do you remember my"
+	line "#MON? You wanna"
+	cont "see them again?"
 	
-	para "How's about a"
-	line "rematch?"
-	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "I'll be on ROUTE"
+	line "2! Don't be late!"
 	done
 	
 CarlaPhoneAfterBattleText:
 	text "Hey <PLAY_G>."
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "My #MON are"
+	line "working on their"
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "good sides after"
+	line "that loss today."
+	
+	para "Call me again"
+	line "tomorrow, we'll"
+	
+	para "have an even"
+	line "better showing!"
 	done
 	
 CarlaPhoneWaitingText:
 	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
+	line "I'm waiting on"
+	
+	para "ROUTE 2 to show"
+	line "you my #MON!"
 
 	para "Don't be late!"
 	done
 	
 CarlaAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "Hey, if you want"
+	line "to have my phone"
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	para "number, I can show"
+	line "off my #MON to"
+	cont "you again!"
 
-	para "Would you tell me"
-	line "your number?"
+	para "How about it?"
 	done
 
 CarlaAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "I can show off my"
+	line "#MON to you"
+	
+	para "again if you give"
+	line "me your phone"
+	cont "number."
 
-	para "Would you tell me"
-	line "your number?"
+	para "How about it?"
 	done
 
 CarlaNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "Nice! I'll be"
+	line "waiting for your"
+	cont "call!"
 	done
 
 CarlaNumberDeclinedText:
-	text "Oh, OK. Too bad…"
+	text "Oh, that really"
+	line "bugs me!"
 
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	para "My #MON have"
+	line "some really great"
+	cont "sides to them…"
 	done
 
 CarlaPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
+	text "Oh, it looks like"
+	line "your phone's full."
 
-	para "It can't register"
-	line "my number."
+	para "That really bugs"
+	line "me…"
 	done
 
 CarlaRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
+	text "Hi, hi! Let's go!"
 
-	para "Let's get started"
-	line "right away!"
+	para "I'm ready to show"
+	line "you my #MON!"
 	done
 
 CarlaGiftText:
-	text "Hey, there you"
-	line "are!"
+	text "Thanks for letting"
+	line "me show off my"
+	cont "#MON."
 
 	para "Here's a gift, as"
-	line "promised!"
+	line "thanks!"
 	done
 
 CarlaPackFullText:
-	text "Your PACK's full?"
+	text "Oh, you don't even"
+	line "have any room for"
+	cont "any more stuff!"
 
-	para "Come back later--"
-	line "that'll do it."
+	para "That's too bad."
 	done
 	

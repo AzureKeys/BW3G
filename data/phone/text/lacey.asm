@@ -1,101 +1,94 @@
 LaceyPhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "Oh, <PLAY_G>"
+	line "is that you?"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "It's me, LACEY!"
 	
-	para "How's about a"
-	line "rematch?"
+	para "I'd love to see"
+	line "your stylish #-"
+	cont "MON again!"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "Come see me on"
+	line "ROUTE 4. I'll be"
+	cont "waiting!"
 	done
 	
 LaceyPhoneAfterBattleText:
-	text "Hey <PLAY_G>."
+	text "Oh, <PLAY_G>,"
+	line "your #MON are"
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "just so stylish"
+	line "in battle!"
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "I can't wait to see"
+	line "them again!"
 	done
 	
 LaceyPhoneWaitingText:
-	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
+	text "Oh, <PLAY_G>,"
+	line "I'm here on ROUTE"
 
-	para "Don't be late!"
+	para "4, waiting for"
+	line "you!"
 	done
 	
 LaceyAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "I'd like to see"
+	line "more of you."
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	para "If you give me"
+	line "your phone number,"
 
-	para "Would you tell me"
-	line "your number?"
+	para "we can see each"
+	line "other again. What"
+	cont "do you say?"
 	done
 
 LaceyAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "If you give me"
+	line "your phone number,"
 
-	para "Would you tell me"
-	line "your number?"
+	para "we can see each"
+	line "other again. What"
+	cont "do you say?"
 	done
 
 LaceyNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "Thank you, please,"
+	line "don't hesitate to"
+	cont "call me!"
 	done
 
 LaceyNumberDeclinedText:
-	text "Oh, OK. Too bad…"
-
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	text "Oh, that's quite"
+	line "disappointing…"
 	done
 
 LaceyPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
+	text "Oh dear, it looks"
+	line "like your phone is"
+	cont "full."
 
-	para "It can't register"
-	line "my number."
+	para "Aren't you the"
+	line "popular one!"
 	done
 
 LaceyRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
-
-	para "Let's get started"
-	line "right away!"
+	text "I'm ready to see"
+	line "your stylish"
+	cont "#MON in action!"
+	
+	para "Won't you show me?"
 	done
 
 LaceyGiftText:
-	text "Hey, there you"
-	line "are!"
-
-	para "Here's a gift, as"
-	line "promised!"
+	text "Here, a gift from"
+	line "me to you!"
 	done
 
 LaceyPackFullText:
-	text "Your PACK's full?"
-
-	para "Come back later--"
-	line "that'll do it."
+	text "Oh dear, it looks"
+	line "like you don't have"
+	cont "any room for this…"
 	done
 	

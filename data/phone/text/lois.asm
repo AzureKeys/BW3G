@@ -1,101 +1,96 @@
 LoisPhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "Hi there, <PLAY_G>!"
+	line "This is LOIS!"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "Did you want to"
+	line "meet me for a"
+	cont "#MON battle?"
 	
-	para "How's about a"
-	line "rematch?"
+	para "Okay, I'll be"
+	line "waiting for you on"
+	cont "ROUTE 8."
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
-	done
-	
-LoisPhoneAfterBattleText:
-	text "Hey <PLAY_G>."
-
-	para "We're training"
-	line "after that loss"
-	cont "today."
-	
-	para "Next time we'll"
-	line "win for sure!"
-	done
-	
-LoisPhoneWaitingText:
-	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
-
 	para "Don't be late!"
 	done
 	
+LoisPhoneAfterBattleText:
+	text "Oh <PLAY_G>, hi!"
+
+	para "It's always so fun"
+	line "to meet with you"
+	cont "in the puddles!"
+	
+	para "We should make"
+	line "another date"
+	cont "some time!"
+	
+	para "Call me!"
+	done
+	
+LoisPhoneWaitingText:
+	text "Hi <PLAY_G>, are"
+	line "you on your way?"
+
+	para "I'm excited for"
+	line "our meeting!"
+	
+	para "Hurry up!"
+	done
+	
 LoisAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "You know, I'd like"
+	line "to have another"
+	cont "battle with you."
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
-
-	para "Would you tell me"
-	line "your number?"
+	para "Would you give me"
+	line "your phone number?"
 	done
 
 LoisAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "I'd like to have"
+	line "another battle"
+	cont "with you."
 
-	para "Would you tell me"
-	line "your number?"
+	para "Would you give me"
+	line "your phone number?"
 	done
 
 LoisNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "Thanks! I'll be"
+	line "waiting for your"
+	cont "call!"
 	done
 
 LoisNumberDeclinedText:
-	text "Oh, OK. Too bad…"
-
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	text "Oh, well if that's"
+	line "what you want…"
 	done
 
 LoisPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
-
-	para "It can't register"
-	line "my number."
+	text "Your phone can't"
+	line "hold any more"
+	cont "numbers."
 	done
 
 LoisRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
+	text "Hi, do I look like"
+	line "a spinning flower"
+	cont "with my parasol?"
 
-	para "Let's get started"
-	line "right away!"
+	para "Oh, that's right!"
+	line "We were going to"
+	cont "battle!"
 	done
 
 LoisGiftText:
-	text "Hey, there you"
-	line "are!"
-
-	para "Here's a gift, as"
-	line "promised!"
+	text "Such a fun time!"
+	line "You can have this"
+	cont "as a gift from me."
 	done
 
 LoisPackFullText:
-	text "Your PACK's full?"
-
-	para "Come back later--"
-	line "that'll do it."
+	text "Oh no, you've got"
+	line "no room for my"
+	cont "gift…"
 	done
 	

@@ -1,101 +1,117 @@
 DeanPhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "<PLAY_G>!"
+	line "This is DEAN!"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "Are you up for"
+	line "some training?"
 	
-	para "How's about a"
-	line "rematch?"
+	para "Come out to the"
+	line "VILLAGE BRIDGE,"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "and be ready to"
+	line "get rough!"
+	
+	para "Don't chicken out"
+	line "on me, <PLAY_G>!"
 	done
 	
 DeanPhoneAfterBattleText:
-	text "Hey <PLAY_G>."
+	text "<PLAY_G>, are you"
+	line "wanting to do more"
+	cont "training?"
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "Don't you know it's"
+	line "important to let"
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "your body rest"
+	line "after a hard day"
+	cont "of training?"
+	
+	para "Your #MON are"
+	line "the same!"
 	done
 	
 DeanPhoneWaitingText:
-	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
+	text "What, <PLAY_G>?"
+	
+	para "Don't tell me"
+	line "you're not tough"
+	
+	para "enough to train"
+	line "with me!"
 
-	para "Don't be late!"
+	para "C'mon, I'm"
+	line "waiting!"
 	done
 	
 DeanAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "I, uh… I wasn't"
+	line "expecting you to"
+	cont "be that good."
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	para "I'm always looking"
+	line "for strong oppo-"
+	cont "nents to train"
+	cont "with."
 
-	para "Would you tell me"
-	line "your number?"
+	para "Do you want to be"
+	line "my training"
+	
+	para "partner? I'll give"
+	line "you my number."
 	done
 
 DeanAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "I'm always looking"
+	line "for strong oppo-"
+	cont "nents to train"
+	cont "with."
 
-	para "Would you tell me"
-	line "your number?"
+	para "Do you want to be"
+	line "my training"
+	
+	para "partner? I'll give"
+	line "you my number."
 	done
 
 DeanNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "OK! Um…"
+	
+	para "Call me when you"
+	line "want to train!"
 	done
 
 DeanNumberDeclinedText:
-	text "Oh, OK. Too bad…"
-
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	text "What? That's dumb."
+	line "Why wouldn't you"
+	cont "want to train…?"
 	done
 
 DeanPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
-
-	para "It can't register"
-	line "my number."
+	text "Hey! There's not"
+	line "even any room in"
+	cont "your phone!"
 	done
 
 DeanRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
-
-	para "Let's get started"
-	line "right away!"
+	text "Hut hut! Let's go!"
+	line "Training begins"
+	cont "now!"
 	done
 
 DeanGiftText:
-	text "Hey, there you"
-	line "are!"
+	text "Oof… I'm worn out."
 
-	para "Here's a gift, as"
-	line "promised!"
+	para "Take this as"
+	line "thanks for train-"
+	cont "ing with me."
 	done
 
 DeanPackFullText:
-	text "Your PACK's full?"
+	text "Your PACK's full…"
 
-	para "Come back later--"
-	line "that'll do it."
+	para "Have you been"
+	line "doing weight"
+	cont "training?"
 	done
 	

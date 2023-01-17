@@ -1,101 +1,116 @@
 ParkerPhoneAskRematchText:
 	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	line "it's PARKER!"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "I've been looking"
+	line "for a dangerous"
 	
-	para "How's about a"
-	line "rematch?"
+	para "kind of battle, so"
+	line "why don't we meet"
+	cont "up again?"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "I'll be here wait-"
+	line "ing on ROUTE 7."
+	cont "See ya!"
 	done
 	
 ParkerPhoneAfterBattleText:
-	text "Hey <PLAY_G>."
+	text "Hey <PLAY_G>,"
+	line "thanks for the"
+	cont "match!"
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "It's battles like"
+	line "those that really"
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "make me feel"
+	line "alive, you know?"
 	done
 	
 ParkerPhoneWaitingText:
 	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
+	line "I'm here on ROUTE"
+	
+	para "7, waiting for our"
+	line "match! I'm just so"
 
-	para "Don't be late!"
+	para "excited, I can't"
+	line "stand it!"
 	done
 	
 ParkerAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "You're a pretty"
+	line "dangerous trainer!"
+	cont "I like that!"
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	para "How's about you"
+	line "give me your phone"
+	cont "number?"
 
-	para "Would you tell me"
-	line "your number?"
+	para "We could meet up"
+	line "and have more"
+	
+	para "exciting #MON"
+	line "battles!"
 	done
 
 ParkerAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "How's about you"
+	line "give me your phone"
+	cont "number?"
 
-	para "Would you tell me"
-	line "your number?"
+	para "We could meet up"
+	line "and have more"
+	
+	para "exciting #MON"
+	line "battles!"
 	done
 
 ParkerNumberAcceptedText:
 	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	line "you're ready for"
+	cont "an exciting match!"
 	done
 
 ParkerNumberDeclinedText:
-	text "Oh, OK. Too bad…"
+	text "Bummer…"
 
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	para "Well, It'll be"
+	line "exciting if you"
+	
+	para "were to change"
+	line "your mind!"
 	done
 
 ParkerPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
-
-	para "It can't register"
-	line "my number."
+	text "Oh man, it looks"
+	line "like your phone's"
+	cont "full."
 	done
 
 ParkerRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
+	text "A dangerous man,"
+	line "waiting for a"
 
-	para "Let's get started"
-	line "right away!"
+	para "dangerous #MON"
+	line "trainer…"
+	
+	para "How much more"
+	line "exciting can it"
+	cont "get?"
 	done
 
 ParkerGiftText:
-	text "Hey, there you"
-	line "are!"
+	text "Wow, what a rush!"
 
-	para "Here's a gift, as"
-	line "promised!"
+	para "Here's something I"
+	line "found during my"
+	
+	para "travels. You can"
+	line "have it!"
 	done
 
 ParkerPackFullText:
-	text "Your PACK's full?"
-
-	para "Come back later--"
-	line "that'll do it."
+	text "Ah, bummer. Your"
+	line "PACK's full…"
 	done
 	

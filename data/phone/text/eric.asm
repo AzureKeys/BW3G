@@ -1,101 +1,103 @@
 EricPhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "What's up, <PLAY_G>?"
+	line "It's ERIC!"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "I've been prac-"
+	line "ticing my moves"
 	
-	para "How's about a"
-	line "rematch?"
+	para "since the last"
+	line "time we met!"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "Come meet me at"
+	line "ROUTE 5, and I'll"
+	
+	para "show you what I've"
+	line "got!"
 	done
 	
 EricPhoneAfterBattleText:
 	text "Hey <PLAY_G>."
 
-	para "We're training"
-	line "after that loss"
+	para "You really got me"
+	line "turned around"
 	cont "today."
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "I'll have to bust"
+	line "out some new moves"
+	cont "next time!"
 	done
 	
 EricPhoneWaitingText:
 	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
+	line "come on down to"
 
-	para "Don't be late!"
+	para "ROUTE 5, and I'll"
+	line "show you my moves!"
 	done
 	
 EricAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "You've got some"
+	line "pretty sweet"
+
+	para "moves! How'd you"
+	line "like to have my"
+	cont "phone number?"
 
 	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
-
-	para "Would you tell me"
-	line "your number?"
+	line "whenever you wanna"
+	
+	para "meet up and have"
+	line "another dance!"
+	
+	para "How about it?"
 	done
 
 EricAskNumber2Text:
 	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
-
-	para "Would you tell me"
-	line "your number?"
+	line "whenever you wanna"
+	
+	para "meet up and have"
+	line "another dance!"
+	
+	para "How about it?"
 	done
 
 EricNumberAcceptedText:
 	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	line "you're feelin'"
+	cont "like groovin'!"
 	done
 
 EricNumberDeclinedText:
-	text "Oh, OK. Too bad…"
+	text "Ah, turned around…"
 
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	para "Oh well, let me"
+	line "know if you change"
+	cont "your mind, OK?"
 	done
 
 EricPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
-
-	para "It can't register"
-	line "my number."
+	text "Looks like your"
+	line "phone's too full,"
+	cont "my man!"
 	done
 
 EricRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
+	text "Turn around, and"
+	line "there you are!"
 
-	para "Let's get started"
-	line "right away!"
+	para "Let's go!"
 	done
 
 EricGiftText:
-	text "Hey, there you"
-	line "are!"
-
-	para "Here's a gift, as"
-	line "promised!"
+	text "Movin' as smooth"
+	line "as always! Here,"
+	cont "you can have this!"
 	done
 
 EricPackFullText:
-	text "Your PACK's full?"
-
-	para "Come back later--"
-	line "that'll do it."
+	text "Uh-oh, looks like"
+	line "you need to"
+	cont "lighten your load!"
 	done
 	

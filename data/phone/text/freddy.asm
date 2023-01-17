@@ -1,101 +1,102 @@
 FreddyPhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "Yahoo! Is this"
+	line "<PLAY_G>?"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "It's FREDDY, out"
+	line "at the LENTIMAS"
+	cont "OUTSKIRT!"
 	
-	para "How's about a"
-	line "rematch?"
+	para "You want to have"
+	line "a rematch? Sure!"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "Meet me there, and"
+	line "I'll come right"
+	cont "away!"
 	done
 	
 FreddyPhoneAfterBattleText:
-	text "Hey <PLAY_G>."
+	text "Hey, <PLAY_G>,"
+	line "have you ever"
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "ridden on a #-"
+	line "MON before?"
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "I've heard of some"
+	line "#MON who can"
+	
+	para "FLY, but I wonder"
+	line "if there are any"
+	
+	para "#MON you can"
+	line "ride like a bike?"
 	done
 	
 FreddyPhoneWaitingText:
 	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
+	line "I'm here at the"
+	cont "LENTIMAS OUTSKIRT!"
 
-	para "Don't be late!"
+	para "Come meet me, and"
+	line "we'll battle!"
 	done
 	
 FreddyAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "Say, you and I"
+	line "should battle"
+	cont "again sometime!"
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
-
-	para "Would you tell me"
+	para "Will you give me"
 	line "your number?"
 	done
 
 FreddyAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "You and I should"
+	line "battle again"
+	cont "sometime!"
 
-	para "Would you tell me"
+	para "Will you give me"
 	line "your number?"
 	done
 
 FreddyNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "Awesome! Call me"
+	line "whenever you want"
+	cont "a hot battle!"
 	done
 
 FreddyNumberDeclinedText:
-	text "Oh, OK. Too bad…"
+	text "Ah, that's lame…"
 
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	para "Well, come and"
+	line "talk to me if you"
+	
+	para "ever change your"
+	line "mind."
 	done
 
 FreddyPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
+	text "Looks like your"
+	line "phone's full."
 
-	para "It can't register"
-	line "my number."
+	para "That's too bad…"
 	done
 
 FreddyRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
+	text "Yahoo! You called,"
+	line "and I was ready!"
 
-	para "Let's get started"
-	line "right away!"
+	para "Let's battle!"
 	done
 
 FreddyGiftText:
-	text "Hey, there you"
-	line "are!"
-
-	para "Here's a gift, as"
-	line "promised!"
+	text "That was fun!"
+	line "Here, you can have"
+	cont "this!"
 	done
 
 FreddyPackFullText:
-	text "Your PACK's full?"
-
-	para "Come back later--"
-	line "that'll do it."
+	text "Uh-oh, looks like"
+	line "you don't have any"
+	cont "room for it."
 	done
 	

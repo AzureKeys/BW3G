@@ -1,101 +1,106 @@
 MarcoPhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "Oh, is it <PLAY_G>?"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "This is SCIENTIST"
+	line "MARCO, on ROUTE 6."
 	
-	para "How's about a"
-	line "rematch?"
+	para "How would you like"
+	line "to assist me with"
+	cont "a little research?"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "I'll reward you"
+	line "for your trouble."
+	
+	para "Come quickly, and"
+	line "don't delay!"
 	done
 	
 MarcoPhoneAfterBattleText:
-	text "Hey <PLAY_G>."
+	text "Oh, <PLAY_G>,"
+	line "thank you for your"
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "help with our"
+	line "experiment today!"
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "Call again, and"
+	line "we'll collect more"
+	cont "data!"
 	done
 	
 MarcoPhoneWaitingText:
-	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
+	text "Oh, <PLAY_G>, are"
+	line "you on your way?"
 
-	para "Don't be late!"
+	para "I'm here on ROUTE"
+	line "6, waiting for"
+	cont "you. Don't delay!"
 	done
 	
 MarcoAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "I need to experi-"
+	line "ment more to prove"
+	cont "my battle theory."
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	para "Will you let me"
+	line "have your phone"
+	cont "number?"
 
-	para "Would you tell me"
-	line "your number?"
+	para "We could meet"
+	line "again to test my"
+	cont "hypothesis!"
 	done
 
 MarcoAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "Will you let me"
+	line "have your phone"
+	cont "number?"
 
-	para "Would you tell me"
-	line "your number?"
+	para "We could meet"
+	line "again to test my"
+	cont "hypothesis!"
 	done
 
 MarcoNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "Call me tomorrow,"
+	line "and we'll continue"
+	cont "our research!"
 	done
 
 MarcoNumberDeclinedText:
-	text "Oh, OK. Too bad…"
+	text "Oh dear… It looks"
+	line "like I may miss"
+	cont "out on this data."
 
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	para "If you change your"
+	line "mind, don't hesi-"
+	cont "tate to tell me!"
 	done
 
 MarcoPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
+	text "It would appear"
+	line "you have no more"
 
-	para "It can't register"
-	line "my number."
+	para "memory in your"
+	line "phone."
 	done
 
 MarcoRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
-
-	para "Let's get started"
-	line "right away!"
+	text "Everything is"
+	line "ready! Let us test"
+	cont "our theory!"
 	done
 
 MarcoGiftText:
-	text "Hey, there you"
-	line "are!"
+	text "Thank you for your"
+	line "cooperation!"
 
-	para "Here's a gift, as"
-	line "promised!"
+	para "Here is a gift for"
+	line "your assistance!"
 	done
 
 MarcoPackFullText:
-	text "Your PACK's full?"
-
-	para "Come back later--"
-	line "that'll do it."
+	text "Oh, it would seem"
+	line "that you've got no"
+	cont "room for it."
 	done
 	

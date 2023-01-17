@@ -1,101 +1,110 @@
 JennyPhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "Hi <PLAY_G>,"
+	line "this is JENNY!"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "I've been explor-"
+	line "ing and studying"
 	
-	para "How's about a"
-	line "rematch?"
+	para "all kinds of new"
+	line "#MON!"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "Want to meet on"
+	line "ROUTE 18 for a"
+	cont "rematch?"
+	
+	para "I'll show you what"
+	line "I've learned. See"
+	cont "you there!"
 	done
 	
 JennyPhoneAfterBattleText:
-	text "Hey <PLAY_G>."
+	text "Hi <PLAY_G>."
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "I've been studying"
+	line "the way you beat"
+	cont "me today."
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "I'm working on a"
+	line "strategy that'll"
+	
+	para "counter it for"
+	line "next time!"
 	done
 	
 JennyPhoneWaitingText:
-	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
-
-	para "Don't be late!"
+	text "Hi <PLAY_G>,"
+	line "I'm still waiting"
+	
+	para "for you out here"
+	line "on ROUTE 18!"
+	
+	para "Let's meet up and"
+	line "battle!"
 	done
 	
 JennyAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "I've still got"
+	line "more to learn!"
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	para "We can battle"
+	line "again if you want."
 
-	para "Would you tell me"
+	para "Would you give me"
 	line "your number?"
 	done
 
 JennyAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "We can battle"
+	line "again if you want."
 
-	para "Would you tell me"
+	para "Would you give me"
 	line "your number?"
 	done
 
 JennyNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "Great! I'll be"
+	line "taking notes for"
+	cont "our next match!"
 	done
 
 JennyNumberDeclinedText:
-	text "Oh, OK. Too bad…"
+	text "Oh, well that's"
+	line "too bad…"
 
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	para "I'll be here if"
+	line "you want my"
+	cont "number later."
 	done
 
 JennyPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
+	text "Oh, there's no"
+	line "more room for"
 
-	para "It can't register"
-	line "my number."
+	para "numbers in your"
+	line "phone memory."
 	done
 
 JennyRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
+	text "I've been working"
+	line "on a new strategy"
+	cont "for this."
 
-	para "Let's get started"
-	line "right away!"
+	para "Let's battle!"
 	done
 
 JennyGiftText:
-	text "Hey, there you"
-	line "are!"
+	text "My strategy still"
+	line "needs some work…"
 
-	para "Here's a gift, as"
-	line "promised!"
+	para "Here, I want you"
+	line "to have this!"
 	done
 
 JennyPackFullText:
-	text "Your PACK's full?"
+	text "Oh, it looks like"
+	line "you don't have any"
 
-	para "Come back later--"
-	line "that'll do it."
+	para "room in your PACK"
+	line "for more items."
 	done
 	
