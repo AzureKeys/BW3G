@@ -430,3 +430,30 @@ BiancaPhoneP2Text:
 	para "Talk to you later!"
 	done
 	
+BiancaPhoneMembersCardText:
+	text "Hi <PLAY_G>,"
+	line "it's PROF.BIANCA."
+	
+	para "I just heard the"
+	line "news from PROF."
+	cont "JUNIPER!"
+	
+	para "Congratulations on"
+	line "becoming CHAMPION!"
+	
+	para "I knew you had it"
+	line "in you!"
+	
+	para "Anyway, you should"
+	line "stop by NUVEMA"
+	
+	para "TOWN and come"
+	line "visit me at the"
+	
+	para "lab. I've got"
+	line "something I'd like"
+	cont "to give you!"
+	
+	para "See you soon!"
+	done
+	

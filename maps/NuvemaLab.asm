@@ -49,6 +49,10 @@ NuvemaLabScript:
 Bianca:
 	faceplayer
 	opentext
+	checkevent EVENT_GOT_MEMBERS_CARD
+	iftrue .CheckPokedex
+	checkevent EVENT_BIANCA_MEMBERS_CARD_CALL
+	iftrue .GiveMembersCard
 	checkevent EVENT_BEAT_P2_LAB
 	iftrue .CheckPokedex
 	writetext BiancaLabP2LocationText
@@ -59,6 +63,15 @@ Bianca:
 	waitbutton
 	special ProfOaksPCBoot
 	writetext BiancaLabGoodbyeText
+	waitbutton
+	closetext
+	end
+	
+.GiveMembersCard:
+	writetext BiancaLabGiveMembersCardText
+	buttonsound
+	verbosegiveitem MEMBERS_CARD
+	writetext BiancaLabExplainMembersCardText
 	waitbutton
 	closetext
 	end
@@ -261,18 +274,18 @@ BiancasLabPCText:
 	para "…"
 
 	para "PROF.BIANCA, I"
-	line "have news about"
+	line "got news about"
 	cont "that thing…"
 
 	para "There was a break"
 	line "in at my GYM. I"
 	cont "think someone was"
 	
-	para "trying to get"
+	para "tryin' ta get"
 	line "their hands on"
 	cont "that thing."
 
-	para "I'm going to move"
+	para "I'm gonna move"
 	line "it to a more"
 	cont "secure place."
 
@@ -282,7 +295,7 @@ BiancasLabPCText:
 	cont "get to it."
 
 	para "This thing is"
-	line "turning out to be"
+	line "turnin' out to be"
 	cont "a load of trouble…"
 
 	para "Thanks for the"
@@ -292,6 +305,39 @@ BiancasLabPCText:
 	
 	para "Good vibes,"
 	line "-MARLON"
+	done
+	
+BiancaLabGiveMembersCardText:
+	text "Oh, <PLAY_G>!"
+	line "It's good to see"
+	cont "you!"
+	
+	para "Congrats again on"
+	line "becoming CHAMPION!"
+	
+	para "I'd like you to"
+	line "have this."
+	done
+
+BiancaLabExplainMembersCardText:
+	text "That card will"
+	line "give you access to"
+	
+	para "an exclusive room"
+	line "at SHOPPING MALL"
+	cont "NINE."
+	
+	para "Only CHAMPIONs and"
+	line "members of the"
+	
+	para "#MON LEAGUE are"
+	line "given them."
+	
+	para "You can buy some"
+	line "pretty rare stuff"
+	cont "there!"
+	
+	para "Have fun shopping!"
 	done
 
 NuvemaLab_MapEvents:

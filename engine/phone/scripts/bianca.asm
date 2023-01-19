@@ -127,6 +127,7 @@ BiancaPhoneCallerScript:
 	ifequal SPECIALCALL_BIANCA_CASTELIA, .castelia
 	ifequal SPECIALCALL_BIANCA_VIRBANK, .virbank
 	ifequal SPECIALCALL_BIANCA_P2, .P2
+	ifequal SPECIALCALL_BIANCA_MEMBERS_CARD, .members_card
 	specialphonecall SPECIALCALL_NONE
 	end
 
@@ -152,4 +153,10 @@ BiancaPhoneCallerScript:
 	farwritetext BiancaPhoneP2Text
 	specialphonecall SPECIALCALL_NONE
 	setevent EVENT_CASTELIA_SEWER_BLOCKER
+	end
+
+.members_card
+	farwritetext BiancaPhoneMembersCardText
+	specialphonecall SPECIALCALL_NONE
+	setevent EVENT_BIANCA_MEMBERS_CARD_CALL
 	end

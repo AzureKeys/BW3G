@@ -11,6 +11,7 @@ SpecialPhoneCallList:
 	specialcall SpecialCallOnlyWhenOutside, PHONECONTACT_BIANCA,   BiancaPhoneCallerScript
 	specialcall SpecialCallOnlyWhenOutside, PHONECONTACT_BIANCA,   BiancaPhoneCallerScript
 	specialcall SpecialCallOnlyWhenOutside, PHONECONTACT_BIANCA,   BiancaPhoneCallerScript
+	specialcall SpecialCallOnlyWhenOutside, PHONECONTACT_BIANCA,   BiancaPhoneCallerScript
 	specialcall SpecialCallWhereverYouAre, PHONECONTACT_CHEREN,   CherenPhoneCallerScript
 	specialcall SpecialCallOnlyWhenOutside, PHONECONTACT_CHEREN,   CherenPhoneCallerScript
 	

@@ -34,6 +34,7 @@ HallOfFame_MapScripts:
 	checkevent EVENT_BEAT_POKEMON_LEAGUE
 	iftrue .done
 	setevent EVENT_BEAT_POKEMON_LEAGUE
+	specialphonecall SPECIALCALL_BIANCA_MEMBERS_CARD
 	halloffame
 	setmapscene CHAMPIONS_ROOM, SCENE_POST_CREDITS
 	disappear PLAYER
