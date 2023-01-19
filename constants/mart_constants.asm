@@ -22,6 +22,8 @@
 	const MART_MALL_3
 	const MART_MALL_4
 	const MART_MALL_5
+	const MART_MEMBERS_1
+	const MART_MEMBERS_2
 	const MART_NO_DEX
 	const MART_NO_BADGES
 	const MART_ONE_BADGE

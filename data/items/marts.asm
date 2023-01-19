@@ -12,6 +12,8 @@ Marts:
 	dw MartMall3
 	dw MartMall4
 	dw MartMall5
+	dw MartMembers1
+	dw MartMembers2
 	dw MartNoDex
 	dw MartNoBadges
 	dw MartOneBadge
@@ -152,6 +154,33 @@ MartMall5:
 	db FIRE_STONE
 	db WATER_STONE
 	db THUNDERSTONE
+	db -1 ; end
+
+MartMembers1:
+	db 7 ; # items
+	db ELECTRIZER
+	db MAGMARIZER
+	db DRAGON_SCALE
+	db MAGIC_RIBBON
+	db RAZOR_CLAW
+	db RAZOR_FANG
+	db DAWN_STONE
+	db -1 ; end
+
+MartMembers2:
+	db 12 ; # items
+	db NEVERMELTICE
+	db DRAGON_FANG
+	db LIGHT_CLAY
+	db BIG_ROOT
+	db AIR_BALLOON
+	db QUICK_CLAW
+	db BLACK_SLUDGE
+	db FOCUS_SASH
+	db EXPERT_BELT
+	db CHOICE_BAND
+	db CHOICE_SPECS
+	db CHOICE_SCARF
 	db -1 ; end
 
 MartNoDex:

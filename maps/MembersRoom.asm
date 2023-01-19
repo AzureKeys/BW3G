@@ -1,9 +1,23 @@
 	const_def 2 ; object constants
+	const MEMBERSROOM_CLERK_1
+	const MEMBERSROOM_CLERK_2
 
 MembersRoom_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
+
+MembersRoomClerk1Script:
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_MEMBERS_1
+	closetext
+	end
+
+MembersRoomClerk2Script:
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_MEMBERS_2
+	closetext
+	end
 	
 MembersRoomVendingMachine:
 	opentext
@@ -114,5 +128,7 @@ MembersRoom_MapEvents:
 	bg_event  8,  1, BGEVENT_UP, MembersRoomVendingMachine
 	bg_event  9,  1, BGEVENT_UP, MembersRoomVendingMachine
 
-	db 0 ; object events
+	db 2 ; object events
+	object_event  2,  2, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, MembersRoomClerk1Script, -1
+	object_event  3,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MembersRoomClerk2Script, -1
 	
