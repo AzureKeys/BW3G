@@ -6737,12 +6737,15 @@ LoadEnemyMon:
 
 ; Saw this mon
 	ld a, [wTempEnemyMonSpecies]
+	cp GENESIS_MON ; Don't register Genesis Project in Dex
+	jr z, .skip_seen
 	dec a
 	ld c, a
 	ld b, SET_FLAG
 	ld hl, wPokedexSeen
 	predef SmallFarFlagAction
 
+.skip_seen
 	ld hl, wEnemyMonStats
 	ld de, wEnemyStats
 	ld bc, wEnemyMonStatsEnd - wEnemyMonStats

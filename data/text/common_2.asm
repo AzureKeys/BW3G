@@ -1238,10 +1238,10 @@ _OakRating08::
 
 _OakRating09::
 	text "Some #MON only"
-	line "appear during"
+	line "appear in certain"
+	cont "areas."
 
-	para "certain times of"
-	line "the day."
+	para "Look everywhere!"
 	done
 
 _OakRating10::
@@ -1259,9 +1259,13 @@ _OakRating11::
 	done
 
 _OakRating12::
-	text "Have you met KURT?"
-	line "His custom BALLS"
-	cont "should help."
+	text "Have you gone to"
+	line "the BALL shop in"
+	cont "NIMBASA CITY?"
+	
+	para "There are types of"
+	line "BALLs that may"
+	cont "help you."
 	done
 
 _OakRating13::
@@ -1273,11 +1277,9 @@ _OakRating13::
 	done
 
 _OakRating14::
-	text "Are you trading"
-	line "your #MON?"
-
-	para "It's tough to do"
-	line "this alone!"
+	text "Some people will"
+	line "offer to trade you"
+	cont "their #MON!"
 	done
 
 _OakRating15::
