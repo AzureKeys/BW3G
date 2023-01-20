@@ -10,4 +10,4 @@ NonTrainerCallerNames:
 .bianca:   db "PROF.BIANCA:@"
 .cheren:   db "CHEREN:@"
 .mom:      db "MOM:@"
-.bill:     db "BILL:@"
+.bill:     db "AMANITA:@"
