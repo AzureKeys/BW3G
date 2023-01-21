@@ -97,6 +97,6 @@ BTTrainerClassSprites:
 	db SPRITE_INFER         ; infer2
 	db SPRITE_IRIS          ; alder
 	db SPRITE_IRIS          ; iris
-	db SPRITE_IRIS          ; caitlin
-	db SPRITE_IRIS          ; cynthia
+	db SPRITE_CAITLIN       ; caitlin
+	db SPRITE_CYNTHIA       ; cynthia
 	

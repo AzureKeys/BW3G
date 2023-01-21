@@ -105,6 +105,7 @@ INCLUDE "audio/music/desert.asm"
 INCLUDE "audio/music/accumulatown.asm"
 INCLUDE "audio/music/anville.asm"
 INCLUDE "audio/music/floccesy.asm"
+INCLUDE "audio/music/lookroughneck.asm"
 
 SECTION "New Songs 2", ROMX
 
@@ -125,7 +126,6 @@ INCLUDE "audio/music/mart.asm"
 INCLUDE "audio/music/elitefour.asm"
 INCLUDE "audio/music/aspertiacity.asm"
 INCLUDE "audio/music/BWpokemonLeagueV2.asm"
-INCLUDE "audio/music/lookroughneck.asm"
 
 SECTION "New Songs 3", ROMX
 

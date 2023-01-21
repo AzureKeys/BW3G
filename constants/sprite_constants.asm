@@ -118,6 +118,8 @@
 	const SPRITE_ELESA ; 72
 	const SPRITE_COLRESS ; 73
 	const SPRITE_GENESIS ; 74
+	const SPRITE_CAITLIN ; 75
+	const SPRITE_CYNTHIA ; 76
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

@@ -11,7 +11,24 @@ DraydensHouseIris:
 	opentext
 	checkevent EVENT_BEAT_POKEMON_LEAGUE
 	iffalse .CheckDrayden
-; Postgame Battle Goes Here
+	checkevent EVENT_BEAT_IRIS
+	iffalse .FirstBattle
+	
+.FirstBattle
+	writetext DraydensHouseIrisFirstBattleText
+	waitbutton
+	closetext
+	winlosstext IrisWinLossText, 0
+	loadtrainer IRIS, IRIS1
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_IRIS
+	opentext
+	writetext DraydensHouseIrisAfterBattleText
+	waitbutton
+	closetext
+	end
+
 .CheckDrayden
 	checkflag ENGINE_LEGENDBADGE
 	iffalse .GoToGym
@@ -70,6 +87,53 @@ DraydensHouseIrisGoGymText:
 	
 	para "Be careful though,"
 	line "he's really strong!"
+	done
+	
+DraydensHouseIrisFirstBattleText:
+	text "Hi, <PLAY_G>!"
+	
+	para "So, you did end up"
+	line "becoming Champion"
+	cont "after all, huh?"
+	
+	para "I knew you had it"
+	line "in you!"
+	
+	para "Say, why don't you"
+	line "and I have a"
+	
+	para "battle, Champion"
+	line "against Champion!"
+	
+	para "Show me the power"
+	line "you used to beat"
+	cont "the #MON"
+	cont "LEAGUE!"
+	done
+
+DraydensHouseIrisAfterBattleText:
+	text "You really are"
+	line "something,"
+	cont "<PLAY_G>!"
+	
+	para "I can definitely"
+	line "see how you were"
+	
+	para "able to become"
+	line "Champion."
+	
+	para "Stop by again"
+	line "sometime, and"
+	
+	para "we'll have another"
+	line "battle."
+	
+	para "I'll be ready!"
+	done
+
+IrisWinLossText:
+	text "Wow, that was"
+	line "incredible!"
 	done
 
 DraydensHouse2F_MapEvents:

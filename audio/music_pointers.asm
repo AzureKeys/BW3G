@@ -67,7 +67,7 @@ Music:
 	dba Music_AccumulaTown
 	dba Music_AspertiaCity
 	dba Music_OldaleTown
-	dba Music_JubilifeCity
+	dba Music_VirbankCity
 	dba Music_KalosPowerPlant
 	dba Music_LookZinnia
 	dba Music_Route10
