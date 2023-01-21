@@ -57,8 +57,8 @@ TrainerRoughneck2R9:
 	closetext
 	end
 	
-R9HPUp:
-	itemball HP_UP
+R9Nugget:
+	itemball NUGGET
 	
 R9FullRestore:
 	itemball FULL_RESTORE
@@ -72,8 +72,8 @@ R9Iron:
 R9MaxEther:
 	hiddenitem MAX_ETHER, EVENT_R9_MAX_ETHER
 	
-R9Nugget:
-	hiddenitem NUGGET, EVENT_R9_NUGGET
+R9HPUp:
+	hiddenitem HP_UP, EVENT_R9_HP_UP
 	
 R9HiddenGrotto:
 	hiddengrotto HIDDENGROTTO_R_9, HIDDENGROTTO_TIER_3
@@ -210,11 +210,11 @@ Rt9_MapEvents:
 	bg_event 19,  7, BGEVENT_READ, R9MallSign
 	bg_event  6,  9, BGEVENT_READ, R9TubelineSign
 	bg_event 19, 17, BGEVENT_ITEM, R9MaxEther
-	bg_event 30,  6, BGEVENT_ITEM, R9Nugget
+	bg_event 30,  6, BGEVENT_ITEM, R9HPUp
 	bg_event 10,  5, BGEVENT_UP, R9HiddenGrotto
 	
 	db 8 ; object events
-	object_event 12, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R9HPUp, EVENT_R9_HP_UP
+	object_event 12, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R9Nugget, EVENT_R9_NUGGET
 	object_event 11,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R9FullRestore, EVENT_R9_FULL_RESTORE
 	object_event  8,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R9Elixer, EVENT_R9_ELIXER
 	object_event 14, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, R9Iron, EVENT_R9_IRON

@@ -157,24 +157,25 @@ MartMall5:
 	db -1 ; end
 
 MartMembers1:
-	db 7 ; # items
+	db 8 ; # items
+	db DAWN_STONE
 	db ELECTRIZER
 	db MAGMARIZER
 	db DRAGON_SCALE
 	db MAGIC_RIBBON
 	db RAZOR_CLAW
 	db RAZOR_FANG
-	db DAWN_STONE
+	db METAL_COAT
 	db -1 ; end
 
 MartMembers2:
 	db 12 ; # items
-	db NEVERMELTICE
-	db DRAGON_FANG
 	db LIGHT_CLAY
 	db BIG_ROOT
 	db AIR_BALLOON
 	db QUICK_CLAW
+	db NEVERMELTICE
+	db DRAGON_FANG
 	db BLACK_SLUDGE
 	db FOCUS_SASH
 	db EXPERT_BELT
