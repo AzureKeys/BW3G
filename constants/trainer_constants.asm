@@ -677,6 +677,11 @@ CHRIS EQU __enum__
 	
 	trainerclass CYNTHIA
 	const CYNTHIA1
+	
+	trainerclass HUGH
+	const HUGH_SNIVY
+	const HUGH_TEPIG
+	const HUGH_OSHAWOTT
 
 KRIS EQU __enum__
 NUM_TRAINER_CLASSES EQU __enum__

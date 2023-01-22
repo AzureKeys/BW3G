@@ -120,6 +120,7 @@
 	const SPRITE_GENESIS ; 74
 	const SPRITE_CAITLIN ; 75
 	const SPRITE_CYNTHIA ; 76
+	const SPRITE_HUGH ; 77
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

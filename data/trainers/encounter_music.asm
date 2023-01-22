@@ -102,3 +102,4 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; iris
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; caitlin
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; cynthia
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; hugh

@@ -101,3 +101,4 @@ TrainerGroups:
 	dba IrisGroup
 	dba CaitlinGroup
 	dba CynthiaGroup
+	dba HughGroup
