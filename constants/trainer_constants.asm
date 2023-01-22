@@ -682,6 +682,9 @@ CHRIS EQU __enum__
 	const HUGH_SNIVY
 	const HUGH_TEPIG
 	const HUGH_OSHAWOTT
+	
+	trainerclass ROOD
+	const ROOD1
 
 KRIS EQU __enum__
 NUM_TRAINER_CLASSES EQU __enum__

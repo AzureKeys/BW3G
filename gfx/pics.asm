@@ -79,6 +79,7 @@ IrisPic:            INCBIN "gfx/trainers/iris.2bpp.lz"
 CaitlinPic:         INCBIN "gfx/trainers/caitlin.2bpp.lz"
 CynthiaPic:         INCBIN "gfx/trainers/cynthia.2bpp.lz"
 HughPic:            INCBIN "gfx/trainers/hugh.2bpp.lz"
+RoodPic:            INCBIN "gfx/trainers/rood.2bpp.lz"
 GenesisFrontpic:
 GenesisPic:         INCBIN "gfx/trainers/genesis_project.2bpp.lz"
 GolbatFrontpic:     INCBIN "gfx/pokemon/golbat/front.animated.2bpp.lz"

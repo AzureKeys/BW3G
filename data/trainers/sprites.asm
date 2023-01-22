@@ -100,4 +100,5 @@ BTTrainerClassSprites:
 	db SPRITE_CAITLIN       ; caitlin
 	db SPRITE_CYNTHIA       ; cynthia
 	db SPRITE_HUGH          ; hugh
+	db SPRITE_ROOD          ; rood
 	

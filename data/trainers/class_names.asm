@@ -100,3 +100,4 @@ TrainerClassNames::
 	db "<PKMN> TRAINER@"
 	db "<PKMN> TRAINER@"
 	db "<PKMN> TRAINER@"
+	db "<PKMN> TRAINER@"

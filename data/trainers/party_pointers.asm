@@ -102,3 +102,4 @@ TrainerGroups:
 	dba CaitlinGroup
 	dba CynthiaGroup
 	dba HughGroup
+	dba RoodGroup

@@ -101,3 +101,4 @@ TrainerClassDVs:
 	dn 15, 15, 15, 15 ; CAITLIN
 	dn 15, 15, 15, 15 ; CYNTHIA
 	dn 15, 15, 15, 15 ; HUGH
+	dn 15, 15, 15, 15 ; ROOD

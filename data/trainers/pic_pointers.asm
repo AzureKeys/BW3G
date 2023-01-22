@@ -102,3 +102,4 @@ TrainerPicPointers::
 	dba CaitlinPic
 	dba CynthiaPic
 	dba HughPic
+	dba RoodPic
