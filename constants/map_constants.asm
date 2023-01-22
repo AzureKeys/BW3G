@@ -208,6 +208,7 @@ ENDM
 	map_const FLOCCESY_RANCH_HOUSE, 4, 4
 	map_const FLOCCESY_TOWN_HOUSE, 4, 4
 	map_const FLOCCESY_TRADE_HOUSE, 4, 4
+	map_const ALDERS_HOUSE, 5, 5
 	
 	newgroup
 	map_const VIRBANK_CITY, 24, 16

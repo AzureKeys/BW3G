@@ -386,5 +386,6 @@ ENDM
 	map_attributes HallOfFame, HALL_OF_FAME, $00, 0
 	map_attributes NsRoom, NS_ROOM, $00, 0
 	map_attributes CaitlinsHouse, CAITLINS_HOUSE, $00, 0
+	map_attributes AldersHouse, ALDERS_HOUSE, $00, 0
 	map_attributes MembersRoom, MEMBERS_ROOM, $00, 0
 	

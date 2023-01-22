@@ -11,7 +11,8 @@ FloccesyTown_MapScripts:
 	scene_script .DummyScene0 ; SCENE_DEFAULT
 	scene_script .DummyScene1 ; SCENE_FINISHED
 
-	db 1 ; callbacks
+	db 2 ; callbacks
+	callback MAPCALLBACK_OBJECTS, .Blocker
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
 
 .DummyScene0:
@@ -22,6 +23,20 @@ FloccesyTown_MapScripts:
 
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_FLOCCESY
+	return
+	
+.Blocker:
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iffalse .done
+	checkevent EVENT_BEAT_ALDER
+	iffalse .DisappearBlocker
+	checkcode VAR_WEEKDAY
+	ifequal WEDNESDAY, .DisappearBlocker
+	appear FLOCCESYTOWN_BLOCKER
+	jump .done
+.DisappearBlocker
+	disappear FLOCCESYTOWN_BLOCKER
+.done
 	return
 	
 FloccesyTownJuniperScript1:
@@ -165,10 +180,11 @@ FloccesyTownSignText:
 FloccesyTown_MapEvents:
 	db 0, 0 ; filler
 
-	db 3 ; warp events
+	db 4 ; warp events
 	warp_event  7, 25, FLOCCESY_POKECENTER_1F, 1
 	warp_event 15, 25, FLOCCESY_TOWN_HOUSE, 1
 	warp_event 19, 25, FLOCCESY_TRADE_HOUSE, 1
+	warp_event 11,  7, ALDERS_HOUSE, 1
 
 	db 4 ; coord events
 	coord_event  0, 26, SCENE_DEFAULT, FloccesyTownJuniperScript1
@@ -185,5 +201,5 @@ FloccesyTown_MapEvents:
 	object_event  0, 24, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, -1, -1, EVENT_FLOCCESY_TOWN_JUNIPER
 	object_event 12, 19, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, -1, FloccesyTownTwinScript, -1
 	object_event 13, 27, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, -1, FloccesyTownPokefanMScript, -1
-	object_event 11,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, -1, FloccesyTownBlockerScript, -1
+	object_event 11,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, -1, FloccesyTownBlockerScript, EVENT_FLOCCESY_TOWN_BLOCKER
 	

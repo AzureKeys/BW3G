@@ -435,7 +435,7 @@ MembersRoomAlderInitialText:
 	para "I mostly keep to"
 	line "my home in"
 	
-	para "FLOCESSY TOWN now,"
+	para "FLOCCESY TOWN now,"
 	line "and teach the"
 	cont "local kids."
 	
@@ -454,7 +454,7 @@ MembersRoomAlderAlreadySpokenText:
 	para "You should come by"
 	line "my dojo in"
 	
-	para "FLOCESSY TOWN"
+	para "FLOCCESY TOWN"
 	line "sometime. Maybe I"
 	
 	para "could even teach"
