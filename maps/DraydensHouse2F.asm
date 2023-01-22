@@ -13,9 +13,14 @@ DraydensHouseIris:
 	iffalse .CheckDrayden
 	checkevent EVENT_BEAT_IRIS
 	iffalse .FirstBattle
+	checkcode VAR_WEEKDAY
+	ifnotequal FRIDAY, .NotFriday
+	writetext DraydensHouseIrisRematchText
+	jump .StartBattle
 	
 .FirstBattle
 	writetext DraydensHouseIrisFirstBattleText
+.StartBattle
 	waitbutton
 	closetext
 	winlosstext IrisWinLossText, 0
@@ -24,6 +29,7 @@ DraydensHouseIris:
 	reloadmapafterbattle
 	setevent EVENT_BEAT_IRIS
 	opentext
+.NotFriday
 	writetext DraydensHouseIrisAfterBattleText
 	waitbutton
 	closetext
@@ -129,6 +135,26 @@ DraydensHouseIrisAfterBattleText:
 	line "battle."
 	
 	para "I'll be ready!"
+	done
+	
+DraydensHouseIrisRematchText:
+	text "Oh, hi <PLAY_G>!"
+	
+	para "Are you back for a"
+	line "rematch with me?"
+	
+	para "Ha! I like that!"
+	line "You have to keep"
+	
+	para "up your skills if"
+	line "you want to remain"
+	cont "Champion!"
+	
+	para "Now, show me the"
+	line "power you used to"
+	
+	para "defeat the #MON"
+	line "LEAGUE!"
 	done
 
 IrisWinLossText:

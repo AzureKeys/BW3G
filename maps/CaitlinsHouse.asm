@@ -70,7 +70,10 @@ CaitlinsHouse_MapScripts:
 	end
 	
 CaitlinsHouseCaitlinScript:
+	faceplayer
 	opentext
+	checkcode VAR_WEEKDAY
+	ifnotequal SUNDAY, .NotSunday
 	writetext CaitlinsHouseCaitlinBattleIntroText
 	waitbutton
 	closetext
@@ -80,13 +83,17 @@ CaitlinsHouseCaitlinScript:
 	startbattle
 	reloadmapafterbattle
 	opentext
+.NotSunday
 	writetext CaitlinsHouseCaitlinAfterBattleText
 	waitbutton
 	closetext
 	end
 
 CaitlinsHouseCynthiaScript:
+	faceplayer
 	opentext
+	checkcode VAR_WEEKDAY
+	ifnotequal SATURDAY, .NotSaturday
 	writetext CaitlinsHouseCynthiaBattleIntroText
 	waitbutton
 	closetext
@@ -96,6 +103,7 @@ CaitlinsHouseCynthiaScript:
 	startbattle
 	reloadmapafterbattle
 	opentext
+.NotSaturday
 	writetext CaitlinsHouseCynthiaAfterBattleText
 	waitbutton
 	closetext

@@ -125,3 +125,4 @@ OverworldSprites:
 	overworld_sprite CaitlinSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite CynthiaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite HughSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite AlderSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED

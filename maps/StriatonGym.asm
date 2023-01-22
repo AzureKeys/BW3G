@@ -356,6 +356,11 @@ TrainerWaitress2StriatonGym:
 	writecode VAR_BATTLETYPE, BATTLETYPE_NORMAL
 	startbattle
 	reloadmapafterbattle
+	opentext
+	writetext Waitress2StriatonGymGiveLemonadeText
+	buttonsound
+	verbosegiveitem LEMONADE
+	closetext
 	setevent EVENT_BEAT_WAITRESS_STRIATON_GYM_2
 	end
 	
@@ -595,17 +600,29 @@ Waitress1StriatonGymAfterText:
 	done
 	
 Waitress2StriatonGymSeenText:
-	text "Gotcha, sucker!"
+	text "Battling makes us"
+	line "thirsty, right?"
+	
+	para "If you can win"
+	line "against me, I'll"
+	cont "give you a drink!"
 	done
 
 Waitress2StriatonGymBeatenText:
-	text "I had you fooled…"
+	text "The battle made me"
+	line "even thirstier!"
 	done
 
 Waitress2StriatonGymAfterText:
-	text "How will you find"
-	line "all of the"
-	cont "switches?"
+	text "At a place like"
+	line "this, it's good to"
+	cont "stay hydrated!"
+	done
+	
+Waitress2StriatonGymGiveLemonadeText:
+	text "Okay, you can have"
+	line "this, like I"
+	cont "promised."
 	done
 	
 StriatonGymBartender1Text:
