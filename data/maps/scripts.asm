@@ -206,10 +206,10 @@ INCLUDE "maps/DriftveilShelter.asm"
 INCLUDE "maps/DriftveilDrawbridge.asm"
 INCLUDE "maps/Rt6.asm"
 INCLUDE "maps/R6House.asm"
-INCLUDE "maps/ChargestoneCave1F.asm"
 
 SECTION "Map Scripts 12", ROMX
 
+INCLUDE "maps/ChargestoneCave1F.asm"
 INCLUDE "maps/ChargestoneCaveB1F.asm"
 INCLUDE "maps/ChargestoneCaveB2F.asm"
 INCLUDE "maps/MistraltonCity.asm"

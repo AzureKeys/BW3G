@@ -3,13 +3,15 @@
 	const DRIFTVEILSHELTER_BIANCA
 	const DRIFTVEILSHELTER_CHEREN
 	const DRIFTVEILSHELTER_GRANNY
+	const DRIFTVEILSHELTER_HUGH
 
 DriftveilShelter_MapScripts:
 	db 2 ; scene scripts
 	scene_script .Arrive ; SCENE_DEFAULT
 	scene_script .DummyScene ; SCENE_FINISHED
 
-	db 0 ; callbacks
+	db 1 ; callbacks
+	callback MAPCALLBACK_OBJECTS, .AppearHugh
 
 .DummyScene:
 	end
@@ -17,6 +19,18 @@ DriftveilShelter_MapScripts:
 .Arrive:
 	priorityjump .RoodScene
 	end
+	
+.AppearHugh:
+	checkevent EVENT_BEAT_HUGH
+	iffalse .DisappearHugh
+	checkcode VAR_WEEKDAY
+	ifnotequal TUESDAY, .DisappearHugh
+	appear DRIFTVEILSHELTER_HUGH
+	jump .done
+.DisappearHugh
+	disappear DRIFTVEILSHELTER_HUGH
+.done
+	return
 	
 .RoodScene:
 	turnobject PLAYER, UP
@@ -99,7 +113,112 @@ DriftveilShelterGrannyScript:
 	end
 	
 DriftveilShelterRoodScript:
-	jumptextfaceplayer DriftveilShelterRoodText
+	faceplayer
+	opentext
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iffalse .StandardText
+	checkevent EVENT_BEAT_HUGH
+	iftrue .BeatHugh
+	checkevent EVENT_SPOKE_TO_ROOD_POSTGAME
+	iftrue .AlreadySpoken
+	writetext DriftveilShelterPostgameRoodInitialText
+	setevent EVENT_SPOKE_TO_ROOD_POSTGAME
+	jump .AppearHugh
+	
+.AlreadySpoken
+	writetext DriftveilShelterPostgameRoodAlreadySpokenText
+.AppearHugh
+	waitbutton
+	closetext
+	pause 15
+	playsound SFX_ENTER_DOOR
+	checkcode VAR_FACING
+	ifequal UP, .Up
+	ifequal RIGHT, .Right
+	ifequal RIGHT, .Left
+; Facing DOWN
+	applymovement PLAYER, DriftveilShelterPlayerDownMovement
+	jump .HughEnters
+.Right
+	applymovement PLAYER, DriftveilShelterPlayerRightMovement
+	jump .HughEnters
+.Left
+	applymovement PLAYER, DriftveilShelterPlayerLeftMovement
+	jump .HughEnters
+.Up
+	turnobject PLAYER, DOWN
+.HughEnters
+	moveobject DRIFTVEILSHELTER_HUGH, 4, 9
+	appear DRIFTVEILSHELTER_HUGH
+	waitsfx
+	applymovement DRIFTVEILSHELTER_HUGH, DriftveilShelterHughApproachMovement
+	opentext
+	writetext DriftveilShelterHughIntroText
+	waitbutton
+	closetext
+	winlosstext HughWinLossText, 0
+	checkevent EVENT_GOT_SNIVY
+	iftrue .Tepig
+	checkevent EVENT_GOT_TEPIG
+	iftrue .Oshawott
+; Snivy
+	loadtrainer HUGH, HUGH_SNIVY
+	jump .StartBattle
+.Tepig
+	loadtrainer HUGH, HUGH_TEPIG
+	jump .StartBattle
+.Oshawott
+	loadtrainer HUGH, HUGH_OSHAWOTT
+; Fallthrough
+.StartBattle
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_HUGH
+	opentext
+	writetext DriftveilShelterHughBeatenText
+	waitbutton
+	closetext
+	end
+	
+.BeatHugh
+	writetext DriftveilShelterRoodBeatHughText
+	waitbutton
+	closetext
+	end
+	
+.StandardText
+	writetext DriftveilShelterRoodText
+	waitbutton
+	closetext
+	end
+	
+DriftveilShelterHughScript:
+	opentext
+	writetext DriftveilShelterHughRematchText
+	waitbutton
+	closetext
+	winlosstext HughWinLossText, 0
+	checkevent EVENT_GOT_SNIVY
+	iftrue .Tepig
+	checkevent EVENT_GOT_TEPIG
+	iftrue .Oshawott
+; Snivy
+	loadtrainer HUGH, HUGH_SNIVY
+	jump .StartBattle
+.Tepig
+	loadtrainer HUGH, HUGH_TEPIG
+	jump .StartBattle
+.Oshawott
+	loadtrainer HUGH, HUGH_OSHAWOTT
+; Fallthrough
+.StartBattle
+	startbattle
+	reloadmapafterbattle
+	opentext
+	writetext DriftveilShelterHughBeatenText
+	waitbutton
+	closetext
+	end
 
 DriftveilShelterBookshelf:
 	jumpstd magazinebookshelf
@@ -124,6 +243,35 @@ DriftveilShelterCherenMovement:
 	step DOWN
 	step DOWN
 	step DOWN
+	step_end
+	
+DriftveilShelterPlayerDownMovement:
+	step RIGHT
+	step DOWN
+	step DOWN
+	step LEFT
+	turn_head DOWN
+	step_end
+	
+DriftveilShelterPlayerLeftMovement:
+	step DOWN
+	step LEFT
+	turn_head DOWN
+	step_end
+	
+DriftveilShelterPlayerRightMovement:
+	step DOWN
+	step RIGHT
+	turn_head DOWN
+	step_end
+	
+DriftveilShelterHughApproachMovement:
+	step UP
+	step UP
+	step UP
+	step RIGHT
+	step RIGHT
+	step UP
 	step_end
 	
 DriftveilShelterRoodIntroText:
@@ -336,6 +484,131 @@ DriftveilShelterRoodText:
 	line "for your kindness,"
 	cont "<PLAY_G>."
 	done
+	
+DriftveilShelterPostgameRoodInitialText:
+	text "Ah, <PLAY_G>! It's"
+	line "good to see you."
+	
+	para "I want to thank"
+	line "you for your help."
+	
+	para "INFER came back"
+	line "home the other"
+	
+	para "day. We may not"
+	line "have reconciled"
+	
+	para "all of our differ-"
+	line "ences yet, but at"
+	
+	para "least I know she"
+	line "is safe."
+	
+	para "For that, I owe"
+	line "you my deepest"
+	cont "gratitude."
+	done
+
+DriftveilShelterPostgameRoodAlreadySpokenText:
+	text "Ah, <PLAY_G>."
+	line "Welcome to the"
+	cont "#MON shelter."
+	
+	para "It's good to see"
+	line "you again."
+	done
+
+DriftveilShelterHughIntroText:
+	text "???: Hey, ROOD,"
+	line "Who's this?"
+	
+	para "ROOD: Oh! This is"
+	line "<PLAY_G>, the"
+	
+	para "trainer who helped"
+	line "stop TEAM PLASMA!"
+	
+	para "<PLAY_G>, this is"
+	line "HUGH. He's a"
+	
+	para "talented #MON"
+	line "trainer who often"
+	
+	para "volunteers here at"
+	line "the shelter."
+	
+	para "HUGH: Hm… So you"
+	line "defeated TEAM"
+	cont "PLASMA, huh?"
+	
+	para "You must be a"
+	line "pretty strong"
+	
+	para "#MON trainer"
+	line "then."
+	
+	para "How's about a"
+	line "match? Show me"
+	cont "what you've got!"
+	done
+
+HughWinLossText:
+	text "Ugh… This power."
+	done
+
+DriftveilShelterHughBeatenText:
+	text "Hmph… You really"
+	line "are strong enough"
+	
+	para "to have bested"
+	line "TEAM PLASMA."
+	
+	para "I need to brush up"
+	line "on my skills."
+	
+	para "You and I should"
+	line "have a rematch"
+	cont "someday."
+	
+	para "And just to let"
+	line "you know, I won't"
+	
+	para "be holding back"
+	line "next time!"
+	done
+
+DriftveilShelterRoodBeatHughText:
+	text "I'm impressed,"
+	line "<PLAY_G>."
+	
+	para "HUGH is one of the"
+	line "most determined"
+	
+	para "#MON trainers"
+	line "I've ever met."
+	
+	para "He doesn't take"
+	line "#MON battles"
+	cont "lightly."
+	
+	para "I'm sure he's"
+	line "already preparing"
+	cont "to face you again!"
+	done
+	
+DriftveilShelterHughRematchText:
+	text "Hey, <PLAY_G>!"
+	
+	para "I've been thinking"
+	line "on what I need to"
+	
+	para "become stronger,"
+	line "and I'm ready to"
+	
+	para "test out what I've"
+	line "come up with. Come"
+	cont "on, let's go!"
+	done
 
 DriftveilShelter_MapEvents:
 	db 0, 0 ; filler
@@ -352,9 +625,10 @@ DriftveilShelter_MapEvents:
 	bg_event  8,  1, BGEVENT_READ, DriftveilShelterBookshelf
 	bg_event  9,  1, BGEVENT_READ, DriftveilShelterBookshelf
 
-	db 4 ; object events
+	db 5 ; object events
 	object_event  6,  3, SPRITE_ROOD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DriftveilShelterRoodScript, -1
 	object_event  5,  4, SPRITE_BIANCA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, 0, EVENT_DRIFTVEIL_SHELTER_FRIENDS
 	object_event  7,  4, SPRITE_CHEREN, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, EVENT_DRIFTVEIL_SHELTER_FRIENDS
 	object_event  0,  8, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, DriftveilShelterGrannyScript, -1
+	object_event  7,  8, SPRITE_HUGH, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DriftveilShelterHughScript, EVENT_DRIFTVEIL_SHELTER_HUGH
 	
