@@ -386,11 +386,62 @@ MembersRoomRoodAlreadySpokenText:
 	done
 	
 MembersRoomRoodReadyForBattleText:
-	text ""
+	text "Ah, <PLAY_G>, it's"
+	line "good to see you."
+	
+	para "I was impressed"
+	line "watching your"
+	cont "battle with HUGH."
+	
+	para "I can tell you are"
+	line "a truly compass-"
+	cont "ionate #MON"
+	cont "trainer."
+	
+	para "Although I dislike"
+	line "battling, I under-"
+	cont "stand how #MON"
+	
+	para "battles bring"
+	line "people and #MON"
+	cont "closer together."
+	
+	para "That is why I"
+	line "would like to"
+	
+	para "have a #MON"
+	line "battle with you."
+	
+	para "Please, meet me at"
+	line "the shelter in"
+	cont "DRIFTVEIL CITY."
+	
+	para "I am eager to see"
+	line "your bond with"
+	cont "your #MON."
 	done
 	
 MembersRoomRoodAlreadyBeatenText:
-	text ""
+	text "Ah, <PLAY_G>, it's"
+	line "good to see you."
+	
+	para "Your skill in"
+	line "raising #MON"
+	cont "impresses me."
+	
+	para "If you don't mind,"
+	line "I would like to"
+	
+	para "see the bond"
+	line "between you and"
+	cont "your #MON."
+	
+	para "Please, meet me at"
+	line "the shelter in"
+	cont "DRIFTVEIL CITY."
+	
+	para "I will be awaiting"
+	line "your arrival."
 	done
 	
 MembersRoomMarlonText:

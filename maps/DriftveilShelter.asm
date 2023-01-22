@@ -181,6 +181,28 @@ DriftveilShelterRoodScript:
 	end
 	
 .BeatHugh
+	checkevent EVENT_ROOD_READY_FOR_BATTLE
+	iffalse .NoBattle
+	checkevent EVENT_BEAT_ROOD
+	iffalse .ReadyRoodBattle
+	checkcode VAR_WEEKDAY
+	ifnotequal MONDAY, .NoBattle
+.ReadyRoodBattle
+	writetext DriftveilShelterRoodBeforeBattleText
+	waitbutton
+	closetext
+	winlosstext RoodWinLossText, 0
+	loadtrainer ROOD, ROOD1
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_ROOD
+	opentext
+	writetext DriftveilShelterRoodAfterBattleText
+	waitbutton
+	closetext
+	end
+	
+.NoBattle
 	writetext DriftveilShelterRoodBeatHughText
 	waitbutton
 	closetext
@@ -608,6 +630,42 @@ DriftveilShelterHughRematchText:
 	para "test out what I've"
 	line "come up with. Come"
 	cont "on, let's go!"
+	done
+	
+DriftveilShelterRoodBeforeBattleText:
+	text "Thank you for"
+	line "coming, <PLAY_G>."
+	
+	para "Let us now test"
+	line "our bonds with"
+	cont "our #MON."
+	done
+
+RoodWinLossText:
+	text "Hm… I see…"
+	done
+
+DriftveilShelterRoodAfterBattleText:
+	text "When I see how you"
+	line "and your #MON"
+	
+	para "have bonded with"
+	line "each other through"
+	
+	para "battle, I under-"
+	line "stand how mis-"
+	cont "guided I've been"
+	cont "in the past."
+	
+	para "I hope that one"
+	line "day, my grand-"
+	cont "daughter and I can"
+	
+	para "truly understand"
+	line "one another."
+	
+	para "Thank you,"
+	line "<PLAY_G>."
 	done
 
 DriftveilShelter_MapEvents:
