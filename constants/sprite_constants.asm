@@ -122,6 +122,10 @@
 	const SPRITE_CYNTHIA ; 76
 	const SPRITE_HUGH ; 77
 	const SPRITE_ALDER ; 78
+	const SPRITE_HILBERT ; 79
+	const SPRITE_HILDA ; 7a
+	const SPRITE_NATE ; 7b
+	const SPRITE_ROSA ; 7c
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

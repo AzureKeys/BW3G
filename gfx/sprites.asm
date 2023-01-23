@@ -33,6 +33,10 @@ CaitlinSpriteGFX::             INCBIN "gfx/sprites/caitlin.2bpp"
 CynthiaSpriteGFX::             INCBIN "gfx/sprites/cynthia.2bpp"
 HughSpriteGFX::                INCBIN "gfx/sprites/hugh.2bpp"
 AlderSpriteGFX::               INCBIN "gfx/sprites/alder.2bpp"
+HilbertSpriteGFX::             INCBIN "gfx/sprites/hilbert.2bpp"
+HildaSpriteGFX::               INCBIN "gfx/sprites/hilda.2bpp"
+NateSpriteGFX::                INCBIN "gfx/sprites/nate.2bpp"
+RosaSpriteGFX::                INCBIN "gfx/sprites/rosa.2bpp"
 
 
 SECTION "Sprites 2", ROMX
