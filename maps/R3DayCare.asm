@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
-	const DAYCARE_GRAMPS
-	const DAYCARE_GRANNY
+	const DAYCARE_MAN
+	const DAYCARE_LADY
 
 Rt3DayCare_MapScripts:
 	db 0 ; scene scripts
@@ -67,4 +67,4 @@ Rt3DayCare_MapEvents:
 
 	db 2 ; object events
 	object_event  6,  4, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, R3DayCareManScript_Inside, EVENT_DAY_CARE_MAN_IN_DAY_CARE
-	object_event  3,  2, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, R3DayCareLadyScript, -1
+	object_event  3,  2, SPRITE_SOCIALITE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, R3DayCareLadyScript, -1

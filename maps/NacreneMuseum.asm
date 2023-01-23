@@ -1,5 +1,7 @@
 	const_def 2 ; object constants
 	const NACRENEMUSEUM_LENORA
+	const NACRENEMUSEUM_RANGER_M
+	const NACRENEMUSEUM_TWIN
 
 NacreneMuseum_MapScripts:
 	db 0 ; scene scripts
@@ -181,6 +183,12 @@ MuseumNoneMenuHeader:
 	db 1 ; items
 	db "CANCEL@"
 
+NacreneMuseumRangerMScript:
+	jumptextfaceplayer NacreneMuseumRangerMText
+
+NacreneMuseumTwinScript:
+	jumptextfaceplayer NacreneMuseumTwinText
+
 NacreneMuseumDisplay:
 	jumptext NacreneMuseumDisplayText
 
@@ -191,8 +199,9 @@ NacreneMuseumNoDiskText:
 	para "Unfortunately,"
 	line "without the DATA"
 	cont "DISK that was"
-	cont "stolen, we can't"
-	cont "revive #MON"
+	
+	para "stolen, we can't"
+	line "revive #MON"
 	cont "from fossils."
 	done
 
@@ -250,6 +259,29 @@ ReceivedFossilPokemonText:
 	text "!"
 	done
 
+NacreneMuseumRangerMText:
+	text "Rarities from"
+	line "around the world…"
+	
+	para "Museums are packed"
+	line "with adventure!"
+	done
+
+NacreneMuseumTwinText:
+	text "I heard that the"
+	line "director, LENORA,"
+	
+	para "is too busy with"
+	line "her research on"
+	
+	para "fossils and #-"
+	line "MON bones, so she"
+	
+	para "took a break from"
+	line "being a GYM"
+	cont "LEADER."
+	done
+
 NacreneMuseumDisplayText:
 	text "Many ancient #-"
 	line "MON artifacts are"
@@ -269,6 +301,8 @@ NacreneMuseum_MapEvents:
 	bg_event  1,  5, BGEVENT_READ, NacreneMuseumDisplay
 	bg_event  7,  3, BGEVENT_READ, NacreneMuseumDisplay
 
-	db 1 ; object events
+	db 3 ; object events
 	object_event  8,  8, SPRITE_LENORA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NacreneMuseumLenoraScript, -1
+	object_event  8,  4, SPRITE_RANGER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, NacreneMuseumRangerMScript, -1
+	object_event  2,  2, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NacreneMuseumTwinScript, -1
 	

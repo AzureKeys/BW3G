@@ -9,7 +9,7 @@
 	const VIRBANKCITY_TEACHER_1
 	const VIRBANKCITY_TEACHER_2
 	const VIRBANKCITY_SAILOR
-	const VIRBANKCITY_PHARMACIST
+	const VIRBANKCITY_ROUGHNECK
 	const VIRBANKCITY_YOUNGSTER
 	const VIRBANKCITY_POKEFAN_M
 
@@ -182,8 +182,8 @@ VirbankCityTeacher2Script:
 VirbankCitySailorScript:
 	jumptextfaceplayer VirbankCitySailorText
 	
-VirbankCityPharmacistScript:
-	jumptextfaceplayer VirbankCityPharmacistText
+VirbankCityRoughneckScript:
+	jumptextfaceplayer VirbankCityRoughneckText
 	
 VirbankCityYoungsterScript:
 	jumptextfaceplayer VirbankCityYoungsterText
@@ -282,7 +282,7 @@ VirbankCitySailorText:
 	line "so mad!"
 	done
 
-VirbankCityPharmacistText:
+VirbankCityRoughneckText:
 	text "I tried to get"
 	line "into the GYM, but"
 
@@ -377,13 +377,13 @@ VirbankCity_MapEvents:
 	object_event  4, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankCityRareCandy, EVENT_VIRBANK_CITY_RARE_CANDY
 	object_event 35,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankCityLureBall, EVENT_VIRBANK_CITY_LURE_BALL
 	object_event 12,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_ITEMBALL, 0, VirbankCityTMToxic, EVENT_VIRBANK_CITY_TM_TOXIC
-	object_event 19,  6, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VirbankCityBlockerScript, -1
+	object_event 19,  6, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VirbankCityBlockerScript, -1
 	object_event 37, 26, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VirbankCityFerryManScript, -1
 	object_event 44, 28, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, VirbankCityFishingGuruScript, -1
 	object_event 14, 24, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VirbankCityTeacher1Script, -1
 	object_event 25, 12, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, VirbankCityTeacher2Script, -1
 	object_event 33, 25, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, VirbankCitySailorScript, -1
-	object_event 28, 27, SPRITE_PHARMACIST, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VirbankCityPharmacistScript, -1
+	object_event 28, 27, SPRITE_ROUGHNECK, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VirbankCityRoughneckScript, -1
 	object_event 34, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, VirbankCityYoungsterScript, -1
 	object_event 15, 12, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, VirbankCityPokefanMScript, -1
 	

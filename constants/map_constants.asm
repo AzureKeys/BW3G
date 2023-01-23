@@ -141,7 +141,7 @@ ENDM
 	map_const LENTIMAS_POKECENTER_1F, 5, 5
 	map_const LENTIMAS_HOUSE, 4, 4 
 	map_const LENTIMAS_GYM, 8, 10 
-	map_const LENTIMAS_LOSTLORN_GATE, 5,  4 
+	map_const LENTIMAS_LOSTLORN_GATE, 5,  8
 	map_const LENTIMAS_AIRPORT, 5, 4
 	
 	newgroup

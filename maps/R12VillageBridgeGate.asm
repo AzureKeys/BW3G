@@ -33,8 +33,9 @@ R12VillageBridgeGateMovement:
 R12VillageBridgeGateBridgeOutText:
 	text "Wait! Sorry, the"
 	line "VILLAGE BRIDGE"
-	cont "is closed off"
-	cont "right now."
+	
+	para "is closed off"
+	line "right now."
 	
 	para "The path has been"
 	line "flooded."

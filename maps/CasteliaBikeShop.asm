@@ -17,12 +17,7 @@ CasteliaBikeShopClerkScript:
 	writetext CasteliaBikeShopClerkAgreedText
 	buttonsound
 	waitsfx
-	giveitem BICYCLE
-	writetext BorrowedABicycleText
-	playsound SFX_KEY_ITEM
-	waitsfx
-	itemnotify
-	;setflag ENGINE_BIKE_SHOP_CALL_ENABLED
+	verbosegiveitem BICYCLE
 	setevent EVENT_GOT_BICYCLE
 .GotBicycle:
 	writetext CasteliaBikeShopClerkFirstRateBikesText
@@ -61,16 +56,11 @@ CasteliaBikeShopClerkIntroText:
 CasteliaBikeShopClerkAgreedText:
 	text "Really? Great!"
 
-	para "Give me your name"
-	line "and phone number,"
+	para "I'm feeling so"
+	line "generous, I'll let"
 
-	para "and I'll loan you"
-	line "a BICYCLE."
-	done
-
-BorrowedABicycleText:
-	text "<PLAYER> borrowed a"
-	line "BICYCLE."
+	para "you have this for"
+	line "free!"
 	done
 
 CasteliaBikeShopClerkFirstRateBikesText:

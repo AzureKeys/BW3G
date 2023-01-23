@@ -74,6 +74,12 @@ JohtoWaterWildMons:
 	db 20, FRILLISH
 	db 15, STARYU
 
+	map_id ASPERTIA_CITY
+	db 2 percent ; encounter rate
+	db 15, BASCULIN
+	db 20, REMORAID
+	db 15, MARILL
+
 	map_id R_19
 	db 4 percent ; encounter rate
 	db 20, MARILL
@@ -91,6 +97,12 @@ JohtoWaterWildMons:
 	db 20, MARILL
 	db 25, DUCKLETT
 	db 20, REMORAID
+
+	map_id VIRBANK_CITY
+	db 4 percent ; encounter rate
+	db 20, FRILLISH
+	db 25, TRUBBISH
+	db 20, CORPHISH
 	
 	map_id R_3
 	db 4 percent ; encounter rate

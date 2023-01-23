@@ -63,5 +63,5 @@ NacreneHouse_MapEvents:
 	bg_event  1,  1, BGEVENT_READ, NacreneHouseBookshelf
 
 	db 1 ; object events
-	object_event  2,  4, SPRITE_PHARMACIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NacreneHouseManScript, -1
+	object_event  2,  4, SPRITE_MUSICIAN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NacreneHouseManScript, -1
 	

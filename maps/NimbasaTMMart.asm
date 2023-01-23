@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const NIMBASATMMART_CLERK
-	const NIMBASATMMART_SUPER_NERD
-	const NIMBASATMMART_GRANNY
+	const NIMBASATMMART_ROUGHNECK
+	const NIMBASATMMART_SOCIALITE
 
 NimbasaTMMart_MapScripts:
 	db 0 ; scene scripts
@@ -14,13 +14,13 @@ NimbasaTMMartClerkScript:
 	closetext
 	end
 
-NimbasaTMMartSuperNerdScript:
-	jumptextfaceplayer NimbasaTMMartSuperNerdText
+NimbasaTMMartRoughneckScript:
+	jumptextfaceplayer NimbasaTMMartRoughneckText
 
-NimbasaTMMartGrannyScript:
-	jumptextfaceplayer NimbasaTMMartGrannyText
+NimbasaTMMartSocialiteScript:
+	jumptextfaceplayer NimbasaTMMartSocialiteText
 
-NimbasaTMMartSuperNerdText:
+NimbasaTMMartRoughneckText:
 	text "Hey. I love strong"
 	line "#MON."
 
@@ -29,7 +29,7 @@ NimbasaTMMartSuperNerdText:
 	cont "even stronger!"
 	done
 
-NimbasaTMMartGrannyText:
+NimbasaTMMartSocialiteText:
 	text "There are sure to"
 	line "be TMs that are"
 
@@ -50,5 +50,5 @@ NimbasaTMMart_MapEvents:
 
 	db 3 ; object events
 	object_event  1,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, NimbasaTMMartClerkScript, -1
-	object_event  5,  2, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaTMMartSuperNerdScript, -1
-	object_event  6,  6, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaTMMartGrannyScript, -1
+	object_event  5,  2, SPRITE_ROUGHNECK, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NimbasaTMMartRoughneckScript, -1
+	object_event  6,  6, SPRITE_SOCIALITE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaTMMartSocialiteScript, -1

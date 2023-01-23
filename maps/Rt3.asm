@@ -10,7 +10,7 @@
 	const R3_FISHER_2
 	const R3_ARTIST
 	const R3_GENTLEMAN
-	const R3_GRAMPS
+	const R3_DAY_CARE_MAN
 
 Rt3_MapScripts:
 	db 0 ; scene scripts
@@ -40,16 +40,16 @@ R3DayCareManScript_Outside:
 	clearflag ENGINE_DAY_CARE_MAN_HAS_EGG
 	checkcode VAR_FACING
 	ifequal RIGHT, .right_movement
-	applymovement R3_GRAMPS, R3GrampsUpMovement
+	applymovement R3_DAY_CARE_MAN, R3GrampsUpMovement
 	playsound SFX_ENTER_DOOR
-	disappear R3_GRAMPS
+	disappear R3_DAY_CARE_MAN
 .end_fail
 	end
 
 .right_movement
-	applymovement R3_GRAMPS, R3GrampsRightMovement
+	applymovement R3_DAY_CARE_MAN, R3GrampsRightMovement
 	playsound SFX_ENTER_DOOR
-	disappear R3_GRAMPS
+	disappear R3_DAY_CARE_MAN
 	end
 
 TrainerPkmnRangerFR3:

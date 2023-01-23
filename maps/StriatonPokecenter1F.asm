@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const STRIATONPOKECENTER_NURSE
 	const STRIATONPOKECENTER_CLERK
-	const STRIATONPOKECENTER_SUPER_NERD
+	const STRIATONPOKECENTER_RANGER_F
 	const STRIATONPOKECENTER_GYM_GUY
 	const STRIATONPOKECENTER_BUENA
 
@@ -16,8 +16,8 @@ StriatonPokecenterNurseScript:
 StriatonPokecenterClerkScript:
 	jumpstd scalingmart
 
-StriatonPokecenterSuperNerdScript:
-	jumptextfaceplayer StriatonPokecenterSuperNerdText
+StriatonPokecenterRangerFScript:
+	jumptextfaceplayer StriatonPokecenterRangerFText
 
 StriatonPokecenterGymGuyScript:
 	jumptextfaceplayer StriatonPokecenterGymGuyText
@@ -25,16 +25,16 @@ StriatonPokecenterGymGuyScript:
 StriatonPokecenterBuenaScript:
 	jumptextfaceplayer StriatonPokecenterBuenaText
 
-StriatonPokecenterSuperNerdText:
-	text "For battles, I'd"
-	line "much rather use"
+StriatonPokecenterRangerFText:
+	text "Are you catching"
+	line "lots of #MON?"
 
-	para "#MON I've been"
-	line "raising, even if"
+	para "Having a lot of"
+	line "#MON makes"
 
-	para "they're weaker"
-	line "than some newly"
-	cont "caught #MON."
+	para "looking at the"
+	line "#DEX or the PC"
+	cont "BOX so much fun!"
 	done
 
 StriatonPokecenterGymGuyText:
@@ -68,6 +68,6 @@ StriatonPokecenter1F_MapEvents:
 	db 5 ; object events
 	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, StriatonPokecenterNurseScript, -1
 	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, StriatonPokecenterClerkScript, -1
-	object_event  1,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, StriatonPokecenterSuperNerdScript, -1
+	object_event  1,  4, SPRITE_RANGER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, StriatonPokecenterRangerFScript, -1
 	object_event  8,  4, SPRITE_GYM_GUY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, StriatonPokecenterGymGuyScript, -1
 	object_event  1,  7, SPRITE_BUENA, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, StriatonPokecenterBuenaScript, -1

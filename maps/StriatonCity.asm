@@ -4,9 +4,9 @@
 	const STRIATONCITY_DUSK_BALL
 	const STRIATONCITY_BIG_PEARL
 	const STRIATONCITY_YELLOW_SHARD
-	const STRIATONCITY_BUENA
-	const STRIATONCITY_COOLTRAINER_M
-	const STRIATONCITY_COOLTRAINER_F
+	const STRIATONCITY_SOCIALITE
+	const STRIATONCITY_RANGER_M
+	const STRIATONCITY_LASS
 	const STRIATONCITY_GENTLEMAN
 
 StriatonCity_MapScripts:
@@ -40,14 +40,14 @@ StriatonCityBigMushroom:
 StriatonCityPPUp:
 	hiddenitem PP_UP, EVENT_STRIATON_CITY_PP_UP
 	
-StriatonCityBuenaScript:
-	jumptextfaceplayer StriatonCityBuenaText
+StriatonCitySocialiteScript:
+	jumptextfaceplayer StriatonCitySocialiteText
 	
-StriatonCityCooltrainerMScript:
-	jumptextfaceplayer StriatonCityCooltrainerMText
+StriatonCityRangerMScript:
+	jumptextfaceplayer StriatonCityRangerMText
 	
-StriatonCityCooltrainerFScript:
-	jumptextfaceplayer StriatonCityCooltrainerFText
+StriatonCityLassScript:
+	jumptextfaceplayer StriatonCityLassText
 	
 StriatonCityGentlemanScript:
 	jumptextfaceplayer StriatonCityGentlemanText
@@ -55,7 +55,7 @@ StriatonCityGentlemanScript:
 StriatonCitySign:
 	jumptext StriatonCitySignText
 	
-StriatonCityBuenaText:
+StriatonCitySocialiteText:
 	text "This garden is a"
 	line "great place to"
 	cont "come to relax."
@@ -64,7 +64,7 @@ StriatonCityBuenaText:
 	line "standing here."
 	done
 	
-StriatonCityCooltrainerMText:
+StriatonCityRangerMText:
 	text "DR.FENNEL and DR."
 	line "AMANITA live in"
 	cont "this city."
@@ -75,7 +75,7 @@ StriatonCityCooltrainerMText:
 	cont "system!"
 	done
 	
-StriatonCityCooltrainerFText:
+StriatonCityLassText:
 	text "STRIATON CITY used"
 	line "to have three GYM"
 	
@@ -130,8 +130,8 @@ StriatonCity_MapEvents:
 	object_event  2, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, StriatonCityDuskBall, EVENT_STRIATON_CITY_DUSK_BALL
 	object_event  3, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, StriatonCityBigPearl, EVENT_STRIATON_CITY_BIG_PEARL
 	object_event 15, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, StriatonCityYellowShard, EVENT_STRIATON_CITY_YELLOW_SHARD
-	object_event 10, 21, SPRITE_SOCIALITE, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, StriatonCityBuenaScript, -1
-	object_event 27, 25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, StriatonCityCooltrainerMScript, -1
-	object_event 37, 20, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, StriatonCityCooltrainerFScript, -1
+	object_event 10, 21, SPRITE_SOCIALITE, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, StriatonCitySocialiteScript, -1
+	object_event 27, 25, SPRITE_RANGER_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, StriatonCityRangerMScript, -1
+	object_event 37, 20, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, StriatonCityLassScript, -1
 	object_event 24, 19, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, StriatonCityGentlemanScript, -1
 	

@@ -414,8 +414,14 @@ R12YoungsterText:
 	line "begin when eyes"
 	cont "meet!"
 	
-	para "That's a rule for"
-	line "trainers!"
+	para "If I were a #-"
+	line "MON trainer, you"
+	
+	para "and I would be"
+	line "battling now!"
+	
+	para "…But I don't have"
+	line "any #MON yet…"
 	done
 	
 R12LassText:

@@ -174,8 +174,9 @@ FloccesyRanchBarnTwinMoomooIsSickText:
 FloccesyRanchBarnTwinWereFeedingMoomooText:
 	text "I want to put my"
 	line "ribbon on one of"
-	cont "the EEVEEs that"
-	cont "play outside."
+	
+	para "the EEVEEs that"
+	line "play outside."
 	
 	para "It would look so"
 	line "cute!"

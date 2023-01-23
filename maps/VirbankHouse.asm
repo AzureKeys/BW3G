@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const VIRBANKHOUSE_PHARMACIST
+	const VIRBANKHOUSE_ROUGHNECK
 
 VirbankHouse_MapScripts:
 	db 0 ; scene scripts
@@ -64,5 +64,5 @@ VirbankHouse_MapEvents:
 	bg_event  1,  1, BGEVENT_READ, VirbankHouseBookshelf
 
 	db 1 ; object events
-	object_event  2,  4, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VirbankHousePharmacistScript, -1
+	object_event  2,  4, SPRITE_ROUGHNECK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VirbankHousePharmacistScript, -1
 	

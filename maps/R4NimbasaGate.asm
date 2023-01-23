@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const R4NIMBASAGATE_COOLTRAINERM
+	const R4NIMBASAGATE_POKEFAN_M
 	const R4NIMBASAGATE_YOUNGSTER
 	const R4NIMBASAGATE_MERCHANT
 
@@ -14,8 +14,8 @@ R4NimbasaGateMerchantScript:
 	closetext
 	end
 	
-R4NimbasaGateCooltrainerMTextScript:
-	jumptextfaceplayer R4NimbasaGateCooltrainerMText
+R4NimbasaGatePokefanMTextScript:
+	jumptextfaceplayer R4NimbasaGatePokefanMText
 	
 R4NimbasaGateYoungsterTextScript:
 	jumptextfaceplayer R4NimbasaGateYoungsterText
@@ -23,7 +23,7 @@ R4NimbasaGateYoungsterTextScript:
 R4NimbasaGateRareCandy:
 	hiddenitem RARE_CANDY, EVENT_R_4_NIMBASA_GATE_RARE_CANDY
 	
-R4NimbasaGateCooltrainerMText:
+R4NimbasaGatePokefanMText:
 	text "This place used to"
 	line "be a shopping"
 	
@@ -62,7 +62,7 @@ Rt4NimbasaGate_MapEvents:
 	bg_event 0, 15, BGEVENT_ITEM, R4NimbasaGateRareCandy
 
 	db 3 ; object events
-	object_event  5,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R4NimbasaGateCooltrainerMTextScript, -1
+	object_event  5,  5, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, R4NimbasaGatePokefanMTextScript, -1
 	object_event  6, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, R4NimbasaGateYoungsterTextScript, -1
 	object_event  9, 11, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, R4NimbasaGateMerchantScript, -1
 	

@@ -4,10 +4,10 @@
 	const NIMBASACITY_GRAMPS
 	const NIMBASACITY_TEACHER
 	const NIMBASACITY_LASS
-	const NIMBASACITY_YOUNGSTER2
-	const NIMBASACITY_LASS2
-	const NIMBASACITY_SUPER_NERD
-	const NIMBASACITY_YOUNGSTER3
+	const NIMBASACITY_BUG_CATCHER
+	const NIMBASACITY_RANGER_F
+	const NIMBASACITY_COOLTRAINER_F
+	const NIMBASACITY_YOUNGSTER_2
 
 NimbasaCity_MapScripts:
 	db 0 ; scene scripts
@@ -31,21 +31,21 @@ NimbasaCityTeacherTextScript:
 NimbasaCityLassTextScript:
 	jumptextfaceplayer NimbasaCityLassText
 	
-NimbasaCityYoungster2TextScript:
+NimbasaCityBugCatcherTextScript:
 	checkmapscene NIMBASA_PARK_BASEMENT
 	ifequal SCENE_NIMBASA_PARK_BASEMENT_NOTHING, .text2
-	jumptextfaceplayer NimbasaCityYoungster2Text1
+	jumptextfaceplayer NimbasaCityBugCatcherText1
 .text2
-	jumptextfaceplayer NimbasaCityYoungster2Text2
+	jumptextfaceplayer NimbasaCityBugCatcherText2
 	
-NimbasaCityLass2TextScript:
-	jumptextfaceplayer NimbasaCityLass2Text
+NimbasaCityRangerFTextScript:
+	jumptextfaceplayer NimbasaCityRangerFText
 	
-NimbasaCitySuperNerdTextScript:
-	jumptextfaceplayer NimbasaCitySuperNerdText
+NimbasaCityCooltrainerFTextScript:
+	jumptextfaceplayer NimbasaCityCooltrainerFText
 	
-NimbasaCityYoungster3TextScript:
-	jumptextfaceplayer NimbasaCityYoungster3Text
+NimbasaCityYoungster2TextScript:
+	jumptextfaceplayer NimbasaCityYoungster2Text
 	
 NimbasaR5Sign:
 	jumptext NimbasaR5SignText
@@ -114,7 +114,7 @@ NimbasaCityLassText:
 	cont "traveling!"
 	done
 
-NimbasaCityYoungster2Text1:
+NimbasaCityBugCatcherText1:
 	text "A mean man was"
 	line "standing outside"
 	cont "the PARK."
@@ -124,13 +124,13 @@ NimbasaCityYoungster2Text1:
 	cont "scary…"
 	done
 
-NimbasaCityYoungster2Text2:
+NimbasaCityBugCatcherText2:
 	text "Yay! The mean man"
 	line "at the park is"
 	cont "gone!"
 	done
 
-NimbasaCityLass2Text:
+NimbasaCityRangerFText:
 	text "The man at that"
 	line "house rates your"
 	cont "#MON names."
@@ -139,7 +139,7 @@ NimbasaCityLass2Text:
 	line "your #MON."
 	done
 
-NimbasaCitySuperNerdText:
+NimbasaCityCooltrainerFText:
 	text "The shops here in"
 	line "town sell all"
 
@@ -148,11 +148,12 @@ NimbasaCitySuperNerdText:
 	cont "MON trainers!"
 	done
 
-NimbasaCityYoungster3Text:
+NimbasaCityYoungster2Text:
 	text "There used to be"
 	line "a fun PARK in"
-	cont "town, but it"
-	cont "closed down."
+	
+	para "town, but it"
+	line "closed down."
 	done
 	
 NimbasaR5SignText:
@@ -243,12 +244,12 @@ NimbasaCity_MapEvents:
 
 	db 9 ; object events
 	object_event 16, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaCityRedShard, EVENT_NIMBASA_CITY_RED_SHARD
-	object_event 20, 24, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungsterTextScript, -1
+	object_event 20, 24, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 3, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungsterTextScript, -1
 	object_event 25, 10, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaCityGrampsTextScript, -1
 	object_event 31, 25, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NimbasaCityTeacherTextScript, -1
 	object_event 25, 24, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCityLassTextScript, -1
-	object_event 16, 18, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungster2TextScript, -1
-	object_event 12, 24, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, NimbasaCityLass2TextScript, -1
-	object_event 16, 10, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCitySuperNerdTextScript, -1
-	object_event 30, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungster3TextScript, -1
+	object_event 16, 18, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCityBugCatcherTextScript, -1
+	object_event 12, 24, SPRITE_RANGER_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NimbasaCityRangerFTextScript, -1
+	object_event 16, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaCityCooltrainerFTextScript, -1
+	object_event 30, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 4, 1, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, NimbasaCityYoungster2TextScript, -1
 	

@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const CASTELIAPLAZAPRIZEROOM_RECEPTIONIST1
 	const CASTELIAPLAZAPRIZEROOM_RECEPTIONIST2
-	const CASTELIAPLAZAPRIZEROOM_POKEFAN_F
+	const CASTELIAPLAZAPRIZEROOM_RANGER_F
 
 CasteliaPlazaPrizeRoom_MapScripts:
 	db 0 ; scene scripts
@@ -199,8 +199,8 @@ CasteliaPlazaPrizeRoomVendor2MenuHeader:
 	db "HERACROSS 1600@"
 	db "CANCEL@"
 
-CasteliaPlazaPrizeRoomPokefanFScript:
-	jumptextfaceplayer CasteliaPlazaPrizeRoomPokefanFText
+CasteliaPlazaPrizeRoomRangerFScript:
+	jumptextfaceplayer CasteliaPlazaPrizeRoomRangerFText
 
 CasteliaPlazaPrizeRoomElevatorButton:
 	jumpstd elevatorbutton
@@ -249,7 +249,7 @@ CasteliaPlazaPrizeRoomNoCoinCaseText:
 	line "a COIN CASE."
 	done
 
-CasteliaPlazaPrizeRoomPokefanFText:
+CasteliaPlazaPrizeRoomRangerFText:
 	text "I've been eyeing"
 	line "that PINSIR and"
 	
@@ -278,5 +278,5 @@ CasteliaPlazaPrizeRoom_MapEvents:
 	db 3 ; object events
 	object_event  1,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CasteliaPlazaPrizeRoomVendor1Script, -1
 	object_event  3,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, CasteliaPlazaPrizeRoomVendor2Script, -1
-	object_event  9,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CasteliaPlazaPrizeRoomPokefanFScript, -1
+	object_event  9,  4, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CasteliaPlazaPrizeRoomRangerFScript, -1
 	

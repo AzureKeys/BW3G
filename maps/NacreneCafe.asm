@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const NACRENECAFE_CLERK
 	const NACRENECAFE_POKEFAN_F
-	const NACRENECAFE_SUPER_NERD
+	const NACRENECAFE_MUSICIAN
 
 NacreneCafe_MapScripts:
 	db 0 ; scene scripts
@@ -97,8 +97,8 @@ NacreneCafeMenuHeader:
 NacreneCafePokefanFScript:
 	jumptextfaceplayer NacreneCafePokefanFText
 
-NacreneCafeSuperNerdScript:
-	jumptextfaceplayer NacreneCafeSuperNerdText
+NacreneCafeMusicianScript:
+	jumptextfaceplayer NacreneCafeMusicianText
 
 NacreneCafeAskDrinkText:
 	text "Hi, welcome to"
@@ -161,7 +161,7 @@ NacreneCafePokefanFText:
 	line "them!"
 	done
 
-NacreneCafeSuperNerdText:
+NacreneCafeMusicianText:
 	text "NACRENE CITY may"
 	line "not be as big as"
 
@@ -187,4 +187,4 @@ NacreneCafe_MapEvents:
 	db 3 ; object events
 	object_event  7,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NacreneCafeClerkScript, -1
 	object_event  4,  3, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 2, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NacreneCafePokefanFScript, -1
-	object_event  6,  6, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NacreneCafeSuperNerdScript, -1
+	object_event  6,  6, SPRITE_MUSICIAN, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NacreneCafeMusicianScript, -1

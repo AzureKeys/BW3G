@@ -44,7 +44,6 @@ AccumulaBallManiacHouse_Blocks:
 	INCBIN "maps/House3.ablk"
 
 Rt13UndellaGate_Blocks:
-LentimasLostlornGate_Blocks:
 Rt4DesertGate_Blocks:
 Rt4CasteliaGate_Blocks:
 Rt19AspertiaGate_Blocks:
@@ -707,4 +706,7 @@ AldersHouse_Blocks:
 
 MembersRoom_Blocks:
 	INCBIN "maps/MembersRoom.ablk"
+	
+LentimasLostlornGate_Blocks:
+	INCBIN "maps/LentimasLostlornGate.ablk"
 	

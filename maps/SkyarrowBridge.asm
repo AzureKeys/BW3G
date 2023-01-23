@@ -29,7 +29,7 @@ SkyarrowGentlemanText:
 	cont "back open."
 	
 	para "Now I can make my"
-	line "important meeting"
+	line "important meetings"
 	cont "in the city."
 	done
 	

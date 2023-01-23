@@ -4,12 +4,12 @@
 	const GAMECORNER_RECEPTIONIST2
 	const GAMECORNER_PHARMACIST1
 	const GAMECORNER_PHARMACIST2
-	const GAMECORNER_POKEFAN_M1
-	const GAMECORNER_COOLTRAINER_M
+	const GAMECORNER_MUSICIAN
+	const GAMECORNER_ROUGHNECK
 	const GAMECORNER_POKEFAN_F
 	const GAMECORNER_COOLTRAINER_F
 	const GAMECORNER_GENTLEMAN
-	const GAMECORNER_POKEFAN_M2
+	const GAMECORNER_POKEFAN_M
 
 GameCorner_MapScripts:
 	db 0 ; scene scripts
@@ -210,22 +210,22 @@ GameCornerPharmacistScript:
 	turnobject LAST_TALKED, LEFT
 	end
 
-GameCornerPokefanM1Script:
+GameCornerMusicianScript:
 	faceplayer
 	opentext
-	writetext GameCornerPokefanM1Text
+	writetext GameCornerMusicianText
 	waitbutton
 	closetext
-	turnobject GAMECORNER_POKEFAN_M1, RIGHT
+	turnobject GAMECORNER_MUSICIAN, RIGHT
 	end
 
-GameCornerCooltrainerMScript:
+GameCornerRoughneckScript:
 	faceplayer
 	opentext
-	writetext GameCornerCooltrainerMText
+	writetext GameCornerRoughneckText
 	waitbutton
 	closetext
-	turnobject GAMECORNER_COOLTRAINER_M, LEFT
+	turnobject GAMECORNER_ROUGHNECK, LEFT
 	end
 
 GameCornerPokefanFScript:
@@ -249,8 +249,8 @@ GameCornerGentlemanScript:
 	turnobject GAMECORNER_GENTLEMAN, RIGHT
 	end
 
-GameCornerPokefanM2Script:
-	jumptextfaceplayer GameCornerPokefanM2Text
+GameCornerPokefanMScript:
+	jumptextfaceplayer GameCornerPokefanMText
 
 GameCornerLeftTheirDrinkScript:
 	jumptext GameCornerLeftTheirDrinkText
@@ -329,12 +329,12 @@ GameCornerPharmacistText:
 	line "others, I think."
 	done
 
-GameCornerPokefanM1Text:
+GameCornerMusicianText:
 	text "I just love this"
 	line "new slot machine."
 	done
 
-GameCornerCooltrainerMText:
+GameCornerRoughneckText:
 	text "Life is a gamble."
 	line "I'm going to flip"
 	cont "cards till I drop!"
@@ -370,7 +370,7 @@ GameCornerGentlemanText:
 	line "worth it."
 	done
 
-GameCornerPokefanM2Text:
+GameCornerPokefanMText:
 	text "I'd sure like that"
 	line "DEINO, but I don't"
 
@@ -436,10 +436,10 @@ GameCorner_MapEvents:
 	object_event 18,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, GameCornerVendor2Script, -1
 	object_event  8,  7, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GameCornerPharmacistScript, -1
 	object_event  8,  7, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, NITE, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GameCornerPharmacistScript, -1
-	object_event 11, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, GameCornerPokefanM1Script, -1
-	object_event 14,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, GameCornerCooltrainerMScript, -1
+	object_event 11, 10, SPRITE_MUSICIAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, GameCornerMusicianScript, -1
+	object_event 14,  8, SPRITE_ROUGHNECK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, GameCornerRoughneckScript, -1
 	object_event 17,  6, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, GameCornerPokefanFScript, -1
 	object_event 10,  3, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 2, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, GameCornerCooltrainerFScript, -1
 	object_event  5, 10, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, GameCornerGentlemanScript, -1
-	object_event  2,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, GameCornerPokefanM2Script, -1
+	object_event  2,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, GameCornerPokefanMScript, -1
 	

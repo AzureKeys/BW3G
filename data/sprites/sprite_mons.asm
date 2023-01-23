@@ -9,3 +9,4 @@ SpriteMons:
 	db TRUBBISH
 	db METAGROSS
 	db KROKOROK
+	db AUDINO

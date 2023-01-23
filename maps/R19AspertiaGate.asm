@@ -14,24 +14,27 @@ Rt19AspertiaGateYoungsterScript:
 	jumptextfaceplayer Rt19AspertiaGateYoungsterText
 
 Rt19AspertiaGateOfficerText:
-	text "You can't climb"
-	line "ledges."
+	text "The path ahead"
+	line "leads to FLOCCESY"
+	cont "TOWN."
 
-	para "But you can jump"
-	line "down from them to"
-	cont "take a shortcut."
+	para "There are a lot of"
+	line "trainers out on"
+	
+	para "the path, so be"
+	line "prepared!"
 	done
 
 Rt19AspertiaGateYoungsterText:
-	text "Different kinds of"
-	line "#MON appear"
-	cont "past here."
+	text "Some #MON only"
+	line "appear out at the"
+	cont "FLOCESSY RANCH!"
 
 	para "If you want to"
 	line "catch them all,"
 
 	para "you have to look"
-	line "everywhere."
+	line "everywhere!"
 	done
 
 Rt19AspertiaGate_MapEvents:

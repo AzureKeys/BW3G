@@ -1,9 +1,7 @@
 	const_def 2 ; object constants
 	const ASPERTIASUBWAY_OFFICER
-	const ASPERTIASUBWAY_GYM_GUY
+	const ASPERTIASUBWAY_GRAMPS
 	const ASPERTIASUBWAY_LASS
-	;const ASPERTIASUBWAY_GUARD1
-	;const ASPERTIASUBWAY_GUARD2
 
 AspertiaSubway_MapScripts:
 	db 1 ; scene scripts
@@ -62,14 +60,11 @@ Script_ArriveFromNimbasa:
 	closetext
 	end
 
-AspertiaSubwayGymGuyScript:
-	jumptextfaceplayer AspertiaSubwayGymGuyText
+AspertiaSubwayGrampsScript:
+	jumptextfaceplayer AspertiaSubwayGrampsText
 
 AspertiaSubwayLassScript:
 	jumptextfaceplayer AspertiaSubwayLassText
-	
-; AspertiaSubwayBlockerScript:
-	; jumptextfaceplayer AspertiaSubwayBlockerText
 
 AspertiaSubwayOfficerMovement:
 	step UP
@@ -105,16 +100,6 @@ AspertiaSubwayArriveMovement:
 	turn_head UP
 	step_end
 
-; AspertiaSubwayBlockerText:
-	; text "Woah there, bucko."
-	; line "The rest of the"
-	; cont "game's not"
-	; cont "finished yet."
-
-	; para "This is as far"
-	; line "as you can go."
-	; done
-
 AspertiaSubwayRideText:
 	text "We'll soon depart"
 	line "for NIMBASA."
@@ -149,15 +134,15 @@ AspertiaSubwayArrivedText:
 	line "again."
 	done
 
-AspertiaSubwayGymGuyText:
-	text "Whew…"
+AspertiaSubwayGrampsText:
+	text "The new subway has"
+	line "made it so much"
 
-	para "How many times"
-	line "have I gone back"
+	para "easier for me to"
+	line "get back and forth"
 
-	para "and forth between"
-	line "ASPERTIA and"
-	cont "NIMBASA?"
+	para "between home and"
+	line "the big city!"
 	done
 
 AspertiaSubwayLassText:
@@ -187,8 +172,6 @@ AspertiaSubway_MapEvents:
 
 	db 3 ; object events
 	object_event  9,  9, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, AspertiaSubwayOfficerScript, -1
-	object_event 10, 14, SPRITE_GYM_GUY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AspertiaSubwayGymGuyScript, -1
+	object_event 10, 14, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AspertiaSubwayGrampsScript, -1
 	object_event  6, 10, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, AspertiaSubwayLassScript, -1
-	;object_event  8, 17, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AspertiaSubwayBlockerScript, -1
-	;object_event  9, 17, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AspertiaSubwayBlockerScript, -1
 	

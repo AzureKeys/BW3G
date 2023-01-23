@@ -349,10 +349,12 @@ UndellaTownFisher3Text:
 	done
 	
 UndellaTownCooltrainerMText:
-	text "There's a contest"
-	line "for #MON"
-	cont "trainers going on"
-	cont "in ROUTE 14."
+	text "The kids at the"
+	line "school put on a"
+	
+	para "contest for #-"
+	line "MON trainers on"
+	cont "ROUTE 14."
 	
 	para "Beat all five"
 	line "trainers, and you"

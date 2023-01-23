@@ -130,54 +130,66 @@ R14FruitTree:
 	fruittree FRUITTREE_R_14
 	
 PreschoolerM1R14SeenText:
-	text "Beat the five of"
-	line "us trainers to win"
-	cont "a fabulous prize!"
+	text "We're the five"
+	line "trainers of the"
+	cont "UNDELLA TOWN"
+	cont "school!"
 
-	para "Think you've got"
-	line "what it takes?"
+	para "Can you beat all"
+	line "of us?"
 	done
 
 PreschoolerM1R14BeatenText:
-	text "Whoo! Good stuff."
+	text "Wha? I lost?"
 	done
 
 PreschoolerM1R14AfterText:
-	text "I did my best."
-	line "I have no regrets."
+	text "I did my best,"
+	line "so that's good,"
+	cont "I guess."
 	done
 	
 PreschoolerF1R14SeenText:
-	text "I'm second."
-	line "Now it's serious!"
+	text "I'm number two!"
+	line "I won't go easy!"
 	done
 
 PreschoolerF1R14BeatenText:
-	text "How could I lose?"
+	text "Uh-oh, I lost…"
 	done
 
 PreschoolerF1R14AfterText:
-	text "I did my best."
-	line "I have no regrets."
+	text "Teacher says to"
+	line "try my hardest."
+	
+	para "So I'm not mad,"
+	line "not even a little!"
 	done
 	
 PreschoolerM2R14SeenText:
-	text "Here's No. 3!"
-	line "I won't be easy."
+	text "What comes after"
+	line "two? It's three!"
+	
+	para "Everyone knows"
+	line "that!"
 	done
 
 PreschoolerM2R14BeatenText:
-	text "Ow! Stomped flat!"
+	text "Ow! I got beat!"
 	done
 
 PreschoolerM2R14AfterText:
-	text "I did my best."
-	line "I have no regrets."
+	text "I'm better at my"
+	line "numbers than I am"
+	cont "at #MON."
 	done
 	
 PreschoolerF2R14SeenText:
-	text "I'm No. 4!"
-	line "Getting tired?"
+	text "Are you tired yet?"
+	line "If you can beat"
+	
+	para "me, you get to"
+	line "battle Teacher!"
 	done
 
 PreschoolerF2R14BeatenText:
@@ -185,38 +197,36 @@ PreschoolerF2R14BeatenText:
 	done
 
 PreschoolerF2R14AfterText:
-	text "I did my best."
-	line "I have no regrets."
+	text "I hope Teacher saw"
+	line "how I did!"
 	done
 	
 R14PrizeGiverSeenText:
-	text "Congratulations"
-	line "on making it this"
-	cont "far, trainer!"
+	text "Good job making it"
+	line "past our little"
+	cont "test, trainer!"
 
-	para "I am the final"
-	line "challenge. If you"
+	para "If you can beat"
+	line "me, you'll receive"
+	cont "a fabulous prize!"
 	
-	para "beat me, you'll"
-	line "receive a fabulous"
-	cont "prize!"
-	
-	para "Come on, show me"
-	line "what you're made"
-	cont "of!"
+	para "Go on, let's get"
+	line "started!"
 	done
 	
 R14PrizeGiverWinText:
-	text "No way, I lost!"
+	text "Oh, congrats! You"
+	line "did it!"
 	done
 	
 R14PrizeGiverGiveEggText:
-	text "You've beaten me!"
-	line "As a reward for"
+	text "You've beaten me,"
+	line "and won our school"
+	cont "challenge!"
 	
-	para "beating all five"
-	line "of us, take this"
-	cont "rare #MON egg!"
+	para "As a prize from"
+	line "us, take this rare"
+	cont "#MON egg!"
 	done
 	
 R14PrizeGiverPartyFullText:

@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const ASPERTIAPOKECENTER_NURSE
 	const ASPERTIAPOKECENTER_CLERK
-	const ASPERTIAPOKECENTER_FISHER
+	const ASPERTIAPOKECENTER_RANGER_F
 	const ASPERTIAPOKECENTER_TEACHER
 	const ASPERTIAPOKECENTER_COOLTRAINER_F
 
@@ -16,8 +16,8 @@ AspertiaPokecenterNurseScript:
 AspertiaPokecenterClerkScript:
 	jumpstd scalingmart
 
-AspertiaPokecenterFisherScript:
-	jumptextfaceplayer AspertiaPokecenterFisherText
+AspertiaPokecenterRangerFScript:
+	jumptextfaceplayer AspertiaPokecenterRangerFText
 
 AspertiaPokecenterTeacherScript:
 	jumptextfaceplayer AspertiaPokecenterTeacherText
@@ -25,7 +25,7 @@ AspertiaPokecenterTeacherScript:
 AspertiaPokecenterCooltrainerFScript:
 	jumptextfaceplayer AspertiaPokecenterCooltrainerFText
 
-AspertiaPokecenterFisherText:
+AspertiaPokecenterRangerFText:
 	text "Some #MON will"
 	line "evolve if you"
 	cont "treat them well."
@@ -46,11 +46,13 @@ AspertiaPokecenterTeacherText:
 	done
 
 AspertiaPokecenterCooltrainerFText:
-	text "Do your #MON"
-	line "already know the"
+	text "Do any of your"
+	line "#MON know the"
 
 	para "move for carrying"
 	line "people on water?"
+	
+	para "It's very useful!"
 	done
 
 AspertiaPokecenter1F_MapEvents:
@@ -67,7 +69,7 @@ AspertiaPokecenter1F_MapEvents:
 	db 5 ; object events
 	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AspertiaPokecenterNurseScript, -1
 	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, AspertiaPokecenterClerkScript, -1
-	object_event  8,  2, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, AspertiaPokecenterFisherScript, -1
+	object_event  8,  2, SPRITE_RANGER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, AspertiaPokecenterRangerFScript, -1
 	object_event  1,  7, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, AspertiaPokecenterTeacherScript, -1
 	object_event  0,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, AspertiaPokecenterCooltrainerFScript, -1
 	

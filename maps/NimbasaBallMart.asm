@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
 	const NIMBASABALLMART_CLERK
-	const NIMBASABALLMART_SUPER_NERD
+	const NIMBASABALLMART_RANGER_M
 	const NIMBASABALLMART_LASS
 
 NimbasaBallMart_MapScripts:
@@ -14,13 +14,13 @@ NimbasaBallMartClerkScript:
 	closetext
 	end
 
-NimbasaBallMartSuperNerdScript:
-	jumptextfaceplayer NimbasaBallMartSuperNerdText
+NimbasaBallMartRangerMScript:
+	jumptextfaceplayer NimbasaBallMartRangerMText
 
 NimbasaBallMartLassScript:
 	jumptextfaceplayer NimbasaBallMartLassText
 
-NimbasaBallMartSuperNerdText:
+NimbasaBallMartRangerMText:
 	text "Different kinds of"
 	line "#BALLS are good"
 
@@ -51,5 +51,5 @@ NimbasaBallMart_MapEvents:
 
 	db 3 ; object events
 	object_event  1,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NimbasaBallMartClerkScript, -1
-	object_event  5,  2, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaBallMartSuperNerdScript, -1
+	object_event  5,  2, SPRITE_RANGER_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, NimbasaBallMartRangerMScript, -1
 	object_event  6,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NimbasaBallMartLassScript, -1

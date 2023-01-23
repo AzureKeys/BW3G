@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const NACRENEPOKECENTER_NURSE
 	const NACRENEPOKECENTER_CLERK
-	const NACRENEPOKECENTER_TEACHER
+	const NACRENEPOKECENTER_SOCIALITE
 	const NACRENEPOKECENTER_JIGGLYPUFF
 	const NACRENEPOKECENTER_BUG_CATCHER
 
@@ -16,8 +16,8 @@ NacrenePokecenterNurseScript:
 NacrenePokecenterClerkScript:
 	jumpstd scalingmart
 
-NacrenePokecenterTeacherScript:
-	jumptextfaceplayer NacrenePokecenterTeacherText
+NacrenePokecenterSocialiteScript:
+	jumptextfaceplayer NacrenePokecenterSocialiteText
 
 NacreneJigglypuff:
 	opentext
@@ -30,16 +30,16 @@ NacreneJigglypuff:
 NacrenePokecenterBugCatcherScript:
 	jumptextfaceplayer NacrenePokecenterBugCatcherText
 
-NacrenePokecenterTeacherText:
-	text "…Yeah, our GYM's"
-	line "LEADER closed the"
-	cont "GYM down."
+NacrenePokecenterSocialiteText:
+	text "The #MON with"
+	line "me right now are"
 	
-	para "Yeah, it's been a"
-	line "few years now."
+	para "the ones that, out"
+	line "of all those I've"
 
-	para "…Yes? I'm on the"
-	line "phone. Go away!"
+	para "met so far, I've"
+	line "taken a particular"
+	cont "shine to!"
 	done
 
 NacreneJigglypuffText:
@@ -69,7 +69,7 @@ NacrenePokecenter1F_MapEvents:
 	db 5 ; object events
 	object_event  4,  2, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NacrenePokecenterNurseScript, -1
 	object_event  8,  7, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NacrenePokecenterClerkScript, -1
-	object_event  1,  7, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NacrenePokecenterTeacherScript, -1
+	object_event  1,  7, SPRITE_SOCIALITE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NacrenePokecenterSocialiteScript, -1
 	object_event  9,  2, SPRITE_JIGGLYPUFF, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NacreneJigglypuff, -1
 	object_event  8,  2, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NacrenePokecenterBugCatcherScript, -1
 	
