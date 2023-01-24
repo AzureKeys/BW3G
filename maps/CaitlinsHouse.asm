@@ -66,6 +66,8 @@ CaitlinsHouse_MapScripts:
 	waitbutton
 	closetext
 	setevent EVENT_BEAT_CYNTHIA
+	setflag ENGINE_CAITLIN
+	setflag ENGINE_CYNTHIA
 	setscene SCENE_FINISHED
 	end
 	
@@ -74,6 +76,8 @@ CaitlinsHouseCaitlinScript:
 	opentext
 	checkcode VAR_WEEKDAY
 	ifnotequal SUNDAY, .NotSunday
+	checkflag ENGINE_CAITLIN
+	iftrue .NotSunday
 	writetext CaitlinsHouseCaitlinBattleIntroText
 	waitbutton
 	closetext
@@ -82,6 +86,7 @@ CaitlinsHouseCaitlinScript:
 	loadtrainer CAITLIN, CAITLIN1
 	startbattle
 	reloadmapafterbattle
+	setflag ENGINE_CAITLIN
 	opentext
 .NotSunday
 	writetext CaitlinsHouseCaitlinAfterBattleText
@@ -94,6 +99,8 @@ CaitlinsHouseCynthiaScript:
 	opentext
 	checkcode VAR_WEEKDAY
 	ifnotequal SATURDAY, .NotSaturday
+	checkflag ENGINE_CYNTHIA
+	iftrue .NotSaturday
 	writetext CaitlinsHouseCynthiaBattleIntroText
 	waitbutton
 	closetext
@@ -102,6 +109,7 @@ CaitlinsHouseCynthiaScript:
 	loadtrainer CYNTHIA, CYNTHIA1
 	startbattle
 	reloadmapafterbattle
+	setflag ENGINE_CYNTHIA
 	opentext
 .NotSaturday
 	writetext CaitlinsHouseCynthiaAfterBattleText

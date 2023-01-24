@@ -126,26 +126,28 @@ EngineFlags:
 	engine_flag wCelebiEvent, CELEBIEVENT_FOREST_IS_RESTLESS_F
 
 	; rematches
-	engine_flag wDailyRematchFlags,  0 ; jack
-	engine_flag wDailyRematchFlags,  1 ; huey
-	engine_flag wDailyRematchFlags,  2 ; gaven
-	engine_flag wDailyRematchFlags,  3 ; beth ; $68
-	engine_flag wDailyRematchFlags,  4 ; jose
-	engine_flag wDailyRematchFlags,  5 ; reena
-	engine_flag wDailyRematchFlags,  6 ; joey
-	engine_flag wDailyRematchFlags,  7 ; wade
-	engine_flag wDailyRematchFlags,  8 ; ralph
-	engine_flag wDailyRematchFlags,  9 ; liz
-	engine_flag wDailyRematchFlags, 10 ; anthony
-	engine_flag wDailyRematchFlags, 11 ; todd ; $70
-	engine_flag wDailyRematchFlags, 12 ; gina
-	engine_flag wDailyRematchFlags, 13 ; arnie
-	engine_flag wDailyRematchFlags, 14 ; alan
-	engine_flag wDailyRematchFlags, 15 ; dana
-	engine_flag wDailyRematchFlags, 16 ; chad
-	engine_flag wDailyRematchFlags, 17 ; tully
-	engine_flag wDailyRematchFlags, 18 ; brent
-	engine_flag wDailyRematchFlags, 19 ; tiffany ; $78
+	engine_flag wDailyRematchFlags,  0 ; dan
+	engine_flag wDailyRematchFlags,  1 ; jewel
+	engine_flag wDailyRematchFlags,  2 ; freddy
+	engine_flag wDailyRematchFlags,  3 ; eric
+	engine_flag wDailyRematchFlags,  4 ; lacey
+	engine_flag wDailyRematchFlags,  5 ; sophie
+	engine_flag wDailyRematchFlags,  6 ; ariana
+	engine_flag wDailyRematchFlags,  7 ; carla
+	engine_flag wDailyRematchFlags,  8 ; clarissa
+	engine_flag wDailyRematchFlags,  9 ; jenny
+	engine_flag wDailyRematchFlags, 10 ; marco
+	engine_flag wDailyRematchFlags, 11 ; parker
+	engine_flag wDailyRematchFlags, 12 ; dean
+	engine_flag wDailyRematchFlags, 13 ; lois
+	
+	engine_flag wDailyRematchFlags, 14 ; rood
+	engine_flag wDailyRematchFlags, 15 ; hugh
+	engine_flag wDailyRematchFlags, 16 ; alder
+	engine_flag wDailyRematchFlags, 17 ; iris
+	engine_flag wDailyRematchFlags, 18 ; cynthia
+	engine_flag wDailyRematchFlags, 19 ; caitlin
+	
 	engine_flag wDailyRematchFlags, 20 ; vance
 	engine_flag wDailyRematchFlags, 21 ; wilton
 	engine_flag wDailyRematchFlags, 22 ; parry

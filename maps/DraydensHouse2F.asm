@@ -15,6 +15,8 @@ DraydensHouseIris:
 	iffalse .FirstBattle
 	checkcode VAR_WEEKDAY
 	ifnotequal FRIDAY, .NotFriday
+	checkflag ENGINE_IRIS
+	iftrue .NotFriday
 	writetext DraydensHouseIrisRematchText
 	jump .StartBattle
 	
@@ -28,6 +30,7 @@ DraydensHouseIris:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_IRIS
+	setflag ENGINE_IRIS
 	opentext
 .NotFriday
 	writetext DraydensHouseIrisAfterBattleText

@@ -174,6 +174,7 @@ DriftveilShelterRoodScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_HUGH
+	setflag ENGINE_HUGH
 	opentext
 	writetext DriftveilShelterHughBeatenText
 	waitbutton
@@ -187,6 +188,8 @@ DriftveilShelterRoodScript:
 	iffalse .ReadyRoodBattle
 	checkcode VAR_WEEKDAY
 	ifnotequal MONDAY, .NoBattle
+	checkflag ENGINE_ROOD
+	iftrue .NoBattle
 .ReadyRoodBattle
 	writetext DriftveilShelterRoodBeforeBattleText
 	waitbutton
@@ -196,6 +199,7 @@ DriftveilShelterRoodScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_ROOD
+	setflag ENGINE_ROOD
 	opentext
 	writetext DriftveilShelterRoodAfterBattleText
 	waitbutton
@@ -216,6 +220,8 @@ DriftveilShelterRoodScript:
 	
 DriftveilShelterHughScript:
 	opentext
+	checkflag ENGINE_HUGH
+	iftrue .NoBattle
 	writetext DriftveilShelterHughRematchText
 	waitbutton
 	closetext
@@ -236,7 +242,9 @@ DriftveilShelterHughScript:
 .StartBattle
 	startbattle
 	reloadmapafterbattle
+	setflag ENGINE_HUGH
 	opentext
+.NoBattle
 	writetext DriftveilShelterHughBeatenText
 	waitbutton
 	closetext

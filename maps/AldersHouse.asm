@@ -22,6 +22,8 @@ AldersHouseAlderScript:
 	jump .StartBattle
 	
 .Rematch
+	checkflag ENGINE_ALDER
+	iftrue .AlreadyBeaten
 	writetext AldersHouseAlreadyMetText
 	
 .StartBattle
@@ -32,7 +34,9 @@ AldersHouseAlderScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_ALDER
+	setflag ENGINE_ALDER
 	opentext
+.AlreadyBeaten
 	writetext AldersHouseAfterBattleText
 	waitbutton
 	closetext
