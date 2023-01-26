@@ -108,5 +108,9 @@ INCBIN "gfx/trainers/caitlin.gbcpal", middle_colors
 INCBIN "gfx/trainers/cynthia.gbcpal", middle_colors
 INCBIN "gfx/trainers/hugh.gbcpal", middle_colors
 INCBIN "gfx/trainers/rood.gbcpal", middle_colors
+INCBIN "gfx/trainers/hilbert.gbcpal", middle_colors
+INCBIN "gfx/trainers/hilda.gbcpal", middle_colors
+INCBIN "gfx/trainers/nate.gbcpal", middle_colors
+INCBIN "gfx/trainers/rosa.gbcpal", middle_colors
 KrisPalette:
 INCLUDE "gfx/player/kris.pal"

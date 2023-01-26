@@ -271,15 +271,31 @@ ScientistMVictoryRoadOutdoor2FSeenText:
 	done
 
 ScientistMVictoryRoadOutdoor2FBeatenText:
-	text "..."
+	text "Hm… What could be"
+	line "the key to #MON"
+	
+	para "battles and #-"
+	line "MON growth?"
+	
+	para "This, I will study"
+	line "in battle with"
+	cont "you!"
 	done
 
 ScientistMVictoryRoadOutdoor2FAfterText:
-	text "..."
+	text "This was very"
+	line "helpful…"
 	done
 	
 ScientistFVictoryRoadOutdoor2FSeenText:
-	text "..."
+	text "#MON are like a"
+	line "science to me."
+	
+	para "I must study them"
+	line "at the height of"
+	
+	para "their growth if I"
+	line "am to understand!"
 	done
 
 ScientistFVictoryRoadOutdoor2FBeatenText:

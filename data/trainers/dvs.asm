@@ -102,3 +102,7 @@ TrainerClassDVs:
 	dn 15, 15, 15, 15 ; CYNTHIA
 	dn 15, 15, 15, 15 ; HUGH
 	dn 15, 15, 15, 15 ; ROOD
+	dn 15, 15, 15, 15 ; HILBERT
+	dn 15, 15, 15, 15 ; HILDA
+	dn 15, 15, 15, 15 ; NATE
+	dn 15, 15, 15, 15 ; ROSA

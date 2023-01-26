@@ -685,6 +685,26 @@ CHRIS EQU __enum__
 	
 	trainerclass ROOD
 	const ROOD1
+	
+	trainerclass HILBERT
+	const HILBERT_SNIVY
+	const HILBERT_TEPIG
+	const HILBERT_OSHAWOTT
+	
+	trainerclass HILDA
+	const HILDA_SNIVY
+	const HILDA_TEPIG
+	const HILDA_OSHAWOTT
+	
+	trainerclass NATE
+	const NATE_SNIVY
+	const NATE_TEPIG
+	const NATE_OSHAWOTT
+	
+	trainerclass ROSA
+	const ROSA_SNIVY
+	const ROSA_TEPIG
+	const ROSA_OSHAWOTT
 
 KRIS EQU __enum__
 NUM_TRAINER_CLASSES EQU __enum__

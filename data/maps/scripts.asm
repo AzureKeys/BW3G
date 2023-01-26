@@ -106,10 +106,10 @@ INCLUDE "maps/FloccesyTown.asm"
 INCLUDE "maps/Rt19.asm"
 INCLUDE "maps/Rt20.asm"
 INCLUDE "maps/FloccesyRanch.asm"
-INCLUDE "maps/AspertiaBlackbeltHouse.asm"
 
 SECTION "Map Scripts 7", ROMX
 
+INCLUDE "maps/AspertiaBlackbeltHouse.asm"
 INCLUDE "maps/AspertiaPokecenter1F.asm"
 INCLUDE "maps/FloccesyPokecenter1F.asm"
 INCLUDE "maps/AspertiaMomHouse.asm"

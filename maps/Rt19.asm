@@ -348,19 +348,24 @@ DepotAgent1R19AfterText:
 	done
 	
 DepotAgent2R19SeenText:
-	text "Hmmm… I don't know"
-	line "what to do…"
+	text "I want you to tell"
+	line "me something!"
 	done
 
 DepotAgent2R19BeatenText:
-	text "I knew I'd lose…"
+	text "You showed me your"
+	line "full strength!"
 	done
 
 DepotAgent2R19AfterText:
-	text "You looked strong."
+	text "I'm going to be"
+	line "working at the"
 
-	para "I was afraid to"
-	line "take you on…"
+	para "subway starting"
+	line "from today, but…"
+	
+	para "I don't actually"
+	line "know where it is!"
 	done
 	
 MaidR19SeenText:
@@ -386,21 +391,35 @@ MaidR19AfterText:
 	done
 	
 BakerR19SeenText:
-	text "Step right up and"
-	line "take a look!"
+	text "I'm not satisfied"
+	line "with my baking."
+	
+	para "Are you satisfied"
+	line "with your #MON"
+	cont "training?"
 	done
 
 BakerR19BeatenText:
-	text "Yow! That's hot!"
+	text "Are you pleased"
+	line "with your victory?"
+	
+	para "Or are you"
+	line "unsatisfied?"
 	done
 
 BakerR19AfterText:
-	text "The greatest fire-"
-	line "breather in UNOVA,"
-	cont "that's me."
+	text "I'm just never"
+	line "satisfied with my"
+	
+	para "bread, even though"
+	line "I bake it very"
+	cont "well."
 
-	para "But not the best"
-	line "trainer…"
+	para "I always want to"
+	line "make the next loaf"
+	
+	para "even more"
+	line "delicious!"
 	done
 
 Rt19_MapEvents:

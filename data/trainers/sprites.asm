@@ -101,4 +101,8 @@ BTTrainerClassSprites:
 	db SPRITE_CYNTHIA       ; cynthia
 	db SPRITE_HUGH          ; hugh
 	db SPRITE_ROOD          ; rood
+	db SPRITE_HILBERT       ; hilbert
+	db SPRITE_HILDA         ; hilda
+	db SPRITE_NATE          ; nate
+	db SPRITE_ROSA          ; rosa
 	

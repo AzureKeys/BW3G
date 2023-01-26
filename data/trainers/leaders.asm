@@ -19,6 +19,10 @@ GymLeaders:
 	db IRIS
 	db CAITLIN
 	db CYNTHIA
+	db HILBERT
+	db HILDA
+	db NATE
+	db ROSA
 ; fallthrough
 KantoGymLeaders:
 	db -1
