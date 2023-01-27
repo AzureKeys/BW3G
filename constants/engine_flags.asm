@@ -137,9 +137,9 @@
 	const ENGINE_IRIS
 	const ENGINE_CYNTHIA
 	const ENGINE_CAITLIN
+	const ENGINE_NATE_ROSA
+	const ENGINE_HILBERT_HILDA
 	
-	const ENGINE_VANCE
-	const ENGINE_WILTON
 	const ENGINE_PARRY
 	const ENGINE_ERIN
 ; wDailyPhoneItemFlags

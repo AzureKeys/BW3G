@@ -1302,54 +1302,54 @@ LoadMapPals:
 .outside
 ; Don't load Roof palettes for certain Outdoor maps
 	ld a, [wMapGroup]
-	cp 1 ; Dungeons
+	cp GROUP_CELESTIAL_TOWER_ROOF ; Dungeons
 	jr nz, .CheckNimbasa
 	ld a, [wMapNumber]
-	cp 37 ; CelestialTowerRoof
+	cp MAP_CELESTIAL_TOWER_ROOF
 	jr z, .done
-	cp 40 ; DragonspiralTowerOutside
+	cp MAP_DRAGONSPIRAL_TOWER_OUTSIDE
 	jr z, .done
-	cp 47 ; DragonspiralTowerRoof
+	cp MAP_DRAGONSPIRAL_TOWER_ROOF
 	jr nz, .LoadRoof
 .done
 	ret
 .CheckNimbasa
-	cp 7 ; Nimbasa
+	cp GROUP_NIMBASA_PARK_OUTSIDE
 	jr nz, .CheckCastelia
 	ld a, [wMapNumber]
-	cp 17 ; NimbasaParkOutside
+	cp MAP_NIMBASA_PARK_OUTSIDE
 	jr nz, .LoadRoof
 	ret
 .CheckCastelia
-	cp 9 ; Castelia
+	cp GROUP_SKYARROW_BRIDGE
 	jr nz, .CheckDriftveil
 	ld a, [wMapNumber]
-	cp 20 ; SkyarrowBridge
+	cp MAP_SKYARROW_BRIDGE
 	jr nz, .LoadRoof
 	ret
 .CheckDriftveil
-	cp 18 ; Driftveil
+	cp GROUP_DRIFTVEIL_DRAWBRIDGE
 	jr nz, .CheckOpelucid
 	ld a, [wMapNumber]
-	cp 7 ; DriftveilDrawbridge
+	cp MAP_DRIFTVEIL_DRAWBRIDGE
 	ret z
 .CheckOpelucid
-	cp 20 ; Opelucid
+	cp GROUP_VILLAGE_BRIDGE
 	jr nz, .CheckIcirrus
 	ld a, [wMapNumber]
-	cp 1 ; VillageBridge
+	cp MAP_VILLAGE_BRIDGE
 	ret z
 .CheckIcirrus
-	cp 21 ; Icirrus
+	cp GROUP_TUBELINE_BRIDGE
 	jr nz, .CheckPkmnLeague
 	ld a, [wMapNumber]
-	cp 1 ; TubelineBridge
+	cp MAP_TUBELINE_BRIDGE
 	ret z
 .CheckPkmnLeague
-	cp 26 ; PkmnLeague
+	cp GROUP_PKMN_LEAGUE_ENTRANCE
 	jr nz, .LoadRoof
 	ld a, [wMapNumber]
-	cp 6 ; PkmnLeagueEntrance
+	cp MAP_PKMN_LEAGUE_ENTRANCE
 	ret z
 .LoadRoof
 	ld a, [wMapGroup]

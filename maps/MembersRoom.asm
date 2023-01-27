@@ -9,6 +9,8 @@
 	const MEMBERSROOM_CAITLIN
 	const MEMBERSROOM_CYNTHIA
 	const MEMBERSROOM_HUGH
+	const MEMBERSROOM_ELESA
+	const MEMBERSROOM_BIANCA
 
 MembersRoom_MapScripts:
 	db 0 ; scene scripts
@@ -17,40 +19,68 @@ MembersRoom_MapScripts:
 	callback MAPCALLBACK_OBJECTS, .AppearPeople
 	
 .AppearPeople:
+; Elesa appears if we beat Caitlin/Cynthia, Rood, Hugh, Alder, & Iris
+; but haven't yet beaten Nate/Rosa
+	checkevent EVENT_BEAT_NATE_ROSA
+	iftrue .DisappearElesa
+	checkevent EVENT_BEAT_CYNTHIA
+	iffalse .DisappearElesa
+	checkevent EVENT_BEAT_ROOD ; Must beat Hugh before Rood
+	iffalse .DisappearElesa
+	checkevent EVENT_BEAT_ALDER
+	iffalse .DisappearElesa
+	checkevent EVENT_BEAT_IRIS
+	iffalse .DisappearElesa
+	appear MEMBERSROOM_ELESA
+	jump .HandleRood
+.DisappearElesa
+	disappear MEMBERSROOM_ELESA
+	
+.HandleRood
+; If we beat Hugh, but haven't triggered the Rood fight,
+; then Rood appears regardless of day
+	checkevent EVENT_ROOD_READY_FOR_BATTLE
+	iftrue .DisappearRood
+	checkevent EVENT_BEAT_HUGH
+	iffalse .DisappearRood
+	appear MEMBERSROOM_ROOD
+	jump .CheckDay
+.DisappearRood
+	disappear MEMBERSROOM_ROOD
+	
+.CheckDay
 	checkcode VAR_WEEKDAY
 	ifequal MONDAY, .Monday
 	ifequal TUESDAY, .Tuesday
 	ifequal WEDNESDAY, .Wednesday
+	ifequal THURSDAY, .Thursday
 	ifequal FRIDAY, .Friday
-	ifequal SATURDAY, .Saturday
 	ifequal SUNDAY, .Sunday
 ; else
-	disappear MEMBERSROOM_MARLON
-	disappear MEMBERSROOM_ROOD
-	disappear MEMBERSROOM_ALDER
-	disappear MEMBERSROOM_IRIS
-	disappear MEMBERSROOM_CAITLIN
-	disappear MEMBERSROOM_CYNTHIA
 	disappear MEMBERSROOM_HUGH
+	disappear MEMBERSROOM_ALDER
+	disappear MEMBERSROOM_CYNTHIA
+	disappear MEMBERSROOM_IRIS
+	disappear MEMBERSROOM_MARLON
+	disappear MEMBERSROOM_CAITLIN
 	jump .done
 	
 .Monday
 	appear MEMBERSROOM_ROOD
-	disappear MEMBERSROOM_MARLON
-	disappear MEMBERSROOM_ALDER
-	disappear MEMBERSROOM_IRIS
-	disappear MEMBERSROOM_CAITLIN
-	disappear MEMBERSROOM_CYNTHIA
 	disappear MEMBERSROOM_HUGH
+	disappear MEMBERSROOM_ALDER
+	disappear MEMBERSROOM_CYNTHIA
+	disappear MEMBERSROOM_IRIS
+	disappear MEMBERSROOM_MARLON
+	disappear MEMBERSROOM_CAITLIN
 	jump .done
 	
 .Tuesday
-	disappear MEMBERSROOM_ROOD
-	disappear MEMBERSROOM_MARLON
 	disappear MEMBERSROOM_ALDER
-	disappear MEMBERSROOM_IRIS
-	disappear MEMBERSROOM_CAITLIN
 	disappear MEMBERSROOM_CYNTHIA
+	disappear MEMBERSROOM_IRIS
+	disappear MEMBERSROOM_MARLON
+	disappear MEMBERSROOM_CAITLIN
 	checkevent EVENT_BEAT_HUGH
 	iftrue .AppearHugh
 	disappear MEMBERSROOM_HUGH
@@ -61,53 +91,56 @@ MembersRoom_MapScripts:
 	
 .Wednesday
 	appear MEMBERSROOM_ALDER
-	disappear MEMBERSROOM_MARLON
-	disappear MEMBERSROOM_ROOD
-	disappear MEMBERSROOM_IRIS
-	disappear MEMBERSROOM_CAITLIN
-	disappear MEMBERSROOM_CYNTHIA
 	disappear MEMBERSROOM_HUGH
+	disappear MEMBERSROOM_CYNTHIA
+	disappear MEMBERSROOM_IRIS
+	disappear MEMBERSROOM_MARLON
+	disappear MEMBERSROOM_CAITLIN
 	jump .done
 	
-.Friday
-	appear MEMBERSROOM_IRIS
-	disappear MEMBERSROOM_MARLON
-	disappear MEMBERSROOM_ROOD
-	disappear MEMBERSROOM_ALDER
-	disappear MEMBERSROOM_CAITLIN
-	disappear MEMBERSROOM_CYNTHIA
+.Thursday
 	disappear MEMBERSROOM_HUGH
-	jump .done
-	
-.Saturday
-	disappear MEMBERSROOM_ROOD
-	disappear MEMBERSROOM_MARLON
 	disappear MEMBERSROOM_ALDER
 	disappear MEMBERSROOM_IRIS
+	disappear MEMBERSROOM_MARLON
 	disappear MEMBERSROOM_CAITLIN
-	disappear MEMBERSROOM_HUGH
 	checkevent EVENT_BEAT_CYNTHIA
 	iftrue .AppearCynthia
 	disappear MEMBERSROOM_CYNTHIA
 	jump .done
 .AppearCynthia
 	appear MEMBERSROOM_CYNTHIA
+	variablesprite SPRITE_MEMBERS_ROOM_BROWN, SPRITE_CYNTHIA
+	special LoadUsedSpritesGFX
+	jump .done
+	
+.Friday
+	appear MEMBERSROOM_IRIS
+	variablesprite SPRITE_MEMBERS_ROOM_BLUE, SPRITE_IRIS
+	special LoadUsedSpritesGFX
+	disappear MEMBERSROOM_HUGH
+	disappear MEMBERSROOM_ALDER
+	disappear MEMBERSROOM_CYNTHIA
+	disappear MEMBERSROOM_MARLON
+	disappear MEMBERSROOM_CAITLIN
 	jump .done
 	
 .Sunday
-	disappear MEMBERSROOM_ROOD
-	disappear MEMBERSROOM_ALDER
-	disappear MEMBERSROOM_IRIS
-	disappear MEMBERSROOM_CYNTHIA
 	disappear MEMBERSROOM_HUGH
-	checkevent EVENT_BEAT_CYNTHIA
+	disappear MEMBERSROOM_ALDER
+	disappear MEMBERSROOM_CYNTHIA
+	disappear MEMBERSROOM_IRIS
 	iftrue .AppearCaitlin
 	disappear MEMBERSROOM_CAITLIN
 	appear MEMBERSROOM_MARLON
+	variablesprite SPRITE_MEMBERS_ROOM_BLUE, SPRITE_MARLON
+	special LoadUsedSpritesGFX
 	jump .done
 	
 .AppearCaitlin
 	appear MEMBERSROOM_CAITLIN
+	variablesprite SPRITE_MEMBERS_ROOM_BROWN, SPRITE_CAITLIN
+	special LoadUsedSpritesGFX
 	disappear MEMBERSROOM_MARLON
 ; fallthrough
 .done
@@ -193,6 +226,24 @@ MembersRoomAlderScript:
 	writetext MembersRoomAlderAlreadySpokenText
 	waitbutton
 	closetext
+	end
+	
+MembersRoomElesaScript:
+	faceplayer
+	opentext
+	writetext MembersRoomElesaText
+	waitbutton
+	closetext
+	setevent EVENT_NATE_ROSA_READY_FOR_BATTLE
+	end
+	
+MembersRoomBiancaScript:
+	faceplayer
+	opentext
+	writetext MembersRoomBiancaText
+	waitbutton
+	closetext
+	setevent EVENT_HILBERT_HILDA_READY_FOR_BATTLE
 	end
 	
 MembersRoomMarlonScript:
@@ -590,6 +641,14 @@ MembersRoomHughText:
 	text ""
 	done
 	
+MembersRoomElesaText:
+	text ""
+	done
+	
+MembersRoomBiancaText:
+	text ""
+	done
+	
 MembersRoomVendingText:
 	text "A vending machine!"
 	line "Here's the menu."
@@ -626,15 +685,17 @@ MembersRoom_MapEvents:
 	bg_event  8,  1, BGEVENT_UP, MembersRoomVendingMachine
 	bg_event  9,  1, BGEVENT_UP, MembersRoomVendingMachine
 
-	db 10 ; object events
+	db 12 ; object events
 	object_event  2,  2, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, MembersRoomClerk1Script, -1
-	object_event  3,  2, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MembersRoomClerk2Script, -1
+	object_event  3,  2, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, MembersRoomClerk2Script, -1
 	object_event  8,  4, SPRITE_CHEREN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomCherenScript, EVENT_MEMBERS_ROOM_CHEREN
-	object_event 11,  6, SPRITE_MARLON, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomMarlonScript, EVENT_MEMBERS_ROOM_MARLON
+	object_event 11,  6, SPRITE_MEMBERS_ROOM_BLUE, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, MembersRoomMarlonScript, EVENT_MEMBERS_ROOM_MARLON
 	object_event  2,  6, SPRITE_ROOD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomRoodScript, EVENT_MEMBERS_ROOM_ROOD
 	object_event 11,  3, SPRITE_ALDER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomAlderScript, EVENT_MEMBERS_ROOM_ALDER
-	object_event  7,  2, SPRITE_IRIS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomIrisScript, EVENT_MEMBERS_ROOM_IRIS
-	object_event 11,  4, SPRITE_CAITLIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomCaitlinScript, EVENT_MEMBERS_ROOM_CAITLIN
-	object_event  1,  4, SPRITE_CYNTHIA, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomCynthiaScript, EVENT_MEMBERS_ROOM_CYNTHIA
+	object_event  7,  2, SPRITE_MEMBERS_ROOM_BLUE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, MembersRoomIrisScript, EVENT_MEMBERS_ROOM_IRIS
+	object_event 11,  4, SPRITE_MEMBERS_ROOM_BROWN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MembersRoomCaitlinScript, EVENT_MEMBERS_ROOM_CAITLIN
+	object_event  1,  4, SPRITE_MEMBERS_ROOM_BROWN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, MembersRoomCynthiaScript, EVENT_MEMBERS_ROOM_CYNTHIA
 	object_event  8,  3, SPRITE_HUGH, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomHughScript, EVENT_MEMBERS_ROOM_HUGH
+	object_event 10,  2, SPRITE_ELESA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomElesaScript, EVENT_MEMBERS_ROOM_ELESA
+	object_event  5,  4, SPRITE_BIANCA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MembersRoomBiancaScript, EVENT_MEMBERS_ROOM_BIANCA
 	

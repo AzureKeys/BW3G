@@ -147,9 +147,9 @@ EngineFlags:
 	engine_flag wDailyRematchFlags, 17 ; iris
 	engine_flag wDailyRematchFlags, 18 ; cynthia
 	engine_flag wDailyRematchFlags, 19 ; caitlin
+	engine_flag wDailyRematchFlags, 20 ; nate/rosa
+	engine_flag wDailyRematchFlags, 21 ; hilbert/hilda
 	
-	engine_flag wDailyRematchFlags, 20 ; vance
-	engine_flag wDailyRematchFlags, 21 ; wilton
 	engine_flag wDailyRematchFlags, 22 ; parry
 	engine_flag wDailyRematchFlags, 23 ; erin
 

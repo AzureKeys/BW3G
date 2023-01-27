@@ -98,9 +98,9 @@ CaitlinsHouseCynthiaScript:
 	faceplayer
 	opentext
 	checkcode VAR_WEEKDAY
-	ifnotequal SATURDAY, .NotSaturday
+	ifnotequal THURSDAY, .NotThursday
 	checkflag ENGINE_CYNTHIA
-	iftrue .NotSaturday
+	iftrue .NotThursday
 	writetext CaitlinsHouseCynthiaBattleIntroText
 	waitbutton
 	closetext
@@ -111,7 +111,7 @@ CaitlinsHouseCynthiaScript:
 	reloadmapafterbattle
 	setflag ENGINE_CYNTHIA
 	opentext
-.NotSaturday
+.NotThursday
 	writetext CaitlinsHouseCynthiaAfterBattleText
 	waitbutton
 	closetext

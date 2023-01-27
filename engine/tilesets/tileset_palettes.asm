@@ -70,8 +70,9 @@ LoadSpecialMapPalette:
 
 .port
 	ld a, [wMapGroup]
-	cp 3 ; MapGroup_Humilau
+	cp GROUP_HUMILAU_GYM
 	jr nz, .do_nothing
+; Humilau Gym is the only map in Humilau Group with PORT tileset
 	call LoadHumilauGymPalette
 	scf
 	ret
@@ -80,13 +81,13 @@ LoadSpecialMapPalette:
 ; All maps with PkmnLeague Tileset are in PkmnLeague Group
 ; Are we in Victory Road Entrance?
 	ld a, [wMapNumber]
-	cp 5 ; VictoryRoadEntranceSouthRight
+	cp MAP_VICTORY_ROAD_ENTRANCE_SOUTH_RIGHT
 	jr z, .load_vr_entrance
-	cp 6 ; VictoryRoadEntranceSouthLeft
+	cp MAP_VICTORY_ROAD_ENTRANCE_SOUTH_LEFT
 	jr z, .load_vr_entrance
-	cp 7 ; VictoryRoadEntranceNorth
+	cp MAP_VICTORY_ROAD_ENTRANCE_NORTH
 	jr z, .load_vr_entrance
-	cp 8 ; VictoryRoadEntranceNorthConnectionDummy
+	cp MAP_VICTORY_ROAD_ENTRANCE_NORTH_CONNECTION_DUMMY
 	jr z, .load_vr_entrance
 ; If not, it must be PkmnLeagueEntrance/Main
 	ld a, [wCurTimeOfDay]
@@ -116,7 +117,7 @@ LoadSpecialMapPalette:
 
 .tower
 	ld a, [wMapNumber] ; All TILESET_TOWER maps are in group DUNGEONS
-	cp 47 ; DragonspiralTowerRoof
+	cp MAP_DRAGONSPIRAL_TOWER_ROOF
 	jr nz, .tower_day
 	ld a, [wCurTimeOfDay] ; Roof can have NITE palette
 	cp NITE_F
@@ -132,15 +133,13 @@ LoadSpecialMapPalette:
 
 .airport
 	ld a, [wMapGroup]
-	cp 20 ; mapgroup_Opelucid
+	cp GROUP_SHOPPING_MALL_NINE
 	jr z, .load_airport ; Shopping Mall Nine uses Airport palettes
-	cp 6 ; mapgroup_Lentimas
-	jr z, .load_airport ; Must be Lentimas Airport, load Airport palettes
-	cp 21 ; mapgroup_Icirrus
+	cp GROUP_TUBELINE_BRIDGE
 	jr z, .plane ; Tubeline Bridge uses plane palettes
 ; Must be mapgroup_Mistralton
 	ld a, [wMapNumber]
-	cp 7 ; MistraltonAirport
+	cp MAP_MISTRALTON_AIRPORT
 	jr z, .load_airport
 .plane
 	ld a, [wCurTimeOfDay]
@@ -180,7 +179,7 @@ LoadSpecialMapPalette:
 
 .champions_room
 	ld a, [wMapGroup]
-	cp 26 ; mapgroup_PkmnLeague
+	cp GROUP_CHAMPIONS_ROOM
 	jr nz, .do_nothing
 	call LoadChampionPalette
 	scf
@@ -188,7 +187,7 @@ LoadSpecialMapPalette:
 
 .radio_tower
 	ld a, [wMapGroup]
-	cp 18 ; mapgroup_Driftveil
+	cp GROUP_DRIFTVEIL_STONE_EMPORIUM
 	jr z, .stone_emporium
 	call LoadRadioTowerPalette
 	scf
@@ -250,22 +249,20 @@ LoadSpecialMapPalette:
 	
 .facility
 	ld a, [wMapGroup]
-	cp 9 ; mapgroup_Castelia
+	cp GROUP_CASTELIA_GYM
 	jr nz, .do_nothing
 	call LoadCasteliaGymPalette
 	scf
 	ret
 	
 .cave
-	ld a, [wMapGroup]
-	cp 1 ; mapgroup_Dungeons
-	jp nz, .do_nothing
+; All maps with CAVE tileset are in Dungeons Group
 	ld a, [wMapNumber]
-	cp 32 ; ChargestoneCave1F
+	cp MAP_CHARGESTONE_CAVE_1F
 	jr z, .chargestone
-	cp 33 ; ChargestoneCaveB1F
+	cp MAP_CHARGESTONE_CAVE_B1F
 	jr z, .chargestone
-	cp 34 ; ChargestoneCaveB2F
+	cp MAP_CHARGESTONE_CAVE_B2F
 	jp nz, .do_nothing
 .chargestone
 	call LoadChargestonePalette
@@ -274,10 +271,10 @@ LoadSpecialMapPalette:
 	
 .traditional_house
 	ld a, [wMapGroup]
-	cp 1 ; mapgroup_Dungeons
+	cp GROUP_CELESTIAL_TOWER_ROOF
 	jp nz, .do_nothing
 	ld a, [wMapNumber]
-	cp 37 ; CelestialTowerRoof
+	cp MAP_CELESTIAL_TOWER_ROOF
 	jp nz, .do_nothing
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
@@ -293,16 +290,16 @@ LoadSpecialMapPalette:
 	
 .elite_four_room
 	ld a, [wMapGroup]
-	cp 19 ; mapgroup_Mistralton
+	cp GROUP_MISTRALTON_GYM_1F
 	jr z, .MistraltonGym
-	cp 26 ; mapgroup_PkmnLeague
+	cp GROUP_PKMN_LEAGUE_MAIN
 	jp nz, .do_nothing
 	ld a, [wMapNumber]
-	cp 13 ; GrimsleysRoom
+	cp MAP_GRIMSLEYS_ROOM
 	jp z, .Grimsley
-	cp 14 ; MarshalsRoom
+	cp MAP_MARSHALS_ROOM
 	jp z, .Marshal
-	cp 15 ; ElesasRoom
+	cp MAP_ELESAS_ROOM
 	jp z, .Elesa
 	call LoadColressPalette
 	scf
@@ -330,7 +327,7 @@ LoadSpecialMapPalette:
 	
 .underground
 	ld a, [wMapGroup]
-	cp 1 ; mapgroup_Dungeons
+	cp GROUP_CASTELIA_SEWERS
 	jp nz, .do_nothing
 	call LoadSewerPalette
 	scf
@@ -338,9 +335,9 @@ LoadSpecialMapPalette:
 	
 .game_corner
 	ld a, [wMapGroup]
-	cp 1 ; mapgroup_Dungeons
+	cp GROUP_NIMBASA_PARK_COASTER_ROOM
 	jr z, .coaster
-	cp 14 ; mapgroup_Striaton
+	cp GROUP_STRIATON_GYM
 	jp nz, .do_nothing
 	call LoadStriatonGymPalette
 	scf
@@ -353,8 +350,9 @@ LoadSpecialMapPalette:
 	
 .castelia
 	ld a, [wMapNumber]
-	cp 1
+	cp MAP_CASTELIA_CITY_NORTH
 	jp nz, .do_nothing
+; All maps with CASTELIA tileset are in Mapgroup_Castelia
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .castelianite
@@ -383,7 +381,7 @@ LoadSpecialMapPalette:
 .icirrus
 ; Dragonspiral Tower has its own palettes
 	ld a, [wMapGroup]
-	cp 21 ; MapGroup_Icirrus
+	cp GROUP_ICIRRUS_CITY_NORTH
 	jr nz, .ds_tower
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
@@ -438,7 +436,7 @@ LoadSpecialMapPalette:
 	
 .bridge
 	ld a, [wMapGroup]
-	cp 18 ; mapgroup_Driftveil
+	cp GROUP_DRIFTVEIL_DRAWBRIDGE
 	jr z, .drawbridge
 	ld a, [wCurTimeOfDay]
 	cp NITE_F

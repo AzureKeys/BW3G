@@ -128,15 +128,25 @@ ScientistFDreamyardAfterText:
 	done
 	
 PsychicMDreamyardSeenText:
-	text "..."
+	text "Heheh…"
+	
+	para "I always know who"
+	line "wins in every"
+	cont "battle!"
 	done
 
 PsychicMDreamyardBeatenText:
-	text "..."
+	text "What…? Was every-"
+	line "thing up until now"
+	cont "a coincidence…?"
 	done
 
 PsychicMDreamyardAfterText:
-	text "..."
+	text "Feelings matter…"
+	line "If I believe,"
+	
+	para "maybe then I can"
+	line "be assured to win!"
 	done
 	
 PsychicFDreamyardSeenText:

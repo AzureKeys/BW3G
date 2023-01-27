@@ -22,7 +22,7 @@ LoadSpecialMapObjectPalette:
 
 .champions_room
 	ld a, [wMapGroup]
-	cp 26 ; mapgroup_PkmnLeague
+	cp GROUP_CHAMPIONS_ROOM
 	jp nz, .do_nothing
 	call LoadDragonspiralRoofObPalette
 	scf
@@ -30,10 +30,10 @@ LoadSpecialMapObjectPalette:
 	
 .nimbasa
 	ld a, [wMapGroup]
-	cp 25 ; NimbasaOuter
+	cp GROUP_R_5
 	jr nz, .do_nothing
 	ld a, [wMapNumber]
-	cp 4 ; Rt5
+	cp MAP_R_5
 	jr nz, .do_nothing
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
@@ -63,7 +63,7 @@ LoadSpecialMapObjectPalette:
 .tower
 ; All maps with TILESET_TOWER are in the Dungeons group
 	ld a, [wMapNumber]
-	cp 47 ; DragonspiralTowerRoof
+	cp MAP_DRAGONSPIRAL_TOWER_ROOF
 	jr nz, .do_nothing
 	call LoadDragonspiralRoofObPalette
 	scf
@@ -71,16 +71,16 @@ LoadSpecialMapObjectPalette:
 	
 .traditional_house
 	ld a, [wMapGroup]
-	cp 11 ; mapgroup_Floccesy
+	cp GROUP_FLOCCESY_RANCH_BARN
 	jr nz, .do_nothing
-; Barn is the only map in Floccesy group with Traditional House tilesets/bridge_nite_ob
+; Barn is the only map in Floccesy group with Traditional House tileset
 	call LoadBarnObPalette
 	scf
 	ret
 
 .elite_four_room
 	ld a, [wMapGroup]
-	cp 19 ; mapgroup_Mistralton
+	cp GROUP_MISTRALTON_CITY
 	jr nz, .do_nothing
 	call LoadMistraltonGymObPalette
 	scf
@@ -101,10 +101,10 @@ LoadSpecialMapObjectPalette:
 
 .opelucid
 	ld a, [wMapGroup]
-	cp 20 ; mapgroup_Opelucid
+	cp GROUP_OPELUCID_CITY
 	jr nz, .do_nothing
 	ld a, [wMapNumber]
-	cp 4 ; OpelucidCity
+	cp MAP_OPELUCID_CITY
 	jr nz, .do_nothing
 	ld a, [wCurTimeOfDay]
 	cp NITE_F

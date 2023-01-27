@@ -236,7 +236,7 @@ LoadWarpData:
 ; VICTORY_ROAD_OUTDOOR_1F, VICTORY_ROAD_OUTDOOR_2F
 ; Dig and Escape Rope should not take you to them.
 	ld a, [wPrevMapGroup]
-	cp GROUP_CELESTIAL_TOWER_ROOF ; all 3 are in group DUNGEONS
+	cp GROUP_CELESTIAL_TOWER_ROOF ; all are in group DUNGEONS
 	jr nz, .not_mt_moon_or_tin_tower
 	ld a, [wPrevMapNumber]
 	cp MAP_GIANT_CHASM_B1F

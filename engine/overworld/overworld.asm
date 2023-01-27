@@ -119,7 +119,7 @@ AddIndoorSprites:
 
 AddOutdoorSprites:
 	ld a, [wMapGroup]
-	cp 1 ; Dungeons
+	cp GROUP_GIANT_CHASM_1F ; Dungeons
 	; Outdoor Dungeon maps are all self-contained
 	jr z, AddIndoorSprites
 	dec a
