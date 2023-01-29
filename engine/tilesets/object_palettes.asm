@@ -5,7 +5,7 @@ LoadSpecialMapObjectPalette:
 	cp TILESET_VILLAGE_BRIDGE
 	jp z, .bridge
 	cp TILESET_ELITE_FOUR_ROOM
-	jr z, .elite_four_room
+	jp z, .elite_four_room
 	cp TILESET_OPELUCID
 	jp z, .opelucid
 	cp TILESET_TRADITIONAL_HOUSE
@@ -18,7 +18,19 @@ LoadSpecialMapObjectPalette:
 	jr z, .nimbasa
 	cp TILESET_CHAMPIONS_ROOM
 	jr z, .champions_room
+	cp TILESET_POKECENTER
+	jr z, .pokecenter
 	jp .do_nothing
+	
+.pokecenter
+	ld a, [wMapGroup]
+	cp GROUP_CASTELIA_POKECENTER_1F
+	jp nz, .do_nothing
+; Castelia Pokecenter is the only map in Castelia group with 
+; Pokecenter tileset
+	call LoadBarnObPalette
+	scf
+	ret
 
 .champions_room
 	ld a, [wMapGroup]

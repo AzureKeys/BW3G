@@ -4,6 +4,8 @@
 	const NIMBASAPARKOUTSIDE_QUICK_BALL
 	const NIMBASAPARKOUTSIDE_BLOCKER
 	const NIMBASAPARKOUTSIDE_CHEREN
+	const NIMBASAPARKOUTSIDE_NATE
+	const NIMBASAPARKOUTSIDE_ROSA
 
 NimbasaParkOutside_MapScripts:
 	db 4 ; scene scripts
@@ -12,7 +14,8 @@ NimbasaParkOutside_MapScripts:
 	scene_script .AfterScene ; SCENE_NIMBASA_PARK_OUTSIDE_AFTER
 	scene_script .DummyScene3 ; SCENE_NIMBASA_PARK_OUTSIDE_NOTHING
 
-	db 0 ; callbacks
+	db 1 ; callbacks
+	callback MAPCALLBACK_OBJECTS, .NateRosa
 
 .DummyScene0:
 	end
@@ -27,6 +30,33 @@ NimbasaParkOutside_MapScripts:
 
 .DummyScene3:
 	end
+	
+.NateRosa:
+	checkevent EVENT_NATE_ROSA_READY_FOR_BATTLE
+	iffalse .Disappear
+	checkevent EVENT_BEAT_NATE_ROSA
+	iffalse .AppearNateRosa
+	checkcode VAR_WEEKDAY
+	ifnotequal SATURDAY, .Disappear
+	checkflag ENGINE_NATE_ROSA
+	iftrue .Disappear
+	
+.AppearNateRosa
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .Rosa
+	disappear NIMBASAPARKOUTSIDE_ROSA
+	appear NIMBASAPARKOUTSIDE_NATE
+	jump .Done
+.Rosa
+	disappear NIMBASAPARKOUTSIDE_NATE
+	appear NIMBASAPARKOUTSIDE_ROSA
+	jump .Done
+	
+.Disappear
+	disappear NIMBASAPARKOUTSIDE_NATE
+	disappear NIMBASAPARKOUTSIDE_ROSA
+.Done
+	return
 	
 .CherenConfrontation:
 	playmusic MUSIC_ROCKET_ENCOUNTER
@@ -84,6 +114,65 @@ NimbasaParkBlockerScript:
 	applymovement NIMBASAPARKOUTSIDE_BLOCKER, NimbasaParkBlockerMovement2
 	turnobject NIMBASAPARKOUTSIDE_BLOCKER, LEFT
 	applymovement PLAYER, NimbasaParkBlockedMovement
+	end
+	
+NimbasaParkOutsideNateRosaScript:
+	faceplayer
+	opentext
+	writetext NimbasaParkOutsideNateRosaText
+	waitbutton
+	closetext
+	winlosstext NateRosaWinText, 0
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .Rosa
+; Nate
+	checkevent EVENT_GOT_SNIVY
+	iftrue .NateOshawott
+	checkevent EVENT_GOT_TEPIG
+	iftrue .NateSnivy
+; NateTepig
+	loadtrainer NATE, NATE_TEPIG
+	jump .BattleStart
+.NateOshawott
+	loadtrainer NATE, NATE_OSHAWOTT
+	jump .BattleStart
+.NateSnivy
+	loadtrainer NATE, NATE_SNIVY
+	jump .BattleStart
+	
+.Rosa
+	checkevent EVENT_GOT_SNIVY
+	iftrue .RosaOshawott
+	checkevent EVENT_GOT_TEPIG
+	iftrue .RosaSnivy
+; RosaTepig
+	loadtrainer ROSA, ROSA_TEPIG
+	jump .BattleStart
+.RosaOshawott
+	loadtrainer ROSA, ROSA_OSHAWOTT
+	jump .BattleStart
+.RosaSnivy
+	loadtrainer ROSA, ROSA_SNIVY
+; fallthrough
+.BattleStart
+	startbattle
+	reloadmapafterbattle
+	setevent EVENT_BEAT_NATE_ROSA
+	setflag ENGINE_NATE_ROSA
+	opentext
+	writetext NimbasaParkOutsideNateRosaText
+	waitbutton
+	closetext
+	special FadeOutMusic
+	special FadeBlackQuickly
+	pause 15
+	playsound SFX_ESCAPE_ROPE
+	waitsfx
+	disappear NIMBASAPARKOUTSIDE_NATE
+	disappear NIMBASAPARKOUTSIDE_ROSA
+	pause 15
+	special FadeInQuickly
+	playmapmusic
 	end
 	
 NimbasaParkOutsideBlocker:
@@ -239,6 +328,14 @@ NimbasaParkAfterCherenText2:
 	para "Thanks again,"
 	line "<PLAY_G>."
 	done
+	
+NimbasaParkOutsideNateRosaText:
+	text "..."
+	done
+	
+NateRosaWinText:
+	text "...!"
+	done
 
 NimbasaParkOutside_MapEvents:
 	db 0, 0 ; filler
@@ -255,10 +352,12 @@ NimbasaParkOutside_MapEvents:
 	db 1 ; bg events
 	bg_event 35,  6, BGEVENT_ITEM, NimbasaParkOutsideFullHeal
 
-	db 5 ; object events
+	db 7 ; object events
 	object_event 47, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaParkOutsideXAccuracy, EVENT_NIMBASA_PARK_OUTSIDE_X_ACCURACY
 	object_event 10, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaParkOutsideIceHeal, EVENT_NIMBASA_PARK_OUTSIDE_ICE_HEAL
 	object_event 12,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaParkOutsideQuickBall, EVENT_NIMBASA_PARK_OUTSIDE_QUICK_BALL
 	object_event  8,  8, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaParkOutsideBlocker, EVENT_NIMBASA_PARK_BLOCKER
 	object_event  7,  8, SPRITE_CHEREN, SPRITEMOVEDATA_STANDING_RIGHT, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, -1, EVENT_NIMBASA_PARK_OUTSIDE_CHEREN
+	object_event 29,  8, SPRITE_NATE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaParkOutsideNateRosaScript, EVENT_NIMBASA_PARK_NATE
+	object_event 29,  8, SPRITE_ROSA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaParkOutsideNateRosaScript, EVENT_NIMBASA_PARK_ROSA
 	

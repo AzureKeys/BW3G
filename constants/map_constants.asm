@@ -89,6 +89,7 @@ ENDM
 	map_const VICTORY_ROAD_GROVE, 9, 13
 	map_const VICTORY_ROAD_CASTLE_OUTSIDE, 11, 10
 	map_const NS_ROOM, 5, 5
+	map_const NIMBASA_PARK_OUTSIDE, 27, 10
 	
 	newgroup                                                      ; 20
 
@@ -155,7 +156,6 @@ ENDM
 	map_const NIMBASA_NAME_RATER, 4, 4 
 	map_const R_4_NIMBASA_GATE, 5, 11
 	map_const NIMBASA_SUBWAY, 10, 9
-	map_const NIMBASA_PARK_OUTSIDE, 27, 10
 	
 	newgroup
 	

@@ -19,6 +19,17 @@ MembersRoom_MapScripts:
 	callback MAPCALLBACK_OBJECTS, .AppearPeople
 	
 .AppearPeople:
+; Bianca appears if we beat Nate/Rosa, but not Hilbert/Hilda
+	checkevent EVENT_BEAT_HILBERT_HILDA
+	iftrue .DisappearBianca
+	checkevent EVENT_BEAT_NATE_ROSA
+	iffalse .DisappearBianca
+	appear MEMBERSROOM_BIANCA
+	jump .HandleElesa
+.DisappearBianca
+	disappear MEMBERSROOM_BIANCA
+	
+.HandleElesa
 ; Elesa appears if we beat Caitlin/Cynthia, Rood, Hugh, Alder, & Iris
 ; but haven't yet beaten Nate/Rosa
 	checkevent EVENT_BEAT_NATE_ROSA
@@ -638,11 +649,60 @@ MembersRoomCynthiaText:
 	done
 	
 MembersRoomHughText:
-	text ""
+	text "Hey, <PLAY_G>!"
+	
+	para "I've been thinking"
+	line "on what I need to"
+	
+	para "become stronger,"
+	line "and I'm ready to"
+	
+	para "test out what I've"
+	line "come up with. You"
+	
+	para "should come meet"
+	line "me at the shelter"
+	
+	para "in DRIFTVEIL CITY,"
+	line "and I'll show you"
+	cont "what I've learned."
 	done
 	
 MembersRoomElesaText:
-	text ""
+	text "Oh, <PLAY_G>, is"
+	line "it? You're the"
+	
+	para "new champion,"
+	line "right?"
+	
+	para "I'm ELESA, of the"
+	line "ELITE FOUR."
+	
+	para "Listen, I was"
+	line "paying a visit to"
+	
+	para "my hometown in"
+	line "NIMBASA CITY, when"
+	
+	para "I ran into a"
+	line "trainer I remember"
+	
+	para "challenging back"
+	line "when I was a GYM"
+	cont "LEADER there."
+	
+	para "They were young,"
+	line "but they certainly"
+	
+	para "left an impression"
+	line "on me!"
+	
+	para "You may be able to"
+	line "find them hanging"
+	
+	para "around at the old"
+	line "PARK, where my GYM"
+	cont "used to be."
 	done
 	
 MembersRoomBiancaText:

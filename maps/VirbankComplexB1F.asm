@@ -104,7 +104,6 @@ VirbankComplexBroniusScript:
 	setscene SCENE_FINISHED
 	special FadeOutMusic
 	pause 15
-	playmusic MUSIC_P2_LAB
 	playmapmusic
 	end
 	
