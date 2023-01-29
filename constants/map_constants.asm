@@ -253,7 +253,7 @@ ENDM
 	map_const ACCUMULA_TRADE_HOUSE, 4, 4
 	map_const R_1, 19, 22
 	map_const NUVEMA_TOWN, 13, 12
-	map_const NUVEMA_MOM_HOUSE, 4, 4 
+	map_const NUVEMA_MOM_HOUSE, 5, 10
 	map_const NUVEMA_LAB, 5, 6
 
 	newgroup

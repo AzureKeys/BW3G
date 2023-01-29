@@ -23,7 +23,6 @@ AccumulaHouse_Blocks:
 DriftveilHouse_Blocks:
 DriftveilFossilHouse_Blocks:
 DriftveilTradeHouse_Blocks:
-NuvemaMomHouse_Blocks:
 Rt18House_Blocks:
 MistraltonHouse_Blocks:
 MistraltonMoveReminderHouse_Blocks:
@@ -709,4 +708,7 @@ MembersRoom_Blocks:
 	
 LentimasLostlornGate_Blocks:
 	INCBIN "maps/LentimasLostlornGate.ablk"
+	
+NuvemaMomHouse_Blocks:
+	INCBIN "maps/NuvemaMomHouse.ablk"
 	
