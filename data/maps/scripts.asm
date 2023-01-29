@@ -259,10 +259,10 @@ INCLUDE "maps/TubelineBridge.asm"
 INCLUDE "maps/IcirrusCitySouthConnectionDummy.asm"
 INCLUDE "maps/IcirrusCitySouth.asm"
 INCLUDE "maps/IcirrusCityNorth.asm"
-INCLUDE "maps/Rt8.asm"
 
 SECTION "Map Scripts 14", ROMX
 
+INCLUDE "maps/Rt8.asm"
 INCLUDE "maps/IcirrusPokecenter1F.asm"
 INCLUDE "maps/IcirrusBoutique.asm"
 INCLUDE "maps/R11Truck.asm"
@@ -279,10 +279,10 @@ INCLUDE "maps/IcirrusHouse.asm"
 INCLUDE "maps/DreamyardB1F.asm"
 INCLUDE "maps/Dreamyard.asm"
 INCLUDE "maps/GameCorner.asm"
-INCLUDE "maps/OpelucidBlackbeltHouse.asm"
 
 SECTION "Map Scripts 15", ROMX
 
+INCLUDE "maps/OpelucidBlackbeltHouse.asm"
 INCLUDE "maps/OpelucidBattleHouse.asm"
 INCLUDE "maps/DraydensHouse1F.asm"
 INCLUDE "maps/DraydensHouse2F.asm"

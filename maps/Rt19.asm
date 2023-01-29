@@ -369,25 +369,30 @@ DepotAgent2R19AfterText:
 	done
 	
 MaidR19SeenText:
-	text "I'm a sailor man!"
+	text "You! Are you a fan"
+	line "of that person?"
 
-	para "But I'm training"
-	line "#MON, so I can"
-	cont "become the CHAMP!"
+	para "But that person is"
+	line "mine!"
 	done
 
 MaidR19BeatenText:
-	text "My lack of train-"
-	line "ing is obvious…"
+	text "Oh no, oh why?"
+	line "I'm sorry…"
 	done
 
 MaidR19AfterText:
-	text "BADGES prove that"
-	line "you've beaten GYM"
-	cont "LEADERS."
+	text "Heehee… That"
+	line "person I'm talking"
 
-	para "No wonder you're"
-	line "so good!"
+	para "about is the GYM"
+	line "LEADER, CHEREN!"
+	
+	para "Though come to"
+	line "think of it,"
+	
+	para "you're pretty cool"
+	line "too!"
 	done
 	
 BakerR19SeenText:

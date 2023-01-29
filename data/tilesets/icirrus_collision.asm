@@ -205,3 +205,4 @@
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; cc
 	tilecoll FLOOR, FLOOR, FLOOR, PIT ; cd
 	tilecoll WALL, FLOOR, FLOOR, FLOOR ; ce
+	tilecoll FLOOR, FLOOR, WALL, WALL ; cf

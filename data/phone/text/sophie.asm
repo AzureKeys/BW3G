@@ -1,101 +1,114 @@
 SophiePhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "Ah! Is this"
+	line "<PLAY_G>?"
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "Heehee… This is"
+	line "SOPHIE, on ROUTE"
+	cont "19!"
 	
-	para "How's about a"
-	line "rematch?"
+	para "I can't believe you"
+	line "remembered me!"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "I've been thinking"
+	line "about our last"
+	cont "#MON battle."
+	
+	para "I'd love it if you"
+	line "would show me"
+	cont "another!"
+	
+	para "Don't be late!"
+	line "Heehee!"
 	done
 	
 SophiePhoneAfterBattleText:
-	text "Hey <PLAY_G>."
+	text "Oh, hi <PLAY_G>!"
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "That battle today"
+	line "made me an even"
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "bigger fan of you"
+	line "than before!"
+	
+	para "I may even like"
+	line "you more than"
+	
+	para "CHEREN now!"
+	line "Heehee…"
 	done
 	
 SophiePhoneWaitingText:
-	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
+	text "Hi <PLAY_G>,"
+	line "Don't forget I'm"
 
-	para "Don't be late!"
+	para "waiting to see you"
+	line "on ROUTE 19!"
+	
+	para "I can't wait to"
+	line "see what you've"
+	
+	para "got in store!"
+	line "Heehee…"
 	done
 	
 SophieAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "I think I might"
+	line "become a fan of"
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
-
-	para "Would you tell me"
-	line "your number?"
+	para "you too! Will you"
+	line "let me have your"
+	cont "phone number?"
 	done
 
 SophieAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "I'd like to be"
+	line "your fan! Will you"
 
-	para "Would you tell me"
-	line "your number?"
+	para "let me have your"
+	line "phone number?"
 	done
 
 SophieNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "Heehee, thanks!"
+	line "Call me if you"
+	
+	para "want to show me"
+	line "another battle!"
 	done
 
 SophieNumberDeclinedText:
-	text "Oh, OK. Too bad…"
+	text "Oh, that's too bad…"
 
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	para "I'll just have to"
+	line "admire from afar…"
 	done
 
 SophiePhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
-
-	para "It can't register"
-	line "my number."
+	text "Oh, you've already"
+	line "got so many fans,"
+	cont "your phone's full!"
 	done
 
 SophieRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
+	text "Hi, wow, um…"
 
-	para "Let's get started"
-	line "right away!"
+	para "Did you want to"
+	line "battle?"
 	done
 
 SophieGiftText:
-	text "Hey, there you"
-	line "are!"
+	text "Wow, I'm star-"
+	line "struck!"
 
-	para "Here's a gift, as"
-	line "promised!"
+	para "Here's a gift I"
+	line "brought just for"
+	cont "you!"
 	done
 
 SophiePackFullText:
-	text "Your PACK's full?"
+	text "Oh, you don't have"
+	line "room for my gift?"
 
-	para "Come back later--"
-	line "that'll do it."
+	para "Ah, I'm sorry…"
 	done
 	

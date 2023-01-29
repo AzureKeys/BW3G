@@ -706,7 +706,33 @@ MembersRoomElesaText:
 	done
 	
 MembersRoomBiancaText:
-	text ""
+	text "Oh, <PLAY_G>, it's"
+	line "good to see you!"
+	
+	para "You've certainly"
+	line "gotten much"
+	
+	para "stronger as a"
+	line "#MON trainer"
+	
+	para "than when we first"
+	line "met!"
+	
+	para "speaking of which…"
+	
+	para "An old friend of"
+	line "mine stopped by to"
+	cont "visit today!"
+	
+	para "They're staying in"
+	line "NUVEMA TOWN for a"
+	
+	para "while, if you want"
+	line "to go and say hi!"
+	
+	para "Tell them the"
+	line "PROF. sent you!"
+	cont "Hee hee!"
 	done
 	
 MembersRoomVendingText:

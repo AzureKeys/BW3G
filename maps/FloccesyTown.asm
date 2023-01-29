@@ -30,6 +30,8 @@ FloccesyTown_MapScripts:
 	iffalse .done
 	checkevent EVENT_BEAT_ALDER
 	iffalse .DisappearBlocker
+	checkflag ENGINE_ALDER
+	iftrue .DisappearBlocker
 	checkcode VAR_WEEKDAY
 	ifequal WEDNESDAY, .DisappearBlocker
 	appear FLOCCESYTOWN_BLOCKER
