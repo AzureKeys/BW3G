@@ -198,9 +198,10 @@ IcirrusCitySignText:
 IcirrusCitySouth_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 3 ; warp events
 	warp_event 13,  3, ICIRRUS_POKECENTER_1F, 1
 	warp_event 35, 17, ICIRRUS_HOUSE, 1
+	warp_event  4, 13, TWIST_MOUNTAIN_1F, 1
 
 	db 16 ; coord events
 	coord_event 32,  0, SCENE_DEFAULT, IcirrusCityLowerFloorScript

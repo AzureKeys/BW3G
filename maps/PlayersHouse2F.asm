@@ -56,7 +56,7 @@ PlayersHouseRadioScript:
 	; end
 	
 	; opentext
-	; givepoke HYDREIGON, 100, NO_ITEM
+	; givepoke HYDREIGON, 5, CHOICE_BAND
 	; closetext
 	; setflag ENGINE_WAVEBADGE
 	; setflag ENGINE_SPOOKYBADGE

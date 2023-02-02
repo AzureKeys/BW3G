@@ -364,6 +364,9 @@ ENDM
 	map_attributes IcirrusCave, ICIRRUS_CAVE, $02, 0
 	map_attributes DraydensHouse1F, DRAYDENS_HOUSE_1F, $00, 0
 	map_attributes DraydensHouse2F, DRAYDENS_HOUSE_2F, $00, 0
+	map_attributes TwistMountainEntrance, TWIST_MOUNTAIN_ENTRANCE, $09, 0
+	map_attributes TwistMountain1F, TWIST_MOUNTAIN_1F, $09, 0
+	map_attributes TwistMountain2F, TWIST_MOUNTAIN_2F, $09, 0
 	map_attributes TwistMountain3F, TWIST_MOUNTAIN_3F, $09, 0
 	map_attributes Rt23House, R_23_HOUSE, $00, 0
 	map_attributes VictoryRoadCave1F, VICTORY_ROAD_CAVE_1F, $09, 0

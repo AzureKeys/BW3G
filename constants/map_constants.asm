@@ -78,7 +78,7 @@ ENDM
 	map_const MISTRALTON_CAVE_1F, 13, 11
 	map_const MISTRALTON_CAVE_2F, 13, 13
 	map_const MISTRALTON_CAVE_3F, 14, 13
-	map_const TWIST_MOUNTAIN_3F, 16, 16
+	map_const TWIST_MOUNTAIN_ENTRANCE, 5, 5
 	map_const DREAMYARD, 20, 19
 	map_const DREAMYARD_B1F, 12, 12
 	map_const VICTORY_ROAD_CAVE_1F, 20, 19
@@ -90,6 +90,9 @@ ENDM
 	map_const VICTORY_ROAD_CASTLE_OUTSIDE, 11, 10
 	map_const NS_ROOM, 5, 5
 	map_const NIMBASA_PARK_OUTSIDE, 27, 10
+	map_const TWIST_MOUNTAIN_1F, 16, 17
+	map_const TWIST_MOUNTAIN_2F, 20, 17
+	map_const TWIST_MOUNTAIN_3F, 19, 14
 	
 	newgroup                                                      ; 20
 

@@ -690,6 +690,8 @@ ParsePlayerAction:
 	bit SUBSTATUS_ENCORED, [hl]
 	jr z, .not_encored
 	ld a, [wLastPlayerMove]
+	and a
+	jr z, .not_encored
 	ld [wCurPlayerMove], a
 	jr .encored
 

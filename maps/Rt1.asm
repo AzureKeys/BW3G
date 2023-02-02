@@ -263,25 +263,30 @@ PkmnRangerFR1AfterText:
 	done
 	
 MaidR1SeenText:
-	text "What? You're a"
-	line "trainer? Awesome!"
+	text "What? A battle at"
+	line "a place like this?"
+	
+	para "Everyone is"
+	line "watching us!"
 	done
 
 MaidR1BeatenText:
-	text "Oh well… Time for"
-	line "my #MON to"
-	cont "return…"
+	text "Well, thanks to"
+	line "you, I've overcome"
+	
+	para "my performance"
+	line "anxiety."
 	done
 
 MaidR1AfterText:
-	text "#MON just wait"
-	line "inside their #-"
+	text "I guess I just"
+	line "need to keep"
 	
-	para "BALLs until they"
-	line "are needed…"
+	para "pushing my"
+	line "boundaries if I"
 	
-	para "#MON sure are"
-	line "convenient!"
+	para "want to overcome"
+	line "my anxiety…"
 	done
 	
 BlackbeltR1SeenText:

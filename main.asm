@@ -339,8 +339,6 @@ INCLUDE "engine/phone/scripts/lois.asm"
 
 SECTION "Phone Text", ROMX
 
-INCLUDE "data/phone/text/bianca.asm"
-INCLUDE "data/phone/text/cheren.asm"
 INCLUDE "data/phone/text/dan.asm"
 INCLUDE "data/phone/text/ariana.asm"
 INCLUDE "data/phone/text/carla.asm"
@@ -527,6 +525,8 @@ INCLUDE "data/text/std_text.asm"
 
 SECTION "Special Phone Text", ROMX
 
+INCLUDE "data/phone/text/bianca.asm"
+INCLUDE "data/phone/text/cheren.asm"
 INCLUDE "data/phone/text/mom.asm"
 INCLUDE "data/phone/text/bill.asm"
 INCLUDE "data/phone/text/elm.asm"

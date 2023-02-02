@@ -1,101 +1,114 @@
 ClarissaPhoneAskRematchText:
-	text "Hey <PLAY_G>,"
-	line "it's DAN!"
+	text "Oh, <PLAY_G>?"
+	line "Yes, this is"
+	cont "CLARISSA."
 
-	para "My #MON's"
-	line "gotten a lot"
-	cont "stronger since"
-	cont "last time!"
+	para "What? You want to"
+	line "battle?"
 	
-	para "How's about a"
-	line "rematch?"
+	para "Oh dear…"
 	
-	para "I'll be waiting on"
-	line "ROUTE 13. See ya!"
+	para "… … … …"
+	
+	para "Okay, I'll do it!"
+	line "Please, come meet"
+	cont "me on ROUTE 1."
 	done
 	
 ClarissaPhoneAfterBattleText:
-	text "Hey <PLAY_G>."
+	text "Oh, hi <PLAY_G>."
 
-	para "We're training"
-	line "after that loss"
-	cont "today."
+	para "I was anxious to"
+	line "battle you today,"
 	
-	para "Next time we'll"
-	line "win for sure!"
+	para "but doing it"
+	line "helped calm my"
+	cont "nerves a little…"
+	
+	para "I'll just have to"
+	line "keep battling to"
+	
+	para "build up my"
+	line "confidence."
+	
+	para "Thank you,"
+	line "<PLAY_G>!"
 	done
 	
 ClarissaPhoneWaitingText:
-	text "Hey <PLAY_G>,"
-	line "I'm waiting for"
-	cont "you on ROUTE 13!"
-
-	para "Don't be late!"
+	text "Oh, <PLAY_G>, I'm"
+	line "getting anxious"
+	
+	para "waiting for our"
+	line "battle…"
+	
+	para "Please, hurry to"
+	line "ROUTE 1 before I"
+	cont "get too nervous!"
 	done
 	
 ClarissaAskNumber1Text:
-	text "You're pretty"
-	line "good!"
+	text "Maybe it would"
+	line "help if I battle"
+	cont "you again."
 
-	para "You can call me"
-	line "if you want a"
-	cont "rematch!"
-
-	para "Would you tell me"
-	line "your number?"
+	para "Please, will you"
+	line "take my phone"
+	cont "number?"
 	done
 
 ClarissaAskNumber2Text:
-	text "You can call me"
-	line "if you want a"
-	cont "rematch!"
+	text "If I battle you"
+	line "again, it may help"
+	cont "with my anxiety."
 
-	para "Would you tell me"
-	line "your number?"
+	para "Please, will you"
+	line "take my phone"
+	cont "number?"
 	done
 
 ClarissaNumberAcceptedText:
-	text "Call me whenever"
-	line "you're looking"
-	cont "for a match!"
+	text "Oh, thank you!"
+	line "Please, call me"
+	
+	para "when you would"
+	line "like to battle."
 	done
 
 ClarissaNumberDeclinedText:
-	text "Oh, OK. Too bad…"
+	text "Oh, that's too bad…"
 
-	para "Well, if you ever"
-	line "want my number,"
-	cont "come see me, OK?"
+	para "Please, tell me if"
+	line "you change your"
+	cont "mind."
 	done
 
 ClarissaPhoneFullText:
-	text "Oh?"
-	line "Your phone's full."
-
-	para "It can't register"
-	line "my number."
+	text "Oh, you've got"
+	line "no more room in"
+	cont "your phone…"
 	done
 
 ClarissaRematchText:
-	text "Hi, I was waiting"
-	line "for you to show!"
+	text "Eek! I'm not sure"
+	line "if I'm ready for"
+	line "this…"
 
-	para "Let's get started"
-	line "right away!"
+	para "Here goes nothing!"
 	done
 
 ClarissaGiftText:
-	text "Hey, there you"
-	line "are!"
+	text "Thank you, I feel"
+	line "a little less"
+	cont "anxious."
 
-	para "Here's a gift, as"
-	line "promised!"
+	para "Please, take this"
+	line "as thanks!"
 	done
 
 ClarissaPackFullText:
-	text "Your PACK's full?"
-
-	para "Come back later--"
-	line "that'll do it."
+	text "Oh, it looks like"
+	line "you don't have any"
+	cont "room for it…"
 	done
 	

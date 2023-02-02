@@ -267,10 +267,6 @@ AceTrainerFVictoryRoadOutdoor2FAfterText:
 	done
 	
 ScientistMVictoryRoadOutdoor2FSeenText:
-	text "..."
-	done
-
-ScientistMVictoryRoadOutdoor2FBeatenText:
 	text "Hm… What could be"
 	line "the key to #MON"
 	
@@ -282,12 +278,12 @@ ScientistMVictoryRoadOutdoor2FBeatenText:
 	cont "you!"
 	done
 
-ScientistMVictoryRoadOutdoor2FAfterText:
+ScientistMVictoryRoadOutdoor2FBeatenText:
 	text "This was very"
 	line "helpful…"
 	done
-	
-ScientistFVictoryRoadOutdoor2FSeenText:
+
+ScientistMVictoryRoadOutdoor2FAfterText:
 	text "#MON are like a"
 	line "science to me."
 	
@@ -297,13 +293,27 @@ ScientistFVictoryRoadOutdoor2FSeenText:
 	para "their growth if I"
 	line "am to understand!"
 	done
+	
+ScientistFVictoryRoadOutdoor2FSeenText:
+	text "When I'm stuck"
+	line "inside the lab"
+	
+	para "every day, I get"
+	line "so stressed out!"
+	done
 
 ScientistFVictoryRoadOutdoor2FBeatenText:
-	text "..."
+	text "Aaaaah! So"
+	line "frustrating!"
 	done
 
 ScientistFVictoryRoadOutdoor2FAfterText:
-	text "..."
+	text "Battling #MON"
+	line "really helps blow"
+	cont "off steam!"
+	
+	para "I'm much less"
+	line "stressed now!"
 	done
 	
 BlackbeltVictoryRoadOutdoor2FSeenText:

@@ -273,7 +273,7 @@ Rt7North_MapEvents:
 
 	db 2 ; warp events
 	warp_event  5, 37, R_7_TRADE_HOUSE, 1
-	warp_event 15,  3, TWIST_MOUNTAIN_3F, 1
+	warp_event 15,  3, TWIST_MOUNTAIN_ENTRANCE, 1
 
 	db 0 ; coord events
 

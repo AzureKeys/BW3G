@@ -153,15 +153,26 @@ ParasolLadyNacreneAfterText:
 	done
 	
 RichBoyNacreneSeenText:
-	text "..."
+	text "Are you ready to"
+	line "experience a VIP"
+	
+	para "#MON battle"
+	line "performance?"
 	done
 
 RichBoyNacreneBeatenText:
-	text "..."
+	text "My performance"
+	line "wasn't up to VIP"
+	cont "standards…"
 	done
 
 RichBoyNacreneAfterText:
-	text "..."
+	text "A true VIP exper-"
+	line "ience is one where"
+	
+	para "you can truly see"
+	line "the battle up"
+	cont "close!"
 	done
 	
 NacreneOutskirtSignText:

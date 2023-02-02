@@ -623,8 +623,8 @@ DraydensHouse2F_Blocks:
 OpelucidBattleHouse_Blocks:
 	INCBIN "maps/OpelucidBattleHouse.ablk"
 
-TwistMountain3F_Blocks:
-	INCBIN "maps/TwistMountain3F.ablk"
+TwistMountainEntrance_Blocks:
+	INCBIN "maps/TwistMountainEntrance.ablk"
 
 Rt1_Blocks:
 	INCBIN "maps/Rt1.ablk"
@@ -711,4 +711,13 @@ LentimasLostlornGate_Blocks:
 	
 NuvemaMomHouse_Blocks:
 	INCBIN "maps/NuvemaMomHouse.ablk"
+
+TwistMountain1F_Blocks:
+	INCBIN "maps/TwistMountain1F.ablk"
+
+TwistMountain2F_Blocks:
+	INCBIN "maps/TwistMountain2F.ablk"
+
+TwistMountain3F_Blocks:
+	INCBIN "maps/TwistMountain3F.ablk"
 	
