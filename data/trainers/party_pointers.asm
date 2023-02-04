@@ -103,6 +103,7 @@ TrainerGroups:
 	dba CynthiaGroup
 	dba HughGroup
 	dba RoodGroup
+	dba NGroup
 	dba HilbertGroup
 	dba HildaGroup
 	dba NateGroup

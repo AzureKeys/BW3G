@@ -108,6 +108,7 @@ INCBIN "gfx/trainers/caitlin.gbcpal", middle_colors
 INCBIN "gfx/trainers/cynthia.gbcpal", middle_colors
 INCBIN "gfx/trainers/hugh.gbcpal", middle_colors
 INCBIN "gfx/trainers/rood.gbcpal", middle_colors
+INCBIN "gfx/trainers/n.gbcpal", middle_colors
 INCBIN "gfx/trainers/hilbert.gbcpal", middle_colors
 INCBIN "gfx/trainers/hilda.gbcpal", middle_colors
 INCBIN "gfx/trainers/nate.gbcpal", middle_colors

@@ -126,6 +126,7 @@
 	const SPRITE_HILDA ; 7a
 	const SPRITE_NATE ; 7b
 	const SPRITE_ROSA ; 7c
+	const SPRITE_N ; 7d
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $a0

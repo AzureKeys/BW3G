@@ -686,6 +686,9 @@ CHRIS EQU __enum__
 	trainerclass ROOD
 	const ROOD1
 	
+	trainerclass N
+	const N1
+	
 	trainerclass HILBERT
 	const HILBERT_SNIVY
 	const HILBERT_TEPIG

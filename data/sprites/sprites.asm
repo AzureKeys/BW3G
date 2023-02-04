@@ -130,3 +130,4 @@ OverworldSprites:
 	overworld_sprite HildaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite NateSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite RosaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite NSpriteGFX, 12, STANDING_SPRITE, PAL_OW_GREEN

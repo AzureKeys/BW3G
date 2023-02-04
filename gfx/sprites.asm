@@ -37,6 +37,7 @@ HilbertSpriteGFX::             INCBIN "gfx/sprites/hilbert.2bpp"
 HildaSpriteGFX::               INCBIN "gfx/sprites/hilda.2bpp"
 NateSpriteGFX::                INCBIN "gfx/sprites/nate.2bpp"
 RosaSpriteGFX::                INCBIN "gfx/sprites/rosa.2bpp"
+NSpriteGFX::                   INCBIN "gfx/sprites/n.2bpp"
 
 
 SECTION "Sprites 2", ROMX

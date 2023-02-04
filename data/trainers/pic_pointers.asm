@@ -103,6 +103,7 @@ TrainerPicPointers::
 	dba CynthiaPic
 	dba HughPic
 	dba RoodPic
+	dba NPic
 	dba HilbertPic
 	dba HildaPic
 	dba NatePic
