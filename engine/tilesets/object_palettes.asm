@@ -9,7 +9,7 @@ LoadSpecialMapObjectPalette:
 	cp TILESET_OPELUCID
 	jp z, .opelucid
 	cp TILESET_TRADITIONAL_HOUSE
-	jr z, .traditional_house
+	jp z, .traditional_house
 	cp TILESET_TOWER
 	jr z, .tower
 	cp TILESET_PKMN_LEAGUE
@@ -20,6 +20,8 @@ LoadSpecialMapObjectPalette:
 	jr z, .champions_room
 	cp TILESET_POKECENTER
 	jr z, .pokecenter
+	cp TILESET_CAVE
+	jr z, .cave
 	jp .do_nothing
 	
 .pokecenter
@@ -43,10 +45,10 @@ LoadSpecialMapObjectPalette:
 .nimbasa
 	ld a, [wMapGroup]
 	cp GROUP_R_5
-	jr nz, .do_nothing
+	jp nz, .do_nothing
 	ld a, [wMapNumber]
 	cp MAP_R_5
-	jr nz, .do_nothing
+	jp nz, .do_nothing
 	ld a, [wCurTimeOfDay]
 	cp NITE_F
 	jr z, .r5_nite
@@ -77,7 +79,24 @@ LoadSpecialMapObjectPalette:
 	ld a, [wMapNumber]
 	cp MAP_DRAGONSPIRAL_TOWER_ROOF
 	jr nz, .do_nothing
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .tower_roof_nite
 	call LoadDragonspiralRoofObPalette
+	scf
+	ret
+	
+.tower_roof_nite
+	call LoadDragonspiralRoofObNitePalette
+	scf
+	ret
+
+.cave
+; All maps with TILESET_CAVE are in the Dungeons group
+	ld a, [wMapNumber]
+	cp MAP_TWIST_MOUNTAIN_GENESECT_ROOM
+	jr nz, .do_nothing
+	call LoadDragonspiralRoofObNitePalette
 	scf
 	ret
 	
@@ -210,6 +229,17 @@ LoadDragonspiralRoofObPalette:
 
 DragonspiralRoofObPalette:
 INCLUDE "gfx/tilesets/dragonspiral_roof_ob.pal"
+
+LoadDragonspiralRoofObNitePalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, DragonspiralRoofObNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+DragonspiralRoofObNitePalette:
+INCLUDE "gfx/tilesets/dragonspiral_roof_ob_nite.pal"
 
 LoadVREntranceObPalette:
 	ld a, BANK(wOBPals1)

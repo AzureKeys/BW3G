@@ -55,9 +55,10 @@ TwistMountainEntranceBoulderFellText:
 TwistMountainEntrance_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 3 ; warp events
 	warp_event  3,  7, R_7_NORTH, 2
 	warp_event  3,  4, TWIST_MOUNTAIN_ENTRANCE, 1
+	warp_event  7,  1, TWIST_MOUNTAIN_OUTSIDE, 16
 
 	db 0 ; coord events
 

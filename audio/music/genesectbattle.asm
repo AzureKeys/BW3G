@@ -37,11 +37,11 @@ Music_BattleVsRegis_Ch1:
 Music_BattleVsRegis_Ch1_loop1:
 	callchannel Music_BattleVsRegis_Ch1_main_loop
 	loopchannel 10, Music_BattleVsRegis_Ch1_loop1
-;Bar 9
-	pitchoffset 0, C#
-Music_BattleVsRegis_Ch1_loop2:
-	callchannel Music_BattleVsRegis_Ch1_main_loop
-	loopchannel 12, Music_BattleVsRegis_Ch1_loop2
+; ;Bar 9
+	; pitchoffset 0, C#
+; Music_BattleVsRegis_Ch1_loop2:
+	; callchannel Music_BattleVsRegis_Ch1_main_loop
+	; loopchannel 12, Music_BattleVsRegis_Ch1_loop2
 ;Bar 15
 	pitchoffset 0, C_
 Music_BattleVsRegis_Ch1_loop3:
@@ -190,45 +190,45 @@ Music_BattleVsRegis_Ch2:
 	note D_, 2
 	note __, 16
 	note __, 2
-;Bar 9
-	octave 4
-	note F_, 2
-	note C#, 2
-	note D#, 2
-	note __, 2
-	octave 3
-	note A_, 3
-	octave 4
-	note C_, 3
-	note D#, 2
-;Bar 10
-	note __, 16
-	note __, 6
-;Bar 11
-	note C_, 2
-	octave 3
-	note A#, 2
-	note G#, 2
-	note __, 2
-	note E_, 3
-;Bar 12
-	note A#, 3
-	note E_, 2
-	note __, 13
-;Bar 13
-	octave 4
-	note F_, 2
-	note C#, 2
-	note D#, 2
-	note __, 2
-	octave 3
-	note A_, 3
-	octave 4
-	note C_, 3
-;Bar 14
-	octave 3
-	note A_, 2
-	note __, 13
+; ;Bar 9
+	; octave 4
+	; note F_, 2
+	; note C#, 2
+	; note D#, 2
+	; note __, 2
+	; octave 3
+	; note A_, 3
+	; octave 4
+	; note C_, 3
+	; note D#, 2
+; ;Bar 10
+	; note __, 16
+	; note __, 6
+; ;Bar 11
+	; note C_, 2
+	; octave 3
+	; note A#, 2
+	; note G#, 2
+	; note __, 2
+	; note E_, 3
+; ;Bar 12
+	; note A#, 3
+	; note E_, 2
+	; note __, 13
+; ;Bar 13
+	; octave 4
+	; note F_, 2
+	; note C#, 2
+	; note D#, 2
+	; note __, 2
+	; octave 3
+	; note A_, 3
+	; octave 4
+	; note C_, 3
+; ;Bar 14
+	; octave 3
+	; note A_, 2
+	; note __, 13
 ;Bar 15
 	octave 3
 	intensity $Af
@@ -432,41 +432,41 @@ Music_BattleVsRegis_Ch3:
 	callchannel Music_BattleVsRegis_Ch3_Type1
 ;Bar 7
 	callchannel Music_BattleVsRegis_Ch3_Type1
-;Bar 9
-	pitchoffset 0, C#
-	callchannel Music_BattleVsRegis_Ch3_Type1
-;Bar 11
-	callchannel Music_BattleVsRegis_Ch3_Type1
-	pitchoffset 0, C_
-;Bar 13
-	note D_, 2
-	note __, 2
-	note D_, 2
-	note D_, 2
-	note A#, 2
-	note A_, 2
-	note D_, 2
-	note __, 2
-	note D_, 2
-	note D_, 2
-	note A#, 2
-	note A_, 2
-;Bar 14
-	note D_, 2
-	note __, 2
-	note D_, 2
-	note D_, 2
-	note A#, 2
-	note A_, 2
-	note D_, 2
-	octave 3
-	note D_, 2
-	note D#, 2
-	octave 2
-	note A#, 2
-	octave 3
-	note D#, 2
-	note C#, 2
+; ;Bar 9
+	; pitchoffset 0, C#
+	; callchannel Music_BattleVsRegis_Ch3_Type1
+; ;Bar 11
+	; callchannel Music_BattleVsRegis_Ch3_Type1
+	; pitchoffset 0, C_
+; ;Bar 13
+	; note D_, 2
+	; note __, 2
+	; note D_, 2
+	; note D_, 2
+	; note A#, 2
+	; note A_, 2
+	; note D_, 2
+	; note __, 2
+	; note D_, 2
+	; note D_, 2
+	; note A#, 2
+	; note A_, 2
+; ;Bar 14
+	; note D_, 2
+	; note __, 2
+	; note D_, 2
+	; note D_, 2
+	; note A#, 2
+	; note A_, 2
+	; note D_, 2
+	; octave 3
+	; note D_, 2
+	; note D#, 2
+	; octave 2
+	; note A#, 2
+	; octave 3
+	; note D#, 2
+	; note C#, 2
 ;Bar 15
 	octave 2
 	callchannel Music_BattleVsRegis_Ch3_Type1
@@ -544,17 +544,17 @@ Music_BattleVsRegis_Ch4:
 	callchannel Music_BattleVsRegis_Ch4_Type1
 ;Bar 8
 	callchannel Music_BattleVsRegis_Ch4_Type2
-;Bar 9
-	note C_, 8
-Music_BattleVsRegis_Ch4_loop9:
-	note C_, 8
-	loopchannel 9, Music_BattleVsRegis_Ch4_loop9
-	notetype 8
-	note C_, 6
-	note __, 2
-;Bar 14
-	note A_, 2
-	note A_, 2
+; ;Bar 9
+	; note C_, 8
+; Music_BattleVsRegis_Ch4_loop9:
+	; note C_, 8
+	; loopchannel 9, Music_BattleVsRegis_Ch4_loop9
+	; notetype 8
+	; note C_, 6
+	; note __, 2
+; ;Bar 14
+	; note A_, 2
+	; note A_, 2
 ;Bar 15
 	notetype 12
 Music_BattleVsRegis_Ch4_loop15:

@@ -36,6 +36,8 @@ LoadSpecialMapPalette:
 	jp z, .game_corner
 	cp TILESET_CAVE
 	jp z, .cave
+	cp TILESET_CAVE_RUINS
+	jp z, .cave_ruins
 	cp TILESET_ELITE_FOUR_ROOM
 	jp z, .elite_four_room
 	cp TILESET_ELITE_FOUR_ROOM_2
@@ -263,9 +265,28 @@ LoadSpecialMapPalette:
 	cp MAP_CHARGESTONE_CAVE_B1F
 	jr z, .chargestone
 	cp MAP_CHARGESTONE_CAVE_B2F
+	jr z, .chargestone
+	cp MAP_TWIST_MOUNTAIN_B1F
 	jp nz, .do_nothing
 .chargestone
 	call LoadChargestonePalette
+	scf
+	ret
+	
+.cave_ruins
+; All maps with CAVE_RUINS tileset are in Dungeons Group
+	ld a, [wMapNumber]
+	cp MAP_TWIST_MOUNTAIN_OUTSIDE
+	jp nz, .do_nothing
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .twist_nite
+	call LoadTwistPalette
+	scf
+	ret
+	
+.twist_nite
+	call LoadTwistNitePalette
 	scf
 	ret
 	
@@ -1063,3 +1084,25 @@ LoadHumilauGymPalette:
 	
 HumilauGymPalette:
 INCLUDE "gfx/tilesets/humilau_gym.pal"
+
+LoadTwistPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, TwistPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+TwistPalette:
+INCLUDE "gfx/tilesets/twist_mountain.pal"
+
+LoadTwistNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, TwistNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+TwistNitePalette:
+INCLUDE "gfx/tilesets/twist_mountain_nite.pal"

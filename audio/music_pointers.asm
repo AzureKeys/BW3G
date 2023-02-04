@@ -93,3 +93,4 @@ Music:
 	dba Music_RocketHideout
 	dba Music_CynthiaEncounter
 	dba Music_BattleCynthia
+	dba Music_BattleVsRegis

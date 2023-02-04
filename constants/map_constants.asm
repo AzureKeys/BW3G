@@ -93,6 +93,10 @@ ENDM
 	map_const TWIST_MOUNTAIN_1F, 16, 17
 	map_const TWIST_MOUNTAIN_2F, 20, 17
 	map_const TWIST_MOUNTAIN_3F, 19, 14
+	map_const TWIST_MOUNTAIN_OUTSIDE, 23, 19
+	map_const TWIST_MOUNTAIN_HOUSE, 4, 4
+	map_const TWIST_MOUNTAIN_B1F, 12, 9
+	map_const TWIST_MOUNTAIN_GENESECT_ROOM, 7, 11
 	
 	newgroup                                                      ; 20
 

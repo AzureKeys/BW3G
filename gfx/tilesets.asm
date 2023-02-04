@@ -720,11 +720,11 @@ INCLUDE "data/tilesets/cave_ruins_collision.asm"
 TilesetCaveRuinsMeta:
 INCBIN "data/tilesets/cave_ruins_metatiles.bin"
 
-TilesetUndergroundGFX:
-INCBIN "gfx/tilesets/underground.2bpp.lz"
-
 
 SECTION "Tileset Data 25", ROMX
+
+TilesetUndergroundGFX:
+INCBIN "gfx/tilesets/underground.2bpp.lz"
 
 TilesetTraditionalHouseAttr:
 INCBIN "data/tilesets/traditional_house_attributes.bin"

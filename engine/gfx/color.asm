@@ -1310,6 +1310,8 @@ LoadMapPals:
 	cp MAP_DRAGONSPIRAL_TOWER_OUTSIDE
 	jr z, .done
 	cp MAP_DRAGONSPIRAL_TOWER_ROOF
+	jr z, .done
+	cp MAP_TWIST_MOUNTAIN_OUTSIDE
 	jr nz, .LoadRoof
 .done
 	ret

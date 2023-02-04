@@ -33,6 +33,7 @@ OpelucidSuperRodHouse_Blocks:
 OpelucidBlackbeltHouse_Blocks:
 IcirrusHouse_Blocks:
 Rt23House_Blocks:
+TwistMountainHouse_Blocks:
 	INCBIN "maps/House1.ablk"
 	
 NimbasaHouse_Blocks:
@@ -720,4 +721,13 @@ TwistMountain2F_Blocks:
 
 TwistMountain3F_Blocks:
 	INCBIN "maps/TwistMountain3F.ablk"
+
+TwistMountainB1F_Blocks:
+	INCBIN "maps/TwistMountainB1F.ablk"
+
+TwistMountainOutside_Blocks:
+	INCBIN "maps/TwistMountainOutside.ablk"
+
+TwistMountainGenesectRoom_Blocks:
+	INCBIN "maps/TwistMountainGenesectRoom.ablk"
 	
