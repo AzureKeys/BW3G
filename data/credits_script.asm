@@ -34,7 +34,8 @@ CreditsScript:
 	db              SCARLAX, 1
 	db         SHADOWONE333, 2
 	db              EEVEEEE, 3
-	db              SOLO993, 4
+	db                  SEA, 4
+	db              SOLO993, 5
 
 	db CREDITS_WAIT, 15
 

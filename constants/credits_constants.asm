@@ -121,6 +121,7 @@
 	const SHADOWONE333
 	const EEVEEEE
 	const SOLO993
+	const SEA
 	const PIA_CARROT
 	const LUNA
 	const BEES

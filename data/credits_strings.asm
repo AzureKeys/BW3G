@@ -121,6 +121,7 @@ CreditsStrings:
 	dw .ShadowOne333
 	dw .EeveeEe
 	dw .Solo993
+	dw .Sea
 	dw .PiaCarrot
 	dw .Luna
 	dw .Bees
@@ -266,6 +267,7 @@ CreditsStrings:
 .ShadowOne333:        db "    SHADOWONE333@"
 .EeveeEe:             db "      EEVEEEE@"
 .Solo993:             db "      SOLO993@"
+.Sea:                 db "        SEA@"
 .PiaCarrot:           db "     PIA CARROT@"
 .Luna:                db "        LUNA@"
 .Bees:                db "        BEES@"
