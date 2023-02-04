@@ -87,5 +87,6 @@ const_value = -1
 	const SPAWN_MISTRALTON
 	const SPAWN_OPELUCID
 	const SPAWN_ICIRRUS
+	const SPAWN_VICTORY_ROAD
 	const SPAWN_PKMN_LEAGUE
 NUM_SPAWNS EQU const_value

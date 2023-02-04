@@ -91,6 +91,7 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_MISTRALTON
 	engine_flag wVisitedSpawns, SPAWN_OPELUCID
 	engine_flag wVisitedSpawns, SPAWN_ICIRRUS
+	engine_flag wVisitedSpawns, SPAWN_VICTORY_ROAD
 	engine_flag wVisitedSpawns, SPAWN_PKMN_LEAGUE
 	engine_flag wVisitedSpawns, NUM_SPAWNS ; unused
 

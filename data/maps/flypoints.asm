@@ -24,6 +24,7 @@ Flypoints:
 	flypoint MISTRALTON,   MISTRALTON_CITY
 	flypoint OPELUCID,     OPELUCID_CITY
 	flypoint ICIRRUS,      ICIRRUS_CITY
+	flypoint VICTORY_ROAD, VICTORY_ROAD
 	flypoint PKMN_LEAGUE,  POKEMON_LEAGUE
 
 ; Kanto
