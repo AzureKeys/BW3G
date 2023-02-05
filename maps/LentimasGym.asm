@@ -419,74 +419,100 @@ LentimasGymGuyWinText:
 	done
 	
 HexManiacLentimasGym1SeenText:
-	text "Can you inflict"
-	line "any damage on our"
-	cont "#MON?"
+	text "Eh he he… We have"
+	line "trained with the"
+	cont "spirits."
+	
+	para "Can you even"
+	line "damage our #-"
+	cont "MON?"
 	done
 
 HexManiacLentimasGym1BeatenText:
-	text "Ah! Well done!"
+	text "Ack! I've been"
+	line "beaten!"
 	done
 
 HexManiacLentimasGym1AfterText:
-	text "We use only ghost-"
-	line "type #MON."
+	text "Ghost type #MON"
+	line "cannot be harmed"
 
-	para "No normal-type"
-	line "attack can harm"
-	cont "them!"
+	para "by normal type"
+	line "attacks!"
 	done
 	
 HexManiacLentimasGym2SeenText:
-	text "I shall win!"
+	text "Aha! How can you"
+	line "defeat that which"
+	
+	para "you cannot even"
+	line "see?"
 	done
 
 HexManiacLentimasGym2BeatenText:
-	text "I, I, I lost!"
+	text "You've found my"
+	line "weakness!"
 	done
 
 HexManiacLentimasGym2AfterText:
-	text "The one who wants"
-	line "to win most--will!"
+	text "We hide in the"
+	line "shadows and wait"
+	
+	para "to scare passers-"
+	line "by. Just like a"
+	cont "ghost!"
 	done
 	
 HexManiacLentimasGym3SeenText:
-	text "I train to find"
-	line "enlightenment in"
-	cont "#MON!"
+	text "I have been a"
+	line "disciple of"
+	
+	para "SHAUNTAL since I"
+	line "was young. There's"
+	
+	para "no way you can"
+	line "beat me!"
 	done
 
 HexManiacLentimasGym3BeatenText:
-	text "My training is"
-	line "incomplete…"
+	text "Okay, I admit it!"
+	line "I'm just a fan of"
+	cont "her books!"
 	done
 
 HexManiacLentimasGym3AfterText:
-	text "As #MON grow"
-	line "stronger, so does"
-	cont "the trainer."
+	text "I need more guid-"
+	line "ance from SHAUNTAL"
 
-	para "No, wait. As the"
-	line "trainer grows"
+	para "if I want to get"
+	line "stronger…"
 
-	para "stronger, so do"
-	line "the #MON."
+	para "She should hurry"
+	line "up and put out the"
+	cont "next book already!"
 	done
 	
 HexManiacLentimasGym4SeenText:
-	text "Let me see how"
-	line "much you trust"
-	cont "your #MON."
+	text "A spooky mountain"
+	line "town with a spooky"
+	cont "ghost type GYM?"
+	
+	para "That's just perfect"
+	line "for a spooky girl"
+	cont "like me!"
 	done
 
 HexManiacLentimasGym4BeatenText:
-	text "Yes, your trust is"
-	line "real!"
+	text "Ah! You're scary!"
 	done
 
 HexManiacLentimasGym4AfterText:
-	text "It is not far to"
-	line "the LEADER."
+	text "I came to this"
+	line "town to search for"
+	
+	para "ghosts. It's great"
+	line "if you're into the"
+	cont "supernatural!"
 	done
 	
 LentimasGym_MapEvents:

@@ -153,7 +153,7 @@ LoadSpecialMapObjectPalette:
 	and a
 	ret
 
-LoadBridgeObPalette:
+LoadBridgeObPalette: ; GREEN = Green Dark, ROCK used for cable object
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, BridgeObPalette
@@ -164,7 +164,7 @@ LoadBridgeObPalette:
 BridgeObPalette:
 INCLUDE "gfx/tilesets/bridge_ob.pal"
 
-LoadBridgeNiteObPalette:
+LoadBridgeNiteObPalette: ; GREEN = Green Dark, ROCK used for cable object
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, BridgeNiteObPalette
@@ -175,7 +175,7 @@ LoadBridgeNiteObPalette:
 BridgeNiteObPalette:
 INCLUDE "gfx/tilesets/bridge_nite_ob.pal"
 
-LoadOpelucidObPalette:
+LoadOpelucidObPalette: ; ROCK used for fountain tiles
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, OpelucidObPalette
@@ -186,7 +186,7 @@ LoadOpelucidObPalette:
 OpelucidObPalette:
 INCLUDE "gfx/tilesets/opelucid_ob.pal"
 
-LoadOpelucidNiteObPalette:
+LoadOpelucidNiteObPalette: ; ROCK used for fountain tiles
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, OpelucidNiteObPalette
@@ -197,7 +197,7 @@ LoadOpelucidNiteObPalette:
 OpelucidNiteObPalette:
 INCLUDE "gfx/tilesets/opelucid_nite_ob.pal"
 
-LoadMistraltonGymObPalette:
+LoadMistraltonGymObPalette: ; ROCK used for grey fan objects
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, MistraltonGymObPalette
@@ -208,7 +208,7 @@ LoadMistraltonGymObPalette:
 MistraltonGymObPalette:
 INCLUDE "gfx/tilesets/mistralton_gym_ob.pal"
 
-LoadBarnObPalette:
+LoadBarnObPalette: ; ROCK = Pink
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, BarnObPalette
@@ -219,7 +219,7 @@ LoadBarnObPalette:
 BarnObPalette:
 INCLUDE "gfx/tilesets/barn_ob.pal"
 
-LoadDragonspiralRoofObPalette:
+LoadDragonspiralRoofObPalette: ; TREE = Grey, ROCK = Purple, RED used for Genesis Project
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, DragonspiralRoofObPalette
@@ -230,7 +230,7 @@ LoadDragonspiralRoofObPalette:
 DragonspiralRoofObPalette:
 INCLUDE "gfx/tilesets/dragonspiral_roof_ob.pal"
 
-LoadDragonspiralRoofObNitePalette:
+LoadDragonspiralRoofObNitePalette: ; TREE = Grey, ROCK = Purple, RED used for Genesis Project
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, DragonspiralRoofObNitePalette
@@ -241,7 +241,7 @@ LoadDragonspiralRoofObNitePalette:
 DragonspiralRoofObNitePalette:
 INCLUDE "gfx/tilesets/dragonspiral_roof_ob_nite.pal"
 
-LoadVREntranceObPalette:
+LoadVREntranceObPalette: ; TREE used for yellow badges, ROCK used for blue badges
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, VREntranceObPalette
@@ -252,7 +252,7 @@ LoadVREntranceObPalette:
 VREntranceObPalette:
 INCLUDE "gfx/tilesets/victory_road_ob.pal"
 
-LoadVREntranceNiteObPalette:
+LoadVREntranceNiteObPalette: ; TREE used for yellow badges, ROCK used for blue badges
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, VREntranceNiteObPalette
@@ -263,7 +263,7 @@ LoadVREntranceNiteObPalette:
 VREntranceNiteObPalette:
 INCLUDE "gfx/tilesets/victory_road_nite_ob.pal"
 
-LoadR5ObPalette:
+LoadR5ObPalette: ; ROCK = Green Dark
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, R5ObPalette
@@ -274,7 +274,7 @@ LoadR5ObPalette:
 R5ObPalette:
 INCLUDE "gfx/tilesets/r5_ob.pal"
 
-LoadR5NiteObPalette:
+LoadR5NiteObPalette: ; ROCK = Green Dark
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, R5NiteObPalette

@@ -1,8 +1,4 @@
 	const_def 2 ; object constants
-	const VILLAGEBRIDGE_CABLE_LEFT_1
-	const VILLAGEBRIDGE_CABLE_LEFT_2
-	const VILLAGEBRIDGE_CABLE_RIGHT_1
-	const VILLAGEBRIDGE_CABLE_RIGHT_2
 	const VILLAGEBRIDGE_FRUIT_TREE
 	const VILLAGEBRIDGE_CALCIUM
 	const VILLAGEBRIDGE_QUICK_BALL
@@ -31,18 +27,18 @@ VillageBridge_MapScripts:
 	iffalse .done
 	changeblock 28, 14, $a0
 	changeblock 30, 14, $a1
-	changeblock 32, 14, $b5
+	changeblock 32, 14, $9a
 	changeblock 34, 14, $a2
 	changeblock 36, 14, $a3
 	changeblock 28, 16, $b3
 	changeblock 30, 16, $a4
 	changeblock 32, 16, $b1
-	changeblock 34, 16, $a7
+	changeblock 34, 16, $a4
 	changeblock 36, 16, $e3
 	changeblock 28, 18, $ac
 	changeblock 30, 18, $ad
 	changeblock 32, 18, $b5
-	changeblock 34, 18, $ae
+	changeblock 34, 18, $ad
 	changeblock 36, 18, $af
 .done
 	return
@@ -52,18 +48,18 @@ VillageBridgeLowerScript:
 	iftrue .done
 	changeblock 28, 14, $a0
 	changeblock 30, 14, $a1
-	changeblock 32, 14, $b5
+	changeblock 32, 14, $9a
 	changeblock 34, 14, $a2
 	changeblock 36, 14, $a3
 	changeblock 28, 16, $b3
 	changeblock 30, 16, $a4
 	changeblock 32, 16, $b1
-	changeblock 34, 16, $a7
+	changeblock 34, 16, $a4
 	changeblock 36, 16, $e3
 	changeblock 28, 18, $ac
 	changeblock 30, 18, $ad
 	changeblock 32, 18, $b5
-	changeblock 34, 18, $ae
+	changeblock 34, 18, $ad
 	changeblock 36, 18, $af
 	setevent EVENT_VILLAGE_BRIDGE_LOWER
 .done
@@ -74,18 +70,18 @@ VillageBridgeUpperScript:
 	iffalse .done
 	changeblock 28, 14, $9c
 	changeblock 30, 14, $9d
-	changeblock 32, 14, $b4
+	changeblock 32, 14, $99
 	changeblock 34, 14, $9e
 	changeblock 36, 14, $9f
-	changeblock 28, 16, $56
-	changeblock 30, 16, $a5
+	changeblock 28, 16, $a5
+	changeblock 30, 16, $56
 	changeblock 32, 16, $b0
-	changeblock 34, 16, $a6
-	changeblock 36, 16, $56
+	changeblock 34, 16, $56
+	changeblock 36, 16, $a6
 	changeblock 28, 18, $a8
 	changeblock 30, 18, $a9
 	changeblock 32, 18, $b4
-	changeblock 34, 18, $aa
+	changeblock 34, 18, $a9
 	changeblock 36, 18, $ab
 	clearevent EVENT_VILLAGE_BRIDGE_LOWER
 .done
@@ -429,11 +425,7 @@ VillageBridge_MapEvents:
 	bg_event 60, 14, BGEVENT_ITEM, VillageBridgeBlueShard
 	bg_event 61, 14, BGEVENT_ITEM, VillageBridgeBlueShard
 
-	db 16 ; object events
-	object_event 30, 13, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
-	object_event 30, 17, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
-	object_event 35, 13, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
-	object_event 35, 17, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
+	db 12 ; object events
 	object_event  6,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VillageBridgeFruitTree, -1
 	object_event 32,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeCalcium, EVENT_VILLAGE_BRIDGE_CALCIUM
 	object_event 26,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VillageBridgeQuickBall, EVENT_VILLAGE_BRIDGE_QUICK_BALL
