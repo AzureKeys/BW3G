@@ -658,6 +658,7 @@ InitializeEventsScript:
 	setevent EVENT_NIMBASA_PARK_ROSA
 	setevent EVENT_NUVEMA_TOWN_HILBERT
 	setevent EVENT_NUVEMA_TOWN_HILDA
+	setevent EVENT_NS_ROOM_N
 	setevent EVENT_INITIALIZED_EVENTS
 	return
 

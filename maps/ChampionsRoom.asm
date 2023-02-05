@@ -191,6 +191,7 @@ ChampionsRoom_MapScripts:
 	
 .ChampionBattleScript:
 	disappear CHAMPIONSROOM_GENESECT_1
+	disappear CHAMPIONSROOM_GENESECT_2
 	appear CHAMPIONSROOM_JUNIPER
 	pause 15
 	applymovement PLAYER, ChampionsRoomPlayerApproachGenesisMovement
