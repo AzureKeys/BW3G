@@ -56,7 +56,7 @@ PlayersHouseRadioScript:
 	; end
 	
 	; opentext
-	; givepoke HYDREIGON, 5, CHOICE_BAND
+	; givepoke HYDREIGON, 100, NO_ITEM
 	; closetext
 	; setflag ENGINE_WAVEBADGE
 	; setflag ENGINE_SPOOKYBADGE
@@ -158,7 +158,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, TWIST_MOUNTAIN_GENESECT_ROOM, 1
+	;warp_event  7,  0, NUVEMA_MOM_HOUSE, 1
 
 	db 0 ; coord events
 

@@ -49,10 +49,11 @@ RedCredits::
 	ld c, 8
 	call DelayFrames
 	call DisableSpriteUpdates
-	ld a, SPAWN_RED
+	ld a, SPAWN_LANCE
 	ld [wSpawnAfterChampion], a
 	ld a, [wStatusFlags]
 	ld b, a
+	farcall SaveGameData
 	farcall Credits
 	ret
 

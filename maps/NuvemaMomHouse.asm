@@ -98,8 +98,6 @@ NuvemaHilbertHildaScript:
 .BattleStart
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_HILBERT_HILDA
-	setflag ENGINE_HILBERT_HILDA
 	opentext
 	writetext NuvemaHilbertHildaText
 	waitbutton
@@ -113,7 +111,18 @@ NuvemaHilbertHildaScript:
 	disappear NUVEMAMOMHOUSE_HILDA
 	pause 15
 	special FadeInQuickly
+	setflag ENGINE_HILBERT_HILDA
+	checkevent EVENT_BEAT_HILBERT_HILDA
+	iffalse .Credits
 	playmapmusic
+	end
+	
+.Credits
+	pause 30
+	special HealParty
+	refreshscreen
+	setevent EVENT_BEAT_HILBERT_HILDA
+	credits
 	end
 	
 NuvemaMomHouseConsole:
@@ -212,6 +221,6 @@ NuvemaMomHouse_MapEvents:
 
 	db 3 ; object events
 	object_event  4,  4, SPRITE_REDS_MOM, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NuvemaMomScript, -1
-	object_event  3, 14, SPRITE_HILBERT, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NuvemaHilbertHildaScript, -1
-	object_event  3, 14, SPRITE_HILDA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NuvemaHilbertHildaScript, -1
+	object_event  3, 14, SPRITE_HILBERT, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NuvemaHilbertHildaScript, EVENT_NUVEMA_TOWN_HILBERT
+	object_event  3, 14, SPRITE_HILDA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NuvemaHilbertHildaScript, EVENT_NUVEMA_TOWN_HILDA
 	
