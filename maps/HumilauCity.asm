@@ -268,7 +268,7 @@ HumilauCity_MapEvents:
 	warp_event 23,  3, PLAYERS_NEIGHBORS_HOUSE, 1
 	warp_event  3, 27, HUMILAU_POKECENTER_1F, 1
 	warp_event  9, 15, MARLONS_HOUSE, 1
-	warp_event 17, 29, MARINE_TUBE_ENTRANCE, 4
+	warp_event 17, 29, MARINE_TUBE_ENTRANCE, 5
 	warp_event  8, 23, HUMILAU_GYM, 1
 	warp_event  3, 13, HUMILAU_TRADE_HOUSE, 1
 

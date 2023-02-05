@@ -59,13 +59,15 @@ SilkScarfGaveText:
 MarineTubeEntrance_MapEvents:
 	db 0, 0 ; filler
 
-	db 6 ; warp events
+	db 8 ; warp events
 	warp_event  4,  9, UNDELLA_TOWN, 4
 	warp_event  5,  9, UNDELLA_TOWN, 4
-	warp_event  5,  5, MARINE_TUBE, 1
+	warp_event  4,  3, MARINE_TUBE, 1
+	warp_event  5,  3, MARINE_TUBE, 2
 	warp_event 20,  9, HUMILAU_CITY, 5
 	warp_event 21,  9, HUMILAU_CITY, 5
-	warp_event 21,  5, MARINE_TUBE, 2
+	warp_event 20,  4, MARINE_TUBE, 3
+	warp_event 21,  4, MARINE_TUBE, 4
 
 	db 0 ; coord events
 
