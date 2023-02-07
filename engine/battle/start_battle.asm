@@ -79,7 +79,7 @@ PlayBattleMusic:
 	cp NITE_F
 	jp nz, .done
 	ld de, MUSIC_WILD_BATTLE_NIGHT
-	jr .done
+	jp .done
 
 .trainermusic
 	ld de, MUSIC_CYNTHIA_BATTLE
@@ -104,6 +104,14 @@ PlayBattleMusic:
 	cp COLRESS
 	jr z, .done
 	cp CAITLIN
+	jr z, .done
+	cp HILBERT
+	jr z, .done
+	cp HILDA
+	jr z, .done
+	cp NATE
+	jr z, .done
+	cp ROSA
 	jr z, .done
 
 	ld de, MUSIC_PLASMA_BATTLE
