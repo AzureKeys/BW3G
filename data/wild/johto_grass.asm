@@ -2499,7 +2499,7 @@ JohtoGrassWildMons:
 	db 54, AUDINO
 
 	map_id VICTORY_ROAD_CAVE_1F
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 52, GOLBAT
 	db 51, SWOOBAT
@@ -2535,7 +2535,7 @@ JohtoGrassWildMons:
 	db 55, ZWEILOUS
 
 	map_id VICTORY_ROAD_CAVE_2F
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 52, GOLBAT
 	db 51, SWOOBAT
@@ -2571,7 +2571,7 @@ JohtoGrassWildMons:
 	db 55, ZWEILOUS
 
 	map_id VICTORY_ROAD_CAVE_3F
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 52, GOLBAT
 	db 51, SWOOBAT
@@ -2607,7 +2607,7 @@ JohtoGrassWildMons:
 	db 55, ZWEILOUS
 
 	map_id VICTORY_ROAD_CASTLE_OUTSIDE
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 52, GOLBAT
 	db 51, SWOOBAT
@@ -2749,5 +2749,149 @@ JohtoGrassWildMons:
 	db 50, LILLIGANT
 	db 55, ROSELIA
 	db 55, ROSERADE
+
+	map_id TWIST_MOUNTAIN_1F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+	; day
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+	; nite
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+
+	map_id TWIST_MOUNTAIN_2F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+	; day
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+	; nite
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+
+	map_id TWIST_MOUNTAIN_3F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+	; day
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+	; nite
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+
+	map_id TWIST_MOUNTAIN_B1F
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+	; day
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
+	; nite
+	db 58, BOLDORE
+	db 60, VANILLISH
+	db 59, GURDURR
+	db 60, BEARTIC
+	db 62, HEATMOR
+	db 62, DURANT
+	db 60, SWOOBAT
+	db 62, CRYOGONAL
+	db 63, EXCADRILL
+	db 65, STEELIX
 
 	db -1 ; end

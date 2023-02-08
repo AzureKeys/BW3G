@@ -1,9 +1,68 @@
 	const_def 2 ; object constants
+	const TWISTMOUNTAIN1F_RED_SHARD
+	const TWISTMOUNTAIN1F_NUGGET
+	const TWISTMOUNTAIN1F_WORKER
+	const TWISTMOUNTAIN1F_VETERANM
 
 TwistMountain1F_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
+
+TrainerWorkerTwistMountain1F:
+	trainer WORKER, WORKER_TWIST_MOUNTAIN_5, EVENT_BEAT_WORKER_TWIST_MOUNTAIN_5, WorkerTwistMountain1FSeenText, WorkerTwistMountain1FBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext WorkerTwistMountain1FAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerVeteranMTwistMountain1F:
+	trainer VETERANM, VETERANM_TWIST_MOUNTAIN_2, EVENT_BEAT_VETERANM_TWIST_MOUNTAIN_2, VeteranMTwistMountain1FSeenText, VeteranMTwistMountain1FBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext VeteranMTwistMountain1FAfterText
+	waitbutton
+	closetext
+	end
+	
+TwistMountain1FRedShard:
+	itemball RED_SHARD
+	
+TwistMountain1FNugget:
+	itemball NUGGET
+	
+TwistMountain1FBigPearl:
+	hiddenitem BIG_PEARL, EVENT_TWIST_MOUNTAIN_BIG_PEARL_2
+	
+WorkerTwistMountain1FSeenText:
+	text ""
+	done
+
+WorkerTwistMountain1FBeatenText:
+	text ""
+	done
+
+WorkerTwistMountain1FAfterText:
+	text ""
+	done
+	
+VeteranMTwistMountain1FSeenText:
+	text ""
+	done
+
+VeteranMTwistMountain1FBeatenText:
+	text ""
+	done
+
+VeteranMTwistMountain1FAfterText:
+	text ""
+	done
 
 TwistMountain1F_MapEvents:
 	db 0, 0 ; filler
@@ -20,7 +79,12 @@ TwistMountain1F_MapEvents:
 
 	db 0 ; coord events
 
-	db 0 ; bg events
+	db 1 ; bg events
+	bg_event 18, 10, BGEVENT_ITEM, TwistMountain1FBigPearl
 
-	db 0 ; object events
+	db 4 ; object events
+	object_event  2, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TwistMountain1FRedShard, EVENT_TWIST_MOUNTAIN_RED_SHARD
+	object_event 28, 26, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TwistMountain1FNugget, EVENT_TWIST_MOUNTAIN_NUGGET
+	object_event  9, 19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerWorkerTwistMountain1F, -1
+	object_event 23, 24, SPRITE_RANGER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerVeteranMTwistMountain1F, -1
 	
