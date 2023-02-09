@@ -284,7 +284,7 @@ ENDM
 	map_const DRIFTVEIL_FOSSIL_HOUSE, 4, 4
 	map_const DRIFTVEIL_BRIDGE_GATE, 5, 4
 	map_const DRIFTVEIL_SHELTER, 5, 6
-	map_const DRIFTVEIL_DRAWBRIDGE, 15, 7
+	map_const DRIFTVEIL_DRAWBRIDGE, 21, 8
 	map_const DRIFTVEIL_STONE_EMPORIUM, 5, 6
 	map_const DRIFTVEIL_HOUSE, 4, 4
 	map_const DRIFTVEIL_TRADE_HOUSE, 4, 4
@@ -300,7 +300,7 @@ ENDM
 	map_const PLANE_LEFT, 13, 5
 	map_const PLANE_RIGHT, 13, 5
 	map_const R_7, 12, 27
-	map_const R_7_NORTH, 16, 23
+	map_const R_7_NORTH, 16, 24
 	map_const R_7_HOUSE, 4, 4
 	map_const R_7_TRADE_HOUSE, 4, 4
 	

@@ -100,10 +100,10 @@ ENDM
 	
 	map_attributes Rt7, R_7, $15, SOUTH | EAST
 	connection south, MistraltonCity, MISTRALTON_CITY, -8
-	connection east, Rt7North, R_7_NORTH, -12
+	connection east, Rt7North, R_7_NORTH, -13
 	
 	map_attributes Rt7North, R_7_NORTH, $15, WEST
-	connection west, Rt7, R_7, 12
+	connection west, Rt7, R_7, 13
 	
 	map_attributes Rt8, R_8, $11, SOUTH
 	connection south, IcirrusCitySouth, ICIRRUS_CITY_SOUTH, -8

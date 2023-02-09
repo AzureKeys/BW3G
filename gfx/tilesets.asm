@@ -352,9 +352,6 @@ INCBIN "gfx/tilesets/village_bridge.2bpp.lz"
 TilesetVillageBridgeMeta:
 INCBIN "data/tilesets/village_bridge_metatiles.bin"
 
-TilesetVillageBridgeColl:
-INCLUDE "data/tilesets/village_bridge_collision.asm"
-
 
 SECTION "Tileset Data 10", ROMX
 
@@ -728,3 +725,6 @@ INCBIN "gfx/tilesets/underground.2bpp.lz"
 
 TilesetTraditionalHouseAttr:
 INCBIN "data/tilesets/traditional_house_attributes.bin"
+
+TilesetVillageBridgeColl:
+INCLUDE "data/tilesets/village_bridge_collision.asm"

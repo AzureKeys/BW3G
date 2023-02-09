@@ -255,20 +255,14 @@ FacingSplash2:
 	db  9,  9, ABSOLUTE_TILE_ID | X_FLIP, $ff
 
 FacingCableLeft: 
-	db 5 ; #
-	db  -4, 24, 0, $02
-	db   4, 24, 0, $01
-	db  12,  8, 0, $02
-	db  20,  8, 0, $01
-	db  28, -8, 0, $02
+	db 2 ; #
+	db  -4,  8, 0, $00
+	db   4,  8, 0, $00
 
 FacingCableRight: 
-	db 5 ; #
-	db  -4,-16, X_FLIP, $02
-	db   4,-16, X_FLIP, $01
-	db  12,  0, X_FLIP, $02
-	db  20,  0, X_FLIP, $01
-	db  28, 16, X_FLIP, $02
+	db 2 ; #
+	db  -4,  0, 0, $00
+	db   4,  0, 0, $00
 
 FacingFountain: 
 	db 8 ; #
