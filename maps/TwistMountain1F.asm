@@ -41,27 +41,55 @@ TwistMountain1FBigPearl:
 	hiddenitem BIG_PEARL, EVENT_TWIST_MOUNTAIN_BIG_PEARL_2
 	
 WorkerTwistMountain1FSeenText:
-	text ""
+	text "Check out the"
+	line "combination of my"
+	
+	para "cool #MON and"
+	line "my hot fighting"
+	cont "spirit!"
 	done
 
 WorkerTwistMountain1FBeatenText:
-	text ""
+	text "It looks like you"
+	line "also have a hot-"
+	cont "and-cool"
+	cont "combination!"
 	done
 
 WorkerTwistMountain1FAfterText:
-	text ""
+	text "TWIST MOUNTAIN is"
+	line "cold all year"
+	
+	para "round! It's a great"
+	line "place for ice type"
+	
+	para "#MON that are"
+	line "happy in the"
+	cont "depths of winter!"
 	done
 	
 VeteranMTwistMountain1FSeenText:
-	text ""
+	text "I come here every"
+	line "year to train. The"
+	
+	para "cold, harsh envi-"
+	line "ronment really"
+	
+	para "brings out a #-"
+	line "MON's strength!"
 	done
 
 VeteranMTwistMountain1FBeatenText:
-	text ""
+	text "How harsh…"
 	done
 
 VeteranMTwistMountain1FAfterText:
-	text ""
+	text "Perhaps I should"
+	line "think about"
+	
+	para "changing the envi-"
+	line "ronment where we"
+	cont "train…"
 	done
 
 TwistMountain1F_MapEvents:

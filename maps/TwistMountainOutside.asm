@@ -105,39 +105,84 @@ NurseTwistMountainOutsideHealText:
 	done
 	
 HikerTwistMountainOutsideSeenText:
-	text ""
+	text "Why do I dig? Why"
+	line "do you fight?"
 	done
 
 HikerTwistMountainOutsideBeatenText:
-	text ""
+	text "Your past"
+	line "experience…"
+	
+	para "Is that the source"
+	line "of your strength?"
 	done
 
 HikerTwistMountainOutsideAfterText:
-	text ""
+	text "The more you"
+	line "fight, the"
+	
+	para "stronger you'll"
+	line "be. The more you"
+	
+	para "dig, the bigger"
+	line "the hole will be…"
+	
+	para "If you have a"
+	line "purpose, there's"
+	cont "no wasted effort!"
 	done
 	
 WorkerTwistMountainOutsideSeenText:
-	text ""
+	text "I've found a"
+	line "strong looking"
+	
+	para "trainer during my"
+	line "patrol! Go, my"
+	cont "#MON!"
 	done
 
 WorkerTwistMountainOutsideBeatenText:
-	text ""
+	text "It's just as I"
+	line "thought! A"
+	
+	para "monstrously strong"
+	line "trainer!"
 	done
 
 WorkerTwistMountainOutsideAfterText:
-	text ""
+	text "Like my #MON, I"
+	line "always want to"
+	
+	para "take the same"
+	line "route. I wonder"
+	cont "why that is?"
 	done
 	
 VeteranMTwistMountainOutsideSeenText:
-	text ""
+	text "OK! I will show"
+	line "you the results of"
+	cont "my daily workouts!"
 	done
 
 VeteranMTwistMountainOutsideBeatenText:
-	text ""
+	text "Was my training"
+	line "too unbalanced?"
 	done
 
 VeteranMTwistMountainOutsideAfterText:
-	text ""
+	text "I'm going to train"
+	line "my #MON"
+	
+	para "properly and make"
+	line "sure they grow"
+	cont "balanced."
+	
+	para "Bwahaha! It's the"
+	line "challenges that"
+	
+	para "make life worth"
+	line "living, whatever"
+	cont "your age!"
 	done
 
 TwistMountainOutside_MapEvents:

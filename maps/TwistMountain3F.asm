@@ -49,39 +49,84 @@ TwistMountain3FCalcium:
 	hiddenitem CALCIUM, EVENT_TWIST_MOUNTAIN_CALCIUM
 	
 Worker1TwistMountain3FSeenText:
-	text ""
+	text "TWIST MOUNTAIN has"
+	line "changed over the"
+	
+	para "years, and this"
+	line "man changes in"
+	cont "every battle!"
 	done
 
 Worker1TwistMountain3FBeatenText:
-	text ""
+	text "Go easy on… This"
+	line "grown man?"
 	done
 
 Worker1TwistMountain3FAfterText:
-	text ""
+	text "This man likes"
+	line "winter. Winter on"
+	cont "TWIST MOUNTAIN…"
+	
+	para "It has an indesc-"
+	line "ribable beauty."
 	done
 	
 Worker2TwistMountain3FSeenText:
-	text ""
+	text "Let's see you take"
+	line "a powerful attack"
+	
+	para "from veteran"
+	line "WORKERs like us!"
 	done
 
 Worker2TwistMountain3FBeatenText:
-	text ""
+	text "We've trained by"
+	line "doing physical"
+	
+	para "work, so even if"
+	line "we lose, we're"
+	cont "still powerful!"
 	done
 
 Worker2TwistMountain3FAfterText:
-	text ""
+	text "This worker is"
+	line "happy to have a"
+	
+	para "job that lets him"
+	line "be with his"
+	cont "favorite #MON!"
 	done
 	
 VeteranFTwistMountain3FSeenText:
-	text ""
+	text "TWIST MOUNTAIN's"
+	line "number one"
+	
+	para "tactician! That's"
+	line "me!"
 	done
 
 VeteranFTwistMountain3FBeatenText:
-	text ""
+	text "Maybe I shouldn't"
+	line "be satisfied with"
+	
+	para "being number one"
+	line "only on TWIST"
+	cont "MOUNTAIN…"
 	done
 
 VeteranFTwistMountain3FAfterText:
-	text ""
+	text "Thank you… With"
+	line "our battle, my"
+	
+	para "eyes have been"
+	line "opened. Being"
+	
+	para "number one of"
+	line "TWIST MOUNTAIN is"
+	
+	para "only a stepping"
+	line "stone on my"
+	cont "journey!"
 	done
 
 TwistMountain3F_MapEvents:

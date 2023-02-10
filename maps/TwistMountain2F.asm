@@ -63,39 +63,71 @@ TwistMountain2FCarbos:
 	hiddenitem CARBOS, EVENT_TWIST_MOUNTAIN_CARBOS
 	
 WorkerTwistMountain2FSeenText:
-	text ""
+	text "Hold up there,"
+	line "youngster!"
+	
+	para "A battle will help"
+	line "you warm up!"
 	done
 
 WorkerTwistMountain2FBeatenText:
-	text ""
+	text "Ha! Battling gets"
+	line "me so warm, I've"
+	cont "started sweating!"
 	done
 
 WorkerTwistMountain2FAfterText:
-	text ""
+	text "You can feel my"
+	line "face if you don't"
+	
+	para "believe me. See?"
+	line "Dripping with"
+	cont "sweat!"
 	done
 	
 HikerTwistMountain2FSeenText:
-	text ""
+	text "When I'm surrounded"
+	line "by rocks, my"
+	cont "spirit goes up!"
 	done
 
 HikerTwistMountain2FBeatenText:
-	text ""
+	text "When I lose, my"
+	line "spirits sink…"
 	done
 
 HikerTwistMountain2FAfterText:
-	text ""
+	text "My spirits rise"
+	line "and fall. I'm just"
+	cont "charmingly"
+	cont "unpredictable!"
 	done
 	
 VeteranFTwistMountain2FSeenText:
-	text ""
+	text "In battles, it's"
+	line "also important to"
+	
+	para "know what moves"
+	line "not to make."
 	done
 
 VeteranFTwistMountain2FBeatenText:
-	text ""
+	text "I've been training"
+	line "for years now, but"
+	
+	para "it's still not"
+	line "enough…"
 	done
 
 VeteranFTwistMountain2FAfterText:
-	text ""
+	text "I used to train"
+	line "under GRIMSLEY."
+	
+	para "I'm sure he would"
+	line "have known what"
+	
+	para "the right move"
+	line "would have been."
 	done
 
 TwistMountain2F_MapEvents:

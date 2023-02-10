@@ -48,14 +48,14 @@
 	tilecoll WALL, WALL, WALL, WALL ; 2f
 	tilecoll WALL, WALL, WALL, WALL ; 30
 	tilecoll WALL, WALL, WALL, WALL ; 31
-	tilecoll BUOY, BUOY, WATER, BUOY ; 32
+	tilecoll 01, 01, 01, 01 ; 32
 	tilecoll TALL_GRASS, TALL_GRASS, TALL_GRASS, TALL_GRASS ; 33
 	tilecoll BUOY, WATER, BUOY, WATER ; 34
 	tilecoll WATER, WATER, WATER, WATER ; 35
 	tilecoll WATER, BUOY, WATER, BUOY ; 36
 	tilecoll TALL_GRASS, TALL_GRASS, TALL_GRASS, TALL_GRASS ; 37
 	tilecoll BUOY, WATER, BUOY, BUOY ; 38
-	tilecoll WATER, WATER, BUOY, BUOY ; 39
+	tilecoll 01, 01, 01, 01 ; 39
 	tilecoll WATER, BUOY, BUOY, BUOY ; 3a
 	tilecoll UP_WALL, UP_WALL, WALL, WALL ; 3b
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3c
@@ -65,7 +65,7 @@
 	tilecoll WALL, WALL, WALL, FLOOR ; 40
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 41
 	tilecoll WALL, WALL, FLOOR, WALL ; 42
-	tilecoll WATER, WATER, WATER, WATER ; 43
+	tilecoll 01, 01, 01, 01 ; 43
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 44
 	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 45
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 46
@@ -82,11 +82,11 @@
 	tilecoll WALL, WALL, WALL, WALL ; 51
 	tilecoll WALL, HOP_DOWN_LEFT, WALL, WALL ; 52
 	tilecoll HOP_DOWN_RIGHT, WALL, WALL, WALL ; 53
-	tilecoll WATER, WATER, WATER, WATER ; 54
+	tilecoll 01, 01, 01, 01 ; 54
 	tilecoll WATER, WATER, WATER, WATER ; 55
 	tilecoll WALL, WALL, DOOR, WALL ; 56
 	tilecoll HOP_DOWN, HOP_DOWN, WALL, WALL ; 57
-	tilecoll WATER, WATER, WATER, WATER ; 58
+	tilecoll 01, 01, 01, 01 ; 58
 	tilecoll WATER, WATER, WATER, WATER ; 59
 	tilecoll FLOOR, FLOOR, FLOOR, WARP_CARPET_DOWN ; 5a
 	tilecoll UP_WALL, UP_WALL, FLOOR, FLOOR ; 5b
@@ -122,8 +122,8 @@
 	tilecoll TALL_GRASS, TALL_GRASS, TALL_GRASS, FLOOR ; 79
 	tilecoll WATER, WATER, WATER, WATER ; 7a
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 7b
-	tilecoll WALL, WALL, WALL, WALL ; 7c
-	tilecoll WALL, WALL, WALL, WALL ; 7d
+	tilecoll 01, 01, 01, 01 ; 7c
+	tilecoll 01, 01, 01, 01 ; 7d
 	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 7e
 	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 7f
 	tilecoll FLOOR, FLOOR, FLOOR, STAIRS_RIGHT_UP ; 80
