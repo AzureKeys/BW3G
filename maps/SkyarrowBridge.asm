@@ -55,17 +55,17 @@ SkyarrowBridge_MapEvents:
 	db 4 ; warp events
 	warp_event  4,  4, CASTELIA_BRIDGE_GATE, 5
 	warp_event  4,  5, CASTELIA_BRIDGE_GATE, 6
-	warp_event 33,  4, PINWHEEL_BRIDGE_GATE, 5
-	warp_event 33,  5, PINWHEEL_BRIDGE_GATE, 6
+	warp_event 45,  4, PINWHEEL_BRIDGE_GATE, 5
+	warp_event 45,  5, PINWHEEL_BRIDGE_GATE, 6
 
 	db 0 ; coord events
 
 	db 0 ; bg events
 
 	db 9 ; object events
-	object_event 10,  4, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, SkyarrowGentlemanScript, -1
-	object_event 21,  1, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, SkyarrowLassScript, -1
-	object_event 30,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, SkyarrowYoungsterScript, -1
+	object_event 12,  4, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 2, 1, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, SkyarrowGentlemanScript, -1
+	object_event 28,  4, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, SkyarrowLassScript, -1
+	object_event 39,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 1, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, SkyarrowYoungsterScript, -1
 	object_event  6,  5, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
 	object_event 16,  5, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
 	object_event 26,  5, SPRITE_CABLE, SPRITEMOVEDATA_CABLE_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, -1
