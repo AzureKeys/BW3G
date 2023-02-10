@@ -7,13 +7,24 @@ DragonspiralTower6F_MapScripts:
 	scene_script .DummyScene0 ; SCENE_DEFAULT
 	scene_script .DummyScene1 ; SCENE_FINISHED
 
-	db 0 ; callbacks
+	db 1 ; callbacks
+	callback MAPCALLBACK_OBJECTS, .AppearRoofObjects
 
 .DummyScene0:
 	end
 
 .DummyScene1:
 	end
+	
+.AppearRoofObjects: ; Reset the objects on the Roof if we lost to Zinzolin
+	checkmapscene DRAGONSPIRAL_TOWER_ROOF
+	ifequal SCENE_FINISHED, .done
+	setevent EVENT_DRAGONSPIRAL_TOWER_ROOF_JUNIPER
+	setevent EVENT_DRAGONSPIRAL_TOWER_ROOF_SHADOW_2
+	setevent EVENT_DRAGONSPIRAL_TOWER_ROOF_GENESECT_2
+	clearevent EVENT_DRAGONSPIRAL_TOWER_ROOF_GENESECT_1
+.done
+	return
 	
 DragonspiralTowerInferScript1:
 	moveobject DRAGONSPIRALTOWER6F_INFER, 2, 8

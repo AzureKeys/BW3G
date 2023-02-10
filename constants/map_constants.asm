@@ -89,7 +89,6 @@ ENDM
 	map_const VICTORY_ROAD_GROVE, 9, 13
 	map_const VICTORY_ROAD_CASTLE_OUTSIDE, 11, 10
 	map_const NS_ROOM, 5, 5
-	map_const NIMBASA_PARK_OUTSIDE, 27, 10
 	map_const TWIST_MOUNTAIN_1F, 16, 17
 	map_const TWIST_MOUNTAIN_2F, 20, 17
 	map_const TWIST_MOUNTAIN_3F, 19, 14
@@ -163,12 +162,22 @@ ENDM
 	map_const NIMBASA_NAME_RATER, 4, 4 
 	map_const R_4_NIMBASA_GATE, 5, 11
 	map_const NIMBASA_SUBWAY, 10, 9
+	map_const NIMBASA_PARK_OUTSIDE, 27, 10
+	map_const R_16, 18, 15
+	map_const R_16_LOSTLORN_GATE, 5, 4
+	map_const R_16_NIMBASA_GATE, 5, 4
+	map_const R_5, 20, 11
+	map_const R_5_NIMBASA_GATE, 5, 4
+	map_const R_5_BRIDGE_GATE, 5, 4
+	map_const R_5_TRUCK, 4, 3
 	
 	newgroup
 	
 	map_const R_4, 23, 30
 	map_const R_4_HOUSE, 4, 4 
 	map_const R_4_CASTELIA_GATE, 5, 4
+	map_const DESERT_RESORT, 30, 23
+	map_const R_4_DESERT_GATE, 5, 4
 	
 	newgroup
 	
@@ -288,6 +297,9 @@ ENDM
 	map_const DRIFTVEIL_STONE_EMPORIUM, 5, 6
 	map_const DRIFTVEIL_HOUSE, 4, 4
 	map_const DRIFTVEIL_TRADE_HOUSE, 4, 4
+	map_const R_6, 26, 25
+	map_const R_6_HOUSE, 4, 4
+	map_const R_6_LAB, 4, 4
 	
 	newgroup
 	map_const MISTRALTON_CITY, 20, 16
@@ -321,6 +333,8 @@ ENDM
 	map_const R_9, 22, 11
 	map_const SHOPPING_MALL_NINE, 9, 14
 	map_const MEMBERS_ROOM, 7, 4
+	map_const VILLAGE_BRIDGE, 34, 19
+	map_const R_11_VILLAGE_BRIDGE_GATE, 5, 4
 	
 	newgroup
 	map_const TUBELINE_BRIDGE, 9, 7
@@ -334,29 +348,6 @@ ENDM
 	map_const ICIRRUS_HOUSE, 4, 4
 	map_const ICIRRUS_FAN_CLUB, 5, 6
 	map_const ICIRRUS_CAVE, 16, 19
-	
-	newgroup
-	map_const R_6, 26, 25
-	map_const R_6_HOUSE, 4, 4
-	map_const R_6_LAB, 4, 4
-	
-	newgroup
-	map_const DESERT_RESORT, 30, 23
-	map_const R_4_DESERT_GATE, 5, 4
-	
-	newgroup
-	map_const VILLAGE_BRIDGE, 34, 19
-	map_const R_11_VILLAGE_BRIDGE_GATE, 5, 4
-	
-	newgroup
-	
-	map_const R_16, 18, 15
-	map_const R_16_LOSTLORN_GATE, 5, 4
-	map_const R_16_NIMBASA_GATE, 5, 4
-	map_const R_5, 20, 11
-	map_const R_5_NIMBASA_GATE, 5, 4
-	map_const R_5_BRIDGE_GATE, 5, 4
-	map_const R_5_TRUCK, 4, 3
 	
 	newgroup
 	map_const R_23_EAST, 17, 26

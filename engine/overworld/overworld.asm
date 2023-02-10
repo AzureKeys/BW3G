@@ -118,9 +118,23 @@ AddIndoorSprites:
 	ret
 
 AddOutdoorSprites:
+	; Some groups' outdoor maps are all self-contained
 	ld a, [wMapGroup]
 	cp GROUP_GIANT_CHASM_1F ; Dungeons
-	; Outdoor Dungeon maps are all self-contained
+	jr z, AddIndoorSprites
+	cp GROUP_CASTELIA_CITY_NORTH ; Castelia
+	jr z, AddIndoorSprites
+	cp GROUP_NIMBASA_CITY ; Nimbasa
+	jr z, AddIndoorSprites
+	cp GROUP_R_4 ; Desert
+	jr z, AddIndoorSprites
+	cp GROUP_ASPERTIA_CITY ; Aspertia
+	jr z, AddIndoorSprites
+	cp GROUP_VIRBANK_CITY ; Virbank
+	jr z, AddIndoorSprites
+	cp GROUP_DRIFTVEIL_CITY ; Driftveil
+	jr z, AddIndoorSprites
+	cp GROUP_OPELUCID_CITY ; Opelucid
 	jr z, AddIndoorSprites
 	dec a
 	ld c, a

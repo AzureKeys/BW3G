@@ -10,7 +10,7 @@ OutdoorSprites:
 	dw UndellaGroupSprites
 	dw LentimasGroupSprites
 	dw NimbasaGroupSprites
-	dw R4GroupSprites
+	dw DesertGroupSprites
 	dw CasteliaGroupSprites
 	dw AspertiaGroupSprites
 	dw FloccesyGroupSprites
@@ -24,10 +24,6 @@ OutdoorSprites:
 	dw MistraltonGroupSprites
 	dw OpelucidGroupSprites
 	dw IcirrusGroupSprites
-	dw ChargestoneGroupSprites
-	dw DesertGroupSprites
-	dw VillageGroupSprites
-	dw NimbasaOuterGroupSprites
 	dw PkmnLeagueGroupSprites
 
 HumilauGroupSprites:
@@ -103,37 +99,6 @@ NimbasaGroupSprites:
 	; 9 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
-	db 0 ; end
-
-NimbasaOuterGroupSprites:
-; Route 16, Route 5
-	db SPRITE_COOLTRAINER_M
-	db SPRITE_COOLTRAINER_F
-	db SPRITE_RANGER_M
-	db SPRITE_LASS
-	db SPRITE_BIKER
-	db SPRITE_TEACHER
-	db SPRITE_CYCLIST_M
-	db SPRITE_CYCLIST_F
-	db SPRITE_LINEBACKER
-	; 9 of max 9 walking sprites
-	db SPRITE_POKE_BALL
-	db SPRITE_FRUIT_TREE
-	db 0 ; end
-
-R4GroupSprites:
-; Route 4
-	db SPRITE_YOUNGSTER
-	db SPRITE_LASS
-	db SPRITE_BIKER
-	db SPRITE_BUENA
-	db SPRITE_POKEFAN_M
-	db SPRITE_OFFICER
-	db SPRITE_ROUGHNECK
-	db SPRITE_FISHER
-	db SPRITE_POKEFAN_F
-	; 9 of max 9 walking sprites
-	db SPRITE_POKE_BALL
 	db 0 ; end
 
 DesertGroupSprites:
@@ -302,22 +267,6 @@ DriftveilGroupSprites:
 	db SPRITE_CABLE
 	db 0 ; end
 
-ChargestoneGroupSprites:
-; R6
-	db SPRITE_BUENA
-	db SPRITE_RANGER_F
-	db SPRITE_RANGER_M
-	db SPRITE_GRAMPS
-	db SPRITE_PHARMACIST
-	db SPRITE_LASS
-	db SPRITE_YOUNGSTER
-	db SPRITE_SCIENTIST
-	db SPRITE_SCIENTIST_F
-	; 8 of max 9 walking sprites
-	db SPRITE_FRUIT_TREE
-	db SPRITE_POKE_BALL
-	db 0 ; end
-
 MistraltonGroupSprites:
 ; Mistralton City, R7
 	db SPRITE_YOUNGSTER
@@ -349,18 +298,6 @@ OpelucidGroupSprites:
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
 	db SPRITE_FOUNTAIN
-	db 0 ; end
-
-VillageGroupSprites:
-; Village Bridge
-	db SPRITE_MUSICIAN
-	db SPRITE_COOLTRAINER_F
-	db SPRITE_COOLTRAINER_M
-	db SPRITE_LINEBACKER
-	; 9 of max 9 walking sprites
-	db SPRITE_FRUIT_TREE
-	db SPRITE_POKE_BALL
-	db SPRITE_CABLE
 	db 0 ; end
 
 IcirrusGroupSprites:
