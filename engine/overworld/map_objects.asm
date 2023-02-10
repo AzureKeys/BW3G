@@ -554,6 +554,8 @@ MapObjectMovementPattern:
 	dw .MovementCableRight
 	dw .MovementFountain
 	dw .MovementBadge
+	dw .MovementRailLeft
+	dw .MovementRailRight
 
 .Null_00:
 	ret
@@ -779,6 +781,14 @@ MapObjectMovementPattern:
 	
 .MovementCableRight:
 	ld a, OBJECT_ACTION_CABLE_RIGHT
+	jr .ActionA_StepType04
+	
+.MovementRailLeft:
+	ld a, OBJECT_ACTION_BRIDGE_RAIL_LEFT
+	jr .ActionA_StepType04
+	
+.MovementRailRight:
+	ld a, OBJECT_ACTION_BRIDGE_RAIL_RIGHT
 	jr .ActionA_StepType04
 	
 .MovementBadge:

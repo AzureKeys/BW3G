@@ -22,6 +22,8 @@ ObjectActionPairPointers:
 	dw SetFacingCableRight,            SetFacingCableRight
 	dw SetFacingFountain,              SetFacingFountain
 	dw SetFacingBadge,                 SetFacingBadge
+	dw SetFacingRailLeft,              SetFacingRailLeft
+	dw SetFacingRailRight,             SetFacingRailRight
 
 SetFacingStanding:
 	ld hl, OBJECT_FACING_STEP
@@ -258,6 +260,18 @@ SetFacingCableRight:
 	ld hl, OBJECT_FACING_STEP
 	add hl, bc
 	ld [hl], FACING_CABLE_RIGHT
+	ret
+
+SetFacingRailLeft:
+	ld hl, OBJECT_FACING_STEP
+	add hl, bc
+	ld [hl], FACING_BRIDGE_RAIL_LEFT
+	ret
+
+SetFacingRailRight:
+	ld hl, OBJECT_FACING_STEP
+	add hl, bc
+	ld [hl], FACING_BRIDGE_RAIL_RIGHT
 	ret
 
 SetFacingFountain:

@@ -38,6 +38,8 @@ Facings:
 	dw FacingCableRight
 	dw FacingFountain
 	dw FacingBadge
+	dw FacingRailLeft
+	dw FacingRailRight
 .End
 	dw 0
 
@@ -281,3 +283,13 @@ FacingBadge:
 	db  -4,  8, 0, $01
 	db   4,  0, 0, $02
 	db   4,  8, 0, $03
+
+FacingRailLeft: 
+	db 2 ; #
+	db  12, -8, 0, $01
+	db   4,  0, 0, $02
+
+FacingRailRight: 
+	db 2 ; #
+	db   4, -8, X_FLIP, $02
+	db  12,  0, X_FLIP, $01

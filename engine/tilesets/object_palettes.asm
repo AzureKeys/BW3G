@@ -3,7 +3,7 @@ LoadSpecialMapObjectPalette:
 	cp TILESET_BRIDGE
 	jp z, .bridge
 	cp TILESET_VILLAGE_BRIDGE
-	jp z, .bridge
+	jp z, .village_bridge
 	cp TILESET_ELITE_FOUR_ROOM
 	jp z, .elite_four_room
 	cp TILESET_OPELUCID
@@ -39,6 +39,14 @@ LoadSpecialMapObjectPalette:
 	cp GROUP_CHAMPIONS_ROOM
 	jp nz, .do_nothing
 	call LoadDragonspiralRoofObPalette
+	scf
+	ret
+	
+.village_bridge
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .r5_nite
+	call LoadR5ObPalette
 	scf
 	ret
 	
@@ -153,7 +161,7 @@ LoadSpecialMapObjectPalette:
 	and a
 	ret
 
-LoadBridgeObPalette: ; GREEN = Green Dark, ROCK used for cable object
+LoadBridgeObPalette: ; TREE & ROCK used for bridge objects
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, BridgeObPalette
@@ -164,7 +172,7 @@ LoadBridgeObPalette: ; GREEN = Green Dark, ROCK used for cable object
 BridgeObPalette:
 INCLUDE "gfx/tilesets/bridge_ob.pal"
 
-LoadBridgeNiteObPalette: ; GREEN = Green Dark, ROCK used for cable object
+LoadBridgeNiteObPalette: ; TREE & ROCK used for bridge objects
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, BridgeNiteObPalette

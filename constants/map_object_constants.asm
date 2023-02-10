@@ -170,6 +170,8 @@ MAPOBJECT_SCREEN_HEIGHT EQU (SCREEN_HEIGHT / 2) + 2
 	const SPRITEMOVEDATA_CABLE_RIGHT
 	const SPRITEMOVEDATA_FOUNTAIN
 	const SPRITEMOVEDATA_BADGE
+	const SPRITEMOVEDATA_BRIDGE_RAIL_LEFT
+	const SPRITEMOVEDATA_BRIDGE_RAIL_RIGHT
 NUM_SPRITEMOVEDATA EQU const_value
 
 ; MapObjectMovementPattern.Pointers indexes (see engine/overworld/map_objects.asm)
@@ -207,6 +209,8 @@ NUM_SPRITEMOVEDATA EQU const_value
 	const SPRITEMOVEFN_CABLE_RIGHT
 	const SPRITEMOVEFN_FOUNTAIN
 	const SPRITEMOVEFN_BADGE
+	const SPRITEMOVEFN_BRIDGE_RAIL_LEFT
+	const SPRITEMOVEFN_BRIDGE_RAIL_RIGHT
 	
 ; StepTypesJumptable indexes (see engine/overworld/map_objects.asm)
 	const_def
@@ -263,6 +267,8 @@ NUM_SPRITEMOVEDATA EQU const_value
 	const OBJECT_ACTION_CABLE_RIGHT
 	const OBJECT_ACTION_FOUNTAIN
 	const OBJECT_ACTION_BADGE
+	const OBJECT_ACTION_BRIDGE_RAIL_LEFT
+	const OBJECT_ACTION_BRIDGE_RAIL_RIGHT
 
 ; Facings indexes (see data/sprites/facings.asm)
 	const_def
@@ -304,6 +310,8 @@ NUM_SPRITEMOVEDATA EQU const_value
 	const FACING_CABLE_RIGHT
 	const FACING_FOUNTAIN
 	const FACING_BADGE
+	const FACING_BRIDGE_RAIL_LEFT
+	const FACING_BRIDGE_RAIL_RIGHT
 
 ; DoPlayerMovement.DoStep arguments (see engine/overworld/player_movement.asm)
 	const_def
