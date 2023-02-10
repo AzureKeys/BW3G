@@ -4776,9 +4776,9 @@ HydreigonEvosAttacks:
 	db 63, TRI_ATTACK
 	db 64, HYPER_VOICE
 	db 79, OUTRAGE
-	; db 100, SURF
-	; db 100, FLY
-	; db 100, WATERFALL
+	db 100, THUNDER
+	db 100, SUPERSONIC
+	db 100, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 GenesectEvosAttacks:

@@ -1202,6 +1202,9 @@ PlaceMoveData:
 	hlcoord 12, 12
 	ld de, String_MoveAtk
 	call PlaceString
+	hlcoord 12, 13
+	ld de, String_MoveAcc
+	call PlaceString
 	ld a, [wCurSpecies]
 	ld b, a
 	farcall GetMoveCategoryName
@@ -1214,6 +1217,43 @@ PlaceMoveData:
 	ld [hl], "/"
 	inc hl
 	predef PrintMoveType
+; print accuracy
+	xor a
+	ldh [hMultiplicand + 0], a
+	ldh [hMultiplicand + 1], a
+	ld a, [wCurSpecies]
+	dec a
+	ld hl, Moves + MOVE_ACC
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	; Multiply by 100
+	ldh [hMultiplicand + 2], a
+	ld a, 100
+	ldh [hMultiplier], a
+	call Multiply
+	; Divide by 255
+	ld a, 255
+	ldh [hDivisor], a
+	ld b, 4
+	call Divide
+	; Load hQuotient into b
+	ldh a, [hQuotient + 3]
+	ld b, a
+	; Round up Remainder
+	ldh a, [hRemainder]
+	and a
+	jr z, .no_remainder
+	inc b
+.no_remainder
+	ld a, b
+	hlcoord 16, 13
+	ld [wDeciramBuffer], a
+	ld de, wDeciramBuffer
+	lb bc, 1, 3
+	call PrintNum
+	
 	ld a, [wCurSpecies]
 	dec a
 	ld hl, Moves + MOVE_POWER
@@ -1246,7 +1286,9 @@ String_MoveType_Top:
 String_MoveType_Bottom:
 	db "│        └@"
 String_MoveAtk:
-	db "ATK/@"
+	db "PWR/@"
+String_MoveAcc:
+	db "ACC/@"
 String_MoveNoPower:
 	db "---@"
 
