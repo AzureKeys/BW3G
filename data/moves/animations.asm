@@ -2201,22 +2201,31 @@ BattleAnim_FairyWind: ; c95c3
 	anim_ret
 	
 BattleAnim_DrainingKiss: ; c95c3
-	anim_3gfx ANIM_GFX_OBJECTS, ANIM_GFX_ANGELS, ANIM_GFX_BUBBLE
+	anim_3gfx ANIM_GFX_OBJECTS, ANIM_GFX_ANGELS, ANIM_GFX_CHARGE
 	anim_obj ANIM_OBJ_SWEET_KISS, 96, 40, $0
 	anim_sound 0, 1, SFX_SWEET_KISS
 	anim_wait 32
 	anim_sound 0, 1, SFX_SWEET_KISS_2
 	anim_obj ANIM_OBJ_HEART, 120, 40, $0
+	anim_obj ANIM_OBJ_3D, 44, 88, $0
+.loop
 	anim_sound 6, 3, SFX_WATER_GUN
-	anim_call BattleAnim_LeechLife_branch_cbab3
-	anim_wait 128
-	anim_wait 48
+	anim_obj ANIM_OBJ_ABSORB, 128, 48, $2
+	anim_wait 6
+	anim_sound 6, 3, SFX_WATER_GUN
+	anim_obj ANIM_OBJ_ABSORB, 136, 64, $3
+	anim_wait 6
+	anim_sound 6, 3, SFX_WATER_GUN
+	anim_obj ANIM_OBJ_ABSORB, 136, 32, $4
+	anim_wait 6
+	anim_loop 3, .loop
+	anim_wait 32
 	anim_ret
 	
 BattleAnim_Dazzlingleam: ; c95c3
 	anim_1gfx ANIM_GFX_SPEED
-	anim_sound 0, 1, SFX_PSYCHIC
-	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $6, $20
+	anim_sound 0, 1, SFX_MOONLIGHT
+	anim_bgeffect ANIM_BG_ALTERNATE_HUES, $0, $2, $0
 	anim_wait 4
 	anim_obj ANIM_OBJ_FLASH, 136, 56, $0
 	anim_wait 4
@@ -2234,6 +2243,9 @@ BattleAnim_Dazzlingleam: ; c95c3
 	anim_wait 4
 	anim_obj ANIM_OBJ_FLASH, 136, 56, $38
 	anim_wait 4
+	anim_incbgeffect ANIM_BG_ALTERNATE_HUES
+	anim_sound 0, 1, SFX_FLASH
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $6, $20
 	anim_obj ANIM_OBJ_FLASH, 136, 56, $0
 	anim_wait 4
 	anim_obj ANIM_OBJ_FLASH, 136, 56, $8

@@ -55,19 +55,19 @@ PlayersHouseRadioScript:
 	; returnfromcredits
 	; end
 	
-	; opentext
-	; givepoke HYDREIGON, 100, NO_ITEM
-	; closetext
-	; setflag ENGINE_WAVEBADGE
-	; setflag ENGINE_SPOOKYBADGE
-	; setflag ENGINE_INSECTBADGE
-	; setflag ENGINE_TOXICBADGE
-	; setflag ENGINE_BASICBADGE
-	; setflag ENGINE_GARNISHBADGE
-	; setflag ENGINE_JETBADGE
-	; setflag ENGINE_LEGENDBADGE
-	; setflag ENGINE_FLYPOINT_ASPERTIA
-	; end
+	opentext
+	givepoke HYDREIGON, 100, NO_ITEM
+	closetext
+	setflag ENGINE_WAVEBADGE
+	setflag ENGINE_SPOOKYBADGE
+	setflag ENGINE_INSECTBADGE
+	setflag ENGINE_TOXICBADGE
+	setflag ENGINE_BASICBADGE
+	setflag ENGINE_GARNISHBADGE
+	setflag ENGINE_JETBADGE
+	setflag ENGINE_LEGENDBADGE
+	setflag ENGINE_FLYPOINT_ASPERTIA
+	end
 	
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .NormalRadio
@@ -157,8 +157,8 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	db 1 ; warp events
-	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, SKYARROW_BRIDGE, 1
+	;warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+	warp_event  7,  0, R_22, 1
 
 	db 0 ; coord events
 
