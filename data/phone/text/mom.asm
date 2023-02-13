@@ -4,162 +4,102 @@ MomPhoneGreetingText:
 	para "Oh, hi, <PLAYER>!"
 	line "Working hard?"
 	done
-
-MomPhoneLandmarkText:
-	text "Oh, so you're in"
-	line "@"
+	
+MomCutePokemonText:
+	text "Oh? You're raising"
+	line "A #MON?"
+	cont "Oh, how cute!"
+	done
+	
+MomHappinessIntroText:
+	text "You know, I spent"
+	line "a lot of time"
+	
+	para "around #MON"
+	line "when I was"
+	cont "younger."
+	
+	para "I'm pretty good at"
+	line "knowing how happy"
+	
+	para "a #MON is with"
+	line "its trainer."
+	
+	para "Give me a call if"
+	line "you want me to"
+	
+	para "tell you how"
+	line "friendly your"
+	
+	para "#MON is toward"
+	line "you!"
+	done
+	
+MomHappinessText:
+	text "Oh, let me see"
+	line "your @"
 	text_ram wStringBuffer3
 	text "…"
-
-	para "Isn't that where"
-	line "@"
-	text_ram wStringBuffer4
-	text_start
-	para "is? Did you go"
-	line "take a look?"
 	done
 
-MomPhoneGenericAreaText:
-	text "Really, you're in"
-	line "@"
-	text_ram wStringBuffer3
-	text "?"
-
-	para "I've never gone"
-	line "there. That's kind"
-	cont "of neat, <PLAYER>."
+MomHappinessRatingText_LovesYouALot:
+	text "It looks really"
+	line "happy! It must"
+	cont "love you a lot."
 	done
 
-MomPhoneNewBarkText:
-	text "What? You're in"
-	line "@"
-	text_ram wStringBuffer3
-	text "?"
-
-	para "Come see your MOM"
-	line "sometime!"
+MomHappinessRatingText_ReallyTrustsYou:
+	text "I get the feeling"
+	line "that it really"
+	cont "trusts you."
 	done
 
-MomPhoneCherrygroveText:
-	text "You're visiting"
-	line "@"
-	text_ram wStringBuffer3
-	text "?"
-
-	para "How about coming"
-	line "home for a bit?"
+MomHappinessRatingText_SortOfHappy:
+	text "It's friendly to-"
+	line "ward you. It looks"
+	cont "sort of happy."
 	done
 
-MomOtherAreaText:
-	text "Wow, you're in"
-	line "@"
-	text_ram wStringBuffer3
-	text "?"
-
-	para "Good luck on your"
-	line "#MON quest!"
+MomHappinessRatingText_QuiteCute:
+	text "It hasn't yet"
+	line "formed a meaning-"
+	cont "ful bond. Give it"
+	cont "time."
 	done
 
-MomDeterminedText:
-	text "That sounds really"
-	line "tough."
-
-	para "But, <PLAYER>, I"
-	line "know you're really"
-
-	para "determined. You'll"
-	line "be OK, right?"
+MomHappinessRatingText_NotUsedToYou:
+	text "You should treat"
+	line "it better. It's"
+	cont "not used to you."
 	done
 
-MomCheckBalanceText:
-	text "By the way, you've"
-	line "saved up ¥@"
-	text_ram wStringBuffer3
-	text "."
-
-	para "Do you want to"
-	line "keep on saving?"
+MomHappinessRatingText_LooksMean:
+	text "It doesn't seem to"
+	line "like you at all."
+	cont "It looks mean."
 	done
-
-MomImportantToSaveText:
-	text "It's important to"
-	line "save your money."
-	done
-
-MomYoureNotSavingText:
-	text "Oh, <PLAYER>,"
-	line "you're not saving"
-
-	para "any money. Would"
-	line "you like to save?"
-	done
-
-MomYouveSavedText:
-	text "By the way, you've"
-	line "saved up ¥@"
-	text_ram wStringBuffer3
-	text "."
-
-	para "Want to start"
-	line "saving again?"
-	done
-
-MomOKIllSaveText:
-	text "OK. I'll save your"
-	line "money."
-	done
-
-MomPhoneWontSaveMoneyText:
-	text "OK. I won't save"
-	line "your money."
-	done
-
-MomPhoneHangUpText:
-	text "<PLAYER>, keep it"
-	line "up! I'm rooting"
-	cont "for you, baby!"
-	done
-
-MomPhoneNoPokemonText:
-	text "Hello?"
-
-	para "Oh, hi, <PLAYER>!"
-	line "Wasn't PROF.ELM"
-	cont "waiting for you?"
-	done
-
-MomPhoneNoPokedexText:
-	text "Hello?"
-
-	para "Oh, hi, <PLAYER>!"
-	line "You're on a big"
-
-	para "mission for PROF."
-	line "ELM? Be good!"
-	done
-
-MomPhoneNoGymQuestText:
-	text "Hello?"
-
-	para "Hi, <PLAYER>! If"
-	line "you're done with"
-
-	para "your errand come"
-	line "on home, dear."
-	done
-
+	
 MomPhoneLectureText:
-	text "Hello?"
-
-	para "…… <PLAYER>?"
-	line "I heard from PROF."
-
-	para "ELM that you went"
-	line "on a long trip."
-
+	text "Hi, <PLAY_G>?"
+	line "It's your mother."
+	
+	para "I'm told you're"
+	line "going on a #MON"
+	cont "journey."
+	
 	para "I wish you would"
 	line "have told me…"
-
-	para "What about money?"
-	line "Should I save it?"
+	
+	para "That does sound"
+	line "exciting though,"
+	cont "I have to admit."
+	done
+	
+MomPhoneOutroText:
+	text "Now, be safe and"
+	line "have fun on your"
+	cont "travels, <PLAY_G>."
+	
+	para "You got this,"
+	line "baby!"
 	done

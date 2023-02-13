@@ -17,7 +17,8 @@ HumilauCity_MapScripts:
 	scene_script .DummyScene0 ; SCENE_DEFAULT
 	scene_script .DummyScene1 ; SCENE_FINISHED
 
-	db 1 ; callbacks
+	db 2 ; callbacks
+	callback MAPCALLBACK_NEWMAP, .FlyPoint
 	callback MAPCALLBACK_OBJECTS, .MoveBlockers
 
 .DummyScene0:
@@ -26,8 +27,17 @@ HumilauCity_MapScripts:
 .DummyScene1:
 	end
 
-.MoveBlockers:
+.FlyPoint:
 	setflag ENGINE_FLYPOINT_HUMILAU
+	checkevent EVENT_TALKED_TO_MOM_AFTER_POKEMON
+	iftrue .done
+	checkflag ENGINE_WAVEBADGE
+	iffalse .done
+	specialphonecall SPECIALCALL_MOM_LECTURE
+.done
+	return
+
+.MoveBlockers:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iffalse .End
 	disappear HUMILAUCITY_PC_BLOCKER

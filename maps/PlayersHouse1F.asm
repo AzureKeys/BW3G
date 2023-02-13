@@ -57,6 +57,7 @@ MeetMomScript:
 	scall PlayersHouse1FReceiveItemStd
 	setflag ENGINE_POKEGEAR
 	setflag ENGINE_PHONE_CARD
+	addcellnum PHONE_MOM
 	setscene SCENE_FINISHED
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
@@ -107,6 +108,13 @@ MomScript:
 	end
 
 .GotAPokemon:
+	checkevent EVENT_TALKED_TO_MOM_AFTER_POKEMON
+	iftrue .GotPhoneNumber
+	writetext MomPhoneText
+	buttonsound
+	setevent EVENT_TALKED_TO_MOM_AFTER_POKEMON
+	
+.GotPhoneNumber
 	checkflag ENGINE_POKEDEX
 	iftrue .GotPokedex
 	writetext SoWhatWasMarlonsErrandText
@@ -245,6 +253,38 @@ MarlonIsWaitingText:
 
 	para "Hurry up, baby!"
 	done
+	
+MomPhoneText:
+	text "Well, <PLAY_G>,"
+	line "did you talk to"
+	cont "MARLON?"
+	
+	para "Oh, what's this?"
+	line "A #MON?"
+	cont "Oh, how cute!"
+	
+	para "You know, I spent"
+	line "a lot of time"
+	
+	para "around #MON"
+	line "when I was"
+	cont "younger."
+	
+	para "I'm pretty good at"
+	line "knowing how happy"
+	
+	para "a #MON is with"
+	line "its trainer."
+	
+	para "Give me a call if"
+	line "you want me to"
+	
+	para "tell you how"
+	line "friendly your"
+	
+	para "#MON is toward"
+	line "you!"
+	done
 
 SoWhatWasMarlonsErrandText:
 	text "So, what did"
@@ -281,23 +321,36 @@ NeighborMornIntroText:
 	text "Good morning,"
 	line "<PLAY_G>!"
 
-	para "I'm visiting!"
+	para "Your mom and I"
+	line "have a date at"
+	
+	para "the MARINE TUBE"
+	line "later today!"
 	done
 
 NeighborDayIntroText:
 	text "Hello, <PLAY_G>!"
-	line "I'm visiting!"
+
+	para "Your mom and I"
+	line "have a date at"
+	
+	para "the MARINE TUBE"
+	line "later today!"
 	done
 
 NeighborNiteIntroText:
 	text "Good evening,"
 	line "<PLAY_G>!"
 
-	para "I'm visiting!"
+	para "Your mom and I"
+	line "went on a date to"
+	
+	para "the MARINE TUBE"
+	line "earlier today!"
 	done
 
 NeighborText:
-	text "<PLAY_G>, have you"
+	text "Oh, and have you"
 	line "heard?"
 
 	para "My daughter is"

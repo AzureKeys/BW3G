@@ -11,7 +11,7 @@ ENDM
 PhoneContacts:
 ; entries correspond to PHONE_* constants
 	phone TRAINER_NONE,   PHONE_00,                  N_A,                0,       UnusedPhoneScript,         0, UnusedPhoneScript
-	phone TRAINER_NONE,   PHONECONTACT_MOM,          PLAYERS_HOUSE_1F,   ANYTIME, MomPhoneCalleeScript,      0, UnusedPhoneScript
+	phone TRAINER_NONE,   PHONECONTACT_MOM,          PLAYERS_HOUSE_1F,   ANYTIME, MomPhoneCalleeScript,      0, MomPhoneCallerScript
 	phone TRAINER_NONE,   PHONECONTACT_BILL,         N_A,                ANYTIME, BillPhoneCalleeScript,     0, BillPhoneCallerScript
 	phone TRAINER_NONE,   PHONECONTACT_CHEREN,       N_A,                ANYTIME, CherenPhoneCalleeScript,   0, CherenPhoneCallerScript
 	phone TRAINER_NONE,   PHONECONTACT_BIANCA,       N_A,                ANYTIME, BiancaPhoneCalleeScript,   0, BiancaPhoneCallerScript
