@@ -1394,7 +1394,7 @@ JohtoGrassWildMons:
 	db 23, GOLBAT
 	db 25, GOLBAT
 	db 28, KOFFING
-	db 29, SCRAGGY
+	db 30, WEEZING
 	; day
 	db 24, TRUBBISH
 	db 25, KOFFING
@@ -1405,7 +1405,7 @@ JohtoGrassWildMons:
 	db 23, GOLBAT
 	db 25, GOLBAT
 	db 28, KOFFING
-	db 29, SCRAGGY
+	db 30, WEEZING
 	; nite
 	db 24, TRUBBISH
 	db 25, KOFFING
@@ -1416,7 +1416,7 @@ JohtoGrassWildMons:
 	db 23, GOLBAT
 	db 25, GOLBAT
 	db 28, KOFFING
-	db 29, SCRAGGY
+	db 30, WEEZING
 	
 	map_id CASTELIA_SEWERS_ROOMS
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -1430,7 +1430,7 @@ JohtoGrassWildMons:
 	db 23, GOLBAT
 	db 25, GOLBAT
 	db 28, KOFFING
-	db 29, SCRAGGY
+	db 30, WEEZING
 	; day
 	db 24, TRUBBISH
 	db 25, KOFFING
@@ -1441,7 +1441,7 @@ JohtoGrassWildMons:
 	db 23, GOLBAT
 	db 25, GOLBAT
 	db 28, KOFFING
-	db 29, SCRAGGY
+	db 30, WEEZING
 	; nite
 	db 24, TRUBBISH
 	db 25, KOFFING
@@ -1452,7 +1452,7 @@ JohtoGrassWildMons:
 	db 23, GOLBAT
 	db 25, GOLBAT
 	db 28, KOFFING
-	db 29, SCRAGGY
+	db 30, WEEZING
 	
 	map_id RELIC_PASSAGE_FRONT
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -1895,10 +1895,10 @@ JohtoGrassWildMons:
 	db 32, MEDITITE
 	db 31, SNORUNT
 	db 32, HAUNTER
-	db 30, SPIRITOMB
-	db 34, MEDITITE
-	db 33, SNORUNT
-	db 34, SPIRITOMB
+	db 30, DUOSION
+	db 34, GOTHORITA
+	db 33, SPIRITOMB
+	db 37, SPIRITOMB
 	; day
 	db 33, LITWICK
 	db 32, BALTOY
@@ -1906,10 +1906,10 @@ JohtoGrassWildMons:
 	db 32, MEDITITE
 	db 31, SNORUNT
 	db 32, HAUNTER
-	db 30, SPIRITOMB
-	db 34, MEDITITE
-	db 33, SNORUNT
-	db 34, SPIRITOMB
+	db 30, DUOSION
+	db 34, GOTHORITA
+	db 33, SPIRITOMB
+	db 37, SPIRITOMB
 	; nite
 	db 33, LITWICK
 	db 32, BALTOY
@@ -1917,10 +1917,10 @@ JohtoGrassWildMons:
 	db 32, MEDITITE
 	db 31, SNORUNT
 	db 32, HAUNTER
-	db 30, SPIRITOMB
-	db 34, MEDITITE
-	db 33, SNORUNT
-	db 34, SPIRITOMB
+	db 30, DUOSION
+	db 34, GOTHORITA
+	db 33, SPIRITOMB
+	db 37, SPIRITOMB
 	
 	map_id SEASIDE_CAVE_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -2109,33 +2109,33 @@ JohtoGrassWildMons:
 	db 41, HEATMOR
 	db 41, DURANT
 	db 42, GLIGAR
-	db 40, STUNFISK
-	db 40, SKARMORY
-	db 42, STUNFISK
+	db 40, GOTHORITA
+	db 40, DUOSION
+	db 42, SKARMORY
 	db 40, GARBODOR
-	db 43, SKARMORY
+	db 43, SCRAFTY
 	db 43, GARBODOR
 	; day
 	db 42, PAWNIARD
 	db 41, HEATMOR
 	db 41, DURANT
 	db 42, GLIGAR
-	db 40, STUNFISK
-	db 40, SKARMORY
-	db 42, STUNFISK
+	db 40, GOTHORITA
+	db 40, DUOSION
+	db 42, SKARMORY
 	db 40, GARBODOR
-	db 43, SKARMORY
+	db 43, SCRAFTY
 	db 43, GARBODOR
 	; nite
 	db 42, PAWNIARD
 	db 41, HEATMOR
 	db 41, DURANT
 	db 42, GLIGAR
-	db 40, STUNFISK
-	db 40, SKARMORY
-	db 42, STUNFISK
+	db 40, GOTHORITA
+	db 40, DUOSION
+	db 42, SKARMORY
 	db 40, GARBODOR
-	db 43, SKARMORY
+	db 43, SCRAFTY
 	db 43, GARBODOR
 	
 	map_id R_8
@@ -2468,40 +2468,40 @@ JohtoGrassWildMons:
 	db 50, AUDINO
 	db 49, ELECTABUZZ
 	db 49, MAGMAR
-	db 47, FERROTHORN
+	db 47, BRELOOM
 	db 48, HOUNDOOM
-	db 49, VIBRAVA
+	db 49, DARMANITAN
 	db 50, THROH
 	db 50, SAWK
-	db 52, FERROTHORN
+	db 52, BRELOOM
 	db 54, AUDINO
 	; day
 	db 50, AUDINO
 	db 49, ELECTABUZZ
 	db 49, MAGMAR
-	db 47, FERROTHORN
+	db 47, BRELOOM
 	db 48, HOUNDOOM
-	db 49, VIBRAVA
+	db 49, DARMANITAN
 	db 50, THROH
 	db 50, SAWK
-	db 52, FERROTHORN
+	db 52, BRELOOM
 	db 54, AUDINO
 	; nite
 	db 50, AUDINO
 	db 49, ELECTABUZZ
 	db 49, MAGMAR
-	db 47, FERROTHORN
+	db 47, BRELOOM
 	db 48, HOUNDOOM
-	db 49, VIBRAVA
+	db 49, DARMANITAN
 	db 50, THROH
 	db 50, SAWK
-	db 52, FERROTHORN
+	db 52, BRELOOM
 	db 54, AUDINO
 
 	map_id VICTORY_ROAD_CAVE_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2512,7 +2512,7 @@ JohtoGrassWildMons:
 	db 52, COFAGRIGUS
 	db 55, ZWEILOUS
 	; day
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2523,7 +2523,7 @@ JohtoGrassWildMons:
 	db 52, COFAGRIGUS
 	db 55, ZWEILOUS
 	; nite
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2537,7 +2537,7 @@ JohtoGrassWildMons:
 	map_id VICTORY_ROAD_CAVE_2F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2548,7 +2548,7 @@ JohtoGrassWildMons:
 	db 52, COFAGRIGUS
 	db 55, ZWEILOUS
 	; day
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2559,7 +2559,7 @@ JohtoGrassWildMons:
 	db 52, COFAGRIGUS
 	db 55, ZWEILOUS
 	; nite
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2573,7 +2573,7 @@ JohtoGrassWildMons:
 	map_id VICTORY_ROAD_CAVE_3F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2584,7 +2584,7 @@ JohtoGrassWildMons:
 	db 52, COFAGRIGUS
 	db 55, ZWEILOUS
 	; day
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2595,7 +2595,7 @@ JohtoGrassWildMons:
 	db 52, COFAGRIGUS
 	db 55, ZWEILOUS
 	; nite
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2609,7 +2609,7 @@ JohtoGrassWildMons:
 	map_id VICTORY_ROAD_CASTLE_OUTSIDE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2620,7 +2620,7 @@ JohtoGrassWildMons:
 	db 52, COFAGRIGUS
 	db 55, ZWEILOUS
 	; day
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2631,7 +2631,7 @@ JohtoGrassWildMons:
 	db 52, COFAGRIGUS
 	db 55, ZWEILOUS
 	; nite
-	db 52, GOLBAT
+	db 52, GURDURR
 	db 51, SWOOBAT
 	db 52, LAIRON
 	db 50, CRUSTLE
@@ -2645,8 +2645,8 @@ JohtoGrassWildMons:
 	map_id VICTORY_ROAD_OUTDOOR_1F
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 52, GURDURR
-	db 51, KROKOROK
+	db 52, KROKOROK
+	db 51, VIBRAVA
 	db 52, EXCADRILL
 	db 50, MEDICHAM
 	db 51, FERROTHORN
@@ -2656,8 +2656,8 @@ JohtoGrassWildMons:
 	db 52, FRAXURE
 	db 55, FRAXURE
 	; day
-	db 52, GURDURR
-	db 51, KROKOROK
+	db 52, KROKOROK
+	db 51, VIBRAVA
 	db 52, EXCADRILL
 	db 50, MEDICHAM
 	db 51, FERROTHORN
@@ -2667,8 +2667,8 @@ JohtoGrassWildMons:
 	db 52, FRAXURE
 	db 55, FRAXURE
 	; nite
-	db 52, GURDURR
-	db 51, KROKOROK
+	db 52, KROKOROK
+	db 51, VIBRAVA
 	db 52, EXCADRILL
 	db 50, MEDICHAM
 	db 51, FERROTHORN
@@ -2681,8 +2681,8 @@ JohtoGrassWildMons:
 	map_id VICTORY_ROAD_OUTDOOR_2F
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 52, GURDURR
-	db 51, KROKOROK
+	db 52, KROKOROK
+	db 51, VIBRAVA
 	db 52, EXCADRILL
 	db 50, MEDICHAM
 	db 51, FERROTHORN
@@ -2692,8 +2692,8 @@ JohtoGrassWildMons:
 	db 52, FRAXURE
 	db 55, FRAXURE
 	; day
-	db 52, GURDURR
-	db 51, KROKOROK
+	db 52, KROKOROK
+	db 51, VIBRAVA
 	db 52, EXCADRILL
 	db 50, MEDICHAM
 	db 51, FERROTHORN
@@ -2703,8 +2703,8 @@ JohtoGrassWildMons:
 	db 52, FRAXURE
 	db 55, FRAXURE
 	; nite
-	db 52, GURDURR
-	db 51, KROKOROK
+	db 52, KROKOROK
+	db 51, VIBRAVA
 	db 52, EXCADRILL
 	db 50, MEDICHAM
 	db 51, FERROTHORN
@@ -2720,8 +2720,8 @@ JohtoGrassWildMons:
 	db 52, ROSELIA
 	db 50, COTTONEE
 	db 50, PETILIL
-	db 52, AUDINO
-	db 51, FERROTHORN
+	db 52, SAWSBUCK
+	db 51, BRELOOM
 	db 52, TROPIUS
 	db 50, WHIMSICOTT
 	db 50, LILLIGANT
@@ -2731,8 +2731,8 @@ JohtoGrassWildMons:
 	db 52, ROSELIA
 	db 50, COTTONEE
 	db 50, PETILIL
-	db 52, AUDINO
-	db 51, FERROTHORN
+	db 52, SAWSBUCK
+	db 51, BRELOOM
 	db 52, TROPIUS
 	db 50, WHIMSICOTT
 	db 50, LILLIGANT
@@ -2742,8 +2742,8 @@ JohtoGrassWildMons:
 	db 52, ROSELIA
 	db 50, COTTONEE
 	db 50, PETILIL
-	db 52, AUDINO
-	db 51, FERROTHORN
+	db 52, SAWSBUCK
+	db 51, BRELOOM
 	db 52, TROPIUS
 	db 50, WHIMSICOTT
 	db 50, LILLIGANT
@@ -2861,37 +2861,37 @@ JohtoGrassWildMons:
 	map_id TWIST_MOUNTAIN_B1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 58, BOLDORE
-	db 60, VANILLISH
-	db 59, GURDURR
+	db 58, VANILLISH
 	db 60, BEARTIC
+	db 59, KLANG
+	db 60, MAGNETON
 	db 62, HEATMOR
 	db 62, DURANT
-	db 60, SWOOBAT
+	db 60, STEELIX
 	db 62, CRYOGONAL
 	db 63, EXCADRILL
-	db 65, STEELIX
+	db 65, EXCADRILL
 	; day
-	db 58, BOLDORE
-	db 60, VANILLISH
-	db 59, GURDURR
+	db 58, VANILLISH
 	db 60, BEARTIC
+	db 59, KLANG
+	db 60, MAGNETON
 	db 62, HEATMOR
 	db 62, DURANT
-	db 60, SWOOBAT
+	db 60, STEELIX
 	db 62, CRYOGONAL
 	db 63, EXCADRILL
-	db 65, STEELIX
+	db 65, EXCADRILL
 	; nite
-	db 58, BOLDORE
-	db 60, VANILLISH
-	db 59, GURDURR
+	db 58, VANILLISH
 	db 60, BEARTIC
+	db 59, KLANG
+	db 60, MAGNETON
 	db 62, HEATMOR
 	db 62, DURANT
-	db 60, SWOOBAT
+	db 60, STEELIX
 	db 62, CRYOGONAL
 	db 63, EXCADRILL
-	db 65, STEELIX
+	db 65, EXCADRILL
 
 	db -1 ; end
