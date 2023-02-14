@@ -270,7 +270,7 @@ ENDM
 	map_const R_1, 19, 22
 	map_const NUVEMA_TOWN, 13, 12
 	map_const NUVEMA_MOM_HOUSE, 5, 10
-	map_const NUVEMA_LAB, 5, 6
+	map_const NUVEMA_LAB, 7, 6
 
 	newgroup
 	map_const R_1_R_17_GATE, 5, 4

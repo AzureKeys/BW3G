@@ -87,14 +87,14 @@ BiancasAssistant2Script:
 BiancasLabBookshelf:
 	jumpstd difficultbookshelf
 
-BiancasLabPoster1:
-	jumptext BiancasLabPoster1Text
+BiancasLabFridge:
+	jumptext BiancasLabFridgeText
 
-BiancasLabPoster2:
-	jumptext BiancasLabPoster2Text
+BiancasLabSink:
+	jumptext BiancasLabSinkText
 
-BiancasLabTrashcan:
-	jumptext BiancasLabTrashcanText
+BiancasLabStove:
+	jumptext BiancasLabStoveText
 
 BiancasLabPC:
 	jumptext BiancasLabPCText
@@ -102,11 +102,15 @@ BiancasLabPC:
 NuvemaLabPlayerMovement1:
 	step UP
 	step UP
+	step UP
+	step UP
 	step_end
 	
 NuvemaLabPlayerMovement2:
 	step UP
 	step LEFT
+	step UP
+	step UP
 	step UP
 	step_end
 	
@@ -251,22 +255,28 @@ BiancasAssistant1Text:
 	cont "great job so far!"
 	done
 
-BiancasLabPoster1Text:
-	text "Press START to"
-	line "open the MENU."
+BiancasLabFridgeText:
+	text "It's the PROF's"
+	line "fridge!"
+	
+	para "Better not snoop"
+	line "around in here…"
 	done
 
-BiancasLabPoster2Text:
-	text "The SAVE option is"
-	line "on the MENU."
+BiancasLabSinkText:
+	text "There are dishes"
+	line "and glass bottles"
+	cont "in the sink."
 
-	para "Use it in a timely"
-	line "manner."
+	para "Someone should"
+	line "really clean this"
+	cont "up!"
 	done
 
-BiancasLabTrashcanText:
-	text "There's nothing in"
-	line "here…"
+BiancasLabStoveText:
+	text "It looks like the"
+	line "stove hasn't been"
+	cont "used in a while…"
 	done
 
 BiancasLabPCText:
@@ -346,34 +356,24 @@ NuvemaLab_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  4, 11, NUVEMA_TOWN, 2
-	warp_event  5, 11, NUVEMA_TOWN, 2
+	warp_event  2, 11, NUVEMA_TOWN, 2
+	warp_event  3, 11, NUVEMA_TOWN, 2
 
 	db 2 ; coord events
-	coord_event  4,  6, SCENE_DEFAULT, NuvemaLabScript1
-	coord_event  5,  6, SCENE_DEFAULT, NuvemaLabScript2
+	coord_event  2,  9, SCENE_DEFAULT, NuvemaLabScript1
+	coord_event  3,  9, SCENE_DEFAULT, NuvemaLabScript2
 
 	db 16 ; bg events
-	bg_event  6,  1, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  7,  1, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  8,  1, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  9,  1, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  0,  7, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  1,  7, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  2,  7, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  3,  7, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  6,  7, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  7,  7, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  8,  7, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  9,  7, BGEVENT_READ, BiancasLabBookshelf
-	bg_event  4,  0, BGEVENT_READ, BiancasLabPoster1
-	bg_event  5,  0, BGEVENT_READ, BiancasLabPoster2
-	bg_event  9,  3, BGEVENT_READ, BiancasLabTrashcan
-	bg_event  0,  1, BGEVENT_READ, BiancasLabPC
+	bg_event  4,  1, BGEVENT_READ, BiancasLabBookshelf
+	bg_event  5,  1, BGEVENT_READ, BiancasLabBookshelf
+	bg_event  8,  1, BGEVENT_READ, BiancasLabFridge
+	bg_event 10,  1, BGEVENT_READ, BiancasLabSink
+	bg_event 11,  1, BGEVENT_READ, BiancasLabStove
+	bg_event  4,  4, BGEVENT_UP, BiancasLabPC
 
 	db 4 ; object events
-	object_event  4,  2, SPRITE_BIANCA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Bianca, EVENT_NUVEMA_LAB_BIANCA
-	object_event  1,  8, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BiancasAssistant1Script, -1
-	object_event  8,  9, SPRITE_SCIENTIST_F, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BiancasAssistant2Script, -1
-	object_event  3,  3, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_NUVEMA_LAB_JUNIPER
+	object_event  2,  3, SPRITE_BIANCA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Bianca, EVENT_NUVEMA_LAB_BIANCA
+	object_event 10,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BiancasAssistant1Script, -1
+	object_event  8, 10, SPRITE_SCIENTIST_F, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BiancasAssistant2Script, -1
+	object_event  1,  4, SPRITE_JUNIPER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_NUVEMA_LAB_JUNIPER
 	
