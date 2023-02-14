@@ -199,11 +199,11 @@ INCLUDE "engine/events/move_tutor.asm"
 INCLUDE "engine/gfx/crystal_layouts.asm"
 INCLUDE "engine/events/celebi.asm"
 INCLUDE "engine/menus/main_menu.asm"
-INCLUDE "mobile/mobile_menu.asm"
 INCLUDE "engine/pokemon/search.asm"
 
 SECTION "bank13", ROMX
 
+INCLUDE "mobile/mobile_menu.asm"
 INCLUDE "engine/events/buena_menu.asm"
 INCLUDE "data/collision_permissions.asm"
 INCLUDE "engine/menus/empty_sram.asm"

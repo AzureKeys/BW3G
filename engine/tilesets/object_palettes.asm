@@ -13,7 +13,7 @@ LoadSpecialMapObjectPalette:
 	cp TILESET_TOWER
 	jp z, .tower
 	cp TILESET_PKMN_LEAGUE
-	jr z, .pkmn_league
+	jp z, .pkmn_league
 	cp TILESET_NIMBASA
 	jr z, .nimbasa
 	cp TILESET_CHAMPIONS_ROOM
@@ -24,7 +24,22 @@ LoadSpecialMapObjectPalette:
 	jp z, .cave
 	cp TILESET_HOUSE
 	jr z, .house
+	cp TILESET_UNOVA_BEACH
+	jr z, .unova_beach
 	jp .do_nothing
+	
+.unova_beach
+	ld a, [wCurTimeOfDay]
+	cp NITE_F
+	jr z, .r13_nite
+	call LoadR13ObPalette
+	scf
+	ret
+	
+.r13_nite
+	call LoadR13NiteObPalette
+	scf
+	ret
 	
 .house
 	ld a, [wMapGroup]
@@ -305,3 +320,25 @@ LoadR5NiteObPalette: ; ROCK = Green Dark
 
 R5NiteObPalette:
 INCLUDE "gfx/tilesets/r5_nite_ob.pal"
+
+LoadR13ObPalette: ; ROCK = Purple
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, R13ObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+R13ObPalette:
+INCLUDE "gfx/tilesets/r13_ob.pal"
+
+LoadR13NiteObPalette: ; ROCK = Purple
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, R13NiteObPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+
+R13NiteObPalette:
+INCLUDE "gfx/tilesets/r13_nite_ob.pal"
