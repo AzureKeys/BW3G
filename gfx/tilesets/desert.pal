@@ -21,7 +21,7 @@
 ; yellow
 	RGB 31, 27, 15
 	RGB 29, 25, 15
-	RGB 28, 24, 13
+	RGB 24, 20, 10
 	RGB 07, 07, 07
 ; brown
 	RGB 28, 24, 13

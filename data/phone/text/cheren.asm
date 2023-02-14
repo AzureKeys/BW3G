@@ -202,7 +202,10 @@ CherenEeveeEvoText:
 	
 	para "gains a level"
 	line "while holding a"
-	cont "MAGIC RIBBON."
+	
+	para "MAGIC RIBBON, but"
+	line "only if it's"
+	cont "during the day."
 	done
 	
 CherenEvoDoneText:
