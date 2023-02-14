@@ -779,3 +779,57 @@ GetPreEvolution:
 	ld [wCurPartySpecies], a
 	scf
 	ret
+	
+GetEvosAttacksPointer:
+; input species in c, return address in hl.
+	xor a
+	ld b, a
+	dec c
+	ld hl, EvosAttacksPointers
+	add hl, bc
+	add hl, bc
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	ret
+	
+GetEvolutionData:
+; input species in c, return EVOLVE_* constant in a, 
+; param 1 in wStringBuffer4, param 2 in wStringBuffer5.
+; return -1 in a if EGG, 0 in a if no evolution
+	ld a, c
+	cp EGG
+	jr nz, .not_egg
+	ld a, -1
+	ret
+.not_egg
+	call GetEvosAttacksPointer
+	ld a, [hli]
+	ld [wScriptVar], a
+	and a ; If a = 0, there is no evolution
+	ret z
+	push af
+	ld a, [hld] ; param 1
+	ld [wStringBuffer4], a
+	ld a, [hli] ; evo method
+	cp EVOLVE_ITEM
+	jr z, .get_item_name
+	cp EVOLVE_HOLD
+	jr z, .get_item_name_and_time
+.done
+	pop af
+	ld [wScriptVar], a
+	ret
+	
+.get_item_name_and_time:
+	inc hl
+	ld a, [hld] ; param 2
+	ld [wStringBuffer5], a
+.get_item_name:
+	ld a, [hl] ; param 1
+	ld [wNamedObjectIndexBuffer], a
+	call GetItemName
+	ld de, wStringBuffer1
+	ld hl, wStringBuffer4
+	call CopyName2
+	jr .done

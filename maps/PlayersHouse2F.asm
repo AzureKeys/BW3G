@@ -56,17 +56,16 @@ PlayersHouseRadioScript:
 	; end
 	
 	; opentext
-	; givepoke HYDREIGON, 100, NO_ITEM
+	; givepoke KIRLIA, 100, NO_ITEM
+	; givepoke SNORUNT, 100, NO_ITEM
+	; givepoke EEVEE, 100, NO_ITEM
+	; givepoke RIOLU, 100, NO_ITEM
+	; givepoke GOLBAT, 100, NO_ITEM
+	; giveegg CLEFFA, 5
 	; closetext
-	; setflag ENGINE_WAVEBADGE
-	; setflag ENGINE_SPOOKYBADGE
-	; setflag ENGINE_INSECTBADGE
-	; setflag ENGINE_TOXICBADGE
-	; setflag ENGINE_BASICBADGE
-	; setflag ENGINE_GARNISHBADGE
-	; setflag ENGINE_JETBADGE
-	; setflag ENGINE_LEGENDBADGE
-	; setflag ENGINE_FLYPOINT_ASPERTIA
+	; setflag ENGINE_POKEGEAR
+	; setflag ENGINE_PHONE_CARD
+	; addcellnum PHONE_CHEREN
 	; end
 	
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM

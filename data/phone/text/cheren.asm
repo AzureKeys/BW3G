@@ -1,52 +1,226 @@
-CherenHappinessText:
-	text "Oh, hi <PLAY_G>."
-	line "Did you want me"
-
-	para "to check the"
-	line "happiness of your"
-	cont "#MON?"
-
-	para "Oh, let me see"
-	line "your @"
+CherenAskEvoText:
+	text "Hi, <PLAY_G>."
+	line "This is CHEREN."
+	
+	para "Did you have a"
+	line "question about how"
+	
+	para "to evolve one of"
+	line "your #MON?"
+	done
+	
+CherenEvoIntroText:
+	text "You want to know"
+	line "about @"
 	text_ram wStringBuffer3
-	text "…"
+	text "?"
+	
+	para "Okay, let's see…"
 	done
-
-CherenHappinessRatingText_LovesYouALot:
-	text "It looks really"
-	line "happy! It must"
-	cont "love you a lot."
+	
+CherenEggEvoText:
+	text "You want to know"
+	line "about an EGG?"
+	
+	para "I think you and I"
+	line "both know that an"
+	
+	para "EGG can't evolve"
+	line "until it hatches."
 	done
-
-CherenHappinessRatingText_ReallyTrustsYou:
-	text "I get the feeling"
-	line "that it really"
-	cont "trusts you."
+	
+CherenNoEvoText:
+	text "Well, @"
+	text_ram wStringBuffer3
+	text_start
+	line "doesn't evolve."
+	
+	para "At least, as far"
+	line "as we know."
 	done
-
-CherenHappinessRatingText_SortOfHappy:
-	text "It's friendly to-"
-	line "ward you. It looks"
-	cont "sort of happy."
+	
+CherenLevelUpEvoText:
+	text "@"
+	text_ram wStringBuffer3
+	text_start
+	line "evolves when it"
+	cont "reaches level @"
+	text_decimal wStringBuffer4, 1, 3
+	text "."
 	done
-
-CherenHappinessRatingText_QuiteCute:
-	text "It hasn't yet"
-	line "formed a meaning-"
-	cont "ful bond. Give it"
-	cont "time."
+	
+CherenStoneEvoText:
+	text "@"
+	text_ram wStringBuffer3
+	text_start
+	line "evolves when it's"
+	
+	para "exposed to a"
+	line "@"
+	text_ram wStringBuffer4
+	text "."
 	done
+	
+CherenHappinessEvoText:
+	text "@"
+	text_ram wStringBuffer3
+	text_start
+	line "evolves when it"
 
-CherenHappinessRatingText_NotUsedToYou:
-	text "You should treat"
-	line "it better. It's"
-	cont "not used to you."
+	para "gains a level when"
+	line "its happiness is"
+	cont "very high."
 	done
+	
+CherenHappinessDayEvoText:
+	text "@"
+	text_ram wStringBuffer3
+	text_start
+	line "evolves when it"
 
-CherenHappinessRatingText_LooksMean:
-	text "It doesn't seem to"
-	line "like you at all."
-	cont "It looks mean."
+	para "gains a level when"
+	line "its happiness is"
+	
+	para "very high, but it"
+	line "will only happen"
+	cont "during the day."
+	done
+	
+CherenHappinessNiteEvoText:
+	text "@"
+	text_ram wStringBuffer3
+	text_start
+	line "evolves when it"
+
+	para "gains a level when"
+	line "its happiness is"
+	
+	para "very high, but it"
+	line "will only happen"
+	cont "at night."
+	done
+	
+CherenHoldEvoText:
+	text "@"
+	text_ram wStringBuffer3
+	text_start
+	line "evolves when it"
+
+	para "gains a level when"
+	line "it's holding a"
+	cont "@"
+	text_ram wStringBuffer4
+	text "."
+	done
+	
+CherenHoldDayEvoText:
+	text "@"
+	text_ram wStringBuffer3
+	text_start
+	line "evolves when it"
+
+	para "gains a level when"
+	line "it's holding a"
+	cont "@"
+	text_ram wStringBuffer4
+	text ","
+	
+	para "but only during"
+	line "the day."
+	done
+	
+CherenHoldNiteEvoText:
+	text "@"
+	text_ram wStringBuffer3
+	text_start
+	line "evolves when it"
+
+	para "gains a level when"
+	line "it's holding a"
+	cont "@"
+	text_ram wStringBuffer4
+	text ","
+	cont "but only at night."
+	done
+	
+CherenKirliaEvoText:
+	text "KIRLIA evolves"
+	line "when it reaches"
+	cont "level 30."
+	
+	para "It can also evolve"
+	line "when it's exposed"
+	
+	para "to a DAWN STONE,"
+	line "but only if it"
+	cont "is MALE."
+	done
+	
+CherenSnoruntEvoText:
+	text "SNORUNT evolves"
+	line "when it reaches"
+	cont "level 42."
+	
+	para "It can also evolve"
+	line "when it's exposed"
+	
+	para "to a DAWN STONE,"
+	line "but only if it"
+	cont "is FEMALE."
+	done
+	
+CherenEeveeEvoText:
+	text "EEVEE can evolve"
+	line "in many different"
+	cont "ways!"
+	
+	para "It can evolve when"
+	line "it's exposed to"
+	
+	para "several different"
+	line "types of stones,"
+	
+	para "including the LEAF"
+	line "STONE, FIRE STONE,"
+	
+	para "WATER STONE, ICE"
+	line "STONE, or the"
+	cont "THUNDERSTONE."
+	
+	para "It can also evolve"
+	line "if its happiness"
+	
+	para "is very high, and"
+	line "the form it takes"
+	
+	para "is different dep-"
+	line "ending on the time"
+	cont "of day."
+	
+	para "I've also heard it"
+	line "can evolve if it"
+	
+	para "gains a level"
+	line "while holding a"
+	cont "MAGIC RIBBON."
+	done
+	
+CherenEvoDoneText:
+	text "Call me again any"
+	line "time if you have"
+	
+	para "questions about"
+	line "how to evolve your"
+	cont "#MON."
+	done
+	
+CherenRefusedEvoText:
+	text "Oh, okay. Call me"
+	line "if you have any"
+	
+	para "questions about"
+	line "how to evolve your"
+	cont "#MON."
 	done
 	
 CherenPhoneNimbasaText:

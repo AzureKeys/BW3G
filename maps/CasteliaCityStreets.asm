@@ -230,16 +230,14 @@ CasteliaCherenIntroText:
 	
 CasteliaCherenNimbasaText:
 	text "CHEREN: I'm pretty"
-	line "good at determin-"
-	cont "ing the happiness"
-	cont "of a #MON."
+	line "knowledgable about"
+	cont "#MON evolution."
 	
-	para "Call me if you'd"
-	line "like me to tell"
+	para "Call me if you"
+	line "want to know how"
 	
-	para "you how friendly"
-	line "your #MON is"
-	cont "toward you."
+	para "to evolve any of"
+	line "your #MON."
 	
 	para "I'm going to"
 	line "NIMBASA CITY."
