@@ -10,3 +10,5 @@ SpriteMons:
 	db METAGROSS
 	db KROKOROK
 	db AUDINO
+	db MUNNA
+	db DUCKLETT

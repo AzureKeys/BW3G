@@ -16,6 +16,12 @@ R9OpelucidGateOfficerText:
 	para "on ROUTE 9 has all"
 	line "kinds of items"
 	cont "for sale."
+	
+	para "Just watch out for"
+	line "the tough guys who"
+	
+	para "gather out on the"
+	line "road!"
 	done
 
 Rt9OpelucidGate_MapEvents:

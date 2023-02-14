@@ -10,11 +10,21 @@ R11VillageBridgeGateOfficerScript:
 	jumptextfaceplayer R11VillageBridgeGateOfficerText
 	
 R11VillageBridgeGateOfficerText:
-	text "The bridge has"
-	line "finally been"
-	cont "fixed!"
+	text "VILLAGE BRIDGE is"
+	line "a bridge that was"
 	
-	para "Go on ahead."
+	para "built around an"
+	line "old village."
+	
+	para "Most of that"
+	line "original village"
+	
+	para "became OPELUCID"
+	line "CITY, though there"
+	
+	para "are still houses"
+	line "built around the"
+	cont "bridge."
 	done
 
 Rt11VillageBridgeGate_MapEvents:

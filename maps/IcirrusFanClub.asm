@@ -2,6 +2,10 @@
 	const ICIRRUSFANCLUB_SCARF_GIVER
 	const ICIRRUSFANCLUB_ELECTRIZER_GIVER
 	const ICIRRUSFANCLUB_MAGMARIZER_GIVER
+	const ICIRRUSFANCLUB_COOLTRAINER_F
+	const ICIRRUSFANCLUB_MUNNA
+	const ICIRRUSFANCLUB_GENTLEMAN
+	const ICIRRUSFANCLUB_DUCKLETT
 
 IcirrusFanClub_MapScripts:
 	db 0 ; scene scripts
@@ -97,6 +101,28 @@ LoadBuffers:
 	ld [wBuffer2], a
 	ret
 	
+IcirrusFanClubCooltrainerFScript:
+	jumptextfaceplayer IcirrusFanClubCooltrainerFText
+	
+IcirrusFanClubGentlemanScript:
+	jumptextfaceplayer IcirrusFanClubGentlemanText
+	
+IcirrusFanClubMunnaScript:
+	opentext
+	writetext IcirrusFanClubMunnaText
+	cry MUNNA
+	waitbutton
+	closetext
+	end
+	
+IcirrusFanClubDucklettScript:
+	opentext
+	writetext IcirrusFanClubDucklettText
+	cry DUCKLETT
+	waitbutton
+	closetext
+	end
+	
 IcirrusFanClubElectrizerGiver_AskScaleText:
 	text "I want to make my"
 	line "#MON remember"
@@ -173,6 +199,35 @@ IcirrusFanClubScarfGiver_GotScarfText:
 	line "with even greater"
 	cont "SPEED!"
 	done
+	
+IcirrusFanClubCooltrainerFText:
+	text "Welcome to the"
+	line "#MON FAN CLUB!"
+	
+	para "We love all #-"
+	line "MON, strong and"
+	cont "cute!"
+	done
+	
+IcirrusFanClubGentlemanText:
+	text "Ah, I see you're a"
+	line "fan of #MON as"
+	cont "well!"
+	
+	para "The regulars here"
+	line "really get into"
+	
+	para "their #MON"
+	line "training!"
+	done
+	
+IcirrusFanClubMunnaText:
+	text "Muuuu!"
+	done
+	
+IcirrusFanClubDucklettText:
+	text "Dak! Dak!"
+	done
 
 IcirrusFanClubBookshelf:
 	jumpstd difficultbookshelf
@@ -190,7 +245,11 @@ IcirrusFanClub_MapEvents:
 	bg_event  0,  1, BGEVENT_READ, IcirrusFanClubBookshelf
 	bg_event  1,  1, BGEVENT_READ, IcirrusFanClubBookshelf
 
-	db 3 ; object events
-	object_event  5,  8, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubScarfGiver, -1
+	db 7 ; object events
+	object_event  6,  9, SPRITE_PHARMACIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubScarfGiver, -1
 	object_event  2,  4, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubElectrizerGiver, -1
-	object_event  7,  2, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubMagmarizerGiver, -1
+	object_event  7,  4, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubMagmarizerGiver, -1
+	object_event  4,  9, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubCooltrainerFScript, -1
+	object_event  3,  9, SPRITE_MUNNA, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubMunnaScript, -1
+	object_event  7,  2, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubGentlemanScript, -1
+	object_event  6,  6, SPRITE_DUCKLETT, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, IcirrusFanClubDucklettScript, -1

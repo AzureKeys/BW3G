@@ -10,11 +10,13 @@ R11OpelucidGateOfficerScript:
 	jumptextfaceplayer R11OpelucidGateOfficerText
 	
 R11OpelucidGateOfficerText:
-	text "The bridge has"
-	line "finally been"
-	cont "fixed!"
+	text "Hello, trainer who"
+	line "has come to"
+	cont "OPELUCID CITY!"
 	
-	para "Go on ahead."
+	para "Or, if you're"
+	line "going to ROUTE 11,"
+	cont "please come again!"
 	done
 
 Rt11OpelucidGate_MapEvents:

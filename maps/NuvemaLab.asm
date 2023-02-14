@@ -240,16 +240,16 @@ BiancaLabGoodbyeText:
 	cont "come visit again."
 	done
 
-BiancasAssistant2Text:
-	text "Thanks to your"
-	line "work on the #-"
-	cont "DEX, the PROF's"
+BiancasAssistant1Text:
+	text "Whew, I've got a"
+	line "lot to keep up"
 
-	para "research is coming"
-	line "along great."
+	para "with. The PROF's"
+	line "always busy with"
+	cont "something!"
 	done
 
-BiancasAssistant1Text:
+BiancasAssistant2Text:
 	text "The PROF is young,"
 	line "but she's done a"
 	cont "great job so far!"

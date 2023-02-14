@@ -147,20 +147,35 @@ AccumulaTownPokefanMText:
 	
 	para "people from our"
 	line "town."
+	
+	para "A lot of us got"
+	line "swept up in what"
+	cont "they were saying."
+
+	para "It was kind of"
+	line "scary, now that I"
+	cont "think about it."
 	done
 	
 AccumulaTownCooltrainerFText:
 	text "Have you visited"
 	line "the GYM in"
 	cont "STRIATON CITY yet?"
+	
+	para "I heard their GYM"
+	line "LEADER was taking"
+	
+	para "a break, but he"
+	line "decided to come"
+	cont "back!"
 	done
 	
 AccumulaTownTeacherText:
-	text "I thought TEAM"
-	line "PLASMA was gone…"
+	text "Oh, what's this?"
 	
-	para "I sure hope they"
-	line "don't come back."
+	para "You and your #-"
+	line "MON somehow res-"
+	cont "emble each other!"
 	done
 	
 AccumulaTownYoungsterText:

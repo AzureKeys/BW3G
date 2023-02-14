@@ -11,7 +11,7 @@ LoadSpecialMapObjectPalette:
 	cp TILESET_TRADITIONAL_HOUSE
 	jp z, .traditional_house
 	cp TILESET_TOWER
-	jr z, .tower
+	jp z, .tower
 	cp TILESET_PKMN_LEAGUE
 	jr z, .pkmn_league
 	cp TILESET_NIMBASA
@@ -21,8 +21,21 @@ LoadSpecialMapObjectPalette:
 	cp TILESET_POKECENTER
 	jr z, .pokecenter
 	cp TILESET_CAVE
-	jr z, .cave
+	jp z, .cave
+	cp TILESET_HOUSE
+	jr z, .house
 	jp .do_nothing
+	
+.house
+	ld a, [wMapGroup]
+	cp GROUP_ICIRRUS_FAN_CLUB
+	jp nz, .do_nothing
+	ld a, [wMapNumber]
+	cp MAP_ICIRRUS_FAN_CLUB
+	jp nz, .do_nothing
+	call LoadBarnObPalette
+	scf
+	ret
 	
 .pokecenter
 	ld a, [wMapGroup]

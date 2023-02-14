@@ -300,10 +300,10 @@ INCLUDE "maps/VictoryRoadEntranceSouthRight.asm"
 INCLUDE "maps/VictoryRoadEntranceSouthLeft.asm"
 INCLUDE "maps/VictoryRoadEntranceNorth.asm"
 INCLUDE "maps/VictoryRoadEntranceNorthConnectionDummy.asm"
-INCLUDE "maps/VictoryRoadCave1F.asm"
 
 SECTION "Map Scripts 16", ROMX
 
+INCLUDE "maps/VictoryRoadCave1F.asm"
 INCLUDE "maps/VictoryRoadCave2F.asm"
 INCLUDE "maps/VictoryRoadCave3F.asm"
 INCLUDE "maps/VictoryRoadOutdoor1F.asm"
@@ -320,12 +320,12 @@ INCLUDE "maps/MarshalsRoom.asm"
 INCLUDE "maps/ElesasRoom.asm"
 INCLUDE "maps/ColresssRoom.asm"
 INCLUDE "maps/LentimasOutskirts.asm"
-INCLUDE "maps/LentimasTown.asm"
-INCLUDE "maps/StrangeHouse1F.asm"
-INCLUDE "maps/StrangeHouseB1F.asm"
 
 SECTION "Map Scripts 17", ROMX
 
+INCLUDE "maps/LentimasTown.asm"
+INCLUDE "maps/StrangeHouse1F.asm"
+INCLUDE "maps/StrangeHouseB1F.asm"
 INCLUDE "maps/ChampionsRoomEntrance.asm"
 INCLUDE "maps/ChampionsRoom.asm"
 INCLUDE "maps/HallOfFame.asm"
@@ -337,6 +337,9 @@ INCLUDE "maps/TwistMountain1F.asm"
 INCLUDE "maps/TwistMountain2F.asm"
 INCLUDE "maps/TwistMountain3F.asm"
 INCLUDE "maps/TwistMountainB1F.asm"
+
+SECTION "Map Scripts 18", ROMX
+
 INCLUDE "maps/TwistMountainOutside.asm"
 INCLUDE "maps/TwistMountainHouse.asm"
 INCLUDE "maps/TwistMountainGenesectRoom.asm"

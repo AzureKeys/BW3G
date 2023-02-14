@@ -10,11 +10,15 @@ R2AccumulaGateOfficerScript:
 	jumptextfaceplayer R2AccumulaGateOfficerText
 
 R2AccumulaGateOfficerText:
-	text "You're working on"
-	line "a #DEX? That's"
+	text "Sometimes, I can"
+	line "hear a pleasant"
 
-	para "really something."
-	line "Don't give up!"
+	para "song coming from"
+	line "out the window."
+	
+	para "It makes me want"
+	line "to get up and go"
+	cont "for a walk!"
 	done
 
 Rt2AccumulaGate_MapEvents:

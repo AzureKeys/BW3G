@@ -201,10 +201,10 @@ INCLUDE "engine/events/celebi.asm"
 INCLUDE "engine/menus/main_menu.asm"
 INCLUDE "mobile/mobile_menu.asm"
 INCLUDE "engine/pokemon/search.asm"
-INCLUDE "engine/events/buena_menu.asm"
 
 SECTION "bank13", ROMX
 
+INCLUDE "engine/events/buena_menu.asm"
 INCLUDE "data/collision_permissions.asm"
 INCLUDE "engine/menus/empty_sram.asm"
 INCLUDE "engine/menus/savemenu_copytilemapatonce.asm"
