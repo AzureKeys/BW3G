@@ -118,9 +118,6 @@ INCBIN "gfx/tilesets/game_corner.2bpp.lz"
 TilesetGameCornerMeta:
 INCBIN "data/tilesets/game_corner_metatiles.bin"
 
-TilesetGameCornerColl:
-INCLUDE "data/tilesets/game_corner_collision.asm"
-
 
 SECTION "Tileset Data 4", ROMX
 
@@ -728,3 +725,6 @@ INCLUDE "data/tilesets/village_bridge_collision.asm"
 
 TilesetVillageBridgeMeta:
 INCBIN "data/tilesets/village_bridge_metatiles.bin"
+
+TilesetGameCornerColl:
+INCLUDE "data/tilesets/game_corner_collision.asm"
