@@ -80,7 +80,7 @@ R12InferScript:
 	jump .AfterYourDefeat
 
 .AfterVictorious:
-	playmusic MUSIC_RIVAL_AFTER
+	playmusic MUSIC_RIVAL_ENCOUNTER
 	opentext
 	writetext R12InferText_YouWon
 	waitbutton
@@ -88,7 +88,7 @@ R12InferScript:
 	jump .FinishRival
 
 .AfterYourDefeat:
-	playmusic MUSIC_RIVAL_AFTER
+	playmusic MUSIC_RIVAL_ENCOUNTER
 	opentext
 	writetext R12InferText_YouLost
 	waitbutton

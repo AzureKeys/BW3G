@@ -87,7 +87,7 @@ PinwheelInferScript:
 	reloadmapafterbattle
 	
 .After:
-	playmusic MUSIC_RIVAL_AFTER
+	playmusic MUSIC_RIVAL_ENCOUNTER
 	opentext
 	writetext PinwheelInferAfterText
 	waitbutton

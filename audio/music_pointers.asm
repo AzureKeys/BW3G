@@ -19,8 +19,7 @@ Music:
 	dba Music_GymLeaderVictory
 	dba Music_Gym
 	dba Music_ProfOaksPokemonTalk
-	dba Music_LookRival
-	dba Music_AfterTheRivalFight
+	dba Music_InferEncounter
 	dba Music_Surf
 	dba Music_Evolution
 	dba Music_BWEnding

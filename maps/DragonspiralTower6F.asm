@@ -76,7 +76,7 @@ DragonspiralTowerInferScript2:
 	; fallthrough
 	
 .AfterBattle:
-	playmusic MUSIC_RIVAL_AFTER
+	playmusic MUSIC_RIVAL_ENCOUNTER
 	pause 15
 	applymovement DRAGONSPIRALTOWER6F_INFER, DragonspiralTower6FInferBackUpMovement
 	opentext

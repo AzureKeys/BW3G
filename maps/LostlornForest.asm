@@ -126,7 +126,7 @@ LostlornForestInferScript:
 	reloadmapafterbattle
 
 .AfterVictorious:
-	playmusic MUSIC_RIVAL_AFTER
+	playmusic MUSIC_RIVAL_ENCOUNTER
 	opentext
 	writetext LostlornForestInferText_YouWon
 	waitbutton

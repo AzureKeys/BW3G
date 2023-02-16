@@ -20,7 +20,6 @@
 	const MUSIC_GYM                          ; 0f
 	const MUSIC_POKEMON_TALK                 ; 10
 	const MUSIC_RIVAL_ENCOUNTER              ; 11
-	const MUSIC_RIVAL_AFTER                  ; 12
 	const MUSIC_SURF                         ; 13
 	const MUSIC_EVOLUTION                    ; 14
 	const MUSIC_CREDITS                      ; 15
