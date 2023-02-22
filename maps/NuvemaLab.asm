@@ -363,7 +363,7 @@ NuvemaLab_MapEvents:
 	coord_event  2,  9, SCENE_DEFAULT, NuvemaLabScript1
 	coord_event  3,  9, SCENE_DEFAULT, NuvemaLabScript2
 
-	db 16 ; bg events
+	db 6 ; bg events
 	bg_event  4,  1, BGEVENT_READ, BiancasLabBookshelf
 	bg_event  5,  1, BGEVENT_READ, BiancasLabBookshelf
 	bg_event  8,  1, BGEVENT_READ, BiancasLabFridge

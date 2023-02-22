@@ -152,7 +152,7 @@ NimbasaParkPlasmaScript:
 	disappear NIMBASAPARKBASEMENT_GIALLO
 	pause 15
 	special FadeInQuickly
-	playmusic MUSIC_ROCKET_HIDEOUT
+	playmusic MUSIC_SEWERS
 	pause 15
 	applymovement NIMBASAPARKBASEMENT_CHEREN, NimbasaParkCherenAfterMovement
 	opentext

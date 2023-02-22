@@ -269,6 +269,16 @@ EvolveAfterBattle_MasterLoop:
 	ld a, [wTempMonItem]
 	xor a
 	ld [wTempMonItem], a
+; Clear Backup Item for in-battle evo
+	ld a, [wCurPartyMon]
+	ld c, a
+	ld b, 0
+	push hl
+	ld hl, wPartyBackupItems
+	add hl, bc
+	xor a
+	ld [hl], a
+	pop hl
 	; fallthrough
 
 .proceed

@@ -11,6 +11,7 @@ NacreneCafe_MapScripts:
 NacreneCafeClerkScript:
 	opentext
 	writetext NacreneCafeAskDrinkText
+	buttonsound
 	loadmenu NacreneCafeMenuHeader
 	verticalmenu
 	closewindow

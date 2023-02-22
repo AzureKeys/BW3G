@@ -3,42 +3,42 @@ BiancaPhoneCalleeScript:
 	buttonsound
 	checkflag ENGINE_LEGENDBADGE
 	iftrue .victory_road
-	checkmapscene DRAGONSPIRAL_TOWER_ROOF, SCENE_FINISHED
-	iftrue .opelucid_gym
-	checkmapscene OPELUCID_CITY, SCENE_FINISHED
-	iftrue .find_drayden
-	checkmapscene SEASIDE_CAVE_CHAMBER, SCENE_FINISHED
-	iftrue .village_bridge
+	checkmapscene DRAGONSPIRAL_TOWER_ROOF
+	ifequal SCENE_FINISHED, .opelucid_gym
+	checkmapscene OPELUCID_CITY
+	ifequal SCENE_FINISHED, .find_drayden
+	checkmapscene SEASIDE_CAVE_CHAMBER
+	ifequal SCENE_FINISHED, .village_bridge
 	checkflag ENGINE_JETBADGE
 	iftrue .seaside_cave
-	checkmapscene DRIFTVEIL_SHELTER, SCENE_FINISHED
-	iftrue .mistralton_gym
-	checkmapscene PWT_OUTSIDE, SCENE_FINISHED
-	iftrue .finish_pwt
+	checkmapscene DRIFTVEIL_SHELTER
+	ifequal SCENE_FINISHED, .mistralton_gym
+	checkmapscene PWT_OUTSIDE
+	ifequal SCENE_FINISHED, .finish_pwt
 	checkevent EVENT_BEAT_P2_LAB
 	iftrue .go_to_pwt
-	checkmapscene NUVEMA_LAB, SCENE_FINISHED
-	iftrue .p2_lab
-	checkmapscene CASTELIA_BRIDGE_GATE, SCENE_FINISHED
-	iftrue .nuvema
-	checkmapscene FLOCCESY_TOWN, SCENE_FINISHED
-	iftrue .complex
-	checkmapscene NIMBASA_PARK_BASEMENT, SCENE_NIMBASA_PARK_BASEMENT_NOTHING
-	iftrue .aspertia
+	checkmapscene NUVEMA_LAB
+	ifequal SCENE_FINISHED, .p2_lab
+	checkmapscene CASTELIA_BRIDGE_GATE
+	ifequal SCENE_FINISHED, .nuvema
+	checkmapscene FLOCCESY_TOWN
+	ifequal SCENE_FINISHED, .complex
+	checkmapscene NIMBASA_PARK_BASEMENT
+	ifequal SCENE_NIMBASA_PARK_BASEMENT_NOTHING, .aspertia
 	checkflag ENGINE_INSECTBADGE
 	iftrue .nimbasa_park
 	checkevent EVENT_BIANCA_CASTELIA_CALL
 	iftrue .castelia_gym
-	checkmapscene LOSTLORN_FOREST, SCENE_LOSTLORN_NOTHING
-	iftrue .go_to_castelia
+	checkmapscene LOSTLORN_FOREST
+	ifequal SCENE_LOSTLORN_NOTHING, .go_to_castelia
 	checkflag ENGINE_SPOOKYBADGE
 	iftrue .get_cut
-	checkmapscene UNDELLA_TOWN, SCENE_UNDELLA_TOWN_NOTHING
-	iftrue .go_to_lentimas
+	checkmapscene UNDELLA_TOWN
+	ifequal SCENE_UNDELLA_TOWN_NOTHING, .go_to_lentimas
 	checkflag ENGINE_WAVEBADGE
 	iftrue .reversal
-	checkmapscene UNDELLA_TOWN, SCENE_UNDELLA_TOWN_CANT_LEAVE
-	iftrue .humilau_gym
+	checkmapscene UNDELLA_TOWN
+	ifequal SCENE_UNDELLA_TOWN_CANT_LEAVE, .humilau_gym
 	farwritetext BiancaPhoneGoToUndellaText
 .done
 	buttonsound

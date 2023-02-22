@@ -1,6 +1,8 @@
 	const_def 2 ; object constants
 	const NACRENEOUTSKIRTEAST_BLACKBELT
 	const NACRENEOUTSKIRTEAST_BATTLE_GIRL
+	const NACRENEOUTSKIRTEAST_DUMMY_TRAINER
+	const NACRENEOUTSKIRTEAST_DUMMY_ITEM
 
 NacreneOutskirtEast_MapScripts:
 	db 0 ; scene scripts
@@ -88,7 +90,9 @@ NacreneOutskirtEast_MapEvents:
 	bg_event 17, 12, BGEVENT_ITEM, NacreneOutskirtUltraBall
 	bg_event 20, 10, BGEVENT_ITEM, NacreneOutskirtMaxElixer
 
-	db 2 ; object events
+	db 4 ; object events
 	object_event 17, 15, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBlackbeltNacrene, -1
 	object_event 21, 16, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBattleGirlNacrene, -1
+	object_event -2, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, 0, -1
+	object_event -3,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_NACRENE_OUTSKIRT_PP_MAX
 	

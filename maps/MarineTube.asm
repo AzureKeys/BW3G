@@ -139,7 +139,7 @@ NurseryAideMarineTubeSeenText:
 	para "A kiddish adult…"
 	line "Oh, jeez! I'll"
 	
-	para "kust find out when"
+	para "just find out when"
 	line "we battle!"
 	done
 

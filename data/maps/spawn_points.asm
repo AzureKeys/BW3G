@@ -13,7 +13,7 @@ SpawnPoints:
 	spawn HUMILAU_CITY,                 3, 28
 	spawn LACUNOSA_TOWN,                9, 16
 	spawn UNDELLA_TOWN,                29, 10
-	spawn LENTIMAS_TOWN,               27, 14
+	spawn LENTIMAS_TOWN,               25, 14
 	spawn NIMBASA_CITY,                15, 24
 	spawn CASTELIA_CITY_SOUTH,         39,  8
 	spawn ASPERTIA_CITY,               15, 24

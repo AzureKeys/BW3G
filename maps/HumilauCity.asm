@@ -52,6 +52,7 @@ HumilauCity_MapScripts:
 HumilauCity_NeighborStopsYouScene:
 	turnobject HUMILAUCITY_NEIGHBOR, DOWN
 	showemote EMOTE_SHOCK, HUMILAUCITY_NEIGHBOR, 15
+	turnobject PLAYER, UP
 	opentext
 	writetext NeighborText_DontLeave
 	waitbutton

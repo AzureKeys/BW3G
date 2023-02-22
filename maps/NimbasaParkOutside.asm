@@ -208,11 +208,11 @@ NimbasaParkConfrontationPlayerMovement:
 	step_end
 	
 NimbasaParkConfrontationGruntMovement:
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
+	big_step RIGHT
+	big_step RIGHT
+	big_step RIGHT
+	big_step RIGHT
+	big_step RIGHT
 	step_end
 	
 NimbasaParkAfterCherenMovement1:

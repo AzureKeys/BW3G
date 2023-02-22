@@ -28,7 +28,7 @@ Music:
 	dba Music_UnovaTrainerBattle
 	dba Music_JohtoGymBattle
 	dba Music_LastPokemon
-	dba Music_RivalBattle
+	dba Music_HughBattle
 	dba Music_RocketBattle
 	dba Music_LookYoungster
 	dba Music_LookLady

@@ -13,7 +13,7 @@ INCLUDE "audio/sfx_pointers.asm"
 
 SECTION "Songs 1", ROMX
 
-INCLUDE "audio/music/rivalbattle.asm"
+INCLUDE "audio/music/hughbattle.asm"
 INCLUDE "audio/music/rocketbattle.asm"
 INCLUDE "audio/music/johtogymbattle.asm"
 INCLUDE "audio/music/cynthiabattle.asm"

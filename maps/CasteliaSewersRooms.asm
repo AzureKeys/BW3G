@@ -73,7 +73,7 @@ WorkerCasteliaSewersRoomsAfterText:
 	line "shouting in a"
 	
 	para "sewer tunnel makes"
-	cont "your voice echo?"
+	line "your voice echo?"
 	done
 	
 JanitorCasteliaSewersRoomsSeenText:

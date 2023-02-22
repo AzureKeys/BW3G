@@ -93,7 +93,7 @@ NimbasaCityTeacherText:
 	cont "in town."
 
 	para "But ever since the"
-	line "GYM LEADER, ELISA,"
+	line "GYM LEADER, ELESA,"
 	cont "left for bigger"
 	cont "and better things,"
 	

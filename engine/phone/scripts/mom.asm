@@ -6,6 +6,7 @@ MomPhoneCalleeScript:
 	farwritetext MomCutePokemonText
 	buttonsound
 	farwritetext MomHappinessIntroText
+	buttonsound
 	setevent EVENT_TALKED_TO_MOM_AFTER_POKEMON
 	
 .CheckHappiness

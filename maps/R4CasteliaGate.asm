@@ -30,7 +30,7 @@ R4CasteliaGateGiveItemfinderText:
 	line "<PLAY_G>!"
 	
 	para "I'm one of PROF."
-	line "BIANCA's aides."
+	line "BEL's aides."
 	
 	para "I came to give"
 	line "you this!"

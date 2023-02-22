@@ -84,7 +84,7 @@ PlayBattleMusic:
 .trainermusic
 	ld de, MUSIC_CYNTHIA_BATTLE
 	cp CYNTHIA
-	jr z, .done
+	jp z, .done
 	
 	ld de, MUSIC_CHAMPION_BATTLE
 	cp JUNIPER
@@ -147,6 +147,8 @@ PlayBattleMusic:
 	cp INFER
 	jr z, .done
 	cp INFER2
+	jr z, .done
+	cp HUGH
 	jr z, .done
 
 	ld de, MUSIC_TRAINER_BATTLE

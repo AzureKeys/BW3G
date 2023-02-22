@@ -56,16 +56,10 @@ PlayersHouseRadioScript:
 	; end
 	
 	; opentext
-	; givepoke KIRLIA, 100, NO_ITEM
-	; givepoke SNORUNT, 100, NO_ITEM
-	; givepoke EEVEE, 100, NO_ITEM
-	; givepoke RIOLU, 100, NO_ITEM
-	; givepoke GOLBAT, 100, NO_ITEM
-	; giveegg CLEFFA, 5
+	; givepoke GLIGAR, 5, RAZOR_FANG
+	; givepoke ONIX, 5, METAL_COAT
+	; giveitem POTION, 20
 	; closetext
-	; setflag ENGINE_POKEGEAR
-	; setflag ENGINE_PHONE_CARD
-	; addcellnum PHONE_CHEREN
 	; end
 	
 	opentext
@@ -120,7 +114,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, R_13, 1
+	;warp_event  7,  0, R_22, 1
 
 	db 0 ; coord events
 

@@ -314,7 +314,7 @@ GruntMNimbasaPark2BeatenText:
 	line "idea? The #MON"
 	
 	para "I stole was"
-	cont "useless!"
+	line "useless!"
 	done
 
 GruntMNimbasaPark2AfterText:

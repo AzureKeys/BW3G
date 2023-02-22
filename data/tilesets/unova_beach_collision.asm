@@ -180,3 +180,9 @@
 	tilecoll WALL, WALL, WALL, WALL ; b3
 	tilecoll WALL, WALL, FLOOR, FLOOR ; b4
 	tilecoll FLOOR, FLOOR, WALL, WALL ; b5
+	tilecoll FLOOR, WALL, WALL, WALL ; b6
+	tilecoll WALL, WALL, WALL, WALL ; b7
+	tilecoll BUOY, BUOY, BUOY, WATER ; b8
+	tilecoll BUOY, BUOY, WATER, WATER ; b9
+	tilecoll WALL, WALL, WALL, WALL ; ba
+	tilecoll WALL, WALL, WALL, WALL ; bb

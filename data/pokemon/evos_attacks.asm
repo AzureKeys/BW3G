@@ -370,9 +370,9 @@ IgglybuffEvosAttacks:
 JigglypuffEvosAttacks:
 	db EVOLVE_ITEM, MOON_STONE, WIGGLYTUFF
 	db 0 ; no more evolutions
-	db 1, SING
+	db 1, TACKLE ; Pound, switched with Sing
 	db 3, DEFENSE_CURL
-	db 5, TACKLE ; Pound
+	db 5, SING ; Switched with Pound
 	db 9, GROWL ; Play Nice
 	db 11, FAIRY_WIND ; Disarming Voice
 	db 14, DISABLE

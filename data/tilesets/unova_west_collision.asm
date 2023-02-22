@@ -180,3 +180,4 @@
 	tilecoll FLOOR, WALL, WALL, WALL ; b3
 	tilecoll STAIRS_RIGHT_DOWN, WALL, STAIRS_RIGHT_DOWN, WALL ; b4
 	tilecoll WALL, WALL, WALL, WALL ; b5
+	tilecoll FLOOR, WALL, FLOOR, WALL ; b6

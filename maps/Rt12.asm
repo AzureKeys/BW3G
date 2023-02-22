@@ -323,11 +323,15 @@ R12MarlonText_Greeting:
 	para "to swing by my"
 	line "place today."
 	
-	para "See, I had this"
-	line "feelin' that you'd"
+	para "See, ever since"
+	line "you and your mom"
 	
-	para "make a pretty fine"
-	line "#MON trainer,"
+	para "moved out this"
+	line "way, I've had this"
+	
+	para "feelin' that you'd"
+	line "make a pretty fine"
+	cont "#MON trainer,"
 	
 	para "so I asked the"
 	line "PROF. to send over"

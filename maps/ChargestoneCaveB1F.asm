@@ -141,7 +141,7 @@ AceTrainerF2ChargestoneAfterText:
 	
 Hiker2ChargestoneSeenText:
 	text "When I say dig,"
-	line "say, How Low?"
+	line "say, How low?"
 	done
 
 Hiker2ChargestoneBeatenText:

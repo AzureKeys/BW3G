@@ -59,4 +59,4 @@
 	tilecoll WALL, STAIRCASE, FLOOR, FLOOR ; 3a
 	tilecoll WALL, STAIRCASE, FLOOR, FLOOR ; 3b
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 3c
-	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 3d
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3d

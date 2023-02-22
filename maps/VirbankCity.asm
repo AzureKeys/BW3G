@@ -275,8 +275,8 @@ VirbankCityTeacher2Text:
 
 VirbankCitySailorText:
 	text "Aww man, I lost my"
-	line "FERRY PASS at the"
-	cont "COMPLEX again…"
+	line "FERRY TICKET at"
+	cont "the COMPLEX again…"
 
 	para "Boss is gonna be"
 	line "so mad!"

@@ -56,7 +56,7 @@ NuvemaLabSignText:
 	text "NUVEMA #MON"
 	line "LAB."
 	
-	para "PROF.BIANCA"
+	para "PROF. BIANCA BEL"
 	line "presiding."
 	done
 

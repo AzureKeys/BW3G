@@ -36,11 +36,13 @@ LentimasGym_MapScripts:
 	return
 	
 LentimasGymShauntalScript:
-	faceplayer
-	opentext
 	checkevent EVENT_BEAT_SHAUNTAL
 	iftrue .FightDone
+	opentext
 	writetext ShauntalGymIntroText
+	buttonsound
+	faceplayer
+	writetext ShauntalGymIntroText2
 	waitbutton
 	closetext
 	winlosstext ShauntalWinLossText, 0
@@ -53,7 +55,11 @@ LentimasGymShauntalScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_SPOOKYBADGE
+	jump .FightDone2
 .FightDone:
+	faceplayer
+	opentext
+.FightDone2
 	checkevent EVENT_GOT_HEX_TM
 	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_HEX_MANIAC_LENTIMAS_GYM_1
@@ -287,8 +293,10 @@ ShauntalGymIntroText:
 	text "Hmm…"
 	
 	para "… … … …"
+	done
 
-	para "…Oh, sorry. I"
+ShauntalGymIntroText2:
+	text "…Oh, sorry. I"
 	line "didn't see you"
 	cont "there."
 

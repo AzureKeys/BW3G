@@ -784,7 +784,7 @@ BasementKeyDesc:
 
 PassDesc:
 	db   "A ticket for the"
-	next "MAGNET TRAIN.@"
+	next "SUBWAY train.@"
 
 ZincDesc:
 	db   "Raises SP.DEF of"

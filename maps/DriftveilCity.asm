@@ -52,6 +52,7 @@ DriftveilMerchant3Script:
 	
 .purchase:
 	writetext DriftveilMerchantBuyText
+	buttonsound
 	special PlaceMoneyTopRight
 	checkevent EVENT_DRIFTVEIL_THUNDERSTONE
 	iftrue .FangOnly

@@ -118,16 +118,16 @@ ENDM
 	connection south, IcirrusCitySouth, ICIRRUS_CITY_SOUTH, 0
 	
 	map_attributes NacreneOutskirt, NACRENE_OUTSKIRT, $25, EAST
-	connection east, NacreneOutskirtConnectionDummy, NACRENE_OUTSKIRT_CONNECTION_DUMMY, -2
+	connection east, NacreneOutskirtConnectionDummy, NACRENE_OUTSKIRT_CONNECTION_DUMMY, 0
 	
 	map_attributes NacreneOutskirtConnectionDummy, NACRENE_OUTSKIRT_CONNECTION_DUMMY, $25, WEST
-	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, 2
+	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, 0
 	
 	map_attributes NacreneCity, NACRENE_CITY, $25, WEST
-	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, 2
+	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, 0
 	
 	map_attributes NacreneOutskirtEast, NACRENE_OUTSKIRT_EAST, $25, WEST
-	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, -10
+	connection west, NacreneOutskirt, NACRENE_OUTSKIRT, -12
 	
 	map_attributes VictoryRoadEntranceNorth, VICTORY_ROAD_ENTRANCE_NORTH, $15, SOUTH
 	connection south, VictoryRoadEntranceNorthConnectionDummy, VICTORY_ROAD_ENTRANCE_NORTH_CONNECTION_DUMMY, 0
@@ -358,7 +358,7 @@ ENDM
 	map_attributes Rt9, R_9, $5d, 0
 	map_attributes ShoppingMallNine, SHOPPING_MALL_NINE, $00, 0
 	map_attributes MoorOfIcirrus, MOOR_OF_ICIRRUS, $11, 0
-	map_attributes Dreamyard, DREAMYARD, $25, 0
+	map_attributes Dreamyard, DREAMYARD, $09, 0
 	map_attributes DreamyardB1F, DREAMYARD_B1F, $00, 0
 	map_attributes IcirrusFanClub, ICIRRUS_FAN_CLUB, $00, 0
 	map_attributes IcirrusCave, ICIRRUS_CAVE, $02, 0

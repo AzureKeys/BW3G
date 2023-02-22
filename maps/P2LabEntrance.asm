@@ -28,6 +28,7 @@ P2LabEntrance_MapScripts:
 	writetext P2LabEntranceJuniperAfterText
 	waitbutton
 	closetext
+	playsound SFX_ENTER_DOOR
 	applymovement P2LABENTRANCE_JUNIPER, P2LabEntranceJuniperMovement2
 	disappear P2LABENTRANCE_JUNIPER
 	setscene SCENE_P2_LAB_ENTRANCE_NOTHING
@@ -35,6 +36,7 @@ P2LabEntrance_MapScripts:
 	setevent EVENT_NUVEMA_LAB_BIANCA
 	setevent EVENT_P2_LAB_GRUNTS
 	specialphonecall SPECIALCALL_BIANCA_P2
+	waitsfx
 	end
 	
 P2LabEntranceJuniperScript:

@@ -96,7 +96,6 @@ CreditsScript:
 
 	db EXTRA_SPECIAL_THANKS, 0
 	db       MRS_AZURE_KEYS, 1
-	db                 DOGS, 2
 
 	db CREDITS_WAIT, 15
 

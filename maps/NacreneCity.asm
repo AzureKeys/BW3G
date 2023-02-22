@@ -248,7 +248,7 @@ NacreneCity_MapEvents:
 
 	db 4 ; object events
 	object_event  6,  8, SPRITE_LENORA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_NACRENE_CITY_LENORA
-	object_event  3,  6, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NacreneCityLassScript, -1
+	object_event  2,  5, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NacreneCityLassScript, -1
 	object_event 16,  9, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, NacreneCityGentlemanScript, -1
 	object_event  5, 17, SPRITE_MUSICIAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, NacreneCityMusicianScript, -1
 	

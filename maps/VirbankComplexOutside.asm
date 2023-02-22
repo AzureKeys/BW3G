@@ -63,7 +63,6 @@ VirbankComplexOutsideCherenScript:
 	writetext VirbankComplexOutsideCherenIntroText
 	buttonsound
 	verbosegiveitem LIFT_KEY
-	buttonsound
 	writetext VirbankComplexOutsideCherenLeaveText
 	waitbutton
 	closetext
@@ -76,7 +75,7 @@ VirbankComplexOutsideCherenScript:
 	disappear VIRBANKCOMPLEXOUTSIDE_CHEREN
 	special FadeOutMusic
 	pause 15
-	playmusic MUSIC_VIRBANK_CITY
+	playmusic MUSIC_SEWERS
 	playmapmusic
 	end
 
@@ -84,33 +83,51 @@ TrainerGruntM1VirbankComplexOutside:
 	trainer GRUNTM, GRUNTM_VIRBANK_COMPLEX_1, EVENT_BEAT_GRUNTM_VIRBANK_COMPLEX_1, GruntM1VirbankComplexOutsideSeenText, GruntM1VirbankComplexOutsideBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	checkjustbattled
+	iftrue .LoadGfx
 	opentext
 	writetext GruntM1VirbankComplexOutsideAfterText
 	waitbutton
 	closetext
+	end
+	
+.LoadGfx
+	variablesprite SPRITE_VIRBANK_GRUNT_3, SPRITE_ROCKET
+	special LoadUsedSpritesGFX
 	end
 
 TrainerGruntM2VirbankComplexOutside:
 	trainer GRUNTM, GRUNTM_VIRBANK_COMPLEX_2, EVENT_BEAT_GRUNTM_VIRBANK_COMPLEX_2, GruntM2VirbankComplexOutsideSeenText, GruntM2VirbankComplexOutsideBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	checkjustbattled
+	iftrue .LoadGfx
 	opentext
 	writetext GruntM2VirbankComplexOutsideAfterText
 	waitbutton
 	closetext
+	end
+	
+.LoadGfx
+	variablesprite SPRITE_VIRBANK_GRUNT_1, SPRITE_ROCKET
+	special LoadUsedSpritesGFX
 	end
 
 TrainerGruntFVirbankComplexOutside:
 	trainer GRUNTF, GRUNTF_VIRBANK_COMPLEX_1, EVENT_BEAT_GRUNTF_VIRBANK_COMPLEX_1, GruntFVirbankComplexOutsideSeenText, GruntFVirbankComplexOutsideBeatenText, 0, .Script
 
 .Script:
-	endifjustbattled
+	checkjustbattled
+	iftrue .LoadGfx
 	opentext
 	writetext GruntFVirbankComplexOutsideAfterText
 	waitbutton
 	closetext
+	end
+	
+.LoadGfx
+	variablesprite SPRITE_VIRBANK_GRUNT_2, SPRITE_ROCKET_GIRL
+	special LoadUsedSpritesGFX
 	end
 	
 VirbankComplexOutsideXSpeed:
@@ -279,9 +296,9 @@ VirbankComplexOutside_MapEvents:
 	bg_event  9,  9, BGEVENT_ITEM, VirbankComplexOutsidePearl
 
 	db 9 ; object events
-	object_event 14, 46, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerGruntM1VirbankComplexOutside, EVENT_VIRBANK_COMPLEX_GRUNTS
-	object_event 15, 38, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerGruntM2VirbankComplexOutside, EVENT_VIRBANK_COMPLEX_GRUNTS
-	object_event 21, 36, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerGruntFVirbankComplexOutside, EVENT_VIRBANK_COMPLEX_GRUNTS
+	object_event 14, 46, SPRITE_VIRBANK_GRUNT_3, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerGruntM1VirbankComplexOutside, EVENT_VIRBANK_COMPLEX_GRUNTS
+	object_event 15, 38, SPRITE_VIRBANK_GRUNT_1, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerGruntM2VirbankComplexOutside, EVENT_VIRBANK_COMPLEX_GRUNTS
+	object_event 21, 36, SPRITE_VIRBANK_GRUNT_2, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerGruntFVirbankComplexOutside, EVENT_VIRBANK_COMPLEX_GRUNTS
 	object_event  9, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankComplexOutsideXSpeed, EVENT_VIRBANK_COMPLEX_OUTSIDE_X_SPEED
 	object_event 21, 46, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankComplexOutsideEther, EVENT_VIRBANK_COMPLEX_OUTSIDE_ETHER
 	object_event 23, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VirbankComplexOutsideRareCandy, EVENT_VIRBANK_COMPLEX_OUTSIDE_RARE_CANDY

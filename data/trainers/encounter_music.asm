@@ -40,7 +40,7 @@ TrainerEncounterMusic::
 	db MUSIC_LASS_ENCOUNTER        ; lady
 	db MUSIC_HIKER_ENCOUNTER       ; linebacker
 	db MUSIC_GENTLEMAN_ENCOUNTER   ; maid
-	db MUSIC_HIKER_ENCOUNTER       ; musician
+	db MUSIC_ROUGHNECK_ENCOUNTER   ; musician
 	db MUSIC_BEAUTY_ENCOUNTER      ; nurseryaide
 	db MUSIC_BEAUTY_ENCOUNTER      ; parasollady
 	db MUSIC_WORKER_ENCOUNTER      ; pilot
