@@ -262,10 +262,6 @@ TwinsR7NorthAfterText:
 R7NorthSignText:
 	text "TWIST MOUNTAIN"
 	line "ahead."
-	
-	para "No passage due to"
-	line "collapsed entryway"
-	cont "-MARSHALL"
 	done
 
 Rt7North_MapEvents:
@@ -289,6 +285,6 @@ Rt7North_MapEvents:
 	object_event 21, 43, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMR7North, -1
 	object_event 17, 21, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBackpackerFR7North, -1
 	object_event 16, 33, SPRITE_HARLEQUIN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerHarlequinR7North, -1
-	object_event 13, 40, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerTwinsR7North, -1
-	object_event 13, 41, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerTwinsR7North, -1
+	object_event 13, 40, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR7North, -1
+	object_event 13, 41, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsR7North, -1
 	
