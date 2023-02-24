@@ -29,7 +29,7 @@
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 1c
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 1d
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 1e
-	tilecoll TOWN_MAP, STAIRCASE, FLOOR, FLOOR ; 1f
+	tilecoll WALL, STAIRCASE, FLOOR, FLOOR ; 1f
 	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 20
 	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 21
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 22

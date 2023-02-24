@@ -78,6 +78,7 @@ TilesetBridgeAnim:
 TilesetPortAnim:
 TilesetTowerAnim:
 TilesetDesertAnim:
+TilesetPlayersHouseAnim:
 	;dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -355,7 +356,6 @@ TilesetAirportAnim:
 TilesetRadioTowerAnim:
 TilesetMansionAnim:
 TilesetHouseAnim:
-TilesetPlayersHouseAnim:
 TilesetPokecenterAnim:
 TilesetGateAnim:
 TilesetLabAnim:
