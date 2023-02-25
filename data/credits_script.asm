@@ -48,9 +48,10 @@ CreditsScript:
 	db CREDITS_WAIT, 15
 
 	db         CUSTOM_TILES, 0
-	db                 BEES, 1
-	db                 LUNA, 2
-	db           PIA_CARROT, 3
+	db                  SEA, 1
+	db                 BEES, 2
+	db                 LUNA, 3
+	db           PIA_CARROT, 4
 
 	db CREDITS_WAIT, 15
 
