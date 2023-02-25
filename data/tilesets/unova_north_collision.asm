@@ -161,7 +161,7 @@
 	tilecoll WALL, UP_WALL, WALL, WALL ; a0
 	tilecoll TALL_GRASS, TALL_GRASS, WALL, WALL ; a1
 	tilecoll TALL_GRASS, TALL_GRASS, FLOOR, FLOOR ; a2
-	tilecoll STAIRS_LEFT_UP, FLOOR, WALL, FLOOR ; a3
+	tilecoll FLOOR, FLOOR, WALL, FLOOR ; a3
 	tilecoll WALL, FLOOR, FLOOR, FLOOR ; a4
 	tilecoll FLOOR, WALL, FLOOR, FLOOR ; a5
 	tilecoll FLOOR, WALL, WALL, FLOOR ; a6

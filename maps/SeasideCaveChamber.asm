@@ -102,7 +102,6 @@ SeasideCaveZinzolinScript:
 	playsound SFX_ENTER_DOOR
 	waitsfx
 	disappear SEASIDECAVECHAMBER_MARLON
-	setevent EVENT_NUVEMA_LAB_BIANCA
 	setscene SCENE_FINISHED
 	setmapscene R_12_VILLAGE_BRIDGE_GATE, SCENE_FINISHED
 	end

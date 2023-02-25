@@ -2259,26 +2259,6 @@ GetFailureResultText:
 	call GetBattleVar
 	cp EFFECT_JUMP_KICK
 	ret nz
-
-	ld a, [wTypeModifier]
-	and $7f
-	ret z
-
-	; ld hl, wCurDamage
-	; ld a, [hli]
-	; ld b, [hl]
-; rept 3
-	; srl a
-	; rr b
-; endr
-	; ld [hl], b
-	; dec hl
-	; ld [hli], a
-	; or b
-	; jr nz, .do_at_least_1_damage
-	; inc a
-	; ld [hl], a
-; .do_at_least_1_damage
 	
 	ld hl, CrashedText
 	call StdBattleTextBox
@@ -2286,10 +2266,6 @@ GetFailureResultText:
 	ld [wKickCounter], a
 	call LoadMoveAnim
 	ld c, TRUE
-	; ldh a, [hBattleTurn]
-	; and a
-	; jp nz, DoEnemyDamage
-	; jp DoPlayerDamage
 	ld hl, GetHalfMaxHP
 	call CallBattleCore
 	ld hl, SubtractHPFromUser

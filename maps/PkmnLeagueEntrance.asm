@@ -66,6 +66,7 @@ PkmnLeagueInferScript:
 	writetext PkmnLeagueEntranceInferIntroText
 	waitbutton
 	closetext
+	setevent EVENT_PKMN_LEAGUE_ENTRANCE_INFER
 	checkevent EVENT_GOT_OSHAWOTT
 	iftrue .Oshawott
 	checkevent EVENT_GOT_SNIVY

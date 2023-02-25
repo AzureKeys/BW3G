@@ -345,9 +345,9 @@ ChampionsRoomEntrance_MapEvents:
 	db 1 ; coord events
 	coord_event  7,  6, SCENE_DEFAULT, ChampionsRoomEntranceScript
 
-	db 2 ; bg events
-	bg_event  7, 15, BGEVENT_UP, ChampionsRoomEntranceDisappearObjects
-	bg_event  8, 15, BGEVENT_UP, ChampionsRoomEntranceDisappearObjects
+	db 0 ; bg events
+	;bg_event  7, 15, BGEVENT_UP, ChampionsRoomEntranceDisappearObjects
+	;bg_event  8, 15, BGEVENT_UP, ChampionsRoomEntranceDisappearObjects
 
 	db 5 ; object events
 	object_event  6,  6, SPRITE_SHADOW, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, 0, EVENT_CHAMPIONS_ROOM_ENTRANCE_CHARACTERS

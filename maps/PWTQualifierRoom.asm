@@ -34,6 +34,7 @@ PWTQualifierRoom_MapScripts:
 	writetext PwtQualifierRoomAceTrainerMBattleText
 	waitbutton
 	closetext
+	setevent EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_M
 	winlosstext PwtQualifierRoomAceTrainerMWinText, 0
 	setlasttalked PWTQUALIFIERROOM_ACE_TRAINER_M
 	loadtrainer ACE_TRAINERM, ACE_TRAINERM_PWT
@@ -68,6 +69,7 @@ PWTQualifierRoom_MapScripts:
 	writetext PwtQualifierRoomAceTrainerFBattleText
 	waitbutton
 	closetext
+	setevent EVENT_PWT_QUALIFIER_ROOM_ACE_TRAINER_F
 	winlosstext PwtQualifierRoomAceTrainerFWinText, 0
 	setlasttalked PWTQUALIFIERROOM_ACE_TRAINER_F
 	loadtrainer ACE_TRAINERF_D, ACE_TRAINERF_PWT

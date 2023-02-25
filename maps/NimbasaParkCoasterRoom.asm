@@ -162,11 +162,13 @@ NimbasaParkHiddenGruntScript:
 	writetext GruntMNimbasaPark4SeenText
 	waitbutton
 	closetext
+	setevent EVENT_NIMBASA_PARK_HIDDEN_GRUNT
 	winlosstext GruntMNimbasaPark4BeatenText, 0
 	setlasttalked NIMBASAPARKCOASTERROOM_GRUNTM_4
 	loadtrainer GRUNTM, GRUNTM_NIMBASA_4
 	startbattle
 	reloadmapafterbattle
+	clearevent EVENT_NIMBASA_PARK_HIDDEN_GRUNT
 	setevent EVENT_BEAT_GRUNTM_NIMBASA_PARK_4
 .done
 	end

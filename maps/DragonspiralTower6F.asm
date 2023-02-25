@@ -44,6 +44,7 @@ DragonspiralTowerInferScript2:
 	writetext DragonspiralTower6FInferSpeechText
 	waitbutton
 	closetext
+	setevent EVENT_DRAGONSPIRAL_TOWER_6F_INFER
 	checkevent EVENT_GOT_OSHAWOTT
 	iftrue .Oshawott
 	checkevent EVENT_GOT_SNIVY

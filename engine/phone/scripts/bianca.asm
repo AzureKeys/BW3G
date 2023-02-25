@@ -159,4 +159,5 @@ BiancaPhoneCallerScript:
 	farwritetext BiancaPhoneMembersCardText
 	specialphonecall SPECIALCALL_NONE
 	setevent EVENT_BIANCA_MEMBERS_CARD_CALL
+	clearevent EVENT_NUVEMA_LAB_BIANCA
 	end
