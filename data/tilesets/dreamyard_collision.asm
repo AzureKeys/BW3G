@@ -230,3 +230,5 @@
 	tilecoll WATER, FLOOR, WALL, UP_WALL ; e5
 	tilecoll FLOOR, WARP_CARPET_DOWN, UP_WALL, UP_WALL ; e6
 	tilecoll FLOOR, WATER, UP_WALL, WALL ; e7
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; e8
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; e9

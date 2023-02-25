@@ -123,7 +123,52 @@ MomScript:
 	end
 	
 .GotPokedex:
-	writetext SoWhatWasMarlonsErrand2Text
+	writetext MomHappinessIntroText
+	yesorno
+	iffalse .refused
+	
+	special GetFirstPokemonHappiness
+	writetext MomHappinessText2
+	buttonsound
+	ifgreater 250 - 1, .LovesYouALot
+	ifgreater 200 - 1, .ReallyTrustsYou
+	ifgreater 150 - 1, .SortOfHappy
+	ifgreater 100 - 1, .QuiteCute
+	ifgreater  50 - 1, .NotUsedToYou
+	jump .LooksMean
+
+.LovesYouALot:
+	writetext MomHappinessRatingText2_LovesYouALot
+	jump .Outro
+
+.ReallyTrustsYou:
+	writetext MomHappinessRatingText2_ReallyTrustsYou
+	jump .Outro
+
+.SortOfHappy:
+	writetext MomHappinessRatingText2_SortOfHappy
+	jump .Outro
+
+.QuiteCute:
+	writetext MomHappinessRatingText2_QuiteCute
+	jump .Outro
+
+.NotUsedToYou:
+	writetext MomHappinessRatingText2_NotUsedToYou
+	jump .Outro
+
+.LooksMean:
+	writetext MomHappinessRatingText2_LooksMean
+	
+.Outro
+	buttonsound
+	writetext MomHappinessOutroText
+	waitbutton
+	closetext
+	end
+	
+.refused
+	writetext MomRefusedHappinessText
 	waitbutton
 	closetext
 	end
@@ -303,18 +348,82 @@ SoWhatWasMarlonsErrandText:
 	cont "him!"
 	done
 
-SoWhatWasMarlonsErrand2Text:
-	text "So, what did"
-	line "MARLON want?"
+MomHappinessIntroText:
+	text "Hi baby! Welcome"
+	line "home!"
 
-	para "…"
+	para "I hope you've been"
+	line "treating your"
+	cont "#MON well."
 
-	para "Oh! A #MON"
-	line "journey?"
+	para "Would you like me"
+	line "to check how"
 
-	para "You should be"
-	line "proud, I know"
-	cont "you'll do great!"
+	para "friendly your"
+	line "#MON is toward"
+	cont "you?"
+	done
+	
+MomRefusedHappinessText:
+	text "Oh, okay. Well,"
+	line "you stay safe, and"
+	cont "have fun."
+	
+	para "You got this,"
+	line "baby!"
+	done
+	
+MomHappinessText2:
+	text "Oh, let me see"
+	line "your @"
+	text_ram wStringBuffer3
+	text "…"
+	done
+
+MomHappinessRatingText2_LovesYouALot:
+	text "It looks really"
+	line "happy! It must"
+	cont "love you a lot."
+	done
+
+MomHappinessRatingText2_ReallyTrustsYou:
+	text "I get the feeling"
+	line "that it really"
+	cont "trusts you."
+	done
+
+MomHappinessRatingText2_SortOfHappy:
+	text "It's friendly to-"
+	line "ward you. It looks"
+	cont "sort of happy."
+	done
+
+MomHappinessRatingText2_QuiteCute:
+	text "It hasn't yet"
+	line "formed a meaning-"
+	cont "ful bond. Give it"
+	cont "time."
+	done
+
+MomHappinessRatingText2_NotUsedToYou:
+	text "You should treat"
+	line "it better. It's"
+	cont "not used to you."
+	done
+
+MomHappinessRatingText2_LooksMean:
+	text "It doesn't seem to"
+	line "like you at all."
+	cont "It looks mean."
+	done
+	
+MomHappinessOutroText:
+	text "Now, be safe and"
+	line "have fun on your"
+	cont "travels, <PLAY_G>."
+	
+	para "You got this,"
+	line "baby!"
 	done
 
 NeighborMornIntroText:

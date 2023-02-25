@@ -11,7 +11,7 @@ MomCutePokemonText:
 	cont "Oh, how cute!"
 	done
 	
-MomHappinessIntroText:
+MomPhoneHappinessIntroText:
 	text "You know, I spent"
 	line "a lot of time"
 	
