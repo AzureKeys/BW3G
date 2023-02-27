@@ -53,7 +53,7 @@ DragonspiralTowerRoofScript:
 	turnobject PLAYER, UP
 	disappear DRAGONSPIRALTOWERROOF_GENESECT_1
 	waitsfx
-	special FadeInPalettes
+	special FadeInQuickly
 	pause 30
 	opentext
 	writetext DragonspiralTowerRoofCryText
@@ -145,7 +145,7 @@ DragonspiralTowerRoofScript:
 	applymovement DRAGONSPIRALTOWERROOF_ZINZOLIN, DragonspiralTowerRoofZinzolinLeaveMovement
 	disappear DRAGONSPIRALTOWERROOF_ZINZOLIN
 	pause 30
-	applymovement PLAYER, DragonspiralTowerRoofStepDownMovement
+	applymovement PLAYER, DragonspiralTowerRoofStepDown2Movement
 	turnobject DRAGONSPIRALTOWERROOF_JUNIPER, RIGHT
 	turnobject DRAGONSPIRALTOWERROOF_DRAYDEN, RIGHT
 	opentext
@@ -155,7 +155,6 @@ DragonspiralTowerRoofScript:
 	playsound SFX_WARP_TO
 	applymovement DRAGONSPIRALTOWERROOF_JUNIPER, DragonspiralTowerRoofTeleportOutMovement
 	disappear DRAGONSPIRALTOWERROOF_JUNIPER
-	applymovement DRAGONSPIRALTOWERROOF_DRAYDEN, DragonspiralTowerRoofDraydenAfterMovement
 	turnobject PLAYER, LEFT
 	opentext
 	writetext DragonspiralTowerRoofDraydenThanksText
@@ -264,6 +263,12 @@ DragonspiralTowerRoofTeleportInMovement:
 	
 DragonspiralTowerRoofTeleportOutMovement:
 	teleport_from
+	step_end
+	
+DragonspiralTowerRoofStepDown2Movement:
+	step DOWN
+	step DOWN
+	turn_head LEFT
 	step_end
 	
 DragonspiralTowerRoofIntroText:

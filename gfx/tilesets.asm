@@ -447,9 +447,6 @@ INCBIN "data/tilesets/underground_attributes.bin"
 TilesetIcePathAttr:
 INCBIN "data/tilesets/ice_path_attributes.bin"
 
-TilesetForestAttr:
-INCBIN "data/tilesets/forest_attributes.bin"
-
 
 SECTION "Tileset Data 14", ROMX
 
@@ -728,3 +725,6 @@ INCBIN "data/tilesets/village_bridge_metatiles.bin"
 
 TilesetGameCornerColl:
 INCLUDE "data/tilesets/game_corner_collision.asm"
+
+TilesetForestAttr:
+INCBIN "data/tilesets/forest_attributes.bin"

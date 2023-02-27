@@ -209,7 +209,7 @@ ENDM
 	map_const ASPERTIA_SUBWAY, 10, 9
 	map_const ASPERTIA_BLACKBELT_HOUSE, 4, 4
 	map_const ASPERTIA_POKECENTER_1F, 5, 5
-	map_const ASPERTIA_MOM_HOUSE, 4, 4 
+	map_const ASPERTIA_MOM_HOUSE, 7, 4 
 	map_const ASPERTIA_MOVE_DELETER_HOUSE, 4, 4 
 	map_const ASPERTIA_GYM, 5, 11
 	map_const R_19_ASPERTIA_GATE, 5, 4 
@@ -341,7 +341,7 @@ ENDM
 	map_const ICIRRUS_CITY_SOUTH_CONNECTION_DUMMY, 25, 3
 	map_const ICIRRUS_CITY_SOUTH, 24, 13
 	map_const ICIRRUS_CITY_NORTH, 12, 13
-	map_const R_8, 24, 10
+	map_const R_8, 24, 11
 	map_const MOOR_OF_ICIRRUS, 24, 20
 	map_const ICIRRUS_POKECENTER_1F, 5, 5
 	map_const ICIRRUS_BOUTIQUE, 6, 4

@@ -53,6 +53,9 @@ AspertiaMomScript:
 AspertiaMomHouseBookshelf:
 	jumpstd magazinebookshelf
 
+AspertiaMomHouseFridge:
+	jumptext AspertiaMomHouseFridgeText
+
 AspertiaMomIntroTextM:
 	text "You're a #MON"
 	line "trainer, right?"
@@ -115,20 +118,26 @@ AspertiaMomGaveTMText:
 	para "Give it to your"
 	line "favorite #MON!"
 	done
+	
+AspertiaMomHouseFridgeText:
+	text "Better not mess"
+	line "around in their"
+	cont "fridge."
+	done
 
 AspertiaMomHouse_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  2,  7, ASPERTIA_CITY, 4
-	warp_event  3,  7, ASPERTIA_CITY, 4
+	warp_event  4,  7, ASPERTIA_CITY, 4
+	warp_event  5,  7, ASPERTIA_CITY, 4
 
 	db 0 ; coord events
 
 	db 2 ; bg events
-	bg_event  0,  1, BGEVENT_READ, AspertiaMomHouseBookshelf
-	bg_event  1,  1, BGEVENT_READ, AspertiaMomHouseBookshelf
+	bg_event  3,  1, BGEVENT_READ, AspertiaMomHouseFridge
+	bg_event  9,  1, BGEVENT_READ, AspertiaMomHouseBookshelf
 
 	db 1 ; object events
-	object_event  2,  4, SPRITE_MOM, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AspertiaMomScript, -1
+	object_event  5,  4, SPRITE_MOM, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AspertiaMomScript, -1
 	

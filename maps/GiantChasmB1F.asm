@@ -99,8 +99,8 @@ GiantChasmB1FMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_GIANT_CHASM_B1F_MAX_REVIVE
 	
 BackpackerFGiantChasmSeenText:
-	text "I may be a Back-"
-	line "packer, but I'm"
+	text "I may be a BACK-"
+	line "PACKER, but I'm"
 
 	para "also a treasure"
 	line "hunter!"
@@ -142,7 +142,7 @@ AceTrainerFGiantChasmAfterText:
 	para "keep dripping down"
 	line "for hundreds of"
 	
-	para "years… The they"
+	para "years… Then they"
 	line "harden into stone"
 	
 	para "cones. Those are"
@@ -239,7 +239,7 @@ GiantChasmB1F_MapEvents:
 	object_event 26, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiantChasmB1FHyperPotion, EVENT_GIANT_CHASM_B1F_HYPER_POTION
 	object_event 14, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiantChasmB1FElixer, EVENT_GIANT_CHASM_B1F_ELIXER
 	object_event 23, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiantChasmB1FRedShard, EVENT_GIANT_CHASM_B1F_RED_SHARD
-	object_event 16, 26, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMGiantChasm, -1
+	object_event 16, 26, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBackpackerMGiantChasm, -1
 	object_event 13, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBackpackerFGiantChasm, -1
 	object_event 20, 12, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_TRAINER, 1, TrainerAceTrainerFGiantChasm, -1
 	object_event 36, 14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerAceTrainerMGiantChasm, -1

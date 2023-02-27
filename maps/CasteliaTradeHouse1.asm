@@ -17,6 +17,9 @@ CasteliaTradeHouse1Script:
 CasteliaTradeHouse1BookshelfScript:
 	jumpstd magazinebookshelf
 
+CasteliaTradeHouse1Stairs:
+	jumpstd apartmentstairs
+
 CasteliaTradeHouse1_MapEvents:
 	db 0, 0 ; filler
 
@@ -26,11 +29,10 @@ CasteliaTradeHouse1_MapEvents:
 
 	db 0 ; coord events
 
-	db 3 ; bg events
-	bg_event  0,  1, BGEVENT_READ, CasteliaTradeHouse1BookshelfScript
-	bg_event  1,  1, BGEVENT_READ, CasteliaTradeHouse1BookshelfScript
-	bg_event  7,  1, BGEVENT_READ, CasteliaTradeHouse1BookshelfScript
+	db 2 ; bg events
+	bg_event  2,  1, BGEVENT_READ, CasteliaTradeHouse1BookshelfScript
+	bg_event  7,  0, BGEVENT_READ, CasteliaTradeHouse1Stairs
 
 	db 1 ; object events
-	object_event  5,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, CasteliaTradeHouse1Script, -1
+	object_event  1,  5, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED_D, OBJECTTYPE_SCRIPT, 0, CasteliaTradeHouse1Script, -1
 	

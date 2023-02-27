@@ -2,7 +2,7 @@ NAMINGSCREEN_CURSOR     EQU $7e
 
 NAMINGSCREEN_BORDER     EQUS "\"■\"" ; $d7
 NAMINGSCREEN_MIDDLELINE EQUS "\"▲\"" ; $eb
-NAMINGSCREEN_UNDERLINE  EQUS "\"▼\"" ; $d9
+NAMINGSCREEN_UNDERLINE  EQUS "\"¥\"" ; $d9
 
 _NamingScreen:
 	call DisableSpriteUpdates

@@ -10,7 +10,6 @@ UndellaOldRodHouse_Blocks:
 LacunosaHouse_Blocks:
 LacunosaHouse2_Blocks:
 Rt4House_Blocks:
-AspertiaMomHouse_Blocks:
 AspertiaMoveDeleterHouse_Blocks:
 AspertiaBlackbeltHouse_Blocks:
 FloccesyTownHouse_Blocks:
@@ -730,4 +729,7 @@ TwistMountainOutside_Blocks:
 
 TwistMountainGenesectRoom_Blocks:
 	INCBIN "maps/TwistMountainGenesectRoom.ablk"
+	
+AspertiaMomHouse_Blocks:
+	INCBIN "maps/AspertiaMomHouse.ablk"
 	

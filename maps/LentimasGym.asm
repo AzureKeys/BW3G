@@ -541,12 +541,13 @@ LentimasGym_MapEvents:
 	coord_event  5, 10, SCENE_DEFAULT, LentimasGymTrainer3Script2
 	coord_event 11, 11, SCENE_DEFAULT, LentimasGymTrainer4Script
 
-	db 1 ; bg events
+	db 2 ; bg events
 	bg_event  6, 17, BGEVENT_READ, LentimasGymStatue
+	bg_event  9, 17, BGEVENT_READ, LentimasGymStatue
 
 	db 6 ; object events
 	object_event  7,  9, SPRITE_SHAUNTAL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LentimasGymShauntalScript, -1
-	object_event  9, 17, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LentimasGymGuyScript, -1
+	object_event  8, 17, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LentimasGymGuyScript, -1
 	object_event  1,  5, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TrainerHexManiacLentimasGym1, EVENT_LENTIMAS_GYM_TRAINER_1
 	object_event  7,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TrainerHexManiacLentimasGym2, EVENT_LENTIMAS_GYM_TRAINER_2
 	object_event  3, 10, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TrainerHexManiacLentimasGym3, EVENT_LENTIMAS_GYM_TRAINER_3

@@ -304,7 +304,7 @@ OpelucidGroupSprites:
 
 IcirrusGroupSprites:
 ; Icirrus City, R8, Moor of Icirrus, Tubeline Bridge
-	db SPRITE_LASS
+	db SPRITE_POKEFAN_M
 	db SPRITE_FISHER
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_COOLTRAINER_F

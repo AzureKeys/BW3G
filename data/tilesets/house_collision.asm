@@ -60,3 +60,12 @@
 	tilecoll WALL, STAIRCASE, FLOOR, FLOOR ; 3b
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 3c
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3d
+	tilecoll WALL, WINDOW, WALL, FLOOR ; 3e
+	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 3f
+	tilecoll WINDOW, WALL, FLOOR, WALL ; 40
+	tilecoll WALL, WALL, FLOOR, TV ; 41
+	tilecoll WALL, WALL, FLOOR, WALL ; 42
+	tilecoll FLOOR, WALL, FLOOR, WALL ; 43
+	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 44
+	tilecoll WALL, FLOOR, PC, FLOOR ; 45
+	tilecoll PC, FLOOR, FLOOR, FLOOR ; 46

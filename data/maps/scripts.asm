@@ -130,7 +130,6 @@ INCLUDE "maps/VirbankComplexB2F.asm"
 INCLUDE "maps/VirbankGym.asm"
 INCLUDE "maps/AspertiaGym.asm"
 INCLUDE "maps/VirbankPort.asm"
-INCLUDE "maps/CasteliaPort.asm"
 
 SECTION "Map Scripts 8", ROMX
 
@@ -343,3 +342,4 @@ SECTION "Map Scripts 18", ROMX
 INCLUDE "maps/TwistMountainOutside.asm"
 INCLUDE "maps/TwistMountainHouse.asm"
 INCLUDE "maps/TwistMountainGenesectRoom.asm"
+INCLUDE "maps/CasteliaPort.asm"
