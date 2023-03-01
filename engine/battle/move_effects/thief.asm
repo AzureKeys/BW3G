@@ -48,10 +48,15 @@ BattleCommand_Thief:
 	ld a, [wNamedObjectIndexBuffer]
 	ld [hl], a
 	ld [de], a
+; Don't permanently keep items stolen from trainers
+	ld a, [wBattleMode]
+	dec a
+	jr nz, .skip_backup
 ; Set backup as well, so we keep it after battle
 	call GetBackupItemAddr
 	ld a, [de]
 	ld [hl], a
+.skip_backup
 ; Unlock enemy move if Choice item was stolen
 	call .ResetChoice
 	jr .stole
@@ -87,9 +92,6 @@ BattleCommand_Thief:
 	ld a, [wEffectFailed]
 	and a
 	ret nz
-
-; If the enemy steals your item,
-; it's gone for good if you don't get it back.
 
 	call .playeritem
 	xor a
