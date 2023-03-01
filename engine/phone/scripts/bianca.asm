@@ -1,6 +1,8 @@
 BiancaPhoneCalleeScript:
 	farwritetext BiancaPhoneGreetingText
 	buttonsound
+	checkevent EVENT_BEAT_POKEMON_LEAGUE
+	iftrue .beat_league
 	checkflag ENGINE_LEGENDBADGE
 	iftrue .victory_road
 	checkmapscene DRAGONSPIRAL_TOWER_ROOF
@@ -119,6 +121,10 @@ BiancaPhoneCalleeScript:
 	
 .victory_road
 	farwritetext BiancaPhoneVictoryRoadText
+	end
+	
+.beat_league
+	farwritetext BiancaPhoneBeatLeagueText
 	end
 
 BiancaPhoneCallerScript:

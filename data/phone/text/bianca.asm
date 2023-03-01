@@ -294,6 +294,27 @@ BiancaPhoneVictoryRoadText:
 	line "<PLAY_G>!"
 	done
 	
+BiancaPhoneBeatLeagueText:
+	text "Wow, <PLAY_G>,"
+	line "you've earned all"
+	cont "8 GYM BADGES!"
+	
+	para "Now the only thing"
+	line "left for you to do"
+	
+	para "is to take on the"
+	line "#MON LEAGUE!"
+	
+	para "Go through ROUTE"
+	line "23 and go through"
+	
+	para "VICTORY ROAD, and"
+	line "you'll be there!"
+	
+	para "Good luck,"
+	line "<PLAY_G>!"
+	done
+	
 BiancaPhoneDoneText:
 	text "Call again if you"
 	line "need any more"
