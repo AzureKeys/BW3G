@@ -84,6 +84,7 @@ Overheat:
 	checkfaint
 	buildopponentrage
 	kingsrock
+	defrostopponent
 	endmove
 	
 HammerArm:
@@ -1259,6 +1260,30 @@ RecoilHit:
 	kingsrock
 	endmove
 
+FlareBlitz:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	effectchance
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	defrost
+	recoil
+	checkfaint
+	buildopponentrage
+	kingsrock
+	burntarget
+	endmove
+
 Mist:
 	checkobedience
 	usedmovetext
@@ -1522,6 +1547,29 @@ TrapTarget:
 	checkfaint
 	buildopponentrage
 	kingsrock
+	traptarget
+	endmove
+
+FireSpin:
+	checkobedience
+	usedmovetext
+	doturn
+	checkhit
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	clearmissdamage
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	kingsrock
+	defrostopponent
 	traptarget
 	endmove
 
@@ -1964,29 +2012,6 @@ Safeguard:
 	usedmovetext
 	doturn
 	safeguard
-	endmove
-
-SacredFire:
-	checkobedience
-	usedmovetext
-	doturn
-	critical
-	damagestats
-	damagecalc
-	stab
-	damagevariation
-	checkhit
-	effectchance
-	moveanim
-	failuretext
-	applydamage
-	criticaltext
-	supereffectivetext
-	defrost
-	checkfaint
-	buildopponentrage
-	kingsrock
-	burntarget
 	endmove
 
 Magnitude:

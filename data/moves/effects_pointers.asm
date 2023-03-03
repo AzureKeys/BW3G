@@ -125,7 +125,7 @@ MoveEffectsPointers:
 	dw Present
 	dw Frustration
 	dw Safeguard
-	dw SacredFire
+	dw FlareBlitz
 	dw Magnitude
 	dw BatonPass
 	dw Pursuit
@@ -174,3 +174,4 @@ MoveEffectsPointers:
 	dw BugBite
 	dw FreezeHit ; Blizzard
 	dw Hail
+	dw FireSpin

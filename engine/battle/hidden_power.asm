@@ -18,13 +18,9 @@ HiddenPowerDamage:
 	or SPECIAL
 	ld [hl], a
 
-; Get the rest of the damage formula variables
-; based on the new type, but keep base power.
-	ld a, d
-	push af
+; Get the damage formula variables based on the new type
+; Base Power is set by this command (always 60)
 	farcall BattleCommand_DamageStats ; damagestats
-	pop af
-	ld d, a
 	ret
 	
 GetHiddenPowerType::

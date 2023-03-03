@@ -2976,16 +2976,6 @@ BattleCommand_DamageCalc:
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
 
-; Selfdestruct and Explosion halve defense.
-	cp EFFECT_SELFDESTRUCT
-	jr nz, .dont_selfdestruct
-
-	srl c
-	jr nz, .dont_selfdestruct
-	inc c
-
-.dont_selfdestruct
-
 ; Variable-hit moves and Conversion can have a power of 0.
 	cp EFFECT_MULTI_HIT
 	jr z, .skip_zero_damage_check
@@ -3484,28 +3474,12 @@ INCLUDE "engine/battle/move_effects/bug_bite.asm"
 
 BattleCommand_DefrostOpponent:
 ; defrostopponent
-; Thaw the opponent if frozen, and
-; raise the user's Attack one stage.
-
-	call AnimateCurrentMove
+; Thaw the opponent if frozen
 
 	ld a, BATTLE_VARS_STATUS_OPP
 	call GetBattleVarAddr
-	call Defrost
-
-	ld a, BATTLE_VARS_MOVE_EFFECT
-	call GetBattleVarAddr
-	ld a, [hl]
-	push hl
-	push af
-
-	ld a, EFFECT_ATTACK_UP
-	ld [hl], a
-	call BattleCommand_StatUp
-
-	pop af
-	pop hl
-	ld [hl], a
+	and a
+	jp nz, Defrost
 	ret
 
 INCLUDE "engine/battle/move_effects/sleep_talk.asm"
