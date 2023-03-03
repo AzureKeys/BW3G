@@ -56,9 +56,7 @@ PlayersHouseRadioScript:
 	; end
 	
 	; opentext
-	; givepoke GLIGAR, 5, RAZOR_FANG
-	; givepoke ONIX, 5, METAL_COAT
-	; giveitem POTION, 20
+	; givepoke SNIVY, 5
 	; closetext
 	; end
 	
