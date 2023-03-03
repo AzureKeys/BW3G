@@ -190,9 +190,16 @@ LoadSpecialMapPalette:
 
 .champions_room
 	ld a, [wMapGroup]
+	cp GROUP_NS_ROOM
+	jr z, .champions_room_nite
 	cp GROUP_CHAMPIONS_ROOM
 	jr nz, .do_nothing
 	call LoadChampionPalette
+	scf
+	ret
+	
+.champions_room_nite
+	call LoadChampionNitePalette
 	scf
 	ret
 
@@ -1082,6 +1089,17 @@ LoadChampionPalette:
 	
 ChampionPalette:
 INCLUDE "gfx/tilesets/champions_room.pal"
+
+LoadChampionNitePalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, ChampionNitePalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+	
+ChampionNitePalette:
+INCLUDE "gfx/tilesets/champions_room_nite.pal"
 
 LoadHumilauGymPalette:
 	ld a, BANK(wBGPals1)

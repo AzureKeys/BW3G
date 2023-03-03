@@ -109,13 +109,13 @@ ENDM
 	connection south, IcirrusCitySouth, ICIRRUS_CITY_SOUTH, -8
 	
 	map_attributes IcirrusCityNorth, ICIRRUS_CITY_NORTH, $11, SOUTH
-	connection south, IcirrusCitySouth, ICIRRUS_CITY_SOUTH, 0
+	connection south, IcirrusCitySouth, ICIRRUS_CITY_SOUTH, 1
 	
 	map_attributes IcirrusCitySouth, ICIRRUS_CITY_SOUTH, $11, NORTH
-	connection north, IcirrusCitySouthConnectionDummy, ICIRRUS_CITY_SOUTH_CONNECTION_DUMMY, 0
+	connection north, IcirrusCitySouthConnectionDummy, ICIRRUS_CITY_SOUTH_CONNECTION_DUMMY, -1
 
 	map_attributes IcirrusCitySouthConnectionDummy, ICIRRUS_CITY_SOUTH_CONNECTION_DUMMY, $11, SOUTH
-	connection south, IcirrusCitySouth, ICIRRUS_CITY_SOUTH, 0
+	connection south, IcirrusCitySouth, ICIRRUS_CITY_SOUTH, 1
 	
 	map_attributes NacreneOutskirt, NACRENE_OUTSKIRT, $25, EAST
 	connection east, NacreneOutskirtConnectionDummy, NACRENE_OUTSKIRT_CONNECTION_DUMMY, 0
