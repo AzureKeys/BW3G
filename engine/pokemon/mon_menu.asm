@@ -825,6 +825,7 @@ ChooseMoveToDelete:
 
 .ChooseMoveToDelete
 	call SetUpMoveScreenBG
+	farcall InitPartyMenuOBPals
 	ld de, DeleteMoveScreenAttrs
 	call SetMenuAttributes
 	call SetUpMoveList
