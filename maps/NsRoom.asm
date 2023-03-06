@@ -42,7 +42,7 @@ NsRoomScript:
 	disappear NSROOM_N
 	pause 15
 	special FadeInQuickly
-	playmapmusic
+	playmusic MUSIC_VICTORY_ROAD
 	end
 	
 NsRoomIntroText:
@@ -60,7 +60,7 @@ NsRoomIntroText:
 	
 	para "wouldn't neces-"
 	line "sarily call them"
-	line "evil…"
+	cont "evil…"
 	
 	para "I can understand"
 	line "the desire to get"

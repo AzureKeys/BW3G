@@ -85,7 +85,6 @@ INCLUDE "maps/CasteliaPlazaPrizeRoom.asm"
 INCLUDE "maps/CasteliaPlazaRestaurant.asm"
 INCLUDE "maps/CasteliaPlazaElevator.asm"
 INCLUDE "maps/CasteliaBikeShop.asm"
-INCLUDE "maps/CasteliaGameFreak.asm"
 
 SECTION "Map Scripts 6", ROMX
 
@@ -343,3 +342,4 @@ INCLUDE "maps/TwistMountainOutside.asm"
 INCLUDE "maps/TwistMountainHouse.asm"
 INCLUDE "maps/TwistMountainGenesectRoom.asm"
 INCLUDE "maps/CasteliaPort.asm"
+INCLUDE "maps/CasteliaGameFreak.asm"

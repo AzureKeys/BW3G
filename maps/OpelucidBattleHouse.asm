@@ -220,7 +220,7 @@ BattleHouseSkylaScript:
 	end
 	
 BattleHouseBlueScript:
-	copyvartobyte wBattleHouseOpponent
+	copybytetovar wBattleHouseOpponent
 	ifequal 1, BattleHouseShauntalScript
 	ifequal 2, BattleHouseRoxieScript
 	ifequal 3, BattleHouseCherenScript

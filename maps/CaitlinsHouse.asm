@@ -20,8 +20,8 @@ CaitlinsHouse_MapScripts:
 .MoveObjects:
 	checkevent EVENT_BEAT_CYNTHIA
 	iftrue .done
-	moveobject CAITLINSHOUSE_CAITLIN, 2, 8
-	moveobject CAITLINSHOUSE_CYNTHIA, 3, 7
+	moveobject CAITLINSHOUSE_CAITLIN, 2, 10
+	moveobject CAITLINSHOUSE_CYNTHIA, 3,  9
 .done
 	return
 	
@@ -56,6 +56,7 @@ CaitlinsHouse_MapScripts:
 	closetext
 	applymovement CAITLINSHOUSE_CYNTHIA, CaitlinsHouseCynthiaApproachMovement
 	turnobject PLAYER, RIGHT
+	special HealParty
 	winlosstext CaitlinsHouseCynthiaWinText, 0
 	setlasttalked CAITLINSHOUSE_CYNTHIA
 	loadtrainer CYNTHIA, CYNTHIA1
@@ -282,8 +283,8 @@ CaitlinsHouse_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  4, 13, UNDELLA_TOWN, 7
-	warp_event  5, 13, UNDELLA_TOWN, 7
+	warp_event  4, 15, UNDELLA_TOWN, 7
+	warp_event  5, 15, UNDELLA_TOWN, 7
 
 	db 0 ; coord events
 
@@ -291,5 +292,5 @@ CaitlinsHouse_MapEvents:
 
 	db 2 ; object events
 	object_event  3,  2, SPRITE_CAITLIN, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CaitlinsHouseCaitlinScript, -1
-	object_event  5,  9, SPRITE_CYNTHIA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CaitlinsHouseCynthiaScript, -1
+	object_event  5, 11, SPRITE_CYNTHIA, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CaitlinsHouseCynthiaScript, -1
 	

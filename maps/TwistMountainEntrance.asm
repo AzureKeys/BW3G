@@ -12,7 +12,7 @@ TwistMountainEntrance_MapScripts:
 .SetTiles:
 	checkevent EVENT_TWIST_MOUNTAIN_3F_BOULDER
 	iffalse .done
-	changeblock  2, 26, $6f ; boulder in pit
+	changeblock  2,  4, $6f ; boulder in pit
 .done
 	return
 
@@ -31,7 +31,7 @@ TwistMountainEntrance_MapScripts:
 	writetext TwistMountainEntranceBoulderFellText
 	waitbutton
 	disappear TWISTMOUNTAINENTRANCE_BOULDER
-	changeblock  2, 26, $6f ; boulder in pit
+	changeblock  2,  4, $6f ; boulder in pit
 	reloadmappart
 	closetext
 	end

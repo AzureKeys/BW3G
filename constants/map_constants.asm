@@ -138,7 +138,7 @@ ENDM
 	map_const MARINE_TUBE_ENTRANCE, 13, 5
 	map_const MARINE_TUBE, 8, 17
 	map_const R_14, 21, 15
-	map_const CAITLINS_HOUSE, 5, 7 
+	map_const CAITLINS_HOUSE, 5, 8 
 	
 	newgroup
 	

@@ -22,7 +22,6 @@ NuvemaTownSign:
 	jumptext NuvemaTownSignText
 
 NuvemaLabSign:
-	clearevent EVENT_NUVEMA_LAB_BIANCA
 	jumptext NuvemaLabSignText
 	
 NuvemaTownPokefanMText:

@@ -173,11 +173,11 @@ IcirrusCitySouthPokefanMOpenedText:
 	para "A strange looking"
 	line "mechanical thing"
 	
-	para "came flying hy here"
-	line "and knocked open"
+	para "came flying by"
+	line "here and knocked"
 	
-	para "the entrance to"
-	line "the mountain!"
+	para "open the entrance"
+	line "to the mountain!"
 	
 	para "I wonder if it was"
 	line "some kind of #-"

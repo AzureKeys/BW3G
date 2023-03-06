@@ -9,7 +9,23 @@ CasteliaGameFreak_MapScripts:
 AzureScript:
 	faceplayer
 	opentext
+	checkevent EVENT_BEAT_HILBERT_HILDA
+	iftrue .beat_hilbert_hilda
 	writetext AzureBusyText
+	waitbutton
+	closetext
+	end
+	
+.beat_hilbert_hilda
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .hilda
+	writetext AzureBeatHilbertText
+	jump .next
+.hilda
+	writetext AzureBeatHildaText
+.next
+	buttonsound
+	writetext AzureThanksText
 	waitbutton
 	closetext
 	end
@@ -23,13 +39,59 @@ AzureBusyText:
 	cont "now."
 	
 	para "Come back later,"
-	line "I'm busy trying to"
+	line "I'm working on"
 	
-	para "figure out how to"
-	line "get rid of those"
+	para "porting this game"
+	line "to the POLISHED"
+	cont "CRYSTAL engine…"
+	done
 	
-	para "graphical bugs in"
-	line "KALOS CRYSTAL…"
+AzureBeatHilbertText:
+	text "Oh hey, you beat"
+	line "HILBERT!"
+	done
+	
+AzureBeatHildaText:
+	text "Oh hey, you beat"
+	line "HILDA!"
+	done
+	
+AzureThanksText:
+	text "Congrats!"
+	
+	para "Thanks for playing"
+	line "my game! I've"
+	
+	para "worked really hard"
+	line "on it, and I've"
+	
+	para "had help from a"
+	line "lot of very"
+	
+	para "talented"
+	line "individuals."
+	
+	para "I'm currently"
+	line "working on porting"
+	
+	para "the game to the"
+	line "POLISHED CRYSTAL"
+	cont "engine."
+	
+	para "It'll add a ton of"
+	line "new features, and"
+	
+	para "general improve-"
+	line "ments to the game!"
+	
+	para "Keep an eye out"
+	line "for news about the"
+	
+	para "next release, and"
+	line "once again,"
+	
+	para "Thank you for"
+	line "playing!"
 	done
 
 GameFreakSignText:
@@ -37,6 +99,10 @@ GameFreakSignText:
 	
 	para "Office closed for"
 	line "vacation."
+	
+	para "Inquire at the"
+	line "KALOS office for"
+	cont "information."
 	done
 
 CasteliaGameFreak_MapEvents:
@@ -52,5 +118,5 @@ CasteliaGameFreak_MapEvents:
 	bg_event  7,  0, BGEVENT_READ, GameFreakSign
 
 	db 1 ; object events
-	object_event  2,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AzureScript, -1
+	object_event  2,  2, SPRITE_SCIENTIST_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AzureScript, -1
 	

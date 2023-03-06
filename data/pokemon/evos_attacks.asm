@@ -400,9 +400,9 @@ WigglytuffEvosAttacks:
 AzurillEvosAttacks:
 	db EVOLVE_HAPPINESS_BABY, TR_ANYTIME, MARILL
 	db 0 ; no more evolutions
-	db 1, BUBBLE ; Water Gun
+	db 1, WATER_GUN
 	db 2, TAIL_WHIP
-	db 7, WATER_GUN ; Bubble
+	db 7, BUBBLE
 	db 10, CHARM
 	db 13, BUBBLEBEAM
 	db 16, ENCORE ; Helping Hand
@@ -416,9 +416,9 @@ AzurillEvosAttacks:
 MarillEvosAttacks:
 	db EVOLVE_LEVEL, 18, AZUMARILL
 	db 0 ; no more evolutions
-	db 1, BUBBLE ; Water Gun
+	db 1, WATER_GUN
 	db 2, TAIL_WHIP
-	db 7, WATER_GUN ; Bubble
+	db 7, BUBBLE
 	db 10, DEFENSE_CURL
 	db 10, ROLLOUT
 	db 13, BUBBLEBEAM
@@ -434,9 +434,9 @@ MarillEvosAttacks:
 
 AzumarillEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BUBBLE ; Water Gun
+	db 1, WATER_GUN
 	db 2, TAIL_WHIP
-	db 7, WATER_GUN ; Bubble
+	db 7, BUBBLE
 	db 10, DEFENSE_CURL
 	db 10, ROLLOUT
 	db 13, BUBBLEBEAM
@@ -4594,10 +4594,10 @@ CryogonalEvosAttacks:
 HorseaEvosAttacks:
 	db EVOLVE_LEVEL, 32, SEADRA
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, WATER_GUN ; Bubble
 	db 5, SMOKESCREEN
 	db 9, LEER
-	db 13, WATER_GUN
+	db 13, BUBBLE ; Water Gun
 	db 17, DRAGON_RAGE ; Twister
 	db 21, BUBBLEBEAM
 	db 26, FOCUS_ENERGY
@@ -4611,10 +4611,10 @@ HorseaEvosAttacks:
 SeadraEvosAttacks:
 	db EVOLVE_HOLD, DRAGON_SCALE, TR_ANYTIME, KINGDRA
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, WATER_GUN ; Bubble
 	db 5, SMOKESCREEN
 	db 9, LEER
-	db 13, WATER_GUN
+	db 13, BUBBLE ; Water Gun
 	db 17, DRAGON_RAGE ; Twister
 	db 21, BUBBLEBEAM
 	db 26, FOCUS_ENERGY
@@ -4627,10 +4627,10 @@ SeadraEvosAttacks:
 
 KingdraEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BUBBLE
+	db 1, WATER_GUN ; Bubble
 	db 5, SMOKESCREEN
 	db 9, LEER
-	db 13, WATER_GUN
+	db 13, BUBBLE ; Water Gun
 	db 17, DRAGON_RAGE ; Twister
 	db 21, BUBBLEBEAM
 	db 26, FOCUS_ENERGY

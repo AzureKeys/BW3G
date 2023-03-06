@@ -56,7 +56,7 @@ PlayersHouseRadioScript:
 	; end
 	
 	; opentext
-	; givepoke SNIVY, 5
+	; givepoke PIDOVE, 5
 	; closetext
 	; end
 	

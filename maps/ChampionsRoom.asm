@@ -162,7 +162,7 @@ ChampionsRoom_MapScripts:
 	applymovement PLAYER, ChampionsRoomGoAroundGenesectMovement
 	applymovement CHAMPIONSROOM_JUNIPER, ChampionsRoomJuniperApproachPlayerMovement
 	opentext
-	writetext ChampionsRoomFirstJuniperBattleIntroText
+	writetext ChampionsRoomJuniperBattleIntroText
 	waitbutton
 	closetext
 	jump StartChampionBattleScript

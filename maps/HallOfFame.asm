@@ -16,6 +16,7 @@ HallOfFame_MapScripts:
 	end
 
 .EnterHallOfFameScript:
+	pause 30
 	follow HALLOFFAME_JUNIPER, PLAYER
 	applymovement HALLOFFAME_JUNIPER, HallOfFame_WalkUpWithJuniper
 	stopfollow
@@ -49,14 +50,14 @@ HallOfFame_MapScripts:
 	end
 
 HallOfFame_WalkUpWithJuniper:
-	slow_step UP
-	slow_step UP
-	slow_step UP
-	slow_step UP
-	slow_step UP
-	slow_step UP
-	slow_step UP
-	slow_step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
 	step RIGHT
 	turn_head LEFT
 	step_end

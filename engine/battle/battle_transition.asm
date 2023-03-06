@@ -753,6 +753,8 @@ INCLUDE "gfx/overworld/trainer_battle_nite.pal"
 	ret z
 	cp GRIMSLEY
 	ret z
+	cp JUNIPER
+	ret z
 	ld de, PokeBallTransition
 	ret
 

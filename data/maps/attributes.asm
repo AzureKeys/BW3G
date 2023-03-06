@@ -371,7 +371,7 @@ ENDM
 	map_attributes TwistMountainB1F, TWIST_MOUNTAIN_B1F, $09, 0
 	map_attributes TwistMountainOutside, TWIST_MOUNTAIN_OUTSIDE, $01, 0
 	map_attributes TwistMountainHouse, TWIST_MOUNTAIN_HOUSE, $00, 0
-	map_attributes TwistMountainGenesectRoom, TWIST_MOUNTAIN_GENESECT_ROOM, $00, 0
+	map_attributes TwistMountainGenesectRoom, TWIST_MOUNTAIN_GENESECT_ROOM, $09, 0
 	map_attributes Rt23House, R_23_HOUSE, $00, 0
 	map_attributes VictoryRoadCave1F, VICTORY_ROAD_CAVE_1F, $09, 0
 	map_attributes VictoryRoadCave2F, VICTORY_ROAD_CAVE_2F, $09, 0

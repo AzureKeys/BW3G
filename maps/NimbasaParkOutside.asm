@@ -172,7 +172,7 @@ NimbasaParkOutsideNateRosaScript:
 	disappear NIMBASAPARKOUTSIDE_ROSA
 	pause 15
 	special FadeInQuickly
-	playmapmusic
+	playmusic MUSIC_NIMBASA_CITY
 	end
 	
 NimbasaParkOutsideBlocker:
