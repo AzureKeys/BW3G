@@ -6,6 +6,7 @@
 	const NIMBASAPARKOUTSIDE_CHEREN
 	const NIMBASAPARKOUTSIDE_NATE
 	const NIMBASAPARKOUTSIDE_ROSA
+	const NIMBASAPARKOUTSIDE_AIR_BALLOON
 
 NimbasaParkOutside_MapScripts:
 	db 4 ; scene scripts
@@ -187,6 +188,9 @@ NimbasaParkOutsideIceHeal:
 NimbasaParkOutsideQuickBall:
 	itemball QUICK_BALL
 	
+NimbasaParkOutsideAirBalloon:
+	itemball AIR_BALLOON
+	
 NimbasaParkOutsideFullHeal:
 	hiddenitem FULL_HEAL, EVENT_NIMBASA_PARK_OUTSIDE_FULL_HEAL
 	
@@ -352,12 +356,13 @@ NimbasaParkOutside_MapEvents:
 	db 1 ; bg events
 	bg_event 35,  6, BGEVENT_ITEM, NimbasaParkOutsideFullHeal
 
-	db 7 ; object events
+	db 8 ; object events
 	object_event 47, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaParkOutsideXAccuracy, EVENT_NIMBASA_PARK_OUTSIDE_X_ACCURACY
 	object_event 10, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaParkOutsideIceHeal, EVENT_NIMBASA_PARK_OUTSIDE_ICE_HEAL
-	object_event 12,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaParkOutsideQuickBall, EVENT_NIMBASA_PARK_OUTSIDE_QUICK_BALL
+	object_event 26, 13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaParkOutsideQuickBall, EVENT_NIMBASA_PARK_OUTSIDE_QUICK_BALL
 	object_event  8,  8, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaParkOutsideBlocker, EVENT_NIMBASA_PARK_BLOCKER
 	object_event  7,  8, SPRITE_CHEREN, SPRITEMOVEDATA_STANDING_RIGHT, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, -1, EVENT_NIMBASA_PARK_OUTSIDE_CHEREN
 	object_event 29,  8, SPRITE_NATE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaParkOutsideNateRosaScript, EVENT_NIMBASA_PARK_NATE
 	object_event 29,  8, SPRITE_ROSA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NimbasaParkOutsideNateRosaScript, EVENT_NIMBASA_PARK_ROSA
+	object_event 12,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, NimbasaParkOutsideAirBalloon, EVENT_GOT_AIR_BALLOON
 	

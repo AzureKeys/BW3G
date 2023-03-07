@@ -61,38 +61,47 @@ Script_ArriveFromLentimas:
 MistraltonAirportTeacherScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_AMULET_COIN
-	iftrue .gotcoin
-	writetext MistraltonAirportAskMoneyText
-	special PlaceMoneyTopRight
+	writetext MistraltonAirportAskHeartScaleText
 	yesorno
 	iffalse .refused
-	checkmoney YOUR_MONEY, 5000
-	ifequal HAVE_LESS, .nomoney
+	checkitem HEART_SCALE
+	iffalse .no_scale
 	writetext MistraltonAirportThanksText
 	buttonsound
-	verbosegiveitem AMULET_COIN
+	random 4
+	ifequal 0, .red
+	ifequal 1, .blue
+	ifequal 2, .yellow
+	verbosegiveitem GREEN_SHARD
 	iffalse .noroom
-	setevent EVENT_GOT_AMULET_COIN
-	takemoney YOUR_MONEY, 5000
-	special PlaceMoneyTopRight
-	waitsfx
-	playsound SFX_TRANSACTION
-.gotcoin
-	writetext MistraltonAirportGotCoinText
+	jump .take_scale
+.red
+	verbosegiveitem RED_SHARD
+	iffalse .noroom
+	jump .take_scale
+.blue
+	verbosegiveitem BLUE_SHARD
+	iffalse .noroom
+	jump .take_scale
+.yellow
+	verbosegiveitem YELLOW_SHARD
+	iffalse .noroom
+.take_scale
+	takeitem HEART_SCALE
+	writetext MistraltonAirportGaveScaleText
 	waitbutton
 .noroom
 	closetext
 	end
 	
 .refused
-	writetext MistraltonAirportRefusedMoneyText
+	writetext MistraltonAirportRefusedScaleText
 	waitbutton
 	closetext
 	end
 	
-.nomoney
-	writetext MistraltonAirportNoMoneyText
+.no_scale
+	writetext MistraltonAirportNoScaleText
 	waitbutton
 	closetext
 	end
@@ -181,42 +190,45 @@ MistraltonAirportArrivedText:
 	para "Enjoy your trip!"
 	done
 	
-MistraltonAirportAskMoneyText:
-	text "Please, could you"
-	line "spare some money?"
+MistraltonAirportAskHeartScaleText:
+	text "Hi, I'm looking"
+	line "for HEART SCALES!"
 	
-	para "I just need ¥5000,"
-	line "would you please"
-	cont "lend it to me?"
+	para "If you have a"
+	line "HEART SCALE, would"
+	
+	para "you mind giving it"
+	line "to me in exchange"
+	cont "for a SHARD?"
 	done
 	
-MistraltonAirportRefusedMoneyText:
-	text "Really? Kids"
-	line "these days are so"
-	cont "stingy…"
+MistraltonAirportRefusedScaleText:
+	text "Aww, that's too"
+	line "bad…"
 	done
 	
-MistraltonAirportNoMoneyText:
-	text "Hey! You don't"
-	line "even have that"
-	cont "much!"
+MistraltonAirportNoScaleText:
+	text "Oh, it looks like"
+	line "you don't have any"
+	cont "HEART SCALEs!"
 	done
 	
 MistraltonAirportThanksText:
-	text "Thank you so much!"
-	line "I must thank you"
-	cont "somehow."
-	
-	para "Here, take this"
-	line "coin with you."
-	
-	para "Maybe it will"
-	line "bring you luck!"
+	text "Okay, you can have"
+	line "this in return!"
 	done
 	
-MistraltonAirportGotCoinText:
-	text "Thank you for"
-	line "your generosity!"
+MistraltonAirportGaveScaleText:
+	text "<PLAY_G> handed"
+	line "over one HEART"
+	cont "SCALE."
+	
+	para "Thanks! If you"
+	line "bring me another"
+	
+	para "HEART SCALE, I'll"
+	line "give you another"
+	cont "SHARD in return!"
 	done
 
 MistraltonAirportPokefanFText:

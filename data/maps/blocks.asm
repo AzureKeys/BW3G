@@ -104,7 +104,7 @@ TimeCapsule_Blocks:
 	INCBIN "maps/TradeCenter.ablk"
 	
 LentimasHouse_Blocks:
-LentimasClawHouse_Blocks:
+LentimasCoinHouse_Blocks:
 OpelucidCuriosityShop_Blocks:
 	INCBIN "maps/House2.ablk"
 
