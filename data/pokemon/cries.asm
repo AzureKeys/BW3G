@@ -64,7 +64,7 @@ PokemonCries::
 	mon_cry CRY_GLIGAR,      $ffc,  $110 ; RALTS
 	mon_cry CRY_VILEPLUME,   $008,  $100 ; KIRLIA
 	mon_cry CRY_VILEPLUME,   $f22,  $163 ; GARDEVOIR
-	mon_cry CRY_PARAS,       $131,  $160 ; GALLADE
+	mon_cry CRY_PIDGEOTTO,  -$4fc,  $216 ; GALLADE
 	mon_cry CRY_PIDGEOTTO,   $024,  $0c0 ; BLITZLE
 	mon_cry CRY_NIDORAN_M,   $026,  $220 ; ZEBSTRIKA
 	mon_cry CRY_MAREEP,      $022,  $0d8 ; MAREEP
@@ -81,7 +81,7 @@ PokemonCries::
 	mon_cry CRY_AMPHAROS,   -$437,  $1e5 ; CONKELDURR
 	mon_cry CRY_GROWLITHE,   $080,  $0b0 ; ARON
 	mon_cry CRY_WEEDLE,      $040,  $090 ; LAIRON
-	mon_cry CRY_SLOWKING,    $207,  $1b2 ; AGGRON
+	mon_cry CRY_SLOWKING,    $1e3,  $1e2 ; AGGRON
 	mon_cry CRY_EKANS,       $0ff,  $140 ; ONIX
 	mon_cry CRY_TYPHLOSION,  $0ef,  $0f7 ; STEELIX
 	mon_cry CRY_MUDKIP,      $125,  $1c4 ; NOSEPASS
@@ -112,7 +112,7 @@ PokemonCries::
 	mon_cry CRY_CHARMANDER,  $120,  $090 ; SHROOMISH
 	mon_cry CRY_CLEFFA,      $760,  $0a0 ; BRELOOM
 	mon_cry CRY_PIDGEY,      $16a,  $0d4 ; JOLTIK
-	mon_cry CRY_VENONAT,     $03d,  $0c0 ; GALVANTULA
+	mon_cry CRY_NIDOQUEEN,   $035,  $0b6 ; GALVANTULA
 	mon_cry CRY_WHIMSICOTT, -$086,  $150 ; SPIRITOMB
 	mon_cry CRY_SUNFLORA,   -$089,  $0eb ; ZORUA
 	mon_cry CRY_SPINARAK,   -$078,  $320 ; ZOROARK

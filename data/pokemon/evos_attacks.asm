@@ -4776,9 +4776,6 @@ HydreigonEvosAttacks:
 	db 63, TRI_ATTACK
 	db 64, HYPER_VOICE
 	db 79, OUTRAGE
-	; db 100, DRAININGKISS
-	; db 100, DAZZLINGLEAM
-	; db 100, SURF
 	db 0 ; no more level-up moves
 
 GenesectEvosAttacks:

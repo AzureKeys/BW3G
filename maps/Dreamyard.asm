@@ -48,7 +48,7 @@ Dreamyard_MapScripts:
 
 .FX:
 	playsound SFX_STRENGTH
-	earthquake 80
+	;earthquake 80
 	end
 	
 DreamyardUpperLevelScript:
