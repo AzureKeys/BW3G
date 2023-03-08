@@ -120,7 +120,7 @@ PokemonCries::
 	mon_cry CRY_HOOTHOOT,   -$06a,  $286 ; GARBODOR
 	mon_cry CRY_METAPOD,     $080,  $0e0 ; MAGNEMITE
 	mon_cry CRY_METAPOD,     $020,  $140 ; MAGNETON
-	mon_cry CRY_DROWZEE,     $110,  $0e0 ; MAGNEZONE
+	mon_cry CRY_MAGNEZONE,   $0f6,  $0b6 ; MAGNEZONE
 	mon_cry CRY_TRUBBISH,    $07d,  $0c8 ; GOTHITA
 	mon_cry CRY_PATRAT,      $17a,  $095 ; GOTHORITA
 	mon_cry CRY_SPINARAK,    $005,  $450 ; GOTHITELLE

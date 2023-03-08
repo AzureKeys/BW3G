@@ -35,5 +35,5 @@ TwistMountainGenesectRoom_MapEvents:
 	db 0 ; bg events
 
 	db 1 ; object events
-	object_event  7,  3, SPRITE_GENESECT, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_SCRIPT, 0, TwistMountainGenesectScript, EVENT_TWIST_MOUNTAIN_GENESECT
+	object_event  7,  3, SPRITE_GENESECT, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, TwistMountainGenesectScript, EVENT_TWIST_MOUNTAIN_GENESECT
 	

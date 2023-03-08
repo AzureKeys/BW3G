@@ -5,6 +5,11 @@ Cry_Patrat:
 Cry_Stoutland:
 	musicheader 2, 5, Cry_Stoutland_Ch5
 	musicheader 1, 6, Cry_Stoutland_Ch6
+
+Cry_Magnezone:
+	musicheader 3, 5, Cry_Magnezone_Ch5
+	musicheader 1, 6, Cry_Magnezone_Ch6
+	musicheader 1, 8, Cry_Magnezone_Ch8
 	
 Cry_Mudkip:
 	musicheader 2, 5, Cry_Mudkip_Ch5
@@ -1593,6 +1598,45 @@ Cry_Drowzee_Ch8:
 	noise __,  6, $a1, $3c
 	noise __, 10, $c2, $2c
 	noise __,  5, $a1, $3c
+	endchannel
+
+Cry_Magnezone_Ch5:
+	sound_duty 0, 2, 0, 2
+	sound __,  6, $f2, $0650
+	sound __, 10, $d1, $0660
+	sound __,  6, $e2, $0612
+	sound __, 10, $c1, $0622
+	sound __,  6, $f2, $05ac
+	sound __,  7, $d1, $05bc
+	sound __,  6, $f2, $0524
+	sound __, 10, $d1, $0534
+	sound __,  6, $e2, $04e6
+	sound __, 10, $c1, $04f6
+	sound __,  6, $f2, $0480
+	sound __,  7, $d1, $0490
+	endchannel
+
+Cry_Magnezone_Ch6:
+	sound_duty 0, 0, 0, 1
+	sound __,  5, $8, 0
+	sound __,  6, $f2, $0651
+	sound __, 10, $d1, $0661
+	sound __,  6, $e2, $0614
+	sound __,  9, $c1, $0624
+	sound __,  6, $f2, $05ad
+	sound __, 13, $d1, $05bd
+	sound __,  6, $e2, $054c
+	sound __,  9, $c1, $055c
+	sound __,  6, $f2, $04e5
+	sound __,  5, $d1, $04f5
+	endchannel
+
+Cry_Magnezone_Ch8:
+	noise __,  7, $d2, $1c
+	noise __, 10, $b1, $2c
+	noise __,  9, $c2, $2c
+	noise __, 10, $b1, $3c
+	noise __,  7, $c2, $2c
 	endchannel
 
 Cry_Nidoran_F_Ch5:

@@ -87,3 +87,4 @@
 	const CRY_DEERLING
 	const CRY_MUDKIP
 	const CRY_STOUTLAND
+	const CRY_MAGNEZONE

@@ -6,6 +6,7 @@
 	const PWTINSIDE_COOLTRAINER_F
 	const PWTINSIDE_OFFICER_1
 	const PWTINSIDE_OFFICER_2
+	const PWTINSIDE_LEFTOVERS
 
 PWTInside_MapScripts:
 	db 1 ; scene scripts
@@ -77,6 +78,9 @@ PwtCooltrainerFScript:
 	
 PwtOfficerScript:
 	jumptextfaceplayer PwtInsideOfficerText
+	
+PwtLeftovers:
+	itemball LEFTOVERS
 	
 PwtInsidePlayerEnteringMovement:
 	step DOWN
@@ -201,7 +205,7 @@ PWTInside_MapEvents:
 
 	db 0 ; bg events
 	
-	db 7 ; object events
+	db 8 ; object events
 	object_event  7,  3, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PwtBlockerScript, -1
 	object_event  2,  7, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PwtReceptionist1Script, -1
 	object_event 13,  7, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PwtReceptionist2Script, -1
@@ -209,4 +213,5 @@ PWTInside_MapEvents:
 	object_event 11, 14, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_BLUE_D, OBJECTTYPE_SCRIPT, 0, PwtCooltrainerFScript, -1
 	object_event  1,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PwtOfficerScript, -1
 	object_event 14,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PwtOfficerScript, -1
+	object_event 14, 14, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PwtLeftovers, EVENT_PWT_LEFTOVERS
 	

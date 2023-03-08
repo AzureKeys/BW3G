@@ -80,3 +80,4 @@ Cries:
 	dba Cry_Deerling
 	dba Cry_Mudkip
 	dba Cry_Stoutland
+	dba Cry_Magnezone

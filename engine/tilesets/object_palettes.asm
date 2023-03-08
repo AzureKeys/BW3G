@@ -255,7 +255,7 @@ LoadBarnObPalette: ; ROCK = Pink
 BarnObPalette:
 INCLUDE "gfx/tilesets/barn_ob.pal"
 
-LoadDragonspiralRoofObPalette: ; TREE = Grey, ROCK = Purple, RED used for Genesis Project
+LoadDragonspiralRoofObPalette: ; TREE = Purple, ROCK = Grey, RED used for Genesis Project
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, DragonspiralRoofObPalette
@@ -266,7 +266,7 @@ LoadDragonspiralRoofObPalette: ; TREE = Grey, ROCK = Purple, RED used for Genesi
 DragonspiralRoofObPalette:
 INCLUDE "gfx/tilesets/dragonspiral_roof_ob.pal"
 
-LoadDragonspiralRoofObNitePalette: ; TREE = Grey, ROCK = Purple, RED used for Genesis Project
+LoadDragonspiralRoofObNitePalette: ; TREE = Purple, ROCK = Grey, RED used for Genesis Project
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, DragonspiralRoofObNitePalette
@@ -299,7 +299,7 @@ LoadVREntranceNiteObPalette: ; TREE used for yellow badges, ROCK used for blue b
 VREntranceNiteObPalette:
 INCLUDE "gfx/tilesets/victory_road_nite_ob.pal"
 
-LoadR5ObPalette: ; ROCK = Green Dark
+LoadR5ObPalette: ; GREEN = Green Dark
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, R5ObPalette
@@ -310,7 +310,7 @@ LoadR5ObPalette: ; ROCK = Green Dark
 R5ObPalette:
 INCLUDE "gfx/tilesets/r5_ob.pal"
 
-LoadR5NiteObPalette: ; ROCK = Green Dark
+LoadR5NiteObPalette: ; GREEN = Green Dark
 	ld a, BANK(wOBPals1)
 	ld de, wOBPals1
 	ld hl, R5NiteObPalette

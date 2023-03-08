@@ -55,7 +55,7 @@ DreamyardUpperLevelScript:
 	checkevent EVENT_DREAMYARD_UPPER_LEVEL
 	iftrue .done
 	changeblock 10,  0, $4a
-	changeblock 14,  0, $4a
+	changeblock 14,  0, $ec
 	changeblock 16,  0, $4a
 	changeblock 18,  0, $4a
 	changeblock 20,  0, $4a
@@ -71,7 +71,7 @@ DreamyardLowerLevelScript:
 	checkevent EVENT_DREAMYARD_UPPER_LEVEL
 	iffalse .done
 	changeblock 10,  0, $43
-	changeblock 14,  0, $43
+	changeblock 14,  0, $eb
 	changeblock 16,  0, $43
 	changeblock 18,  0, $43
 	changeblock 20,  0, $43
