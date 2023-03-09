@@ -1565,20 +1565,16 @@ _OakText4::
 	
 	para "working together,"
 	line "we complement"
-	cont "each other."
-	
-	para "We help each other"
-	line "out to accomplish"
-	cont "difficult tasks."
+	cont "each other!"
 	
 	para "Having #MON"
-	line "battle one another"
-	cont "is particularly"
+	line "battles is super"
+	cont "popular and fun,"
 	
-	para "popular, and it"
-	line "deepens the bond"
-	cont "between people and"
-	cont "#MON."
+	para "and it's a great"
+	line "way for people and"
+	cont "#MON to become"
+	cont "closer!"
 	prompt
 
 _OakText5::

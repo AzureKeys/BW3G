@@ -11,11 +11,14 @@ _OakText7::
 	para "What a wonderful"
 	line "name!"
 
-	para "I'm going to"
-	line "entrust you with a"
+	para "I've been told you"
+	line "would make a great"
+	cont "#MON trainer,"
+	cont "so I'm going to"
 	
-	para "#MON. I'm sure"
-	line "you will be great"
+	para "send you a #-"
+	line "MON! I'm sure you"
+	cont "will be great"
 	cont "partners!"
 
 	para "The moment you"

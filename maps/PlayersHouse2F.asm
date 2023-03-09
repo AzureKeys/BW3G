@@ -55,9 +55,8 @@ PlayersHouseRadioScript:
 	; returnfromcredits
 	; end
 	
-	; setflag ENGINE_SPOOKYBADGE
 	; opentext
-	; givepoke HYDREIGON, 100
+	; givepoke BLITZLE, 5
 	; closetext
 	; end
 	
@@ -113,7 +112,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, HUMILAU_GYM, 1
+	;warp_event  7,  0, R_22, 1
 
 	db 0 ; coord events
 

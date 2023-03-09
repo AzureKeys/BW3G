@@ -4317,17 +4317,17 @@ GenesisGroup:
 	
 InferGroup:
 	; INFER1 (1)
-	db "INFER@", TRAINERTYPE_NORMAL
+	db "???@", TRAINERTYPE_NORMAL
 	db  5, SNIVY
 	db -1 ; end
 
 	; INFER1 (2)
-	db "INFER@", TRAINERTYPE_NORMAL
+	db "???@", TRAINERTYPE_NORMAL
 	db  5, TEPIG
 	db -1 ; end
 
 	; INFER1 (3)
-	db "INFER@", TRAINERTYPE_NORMAL
+	db "???@", TRAINERTYPE_NORMAL
 	db  5, OSHAWOTT
 	db -1 ; end
 	
