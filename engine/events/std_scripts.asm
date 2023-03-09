@@ -470,7 +470,6 @@ BugContestResults_CopyContestantsToResults:
 	end
 
 InitializeEventsScript:
-	setevent EVENT_RADIO_TOWER_CIVILIANS_AFTER
 	setevent EVENT_ILEX_FOREST_APPRENTICE
 	setevent EVENT_ILEX_FOREST_FARFETCHD
 	setevent EVENT_ILEX_FOREST_CHARCOAL_MASTER

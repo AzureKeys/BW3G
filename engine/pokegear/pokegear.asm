@@ -466,8 +466,11 @@ PokegearClock_Joypad:
 	call .UpdateClock
 	ld hl, hJoyLast
 	ld a, [hl]
-	and A_BUTTON | B_BUTTON | START | SELECT
+	and B_BUTTON | START
 	jr nz, .quit
+	ld a, [hl]
+	and A_BUTTON
+	jr nz, .change_dst
 	ld a, [hl]
 	and D_RIGHT
 	ret z
@@ -495,11 +498,130 @@ PokegearClock_Joypad:
 .done
 	call Pokegear_SwitchPage
 	ret
-
+	
 .quit
 	ld hl, wJumptableIndex
 	set 7, [hl]
 	ret
+	
+.change_dst:
+; check the time; avoid changing DST if doing so would change the current day
+	ld a, [wDST]
+	bit 7, a
+	ldh a, [hHours]
+	jr z, .NotDST
+	and a ; within one hour of 00:00?
+	jr z, .dont_change_dst
+	jr .do_change
+
+.NotDST:
+	cp 23 ; within one hour of 23:00?
+	jr nz, .do_change
+	; fallthrough
+
+.dont_change_dst:
+	call .ClearBox
+	bccoord 1, 14
+	ld hl, .Text_CantChangeDST
+	call PlaceHLTextAtBC
+	jp .ResetDSTText
+
+.do_change
+	call .ClearBox
+	bccoord 1, 14
+	ld a, [wDST]
+	bit 7, a
+	jr z, .SetDST
+	ld hl, .Text_IsDSTOver
+	call PlaceHLTextAtBC
+	call YesNoBox
+	jr c, .ResetDSTText
+	ld a, [wDST]
+	res 7, a
+	ld [wDST], a
+	call .SetClockBack
+	call .ClearBox
+	bccoord 1, 14
+	ld hl, .Text_SetClockBack
+	call PlaceHLTextAtBC
+	jr .ResetDSTText
+
+.SetDST:
+	ld hl, .Text_SwitchToDST
+	call PlaceHLTextAtBC
+	call YesNoBox
+	jr c, .ResetDSTText
+	ld a, [wDST]
+	set 7, a
+	ld [wDST], a
+	call .SetClockForward
+	call .ClearBox
+	bccoord 1, 14
+	ld hl, .Text_SetClockForward
+	call PlaceHLTextAtBC
+	jr .ResetDSTText
+
+.SetClockForward:
+	ld a, [wStartHour]
+	add 1
+	sub 24
+	jr nc, .DontLoopHourForward
+	add 24
+.DontLoopHourForward:
+	ld [wStartHour], a
+	ccf
+	ld a, [wStartDay]
+	adc 0
+	ld [wStartDay], a
+	ret
+
+.SetClockBack:
+	ld a, [wStartHour]
+	sub 1
+	jr nc, .DontLoopHourBack
+	add 24
+.DontLoopHourBack:
+	ld [wStartHour], a
+	ld a, [wStartDay]
+	sbc 0
+	jr nc, .DontLoopDayBack
+	add 7
+.DontLoopDayBack:
+	ld [wStartDay], a
+	ret
+	
+.ResetDSTText:
+	call .ClearBox
+	bccoord 1, 14
+	ld hl, PokegearText_PressAnyButtonToExit
+	call PlaceHLTextAtBC
+	ret
+
+.ClearBox:
+	hlcoord 1, 14
+	lb bc, 3, 18
+	call ClearBox
+	ret
+	
+.Text_CantChangeDST:
+	text_far UnknownText_CantChangeDST
+	text_end
+	
+.Text_SwitchToDST:
+	text_far UnknownText_0x1c6000
+	text_end
+
+.Text_SetClockForward:
+	text_far UnknownText_0x1c6030
+	text_end
+
+.Text_IsDSTOver:
+	text_far UnknownText_0x1c6056
+	text_end
+
+.Text_SetClockBack:
+	text_far UnknownText_0x1c6075
+	text_end
 
 .UpdateClock:
 	xor a

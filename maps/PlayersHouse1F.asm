@@ -36,6 +36,13 @@ MeetMomScript:
 	opentext
 	writetext MarlonLookingForYouText
 	buttonsound
+	stringtotext GearName, MEM_BUFFER_1
+	scall PlayersHouse1FReceiveItemStd
+	setflag ENGINE_POKEGEAR
+	setflag ENGINE_PHONE_CARD
+	addcellnum PHONE_MOM
+	writetext WhatDayIsItText
+	buttonsound
 	special SetDayOfWeek
 .SetDayOfWeek:
 	writetext IsItDSTText
@@ -51,13 +58,6 @@ MeetMomScript:
 	yesorno
 	iffalse .SetDayOfWeek
 .DayOfWeekDone:
-	writetext ComeHomeForDSTText
-	buttonsound
-	stringtotext GearName, MEM_BUFFER_1
-	scall PlayersHouse1FReceiveItemStd
-	setflag ENGINE_POKEGEAR
-	setflag ENGINE_PHONE_CARD
-	addcellnum PHONE_MOM
 	setscene SCENE_FINISHED
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
@@ -245,23 +245,6 @@ MarlonLookingForYouText:
 	para "Go stop by his"
 	line "house and see what"
 	cont "he needs."
-	
-	para "Hold on… Remind"
-	line "me, what day is"
-	cont "it today?"
-	done
-
-IsItDSTText:
-	text "Is it Daylight"
-	line "Saving Time now?"
-	done
-
-ComeHomeForDSTText:
-	text "Come home to"
-	line "adjust your clock"
-
-	para "for Daylight"
-	line "Saving Time."
 
 	para "Oh! And before you"
 	line "go out, make sure"
@@ -271,14 +254,32 @@ ComeHomeForDSTText:
 	cont "you."
 	done
 
-MomGivesXtranText:
+WhatDayIsItText:
 	text "You can use the"
 	line "XTRANSCIEVER to"
 
 	para "check the time,"
 	line "and to make phone"
 	cont "calls."
+	
+	para "Hold on… Remind"
+	line "me, what day is"
+	cont "it today?"
+	done
+	
+IsItDSTText:
+	text "Is it Daylight"
+	line "Saving Time now?"
+	done
 
+MomGivesXtranText:
+	text "Remember, you can"
+	line "adjust your clock"
+
+	para "for Daylight"
+	line "Saving Time in the"
+	cont "XTRANSCIEVER menu."
+	
 	para "Now hurry on over"
 	line "to MARLON's house"
 

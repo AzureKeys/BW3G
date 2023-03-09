@@ -1090,8 +1090,8 @@ UnknownText_0x1c5847::
 	done
 
 UnknownText_0x1c5862::
-	text "Press any button"
-	line "to exit."
+	text "Press A to change"
+	line "Daylight Savings."
 	done
 
 UnknownText_0x1c587d::
@@ -1514,24 +1514,23 @@ UnknownText_0x1c5ff1::
 	done
 
 UnknownText_0x1c6000::
-	text "Do you want to"
-	line "switch to Daylight"
-	cont "Saving Time?"
+	text "Begin Daylight"
+	line "Savings Time?"
 	done
 
 UnknownText_0x1c6030::
-	text "I set the clock"
+	text "The clock was set"
 	line "forward by one"
 	cont "hour."
 	prompt
 
 UnknownText_0x1c6056::
-	text "Is Daylight Saving"
-	line "Time over?"
+	text "End Daylight"
+	line "Savings Time?"
 	done
 
 UnknownText_0x1c6075::
-	text "I put the clock"
+	text "The clock was set"
 	line "back one hour."
 	prompt
 
@@ -1550,6 +1549,12 @@ UnknownText_0x1c60d1::
 
 	para "Come back again in"
 	line "a while."
+	prompt
+
+UnknownText_CantChangeDST::
+	text "Daylight Savings"
+	line "Time can't be"
+	cont "changed right now."
 	prompt
 	
 Boutique_IntroText::
