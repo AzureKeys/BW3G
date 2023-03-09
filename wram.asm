@@ -1861,6 +1861,7 @@ wKeyItemsPocketCursor:: db
 wBallsPocketCursor::    db
 wTMHMPocketCursor::     db
 wBerryPocketCursor::    db
+wMedicinePocketCursor:: db
 
 wPCItemsScrollPosition::        db
 wPartyMenuScrollPosition::      db ; unused
@@ -1869,6 +1870,7 @@ wKeyItemsPocketScrollPosition:: db
 wBallsPocketScrollPosition::    db
 wTMHMPocketScrollPosition::     db
 wBerryPocketScrollPosition::    db
+wMedicinePocketScrollPosition:: db
 
 wSwitchMon::
 wSwitchItem::
@@ -2262,6 +2264,7 @@ wDudeItems:: ds 2 * 4
 wDudeItemsEnd:: db
 
 wDudeNumBerries::
+wDudeNumMedicine::
 wDudeNumKeyItems:: db ; d292
 wDudeKeyItems:: ds 18
 wDudeKeyItemsEnd:: db
@@ -2515,6 +2518,10 @@ wNumBerries:: db
 wBerries:: ds MAX_BERRIES * 2 + 1
 wBerriesEnd::
 
+wNumMedicine:: db
+wMedicine:: ds MAX_MEDICINE * 2 + 1
+wMedicineEnd::
+
 wPCItems:: ds MAX_PC_ITEMS * 2 + 1 ; d8f1
 wPCItemsEnd::
 
@@ -2628,7 +2635,7 @@ wChampionsRoomSceneID::                           db ; d9c0
 wHallOfFameSceneID::                              db ; d9c0
 wCaitlinsHouseSceneID::                           db ; d9c0
 
-	ds 46
+	ds 40
 	
 wBattleHouseOpponent:: db
 wHiddenGrottoTier:: db
@@ -2663,8 +2670,6 @@ wKenjiFightCount::   db ; unused
 wParryFightCount::   db
 wErinFightCount::    db
 ; da0e
-
-	ds 54
 
 wEventFlags:: flag_array NUM_EVENTS ; da72
 ; db6c

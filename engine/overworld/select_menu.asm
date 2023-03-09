@@ -33,6 +33,7 @@ CheckRegisteredItem:
 	dw .CheckKeyItem
 	dw .CheckTMHM
 	dw .CheckBerry
+	dw .CheckMedicine
 
 .CheckItem:
 	ld hl, wNumItems
@@ -75,6 +76,10 @@ CheckRegisteredItem:
 	
 .CheckBerry:
 	ld hl, wNumBerries
+	jr .StandardCheck
+	
+.CheckMedicine:
+	ld hl, wNumMedicine
 	jr .StandardCheck
 
 .CheckTMHM:

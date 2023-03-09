@@ -16,6 +16,7 @@ ITEMATTR_STRUCT_LENGTH EQU const_value
 	const BALL     ; 3
 	const TM_HM    ; 4
 	const BERRIES  ; 5
+	const MEDICINE ; 6
 
 ; item menu types
 ; UseItem.dw indexes (see engine/items/pack.asm)
@@ -40,13 +41,15 @@ CANT_TOSS   EQU 1 << CANT_TOSS_F
 	const KEY_ITEM_POCKET ; 2
 	const TM_HM_POCKET    ; 3
 	const BERRY_POCKET    ; 4
+	const MEDICINE_POCKET ; 5
 NUM_POCKETS EQU const_value
 
 MAX_ITEMS     EQU 40
 MAX_BALLS     EQU 18
 MAX_KEY_ITEMS EQU 25
-MAX_PC_ITEMS  EQU 30
-MAX_BERRIES   EQU 17
+MAX_PC_ITEMS  EQU 40
+MAX_BERRIES   EQU 10
+MAX_MEDICINE  EQU 25
 
 ; mail
 MAIL_LINE_LENGTH   EQU $10
