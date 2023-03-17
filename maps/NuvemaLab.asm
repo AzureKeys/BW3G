@@ -74,6 +74,7 @@ Bianca:
 	writetext BiancaLabExplainMembersCardText
 	waitbutton
 	closetext
+	setevent EVENT_GOT_MEMBERS_CARD
 	end
 
 BiancasAssistant1Script:

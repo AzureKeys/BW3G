@@ -429,6 +429,7 @@ PlacePartyMonEvoStoneCompatibility:
 	call GetGender
 	pop hl
 	jr c, .loop2_skip_3
+	inc a
 	ld b, a
 	
 	ld a, BANK("Evolutions and Attacks")

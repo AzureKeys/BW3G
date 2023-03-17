@@ -70,7 +70,7 @@ DragonspiralTowerInferScript2:
 .Snivy:
 	winlosstext DragonspiralTower6FInferWinText, 0
 	setlasttalked DRAGONSPIRALTOWER6F_INFER
-	loadtrainer INFER_SAGE, INFER_SAGE_SNIVY
+	loadtrainer INFER_SAGE, INFER_SAGE_TEPIG
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle

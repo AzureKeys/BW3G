@@ -20,7 +20,7 @@ CaitlinsHouse_MapScripts:
 .MoveObjects:
 	checkevent EVENT_BEAT_CYNTHIA
 	iftrue .done
-	moveobject CAITLINSHOUSE_CAITLIN, 2, 10
+	moveobject CAITLINSHOUSE_CAITLIN, 1, 10
 	moveobject CAITLINSHOUSE_CYNTHIA, 3,  9
 .done
 	return
@@ -119,6 +119,7 @@ CaitlinsHouseCynthiaScript:
 	end
 	
 CaitlinsHouseCaitlinApproachMovement:
+	step RIGHT
 	step DOWN
 	step DOWN
 	step DOWN
