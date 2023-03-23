@@ -57,7 +57,7 @@ PlayersHouseRadioScript:
 	
 	; giveitem RARE_CANDY, 99
 	; opentext
-	; givepoke RIOLU, 5, SOOTHE_BELL
+	; givepoke TEPIG, 10, AIR_BALLOON
 	; closetext
 	; end
 	
@@ -113,7 +113,7 @@ PlayersHouse2F_MapEvents:
 
 	db 1 ; warp events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-	;warp_event  7,  0, STRIATON_CITY, 1
+	;warp_event  7,  0, UNDELLA_TOWN, 1
 
 	db 0 ; coord events
 

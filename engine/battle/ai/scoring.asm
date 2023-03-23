@@ -167,6 +167,21 @@ AI_Types:
 	ld a, 1
 	ldh [hBattleTurn], a
 	callfar BattleCheckTypeMatchup
+; Handle Air Balloon
+	ld a, BATTLE_VARS_MOVE_TYPE
+	call GetBattleVar
+	and TYPE_MASK
+	cp GROUND
+	jr nz, .done_air_balloon
+	
+	ld a, [wBattleMonItem]
+	cp AIR_BALLOON
+	jr nz, .done_air_balloon
+; Load wTypeMatchup with zero (immune)
+	xor a
+	ld [wTypeMatchup], a
+	
+.done_air_balloon
 	pop de
 	pop bc
 	pop hl
