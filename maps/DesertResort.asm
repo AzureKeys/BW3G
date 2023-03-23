@@ -323,7 +323,7 @@ PkmnRangerMDesertAfterText:
 	
 PkmnRangerFDesertSeenText:
 	text "A scorching"
-	line "deset! A passion"
+	line "desert! A passion"
 	
 	para "for adventure! And"
 	line "a heated battle!"

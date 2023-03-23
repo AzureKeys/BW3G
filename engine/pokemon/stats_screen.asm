@@ -589,6 +589,9 @@ StatsScreen_LoadGFX:
 	hlcoord 13, 10
 	lb bc, 3, 7
 	ld de, wTempMonExp
+; uncomment the following lines to display Mon happiness in place of EXP
+	;lb bc, 1, 3
+	;ld de, wTempMonHappiness
 	call PrintNum
 	call .CalcExpToNextLevel
 	hlcoord 13, 13

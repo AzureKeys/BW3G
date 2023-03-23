@@ -154,8 +154,10 @@ SwimmerF1R21AfterText:
 	para "strengths. I've"
 	line "got to learn more"
 	
-	para "about the stengths"
-	line "of my own #MON!"
+	para "about the"
+	line "strengths of my"
+	cont "own #MON!"
+	done
 	
 SwimmerF2R21SeenText:
 	text "Catch this! My"

@@ -111,8 +111,6 @@ INCLUDE "data/events/happiness_changes.asm"
 
 GetExtraHappiness:
 ; Increase happiness in 'a' based on item
-	push af
-	
 	ld b, a
 	cp 255
 	jr nc, .no_soothe_bell ; already at max
@@ -129,45 +127,86 @@ GetExtraHappiness:
 ; Soothe Bell adds 2
 	inc b
 	inc b
+	ld a, b
+	and a
+	ret nz
+; If we had 254 happiness, we'll roll over to zero, so set to 255
+	ld a, 255
+	ret
 	
 .no_soothe_bell
-	pop af
 	ld a, b
 	ret
 
 StepHappiness::
-; Raise the party's happiness by 1 point every other step cycle.
+; Raise the party's happiness by 1 point every step cycle.
+
+	ld de, wPartyCount
+	ld a, [de]
+	and a
+	ret z ; Stop if we have no Pokemon
 
 	ld hl, wHappinessStepCount
 	ld a, [hl]
 	inc a
 	and 1
 	ld [hl], a
-	ret nz
-
-	ld de, wPartyCount
+	jp nz, .skip_soothe_bell
+	
+; Pokemon with Soothe Bell get an additional +1 every other step cycle
 	ld a, [de]
-	and a
-	ret z
-
 	ld c, a
+	ld b, 0
 	ld hl, wPartyMon1Happiness
-.loop
+.loop1
+	push hl
+	ld a, b
+	ld hl, wPartyMon1Item
+	push bc
+	call GetPartyLocation
+	pop bc
+	ld a, [hl]
+	pop hl
+	cp SOOTHE_BELL
+	jr nz, .next1
 	inc de
 	ld a, [de]
 	cp EGG
-	jr z, .next
+	jr z, .next1
 	inc [hl]
-	jr nz, .next
+	jr nz, .next1
 	ld [hl], $ff
 
-.next
+.next1
+	push de
+	ld de, PARTYMON_STRUCT_LENGTH
+	add hl, de
+	pop de
+	inc b
+	dec c
+	jr nz, .loop1
+
+.skip_soothe_bell
+	ld de, wPartyCount
+	ld a, [de]
+	ld c, a
+	ld hl, wPartyMon1Happiness
+.loop2
+	inc de
+	ld a, [de]
+	cp EGG
+	jr z, .next2
+	inc [hl]
+	jr nz, .next2
+	ld [hl], $ff
+
+.next2
 	push de
 	ld de, PARTYMON_STRUCT_LENGTH
 	add hl, de
 	pop de
 	dec c
-	jr nz, .loop
+	jr nz, .loop2
 	ret
 
 DayCareStep::

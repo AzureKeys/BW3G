@@ -55,9 +55,9 @@ PlayersHouseRadioScript:
 	; returnfromcredits
 	; end
 	
+	; giveitem RARE_CANDY, 99
 	; opentext
-	; givepoke BLITZLE, 5
-	; givepoke ZEBSTRIKA, 5
+	; givepoke RIOLU, 5, SOOTHE_BELL
 	; closetext
 	; end
 	
