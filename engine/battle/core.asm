@@ -4752,6 +4752,14 @@ UseConfusionHealingItem:
 	ret
 
 .do_partymon
+; If backup item is a Persim Berry, clear it as well
+	call GetBackupItemAddr
+	ld a, [hl]
+	cp BITTER_BERRY
+	jr nz, .skip_backup
+	xor a
+	ld [hl], a
+.skip_backup
 	call GetPartymonItem
 	xor a
 	ld [bc], a

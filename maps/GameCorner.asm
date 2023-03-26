@@ -27,6 +27,7 @@ GameCornerVendor1Script:
 	checkitem COIN_CASE
 	iffalse GameCornerPrizeVendor_NoCoinCaseScript
 	writetext GameCornerPrizeVendorWhichPrizeText
+	buttonsound
 GameCornerVendor1_LoopScript:
 	special DisplayCoinCaseBalance
 	loadmenu GameCornerVendor1MenuHeader
@@ -128,6 +129,7 @@ GameCornerVendor2Script:
 	checkitem COIN_CASE
 	iffalse GameCornerPrizeVendor_NoCoinCaseScript
 	writetext GameCornerPrizeVendorWhichPrizeText
+	buttonsound
 GameCornerVendor2_LoopScript:
 	special DisplayCoinCaseBalance
 	loadmenu GameCornerVendor2MenuHeader

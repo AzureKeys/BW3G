@@ -16,6 +16,7 @@ CasteliaPlazaPrizeRoomVendor1Script:
 	checkitem COIN_CASE
 	iffalse CasteliaPlazaPrizeRoom_NoCoinCaseScript
 	writetext CasteliaPlazaPrizeRoomVendorWhichPrizeText
+	buttonsound
 CasteliaPlazaPrizeRoomVendor1_LoopScript:
 	special DisplayCoinCaseBalance
 	loadmenu CasteliaPlazaPrizeRoomVendor1MenuHeader
@@ -76,6 +77,7 @@ CasteliaPlazaPrizeRoomVendor2Script:
 	checkitem COIN_CASE
 	iffalse CasteliaPlazaPrizeRoom_NoCoinCaseScript
 	writetext CasteliaPlazaPrizeRoomVendorWhichPrizeText
+	buttonsound
 CasteliaPlazaPrizeRoomVendor2_LoopScript:
 	special DisplayCoinCaseBalance
 	loadmenu CasteliaPlazaPrizeRoomVendor2MenuHeader

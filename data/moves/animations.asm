@@ -4298,7 +4298,7 @@ BattleAnim_FaintAttack:
 	anim_sound 0, 0, SFX_CURSE
 	anim_call BattleAnim_TargetObj_1Row
 	anim_bgeffect ANIM_BG_1D, $0, $1, $80
-	anim_wait 96
+	anim_wait 48
 	anim_sound 0, 1, SFX_COMET_PUNCH
 	anim_obj ANIM_OBJ_04, 120, 32, $0
 	anim_wait 8
