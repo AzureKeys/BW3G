@@ -54,7 +54,6 @@ TilesetNimbasaAnim:
 TilesetParkAnim:
 TilesetUnovaWestAnim:
 TilesetDriftveilAnim:
-TilesetIcirrusAnim:
 TilesetVillageBridgeAnim:
 	;dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
@@ -68,6 +67,28 @@ TilesetVillageBridgeAnim:
 	dw NULL,  AnimateFlowerTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
+	dw NULL,  IncWaterFrame
+	dw NULL,  DoneTileAnimation
+	
+TilesetIcirrusAnim:
+	dw vTiles2 tile $08, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $08, WriteTileFromBuffer
+	dw vTiles2 tile $09, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $09, WriteTileFromBuffer
+	dw vTiles2 tile $18, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $18, WriteTileFromBuffer
+	dw vTiles2 tile $19, WriteTileToBuffer
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $19, WriteTileFromBuffer
+	dw WhirlpoolFrames1, AnimateWhirlpoolTile
+	dw WhirlpoolFrames2, AnimateWhirlpoolTile
+	dw WhirlpoolFrames3, AnimateWhirlpoolTile
+	dw WhirlpoolFrames4, AnimateWhirlpoolTile
+	dw NULL,  AnimateFlowerTile
 	dw NULL,  StandingTileFrame8
 	dw NULL,  IncWaterFrame
 	dw NULL,  DoneTileAnimation
