@@ -153,7 +153,6 @@ INCLUDE "maps/StriatonPokecenter1F.asm"
 INCLUDE "maps/StriatonTradeHouse.asm"
 INCLUDE "maps/StriatonLab.asm"
 INCLUDE "maps/Rt2.asm"
-INCLUDE "maps/R2AccumulaGate.asm"
 INCLUDE "maps/AccumulaTown.asm"
 
 SECTION "Map Scripts 9", ROMX
@@ -177,6 +176,7 @@ INCLUDE "maps/SeasideCaveB1F.asm"
 
 SECTION "Map Scripts 10", ROMX
 
+INCLUDE "maps/R2AccumulaGate.asm"
 INCLUDE "maps/StriatonGym.asm"
 INCLUDE "maps/CasteliaSewers.asm"
 INCLUDE "maps/CasteliaSewersRooms.asm"

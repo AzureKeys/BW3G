@@ -28,6 +28,8 @@ AccumulaTownRyokuScript:
 	buttonsound
 	writetext AccumulaTownBlocker1Text
 	buttonsound
+	writetext AccumulaTownRyokuIntroText2
+	buttonsound
 	writetext AccumulaTownBlocker2Text
 	waitbutton
 	closetext
@@ -119,10 +121,20 @@ AccumulaTownRyokuMovement:
 	
 AccumulaTownRyokuIntroText:
 	text "???: Oh dear…"
+	
+	para "Please, you must"
+	line "allow me through."
+	done
+	
+AccumulaTownRyokuIntroText2:
+	text "???: I really don't"
+	line "have time for"
+	cont "this…"
 	done
 	
 AccumulaTownRyokuBattleText:
-	text "???: …"
+	text "???: I've been"
+	line "found out…"
 	
 	para "I have no choice"
 	line "then…"
@@ -187,19 +199,32 @@ AccumulaTownYoungsterText:
 	done
 	
 AccumulaTownBlocker1Text:
-	text "He's from that"
-	line "TEAM PLASMA!"
+	text "Man: Hey, you're"
+	line "from that TEAM"
+	cont "PLASMA, aren't you?"
 	
 	para "You're probably up"
 	line "to no good!"
 	done
 	
 AccumulaTownBlocker2Text:
-	text "Hey, that TEAM"
-	line "PLASMA guy has"
-	cont "something!"
+	text "Woman: Hey, there"
+	line "was a robbery in"
 	
-	para "I bet he stole it!"
+	para "NACRENE CITY just"
+	line "recently, I bet"
+	
+	para "he had something"
+	line "to do with it!"
+	
+	para "Man: That's why"
+	line "he's in such a"
+	
+	para "hurry! He's trying"
+	line "to get away!"
+	
+	para "Woman: Someone had"
+	line "better stop him!"
 	done
 	
 AccumulaTownBlocker3Text:
