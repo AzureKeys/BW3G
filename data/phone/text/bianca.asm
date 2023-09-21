@@ -113,6 +113,44 @@ BiancaPhoneNimbasaParkText:
 	line "him out, <PLAY_G>!"
 	done
 	
+BiancaPhoneNimbasaPark2Text:
+	text "It looks like"
+	line "CHEREN is checking"
+	
+	para "out the runway in"
+	line "NIMBASA PARK."
+	
+	para "You should check"
+	line "in the coaster"
+	
+	para "room, it's the"
+	line "purple building in"
+	cont "the park."
+	
+	para "There may be some-"
+	line "thing important"
+	cont "there!"
+	done
+	
+BiancaPhoneNimbasaPark3Text:
+	text "CHEREN said that"
+	line "a hidden stairway"
+	
+	para "opened up in the"
+	line "runway while he"
+	cont "was investigating!"
+	
+	para "That's the yellow"
+	line "building at the"
+	
+	para "right side of the"
+	line "park."
+	
+	para "You should go see"
+	line "what's down there,"
+	cont "<PLAY_G>!"
+	done
+	
 BiancaPhoneAspertiaText:
 	text "Oh, CHEREN gave"
 	line "you a RAIL PASS?"

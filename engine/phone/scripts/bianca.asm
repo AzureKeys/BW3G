@@ -27,6 +27,10 @@ BiancaPhoneCalleeScript:
 	ifequal SCENE_FINISHED, .complex
 	checkmapscene NIMBASA_PARK_BASEMENT
 	ifequal SCENE_NIMBASA_PARK_BASEMENT_NOTHING, .aspertia
+	checkevent EVENT_OPENED_NIMBASA_RUNWAY
+	iftrue .nimbasa_park_3
+	checkmapscene NIMBASA_PARK_OUTSIDE
+	ifequal SCENE_NIMBASA_PARK_OUTSIDE_NOTHING, .nimbasa_park_2
 	checkflag ENGINE_INSECTBADGE
 	iftrue .nimbasa_park
 	checkevent EVENT_BIANCA_CASTELIA_CALL
@@ -73,6 +77,14 @@ BiancaPhoneCalleeScript:
 	
 .nimbasa_park
 	farwritetext BiancaPhoneNimbasaParkText
+	jump .done
+	
+.nimbasa_park_2
+	farwritetext BiancaPhoneNimbasaPark2Text
+	jump .done
+	
+.nimbasa_park_3
+	farwritetext BiancaPhoneNimbasaPark3Text
 	jump .done
 	
 .aspertia
