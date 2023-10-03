@@ -1,7 +1,15 @@
 VirbankComplexElevator_MapScripts:
 	db 0 ; scene scripts
 
-	db 0 ; callbacks
+	db 1 ; callbacks
+	callback MAPCALLBACK_NEWMAP, .SetPipes
+	
+.SetPipes:
+	clearevent EVENT_VIRBANK_COMPLEX_B2F_SWITCH1
+	clearevent EVENT_VIRBANK_COMPLEX_B2F_SWITCH2
+	clearevent EVENT_VIRBANK_COMPLEX_B2F_SWITCH3
+	clearevent EVENT_VIRBANK_COMPLEX_B2F_SWITCH4
+	return
 
 VirbankComplexElevatorScript:
 	opentext

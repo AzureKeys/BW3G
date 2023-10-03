@@ -98,6 +98,13 @@ VirbankComplexBroniusScript:
 	closetext
 	applymovement VIRBANKCOMPLEXB1F_CHEREN, VirbankComplexB1FCherenMovement
 	disappear VIRBANKCOMPLEXB1F_CHEREN
+	checkevent EVENT_OPENED_VIRBANK_COMPLEX_DOOR
+	iftrue .DoorOpened
+	changeblock  2,  4, $07 ; floor
+	playsound SFX_ENTER_DOOR
+	setevent EVENT_OPENED_VIRBANK_COMPLEX_DOOR
+	waitsfx
+.DoorOpened
 	setevent EVENT_BEAT_VIRBANK_COMPLEX_BRONIUS
 	setevent EVENT_ASPERTIA_CITY_BLOCKER
 	specialphonecall SPECIALCALL_BIANCA_VIRBANK
