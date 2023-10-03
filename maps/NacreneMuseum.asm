@@ -24,6 +24,7 @@ NacreneMuseumLenoraScript:
 	takeitem DATA_DISK
 	setevent EVENT_RETURNED_DATA_DISK
 	setmapscene PINWHEEL_FOREST, SCENE_FINISHED
+	setevent EVENT_PINWHEEL_FOREST_OFFICER
 	writetext NacreneMuseumGaveDiskText
 .done
 	waitbutton
