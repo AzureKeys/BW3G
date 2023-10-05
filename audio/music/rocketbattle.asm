@@ -728,8 +728,14 @@ Music_VsPlasmaGrunt_Ch2_loop:
 	note C#, 2
 	vibrato $00, $00
 	notetype $C, $A8
-	note D_, 16
-	note D_, 16
+	note D_, 8
+	intensity $85
+	note D_, 8
+	intensity $38
+	note D_, 8
+	intensity $85
+	note D_, 8
+	intensity $38
 	note D_, 8
 	intensity $85
 	note D_, 8

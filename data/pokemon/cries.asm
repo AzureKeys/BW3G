@@ -241,7 +241,7 @@ PokemonCries::
 	mon_cry CRY_METAPOD,     $def,  $25a ; METAGROSS
 	mon_cry CRY_SEEL,        $130,  $060 ; SPHEAL
 	mon_cry CRY_CLEFFA,      $e88,  $140 ; SEALEO
-	mon_cry CRY_WOOPER,      $e82,  $480 ; WALREIN
+	mon_cry CRY_WOOPER,      $e82,  $320 ; WALREIN
 	mon_cry CRY_PSYDUCK,     $26f,  $0dd ; SNORUNT
 	mon_cry CRY_BULBASAUR,  -$020,  $0d6 ; GLALIE
 	mon_cry CRY_BLASTOISE,   $12b,  $0eb ; FROSLASS
