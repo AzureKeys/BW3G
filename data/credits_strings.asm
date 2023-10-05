@@ -139,6 +139,7 @@ CreditsStrings:
 	dw .Pokecrystal
 	dw .MrsAzureKeys
 	dw .Dogs
+	dw .Ulmeyda
 
 .SatoshiTajiri:       db "   SATOSHI TAJIRI@"         ; "たじり　さとし@"
 .JunichiMasuda:       db "   JUNICHI MASUDA@"         ; "ますだ　じゅんいち@"
@@ -267,6 +268,7 @@ CreditsStrings:
 .ShadowOne333:        db "    SHADOWONE333@"
 .EeveeEe:             db "      EEVEEEE@"
 .Solo993:             db "      SOLO993@"
+.Ulmeyda:             db "      ULMEYDA@"
 .Sea:                 db "        SEA@"
 .PiaCarrot:           db "     PIA CARROT@"
 .Luna:                db "        LUNA@"

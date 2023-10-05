@@ -27,11 +27,12 @@ CreditsScript:
 	db                 JACE, 2
 	db      INTERNET_GOBLIN, 3
 	db            BLOODLESS, 4
+	db              SCARLAX, 5
 
 	db CREDITS_WAIT, 15
 
 	db       CUSTOM_SPRITES, 0
-	db              SCARLAX, 1
+	db              ULMEYDA, 1
 	db         SHADOWONE333, 2
 	db              EEVEEEE, 3
 	db                  SEA, 4

@@ -139,7 +139,7 @@
 	const POKECRYSTAL
 	const MRS_AZURE_KEYS
 	const DOGS
-
+	const ULMEYDA
 ; CreditsScript indexes (see data/credits_script.asm)
 	const_def -7
 	const CREDITS_THEEND
