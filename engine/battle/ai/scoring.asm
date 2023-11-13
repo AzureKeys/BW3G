@@ -3166,6 +3166,8 @@ AI_Status:
 	jr z, .poisonimmunity
 	cp EFFECT_POISON
 	jr z, .poisonimmunity
+	cp EFFECT_BURN
+	jr z, .burnimmunity
 	cp EFFECT_SLEEP
 	jr z, .typeimmunity
 	cp EFFECT_PARALYZE
@@ -3183,6 +3185,15 @@ AI_Status:
 	jr z, .immune
 	ld a, [wBattleMonType2]
 	cp POISON
+	jr z, .immune
+	jr .typeimmunity
+
+.burnimmunity
+	ld a, [wBattleMonType1]
+	cp FIRE
+	jr z, .immune
+	ld a, [wBattleMonType2]
+	cp FIRE
 	jr z, .immune
 
 .typeimmunity
